@@ -22,6 +22,7 @@ What Warmonger was like to play, collected from player guides and other sources 
 - [[gameplay/npc-locations|NPC and point-of-interest locations]] — where the server must place town NPCs, portals, quest NPCs and gathering nodes, per map
 - [[gameplay/consumables|Consumables and clickables]] — potions, scrolls, elixirs and their recipes, buff values and durations
 - [[gameplay/video-tutorial-walkthrough|Video notes: the tutorial]] — all 32 tutorial steps with quest ids, NPC positions and rewards; new characters start in Training Ground (field 89)
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation]] — classes, appearance options, starting weapons and skills, starting stats, the tutorial after the June 2018 relaunch
 - [[gameplay/videos|Videos]] — 86 gameplay videos by topic, with timestamps; start here for the tutorial
 - [[gameplay/gear-stats|Gear stats]], [[gameplay/dungeon-drops|Dungeon drops]], [[gameplay/stat-values|Stat values]] — from the Crush Share player spreadsheet
 - [[gameplay/abyss-map|Abyss map and portals]], [[gameplay/lords-of-the-land|Lords of the Land]], [[gameplay/skull-artifact-set|Skull artifact set]], [[gameplay/potion-regen|Potion regeneration]], [[gameplay/arena-ranking-rewards|Arena ranking rewards]], [[gameplay/precept-shop|Precept shop]] — from player screenshots
