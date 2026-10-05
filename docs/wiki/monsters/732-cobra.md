@@ -2,7 +2,7 @@
 title: "Cobra"
 type: "monster"
 id: 732
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 732", "client: Quest.cdb kill objectives (quests 3)"]
 name_key: "UnitName_732"
@@ -104,15 +104,16 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Lives in the middle of the [[wiki/fields/89-training-ground|Training Ground (89)]]; drops Snake Leather (2551), which the quest tracker calls "Cobra Leather", for quest 3 (video + client, [[gameplay/video-tutorial-walkthrough]] step 6 at [8:00](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=480s); [[gameplay/video-character-creation-and-tutorial]] step 9).
+- The player's basic hits did 93 damage to Cobras (video, [[gameplay/video-tutorial-walkthrough]] § Monsters and damage).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest items drop at the `Quest.tsv` rate: every kill of a matching monster gave one while the quest was active (video, [[gameplay/video-early-quests]] §6).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] step 6 and § Monsters and damage; [[gameplay/video-character-creation-and-tutorial]]; [[gameplay/video-early-quests]] §2
 
 ## Open questions
 

@@ -2,7 +2,7 @@
 title: "Divine Guard"
 type: "monster"
 id: 799
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 799"]
 name_key: "UnitName_799"
@@ -75,7 +75,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- In a fort siege, destroying the Heart of Magic shows "Divine Guard will not be summoned, The guardian does not recover", so Divine Guards are summoned while the Heart stands (video, [[gameplay/video-fort-war]] §3 and log at [P4 2:04](https://www.youtube.com/watch?v=JPd7TCu-44o&t=124s)).
 
 ## Behaviour
 
@@ -83,11 +83,11 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-fort-war]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Where and how often they are summoned, and their stats, are unknown.
 
 <!-- credit:start -->
 ---

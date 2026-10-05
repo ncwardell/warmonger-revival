@@ -2,7 +2,7 @@
 title: "[Lv 9] Dragon Island"
 type: "dungeon"
 id: 142
-status: "stub"
+status: "partial"
 missing: ["boss", "time_limit_s"]
 sources: ["client: SceneList.cdb id 142", "client: DungeonAdmission.cdb field 142", "client: Dungeon.cdb", "client: Trigger.cdb field 142"]
 field: 142
@@ -88,7 +88,8 @@ Respawn (solo: none; party: about every minute), party loot and the hard-mode ru
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Warmonger patch 0920 made Dragon Island reachable only through a field dimension gate (notes, [[gameplay/patch-history]] § Dungeons and world).
+- No 2018 guide and not the Crush Online sheet covers it; its level (9), cost and advertised rewards are client only ([[gameplay/dungeon-drops]] §1–2, [[gameplay/maps-and-dungeons]] §2).
 
 ## Behaviour
 
@@ -96,11 +97,12 @@ Respawn (solo: none; party: about every minute), party loot and the hard-mode ru
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/patch-history]] § Dungeons and world, [[gameplay/dungeon-drops]] §1–2, [[gameplay/maps-and-dungeons]] §2
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Boss unknown ([[gameplay/dungeon-drops]] §1 lists "?").
+- Time limit: Warmonger patch 0402 (15 min) predates this dungeon (added by 0920), so it is not copied here.
 
 <!-- credit:start -->
 ---

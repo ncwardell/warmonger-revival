@@ -119,15 +119,15 @@ runtime fields; the front matter and this note contain the current test values.
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Stands among normal Chepa Warriors and Archers in the north-west clearing of the Training Ground; each is a single kill for quest 7 (video, [[gameplay/video-tutorial-walkthrough]] step 18 at [21:50](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1310s)). Shaia's dialogue says the Chepa leaders are "in the north"; in the Erion copy both died in the round stone arena in the north of the Training Ground (video, [[gameplay/video-character-creation-and-tutorial]] §3 step 15 at [13:10](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=790s)). The charmanmugen video calls the place the Training Ground's spiral circle (video, [[gameplay/video-early-quests]] §2 item 7).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] step 18 and § Monsters and damage; [[gameplay/video-character-creation-and-tutorial]] §3; [[gameplay/video-early-quests]] §2
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- No source shows this officer's HP, level or damage: the videos show only bars ([[gameplay/video-tutorial-walkthrough]] § Monsters and damage). The 400 HP / level 5 in the front matter remain test values.
 
 <!-- credit:start -->
 ---

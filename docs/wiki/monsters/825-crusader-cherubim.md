@@ -2,7 +2,7 @@
 title: "Crusader Cherubim"
 type: "monster"
 id: 825
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 825", "docs: [[gameplay/dungeon-drops]] (boss of field 824)"]
 name_key: "UnitName_825"
@@ -96,7 +96,8 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The fort guardian: killing Crusader Cherubim (UnitDB 825) inside a fort removes one fort shield and pays part of the fort's taxes to the winners; the fort falls when all shields (default 3) are gone (guides, [[gameplay/classes-and-legions]] §4).
+- When the Heart of Magic is destroyed the Crusader loses its regeneration (Warmonger patch 0628, [[gameplay/events-and-schedules]] §5).
 
 ## Behaviour
 
@@ -104,11 +105,13 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/classes-and-legions]] §4; [[gameplay/events-and-schedules]] §5; [[gameplay/video-fort-war]]; [[gameplay/sources]] §9
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- HP is unknown: the June 2018 siege video never reaches the guardian's room ([[gameplay/video-fort-war]]).
+- Is this the "Fort Guardian" whose drop list Warmonger patch 0817 gives (one drop each for up to 15 killers from: one of the six essences 1930–1935, 100 Blue or Red Passion D fragments 601/611, or 25 of a crystal 700–703; [[gameplay/events-and-schedules]] §5)? [[gameplay/events-and-schedules]] §5 names the Guardian and the Crusader separately, and [[gameplay/classes-and-legions]] calls floor 2 "a hero-only boss", so the drops are not copied into `drops`.
+- The generated `boss_of` [824] is wrong: 824 is the item code of Jasmine in [[gameplay/dungeon-drops]] §1, not a field.
 
 <!-- credit:start -->
 ---

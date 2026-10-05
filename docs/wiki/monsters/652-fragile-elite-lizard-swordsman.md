@@ -2,7 +2,7 @@
 title: "Fragile Elite Lizard Swordsman"
 type: "monster"
 id: 652
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 652", "client: Quest.cdb kill objectives (quests 104)"]
 name_key: "UnitName_652"
@@ -92,7 +92,8 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Seen killed in Place for Scattered troops (Abyss Lv 2; fields 103/105/107) for quest 104 "Delivering Punishment" (video, [[gameplay/video-early-quests]] §2 item 18, §5).
+- Gem Stone: Blue (693) drops in Place for Scattered troops (video, [[gameplay/video-early-quests]] §6).
 
 ## Behaviour
 
@@ -100,7 +101,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §2, §5–6
 
 ## Open questions
 

@@ -2,7 +2,7 @@
 title: "Troll"
 type: "monster"
 id: 584
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 584", "client: Quest.cdb kill objectives (quests 50)"]
 name_key: "UnitName_584"
@@ -94,19 +94,21 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/pvp-and-matches]] §1 lists this unit among the land-war **jungle bosses** (Troll) (client ids; the guides do not say which id spawns on which land).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Spawns first at 36:00 on the 40:00 war clock, then 4 minutes after each death (guides, [[gameplay/pvp-and-matches]] §1; blog, [[gameplay/events-and-schedules]] §8).
+- When killed it joins the killer's team and pushes the nearest enemy towers, then the nexus (guides, [[gameplay/pvp-and-matches]] §1).
+- TP for the kill: 1,500 (guides, [[gameplay/pvp-and-matches]] §1; [[gameplay/events-and-schedules]] §8).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/pvp-and-matches]] §1; [[gameplay/events-and-schedules]] §8; [[gameplay/video-fort-war]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Which jungle id spawns where is unknown, so no `spawns` are set.
 
 <!-- credit:start -->
 ---

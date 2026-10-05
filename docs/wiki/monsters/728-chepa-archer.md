@@ -2,7 +2,7 @@
 title: "Chepa Archer"
 type: "monster"
 id: 728
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 728", "client: Quest.cdb kill objectives (quests 100, 756, 762, 1018)"]
 name_key: "UnitName_728"
@@ -113,15 +113,18 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Lives in the round clearings of the northern lobes of the [[wiki/fields/89-training-ground|Training Ground (89)]], around the Chepa officers (video, [[gameplay/video-tutorial-walkthrough]] step 13 at [16:00](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=960s); [[gameplay/video-early-quests]] §2 item 3).
+- Drops Black Chepa Fur (2553) at 100% for quest 100 (video + client, [[gameplay/video-tutorial-walkthrough]] step 13; [[gameplay/video-character-creation-and-tutorial]] step 13).
+- Chepas hit the player (a low-level Guardian) for 22; the player's basic hits did 104 damage to them (video, [[gameplay/video-tutorial-walkthrough]] § Monsters and damage).
+- Players cleared the Chepa circle for exp on the way to quest 3 (video, [[gameplay/video-early-quests]] §2 item 3, §5).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest items drop at the `Quest.tsv` rate: every kill of a matching monster gave one while the quest was active (video, [[gameplay/video-early-quests]] §6).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] step 13 and § Monsters and damage; [[gameplay/video-early-quests]] §2, §5–6; [[gameplay/video-character-creation-and-tutorial]] step 13
 
 ## Open questions
 

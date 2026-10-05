@@ -2,7 +2,7 @@
 title: "Chepa Sorcerer"
 type: "monster"
 id: 950
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 950", "client: HeroData.cdb id 14 (hero transform of the same name)", "docs: [[gameplay/dungeon-drops]] (boss of field 127)", "docs: [[gameplay/maps-and-dungeons]] (boss of field 127)", "client: DungeonAdmission.cdb (rewards advertised by the dungeon, no rates)"]
 name_key: "UnitName_950"
@@ -103,19 +103,24 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Boss of [[wiki/dungeons/127-lv-1-chepa-village|[Lv 1] Chepa Village (127)]] (guides + client ids, [[gameplay/maps-and-dungeons]] §2; [[gameplay/dungeon-drops]] §1). Crush Online name: Chepa Sorcerer (Crush Online sheet, Lv 1) ([[gameplay/dungeon-drops]] §1–2; [[gameplay/crush-mechanics]] §9).
+- That dungeon drops T1 named-set gear, already reinforced at a random level (+0 to +11 seen) (image + guide, [[gameplay/maps-and-dungeons]] §2).
+- Other units with this boss's name: [[wiki/monsters/870-chepa-sorcerer|870]].
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Drops: the dungeon entry panel advertises this dungeon's essence, horn and sealed weapon (client, front matter `dungeon_rewards`; no rates). Crush Online players said every boss (dungeon or world map) could drop every essence (player, [[gameplay/crush-mechanics]] §9). Warmonger patch 0920 raised boss-material drop rates from dungeon bosses and fort guardians (notes, [[gameplay/patch-history]] § Numbers pass (October 2026)).
+- The forum says a dungeon boss only exists while the land is monster-invaded (forum, [[gameplay/warmonger-forum]] §3); in hard mode the boss waits at the end (guide, [[gameplay/maps-and-dungeons]] §2).
+- Crush Online patch 2016-12-15: elites in boundary-area dungeons dropped a scroll that summoned one extra boss, once per boss; this boss's scroll is [[wiki/items/2589-the-chepa-sorcerer-s-pipe|The Chepa Sorcerer's Pipe (2589)]] in the client (staff + client, [[gameplay/crush-patch-notes]] § 2016-12-15).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/dungeon-drops]] §1–2, [[gameplay/maps-and-dungeons]] §2, [[gameplay/crush-mechanics]] §9, [[gameplay/warmonger-forum]] §3, [[gameplay/crush-patch-notes]] § 2016-12-15, [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- HP, level, damage, exp and drop rates: no source gives them. [[gameplay/sources]] §9 lists boss videos (Commander Reviatan solo, Komodo 5-man) that could give HP against damage numbers.
+- The guides do not say which of this boss's unit ids is the normal-mode, hard-mode or field version.
 
 <!-- credit:start -->
 ---

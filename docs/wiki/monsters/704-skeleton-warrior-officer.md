@@ -2,7 +2,7 @@
 title: "Skeleton Warrior Officer"
 type: "monster"
 id: 704
-status: "stub"
+status: "partial"
 missing: ["level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 704", "client: Quest.cdb kill objectives (quests 10, 107)", "video: [[gameplay/video-early-quests|Video notes: the first 20 levels]] §5, target frame at [35:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2120s): HP 2000, regen +0/tick (2% of max) (Skeleton Warrior Officer, quest 10's target 704)"]
 name_key: "UnitName_704"
@@ -107,7 +107,9 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Stands in the south of [[wiki/fields/99-corpse-incineration|Corpse incineration (99)]], guarded by elite skeletons; target of quest 10 (Secret document 2565, 100%) and quest 107 (video + client, [[gameplay/video-tutorial-walkthrough]] step 24 at [28:00](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1680s); [[gameplay/video-character-creation-and-tutorial]] step 20).
+- An officer's speech bubble shouts "Kill them!!" (video, [[gameplay/video-tutorial-walkthrough]] step 24).
+- The target frame read HP 2000 with regeneration +0 at [35:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2120s), unlike ordinary monsters, which regenerate 2% of max (video, [[gameplay/video-early-quests]] §5); the HP is in the front matter.
 
 ## Behaviour
 
@@ -115,7 +117,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] step 24; [[gameplay/video-early-quests]] §2, §5; [[gameplay/video-character-creation-and-tutorial]] step 20
 
 ## Open questions
 

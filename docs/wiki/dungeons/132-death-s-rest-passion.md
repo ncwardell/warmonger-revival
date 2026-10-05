@@ -2,7 +2,7 @@
 title: "Death's Rest (Passion)"
 type: "dungeon"
 id: 132
-status: "stub"
+status: "partial"
 missing: ["boss"]
 sources: ["client: SceneList.cdb id 132", "client: DungeonAdmission.cdb field 132", "client: Event_Dungeon.cdb", "client: GUI_FieldIDX_132 \"Time limit : 3 hours\" (entry-panel text)"]
 field: 132
@@ -73,19 +73,22 @@ Respawn (solo: none; party: about every minute), party loot and the hard-mode ru
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Warmonger patch 0110 added the "Mysterious World" border area, reached through the fortress gate, with the tabs Death's Rest (Passion) and Sinking Nest; these are fields 132 and 133 (notes, [[gameplay/patch-history]] § Dungeons and world). The patch image shows an entry cost of 2 Dimensional Energy, matching the client ([[gameplay/events-and-schedules]] §9).
+- The 3-hour time limit in the front matter is the client's entry-panel text; patch 0124 set the 3-hour limit for Sinking Nest (notes, [[gameplay/events-and-schedules]] §9).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Event dungeons pop up on random lands of either nation on a schedule; the world map's Dungeon tab lists the active ones and the land they are on (guides, [[gameplay/maps-and-dungeons]] §3).
+- Respawn and loot rules of the border-area dungeons apply as far as the guides say (party respawn, shared loot; [[gameplay/maps-and-dungeons]] §2).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/patch-history]] § Dungeons and world, [[gameplay/events-and-schedules]] §9, [[gameplay/maps-and-dungeons]] §3, [[gameplay/video-dungeon-run]] §6
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Which guide dungeon is this? [[gameplay/video-dungeon-run]] §6 matches the world-map list to `Event_Dungeon` and leaves 132 = **Siren Lake** (*guess*); [[gameplay/maps-and-dungeons]] §3 instead reads the "(Passion)" suffix as a later version of the Avenue of Spirit / Scattered Troops passion dungeons (*guess*). Guides say Siren Lake (seen on Thornsbush peak) drops Blue Bloodstone, Emerald, Moonstone and Onyx and cost 5 / 10 ([[gameplay/maps-and-dungeons]] §2–3).
+- No source names a boss.
 
 <!-- credit:start -->
 ---

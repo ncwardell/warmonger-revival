@@ -2,7 +2,7 @@
 title: "Tough Elite Black Skeleton Warrior"
 type: "monster"
 id: 807
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 807", "docs: [[gameplay/dungeon-drops]] (boss of field 806)"]
 name_key: "UnitName_807"
@@ -85,7 +85,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Seen in the Mist Lake (31) war map with its archer partner, after 1:43:10 in the charmanmugen video, where server staff were changing monster stats live (video, [[gameplay/video-early-quests]] §5).
 
 ## Behaviour
 
@@ -93,11 +93,11 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §5
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The generated `boss_of` [806] is wrong: 806 is the item code of Emerald in [[gameplay/dungeon-drops]] §1, not a field.
 
 <!-- credit:start -->
 ---

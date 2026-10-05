@@ -2,7 +2,7 @@
 title: "Mini Golem"
 type: "monster"
 id: 617
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 617"]
 name_key: "UnitName_617"
@@ -79,7 +79,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Golems (client: Jungle/Valley/Mushroom/Wasteland/Sulphur Golem 610–618) appear on some lands during a land war, worth 1,500 / 2,500 TP; they only give a buff and do not attack towers (guide + client, [[gameplay/pvp-and-matches]] §1).
 
 ## Behaviour
 
@@ -87,7 +87,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/pvp-and-matches]] §1
 
 ## Open questions
 

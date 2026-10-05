@@ -2,7 +2,7 @@
 title: "Death's Rest"
 type: "dungeon"
 id: 135
-status: "stub"
+status: "partial"
 missing: ["boss", "time_limit_s"]
 sources: ["client: SceneList.cdb id 135", "client: DungeonAdmission.cdb field 135", "client: Event_Dungeon.cdb"]
 field: 135
@@ -55,19 +55,24 @@ Respawn (solo: none; party: about every minute), party loot and the hard-mode ru
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The world map's Event Dungeon list shows "The avenue of spirit" with the number 24, which only this field's `Event_Dungeon` row has, so 135 is the guides' **Avenue of Spirit** event dungeon even though the client names the field "Death's Rest" (video + client, [[gameplay/video-dungeon-run]] §6 at [0:03](https://www.youtube.com/watch?v=eL5hx5C9iZw&t=3s)).
+- Guides: seen on Skywing Yard; drops Orange Passion T1, Yellow and Red crystals, T2 Red/Blue Passion (guides, [[gameplay/maps-and-dungeons]] §3).
+- Warmonger patch 0412 opened Scattered Troops and Avenue of Spirit to both nations (notes, [[gameplay/patch-history]] § Dungeons and world).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Event dungeons pop up on random lands of either nation on a schedule; the world map's Dungeon tab lists the active ones and the land they are on (guides, [[gameplay/maps-and-dungeons]] §3).
+- Respawn and loot rules of the border-area dungeons apply as far as the guides say (party respawn, shared loot; [[gameplay/maps-and-dungeons]] §2).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-dungeon-run]] §6, [[gameplay/maps-and-dungeons]] §2–3, [[gameplay/patch-history]] § Dungeons and world
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Entry cost: client 5 / 15 Dimensional Energy; guides 5 normal and 20 hard (spring 2018: 5 + 3 bronze Time Energy) ([[gameplay/maps-and-dungeons]] §2). The client value is used.
+- Name: the client calls field 135 "Death's Rest", the in-game event list "The avenue of spirit" ([[gameplay/video-dungeon-run]] §6).
+- No source names a boss or a time limit; the `Event_Dungeon` window is 80 minutes (client).
 
 <!-- credit:start -->
 ---

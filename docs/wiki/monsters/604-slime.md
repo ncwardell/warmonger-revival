@@ -2,7 +2,7 @@
 title: "Slime"
 type: "monster"
 id: 604
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 604", "client: Quest.cdb kill objectives (quests 2)"]
 name_key: "UnitName_604"
@@ -108,19 +108,21 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Lives in the south of the [[wiki/fields/89-training-ground|Training Ground (89)]]; the first monster a new character fights (video, [[gameplay/video-tutorial-walkthrough]] § Monsters and damage; [[gameplay/video-early-quests]] §5).
+- Drops Slime Mucus (2550) for quest 2, one per kill until 3/3 (video + client, [[gameplay/video-tutorial-walkthrough]] step 4 at [4:55](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=295s); [[gameplay/video-character-creation-and-tutorial]] step 2).
+- A level-2 Guardian's basic hits did 88 damage to it; no HP number is shown, only a bar (video, [[gameplay/video-tutorial-walkthrough]] § Monsters and damage).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest items drop at the `Quest.tsv` rate: every kill of a matching monster gave one while the quest was active (video, [[gameplay/video-early-quests]] §6).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §4–6; [[gameplay/video-tutorial-walkthrough]] steps 4 and § Monsters and damage; [[gameplay/video-character-creation-and-tutorial]] steps 2–5
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Kill exp: [[gameplay/video-early-quests]] §4 says level 2 came from Slime kills before any quest was handed in, while [[gameplay/video-tutorial-walkthrough]] step 4 shows level 2 reached on the first Slime kill exactly from quest exp (500 + 200 = 700, the `Level_Table` value). Kill exp is still unknown.
 
 <!-- credit:start -->
 ---
