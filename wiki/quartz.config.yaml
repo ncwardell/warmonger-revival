@@ -130,8 +130,10 @@ plugins:
     enabled: true
   - source: "@quartz-community/tag-page"
     enabled: true
+  # The sidebar file tree is off: the game wiki has thousands of pages, too many
+  # for a tree. Navigate with Search (Ctrl+K) and the section index pages.
   - source: "@quartz-community/explorer"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 50
