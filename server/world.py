@@ -1,0 +1,511 @@
+"""Monsters and NPCs in the tutorial zone: spawn, take hits, die, respawn.
+
+handlers.py wires this in:
+  - enter_world() appends spawn_all(PLAYER_UID) to its burst;
+  - GAME_REPLIES.update(world.REPLIES) (0x411, 0x412, 0x40f, 0x410, 0x4ca);
+  - any other reply (0x416 movement above all) appends due_respawns(), because
+    the server has no timer push yet: a dead monster comes back with the first
+    packet the player sends after its respawn time.
+
+The client decides hits (out/spec/combat.md): it sends 0x411/0x412 with every
+damage slot 0, and the server fills in damage, the lethal mask and the
+attacker's HP/MP and sends the packet back. Unit ids come from UnitDB.cdb
+(data/tables/UnitDB.tsv); HP and level are server-side, chosen here.
+Monster state lives in this module, so it survives handlers.py reloads
+(and a world.py edit needs a server restart unless handlers reloads it).
+"""
+import random
+import struct
+import sys
+import time
+
+from proto import build, split
+
+try:
+    import loot  # drops on kill (loot.py); optional
+except ImportError:
+    loot = None
+
+
+def log(*args):
+    print(time.strftime("%H:%M:%S"), "[world]", *args, flush=True)
+
+
+clock = time.monotonic  # replaced by the self-test
+
+# Tutorial zone tutorial_map_01 (map 117, ZoneDB 1344..1503 x 352..479). Spawns are
+# offsets from CENTRE so the whole group moves when a walkable point is found.
+CENTRE = (1424.0, 416.0)
+
+# Teams: the client's friend/foe test (FUN_00486179, target = +0x655 team byte)
+# treats team 0 as friendly to everyone, 1..3 as nations, and 4+ as hostile to
+# everyone. Monsters must be 4+ or the client never sends the attack.
+MONSTER_TEAM = 4
+NPC_TEAM = 0
+
+RESPAWN_SECONDS = 10.0
+MONSTER_SPEED = 300  # stats +0x36, x0.01 units/s; nothing moves monsters yet
+SPAWN_FX = 0  # 0x803 +0x33: 1..3 play the "appear" action
+CONFIRM_DEATH = True  # also send 0x420 HP 0 when a hit is lethal (the 0x411 alone kills)
+
+# (UnitDB id, name, level, max HP, dx, dz). Tutorial quests: 631 "The Slime is mine"
+# (kill 3 x 604), 632 (5 x 732 Cobra), Bee 731 (5 x); 605 Great Slime as a tougher one.
+MONSTERS = [
+    # Offsets checked against the navmesh around the tutorial spawn (1427, 429):
+    # each is walkable and >= 2 units from a mesh edge (tools/navmesh.py).
+    (604, "Slime", 1, 80, 10.3, -1.0),
+    (604, "Slime", 1, 80, 9.0, 8.0),
+    (604, "Slime", 1, 80, 13.0, -7.0),
+    (732, "Cobra", 2, 120, -11.0, 10.0),
+    (732, "Cobra", 2, 120, -13.0, 3.0),
+    (731, "Bee", 3, 150, 5.0, -13.0),
+    (731, "Bee", 3, 150, 2.7, -13.0),
+    (605, "Great Slime", 4, 400, -5.8, 20.4),
+]
+# NPCs: friendly (team 0), never take damage. 201 = Shaia, the tutorial quest giver.
+NPCS = [
+    (201, "Shaia", 10, 1000, 6.0, 3.0),
+]
+
+MONSTER_UID_BASE = 0x400  # monsters/NPCs are uid 0x3F7..0x2B05
+NPC_UID_BASE = 0x3F8
+
+# Damage: base x (0.75..1.25), 10 % crits for double. Skill hits hit harder.
+BASIC_DAMAGE = 30
+SKILL_DAMAGE = 45
+CRIT_CHANCE = 0.10
+FLAG_CRIT = 0x0004
+
+# The player, server side. The attacker's HP/MP go into every hit reply (+0x2c/+0x30);
+# 0 would kill it, so hp must track the real value: ai.py lowers it when monsters hit.
+# spawn_all() resets it; handlers.py may overwrite any field.
+PLAYER = {"uid": 1, "hp": 1000, "mp": 500, "max_hp": 1000, "max_mp": 500, "speed": 450,
+          "alive": True, "revive_at": None, "spawn": CENTRE}
+
+# Stat block (0x5c bytes, char+0x443; carried by 0x41f at +0x10 and 0x804 at +0x28).
+# Basic attacks need +0x1e: the client's basic-attack range is that s16 x 0.01
+# (FUN_0058641a, online path). 0 means range 0, so the avatar never gets in range,
+# never swings and never sends the skill-0 0x411. Skills have their own range (Skill_Base +0x41).
+STAT_ATTACK_SPEED = 0x1C  # s16, x0.002; players are clamped to 200..1000 (FUN_004b8b5f)
+STAT_ATTACK_RANGE = 0x1E  # s16, x0.01 world units
+STAT_SPEED = 0x36  # u16 move speed, x0.01 units/s
+STAT_REVIVE_DELAY = 0x40  # s16 seconds the client counts down after death
+ATTACK_SPEED = 500  # 1.0
+MELEE_RANGE = 200  # 2.0 units: the offline default (_DAT_00722c18)
+RANGED_RANGE = 700  # 7.0 units: a guess for guns, bows, wands and cannons
+RANGED_WEAPONS = {10001, 10002, 10011, 15004, 20021}
+PLAYER_REVIVE_SECONDS = 5
+
+
+class Unit:
+    """A server-side monster or NPC."""
+
+    def __init__(self, uid, unit_id, name, level, max_hp, x, z, team):
+        self.uid, self.unit_id, self.name, self.level = uid, unit_id, name, level
+        self.max_hp = self.hp = max_hp
+        self.max_mp = self.mp = 0
+        self.home = (x, z)
+        self.x, self.z = x, z
+        self.team = team
+        self.heading = 0
+        self.dead_until = None  # clock() time to respawn, None while alive
+        # AI state (ai.py): idle / chase / attack / leash
+        self.state = "idle"
+        self.dest = None  # (x, z) it is walking to, None when standing
+        self.move_speed = 0.0  # units/s while walking to dest
+        self.last_move = 0.0  # clock() of the last 0x416 sent
+        self.next_attack = 0.0
+        self.aimed_at = None  # player (x, z) the last chase packet aimed at
+
+    def __repr__(self):
+        state = "dead" if self.dead_until is not None else f"{self.hp}/{self.max_hp}"
+        return f"<{self.name} uid=0x{self.uid:x} id={self.unit_id} ({self.x:.0f},{self.z:.0f}) {state}>"
+
+
+UNITS = {}
+
+
+def reset():
+    """(Re)create every unit at full HP at its home position."""
+    UNITS.clear()
+    cx, cz = CENTRE
+    for i, (unit_id, name, level, hp, dx, dz) in enumerate(MONSTERS):
+        u = Unit(MONSTER_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, MONSTER_TEAM)
+        UNITS[u.uid] = u
+    for i, (unit_id, name, level, hp, dx, dz) in enumerate(NPCS):
+        u = Unit(NPC_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, NPC_TEAM)
+        UNITS[u.uid] = u
+
+
+def is_monster(u):
+    return u is not None and u.team == MONSTER_TEAM
+
+
+# ---------------------------------------------------------------- S->C packets
+
+
+def spawn(u):
+    """0x803 spawn unit, monster/NPC branch (FUN_00477d13), 0x1c0 bytes, extra = uid.
+
+    +0x10 u16 UnitDB id (required, else ignored) | +0x12 u8 level |
+    +0x13 u8 category (0 = UnitDB +0x8a) | +0x14 f32 x | +0x18 f32 z |
+    +0x1c u32 status flags | +0x20 u32 HP (0 spawns a corpse) | +0x24 u32 max HP |
+    +0x28 u32 MP | +0x2c u32 max MP | +0x30 u16 | +0x32 u8 heading | +0x33 u8 spawnFx |
+    +0x34 i8 team | +0x36 u16 battle side | +0x38 i16 guild | +0x3a u16 | +0x3c u32 buff mask
+    """
+    p = bytearray(0x1C0)
+    struct.pack_into("<HBB", p, 0x10, u.unit_id, u.level, 0)
+    struct.pack_into("<ffI", p, 0x14, u.x, u.z, 0)
+    struct.pack_into("<IIII", p, 0x20, max(u.hp, 1), u.max_hp, u.mp, u.max_mp)
+    struct.pack_into("<BBb", p, 0x32, u.heading, SPAWN_FX, u.team)
+    return build(0x803, bytes(p[16:]), extra=u.uid)
+
+
+def spawn_compact(u):
+    """0x805 spawn unit, compact (FUN_0047858b), monster branch, 0x38 bytes, extra = uid.
+
+    +0x10 f32 x | +0x14 f32 z | +0x18 u8 heading | +0x19 u8 category (0) | +0x1a u8 level |
+    +0x1b i8 team | +0x1c u16 battle side | +0x1e u16 UnitDB id | +0x22 i16 guild |
+    +0x24 u32 status flags | +0x28 u32 HP | +0x2c u32 max HP | +0x30 u32 MP | +0x34 u32 max MP
+    """
+    p = bytearray(0x38)
+    struct.pack_into("<ffBBBbHH", p, 0x10, u.x, u.z, u.heading, 0, u.level, u.team, 0, u.unit_id)
+    struct.pack_into("<IIII", p, 0x28, max(u.hp, 1), u.max_hp, u.mp, u.max_mp)
+    return build(0x805, bytes(p[16:]), extra=u.uid)
+
+
+def refresh(u):
+    """0x804 full refresh / respawn (FUN_00472f4d), 0xbc bytes, extra = uid.
+
+    Revives a dead unit when HP > 0 and snaps it to x/z if more than 5 units away.
+    +0x10 f32 x | +0x14 f32 z | +0x18 u8 heading | +0x19 i8 team | +0x1a u16 battle side |
+    +0x1c u32 status flags | +0x23 u8 level | +0x28 0x5c-byte stats block
+    (+0x28 HP, +0x2c MP, +0x30 max HP, +0x34 max MP, +0x5e i16 speed) |
+    +0xb4 u16 | +0xb8 u32 buff mask (+0xbc packed buffs)
+    """
+    p = bytearray(0xBC)
+    struct.pack_into("<ffBbHI", p, 0x10, u.x, u.z, u.heading, u.team, 0, 0)
+    p[0x23] = u.level
+    struct.pack_into("<IIII", p, 0x28, u.hp, u.mp, u.max_hp, u.max_mp)
+    struct.pack_into("<hh", p, 0x28 + STAT_ATTACK_SPEED, ATTACK_SPEED, MELEE_RANGE)
+    struct.pack_into("<h", p, 0x5E, MONSTER_SPEED)
+    return build(0x804, bytes(p[16:]), extra=u.uid)
+
+
+def player_weapon():
+    """The equipped main weapon item code (skills.STATE), 0 if unknown."""
+    skills = sys.modules.get("skills")
+    try:
+        return skills.STATE["equip"][0]
+    except (AttributeError, KeyError, IndexError, TypeError):
+        return 0
+
+
+def player_stats():
+    """0x41f full stat block for the player (0x6c bytes, extra = player uid).
+
+    As handlers.stat_block() (HP, MP, maxes, speed) plus what basic attacks need:
+    +0x2c attack speed, +0x2e basic-attack range, +0x50 revive delay (block +0x1c/+0x1e/+0x40).
+    """
+    stats = bytearray(0x5C)
+    struct.pack_into("<IIII", stats, 0, PLAYER["hp"], PLAYER["mp"], PLAYER["max_hp"], PLAYER["max_mp"])
+    rng = RANGED_RANGE if player_weapon() in RANGED_WEAPONS else MELEE_RANGE
+    struct.pack_into("<hh", stats, STAT_ATTACK_SPEED, ATTACK_SPEED, rng)
+    struct.pack_into("<H", stats, STAT_SPEED, PLAYER["speed"])
+    struct.pack_into("<h", stats, STAT_REVIVE_DELAY, PLAYER_REVIVE_SECONDS)
+    return build(0x41F, bytes(stats), extra=PLAYER["uid"])
+
+
+def hp_update(u):
+    """0x420 HP/MP (FUN_00472079), 0x18 bytes, extra = uid. HP < 1 kills, HP > 0 revives.
+
+    +0x10 u32 HP | +0x14 u32 MP
+    """
+    return build(0x420, struct.pack("<II", u.hp, u.mp), extra=u.uid)
+
+
+def remove(uid, mode=2):
+    """0x806 remove/kill unit (FUN_00470223), 0x14 bytes, extra = uid.
+
+    +0x10 u32 mode: 1 die then fade, 2 remove now, 5 die in place (corpse stays)
+    """
+    return build(0x806, struct.pack("<I", mode), extra=uid)
+
+
+def spawn_all(player_uid):
+    """Every unit at full HP, sent right after entering the world.
+
+    First a 0x41f for the player that sets the basic-attack range (handlers' stat
+    block leaves it 0), then 0x803 for each unit and 0x804 to give monsters a move
+    speed (0x803 has none).
+    """
+    handlers = sys.modules.get("handlers")
+    PLAYER.update(uid=player_uid, alive=True, revive_at=None, spawn=CENTRE)
+    for key, name in (("max_hp", "MAX_HP"), ("max_mp", "MAX_MP"), ("speed", "SPEED")):
+        PLAYER[key] = getattr(handlers, name, PLAYER[key])
+    PLAYER["hp"], PLAYER["mp"] = PLAYER["max_hp"], PLAYER["max_mp"]
+    reset()
+    log(f"spawning {len(UNITS)} units around {CENTRE}")
+    return player_stats() + b"".join(spawn(u) + refresh(u) for u in UNITS.values())
+
+
+def due_respawns():
+    """0x804 for every dead monster whose respawn time has passed (b"" if none)."""
+    out = b""
+    now = clock()
+    for u in UNITS.values():
+        if u.dead_until is not None and now >= u.dead_until:
+            u.dead_until = None
+            u.hp, u.mp = u.max_hp, u.max_mp
+            u.x, u.z = u.home
+            log(f"respawn {u}")
+            out += refresh(u)
+    return out
+
+
+# ---------------------------------------------------------------- C->S replies
+
+
+def damage(skill_id):
+    """(amount, flags) for one hit: base x 0.75..1.25, CRIT_CHANCE for double."""
+    amount = (SKILL_DAMAGE if skill_id else BASIC_DAMAGE) * random.uniform(0.75, 1.25)
+    flags = 0
+    if random.random() < CRIT_CHANCE:
+        amount, flags = amount * 2, FLAG_CRIT
+    return min(int(amount), 0x7FFF), flags
+
+
+def apply_hits(reply, slots):
+    """Fill damage for `slots` target slots at +0x34 (u16 uid, s16 amount) of a 0x411/0x412.
+
+    Sets +0x18 crit flag, +0x1a lethal mask and +0x2c/+0x30 attacker HP/MP.
+    Returns the units this hit killed.
+    """
+    (skill_id,) = struct.unpack_from("<h", reply, 0x14)
+    lethal, flags, killed = 0, 0, []
+    for i in range(slots):
+        (uid,) = struct.unpack_from("<H", reply, 0x34 + 4 * i)
+        u = UNITS.get(uid)
+        if not is_monster(u) or u.dead_until is not None:
+            struct.pack_into("<h", reply, 0x36 + 4 * i, 0)
+            continue
+        amount, crit = damage(skill_id)
+        flags |= crit
+        u.hp = max(u.hp - amount, 0)
+        struct.pack_into("<h", reply, 0x36 + 4 * i, amount)
+        if u.hp == 0:
+            lethal |= 1 << i
+            u.dead_until = clock() + RESPAWN_SECONDS
+            killed.append(u)
+        log(f"skill {skill_id} hits {u} for {amount}{' (crit)' if crit else ''}")
+    (old_flags,) = struct.unpack_from("<H", reply, 0x18)
+    struct.pack_into("<HH", reply, 0x18, old_flags | flags, lethal)
+    struct.pack_into("<II", reply, 0x2C, PLAYER["hp"], PLAYER["mp"])
+    return killed
+
+
+def deaths(killed):
+    """0x420 HP 0 for each unit a hit killed (CONFIRM_DEATH), then its loot
+    (loot.on_kill: 0x427 bag slots / 0x428 gold for what the player picks up)."""
+    for u in killed:
+        log(f"killed {u}; respawn in {RESPAWN_SECONDS:.0f} s")
+    out = b"".join(hp_update(u) for u in killed) if CONFIRM_DEATH else b""
+    if loot is not None:
+        out += b"".join(loot.on_kill(u) for u in killed)
+    return out
+
+
+def hit(packet):
+    """C->S 0x411 hit report (0x64 bytes) -> the same packet with damage filled in.
+
+    +0x10 u16 attacker | +0x12 u16 display skill | +0x14 s16 skill (0 basic) |
+    +0x16 u16 motion | +0x18 u16 flags | +0x1a u16 lethal mask | +0x1c/+0x20 f32 attacker x,z |
+    +0x24/+0x28 f32 target point | +0x2c u32 attacker HP | +0x30 u32 attacker MP |
+    +0x34 12 x {u16 target uid, s16 amount}
+    Sent back to the attacker (extra = attacker): its damage numbers appear only then.
+    """
+    if len(packet) < 0x64:
+        return due_respawns() or None
+    reply = bytearray(packet[:0x64])
+    (attacker,) = struct.unpack_from("<H", reply, 0x10)
+    if attacker != PLAYER["uid"]:
+        return due_respawns() or None
+    killed = apply_hits(reply, 12)
+    return build(0x411, bytes(reply[16:]), extra=attacker) + deaths(killed) + due_respawns()
+
+
+def hit_push(packet):
+    """C->S 0x412 hit with displacement (0x88 bytes) -> the same packet, damage filled in.
+
+    As 0x411, but +0x34 holds 7 targets, +0x1a has 7 lethal bits, and
+    +0x50 7 x f32 x / +0x6c 7 x f32 z are where the client pushed each target (0,0 = not moved).
+    """
+    if len(packet) < 0x88:
+        return due_respawns() or None
+    reply = bytearray(packet[:0x88])
+    (attacker,) = struct.unpack_from("<H", reply, 0x10)
+    if attacker != PLAYER["uid"]:
+        return due_respawns() or None
+    for i in range(7):
+        (uid,) = struct.unpack_from("<H", reply, 0x34 + 4 * i)
+        x, z = struct.unpack_from("<f", reply, 0x50 + 4 * i)[0], struct.unpack_from("<f", reply, 0x6C + 4 * i)[0]
+        if uid in UNITS and (x or z):
+            UNITS[uid].x, UNITS[uid].z = x, z
+    killed = apply_hits(reply, 7)
+    return build(0x412, bytes(reply[16:]), extra=attacker) + deaths(killed) + due_respawns()
+
+
+def cast(packet):
+    """C->S 0x40f precast (+0x10 u32 skill) / 0x410 cast announce (0x38 bytes).
+
+    Both only go to other observers; alone in the world nothing is sent back,
+    apart from respawns that are due.
+    """
+    return due_respawns() or None
+
+
+def unknown_unit(packet):
+    """C->S 0x4ca unknown-unit query (0x18 bytes): +0x10 u32 uid.
+
+    The client sends it when a 0x411 names an attacker it has not spawned.
+    Reply: that unit's 0x803 (+0x804 for its speed), or 0x806 mode 2 if it is gone.
+    """
+    (uid,) = struct.unpack_from("<I", packet, 0x10)
+    u = UNITS.get(uid & 0xFFFF)
+    if u is None:
+        return remove(uid & 0xFFFF, 2) + due_respawns()
+    if u.dead_until is not None:
+        return spawn(u) + hp_update(u) + due_respawns()  # recreate, then lay it down
+    return spawn(u) + refresh(u) + due_respawns()
+
+
+def camera(packet):
+    """C->S 0x417 camera report (0x1c bytes): +0x10 f32 x, +0x14 f32 z, +0x18 u8 1 = free camera.
+
+    Sent by the camera object (DAT_0084a7b0; FUN_00450acd/00450caf/004512cd) when the
+    camera is unlocked from the avatar (key toggles of camera+0xcc bits 4/8/0x10/0x40)
+    and while it pans (arrow keys / screen edge), all-zero when it locks back on.
+    Nothing to do with targeting or attacks; no reply exists. Presumably the original
+    server used it for area-of-interest.
+    """
+    return due_respawns() or None
+
+
+REPLIES = {
+    0x040F: cast,
+    0x0410: cast,
+    0x0411: hit,
+    0x0412: hit_push,
+    0x0417: camera,
+    0x04CA: unknown_unit,
+}
+
+reset()
+
+
+# ---------------------------------------------------------------- self-test
+
+
+def f32(v):
+    """v as it reads back from a packet's f32 field."""
+    return struct.unpack("<f", struct.pack("<f", v))[0]
+
+
+def _client_hit(target, opcode=0x411, skill=0):
+    """A C->S 0x411/0x412 as the client builds it (damage 0), header key 0."""
+    size = 0x64 if opcode == 0x411 else 0x88
+    p = bytearray(size)
+    struct.pack_into("<HHHHII", p, 0, size, 0xA53C, opcode, PLAYER["uid"], 0, 0)
+    struct.pack_into("<HHhHH", p, 0x10, PLAYER["uid"], skill, skill, 1, 0)
+    struct.pack_into("<ff", p, 0x1C, *CENTRE)
+    struct.pack_into("<H", p, 0x34, target)
+    if opcode == 0x412:
+        struct.pack_into("<f", p, 0x50, target and CENTRE[0] + 20)
+        struct.pack_into("<f", p, 0x6C, target and CENTRE[1])
+    return bytes(p)
+
+
+def _ops(data):
+    packets, rest = split(data)
+    assert not rest
+    for p in packets:
+        assert len(p) > 16 and len(p) <= 0x1010, len(p)
+    return [(struct.unpack_from("<H", p, 4)[0], len(p), p) for p in packets]
+
+
+if __name__ == "__main__":
+    random.seed(1)
+    now = [1000.0]
+    clock = lambda: now[0]  # noqa: E731
+
+    burst = _ops(spawn_all(1))
+    stats = burst.pop(0)
+    assert (stats[0], stats[1]) == (0x41F, 0x6C)
+    assert struct.unpack_from("<IIII", stats[2], 0x10) == (1000, 500, 1000, 500)
+    assert struct.unpack_from("<hh", stats[2], 0x2C) == (ATTACK_SPEED, MELEE_RANGE)
+    assert struct.unpack_from("<H", stats[2], 0x46)[0] == 450
+    assert struct.unpack_from("<h", stats[2], 0x50)[0] == PLAYER_REVIVE_SECONDS
+    assert [(op, n) for op, n, _ in burst[:2]] == [(0x803, 0x1C0), (0x804, 0xBC)]
+    assert struct.unpack_from("<hh", burst[1][2], 0x44) == (ATTACK_SPEED, MELEE_RANGE)
+    assert len(burst) == 2 * (len(MONSTERS) + len(NPCS))
+    assert all(len(p) == 0x38 for _, _, p in [(0, 0, spawn_compact(u)) for u in UNITS.values()])
+    slime = UNITS[MONSTER_UID_BASE]
+    first = burst[0][2]
+    assert struct.unpack_from("<HBBffI", first, 0x10)[:5] == (604, 1, 0, f32(slime.x), f32(slime.z))
+    assert struct.unpack_from("<II", first, 0x20) == (80, 80) and first[0x34] == MONSTER_TEAM
+    assert len(remove(slime.uid)) == 0x14 and len(hp_update(slime)) == 0x18
+
+    # 0x417 camera reports get no reply.
+    assert camera(bytes(0x1C)) is None
+
+    # A basic attack (skill 0) on a monster does damage.
+    cobra = UNITS[MONSTER_UID_BASE + 3]
+    op, n, p = _ops(hit(_client_hit(cobra.uid)))[0]
+    assert (op, n) == (0x411, 0x64) and struct.unpack_from("<h", p, 0x14)[0] == 0
+    assert 0 < struct.unpack_from("<h", p, 0x36)[0] and cobra.hp < cobra.max_hp
+
+    # Hit the slime until it dies.
+    hits = 0
+    while slime.dead_until is None:
+        out = _ops(hit(_client_hit(slime.uid)))
+        hits += 1
+        op, n, p = out[0]
+        assert (op, n) == (0x411, 0x64)
+        amount, = struct.unpack_from("<h", p, 0x36)
+        assert amount > 0 and struct.unpack_from("<II", p, 0x2C) == (1000, 500)
+    lethal = struct.unpack_from("<H", p, 0x1A)[0]
+    assert lethal == 1 and [o[0] for o in out][:2] == [0x411, 0x420]
+    assert struct.unpack_from("<I", out[1][2], 0x10)[0] == 0
+    if loot is not None:  # the slime's loot follows: Slime Mucus (0x427) and gold (0x428)
+        assert {o[0] for o in out[2:]} <= {0x427, 0x428, 0x41B} and out[-1][0] == 0x428
+    print(f"slime died after {hits} hits")
+
+    # Dead: further hits do nothing; no respawn before the time.
+    p = _ops(hit(_client_hit(slime.uid)))[0][2]
+    assert struct.unpack_from("<hH", p, 0x36)[0] == 0
+    assert due_respawns() == b"" and cast(b"") is None
+    now[0] += RESPAWN_SECONDS
+    out = _ops(cast(b""))
+    assert [(o[0], o[1]) for o in out] == [(0x804, 0xBC)] and slime.hp == slime.max_hp
+    assert struct.unpack_from("<I", out[0][2], 0x28)[0] == 80
+
+    # NPCs and unknown uids take no damage.
+    npc = UNITS[NPC_UID_BASE]
+    p = _ops(hit(_client_hit(npc.uid)))[0][2]
+    assert struct.unpack_from("<h", p, 0x36)[0] == 0 and npc.hp == npc.max_hp
+
+    # 0x412 with a push: damage filled, position taken.
+    bee = UNITS[MONSTER_UID_BASE + 5]
+    out = _ops(hit_push(_client_hit(bee.uid, 0x412, skill=1)))
+    assert (out[0][0], out[0][1]) == (0x412, 0x88) and bee.hp < bee.max_hp and bee.x == CENTRE[0] + 20
+
+    # 0x4ca: known -> 0x803 + 0x804; unknown -> 0x806 mode 2.
+    q = bytearray(0x18)
+    struct.pack_into("<HHHHII", q, 0, 0x18, 0xA53C, 0x4CA, 1, 0, 0)
+    struct.pack_into("<I", q, 0x10, bee.uid)
+    assert [o[0] for o in _ops(unknown_unit(bytes(q)))] == [0x803, 0x804]
+    struct.pack_into("<I", q, 0x10, 0x2000)
+    out = _ops(unknown_unit(bytes(q)))
+    assert [(o[0], o[1]) for o in out] == [(0x806, 0x14)] and struct.unpack_from("<I", out[0][2], 0x10)[0] == 2
+
+    print("ok:", ", ".join(repr(u) for u in UNITS.values()))

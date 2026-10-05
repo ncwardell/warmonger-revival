@@ -1,0 +1,19 @@
+# Game files are the publisher's copyright: never commit them, or anything extracted from them.
+/data
+client/
+*.jpk
+*.exe
+*.dll
+*.sof
+*.cdb
+*.dmp
+
+# Analysis output (decompiled code, disassembly, Ghidra projects).
+out/
+*.gpr
+*.rep/
+
+# Local state and machine-specific files.
+server/characters.json
+*.local.*
+__pycache__/
