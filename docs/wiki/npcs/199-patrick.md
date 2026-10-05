@@ -59,15 +59,17 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Castle's Oracle of Knowledge, measured at (486.1, 4292.5) ±5 ([[gameplay/video-early-quests|Video notes: first session]] §3, [58:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3480s)). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Gives quest 20 "Talk to Freya": carry the "Letter to Oracle of Knowledge" to Freya in the Fortress; the panel shows 300,000 exp, then a pick of 5 A-grade scrolls or tomes ([[gameplay/video-early-quests|Video notes: first session]] §2 step 23, [58:22](https://www.youtube.com/watch?v=s04CSN16w1s&t=3502s)). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 

@@ -59,7 +59,8 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Mail box is a unit in the Fortress plaza and the Training Camp ([[gameplay/npc-locations|NPC locations]] §3, §4). Its target frame reads 10000 / 10000 (+500), while `UnitDB` row 218 holds 1080, so the server set its HP ([[gameplay/arena-ranking-rewards|Arena ranking rewards]]; [[gameplay/server-rules|Server rules]]). A summon scroll for it is item 923 ([[gameplay/arena-ranking-rewards|Arena ranking rewards]]). *image + client*
+- Mail cost rose from 100 to 1,000 gold (with a package 5,000 → 10,000) in WM 0404, and mail between nations was blocked in WM 0802 ([[gameplay/events-and-schedules|Events and schedules]] §9). *notes*
 
 ## Behaviour
 
@@ -67,7 +68,12 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/arena-ranking-rewards|Arena ranking rewards]]
+- [[gameplay/server-rules|Server rules]]
+- [[gameplay/events-and-schedules|Events and schedules]]
 
 ## Open questions
 

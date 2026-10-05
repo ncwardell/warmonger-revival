@@ -83,15 +83,26 @@ Sells 16 items (`Npc_Carry` row 283; full list on [[wiki/shops/283-athan-s-shop-
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Merits (medal) merchant, in the middle of the Fortress opposite the auction house ([[gameplay/maps-and-dungeons|Maps and dungeons]] §5). *image*
+- Medal prices from a guide screenshot include Shining Passion 2 silver, Mysterious Passion 5 bronze, Brilliant Passion 5 silver, medal reward boxes 4 bronze / 3 silver / 2 gold / 1 mithril, Tier 1/2/3 Time Energy 1 bronze / 1 silver / 1 gold ([[gameplay/progression-and-economy|Progression and economy]] §4). Weapon materials cost 2 bronze medals each ([[gameplay/items-and-crafting|Items and crafting]] §3). *image + guide*
+- He also sells Crystal: Blue and Yellow (shop 283) ([[gameplay/consumables|Consumables]] §5). *client*
+- The 0329 patch added three repeatable Abyss quests at Athan ([[gameplay/patch-history|Patch history]]). In Crush Online he sold reinforcement adjuvants for Mithril medals ([[gameplay/crush-mechanics|Crush Online mechanics]] §3). *notes / player*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest 749 "Kill monster of The land of Greed": 50 Tow and 50 Elite Tow, back to Athan, for 50,000 exp, 50,000 gold, 50/50 fragments and 20 Crystal: Blue. He then offers the ghost version (750 / 1102): 70,000 exp, 70,000 gold, 60/60 fragments and Crystal: Yellow ([[gameplay/video-early-quests|Video notes: first session]] §2 step 17, [41:55](https://www.youtube.com/watch?v=s04CSN16w1s&t=2515s), [2:22:32](https://www.youtube.com/watch?v=s04CSN16w1s&t=8552s)). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/progression-and-economy|Progression and economy]]
+- [[gameplay/items-and-crafting|Items and crafting]]
+- [[gameplay/consumables|Consumables]]
+- [[gameplay/patch-history|Patch history]]
+- [[gameplay/crush-mechanics|Crush Online mechanics]]
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 

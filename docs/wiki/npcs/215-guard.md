@@ -61,15 +61,19 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Stands at the Corpse incineration portal (gate 1503) in the south of the Training Camp; players returning from field 99 arrive next to him ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] steps 21 and 25). His idle bubble warns that the Abyss is a labyrinth and a PK area ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 21, [24:02](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1442s)). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest 9 "Find the missing Scout" asks the player to talk to him first, then find the Scout in Corpse incineration ([[gameplay/video-early-quests|Video notes: first session]] §2 step 9, [23:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=1420s); [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] step 19). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 

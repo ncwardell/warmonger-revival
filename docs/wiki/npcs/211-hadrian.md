@@ -69,7 +69,8 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Fortress Administrator in the top-left (west arm) of the Fortress, with the menu "Fort Information" and "Civil war application". The April 2018 video measures (1842.2, 1709.2), which confirms the minimap guess (1841, 1712) ([[gameplay/video-early-quests|Video notes: first session]] §3, [48:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=2880s)). *video*
+- Any player can donate gold here to raise the fort's EXP ([[gameplay/classes-and-legions|Classes and legions]] §4, [[gameplay/server-rules|Server rules]]). Crafted cores (28 kinds) are installed at Hadrian ([[gameplay/warmonger-forum|Warmonger forum]] §5). *guide / forum*
 
 ## Behaviour
 
@@ -77,7 +78,12 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/classes-and-legions|Classes and legions]]
+- [[gameplay/server-rules|Server rules]]
+- [[gameplay/warmonger-forum|Warmonger forum]]
 
 ## Open questions
 

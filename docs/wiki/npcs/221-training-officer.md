@@ -2,7 +2,7 @@
 title: "Training Officer"
 type: "npc"
 id: 221
-status: "stub"
+status: "partial"
 missing: ["map", "x", "z", "teleport_to"]
 sources: ["client: UnitDB.cdb id 221"]
 name_key: "UnitName_221"
@@ -37,7 +37,7 @@ teleport_to: null
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Candidate unit for the tutorial map (field 117) ([[gameplay/npc-locations|NPC locations]] §6). *client*
 
 ## Behaviour
 
@@ -45,11 +45,14 @@ teleport_to: null
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Field 117 and this unit never appear in the 2018 videos ([[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] §6). Where it stood and where its teleport went are unknown.
 
 <!-- credit:start -->
 ---

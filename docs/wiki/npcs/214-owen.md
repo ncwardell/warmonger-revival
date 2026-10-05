@@ -81,15 +81,22 @@ The client has one unit row per placement or variant: [[wiki/npcs/314-owen|Owen 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Red Union alchemist in the Fortress. Every buff clickable is crafted here; this Owen has the full `Item_Make` category 1 list ([[gameplay/consumables|Consumables]] §4). His tabs are Potion, Scroll, Tome, Elixir, Flask, Dye, Ore and Plants ([[gameplay/items-and-crafting|Items and crafting]] §4). *client + image*
+- 1 raw gem or herb makes 10 powder for 50 gold base; 5 raw make 1 Worked gem or Extracted herb for 3,000 gold ([[gameplay/consumables|Consumables]] §4.3). A and S grades need the fort's A / S Grade Alchemy mastery ([[gameplay/consumables|Consumables]] §1). Craft gold is the `Item_Make` value × the fort rate (×1.5 seen) ([[gameplay/server-rules|Server rules]], round 2). *client + image*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest 14 "Battle preparations": craft 100 Potion of Health [C] here ([[gameplay/video-early-quests|Video notes: first session]] §2 step 15, [40:30](https://www.youtube.com/watch?v=s04CSN16w1s&t=2430s)).
+- Quest 108 "Hunting Ghosts (Spirit Avenue)": 10 Ghost and 10 Elite Ghost; the panel shows 500,000 exp (table 600,000) and 50/50 fragments ([[gameplay/video-early-quests|Video notes: first session]] §2 step 25, [1:06:02](https://www.youtube.com/watch?v=s04CSN16w1s&t=3962s)). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/consumables|Consumables]]
+- [[gameplay/items-and-crafting|Items and crafting]]
+- [[gameplay/server-rules|Server rules]]
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 

@@ -86,15 +86,27 @@ The client has one unit row per placement or variant: [[wiki/npcs/238-wren|Wren 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Wren is the Fortress merchant on the upper-right stairs ([[gameplay/npc-locations|NPC locations]] §3, guide). Her shop (`Npc_Carry` 281) sells potions, scrolls (Return, Gaia, Castle), Dimensional Energy, auto-decomposition hammers and Pyrotechnics ([[gameplay/maps-and-dungeons|Maps and dungeons]] §5). *image*
+- Prices shown in one fortress in spring 2018: D potions 79, Scroll: Castle 19,800, Dimensional energy 5,500, hammers D/C/B/A 158,400 / 285,120 / 1,346,400 / 3,960,000, Pyrotechnics 3,960. Gold items cost 7.92 × the `Item_Base` price and Dimensional Energy 1.1 × ([[gameplay/progression-and-economy|Progression and economy]] §4, [[gameplay/server-rules|Server rules]] Economy). *image*
+- Pyrotechnics were sold for gold from WM 0404 ([[gameplay/patch-history|Patch history]]). She also sells the Flare and Ward items 2909–2911 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7). *notes + client*
+- In Crush Online she sold the Magic Crafting Stone (37,000 → 48,000 → 42,500 gold); from 15 Dec 2016 it came only from the Diamond medal box ([[gameplay/crush-mechanics|Crush Online mechanics]] §3). *player*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Her twin in the Training Camp (unit 238) sends the player to her with the "Hawker letter" (quest 102 "Wren's sister Wren?"), finished at about 40:05 ([[gameplay/video-early-quests|Video notes: first session]] §2 step 14). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/progression-and-economy|Progression and economy]]
+- [[gameplay/server-rules|Server rules]]
+- [[gameplay/patch-history|Patch history]]
+- [[gameplay/reinforce-and-runes|Reinforce and runes]]
+- [[gameplay/crush-mechanics|Crush Online mechanics]]
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 

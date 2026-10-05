@@ -65,7 +65,7 @@ The client has one unit row per placement or variant: [[wiki/npcs/336-paraman|Pa
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Legendary blacksmith ("Blacksmith of Legend") in the Fortress. He crafts the superior Skeleton King's weapons ([[gameplay/maps-and-dungeons|Maps and dungeons]] §5; [[gameplay/items-and-crafting|Items and crafting]] §3), and his dialogue says a named weapon needs boss material only ([[gameplay/video-early-quests|Video notes: first session]] §3, [50:05](https://www.youtube.com/watch?v=s04CSN16w1s&t=3005s)). *guide + video*
 
 ## Behaviour
 
@@ -73,7 +73,11 @@ The client has one unit row per placement or variant: [[wiki/npcs/336-paraman|Pa
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/items-and-crafting|Items and crafting]]
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 

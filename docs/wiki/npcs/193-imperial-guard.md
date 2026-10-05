@@ -2,16 +2,17 @@
 title: "Imperial Guard"
 type: "npc"
 id: 193
-status: "stub"
-missing: ["map", "x", "z", "role"]
-sources: ["client: UnitDB.cdb id 193"]
+status: "partial"
+missing: ["x", "z"]
+sources: ["client: UnitDB.cdb id 193", "video: [[gameplay/video-early-quests]] §3 at 58:00 (Imperial Guards 189–197, Castle (90), four or more on the plaza near Bernice, about x 470–490, z 4285–4300; not measured one by one)", "video: [[gameplay/video-tutorial-walkthrough]] step 29 at 31:10 (Imperial Guards, red armour and halberds, at the Castle entrance)"]
+manual: ["role", "map"]
 name_key: "UnitName_190"
 category: 50
 class_mask: 2
 model: 190
 scale: 1.5
-role: null
-map: null
+role: "Castle guard"
+map: 90
 x: null
 z: null
 ---
@@ -30,7 +31,7 @@ The client has one unit row per placement or variant: [[wiki/npcs/189-imperial-g
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Imperial Guards in red armour with halberds stand at the Castle entrance ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 29, [31:10](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1870s)). Four or more stand on the Castle plaza near Bernice, at about x 470–490, z 4285–4300 ([[gameplay/video-early-quests|Video notes: first session]] §3, [58:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3480s)). They were not measured one by one. *video*
 
 ## Behaviour
 
@@ -38,11 +39,14 @@ The client has one unit row per placement or variant: [[wiki/npcs/189-imperial-g
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The video notes give the whole range 189–197 for the Arslan Castle (90). The nine rows may instead be three per nation (90 / 94 / 98); nothing checks this.
 
 <!-- credit:start -->
 ---

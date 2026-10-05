@@ -83,19 +83,31 @@ The client has one unit row per placement or variant: [[wiki/npcs/318-kesley|Kes
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Legion Administrator in the Fortress (red banner icon) ([[gameplay/npc-locations|NPC locations]] §3). Screenshots and some players spell the name "Kelsey" ([[gameplay/precept-shop|Precept shop]] §6, [[gameplay/lords-of-the-land|Lords of the Land]] §4).
+- In Crush Online creating a legion cost 1,000,000 gold at Kelsey, 10,000,000 from 15 Dec 2016 ([[gameplay/crush-mechanics|Crush Online mechanics]] §8). *player*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Gives "Join & Create Legion" (752, reward Medal: Bronze) ([[gameplay/video-early-quests|Video notes: first session]] §2 step 20, [47:12](https://www.youtube.com/watch?v=s04CSN16w1s&t=2832s); [[gameplay/classes-and-legions|Classes and legions]] §3).
+- Gives the Lords of the Land chain: 117 / 763 / 764 / 765, conquer 2 / 3 / 4 / 5 NPC lands, for 100,000 / 1,500,000 / 1,500,000 / 1,500,000 exp plus boxes 1024–1027 ([[gameplay/lords-of-the-land|Lords of the Land]] §4, [[gameplay/server-rules|Server rules]]). *client + image*
+- Gives "Battle with Legion members No. 2" (quest 755: battle alongside 10 legion members) ([[gameplay/precept-shop|Precept shop]] §6, [[gameplay/skull-artifact-set|Skull artifact set]] §4). *image*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/precept-shop|Precept shop]]
+- [[gameplay/lords-of-the-land|Lords of the Land]]
+- [[gameplay/crush-mechanics|Crush Online mechanics]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/classes-and-legions|Classes and legions]]
+- [[gameplay/server-rules|Server rules]]
+- [[gameplay/skull-artifact-set|Skull artifact set]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- A second Kesley stands in the Castle at (480.8, 4146.2) ([[gameplay/video-early-quests|Video notes: first session]] §3, [59:01](https://www.youtube.com/watch?v=s04CSN16w1s&t=3541s)). The video notes list it as "210 (318?)"; this wiki puts it on [[wiki/npcs/318-kesley|318]].
 
 <!-- credit:start -->
 ---

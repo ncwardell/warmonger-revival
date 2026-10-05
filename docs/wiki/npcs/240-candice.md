@@ -2,9 +2,10 @@
 title: "Candice"
 type: "npc"
 id: 240
-status: "stub"
-missing: ["map", "x", "z"]
-sources: ["client: UnitDB.cdb id 240"]
+status: "partial"
+missing: ["x", "z"]
+sources: ["client: UnitDB.cdb id 240", "image: [[gameplay/sources]] §3 (Battle Arena entry screenshots show the Fortress NPCs Athan and Candice; catalogued, not measured)"]
+manual: ["map"]
 name_key: "TitleName_18"
 title_key: "UnitName_240"
 npc_title: "Arena Merchant"
@@ -18,7 +19,7 @@ role: "Arena Merchant"
 shop: 288
 talk_key: "Quest_Talk_Default_Arena"
 portrait: "ui/NPCProfile/NPC_Instructor.dds"
-map: null
+map: 120
 x: null
 z: null
 ---
@@ -50,7 +51,7 @@ Sells 2 items (`Npc_Carry` row 288; full list on [[wiki/shops/288-candice-s-shop
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Arena merchant (shop 288). The Battle Arena entry screenshots show her in the Fortress next to Athan ([[gameplay/sources|Sources and gaps]] §3). The images were catalogued but not measured, so there is no position. *image*
 
 ## Behaviour
 
@@ -58,7 +59,9 @@ Sells 2 items (`Npc_Carry` row 288; full list on [[wiki/shops/288-candice-s-shop
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/sources|Sources and gaps]]
 
 ## Open questions
 

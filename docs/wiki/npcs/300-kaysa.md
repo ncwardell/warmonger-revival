@@ -66,7 +66,8 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Warehouse Manager (chest icon). She stands near the central pillar of the Fortress plaza, north of the Mail box ([[gameplay/arena-ranking-rewards|Arena ranking rewards]], Fortress scene; [[gameplay/npc-locations|NPC locations]] §3). *image + video*
+- Personal warehouse; bag, warehouse and character slots expand with jewels ([[gameplay/progression-and-economy|Progression and economy]] §5; [[gameplay/items-and-crafting|Items and crafting]] §6). *guides*
 
 ## Behaviour
 
@@ -74,7 +75,12 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/arena-ranking-rewards|Arena ranking rewards]]
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/progression-and-economy|Progression and economy]]
+- [[gameplay/items-and-crafting|Items and crafting]]
 
 ## Open questions
 

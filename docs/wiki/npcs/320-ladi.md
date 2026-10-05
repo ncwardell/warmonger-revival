@@ -2,9 +2,10 @@
 title: "ladi"
 type: "npc"
 id: 320
-status: "stub"
-missing: ["map", "x", "z"]
-sources: ["client: UnitDB.cdb id 320"]
+status: "partial"
+missing: ["x", "z"]
+sources: ["client: UnitDB.cdb id 320", "client: [[gameplay/npc-locations]] §8 (ladi 320, Prison, field 110)"]
+manual: ["map"]
 name_key: "TitleName_27"
 title_key: "UnitName_320"
 npc_title: "Prison Maanger"
@@ -14,7 +15,7 @@ model: 300
 scale: 2.5
 role: "Prison Maanger"
 skills: [4070000, 4070000, 4070012, 4070012, 4070012, 4070016]
-map: null
+map: 110
 x: null
 z: null
 ---
@@ -38,7 +39,7 @@ Skill 4070000, Skill 4070000, Skill 4070012, Skill 4070012, Skill 4070012, Skill
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Prison manager; [[gameplay/npc-locations|NPC locations]] §8 puts this unit in the Prison, field 110. No position has been measured. *client*
 
 ## Behaviour
 
@@ -46,7 +47,9 @@ Skill 4070000, Skill 4070000, Skill 4070012, Skill 4070012, Skill 4070012, Skill
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 

@@ -82,15 +82,21 @@ The client has one unit row per placement or variant: [[wiki/npcs/205-lewellyn|L
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Training Camp scroll merchant, also on shop 282 ([[gameplay/consumables|Consumables]] §5). *client*
+- Video checks place her within 2 units of the listed point: (378.7, 3477.4) ([[gameplay/video-early-quests|Video notes: first session]] §3) and (380.3, 3478.6) ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §2). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Side quest 100 "Hunting for Furs": 5 White Chepa Fur (Chepa Warrior 727) and 5 Black Chepa Fur (Chepa Archer 728). The panel shows 7,400 exp (table 8,880) and 5,000 gold, then a choice of Spell Necklace (397) or Necklace of Life (405). Her line mentions shoes, but the reward is a necklace ([[gameplay/video-early-quests|Video notes: first session]] §2 step 8, [17:02](https://www.youtube.com/watch?v=s04CSN16w1s&t=1022s); [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 12, [15:10](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=910s); [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] step 13). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/consumables|Consumables]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 

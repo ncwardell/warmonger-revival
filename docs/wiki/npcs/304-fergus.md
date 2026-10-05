@@ -2,9 +2,10 @@
 title: "Fergus"
 type: "npc"
 id: 304
-status: "stub"
-missing: ["x", "z"]
-sources: ["client: UnitDB.cdb id 304", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "client: Quest.cdb giver/receiver field (map only; no position)"]
+status: "complete"
+missing: []
+sources: ["client: UnitDB.cdb id 304", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "client: Quest.cdb giver/receiver field (map only; no position)", "image + guess: [[gameplay/npc-locations]] §3 anvil icon next to Ashley (1892, 1708), labelled '237 Farrell / 304 Fergus?'; Farrell is placed by Odin, so this icon is taken as Fergus"]
+manual: ["x", "z"]
 name_key: "TitleName_21"
 title_key: "UnitName_304"
 npc_title: "Gears Decomposer"
@@ -20,8 +21,8 @@ portrait: "ui/NPCProfile/Quest_Reinforce.dds"
 quests: {"receives": [844]}
 quest_fields: [120]
 map: 120
-x: null
-z: null
+x: 1892.0
+z: 1708.0
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=7835ac type=3664ce id=79816e sources=6d1df2 name_key=c4bc8f title_key=b32d2a npc_title=be7e6f category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=d62af5 role=be7e6f talk_key=2e7f47 portrait=d2d345 quests=89790e quest_fields=6c3da9 map=775bc5 x=2be88c z=2be88c -->
@@ -56,7 +57,7 @@ No measured position yet. The client's quests put this NPC in [[wiki/fields/120-
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Gears decomposer in the Fortress. An anvil icon next to Ashley at (1892, 1708) is either Farrell or Fergus ([[gameplay/npc-locations|NPC locations]] §3, [video minimap](https://www.youtube.com/watch?v=cqYz3j59MFI&t=2071s)). This page takes it for Fergus, because a guide puts Farrell next to Odin. *image + guess*
 
 ## Behaviour
 
@@ -64,11 +65,13 @@ No measured position yet. The client's quests put this NPC in [[wiki/fields/120-
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The icon could be Farrell's, and then Fergus is still unplaced ([[gameplay/npc-locations|NPC locations]] §8).
 
 <!-- credit:start -->
 ---

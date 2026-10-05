@@ -82,15 +82,20 @@ The client has one unit row per placement or variant: [[wiki/npcs/213-odin|Odin 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Training Camp Odin. His menu is Quest / Create / Close ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 26). His craft list (6) is a copy of the Fortress list, category 0 ([[gameplay/consumables|Consumables]] §4). *video + client*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Side quest 101 "All sorts of Fragile bones": 10 Weak Skeleton bone and 10 Weak Elite Skeleton bone from the skeletons in Corpse incineration (kill groups 10003 / 10004). The panel shows 14,500 exp (table 17,400), 10,000 gold and 10 Crystal: Blue, then Spell Belt (398) or Belt of Life (406) ([[gameplay/video-early-quests|Video notes: first session]] §2 step 10, [22:48](https://www.youtube.com/watch?v=s04CSN16w1s&t=1368s); [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 26, [29:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1770s); [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] step 18). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/consumables|Consumables]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 

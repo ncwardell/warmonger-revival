@@ -67,7 +67,7 @@ Sells 16 items (`Npc_Carry` row 284; full list on [[wiki/shops/284-ashley-s-shop
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Merits costume merchant (shop 284) on the west side of the Fortress, placed from the video minimap ([[gameplay/npc-locations|NPC locations]] §3, [video minimap](https://www.youtube.com/watch?v=cqYz3j59MFI&t=2229s)). An anvil icon (Farrell or Fergus) sits right next to her ([[gameplay/npc-locations|NPC locations]] §3). *video + image*
 
 ## Behaviour
 
@@ -75,7 +75,9 @@ Sells 16 items (`Npc_Carry` row 284; full list on [[wiki/shops/284-ashley-s-shop
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 

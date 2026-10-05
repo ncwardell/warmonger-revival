@@ -2,7 +2,7 @@
 title: "Lewellyn"
 type: "npc"
 id: 316
-status: "stub"
+status: "partial"
 missing: ["map", "x", "z"]
 sources: ["client: UnitDB.cdb id 316"]
 name_key: "TitleName_4"
@@ -54,7 +54,7 @@ The client has one unit row per placement or variant: [[wiki/npcs/205-lewellyn|L
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- A third Lewellyn row; `UnitDB` gives it the same scroll shop 282 as the Fortress (205) and Training Camp (315) Lewellyns ([[gameplay/consumables|Consumables]] §5). Where it stood is not known. *client*
 
 ## Behaviour
 
@@ -62,7 +62,9 @@ The client has one unit row per placement or variant: [[wiki/npcs/205-lewellyn|L
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/consumables|Consumables]]
 
 ## Open questions
 

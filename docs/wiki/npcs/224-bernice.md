@@ -71,15 +71,19 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Oracle of Judgment on the Castle plaza by the big gate, with four or more Imperial Guards around her ([[gameplay/video-early-quests|Video notes: first session]] §3, [58:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3480s)). She offers to let a disaffected player change nation ([[gameplay/video-early-quests|Video notes: first session]] §2 step 22). *video*
+- Free nation change was removed in WM 0719; after that it is paid only ([[gameplay/events-and-schedules|Events and schedules]] §9). *notes*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Takes the turn-in of quest 19 "Meeting Freya" (Freya sends the player to her with the Castle Scroll); the panel shows 200,000 exp ([[gameplay/video-early-quests|Video notes: first session]] §2 step 22, [57:57](https://www.youtube.com/watch?v=s04CSN16w1s&t=3477s)). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/events-and-schedules|Events and schedules]]
 
 ## Open questions
 

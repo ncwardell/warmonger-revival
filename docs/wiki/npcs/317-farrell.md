@@ -2,7 +2,7 @@
 title: "Farrell"
 type: "npc"
 id: 317
-status: "stub"
+status: "partial"
 missing: ["map", "x", "z"]
 sources: ["client: UnitDB.cdb id 317"]
 name_key: "TitleName_12"
@@ -50,7 +50,7 @@ The client has one unit row per placement or variant: [[wiki/npcs/237-farrell|Fa
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations|NPC locations]] §3 names "Farrell (237/317)" for the Fortress smith spot near Odin. The Training Camp has its own passion converter (category 7: 220 fragments instead of 200) ([[gameplay/consumables|Consumables]] §4), but no page says which unit that is. *client + guess*
 
 ## Behaviour
 
@@ -58,7 +58,10 @@ The client has one unit row per placement or variant: [[wiki/npcs/237-farrell|Fa
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/consumables|Consumables]]
 
 ## Open questions
 

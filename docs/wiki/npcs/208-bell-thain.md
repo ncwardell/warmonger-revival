@@ -68,7 +68,7 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Training Officer with the "Mock Battle" menu. The April 2018 video measures him at (1917.2, 1745.4) in the Fortress, which confirms the minimap-icon guess (1917, 1746) ([[gameplay/video-early-quests|Video notes: first session]] §3, [49:50](https://www.youtube.com/watch?v=s04CSN16w1s&t=2990s)). *video*
 
 ## Behaviour
 
@@ -76,11 +76,13 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The same video sees a "Bell Thain" at the edge of the screen in the Castle, at about (482, 4122) ±8 ([[gameplay/video-early-quests|Video notes: first session]] §3, [59:01](https://www.youtube.com/watch?v=s04CSN16w1s&t=3541s)). Whether that is this unit or another Training Officer row (for example 221) is unknown.
 
 <!-- credit:start -->
 ---

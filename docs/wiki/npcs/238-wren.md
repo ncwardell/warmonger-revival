@@ -81,19 +81,26 @@ The client has one unit row per placement or variant: [[wiki/npcs/204-wren|Wren 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Training Camp merchant (shop 287). Her menu is Quest / Shop / Close ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 11, [13:40](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=820s)).
+- Prices seen: Potion of Health [D], Potion of Mana [D] and Scroll: Return at 79 gold each ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §3, [14:20](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=860s); [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] step 12, [8:40](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=520s)), and Scroll of Transform [Golem] / [Demon] / [Slime] at 7,920 each ([[gameplay/video-early-quests|Video notes: first session]] §6, [16:54](https://www.youtube.com/watch?v=s04CSN16w1s&t=1014s)). *video*
+- She buys a Faded Passion fragment for 315 gold (6.3 × the `Item_Base` sell price) ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §3). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Hint quest 28 "What does Wren do?": talk to her, sell her a Faded Passion fragment and buy a Return Scroll ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 10; [[gameplay/video-early-quests|Video notes: first session]] §2 step 6).
+- Side quest 102 "Wren's sister Wren?": carry the Hawker letter (2563) to her twin in the Fortress (204). The panel shows 56,000 exp, 20/20 passion fragments and 10 Crystal: Blue ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] step 28, [30:50](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1850s); [[gameplay/video-early-quests|Video notes: first session]] §2 step 14). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The stock on screen does not match `Npc_Carry` 287 (883, 884, 906, 945): the transform scrolls 760–762 are missing from the table, the hammer 945 was not shown, and at 79 gold the Return scroll must have a base price of 10, so it is not item 906 ([[gameplay/video-early-quests|Video notes: first session]] §6; [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §3).
 
 <!-- credit:start -->
 ---

@@ -68,7 +68,7 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Stock Administrator in the Castle, measured at (489.7, 4139.6) ±4 ([[gameplay/video-early-quests|Video notes: first session]] §3, [59:01](https://www.youtube.com/watch?v=s04CSN16w1s&t=3541s)). He explains legion stocks; his quest 106 was not taken in the video ([[gameplay/video-early-quests|Video notes: first session]] §2 step 23, [58:50](https://www.youtube.com/watch?v=s04CSN16w1s&t=3530s)). *video*
 
 ## Behaviour
 
@@ -76,7 +76,9 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 

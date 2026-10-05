@@ -2,7 +2,7 @@
 title: "Aenes"
 type: "npc"
 id: 327
-status: "stub"
+status: "partial"
 missing: ["x", "z"]
 sources: ["client: UnitDB.cdb id 327", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "client: Quest.cdb giver/receiver field (map only; no position)"]
 name_key: "TitleName_35"
@@ -61,7 +61,7 @@ The client has one unit row per placement or variant: [[wiki/npcs/328-aenes|Aene
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Oracle of Protection; the client's quests put her in the Castle (90/94/98), but no position has been measured ([[gameplay/npc-locations|NPC locations]] §6, §8). *client*
 
 ## Behaviour
 
@@ -69,7 +69,9 @@ The client has one unit row per placement or variant: [[wiki/npcs/328-aenes|Aene
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 

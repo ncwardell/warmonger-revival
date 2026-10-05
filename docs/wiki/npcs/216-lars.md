@@ -2,7 +2,7 @@
 title: "Lars"
 type: "npc"
 id: 216
-status: "stub"
+status: "partial"
 missing: ["map", "x", "z", "teleport_to"]
 sources: ["client: UnitDB.cdb id 216"]
 name_key: "TitleName_19"
@@ -46,7 +46,7 @@ teleport_to: null
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Castle teleporter, not yet placed ([[gameplay/npc-locations|NPC locations]] §8). *client*
 
 ## Behaviour
 
@@ -54,11 +54,13 @@ teleport_to: null
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- One video walks from the camp gate through the Castle to a portal that offers "move to Fortress" ([[gameplay/npc-locations|NPC locations]] §6, [video](https://www.youtube.com/watch?v=cqYz3j59MFI&t=1876s)). It may be Lars's menu, but no source names him, and his destinations are not recorded.
 
 <!-- credit:start -->
 ---
