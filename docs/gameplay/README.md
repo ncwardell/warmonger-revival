@@ -8,6 +8,7 @@ What Warmonger was like to play, collected from player guides and other sources 
 
 ## Pages
 
+- [[gameplay/sources|Sources and gaps]] — every source found (sheets, archives, screenshots, videos) and the numbers still missing
 - [[gameplay/maps-and-dungeons|Maps and dungeons]] — Gaia, nations' lands, dungeon tiers, bosses and drops
 - [[gameplay/classes-and-legions|Classes, nations and legions]]
 - [[gameplay/items-and-crafting|Items and crafting]] — materials, upgrades, gear sources

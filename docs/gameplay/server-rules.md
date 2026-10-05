@@ -180,3 +180,34 @@ Crush Online (2016–17) values are history; where Warmonger differs, use the Wa
 - [ ] Life Saviour heals 30 % / 50 % of max HP; cooldown per client (15 s; CO had 120 s) — **M**
 - [ ] Dungeon level order per `FieldNames` (Tow Canyon 5, Ghost Fortress 6; CO had them swapped) — **H**
 - [ ] Legion level-up gold per `Level_Table_Guild` — **H**
+
+## Added from the source hunt (see [[gameplay/sources|Sources and gaps]])
+
+- [ ] Crush mode only: every worn item costs EP; total EP ≤ maximum (14,000 on channel 5; 15,000 at Striker 6; 17,000 at Striker 7; +500 from legion mastery). — [[gameplay/gear-stats]] §3, forum — **L**
+- [ ] Crush mode only: items have 3 SP levels (D rank) costing EP ÷ 5 each. SP is earned per zone, starts at 0 and is full for fort defenders. Full stats = base + SP bonus. — [[gameplay/gear-stats]] §1 — **L**
+- [ ] Damage reduction from armour and MR = value ÷ (100 + value), until the real formula is known. — [[gameplay/stat-values]] §2 — **L**
+- [ ] Consumable buffs come from `Skill_Buff` 2060–2132 (C/B/A/S steps). The sheet confirms the S values for crit 20%, AoE 20%, cooldown 12%, attack speed 40 and tenacity 40. — client + sheet — **H**
+- [ ] Dungeon levels follow `FieldNames` (125 Tow = Lv 5, 124 Ghost = Lv 6, 142 Dragon Island = Lv 9), not the 2016 order. — client — **H**
+- [ ] Dungeon materials: Skull Temple 802/812; Chepa 818/820; Cemetery and Tsunami 814/804/822/824; Swamps 816/826/828; Ghost 808/818/820; Tow and Thorn's Hell 806/822/824; Demon Hell 810/826/828. — [[gameplay/dungeon-drops]] — **H**
+- [ ] Each dungeon boss can drop its essence (1930–1935), its horn (2701–2709) and its sealed weapon (2751–2759), as listed in `DungeonAdmission`; rates unknown. — client — **M**
+- [ ] Arena monthly ranking pays jewels: 1st 20,000 / 2nd 10,000 / 3rd 5,000 / 4–10 1,000 / 11–50 200 / 51–100 100, paid after month end. — [[gameplay/arena-ranking-rewards]] (2016 image) — **M**
+- [ ] Arena weekly payment by SYSTEM mail "Weekly arena payments"; rank 51–100 = 10 × item 1007 Medal : Arena; other rank bands unknown. — same — **M**
+- [ ] Mail box object (unit 218) has 10,000 HP (+500) in the Fortress, overriding the client value of 1080. — same — **L**
+- [ ] Lords of the Land stack: +1 for a grey-land war win or a successful defence, 0 for an enemy-land conquest, −1 for losing or leaving a war; claiming a box resets it to 0; buff lasts 120 min (`WinAffect`: stacks 0–6 → buff 3029–3034, box 1023–1028). — [[gameplay/lords-of-the-land]] — **H**
+- [ ] Buff tiers (2016): +4% AD/AP; −5% cooldown and respawn wait; +6 SP gain; 5% damage reduction reflected as bonus damage; +20 heal/MP regen and the whole buff doubles. Later client text: +10 AD/AP, −5% respawn, +4% Armor/MR, +4% AD/AP, doubles at tier 5. — same — **M**
+- [ ] Quests 117/763/764/765 from Kelsey (unit 210): conquer 2/3/4/5 NPC lands, then claim box N; rewards 100k/1.5M/1.5M/1.5M exp plus box 1024/1025/1026/1027. — same — **H**
+- [ ] Contents of the Gaia boxes (1023–1028) are not known; they are not in `RandomBox`, so we need another source. — same — **L**
+- [ ] Potion = buff on use (Item_Base opt1 301 → Skill_Buff 2050–2072); 16 s; HP and MP potions run independently. — [potion ticks](potion-regen.md), client — **H**
+- [ ] Potion payout: either faithful (buff value × 3.2 per regen tick inside 16 s, so 3–4 ticks: S HP +240 ×4, S MP +60 ×3, S Health Mana +120 HP/+24 MP ×4) or as the tooltip says (buff value × 16 in total). Pick one. — [thread post 4290](https://web.archive.org/web/20170722131713/http://crush-game.com/forum/threads/potions-recovering-incorrect-amount.932/), [img](http://i.imgur.com/mhuVgPw.png) — **M**
+- [ ] Potion bonus is flat, added on top of base regen each tick and not scaled by it; base regen tick about 6 s (one hand timing). — same source — **M**
+- [ ] Artifact step cost: SP per step = EP cost ÷ 5; up to 5 steps; the action bar shows the next step's price or "Max". — [img A](https://i.imgur.com/biw1gJI.jpg), [img B](https://i.imgur.com/h9eBKr6.jpg) — **M**
+- [ ] Skull set (3011–3018) Crush Online bonuses: 3 pieces Atk +30; 5 pieces Atk +20 and AS +8%; 8 pieces Atk +20, LS +8% and Crit +5%. Each tier applies once, then the Attack cap of 1,000. — [thread](https://web.archive.org/web/20170302000227/http://www.crush-game.com/forum/threads/skull-artifact-set-3-piece-bonus.928/) — **M**
+- [ ] The EP budget at Lv 30 is 15,000. An item that does not fit shows its EP cost in red and cannot be equipped (guess). — [img A](https://i.imgur.com/biw1gJI.jpg) — **M**
+- [ ] Precept shop on Freya (unit 200, shop 289): D 4,650 / C 9,300 / B 18,600 gold (2016), vs client prices 10k/25k/50k. Choose one. — [img](http://i.imgur.com/ST4OtVY.jpg) + Item_Base — **M**
+- [ ] Precept scroll starts a random "Rank[X] Crafting" quest. Only one active at a time; dropping it allows a re-roll; probably level 30 or higher (pre1 type 4, a=30 is a guess). — thread #1/#4 + Quest 800–813 — **M**
+- [ ] Precept rewards: 1–5 medals (D bronze 1000 / C silver 1001 / B gold 1002) and 20–150 Spellstone D, vs the client's fixed 601/611 fragments. Choose one. — thread #1 — **M**
+- [ ] The "territorial war" objective counts only attacks or defences against another nation, not grey lands. — thread #6 — **L**
+- [ ] Abyss is fields 99–114 (Lv 1–5 per ZoneDB), one 256-unit segment each; each nation enters from its Training Camp (gates 1503/1504/1505 → 99/100/101 gates 1500/1501/1502) — [[gameplay/abyss-map]] — **H**
+- [ ] Abyss portal graph as in the portal table (18 client gates plus about 19 from the image at the standard corner spots); routes reach 113 then 114 in 4 jumps — [[gameplay/abyss-map]] — **H**
+- [ ] Fortress teleporter "Abyss" (free) lands in field 103/105/107 by nation (Teleport_List 1901–1903) — *client + guess* — **M**
+- [ ] Fields 110 Prison and 112 Death's Rest: no portals known; leave closed until a source turns up — *guess* — **L**
