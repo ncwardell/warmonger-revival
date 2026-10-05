@@ -4,7 +4,7 @@ type: "skill"
 id: 5103
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5103", "client: StringAll_Eng SkillComment_5103 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5103", "client: StringAll_Eng SkillComment_5103 (tooltip value tags)", "video: [[gameplay/video-character-creation-and-tutorial]] §1 starting weapons (weapon offered at creation)"]
 name_key: "Skill_5103"
 desc_key: "SkillComment_5103"
 kind: 1
@@ -69,7 +69,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Skill W of Magical adapted Dual Gun (item 10011), one of the Saint's starting weapons offered at character creation in the June 2018 relaunch ([[gameplay/video-character-creation-and-tutorial]] §1, starting weapons table). *video + client*
 
 ## Behaviour
 
@@ -77,7 +77,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1.
 
 ## Open questions
 

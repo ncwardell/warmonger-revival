@@ -2,9 +2,9 @@
 title: "Vision Move"
 type: "skill"
 id: 10065
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 10065"]
+sources: ["client: Skill_Base.cdb id 10065", "notes: [[gameplay/classes-and-legions]] §5 (describes the 5493 copy only)"]
 name_key: "Skill_10065"
 desc_key: "SkillComment_10065"
 kind: 1
@@ -55,7 +55,7 @@ used_by:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- A skill of the same name on Skeleton King's Vision Bow ([[wiki/skills/5493-vision-move|5493]]) is described in [WM 0110](https://steamcommunity.com/games/718790/announcements/detail/2417771014047971842) as a teleport to the target point ([[gameplay/classes-and-legions]] §5). This copy's own effect is not described in any source. *notes (other copy)*
 
 ## Behaviour
 
@@ -63,11 +63,11 @@ used_by:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Effect not filled: no source describes this copy; the client tooltip and 5493 suggest the same teleport.
 
 <!-- credit:start -->
 ---

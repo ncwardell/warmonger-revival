@@ -4,7 +4,7 @@ type: "buff"
 id: 2119
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 2119", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 2119", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §2 (value, 5 min, exclusive group, recipe)"]
 name_key: "SkillBuff_2119"
 duration: {"ticks": 1500, "seconds": 300.0, "permanent": false}
 is_buff: 0
@@ -50,7 +50,9 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Elixir of Vampirism [A] (item 746), a Elixir clickable: 9, +300 for 5 min (1,500 ticks) ([[gameplay/consumables]] §2; per-grade row life steal 3 per hit, max HP +100 / 6, +200 / 9, +300 / 12, +400). *client*
+- One active per family: it shares exclusive group 2109 (Health, Vampirism, Tenacity), so using another of the group replaces it and restarts the timer ([[gameplay/consumables]] §1, buffs guide §3; [[gameplay/items-and-crafting]]). *client + guide*
+- C grade is bought from Lewellyn; B, A and S are only crafted at Owen (1 container + powder + secondary → 10), and A / S need the fort's A / S Grade Alchemy mastery ([[gameplay/consumables]] §1, §2, §4). *client*
 
 ## Behaviour
 
@@ -58,7 +60,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §1–§4, [[gameplay/items-and-crafting]].
 
 ## Open questions
 

@@ -4,7 +4,7 @@ type: "skill"
 id: 20012
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 20012"]
+sources: ["client: Skill_Base.cdb id 20012", "video: [[gameplay/video-fort-war]] §1 Hero form (hero skill list; client WeaponBase 69)"]
 name_key: "Skill_5189"
 desc_key: "SkillComment_5189"
 kind: 2
@@ -57,7 +57,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One of the Dark Knight Skull hero skills (weapon 69, item 8000), the hero used in the June 2018 fort-war video ([[gameplay/video-fort-war]] §1 Hero form). Only its R, Heaven and Earth, is shown in use. *video + client*
 
 ## Behaviour
 
@@ -65,7 +65,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-fort-war]] §1.
 
 ## Open questions
 

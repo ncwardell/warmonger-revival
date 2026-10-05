@@ -4,7 +4,7 @@ type: "buff"
 id: 1150
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 1150", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 1150", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §3", "notes: [[gameplay/reinforce-and-runes]] §7, WM 0503 (3 → 5 min; matches client)", "video: [[gameplay/video-early-quests]] Wren shop, 16:54 (7,920 gold)"]
 name_key: "SkillBuff_1150"
 duration: {"ticks": 1500, "seconds": 300.0, "permanent": false}
 is_buff: 0
@@ -55,7 +55,8 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Scroll of Transform: Golem (item 760): turns the user into unit 613 for 5 min ([[gameplay/consumables]] §3). [WM 0503](https://steamcommunity.com/games/718790/announcements/detail/2394104285094559240) raised the transformation scroll duration 3 → **5 min** ([[gameplay/reinforce-and-runes]] §7). Exclusive group 1150 (Transform) ([[gameplay/consumables]] §1). *client + notes*
+- Wren in the Training Camp sold the Golem, Demon and Slime scrolls for 7,920 gold each ([[gameplay/video-early-quests]], [16:54](https://www.youtube.com/watch?v=s04CSN16w1s&t=1014s)). *video*
 
 ## Behaviour
 
@@ -63,7 +64,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §3, [[gameplay/reinforce-and-runes]] §7, [[gameplay/video-early-quests]].
 
 ## Open questions
 

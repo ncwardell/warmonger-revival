@@ -4,7 +4,7 @@ type: "skill"
 id: 5025
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5025", "client: StringAll_Eng SkillComment_5025 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5025", "client: StringAll_Eng SkillComment_5025 (tooltip value tags)", "video: [[gameplay/video-character-creation-and-tutorial]] §1 starting weapons (weapon offered at creation)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0420/0426 (R multipliers)"]
 name_key: "Skill_5025"
 desc_key: "SkillComment_5025"
 kind: 1
@@ -75,7 +75,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Skill R of Magical Wrath Blade (item 10017), one of the Saint's starting weapons offered at character creation in the June 2018 relaunch ([[gameplay/video-character-creation-and-tutorial]] §1, starting weapons table). *video + client*
+- Patch history: [WM 0420](https://steamcommunity.com/games/718790/announcements/detail/2758894130315567397) cut Magical Wrath Blade's R AP multiplier 120 → 100 and its HP multiplier 30 → 20; [WM 0426](https://steamcommunity.com/games/718790/announcements/detail/2394103650887775295) made the R base damage no longer scale with AP. The client tooltip is a flat 130 plus 30 % of the enemy's lost HP, so it has the 0426 change but still says 30 %. The note names the weapon, not an item id; it is copied to every same-name copy of the skill. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -83,11 +84,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1, [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Lost-HP part: WM 0420 says 30 → 20; the client tooltip still says 30 %. The page keeps the client value until play shows otherwise.
 
 <!-- credit:start -->
 ---

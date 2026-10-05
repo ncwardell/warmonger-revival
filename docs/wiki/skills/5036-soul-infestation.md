@@ -4,7 +4,7 @@ type: "skill"
 id: 5036
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5036", "client: StringAll_Eng SkillComment_5036 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5036", "client: StringAll_Eng SkillComment_5036 (tooltip value tags)", "video: [[gameplay/video-character-creation-and-tutorial]] §1 Character creation, 1:50 (cooldown, mana and effect text at level 1; match client)", "video: [[gameplay/video-tutorial-walkthrough]] step 1, 1:38 (Guardian skill preview)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0124 (10 + 60% AP + 75% AD; matches client tooltip)", "guide: [[gameplay/crush-mechanics]] §5, §12 (Crush Online player: 14 s cooldown; history only)"]
 name_key: "Skill_5036"
 desc_key: "SkillComment_5036"
 kind: 1
@@ -79,19 +79,22 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Shown on the character-creation screen of the June 2018 relaunch as the Q skill of the starting Guardian weapon Magical Demolition Hammer (item 20001), at level 1: 19 s cooldown, 135 mana, "basic attacks deal +10 (+0) damage and hit several enemies" ([[gameplay/video-character-creation-and-tutorial]] §1, [1:50](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=110s)). Cooldown and mana cost match the client. *video*
+- The Arslan tutorial video shows the same Guardian preview (Q Soul Infestation, W Aura of Demise, E Severe Blow, R Dark Transformation) ([[gameplay/video-tutorial-walkthrough]] step 1, [1:38](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=98s)). *video*
+- Patch history: [WM 0124](https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617) set the damage of basic attacks under Soul Infestation to 10 + 60 % AP + 75 % AD magic damage (bonus AD 100 % → 75 %, AP 30 % → 60 %), hitting several targets ([[gameplay/classes-and-legions]] §5 Weapons). This is exactly the client tooltip formula. *notes*
+- Crush Online players described it as turning autoattacks into area magic damage while active, with a **14 s** cooldown ([[gameplay/crush-mechanics]] §5). *player, history*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- While the buff [[wiki/buffs/10034-soul-infestation-your-basic-attacks-deal-additional-damage|10034]] lasts, basic attacks deal extra magic damage and hit several enemies (video, [WM 0124](https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617), [[gameplay/crush-mechanics]]). The buff swaps the basic attack for skill [[wiki/skills/5037-soul-infestation|5037]] (*client*).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1 (ZonderCoRe, June 2018), [[gameplay/video-tutorial-walkthrough]] step 1, [[gameplay/classes-and-legions]] §5 Weapons, [[gameplay/crush-mechanics]] §5, §12.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Cooldown: Crush Online players reported 14 s ([[gameplay/crush-mechanics]] §5, §12); the WM client and the June 2018 video show 19 s. The page keeps the client's 19 s.
 
 <!-- credit:start -->
 ---

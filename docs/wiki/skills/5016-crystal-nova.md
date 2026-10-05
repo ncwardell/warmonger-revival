@@ -4,7 +4,7 @@ type: "skill"
 id: 5016
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5016"]
+sources: ["client: Skill_Base.cdb id 5016", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0412 (E 10% → 20%; matches client tooltip)"]
 name_key: "Skill_5016"
 desc_key: "SkillComment_5016"
 kind: 1
@@ -63,7 +63,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Patch history: [WM 0412](https://steamcommunity.com/games/718790/announcements/detail/2394102381817542359) raised Magical Crystal Wand's E armor/MR buff and debuff 10 % → 20 %; the client tooltip says 20 %. The note names the weapon, not an item id; it is copied to every same-name copy of the skill. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -71,7 +71,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 

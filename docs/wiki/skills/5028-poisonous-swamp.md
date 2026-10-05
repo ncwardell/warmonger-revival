@@ -4,7 +4,7 @@ type: "skill"
 id: 5028
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5028", "client: StringAll_Eng SkillComment_5028 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5028", "client: StringAll_Eng SkillComment_5028 (tooltip value tags)", "video: [[gameplay/video-character-creation-and-tutorial]] §1 starting weapons (weapon offered at creation)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0426 (E debuff 10% → 20%; matches client tooltip)"]
 name_key: "Skill_5028"
 desc_key: "SkillComment_5028"
 kind: 1
@@ -80,7 +80,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Skill E of Magical judge Dagger (item 15007), one of the Punisher's starting weapons offered at character creation in the June 2018 relaunch ([[gameplay/video-character-creation-and-tutorial]] §1, starting weapons table). *video + client*
+- Patch history: [WM 0426](https://steamcommunity.com/games/718790/announcements/detail/2394103650887775295) raised Magical Judge Dagger's E armor/MR debuff 10 % → 20 %; the client tooltip says 20 %. The note names the weapon, not an item id; it is copied to every same-name copy of the skill. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -88,7 +89,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1, [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 

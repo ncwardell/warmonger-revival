@@ -4,7 +4,7 @@ type: "skill"
 id: 4507
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 4507", "client: Skill_TP.cdb row 7", "gameplay: [[gameplay/pvp-and-matches]]"]
+sources: ["client: Skill_Base.cdb id 4507", "client: Skill_TP.cdb row 7", "gameplay: [[gameplay/pvp-and-matches]]", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "image: [[gameplay/events-and-schedules]] §7, WM 1018 image 1 (TP cost / cooldown before → after; after = client)", "image: [[gameplay/pvp-and-matches]] TP skills (effect text)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
 name_key: "Skill_4507"
 desc_key: "SkillComment_4507"
 kind: 1
@@ -70,15 +70,17 @@ Numbers from the gameplay pages (guides, patch notes, video), not from the clien
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- Patch history: [WM 1018](https://steamcommunity.com/games/718790/announcements/detail/2403126706515770404) changed its TP cost / cooldown from 2,000 / 180 s to 2,000 / **120 s**, which is the client `Skill_TP` value ([[gameplay/events-and-schedules]] §7). *image*
+- Effect: raises the attack and defence of all your towers on the map; used from a Tower ([[gameplay/pvp-and-matches]] TP skills; guide image showed 2,000 TP / 180 s, before WM 1018). The client buff [[wiki/buffs/4507-strengthen-tower|4507]] gives +1,000 Attack and +500 Armor. *image*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/events-and-schedules]] §7, [[gameplay/crush-patch-notes]] 2017-03-02, [[gameplay/crush-mechanics]] §6.
 
 ## Open questions
 

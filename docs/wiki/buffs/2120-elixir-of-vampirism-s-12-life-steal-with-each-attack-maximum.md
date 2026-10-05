@@ -4,7 +4,7 @@ type: "buff"
 id: 2120
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 2120", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 2120", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §2 (value, 5 min, exclusive group, recipe)", "sheet: [[gameplay/stat-values]] §5 Sheet3 (Crush-era S values; history)"]
 name_key: "SkillBuff_2120"
 duration: {"ticks": 1500, "seconds": 300.0, "permanent": false}
 is_buff: 0
@@ -55,7 +55,10 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Elixir of Vampirism [S] (item 747), a Elixir clickable: 12, +400 for 5 min (1,500 ticks) ([[gameplay/consumables]] §2; per-grade row life steal 3 per hit, max HP +100 / 6, +200 / 9, +300 / 12, +400). *client*
+- One active per family: it shares exclusive group 2109 (Health, Vampirism, Tenacity), so using another of the group replaces it and restarts the timer ([[gameplay/consumables]] §1, buffs guide §3; [[gameplay/items-and-crafting]]). *client + guide*
+- C grade is bought from Lewellyn; B, A and S are only crafted at Owen (1 container + powder + secondary → 10), and A / S need the fort's A / S Grade Alchemy mastery ([[gameplay/consumables]] §1, §2, §4). *client*
+- The Crush-era Crush Share sheet (Sheet3) lists Elixir 1: HP on hit 12, HP 200 (life steal agrees; HP 400 in client) ([[gameplay/stat-values]] §5). *sheet*
 
 ## Behaviour
 
@@ -63,7 +66,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §1–§4, [[gameplay/items-and-crafting]], [[gameplay/stat-values]] §5.
 
 ## Open questions
 

@@ -4,7 +4,7 @@ type: "buff"
 id: 10037
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 10037", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 10037", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "video: [[gameplay/video-character-creation-and-tutorial]] §1 Character creation, 1:50 (10 s; matches client duration)"]
 name_key: "SkillBuff_10037"
 duration: {"ticks": 50, "seconds": 10.0, "permanent": false}
 is_buff: 0
@@ -48,7 +48,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One of the two 10 s buffs of [[wiki/skills/5041-dark-transformation|Dark Transformation]]. The level-1 skill text on the character-creation screen reads "more HP regeneration and movement speed for 10 s", matching this buff's HP regeneration and its 10 s duration ([[gameplay/video-character-creation-and-tutorial]] §1, [1:50](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=110s)). *video*
 
 ## Behaviour
 
@@ -56,7 +56,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1.
 
 ## Open questions
 

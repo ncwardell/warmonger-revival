@@ -2,9 +2,9 @@
 title: "Highly Concentrated Bomb"
 type: "skill"
 id: 4519
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 4519", "client: Skill_TP.cdb row 14"]
+sources: ["client: Skill_Base.cdb id 4519", "client: Skill_TP.cdb row 14", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "guide: [[gameplay/events-and-schedules]] §6 (extra Skill_TP rows probably core-unlocked; guess)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
 name_key: "Skill_4519"
 desc_key: "SkillComment_4519"
 kind: 1
@@ -56,15 +56,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- Not in any guide. It is one of the extra `Skill_TP` rows (10,000 TP / 180 s) outside the always-available set, probably unlocked by a legion core ([[gameplay/events-and-schedules]] §6, *client + guess*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/events-and-schedules]] §6, [[gameplay/crush-patch-notes]] 2017-03-02, [[gameplay/crush-mechanics]] §6.
 
 ## Open questions
 

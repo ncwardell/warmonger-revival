@@ -4,7 +4,7 @@ type: "skill"
 id: 20006
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 20006", "client: StringAll_Eng SkillComment_5183 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 20006", "client: StringAll_Eng SkillComment_5183 (tooltip value tags)", "video: [[gameplay/video-fort-war]] §1 Hero form, P3 0:02 (80 s, 440 mana, 3 s stun; matches client)"]
 name_key: "Skill_5183"
 desc_key: "SkillComment_5183"
 kind: 1
@@ -77,7 +77,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Seen in [[gameplay/video-fort-war]] §1 Hero form ([P3 0:02](https://www.youtube.com/watch?v=7f7QwwUyYBg&t=2s)): the R of the Dark Knight Skull hero, 80 s cooldown, 440 mana, "deals 110 (+3,499) damage to all enemies, stunning them for 3 seconds". Cooldown and mana match the client; the +3,499 is the tooltip's 100 % Attack filled in from the transformed character (*inferred*). *video*
 
 ## Behaviour
 
@@ -85,7 +85,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-fort-war]] §1 Hero form.
 
 ## Open questions
 

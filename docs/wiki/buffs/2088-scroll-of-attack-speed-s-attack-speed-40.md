@@ -4,7 +4,7 @@ type: "buff"
 id: 2088
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 2088", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 2088", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §2 (value, 5 min, exclusive group, recipe)", "sheet: [[gameplay/stat-values]] §5 Sheet3 (Crush-era S values; history)"]
 name_key: "SkillBuff_2088"
 duration: {"ticks": 1500, "seconds": 300.0, "permanent": false}
 is_buff: 0
@@ -52,7 +52,11 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Tome of Attack SPD [S] (item 715), a Tome clickable: +40 for 5 min (1,500 ticks) ([[gameplay/consumables]] §2; per-grade row Attack speed +10 / +20 / +30 / +40). *client*
+- One active per family: it shares exclusive group 2085 (Attack SPD, Cooldown, Patience, Critical), so using another of the group replaces it and restarts the timer ([[gameplay/consumables]] §1, buffs guide §3; [[gameplay/items-and-crafting]]). *client + guide*
+- C grade is bought from Lewellyn; B, A and S are only crafted at Owen (1 container + powder + secondary → 10), and A / S need the fort's A / S Grade Alchemy mastery ([[gameplay/consumables]] §1, §2, §4). *client*
+- The client names the buff the other way round from the item (Scroll ↔ Tome); [[gameplay/consumables]] says to use the item names. *client*
+- The Crush-era Crush Share sheet (Sheet3) lists Tome S: Attack speed 40 (agrees) ([[gameplay/stat-values]] §5). *sheet*
 
 ## Behaviour
 
@@ -60,7 +64,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §1–§4, [[gameplay/items-and-crafting]], [[gameplay/stat-values]] §5.
 
 ## Open questions
 

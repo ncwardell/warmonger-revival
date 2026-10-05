@@ -2,9 +2,10 @@
 title: "Powerful Remote Bomb"
 type: "skill"
 id: 4525
-status: "stub"
-missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 4525", "client: Skill_TP.cdb row 17"]
+status: "complete"
+missing: []
+sources: ["client: Skill_Base.cdb id 4525", "client: Skill_TP.cdb row 17", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "notes: [[gameplay/events-and-schedules]] §6, WM 1107 (effect text) and WM 1128 (donation tier)", "notes: [[gameplay/events-and-schedules]] §6, WM 1107 (damage_or_effect text)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
+manual: ["damage_or_effect"]
 name_key: "Skill_4525"
 desc_key: "SkillComment_4525"
 kind: 1
@@ -17,7 +18,7 @@ cooldown: {"ms": 240000, "group": 0, "from": "Skill_TP"}
 effect_kind: 0
 effects:
   - {"slot": 1, "type": 464, "value": 14010, "rate": 100}
-damage_or_effect: {}
+damage_or_effect: {"text": "Legion-core TP skill. PvP: hits the nexus after all enemy attack towers are destroyed. PvE: hits all bosses after the middle one"}
 icon: {"file": "Policy_01.png", "index": 25}
 used_by: []
 tp: {"row": 17, "tp_cost": 2500, "cooldown_s": 240, "need_flags": 388, "c7": 1}
@@ -59,15 +60,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- Effect: Legion-core TP skill. PvP: hits the nexus after all enemy attack towers are destroyed. PvE: hits all bosses after the middle one. Added in [WM 1107](https://steamcommunity.com/games/718790/announcements/detail/2423394805992652770) as a legion core that enables the TP skill on the land where it is placed ([[gameplay/events-and-schedules]] §6). The Shaia legion donations of [WM 1128](https://steamcommunity.com/games/718790/announcements/detail/2415515408464895311) unlock a Powerful Remote Bomb core at tier 6 (35,000,000 gold). *notes*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/events-and-schedules]] §6, [[gameplay/crush-patch-notes]] 2017-03-02, [[gameplay/crush-mechanics]] §6.
 
 ## Open questions
 

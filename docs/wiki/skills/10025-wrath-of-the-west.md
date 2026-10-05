@@ -4,7 +4,7 @@ type: "skill"
 id: 10025
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 10025", "client: StringAll_Eng SkillComment_10025 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 10025", "client: StringAll_Eng SkillComment_10025 (tooltip value tags)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0420/0426 (R multipliers)"]
 name_key: "Skill_10025"
 desc_key: "SkillComment_10025"
 kind: 1
@@ -70,7 +70,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Patch history: [WM 0420](https://steamcommunity.com/games/718790/announcements/detail/2758894130315567397) cut Magical Wrath Blade's R AP multiplier 120 → 100 and its HP multiplier 30 → 20; [WM 0426](https://steamcommunity.com/games/718790/announcements/detail/2394103650887775295) made the R base damage no longer scale with AP. The client tooltip is a flat 130 plus 30 % of the enemy's lost HP, so it has the 0426 change but still says 30 %. The note names the weapon, not an item id; it is copied to every same-name copy of the skill. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -78,11 +78,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Lost-HP part: WM 0420 says 30 → 20; the client tooltip still says 30 %. The page keeps the client value until play shows otherwise.
 
 <!-- credit:start -->
 ---

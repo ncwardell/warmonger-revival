@@ -2,9 +2,9 @@
 title: "Flare"
 type: "skill"
 id: 5213
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect", "cost"]
-sources: ["client: Skill_Base.cdb id 5213"]
+sources: ["client: Skill_Base.cdb id 5213", "notes: [[gameplay/reinforce-and-runes]] §7, WM 0809 (ward lasts 90 s)"]
 name_key: "Skill_5213"
 desc_key: "SkillComment_5213"
 kind: 1
@@ -55,7 +55,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Flare, Ward and Stealth-detecting Ward (items 2909–2911) are sold by Wren; [WM 0809](https://steamcommunity.com/games/718790/announcements/detail/2454911758739952435) set the ward duration to **90 s** ([[gameplay/reinforce-and-runes]] §7). *notes + client*
 
 ## Behaviour
 
@@ -63,7 +63,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/reinforce-and-runes]] §7.
 
 ## Open questions
 

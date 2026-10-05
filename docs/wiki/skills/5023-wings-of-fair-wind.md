@@ -4,7 +4,7 @@ type: "skill"
 id: 5023
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5023"]
+sources: ["client: Skill_Base.cdb id 5023", "video: [[gameplay/video-character-creation-and-tutorial]] §1 starting weapons (weapon offered at creation)"]
 name_key: "Skill_5023"
 desc_key: "SkillComment_5023"
 kind: 1
@@ -64,7 +64,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Skill W of Magical Wrath Blade (item 10017), one of the Saint's starting weapons offered at character creation in the June 2018 relaunch ([[gameplay/video-character-creation-and-tutorial]] §1, starting weapons table). *video + client*
 
 ## Behaviour
 
@@ -72,7 +72,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1.
 
 ## Open questions
 

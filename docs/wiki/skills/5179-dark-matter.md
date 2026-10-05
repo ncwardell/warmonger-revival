@@ -4,7 +4,7 @@ type: "skill"
 id: 5179
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5179", "client: StringAll_Eng SkillComment_5179 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5179", "client: StringAll_Eng SkillComment_5179 (tooltip value tags)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0420 (R cooldown 70 → 60 s, AP 70 → 100)"]
 name_key: "Skill_5179"
 desc_key: "SkillComment_5179"
 kind: 1
@@ -73,7 +73,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Patch history: [WM 0420](https://steamcommunity.com/games/718790/announcements/detail/2758894130315567397) cut Magical Devil Wand (10020)'s R cooldown 70 → 60 s and raised its AP 70 → 100. The client still has Dark Matter at 70 s with 70 % AP (10179: 75 %). ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -81,11 +81,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Cooldown and AP: WM 0420 gives 60 s and 100 % AP; the client has 70 s and 70 % (75 % on 10179). Client kept.
 
 <!-- credit:start -->
 ---

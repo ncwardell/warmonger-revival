@@ -4,7 +4,7 @@ type: "buff"
 id: 2111
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 2111", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 2111", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §2 (value, 5 min, exclusive group, recipe)", "notes: [[gameplay/reinforce-and-runes]] §7, WM 0124 (regen 1/2/3/4 → 2/4/6/8; matches client)"]
 name_key: "SkillBuff_2111"
 duration: {"ticks": 1500, "seconds": 300.0, "permanent": false}
 is_buff: 0
@@ -49,7 +49,10 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Elixir of Health [A] (item 738), a Elixir clickable: HP regen +6, max HP +300 for 5 min (1,500 ticks) ([[gameplay/consumables]] §2; per-grade row HP regen +2, max HP +100 / HP regen +4, max HP +200 / HP regen +6, max HP +300 / HP regen +8, max HP +400). *client*
+- One active per family: it shares exclusive group 2109 (Health, Vampirism, Tenacity), so using another of the group replaces it and restarts the timer ([[gameplay/consumables]] §1, buffs guide §3; [[gameplay/items-and-crafting]]). *client + guide*
+- C grade is bought from Lewellyn; B, A and S are only crafted at Owen (1 container + powder + secondary → 10), and A / S need the fort's A / S Grade Alchemy mastery ([[gameplay/consumables]] §1, §2, §4). *client*
+- Patch history: [WM 0124](https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617) doubled the regen part, HP regen 1/2/3/4 → 2/4/6/8; the client buffs match the new values ([[gameplay/reinforce-and-runes]] §7). *notes*
 
 ## Behaviour
 
@@ -57,7 +60,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §1–§4, [[gameplay/items-and-crafting]], [[gameplay/reinforce-and-runes]] §7.
 
 ## Open questions
 

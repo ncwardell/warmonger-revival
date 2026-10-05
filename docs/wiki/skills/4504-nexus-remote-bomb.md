@@ -2,9 +2,10 @@
 title: "Nexus Remote Bomb"
 type: "skill"
 id: 4504
-status: "stub"
-missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 4504", "client: Skill_TP.cdb row 5", "gameplay: [[gameplay/pvp-and-matches]]"]
+status: "complete"
+missing: []
+sources: ["client: Skill_Base.cdb id 4504", "client: Skill_TP.cdb row 5", "gameplay: [[gameplay/pvp-and-matches]]", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "image: [[gameplay/pvp-and-matches]] TP skills (2,000 TP / 180 s = client)", "video: [[gameplay/video-fort-war]] §1 TP and §4 (used; one −2,500 reading)", "image: [[gameplay/pvp-and-matches]] TP skills (damage_or_effect text)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
+manual: ["damage_or_effect"]
 name_key: "Skill_4504"
 desc_key: "SkillComment_4504"
 kind: 1
@@ -17,7 +18,7 @@ cooldown: {"ms": 180000, "group": 0, "from": "Skill_TP"}
 effect_kind: 0
 effects:
   - {"slot": 1, "type": 463, "value": 14006, "rate": 100}
-damage_or_effect: {}
+damage_or_effect: {"text": "Attacks the enemy nexus"}
 icon: {"file": "Policy_01.png", "index": 16}
 used_by: []
 tp: {"row": 5, "tp_cost": 2000, "cooldown_s": 180, "need_flags": 388, "c7": 2}
@@ -72,19 +73,21 @@ Numbers from the gameplay pages (guides, patch notes, video), not from the clien
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- Effect: attacks the enemy nexus; used from a Tower; 2,000 TP / 180 s in the guide image = client ([[gameplay/pvp-and-matches]] TP skills). *image*
+- Used several times in the June 2018 fort war ([[gameplay/video-fort-war]] §4: P2 1:00, P2 3:04, P3 2:04). One use at [P2 2:56–3:04](https://www.youtube.com/watch?v=6_z6CUpZj30&t=176s) dropped the pool 2,780 → 280, i.e. 2,500 TP. *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/video-fort-war]] §1, §4, [[gameplay/crush-patch-notes]] 2017-03-02, [[gameplay/crush-mechanics]] §6.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Cost: the video read (360p) shows −2,500 TP for a "Nexus Remote Bomb"; the guide and client say 2,000 (Powerful Remote Bomb costs 2,500). Client kept.
 
 <!-- credit:start -->
 ---

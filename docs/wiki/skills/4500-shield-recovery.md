@@ -4,7 +4,7 @@ type: "skill"
 id: 4500
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 4500", "client: Skill_TP.cdb row 1", "gameplay: [[gameplay/pvp-and-matches]]"]
+sources: ["client: Skill_Base.cdb id 4500", "client: Skill_TP.cdb row 1", "gameplay: [[gameplay/pvp-and-matches]]", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "guide: [[gameplay/events-and-schedules]] §7 (Shield refills the nexus shield, not HP)", "video: [[gameplay/video-fort-war]] §4, P2 2:08 (used in play)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
 name_key: "Skill_4500"
 desc_key: "SkillComment_4500"
 kind: 1
@@ -74,15 +74,17 @@ Numbers from the gameplay pages (guides, patch notes, video), not from the clien
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- Gives the nexus a shield: it refills the shield, not HP. Usable from the Nexus or a Tower; 1,500 TP and 120 s in the guide image, the same as the client ([[gameplay/pvp-and-matches]]; [[gameplay/events-and-schedules]] §7). One of the always-available skills on an attack/defence land. *image + guide*
+- Used in the June 2018 fort war ("Zpike set a Shield recovery", [[gameplay/video-fort-war]] §4, [P2 2:08](https://www.youtube.com/watch?v=6_z6CUpZj30&t=128s)). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/events-and-schedules]] §7, [[gameplay/video-fort-war]] §1, §4, [[gameplay/crush-patch-notes]] 2017-03-02, [[gameplay/crush-mechanics]] §6.
 
 ## Open questions
 

@@ -4,7 +4,8 @@ type: "skill"
 id: 20000
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 20000"]
+sources: ["client: Skill_Base.cdb id 20000", "notes: [[gameplay/classes-and-legions]] §5 Heroes and [[gameplay/events-and-schedules]] §9, WM 0615 (passive cooldown 300 s; hero 'Dark Knight' read as Dark Knight Skull)"]
+manual: ["cooldown"]
 name_key: "Skill_20000"
 desc_key: "SkillComment_20000"
 kind: 2
@@ -13,7 +14,7 @@ target: {"type": 3, "type_name": "self", "relation": [], "unit_classes": [], "ma
 range: 0
 area: {"shape": 1, "shape_name": "circle", "radius": 3.0, "width_or_angle": 3.0}
 cost: null
-cooldown: null
+cooldown: {"ms": 300000, "group": 0, "from": "WM 0615 patch note"}
 effect_kind: 0
 effects:
   - {"slot": 1, "type": 300, "value": 20020, "rate": 100}
@@ -61,7 +62,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [WM 0615](https://steamcommunity.com/games/718790/announcements/detail/2842216343262999426) fixed the **Dark Knight** hero passive's cooldown at **300 s** ([[gameplay/classes-and-legions]] §5 Heroes, [[gameplay/events-and-schedules]] §9). The client row has no cooldown; the 300 s is entered from the patch note. The passive's tooltip (resurrect within 5 s) is why a long cooldown matters. *notes*
+- Listed among the Dark Knight Skull hero skills in [[gameplay/video-fort-war]] §1. *client*
 
 ## Behaviour
 
@@ -69,11 +71,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Heroes, [[gameplay/events-and-schedules]] §9, [[gameplay/video-fort-war]] §1.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The note says "Dark Knight"; this page reads it as the Dark Knight Skull hero (the only Dark Knight hero in `HeroData`). *inferred*
 
 <!-- credit:start -->
 ---

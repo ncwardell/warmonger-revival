@@ -2,9 +2,9 @@
 title: "Pyrotechnics"
 type: "skill"
 id: 5218
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect", "cooldown", "cost"]
-sources: ["client: Skill_Base.cdb id 5218"]
+sources: ["client: Skill_Base.cdb id 5218", "notes: [[gameplay/patch-history]] 0404 (sold for gold at Wren)", "image: [[gameplay/progression-and-economy]] fortress shop prices (3,960 gold)"]
 name_key: "Skill_5218"
 desc_key: "SkillComment_5218"
 kind: 1
@@ -60,7 +60,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Pyrotechnics (item 1105) became purchasable for gold at Wren in [WM 0404](https://steamcommunity.com/games/718790/announcements/detail/2394101748794304355) ([[gameplay/patch-history]]). The fortress shop price is 3,960 gold (7.92 × the base 500) ([[gameplay/progression-and-economy]]). *notes + image*
 
 ## Behaviour
 
@@ -68,7 +68,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/patch-history]], [[gameplay/progression-and-economy]].
 
 ## Open questions
 

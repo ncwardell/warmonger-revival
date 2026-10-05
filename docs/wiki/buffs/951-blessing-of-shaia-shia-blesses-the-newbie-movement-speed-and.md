@@ -4,7 +4,7 @@ type: "buff"
 id: 951
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 951", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 951", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "notes: [[gameplay/reinforce-and-runes]] §7, WM 0705 / 0802 (move +150, mana +200; matches client)"]
 name_key: "SkillBuff_951"
 duration: {"ticks": 18000, "seconds": 3600.0, "permanent": false}
 is_buff: 0
@@ -46,7 +46,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Matches the Mystical Potion renamed "Blessing of Shaia" (item 905): out-of-combat movement speed +150 and mana +200, only one active, no stacking ([WM 0705](https://steamcommunity.com/games/718790/announcements/detail/2499943313680174373), [WM 0802](https://steamcommunity.com/games/718790/announcements/detail/2451533424634152745); [[gameplay/reinforce-and-runes]] §7). The client buff has the same two values. *notes*
 
 ## Behaviour
 
@@ -54,11 +54,11 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/reinforce-and-runes]] §7.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Item 905 is not linked to this buff in `Item_Base` (no option 301); the match is by values and name only.
 
 <!-- credit:start -->
 ---

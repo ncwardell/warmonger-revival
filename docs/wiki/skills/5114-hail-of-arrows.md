@@ -4,7 +4,7 @@ type: "skill"
 id: 5114
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5114", "client: StringAll_Eng SkillComment_5114 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5114", "client: StringAll_Eng SkillComment_5114 (tooltip value tags)", "video: [[gameplay/video-character-creation-and-tutorial]] §1 starting weapons (weapon offered at creation)", "notes: [[gameplay/crush-patch-notes]] 2016-12-01 (CO: max 3 targets; history)", "guide: [[gameplay/crush-mechanics]] §5, §12 (WM client 5 targets)"]
 name_key: "Skill_5114"
 desc_key: "SkillComment_5114"
 kind: 1
@@ -82,7 +82,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Skill E of Magical Frost Bow (item 15004), one of the Punisher's starting weapons offered at character creation in the June 2018 relaunch ([[gameplay/video-character-creation-and-tutorial]] §1, starting weapons table). *video + client*
+- Crush Online fixed the tooltip on 1 Dec 2016 to say it hits at most **3** enemies ([[gameplay/crush-patch-notes]] §2016-12-01). The WM client allows **5** targets, and [[gameplay/crush-mechanics]] §12 says to use the WM value. *staff, history*
 
 ## Behaviour
 
@@ -90,11 +91,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1, [[gameplay/crush-patch-notes]] 2016-12-01, [[gameplay/crush-mechanics]] §5, §12.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Targets: Crush Online 3 (Dec 2016 tooltip fix) vs WM client 5. Client kept.
 
 <!-- credit:start -->
 ---

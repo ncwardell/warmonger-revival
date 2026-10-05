@@ -4,7 +4,7 @@ type: "skill"
 id: 5024
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5024", "client: StringAll_Eng SkillComment_5024 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5024", "client: StringAll_Eng SkillComment_5024 (tooltip value tags)", "video: [[gameplay/video-character-creation-and-tutorial]] §1 starting weapons (weapon offered at creation)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0329/0402/0420/0719 (E scaling history)"]
 name_key: "Skill_5024"
 desc_key: "SkillComment_5024"
 kind: 1
@@ -77,7 +77,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Skill E of Magical Wrath Blade (item 10017), one of the Saint's starting weapons offered at character creation in the June 2018 relaunch ([[gameplay/video-character-creation-and-tutorial]] §1, starting weapons table). *video + client*
+- Patch history: [WM 0329](https://steamcommunity.com/games/718790/announcements/detail/2383968106570216224) / [WM 0402](https://steamcommunity.com/games/718790/announcements/detail/2383968106583377018) moved Magical Wrath Blade's E from AD to AP; [WM 0420](https://steamcommunity.com/games/718790/announcements/detail/2758894130315567397) cut its AP multiplier 120 → 100; [WM 0719](https://steamcommunity.com/games/718790/announcements/detail/2412125660633804214) cut the maximum multiplier at T3 from 1.2 to 0.8 AP. The client tooltip reads 100 + 50 % AP (10024: 55 %). The note names the weapon, not an item id; it is copied to every same-name copy of the skill. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -85,7 +86,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1, [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 

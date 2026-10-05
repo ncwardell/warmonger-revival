@@ -2,9 +2,9 @@
 title: "Return"
 type: "skill"
 id: 30
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect", "cooldown", "cost"]
-sources: ["client: Skill_Base.cdb id 30"]
+sources: ["client: Skill_Base.cdb id 30", "video: [[gameplay/video-character-creation-and-tutorial]] §5, 15:15 (Return Scroll → Training Camp; inferred)"]
 name_key: "Skill_30"
 desc_key: "SkillComment_30"
 kind: 1
@@ -50,7 +50,7 @@ used_by:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Cast by Scroll : Return (item 906). In the June 2018 tutorial video the player used it in the Training Ground and reappeared in the Training Camp after a short load ([[gameplay/video-character-creation-and-tutorial]] §5, [15:15](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=915s); *inferred*). Wren sells the scroll for 79 gold ([[gameplay/video-character-creation-and-tutorial]] §3 step 12). *video*
 
 ## Behaviour
 
@@ -58,11 +58,11 @@ used_by:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §3, §5.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The client tooltip of this row ("Gain 30 Attack and 100 Movement Speed for 3 seconds") does not describe a return; the destination rule is not in any source.
 
 <!-- credit:start -->
 ---

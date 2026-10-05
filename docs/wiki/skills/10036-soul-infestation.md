@@ -4,7 +4,7 @@ type: "skill"
 id: 10036
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 10036", "client: StringAll_Eng SkillComment_10036 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 10036", "client: StringAll_Eng SkillComment_10036 (tooltip value tags)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0124 (names the weapon, not the item id)"]
 name_key: "Skill_10036"
 desc_key: "SkillComment_10036"
 kind: 1
@@ -72,7 +72,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Same-name copy of Soul Infestation (Magical Demolition Hammer item 21001). [WM 0124](https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617) set Soul Infestation to 10 + 60 % AP + 75 % AD magic damage on basic attacks, hitting several targets ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -80,11 +80,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- This copy's client tooltip reads 10 + 65 % AP + 80 % AD, not the 60 % / 75 % of the WM 0124 note (which matches skill 5036). Which item the note meant, and whether 21001 is a higher-tier copy, is not stated.
 
 <!-- credit:start -->
 ---

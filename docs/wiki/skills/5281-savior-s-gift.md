@@ -2,9 +2,9 @@
 title: "Savior's Gift"
 type: "skill"
 id: 5281
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 5281"]
+sources: ["client: Skill_Base.cdb id 5281", "video: [[gameplay/video-character-creation-and-tutorial]] §1 starting weapons (weapon offered at creation)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0412 (range 8 → 6, recovery 6 → 5)"]
 name_key: "Skill_5281"
 desc_key: "SkillComment_5281"
 kind: 1
@@ -63,7 +63,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Skill R of Magical Life Wand (item 10002), one of the Saint's starting weapons offered at character creation in the June 2018 relaunch ([[gameplay/video-character-creation-and-tutorial]] §1, starting weapons table). *video + client*
+- Patch history: [WM 0412](https://steamcommunity.com/games/718790/announcements/detail/2394102381817542359) cut Magical Life Wand (10002)'s R range 8 → 6 and its recovery 6 → 5. The client tooltip restores 5 % (matches) but the client range is still 8. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -71,11 +72,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1, [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Range: WM 0412 says 8 → 6; the client `range` is 8. The client value is kept (client first).
 
 <!-- credit:start -->
 ---

@@ -2,9 +2,10 @@
 title: "Remote Bomb"
 type: "skill"
 id: 4502
-status: "stub"
-missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 4502", "client: Skill_TP.cdb row 4", "gameplay: [[gameplay/pvp-and-matches]]"]
+status: "complete"
+missing: []
+sources: ["client: Skill_Base.cdb id 4502", "client: Skill_TP.cdb row 4", "gameplay: [[gameplay/pvp-and-matches]]", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "guide: [[gameplay/pvp-and-matches]] TP skills (effect text, 1,500 TP / 120 s)", "guide: [[gameplay/events-and-schedules]] §7 (tower first, then nexus)", "image: [[gameplay/maps-and-dungeons]] (multi-boss dungeons fit the PvE text)", "video: [[gameplay/video-fort-war]] §1 TP, P1 2:32 (−1,500 TP)", "guide: [[gameplay/pvp-and-matches]] TP skills (damage_or_effect text, guide image)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
+manual: ["damage_or_effect"]
 name_key: "Skill_4502"
 desc_key: "SkillComment_4502"
 kind: 1
@@ -17,7 +18,7 @@ cooldown: {"ms": 120000, "group": 0, "from": "Skill_TP"}
 effect_kind: 0
 effects:
   - {"slot": 1, "type": 464, "value": 14005, "rate": 100}
-damage_or_effect: {}
+damage_or_effect: {"text": "PvP: hits enemy towers, then the nexus once the attacking towers are gone. PvE: hits every boss after the middle one"}
 icon: {"file": "Policy_01.png", "index": 15}
 used_by: []
 tp: {"row": 4, "tp_cost": 1500, "cooldown_s": 120, "need_flags": 2, "c7": 1}
@@ -68,15 +69,18 @@ Numbers from the gameplay pages (guides, patch notes, video), not from the clien
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- Effect: PvP: hits enemy towers, then the nexus once the attacking towers are gone. PvE: hits every boss after the middle one ([[gameplay/pvp-and-matches]] TP skills, from the guide image; [[gameplay/events-and-schedules]] §7 says the basic Bomb hits a standing tower first, otherwise the nexus). 1,500 TP / 120 s in the guide = client. *image + guide*
+- The PvE text fits the multi-boss dungeons: Demon Hell's boss is shown as two figures and Thorn's Hell's as three ([[gameplay/maps-and-dungeons]]). *image*
+- Seen in play: Remote Bomb took 1,500 TP from the pool (3,050 → 1,550) in [[gameplay/video-fort-war]] §1 TP ([P1 2:32](https://www.youtube.com/watch?v=XoSM3RbZon0&t=152s)), matching the client. *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/events-and-schedules]] §7, [[gameplay/maps-and-dungeons]], [[gameplay/video-fort-war]] §1, [[gameplay/crush-patch-notes]] 2017-03-02, [[gameplay/crush-mechanics]] §6.
 
 ## Open questions
 

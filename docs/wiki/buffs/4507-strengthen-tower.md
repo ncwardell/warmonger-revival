@@ -4,7 +4,7 @@ type: "buff"
 id: 4507
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 4507"]
+sources: ["client: Skill_Buff.cdb id 4507", "image: [[gameplay/pvp-and-matches]] TP skills (Fortified effect)"]
 name_key: "SkillBuff_4507"
 duration: {"ticks": 2100000000, "permanent": true}
 is_buff: 0
@@ -48,7 +48,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of the TP skill [[wiki/skills/4507-fortified|Fortified]], which raises the attack and defence of all your towers on the map ([[gameplay/pvp-and-matches]] TP skills). *image*
 
 ## Behaviour
 
@@ -56,7 +56,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills.
 
 ## Open questions
 

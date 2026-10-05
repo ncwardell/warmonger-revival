@@ -4,7 +4,7 @@ type: "buff"
 id: 2116
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 2116", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 2116", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §2 (value, 5 min, exclusive group, recipe)", "sheet: [[gameplay/stat-values]] §5 Sheet3 (Crush-era S values; history)", "notes: [[gameplay/reinforce-and-runes]] §7, WM 0124 (regen 1/2/3/4 → 2/4/6/8; matches client)"]
 name_key: "SkillBuff_2116"
 duration: {"ticks": 1500, "seconds": 300.0, "permanent": false}
 is_buff: 0
@@ -54,7 +54,11 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Flask of Mana [S] (item 743), a Flask clickable: MP regen +8, max MP +200 for 5 min (1,500 ticks) ([[gameplay/consumables]] §2; per-grade row MP regen +2, max MP +50 / MP regen +4, max MP +100 / MP regen +6, max MP +150 / MP regen +8, max MP +200). *client*
+- One active per family: it shares exclusive group 2113 (Mana, Devour, Tenacity), so using another of the group replaces it and restarts the timer ([[gameplay/consumables]] §1, buffs guide §3; [[gameplay/items-and-crafting]]). *client + guide*
+- C grade is bought from Lewellyn; B, A and S are only crafted at Owen (1 container + powder + secondary → 10), and A / S need the fort's A / S Grade Alchemy mastery ([[gameplay/consumables]] §1, §2, §4). *client*
+- The Crush-era Crush Share sheet (Sheet3) lists Flask 3: MP 120, MP regen 16 (client 200 / 8; disagrees) ([[gameplay/stat-values]] §5). *sheet*
+- Patch history: [WM 0124](https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617) doubled the regen part, MP regen 1/2/3/4 → 2/4/6/8; the client buffs match the new values ([[gameplay/reinforce-and-runes]] §7). *notes*
 
 ## Behaviour
 
@@ -62,11 +66,11 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §1–§4, [[gameplay/items-and-crafting]], [[gameplay/stat-values]] §5, [[gameplay/reinforce-and-runes]] §7.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Crush-era sheet values differ from the client (see Notes); the client value is kept.
 
 <!-- credit:start -->
 ---
