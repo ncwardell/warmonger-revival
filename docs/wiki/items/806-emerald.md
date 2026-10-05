@@ -4,7 +4,7 @@ type: "item"
 id: 806
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 806"]
+sources: ["client: Item_Base.cdb id 806", "sheet + guide: [[gameplay/dungeon-drops]] §1, §3 (Crush Share Ore/Herb tab, same lists in the 2018 dungeons guide; sheet Lv 5/6 mapped to client fields 124/125)"]
 name_key: "ItemName_806"
 kind: 12
 kind_name: "Material"
@@ -20,6 +20,8 @@ obtained_from:
   - {"how": "shop", "shop": 210}
   - {"how": "shop", "shop": 224}
   - {"how": "shop", "shop": 225}
+  - {"how": "gather", "field": 125}
+  - {"how": "gather", "field": 129}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=8a4061 type=d36ca9 id=264bb3 sources=98eb2b name_key=e94e8b kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=549124 obtained_from=8151b9 -->
@@ -56,7 +58,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Gathered from ore/herb nodes in Tow Canyon (125), Thorn's Hell (129) ([[gameplay/dungeon-drops|Dungeon drops]] §1, *sheet + guide*). The 2018 dungeons guide names the same materials per dungeon, with counts per run in [[gameplay/maps-and-dungeons|Maps and dungeons]] §2. Gathering takes about 3 s and is not interrupted by hits ([[gameplay/video-dungeon-run|Nas Village run video]] §5, *video*); the nodes are the client's `Trigger` rows, which match the 2016 minimap ([[gameplay/video-dungeon-run|Nas Village run video]] §5).
 
 ## Behaviour
 
@@ -64,7 +66,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- sheet + guide: [[gameplay/dungeon-drops]] §1, §3 (Crush Share Ore/Herb tab, same lists in the 2018 dungeons guide; sheet Lv 5/6 mapped to client fields 124/125)
 
 ## Open questions
 

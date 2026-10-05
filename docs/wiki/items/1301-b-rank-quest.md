@@ -2,9 +2,9 @@
 title: "B Rank Quest"
 type: "item"
 id: 1301
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 1301"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 1301", "image: [[gameplay/precept-shop]] §1 (Crush Online Oct 2016: Freya sold Rank[C] precepts at 9,300 gold and Rank[B] at 18,600; client ids grouped per rank on that page)"]
 name_key: "ItemName_1203"
 kind: 44
 kind_name: "Quest precept"
@@ -15,7 +15,8 @@ cost_pair:
   - {"currency": 2, "amount": 50000}
 stats: []
 icon: {"file": "Items_07.png", "index": 38}
-obtained_from: []
+obtained_from:
+  - {"how": "shop_crush_2016", "npc": 200, "price": 18600, "currency": "gold"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=cf7b6f type=d36ca9 id=055550 sources=95565e name_key=8b731b kind=98fbc4 kind_name=b94918 classes=92d079 bind=883bf8 price=ad75b5 cost_pair=cc1d90 stats=97d170 icon=bca757 obtained_from=97d170 -->
@@ -44,7 +45,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Freya sold the Rank[B] precept for **18,600 gold** in October 2016; a B precept paid mostly gold medals (1–5) and 20–150 Spellstone D ([[gameplay/precept-shop|Precept shop]] §1–2, *image + guide*). The client's base price is 50,000.
 
 ## Behaviour
 
@@ -52,11 +53,11 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/precept-shop]] §1 (Crush Online Oct 2016: Freya sold Rank[C] precepts at 9,300 gold and Rank[B] at 18,600; client ids grouped per rank on that page)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The client links no quest to the B precepts and shop 289 does not sell them ([[gameplay/precept-shop|Precept shop]] §1).
 
 <!-- credit:start -->
 ---

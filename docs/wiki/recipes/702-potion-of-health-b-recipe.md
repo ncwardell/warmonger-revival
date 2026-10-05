@@ -2,9 +2,9 @@
 title: "Potion of Health [B] recipe"
 type: "recipe"
 id: 702
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 702", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 702", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)"]
 result: {"item": 886, "count": 100}
 materials:
   - {"item": 835, "count": 100}
@@ -14,6 +14,7 @@ success_rate: 100
 category: 1
 filter_mask: 2097153
 level: 20
+npc: [214]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=1c6afd type=61613a id=a08521 sources=b79d43 result=a761e3 materials=f9ace8 gold=a4ac91 success_rate=310b86 category=356a19 filter_mask=9aa98e level=91032a -->
@@ -46,7 +47,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crafted at **Owen** (Red Union, unit 214) in the fortress, which has the full alchemy list ([[gameplay/consumables|Consumables]] §4, *client*). Alchemy recipes always succeed (100 %) ([[gameplay/consumables|Consumables]] §1, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -54,7 +57,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)
 
 ## Open questions
 

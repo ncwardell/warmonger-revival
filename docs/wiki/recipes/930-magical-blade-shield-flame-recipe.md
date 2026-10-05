@@ -2,9 +2,9 @@
 title: "Magical Blade Shield : Flame recipe"
 type: "recipe"
 id: 930
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 930", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 930", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/items-and-crafting]] §3 (Farrell makes normal weapons and does passion conversion, Item_Make rows 801–827); unit 237 per [[gameplay/npc-locations]] §3 (Farrell 237/317)"]
 result: {"item": 10005, "count": 1}
 materials:
   - {"item": 2758, "count": 1}
@@ -15,6 +15,7 @@ success_rate: 40
 category: 2
 filter_mask: 33554449
 level: 3
+npc: [237]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=b2713c type=61613a id=5cff99 sources=4c30da result=099c15 materials=2187e0 gold=409e95 success_rate=af3e13 category=da4b92 filter_mask=5c54ba level=77de68 -->
@@ -42,19 +43,21 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Normal weapons are crafted at **Farrell** from 3 or 5 of a medal-bought material (2 bronze medals each at Athan) plus 50 / 70 / 100 crystals ([[gameplay/items-and-crafting|Items and crafting]] §3, *guide*). From WM 0920 crafted weapons have a small chance to come out **superior** ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Success 40 % in the client. The craft window warns "There is a chance to fail in creating this item" for superior items ([[gameplay/items-and-crafting|Items and crafting]] §3, *image*).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/items-and-crafting]] §3 (Farrell makes normal weapons and does passion conversion, Item_Make rows 801–827); unit 237 per [[gameplay/npc-locations]] §3 (Farrell 237/317)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Farrell's unit id: the fortress Farrell is 237; a second Farrell (317) has no recorded position ([[gameplay/npc-locations]] §3).
 
 <!-- credit:start -->
 ---

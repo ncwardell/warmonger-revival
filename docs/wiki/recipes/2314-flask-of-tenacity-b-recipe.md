@@ -2,9 +2,9 @@
 title: "Flask of Tenacity [B] recipe"
 type: "recipe"
 id: 2314
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2314", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2314", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)"]
 result: {"item": 757, "count": 10}
 materials:
   - {"item": 829, "count": 20}
@@ -15,6 +15,7 @@ success_rate: 100
 category: 8
 filter_mask: 2097168
 level: 24
+npc: [337]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=b3ac4f type=61613a id=a9d8fb sources=27d568 result=c81352 materials=8db568 gold=15aa0c success_rate=310b86 category=fe5dbb filter_mask=6c13bc level=4d134b -->
@@ -44,7 +45,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp Owen (unit 337) offers a short list: only B-grade scrolls, tomes, elixirs and flasks and only C and B potions ([[gameplay/consumables|Consumables]] §4, *client*).
 
 ## Behaviour
 
@@ -52,7 +53,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)
 
 ## Open questions
 

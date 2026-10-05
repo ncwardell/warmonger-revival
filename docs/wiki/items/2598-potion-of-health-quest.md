@@ -4,7 +4,7 @@ type: "item"
 id: 2598
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 2598"]
+sources: ["client: Item_Base.cdb id 2598", "client: [[gameplay/consumables]] §3, §6"]
 name_key: "ItemName_2598"
 kind: 11
 kind_name: "Normal"
@@ -71,7 +71,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Quest-only copy made in Owen's alchemy tutorial quests (47 "Create Potion", 48 "Doping Create") from bind-on-pickup quest inputs 2593–2597 ([[gameplay/consumables|Consumables]] §6, *client*).
 
 ## Behaviour
 
@@ -79,7 +79,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §3, §6
 
 ## Open questions
 

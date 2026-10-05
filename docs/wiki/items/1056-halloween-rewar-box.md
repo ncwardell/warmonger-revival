@@ -4,7 +4,7 @@ type: "item"
 id: 1056
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1056"]
+sources: ["client: Item_Base.cdb id 1056", "staff: [[gameplay/crush-patch-notes]] 2016-10-27"]
 name_key: "ItemName_1056"
 kind: 43
 kind_name: "Random Box"
@@ -44,7 +44,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Reward of the Crush Online Halloween quest "Trick or Treat" (Corpse Bride, 27 Oct 2016), which then gave the skill stone "Creep Jack" ([[gameplay/crush-patch-notes|Crush patch notes]], *staff*).
 
 ## Behaviour
 
@@ -52,7 +52,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- staff: [[gameplay/crush-patch-notes]] 2016-10-27
 
 ## Open questions
 

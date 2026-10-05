@@ -2,9 +2,9 @@
 title: "Potion of Mana [C] recipe"
 type: "recipe"
 id: 705
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 705", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 705", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)"]
 result: {"item": 889, "count": 100}
 materials:
   - {"item": 834, "count": 100}
@@ -14,6 +14,7 @@ success_rate: 100
 category: 1
 filter_mask: 1048577
 level: 5
+npc: [214]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=a4aff6 type=61613a id=794bb3 sources=173aba result=3bef90 materials=71d928 gold=e3cbba success_rate=310b86 category=356a19 filter_mask=06f592 level=ac3478 -->
@@ -50,7 +51,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crafted at **Owen** (Red Union, unit 214) in the fortress, which has the full alchemy list ([[gameplay/consumables|Consumables]] §4, *client*). Alchemy recipes always succeed (100 %) ([[gameplay/consumables|Consumables]] §1, *client*).
+
+A screenshot shows this recipe (100 Empty Flask [C] + 3 Blue → 100 Potion of Mana [C]) at **1,500 gold**, the client's 1,000 × 1.5 fort rate ([[gameplay/items-and-crafting|Items and crafting]] §4, *image*).
 
 ## Behaviour
 
@@ -58,7 +61,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)
 
 ## Open questions
 

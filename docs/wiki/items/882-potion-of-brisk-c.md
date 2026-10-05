@@ -4,7 +4,7 @@ type: "item"
 id: 882
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 882"]
+sources: ["client: Item_Base.cdb id 882", "client: [[gameplay/consumables]] §3", "client: [[gameplay/crush-patch-notes]] (Potion of Brisk prices)"]
 name_key: "ItemName_882"
 kind: 42
 kind_name: null
@@ -66,7 +66,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Gives 2,000 / 1,000 / 500 Soul Points (A/B/C) and can only be used during a war; bought at the merits merchant for 1 gold / silver / bronze medal ([[gameplay/consumables|Consumables]] §3, [[gameplay/crush-patch-notes|Crush patch notes]], *client*).
 
 ## Behaviour
 
@@ -74,7 +74,8 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §3
+- client: [[gameplay/crush-patch-notes]] (Potion of Brisk prices)
 
 ## Open questions
 

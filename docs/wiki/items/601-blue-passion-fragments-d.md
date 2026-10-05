@@ -4,7 +4,7 @@ type: "item"
 id: 601
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 601"]
+sources: ["client: Item_Base.cdb id 601", "image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)"]
 name_key: "ItemName_601"
 kind: 12
 kind_name: "Material"
@@ -138,6 +138,7 @@ obtained_from:
   - {"how": "dungeon", "field": 121}
   - {"how": "dungeon", "field": 127}
   - {"how": "dungeon", "field": 132}
+  - {"how": "fort_guardian_drop", "count": 100}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=500b82 type=d36ca9 id=3bb18d sources=8c434e name_key=a4e597 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=e6cb7f obtained_from=bfbed1 -->
@@ -318,7 +319,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+On the Fort Guardian drop list from WM 0817: each of up to 15 players who defeat the guardian gets one drop from the list, this item ×100 ([[gameplay/events-and-schedules|Events and schedules]] §5, *image + notes*).
 
 ## Behaviour
 
@@ -326,7 +327,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)
 
 ## Open questions
 

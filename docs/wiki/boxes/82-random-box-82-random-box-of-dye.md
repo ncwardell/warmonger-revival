@@ -2,9 +2,9 @@
 title: "Random box 82 (Random box of dye?)"
 type: "box"
 id: 82
-status: "stub"
+status: "partial"
 missing: ["odds", "opened_by"]
-sources: ["client: RandomBox.cdb id 82", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)"]
+sources: ["client: RandomBox.cdb id 82", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)", "image: [[gameplay/progression-and-economy]] §4 (Athan sells three Random box of dye at 3 bronze/silver medals)"]
 contents:
   - {"slot": 0, "item": 2506, "count": 1, "p": 0}
   - {"slot": 1, "item": 2504, "count": 1, "p": 0}
@@ -59,7 +59,7 @@ No client column links a box item to a RandomBox row. The guess pairs rows and b
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Athan (merits merchant) sold three kinds of Random box of dye for 3 bronze or silver medals ([[gameplay/progression-and-economy|Progression and economy]] §4, *image*). Dyes can also be crafted at Owen ([[gameplay/consumables|Consumables]] §4.3).
 
 ## Behaviour
 
@@ -67,11 +67,11 @@ No client column links a box item to a RandomBox row. The guess pairs rows and b
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/progression-and-economy]] §4 (Athan sells three Random box of dye at 3 bronze/silver medals)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Which of the three dye boxes costs bronze and which silver is not readable in the source.
 
 <!-- credit:start -->
 ---

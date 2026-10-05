@@ -2,9 +2,9 @@
 title: "Unused gacha pool"
 type: "gacha"
 id: 6
-status: "stub"
+status: "partial"
 missing: ["price", "odds"]
-sources: ["client: Gacha_06.cdb", "client strings: GUI_Herobind_GachaText_6", "contract: items.yaml hero_gacha 0x4aa, server_rules gacha_odds"]
+sources: ["client: Gacha_06.cdb", "client strings: GUI_Herobind_GachaText_6", "contract: items.yaml hero_gacha 0x4aa, server_rules gacha_odds", "notes: [[gameplay/events-and-schedules]] §10 (WM 1018 lists five paid cards)"]
 pool: 6
 contents:
   - {"item": 0, "grade": 0}
@@ -56,7 +56,7 @@ Not in the client (`Gacha_NN` has items and grades only). The contract's `gacha_
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The WM 1018 price list has five paid cards (1,000 / 2,000 / 2,000 / 4,000 / 5,000 jewels) and none of them matches this pool ([[gameplay/events-and-schedules|Events and schedules]] §10, *image*).
 
 ## Behaviour
 
@@ -64,11 +64,11 @@ Not in the client (`Gacha_NN` has items and grades only). The contract's `gacha_
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/events-and-schedules]] §10 (WM 1018 lists five paid cards)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+No source gives this pool's price or shows it in game; it may be unused. Odds were never published and the client pools have no odds column ([[gameplay/events-and-schedules|Events and schedules]] §10); the contract's gacha_odds are invented. Counting draws in a video is the only lead ([[gameplay/sources|Sources]], open item 10).
 
 <!-- credit:start -->
 ---

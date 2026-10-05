@@ -4,7 +4,7 @@ type: "item"
 id: 1002
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1002"]
+sources: ["client: Item_Base.cdb id 1002", "guide: [[gameplay/precept-shop]] §2 (Crush Online 2016: D/C/B precept quests pay mostly bronze/silver/gold medals, 1–5)"]
 name_key: "ItemName_1002"
 kind: 12
 kind_name: "Material"
@@ -20,6 +20,7 @@ obtained_from:
   - {"how": "quest_reward", "quest": 980, "count": 1}
   - {"how": "quest_reward", "quest": 985, "count": 5}
   - {"how": "random_box", "box": 47}
+  - {"how": "precept_quest", "rank": "B", "count": [1, 5]}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=218585 type=d36ca9 id=a5b1d7 sources=f3e332 name_key=df02e5 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a6a76d cost_pair=f565d5 stats=97d170 icon=fa9d8b obtained_from=90a7ec -->
@@ -50,7 +51,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Medals are earned in PvP by performance (bronze also from monster invasions) and from daily/weekly quests; Mithril only from the Gold/Mithril reward boxes ([[gameplay/progression-and-economy|Progression and economy]] §3, *guide*). In Crush Online the precept quests paid 1–5 medals by rank ([[gameplay/precept-shop|Precept shop]] §2, *guide*).
 
 ## Behaviour
 
@@ -58,7 +59,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/precept-shop]] §2 (Crush Online 2016: D/C/B precept quests pay mostly bronze/silver/gold medals, 1–5)
 
 ## Open questions
 

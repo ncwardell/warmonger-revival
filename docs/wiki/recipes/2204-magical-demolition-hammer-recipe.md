@@ -2,9 +2,9 @@
 title: "Magical Demolition Hammer recipe"
 type: "recipe"
 id: 2204
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2204", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2204", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (category 7 = the Training Camp passion converter, 220 instead of 200 fragments); unit 336 is the Training Camp unit whose UnitDB list is 7 ([[wiki/npcs/336-paraman|unit 336]])"]
 result: {"item": 20001, "count": 1}
 materials:
   - {"item": 854, "count": 3}
@@ -15,6 +15,7 @@ category: 7
 filter_mask: 16777281
 superior: {"chance": 5, "item": 21001}
 level: 1
+npc: [336]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=a08f14 type=61613a id=895817 sources=81055a result=0f8c31 materials=c06eb2 gold=8a12a3 success_rate=310b86 category=902ba3 filter_mask=24f4fd superior=7d460b level=356a19 -->
@@ -52,7 +53,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp list (UnitDB list 7): passion conversion at a worse rate than the fortress (220 instead of 200 fragments) plus a few weapons ([[gameplay/consumables|Consumables]] §4, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -60,11 +63,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (category 7 = the Training Camp passion converter, 220 instead of 200 fragments); unit 336 is the Training Camp unit whose UnitDB list is 7 ([[wiki/npcs/336-paraman|unit 336]])
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Unit 336 is named Paraman (Legendary Blacksmith) in the client but carries list 7; no video shows who offered this list in the camp.
 
 <!-- credit:start -->
 ---

@@ -2,9 +2,9 @@
 title: "Spirit Shoes recipe"
 type: "recipe"
 id: 2019
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2019", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2019", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)"]
 result: {"item": 415, "count": 1}
 materials:
   - {"item": 700, "count": 13}
@@ -15,6 +15,7 @@ filter_mask: 16777224
 superior: {"chance": 5, "item": 487}
 level: 1
 raw: {"c28": 195}
+npc: [335]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=fe248e type=61613a id=0c422b sources=38b1b5 result=382d98 materials=abbb5c gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=96c62c superior=0820e6 level=356a19 raw=0d675d -->
@@ -49,7 +50,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp copy of Odin's gear list, offered by the camp's Odin (unit 335) ([[gameplay/consumables|Consumables]] §4, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -57,7 +60,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)
 
 ## Open questions
 

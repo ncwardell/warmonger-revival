@@ -4,7 +4,7 @@ type: "item"
 id: 1100
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1100"]
+sources: ["client: Item_Base.cdb id 1100", "notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412)", "client: [[gameplay/crush-mechanics]] (currency 16 price 1)", "notes: [[gameplay/events-and-schedules]] §11 (Crush AH price)"]
 name_key: "ItemName_1100"
 kind: 20
 kind_name: "Reinforcement adjuvants"
@@ -50,7 +50,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Protects a reinforce: from WM 0412 a failed reinforce drops the item one level and uses up the materials, unless Reinforcing Adjuvants are used ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*). The client prices it at 1 in currency 16 (Mithril medal, [[gameplay/crush-mechanics|Crush mechanics]], *client*); Crush Online sold High Reinforcing Adjuvants for 2,000 jewels or 10,000,000 gold in the auction house ([[gameplay/events-and-schedules|Events and schedules]] §11).
 
 ## Behaviour
 
@@ -58,7 +58,9 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412)
+- client: [[gameplay/crush-mechanics]] (currency 16 price 1)
+- notes: [[gameplay/events-and-schedules]] §11 (Crush AH price)
 
 ## Open questions
 

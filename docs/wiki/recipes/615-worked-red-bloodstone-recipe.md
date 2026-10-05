@@ -2,9 +2,9 @@
 title: "Worked Red bloodstone recipe"
 type: "recipe"
 id: 615
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 615", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 615", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)"]
 result: {"item": 861, "count": 1}
 materials:
   - {"item": 812, "count": 5}
@@ -13,6 +13,7 @@ success_rate: 100
 category: 1
 filter_mask: 256
 level: 20
+npc: [214]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=49b0c9 type=61613a id=2456ca sources=816600 result=f1a185 materials=f6e50c gold=7507d4 success_rate=310b86 category=356a19 filter_mask=dd7c1a level=91032a -->
@@ -40,7 +41,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crafted at **Owen** (Red Union, unit 214) in the fortress, which has the full alchemy list ([[gameplay/consumables|Consumables]] §4, *client*). Alchemy recipes always succeed (100 %) ([[gameplay/consumables|Consumables]] §1, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -48,7 +51,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)
 
 ## Open questions
 

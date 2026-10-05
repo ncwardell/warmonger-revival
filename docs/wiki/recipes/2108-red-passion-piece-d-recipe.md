@@ -2,9 +2,9 @@
 title: "Red Passion Piece [D] recipe"
 type: "recipe"
 id: 2108
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2108", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2108", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (category 7 = the Training Camp passion converter, 220 instead of 200 fragments); unit 336 is the Training Camp unit whose UnitDB list is 7 ([[wiki/npcs/336-paraman|unit 336]])"]
 result: {"item": 612, "count": 100}
 materials:
   - {"item": 613, "count": 44}
@@ -13,6 +13,7 @@ success_rate: 100
 category: 7
 filter_mask: 2
 level: 10
+npc: [336]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=f3bf4f type=61613a id=58457f sources=d55032 result=5fe2fd materials=c83468 gold=f8237d success_rate=310b86 category=902ba3 filter_mask=da4b92 level=b1d578 -->
@@ -45,7 +46,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp list (UnitDB list 7): passion conversion at a worse rate than the fortress (220 instead of 200 fragments) plus a few weapons ([[gameplay/consumables|Consumables]] §4, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -53,11 +56,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (category 7 = the Training Camp passion converter, 220 instead of 200 fragments); unit 336 is the Training Camp unit whose UnitDB list is 7 ([[wiki/npcs/336-paraman|unit 336]])
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Unit 336 is named Paraman (Legendary Blacksmith) in the client but carries list 7; no video shows who offered this list in the camp.
 
 <!-- credit:start -->
 ---

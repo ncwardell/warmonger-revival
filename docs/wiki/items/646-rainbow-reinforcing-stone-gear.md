@@ -2,7 +2,7 @@
 title: "Rainbow Reinforcing Stone [Gear]"
 type: "item"
 id: 646
-status: "stub"
+status: "partial"
 missing: ["obtained_from"]
 sources: ["client: Item_Base.cdb id 646"]
 name_key: "ItemName_642"
@@ -42,7 +42,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Rainbow Reinforcing Stones only work on items of their own rarity (WM 0420) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*); the WM 1018 gacha list has no Rare gear stone ([[gameplay/events-and-schedules|Events and schedules]] §10).
 
 ## Behaviour
 

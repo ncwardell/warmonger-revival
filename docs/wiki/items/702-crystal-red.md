@@ -4,7 +4,7 @@ type: "item"
 id: 702
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 702"]
+sources: ["client: Item_Base.cdb id 702", "image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)", "video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)"]
 name_key: "ItemName_702"
 kind: 12
 kind_name: "Material"
@@ -22,6 +22,8 @@ obtained_from:
   - {"how": "quest_reward", "quest": 751, "count": 5}
   - {"how": "quest_reward", "quest": 1103, "count": 5}
   - {"how": "dungeon", "field": 133}
+  - {"how": "fort_guardian_drop", "count": 25}
+  - {"how": "dungeon_drop", "field": 133, "count": [1, 6]}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=9b419a type=d36ca9 id=a08521 sources=dde576 name_key=d6c6b7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=e3f693 obtained_from=0ca5ba -->
@@ -120,7 +122,9 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+On the Fort Guardian drop list from WM 0817: each of up to 15 players who defeat the guardian gets one drop from the list, this item ×25 ([[gameplay/events-and-schedules|Events and schedules]] §5, *image + notes*).
+
+Seen dropping in the event dungeon Nas Village Entrance (hard, field 133 *guess*) in quantities 1–6 ([[gameplay/video-dungeon-run|Nas Village run video]] §4, *video*); Nas is the guides' best place for crystals and gold ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3).
 
 ## Behaviour
 
@@ -128,7 +132,8 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)
+- video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)
 
 ## Open questions
 

@@ -2,9 +2,9 @@
 title: "Amaterasu recipe"
 type: "recipe"
 id: 1503
-status: "stub"
+status: "partial"
 missing: ["npc"]
-sources: ["client: Item_Make.cdb id 1503", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+sources: ["client: Item_Make.cdb id 1503", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/progression-and-economy]] §6 and [[gameplay/events-and-schedules]] §10 (Innocence gacha)"]
 result: {"item": 8002, "count": 1}
 materials:
   - {"item": 9002, "count": 100}
@@ -42,7 +42,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Heroes (Innocence) also come from the paid Innocence gacha (2,000 jewels) ([[gameplay/progression-and-economy|Progression and economy]] §6, [[gameplay/events-and-schedules|Events and schedules]] §10, *image + guide*).
 
 ## Behaviour
 
@@ -50,11 +50,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/progression-and-economy]] §6 and [[gameplay/events-and-schedules]] §10 (Innocence gacha)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Which NPC offers Item_Make category 3 (Innocence crystals and heroes) is not in any source; the guides name only Farrell, Odin, Alan, Owen and Paraman ([[gameplay/items-and-crafting|Items and crafting]] §3).
 
 <!-- credit:start -->
 ---

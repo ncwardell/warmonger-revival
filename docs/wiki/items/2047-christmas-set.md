@@ -2,9 +2,9 @@
 title: "Christmas Set"
 type: "item"
 id: 2047
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 2047"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 2047", "staff: [[gameplay/crush-patch-notes]] 2016-12-22 (Xmas drop costume +10 % drop, 14 days, 3,800 jewels; Christmas 3,800 in the costume price list)"]
 name_key: "ItemName_2046"
 kind: 32
 kind_name: "Costume"
@@ -21,7 +21,8 @@ options:
   - {"code": 209, "value": 26}
   - {"code": 209, "value": 0}
 icon: {"file": "Costume_01.dds", "index": 42}
-obtained_from: []
+obtained_from:
+  - {"how": "costume_shop_crush", "price": 3800, "currency": "jewels", "days": 14}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=a5f2eb type=d36ca9 id=ef8f58 sources=fcd2f7 name_key=64cd49 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=365a69 stats=c7c413 options=11406b icon=0dcee7 obtained_from=97d170 -->
@@ -62,7 +63,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online sold the Christmas drop costume (+10 % drop chance, 14 days) for **3,800 jewels** from 22 Dec 2016 until 9 Jan 2017 ([[gameplay/crush-patch-notes|Crush patch notes]] 2016-12-22, *staff*). This row's +10 % drop stat and timer match; that it is the same costume is a *guess*.
 
 ## Behaviour
 
@@ -70,7 +71,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- staff: [[gameplay/crush-patch-notes]] 2016-12-22 (Xmas drop costume +10 % drop, 14 days, 3,800 jewels; Christmas 3,800 in the costume price list)
 
 ## Open questions
 

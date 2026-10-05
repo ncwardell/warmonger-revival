@@ -2,9 +2,9 @@
 title: "Tsunami Lake Flower"
 type: "item"
 id: 2590
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 2590"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 2590", "client: [[gameplay/npc-locations]] §7 (Trigger.tsv quest node)"]
 name_key: "ItemName_2590"
 kind: 17
 kind_name: "Quest"
@@ -15,7 +15,8 @@ cost_pair:
   - {"currency": 2, "amount": 0}
 stats: []
 icon: {"file": "Items_15.png", "index": 33}
-obtained_from: []
+obtained_from:
+  - {"how": "gather", "field": 122, "trigger": 12215}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=9d32b7 type=d36ca9 id=ee2825 sources=274ad5 name_key=7d17e0 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=b61482 obtained_from=97d170 -->
@@ -44,7 +45,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Picked from the quest node "Tsunami Lake flower" (Trigger 12215) in Tsunami Lake, field 122, at (1469.48, 1990.67) ([[gameplay/npc-locations|NPC locations]] §7, *client*).
 
 ## Behaviour
 
@@ -52,7 +53,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/npc-locations]] §7 (Trigger.tsv quest node)
 
 ## Open questions
 

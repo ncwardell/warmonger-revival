@@ -2,9 +2,9 @@
 title: "Random box 21 (Help of Gaia Box?)"
 type: "box"
 id: 21
-status: "stub"
+status: "partial"
 missing: ["odds", "opened_by"]
-sources: ["client: RandomBox.cdb id 21", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)"]
+sources: ["client: RandomBox.cdb id 21", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)", "guide + client: [[gameplay/lords-of-the-land]] §3 (stack level 1–6 → box items 1023–1028; contents not known) + notes: [[gameplay/events-and-schedules]] §2 (WM 0426 reward became Blue/Yellow crystals by buff level; opening cost 300,000 → 200,000 gold in WM 0920)"]
 contents:
   - {"slot": 0, "item": 601, "count": 50, "p": 0}
   - {"slot": 1, "item": 611, "count": 50, "p": 0}
@@ -59,19 +59,19 @@ No client column links a box item to a RandomBox row. The guess pairs rows and b
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The Lords of the Land war buff pays one box per stack level: level 2 → box item 1024 ([[gameplay/lords-of-the-land|Lords of the Land]] §3, *client* `WinAffect`). Kelsey's quests 117/763/764/765 also reward boxes 1024–1027 ([[gameplay/lords-of-the-land|Lords of the Land]] §4). From WM 0426 the box reward became Blue or Yellow crystals depending on the buff level, which fits this row's passion and crystal contents; from WM 0920 opening the box costs **200,000 gold** (was 300,000) ([[gameplay/events-and-schedules|Events and schedules]] §2, *notes*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Claiming a box resets the buff and the compensation row to zero ([[gameplay/lords-of-the-land|Lords of the Land]] §1, *image*). Only the winning team got the buff and the box in Crush Online (Nov 2016), and the box contents were changed on 22 Dec 2016 (image lost) ([[gameplay/crush-patch-notes|Crush patch notes]], *staff*).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide + client: [[gameplay/lords-of-the-land]] §3 (stack level 1–6 → box items 1023–1028; contents not known) + notes: [[gameplay/events-and-schedules]] §2 (WM 0426 reward became Blue/Yellow crystals by buff level; opening cost 300,000 → 200,000 gold in WM 0920)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+[[gameplay/lords-of-the-land|Lords of the Land]] §3 says no `RandomBox` row lists the box items 1023–1028, so their contents are unknown; this row matching box 1024 stays a guess. The opening cost (200,000 / 300,000 gold) does not match this row's `value_4c` (10,000).
 
 <!-- credit:start -->
 ---

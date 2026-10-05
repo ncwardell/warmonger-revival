@@ -8,16 +8,16 @@ title: "Gacha pools"
 
 The hero gacha ("Herobind") pools `Gacha_00`–`Gacha_06`: what each card can give. The client has no odds; they were server side and never published.
 
-7 pages: 0 complete, 0 partial, 7 stub. Back to the [[wiki/index|game wiki]].
+7 pages: 0 complete, 7 partial, 0 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
-|  | 0 | [[wiki/gacha/0-daily-gacha\|Daily gacha]] | stub | 1 |
-|  | 1 | [[wiki/gacha/1-gear-gacha\|Gear gacha]] | stub | 1 |
-|  | 2 | [[wiki/gacha/2-weapon-gacha\|Weapon gacha]] | stub | 1 |
-|  | 3 | [[wiki/gacha/3-innocence-gacha\|Innocence gacha]] | stub | 1 |
-|  | 4 | [[wiki/gacha/4-gear-gacha-tiers-2-3\|Gear gacha (tiers 2-3)]] | stub | 1 |
-|  | 5 | [[wiki/gacha/5-weapon-gacha-tiers-2-3\|Weapon gacha (tiers 2-3)]] | stub | 1 |
-|  | 6 | [[wiki/gacha/6-unused-gacha-pool\|Unused gacha pool]] | stub | 2 |
+|  | 0 | [[wiki/gacha/0-daily-gacha\|Daily gacha]] | partial | 1 |
+|  | 1 | [[wiki/gacha/1-gear-gacha\|Gear gacha]] | partial | 1 |
+|  | 2 | [[wiki/gacha/2-weapon-gacha\|Weapon gacha]] | partial | 1 |
+|  | 3 | [[wiki/gacha/3-innocence-gacha\|Innocence gacha]] | partial | 1 |
+|  | 4 | [[wiki/gacha/4-gear-gacha-tiers-2-3\|Gear gacha (tiers 2-3)]] | partial | 1 |
+|  | 5 | [[wiki/gacha/5-weapon-gacha-tiers-2-3\|Weapon gacha (tiers 2-3)]] | partial | 1 |
+|  | 6 | [[wiki/gacha/6-unused-gacha-pool\|Unused gacha pool]] | partial | 2 |
 
 *Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*

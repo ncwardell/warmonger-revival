@@ -2,9 +2,9 @@
 title: "Worked Topaz recipe"
 type: "recipe"
 id: 2418
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2418", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2418", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)"]
 result: {"item": 864, "count": 1}
 materials:
   - {"item": 814, "count": 5}
@@ -13,6 +13,7 @@ success_rate: 100
 category: 8
 filter_mask: 256
 level: 20
+npc: [337]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=5a1fb3 type=61613a id=a9666b sources=433821 result=631d47 materials=0c21cb gold=7507d4 success_rate=310b86 category=fe5dbb filter_mask=dd7c1a level=91032a -->
@@ -45,7 +46,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp Owen (unit 337) offers a short list: only B-grade scrolls, tomes, elixirs and flasks and only C and B potions ([[gameplay/consumables|Consumables]] §4, *client*).
 
 ## Behaviour
 
@@ -53,7 +54,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)
 
 ## Open questions
 

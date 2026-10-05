@@ -2,7 +2,7 @@
 title: "Rainbow Reinforcing Stone [Weapon]"
 type: "item"
 id: 645
-status: "stub"
+status: "partial"
 missing: ["obtained_from"]
 sources: ["client: Item_Base.cdb id 645"]
 name_key: "ItemName_641"
@@ -42,7 +42,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Rainbow Reinforcing Stones only work on items of their own rarity (WM 0420) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*). The WM 1018 Weapon gacha (5,000 jewels) lists a Rare Rainbow stone (1–2) ([[gameplay/events-and-schedules|Events and schedules]] §10, *image*).
 
 ## Behaviour
 
@@ -54,7 +54,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The client's Gacha_05 pool does not contain this item, so it is not added to `obtained_from`; that this rarity-2 stone is the "Rare" one is a *guess*.
 
 <!-- credit:start -->
 ---

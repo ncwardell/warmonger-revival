@@ -4,7 +4,7 @@ type: "item"
 id: 1934
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1934"]
+sources: ["client: Item_Base.cdb id 1934", "image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)"]
 name_key: "ItemName_1934"
 kind: 12
 kind_name: "Material"
@@ -25,6 +25,7 @@ obtained_from:
   - {"how": "shop", "shop": 401}
   - {"how": "dungeon", "field": 124}
   - {"how": "dungeon", "field": 142}
+  - {"how": "fort_guardian_drop", "count": 1}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=d7452b type=d36ca9 id=ba801e sources=8fbac1 name_key=81fd17 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=234394 obtained_from=9d2dab -->
@@ -80,7 +81,9 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+On the Fort Guardian drop list from WM 0817: each of up to 15 players who defeat the guardian gets one drop from the list, this item ×1 ([[gameplay/events-and-schedules|Events and schedules]] §5, *image + notes*).
+
+Boss-set essences: Fort Guardians drop them at a very small chance (WM 0809), more often from WM 0920; each border dungeon's entry window shows one essence among its rewards ([[gameplay/reinforce-and-runes|Reinforce and runes]] §6, *notes + client*).
 
 ## Behaviour
 
@@ -88,7 +91,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)
 
 ## Open questions
 

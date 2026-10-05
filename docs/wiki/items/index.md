@@ -8,7 +8,7 @@ title: "Items"
 
 Every item in the client's `Item_Base` table: equipment, weapons, runes, consumables, materials, quest items and the pseudo-items used for gold, fame and exp rewards.
 
-1192 pages: 832 complete, 0 partial, 360 stub. Back to the [[wiki/index|game wiki]].
+1192 pages: 871 complete, 20 partial, 301 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -98,22 +98,22 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/474.png) | 474 | [[wiki/items/474-belt-of-rise\|Belt of Rise]] | complete | 0 |
 | ![](../assets/items/475.png) | 475 | [[wiki/items/475-bracelet-of-rise\|Bracelet of Rise]] | complete | 0 |
 | ![](../assets/items/476.png) | 476 | [[wiki/items/476-ring-of-rise\|Ring of Rise]] | complete | 0 |
-| ![](../assets/items/477.png) | 477 | [[wiki/items/477-helmet-of-life\|Helmet of Life]] | stub | 1 |
-| ![](../assets/items/478.png) | 478 | [[wiki/items/478-armor-of-life\|Armor of Life]] | stub | 1 |
-| ![](../assets/items/479.png) | 479 | [[wiki/items/479-gloves-of-life\|Gloves of Life]] | stub | 1 |
-| ![](../assets/items/480.png) | 480 | [[wiki/items/480-shoes-of-life\|Shoes of Life]] | stub | 1 |
-| ![](../assets/items/481.png) | 481 | [[wiki/items/481-guardian-helmet\|Guardian Helmet]] | stub | 1 |
-| ![](../assets/items/482.png) | 482 | [[wiki/items/482-guardian-armor\|Guardian Armor]] | stub | 1 |
-| ![](../assets/items/483.png) | 483 | [[wiki/items/483-guardian-shoes\|Guardian Shoes]] | stub | 1 |
-| ![](../assets/items/484.png) | 484 | [[wiki/items/484-guardian-gloves\|Guardian Gloves]] | stub | 1 |
-| ![](../assets/items/485.png) | 485 | [[wiki/items/485-spirit-earring\|Spirit Earring]] | stub | 1 |
-| ![](../assets/items/486.png) | 486 | [[wiki/items/486-spirit-robe\|Spirit Robe]] | stub | 1 |
-| ![](../assets/items/487.png) | 487 | [[wiki/items/487-spirit-shoes\|Spirit Shoes]] | stub | 1 |
-| ![](../assets/items/488.png) | 488 | [[wiki/items/488-spirit-gloves\|Spirit Gloves]] | stub | 1 |
-| ![](../assets/items/489.png) | 489 | [[wiki/items/489-helmet-of-honor\|Helmet of Honor]] | stub | 1 |
-| ![](../assets/items/490.png) | 490 | [[wiki/items/490-armor-of-honor\|Armor of Honor]] | stub | 1 |
-| ![](../assets/items/491.png) | 491 | [[wiki/items/491-shoes-of-honor\|Shoes of Honor]] | stub | 1 |
-| ![](../assets/items/492.png) | 492 | [[wiki/items/492-gloves-of-honor\|Gloves of Honor]] | stub | 1 |
+| ![](../assets/items/477.png) | 477 | [[wiki/items/477-helmet-of-life\|Helmet of Life]] | complete | 0 |
+| ![](../assets/items/478.png) | 478 | [[wiki/items/478-armor-of-life\|Armor of Life]] | complete | 0 |
+| ![](../assets/items/479.png) | 479 | [[wiki/items/479-gloves-of-life\|Gloves of Life]] | complete | 0 |
+| ![](../assets/items/480.png) | 480 | [[wiki/items/480-shoes-of-life\|Shoes of Life]] | complete | 0 |
+| ![](../assets/items/481.png) | 481 | [[wiki/items/481-guardian-helmet\|Guardian Helmet]] | complete | 0 |
+| ![](../assets/items/482.png) | 482 | [[wiki/items/482-guardian-armor\|Guardian Armor]] | complete | 0 |
+| ![](../assets/items/483.png) | 483 | [[wiki/items/483-guardian-shoes\|Guardian Shoes]] | complete | 0 |
+| ![](../assets/items/484.png) | 484 | [[wiki/items/484-guardian-gloves\|Guardian Gloves]] | complete | 0 |
+| ![](../assets/items/485.png) | 485 | [[wiki/items/485-spirit-earring\|Spirit Earring]] | complete | 0 |
+| ![](../assets/items/486.png) | 486 | [[wiki/items/486-spirit-robe\|Spirit Robe]] | complete | 0 |
+| ![](../assets/items/487.png) | 487 | [[wiki/items/487-spirit-shoes\|Spirit Shoes]] | complete | 0 |
+| ![](../assets/items/488.png) | 488 | [[wiki/items/488-spirit-gloves\|Spirit Gloves]] | complete | 0 |
+| ![](../assets/items/489.png) | 489 | [[wiki/items/489-helmet-of-honor\|Helmet of Honor]] | complete | 0 |
+| ![](../assets/items/490.png) | 490 | [[wiki/items/490-armor-of-honor\|Armor of Honor]] | complete | 0 |
+| ![](../assets/items/491.png) | 491 | [[wiki/items/491-shoes-of-honor\|Shoes of Honor]] | complete | 0 |
+| ![](../assets/items/492.png) | 492 | [[wiki/items/492-gloves-of-honor\|Gloves of Honor]] | complete | 0 |
 | ![](../assets/items/601.png) | 601 | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | complete | 0 |
 | ![](../assets/items/602.png) | 602 | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | complete | 0 |
 | ![](../assets/items/603.png) | 603 | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | complete | 0 |
@@ -158,8 +158,8 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/642.png) | 642 | [[wiki/items/642-rainbow-reinforcing-stone-gear\|Rainbow Reinforcing Stone (Gear)]] | complete | 0 |
 | ![](../assets/items/643.png) | 643 | [[wiki/items/643-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | complete | 0 |
 | ![](../assets/items/644.png) | 644 | [[wiki/items/644-rainbow-reinforcing-stone-gear\|Rainbow Reinforcing Stone (Gear)]] | complete | 0 |
-| ![](../assets/items/645.png) | 645 | [[wiki/items/645-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | stub | 1 |
-| ![](../assets/items/646.png) | 646 | [[wiki/items/646-rainbow-reinforcing-stone-gear\|Rainbow Reinforcing Stone (Gear)]] | stub | 1 |
+| ![](../assets/items/645.png) | 645 | [[wiki/items/645-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | partial | 1 |
+| ![](../assets/items/646.png) | 646 | [[wiki/items/646-rainbow-reinforcing-stone-gear\|Rainbow Reinforcing Stone (Gear)]] | partial | 1 |
 | ![](../assets/items/671.png) | 671 | [[wiki/items/671-white-passion-fragments\|White Passion Fragments]] | stub | 1 |
 | ![](../assets/items/681.png) | 681 | [[wiki/items/681-black-passion-fragments\|Black Passion Fragments]] | stub | 1 |
 | ![](../assets/items/688.png) | 688 | [[wiki/items/688-dimensional-energy\|Dimensional energy]] | complete | 0 |
@@ -167,10 +167,10 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/690.png) | 690 | [[wiki/items/690-tier-2-time-energy\|Tier 2 : Time energy]] | complete | 0 |
 | ![](../assets/items/691.png) | 691 | [[wiki/items/691-tier-3-time-energy\|Tier 3 : Time energy]] | complete | 0 |
 | ![](../assets/items/692.png) | 692 | [[wiki/items/692-gem-stone-blue\|Gem Stone : Blue]] | stub | 2 |
-| ![](../assets/items/693.png) | 693 | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | stub | 1 |
-| ![](../assets/items/694.png) | 694 | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | stub | 1 |
-| ![](../assets/items/695.png) | 695 | [[wiki/items/695-gem-stone-red\|Gem Stone : Red]] | stub | 1 |
-| ![](../assets/items/696.png) | 696 | [[wiki/items/696-gem-stone-black\|Gem stone : Black]] | stub | 1 |
+| ![](../assets/items/693.png) | 693 | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | partial | 1 |
+| ![](../assets/items/694.png) | 694 | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | partial | 1 |
+| ![](../assets/items/695.png) | 695 | [[wiki/items/695-gem-stone-red\|Gem Stone : Red]] | partial | 1 |
+| ![](../assets/items/696.png) | 696 | [[wiki/items/696-gem-stone-black\|Gem stone : Black]] | partial | 1 |
 | ![](../assets/items/700.png) | 700 | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | complete | 0 |
 | ![](../assets/items/701.png) | 701 | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | complete | 0 |
 | ![](../assets/items/702.png) | 702 | [[wiki/items/702-crystal-red\|Crystal : Red]] | complete | 0 |
@@ -199,14 +199,14 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/725.png) | 725 | [[wiki/items/725-tome-of-critical-b\|Tome of Critical (B)]] | complete | 0 |
 | ![](../assets/items/726.png) | 726 | [[wiki/items/726-tome-of-critical-a\|Tome of Critical (A)]] | complete | 0 |
 | ![](../assets/items/727.png) | 727 | [[wiki/items/727-tome-of-critical-s\|Tome of Critical (S)]] | complete | 0 |
-| ![](../assets/items/728.png) | 728 | [[wiki/items/728-scroll-of-armor-pnt-c\|Scroll of Armor PNT (C)]] | stub | 1 |
-| ![](../assets/items/729.png) | 729 | [[wiki/items/729-scroll-of-armor-pnt-b\|Scroll of Armor PNT (B)]] | stub | 1 |
-| ![](../assets/items/730.png) | 730 | [[wiki/items/730-scroll-of-armor-pnt-a\|Scroll of Armor PNT (A)]] | stub | 1 |
-| ![](../assets/items/731.png) | 731 | [[wiki/items/731-scroll-of-armor-pnt-s\|Scroll of Armor PNT (S)]] | stub | 1 |
-| ![](../assets/items/732.png) | 732 | [[wiki/items/732-scroll-of-magic-pnt-c\|Scroll of Magic PNT (C)]] | stub | 1 |
-| ![](../assets/items/733.png) | 733 | [[wiki/items/733-scroll-of-magic-pnt-b\|Scroll of Magic PNT (B)]] | stub | 1 |
-| ![](../assets/items/734.png) | 734 | [[wiki/items/734-scroll-of-magic-pnt-a\|Scroll of Magic PNT (A)]] | stub | 1 |
-| ![](../assets/items/735.png) | 735 | [[wiki/items/735-scroll-of-magic-pnt-s\|Scroll of Magic PNT (S)]] | stub | 1 |
+| ![](../assets/items/728.png) | 728 | [[wiki/items/728-scroll-of-armor-pnt-c\|Scroll of Armor PNT (C)]] | partial | 1 |
+| ![](../assets/items/729.png) | 729 | [[wiki/items/729-scroll-of-armor-pnt-b\|Scroll of Armor PNT (B)]] | partial | 1 |
+| ![](../assets/items/730.png) | 730 | [[wiki/items/730-scroll-of-armor-pnt-a\|Scroll of Armor PNT (A)]] | partial | 1 |
+| ![](../assets/items/731.png) | 731 | [[wiki/items/731-scroll-of-armor-pnt-s\|Scroll of Armor PNT (S)]] | partial | 1 |
+| ![](../assets/items/732.png) | 732 | [[wiki/items/732-scroll-of-magic-pnt-c\|Scroll of Magic PNT (C)]] | partial | 1 |
+| ![](../assets/items/733.png) | 733 | [[wiki/items/733-scroll-of-magic-pnt-b\|Scroll of Magic PNT (B)]] | partial | 1 |
+| ![](../assets/items/734.png) | 734 | [[wiki/items/734-scroll-of-magic-pnt-a\|Scroll of Magic PNT (A)]] | partial | 1 |
+| ![](../assets/items/735.png) | 735 | [[wiki/items/735-scroll-of-magic-pnt-s\|Scroll of Magic PNT (S)]] | partial | 1 |
 | ![](../assets/items/736.png) | 736 | [[wiki/items/736-elixir-of-health-c\|Elixir of Health (C)]] | complete | 0 |
 | ![](../assets/items/737.png) | 737 | [[wiki/items/737-elixir-of-health-b\|Elixir of Health (B)]] | complete | 0 |
 | ![](../assets/items/738.png) | 738 | [[wiki/items/738-elixir-of-health-a\|Elixir of Health (A)]] | complete | 0 |
@@ -259,17 +259,17 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/815.png) | 815 | [[wiki/items/815-topaz-powder\|Topaz powder]] | complete | 0 |
 | ![](../assets/items/816.png) | 816 | [[wiki/items/816-onyx\|Onyx]] | complete | 0 |
 | ![](../assets/items/817.png) | 817 | [[wiki/items/817-onyx-powder\|Onyx powder]] | complete | 0 |
-| ![](../assets/items/818.png) | 818 | [[wiki/items/818-lavender\|Lavender]] | stub | 1 |
+| ![](../assets/items/818.png) | 818 | [[wiki/items/818-lavender\|Lavender]] | complete | 0 |
 | ![](../assets/items/819.png) | 819 | [[wiki/items/819-lavender-powder\|Lavender powder]] | complete | 0 |
-| ![](../assets/items/820.png) | 820 | [[wiki/items/820-peppermint\|Peppermint]] | stub | 1 |
+| ![](../assets/items/820.png) | 820 | [[wiki/items/820-peppermint\|Peppermint]] | complete | 0 |
 | ![](../assets/items/821.png) | 821 | [[wiki/items/821-peppermint-powder\|Peppermint powder]] | complete | 0 |
-| ![](../assets/items/822.png) | 822 | [[wiki/items/822-rosemary\|Rosemary]] | stub | 1 |
+| ![](../assets/items/822.png) | 822 | [[wiki/items/822-rosemary\|Rosemary]] | complete | 0 |
 | ![](../assets/items/823.png) | 823 | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | complete | 0 |
-| ![](../assets/items/824.png) | 824 | [[wiki/items/824-jasmine\|Jasmine]] | stub | 1 |
+| ![](../assets/items/824.png) | 824 | [[wiki/items/824-jasmine\|Jasmine]] | complete | 0 |
 | ![](../assets/items/825.png) | 825 | [[wiki/items/825-jasmine-powder\|Jasmine powder]] | complete | 0 |
-| ![](../assets/items/826.png) | 826 | [[wiki/items/826-borage\|Borage]] | stub | 1 |
+| ![](../assets/items/826.png) | 826 | [[wiki/items/826-borage\|Borage]] | complete | 0 |
 | ![](../assets/items/827.png) | 827 | [[wiki/items/827-borage-powder\|Borage powder]] | complete | 0 |
-| ![](../assets/items/828.png) | 828 | [[wiki/items/828-spartium\|Spartium]] | stub | 1 |
+| ![](../assets/items/828.png) | 828 | [[wiki/items/828-spartium\|Spartium]] | complete | 0 |
 | ![](../assets/items/829.png) | 829 | [[wiki/items/829-spartium-powder\|Spartium powder]] | complete | 0 |
 | ![](../assets/items/830.png) | 830 | [[wiki/items/830-empty-scroll-c\|Empty Scroll (C)]] | complete | 0 |
 | ![](../assets/items/831.png) | 831 | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | complete | 0 |
@@ -346,7 +346,7 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/909.png) | 909 | [[wiki/items/909-scroll-gaia\|Scroll : Gaia]] | complete | 0 |
 | ![](../assets/items/910.png) | 910 | [[wiki/items/910-battle-arena-scroll\|Battle Arena Scroll]] | stub | 1 |
 | ![](../assets/items/911.png) | 911 | [[wiki/items/911-scroll-castle\|Scroll : Castle]] | stub | 1 |
-| ![](../assets/items/912.png) | 912 | [[wiki/items/912-scroll-gaia\|Scroll : Gaia]] | stub | 1 |
+| ![](../assets/items/912.png) | 912 | [[wiki/items/912-scroll-gaia\|Scroll : Gaia]] | complete | 0 |
 | ![](../assets/items/913.png) | 913 | [[wiki/items/913-teleport-scroll-premium\|Teleport Scroll (Premium)]] | complete | 0 |
 | ![](../assets/items/921.png) | 921 | [[wiki/items/921-warehouse-summon-scroll\|Warehouse Summon Scroll]] | complete | 0 |
 | ![](../assets/items/922.png) | 922 | [[wiki/items/922-merchant-summon-scroll\|Merchant Summon Scroll]] | complete | 0 |
@@ -364,8 +364,8 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/1003.png) | 1003 | [[wiki/items/1003-gold\|Gold]] | stub | 1 |
 | ![](../assets/items/1004.png) | 1004 | [[wiki/items/1004-fame\|Fame]] | stub | 1 |
 | ![](../assets/items/1005.png) | 1005 | [[wiki/items/1005-exp\|Exp]] | stub | 1 |
-| ![](../assets/items/1006.png) | 1006 | [[wiki/items/1006-yellow-jewel\|Yellow Jewel]] | stub | 1 |
-| ![](../assets/items/1007.png) | 1007 | [[wiki/items/1007-medal-arena\|Medal : Arena]] | stub | 1 |
+| ![](../assets/items/1006.png) | 1006 | [[wiki/items/1006-yellow-jewel\|Yellow Jewel]] | complete | 0 |
+| ![](../assets/items/1007.png) | 1007 | [[wiki/items/1007-medal-arena\|Medal : Arena]] | complete | 0 |
 | ![](../assets/items/1008.png) | 1008 | [[wiki/items/1008-legion-fame\|Legion Fame]] | stub | 1 |
 | ![](../assets/items/1009.png) | 1009 | [[wiki/items/1009\|Item 1009]] | stub | 1 |
 | ![](../assets/items/1010.png) | 1010 | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | complete | 0 |
@@ -416,10 +416,10 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/1251.png) | 1251 | [[wiki/items/1251-c-rank-quest\|C Rank Quest]] | complete | 0 |
 | ![](../assets/items/1252.png) | 1252 | [[wiki/items/1252-c-rank-quest\|C Rank Quest]] | complete | 0 |
 | ![](../assets/items/1253.png) | 1253 | [[wiki/items/1253-c-rank-quest\|C Rank Quest]] | complete | 0 |
-| ![](../assets/items/1254.png) | 1254 | [[wiki/items/1254-c-rank-quest\|C Rank Quest]] | stub | 1 |
-| ![](../assets/items/1255.png) | 1255 | [[wiki/items/1255-c-rank-quest\|C Rank Quest]] | stub | 1 |
-| ![](../assets/items/1301.png) | 1301 | [[wiki/items/1301-b-rank-quest\|B Rank Quest]] | stub | 1 |
-| ![](../assets/items/1302.png) | 1302 | [[wiki/items/1302-b-rank-quest\|B Rank Quest]] | stub | 1 |
+| ![](../assets/items/1254.png) | 1254 | [[wiki/items/1254-c-rank-quest\|C Rank Quest]] | complete | 0 |
+| ![](../assets/items/1255.png) | 1255 | [[wiki/items/1255-c-rank-quest\|C Rank Quest]] | complete | 0 |
+| ![](../assets/items/1301.png) | 1301 | [[wiki/items/1301-b-rank-quest\|B Rank Quest]] | complete | 0 |
+| ![](../assets/items/1302.png) | 1302 | [[wiki/items/1302-b-rank-quest\|B Rank Quest]] | complete | 0 |
 | ![](../assets/items/1401.png) | 1401 | [[wiki/items/1401-siege-minion\|Siege Minion]] | stub | 1 |
 | ![](../assets/items/1402.png) | 1402 | [[wiki/items/1402-i-ll-be-back\|I'll be back!]] | complete | 0 |
 | ![](../assets/items/1403.png) | 1403 | [[wiki/items/1403-recovery-shot\|Recovery Shot]] | complete | 0 |
@@ -452,7 +452,7 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/1619.png) | 1619 | [[wiki/items/1619-increased-luck\|Increased Luck]] | stub | 1 |
 | ![](../assets/items/1620.png) | 1620 | [[wiki/items/1620-scared-area\|Scared Area]] | stub | 1 |
 | ![](../assets/items/1621.png) | 1621 | [[wiki/items/1621-dimension-movement\|Dimension Movement]] | stub | 1 |
-| ![](../assets/items/1801.png) | 1801 | [[wiki/items/1801-life-saviour-premium\|Life saviour (Premium)]] | stub | 1 |
+| ![](../assets/items/1801.png) | 1801 | [[wiki/items/1801-life-saviour-premium\|Life saviour (Premium)]] | complete | 0 |
 | ![](../assets/items/1802.png) | 1802 | [[wiki/items/1802-life-saviour\|Life saviour]] | complete | 0 |
 | ![](../assets/items/1900.png) | 1900 | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | complete | 0 |
 | ![](../assets/items/1901.png) | 1901 | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | complete | 0 |
@@ -510,7 +510,7 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/2029.png) | 2029 | [[wiki/items/2029-twisted-wind-set\|Twisted Wind Set]] | complete | 0 |
 | ![](../assets/items/2030.png) | 2030 | [[wiki/items/2030-military-set\|Military Set]] | complete | 0 |
 | ![](../assets/items/2031.png) | 2031 | [[wiki/items/2031-military-set\|Military Set]] | complete | 0 |
-| ![](../assets/items/2032.png) | 2032 | [[wiki/items/2032-military-set\|Military Set]] | stub | 1 |
+| ![](../assets/items/2032.png) | 2032 | [[wiki/items/2032-military-set\|Military Set]] | complete | 0 |
 | ![](../assets/items/2033.png) | 2033 | [[wiki/items/2033-athletics-set\|Athletics Set]] | complete | 0 |
 | ![](../assets/items/2034.png) | 2034 | [[wiki/items/2034-athletics-set\|Athletics Set]] | complete | 0 |
 | ![](../assets/items/2035.png) | 2035 | [[wiki/items/2035-athletics-set\|Athletics Set]] | complete | 0 |
@@ -521,12 +521,12 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/2040.png) | 2040 | [[wiki/items/2040-goosebumps-set\|Goosebumps Set]] | complete | 0 |
 | ![](../assets/items/2041.png) | 2041 | [[wiki/items/2041-goosebumps-set\|Goosebumps Set]] | complete | 0 |
 | ![](../assets/items/2042.png) | 2042 | [[wiki/items/2042-goosebumps-set\|Goosebumps Set]] | complete | 0 |
-| ![](../assets/items/2043.png) | 2043 | [[wiki/items/2043-halloween-set\|Halloween Set]] | stub | 1 |
-| ![](../assets/items/2044.png) | 2044 | [[wiki/items/2044-halloween-set\|Halloween Set]] | stub | 1 |
-| ![](../assets/items/2045.png) | 2045 | [[wiki/items/2045-halloween-set\|Halloween Set]] | stub | 1 |
-| ![](../assets/items/2046.png) | 2046 | [[wiki/items/2046-christmas-set\|Christmas Set]] | stub | 1 |
-| ![](../assets/items/2047.png) | 2047 | [[wiki/items/2047-christmas-set\|Christmas Set]] | stub | 1 |
-| ![](../assets/items/2048.png) | 2048 | [[wiki/items/2048-christmas-set\|Christmas Set]] | stub | 1 |
+| ![](../assets/items/2043.png) | 2043 | [[wiki/items/2043-halloween-set\|Halloween Set]] | partial | 1 |
+| ![](../assets/items/2044.png) | 2044 | [[wiki/items/2044-halloween-set\|Halloween Set]] | partial | 1 |
+| ![](../assets/items/2045.png) | 2045 | [[wiki/items/2045-halloween-set\|Halloween Set]] | partial | 1 |
+| ![](../assets/items/2046.png) | 2046 | [[wiki/items/2046-christmas-set\|Christmas Set]] | complete | 0 |
+| ![](../assets/items/2047.png) | 2047 | [[wiki/items/2047-christmas-set\|Christmas Set]] | complete | 0 |
+| ![](../assets/items/2048.png) | 2048 | [[wiki/items/2048-christmas-set\|Christmas Set]] | complete | 0 |
 | ![](../assets/items/2049.png) | 2049 | [[wiki/items/2049-ninja-set\|Ninja Set]] | complete | 0 |
 | ![](../assets/items/2050.png) | 2050 | [[wiki/items/2050-ninja-set\|Ninja Set]] | complete | 0 |
 | ![](../assets/items/2051.png) | 2051 | [[wiki/items/2051-ninja-set\|Ninja Set]] | complete | 0 |
@@ -545,9 +545,9 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/2082.png) | 2082 | [[wiki/items/2082-oracle-set\|Oracle Set]] | complete | 0 |
 | ![](../assets/items/2083.png) | 2083 | [[wiki/items/2083-oracle-set\|Oracle Set]] | complete | 0 |
 | ![](../assets/items/2084.png) | 2084 | [[wiki/items/2084-oracle-set\|Oracle Set]] | complete | 0 |
-| ![](../assets/items/2085.png) | 2085 | [[wiki/items/2085-christmas-set\|Christmas Set]] | stub | 1 |
-| ![](../assets/items/2086.png) | 2086 | [[wiki/items/2086-christmas-set\|Christmas Set]] | stub | 1 |
-| ![](../assets/items/2087.png) | 2087 | [[wiki/items/2087-christmas-set\|Christmas Set]] | stub | 1 |
+| ![](../assets/items/2085.png) | 2085 | [[wiki/items/2085-christmas-set\|Christmas Set]] | partial | 1 |
+| ![](../assets/items/2086.png) | 2086 | [[wiki/items/2086-christmas-set\|Christmas Set]] | partial | 1 |
+| ![](../assets/items/2087.png) | 2087 | [[wiki/items/2087-christmas-set\|Christmas Set]] | partial | 1 |
 | ![](../assets/items/2300.png) | 2300 | [[wiki/items/2300-pink-hair-dye\|Pink Hair Dye]] | complete | 0 |
 | ![](../assets/items/2301.png) | 2301 | [[wiki/items/2301-red-hair-dye\|Red Hair Dye]] | complete | 0 |
 | ![](../assets/items/2302.png) | 2302 | [[wiki/items/2302-orange-hair-dye\|Orange Hair Dye]] | complete | 0 |
@@ -594,11 +594,11 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/2560.png) | 2560 | [[wiki/items/2560-black-skeleton-archer-bone\|Black Skeleton Archer bone]] | stub | 1 |
 | ![](../assets/items/2561.png) | 2561 | [[wiki/items/2561-black-elite-skeleton-warrior-item\|Black Elite Skeleton Warrior Item]] | stub | 1 |
 | ![](../assets/items/2562.png) | 2562 | [[wiki/items/2562-black-elite-skeleton-archer-item\|Black Elite Skeleton Archer Item]] | stub | 1 |
-| ![](../assets/items/2563.png) | 2563 | [[wiki/items/2563-hawker-letter\|Hawker letter]] | stub | 1 |
-| ![](../assets/items/2564.png) | 2564 | [[wiki/items/2564-letter-to-oracle-of-knowledge\|Letter to Oracle of Knowledge]] | stub | 1 |
+| ![](../assets/items/2563.png) | 2563 | [[wiki/items/2563-hawker-letter\|Hawker letter]] | complete | 0 |
+| ![](../assets/items/2564.png) | 2564 | [[wiki/items/2564-letter-to-oracle-of-knowledge\|Letter to Oracle of Knowledge]] | complete | 0 |
 | ![](../assets/items/2565.png) | 2565 | [[wiki/items/2565-secret-document\|Secret document]] | complete | 0 |
 | ![](../assets/items/2566.png) | 2566 | [[wiki/items/2566-crystal-ball\|Crystal Ball]] | complete | 0 |
-| ![](../assets/items/2567.png) | 2567 | [[wiki/items/2567-urgent-letter\|Urgent Letter]] | stub | 1 |
+| ![](../assets/items/2567.png) | 2567 | [[wiki/items/2567-urgent-letter\|Urgent Letter]] | complete | 0 |
 | ![](../assets/items/2568.png) | 2568 | [[wiki/items/2568-essence-of-darkness\|essence of Darkness]] | complete | 0 |
 | ![](../assets/items/2569.png) | 2569 | [[wiki/items/2569-decomposition-ring\|Decomposition Ring]] | stub | 2 |
 | ![](../assets/items/2570.png) | 2570 | [[wiki/items/2570-vestiges-of-devildom\|Vestiges of devildom]] | stub | 1 |
@@ -621,8 +621,8 @@ Every item in the client's `Item_Base` table: equipment, weapons, runes, consuma
 | ![](../assets/items/2587.png) | 2587 | [[wiki/items/2587-the-tempest-fisher-s-pipe\|The Tempest Fisher's Pipe]] | complete | 0 |
 | ![](../assets/items/2588.png) | 2588 | [[wiki/items/2588-the-slayer-komodo-s-pipe\|The Slayer Komodo's Pipe]] | complete | 0 |
 | ![](../assets/items/2589.png) | 2589 | [[wiki/items/2589-the-chepa-sorcerer-s-pipe\|The Chepa Sorcerer's Pipe]] | complete | 0 |
-| ![](../assets/items/2590.png) | 2590 | [[wiki/items/2590-tsunami-lake-flower\|Tsunami Lake Flower]] | stub | 1 |
-| ![](../assets/items/2591.png) | 2591 | [[wiki/items/2591-swamp-mushroom\|Swamp Mushroom]] | stub | 1 |
+| ![](../assets/items/2590.png) | 2590 | [[wiki/items/2590-tsunami-lake-flower\|Tsunami Lake Flower]] | complete | 0 |
+| ![](../assets/items/2591.png) | 2591 | [[wiki/items/2591-swamp-mushroom\|Swamp Mushroom]] | complete | 0 |
 | ![](../assets/items/2592.png) | 2592 | [[wiki/items/2592-piece-guardian\|Piece : Guardian]] | stub | 1 |
 | ![](../assets/items/2593.png) | 2593 | [[wiki/items/2593-empty-flask-a\|Empty Flask (A)]] | stub | 1 |
 | ![](../assets/items/2594.png) | 2594 | [[wiki/items/2594-crystal-red\|Crystal : Red]] | stub | 1 |

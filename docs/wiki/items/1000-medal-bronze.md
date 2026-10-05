@@ -4,7 +4,7 @@ type: "item"
 id: 1000
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1000"]
+sources: ["client: Item_Base.cdb id 1000", "image: [[gameplay/progression-and-economy]] §2 (daily Monster Hunt 50 monsters → 1 bronze medal; weekly 250 → 1 silver medal + 10 Dimensional Energy)", "guide: [[gameplay/precept-shop]] §2 (Crush Online 2016: D/C/B precept quests pay mostly bronze/silver/gold medals, 1–5)", "video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)"]
 name_key: "ItemName_1000"
 kind: 12
 kind_name: "Material"
@@ -27,6 +27,9 @@ obtained_from:
   - {"how": "quest_reward", "quest": 842, "count": 5}
   - {"how": "quest_reward", "quest": 843, "count": 4}
   - {"how": "quest_reward", "quest": 950, "count": 1}
+  - {"how": "daily_quest", "quest": "Monster Hunt", "count": 1}
+  - {"how": "precept_quest", "rank": "D", "count": [1, 5]}
+  - {"how": "dungeon_drop", "field": 133, "count": [1, 1]}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=616526 type=d36ca9 id=e3cbba sources=2aae2f name_key=ea36f7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=82c3b7 cost_pair=a87fd8 stats=97d170 icon=88596b obtained_from=56ffea -->
@@ -65,7 +68,9 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Medals are earned in PvP by performance (bronze also from monster invasions) and from daily/weekly quests; Mithril only from the Gold/Mithril reward boxes ([[gameplay/progression-and-economy|Progression and economy]] §3, *guide*). In Crush Online the precept quests paid 1–5 medals by rank ([[gameplay/precept-shop|Precept shop]] §2, *guide*).
+
+Seen dropping in the event dungeon Nas Village Entrance (hard, field 133 *guess*) in quantities 1 ([[gameplay/video-dungeon-run|Nas Village run video]] §4, *video*); Nas is the guides' best place for crystals and gold ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3).
 
 ## Behaviour
 
@@ -73,7 +78,9 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/progression-and-economy]] §2 (daily Monster Hunt 50 monsters → 1 bronze medal; weekly 250 → 1 silver medal + 10 Dimensional Energy)
+- guide: [[gameplay/precept-shop]] §2 (Crush Online 2016: D/C/B precept quests pay mostly bronze/silver/gold medals, 1–5)
+- video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)
 
 ## Open questions
 

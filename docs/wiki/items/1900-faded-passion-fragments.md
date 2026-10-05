@@ -4,7 +4,7 @@ type: "item"
 id: 1900
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1900"]
+sources: ["client: Item_Base.cdb id 1900", "video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)"]
 name_key: "ItemName_1900"
 kind: 1
 kind_name: "Normal"
@@ -91,6 +91,7 @@ obtained_from:
   - {"how": "shop", "shop": 232}
   - {"how": "shop", "shop": 233}
   - {"how": "shop", "shop": 234}
+  - {"how": "dungeon_drop", "field": 133, "count": [1, 20]}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=e93edc type=d36ca9 id=259e58 sources=b71cf1 name_key=38ff8e kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=eac6e9 obtained_from=1685fd -->
@@ -197,7 +198,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Seen dropping in the event dungeon Nas Village Entrance (hard, field 133 *guess*) in quantities 1–20 ([[gameplay/video-dungeon-run|Nas Village run video]] §4, *video*); Nas is the guides' best place for crystals and gold ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3).
 
 ## Behaviour
 
@@ -205,7 +206,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)
 
 ## Open questions
 

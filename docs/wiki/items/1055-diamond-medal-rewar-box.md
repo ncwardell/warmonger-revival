@@ -4,7 +4,7 @@ type: "item"
 id: 1055
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1055"]
+sources: ["client: Item_Base.cdb id 1055", "staff: [[gameplay/crush-patch-notes]] 2016-12-15, 2017-02-21"]
 name_key: "ItemName_1055"
 kind: 43
 kind_name: "Random Box"
@@ -40,7 +40,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+In Crush Online the Magic Crafting Stone came only from this box from Dec 2016 ([[gameplay/crush-patch-notes|Crush patch notes]], [[gameplay/crush-mechanics|Crush mechanics]], *staff*). Medal boxes were changed to drop more medals in Feb 2017 ([[gameplay/crush-patch-notes|Crush patch notes]]).
 
 ## Behaviour
 
@@ -48,7 +48,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- staff: [[gameplay/crush-patch-notes]] 2016-12-15, 2017-02-21
 
 ## Open questions
 

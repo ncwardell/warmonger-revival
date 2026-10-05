@@ -2,9 +2,9 @@
 title: "Hawker letter"
 type: "item"
 id: 2563
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 2563"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 2563", "video: [[gameplay/video-character-creation-and-tutorial]] §22 and [[gameplay/video-early-quests]] §14 (Wren 238 gives it with quest 102)"]
 name_key: "ItemName_2563"
 kind: 17
 kind_name: "Quest"
@@ -15,7 +15,8 @@ cost_pair:
   - {"currency": 2, "amount": 0}
 stats: []
 icon: {"file": "Items_04.png", "index": 59}
-obtained_from: []
+obtained_from:
+  - {"how": "quest_given", "quest": 102, "npc": 238}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=a0d7fc type=d36ca9 id=7196c8 sources=fe93b1 name_key=78838c kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=ca1243 obtained_from=97d170 -->
@@ -46,7 +47,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Wren (unit 238, Training Camp) gives the Hawker letter with side quest 102 "Wren's sister Wren?"; the player carries it to the other Wren (204) in the Fortress ([[gameplay/video-character-creation-and-tutorial|Character creation video]] §22, [[gameplay/video-early-quests|Early quests video]] §14, *video*).
 
 ## Behaviour
 
@@ -54,7 +55,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- video: [[gameplay/video-character-creation-and-tutorial]] §22 and [[gameplay/video-early-quests]] §14 (Wren 238 gives it with quest 102)
 
 ## Open questions
 

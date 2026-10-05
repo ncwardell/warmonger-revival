@@ -2,9 +2,9 @@
 title: "Spirit Earring"
 type: "item"
 id: 485
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 485"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 485", "client: Item_Make superior column (c19 chance / fail_item, read as superior result, *guess*) + notes: [[gameplay/reinforce-and-runes]] §4 (WM 0726: crafted gear has a small chance to come out superior)"]
 name_key: "ItemName_413"
 kind: 50
 kind_name: "Helmet"
@@ -27,7 +27,9 @@ stats:
   - {"code": 105, "stat": "Movement(%)", "value": 11, "scale": "flat"}
 reinforce: 2
 icon: {"file": "Items_08.png", "index": 38}
-obtained_from: []
+obtained_from:
+  - {"how": "craft_superior", "recipe": 17, "chance": 5}
+  - {"how": "craft_superior", "recipe": 2017, "chance": 5}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=3d4b74 type=d36ca9 id=3b69df sources=796e03 name_key=9aa4aa kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=ff6083 reinforce=da4b92 icon=02a24b obtained_from=97d170 -->
@@ -84,7 +86,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The superior version of the normal piece: Odin's recipe 17 (and the Training Camp copy 2017) lists this item with a 5 % chance in its superior column. Crafted gear has a small chance to come out superior from WM 0726 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*); reading the column as the superior result is a *guess*. The WM 1018 Gear gacha also lists Superior Gear ([[gameplay/events-and-schedules|Events and schedules]] §10).
 
 ## Behaviour
 
@@ -92,11 +94,11 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: Item_Make superior column (c19 chance / fail_item, read as superior result, *guess*) + notes: [[gameplay/reinforce-and-runes]] §4 (WM 0726: crafted gear has a small chance to come out superior)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+[[gameplay/gear-stats]] §4 calls ids 445–492 the "T2 rows", but in the client they are the superior result of the normal recipes; tiers are a per-item level, not a separate id ([[gameplay/items-and-crafting|Items and crafting]] §1).
 
 <!-- credit:start -->
 ---

@@ -2,9 +2,9 @@
 title: "Lavender"
 type: "item"
 id: 818
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 818"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 818", "sheet + guide: [[gameplay/dungeon-drops]] §1, §3 (Crush Share Ore/Herb tab, same lists in the 2018 dungeons guide; sheet Lv 5/6 mapped to client fields 124/125)"]
 name_key: "ItemName_818"
 kind: 12
 kind_name: "Material"
@@ -15,7 +15,9 @@ cost_pair:
   - {"currency": 2, "amount": 30}
 stats: []
 icon: {"file": "Items_04.png", "index": 20}
-obtained_from: []
+obtained_from:
+  - {"how": "gather", "field": 127}
+  - {"how": "gather", "field": 124}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=c1c059 type=d36ca9 id=37a53d sources=a9eb02 name_key=960685 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a6a76d cost_pair=f565d5 stats=97d170 icon=5dffb4 obtained_from=97d170 -->
@@ -54,7 +56,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Gathered from ore/herb nodes in Chepa Village (127), Ghost Fortress (124) ([[gameplay/dungeon-drops|Dungeon drops]] §1, *sheet + guide*). The 2018 dungeons guide names the same materials per dungeon, with counts per run in [[gameplay/maps-and-dungeons|Maps and dungeons]] §2. Gathering takes about 3 s and is not interrupted by hits ([[gameplay/video-dungeon-run|Nas Village run video]] §5, *video*); the nodes are the client's `Trigger` rows, which match the 2016 minimap ([[gameplay/video-dungeon-run|Nas Village run video]] §5).
 
 ## Behaviour
 
@@ -62,7 +64,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- sheet + guide: [[gameplay/dungeon-drops]] §1, §3 (Crush Share Ore/Herb tab, same lists in the 2018 dungeons guide; sheet Lv 5/6 mapped to client fields 124/125)
 
 ## Open questions
 

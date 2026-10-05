@@ -2,9 +2,9 @@
 title: "Black Hair Dye recipe"
 type: "recipe"
 id: 2619
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2619", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2619", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)"]
 result: {"item": 2308, "count": 5}
 materials:
   - {"item": 871, "count": 1}
@@ -14,6 +14,7 @@ success_rate: 100
 category: 8
 filter_mask: 32
 level: 15
+npc: [337]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=1dc0a6 type=61613a id=a90090 sources=d5ce50 result=397aff materials=88ba52 gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=cb4e52 level=f1abd6 -->
@@ -42,7 +43,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp Owen (unit 337) offers a short list: only B-grade scrolls, tomes, elixirs and flasks and only C and B potions ([[gameplay/consumables|Consumables]] §4, *client*).
 
 ## Behaviour
 
@@ -50,7 +51,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)
 
 ## Open questions
 

@@ -2,9 +2,9 @@
 title: "Urgent Letter"
 type: "item"
 id: 2567
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 2567"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 2567", "video: [[gameplay/video-character-creation-and-tutorial]] §21 and [[gameplay/video-early-quests]] §13 (given by Frei when quest 11 \"An urgent message\" is offered)"]
 name_key: "ItemName_2567"
 kind: 17
 kind_name: "Quest"
@@ -15,7 +15,8 @@ cost_pair:
   - {"currency": 2, "amount": 0}
 stats: []
 icon: {"file": "Items_04.png", "index": 59}
-obtained_from: []
+obtained_from:
+  - {"how": "quest_given", "quest": 11, "npc": 198}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=32f1f9 type=d36ca9 id=c7bd08 sources=afac10 name_key=4ea42d kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=ca1243 obtained_from=97d170 -->
@@ -45,7 +46,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Given by Frei (unit 198) with Scroll : Gaia when quest 11 "An urgent message" is offered; quest 12 has the player deliver it to Freya (200) in the Fortress ([[gameplay/video-character-creation-and-tutorial|Character creation video]] §21, [[gameplay/video-early-quests|Early quests video]] §13, *video*).
 
 ## Behaviour
 
@@ -53,7 +54,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- video: [[gameplay/video-character-creation-and-tutorial]] §21 and [[gameplay/video-early-quests]] §13 (given by Frei when quest 11 "An urgent message" is offered)
 
 ## Open questions
 

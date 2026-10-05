@@ -4,7 +4,7 @@ type: "item"
 id: 434
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 434"]
+sources: ["client: Item_Base.cdb id 434", "image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)"]
 name_key: "ItemName_434"
 kind: 55
 kind_name: "Belt"
@@ -39,6 +39,8 @@ obtained_from:
   - {"how": "gacha", "pool": 0}
   - {"how": "gacha", "pool": 1}
   - {"how": "gacha", "pool": 4}
+  - {"how": "dungeon_drop", "field": 128, "tier": 1}
+  - {"how": "dungeon_drop", "field": 123, "tier": 1}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=756bd6 type=d36ca9 id=8949eb sources=0dfc2c name_key=b30b68 kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=40809f reinforce=356a19 icon=63228f obtained_from=343ae7 -->
@@ -108,7 +110,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Drops in the border dungeons Skull Cemetery (128), Swamps of Snake Warrior (123), already reinforced at a random level (+0 up to +11 seen); Lv 1–4 dungeons drop it at tier 1, Lv 5–8 at tier 2 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2, *image*). Sockets are rolled when the item drops ([[gameplay/items-and-crafting|Items and crafting]] §2).
 
 ## Behaviour
 
@@ -116,7 +118,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)
 
 ## Open questions
 

@@ -4,7 +4,7 @@ type: "item"
 id: 1012
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1012"]
+sources: ["client: Item_Base.cdb id 1012", "notes: [[gameplay/reinforce-and-runes]] §7 (WM 0615, WM 0621)"]
 name_key: "ItemName_1012"
 kind: 47
 kind_name: "Exp Box"
@@ -49,7 +49,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+EXP per use cut from 200,000 to **100,000** (WM 0615; the client has 100,000); the jewel package price rose from 1,000 to 2,000 jewels and it cannot be used during a war (WM 0621) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, *notes + client*).
 
 ## Behaviour
 
@@ -57,7 +57,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §7 (WM 0615, WM 0621)
 
 ## Open questions
 

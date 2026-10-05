@@ -2,9 +2,9 @@
 title: "Cooldown Reduction Rune recipe"
 type: "recipe"
 id: 1819
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 1819", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 1819", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/items-and-crafting]] §2 (runes are crafted at Alan, Rune Maker, unit 323 per [[gameplay/npc-locations]] §3)"]
 result: {"item": 7182, "count": 1}
 materials:
   - {"item": 701, "count": 10}
@@ -15,6 +15,7 @@ success_rate: 100
 category: 4
 filter_mask: 2
 level: 5
+npc: [323]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=1efbd4 type=61613a id=91540d sources=cfdc14 result=dd9107 materials=b69271 gold=8a12a3 success_rate=310b86 category=1b6453 filter_mask=da4b92 level=ac3478 -->
@@ -42,7 +43,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Runes are crafted at **Alan** (Rune Maker, unit 323) in the fortress; T2/T3 runes need the fort's Rune mastery ([[gameplay/items-and-crafting|Items and crafting]] §2, *guide*). From WM 0824 yellow jewels can stand in for missing materials on T1 runes ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -50,7 +53,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/items-and-crafting]] §2 (runes are crafted at Alan, Rune Maker, unit 323 per [[gameplay/npc-locations]] §3)
 
 ## Open questions
 

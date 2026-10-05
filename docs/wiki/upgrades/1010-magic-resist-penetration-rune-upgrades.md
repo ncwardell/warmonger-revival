@@ -2,9 +2,9 @@
 title: "Magic resist Penetration Rune upgrades"
 type: "upgrade"
 id: 1010
-status: "stub"
+status: "partial"
 missing: ["success_rates"]
-sources: ["client: JewelSocketMake.cdb group 10 (rows 91–100)", "docs: [[gameplay/reinforce-and-runes]] §1 (WM 0920 rune cost table matches JewelSocketMake +0→+9)", "contract: items.yaml rune_upgrade 0x4a8, server_rules craft_reinforce_rune_odds"]
+sources: ["client: JewelSocketMake.cdb group 10 (rows 91–100)", "docs: [[gameplay/reinforce-and-runes]] §1 (WM 0920 rune cost table matches JewelSocketMake +0→+9)", "contract: items.yaml rune_upgrade 0x4a8, server_rules craft_reinforce_rune_odds", "video: [[gameplay/video-rune-upgrades]] §1 (83 attempts, all 41 failures dropped exactly one level, materials and gold spent on every try; Jul 2018) + guide: [[gameplay/reinforce-and-runes]] §3 (blog runas)", "notes: [[gameplay/reinforce-and-runes]] §3 (cap +5 at launch WM 0613, +9 from WM 0726)"]
 group: 10
 rune: 7092
 levels:
@@ -19,6 +19,8 @@ levels:
   - {"row": 99, "level": 8, "item": 7100, "next": 7101, "materials": [{"item": 702, "count": 60}, {"item": 614, "count": 30}, {"item": 856, "count": 1}]}
   - {"row": 100, "level": 9, "item": 7101, "next": 0, "materials": [{"item": 702, "count": 80}, {"item": 614, "count": 40}, {"item": 856, "count": 1}]}
 kind: "rune_upgrade"
+on_failure: "drop_one_level"
+max_level: 9
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=e87bd2 type=4389c5 id=1966e6 sources=d379b0 group=b1d578 rune=b3db2f levels=1a211a kind=6a6d0e -->
@@ -54,19 +56,28 @@ Each row upgrades the rune to the next item (C->S `0x4a8`). The +9 row has no ne
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Tier 2 rune line (level-0 cost in Yellow) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §1, *client*). The 20 Sep 2018 cost table matches this line's materials; before that, upgrades cost crystals only ([[gameplay/reinforce-and-runes|Reinforce and runes]] §2, WM 0420 images).
+
+Patch-note stat values: Magic Resist Penetration at +7/+8/+9 went 13/16/19 → 12/13/15 (WM 0412) → **11/12/13** (WM 0420). Use the client table ([[gameplay/reinforce-and-runes|Reinforce and runes]] §3).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+On a failed upgrade the rune drops **one level**; gold and materials are spent on every try ([[gameplay/video-rune-upgrades|Rune upgrade video]] §1, 41 of 41 failures, *video*; the blog says the same, [[gameplay/reinforce-and-runes|Reinforce and runes]] §3). The window still shows a "destruction of rune in case of failure" warning beside an optional sub-material slot.
+
+Cap: +5 at launch (WM 0613), about +7 on 12 Jul 2018 (*video*), **+9** from WM 0726 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §3, [[gameplay/video-rune-upgrades|Rune upgrade video]] §1).
+
+Success rates were never published. Patch notes give only trends: until WM 0404 tier-1 runes could not fail at all (bug), then got a "really small" fail chance at +8 and +9; WM 0406 made success fall slowly with level, starting earlier for rarer runes (rarity 2, from level 5–6; rarity = tier is a *guess*); WM 0920 raised rune success overall ([[gameplay/reinforce-and-runes|Reinforce and runes]] §3, *notes*).
+
+From WM 1107 runes are affected by the PvP stat correction ([[gameplay/reinforce-and-runes|Reinforce and runes]] §3, *notes*).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- video: [[gameplay/video-rune-upgrades]] §1 (83 attempts, all 41 failures dropped exactly one level, materials and gold spent on every try; Jul 2018) + guide: [[gameplay/reinforce-and-runes]] §3 (blog runas)
+- notes: [[gameplay/reinforce-and-runes]] §3 (cap +5 at launch WM 0613, +9 from WM 0726)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Destruction or one-level drop? The UI warns of destruction without a sub-material, but every recorded failure only dropped one level ([[gameplay/video-rune-upgrades|Rune upgrade video]] §1, [[gameplay/reinforce-and-runes|Reinforce and runes]] §3).
 
 <!-- credit:start -->
 ---

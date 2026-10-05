@@ -4,7 +4,7 @@ type: "item"
 id: 401
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 401"]
+sources: ["client: Item_Base.cdb id 401", "image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)"]
 name_key: "ItemName_401"
 kind: 50
 kind_name: "Helmet"
@@ -40,6 +40,9 @@ obtained_from:
   - {"how": "gacha", "pool": 0}
   - {"how": "gacha", "pool": 1}
   - {"how": "gacha", "pool": 4}
+  - {"how": "dungeon_drop", "field": 127, "tier": 1}
+  - {"how": "dungeon_drop", "field": 123, "tier": 1}
+  - {"how": "dungeon_drop", "field": 126, "tier": 2}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=d7c1d5 type=d36ca9 id=63b4f9 sources=953a68 name_key=07e6e5 kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=6c87dd reinforce=356a19 icon=649bf6 obtained_from=6c4cd6 -->
@@ -112,7 +115,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Drops in the border dungeons Chepa Village (127), Swamps of Snake Warrior (123), Demon Hell (126), already reinforced at a random level (+0 up to +11 seen); Lv 1–4 dungeons drop it at tier 1, Lv 5–8 at tier 2 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2, *image*). Sockets are rolled when the item drops ([[gameplay/items-and-crafting|Items and crafting]] §2).
 
 ## Behaviour
 
@@ -120,7 +123,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)
 
 ## Open questions
 

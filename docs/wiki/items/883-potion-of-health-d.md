@@ -4,7 +4,7 @@ type: "item"
 id: 883
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 883"]
+sources: ["client: Item_Base.cdb id 883", "image: [[gameplay/progression-and-economy]] §4 (Wren prices)"]
 name_key: "ItemName_883"
 kind: 11
 kind_name: "Normal"
@@ -74,7 +74,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Wren sold the D potions for **79 gold** in spring 2018 against a base of 10, the 7.92 × shop rate of that fort ([[gameplay/progression-and-economy|Progression and economy]] §4, *image*). Potions restore their buff value per second for 16 s ([[gameplay/potion-regen|Potion regeneration]], *guess* from the tooltips).
 
 ## Behaviour
 
@@ -82,7 +82,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/progression-and-economy]] §4 (Wren prices)
 
 ## Open questions
 

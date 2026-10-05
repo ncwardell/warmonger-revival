@@ -2,9 +2,9 @@
 title: "Attack Rune recipe"
 type: "recipe"
 id: 1801
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 1801", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 1801", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/items-and-crafting]] §2 (runes are crafted at Alan, Rune Maker, unit 323 per [[gameplay/npc-locations]] §3)"]
 result: {"item": 7002, "count": 1}
 materials:
   - {"item": 700, "count": 10}
@@ -14,6 +14,7 @@ success_rate: 100
 category: 4
 filter_mask: 1
 raw: {"c28": 200}
+npc: [323]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=6ba2c6 type=61613a id=775ea0 sources=4cf738 result=b915aa materials=332c7e gold=f8237d success_rate=310b86 category=1b6453 filter_mask=356a19 raw=fc6d8f -->
@@ -46,7 +47,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Runes are crafted at **Alan** (Rune Maker, unit 323) in the fortress; T2/T3 runes need the fort's Rune mastery ([[gameplay/items-and-crafting|Items and crafting]] §2, *guide*). From WM 0824 yellow jewels can stand in for missing materials on T1 runes ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+A guide screenshot shows the T1 Attack rune at 10 Blue Crystals + 1 red gem material + **7,500 gold** → Attack +5 ([[gameplay/items-and-crafting|Items and crafting]] §2, *image*); 7,500 = the client's 5,000 × 1.5 fort rate.
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -54,11 +59,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/items-and-crafting]] §2 (runes are crafted at Alan, Rune Maker, unit 323 per [[gameplay/npc-locations]] §3)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The screenshot shows 1 red gem material; the client asks for 2 Red bloodstone (812).
 
 <!-- credit:start -->
 ---

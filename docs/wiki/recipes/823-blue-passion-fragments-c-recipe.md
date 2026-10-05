@@ -2,9 +2,9 @@
 title: "Blue Passion Fragments [C] recipe"
 type: "recipe"
 id: 823
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 823", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 823", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/items-and-crafting]] §3 (Farrell makes normal weapons and does passion conversion, Item_Make rows 801–827); unit 237 per [[gameplay/npc-locations]] §3 (Farrell 237/317)"]
 result: {"item": 603, "count": 100}
 materials:
   - {"item": 604, "count": 30}
@@ -13,6 +13,7 @@ success_rate: 100
 category: 2
 filter_mask: 2
 level: 10
+npc: [237]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=8b69ee type=61613a id=bf67a6 sources=bd0494 result=25c897 materials=a6224e gold=8a12a3 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
@@ -40,7 +41,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Passion conversion at **Farrell** (Blacksmith), both directions ([[gameplay/items-and-crafting|Items and crafting]] §3, *guide + client*). The guides confirm 60 × T2 → 100 × T1 and 20 Orange T1 → 10 T2.
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -48,11 +51,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/items-and-crafting]] §3 (Farrell makes normal weapons and does passion conversion, Item_Make rows 801–827); unit 237 per [[gameplay/npc-locations]] §3 (Farrell 237/317)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Farrell's unit id: the fortress Farrell is 237; a second Farrell (317) has no recorded position ([[gameplay/npc-locations]] §3).
 
 <!-- credit:start -->
 ---

@@ -4,7 +4,7 @@ type: "item"
 id: 417
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 417"]
+sources: ["client: Item_Base.cdb id 417", "image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)"]
 name_key: "ItemName_417"
 kind: 50
 kind_name: "Helmet"
@@ -40,6 +40,8 @@ obtained_from:
   - {"how": "gacha", "pool": 0}
   - {"how": "gacha", "pool": 1}
   - {"how": "gacha", "pool": 4}
+  - {"how": "dungeon_drop", "field": 123, "tier": 1}
+  - {"how": "dungeon_drop", "field": 124, "tier": 2}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=eff2d4 type=d36ca9 id=4dc778 sources=bda9c7 name_key=e966a6 kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=9a84fa reinforce=356a19 icon=a06501 obtained_from=1299b0 -->
@@ -111,7 +113,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Drops in the border dungeons Swamps of Snake Warrior (123), Ghost Fortress (124), already reinforced at a random level (+0 up to +11 seen); Lv 1–4 dungeons drop it at tier 1, Lv 5–8 at tier 2 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2, *image*). Sockets are rolled when the item drops ([[gameplay/items-and-crafting|Items and crafting]] §2).
 
 ## Behaviour
 
@@ -119,7 +121,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)
 
 ## Open questions
 
