@@ -211,3 +211,27 @@ Crush Online (2016–17) values are history; where Warmonger differs, use the Wa
 - [ ] Abyss portal graph as in the portal table (18 client gates plus about 19 from the image at the standard corner spots); routes reach 113 then 114 in 4 jumps — [[gameplay/abyss-map]] — **H**
 - [ ] Fortress teleporter "Abyss" (free) lands in field 103/105/107 by nation (Teleport_List 1901–1903) — *client + guess* — **M**
 - [ ] Fields 110 Prison and 112 Death's Rest: no portals known; leave closed until a source turns up — *guess* — **L**
+
+## Added from the Warmonger forum and videos (round 2)
+
+- [ ] Skill_Buff duration unit = 200 ms (1500 = 5 min, 18000 = 1 h) — client tooltips ItemComment_704/764/689 — **H**
+- [ ] Clickable exclusivity = Skill_Buff group: 2077 Warrior/Magician/PNT, 2085 AS/CDR/AoE/Crit, 2109 elixirs, 2113 flasks, 2135 time energy; same group replaces the buff and resets the timer; potions (group 0) stack — client + buffs guide §3 — **H**
+- [ ] Alchemy crafts: inputs per Item_Make, 100% success, output = c22 (10 / 100 / 10 powder), gold = c23 × fort rate (×1.5 seen); Training Camp Owen (list 8) only B grade and C/B potions — client + image — **H/M**
+- [ ] Map recipes 519–521 → Armor PNT 729–731 and 522–524 → Magic PNT 733–735 (client has result 0) — client row order — **L**
+- [ ] Nas Village (field 133) uses ZoneDB 126 geometry; players enter at gate 1200 (1332.13, 2866.99) — client+video — **M**
+- [ ] Nas packs: 6 spots along the chain (positions on the page), about 5–7 of units 688–691/1219–1220 each, respawn about 90–100 s in a party — video — **M**
+- [ ] Nas loot: per kill one stack of Faded Passion fragments/Piece/Pattern (×1/3/10/20) plus a crystal ×1–6, no gear — video — **M**
+- [ ] Gathering nodes spawn from `Trigger.tsv` and reset each new instance; gather cast about 3 s; dungeon instance timer 20:00 — client+video — **H**
+- [ ] A failed rune upgrade drops the rune exactly one level and consumes the gold and materials; it is never destroyed — video dpofIAFX2wM (41/41 failures) — **H**
+- [ ] Rune upgrade gold cost = 1,000 × target level (tier 1) — video dpofIAFX2wM&t=140s…170s — **H**
+- [ ] Tier-1 rune success rate by level before: ≤+3 ≈ 90%, +4 ≈ 70%, +5 ≈ 40%, +6 ≈ 10% (pre-Sep-2018 baseline; 0920 raised it) — video dpofIAFX2wM, 83 attempts — **M**
+- [ ] Dungeon bosses spawn only while the land is monster-invaded; dungeons never spawn on the beginner channel. — forum 71 — **M**
+- [ ] Quests 80–82 "Support the Abyss expedition": kill 10/10/1 (Tow Chief 826) in field 108 for 220,000 EXP and a class weapon. — client `Quest.tsv` — **H**
+- [ ] Fort cores start at 100 durability and lose 1 per hour; they pay legion fame per hour, and active cores cost durability per use. — forum 426 — **L**
+- [ ] At most 4 forts per nation per channel; a fort cannot be moved onto the beginner channel or onto a full channel; moving a fort onto a land destroys any add-on there. — forum 763/866 — **M**
+- [ ] Each dungeon level has its own loot table, plus a few drops found only in the open field or the Abyss. — forum 904 — **M**
+- [ ] Clicking the defenders' nexus after a won land war opens the siege; attackers start beside their own Nexus in Room of Core (field 130) with a 40:00 timer and TP reset to 0/10,000 — video-fort-war — **M**
+- [ ] Siege order: Entry Core, then ring cores, then Invasion Core; Heart of Magic down = no Divine Guard and no guardian regen; air defence (1036) down opens the guardian room — video-fort-war — **M**
+- [ ] Siege respawn about 14 s at the attackers' Nexus; jungle respawn about 4 min — video-fort-war — **L**
+- [ ] Hero form: max HP/MP about ×2.2 (16,214/3,645 from 7,282/1,660), HP set to 50% on transform, lasts at least 8.5 min, X has about 10 s cooldown after — video-fort-war — **M**
+- [ ] Siege defeat pays Fame −100, Legion Contribution +20, no gold or medals — video-fort-war — **M**
