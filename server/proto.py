@@ -12,7 +12,11 @@ MASK = 0xFFFFFFFF
 
 
 def deobfuscate(packet):
+    if len(packet) < HEADER.size:
+        raise ValueError("packet is shorter than its 16-byte header")
     length, magic, opcode, extra, tick, key = HEADER.unpack_from(packet)
+    if magic != MAGIC or length != len(packet):
+        raise ValueError("packet length or magic does not match its header")
     key &= 0xFFFF
     body = bytearray(packet[16:length])
     if key:
@@ -36,7 +40,7 @@ def split(buffer):
     packets = []
     while len(buffer) >= 4:
         length, magic = struct.unpack_from("<HH", buffer)
-        if magic != MAGIC or length < 12:
+        if magic != MAGIC or length < HEADER.size:
             raise ValueError(f"bad header {buffer[:16].hex()}")
         if len(buffer) < length:
             break

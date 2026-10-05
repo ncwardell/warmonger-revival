@@ -34,6 +34,7 @@ world.deaths() calls on_kill(unit) for each kill.
 import pathlib
 
 import paths
+import sessions
 import random
 import struct
 import sys
@@ -122,13 +123,23 @@ class Drop:
         return f"<drop 0x{self.uid:x} {self.code} x{self.count} ({self.x:.0f},{self.z:.0f})>"
 
 
-GROUND = {}  # drop uid -> Drop
-STATE = {"gold": 0, "next_uid": 0x3000}
+GROUND = globals().get("GROUND", {})  # fallback drop uid -> Drop
+STATE = globals().get("STATE", {"gold": 0, "next_uid": 0x3000})
+
+
+def state():
+    session = sessions.current()
+    return session.loot if session is not None else STATE
+
+
+def ground():
+    session = sessions.current()
+    return session.drops if session is not None else GROUND
 
 
 def set_gold(amount):
     """The player's current gold (slot record +0x80 = char+0x283); call on enter world."""
-    STATE["gold"] = amount
+    state()["gold"] = amount
 
 
 # ---------------------------------------------------------------- rolling
@@ -141,7 +152,7 @@ def quest_cap(code):
 
 
 def held(code):
-    bag, counts = skills.STATE["bag"], skills.STATE.setdefault("count", [0] * skills.BAG_SLOTS)
+    bag, counts = skills.state()["bag"], skills.state().setdefault("count", [0] * skills.BAG_SLOTS)
     return sum((counts[s] or 1) for s, c in enumerate(bag) if c == code)
 
 
@@ -165,14 +176,17 @@ def roll(unit_id, rng=random):
 
 
 def player_uid():
+    if sessions.current() is not None:
+        return sessions.current().uid
     world = sys.modules.get("world")
     return getattr(world, "PLAYER", {}).get("uid", 1) if world else 1
 
 
 def player_pos():
     """(x, z) of the player from handlers.PLAYER, or None when unknown."""
+    session = sessions.current()
     handlers = sys.modules.get("handlers")
-    p = getattr(handlers, "PLAYER", None)
+    p = session.player if session is not None else getattr(handlers, "PLAYER", None)
     if not p or not p.get("in_world"):
         return None
     return p["x"], p["z"]
@@ -181,8 +195,8 @@ def player_pos():
 def slot_update(slot, reason=REASON_GET_ITEM):
     """0x427 (0x28 bytes, extra = own uid): +0x10 u16 reason | +0x12 u16 container 1 |
     +0x14 u16 slot | +0x18 16-byte item (+0 u16 code, +4 u8 count)."""
-    code = skills.STATE["bag"][slot]
-    count = skills.STATE["count"][slot] or 1
+    code = skills.state()["bag"][slot]
+    count = skills.state()["count"][slot] or 1
     payload = struct.pack("<HHHH", reason, skills.BAG, slot, 0) + skills.item(code, count)
     return build(0x427, payload, extra=player_uid())
 
@@ -190,7 +204,7 @@ def slot_update(slot, reason=REASON_GET_ITEM):
 def gold_update():
     """0x428 (0x1c bytes, extra = own uid): +0x10 u16 reason 0 | +0x12 u16 field 2 (gold) |
     +0x14 u32 new total | +0x18 u32 0."""
-    return build(0x428, struct.pack("<HHII", 0, FIELD_GOLD, STATE["gold"], 0), extra=player_uid())
+    return build(0x428, struct.pack("<HHII", 0, FIELD_GOLD, state()["gold"], 0), extra=player_uid())
 
 
 def system_message(msg_id, param=0):
@@ -203,7 +217,7 @@ def add_to_bag(code, count):
 
     Returns (slots touched, count left over); a partial fit stores what fits.
     """
-    bag, counts = skills.STATE["bag"], skills.STATE.setdefault("count", [0] * skills.BAG_SLOTS)
+    bag, counts = skills.state()["bag"], skills.state().setdefault("count", [0] * skills.BAG_SLOTS)
     cap = 1 if code in NO_STACK else STACK_MAX
     touched = []
     for slot, held_code in enumerate(bag):
@@ -225,9 +239,9 @@ def add_to_bag(code, count):
 def collect(drop):
     """Move one drop into the player's bag / purse. Returns packets; removes it when done."""
     if drop.code == GOLD:
-        STATE["gold"] += drop.count
-        del GROUND[drop.uid]
-        log(f"picked up {drop.count} gold (now {STATE['gold']})")
+        state()["gold"] += drop.count
+        del ground()[drop.uid]
+        log(f"picked up {drop.count} gold (now {state()['gold']})")
         return gold_update()
     touched, left = add_to_bag(drop.code, drop.count)
     out = b"".join(slot_update(s) for s in touched)
@@ -238,7 +252,7 @@ def collect(drop):
             log(f"bag full: {drop} stays on the ground")
             out += system_message(MSG_INVENTORY_FULL)
     else:
-        del GROUND[drop.uid]
+        del ground()[drop.uid]
         log(f"picked up {drop.code} x{drop.count} into slot(s) {touched}")
     return out
 
@@ -249,7 +263,7 @@ def near(drop, pos, radius):
 
 def collect_near(pos, radius, source=None):
     out = b""
-    for drop in list(GROUND.values()):
+    for drop in list(ground().values()):
         if (source is None or drop.source == source) and near(drop, pos, radius):
             out += collect(drop)
     return out
@@ -265,24 +279,24 @@ def on_kill(unit, rng=random):
     """
     now = clock()
     for code, count in roll(unit.unit_id, rng):
-        uid = STATE["next_uid"]
-        STATE["next_uid"] = 0x3000 + (uid - 0x3000 + 1) % 0x1000
+        uid = state()["next_uid"]
+        state()["next_uid"] = 0x3000 + (uid - 0x3000 + 1) % 0x1000
         x = unit.x + rng.uniform(-SCATTER, SCATTER)
         z = unit.z + rng.uniform(-SCATTER, SCATTER)
-        GROUND[uid] = Drop(uid, code, count, x, z, unit.uid, now + DESPAWN_SECONDS)
-        log(f"{unit.name} 0x{unit.uid:x} dropped {GROUND[uid]}")
+        ground()[uid] = Drop(uid, code, count, x, z, unit.uid, now + DESPAWN_SECONDS)
+        log(f"{unit.name} 0x{unit.uid:x} dropped {ground()[uid]}")
     return collect_near(player_pos(), KILL_PICKUP_RADIUS, source=unit.uid)
 
 
 def tick(now=None):
     """Despawn drops past their time; pick up what the player walks over. Bytes (maybe b"")."""
     now = clock() if now is None else now
-    for drop in list(GROUND.values()):
+    for drop in list(ground().values()):
         if now >= drop.expires:
             log(f"despawned {drop}")
-            del GROUND[drop.uid]
+            del ground()[drop.uid]
     pos = player_pos()
-    if pos is None or not GROUND:
+    if pos is None or not ground():
         return b""
     return collect_near(pos, WALK_PICKUP_RADIUS)
 
@@ -296,7 +310,7 @@ def interact(packet):
     if len(packet) < 0x18:
         return None
     target, kind, state = struct.unpack_from("<HHH", packet, 0x10)
-    if kind != 2 or state != 1 or not any(d.source == target for d in GROUND.values()):
+    if kind != 2 or state != 1 or not any(d.source == target for d in ground().values()):
         return None
     return collect_near(player_pos(), INTERACT_RADIUS, source=target) or None
 

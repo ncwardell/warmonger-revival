@@ -1,9 +1,9 @@
 """Monster AI: idle at home, aggro, chase, basic-attack the player, leash back.
 
-handlers.py calls tick(now, player) about every 200 ms and sends what it returns.
-`player` carries uid, x, z (from the player's C->S 0x416); hp/alive are kept by
-this module in world.PLAYER (the same values go into every hit reply as the
-attacker's HP, so they must be real) and copied back into `player`.
+handlers.py calls tick_world(now, sessions) once about every 200 ms. Each monster
+targets one living player and shared updates reach all players in that scene.
+Player HP/alive state is scoped through sessions.use(); tick(now, player) remains
+available for standalone single-player experiments and self-tests.
 
 Packets (all key 0, see out/spec/monsters.md section 6):
   - walk: S->C 0x416 (0x20 bytes, extra = monster uid) {u8 heading, u8 type, u8 stance,
@@ -26,6 +26,7 @@ import struct
 import time
 
 import world
+import sessions
 from proto import build
 
 AGGRO_RANGE = 8.0  # player within this of a monster -> it chases
@@ -85,7 +86,7 @@ def monster_damage(u):
 
 def attack(u, player):
     """S->C 0x411 basic attack from monster u on the player; lowers the player's HP."""
-    P = world.PLAYER
+    P = world.player()
     amount, flags = monster_damage(u)
     P["hp"] = max(P["hp"] - amount, 0)
     lethal = 1 if P["hp"] == 0 else 0
@@ -102,7 +103,7 @@ def attack(u, player):
 
 
 def player_died():
-    P = world.PLAYER
+    P = world.player()
     P["alive"] = False
     P["revive_at"] = world.clock() + PLAYER_REVIVE_SECONDS
     log(f"player died; revive in {PLAYER_REVIVE_SECONDS} s")
@@ -111,7 +112,7 @@ def player_died():
 
 def player_revive():
     """0x421 full HP/MP (revives the dead avatar in place), then 0x416 type 1: snap to spawn."""
-    P = world.PLAYER
+    P = world.player()
     P.update(alive=True, revive_at=None, hp=P["max_hp"], mp=P["max_mp"])
     x, z = P["spawn"]
     log(f"player revived at ({x:.1f}, {z:.1f})")
@@ -191,16 +192,16 @@ def think(u, now, player, alive):
     return move(u, u.x + (px - u.x) * k, u.z + (pz - u.z) * k)
 
 
-_last = {"now": None}
+_last = globals().get("_last", {"now": None})
 
 
 def tick(now, player):
     """Run every monster once; returns the bytes to send (b"" if nothing).
 
     now: seconds (time.monotonic(), the same clock as world.clock).
-    player: {"uid", "x", "z", ...}; "hp"/"alive" are written back from world.PLAYER.
+    player: {"uid", "x", "z", ...}; "hp"/"alive" are written back from world.player().
     """
-    P = world.PLAYER
+    P = world.player()
     dt = 0.0 if _last["now"] is None else min(max(now - _last["now"], 0.0), 1.0)
     _last["now"] = now
     out = b""
@@ -222,6 +223,50 @@ def tick(now, player):
     out += world.due_respawns()
     player["hp"], player["alive"] = P["hp"], P["alive"]
     return out
+
+
+def tick_world(now, players):
+    """Advance shared monsters once; target a nearby living player.
+
+    Nearest-player aggro and killer-only loot are test-server design choices.
+    Wire layouts remain the same as the single-player packet experiments above.
+    """
+    dt = 0.0 if _last["now"] is None else min(max(now - _last["now"], 0.0), 1.0)
+    _last["now"] = now
+    for session in players:
+        p = session.player
+        if not p["alive"] and p["revive_at"] is not None and now >= p["revive_at"]:
+            with sessions.use(session):
+                out = player_revive()
+            p["x"], p["z"] = p["spawn"]
+            sessions.broadcast(session, out, include_self=True)
+    out = b""
+    for u in list(world.UNITS.values()):
+        if not world.is_monster(u):
+            continue
+        if u.dead_until is not None:
+            u.state, u.dest, u.aimed_at = "idle", None, None
+            u.target_uid = None
+            continue
+        walk(u, dt)
+        eligible = [s for s in players if s.player["alive"] and s.player["hp"] > 0
+                    and (s.player["map"], s.player["scene"]) == (117, 87)
+                    and dist(*u.home, s.player["x"], s.player["z"]) <= LEASH_RANGE]
+        target = next((s for s in eligible if s.uid == getattr(u, "target_uid", None)), None)
+        if target is None:
+            target = min(eligible, key=lambda s: dist(u.x, u.z, s.player["x"], s.player["z"]), default=None)
+        if target is not None:
+            u.target_uid = target.uid
+            with sessions.use(target):
+                out += think(u, now, target.player, True)
+        else:
+            u.target_uid = None
+            out += think(u, now, {"x": u.home[0], "z": u.home[1]}, False)
+    out += world.due_respawns()
+    if out:
+        for session in players:
+            if (session.player["map"], session.player["scene"]) == (117, 87):
+                session.send(out)
 
 
 # ---------------------------------------------------------------- self-test

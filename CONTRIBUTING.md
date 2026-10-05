@@ -14,9 +14,10 @@ Thanks for helping bring Warmonger back. Everything here is learned from the cli
 2. **Capture.** Run the server and play; every packet is logged, e.g.
    `[game] <- op=0x0416 extra=0x0001 key=0x0001 len=32 body=...` (payloads are shown de-obfuscated).
 3. **Read the client.** Decompile your own copy (Ghidra 12, see `ghidra/DumpDecomp.java`); `docs/spec/` and `contract/` name the handler and send-site functions for each opcode.
-4. **Implement.** Reply functions take the de-obfuscated packet bytes and return bytes to send (several packets may be concatenated) or `None`. Register them in a module's `REPLIES` table; periodic work goes in `tick()`. `handlers.py` reloads on save; edits to `stub.py`/`proto.py` need a restart.
+4. **Implement.** Reply functions take the de-obfuscated packet bytes and return bytes to send (several packets may be concatenated) or `None`. Register them in a module's `REPLIES` table; periodic work goes in `tick()`. `sessions.current()` selects the caller's state; use `skills.state()`, `world.player()`, and `loot.state()` inside packet helpers. The shared world ticks once regardless of player count. Handlers and gameplay modules reload on save; edits to `stub.py`, `proto.py`, or `sessions.py` need a restart.
 5. **Test.** Each module has a `__main__` self-test that must run without game data:
    `cd server && for m in world ai skills loot; do python3 $m.py; done`
+   Also run `python3 -m unittest -v test_multiplayer` for packet framing, independent sessions, player visibility, shared monsters, private loot, hot reload, and the two-client socket journey.
    Then try it in the real client and say what you saw in the PR.
 6. **Document.** Update `contract/<system>.yaml` and/or the wiki (`docs/`) with what you learned.
 

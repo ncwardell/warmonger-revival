@@ -67,6 +67,15 @@ item 2552); tutorial speech: "hunting snakes, slimes and bees". Quest giver unit
 | 605 | Great Slime | 1 | 1 | 2.0 | 12 | 4 | 400 | 1 |
 | 201 | Shaia (NPC) | 2 | 50 | 3.0 | 275 | 10 | 1000 | 1 |
 
+Shaia's appearance: the original `UnitDB.cdb` row 201, field 17, selects model
+275. `ObjectList.csv` resolves that model to `Guide_wisp`, with path
+`character/npc/Neighbor/guide_wisp/guide_wisp_01.mo`. The model and its textures
+are present in `model.jpk` (checked 2026-10-05). A visible ghostlike figure under
+her name is therefore consistent with the intended wisp model, rather than
+evidence of a missing human model. The current spawn and refresh send positive
+HP with zero status flags and buff masks. NPC dialogue and quest interaction
+remain unimplemented; appearance alone does not verify those systems.
+
 Other tutorial-flavoured rows: 606-608 Guardian/Punisher/Saint Bot-t (bots used by Npc_Carry),
 220/222/223 Training Assistant, 221 Training Officer (Bell Thain).
 

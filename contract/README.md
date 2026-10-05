@@ -21,7 +21,7 @@ One YAML file per subsystem. Each file has three top-level lists, plus extras in
 | `opcodes[]` | One entry per opcode the subsystem owns: `opcode` (YAML int; write it as hex), `name`, `direction` (`c2s` / `s2c` / `both`), `c2s` {`size`, `extra`, `fields[]` {`offset`, `type`, `name`, `values`, `notes`}, `variants`}, `s2c` {`min_size`, `extra`, `accepted_if`, `fields[]`}, `server_reply`, `client_effect`, `handler` (S->C handler function), `send_sites` (C->S builder functions), `confidence` (high / medium / low), `verified`, `verifier_note`, `evidence`, `claimed` (set when the opcode was moved from the inventory's subsystem). |
 | `flows[]` | `name` + ordered `steps`: packet sequences for one feature, both directions. |
 | `server_rules[]` | Decisions the client cannot make for the server. Each has what the client expects, the data table that informs it, and a suggested default. **The key names differ between files:** `client_expects`/`expects`, `data_table`/`informed_by`/`data`, `suggested_default`/`default`. A loader has to accept all of them. |
-| `web_endpoints[]` | (session, social) The HTTP POST `.asp` pages and their XML row shapes. |
+| `web_endpoints[]` | (session, social) The HTTP POST `.asp` pages and their JSON row shapes. |
 | `notes_on_assignment[]` | (session) Opcodes the inventory put in the wrong subsystem. |
 
 Conventions shared by every file are in the header comment of `session.yaml`:
@@ -115,7 +115,7 @@ The steps a playable server needs, in play order. Values in **Covered**:
 
 | # | step | packets | covered | where | gap |
 |---|---|---|---|---|---|
-| 1 | Pre-login world and channel status (web) | `WorldChannel.asp`, `ChannelList.asp` | partial (live) | session `login_production_path`, `web_endpoints` | An empty 200 body works. A full WorldChannel row stopped the TCP login in the stub; the row shape is unverified. |
+| 1 | Pre-login world and channel status (web) | `WorldChannel.asp`, `ChannelList.asp` | partial (live) | session `login_production_path`, `web_endpoints` | JSON array of objects; green Medium status verified on Windows. Empty/XML bodies left token-mode login at Checking. See docs/spec/world.md section 7. |
 | 2 | Login server: token login | 0x4207 -> 0x4201 | yes (live) | session | none |
 | 3 | Duplicate session / errors | 0x4201 results 3..10, 0x4202 | yes | session `login_error_and_duplicate_session` | The 0x4202 reply is inferred. |
 | 4 | Game server login -> character list | 0x4200 -> 0x2001 | yes (live) | session | none |
@@ -215,8 +215,8 @@ Defaults are the files' suggestions, shortened. "Invented" defaults mean nothing
 | session | duplicate_login | Answer 7 when the account is already online. On 0x4202, kick the old session (sysmsg 118) and answer 0. |
 | session | delete_rules | Refuse if the character is in or owns a guild. On success, stamp the delete time. To undo a client-side wipe, try a 0x407 echo (untested). |
 | session | channel_move_tickets | Key byte (not 0xff) + ticket, single use, valid 30 s. Refuse during combat or a match with a sysmsg id in +0x24. |
-| session | web_endpoints | HTTP POST to `/JoyImpact/<Page>.asp`, 200, XML. Serve empty bodies unless a feature needs rows. |
-| session | world_and_channel_state | Use the empty WorldChannel reply (known to work) until a full row is verified live. |
+| session | web_endpoints | HTTP POST to `/JoyImpact/<Page>.asp`, 200, JSON. Serve empty bodies unless a feature needs rows. |
+| session | world_and_channel_state | Return a JSON array of world/channel status objects; the Windows client accepts it. |
 | world | teleport_destinations_and_costs | Destinations per NPC from Teleport_List. Cost 0 until there is an economy. Destination id = map id. |
 | world | portal_links | Table of link id -> (mapid, x, z). **Data not recovered yet** (map.jpk trigger params). |
 | world | world_map_state | Answer every 0x445/0x449 poll (0x446/0x44a) with neutral bases, or the panel and auto-travel wait. |
@@ -314,6 +314,6 @@ Defaults are the files' suggestions, shortened. "Invented" defaults mean nothing
    - the 0x41d 0xe3 newbie channel move
    - the 0x407 echo to restore a refused delete
    - the 0x2001 character-select key carry-over after 0x409
-   - a full WorldChannel.asp row
+   - other web rows beyond the verified WorldChannel.asp / ChannelList.asp status response
    - the 0x4202 and 0x409 mode 0 replies
 6. **Schema:** harmonise the `server_rules` key names across files (`client_expects`/`expects`, `data_table`/`informed_by`/`data`, `suggested_default`/`default`).

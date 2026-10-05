@@ -1,23 +1,21 @@
 """Monsters and NPCs in the tutorial zone: spawn, take hits, die, respawn.
 
-handlers.py wires this in:
-  - enter_world() appends spawn_all(PLAYER_UID) to its burst;
-  - GAME_REPLIES.update(world.REPLIES) (0x411, 0x412, 0x40f, 0x410, 0x4ca);
-  - any other reply (0x416 movement above all) appends due_respawns(), because
-    the server has no timer push yet: a dead monster comes back with the first
-    packet the player sends after its respawn time.
+handlers.py uses join() for shared monsters and spawn_player() for peers.
+The shared AI timer advances monsters and broadcasts respawns once, while
+packet handlers select a player's state through sessions.use().
 
 The client decides hits (out/spec/combat.md): it sends 0x411/0x412 with every
 damage slot 0, and the server fills in damage, the lethal mask and the
 attacker's HP/MP and sends the packet back. Unit ids come from UnitDB.cdb
 (data/tables/UnitDB.tsv); HP and level are server-side, chosen here.
-Monster state lives in this module, so it survives handlers.py reloads
-(and a world.py edit needs a server restart unless handlers reloads it).
+Monster state survives hot reloads of this module. PLAYER is fallback state
+for standalone experiments and self-tests.
 """
 import random
 import struct
 import sys
 import time
+import sessions
 
 from proto import build, split
 
@@ -35,7 +33,7 @@ clock = time.monotonic  # replaced by the self-test
 
 # Tutorial zone tutorial_map_01 (map 117, ZoneDB 1344..1503 x 352..479). Spawns are
 # offsets from CENTRE so the whole group moves when a walkable point is found.
-CENTRE = (1424.0, 416.0)
+CENTRE = globals().get("CENTRE", (1424.0, 416.0))
 
 # Teams: the client's friend/foe test (FUN_00486179, target = +0x655 team byte)
 # treats team 0 as friendly to everyone, 1..3 as nations, and 4+ as hostile to
@@ -44,7 +42,7 @@ MONSTER_TEAM = 4
 NPC_TEAM = 0
 
 RESPAWN_SECONDS = 10.0
-MONSTER_SPEED = 300  # stats +0x36, x0.01 units/s; nothing moves monsters yet
+MONSTER_SPEED = 300  # stats +0x36, x0.01 units/s
 SPAWN_FX = 0  # 0x803 +0x33: 1..3 play the "appear" action
 CONFIRM_DEATH = True  # also send 0x420 HP 0 when a hit is lethal (the 0x411 alone kills)
 
@@ -62,7 +60,8 @@ MONSTERS = [
     (731, "Bee", 3, 150, 2.7, -13.0),
     (605, "Great Slime", 4, 400, -5.8, 20.4),
 ]
-# NPCs: friendly (team 0), never take damage. 201 = Shaia, the tutorial quest giver.
+# NPCs: friendly (team 0), never take damage. Shaia (201) uses ObjectList model
+# 275, Guide_wisp, in the original client data; her ghostlike form is expected.
 NPCS = [
     (201, "Shaia", 10, 1000, 6.0, 3.0),
 ]
@@ -76,11 +75,16 @@ SKILL_DAMAGE = 45
 CRIT_CHANCE = 0.10
 FLAG_CRIT = 0x0004
 
-# The player, server side. The attacker's HP/MP go into every hit reply (+0x2c/+0x30);
+# Fallback player state. The attacker's HP/MP go into every hit reply (+0x2c/+0x30);
 # 0 would kill it, so hp must track the real value: ai.py lowers it when monsters hit.
 # spawn_all() resets it; handlers.py may overwrite any field.
-PLAYER = {"uid": 1, "hp": 1000, "mp": 500, "max_hp": 1000, "max_mp": 500, "speed": 450,
-          "alive": True, "revive_at": None, "spawn": CENTRE}
+PLAYER = globals().get("PLAYER", {"uid": 1, "hp": 1000, "mp": 500, "max_hp": 1000,
+          "max_mp": 500, "speed": 450, "alive": True, "revive_at": None, "spawn": CENTRE})
+
+
+def player():
+    session = sessions.current()
+    return session.player if session is not None else PLAYER
 
 # Stat block (0x5c bytes, char+0x443; carried by 0x41f at +0x10 and 0x804 at +0x28).
 # Basic attacks need +0x1e: the client's basic-attack range is that s16 x 0.01
@@ -122,7 +126,8 @@ class Unit:
         return f"<{self.name} uid=0x{self.uid:x} id={self.unit_id} ({self.x:.0f},{self.z:.0f}) {state}>"
 
 
-UNITS = {}
+UNITS = globals().get("UNITS", {})
+INITIALIZED = globals().get("INITIALIZED", False)
 
 
 def reset():
@@ -193,10 +198,10 @@ def refresh(u):
 
 
 def player_weapon():
-    """The equipped main weapon item code (skills.STATE), 0 if unknown."""
+    """The current player's equipped main weapon item code, 0 if unknown."""
     skills = sys.modules.get("skills")
     try:
-        return skills.STATE["equip"][0]
+        return skills.state()["equip"][0]
     except (AttributeError, KeyError, IndexError, TypeError):
         return 0
 
@@ -208,12 +213,12 @@ def player_stats():
     +0x2c attack speed, +0x2e basic-attack range, +0x50 revive delay (block +0x1c/+0x1e/+0x40).
     """
     stats = bytearray(0x5C)
-    struct.pack_into("<IIII", stats, 0, PLAYER["hp"], PLAYER["mp"], PLAYER["max_hp"], PLAYER["max_mp"])
+    struct.pack_into("<IIII", stats, 0, player()["hp"], player()["mp"], player()["max_hp"], player()["max_mp"])
     rng = RANGED_RANGE if player_weapon() in RANGED_WEAPONS else MELEE_RANGE
     struct.pack_into("<hh", stats, STAT_ATTACK_SPEED, ATTACK_SPEED, rng)
-    struct.pack_into("<H", stats, STAT_SPEED, PLAYER["speed"])
+    struct.pack_into("<H", stats, STAT_SPEED, player()["speed"])
     struct.pack_into("<h", stats, STAT_REVIVE_DELAY, PLAYER_REVIVE_SECONDS)
-    return build(0x41F, bytes(stats), extra=PLAYER["uid"])
+    return build(0x41F, bytes(stats), extra=player()["uid"])
 
 
 def hp_update(u):
@@ -240,17 +245,55 @@ def spawn_all(player_uid):
     speed (0x803 has none).
     """
     handlers = sys.modules.get("handlers")
-    PLAYER.update(uid=player_uid, alive=True, revive_at=None, spawn=CENTRE)
+    player().update(uid=player_uid, alive=True, revive_at=None, spawn=CENTRE)
     for key, name in (("max_hp", "MAX_HP"), ("max_mp", "MAX_MP"), ("speed", "SPEED")):
-        PLAYER[key] = getattr(handlers, name, PLAYER[key])
-    PLAYER["hp"], PLAYER["mp"] = PLAYER["max_hp"], PLAYER["max_mp"]
+        player()[key] = getattr(handlers, name, player()[key])
+    player()["hp"], player()["mp"] = player()["max_hp"], player()["max_mp"]
     reset()
     log(f"spawning {len(UNITS)} units around {CENTRE}")
     return player_stats() + b"".join(spawn(u) + refresh(u) for u in UNITS.values())
 
 
+def join(centre):
+    """Snapshot the shared monsters without resetting another player's fight."""
+    global CENTRE, INITIALIZED
+    if not INITIALIZED:
+        CENTRE = centre
+        reset()
+        INITIALIZED = True
+    return player_stats() + b"".join(
+        spawn(u) + (hp_update(u) if u.dead_until is not None else refresh(u))
+        for u in UNITS.values())
+
+
+def spawn_player(session):
+    """0x803 player branch, 0x270 bytes; FUN_00477d13 at 0x477d56..0x477f89.
+
+    +0x10 name[40], +0x38 x/z, +0x40 class, +0x46 heading, +0x49 level,
+    +0x4a team, +0x54 appearance[8], +0x60 stats[0x5c], +0xbc equipment[0x30].
+    Evidence: docs/spec/world.md, section 1. Never send this to the own uid.
+    """
+    import skills
+    record, p = session.record, session.player
+    out = bytearray(0x270)
+    out[0x10:0x38] = record[8:0x30]
+    struct.pack_into("<ffH", out, 0x38, p["x"], p["z"], struct.unpack_from("<H", record, 0x36)[0])
+    out[0x44:0x46] = record[0x7C:0x7E]
+    out[0x46], out[0x49], out[0x4A] = p["heading"], max(record[0x34], 1), p["team"]
+    out[0x54:0x5C] = record[0x38:0x40]
+    with sessions.use(session):
+        out[0x60:0xBC] = player_stats()[16:]
+        out[0xBC:0xDC] = b"".join(skills.item(code) for code in session.inventory["equip"])
+    out[0xDC:0xEC] = record[0x60:0x70]
+    return build(0x803, bytes(out[16:]), extra=session.uid)
+
+
 def due_respawns():
     """0x804 for every dead monster whose respawn time has passed (b"" if none)."""
+    if sessions.current() is not None:
+        # A private query must not consume a shared respawn before the timer
+        # broadcasts it. Standalone experiments still run without a session.
+        return b""
     out = b""
     now = clock()
     for u in UNITS.values():
@@ -300,7 +343,7 @@ def apply_hits(reply, slots):
         log(f"skill {skill_id} hits {u} for {amount}{' (crit)' if crit else ''}")
     (old_flags,) = struct.unpack_from("<H", reply, 0x18)
     struct.pack_into("<HH", reply, 0x18, old_flags | flags, lethal)
-    struct.pack_into("<II", reply, 0x2C, PLAYER["hp"], PLAYER["mp"])
+    struct.pack_into("<II", reply, 0x2C, player()["hp"], player()["mp"])
     return killed
 
 
@@ -328,7 +371,7 @@ def hit(packet):
         return due_respawns() or None
     reply = bytearray(packet[:0x64])
     (attacker,) = struct.unpack_from("<H", reply, 0x10)
-    if attacker != PLAYER["uid"]:
+    if attacker != player()["uid"] or not player()["alive"]:
         return due_respawns() or None
     killed = apply_hits(reply, 12)
     return build(0x411, bytes(reply[16:]), extra=attacker) + deaths(killed) + due_respawns()
@@ -344,7 +387,7 @@ def hit_push(packet):
         return due_respawns() or None
     reply = bytearray(packet[:0x88])
     (attacker,) = struct.unpack_from("<H", reply, 0x10)
-    if attacker != PLAYER["uid"]:
+    if attacker != player()["uid"] or not player()["alive"]:
         return due_respawns() or None
     for i in range(7):
         (uid,) = struct.unpack_from("<H", reply, 0x34 + 4 * i)
@@ -400,7 +443,8 @@ REPLIES = {
     0x04CA: unknown_unit,
 }
 
-reset()
+if not UNITS:
+    reset()
 
 
 # ---------------------------------------------------------------- self-test
@@ -415,8 +459,8 @@ def _client_hit(target, opcode=0x411, skill=0):
     """A C->S 0x411/0x412 as the client builds it (damage 0), header key 0."""
     size = 0x64 if opcode == 0x411 else 0x88
     p = bytearray(size)
-    struct.pack_into("<HHHHII", p, 0, size, 0xA53C, opcode, PLAYER["uid"], 0, 0)
-    struct.pack_into("<HHhHH", p, 0x10, PLAYER["uid"], skill, skill, 1, 0)
+    struct.pack_into("<HHHHII", p, 0, size, 0xA53C, opcode, player()["uid"], 0, 0)
+    struct.pack_into("<HHhHH", p, 0x10, player()["uid"], skill, skill, 1, 0)
     struct.pack_into("<ff", p, 0x1C, *CENTRE)
     struct.pack_into("<H", p, 0x34, target)
     if opcode == 0x412:

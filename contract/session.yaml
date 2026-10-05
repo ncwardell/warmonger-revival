@@ -35,8 +35,9 @@
 #   +0x72 u8 newbie flag, +0x73 u8 'state known'), +0x1d5/+0x1d6/+0x1d7 u8 NatBlock1..3.
 # - Connections: login server = world 'Login' (8815 in our serverlist.sof), game server = the
 #   selected channel's address (gs1 = channel 0, 8813), web = 'web' host (HTTP POST, port 80/8080).
-#   Command line: '-ologin <token>' stores a token (DAT_00846ea4, flag DAT_00846ea2); '-steam'
-#   sets DAT_00846ea1; '-nosg' is what our launcher uses (no token -> empty token in 0x4207).
+#   Command line: '-ologin=<token>' stores a token (DAT_00846ea4, flag DAT_00846ea2); '-steam'
+#   sets DAT_00846ea1; '-nosg' skips the patcher. Without a token, 0x4207 carried an empty
+#   token in earlier tests; the Windows launcher now passes '-ologin=player'.
 # Sources: decompiled.c / disasm.txt (re-checked for this file), spec/group00..03.md,
 # spec/world.md, contract/examples.md, server/{stub,handlers,proto}.py and the live server log
 # the server log (live-tested = confirmed working).
@@ -97,7 +98,7 @@ opcodes:
       extra: "0"
       fields:
         - {offset: 0x10, type: u32, name: zero, values: "0", notes: ""}
-        - {offset: 0x14, type: "char[128]", name: token, values: "acct+0xee (first 0x80 bytes): the '-ologin <token>' command-line value or the OAuth/Steam token; ALL ZERO when started with -nosg (live)", notes: "typed id/password are NOT sent here"}
+        - {offset: 0x14, type: "char[128]", name: token, values: "acct+0xee (first 0x80 bytes): the '-ologin=<token>' command-line value or the OAuth/Steam token; ALL ZERO when started with -nosg (live)", notes: "typed id/password are NOT sent here"}
         - {offset: 0x94, type: u32, name: client_version, values: "0x41e (1054)", notes: "constant; NOTES.local.md calls 0x41e an opcode, it is this version number"}
         - {offset: 0x98, type: u8, name: marker, values: "0xff", notes: ""}
         - {offset: 0x99, type: "bytes[3]", name: pad, values: "0", notes: ""}
@@ -407,7 +408,7 @@ opcodes:
 flows:
   - name: login_production_path (serverlist world has a Login address; live-tested)
     steps:
-      - "client (login state 1) polls web WorldChannel.asp (world=N) for every world and ChannelList.asp every 30 s; an empty HTTP 200 body is accepted (live)"
+      - "client (login state 1) polls web WorldChannel.asp (world=N) for every world and ChannelList.asp every 30 s; return JSON status rows. Earlier tests accepted empty HTTP 200 bodies, but the Windows token-login test remained at Checking without rows (2026-10-05)"
       - "user logs in (typed id/password are stored, not sent yet); state 2: connect to the Login address (60 s timeout)"
       - "C->S 0x4207 (0x9c, extra 0, +0x14 token char[128] (zeros with -nosg), +0x94 0x41e, +0x98 0xff) on the login connection"
       - "S->C 0x4201 (0x40, +0x10 result 0, +0x14 channel index 0, +0x18/+0x1c ticket A/B, +0x20 account name)"
@@ -538,13 +539,13 @@ server_rules:
     informed_by: "live stub (login and game on different ports)"
     default: "keep it open; close idle login connections after 60 s"
   - name: web_endpoints
-    client_expects: "HTTP POST, Content-Type application/x-www-form-urlencoded, to http://<serverlist web host>/JoyImpact/<Page>.asp; status must be 200; body <= 0x32000 bytes parsed as XML: a root element with one child per row, each tag read by name inside the row (FUN_006d4400) as an integer/text. Connect timeout 1000 ms. Empty 200 body = no rows (accepted)"
+    client_expects: "HTTP POST, Content-Type application/x-www-form-urlencoded, to http://<serverlist web host>/JoyImpact/<Page>.asp; status must be 200; body <= 0x32000 bytes parsed as JSON: an array of objects, each field read by name (FUN_006d4400, Json::Value::operator[]) as an integer/text. FUN_006d7b70 is Json::Reader::parse, not an XML parser (corrected 2026-10-05). Connect timeout 1000 ms. Empty 200 body = no rows (accepted)"
     informed_by: "none (web DB was server-side)"
     default: "serve empty 200 bodies for everything except what a feature needs; see web_endpoints below"
   - name: world_and_channel_state
-    client_expects: "WorldChannel.asp row: WORLD (= serverlist world index), WORLD_STATE (> 0 online / green 'Medium', <= 0 maintenance), NatBlock1..3 (non-zero = that nation cannot be chosen), CH_01..CH_05 per-channel load (< 0 or > 9999 'Check'/maintenance, < 400 'Medium' green, >= 400 'High' red; any listed channel is marked known), NEWBIE_CHANNEL (read, unused). The stub notes that its WorldChannel reply stopped the client from attempting the TCP login (cause not found; the XML shape or WORLD_STATE handling may be wrong)."
+    client_expects: "WorldChannel.asp row: WORLD (= serverlist world index), WORLD_STATE (> 0 online / green 'Medium', <= 0 maintenance), NatBlock1..3 (non-zero = that nation cannot be chosen), CH_01..CH_05 per-channel load (< 0 or > 9999 'Check'/maintenance, < 400 'Medium' green, >= 400 'High' red; any listed channel is marked known), NEWBIE_CHANNEL (read, unused). Live Windows test 2026-10-05: empty/XML responses leave token-mode login at Checking; a JSON array of objects changes the world to green Medium. See docs/spec/world.md section 7."
     informed_by: "player counts per channel"
-    default: "empty reply (known to work) until a full row is verified live"
+    default: "JSON array with one object: WORLD echoes the requested index, WORLD_STATE=1, CH_01=0, CH_02..05=-1, NatBlock1..3=0, NEWBIE_CHANNEL=0"
 
 web_endpoints:
   # Job ids are the queue type the result dispatcher FUN_0047b95b switches on.

@@ -25,8 +25,10 @@
 # BIG FINDING: friend list, block list, pending friend invites, mail list + unread counter, guild
 # member list, guild names (<dictg %d>), guild stock lists, rankings and the auction house are NOT
 # TCP packets. The client fetches them over HTTP from the "web" endpoint of serverlist.sof
-# (server/stub.py :8080) with POST application/x-www-form-urlencoded and parses an XML reply
-# <ROOT><ROW><TAG>value</TAG>...</ROW>...</ROOT> (FUN_006d7b70 parser; one ROW per record).
+# (server/stub.py :8080) with POST application/x-www-form-urlencoded and parses a JSON reply
+# (FUN_006d7b70 is Json::Reader::parse; arrays of row objects, not XML). The shared
+# parser was identified during world/channel status testing on 2026-10-05; social
+# response contents still need their own live verification.
 # Dispatcher: FUN_0047b95b (request kind at req+8; status at req+0: 4 = OK, 3 = failed; body at
 # req+0x100c). See web_endpoints below; the TCP opcodes only carry the realtime deltas.
 #
@@ -1177,7 +1179,7 @@ flows:
     steps:
       - "C->S 0x811 {my id, target name}"
       - "S->C 0x41d sysmsg 135 to the inviter; store invite; S->C 0x813 {inviter id, inviter name} to the target if online"
-      - "target: Yes -> friend panel tab 2 -> POST InviteList.asp (charuid) -> XML rows"
+      - "target: Yes -> friend panel tab 2 -> POST InviteList.asp (charuid) -> JSON rows"
       - "C->S 0x812 {1|0, my id, inviter id}"
       - "S->C 0x41d sysmsg 136 to both; later FriendList.asp returns the new friend"
   - name: friend panel / block list (web)
@@ -1235,7 +1237,7 @@ flows:
     steps:
       - "S->C 0x2001 character list -> client POST GuildNameAllPage.asp Page=0,1,2... until a page has no rows (<U> id, <A> ?, <N> name)"
 
-web_endpoints:   # HTTP POST to the serverlist 'web' host; form body; reply XML <ROOT><ROW>...</ROW></ROOT>
+web_endpoints:   # HTTP POST to the serverlist 'web' host; form body; reply JSON array of row objects
   - {path: /JoyImpact/FriendList.asp, kind: 0x10, form: "page=0&PageSize=200&charuid=<u64>", row_tags: "CHAR_UID (i64), CHAR_FACE (int, class/face icon), CHAR_SESSION (int, online uid/0), nation (int), CHAR_NAME (UTF-8)", parser: FUN_004b8125}
   - {path: /JoyImpact/DelFriend.asp, kind: 0x13, form: "page=0&PageSize=200&charuid=<u64>&fcharuid=<u64>", row_tags: "same as FriendList (the reply IS the new friend list)", parser: FUN_004b8125}
   - {path: /JoyImpact/BlackList.asp, kind: 0x11, form: "page=0&PageSize=200&charuid=<u64>", row_tags: "CHAR_UID, CHAR_NAME (UTF-8)", parser: FUN_004b838b}
@@ -1251,9 +1253,9 @@ web_endpoints:   # HTTP POST to the serverlist 'web' host; form body; reply XML 
 
 server_rules:
   - name: social lists live behind the web endpoint
-    expects: "HTTP POST + XML for friends, blocks, invites, mail list, guild members, guild names, stock lists (web_endpoints). Without them the panels stay empty but nothing breaks."
+    expects: "HTTP POST + JSON for friends, blocks, invites, mail list, guild members, guild names, stock lists (web_endpoints). Without them the panels stay empty but nothing breaks."
     data: "server/stub.py handle_http + WEB_PAGES"
-    default: "serve all 12 pages from the same in-memory store as the TCP server; reply an empty <ROOT/> when nothing exists"
+    default: "serve all 12 pages from the same in-memory store as the TCP server; reply an empty JSON array when nothing exists (social rows still need live verification)"
   - name: chat routing and range
     expects: "no echo to the sender; per-type audience (see 0x800); speech balloons only for visible senders"
     data: "none"

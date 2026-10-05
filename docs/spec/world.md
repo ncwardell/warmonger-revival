@@ -425,6 +425,53 @@ Monster probe without knowing UnitDB ids: the client's debug console command
 nothing sent to the server. They can be used to find which UnitDB ids exist (an unknown id simply
 spawns nothing) until `setting.jpk` is decrypted.
 
+## 7. Python multiplayer prototype and verification
+
+The current Python server puts connected players in one shared tutorial scene (map 117,
+scene 87). Each game connection has a distinct player UID, character selection, inventory,
+gold and combat state. Entering sends mutual player 0x803 packets using the layout above;
+movement 0x416 and combat results are relayed to other players in that scene. Leaving
+sends 0x806. One server timer advances monsters, so adding a player does not reset their
+health or increase their attack rate. These are prototype server rules, not recovered
+official rules; see `server/sessions.py`, `handlers.py`, `world.py` and `ai.py`.
+
+Use distinct `-ologin=<name>` development identities for simultaneous clients. Character
+creation is saved per identity; inventory and earned gold survive character selection on
+the same connection but reset on disconnect. Loot currently belongs to the killing
+player. Authentication, durable progress, party sharing, PvP, quests and NPC dialogue
+remain open work. The prototype currently enters the tutorial only.
+
+### Windows client evidence (2026-10-05)
+
+- **World status:** empty responses and the previously assumed XML left the world at
+  "Checking" in token-login mode. `FUN_0042a92f` calls `FUN_006d7b70`
+  (`Json::Reader::parse`); `FUN_006d4400` performs object-key lookup. JSON arrays
+  containing a world row made the world selectable, with a green "Medium" status.
+  See `contract/session.yaml` for the fields returned by `WorldChannel.asp` and
+  `ChannelList.asp`.
+- **Launch argument:** `FUN_00407510` compares the `-ologin=` prefix and reads the
+  token from offset 8 (`0x40752d`-`0x40755a`). Use one argument, `-ologin=alice`;
+  a separate `-ologin alice` did not activate token login and opened the obsolete
+  OAuth flow. `scripts/play-windows.ps1` uses the single-argument form.
+- **One real client:** local server logs recorded login, character creation, entering
+  map 117 at (1427, 429), movement 0x416, basic attacks 0x411, skill casts 0x410 and
+  hits 0x412, monster kills, loot/gold, monster respawns, and player death/revival.
+  These observations establish the single-client flow; they do not verify remote
+  player rendering or synchronization between two real clients.
+- **Automated tests:** `server/test_multiplayer.py` exercises two independent TCP
+  clients through login, spawn, obfuscated movement, character selection/re-entry
+  and disconnect. Unit checks cover shared monster state, private loot, AI timing,
+  handler reloads and malformed packets. The suite runs without client assets.
+
+### Remaining two-client check
+
+Run the server bound to the host's LAN address. On each computer, point its own client
+copy at that address with `scripts/play-windows.ps1 -ServerAddress <server-LAN-IP>`
+and distinct `-Account` values. Verify both character models and equipment, movement
+in both directions, shared monster damage/death/respawn, private loot, and removal
+when one player returns to selection or disconnects. This real two-client check is
+still pending; synthetic packet tests cannot establish the visual result.
+
 ## Function index
 
 | Function | Role |

@@ -2,7 +2,7 @@
 
 Set WARMONGER_DATA to override; the default is ./data at the repository root
 (gitignored). Populate it with tools/jpk.py, e.g.
-  python3 tools/jpk.py extract "<game>/Data/setting.jpk" data/setting
+  python3 tools/jpk.py extract "<game>/Data/setting.jpk" data
 """
 import os
 import pathlib

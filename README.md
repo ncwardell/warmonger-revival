@@ -11,12 +11,14 @@ A community replacement server for **Warmonger** (formerly **Crush Online**), th
 Working against the real client:
 
 - Login, character list, character creation, entering the world
-- Movement, map warps, the tutorial island and the Village
+- Movement in the tutorial island (Village and warp packets are documented separately)
 - Weapon skills on the skill bar; basic attacks; skill hits with damage numbers
 - Monsters: spawn, simple AI (aggro, chase, attack, leash), death and respawn
 - Loot straight into the bag (the game has no ground items), gold
 
-Not yet: other players (multi-client sessions), quests, NPC dialogue, shops, party/guild/chat, matches and fort war, real stats/damage formulas. See [Contributing](CONTRIBUTING.md) and the issue tracker.
+Implemented for testing: separate player sessions, mutual player spawning, movement and combat relay, a shared monster world, private loot, and despawning on leave. Synthetic two-client socket tests pass; see `docs/spec/world.md` for the current client verification status.
+
+Not yet: quests, NPC dialogue, shops, party/guild/chat, matches and fort war, real stats/damage formulas, and durable inventory/progress saves. See [Contributing](CONTRIBUTING.md) and the issue tracker.
 
 ## How it works
 
@@ -37,7 +39,7 @@ Requirements: Python 3.10+, the game client, and Wine/Proton on Linux (or Window
 2. **Point it at your server**:
    `python3 tools/sof.py point ~/warmonger-client/Data/config/serverlist.sof 127.0.0.1`
 3. **Extract game data** the server reads (quest drops, skill checks, navmesh), into `./data` (gitignored):
-   `python3 tools/jpk.py extract ~/warmonger-client/Data/setting.jpk data/setting`
+   `python3 tools/jpk.py extract ~/warmonger-client/Data/setting.jpk data`
 4. **Run the server**: `cd server && python3 stub.py` (pass a bind address as the first argument to serve your LAN).
 5. **Run the client** with `-nosg -windowed`, which starts `Client.exe` directly and skips the dead patcher:
    - Wine: `GAME_DIR=~/warmonger-client scripts/play-wine.sh`
@@ -45,6 +47,34 @@ Requirements: Python 3.10+, the game client, and Wine/Proton on Linux (or Window
      `bash -c 'exec "${@/Launcher.exe/Client.exe}" -nosg -windowed' _ %command%`
 
 Log in (any credentials), create a character, enter the world.
+
+### Windows testing
+
+Copy your own Steam `Warmonger Chronicles` folder into the gitignored `client/` directory. The archive already contains a `setting/` folder, so extract it into `data/`, not `data/setting/`:
+
+```powershell
+python tools/jpk.py extract "client/Data/setting.jpk" data
+python server/stub.py
+```
+
+In another PowerShell window, launch the game:
+
+```powershell
+.\scripts\play-windows.ps1
+```
+
+The launcher backs up the local server configuration, points it at localhost, and starts the client with `-ologin=player`. Pass `-GameDir` to use a different writable copy. The default `player` identity uses the existing `server/characters.json`.
+
+For two-player testing, use different test identities:
+
+```powershell
+.\scripts\play-windows.ps1 -Account alice
+.\scripts\play-windows.ps1 -Account bob
+```
+
+These names are development tokens, not passwords; each gets separate character slots under the gitignored `server/accounts/`. On another computer, pass `-ServerAddress <server-LAN-IP>` and run the server bound to that address. Some client builds may permit only one instance per computer. Character creation is saved, but inventory, gold gained, and other progress currently last only for that game connection. Returning to character selection preserves each character's inventory during that connection.
+
+Server state can be isolated with `WARMONGER_STATE=<directory>`; game data can be located separately with `WARMONGER_DATA=<directory>`.
 
 ### Known issues
 

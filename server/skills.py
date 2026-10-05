@@ -15,6 +15,7 @@ hold items only. See docs/spec/skills.md.
 import struct
 
 import paths
+import sessions
 
 from proto import build
 
@@ -43,9 +44,14 @@ BAG, EQUIPMENT = 1, 3
 BAG_SLOTS = 70
 ITEM_SIZE = 0x10
 
-# Server-side copy of the player's items and quick bar (single player).
+# Fallback state for standalone packet experiments and self-tests.
 # "count" parallels "bag": the stack size at item +4 (0 = a single item).
-STATE = {"bag": [0] * BAG_SLOTS, "count": [0] * BAG_SLOTS, "equip": [0, 0], "quick": bytes(0x18)}
+STATE = globals().get("STATE", sessions.new_inventory())
+
+
+def state():
+    session = sessions.current()
+    return session.inventory if session is not None else STATE
 
 
 def item(code, count=1):
@@ -77,13 +83,13 @@ def apply_to_world(world: bytearray, class_id: int, level: int, weapon=None) -> 
     """
     weapon = weapon or default_weapon(class_id)
     spares = [c for c in CLASS_WEAPONS.get(class_id, ()) if c != weapon]
-    bag = STATE["bag"]
+    bag = state()["bag"]
     if not any(bag):
         bag[:len(spares)] = spares
-    counts = STATE.setdefault("count", [0] * BAG_SLOTS)
+    counts = state().setdefault("count", [0] * BAG_SLOTS)
     for slot, code in enumerate(bag):
         world[0xAC + slot * ITEM_SIZE:0xAC + (slot + 1) * ITEM_SIZE] = item(code, counts[slot] or 1)
-    quick = STATE["quick"]
+    quick = state()["quick"]
     world[0x51C:0x524] = quick[:8]
     world[0x50C:0x51C] = quick[8:]
 
@@ -101,7 +107,7 @@ def equip(uid, slot, code):
     avatar, then FUN_005848d5(slot) loads the weapon's 4 skills and FUN_005849b2
     fires UI event 0x18, which refills the skill bar.
     """
-    STATE["equip"][slot] = code
+    state()["equip"][slot] = code
     payload = struct.pack("<HHHH", 0, EQUIPMENT, slot, 0) + item(code)
     return build(0x427, payload, extra=uid)
 
@@ -109,14 +115,14 @@ def equip(uid, slot, code):
 def after_enter_world(uid: int, class_id: int, level: int, weapon=None) -> bytes:
     """Packets to send right after 0x2000 (+ 0x41f): re-equip the weapon so the
     skill bar fills. `weapon` is the item code at slot record +0x40 (0 or None =
-    the class default). A sub weapon in STATE["equip"][1] gets its own 0x427.
+    the class default). A sub weapon in state()["equip"][1] gets its own 0x427.
     """
     weapon = weapon or default_weapon(class_id)
     if not weapon:
         return b""
     out = equip(uid, 0, weapon)
-    if STATE["equip"][1]:
-        out += equip(uid, 1, STATE["equip"][1])
+    if state()["equip"][1]:
+        out += equip(uid, 1, state()["equip"][1])
     return out
 
 
@@ -130,12 +136,12 @@ def save_quick_slots(packet):
 
     No reply; kept so the next 0x2000 returns the same bar (+0x51c/+0x50c).
     """
-    STATE["quick"] = bytes(packet[0x10:0x28])
+    state()["quick"] = bytes(packet[0x10:0x28])
     return None
 
 
 def container(kind):
-    return STATE["bag"] if kind == BAG else STATE["equip"] if kind == EQUIPMENT else None
+    return state()["bag"] if kind == BAG else state()["equip"] if kind == EQUIPMENT else None
 
 
 def move_item(packet):
@@ -152,7 +158,7 @@ def move_item(packet):
     if dst is None or src is None or dst_slot >= len(dst) or src_slot >= len(src):
         return build(0x42A, bytes(packet[0x10:0x18]), extra=uid)
     dst[dst_slot], src[src_slot] = src[src_slot], dst[dst_slot]
-    counts = STATE.setdefault("count", [0] * BAG_SLOTS)
+    counts = state().setdefault("count", [0] * BAG_SLOTS)
     if dst_kind == src_kind == BAG:
         counts[dst_slot], counts[src_slot] = counts[src_slot], counts[dst_slot]
     else:  # a weapon to/from equipment: the bag side holds a single item
@@ -162,7 +168,7 @@ def move_item(packet):
     out = build(0x42A, bytes(packet[0x10:0x18]), extra=uid)
     for kind, slot in ((dst_kind, dst_slot), (src_kind, src_slot)):
         if kind == EQUIPMENT:
-            out += equip(uid, slot, STATE["equip"][slot])
+            out += equip(uid, slot, state()["equip"][slot])
     return out
 
 

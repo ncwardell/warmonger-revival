@@ -15,6 +15,8 @@ out/
 
 # Local state and machine-specific files.
 server/characters.json
+server/characters.json.tmp
+server/accounts/
 *.local.*
 __pycache__/
 public/

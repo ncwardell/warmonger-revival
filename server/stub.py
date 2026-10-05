@@ -1,120 +1,155 @@
 #!/usr/bin/env python3
-"""Stub login (8815), game (8813) and web (8080) servers for the Warmonger client.
-
-Logs every packet the client sends. Replies come from handlers.py, which is
-reloaded on change so the client can stay connected while handlers are edited.
-"""
+"""Python test server: login 8815, game 8813, web 8080; one shared world timer."""
 import asyncio
 import importlib
 import pathlib
 import struct
 import sys
+from urllib.parse import parse_qsl
 
 import handlers
+import sessions
 from proto import deobfuscate, split
 
-HOST = sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"
-# How often handlers.tick() runs per game connection (monster AI, respawns).
 TICK_SECONDS = 0.2
-HANDLERS_FILE = pathlib.Path(handlers.__file__)
-_mtime = HANDLERS_FILE.stat().st_mtime
+WATCHED = (handlers.skills, handlers.loot, handlers.units, handlers.ai, handlers)
+_mtimes = {m.__name__: pathlib.Path(m.__file__).stat().st_mtime_ns for m in WATCHED}
 
 
 def current():
-    """handlers, reloaded if the file changed since last use."""
-    global _mtime
-    mtime = HANDLERS_FILE.stat().st_mtime
-    if mtime != _mtime:
-        _mtime = mtime
+    """Reload packet code on save; connection and world state remain alive."""
+    global _mtimes
+    changed = {m.__name__: pathlib.Path(m.__file__).stat().st_mtime_ns for m in WATCHED}
+    if changed != _mtimes:
+        _mtimes = changed
+        snapshots = {m: m.__dict__.copy() for m in WATCHED}
         try:
+            # Reject syntax errors before executing any of the changed modules.
+            for module in WATCHED:
+                path = pathlib.Path(module.__file__)
+                compile(path.read_bytes(), str(path), "exec")
+            importlib.invalidate_caches()
             importlib.reload(handlers)
-            handlers.log("reloaded handlers.py")
+            handlers.log("reloaded packet code; sessions preserved")
         except Exception as e:
-            handlers.log(f"handlers.py reload failed, keeping old version: {e!r}")
+            for module, namespace in snapshots.items():
+                module.__dict__.clear()
+                module.__dict__.update(namespace)
+            handlers.log(f"reload failed, retaining previous code: {e!r}")
     return handlers
 
 
-def opcode_of(packet):
-    return struct.unpack_from("<H", packet, 4)[0]
+def send(writer, data):
+    if not data or writer.is_closing():
+        return
+    try:
+        writer.write(data)
+        if writer.transport.get_write_buffer_size() > 1024 * 1024:
+            writer.close()  # stop a stalled test client from buffering forever
+    except (ConnectionError, OSError):
+        writer.close()
+
+
+async def ticker():
+    """One timer for the whole world, independent of the connection count."""
+    while True:
+        await asyncio.sleep(TICK_SECONDS)
+        try:
+            current().tick()
+        except Exception as e:
+            handlers.log(f"[world] tick failed: {e!r}")
 
 
 def handler(name, table, ticks=False):
-    async def ticker(writer):
-        """Send whatever handlers.tick() produces, every TICK_SECONDS, while connected."""
-        while not writer.is_closing():
-            await asyncio.sleep(TICK_SECONDS)
-            tick = getattr(current(), "tick", None)
-            try:
-                out = tick() if tick else None
-            except Exception as e:
-                handlers.log(f"[{name}] tick failed: {e!r}")
-                continue
-            if out:
-                writer.write(out)
-                await writer.drain()
-
     async def handle(reader, writer):
         peer = writer.get_extra_info("peername")
+        session = None
         handlers.log(f"[{name}] connect {peer}")
-        ticking = asyncio.create_task(ticker(writer)) if ticks else None
-        buffer = b""
-        while data := await reader.read(65536):
-            buffer += data
-            try:
-                packets, buffer = split(buffer)
-            except ValueError as e:
-                handlers.log(f"[{name}] {e}; raw {data.hex()}")
-                buffer = b""
-                continue
-            for p in packets:
-                opcode, extra, tick, key, body = deobfuscate(p)
-                handlers.log(f"[{name}] <- op=0x{opcode:04x} extra=0x{extra:04x} key=0x{key:04x} len={len(p)} body={body.hex()}")
-                if reply := getattr(current(), table).get(opcode):
-                    try:
-                        # Handlers see the deobfuscated packet: header + plain payload.
-                        out = reply(p[:16] + body)
-                    except Exception as e:
-                        handlers.log(f"[{name}] handler for 0x{opcode:04x} failed: {e!r}")
-                        continue
-                    if not out:
-                        continue
-                    replies, _ = split(out)
-                    handlers.log(f"[{name}] -> " + ", ".join(f"op=0x{opcode_of(r):04x} len={len(r)}" for r in replies))
-                    writer.write(out)
+        try:
+            if ticks:
+                session = sessions.connect(lambda data: send(writer, data))
+            buffer = b""
+            while data := await reader.read(65536):
+                packets, buffer = split(buffer + data)
+                for packet in packets:
+                    opcode, extra, tick, key, body = deobfuscate(packet)
+                    # Keep protocol evidence, but omit login tokens and tickets.
+                    detail = "<login redacted>" if opcode in (0x4200, 0x4207) else body.hex()
+                    handlers.log(f"[{name}] <- op=0x{opcode:04x} extra=0x{extra:04x} key=0x{key:04x} len={len(packet)} body={detail}")
+                    out = current().dispatch(table, packet[:16] + body, session)
+                    if out:
+                        replies, rest = split(out)
+                        if rest:
+                            raise ValueError("handler returned an incomplete packet")
+                        handlers.log(f"[{name}] -> " + ", ".join(
+                            f"op=0x{struct.unpack_from('<H', p, 4)[0]:04x} len={len(p)}" for p in replies))
+                        send(writer, out)
                     await writer.drain()
-        handlers.log(f"[{name}] disconnect {peer}")
-        if ticking:
-            ticking.cancel()
-        writer.close()
+        except (ValueError, struct.error, ConnectionError, OSError) as e:
+            handlers.log(f"[{name}] closing {peer}: {e}")
+        except Exception as e:
+            handlers.log(f"[{name}] connection failed: {e!r}")
+        finally:
+            if session is not None:
+                current().disconnect(session)
+            writer.close()
+            try:
+                await writer.wait_closed()
+            except (ConnectionError, OSError):
+                pass
+            handlers.log(f"[{name}] disconnect {peer}")
     return handle
 
 
 async def handle_http(reader, writer):
-    """The `web` endpoint from serverlist.sof (ASP pages returning XML)."""
-    request = await reader.read(65536)
-    head, _, body = request.partition(b"\r\n\r\n")
-    path = head.split(b" ")[1].decode() if b" " in head else ""
-    form = dict(pair.split("=", 1) for pair in body.decode(errors="replace").split("&") if "=" in pair)
-    page = current().WEB_PAGES.get(path)
-    content = page(form).encode() if page else b""
-    handlers.log(f"[web] <- {path} {form} -> {len(content)} bytes{'' if page else ' (unhandled)'}")
-    writer.write(
-        b"HTTP/1.1 200 OK\r\nContent-Type: text/xml\r\nConnection: close\r\n"
-        + f"Content-Length: {len(content)}\r\n\r\n".encode()
-        + content
-    )
-    await writer.drain()
-    writer.close()
+    """Read a complete form POST, even when TCP splits its headers and body."""
+    try:
+        head = await asyncio.wait_for(reader.readuntil(b"\r\n\r\n"), timeout=10)
+        headers = dict(line.split(b":", 1) for line in head.split(b"\r\n")[1:] if b":" in line)
+        length = next((int(v) for k, v in headers.items() if k.lower() == b"content-length"), 0)
+        if not 0 <= length <= 65536:
+            raise ValueError("HTTP body is too large")
+        body = await asyncio.wait_for(reader.readexactly(length), timeout=10)
+        path = head.split(b" ")[1].decode() if b" " in head else ""
+        form = dict(parse_qsl(body.decode(errors="replace")))
+        page = current().WEB_PAGES.get(path)
+        content = page(form).encode() if page else b""
+        handlers.log(f"[web] <- {path} -> {len(content)} bytes")
+        send(writer, b"HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nConnection: close\r\n"
+             + f"Content-Length: {len(content)}\r\n\r\n".encode() + content)
+        await writer.drain()
+    except (asyncio.TimeoutError, ConnectionError, OSError, ValueError,
+            asyncio.IncompleteReadError, asyncio.LimitOverrunError):
+        pass
+    finally:
+        writer.close()
+        try:
+            await writer.wait_closed()
+        except (ConnectionError, OSError):
+            pass
 
 
-async def main():
-    servers = [
-        await asyncio.start_server(handler("login", "LOGIN_REPLIES"), HOST, 8815),
-        await asyncio.start_server(handler("game", "GAME_REPLIES", ticks=True), HOST, 8813),
-        await asyncio.start_server(handle_http, HOST, 8080),
-    ]
-    handlers.log(f"listening on {HOST}:8815 (login), {HOST}:8813 (game), {HOST}:8080 (web)")
-    await asyncio.gather(*(s.serve_forever() for s in servers))
+async def main(host="127.0.0.1"):
+    servers = []
+    ticking = None
+    try:
+        servers.append(await asyncio.start_server(handler("login", "LOGIN_REPLIES"), host, 8815))
+        servers.append(await asyncio.start_server(handler("game", "GAME_REPLIES", ticks=True), host, 8813))
+        servers.append(await asyncio.start_server(handle_http, host, 8080))
+        ticking = asyncio.create_task(ticker())
+        handlers.log(f"listening on {host}:8815 (login), {host}:8813 (game), {host}:8080 (web)")
+        await asyncio.gather(*(s.serve_forever() for s in servers))
+    finally:
+        if ticking:
+            ticking.cancel()
+            await asyncio.gather(ticking, return_exceptions=True)
+        for server in servers:
+            server.close()
+            await server.wait_closed()
 
 
-asyncio.run(main())
+if __name__ == "__main__":
+    try:
+        asyncio.run(main(sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"))
+    except KeyboardInterrupt:
+        pass

@@ -1,289 +1,280 @@
-"""Packet and web handlers for the stub server.
-
-stub.py reloads this module whenever it changes, so handlers can be edited
-while the client stays connected.
-"""
+"""Reloadable packet experiments with per-connection state in sessions.py."""
+import importlib
 import json
-import pathlib
+import math
+import re
+import secrets
 import struct
 import time
 
-from proto import build
-
-import importlib
-import loot
+import sessions
+from proto import build, split
 import skills
+import loot
 import world as units
+import ai
 
-# stub.py only reloads this module; pick up edits to the helper modules too.
-importlib.reload(skills)
-importlib.reload(loot)
-importlib.reload(units)
+# State lives in sessions.py; shared units and AI clocks survive these reloads.
+for module in (skills, loot, units, ai):
+    importlib.reload(module)
 
-try:
-    import ai  # monster AI; optional until it exists
-
-    importlib.reload(ai)
-except ImportError:
-    ai = None
+NATION, TEAM = 1, 0
+VILLAGE = (87, 2688.8, 382.9)
+TUTORIAL = (117, 1427.0, 429.0)
+SPAWN_MAP, SPAWN_X, SPAWN_Z = TUTORIAL
+SPAWN_SCENE = 87
+HP = MAX_HP = 1000
+MP = MAX_MP = 500
+SPEED = 450
+CHARACTER_SLOTS, SLOT_SIZE = 5, 0x240
 
 
 def log(*args):
     print(time.strftime("%H:%M:%S"), *args, flush=True)
 
 
-ACCOUNT_ID = 1
-ACCOUNT_NAME = b"player"
+def login_ok(packet):
+    """0x4201: +0x18/+0x1c tickets, +0x20 account[32] (FUN_00470032).
 
-# Session tag the client echoes in header +6 of character-select packets (0x2001 extra).
-SESSION_TAG = 1
-# The player's in-world unit id (0x2000 extra); players are below 0x3F7.
-PLAYER_UID = 1
-# Account nation/faction (0x2001 +0xB74; 0 = not chosen yet) and team index (0x2000 +0x24, 0..3).
-NATION = 1
-TEAM = 0
-
-# Where entering the world puts you. Field names from StringAll_Eng.cdb:
-# 87/91/95 Village, 88/92/96 Training Camp, 117 Beginner's Training Ground, 120 Fortress.
-# Places (x, z) from the extracted map/zone tables (docs/spec/navmesh.md).
-VILLAGE = (87, 2688.8, 382.9)  # Village, segment ZP10_01 (Teleport_List.cdb)
-TUTORIAL = (117, 1427.0, 429.0)  # tutorial_map_01, on the navmesh (tools/navmesh.py check); ZP05_01
-
-SPAWN_MAP, SPAWN_X, SPAWN_Z = TUTORIAL
-# Any value works as long as later warps reuse it; a different one forces a full reload.
-SPAWN_SCENE = 87
-
-# Live state of the connected player, kept from their packets (used by the monster AI).
-PLAYER = {"uid": PLAYER_UID, "x": 0.0, "z": 0.0, "hp": 0, "alive": True}
-
-# Echo the player's own 0x416 moves back to them (experiment: movement hops without it).
-ECHO_MOVES = False
-
-# A warp to perform on the player's next movement packet (map, x, z), or None.
-PENDING_WARP = TUTORIAL
-
-HP = MAX_HP = 1000
-MP = MAX_MP = 500
-SPEED = 450  # 4.5 units/s, the client's default; 0 leaves the avatar unable to move
-
-
-def login_ok(_packet):
-    """0x4201 login reply (FUN_00470032).
-
-    +0x10 u32 result (0-2 ok, >=3 error code) | +0x14 u16 server index |
-    +0x18 u32, +0x1c u32 account/session ids | +0x20 char[32] account name
+    Token at 0x4207 +0x14 comes from -ologin=NAME; empty tokens use 'player'.
+    Evidence: contract/session.yaml, token_login and game_server_login.
     """
-    payload = struct.pack("<IHHII", 0, 0, 0, ACCOUNT_ID, ACCOUNT_ID)
-    payload += ACCOUNT_NAME.ljust(32, b"\0")
-    return build(0x4201, payload)
+    opcode = struct.unpack_from("<H", packet, 4)[0]
+    token = packet[0x14:0x94] if opcode == 0x4207 else packet[0x10:0x30]
+    account, ticket = sessions.issue_ticket(token.split(b"\0")[0])
+    payload = struct.pack("<IHHII", 0, 0, 0, *ticket)
+    return build(0x4201, payload + account.encode().ljust(32, b"\0"))
 
 
-CHARACTER_SLOTS = 5
-SLOT_SIZE = 0x240
-CHARACTERS = pathlib.Path(__file__).with_name("characters.json")
+def game_login(packet):
+    """0x4200 +0x10 account[32], +0x50/+0x54 tickets -> 0x2001."""
+    session = sessions.current()
+    account = packet[0x10:0x30].split(b"\0")[0].decode("ascii")
+    sessions.authenticate(session, account, struct.unpack_from("<II", packet, 0x50))
+    return character_list()
 
 
-def load_characters():
-    """Slot index -> 0x240-byte character record (u64 id @0, name char[] @8)."""
-    if not CHARACTERS.exists():
-        return {}
-    return {int(k): bytes.fromhex(v) for k, v in json.loads(CHARACTERS.read_text()).items()}
+def character_list(_packet=None):
+    """0x2001: +0x10 five 0x240-byte records; extra = this connection's uid.
 
-
-def save_characters(chars):
-    CHARACTERS.write_text(json.dumps({k: v.hex() for k, v in chars.items()}, indent=1))
-
-
-def character_list(_packet):
-    """0x2001 character list (FUN_004760b2); sends the login scene to character select.
-
-    +0x10 5 x 0x240-byte slots (all-zero slot = empty; name at slot+8) |
-    +0xb50 u32 | +0xb74 u8 | +0xb78 u32 | +0xb7c u32 | +0xb80 u32 time? |
-    +0xb84 u8 | +0xb88 u32
+    FUN_004760b2: +0xb50 account id, +0xb74 nation, +0xb80 Unix time.
     """
+    session = sessions.current()
     packet = bytearray(0xB8C)
-    for slot, record in load_characters().items():
+    for slot, record in sessions.load_characters(session.account).items():
         record = bytearray(record)
-        record[0x34] = max(record[0x34], 1)  # level; 0 breaks the avatar
+        record[0x34] = max(record[0x34], 1)
         packet[0x10 + slot * SLOT_SIZE:0x10 + (slot + 1) * SLOT_SIZE] = record
-    struct.pack_into("<I", packet, 0xB50, ACCOUNT_ID)
+    struct.pack_into("<I", packet, 0xB50, session.uid)
     packet[0xB74] = NATION
     struct.pack_into("<I", packet, 0xB80, int(time.time()))
-    return build(0x2001, bytes(packet[16:]), extra=SESSION_TAG)
-
-
-def enter_world(packet):
-    """0x406 enter world with the selected character -> 0x2000 + initial state.
-
-    0x2000 (FUN_00472272, 0x704 bytes) is ignored unless +0x10 is a char id
-    from the 0x2001 list; its extra becomes the player's unit id. The client
-    builds its own avatar from the slot record, so no self-spawn is needed.
-    """
-    (char_id,) = struct.unpack_from("<Q", packet, 0x10)
-    record = next((r for r in load_characters().values() if struct.unpack_from("<Q", r)[0] == char_id), None)
-    if record is None:
-        log(f"enter world: unknown char id {char_id}")
-        record = bytes(SLOT_SIZE)
-    (class_id,) = struct.unpack_from("<H", record, 0x36)
-    level = max(record[0x34], 1)
-    world = bytearray(0x704)
-    struct.pack_into("<Q", world, 0x10, char_id)
-    struct.pack_into("<hhff", world, 0x18, SPAWN_SCENE, SPAWN_MAP, SPAWN_X, SPAWN_Z)
-    world[0x24] = TEAM
-    world[0x25] = 0xFF  # mapfort -1: no fort
-    struct.pack_into("<I", world, 0x6F8, int(time.time()))
-    weapon = skills.weapon_of(record)
-    skills.apply_to_world(world, class_id, level, weapon=weapon)
-    log(f"enter world: char {char_id} -> map {SPAWN_MAP} scene {SPAWN_SCENE} at ({SPAWN_X}, {SPAWN_Z})")
-    PLAYER.update(x=SPAWN_X, z=SPAWN_Z, hp=HP, alive=True, in_world=True)
-    loot.set_gold(struct.unpack_from("<I", record, 0x80)[0])
-    units.PLAYER["spawn"] = (SPAWN_X, SPAWN_Z)
-    # Monsters sit around wherever the player spawns until the tutorial spot is walkable.
-    units.CENTRE = (SPAWN_X, SPAWN_Z)
-    return (
-        build(0x2000, bytes(world[16:]), extra=PLAYER_UID)
-        + stat_block()
-        + build(0x421, struct.pack("<IIII", HP, MP, MAX_HP, MAX_MP), extra=PLAYER_UID)
-        # Equipping the weapon in-game is what loads its skills onto the bar.
-        + skills.after_enter_world(PLAYER_UID, class_id, level, weapon=weapon)
-        + units.spawn_all(PLAYER_UID)
-    )
-
-
-def move(packet):
-    """0x416 movement; also flushes monster respawns that have come due."""
-    return (_move(packet) or b"") + units.due_respawns() or None
-
-
-def _move(packet):
-    """0x416 movement (0x20 bytes, both directions; header +6 = mover uid).
-
-    +0x10 u8 heading | +0x11 u8 type (2 move, 0x20 alt, 0 stop, 1 resync request,
-    4 clock-drift report) | +0x12 u8 stance | +0x14 u16 speed | +0x18 f32 x | +0x1c f32 z
-    The client moves on its own; it only needs an answer to a resync request,
-    which is a 0x416 of type 1 that snaps it to a position.
-    """
-    global PENDING_WARP
-    _, kind = packet[0x10], packet[0x11]
-    x, z = struct.unpack_from("<ff", packet, 0x18)
-    if kind in (0, 2, 0x20):
-        PLAYER["x"], PLAYER["z"] = x, z
-    if PENDING_WARP:
-        (map_id, wx, wz), PENDING_WARP = PENDING_WARP, None
-        PLAYER["x"], PLAYER["z"] = wx, wz
-        # Bring the monsters along: drop the old ones, respawn around the new spot.
-        gone = b"".join(units.remove(uid) for uid in list(units.UNITS))
-        units.CENTRE = (wx, wz)
-        units.PLAYER["spawn"] = (wx, wz)
-        return warp(map_id, wx, wz) + gone + units.spawn_all(PLAYER_UID)
-    if kind == 1:
-        log(f"resync request at ({x:.1f}, {z:.1f}); snapping to spawn")
-        return build(0x416, struct.pack("<BBBBHHff", 0, 1, 0, 0, 0, 0, SPAWN_X, SPAWN_Z), extra=PLAYER_UID)
-    if kind == 4:
-        log("client reported clock drift (anti-cheat)")
-        return None
-    if ECHO_MOVES and kind in (0, 2, 0x10, 0x20):
-        # The client's 0x416 handler also processes moves for its own unit;
-        # echoing them back may be what the original server did.
-        return build(0x416, packet[16:0x20], extra=PLAYER_UID)
-    return None
-
-
-def warp(map_id, x, z):
-    """0x44e warp (0x2c bytes, extra = player uid).
-
-    +0x10 u16 mapid | +0x12 u16 sceneidx | +0x14 f32 x | +0x18 f32 z |
-    +0x1e i8 mapfort (-1 none) | +0x20 u32 mapGuild. Same sceneidx = in-place move.
-    """
-    log(f"warp to map {map_id} at ({x}, {z})")
-    payload = bytearray(0x2C - 16)
-    struct.pack_into("<HHff", payload, 0, map_id, SPAWN_SCENE, x, z)
-    payload[0x1E - 0x10] = 0xFF
-    return build(0x44E, bytes(payload), extra=PLAYER_UID)
-
-
-def tick():
-    """Called by stub.py every TICK_SECONDS per game connection: monster AI and respawns.
-
-    Idle until the player has entered the world, so the AI never acts on a stale position.
-    """
-    if not PLAYER.get("in_world"):
-        return None
-    now = time.monotonic()
-    out = ai.tick(now, PLAYER) if ai is not None else units.due_respawns()
-    return (out or b"") + loot.tick(now) or None
-
-
-def stat_block():
-    """0x41f full stat block (0x5c bytes), sent after 0x2000.
-
-    The client builds the avatar dead (HP 0) with speed 0; this revives it.
-    +0x10 HP, +0x14 MP, +0x18 max HP, +0x1c max MP, +0x46 i16 speed, rest stats.
-    """
-    stats = bytearray(0x5C)
-    struct.pack_into("<IIII", stats, 0, HP, MP, MAX_HP, MAX_MP)
-    struct.pack_into("<h", stats, 0x46 - 0x10, SPEED)
-    return build(0x41F, bytes(stats), extra=PLAYER_UID)
+    return build(0x2001, bytes(packet[16:]), extra=session.uid)
 
 
 def create_character(packet):
-    """0x407 create character; the reply echoes the request with an id (FUN_00477a62).
-
-    +0x10 u32 slot | +0x18 u8 flag | +0x20 0x240-byte record (u64 id must be non-zero)
-    """
+    """0x407: +0x10 slot, +0x20 record; echo with a new id (FUN_00477a62)."""
+    session = sessions.current()
+    slot = struct.unpack_from("<I", packet, 0x10)[0]
+    chars = sessions.load_characters(session.account)
+    if not 0 <= slot < CHARACTER_SLOTS or slot in chars:
+        raise ValueError("character slot is invalid or occupied")
+    record = bytearray(packet[0x20:0x260])
+    name = record[8:0x30].split(b"\0")[0]
+    class_id = struct.unpack_from("<H", record, 0x36)[0]
+    weapon = skills.weapon_of(record)
+    if not re.fullmatch(rb"[A-Za-z0-9]{1,16}", name):
+        raise ValueError("character name must contain 1-16 letters or digits")
+    if class_id not in skills.CLASS_WEAPONS or weapon not in skills.CLASS_WEAPONS[class_id]:
+        raise ValueError("invalid starting class or weapon")
+    if any(r[8:0x30].split(b"\0")[0].lower() == name.lower() for r in chars.values()):
+        raise ValueError("character name is already used on this account")
+    char_id = secrets.randbits(63) or 1
+    struct.pack_into("<Q", record, 0, char_id)
+    record[0x34] = 1
+    chars[slot] = bytes(record)
+    sessions.save_characters(session.account, chars)
     reply = bytearray(packet[:0x260])
-    (slot,) = struct.unpack_from("<I", reply, 0x10)
-    chars = load_characters()
-    char_id = max((struct.unpack_from("<Q", r)[0] for r in chars.values()), default=0) + 1
-    struct.pack_into("<Q", reply, 0x20, char_id)
-    record = bytes(reply[0x20:0x20 + SLOT_SIZE])
-    chars[slot] = record
-    save_characters(chars)
-    name = record[8:40].split(b"\0")[0].decode(errors="replace")
-    log(f"created character {char_id} '{name}' in slot {slot}")
-    return build(0x407, bytes(reply[16:]))
+    reply[0x20:0x260] = record
+    log(f"created character {char_id} '{name.decode()}' in slot {slot}")
+    return build(0x407, bytes(reply[16:]), extra=session.uid)
 
 
-LOGIN_REPLIES = {
-    0x4200: login_ok,  # ID/password login
-    0x4207: login_ok,  # token (OAuth/Steam) login
-}
+def enter_world(packet):
+    """0x406 +0x10 char id -> 0x2000 and mutual player spawns.
 
-GAME_REPLIES = {
-    0x4200: character_list,  # game-server login carrying the account ids from 0x4201
-    0x0407: create_character,
-    0x0406: enter_world,
-    0x0416: move,
-    **{op: fn for op, fn in skills.REPLIES.items()},
-    **{op: fn for op, fn in units.REPLIES.items()},
-    **{op: fn for op, fn in loot.REPLIES.items()},
-}
-
-
-def log(*args):
-    print(time.strftime("%H:%M:%S"), *args, flush=True)
-
-
-def world_channel(form):
-    """/JoyImpact/WorldChannel.asp (parsed by FUN_0042a92f).
-
-    One row per world: WORLD must equal the world index from serverlist.sof;
-    WORLD_STATE is stored per world; CH_01..CH_05 are per-channel values
-    (player counts, presumably) and each listed channel is marked available.
+    Own avatar: FUN_00472272 (0x704 bytes); peers: FUN_00477d13 (0x803).
+    See docs/spec/world.md and contract/session.yaml.
     """
-    world = form.get("world", "1")
-    channels = "".join(f"<CH_0{i}>0</CH_0{i}>" for i in range(1, 6))
-    return (
-        '<?xml version="1.0" encoding="utf-8"?>'
-        f"<ROOT><ROW><WORLD>{world}</WORLD><WORLD_STATE>1</WORLD_STATE>"
-        "<NatBlock1>0</NatBlock1><NatBlock2>0</NatBlock2><NatBlock3>0</NatBlock3>"
-        f"{channels}<NEWBIE_CHANNEL>0</NEWBIE_CHANNEL></ROW></ROOT>"
-    )
+    session = sessions.current()
+    char_id = struct.unpack_from("<Q", packet, 0x10)[0]
+    record = next((r for r in sessions.load_characters(session.account).values()
+                   if struct.unpack_from("<Q", r)[0] == char_id), None)
+    if record is None:
+        return character_list()
+    session.record = record
+    session.reset_player()
+    session.inventory, session.loot = session.characters.get(
+        char_id, (sessions.new_inventory(), {"gold": struct.unpack_from("<I", record, 0x80)[0], "next_uid": 0x3000}))
+    session.drops.clear()
+    p = session.player
+    p.update(x=SPAWN_X, z=SPAWN_Z, spawn=(SPAWN_X, SPAWN_Z), map=SPAWN_MAP,
+             scene=SPAWN_SCENE, team=TEAM, hp=HP, mp=MP, max_hp=MAX_HP, max_mp=MAX_MP, speed=SPEED)
+    class_id = struct.unpack_from("<H", record, 0x36)[0]
+    level = max(record[0x34], 1)
+    weapon = session.inventory["equip"][0] or skills.weapon_of(record)
+    packet = bytearray(0x704)
+    struct.pack_into("<Qhhff", packet, 0x10, char_id, SPAWN_SCENE, SPAWN_MAP, SPAWN_X, SPAWN_Z)
+    packet[0x24], packet[0x25] = TEAM, 0xFF
+    struct.pack_into("<I", packet, 0x6F8, int(time.time()))
+    skills.apply_to_world(packet, class_id, level, weapon=weapon)
+    out = build(0x2000, bytes(packet[16:]), extra=session.uid)
+    out += skills.after_enter_world(session.uid, class_id, level, weapon=weapon)
+    out += units.join((SPAWN_X, SPAWN_Z))
+    out += loot.gold_update()
+    p["in_world"] = True
+    for other in sessions.CONNECTED.values():
+        if other is not session and sessions.same_scene(session, other):
+            out += units.spawn_player(other)
+            other.send(units.spawn_player(session))
+    log(f"uid {session.uid} entered map {SPAWN_MAP} at ({SPAWN_X}, {SPAWN_Z})")
+    return out
 
 
-WEB_PAGES = {
-    # world_channel() is parsed by the client, but with it the client never
-    # attempts the TCP login; an empty reply lets login proceed. Off until the
-    # WORLD_STATE / channel semantics are understood.
-    # "/JoyImpact/WorldChannel.asp": world_channel,
+def move(packet):
+    """0x416: +0x10 heading, +0x11 type, +0x14 speed, +0x18/+0x1c x/z.
+
+    See docs/spec/world.md: relay to observers, never echo normal own movement.
+    Type 1 requests an authoritative position correction.
+    """
+    session = sessions.current()
+    p = session.player
+    heading, kind = packet[0x10:0x12]
+    if not p["alive"]:
+        return None  # movement would revive this corpse on other clients
+    if kind == 1:
+        return build(0x416, struct.pack("<BBBBHHff", p["heading"], 1, 0, 0, p["speed"], 0, p["x"], p["z"]), extra=session.uid)
+    if kind not in (0, 2, 0x20):
+        return None
+    x, z = struct.unpack_from("<ff", packet, 0x18)
+    if not math.isfinite(x) or not math.isfinite(z):
+        raise ValueError("movement coordinates must be finite")
+    p.update(x=x, z=z, heading=heading)
+    sessions.broadcast(session, build(0x416, packet[16:0x20], extra=session.uid))
+
+
+def leave_world(session):
+    if session.player["in_world"]:
+        sessions.broadcast(session, units.remove(session.uid))
+        char_id = struct.unpack_from("<Q", session.record)[0]
+        session.characters[char_id] = (session.inventory, session.loot)
+        session.player["in_world"] = False
+        session.drops.clear()
+
+
+def leave_game(packet):
+    """0x409 +0x10 mode: 0 -> 0x2001 on the same socket, 1 -> exit.
+
+    FUN_0048d666 / FUN_004760b2; keep the old wire key after character select.
+    """
+    mode = struct.unpack_from("<I", packet, 0x10)[0]
+    if mode not in (0, 1):
+        raise ValueError("unknown leave-game mode")
+    leave_world(sessions.current())
+    return character_list() if mode == 0 else None
+
+
+def disconnect(session):
+    try:
+        leave_world(session)
+    finally:
+        sessions.CONNECTED.pop(session.uid, None)
+
+
+def unknown_unit(packet):
+    """0x4ca +0x10 uid: return a visible player or the existing monster path."""
+    uid = struct.unpack_from("<I", packet, 0x10)[0]
+    session = sessions.current()
+    if uid < 0x3F7:
+        other = sessions.CONNECTED.get(uid)
+        if other is session:
+            return None
+        return units.spawn_player(other) if other and sessions.same_scene(session, other) else units.remove(uid)
+    return units.unknown_unit(packet)
+
+
+def cast(packet):
+    session = sessions.current()
+    if session.player["alive"]:
+        opcode = struct.unpack_from("<H", packet, 4)[0]
+        sessions.broadcast(session, build(opcode, packet[16:], extra=session.uid))
+
+
+def tick():
+    """One shared AI tick, followed by private per-player loot collection."""
+    now = time.monotonic()
+    active = [s for s in sessions.CONNECTED.values() if s.player["in_world"]]
+    ai.tick_world(now, active)
+    for session in active:
+        with sessions.use(session):
+            out = loot.tick(now)
+            if out:
+                session.send(out)
+
+
+LOGIN_REPLIES = {0x4200: login_ok, 0x4207: login_ok}
+GAME_REPLIES = {
+    0x4200: game_login, 0x407: create_character, 0x406: enter_world,
+    0x409: leave_game, 0x416: move,
+    **skills.REPLIES, **units.REPLIES, **loot.REPLIES,
+    0x4CA: unknown_unit, 0x40F: cast, 0x410: cast,
 }
+MIN_SIZE = {0x4207: 0x9C, 0x4200: 0x60, 0x407: 0x260, 0x406: 0x20,
+            0x409: 0x14, 0x416: 0x20, 0x417: 0x1C, 0x411: 0x64,
+            0x412: 0x88, 0x40F: 0x14, 0x410: 0x38, 0x4CA: 0x18,
+            0x42A: 0x18, 0x494: 0x28, 0x451: 0x18}
+
+
+def dispatch(table, packet, session=None):
+    opcode, extra = struct.unpack_from("<HH", packet, 4)
+    if len(packet) < MIN_SIZE.get(opcode, 16):
+        raise ValueError(f"short packet for 0x{opcode:04x}")
+    reply = globals()[table].get(opcode)
+    if reply is None:
+        return None
+    if session is not None and opcode != 0x4200:
+        if not session.account or extra != session.uid:
+            raise ValueError("packet does not belong to this session")
+        selecting = opcode in (0x406, 0x407)
+        if selecting == session.player["in_world"]:
+            raise ValueError("packet is not valid in this scene")
+    with sessions.use(session):
+        out = reply(packet)
+        if session is not None and opcode in (0x411, 0x412) and out:
+            # Loot and bag/gold updates belong only to the player who killed it.
+            packets, _ = split(out)
+            shared = b"".join(p for p in packets if struct.unpack_from("<H", p, 4)[0] in (0x411, 0x412, 0x420, 0x804))
+            sessions.broadcast(session, shared)
+        if session is not None and opcode == 0x42A:
+            out = (out or b"") + units.player_stats()
+            sessions.broadcast(session, units.spawn_player(session))
+        return out
+
+
+def channel_status(form):
+    """One available channel as JSON (FUN_0042a92f calls Json::Reader::parse).
+
+    WORLD echoes the serverlist index requested by the client. Other channels
+    are unavailable. This is a local test-server policy, not a population model.
+    """
+    try:
+        world = int(form.get("world", "1"))
+    except ValueError:
+        return ""
+    fields = {"WORLD": world, "WORLD_STATE": 1, "NatBlock1": 0, "NatBlock2": 0,
+              "NatBlock3": 0, "CH_01": len(sessions.CONNECTED), "CH_02": -1,
+              "CH_03": -1, "CH_04": -1, "CH_05": -1, "NEWBIE_CHANNEL": 0}
+    return json.dumps([fields])
+
+
+WEB_PAGES = {"/JoyImpact/WorldChannel.asp": channel_status,
+             "/JoyImpact/ChannelList.asp": channel_status}
