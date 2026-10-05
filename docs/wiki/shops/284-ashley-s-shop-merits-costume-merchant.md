@@ -4,7 +4,7 @@ type: "shop"
 id: 284
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 284", "client: UnitDB.cdb u16@a2 = 284 (units 206)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 284", "client: UnitDB.cdb u16@a2 = 284 (units 206)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "video: [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Ashley 206)", "notes: [[gameplay/reinforce-and-runes]] §5 (WM 0920 costume medal prices)", "staff: [[gameplay/crush-patch-notes]] 2016-12-22 (carve a costume permanent 10,000,000 gold at the Merits Costume Merchant; Costume Remover 425,000)", "client + staff: [[gameplay/crush-mechanics]] §12 (Costume Remover 425,000 gold in Crush Online vs 50,000 in Warmonger)"]
 npc: [206]
 stock:
   - {"slot": 0, "item": 2027, "count": 1, "p1": 0, "p2": 0}
@@ -42,6 +42,13 @@ prices:
   - {"item": 1999, "currency": 2, "currency_name": "Gold", "base": 50000, "buy": 396000, "sell": 315000}
 price_rates: {"buy_rate": 720, "sell_rate": 700, "basis": "inferred: 7.92 = 7.20 x 1.1 (buy), 6.3 = 7.00 x 0.9 (sell) under contract price_formula; multipliers observed in 2018 play"}
 header: {"c2": 0, "c3": 1, "c4": 0}
+observed_prices:
+  - {"item": 2018, "shown": 10, "currency": "Gold Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes: costume medal price gold 50 → 10, silver 50 → 25)"}
+  - {"item": 2019, "shown": 10, "currency": "Gold Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes: costume medal price gold 50 → 10, silver 50 → 25)"}
+  - {"item": 2020, "shown": 10, "currency": "Gold Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes: costume medal price gold 50 → 10, silver 50 → 25)"}
+  - {"item": 2015, "shown": 25, "currency": "Silver Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes: costume medal price gold 50 → 10, silver 50 → 25)"}
+  - {"item": 2016, "shown": 25, "currency": "Silver Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes: costume medal price gold 50 → 10, silver 50 → 25)"}
+  - {"item": 2017, "shown": 25, "currency": "Silver Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes: costume medal price gold 50 → 10, silver 50 → 25)"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=a81e66 type=ffcf9c id=7f3541 sources=137d9b npc=6d18d7 stock=ef0876 prices=e7a76f price_rates=c44eae header=702516 -->
@@ -88,7 +95,11 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Ashley (unit 206), the Merits Costume Merchant, sells costume sets for medals and the Costume Remover (1999) for gold. She stands on the west side of the Fortress (*video*, [[gameplay/npc-locations|NPC locations]] §3).
+
+On 20 Sep 2018 the medal price of costumes was cut from 50 to **10** gold medals and from 50 to **25** silver medals (*notes*, [[gameplay/reinforce-and-runes|runes]] §5). These new prices match the client rows here (2018-2020 at 10 gold, 2015-2017 at 25 silver).
+
+Crush Online (22 Dec 2016): this merchant could make a costume permanent ("carve") for **10,000,000 gold**. The costume became the default skin and lost its effects and timer. A Costume Remover cost 425,000 gold (*staff*, [[gameplay/crush-patch-notes|CO patch notes]] 2016-12-22).
 
 ## Behaviour
 
@@ -96,11 +107,15 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Ashley 206) (*video*)
+- [[gameplay/reinforce-and-runes]] §5 (WM 0920 costume medal prices) (*notes*)
+- [[gameplay/crush-patch-notes]] 2016-12-22 (carve a costume permanent 10,000,000 gold at the Merits Costume Merchant; Costume Remover 425,000) (*staff*)
+- [[gameplay/crush-mechanics]] §12 (Costume Remover 425,000 gold in Crush Online vs 50,000 in Warmonger) (*client + staff*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Costume Remover: Crush Online charged 425,000 gold, and [[gameplay/crush-mechanics|Crush mechanics]] §12 gives 50,000 for Warmonger, which is the client base. Through the 7.92 shop rate that base would show as 396,000. Nothing says whether the remover was a medal-shop item charged at base or a normal gold item.
+- The bronze-medal rows (2027-2029 at 50, 2079-2084 at 40/30) have no seen price.
 
 <!-- credit:start -->
 ---

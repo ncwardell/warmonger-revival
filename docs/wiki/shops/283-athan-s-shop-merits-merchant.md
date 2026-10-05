@@ -4,7 +4,7 @@ type: "shop"
 id: 283
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 283", "client: UnitDB.cdb u16@a2 = 283 (units 207)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)"]
+sources: ["client: Npc_Carry.cdb shop 283", "client: UnitDB.cdb u16@a2 = 283 (units 207)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)", "video: [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Athan 207)", "image: [[gameplay/maps-and-dungeons]] §5 (medal shop opposite the auction house)", "image: [[gameplay/progression-and-economy]] §4 Athan (noob guide image) (dye boxes, Pyrotechnics, Life saviour)", "notes: [[gameplay/reinforce-and-runes]] §5 (WM 0920 medal prices of the Passions; fame shop gem stones WM 0712/0920)", "video: [[gameplay/video-rune-upgrades]] 1:10-1:15 (Blue Crystals 10 gold each; shop also lists the four Passions)", "guide: [[gameplay/items-and-crafting]] §3 (weapon materials 2 bronze medals each at Athan)", "guide: [[gameplay/progression-and-economy]] §3 (medals buy from Athan's shop; Mithril only from reward boxes)", "player: [[gameplay/crush-mechanics]] §3 (Crush Online adjuvants for Mithril medals at Athan)", "staff: [[gameplay/crush-patch-notes]] 2016-11-23 (Fame Life Saviour 1,000 fame at the Merits merchant)", "notes: [[gameplay/patch-history]] WM 0329 (3 repeatable Abyss quests at Athan)"]
 npc: [207]
 stock:
   - {"slot": 0, "item": 854, "count": 1, "p1": 0, "p2": 0}
@@ -54,6 +54,17 @@ observed_prices:
   - {"item": 689, "shown": 1, "currency": "Bronze Medal", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)"}
   - {"item": 690, "shown": 1, "currency": "Silver Medal", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)"}
   - {"item": 691, "shown": 1, "currency": "Gold Medal", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)"}
+  - {"item": 856, "shown": 1, "currency": "Gold Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes)", "note": "alternative to 5 silver"}
+  - {"item": 857, "shown": 5, "currency": "Silver Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes)", "note": "or 3 gold medals; client: 5 gold medal (currency 12) with a 5 silver cost pair"}
+  - {"item": 857, "shown": 3, "currency": "Gold Medal", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes)", "note": "alternative to 5 silver; client base is 5"}
+  - {"item": 1057, "shown": 3, "currency": "Bronze/Silver Medal", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)", "note": "guide: three dye boxes at 3 bronze/silver"}
+  - {"item": 1058, "shown": 3, "currency": "Bronze/Silver Medal", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)", "note": "guide: three dye boxes at 3 bronze/silver"}
+  - {"item": 1059, "shown": 3, "currency": "Bronze/Silver Medal", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)", "note": "guide: three dye boxes at 3 bronze/silver"}
+  - {"item": 700, "shown": 10, "currency": "Gold", "source": "docs: [[gameplay/video-rune-upgrades]] 1:15", "note": "100 for 1,000 gold; shop identified by its Passion stock (guess); formula gives 79"}
+  - {"item": 700, "shown": 10, "currency": "Fame", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0712/0920 notes)", "note": "'Gem Stone Blue' at the fame shop (Mertris); matches 700's Fame cost pair"}
+  - {"item": 701, "shown": 50, "currency": "Fame", "source": "docs: [[gameplay/reinforce-and-runes]] §5 (WM 0712/0920 notes)", "note": "'Gem Stone Yellow' at the fame shop (Mertris); matches 701's Fame cost pair"}
+  - {"item": 1105, "shown": 100, "currency": "yellow coin (fame?)", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)", "note": "not in Npc_Carry 283"}
+  - {"item": 1802, "shown": 1000, "currency": "yellow coin (fame?)", "source": "docs: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)", "note": "'Life saviour'; not in Npc_Carry 283; Crush Online sold the Fame Life Saviour for 1,000 fame here"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=c5e2ec type=ffcf9c id=3032a4 sources=401c1b npc=46007a stock=4c10be prices=29d3c2 price_rates=c44eae header=702516 observed_prices=183282 -->
@@ -121,19 +132,38 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Athan (unit 207), the Merits Merchant, runs the **medal shop** in the middle of the Fortress, opposite the auction house (*image*, [[gameplay/maps-and-dungeons|maps]] §5; *video*, [[gameplay/npc-locations|NPC locations]] §3). He also gives quests: quest 749, and three repeatable Abyss quests added on 29 Mar 2018 ([[gameplay/patch-history|patch history]] 0329).
+
+Medals are earned in PvP (bronze/silver/gold by performance), in monster invasions (bronze) and from daily/weekly quests. Mithril comes only from Gold/Mithril reward boxes (*guide*, [[gameplay/progression-and-economy|economy]] §3).
+
+Spring 2018 guide prices (*image*, [[gameplay/progression-and-economy|economy]] §4): Shining Passion 2 silver, Mysterious 5 bronze, Brilliant 5 silver, Amplifying 5 bronze; reward boxes 4 bronze / 3 silver / 2 gold / 1 mithril; three dye boxes at 3 bronze/silver; Time Energy tiers 1 bronze / 1 silver / 1 gold; Pyrotechnics 100 and Life saviour 1,000 in a yellow-coin currency. The weapon materials cost 2 bronze medals each (*guide*, [[gameplay/items-and-crafting|crafting]] §3). After 20 Sep 2018 Brilliant Passion cost 5 silver **or** 1 gold, and Amplifying 5 silver **or** 3 gold ([[gameplay/reinforce-and-runes|runes]] §5). In a 2018 rune video the shop sold Blue Crystals at 10 gold each and also listed the four Passions (*video*, [[gameplay/video-rune-upgrades|rune video]] [1:15](https://www.youtube.com/watch?v=dpofIAFX2wM&t=75s)).
+
+Crush Online: reinforcing adjuvants could be bought here for Mithril medals (*player*, [[gameplay/crush-mechanics|Crush mechanics]] §3), and the Fame Life Saviour (heals 30 %) cost 1,000 fame (*staff*, [[gameplay/crush-patch-notes|CO patch notes]] 2016-11-23).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Time Energy (689-691) was needed to enter hard-mode dungeons until that rule was dropped (*guide*, [[gameplay/progression-and-economy|economy]] §4).
+- Medal prices are charged as listed and cannot be sold back (client formula, see above).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Athan 207) (*video*)
+- [[gameplay/maps-and-dungeons]] §5 (medal shop opposite the auction house) (*image*)
+- [[gameplay/progression-and-economy]] §4 Athan (noob guide image) (dye boxes, Pyrotechnics, Life saviour) (*image*)
+- [[gameplay/reinforce-and-runes]] §5 (WM 0920 medal prices of the Passions; fame shop gem stones WM 0712/0920) (*notes*)
+- [[gameplay/video-rune-upgrades]] 1:10-1:15 (Blue Crystals 10 gold each; shop also lists the four Passions) (*video*)
+- [[gameplay/items-and-crafting]] §3 (weapon materials 2 bronze medals each at Athan) (*guide*)
+- [[gameplay/progression-and-economy]] §3 (medals buy from Athan's shop; Mithril only from reward boxes) (*guide*)
+- [[gameplay/crush-mechanics]] §3 (Crush Online adjuvants for Mithril medals at Athan) (*player*)
+- [[gameplay/crush-patch-notes]] 2016-11-23 (Fame Life Saviour 1,000 fame at the Merits merchant) (*staff*)
+- [[gameplay/patch-history]] WM 0329 (3 repeatable Abyss quests at Athan) (*notes*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- **Currencies disagree.** The guide image shows Shining Passion (854) at 2 *silver* and Amplifying Passion (857) at 5 *bronze*; the client prices 854 in bronze (currency 10) and 857 in gold medals (currency 12) with a 5-silver cost pair. The WM 0920 notes give 857 as "5 silver or 3 gold", so the cost pair is probably the alternative payment and the gold amount should perhaps be 3, not 5 ([[gameplay/reinforce-and-runes|runes]] §5, [[gameplay/progression-and-economy|economy]] §4). The client values are kept.
+- **Fame shop.** The 2018 notes name a fame shop (Mertris) that sold Gem Stone Blue / Yellow for 10 / 50 accumulated fame ("Contribution") ([[gameplay/reinforce-and-runes|runes]] §5). Items 700/701 here carry exactly a 10 / 50 Fame cost pair, so this list may be that shop, or share its items (*guess*).
+- **Blue Crystal for 10 gold.** The rune video shows 10 gold each, which is the bare base price; the 7.92 rate would give 79 ([[gameplay/video-rune-upgrades|rune video]]). Which shop the video used is inferred from the Passions it also lists (*guess*).
+- Pyrotechnics (1105) and the Life saviour (1802) appear in the guide's Athan window but not in `Npc_Carry` 283. The "yellow coin" currency is probably fame (1802 has a fame price of 1,000 in the client, [[gameplay/events-and-schedules|events]] §11) (*guess*).
 
 <!-- credit:start -->
 ---

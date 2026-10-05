@@ -4,7 +4,7 @@ type: "shop"
 id: 8
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 8", "client: UnitDB.cdb u16@a2 = 8 (units 337)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 8", "client: UnitDB.cdb u16@a2 = 8 (units 337)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "client: [[gameplay/consumables]] §4 (Training Camp Owen 337 craft list 8, Odin list 6 = Item_Make category 0 copy, passion converter category 7)", "video: [[gameplay/npc-locations]] §4 Training Camp, video-measured (±3 units) (Owen 337)", "video: [[gameplay/video-character-creation-and-tutorial]] step 14 (camp Owen has only a greeting line)"]
 npc: [337]
 stock:
   - {"slot": 0, "item": 601, "count": 1, "p1": 0, "p2": 0}
@@ -95,7 +95,7 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Opened by the Training Camp Owen (unit 337, Member of Red Union) (*video*, [[gameplay/npc-locations|NPC locations]] §4). His `UnitDB` list 8 is his **craft** list: `Item_Make` category 8, with only B-grade scrolls, tomes, elixirs and flasks and C/B potions (*client*, [[gameplay/consumables|consumables]] §4). In the 2018 relaunch video the camp Owen offers only a greeting line ([[gameplay/video-character-creation-and-tutorial|character creation video]] step 14).
 
 ## Behaviour
 
@@ -103,11 +103,13 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/consumables]] §4 (Training Camp Owen 337 craft list 8, Odin list 6 = Item_Make category 0 copy, passion converter category 7) (*client*)
+- [[gameplay/npc-locations]] §4 Training Camp, video-measured (±3 units) (Owen 337) (*video*)
+- [[gameplay/video-character-creation-and-tutorial]] step 14 (camp Owen has only a greeting line) (*video*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The value 8 is read as a shop id here and as a craft list in [[gameplay/consumables|consumables]] §4. This `Npc_Carry` row (fragments 601, 611, 1900) may never open as a shop (*guess*).
 
 <!-- credit:start -->
 ---

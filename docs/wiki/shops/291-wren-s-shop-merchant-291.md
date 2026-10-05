@@ -4,7 +4,7 @@ type: "shop"
 id: 291
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 291", "client: UnitDB.cdb u16@a2 = 291 (units 319)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 291", "client: UnitDB.cdb u16@a2 = 291 (units 319)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "client: [[gameplay/consumables]] §4.2 (Wren sells D HP/MP potions in shops 281/287/291)"]
 npc: [319]
 stock:
   - {"slot": 0, "item": 883, "count": 1, "p1": 0, "p2": 0}
@@ -67,7 +67,7 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+A third Wren list, opened by unit 319. Like 281 and 287 it sells the D HP and MP potions (*client*, [[gameplay/consumables|consumables]] §4.2). Its stock is the Fortress list (281) without Dimensional Energy, Pyrotechnics and the three ward items.
 
 ## Behaviour
 
@@ -75,11 +75,11 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/consumables]] §4.2 (Wren sells D HP/MP potions in shops 281/287/291) (*client*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- No source places unit 319. [[gameplay/npc-locations|NPC locations]] places only Wren 204 (Fortress) and 238 (Training Camp).
 
 <!-- credit:start -->
 ---

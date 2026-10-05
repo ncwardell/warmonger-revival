@@ -4,7 +4,7 @@ type: "shop"
 id: 287
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 287", "client: UnitDB.cdb u16@a2 = 287 (units 238)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20; [[gameplay/video-character-creation-and-tutorial]] 8:40"]
+sources: ["client: Npc_Carry.cdb shop 287", "client: UnitDB.cdb u16@a2 = 287 (units 238)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20; [[gameplay/video-character-creation-and-tutorial]] 8:40", "video: [[gameplay/video-early-quests]] §6, 16:54 (Wren 238 shop window)", "video: [[gameplay/npc-locations]] §4 Training Camp, video-measured (±3 units) (Wren 238)", "video: [[gameplay/video-tutorial-walkthrough]] step 11 and §Shop and economy (menu, Repurchase, Sell Item box)", "video: [[gameplay/video-character-creation-and-tutorial]] steps 11-12 (quest 28: sell a fragment, buy a Return scroll)"]
 npc: [238]
 stock:
   - {"slot": 0, "item": 883, "count": 1, "p1": 0, "p2": 0}
@@ -22,6 +22,12 @@ observed_prices:
   - {"item": 883, "shown": 79, "currency": "Gold", "source": "docs: [[gameplay/video-tutorial-walkthrough]] 14:20; [[gameplay/video-character-creation-and-tutorial]] 8:40"}
   - {"item": 884, "shown": 79, "currency": "Gold", "source": "docs: [[gameplay/video-tutorial-walkthrough]] 14:20; [[gameplay/video-character-creation-and-tutorial]] 8:40"}
   - {"item": 906, "shown": 79, "currency": "Gold", "source": "docs: [[gameplay/video-tutorial-walkthrough]] 14:20; [[gameplay/video-character-creation-and-tutorial]] 8:40", "note": "shown as 'Scroll : Return' at 79, but item 906 has base 80 (formula: 633); the shop may have listed 911 or another 10-gold scroll"}
+  - {"item": 883, "shown": 79, "currency": "Gold", "source": "docs: [[gameplay/video-early-quests]] §6 16:54"}
+  - {"item": 884, "shown": 79, "currency": "Gold", "source": "docs: [[gameplay/video-early-quests]] §6 16:54"}
+  - {"item": 906, "shown": 79, "currency": "Gold", "source": "docs: [[gameplay/video-early-quests]] §6 16:54", "note": "shown as 'Scroll: Return' at 79, so the base must be 10, not 906's 80"}
+  - {"item": 760, "shown": 7920, "currency": "Gold", "source": "docs: [[gameplay/video-early-quests]] §6 16:54", "note": "not in Npc_Carry 287"}
+  - {"item": 761, "shown": 7920, "currency": "Gold", "source": "docs: [[gameplay/video-early-quests]] §6 16:54", "note": "not in Npc_Carry 287"}
+  - {"item": 762, "shown": 7920, "currency": "Gold", "source": "docs: [[gameplay/video-early-quests]] §6 16:54", "note": "not in Npc_Carry 287"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=76b355 type=ffcf9c id=f0a4ac sources=91990c npc=3e4a5c stock=f963fb prices=8d1d70 price_rates=c44eae header=702516 observed_prices=d0398d -->
@@ -69,19 +75,27 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+This is the Training Camp Wren (unit 238), next to Lewellyn, Odin and Owen (*video*, [[gameplay/npc-locations|NPC locations]] §4). The tutorial quest 28 "What does Wren do?" sends new players here to sell a Faded Passion fragment and buy a Return scroll (*video*, [[gameplay/video-character-creation-and-tutorial|character creation video]] steps 11-12).
+
+Three videos show the window. The tutorial videos show Potion of Health [D], Potion of Mana [D] and Scroll: Return at **79 gold** each ([[gameplay/video-tutorial-walkthrough|tutorial video]] [14:20](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=860s); [[gameplay/video-character-creation-and-tutorial|character creation video]] [8:40](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=520s)). The 2018 launch video also shows Scroll of Transform [Golem], [Demon] and [Slime] at **7,920** each (*video*, [[gameplay/video-early-quests|early quests]] §6, [16:54](https://www.youtube.com/watch?v=s04CSN16w1s&t=1014s)). Both prices are 7.92 x base, the same rate as the Fortress, so the rate is not a fort tax ([[gameplay/video-early-quests|early quests]] §6).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Wren's menu is Quest / Shop / Close; she says she buys and sells (*video*, [[gameplay/video-tutorial-walkthrough|tutorial video]] step 11).
+- The shop window has a **Repurchase** button. Selling opens a "Sell Item" box with a count spinner and the sell price. One Faded Passion fragment sold for 315 gold (6.3 x base 50) (*video*, [[gameplay/video-tutorial-walkthrough|tutorial video]] §Shop and economy).
+- Bound quest rewards are refused with "This item cannot be sold." (*video*, [[gameplay/video-character-creation-and-tutorial|character creation video]] system messages).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §6, 16:54 (Wren 238 shop window) (*video*)
+- [[gameplay/npc-locations]] §4 Training Camp, video-measured (±3 units) (Wren 238) (*video*)
+- [[gameplay/video-tutorial-walkthrough]] step 11 and §Shop and economy (menu, Repurchase, Sell Item box) (*video*)
+- [[gameplay/video-character-creation-and-tutorial]] steps 11-12 (quest 28: sell a fragment, buy a Return scroll) (*video*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The video stock does not match `Npc_Carry` 287 (883, 884, 906, 945). The transform scrolls 760-762 are not in the client list, and the Auto decomposition hammer [D] (945) never shows in the videos ([[gameplay/video-early-quests|early quests]] §6; [[gameplay/video-tutorial-walkthrough|tutorial video]] §Shop and economy).
+- The Return scroll costs 79, so it has a base of 10 (911?) and is not 906 (base 80) ([[gameplay/video-early-quests|early quests]] §6).
 
 <!-- credit:start -->
 ---

@@ -4,7 +4,7 @@ type: "shop"
 id: 286
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 286", "client: UnitDB.cdb u16@a2 = 286 (units 212)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 286", "client: UnitDB.cdb u16@a2 = 286 (units 212)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "video: [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Cassia 212; 'NE in Fortress' guide)", "client: [[gameplay/consumables]] §5 (empty scrolls/flasks and Worked oil sold by Cassia, base prices)", "guide: [[gameplay/items-and-crafting]] §3-4 (materials sold by Cassia; containers for alchemy)", "video: [[gameplay/video-early-quests]] §2 step 15 and §3 (quest 13 at Cassia; 'go to Odin or Owen to craft')"]
 npc: [212]
 stock:
   - {"slot": 0, "item": 830, "count": 1, "p1": 0, "p2": 0}
@@ -68,7 +68,9 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Cassia (unit 212), the Material Merchant, stands in the north-east of the Fortress (*video*, [[gameplay/npc-locations|NPC locations]] §3; *guide*, [[gameplay/maps-and-dungeons|maps]] §5). She sells the alchemy **containers**: Empty Scroll [C]/[B]/[A]/[S] (830-833, base 50/60/80/100) and Empty Flask [C]-[S] (834-837, 80/100/150/200), plus Worked oil (846, 100) for dyes (*client*, [[gameplay/consumables|consumables]] §5). Each buff recipe at Owen takes one container, a gem powder and a dungeon secondary (*guide*, [[gameplay/items-and-crafting|crafting]] §4). The secondaries are drops and are not sold anywhere ([[gameplay/consumables|consumables]] §5).
+
+In the 2018 launch video she sends the player to Odin or Owen to craft. Quest 13 "Battle preparations" sends the player to her and pays 100 Empty Flask [C] (*video*, [[gameplay/video-early-quests|early quests]] §2 step 15).
 
 ## Behaviour
 
@@ -76,7 +78,10 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Cassia 212; 'NE in Fortress' guide) (*video*)
+- [[gameplay/consumables]] §5 (empty scrolls/flasks and Worked oil sold by Cassia, base prices) (*client*)
+- [[gameplay/items-and-crafting]] §3-4 (materials sold by Cassia; containers for alchemy) (*guide*)
+- [[gameplay/video-early-quests]] §2 step 15 and §3 (quest 13 at Cassia; 'go to Odin or Owen to craft') (*video*)
 
 ## Open questions
 

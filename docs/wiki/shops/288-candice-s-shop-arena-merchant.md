@@ -4,7 +4,7 @@ type: "shop"
 id: 288
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 288", "client: UnitDB.cdb u16@a2 = 288 (units 240)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 288", "client: UnitDB.cdb u16@a2 = 288 (units 240)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "image + client: [[gameplay/arena-ranking-rewards]] (arena NPC unit 240; Medal : Arena 1007; weekly payment 10 medals at rank 51-100)", "guide: [[gameplay/arena-ranking-rewards]] §Access and timing (arena NPC on the top/middle of a Fortress, Crush Online Oct 2016)"]
 npc: [240]
 stock:
   - {"slot": 0, "item": 1035, "count": 1, "p1": 0, "p2": 0}
@@ -42,7 +42,9 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Candice (unit 240) is the Battle Arena NPC (talk script `Quest_Talk_Default_Arena`) (*client*, [[gameplay/arena-ranking-rewards|arena rewards]] §Client cross-reference). In Crush Online she stood on the top/middle of a Fortress, and the arena was disabled at the time (*guide*, [[gameplay/arena-ranking-rewards|arena rewards]] §Access and timing).
+
+Her shop takes **Arena Medals** (currency 15, item 1007 `Medal : Arena`). Players earned them from the weekly arena payment: one player ranked 51st-100th got 10 medals by system mail (*guide*, [[gameplay/arena-ranking-rewards|arena rewards]] §Weekly arena payment). The monthly ranking paid jewels instead.
 
 ## Behaviour
 
@@ -50,11 +52,12 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/arena-ranking-rewards]] (arena NPC unit 240; Medal : Arena 1007; weekly payment 10 medals at rank 51-100) (*image + client*)
+- [[gameplay/arena-ranking-rewards]] §Access and timing (arena NPC on the top/middle of a Fortress, Crush Online Oct 2016) (*guide*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Weekly medal amounts for the other rank bands are unknown ([[gameplay/arena-ranking-rewards|arena rewards]]). No source shows this shop's window or prices.
 
 <!-- credit:start -->
 ---
