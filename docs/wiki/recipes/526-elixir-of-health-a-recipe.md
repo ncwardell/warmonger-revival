@@ -20,7 +20,7 @@ level: 25
 <!-- generated-keys: title=a06fa6 type=61613a id=d5155d sources=566d6c result=433877 materials=1354e9 gold=28cc22 success_rate=310b86 category=356a19 filter_mask=348936 level=f6e112 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/738.png) |
+|  | ![](wiki/assets/items/738.png) |
 | **Recipe id** | `526` (`Item_Make`) |
 | **Makes** | [[wiki/items/738-elixir-of-health-a\|Elixir of Health (A)]] × 10 |
 | **Gold** | 900 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 25
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/819.png) | [[wiki/items/819-lavender-powder\|Lavender powder]] | 30 |  |
-| ![](../assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
-| ![](../assets/items/844.png) | [[wiki/items/844-dried-flower\|Dried flower]] | 2 |  |
+| ![](wiki/assets/items/819.png) | [[wiki/items/819-lavender-powder\|Lavender powder]] | 30 |  |
+| ![](wiki/assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
+| ![](wiki/assets/items/844.png) | [[wiki/items/844-dried-flower\|Dried flower]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

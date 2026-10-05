@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=81a4b6 type=61613a id=f1b023 sources=896f8c result=335db9 materials=9325bd gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2503.png) |
+|  | ![](wiki/assets/items/2503.png) |
 | **Recipe id** | `2604` (`Item_Make`) |
 | **Makes** | [[wiki/items/2503-yellow-dye\|Yellow Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/872.png) | [[wiki/items/872-extracted-jasmine\|Extracted Jasmine]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/872.png) | [[wiki/items/872-extracted-jasmine\|Extracted Jasmine]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/754-yellow-dye-recipe|recipe 754]]
 

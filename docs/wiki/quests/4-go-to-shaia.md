@@ -27,7 +27,7 @@ complete_talk: 713
 <!-- generated-keys: title=7a1949 type=eb5b2b id=1b6453 sources=4b11b4 name_key=374b60 kind=b6589f kind_name=b3f808 giver=9d96c7 turn_in=444e6c offer_maps=6e2020 turn_in_maps=6e2020 bit=1b6453 requires_bit=77de68 prev=f1e31d next=10ae24 stages=30caa7 objectives=2731e4 rewards=97d170 offer_talk=fc1200 complete_talk=84b0b5 -->
 |  |  |
 |---|---|
-|  | ![Go to Shaia](../assets/npcs/239.png) |
+|  | ![Go to Shaia](wiki/assets/npcs/239.png) |
 | **Quest id** | `4` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/239-floyd\|Floyd]] |

@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=83c353 type=d36ca9 id=ef75f7 sources=0a9087 name_key=eb6cfb kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=f1abd6 stats=db11c4 options=1f25ab skills=5d98bb reinforce=cb4e52 icon=f4596f obtained_from=123ada -->
 |  |  |
 |---|---|
-|  | ![Skeleton king's Magic Gun](../assets/items/10014.png) |
+|  | ![Skeleton king's Magic Gun](wiki/assets/items/10014.png) |
 | **Item id** | `10014` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

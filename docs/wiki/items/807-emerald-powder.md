@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=b574c5 type=d36ca9 id=425ac6 sources=1c9663 name_key=5115cf kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=f0a5c3 cost_pair=9e699d stats=97d170 icon=087bbc obtained_from=02df22 -->
 |  |  |
 |---|---|
-|  | ![Emerald powder](../assets/items/807.png) |
+|  | ![Emerald powder](wiki/assets/items/807.png) |
 | **Item id** | `807` |
 | **Kind** | Material (12) |
 | **Classes** | all |

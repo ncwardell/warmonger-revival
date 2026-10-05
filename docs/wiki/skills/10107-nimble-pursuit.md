@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=7cd6eb type=86a754 id=ae208f sources=d723da name_key=d5776d desc_key=0ca5ba kind=356a19 kind_name=9bc378 target=5aa7bd range=902ba3 area=66be61 cost=8b4fa7 cooldown=0156ad movement=5f1488 effect_kind=356a19 effects=a242e0 damage_or_effect=4d252d tooltip_formula=4d8780 visual=3aed9b icon=197b6c used_by=687fe6 -->
 |  |  |
 |---|---|
-|  | ![Nimble Pursuit](../assets/skills/10107.png) |
+|  | ![Nimble Pursuit](wiki/assets/skills/10107.png) |
 | **Skill id** | `10107` |
 | **Kind** | active (1) |
 | **Target** | ground; -; units: monster, player; up to 1 |

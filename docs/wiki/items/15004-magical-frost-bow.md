@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=7cce5f type=d36ca9 id=da002e sources=73735e name_key=027e09 kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=887309 stats=db11c4 options=07adf5 skills=db1a22 reinforce=17ba07 icon=c02ec8 obtained_from=afefea -->
 |  |  |
 |---|---|
-|  | ![Magical Frost Bow](../assets/items/15004.png) |
+|  | ![Magical Frost Bow](wiki/assets/items/15004.png) |
 | **Item id** | `15004` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

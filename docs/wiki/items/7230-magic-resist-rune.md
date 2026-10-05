@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=9c916e type=d36ca9 id=640b1e sources=35acf9 name_key=4bed4e kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=096b30 options=2ddee2 icon=787a20 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Magic Resist Rune](../assets/items/7230.png) |
+|  | ![Magic Resist Rune](wiki/assets/items/7230.png) |
 | **Item id** | `7230` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

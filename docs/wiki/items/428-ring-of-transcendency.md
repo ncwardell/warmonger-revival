@@ -41,7 +41,7 @@ obtained_from:
 <!-- generated-keys: title=4faa7d type=d36ca9 id=2aed8c sources=1d629c name_key=4156d3 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=c18af3 reinforce=356a19 icon=4002e0 obtained_from=6611f9 -->
 |  |  |
 |---|---|
-|  | ![Ring of Transcendency](../assets/items/428.png) |
+|  | ![Ring of Transcendency](wiki/assets/items/428.png) |
 | **Item id** | `428` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

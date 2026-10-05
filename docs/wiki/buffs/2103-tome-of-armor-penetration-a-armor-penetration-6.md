@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=c7bb20 type=6143a1 id=67f5b2 sources=0df26e name_key=f57a54 duration=995f11 is_buff=b6589f stack_type=356a19 group=009cf5 effects=694b5b icon=780fc3 applied_by=037535 -->
 |  |  |
 |---|---|
-|  | ![Tome of Armor Penetration (A) : Armor Penetration +6](../assets/buffs/2103.png) |
+|  | ![Tome of Armor Penetration (A) : Armor Penetration +6](wiki/assets/buffs/2103.png) |
 | **Buff id** | `2103` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -26,7 +26,7 @@ z: null
 <!-- generated-keys: title=b3d797 type=3664ce id=cae91e sources=ac7752 name_key=0aea37 title_key=def947 npc_title=23e381 category=e1822d class_mask=da4b92 model=0ec09e scale=aa8f28 functions=7dac55 role=23e381 shop=b70706 talk_key=867c38 portrait=6aa998 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Candice](../assets/npcs/240.png) |
+|  | ![Candice](wiki/assets/npcs/240.png) |
 | **Unit id** | `240` |
 | **Title** | Arena Merchant |
 | **Category** | NPC (category 50) |

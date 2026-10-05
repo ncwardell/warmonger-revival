@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=c949cb type=6143a1 id=374411 sources=52abb2 name_key=951b45 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=1931df icon=1a85f3 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional+5% Armor](../assets/buffs/1203.png) |
+|  | ![Additional+5% Armor](wiki/assets/buffs/1203.png) |
 | **Buff id** | `1203` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=95b904 type=6143a1 id=96cc0c sources=b5d5b3 name_key=ea1179 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=5051bb icon=3af2a9 applied_by=bd8936 -->
 |  |  |
 |---|---|
-|  | ![Dark Transformation : Gain 40% Health Regeneration](../assets/buffs/30037.png) |
+|  | ![Dark Transformation : Gain 40% Health Regeneration](wiki/assets/buffs/30037.png) |
 | **Buff id** | `30037` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

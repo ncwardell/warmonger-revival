@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=ff82ab type=6143a1 id=e86188 sources=16695c name_key=35e3bc duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=7a8f30 icon=695d02 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Transfers 5% points of Mana into Ability Power](../assets/buffs/10006.png) |
+|  | ![Transfers 5% points of Mana into Ability Power](wiki/assets/buffs/10006.png) |
 | **Buff id** | `10006` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

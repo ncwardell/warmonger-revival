@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=1f9aec type=6143a1 id=c1f002 sources=78b0a7 name_key=8c3132 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=bf44a9 applied_by=fc7881 -->
 |  |  |
 |---|---|
-|  | ![Earthquake : Stun (2 Secs)](../assets/buffs/20307.png) |
+|  | ![Earthquake : Stun (2 Secs)](wiki/assets/buffs/20307.png) |
 | **Buff id** | `20307` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

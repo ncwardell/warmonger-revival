@@ -20,7 +20,7 @@ level: 1
 <!-- generated-keys: title=60bca0 type=61613a id=0ad014 sources=28427f result=57e61d materials=c06eb2 gold=8a12a3 success_rate=310b86 category=902ba3 filter_mask=24f4fd superior=cd96e1 level=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/20021.png) |
+|  | ![](wiki/assets/items/20021.png) |
 | **Recipe id** | `2206` (`Item_Make`) |
 | **Makes** | [[wiki/items/20021-magical-protect-cannon\|Magical Protect Cannon]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,8 +34,8 @@ level: 1
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
 
 Other recipes for the same item: [[wiki/recipes/916-magical-protect-cannon-recipe|recipe 916]]
 

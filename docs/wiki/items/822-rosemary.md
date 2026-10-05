@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=ccdb3e type=d36ca9 id=f4904f sources=c577a2 name_key=976e75 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=124f72 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Rosemary](../assets/items/822.png) |
+|  | ![Rosemary](wiki/assets/items/822.png) |
 | **Item id** | `822` |
 | **Kind** | Material (12) |
 | **Classes** | all |

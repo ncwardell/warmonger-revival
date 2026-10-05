@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=492b52 type=d36ca9 id=0f9580 sources=73fe23 name_key=fd199a kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=59129a stats=db11c4 options=f3a839 skills=5f73ab reinforce=cb4e52 icon=c82c6b obtained_from=6075d1 -->
 |  |  |
 |---|---|
-|  | ![Skeleton King's Magic Dagger](../assets/items/15009.png) |
+|  | ![Skeleton King's Magic Dagger](wiki/assets/items/15009.png) |
 | **Item id** | `15009` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

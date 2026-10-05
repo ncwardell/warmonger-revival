@@ -31,7 +31,7 @@ spawn_fields: [128]
 <!-- generated-keys: title=118473 type=9bbc46 id=dca7d0 sources=49c67d name_key=e7a415 category=c1dfd9 class_mask=356a19 kill_group=ef75f7 model=64e095 model_name=de18f7 model_path=f4640e scale=555a5c radius=356a19 sounds=10cd19 hero=356a19 boss_of=c9e1d0 dungeon_rewards=781ba1 quest_targets=6c003a quest_drops=72fca8 spawn_fields=c9e1d0 -->
 |  |  |
 |---|---|
-|  | ![Dark Knight Skull](../assets/monsters/673.png) |
+|  | ![Dark Knight Skull](wiki/assets/monsters/673.png) |
 | **Unit id** | `673` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

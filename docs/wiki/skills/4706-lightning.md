@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=5cd14f type=86a754 id=925de5 sources=160a0f name_key=a6dab9 desc_key=f51bda kind=356a19 kind_name=9bc378 target=9dc90e range=fe5dbb area=950fc9 cost=2be88c cooldown=2be88c effect_kind=f1abd6 effects=7ac8e9 damage_or_effect=6f45e0 icon=ae8ff0 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Lightning](../assets/skills/4706.png) |
+|  | ![Lightning](wiki/assets/skills/4706.png) |
 | **Skill id** | `4706` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 10 |

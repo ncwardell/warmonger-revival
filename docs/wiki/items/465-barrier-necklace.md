@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=25f56f type=d36ca9 id=f8b5f6 sources=dae2b3 name_key=cd578d kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=354706 reinforce=da4b92 icon=ede490 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Barrier Necklace](../assets/items/465.png) |
+|  | ![Barrier Necklace](wiki/assets/items/465.png) |
 | **Item id** | `465` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

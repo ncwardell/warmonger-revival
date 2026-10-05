@@ -32,7 +32,7 @@ complete_talk: 911
 <!-- generated-keys: title=50ec04 type=eb5b2b id=c5b76d sources=a55283 name_key=5bd822 kind=b6589f kind_name=b3f808 giver=58f603 turn_in=58f603 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b4182b requires_bit=008451 prev=c6af6d next=97d170 stages=30caa7 objectives=2be88c objectives_client=1245b2 rewards=f0a4f0 offer_talk=fa5b7e complete_talk=f37511 -->
 |  |  |
 |---|---|
-|  | ![Safety factor Management](../assets/npcs/208.png) |
+|  | ![Safety factor Management](wiki/assets/npcs/208.png) |
 | **Quest id** | `53` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/208-bell-thain\|Bell Thain]] |

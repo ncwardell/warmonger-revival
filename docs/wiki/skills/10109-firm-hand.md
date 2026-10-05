@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=c3c11a type=86a754 id=d216cf sources=fd1ef7 name_key=4b7764 desc_key=6570b3 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=060055 cooldown=5b7687 effect_kind=b6589f effects=dc9485 damage_or_effect=ab3891 visual=01592d icon=159906 used_by=118580 -->
 |  |  |
 |---|---|
-|  | ![Firm Hand](../assets/skills/10109.png) |
+|  | ![Firm Hand](wiki/assets/skills/10109.png) |
 | **Skill id** | `10109` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

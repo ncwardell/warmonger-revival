@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=dcfa57 type=d36ca9 id=e3e097 sources=a4efcf name_key=45d27a kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=4122c1 reinforce=da4b92 icon=4e861e obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Necklace of Courage](../assets/items/469.png) |
+|  | ![Necklace of Courage](wiki/assets/items/469.png) |
 | **Item id** | `469` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

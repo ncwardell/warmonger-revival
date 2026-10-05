@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=fb9b2b type=86a754 id=6f7911 sources=957b62 name_key=dcd4e5 desc_key=9658ab kind=356a19 kind_name=9bc378 target=aa5d92 range=b1d578 area=728214 cost=060055 cooldown=5b7687 delivery=93a212 effect_kind=da4b92 effects=be4665 damage_or_effect=5faef5 tooltip_formula=6b7157 visual=ac9c95 icon=e1b084 used_by=cbbac9 -->
 |  |  |
 |---|---|
-|  | ![Water of deceleration](../assets/skills/20302.png) |
+|  | ![Water of deceleration](wiki/assets/skills/20302.png) |
 | **Skill id** | `20302` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 1 |

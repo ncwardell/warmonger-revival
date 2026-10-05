@@ -27,7 +27,7 @@ obtained_from: []
 <!-- generated-keys: title=a5f2eb type=d36ca9 id=ef8f58 sources=fcd2f7 name_key=64cd49 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=365a69 stats=c7c413 options=11406b icon=0dcee7 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Christmas Set](../assets/items/2047.png) |
+|  | ![Christmas Set](wiki/assets/items/2047.png) |
 | **Item id** | `2047` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

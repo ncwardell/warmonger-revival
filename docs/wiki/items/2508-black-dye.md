@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=c8d4a3 type=d36ca9 id=99254b sources=45b4e8 name_key=4546c8 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=c9caa4 icon=a61fb9 obtained_from=a21191 -->
 |  |  |
 |---|---|
-|  | ![Black Dye](../assets/items/2508.png) |
+|  | ![Black Dye](wiki/assets/items/2508.png) |
 | **Item id** | `2508` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

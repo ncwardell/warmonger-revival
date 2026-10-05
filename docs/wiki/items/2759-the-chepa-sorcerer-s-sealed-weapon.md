@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=56aa04 type=d36ca9 id=794cd5 sources=c034c5 name_key=c3b0af kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=7a239b obtained_from=0059e7 -->
 |  |  |
 |---|---|
-|  | ![The Chepa Sorcerer's Sealed Weapon](../assets/items/2759.png) |
+|  | ![The Chepa Sorcerer's Sealed Weapon](wiki/assets/items/2759.png) |
 | **Item id** | `2759` |
 | **Kind** | Material (12) |
 | **Classes** | all |

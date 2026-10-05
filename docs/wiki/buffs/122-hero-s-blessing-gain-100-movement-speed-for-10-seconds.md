@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=a64b46 type=6143a1 id=05a8ea sources=749088 name_key=422ebb duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=48390e icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Hero's blessing : Gain 100 Movement Speed for 10 seconds.](../assets/buffs/122.png) |
+|  | ![Hero's blessing : Gain 100 Movement Speed for 10 seconds.](wiki/assets/buffs/122.png) |
 | **Buff id** | `122` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

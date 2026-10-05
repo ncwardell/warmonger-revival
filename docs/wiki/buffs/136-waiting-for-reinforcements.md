@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=e9d047 type=6143a1 id=9e071a sources=b39264 name_key=5d4e97 duration=d46437 is_buff=b6589f stack_type=356a19 group=b6589f effects=cf6747 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Waiting for reinforcements.](../assets/buffs/136.png) |
+|  | ![Waiting for reinforcements.](wiki/assets/buffs/136.png) |
 | **Buff id** | `136` |
 | **Duration** | 9 min (2,700 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

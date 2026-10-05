@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=aaa980 type=d36ca9 id=beba4d sources=265341 name_key=7516f7 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=2be88c price=76d727 cost_pair=d2f20b stats=9671d1 reinforce=356a19 icon=d7453a obtained_from=714b20 -->
 |  |  |
 |---|---|
-|  | ![Ring of Life](../assets/items/408.png) |
+|  | ![Ring of Life](wiki/assets/items/408.png) |
 | **Item id** | `408` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

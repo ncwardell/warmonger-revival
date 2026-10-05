@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=89312b type=d36ca9 id=fb77ce sources=ceec93 name_key=f93882 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=a7195f set=902ba3 reinforce=92cfce icon=5ae6b3 obtained_from=3200d0 -->
 |  |  |
 |---|---|
-|  | ![Fame knight Ring](../assets/items/3508.png) |
+|  | ![Fame knight Ring](wiki/assets/items/3508.png) |
 | **Item id** | `3508` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

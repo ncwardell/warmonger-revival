@@ -28,7 +28,7 @@ time_limit_s: null
 <!-- generated-keys: title=0bf214 type=3e3f38 id=8b7471 sources=f70cd9 field=8b7471 max_users=ac3478 level=fe5dbb entry_cost=3f4f04 event=7cb6ef shown_rewards=342901 c17=7263d6 image=6fb519 dungeon_slots=9a35e1 boss=f97f7d gear_tier=7b5982 gathering=0cbe10 time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 8) Thorn's Hell](../assets/dungeons/129.png) |
+|  | ![(Lv 8) Thorn's Hell](wiki/assets/dungeons/129.png) |
 | **Field** | [[wiki/fields/129-lv-8-thorn-s-hell\|(Lv 8) Thorn's Hell (field 129)]] |
 | **Level** | 8 |
 | **Gear tier dropped** | T2 (guides) |

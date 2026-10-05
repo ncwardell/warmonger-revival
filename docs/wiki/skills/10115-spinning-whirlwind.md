@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=e25c22 type=86a754 id=500681 sources=c8be1a name_key=52e1b9 desc_key=2999a0 kind=356a19 kind_name=9bc378 target=9dc90e range=1b6453 area=6d01a6 cost=9e049c cooldown=7d0c8c effect_kind=356a19 effects=8945ee damage_or_effect=5f4268 tooltip_formula=64d6b8 visual=dd7c1a icon=1b8eb2 used_by=faa9d2 -->
 |  |  |
 |---|---|
-|  | ![Spinning Whirlwind](../assets/skills/10115.png) |
+|  | ![Spinning Whirlwind](wiki/assets/skills/10115.png) |
 | **Skill id** | `10115` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 10 |

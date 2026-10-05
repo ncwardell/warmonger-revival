@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z142_00.dds"
 <!-- generated-keys: title=c542d1 type=c899cd id=2a2b47 sources=c50418 name_kr=a1b327 terrain=7f78a6 bounds=2bb82d size=6f2826 segments=0dbe49 fields=d9b420 minimap=dc4021 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field dungeon 06(demon) ((Lv 7) Demon Hell)](../assets/zones/142.png) |
+|  | ![minimap of Field dungeon 06(demon) ((Lv 7) Demon Hell)](wiki/assets/zones/142.png) |
 | **Zone id** | `142` |
 | **ZoneDB name** | 필드던전_06(데몬) (English gloss: Field dungeon 06(demon) ([Lv 7] Demon Hell)) |
 | **Terrain name** | `FieldDungeon_06` |

@@ -19,7 +19,7 @@ level: 10
 <!-- generated-keys: title=d5adbf type=61613a id=01ec40 sources=460538 result=06f46e materials=2614fb gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=2806e0 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3046.png) |
+|  | ![](wiki/assets/items/3046.png) |
 | **Recipe id** | `338` (`Item_Make`) |
 | **Makes** | [[wiki/items/3046-spector-s-belt\|Spector's Belt]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  |
-| ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  |
+| ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  |
+| ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=8638b7 type=24f03d id=7d7116 sources=8ddf73 contents=6b19e6 value_4c=f8237d opened_by_guess=2b669c kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1059.png) |
+|  | ![](wiki/assets/items/1059.png) |
 | **RandomBox id** | `83` |
 | **Opened by** | [[wiki/items/1059-random-box-of-dye\|Random box of dye]] (*guess*, not confirmed) |
 | **Value @4c** | 5,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
-| 1 | ![](../assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
-| 2 | ![](../assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
-| 3 | ![](../assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
-| 4 | ![](../assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
-| 5 | ![](../assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
-| 6 | ![](../assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
-| 7 | ![](../assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
-| 8 | ![](../assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
-| 9 | ![](../assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
+| 0 | ![](wiki/assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
+| 1 | ![](wiki/assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
+| 2 | ![](wiki/assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
+| 3 | ![](wiki/assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
+| 4 | ![](wiki/assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
+| 5 | ![](wiki/assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
+| 6 | ![](wiki/assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
+| 7 | ![](wiki/assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
+| 8 | ![](wiki/assets/items/2508.png) | [[wiki/items/2508-black-dye\|Black Dye]] | 1 |  |
+| 9 | ![](wiki/assets/items/2505.png) | [[wiki/items/2505-white-dye\|White Dye]] | 1 |  |
 
 ### Why this box item
 

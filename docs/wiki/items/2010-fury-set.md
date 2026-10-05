@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=a7b455 type=d36ca9 id=e22cd4 sources=02c4c2 name_key=035fa0 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=088270 cost_pair=101f43 period=e651d1 stats=fc1106 options=8db726 icon=bf5364 obtained_from=445d2f -->
 |  |  |
 |---|---|
-|  | ![Fury Set](../assets/items/2010.png) |
+|  | ![Fury Set](wiki/assets/items/2010.png) |
 | **Item id** | `2010` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

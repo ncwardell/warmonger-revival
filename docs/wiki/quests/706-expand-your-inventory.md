@@ -26,7 +26,7 @@ help: {"image": "ui/HelpImage/Help_12.png", "text_key": "Quest_HelpText_706"}
 <!-- generated-keys: title=989940 type=eb5b2b id=de9a90 sources=c6ed99 name_key=07f11e kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=d54ad0 automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=2be88c objectives_client=cc22f8 rewards=891137 help=241e00 -->
 |  |  |
 |---|---|
-|  | ![Expand your Inventory](../assets/quests/706.png) |
+|  | ![Expand your Inventory](wiki/assets/quests/706.png) |
 | **Quest id** | `706` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

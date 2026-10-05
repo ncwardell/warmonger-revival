@@ -35,7 +35,7 @@ complete_talk: 832
 <!-- generated-keys: title=01010c type=eb5b2b id=6d40f9 sources=a6fa2c name_key=1babef kind=356a19 kind_name=0bac50 level=84a59c giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=5e796e requires_bit=632667 owned_field=8b7471 prev=5c3c3a next=97d170 prerequisites=c3110a stages=30caa7 objectives=d7ff93 rewards=9bea34 offer_talk=3741d5 complete_talk=e6c790 -->
 |  |  |
 |---|---|
-|  | ![Ore and plant collection](../assets/npcs/210.png) |
+|  | ![Ore and plant collection](wiki/assets/npcs/210.png) |
 | **Quest id** | `748` |
 | **Kind** | Sub (kind 1) |
 | **Level** | 28+ |

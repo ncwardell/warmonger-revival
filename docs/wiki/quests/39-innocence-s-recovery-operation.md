@@ -31,7 +31,7 @@ offer_talk: 817
 <!-- generated-keys: title=a4656b type=eb5b2b id=ca3512 sources=ba0bf6 name_key=0c3ef0 kind=b6589f kind_name=b3f808 giver=ad0cc6 turn_in=847ad4 bit=ca3512 requires_bit=5b384c automatic=5ffe53 prev=429a2a next=7b279c prerequisites=fda3f1 stages=a80fa1 objectives=ebb875 rewards=f79b21 offer_talk=2e946d -->
 |  |  |
 |---|---|
-|  | ![Innocence's recovery operation](../assets/npcs/325.png) |
+|  | ![Innocence's recovery operation](wiki/assets/npcs/325.png) |
 | **Quest id** | `39` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/325-joel\|Joel]] |

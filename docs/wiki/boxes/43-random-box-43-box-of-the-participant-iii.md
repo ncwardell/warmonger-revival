@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=dc8440 type=24f03d id=0286dd sources=417ad6 contents=2efb69 value_4c=c2d4c5 opened_by_guess=070daf kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1043.png) |
+|  | ![](wiki/assets/items/1043.png) |
 | **RandomBox id** | `43` |
 | **Opened by** | [[wiki/items/1043-box-of-the-participant-iii\|Box of the Participant III]] (*guess*, not confirmed) |
 | **Value @4c** | 50,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -37,15 +37,15 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 | slot |  | item | count | p |
 |---|---|---|---|---|
 | 0 |  | item 952 (not in `Item_Base`) | 1 | 2 |
-| 1 | ![](../assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 3 |  |
-| 2 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 | 2 |
-| 3 | ![](../assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 3 |  |
-| 4 | ![](../assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 3 |  |
-| 5 | ![](../assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
-| 6 | ![](../assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
-| 7 | ![](../assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
-| 8 | ![](../assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
-| 9 | ![](../assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
+| 1 | ![](wiki/assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 3 |  |
+| 2 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 | 2 |
+| 3 | ![](wiki/assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 3 |  |
+| 4 | ![](wiki/assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 3 |  |
+| 5 | ![](wiki/assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
+| 6 | ![](wiki/assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
+| 7 | ![](wiki/assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
+| 8 | ![](wiki/assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
+| 9 | ![](wiki/assets/items/1042.png) | [[wiki/items/1042-box-of-the-participant-iv\|Box of the Participant IV]] | 1 |  |
 
 ### Why this box item
 

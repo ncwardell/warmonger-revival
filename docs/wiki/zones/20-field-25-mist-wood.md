@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z20_00.dds"
 <!-- generated-keys: title=e0970e type=c899cd id=91032a sources=f32a2b name_kr=14e694 terrain=601f8a bounds=cc74dc size=114466 segments=3f5ef2 fields=4ebe06 minimap=c5b999 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 25 (Mist Wood)](../assets/zones/20.png) |
+|  | ![minimap of Field 25 (Mist Wood)](wiki/assets/zones/20.png) |
 | **Zone id** | `20` |
 | **ZoneDB name** | 필드_25 (English gloss: Field 25 (Mist Wood)) |
 | **Terrain name** | `25` |

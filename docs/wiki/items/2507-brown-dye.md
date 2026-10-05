@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=50d2f7 type=d36ca9 id=130170 sources=f1c375 name_key=68f74f kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=6e57ad icon=f3a191 obtained_from=c45f19 -->
 |  |  |
 |---|---|
-|  | ![Brown Dye](../assets/items/2507.png) |
+|  | ![Brown Dye](wiki/assets/items/2507.png) |
 | **Item id** | `2507` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

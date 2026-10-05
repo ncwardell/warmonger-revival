@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z108_00.dds"
 <!-- generated-keys: title=8cb4c6 type=c899cd id=17503a sources=5d1355 name_kr=4ecc3b terrain=e2a9ef bounds=ca59c0 size=be57ee segments=9d8c24 fields=b99fbc minimap=6462b7 -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV1 099 (Corpse incineration)](../assets/zones/108.png) |
+|  | ![minimap of Abyss LV1 099 (Corpse incineration)](wiki/assets/zones/108.png) |
 | **Zone id** | `108` |
 | **ZoneDB name** | 어비스_LV1_099 (English gloss: Abyss LV1 099 (Corpse incineration)) |
 | **Terrain name** | `Abyss_Lv01` |

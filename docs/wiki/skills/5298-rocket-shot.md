@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=021f7d type=86a754 id=b5f175 sources=25e21f name_key=24316f desc_key=3d3836 kind=356a19 kind_name=9bc378 target=e84f24 range=17ba07 area=efd331 cost=4e8ae0 cooldown=d1c73e delivery=93a212 effect_kind=da4b92 effects=8004a9 damage_or_effect=1a84c7 tooltip_formula=0a6707 visual=8c4a0a icon=b0d762 used_by=3ca25e -->
 |  |  |
 |---|---|
-|  | ![Rocket Shot](../assets/skills/5298.png) |
+|  | ![Rocket Shot](wiki/assets/skills/5298.png) |
 | **Skill id** | `5298` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

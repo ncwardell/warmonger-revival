@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=a4796f type=6143a1 id=40a251 sources=d9608b name_key=46e6a9 duration=995f11 is_buff=b6589f stack_type=356a19 group=27b0e6 effects=fc8ba6 icon=09212a applied_by=b138f1 -->
 |  |  |
 |---|---|
-|  | ![Elixir of Health (A) : Health Regeneration +6, Maximum Health +300](../assets/buffs/2111.png) |
+|  | ![Elixir of Health (A) : Health Regeneration +6, Maximum Health +300](wiki/assets/buffs/2111.png) |
 | **Buff id** | `2111` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=7a8267 type=d36ca9 id=76c99c sources=33e45d name_key=f0d9ae kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=748fbd set=fe5dbb reinforce=92cfce icon=f5f63a obtained_from=b0d51d -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Shoes](../assets/items/3514.png) |
+|  | ![Fame warrior Shoes](wiki/assets/items/3514.png) |
 | **Item id** | `3514` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

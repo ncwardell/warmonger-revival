@@ -20,7 +20,7 @@ level: 30
 <!-- generated-keys: title=398c6d type=61613a id=7110e0 sources=f38ef3 result=17834e materials=a1232f gold=73ee49 success_rate=310b86 category=356a19 filter_mask=0195e7 level=22d200 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/707.png) |
+|  | ![](wiki/assets/items/707.png) |
 | **Recipe id** | `503` (`Item_Make`) |
 | **Makes** | [[wiki/items/707-scroll-of-the-warrior-s\|Scroll of the Warrior (S)]] × 10 |
 | **Gold** | 1,200 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 30
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/803.png) | [[wiki/items/803-garnet-powder\|Garnet powder]] | 40 |  |
-| ![](../assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  |
-| ![](../assets/items/848.png) | [[wiki/items/848-medical-herb-water\|Medical herb water]] | 3 |  |
+| ![](wiki/assets/items/803.png) | [[wiki/items/803-garnet-powder\|Garnet powder]] | 40 |  |
+| ![](wiki/assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  |
+| ![](wiki/assets/items/848.png) | [[wiki/items/848-medical-herb-water\|Medical herb water]] | 3 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

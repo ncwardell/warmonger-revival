@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=d7887d type=d36ca9 id=2c804a sources=10daac name_key=09e858 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a period=7841fb weapon_base=b7103c stats=97d170 options=47f832 skills=8f4f64 reinforce=472b07 icon=af683f obtained_from=579a97 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Guardian](../assets/items/8501.png) |
+|  | ![Crystal : Guardian](wiki/assets/items/8501.png) |
 | **Item id** | `8501` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

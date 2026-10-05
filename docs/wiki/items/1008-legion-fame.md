@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=0f134b type=d36ca9 id=ff1eb8 sources=4ed38d name_key=0c0ff0 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=32a324 cost_pair=395e20 stats=97d170 icon=0ed88e obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Legion Fame](../assets/items/1008.png) |
+|  | ![Legion Fame](wiki/assets/items/1008.png) |
 | **Item id** | `1008` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

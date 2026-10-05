@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=758be6 type=6143a1 id=ef75f7 sources=9fc3b0 name_key=cd0f2f duration=2a0b1e is_buff=b6589f stack_type=356a19 group=e3cbba effects=5aec95 icon=fae5ad applied_by=81d203 -->
 |  |  |
 |---|---|
-|  | ![Eye of the Storm : Reduced Movement and Attack Speed](../assets/buffs/10014.png) |
+|  | ![Eye of the Storm : Reduced Movement and Attack Speed](wiki/assets/buffs/10014.png) |
 | **Buff id** | `10014` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z16_00.dds"
 <!-- generated-keys: title=bef7c8 type=c899cd id=1574bd sources=afd9a0 name_kr=d9fd54 terrain=a1fe84 bounds=63378a size=114466 segments=7af869 fields=10ae24 minimap=8c9c1e -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 05 (Fall of Abyss)](../assets/zones/16.png) |
+|  | ![minimap of Field 05 (Fall of Abyss)](wiki/assets/zones/16.png) |
 | **Zone id** | `16` |
 | **ZoneDB name** | 필드_05 (English gloss: Field 05 (Fall of Abyss)) |
 | **Terrain name** | `05` |

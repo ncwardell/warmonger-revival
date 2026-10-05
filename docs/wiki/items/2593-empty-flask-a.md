@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f66fa0 type=d36ca9 id=e7f90e sources=9133ff name_key=1056d8 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=853fae obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Empty Flask (A)](../assets/items/2593.png) |
+|  | ![Empty Flask (A)](wiki/assets/items/2593.png) |
 | **Item id** | `2593` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

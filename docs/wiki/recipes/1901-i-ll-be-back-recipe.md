@@ -20,7 +20,7 @@ level: 3
 <!-- generated-keys: title=139209 type=61613a id=31fb9f sources=44a8be result=cd4ca4 materials=40fa86 gold=c2d4c5 success_rate=310b86 category=ac3478 filter_mask=356a19 level=77de68 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1402.png) |
+|  | ![](wiki/assets/items/1402.png) |
 | **Recipe id** | `1901` (`Item_Make`) |
 | **Makes** | [[wiki/items/1402-i-ll-be-back\|I'll be back!]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 3
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/860.png) | [[wiki/items/860-amplifying-core-stone\|Amplifying core stone]] | 1 |  |
-| ![](../assets/items/604.png) | [[wiki/items/604-blue-passion-piece-c\|Blue Passion Piece (C)]] | 25 |  |
-| ![](../assets/items/614.png) | [[wiki/items/614-red-passion-piece-c\|Red Passion Piece (C)]] | 25 |  |
+| ![](wiki/assets/items/860.png) | [[wiki/items/860-amplifying-core-stone\|Amplifying core stone]] | 1 |  |
+| ![](wiki/assets/items/604.png) | [[wiki/items/604-blue-passion-piece-c\|Blue Passion Piece (C)]] | 25 |  |
+| ![](wiki/assets/items/614.png) | [[wiki/items/614-red-passion-piece-c\|Red Passion Piece (C)]] | 25 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

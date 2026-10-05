@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z39_00.dds"
 <!-- generated-keys: title=8e1a5d type=c899cd id=ca3512 sources=40daca name_kr=c0d607 terrain=5e54ee bounds=9caf65 size=114466 segments=ed90f2 fields=76cdc5 minimap=9aedf7 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 14 (Eternal River - Upper Region)](../assets/zones/39.png) |
+|  | ![minimap of Field 14 (Eternal River - Upper Region)](wiki/assets/zones/39.png) |
 | **Zone id** | `39` |
 | **ZoneDB name** | 필드_14 (English gloss: Field 14 (Eternal River - Upper Region)) |
 | **Terrain name** | `14` |

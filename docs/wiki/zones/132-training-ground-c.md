@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z132_00.dds"
 <!-- generated-keys: title=15447a type=c899cd id=91dfde sources=faab6b name_kr=269633 terrain=0e7467 bounds=2c3dac size=be57ee segments=de7743 fields=bc6192 minimap=5aa5c9 -->
 |  |  |
 |---|---|
-|  | ![minimap of Training Ground C](../assets/zones/132.png) |
+|  | ![minimap of Training Ground C](wiki/assets/zones/132.png) |
 | **Zone id** | `132` |
 | **ZoneDB name** | 훈련장_C (English gloss: Training Ground C) |
 | **Terrain name** | `C_training` |

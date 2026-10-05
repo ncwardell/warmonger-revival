@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=ae8c1b type=d36ca9 id=90b930 sources=f8853e name_key=a4948a kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a213ed cost_pair=32167a stats=97d170 icon=f5f945 obtained_from=12416d -->
 |  |  |
 |---|---|
-|  | ![Red bloodstone powder](../assets/items/813.png) |
+|  | ![Red bloodstone powder](wiki/assets/items/813.png) |
 | **Item id** | `813` |
 | **Kind** | Material (12) |
 | **Classes** | all |

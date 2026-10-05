@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=b8a7de type=61613a id=8d1218 sources=c10052 result=b7d3bc materials=adedbe gold=e3cbba success_rate=310b86 category=356a19 filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2300.png) |
+|  | ![](wiki/assets/items/2300.png) |
 | **Recipe id** | `761` (`Item_Make`) |
 | **Makes** | [[wiki/items/2300-pink-hair-dye\|Pink Hair Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/869.png) | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/869.png) | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2611-pink-hair-dye-recipe|recipe 2611]]
 

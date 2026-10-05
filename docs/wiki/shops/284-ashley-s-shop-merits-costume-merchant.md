@@ -47,7 +47,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=a81e66 type=ffcf9c id=7f3541 sources=137d9b npc=6d18d7 stock=ef0876 prices=e7a76f price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Ashley's shop (Merits Costume Merchant)](../assets/npcs/206.png) |
+|  | ![Ashley's shop (Merits Costume Merchant)](wiki/assets/npcs/206.png) |
 | **Shop id** | `284` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/206-ashley\|Ashley]] (Merits Costume Merchant) |
 | **Stock** | 16 entries, 16 distinct items |
@@ -60,22 +60,22 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/2027.png) | [[wiki/items/2027-twisted-wind-set\|Twisted Wind Set]] | 1 |  | Bronze Medal | 50 | 50 | – |
-| 1 | ![](../assets/items/2028.png) | [[wiki/items/2028-twisted-wind-set\|Twisted Wind Set]] | 1 |  | Bronze Medal | 50 | 50 | – |
-| 2 | ![](../assets/items/2029.png) | [[wiki/items/2029-twisted-wind-set\|Twisted Wind Set]] | 1 |  | Bronze Medal | 50 | 50 | – |
-| 3 | ![](../assets/items/2015.png) | [[wiki/items/2015-crown-set\|Crown Set]] | 1 |  | Silver Medal | 25 | 25 | – |
-| 4 | ![](../assets/items/2016.png) | [[wiki/items/2016-crown-set\|Crown Set]] | 1 |  | Silver Medal | 25 | 25 | – |
-| 5 | ![](../assets/items/2017.png) | [[wiki/items/2017-crown-set\|Crown Set]] | 1 |  | Silver Medal | 25 | 25 | – |
-| 6 | ![](../assets/items/2018.png) | [[wiki/items/2018-helios-set\|Helios Set]] | 1 |  | Gold Medal | 10 | 10 | – |
-| 7 | ![](../assets/items/2019.png) | [[wiki/items/2019-helios-set\|Helios Set]] | 1 |  | Gold Medal | 10 | 10 | – |
-| 8 | ![](../assets/items/2020.png) | [[wiki/items/2020-helios-set\|Helios Set]] | 1 |  | Gold Medal | 10 | 10 | – |
-| 9 | ![](../assets/items/2079.png) | [[wiki/items/2079-haple-set\|Haple Set]] | 1 |  | Bronze Medal | 40 | 40 | – |
-| 10 | ![](../assets/items/2080.png) | [[wiki/items/2080-haple-set\|Haple Set]] | 1 |  | Bronze Medal | 40 | 40 | – |
-| 11 | ![](../assets/items/2081.png) | [[wiki/items/2081-haple-set\|Haple Set]] | 1 |  | Bronze Medal | 40 | 40 | – |
-| 12 | ![](../assets/items/2082.png) | [[wiki/items/2082-oracle-set\|Oracle Set]] | 1 |  | Bronze Medal | 30 | 30 | – |
-| 13 | ![](../assets/items/2083.png) | [[wiki/items/2083-oracle-set\|Oracle Set]] | 1 |  | Bronze Medal | 30 | 30 | – |
-| 14 | ![](../assets/items/2084.png) | [[wiki/items/2084-oracle-set\|Oracle Set]] | 1 |  | Bronze Medal | 30 | 30 | – |
-| 15 | ![](../assets/items/1999.png) | [[wiki/items/1999-costume-remover\|Costume Remover]] | 1 |  | Gold | 50,000 | 396,000 | 315,000 |
+| 0 | ![](wiki/assets/items/2027.png) | [[wiki/items/2027-twisted-wind-set\|Twisted Wind Set]] | 1 |  | Bronze Medal | 50 | 50 | – |
+| 1 | ![](wiki/assets/items/2028.png) | [[wiki/items/2028-twisted-wind-set\|Twisted Wind Set]] | 1 |  | Bronze Medal | 50 | 50 | – |
+| 2 | ![](wiki/assets/items/2029.png) | [[wiki/items/2029-twisted-wind-set\|Twisted Wind Set]] | 1 |  | Bronze Medal | 50 | 50 | – |
+| 3 | ![](wiki/assets/items/2015.png) | [[wiki/items/2015-crown-set\|Crown Set]] | 1 |  | Silver Medal | 25 | 25 | – |
+| 4 | ![](wiki/assets/items/2016.png) | [[wiki/items/2016-crown-set\|Crown Set]] | 1 |  | Silver Medal | 25 | 25 | – |
+| 5 | ![](wiki/assets/items/2017.png) | [[wiki/items/2017-crown-set\|Crown Set]] | 1 |  | Silver Medal | 25 | 25 | – |
+| 6 | ![](wiki/assets/items/2018.png) | [[wiki/items/2018-helios-set\|Helios Set]] | 1 |  | Gold Medal | 10 | 10 | – |
+| 7 | ![](wiki/assets/items/2019.png) | [[wiki/items/2019-helios-set\|Helios Set]] | 1 |  | Gold Medal | 10 | 10 | – |
+| 8 | ![](wiki/assets/items/2020.png) | [[wiki/items/2020-helios-set\|Helios Set]] | 1 |  | Gold Medal | 10 | 10 | – |
+| 9 | ![](wiki/assets/items/2079.png) | [[wiki/items/2079-haple-set\|Haple Set]] | 1 |  | Bronze Medal | 40 | 40 | – |
+| 10 | ![](wiki/assets/items/2080.png) | [[wiki/items/2080-haple-set\|Haple Set]] | 1 |  | Bronze Medal | 40 | 40 | – |
+| 11 | ![](wiki/assets/items/2081.png) | [[wiki/items/2081-haple-set\|Haple Set]] | 1 |  | Bronze Medal | 40 | 40 | – |
+| 12 | ![](wiki/assets/items/2082.png) | [[wiki/items/2082-oracle-set\|Oracle Set]] | 1 |  | Bronze Medal | 30 | 30 | – |
+| 13 | ![](wiki/assets/items/2083.png) | [[wiki/items/2083-oracle-set\|Oracle Set]] | 1 |  | Bronze Medal | 30 | 30 | – |
+| 14 | ![](wiki/assets/items/2084.png) | [[wiki/items/2084-oracle-set\|Oracle Set]] | 1 |  | Bronze Medal | 30 | 30 | – |
+| 15 | ![](wiki/assets/items/1999.png) | [[wiki/items/1999-costume-remover\|Costume Remover]] | 1 |  | Gold | 50,000 | 396,000 | 315,000 |
 
 ### How prices are worked out
 

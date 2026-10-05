@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=431cea type=d36ca9 id=667009 sources=fc26a7 name_key=5584fe kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=356a19 stats=18fe17 options=1b1fe1 icon=1605f7 obtained_from=fa1a4e -->
 |  |  |
 |---|---|
-|  | ![Life Steal Rune](../assets/items/7123.png) |
+|  | ![Life Steal Rune](wiki/assets/items/7123.png) |
 | **Item id** | `7123` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

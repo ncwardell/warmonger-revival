@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=4f3dc6 type=61613a id=412a33 sources=3b496c result=5c07f0 materials=258147 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/813.png) |
+|  | ![](wiki/assets/items/813.png) |
 | **Recipe id** | `2406` (`Item_Make`) |
 | **Makes** | [[wiki/items/813-red-bloodstone-powder\|Red bloodstone powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  |
+| ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/606-red-bloodstone-powder-recipe|recipe 606]]
 

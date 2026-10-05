@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=aaa980 type=d36ca9 id=3af0af sources=7e96e7 name_key=7516f7 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=91caed reinforce=da4b92 icon=d7453a obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Ring of Life](../assets/items/452.png) |
+|  | ![Ring of Life](wiki/assets/items/452.png) |
 | **Item id** | `452` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

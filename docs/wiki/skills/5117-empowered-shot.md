@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=f96cc9 type=86a754 id=4aa80d sources=33c1f8 name_key=72f804 desc_key=cc9e1e kind=356a19 kind_name=9bc378 target=e84f24 range=bd307a area=efd331 cost=4e8ae0 cooldown=d1c73e delivery=93a212 effect_kind=356a19 effects=8f7309 damage_or_effect=9888e2 tooltip_formula=4709a0 visual=ba30fd icon=ac6851 used_by=0771e5 -->
 |  |  |
 |---|---|
-|  | ![Empowered Shot](../assets/skills/5117.png) |
+|  | ![Empowered Shot](wiki/assets/skills/5117.png) |
 | **Skill id** | `5117` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

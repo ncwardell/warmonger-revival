@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z48_00.dds"
 <!-- generated-keys: title=163c70 type=c899cd id=64e095 sources=cc6544 name_kr=39f231 terrain=095cd3 bounds=060d8f size=114466 segments=720ba9 fields=d5525d minimap=2955ab -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 23 (Fairy's Wood)](../assets/zones/48.png) |
+|  | ![minimap of Field 23 (Fairy's Wood)](wiki/assets/zones/48.png) |
 | **Zone id** | `48` |
 | **ZoneDB name** | 필드_23 (English gloss: Field 23 (Fairy's Wood)) |
 | **Terrain name** | `23` |

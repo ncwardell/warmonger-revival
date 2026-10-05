@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=e917e2 type=6143a1 id=6c1e67 sources=c16054 name_key=9c15d5 duration=6c141f is_buff=b6589f stack_type=356a19 group=e6c3dd effects=51ac1e icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Into Battle: Increased Health, damage and Ability Power](../assets/buffs/61.png) |
+|  | ![Into Battle: Increased Health, damage and Ability Power](wiki/assets/buffs/61.png) |
 | **Buff id** | `61` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

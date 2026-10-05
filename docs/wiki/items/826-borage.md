@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=53112d type=d36ca9 id=cdd308 sources=0d0dbc name_key=d1bd3f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 icon=1dabdf obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Borage](../assets/items/826.png) |
+|  | ![Borage](wiki/assets/items/826.png) |
 | **Item id** | `826` |
 | **Kind** | Material (12) |
 | **Classes** | all |

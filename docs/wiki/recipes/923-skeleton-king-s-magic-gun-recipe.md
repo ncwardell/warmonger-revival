@@ -20,7 +20,7 @@ level: 3
 <!-- generated-keys: title=3b7316 type=61613a id=07127c sources=ef4385 result=73b212 materials=b112e4 gold=409e95 success_rate=af3e13 category=da4b92 filter_mask=5c54ba level=77de68 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/10014.png) |
+|  | ![](wiki/assets/items/10014.png) |
 | **Recipe id** | `923` (`Item_Make`) |
 | **Makes** | [[wiki/items/10014-skeleton-king-s-magic-gun\|Skeleton king's Magic Gun]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 3
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2751.png) | [[wiki/items/2751-the-death-head-s-sealed-weapon\|The Death Head's Sealed Weapon]] | 1 |  |
-| ![](../assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
-| ![](../assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 2 |  |
+| ![](wiki/assets/items/2751.png) | [[wiki/items/2751-the-death-head-s-sealed-weapon\|The Death Head's Sealed Weapon]] | 1 |  |
+| ![](wiki/assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
+| ![](wiki/assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

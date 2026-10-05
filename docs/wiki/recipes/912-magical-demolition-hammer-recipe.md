@@ -20,7 +20,7 @@ level: 1
 <!-- generated-keys: title=a08f14 type=61613a id=3f989f sources=7728d8 result=0f8c31 materials=c06eb2 gold=8a12a3 success_rate=310b86 category=da4b92 filter_mask=24f4fd superior=7d460b level=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/20001.png) |
+|  | ![](wiki/assets/items/20001.png) |
 | **Recipe id** | `912` (`Item_Make`) |
 | **Makes** | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,8 +34,8 @@ level: 1
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
 
 Other recipes for the same item: [[wiki/recipes/2204-magical-demolition-hammer-recipe|recipe 2204]]
 

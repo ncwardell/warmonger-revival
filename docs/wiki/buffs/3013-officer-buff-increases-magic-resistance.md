@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=b2cde2 type=6143a1 id=9bf5ce sources=0a4b51 name_key=83fcb3 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=4d7471 icon=13f17b applied_by=8ff31e -->
 |  |  |
 |---|---|
-|  | ![Officer Buff: Increases Magic Resistance](../assets/buffs/3013.png) |
+|  | ![Officer Buff: Increases Magic Resistance](wiki/assets/buffs/3013.png) |
 | **Buff id** | `3013` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -34,8 +34,8 @@ dungeon: 127
 <!-- generated-keys: title=a46136 type=7a94db id=008451 sources=7d3941 name_key=d34b84 kind=3e3f38 scene_type=77de68 max_users=ac3478 group=cb4e52 zones=7d2f32 segments=2555d9 gates=c56e49 connections=967275 npcs=97d170 monsters=1b1a6a spawn_points=97d170 triggers=ad87f0 dungeon=008451 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 149](../assets/zones/149.png) |
-|  | ![(Lv 1) Chepa Village](../assets/dungeons/127.png) |
+|  | ![minimap of zone 149](wiki/assets/zones/149.png) |
+|  | ![(Lv 1) Chepa Village](wiki/assets/dungeons/127.png) |
 | **Field id** | `127` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

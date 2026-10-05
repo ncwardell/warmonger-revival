@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=b1c73b type=d36ca9 id=aee655 sources=4f131b name_key=f490c2 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=e78b95 options=77c799 icon=1643f5 obtained_from=718914 -->
 |  |  |
 |---|---|
-|  | ![Dragon Slayer Set](../assets/items/2026.png) |
+|  | ![Dragon Slayer Set](wiki/assets/items/2026.png) |
 | **Item id** | `2026` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

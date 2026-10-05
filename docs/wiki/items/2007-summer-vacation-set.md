@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=9256ec type=d36ca9 id=aca6d6 sources=a1e7b1 name_key=29bf3a kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=77b656 options=5c65b8 icon=9eb96e obtained_from=dceaa8 -->
 |  |  |
 |---|---|
-|  | ![Summer Vacation Set](../assets/items/2007.png) |
+|  | ![Summer Vacation Set](wiki/assets/items/2007.png) |
 | **Item id** | `2007` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=f0da33 type=6143a1 id=f75e5e sources=86c92b name_key=317355 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=ba826a icon=22daeb applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Thorns](../assets/buffs/10124.png) |
+|  | ![Thorns](wiki/assets/buffs/10124.png) |
 | **Buff id** | `10124` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

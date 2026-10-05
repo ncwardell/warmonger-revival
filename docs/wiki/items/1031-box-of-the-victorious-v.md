@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=cbabcf type=d36ca9 id=45ce12 sources=d780b3 name_key=ed2208 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d stats=97d170 icon=dc5443 obtained_from=3eb005 -->
 |  |  |
 |---|---|
-|  | ![Box of the Victorious V](../assets/items/1031.png) |
+|  | ![Box of the Victorious V](wiki/assets/items/1031.png) |
 | **Item id** | `1031` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

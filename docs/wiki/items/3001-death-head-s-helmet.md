@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=bd0c0e type=d36ca9 id=49042c sources=43355b name_key=87bcb0 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=5d0217 set=356a19 reinforce=92cfce icon=788408 obtained_from=0f1c06 -->
 |  |  |
 |---|---|
-|  | ![Death Head's Helmet](../assets/items/3001.png) |
+|  | ![Death Head's Helmet](wiki/assets/items/3001.png) |
 | **Item id** | `3001` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

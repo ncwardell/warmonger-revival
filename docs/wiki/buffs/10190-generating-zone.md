@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=b2ce11 type=6143a1 id=8a6b78 sources=e05caf name_key=6cc9fb duration=a3e3c1 is_buff=b6589f stack_type=356a19 group=b6589f effects=9cd52e icon=f877b6 applied_by=bbf9a3 -->
 |  |  |
 |---|---|
-|  | ![Generating Zone](../assets/buffs/10190.png) |
+|  | ![Generating Zone](wiki/assets/buffs/10190.png) |
 | **Buff id** | `10190` |
 | **Duration** | 0.4 s (2 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=6e422a type=d36ca9 id=ff6d1d sources=5c420e name_key=ed3066 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=a04d39 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Red Passion Piece (A)](../assets/items/618.png) |
+|  | ![Red Passion Piece (A)](wiki/assets/items/618.png) |
 | **Item id** | `618` |
 | **Kind** | Material (12) |
 | **Classes** | all |

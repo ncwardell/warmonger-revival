@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=d714bc type=d36ca9 id=279e90 sources=df77b2 name_key=db6919 kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=120f17 reinforce=356a19 icon=2fcf58 obtained_from=187810 -->
 |  |  |
 |---|---|
-|  | ![Spirit Gloves](../assets/items/416.png) |
+|  | ![Spirit Gloves](wiki/assets/items/416.png) |
 | **Item id** | `416` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

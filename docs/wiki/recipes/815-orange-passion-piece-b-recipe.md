@@ -18,7 +18,7 @@ level: 10
 <!-- generated-keys: title=b1da12 type=61613a id=d528ed sources=a25b90 result=5bdb54 materials=e20329 gold=15f8d1 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/626.png) |
+|  | ![](wiki/assets/items/626.png) |
 | **Recipe id** | `815` (`Item_Make`) |
 | **Makes** | [[wiki/items/626-orange-passion-piece-b\|Orange Passion Piece (B)]] × 3 |
 | **Gold** | 500,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/625.png) | [[wiki/items/625-orange-passion-fragments-b\|Orange Passion Fragments (B)]] | 20 |  |
+| ![](wiki/assets/items/625.png) | [[wiki/items/625-orange-passion-fragments-b\|Orange Passion Fragments (B)]] | 20 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

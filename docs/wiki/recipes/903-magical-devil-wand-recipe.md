@@ -20,7 +20,7 @@ level: 2
 <!-- generated-keys: title=0c8712 type=61613a id=437aa7 sources=b36e08 result=53ac49 materials=e059b5 gold=c2d4c5 success_rate=310b86 category=da4b92 filter_mask=b0800a superior=fc0af0 level=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/10020.png) |
+|  | ![](wiki/assets/items/10020.png) |
 | **Recipe id** | `903` (`Item_Make`) |
 | **Makes** | [[wiki/items/10020-magical-devil-wand\|Magical Devil Wand]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,8 +34,8 @@ level: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 100 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 100 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

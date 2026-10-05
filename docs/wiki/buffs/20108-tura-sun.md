@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=ce8877 type=6143a1 id=2804f9 sources=a3694b name_key=8ce461 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=afc90b icon=14ee2c applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Tura Sun](../assets/buffs/20108.png) |
+|  | ![Tura Sun](wiki/assets/buffs/20108.png) |
 | **Buff id** | `20108` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

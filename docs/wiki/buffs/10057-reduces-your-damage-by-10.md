@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=bcfe01 type=6143a1 id=0a3025 sources=b161b2 name_key=735448 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=17ee09 icon=a431e0 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Reduces your damage by 10%](../assets/buffs/10057.png) |
+|  | ![Reduces your damage by 10%](wiki/assets/buffs/10057.png) |
 | **Buff id** | `10057` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

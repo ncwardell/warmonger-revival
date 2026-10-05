@@ -26,7 +26,7 @@ z: null
 <!-- generated-keys: title=1ce8ba type=3664ce id=f44a28 sources=8d66b9 name_key=e2d294 title_key=5076ed npc_title=5088e1 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=ba093c role=5088e1 shop=85f100 talk_key=971ba2 portrait=d2d345 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Farrell](../assets/npcs/317.png) |
+|  | ![Farrell](wiki/assets/npcs/317.png) |
 | **Unit id** | `317` |
 | **Title** | Blacksmith |
 | **Category** | NPC (category 50) |

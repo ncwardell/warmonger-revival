@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=42e97f type=6143a1 id=b409a4 sources=230f22 name_key=084fb4 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=816ad5 icon=60dd2b applied_by=e8e6b7 -->
 |  |  |
 |---|---|
-|  | ![Rapid Fire: Creates a shield that absorbs Damage for 10 seconds](../assets/buffs/30118.png) |
+|  | ![Rapid Fire: Creates a shield that absorbs Damage for 10 seconds](wiki/assets/buffs/30118.png) |
 | **Buff id** | `30118` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

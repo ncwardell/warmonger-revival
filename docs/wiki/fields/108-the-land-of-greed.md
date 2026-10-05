@@ -30,7 +30,7 @@ triggers:
 <!-- generated-keys: title=4cdb69 type=7a94db id=17503a sources=ec9092 name_key=5694ac kind=7a94db scene_type=ac3478 max_users=310b86 group=7b5200 nation=a20b0f nation_copies=a918d5 zones=85c8ae segments=df8332 gates=482247 connections=929b42 npcs=97d170 monsters=63b507 spawn_points=97d170 triggers=37cac2 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 113](../assets/zones/113.png) |
+|  | ![minimap of zone 113](wiki/assets/zones/113.png) |
 | **Field id** | `108` |
 | **Kind** | field (SceneList type 5; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |

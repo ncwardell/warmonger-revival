@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=23d743 type=86a754 id=9920a5 sources=5a3bbb name_key=9dde86 desc_key=c8ff3b kind=356a19 kind_name=9bc378 target=7056fd range=17ba07 area=8aa5fb cost=f67772 cooldown=c9c532 delivery=93a212 effect_kind=da4b92 effects=44cea6 damage_or_effect=684ef9 tooltip_formula=c2e772 visual=9d3237 icon=bd7250 used_by=224d66 -->
 |  |  |
 |---|---|
-|  | ![Flash Bang](../assets/skills/5147.png) |
+|  | ![Flash Bang](wiki/assets/skills/5147.png) |
 | **Skill id** | `5147` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

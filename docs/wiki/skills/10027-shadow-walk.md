@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=112228 type=86a754 id=b9cc0a sources=1f90e5 name_key=b5a18e desc_key=5d1120 kind=356a19 kind_name=9bc378 target=53cfaf range=902ba3 cost=060055 cooldown=5b7687 movement=953fcf effect_kind=356a19 effects=e851b7 damage_or_effect=e6c796 tooltip_formula=6f8620 visual=76546f icon=67ccf4 used_by=4cb0a8 -->
 |  |  |
 |---|---|
-|  | ![Shadow Walk](../assets/skills/10027.png) |
+|  | ![Shadow Walk](wiki/assets/skills/10027.png) |
 | **Skill id** | `10027` |
 | **Kind** | active (1) |
 | **Target** | unit; ally, enemy; units: monster, player; up to 2 |

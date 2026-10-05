@@ -20,7 +20,7 @@ raw: {"c28": 225}
 <!-- generated-keys: title=31f8bc type=61613a id=9e6a55 sources=9ae649 result=b1b221 materials=6c1e5f gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=4d3e51 superior=2eb4fa level=356a19 raw=aa6768 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/414.png) |
+|  | ![](wiki/assets/items/414.png) |
 | **Recipe id** | `18` (`Item_Make`) |
 | **Makes** | [[wiki/items/414-spirit-robe\|Spirit Robe]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 225}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 15 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 15 |  |
 
 Unknown columns: `c28` = 225 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

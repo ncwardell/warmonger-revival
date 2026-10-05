@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=65b875 type=d36ca9 id=ba4234 sources=8372e6 name_key=c19af6 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=8dba95 set=fe5dbb reinforce=92cfce icon=ce9e12 obtained_from=ab524c -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Helmet](../assets/items/3511.png) |
+|  | ![Fame warrior Helmet](wiki/assets/items/3511.png) |
 | **Item id** | `3511` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

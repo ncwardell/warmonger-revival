@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3507.png) | [[wiki/items/3507-fame-knight-bracelet\|Fame knight Bracelet]] | 1 |  |
-| 1 | ![](../assets/items/3508.png) | [[wiki/items/3508-fame-knight-ring\|Fame knight Ring]] | 1 |  |
-| 2 | ![](../assets/items/3501.png) | [[wiki/items/3501-fame-knight-helmet\|Fame knight Helmet]] | 1 |  |
-| 3 | ![](../assets/items/3502.png) | [[wiki/items/3502-fame-knight-armor\|Fame knight Armor]] | 1 |  |
-| 4 | ![](../assets/items/3503.png) | [[wiki/items/3503-fame-knight-gloves\|Fame knight Gloves]] | 1 |  |
-| 5 | ![](../assets/items/3504.png) | [[wiki/items/3504-fame-knight-shoes\|Fame knight Shoes]] | 1 |  |
-| 6 | ![](../assets/items/3504.png) | [[wiki/items/3504-fame-knight-shoes\|Fame knight Shoes]] | 1 |  |
-| 7 | ![](../assets/items/3505.png) | [[wiki/items/3505-fame-knight-necklace\|Fame knight Necklace]] | 1 |  |
-| 8 | ![](../assets/items/3505.png) | [[wiki/items/3505-fame-knight-necklace\|Fame knight Necklace]] | 1 |  |
-| 9 | ![](../assets/items/3506.png) | [[wiki/items/3506-fame-knight-belt\|Fame knight Belt]] | 1 |  |
+| 0 | ![](wiki/assets/items/3507.png) | [[wiki/items/3507-fame-knight-bracelet\|Fame knight Bracelet]] | 1 |  |
+| 1 | ![](wiki/assets/items/3508.png) | [[wiki/items/3508-fame-knight-ring\|Fame knight Ring]] | 1 |  |
+| 2 | ![](wiki/assets/items/3501.png) | [[wiki/items/3501-fame-knight-helmet\|Fame knight Helmet]] | 1 |  |
+| 3 | ![](wiki/assets/items/3502.png) | [[wiki/items/3502-fame-knight-armor\|Fame knight Armor]] | 1 |  |
+| 4 | ![](wiki/assets/items/3503.png) | [[wiki/items/3503-fame-knight-gloves\|Fame knight Gloves]] | 1 |  |
+| 5 | ![](wiki/assets/items/3504.png) | [[wiki/items/3504-fame-knight-shoes\|Fame knight Shoes]] | 1 |  |
+| 6 | ![](wiki/assets/items/3504.png) | [[wiki/items/3504-fame-knight-shoes\|Fame knight Shoes]] | 1 |  |
+| 7 | ![](wiki/assets/items/3505.png) | [[wiki/items/3505-fame-knight-necklace\|Fame knight Necklace]] | 1 |  |
+| 8 | ![](wiki/assets/items/3505.png) | [[wiki/items/3505-fame-knight-necklace\|Fame knight Necklace]] | 1 |  |
+| 9 | ![](wiki/assets/items/3506.png) | [[wiki/items/3506-fame-knight-belt\|Fame knight Belt]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

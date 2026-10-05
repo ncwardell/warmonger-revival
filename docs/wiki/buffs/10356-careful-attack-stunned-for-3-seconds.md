@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=6baa68 type=6143a1 id=12b774 sources=bdbe88 name_key=1d74be duration=0aac5a is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=4eabfa applied_by=de6d02 -->
 |  |  |
 |---|---|
-|  | ![Careful Attack : Stunned for 3 seconds](../assets/buffs/10356.png) |
+|  | ![Careful Attack : Stunned for 3 seconds](wiki/assets/buffs/10356.png) |
 | **Buff id** | `10356` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

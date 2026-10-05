@@ -36,7 +36,7 @@ complete_talk: 801
 <!-- generated-keys: title=be0e6f type=eb5b2b id=972a67 sources=7aa9cd name_key=dcaebe kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=632667 requires_bit=22d200 prev=91a33c next=3ec111 prerequisites=a7d2c7 stages=642aaf objectives=255dc8 rewards=fb1c8a offer_talk=290a52 complete_talk=549843 -->
 |  |  |
 |---|---|
-|  | ![Demon Hell](../assets/npcs/200.png) |
+|  | ![Demon Hell](wiki/assets/npcs/200.png) |
 | **Quest id** | `35` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

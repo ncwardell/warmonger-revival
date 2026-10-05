@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=6ea322 type=d36ca9 id=238ddd sources=7df7f1 name_key=48c46a kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=9d4f51 obtained_from=85eba4 -->
 |  |  |
 |---|---|
-|  | ![DeathHead Horn](../assets/items/2701.png) |
+|  | ![DeathHead Horn](wiki/assets/items/2701.png) |
 | **Item id** | `2701` |
 | **Kind** | Material (12) |
 | **Classes** | all |

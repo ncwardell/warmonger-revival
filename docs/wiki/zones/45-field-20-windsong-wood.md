@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z45_00.dds"
 <!-- generated-keys: title=7af4d2 type=c899cd id=fb6443 sources=51c43e name_kr=1813ab terrain=587b73 bounds=0448b8 size=114466 segments=d2c7e3 fields=6a5bf6 minimap=3c1b1c -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 20 (Windsong Wood)](../assets/zones/45.png) |
+|  | ![minimap of Field 20 (Windsong Wood)](wiki/assets/zones/45.png) |
 | **Zone id** | `45` |
 | **ZoneDB name** | 필드_20 (English gloss: Field 20 (Windsong Wood)) |
 | **Terrain name** | `20` |

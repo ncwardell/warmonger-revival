@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=cfad52 type=d36ca9 id=0c422b sources=c5cb4a name_key=50ce3f kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=456440 cost_pair=35b2fa period=365a69 stats=eca94b options=a7abcb icon=19b4b0 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Helios Set](../assets/items/2019.png) |
+|  | ![Helios Set](wiki/assets/items/2019.png) |
 | **Item id** | `2019` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

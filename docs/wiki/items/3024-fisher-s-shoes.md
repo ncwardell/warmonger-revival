@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=620867 type=d36ca9 id=a6edb9 sources=a78d19 name_key=0f31aa kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=09cf4f set=77de68 reinforce=92cfce icon=72564b obtained_from=33ab76 -->
 |  |  |
 |---|---|
-|  | ![Fisher's Shoes](../assets/items/3024.png) |
+|  | ![Fisher's Shoes](wiki/assets/items/3024.png) |
 | **Item id** | `3024` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

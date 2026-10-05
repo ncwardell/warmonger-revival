@@ -33,7 +33,7 @@ positions:
 <!-- generated-keys: title=ef0630 type=3664ce id=f6b9b6 sources=b4fb16 name_key=ba31e5 title_key=f11c2d npc_title=4bc26f category=e1822d class_mask=da4b92 model=fc074d scale=aa8f28 functions=7dac55 role=4bc26f shop=267b97 talk_key=daeeaf portrait=71efa1 quests=759050 quest_fields=46bf0f map=b37f6d x=0076cc z=202cb5 positions=7b1280 -->
 |  |  |
 |---|---|
-|  | ![Lewellyn](../assets/npcs/315.png) |
+|  | ![Lewellyn](wiki/assets/npcs/315.png) |
 | **Unit id** | `315` |
 | **Title** | Scroll Merchant |
 | **Category** | NPC (category 50) |

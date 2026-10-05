@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=e0a7df type=6143a1 id=1808dd sources=0f38c2 name_key=da9c8c duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=050d59 icon=5f078d applied_by=7dae64 -->
 |  |  |
 |---|---|
-|  | ![Fame item: March](../assets/buffs/10138.png) |
+|  | ![Fame item: March](wiki/assets/buffs/10138.png) |
 | **Buff id** | `10138` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

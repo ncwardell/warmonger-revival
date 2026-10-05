@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=7b4d72 type=6143a1 id=73b3bc sources=e64040 name_key=62b850 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=48390e icon=3af2a9 applied_by=c0a38f -->
 |  |  |
 |---|---|
-|  | ![Dark Transformation : Gain 100 Movement Speed](../assets/buffs/30038.png) |
+|  | ![Dark Transformation : Gain 100 Movement Speed](wiki/assets/buffs/30038.png) |
 | **Buff id** | `30038` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=266770 type=d36ca9 id=2ff4ad sources=b33e80 name_key=fd6a5c kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=3c26df stats=db11c4 options=0e5fce skills=49e0d3 reinforce=cb4e52 icon=542f9c obtained_from=578594 -->
 |  |  |
 |---|---|
-|  | ![Skeleton king's Vision Bow](../assets/items/15005.png) |
+|  | ![Skeleton king's Vision Bow](wiki/assets/items/15005.png) |
 | **Item id** | `15005` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

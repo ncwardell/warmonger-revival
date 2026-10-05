@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=ddad67 type=d36ca9 id=140199 sources=3b38ef name_key=2dad3d kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=435797 reinforce=da4b92 icon=7f6e42 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Belt of Mediation](../assets/items/454.png) |
+|  | ![Belt of Mediation](wiki/assets/items/454.png) |
 | **Item id** | `454` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

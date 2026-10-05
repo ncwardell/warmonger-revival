@@ -24,7 +24,7 @@ kind: "rune_upgrade"
 <!-- generated-keys: title=4a7d97 type=4389c5 id=9f6bf8 sources=8e67f6 group=77de68 rune=fca763 levels=41bae9 kind=6a6d0e -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7022.png) |
+|  | ![](wiki/assets/items/7022.png) |
 | **Rune line** | `JewelSocketMake` group 3 |
 | **Starts at** | [[wiki/items/7022-armor-rune\|Armor Rune]] |
 | **Success rates** | unknown (server side; patch notes give only trends) |
@@ -35,16 +35,16 @@ Each row upgrades the rune to the next item (C->S `0x4a8`). The +9 row has no ne
 
 | level |  | rune | becomes | materials | row |
 |---|---|---|---|---|---|
-| +0 | ![](../assets/items/7022.png) | [[wiki/items/7022-armor-rune\|Armor Rune]] | [[wiki/items/7023-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 21 |
-| +1 | ![](../assets/items/7023.png) | [[wiki/items/7023-armor-rune\|Armor Rune]] | [[wiki/items/7024-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 22 |
-| +2 | ![](../assets/items/7024.png) | [[wiki/items/7024-armor-rune\|Armor Rune]] | [[wiki/items/7025-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 23 |
-| +3 | ![](../assets/items/7025.png) | [[wiki/items/7025-armor-rune\|Armor Rune]] | [[wiki/items/7026-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 24 |
-| +4 | ![](../assets/items/7026.png) | [[wiki/items/7026-armor-rune\|Armor Rune]] | [[wiki/items/7027-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 25 |
-| +5 | ![](../assets/items/7027.png) | [[wiki/items/7027-armor-rune\|Armor Rune]] | [[wiki/items/7028-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 26 |
-| +6 | ![](../assets/items/7028.png) | [[wiki/items/7028-armor-rune\|Armor Rune]] | [[wiki/items/7029-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 27 |
-| +7 | ![](../assets/items/7029.png) | [[wiki/items/7029-armor-rune\|Armor Rune]] | [[wiki/items/7030-armor-rune\|Armor Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 28 |
-| +8 | ![](../assets/items/7030.png) | [[wiki/items/7030-armor-rune\|Armor Rune]] | [[wiki/items/7031-armor-rune\|Armor Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 29 |
-| +9 | ![](../assets/items/7031.png) | [[wiki/items/7031-armor-rune\|Armor Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 30 |
+| +0 | ![](wiki/assets/items/7022.png) | [[wiki/items/7022-armor-rune\|Armor Rune]] | [[wiki/items/7023-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 21 |
+| +1 | ![](wiki/assets/items/7023.png) | [[wiki/items/7023-armor-rune\|Armor Rune]] | [[wiki/items/7024-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 22 |
+| +2 | ![](wiki/assets/items/7024.png) | [[wiki/items/7024-armor-rune\|Armor Rune]] | [[wiki/items/7025-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 23 |
+| +3 | ![](wiki/assets/items/7025.png) | [[wiki/items/7025-armor-rune\|Armor Rune]] | [[wiki/items/7026-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 24 |
+| +4 | ![](wiki/assets/items/7026.png) | [[wiki/items/7026-armor-rune\|Armor Rune]] | [[wiki/items/7027-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 25 |
+| +5 | ![](wiki/assets/items/7027.png) | [[wiki/items/7027-armor-rune\|Armor Rune]] | [[wiki/items/7028-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 26 |
+| +6 | ![](wiki/assets/items/7028.png) | [[wiki/items/7028-armor-rune\|Armor Rune]] | [[wiki/items/7029-armor-rune\|Armor Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 27 |
+| +7 | ![](wiki/assets/items/7029.png) | [[wiki/items/7029-armor-rune\|Armor Rune]] | [[wiki/items/7030-armor-rune\|Armor Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 28 |
+| +8 | ![](wiki/assets/items/7030.png) | [[wiki/items/7030-armor-rune\|Armor Rune]] | [[wiki/items/7031-armor-rune\|Armor Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 29 |
+| +9 | ![](wiki/assets/items/7031.png) | [[wiki/items/7031-armor-rune\|Armor Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 30 |
 
 ### Rules from the patch notes
 

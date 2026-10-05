@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=42fbf9 type=d36ca9 id=658b2b sources=e18131 name_key=a56cbc kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=3962ec set=ac3478 reinforce=92cfce icon=e4f496 obtained_from=82aa33 -->
 |  |  |
 |---|---|
-|  | ![Spector's Necklace](../assets/items/3045.png) |
+|  | ![Spector's Necklace](wiki/assets/items/3045.png) |
 | **Item id** | `3045` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

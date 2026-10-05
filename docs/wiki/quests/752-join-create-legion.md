@@ -31,7 +31,7 @@ complete_talk: 742
 <!-- generated-keys: title=33f137 type=eb5b2b id=b7ecf1 sources=335b9b name_key=fb86ce kind=356a19 kind_name=0bac50 giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=310b86 prev=97d170 next=93d31a prerequisites=af2dc3 stages=30caa7 objectives=2be88c objectives_client=54bea2 rewards=7a6730 offer_talk=23b23b complete_talk=02c8be -->
 |  |  |
 |---|---|
-|  | ![Join & Create Legion](../assets/npcs/210.png) |
+|  | ![Join & Create Legion](wiki/assets/npcs/210.png) |
 | **Quest id** | `752` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

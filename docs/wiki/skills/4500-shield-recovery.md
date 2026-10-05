@@ -29,7 +29,7 @@ observed:
 <!-- generated-keys: title=c2efe5 type=86a754 id=97a87b sources=b1debe name_key=0d3844 desc_key=0e5347 kind=356a19 kind_name=9bc378 target=35e077 range=356a19 area=394af4 cost=4e6c0e cooldown=d97414 effect_kind=b6692e effects=4bd0ad damage_or_effect=301909 visual=9ed4f2 icon=6a165d used_by=97d170 tp=f3685c observed=7b34e1 -->
 |  |  |
 |---|---|
-|  | ![Shield recovery](../assets/skills/4500.png) |
+|  | ![Shield recovery](wiki/assets/skills/4500.png) |
 | **Skill id** | `4500` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: player, structure; up to 1 |

@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=33859c type=d36ca9 id=009cf5 sources=53022d name_key=81a75d kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=8e0891 options=6c7a8e icon=6dbe46 obtained_from=de3e20 -->
 |  |  |
 |---|---|
-|  | ![Pirate Set](../assets/items/2077.png) |
+|  | ![Pirate Set](wiki/assets/items/2077.png) |
 | **Item id** | `2077` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

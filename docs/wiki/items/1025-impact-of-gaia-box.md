@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=e2ce23 type=d36ca9 id=bca210 sources=a3b88d name_key=b34af2 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=234370 obtained_from=abd7a6 -->
 |  |  |
 |---|---|
-|  | ![Impact of Gaia Box](../assets/items/1025.png) |
+|  | ![Impact of Gaia Box](wiki/assets/items/1025.png) |
 | **Item id** | `1025` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

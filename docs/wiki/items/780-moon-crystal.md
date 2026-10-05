@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=1701c5 type=d36ca9 id=1dd4b9 sources=5d2cf5 name_key=623016 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=45cb6b obtained_from=160e30 -->
 |  |  |
 |---|---|
-|  | ![Moon Crystal](../assets/items/780.png) |
+|  | ![Moon Crystal](wiki/assets/items/780.png) |
 | **Item id** | `780` |
 | **Kind** | Material (12) |
 | **Classes** | all |

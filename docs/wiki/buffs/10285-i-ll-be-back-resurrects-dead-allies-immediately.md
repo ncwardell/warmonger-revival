@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=2c795d type=6143a1 id=365a02 sources=6c26bd name_key=a1944f duration=faac5c is_buff=b6589f stack_type=356a19 group=b6589f effects=e4340b icon=78d8c9 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![I'll be back! : Resurrects dead allies immediately.](../assets/buffs/10285.png) |
+|  | ![I'll be back! : Resurrects dead allies immediately.](wiki/assets/buffs/10285.png) |
 | **Buff id** | `10285` |
 | **Duration** | 30 s (150 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

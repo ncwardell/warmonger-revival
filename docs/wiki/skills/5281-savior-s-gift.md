@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=eee00b type=86a754 id=fa81c9 sources=459099 name_key=d84a1b desc_key=bdd9e3 kind=356a19 kind_name=9bc378 target=8871e4 range=fe5dbb area=d82541 cost=15d513 cooldown=dceb3e effect_kind=356a19 effects=54d841 damage_or_effect=bf21a9 visual=b00168 icon=5095da used_by=1647f0 -->
 |  |  |
 |---|---|
-|  | ![Savior's Gift](../assets/skills/5281.png) |
+|  | ![Savior's Gift](wiki/assets/skills/5281.png) |
 | **Skill id** | `5281` |
 | **Kind** | active (1) |
 | **Target** | ground; self, party; units: monster, player; up to 1 |

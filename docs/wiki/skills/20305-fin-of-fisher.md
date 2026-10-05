@@ -25,7 +25,7 @@ used_by:
 <!-- generated-keys: title=e83dd2 type=86a754 id=a283c7 sources=079599 name_key=f199dd desc_key=f6c447 kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=724c6a damage_or_effect=968ed0 icon=ce91ab used_by=000388 -->
 |  |  |
 |---|---|
-|  | ![Fin of Fisher](../assets/skills/20305.png) |
+|  | ![Fin of Fisher](wiki/assets/skills/20305.png) |
 | **Skill id** | `20305` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

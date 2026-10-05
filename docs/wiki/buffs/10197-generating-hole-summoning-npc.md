@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=02a2c4 type=6143a1 id=2a92b4 sources=cfa2a1 name_key=ffdf89 duration=5a72dd is_buff=b6589f stack_type=356a19 group=b6589f effects=28271d icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Generating Hole ? Summoning - NPC](../assets/buffs/10197.png) |
+|  | ![Generating Hole ? Summoning - NPC](wiki/assets/buffs/10197.png) |
 | **Buff id** | `10197` |
 | **Duration** | 15 s (75 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

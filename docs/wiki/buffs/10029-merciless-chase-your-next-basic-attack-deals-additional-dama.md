@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=e7a5dc type=6143a1 id=38d0a0 sources=53a7a4 name_key=603eb9 duration=5d0a7b is_buff=b6589f stack_type=356a19 group=b6589f effects=7acecd icon=bfcc89 applied_by=a88ffe -->
 |  |  |
 |---|---|
-|  | ![Merciless Chase : Your next basic attack deals additional damage](../assets/buffs/10029.png) |
+|  | ![Merciless Chase : Your next basic attack deals additional damage](wiki/assets/buffs/10029.png) |
 | **Buff id** | `10029` |
 | **Duration** | 6 s (30 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

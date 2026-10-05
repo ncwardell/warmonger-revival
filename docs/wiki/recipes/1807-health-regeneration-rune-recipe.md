@@ -19,7 +19,7 @@ raw: {"c28": 175}
 <!-- generated-keys: title=9a6423 type=61613a id=e6316c sources=c1294a result=ad3257 materials=89fe11 gold=f8237d success_rate=310b86 category=1b6453 filter_mask=356a19 raw=27f2dc -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7062.png) |
+|  | ![](wiki/assets/items/7062.png) |
 | **Recipe id** | `1807` (`Item_Make`) |
 | **Makes** | [[wiki/items/7062-health-regeneration-rune\|Health Regeneration Rune]] × 1 |
 | **Gold** | 5,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,8 +31,8 @@ raw: {"c28": 175}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
-| ![](../assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 1 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 1 |  |
 
 Unknown columns: `c28` = 175 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

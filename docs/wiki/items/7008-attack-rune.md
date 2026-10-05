@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=839df9 type=d36ca9 id=28cd4e sources=3620c0 name_key=9d6ff8 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=c1dfd9 stats=f0310a options=88c977 icon=24e6f6 obtained_from=3c5551 -->
 |  |  |
 |---|---|
-|  | ![Attack Rune](../assets/items/7008.png) |
+|  | ![Attack Rune](wiki/assets/items/7008.png) |
 | **Item id** | `7008` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

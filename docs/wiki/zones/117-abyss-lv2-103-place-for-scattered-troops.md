@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z117_00.dds"
 <!-- generated-keys: title=4ec317 type=c899cd id=d0e2db sources=d4b1c3 name_kr=def003 terrain=b8c94a bounds=15901d size=be57ee segments=f311d2 fields=435205 minimap=1e4aea -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV2 103 (Place for Scattered troops)](../assets/zones/117.png) |
+|  | ![minimap of Abyss LV2 103 (Place for Scattered troops)](wiki/assets/zones/117.png) |
 | **Zone id** | `117` |
 | **ZoneDB name** | 어비스_LV2_103 (English gloss: Abyss LV2 103 (Place for Scattered troops)) |
 | **Terrain name** | `Abyss_Lv02` |

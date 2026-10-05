@@ -53,7 +53,7 @@ def write_indexes(ctx):
         table = []
         for id_, stem, title, status, missing in rows:
             counts[status] = counts.get(status, 0) + 1
-            img = "![](../assets/%s/%d.png)" % (t, id_) if (common.ASSETS / t / ("%d.png" % id_)).exists() else ""
+            img = "![](wiki/assets/%s/%d.png)" % (t, id_) if (common.ASSETS / t / ("%d.png" % id_)).exists() else ""
             table.append((img, id_, "[[wiki/%s/%s\\|%s]]" % (t, stem, common.link_text(str(title))),
                           status, len(missing)))
         mod = ctx.module(t)

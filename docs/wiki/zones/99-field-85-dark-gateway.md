@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z99_00.dds"
 <!-- generated-keys: title=ead11f type=c899cd id=9a79be sources=95d5e7 name_kr=d5e4ac terrain=145ac3 bounds=1fe4c3 size=114466 segments=df42c3 fields=8d17eb minimap=151a1b -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 85 (Dark Gateway)](../assets/zones/99.png) |
+|  | ![minimap of Field 85 (Dark Gateway)](wiki/assets/zones/99.png) |
 | **Zone id** | `99` |
 | **ZoneDB name** | 필드_85 (English gloss: Field 85 (Dark Gateway)) |
 | **Terrain name** | `85` |

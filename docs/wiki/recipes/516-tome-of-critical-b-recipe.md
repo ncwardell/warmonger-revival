@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=6c2e5a type=61613a id=b903ea sources=8613d6 result=5ea29a materials=665c5a gold=15aa0c success_rate=310b86 category=356a19 filter_mask=4e63ab level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/725.png) |
+|  | ![](wiki/assets/items/725.png) |
 | **Recipe id** | `516` (`Item_Make`) |
 | **Makes** | [[wiki/items/725-tome-of-critical-b\|Tome of Critical (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/813.png) | [[wiki/items/813-red-bloodstone-powder\|Red bloodstone powder]] | 20 |  |
-| ![](../assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
-| ![](../assets/items/838.png) | [[wiki/items/838-ointment-of-spirit\|Ointment of Spirit]] | 1 |  |
+| ![](wiki/assets/items/813.png) | [[wiki/items/813-red-bloodstone-powder\|Red bloodstone powder]] | 20 |  |
+| ![](wiki/assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
+| ![](wiki/assets/items/838.png) | [[wiki/items/838-ointment-of-spirit\|Ointment of Spirit]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2306-tome-of-critical-b-recipe|recipe 2306]]
 

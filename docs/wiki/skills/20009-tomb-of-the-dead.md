@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=25fe5b type=86a754 id=c6d459 sources=a5a532 name_key=40eafa desc_key=ad1d7b kind=356a19 kind_name=9bc378 target=cacd0a range=902ba3 area=d82541 cost=59d981 cooldown=a7242f delivery=8af2f4 effect_kind=da4b92 effects=8cd921 damage_or_effect=bf21a9 visual=f44a28 icon=5cb950 used_by=55e096 -->
 |  |  |
 |---|---|
-|  | ![Tomb of the Dead](../assets/skills/20009.png) |
+|  | ![Tomb of the Dead](wiki/assets/skills/20009.png) |
 | **Skill id** | `20009` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=1f4563 type=d36ca9 id=456734 sources=e26519 name_key=0201bf kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=b6589f stats=3b8ce1 options=3a5286 icon=07c22a obtained_from=28f519 -->
 |  |  |
 |---|---|
-|  | ![PvP Armor Rune](../assets/items/7152.png) |
+|  | ![PvP Armor Rune](wiki/assets/items/7152.png) |
 | **Item id** | `7152` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

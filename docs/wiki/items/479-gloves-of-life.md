@@ -32,7 +32,7 @@ obtained_from: []
 <!-- generated-keys: title=a66ac6 type=d36ca9 id=eaef52 sources=b1f3db name_key=bf3f9e kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=76251a reinforce=da4b92 icon=c03e6f obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Gloves of Life](../assets/items/479.png) |
+|  | ![Gloves of Life](wiki/assets/items/479.png) |
 | **Item id** | `479` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

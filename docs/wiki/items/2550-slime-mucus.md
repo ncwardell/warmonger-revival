@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=58dad7 type=d36ca9 id=d866e2 sources=a2d638 name_key=7f6b07 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=58cdb2 obtained_from=5263d2 -->
 |  |  |
 |---|---|
-|  | ![Slime Mucus](../assets/items/2550.png) |
+|  | ![Slime Mucus](wiki/assets/items/2550.png) |
 | **Item id** | `2550` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

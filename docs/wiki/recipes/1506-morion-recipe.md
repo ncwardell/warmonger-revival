@@ -18,7 +18,7 @@ filter_mask: 2
 <!-- generated-keys: title=81566c type=61613a id=9e0a91 sources=4a0ffe result=bdb317 materials=523e79 gold=15f8d1 success_rate=310b86 category=77de68 filter_mask=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/8005.png) |
+|  | ![](wiki/assets/items/8005.png) |
 | **Recipe id** | `1506` (`Item_Make`) |
 | **Makes** | [[wiki/items/8005-morion\|Morion]] × 1 |
 | **Gold** | 500,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -30,8 +30,8 @@ filter_mask: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/9005.png) | [[wiki/items/9005-piece-morion\|Piece : Morion]] | 100 |  |
-| ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 200 |  |
+| ![](wiki/assets/items/9005.png) | [[wiki/items/9005-piece-morion\|Piece : Morion]] | 100 |  |
+| ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 200 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

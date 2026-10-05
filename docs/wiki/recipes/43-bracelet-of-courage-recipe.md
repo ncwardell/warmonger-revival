@@ -20,7 +20,7 @@ raw: {"c28": 345}
 <!-- generated-keys: title=e2bcfa type=61613a id=0286dd sources=1c88ed result=43fb11 materials=22bab3 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=b9c2bc superior=c186d2 level=ac3478 raw=10c770 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/439.png) |
+|  | ![](wiki/assets/items/439.png) |
 | **Recipe id** | `43` (`Item_Make`) |
 | **Makes** | [[wiki/items/439-bracelet-of-courage\|Bracelet of Courage]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 345}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 23 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 23 |  |
 
 Unknown columns: `c28` = 345 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

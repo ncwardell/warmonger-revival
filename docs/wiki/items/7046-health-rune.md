@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=2c9f18 type=d36ca9 id=6246bb sources=93e1af name_key=6e776d kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=1b6453 stats=9b3a47 options=37a1ac icon=72aa53 obtained_from=381ca4 -->
 |  |  |
 |---|---|
-|  | ![Health Rune](../assets/items/7046.png) |
+|  | ![Health Rune](wiki/assets/items/7046.png) |
 | **Item id** | `7046` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

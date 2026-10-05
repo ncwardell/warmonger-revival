@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=df8fdb type=6143a1 id=02e0a5 sources=cc16d1 name_key=8515c5 duration=995f11 is_buff=b6589f stack_type=356a19 group=009cf5 effects=2d528d icon=88e6a0 applied_by=5081b5 -->
 |  |  |
 |---|---|
-|  | ![Tome of Magic Penetration (B) : Magic Penetration +4](../assets/buffs/2106.png) |
+|  | ![Tome of Magic Penetration (B) : Magic Penetration +4](wiki/assets/buffs/2106.png) |
 | **Buff id** | `2106` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

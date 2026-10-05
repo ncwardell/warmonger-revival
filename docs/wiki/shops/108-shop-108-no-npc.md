@@ -66,31 +66,31 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 1 | ![](../assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
-| 2 | ![](../assets/items/1908.png) | [[wiki/items/1908-dark-red-faded-passion-pattern\|Dark Red Faded Passion Pattern]] | 1 |  | Gold | 20 | 158 | 126 |
-| 3 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 4 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 5 | ![](../assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
-| 6 | ![](../assets/items/1908.png) | [[wiki/items/1908-dark-red-faded-passion-pattern\|Dark Red Faded Passion Pattern]] | 1 |  | Gold | 20 | 158 | 126 |
-| 7 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 8 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 9 | ![](../assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 10 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 11 | ![](../assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
-| 12 | ![](../assets/items/1908.png) | [[wiki/items/1908-dark-red-faded-passion-pattern\|Dark Red Faded Passion Pattern]] | 1 |  | Gold | 20 | 158 | 126 |
-| 13 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 14 | ![](../assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
-| 15 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 16 | ![](../assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
-| 17 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 18 | ![](../assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
-| 19 | ![](../assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 20 | ![](../assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 21 | ![](../assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | 1 |  | Gold | 130 | 1,029 | 819 |
-| 22 | ![](../assets/items/416.png) | [[wiki/items/416-spirit-gloves\|Spirit Gloves]] | 1 |  | Gold | 120 | 950 | 756 |
-| 23 | ![](../assets/items/433.png) | [[wiki/items/433-barrier-necklace\|Barrier Necklace]] | 1 |  | Gold | 100 | 792 | 630 |
-| 24 | ![](../assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 0 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 1 | ![](wiki/assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
+| 2 | ![](wiki/assets/items/1908.png) | [[wiki/items/1908-dark-red-faded-passion-pattern\|Dark Red Faded Passion Pattern]] | 1 |  | Gold | 20 | 158 | 126 |
+| 3 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 4 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 5 | ![](wiki/assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
+| 6 | ![](wiki/assets/items/1908.png) | [[wiki/items/1908-dark-red-faded-passion-pattern\|Dark Red Faded Passion Pattern]] | 1 |  | Gold | 20 | 158 | 126 |
+| 7 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 8 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 9 | ![](wiki/assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 10 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 11 | ![](wiki/assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
+| 12 | ![](wiki/assets/items/1908.png) | [[wiki/items/1908-dark-red-faded-passion-pattern\|Dark Red Faded Passion Pattern]] | 1 |  | Gold | 20 | 158 | 126 |
+| 13 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 14 | ![](wiki/assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
+| 15 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 16 | ![](wiki/assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
+| 17 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 18 | ![](wiki/assets/items/1905.png) | [[wiki/items/1905-dark-blue-faded-passion-pattern\|Dark blue Faded Passion Pattern]] | 1 |  | Gold | 80 | 633 | 504 |
+| 19 | ![](wiki/assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 20 | ![](wiki/assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 21 | ![](wiki/assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | 1 |  | Gold | 130 | 1,029 | 819 |
+| 22 | ![](wiki/assets/items/416.png) | [[wiki/items/416-spirit-gloves\|Spirit Gloves]] | 1 |  | Gold | 120 | 950 | 756 |
+| 23 | ![](wiki/assets/items/433.png) | [[wiki/items/433-barrier-necklace\|Barrier Necklace]] | 1 |  | Gold | 100 | 792 | 630 |
+| 24 | ![](wiki/assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | 1 |  | Gold | 150 | 1,188 | 945 |
 
 14 entries repeat an item already listed (the client shows every entry).
 

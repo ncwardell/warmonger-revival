@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=27366b type=d36ca9 id=b1b986 sources=49d103 name_key=655141 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=c0aba5 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Grassland seed](../assets/items/851.png) |
+|  | ![Grassland seed](wiki/assets/items/851.png) |
 | **Item id** | `851` |
 | **Kind** | Material (12) |
 | **Classes** | all |

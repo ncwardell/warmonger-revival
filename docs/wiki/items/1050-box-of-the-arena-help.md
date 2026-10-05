@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f31be4 type=d36ca9 id=ec8833 sources=097db9 name_key=67b3de kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d stats=97d170 icon=8689e0 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Box of the Arena Help](../assets/items/1050.png) |
+|  | ![Box of the Arena Help](wiki/assets/items/1050.png) |
 | **Item id** | `1050` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

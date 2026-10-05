@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3056.png) | [[wiki/items/3056-garon-s-belt\|Garon's Belt]] | 1 |  |
-| 1 | ![](../assets/items/3057.png) | [[wiki/items/3057-garon-s-bracelet\|Garon's Bracelet]] | 1 |  |
-| 2 | ![](../assets/items/3058.png) | [[wiki/items/3058-garon-s-ring\|Garon's Ring]] | 1 |  |
-| 3 | ![](../assets/items/3051.png) | [[wiki/items/3051-garon-s-helmet\|Garon's Helmet]] | 1 |  |
-| 4 | ![](../assets/items/3052.png) | [[wiki/items/3052-garon-s-armor\|Garon's Armor]] | 1 |  |
-| 5 | ![](../assets/items/3053.png) | [[wiki/items/3053-garon-s-gloves\|Garon's Gloves]] | 1 |  |
-| 6 | ![](../assets/items/3053.png) | [[wiki/items/3053-garon-s-gloves\|Garon's Gloves]] | 1 |  |
-| 7 | ![](../assets/items/3054.png) | [[wiki/items/3054-garon-s-shoes\|Garon's Shoes]] | 1 |  |
-| 8 | ![](../assets/items/3054.png) | [[wiki/items/3054-garon-s-shoes\|Garon's Shoes]] | 1 |  |
-| 9 | ![](../assets/items/3055.png) | [[wiki/items/3055-garon-s-orb\|Garon's Orb]] | 1 |  |
+| 0 | ![](wiki/assets/items/3056.png) | [[wiki/items/3056-garon-s-belt\|Garon's Belt]] | 1 |  |
+| 1 | ![](wiki/assets/items/3057.png) | [[wiki/items/3057-garon-s-bracelet\|Garon's Bracelet]] | 1 |  |
+| 2 | ![](wiki/assets/items/3058.png) | [[wiki/items/3058-garon-s-ring\|Garon's Ring]] | 1 |  |
+| 3 | ![](wiki/assets/items/3051.png) | [[wiki/items/3051-garon-s-helmet\|Garon's Helmet]] | 1 |  |
+| 4 | ![](wiki/assets/items/3052.png) | [[wiki/items/3052-garon-s-armor\|Garon's Armor]] | 1 |  |
+| 5 | ![](wiki/assets/items/3053.png) | [[wiki/items/3053-garon-s-gloves\|Garon's Gloves]] | 1 |  |
+| 6 | ![](wiki/assets/items/3053.png) | [[wiki/items/3053-garon-s-gloves\|Garon's Gloves]] | 1 |  |
+| 7 | ![](wiki/assets/items/3054.png) | [[wiki/items/3054-garon-s-shoes\|Garon's Shoes]] | 1 |  |
+| 8 | ![](wiki/assets/items/3054.png) | [[wiki/items/3054-garon-s-shoes\|Garon's Shoes]] | 1 |  |
+| 9 | ![](wiki/assets/items/3055.png) | [[wiki/items/3055-garon-s-orb\|Garon's Orb]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

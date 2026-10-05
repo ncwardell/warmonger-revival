@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=4c9860 type=6143a1 id=a75b91 sources=c5aa28 name_key=3b4456 duration=bdf5bf is_buff=b6589f stack_type=356a19 group=1b6453 effects=b3b8cb icon=c0fb59 applied_by=6e114f -->
 |  |  |
 |---|---|
-|  | ![Backstab : Increase movement speed](../assets/buffs/30421.png) |
+|  | ![Backstab : Increase movement speed](wiki/assets/buffs/30421.png) |
 | **Buff id** | `30421` |
 | **Duration** | 7 s (35 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

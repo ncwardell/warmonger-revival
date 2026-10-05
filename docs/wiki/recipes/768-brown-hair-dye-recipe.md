@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=8ea716 type=61613a id=ad2ad5 sources=2476c2 result=99d127 materials=1c477b gold=e3cbba success_rate=310b86 category=356a19 filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2307.png) |
+|  | ![](wiki/assets/items/2307.png) |
 | **Recipe id** | `768` (`Item_Make`) |
 | **Makes** | [[wiki/items/2307-brown-hair-dye\|Brown Hair Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/870.png) | [[wiki/items/870-extracted-peppermint\|Extracted Peppermint]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/870.png) | [[wiki/items/870-extracted-peppermint\|Extracted Peppermint]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2618-brown-hair-dye-recipe|recipe 2618]]
 

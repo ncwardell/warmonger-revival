@@ -27,7 +27,7 @@ obtained_from: []
 <!-- generated-keys: title=a5f2eb type=d36ca9 id=d656e6 sources=70df7a name_key=64cd49 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=365a69 stats=c7c413 options=96d3c9 icon=7e5517 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Christmas Set](../assets/items/2046.png) |
+|  | ![Christmas Set](wiki/assets/items/2046.png) |
 | **Item id** | `2046` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

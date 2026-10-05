@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=60f782 type=86a754 id=288214 sources=ccf5db name_key=a56143 desc_key=9d13d2 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=a7242f effect_kind=da4b92 effects=e939e8 damage_or_effect=b334ff visual=bf0d80 icon=ff62ba used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![King Deathhead Transformation](../assets/skills/20251.png) |
+|  | ![King Deathhead Transformation](wiki/assets/skills/20251.png) |
 | **Skill id** | `20251` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

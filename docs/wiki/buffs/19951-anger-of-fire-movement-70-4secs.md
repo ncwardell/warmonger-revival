@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=85df61 type=6143a1 id=8e44b5 sources=a7d603 name_key=b1fdd6 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=8e44b5 effects=bb6373 icon=574aef applied_by=91ace8 -->
 |  |  |
 |---|---|
-|  | ![Anger of fire : Movement +70 (4Secs)](../assets/buffs/19951.png) |
+|  | ![Anger of fire : Movement +70 (4Secs)](wiki/assets/buffs/19951.png) |
 | **Buff id** | `19951` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

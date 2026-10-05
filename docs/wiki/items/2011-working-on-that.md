@@ -28,7 +28,7 @@ obtained_from: []
 <!-- generated-keys: title=e42e4f type=d36ca9 id=32a70a sources=5f486e name_key=24dc59 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=088270 cost_pair=101f43 period=365a69 stats=97d170 options=b0771c icon=fb8627 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Working on that!](../assets/items/2011.png) |
+|  | ![Working on that!](wiki/assets/items/2011.png) |
 | **Item id** | `2011` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

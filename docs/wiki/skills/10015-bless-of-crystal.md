@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=5b2ac8 type=86a754 id=848f94 sources=de8e55 name_key=80941a desc_key=40ba98 kind=356a19 kind_name=9bc378 target=644925 range=fe5dbb cost=e4e7cf cooldown=e3989d effect_kind=da4b92 effects=c700db damage_or_effect=6fa0ab visual=9f9af0 icon=6b1db9 used_by=9dba09 -->
 |  |  |
 |---|---|
-|  | ![Bless of Crystal](../assets/skills/10015.png) |
+|  | ![Bless of Crystal](wiki/assets/skills/10015.png) |
 | **Skill id** | `10015` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 1 |

@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=2e1e0b type=d36ca9 id=3977dc sources=40a826 name_key=8944b3 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=093599 reinforce=da4b92 icon=b7bbb0 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Barrier Ring](../assets/items/468.png) |
+|  | ![Barrier Ring](wiki/assets/items/468.png) |
 | **Item id** | `468` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

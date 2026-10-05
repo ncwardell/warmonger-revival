@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=3a7f1e type=86a754 id=151704 sources=697c37 name_key=1ae1cf desc_key=e29e36 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=9fa5fb cooldown=752bf3 effect_kind=356a19 effects=c0aa4e damage_or_effect=a327b4 visual=020c48 icon=13fce1 used_by=b06368 -->
 |  |  |
 |---|---|
-|  | ![Water shield](../assets/skills/20153.png) |
+|  | ![Water shield](wiki/assets/skills/20153.png) |
 | **Skill id** | `20153` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

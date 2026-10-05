@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=e91db3 type=6143a1 id=e61dda sources=1a28c1 name_key=798a88 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=9738b5 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Quickness : Trigger](../assets/buffs/10150.png) |
+|  | ![Quickness : Trigger](wiki/assets/buffs/10150.png) |
 | **Buff id** | `10150` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

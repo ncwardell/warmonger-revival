@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=31d608 type=d36ca9 id=0d87fb sources=827a58 name_key=637541 kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 options=6cbd76 icon=51436c obtained_from=f72887 -->
 |  |  |
 |---|---|
-|  | ![Highly Concentrated Bomb](../assets/items/1408.png) |
+|  | ![Highly Concentrated Bomb](wiki/assets/items/1408.png) |
 | **Item id** | `1408` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

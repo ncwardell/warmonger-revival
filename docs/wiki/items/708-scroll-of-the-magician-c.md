@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=1aa3aa type=d36ca9 id=b6c3f8 sources=d37265 name_key=27230d kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8726f1 cost_pair=93e5d8 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=ba6191 cooldown_s=da4b92 cooldown_group=f6e112 stats=97d170 options=b5ab4f icon=ba2a0d obtained_from=206fe6 -->
 |  |  |
 |---|---|
-|  | ![Scroll of the Magician (C)](../assets/items/708.png) |
+|  | ![Scroll of the Magician (C)](wiki/assets/items/708.png) |
 | **Item id** | `708` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

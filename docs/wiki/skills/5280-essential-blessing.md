@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=8d9fe9 type=86a754 id=caeac1 sources=7597d8 name_key=686c45 desc_key=215caa kind=356a19 kind_name=9bc378 target=8b0de6 range=fe5dbb cost=58a4ca cooldown=133145 effect_kind=b6692e effects=12d1e7 damage_or_effect=ca9198 tooltip_formula=ef1c4b visual=a0d043 icon=3e4948 used_by=c07741 -->
 |  |  |
 |---|---|
-|  | ![Essential Blessing](../assets/skills/5280.png) |
+|  | ![Essential Blessing](wiki/assets/skills/5280.png) |
 | **Skill id** | `5280` |
 | **Kind** | active (1) |
 | **Target** | unit; ally; units: monster, player; up to 1 |

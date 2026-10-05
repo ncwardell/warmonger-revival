@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=6452b6 type=d36ca9 id=fbce66 sources=7df46a name_key=b72ec8 kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 options=a02fd5 icon=b5c79c obtained_from=fb86f4 -->
 |  |  |
 |---|---|
-|  | ![Powerful Remote Bomb](../assets/items/1414.png) |
+|  | ![Powerful Remote Bomb](wiki/assets/items/1414.png) |
 | **Item id** | `1414` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

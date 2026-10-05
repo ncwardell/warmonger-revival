@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=68b909 type=6143a1 id=711464 sources=cfe26f name_key=b5af52 duration=8c4b49 is_buff=b6589f stack_type=356a19 group=b6589f effects=0112b0 icon=f51da1 applied_by=d91568 -->
 |  |  |
 |---|---|
-|  | ![Aura of Demise : Damages enemies around you](../assets/buffs/10035.png) |
+|  | ![Aura of Demise : Damages enemies around you](wiki/assets/buffs/10035.png) |
 | **Buff id** | `10035` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

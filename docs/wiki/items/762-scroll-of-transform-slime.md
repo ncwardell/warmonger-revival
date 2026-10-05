@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=b7250e type=d36ca9 id=c99a2a sources=6f0b8e name_key=547da1 kind=b3f0c7 kind_name=7e307c classes=92d079 bind=2be88c price=be4b29 cost_pair=a0483d use_buff=c70dfb cooldown_s=da4b92 cooldown_group=bc33ea stats=97d170 options=4ead33 icon=d402c6 obtained_from=b006be -->
 |  |  |
 |---|---|
-|  | ![Scroll of Transform : (Slime)](../assets/items/762.png) |
+|  | ![Scroll of Transform : (Slime)](wiki/assets/items/762.png) |
 | **Item id** | `762` |
 | **Kind** | Spell Reinforcement Stone (19) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=8e7650 type=d36ca9 id=5d0fb6 sources=b192d7 name_key=768366 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=82ef93 cost_pair=495d63 stats=97d170 icon=50c7a9 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Purple](../assets/items/771.png) |
+|  | ![Crystal : Purple](wiki/assets/items/771.png) |
 | **Item id** | `771` |
 | **Kind** | Material (12) |
 | **Classes** | all |

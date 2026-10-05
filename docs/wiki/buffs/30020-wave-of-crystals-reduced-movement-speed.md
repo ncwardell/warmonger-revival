@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=a284b5 type=6143a1 id=a0d7b7 sources=51868f name_key=f965f9 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=ab68fc effects=f8a4f8 icon=29c012 applied_by=e4fdec -->
 |  |  |
 |---|---|
-|  | ![Wave of Crystals : Reduced Movement Speed](../assets/buffs/30020.png) |
+|  | ![Wave of Crystals : Reduced Movement Speed](wiki/assets/buffs/30020.png) |
 | **Buff id** | `30020` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

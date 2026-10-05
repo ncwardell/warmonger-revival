@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=ec91e7 type=86a754 id=505e83 sources=1d5d19 name_key=09fad5 desc_key=73b8f8 kind=356a19 kind_name=9bc378 target=47c86e range=b1d578 area=6d01a6 cost=7fa4df cooldown=a1ede3 delivery=15a656 effect_kind=da4b92 effects=24509f damage_or_effect=17714a tooltip_formula=2ed782 visual=05580c icon=e24f43 used_by=4ed818 -->
 |  |  |
 |---|---|
-|  | ![Skull king's Claw](../assets/skills/5150.png) |
+|  | ![Skull king's Claw](wiki/assets/skills/5150.png) |
 | **Skill id** | `5150` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 10 |

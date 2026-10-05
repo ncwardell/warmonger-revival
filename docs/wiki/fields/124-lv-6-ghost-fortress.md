@@ -42,8 +42,8 @@ dungeon: 124
 <!-- generated-keys: title=6a2ed2 type=7a94db id=f38cfe sources=e009f9 name_key=81700b kind=3e3f38 scene_type=77de68 max_users=ac3478 group=fc074d zones=3833c5 segments=8cb1a9 gates=4396bf connections=401abf npcs=97d170 monsters=0a5247 spawn_points=97d170 triggers=e14c14 dungeon=f38cfe -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 140](../assets/zones/140.png) |
-|  | ![(Lv 6) Ghost Fortress](../assets/dungeons/124.png) |
+|  | ![minimap of zone 140](wiki/assets/zones/140.png) |
+|  | ![(Lv 6) Ghost Fortress](wiki/assets/dungeons/124.png) |
 | **Field id** | `124` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

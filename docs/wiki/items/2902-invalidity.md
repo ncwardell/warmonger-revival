@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=76483d type=d36ca9 id=f5a62f sources=b532c8 name_key=1b84f7 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=a9983e cost_pair=9550b6 flags=356a19 no_sell=7cb6ef use_skill=07a85b cooldown_s=2d0c8a cooldown_group=c1dfd9 stats=97d170 options=5c511a icon=133f6e obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Invalidity](../assets/items/2902.png) |
+|  | ![Invalidity](wiki/assets/items/2902.png) |
 | **Item id** | `2902` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

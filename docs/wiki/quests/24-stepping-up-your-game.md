@@ -34,7 +34,7 @@ complete_talk: 719
 <!-- generated-keys: title=53c716 type=eb5b2b id=4d134b sources=7d00c1 name_key=6fa184 kind=b6589f kind_name=b3f808 classes=51f98f giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=d435a6 requires_bit=472b07 prev=6c9878 next=97d170 prerequisites=288542 stages=30caa7 objectives=b904e0 rewards=91cd22 offer_talk=395ea6 complete_talk=839501 -->
 |  |  |
 |---|---|
-|  | ![Stepping up your game](../assets/npcs/200.png) |
+|  | ![Stepping up your game](wiki/assets/npcs/200.png) |
 | **Quest id** | `24` |
 | **Kind** | Main (kind 0) |
 | **Classes** | Punisher |

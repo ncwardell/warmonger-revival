@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=932c50 type=86a754 id=1099f2 sources=622c40 name_key=c68cd0 desc_key=6ff9f5 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=89f997 cooldown=752bf3 effect_kind=b6589f effects=c92179 damage_or_effect=f29e9d visual=4551b2 icon=875e75 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Maximized Efficiency](../assets/skills/5198.png) |
+|  | ![Maximized Efficiency](wiki/assets/skills/5198.png) |
 | **Skill id** | `5198` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -30,7 +30,7 @@ complete_talk: 821
 <!-- generated-keys: title=a4656b type=eb5b2b id=761f22 sources=344fe6 name_key=e0d023 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=ad0cc6 offer_maps=15f2a7 bit=8e63fd requires_bit=08a352 prev=7b279c next=54c441 stages=a80fa1 objectives=4e43af rewards=c13c21 offer_talk=f2d28e complete_talk=fbbf19 -->
 |  |  |
 |---|---|
-|  | ![Innocence's recovery operation](../assets/npcs/200.png) |
+|  | ![Innocence's recovery operation](wiki/assets/npcs/200.png) |
 | **Quest id** | `41` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

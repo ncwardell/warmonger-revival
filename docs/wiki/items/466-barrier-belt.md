@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=756bd6 type=d36ca9 id=cf2f32 sources=06d9ed name_key=b30b68 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=795a26 reinforce=da4b92 icon=63228f obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Barrier Belt](../assets/items/466.png) |
+|  | ![Barrier Belt](wiki/assets/items/466.png) |
 | **Item id** | `466` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

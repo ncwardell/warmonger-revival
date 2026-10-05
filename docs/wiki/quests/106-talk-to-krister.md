@@ -30,7 +30,7 @@ offer_talk: 678
 <!-- generated-keys: title=8c4dfb type=eb5b2b id=7224f9 sources=e3ce5f name_key=37a6f7 kind=356a19 kind_name=0bac50 level=00652f giver=3fbcaa turn_in=847ad4 offer_maps=18e60d bit=fb6443 requires_bit=135224 automatic=5ffe53 prev=03785d next=97d170 prerequisites=34d94a stages=30caa7 objectives=049370 rewards=2c05c9 offer_talk=b2029b -->
 |  |  |
 |---|---|
-|  | ![Talk to Krister](../assets/npcs/219.png) |
+|  | ![Talk to Krister](wiki/assets/npcs/219.png) |
 | **Quest id** | `106` |
 | **Kind** | Sub (kind 1) |
 | **Level** | 25+ |

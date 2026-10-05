@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=ef77b5 type=86a754 id=ff4fcd sources=f390ed name_key=8964cc desc_key=623912 kind=356a19 kind_name=9bc378 target=644925 range=c1dfd9 cost=e4e7cf cooldown=e3989d effect_kind=b6589f effects=84d674 damage_or_effect=2ff808 tooltip_formula=194b75 visual=572e20 icon=6b4fc5 used_by=d866e2 -->
 |  |  |
 |---|---|
-|  | ![Blessing of Order](../assets/skills/5052.png) |
+|  | ![Blessing of Order](wiki/assets/skills/5052.png) |
 | **Skill id** | `5052` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 1 |

@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=ac338b type=d36ca9 id=bcdb6b sources=191756 name_key=0ebfbc kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=c4f310 cost_pair=809c9f stats=97d170 icon=ac6c1f obtained_from=153411 -->
 |  |  |
 |---|---|
-|  | ![Empty Flask (C)](../assets/items/834.png) |
+|  | ![Empty Flask (C)](wiki/assets/items/834.png) |
 | **Item id** | `834` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=1570cf type=d36ca9 id=5753ab sources=5cd5ce name_key=66b05e kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=15ffcd cost_pair=0a5b72 stats=97d170 icon=dc7970 obtained_from=6b2c0b -->
 |  |  |
 |---|---|
-|  | ![Worked Moonstone](../assets/items/862.png) |
+|  | ![Worked Moonstone](wiki/assets/items/862.png) |
 | **Item id** | `862` |
 | **Kind** | Material (12) |
 | **Classes** | all |

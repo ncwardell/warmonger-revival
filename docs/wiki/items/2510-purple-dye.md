@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=6ecee0 type=d36ca9 id=939a84 sources=e08468 name_key=67f489 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=edef53 icon=0abff1 obtained_from=cbf443 -->
 |  |  |
 |---|---|
-|  | ![Purple Dye](../assets/items/2510.png) |
+|  | ![Purple Dye](wiki/assets/items/2510.png) |
 | **Item id** | `2510` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

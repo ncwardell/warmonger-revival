@@ -34,7 +34,7 @@ complete_talk: 843
 <!-- generated-keys: title=953445 type=eb5b2b id=ccd049 sources=e66be1 name_key=b65f8a kind=356a19 kind_name=0bac50 giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b888b2 requires_bit=dbc0f0 prev=efaebd next=46b74f prerequisites=5c8a0f stages=0f733e objectives=470ba8 rewards=f31fb4 offer_talk=62362f complete_talk=c02b74 -->
 |  |  |
 |---|---|
-|  | ![Highly Concentrated Bomb Create](../assets/npcs/210.png) |
+|  | ![Highly Concentrated Bomb Create](wiki/assets/npcs/210.png) |
 | **Quest id** | `775` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

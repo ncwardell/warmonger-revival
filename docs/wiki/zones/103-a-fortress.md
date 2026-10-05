@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z103_00.dds"
 <!-- generated-keys: title=100fa9 type=c899cd id=934385 sources=e7cab0 name_kr=c3fc7a terrain=c4ee09 bounds=051649 size=a1cfbb segments=1e0c0b fields=6c3da9 minimap=de71e5 -->
 |  |  |
 |---|---|
-|  | ![minimap of A Fortress](../assets/zones/103.png) |
+|  | ![minimap of A Fortress](wiki/assets/zones/103.png) |
 | **Zone id** | `103` |
 | **ZoneDB name** | A_요새 (English gloss: A Fortress) |
 | **Terrain name** | `A_Town_01` |

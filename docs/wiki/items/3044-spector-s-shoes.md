@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=85f4a1 type=d36ca9 id=9753e6 sources=ddbc00 name_key=482741 kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=70c2ae set=ac3478 reinforce=92cfce icon=da0c86 obtained_from=9dfdb3 -->
 |  |  |
 |---|---|
-|  | ![Spector's Shoes](../assets/items/3044.png) |
+|  | ![Spector's Shoes](wiki/assets/items/3044.png) |
 | **Item id** | `3044` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

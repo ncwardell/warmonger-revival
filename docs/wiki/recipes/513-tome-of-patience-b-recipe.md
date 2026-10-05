@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=9518b1 type=61613a id=10d293 sources=74ec25 result=e00870 materials=934f33 gold=15aa0c success_rate=310b86 category=356a19 filter_mask=4e63ab level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/721.png) |
+|  | ![](wiki/assets/items/721.png) |
 | **Recipe id** | `513` (`Item_Make`) |
 | **Makes** | [[wiki/items/721-tome-of-patience-b\|Tome of Patience (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 20 |  |
-| ![](../assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
-| ![](../assets/items/840.png) | [[wiki/items/840-soft-leather\|Soft leather]] | 1 |  |
+| ![](wiki/assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 20 |  |
+| ![](wiki/assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
+| ![](wiki/assets/items/840.png) | [[wiki/items/840-soft-leather\|Soft leather]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2305-tome-of-patience-b-recipe|recipe 2305]]
 

@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=482a95 type=d36ca9 id=884740 sources=cc4ea0 name_key=3b8cd9 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=a0f8d4 options=677f26 icon=0552ee obtained_from=c5e7fe -->
 |  |  |
 |---|---|
-|  | ![Bear family Set](../assets/items/2075.png) |
+|  | ![Bear family Set](wiki/assets/items/2075.png) |
 | **Item id** | `2075` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

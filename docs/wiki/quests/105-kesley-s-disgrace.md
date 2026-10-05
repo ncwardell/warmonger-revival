@@ -28,7 +28,7 @@ offer_talk: 675
 <!-- generated-keys: title=64c742 type=eb5b2b id=e114c4 sources=f68554 name_key=c2d13e kind=b6589f kind_name=b3f808 giver=7abdb8 turn_in=847ad4 offer_maps=15f2a7 bit=98fbc4 requires_bit=12c6fc automatic=5ffe53 prev=5c6c1d next=f7cf3c stages=30caa7 objectives=2be88c objectives_client=6a1975 rewards=e15e5b offer_talk=fcd72f -->
 |  |  |
 |---|---|
-|  | ![Kesley's Disgrace](../assets/npcs/210.png) |
+|  | ![Kesley's Disgrace](wiki/assets/npcs/210.png) |
 | **Quest id** | `105` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

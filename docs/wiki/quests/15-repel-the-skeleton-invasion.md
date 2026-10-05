@@ -32,7 +32,7 @@ complete_talk: 654
 <!-- generated-keys: title=532a4c type=eb5b2b id=f1abd6 sources=af8ac1 name_key=9d0103 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=fa35e1 requires_bit=f6e112 prev=71a868 next=2cc013 stages=642aaf objectives=ecdf9c rewards=af45f4 offer_talk=e1c03d complete_talk=db00e4 -->
 |  |  |
 |---|---|
-|  | ![Repel the Skeleton Invasion](../assets/npcs/200.png) |
+|  | ![Repel the Skeleton Invasion](wiki/assets/npcs/200.png) |
 | **Quest id** | `15` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

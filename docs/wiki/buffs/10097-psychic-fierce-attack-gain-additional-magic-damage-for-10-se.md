@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=a34269 type=6143a1 id=4d64de sources=a3e2cf name_key=ef73f5 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=a263ae icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Psychic fierce Attack :Gain additional Magic damage for 10 seconds](../assets/buffs/10097.png) |
+|  | ![Psychic fierce Attack :Gain additional Magic damage for 10 seconds](wiki/assets/buffs/10097.png) |
 | **Buff id** | `10097` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

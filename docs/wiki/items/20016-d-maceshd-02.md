@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=b1c4fe type=d36ca9 id=d5880e sources=2943a5 name_key=76ba7a kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=667be5 stats=c45f77 options=40728b skills=97d170 reinforce=17ba07 icon=dc7c9a obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![D-MaceShd-02](../assets/items/20016.png) |
+|  | ![D-MaceShd-02](wiki/assets/items/20016.png) |
 | **Item id** | `20016` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

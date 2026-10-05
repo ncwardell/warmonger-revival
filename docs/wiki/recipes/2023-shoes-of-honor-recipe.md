@@ -20,7 +20,7 @@ raw: {"c28": 195}
 <!-- generated-keys: title=4a4f2a type=61613a id=445cd2 sources=371387 result=e1a100 materials=abbb5c gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=96c62c superior=e42cf1 level=356a19 raw=0d675d -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/419.png) |
+|  | ![](wiki/assets/items/419.png) |
 | **Recipe id** | `2023` (`Item_Make`) |
 | **Makes** | [[wiki/items/419-shoes-of-honor\|Shoes of Honor]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 195}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 13 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 13 |  |
 
 Unknown columns: `c28` = 195 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

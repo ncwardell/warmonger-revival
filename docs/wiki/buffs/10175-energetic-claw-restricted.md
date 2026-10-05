@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=ce70c2 type=6143a1 id=7a7d16 sources=a7eb62 name_key=030d5b duration=0aac5a is_buff=b6589f stack_type=356a19 group=ac3478 effects=97d170 icon=e24f43 applied_by=13bc94 -->
 |  |  |
 |---|---|
-|  | ![Energetic Claw : Restricted](../assets/buffs/10175.png) |
+|  | ![Energetic Claw : Restricted](wiki/assets/buffs/10175.png) |
 | **Buff id** | `10175` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

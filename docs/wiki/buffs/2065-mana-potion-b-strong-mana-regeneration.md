@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=2becae type=6143a1 id=aa9127 sources=d7de20 name_key=2e1b29 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=a665b4 icon=33f4fc applied_by=e75755 -->
 |  |  |
 |---|---|
-|  | ![Mana Potion (B) : Strong Mana regeneration](../assets/buffs/2065.png) |
+|  | ![Mana Potion (B) : Strong Mana regeneration](wiki/assets/buffs/2065.png) |
 | **Buff id** | `2065` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

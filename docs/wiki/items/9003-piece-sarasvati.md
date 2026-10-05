@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=33089d type=d36ca9 id=fd725f sources=339473 name_key=24dd01 kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=ce357c obtained_from=839bd2 -->
 |  |  |
 |---|---|
-|  | ![Piece : Sarasvati](../assets/items/9003.png) |
+|  | ![Piece : Sarasvati](wiki/assets/items/9003.png) |
 | **Item id** | `9003` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

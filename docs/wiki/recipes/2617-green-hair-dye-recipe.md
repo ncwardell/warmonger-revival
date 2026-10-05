@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=7e7085 type=61613a id=9b612f sources=1daad0 result=08aa2d materials=adedbe gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2306.png) |
+|  | ![](wiki/assets/items/2306.png) |
 | **Recipe id** | `2617` (`Item_Make`) |
 | **Makes** | [[wiki/items/2306-green-hair-dye\|Green Hair Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/869.png) | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/869.png) | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/767-green-hair-dye-recipe|recipe 767]]
 

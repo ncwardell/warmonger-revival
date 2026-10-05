@@ -28,7 +28,7 @@ observed:
 <!-- generated-keys: title=06ceac type=86a754 id=2023e0 sources=dd81f9 name_key=2dc197 desc_key=808bd8 kind=356a19 kind_name=9bc378 target=35e077 range=3028f5 area=febbd1 cost=4e6c0e cooldown=d97414 effect_kind=b6589f effects=21a7fc damage_or_effect=bf21a9 icon=413f00 used_by=97d170 tp=defae4 observed=fbb03a -->
 |  |  |
 |---|---|
-|  | ![Remote Bomb](../assets/skills/4527.png) |
+|  | ![Remote Bomb](wiki/assets/skills/4527.png) |
 | **Skill id** | `4527` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: player, structure; up to 1 |

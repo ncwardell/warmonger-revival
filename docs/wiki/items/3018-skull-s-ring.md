@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=02c811 type=d36ca9 id=f5e707 sources=a9dc5f name_key=6a7159 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=225ab5 set=da4b92 reinforce=92cfce icon=c28d91 obtained_from=57ae3d -->
 |  |  |
 |---|---|
-|  | ![Skull's Ring](../assets/items/3018.png) |
+|  | ![Skull's Ring](wiki/assets/items/3018.png) |
 | **Item id** | `3018` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

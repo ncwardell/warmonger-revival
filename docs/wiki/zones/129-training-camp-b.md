@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z129_00.dds"
 <!-- generated-keys: title=487a7d type=c899cd id=8b7471 sources=dd8c77 name_kr=b78329 terrain=fcbdc7 bounds=7ac8b0 size=114466 segments=a9a20c fields=5877c3 minimap=d056e3 -->
 |  |  |
 |---|---|
-|  | ![minimap of Training Camp B](../assets/zones/129.png) |
+|  | ![minimap of Training Camp B](wiki/assets/zones/129.png) |
 | **Zone id** | `129` |
 | **ZoneDB name** | 캠핑장_B (English gloss: Training Camp B) |
 | **Terrain name** | `B_campingsite` |

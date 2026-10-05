@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=e1193f type=6143a1 id=ac2101 sources=bc2538 name_key=23f76f duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=a0b2cd icon=8d2bf4 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Incredible Health : Health will be increased by 20% of your Mana.](../assets/buffs/10322.png) |
+|  | ![Incredible Health : Health will be increased by 20% of your Mana.](wiki/assets/buffs/10322.png) |
 | **Buff id** | `10322` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

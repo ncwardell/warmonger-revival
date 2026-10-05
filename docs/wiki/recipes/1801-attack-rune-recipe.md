@@ -19,7 +19,7 @@ raw: {"c28": 200}
 <!-- generated-keys: title=6ba2c6 type=61613a id=775ea0 sources=4cf738 result=b915aa materials=332c7e gold=f8237d success_rate=310b86 category=1b6453 filter_mask=356a19 raw=fc6d8f -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7002.png) |
+|  | ![](wiki/assets/items/7002.png) |
 | **Recipe id** | `1801` (`Item_Make`) |
 | **Makes** | [[wiki/items/7002-attack-rune\|Attack Rune]] × 1 |
 | **Gold** | 5,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,8 +31,8 @@ raw: {"c28": 200}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
-| ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 2 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 2 |  |
 
 Unknown columns: `c28` = 200 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

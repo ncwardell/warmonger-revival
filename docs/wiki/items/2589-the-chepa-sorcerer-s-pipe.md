@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=9a134f type=d36ca9 id=095fb5 sources=429c5d name_key=8434a5 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=d42b38 obtained_from=0efa6f -->
 |  |  |
 |---|---|
-|  | ![The Chepa Sorcerer's Pipe](../assets/items/2589.png) |
+|  | ![The Chepa Sorcerer's Pipe](wiki/assets/items/2589.png) |
 | **Item id** | `2589` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

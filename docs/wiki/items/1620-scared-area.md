@@ -22,7 +22,7 @@ obtained_from: []
 <!-- generated-keys: title=1bc1d5 type=d36ca9 id=0c16bf sources=fc06d3 name_key=5ac2f1 kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=c69e3a icon=38f038 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Scared Area](../assets/items/1620.png) |
+|  | ![Scared Area](wiki/assets/items/1620.png) |
 | **Item id** | `1620` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

@@ -31,7 +31,7 @@ positions:
 <!-- generated-keys: title=2a0552 type=3664ce id=0588f5 sources=91f6be name_key=47bcc5 title_key=9f8371 npc_title=1bd231 category=e1822d class_mask=da4b92 model=dd500e scale=aa8f28 functions=7d0bc3 role=1bd231 shop=fe5dbb talk_key=12d6a8 portrait=7348e7 map=b37f6d x=f85af8 z=37c15b positions=f098d0 -->
 |  |  |
 |---|---|
-|  | ![Owen](../assets/npcs/337.png) |
+|  | ![Owen](wiki/assets/npcs/337.png) |
 | **Unit id** | `337` |
 | **Title** | Member of Red Union |
 | **Category** | NPC (category 50) |

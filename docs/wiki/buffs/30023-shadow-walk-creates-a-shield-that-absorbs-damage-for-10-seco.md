@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=a0e62f type=6143a1 id=426cc0 sources=57b4d8 name_key=98b941 duration=6c749d is_buff=b6589f stack_type=356a19 group=490a2b effects=7823fa icon=67ccf4 applied_by=dc08de -->
 |  |  |
 |---|---|
-|  | ![Shadow Walk: Creates a shield that absorbs Damage for 10 seconds.](../assets/buffs/30023.png) |
+|  | ![Shadow Walk: Creates a shield that absorbs Damage for 10 seconds.](wiki/assets/buffs/30023.png) |
 | **Buff id** | `30023` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

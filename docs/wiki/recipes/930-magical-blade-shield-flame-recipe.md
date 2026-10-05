@@ -20,7 +20,7 @@ level: 3
 <!-- generated-keys: title=b2713c type=61613a id=5cff99 sources=4c30da result=099c15 materials=2187e0 gold=409e95 success_rate=af3e13 category=da4b92 filter_mask=5c54ba level=77de68 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/10005.png) |
+|  | ![](wiki/assets/items/10005.png) |
 | **Recipe id** | `930` (`Item_Make`) |
 | **Makes** | [[wiki/items/10005-magical-blade-shield-flame\|Magical Blade Shield : Flame]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 3
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2758.png) | [[wiki/items/2758-the-arch-devil-akasha-s-sealed-weapon\|The Arch devil Akasha's Sealed Weapon]] | 1 |  |
-| ![](../assets/items/2708.png) | [[wiki/items/2708-horn-of-akasha\|Horn of Akasha]] | 1 |  |
-| ![](../assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 2 |  |
+| ![](wiki/assets/items/2758.png) | [[wiki/items/2758-the-arch-devil-akasha-s-sealed-weapon\|The Arch devil Akasha's Sealed Weapon]] | 1 |  |
+| ![](wiki/assets/items/2708.png) | [[wiki/items/2708-horn-of-akasha\|Horn of Akasha]] | 1 |  |
+| ![](wiki/assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

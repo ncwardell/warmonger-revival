@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=31b9a3 type=6143a1 id=7dd1c7 sources=b1a670 name_key=962c0e duration=995f11 is_buff=b6589f stack_type=356a19 group=88b726 effects=3c8177 icon=d885bb applied_by=27fc28 -->
 |  |  |
 |---|---|
-|  | ![Flask of Tenacity (A) : Tenacity +30, Mana Steal with each attack +6](../assets/buffs/2131.png) |
+|  | ![Flask of Tenacity (A) : Tenacity +30, Mana Steal with each attack +6](wiki/assets/buffs/2131.png) |
 | **Buff id** | `2131` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

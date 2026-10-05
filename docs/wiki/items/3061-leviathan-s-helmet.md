@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=a4e934 type=d36ca9 id=831a25 sources=6f9423 name_key=76278f kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=5d0217 set=0ade7c reinforce=92cfce icon=5e9a42 obtained_from=de7732 -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Helmet](../assets/items/3061.png) |
+|  | ![Leviathan's Helmet](wiki/assets/items/3061.png) |
 | **Item id** | `3061` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

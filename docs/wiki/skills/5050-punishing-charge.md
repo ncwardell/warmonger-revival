@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=92808c type=86a754 id=9b248b sources=031cae name_key=ee2b6e desc_key=852a6d kind=356a19 kind_name=9bc378 target=6bbbc3 range=902ba3 area=fbbe31 cost=deac18 cooldown=a93f07 movement=5f1488 effect_kind=b6589f effects=653d1b damage_or_effect=81fcc5 requirements=79f67e visual=94940e icon=83e0e4 used_by=54ee05 -->
 |  |  |
 |---|---|
-|  | ![Punishing Charge](../assets/skills/5050.png) |
+|  | ![Punishing Charge](wiki/assets/skills/5050.png) |
 | **Skill id** | `5050` |
 | **Kind** | active (1) |
 | **Target** | ground; self, ally; units: monster, player; up to 1 |

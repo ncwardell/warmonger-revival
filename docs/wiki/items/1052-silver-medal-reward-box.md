@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=6f3816 type=d36ca9 id=6896dd sources=b8c7bf name_key=f063d0 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=14e6a2 cost_pair=d51339 flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=de7119 obtained_from=268bb2 -->
 |  |  |
 |---|---|
-|  | ![(Silver) Medal Reward Box](../assets/items/1052.png) |
+|  | ![(Silver) Medal Reward Box](wiki/assets/items/1052.png) |
 | **Item id** | `1052` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

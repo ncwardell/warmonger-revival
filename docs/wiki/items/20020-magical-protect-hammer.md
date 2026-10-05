@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=6f6324 type=d36ca9 id=ef5cf4 sources=3a171e name_key=a408d3 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=511a41 stats=db11c4 options=6b0d6c skills=ea2938 reinforce=17ba07 icon=ed425f obtained_from=18718d -->
 |  |  |
 |---|---|
-|  | ![Magical Protect Hammer](../assets/items/20020.png) |
+|  | ![Magical Protect Hammer](wiki/assets/items/20020.png) |
 | **Item id** | `20020` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

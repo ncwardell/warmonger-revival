@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=f2d053 type=6143a1 id=da5e05 sources=844613 name_key=81f0a7 duration=870e64 is_buff=b6589f stack_type=356a19 group=17ba07 effects=97d170 icon=a9a294 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Invincible buff when moving Abyss](../assets/buffs/952.png) |
+|  | ![Invincible buff when moving Abyss](wiki/assets/buffs/952.png) |
 | **Buff id** | `952` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

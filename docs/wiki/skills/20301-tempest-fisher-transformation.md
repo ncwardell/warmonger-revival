@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=458b00 type=86a754 id=de6928 sources=9801ec name_key=2219d2 desc_key=666219 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=a7242f effect_kind=da4b92 effects=2b388d damage_or_effect=b31ccc visual=3af0af icon=ebd420 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Tempest Fisher Transformation](../assets/skills/20301.png) |
+|  | ![Tempest Fisher Transformation](wiki/assets/skills/20301.png) |
 | **Skill id** | `20301` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=a4442b type=d36ca9 id=656178 sources=2a5c31 name_key=96fcb1 kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=00f44d cost_pair=c5bac5 stats=97d170 options=de7a02 icon=08481d obtained_from=485fd9 -->
 |  |  |
 |---|---|
-|  | ![White Hair Dye](../assets/items/2305.png) |
+|  | ![White Hair Dye](wiki/assets/items/2305.png) |
 | **Item id** | `2305` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

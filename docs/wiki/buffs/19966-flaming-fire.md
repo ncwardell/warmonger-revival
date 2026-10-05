@@ -23,7 +23,7 @@ applied_by:
 <!-- generated-keys: title=7ac68a type=6143a1 id=4cb51d sources=eb3256 name_key=2d0ee6 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=e1ecdf icon=23f487 applied_by=1ae239 -->
 |  |  |
 |---|---|
-|  | ![Flaming fire](../assets/buffs/19966.png) |
+|  | ![Flaming fire](wiki/assets/buffs/19966.png) |
 | **Buff id** | `19966` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -20,7 +20,7 @@ level: 5
 <!-- generated-keys: title=e7b767 type=61613a id=310474 sources=cdc2af result=c46731 materials=dfde7c gold=8a12a3 success_rate=310b86 category=1b6453 filter_mask=da4b92 level=ac3478 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7202.png) |
+|  | ![](wiki/assets/items/7202.png) |
 | **Recipe id** | `1821` (`Item_Make`) |
 | **Makes** | [[wiki/items/7202-critical-strike-rune\|Critical Strike (%) Rune]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 5
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
-| ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 5 |  |
+| ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 5 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

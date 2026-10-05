@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=f6c322 type=6143a1 id=7205db sources=c30158 name_key=d9ce9d duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=4b6f0c icon=7689a5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Gain 20 Ability Power](../assets/buffs/10086.png) |
+|  | ![Gain 20 Ability Power](wiki/assets/buffs/10086.png) |
 | **Buff id** | `10086` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

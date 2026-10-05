@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=083c06 type=d36ca9 id=d25c8d sources=ed0739 name_key=256279 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 weapon_base=1f1362 stats=97d170 options=3653b5 skills=b09239 reinforce=12c6fc icon=23f487 obtained_from=32091a -->
 |  |  |
 |---|---|
-|  | ![Morion](../assets/items/8005.png) |
+|  | ![Morion](wiki/assets/items/8005.png) |
 | **Item id** | `8005` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

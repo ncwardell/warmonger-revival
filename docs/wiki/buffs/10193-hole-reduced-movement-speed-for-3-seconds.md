@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=00502b type=6143a1 id=d705ed sources=01a97e name_key=e6a009 duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=9835a6 applied_by=3f2602 -->
 |  |  |
 |---|---|
-|  | ![Hole : Reduced Movement Speed for 3 seconds](../assets/buffs/10193.png) |
+|  | ![Hole : Reduced Movement Speed for 3 seconds](wiki/assets/buffs/10193.png) |
 | **Buff id** | `10193` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

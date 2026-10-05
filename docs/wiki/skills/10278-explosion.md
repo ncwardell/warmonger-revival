@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=472ab8 type=86a754 id=d3ea5d sources=b1d53e name_key=a17db5 desc_key=c9f360 kind=356a19 kind_name=9bc378 target=d1cc1b range=ac3478 area=d82541 cost=2be88c cooldown=9ded33 effect_kind=da4b92 effects=896aa6 damage_or_effect=7688b4 visual=15a17a icon=1aeac2 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Explosion](../assets/skills/10278.png) |
+|  | ![Explosion](wiki/assets/skills/10278.png) |
 | **Skill id** | `10278` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

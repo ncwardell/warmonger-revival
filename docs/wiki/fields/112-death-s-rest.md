@@ -18,7 +18,7 @@ spawn_points: []
 <!-- generated-keys: title=5991de type=7a94db id=601ca9 sources=44562f name_key=5ed3e6 kind=2be88c zones=d4ee27 segments=14e8a7 connections=97d170 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 122](../assets/zones/122.png) |
+|  | ![minimap of zone 122](wiki/assets/zones/122.png) |
 | **Field id** | `112` |
 | **Zones** | [[wiki/zones/122-abyss-lv4-112-death-s-rest\|Abyss LV4 112 (Death's Rest)]] |
 | **Terrain segments** | `ZP01_11` |

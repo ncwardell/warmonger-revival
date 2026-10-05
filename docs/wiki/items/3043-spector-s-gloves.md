@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=9b947e type=d36ca9 id=ebbaf7 sources=d7bef8 name_key=7a9560 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=187d89 set=ac3478 reinforce=92cfce icon=38d182 obtained_from=a10ea9 -->
 |  |  |
 |---|---|
-|  | ![Spector's Gloves](../assets/items/3043.png) |
+|  | ![Spector's Gloves](wiki/assets/items/3043.png) |
 | **Item id** | `3043` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

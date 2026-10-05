@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=a964aa type=6143a1 id=ca4ef2 sources=972666 name_key=8811bf duration=8c4b49 is_buff=b6589f stack_type=356a19 group=b6589f effects=6a4769 icon=8f0410 applied_by=bb2b98 -->
 |  |  |
 |---|---|
-|  | ![Wings of Westerly : Increased Ability Power, Armor and Magic Resistance](../assets/buffs/30021.png) |
+|  | ![Wings of Westerly : Increased Ability Power, Armor and Magic Resistance](wiki/assets/buffs/30021.png) |
 | **Buff id** | `30021` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

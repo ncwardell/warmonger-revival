@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=d28c51 type=6143a1 id=bc1a73 sources=a8e5f6 name_key=39bb02 duration=995f11 is_buff=b6589f stack_type=356a19 group=d32f6a effects=ddb9d3 icon=14ae05 applied_by=45e198 -->
 |  |  |
 |---|---|
-|  | ![Scroll of Reduced Area Damage (B) : Strong protection from Area Damage.](../assets/buffs/2094.png) |
+|  | ![Scroll of Reduced Area Damage (B) : Strong protection from Area Damage.](wiki/assets/buffs/2094.png) |
 | **Buff id** | `2094` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

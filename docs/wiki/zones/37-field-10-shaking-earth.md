@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z37_00.dds"
 <!-- generated-keys: title=2d6a44 type=c899cd id=cb7a1d sources=f7bb3b name_kr=975fb9 terrain=654a1f bounds=321da0 size=114466 segments=3b3df4 fields=e9310b minimap=3a887f -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 10 (Shaking Earth)](../assets/zones/37.png) |
+|  | ![minimap of Field 10 (Shaking Earth)](wiki/assets/zones/37.png) |
 | **Zone id** | `37` |
 | **ZoneDB name** | 필드_10 (English gloss: Field 10 (Shaking Earth)) |
 | **Terrain name** | `10` |

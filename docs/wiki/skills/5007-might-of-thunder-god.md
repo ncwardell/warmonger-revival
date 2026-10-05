@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=bf802b type=86a754 id=e30861 sources=0b7ae9 name_key=4692f4 desc_key=b0a71e kind=356a19 kind_name=9bc378 target=138a60 range=902ba3 area=6d01a6 cost=ff5a60 cooldown=7d0c8c delivery=4fe5f3 effect_kind=da4b92 effects=3cbe0e damage_or_effect=73d944 tooltip_formula=9f723b visual=7224f9 icon=62f758 used_by=6786d7 -->
 |  |  |
 |---|---|
-|  | ![Might of Thunder God](../assets/skills/5007.png) |
+|  | ![Might of Thunder God](wiki/assets/skills/5007.png) |
 | **Skill id** | `5007` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 12 |

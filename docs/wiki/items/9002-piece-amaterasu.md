@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=7908a3 type=d36ca9 id=c0af30 sources=686bde name_key=e4df59 kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=d35c1c obtained_from=839bd2 -->
 |  |  |
 |---|---|
-|  | ![Piece : Amaterasu](../assets/items/9002.png) |
+|  | ![Piece : Amaterasu](wiki/assets/items/9002.png) |
 | **Item id** | `9002` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=78f3d3 type=6143a1 id=151704 sources=3217dd name_key=bf4077 duration=6c749d is_buff=b6589f stack_type=356a19 group=151704 effects=01abaf icon=13fce1 applied_by=f9a6f1 -->
 |  |  |
 |---|---|
-|  | ![Water shield : Creates a absorvs damage for 10 seconds](../assets/buffs/20153.png) |
+|  | ![Water shield : Creates a absorvs damage for 10 seconds](wiki/assets/buffs/20153.png) |
 | **Buff id** | `20153` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

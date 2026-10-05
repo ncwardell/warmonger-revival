@@ -28,7 +28,7 @@ time_limit_s: 1200
 <!-- generated-keys: title=6a2ed2 type=3e3f38 id=f38cfe sources=3e10ee field=f38cfe max_users=ac3478 level=c1dfd9 entry_cost=215a89 event=7cb6ef shown_rewards=51a1e7 c17=aca6d6 image=41ca94 dungeon_slots=e54862 boss=d1729a gear_tier=7b5982 gathering=020cf6 time_limit_s=73ee49 -->
 |  |  |
 |---|---|
-|  | ![(Lv 6) Ghost Fortress](../assets/dungeons/124.png) |
+|  | ![(Lv 6) Ghost Fortress](wiki/assets/dungeons/124.png) |
 | **Field** | [[wiki/fields/124-lv-6-ghost-fortress\|(Lv 6) Ghost Fortress (field 124)]] |
 | **Level** | 6 |
 | **Gear tier dropped** | T2 (guides) |

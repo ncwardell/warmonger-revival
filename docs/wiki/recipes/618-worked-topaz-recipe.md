@@ -18,7 +18,7 @@ level: 20
 <!-- generated-keys: title=5a1fb3 type=61613a id=ff6d1d sources=9c218f result=631d47 materials=0c21cb gold=7507d4 success_rate=310b86 category=356a19 filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/864.png) |
+|  | ![](wiki/assets/items/864.png) |
 | **Recipe id** | `618` (`Item_Make`) |
 | **Makes** | [[wiki/items/864-worked-topaz\|Worked Topaz]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 20
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 5 |  |
+| ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2418-worked-topaz-recipe|recipe 2418]]
 

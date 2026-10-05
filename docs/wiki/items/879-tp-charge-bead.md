@@ -26,7 +26,7 @@ obtained_from: []
 <!-- generated-keys: title=5aa726 type=d36ca9 id=339e2e sources=239288 name_key=e679b9 kind=12c6fc kind_name=f6a320 classes=92d079 bind=2be88c price=9aa5c8 cost_pair=ca1927 flags=356a19 no_sell=7cb6ef cooldown_s=e26973 stats=97d170 options=53ddca icon=8f6ec7 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![TP Charge bead](../assets/items/879.png) |
+|  | ![TP Charge bead](wiki/assets/items/879.png) |
 | **Item id** | `879` |
 | **Kind** | TP Acquirement (22) |
 | **Classes** | all |

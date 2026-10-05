@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=f126f7 type=d36ca9 id=45939c sources=6a851f name_key=8c7a45 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=6bb6ce obtained_from=f99210 -->
 |  |  |
 |---|---|
-|  | ![Bee Needle](../assets/items/2552.png) |
+|  | ![Bee Needle](wiki/assets/items/2552.png) |
 | **Item id** | `2552` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

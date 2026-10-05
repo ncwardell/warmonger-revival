@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=7f5292 type=61613a id=9d94ce sources=83b6db result=0f29c3 materials=295d8f gold=15aa0c success_rate=310b86 category=356a19 filter_mask=be4de6 level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/745.png) |
+|  | ![](wiki/assets/items/745.png) |
 | **Recipe id** | `531` (`Item_Make`) |
 | **Makes** | [[wiki/items/745-elixir-of-vampirism-b\|Elixir of Vampirism (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 20 |  |
-| ![](../assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
-| ![](../assets/items/839.png) | [[wiki/items/839-wild-herb\|Wild herb]] | 1 |  |
+| ![](wiki/assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 20 |  |
+| ![](wiki/assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
+| ![](wiki/assets/items/839.png) | [[wiki/items/839-wild-herb\|Wild herb]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2311-elixir-of-vampirism-b-recipe|recipe 2311]]
 

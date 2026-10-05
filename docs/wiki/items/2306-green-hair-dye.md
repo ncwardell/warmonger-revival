@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=96873f type=d36ca9 id=3c13c8 sources=277b64 name_key=d704b9 kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=0f1b94 icon=03e317 obtained_from=03f67f -->
 |  |  |
 |---|---|
-|  | ![Green Hair Dye](../assets/items/2306.png) |
+|  | ![Green Hair Dye](wiki/assets/items/2306.png) |
 | **Item id** | `2306` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

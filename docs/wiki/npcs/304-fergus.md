@@ -27,7 +27,7 @@ z: null
 <!-- generated-keys: title=7835ac type=3664ce id=79816e sources=6d1df2 name_key=c4bc8f title_key=b32d2a npc_title=be7e6f category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=d62af5 role=be7e6f talk_key=2e7f47 portrait=d2d345 quests=89790e quest_fields=6c3da9 map=775bc5 x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Fergus](../assets/npcs/304.png) |
+|  | ![Fergus](wiki/assets/npcs/304.png) |
 | **Unit id** | `304` |
 | **Title** | Gears Decomposer |
 | **Category** | NPC (category 50) |

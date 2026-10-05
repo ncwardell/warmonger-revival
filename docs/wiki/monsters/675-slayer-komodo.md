@@ -31,7 +31,7 @@ spawn_fields: [123]
 <!-- generated-keys: title=3c5ce8 type=9bbc46 id=fcd72f sources=ff21ae name_key=3ee2ec category=c1dfd9 class_mask=356a19 kill_group=d5483a model=35e995 model_name=18dd57 model_path=1d7960 scale=aa8f28 radius=356a19 sounds=9e090c hero=0ade7c boss_of=4feada dungeon_rewards=99d97e quest_targets=d6820c quest_drops=e2f35d spawn_fields=4feada -->
 |  |  |
 |---|---|
-|  | ![Slayer Komodo](../assets/monsters/675.png) |
+|  | ![Slayer Komodo](wiki/assets/monsters/675.png) |
 | **Unit id** | `675` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

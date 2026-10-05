@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z58_00.dds"
 <!-- generated-keys: title=007015 type=c899cd id=667be5 sources=98434d name_kr=0ca997 terrain=acb762 bounds=11d979 size=114466 segments=e65663 fields=429a2a minimap=f04966 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 38 (Angry River - Lower Region)](../assets/zones/58.png) |
+|  | ![minimap of Field 38 (Angry River - Lower Region)](wiki/assets/zones/58.png) |
 | **Zone id** | `58` |
 | **ZoneDB name** | 필드_38 (English gloss: Field 38 (Angry River - Lower Region)) |
 | **Terrain name** | `38` |

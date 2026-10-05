@@ -96,7 +96,7 @@ obtained_from:
 <!-- generated-keys: title=e93edc type=d36ca9 id=259e58 sources=b71cf1 name_key=38ff8e kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=eac6e9 obtained_from=1685fd -->
 |  |  |
 |---|---|
-|  | ![Faded Passion fragments](../assets/items/1900.png) |
+|  | ![Faded Passion fragments](wiki/assets/items/1900.png) |
 | **Item id** | `1900` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

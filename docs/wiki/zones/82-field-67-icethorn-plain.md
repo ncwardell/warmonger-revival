@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z82_00.dds"
 <!-- generated-keys: title=0ec0a2 type=c899cd id=76546f sources=9d147f name_kr=9b702b terrain=b597fa bounds=1f4f7f size=114466 segments=2cc94f fields=3bc09d minimap=ead282 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 67 (Icethorn Plain)](../assets/zones/82.png) |
+|  | ![minimap of Field 67 (Icethorn Plain)](wiki/assets/zones/82.png) |
 | **Zone id** | `82` |
 | **ZoneDB name** | 필드_67 (English gloss: Field 67 (Icethorn Plain)) |
 | **Terrain name** | `67` |

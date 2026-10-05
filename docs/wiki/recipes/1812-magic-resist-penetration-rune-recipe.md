@@ -20,7 +20,7 @@ level: 10
 <!-- generated-keys: title=46e6aa type=61613a id=4fe7a9 sources=f918b4 result=2ed9ee materials=1abd3a gold=c2d4c5 success_rate=310b86 category=1b6453 filter_mask=1b6453 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7112.png) |
+|  | ![](wiki/assets/items/7112.png) |
 | **Recipe id** | `1812` (`Item_Make`) |
 | **Makes** | [[wiki/items/7112-magic-resist-penetration-rune\|Magic resist Penetration(%) Rune]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 10 |  |
-| ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
-| ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 10 |  |
+| ![](wiki/assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 10 |  |
+| ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
+| ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 10 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

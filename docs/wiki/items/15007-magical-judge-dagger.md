@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=e1c2b6 type=d36ca9 id=f8af14 sources=4f5199 name_key=0f722d kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=7719a1 stats=db11c4 options=73e62d skills=332fc7 reinforce=17ba07 icon=7b38c8 obtained_from=89d9d9 -->
 |  |  |
 |---|---|
-|  | ![Magical judge Dagger](../assets/items/15007.png) |
+|  | ![Magical judge Dagger](wiki/assets/items/15007.png) |
 | **Item id** | `15007` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

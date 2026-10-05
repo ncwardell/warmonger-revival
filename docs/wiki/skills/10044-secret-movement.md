@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=12d4a7 type=86a754 id=56fb44 sources=0c9834 name_key=8ea47a desc_key=d17d1c kind=ac3478 kind_name=65782b target=069ef3 range=fe5dbb cost=2be88c cooldown=367d78 effect_kind=356a19 effects=d87539 damage_or_effect=4d6578 weapon_type=17ba07 visual=982fd8 icon=bfcc89 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Secret Movement](../assets/skills/10044.png) |
+|  | ![Secret Movement](wiki/assets/skills/10044.png) |
 | **Skill id** | `10044` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

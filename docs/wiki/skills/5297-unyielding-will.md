@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=066fdc type=86a754 id=71e05e sources=a8de9b name_key=ca6e77 desc_key=a5ac52 kind=356a19 kind_name=9bc378 target=d99f6c range=ac3478 cost=ff5a60 cooldown=ad2ac8 effect_kind=b6589f effects=a1bfac damage_or_effect=64b893 visual=d0226f icon=a431e0 used_by=ff0a85 -->
 |  |  |
 |---|---|
-|  | ![Unyielding Will](../assets/skills/5297.png) |
+|  | ![Unyielding Will](wiki/assets/skills/5297.png) |
 | **Skill id** | `5297` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

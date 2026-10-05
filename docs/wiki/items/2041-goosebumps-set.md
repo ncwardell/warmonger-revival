@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=cc0579 type=d36ca9 id=35006d sources=a6f432 name_key=b364d8 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=1d2b05 options=aee0ec icon=299349 obtained_from=05f535 -->
 |  |  |
 |---|---|
-|  | ![Goosebumps Set](../assets/items/2041.png) |
+|  | ![Goosebumps Set](wiki/assets/items/2041.png) |
 | **Item id** | `2041` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

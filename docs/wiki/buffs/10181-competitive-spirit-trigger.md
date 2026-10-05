@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=cfcce2 type=6143a1 id=4525b9 sources=5f8df1 name_key=c78b9e duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=ec0a76 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Competitive Spirit : Trigger](../assets/buffs/10181.png) |
+|  | ![Competitive Spirit : Trigger](wiki/assets/buffs/10181.png) |
 | **Buff id** | `10181` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

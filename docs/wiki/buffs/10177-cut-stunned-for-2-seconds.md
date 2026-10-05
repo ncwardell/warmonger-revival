@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=ade3a6 type=6143a1 id=24b08c sources=9c5a0d name_key=cfdd6b duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=0392b4 applied_by=14a173 -->
 |  |  |
 |---|---|
-|  | ![Cut : Stunned for 2 seconds.](../assets/buffs/10177.png) |
+|  | ![Cut : Stunned for 2 seconds.](wiki/assets/buffs/10177.png) |
 | **Buff id** | `10177` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

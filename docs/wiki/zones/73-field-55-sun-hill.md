@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z73_00.dds"
 <!-- generated-keys: title=a33fb7 type=c899cd id=35e995 sources=aeb8ef name_kr=42e2b2 terrain=7b1eb4 bounds=dbdd5d size=114466 segments=bc353d fields=acdb59 minimap=cc423a -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 55 (Sun Hill)](../assets/zones/73.png) |
+|  | ![minimap of Field 55 (Sun Hill)](wiki/assets/zones/73.png) |
 | **Zone id** | `73` |
 | **ZoneDB name** | 필드_55 (English gloss: Field 55 (Sun Hill)) |
 | **Terrain name** | `55` |

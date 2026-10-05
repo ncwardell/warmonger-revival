@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=cf7b6f type=d36ca9 id=e59277 sources=4c0913 name_key=8b731b kind=98fbc4 kind_name=b94918 classes=92d079 bind=883bf8 price=ad75b5 cost_pair=cc1d90 stats=97d170 icon=bca757 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![B Rank Quest](../assets/items/1302.png) |
+|  | ![B Rank Quest](wiki/assets/items/1302.png) |
 | **Item id** | `1302` |
 | **Kind** | Quest precept (44) |
 | **Classes** | all |

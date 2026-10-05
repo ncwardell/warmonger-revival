@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z22_00.dds"
 <!-- generated-keys: title=35047e type=c899cd id=12c6fc sources=586121 name_kr=b6c543 terrain=038a91 bounds=2c3f22 size=114466 segments=3d3ce5 fields=b891b8 minimap=e8c728 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 32 (Long Road)](../assets/zones/22.png) |
+|  | ![minimap of Field 32 (Long Road)](wiki/assets/zones/22.png) |
 | **Zone id** | `22` |
 | **ZoneDB name** | 필드_32 (English gloss: Field 32 (Long Road)) |
 | **Terrain name** | `32` |

@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=5d8c5a type=6143a1 id=c5f4e4 sources=ecae52 name_key=9994ae duration=6c749d is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=6e5b1d applied_by=a5b007 -->
 |  |  |
 |---|---|
-|  | ![Concussive Shells](../assets/buffs/10283.png) |
+|  | ![Concussive Shells](wiki/assets/buffs/10283.png) |
 | **Buff id** | `10283` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

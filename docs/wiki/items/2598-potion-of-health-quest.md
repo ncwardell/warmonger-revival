@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=f97a50 type=d36ca9 id=e5b088 sources=ae5c73 name_key=e4a191 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=15ffcd cost_pair=0a5b72 flags=356a19 no_sell=7cb6ef use_buff=329bcc cooldown_s=f1abd6 cooldown_group=356a19 stats=97d170 options=cc2b4d icon=966ff7 obtained_from=a9816a -->
 |  |  |
 |---|---|
-|  | ![Potion of Health (Quest)](../assets/items/2598.png) |
+|  | ![Potion of Health (Quest)](wiki/assets/items/2598.png) |
 | **Item id** | `2598` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

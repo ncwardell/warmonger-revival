@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z97_00.dds"
 <!-- generated-keys: title=2bee37 type=c899cd id=812ed4 sources=2e14ba name_kr=252a89 terrain=bd9154 bounds=b23e00 size=fdb6da segments=030709 fields=97d170 minimap=3df02f -->
 |  |  |
 |---|---|
-|  | ![minimap of Unused](../assets/zones/97.png) |
+|  | ![minimap of Unused](wiki/assets/zones/97.png) |
 | **Zone id** | `97` |
 | **ZoneDB name** | 사용안함 (English gloss: Unused) |
 | **Terrain name** | `01` |

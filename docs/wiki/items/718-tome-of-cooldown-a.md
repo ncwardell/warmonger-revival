@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=92b759 type=d36ca9 id=395ea6 sources=c9c336 name_key=2aeaf3 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=2ae737 cost_pair=be4ef7 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=2d7cf6 cooldown_s=da4b92 cooldown_group=887309 stats=97d170 options=e62895 icon=7809ef obtained_from=2b90af -->
 |  |  |
 |---|---|
-|  | ![Tome of Cooldown (A)](../assets/items/718.png) |
+|  | ![Tome of Cooldown (A)](wiki/assets/items/718.png) |
 | **Item id** | `718` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=915252 type=d36ca9 id=8c4178 sources=85da6a name_key=d01593 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=297499 cost_pair=2306ff period=365a69 stats=8415ce options=e96dd6 icon=a90139 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Oracle Set](../assets/items/2083.png) |
+|  | ![Oracle Set](wiki/assets/items/2083.png) |
 | **Item id** | `2083` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

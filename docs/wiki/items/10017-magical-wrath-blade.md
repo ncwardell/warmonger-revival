@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=1e1465 type=d36ca9 id=4cc58c sources=26ad24 name_key=0c78b6 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=9e6a55 stats=0447a2 options=e6c27e skills=a006a6 reinforce=17ba07 icon=ac8162 obtained_from=da692c -->
 |  |  |
 |---|---|
-|  | ![Magical Wrath Blade](../assets/items/10017.png) |
+|  | ![Magical Wrath Blade](wiki/assets/items/10017.png) |
 | **Item id** | `10017` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

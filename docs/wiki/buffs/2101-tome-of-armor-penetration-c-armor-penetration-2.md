@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=09a983 type=6143a1 id=86e1d3 sources=0a57af name_key=011bad duration=995f11 is_buff=b6589f stack_type=356a19 group=009cf5 effects=45c2f3 icon=81e226 applied_by=9e7f08 -->
 |  |  |
 |---|---|
-|  | ![Tome of Armor Penetration (C) : Armor Penetration +2](../assets/buffs/2101.png) |
+|  | ![Tome of Armor Penetration (C) : Armor Penetration +2](wiki/assets/buffs/2101.png) |
 | **Buff id** | `2101` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

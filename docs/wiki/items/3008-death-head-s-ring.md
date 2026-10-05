@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=91bb80 type=d36ca9 id=2ec223 sources=b26df8 name_key=22ef0d kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=9b4ecf set=356a19 reinforce=92cfce icon=1393a5 obtained_from=921966 -->
 |  |  |
 |---|---|
-|  | ![Death Head's Ring](../assets/items/3008.png) |
+|  | ![Death Head's Ring](wiki/assets/items/3008.png) |
 | **Item id** | `3008` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

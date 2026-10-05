@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=e22c4c type=6143a1 id=e0e035 sources=9a6c48 name_key=aa51d4 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=83e0e4 applied_by=14bb83 -->
 |  |  |
 |---|---|
-|  | ![Punishing Stomp : Silenced for 2 seconds](../assets/buffs/10046.png) |
+|  | ![Punishing Stomp : Silenced for 2 seconds](wiki/assets/buffs/10046.png) |
 | **Buff id** | `10046` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

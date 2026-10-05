@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=50a7a4 type=6143a1 id=604651 sources=19c666 name_key=17fbf4 duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=8a093a applied_by=fe9afc -->
 |  |  |
 |---|---|
-|  | ![Wave of Mutilation : Reduced Movement Speed for 3 seconds](../assets/buffs/10212.png) |
+|  | ![Wave of Mutilation : Reduced Movement Speed for 3 seconds](wiki/assets/buffs/10212.png) |
 | **Buff id** | `10212` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

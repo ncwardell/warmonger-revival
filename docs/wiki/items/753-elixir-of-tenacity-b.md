@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=0a62d8 type=d36ca9 id=c32a67 sources=5bb3f2 name_key=cd32e5 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=28cf50 cost_pair=a0e945 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=584784 cooldown_s=da4b92 cooldown_group=bc33ea stats=97d170 options=1d857a icon=e023e5 obtained_from=a486ec -->
 |  |  |
 |---|---|
-|  | ![Elixir of Tenacity (B)](../assets/items/753.png) |
+|  | ![Elixir of Tenacity (B)](wiki/assets/items/753.png) |
 | **Item id** | `753` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

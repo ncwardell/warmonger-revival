@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z83_00.dds"
 <!-- generated-keys: title=f0c576 type=c899cd id=7d7116 sources=ef9ada name_kr=04f2ff terrain=e75964 bounds=f12718 size=114466 segments=bf9970 fields=52dbed minimap=f6e432 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 68 (Frostwind - East)](../assets/zones/83.png) |
+|  | ![minimap of Field 68 (Frostwind - East)](wiki/assets/zones/83.png) |
 | **Zone id** | `83` |
 | **ZoneDB name** | 필드_68 (English gloss: Field 68 (Frostwind - East)) |
 | **Terrain name** | `68` |

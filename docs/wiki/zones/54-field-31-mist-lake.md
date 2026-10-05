@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z54_00.dds"
 <!-- generated-keys: title=a3f0a7 type=c899cd id=80e28a sources=571be2 name_kr=fb7d63 terrain=f479da bounds=b77aab size=114466 segments=cb1397 fields=2dfe62 minimap=1159e7 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 31 (Mist Lake)](../assets/zones/54.png) |
+|  | ![minimap of Field 31 (Mist Lake)](wiki/assets/zones/54.png) |
 | **Zone id** | `54` |
 | **ZoneDB name** | 필드_31 (English gloss: Field 31 (Mist Lake)) |
 | **Terrain name** | `31` |

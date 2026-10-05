@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=bbfc43 type=d36ca9 id=917098 sources=31f549 name_key=132c94 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=5bf52d stats=97d170 icon=9b9905 obtained_from=4d5966 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Yellow](../assets/items/701.png) |
+|  | ![Crystal : Yellow](wiki/assets/items/701.png) |
 | **Item id** | `701` |
 | **Kind** | Material (12) |
 | **Classes** | all |

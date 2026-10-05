@@ -35,8 +35,8 @@ dungeon: 129
 <!-- generated-keys: title=0bf214 type=7a94db id=8b7471 sources=dc197a name_key=5cb35f kind=3e3f38 scene_type=77de68 max_users=ac3478 group=ca3512 zones=e96962 segments=7277be connections=97d170 npcs=97d170 monsters=417c4b spawn_points=97d170 triggers=daa166 dungeon=8b7471 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 134](../assets/zones/134.png) |
-|  | ![(Lv 8) Thorn's Hell](../assets/dungeons/129.png) |
+|  | ![minimap of zone 134](wiki/assets/zones/134.png) |
+|  | ![(Lv 8) Thorn's Hell](wiki/assets/dungeons/129.png) |
 | **Field id** | `129` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

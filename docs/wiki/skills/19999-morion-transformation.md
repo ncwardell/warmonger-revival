@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=4e7355 type=86a754 id=7519dd sources=f2c42b name_key=e24b84 desc_key=80d847 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=68d2b6 cooldown=a7242f effect_kind=da4b92 effects=6503a0 damage_or_effect=5e6067 visual=25293f icon=208e98 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Morion Transformation](../assets/skills/19999.png) |
+|  | ![Morion Transformation](wiki/assets/skills/19999.png) |
 | **Skill id** | `19999` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=8c0b10 type=6143a1 id=f4d46d sources=7677ae name_key=3d92d0 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=b6589f effects=a2c63c icon=e77ed7 applied_by=583524 -->
 |  |  |
 |---|---|
-|  | ![Flame Absorb shield : You gain 30% Armor and Magic Resistance](../assets/buffs/19961.png) |
+|  | ![Flame Absorb shield : You gain 30% Armor and Magic Resistance](wiki/assets/buffs/19961.png) |
 | **Buff id** | `19961` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

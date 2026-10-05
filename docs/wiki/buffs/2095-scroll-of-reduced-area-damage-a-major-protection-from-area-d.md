@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=4bd518 type=6143a1 id=4a1b77 sources=99496c name_key=4c667c duration=995f11 is_buff=b6589f stack_type=356a19 group=d32f6a effects=c3e20b icon=77c9cc applied_by=d69d2d -->
 |  |  |
 |---|---|
-|  | ![Scroll of Reduced Area Damage (A) : Major protection from Area Damage.](../assets/buffs/2095.png) |
+|  | ![Scroll of Reduced Area Damage (A) : Major protection from Area Damage.](wiki/assets/buffs/2095.png) |
 | **Buff id** | `2095` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

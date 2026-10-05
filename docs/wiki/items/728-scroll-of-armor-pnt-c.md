@@ -31,7 +31,7 @@ obtained_from: []
 <!-- generated-keys: title=8f2327 type=d36ca9 id=8e6b8a sources=96c6f9 name_key=6699ce kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=c6bce6 cost_pair=257ce5 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=86e1d3 cooldown_s=da4b92 cooldown_group=f6e112 stats=97d170 options=97f33d icon=81e226 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Scroll of Armor PNT (C)](../assets/items/728.png) |
+|  | ![Scroll of Armor PNT (C)](wiki/assets/items/728.png) |
 | **Item id** | `728` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

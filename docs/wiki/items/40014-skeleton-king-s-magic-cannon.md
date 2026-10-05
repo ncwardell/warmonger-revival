@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=b216d1 type=d36ca9 id=3d68fd sources=758836 name_key=916b6a kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=da4b92 weapon_base=54ceb9 stats=db11c4 options=779c28 skills=75caca reinforce=b6692e icon=a19198 obtained_from=122bfe -->
 |  |  |
 |---|---|
-|  | ![Skeleton King's Magic Cannon](../assets/items/40014.png) |
+|  | ![Skeleton King's Magic Cannon](wiki/assets/items/40014.png) |
 | **Item id** | `40014` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

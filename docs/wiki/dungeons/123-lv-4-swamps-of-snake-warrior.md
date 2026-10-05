@@ -28,7 +28,7 @@ time_limit_s: null
 <!-- generated-keys: title=e5603a type=3e3f38 id=40bd00 sources=c58ebc field=40bd00 max_users=ac3478 level=1b6453 entry_cost=00381f event=7cb6ef shown_rewards=65b1ed c17=23a053 image=936313 dungeon_slots=679f34 boss=9798c5 gear_tier=13930c gathering=f3c467 time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 4) Swamps of Snake Warrior](../assets/dungeons/123.png) |
+|  | ![(Lv 4) Swamps of Snake Warrior](wiki/assets/dungeons/123.png) |
 | **Field** | [[wiki/fields/123-lv-4-swamps-of-snake-warrior\|(Lv 4) Swamps of Snake Warrior (field 123)]] |
 | **Level** | 4 |
 | **Gear tier dropped** | T1 (guides) |

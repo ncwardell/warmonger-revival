@@ -20,7 +20,7 @@ raw: {"c28": 180}
 <!-- generated-keys: title=c40633 type=61613a id=ab39c5 sources=60ca9d result=5827a8 materials=3d0bd9 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=ac6be1 superior=4e1936 level=356a19 raw=4dcd90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/412.png) |
+|  | ![](wiki/assets/items/412.png) |
 | **Recipe id** | `2016` (`Item_Make`) |
 | **Makes** | [[wiki/items/412-guardian-gloves\|Guardian Gloves]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 180}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 12 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 12 |  |
 
 Unknown columns: `c28` = 180 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

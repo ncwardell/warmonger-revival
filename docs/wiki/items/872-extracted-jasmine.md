@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=2f010d type=d36ca9 id=389b4f sources=900b89 name_key=1dba3b kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=2ad3f8 cost_pair=1c8ee8 stats=97d170 icon=d384d0 obtained_from=e6b8bf -->
 |  |  |
 |---|---|
-|  | ![Extracted Jasmine](../assets/items/872.png) |
+|  | ![Extracted Jasmine](wiki/assets/items/872.png) |
 | **Item id** | `872` |
 | **Kind** | Material (12) |
 | **Classes** | all |

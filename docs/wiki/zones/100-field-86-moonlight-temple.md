@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z100_00.dds"
 <!-- generated-keys: title=cb180d type=c899cd id=310b86 sources=9676c2 name_kr=fc95e7 terrain=de2eef bounds=b60b5a size=114466 segments=fb728b fields=b56b7b minimap=233dc6 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 86 (Moonlight Temple)](../assets/zones/100.png) |
+|  | ![minimap of Field 86 (Moonlight Temple)](wiki/assets/zones/100.png) |
 | **Zone id** | `100` |
 | **ZoneDB name** | 필드_86 (English gloss: Field 86 (Moonlight Temple)) |
 | **Terrain name** | `86` |

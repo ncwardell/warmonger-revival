@@ -32,7 +32,7 @@ used_by: []
 <!-- generated-keys: title=602099 type=86a754 id=77eb85 sources=d97785 name_key=8484c0 desc_key=cffc3f kind=356a19 kind_name=9bc378 target=6ca14a range=ac3478 area=e8b0ea cost=5baaf6 cooldown=e0e4dd effect_kind=356a19 effects=3e6162 damage_or_effect=c29afe tooltip_formula=827f56 visual=f0a4ac icon=70aa6a used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Final Strike](../assets/skills/5143.png) |
+|  | ![Final Strike](wiki/assets/skills/5143.png) |
 | **Skill id** | `5143` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 7 |

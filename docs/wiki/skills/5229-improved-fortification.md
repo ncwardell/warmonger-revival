@@ -26,7 +26,7 @@ used_by: []
 <!-- generated-keys: title=c76de6 type=86a754 id=f96989 sources=a361a4 name_key=61b317 desc_key=e45339 kind=356a19 kind_name=9bc378 target=479d25 range=b1d578 area=6d01a6 cost=2be88c cooldown=2be88c effect_kind=356a19 effects=8e8d05 damage_or_effect=65b890 visual=a1773d icon=30da17 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Improved Fortification](../assets/skills/5229.png) |
+|  | ![Improved Fortification](wiki/assets/skills/5229.png) |
 | **Skill id** | `5229` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, NPC, player; up to 5 |

@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=616526 type=d36ca9 id=e3cbba sources=2aae2f name_key=ea36f7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=82c3b7 cost_pair=a87fd8 stats=97d170 icon=88596b obtained_from=56ffea -->
 |  |  |
 |---|---|
-|  | ![Medal : Bronze](../assets/items/1000.png) |
+|  | ![Medal : Bronze](wiki/assets/items/1000.png) |
 | **Item id** | `1000` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=8e569f type=6143a1 id=b90325 sources=100573 name_key=8ea3cb duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=3fa0ca icon=e8b5ca applied_by=3e3819 -->
 |  |  |
 |---|---|
-|  | ![Quick attack : Increase attack speed when reaching 5 stack](../assets/buffs/20257.png) |
+|  | ![Quick attack : Increase attack speed when reaching 5 stack](wiki/assets/buffs/20257.png) |
 | **Buff id** | `20257` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -24,7 +24,7 @@ spawn_fields: [121]
 <!-- generated-keys: title=07072a type=9bbc46 id=0e55c1 sources=f182e2 name_key=d9f287 category=356a19 class_mask=356a19 model=972a67 model_name=0cf010 model_path=6a4c49 scale=555a5c radius=356a19 sounds=10cd19 hero=902ba3 boss_of=a5a5cb dungeon_rewards=56688c spawn_fields=a5a5cb -->
 |  |  |
 |---|---|
-|  | ![King Deathhead](../assets/monsters/1501.png) |
+|  | ![King Deathhead](wiki/assets/monsters/1501.png) |
 | **Unit id** | `1501` |
 | **Category** | monster (`category@8a` = 1) |
 | **Class mask** | 1 (monster) |

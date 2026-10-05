@@ -48,8 +48,8 @@ dungeon: 126
 <!-- generated-keys: title=12597b type=7a94db id=114d4e sources=abf528 name_key=97594e kind=3e3f38 scene_type=77de68 max_users=ac3478 group=5b384c zones=0688b1 segments=0dbe49 gates=a3e1d9 connections=c4f889 npcs=97d170 monsters=77c8d6 spawn_points=97d170 triggers=2e9022 dungeon=114d4e -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 142](../assets/zones/142.png) |
-|  | ![(Lv 7) Demon Hell](../assets/dungeons/126.png) |
+|  | ![minimap of zone 142](wiki/assets/zones/142.png) |
+|  | ![(Lv 7) Demon Hell](wiki/assets/dungeons/126.png) |
 | **Field id** | `126` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

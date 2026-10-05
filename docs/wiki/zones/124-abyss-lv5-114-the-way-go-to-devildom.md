@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z124_00.dds"
 <!-- generated-keys: title=ddacea type=c899cd id=f38cfe sources=21700f name_kr=eec14a terrain=b15de8 bounds=68f2a2 size=be57ee segments=a35b1d fields=6c4502 minimap=f47f8e -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV5 114 (The way go to devildom)](../assets/zones/124.png) |
+|  | ![minimap of Abyss LV5 114 (The way go to devildom)](wiki/assets/zones/124.png) |
 | **Zone id** | `124` |
 | **ZoneDB name** | 어비스_LV5_114 (English gloss: Abyss LV5 114 (The way go to devildom)) |
 | **Terrain name** | `Abyss_Lv05` |

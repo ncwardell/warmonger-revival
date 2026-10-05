@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=8c38f6 type=d36ca9 id=07fd89 sources=5fc430 name_key=37737c kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=0a9aa4 reinforce=da4b92 icon=6a1367 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Bandolier Bracelet](../assets/items/463.png) |
+|  | ![Bandolier Bracelet](wiki/assets/items/463.png) |
 | **Item id** | `463` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

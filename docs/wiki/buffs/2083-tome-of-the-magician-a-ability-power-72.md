@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=d1046e type=6143a1 id=8c4178 sources=60ffd2 name_key=de00fa duration=995f11 is_buff=b6589f stack_type=356a19 group=009cf5 effects=c68eb7 icon=d7ee3b applied_by=95ef74 -->
 |  |  |
 |---|---|
-|  | ![Tome of the Magician (A) : Ability Power +72](../assets/buffs/2083.png) |
+|  | ![Tome of the Magician (A) : Ability Power +72](wiki/assets/buffs/2083.png) |
 | **Buff id** | `2083` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

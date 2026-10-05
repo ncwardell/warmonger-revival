@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=cd7af4 type=6143a1 id=a45180 sources=110f4b name_key=166cd0 duration=870e64 is_buff=b6589f stack_type=356a19 group=1b6453 effects=b3b8cb icon=10f839 applied_by=a15b4e -->
 |  |  |
 |---|---|
-|  | ![Covert Steps: Increase movement speed](../assets/buffs/20202.png) |
+|  | ![Covert Steps: Increase movement speed](wiki/assets/buffs/20202.png) |
 | **Buff id** | `20202` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=b8eefb type=6143a1 id=1a9dee sources=dc0af2 name_key=55bf80 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=73556b icon=78290d applied_by=16ba9e -->
 |  |  |
 |---|---|
-|  | ![Poisonous Blade: Increases Attack Damage](../assets/buffs/10164.png) |
+|  | ![Poisonous Blade: Increases Attack Damage](wiki/assets/buffs/10164.png) |
 | **Buff id** | `10164` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

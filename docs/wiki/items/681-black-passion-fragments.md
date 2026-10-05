@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=ae2209 type=d36ca9 id=89d79a sources=dac8cc name_key=e5f982 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=01e611 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Black Passion Fragments](../assets/items/681.png) |
+|  | ![Black Passion Fragments](wiki/assets/items/681.png) |
 | **Item id** | `681` |
 | **Kind** | Material (12) |
 | **Classes** | all |

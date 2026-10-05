@@ -28,7 +28,7 @@ complete_talk: 881
 <!-- generated-keys: title=f65a8d type=eb5b2b id=d69b92 sources=dba51b name_key=b911bf kind=356a19 kind_name=0bac50 giver=ad0cc6 turn_in=ad0cc6 bit=b37f6d requires_bit=1d513c prev=f8c5a3 next=97d170 stages=30caa7 objectives=2be88c objectives_client=37d03d rewards=9e8677 offer_talk=0b5e7f complete_talk=c425c6 -->
 |  |  |
 |---|---|
-|  | ![Create Innocence Crystal](../assets/npcs/325.png) |
+|  | ![Create Innocence Crystal](wiki/assets/npcs/325.png) |
 | **Quest id** | `693` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/325-joel\|Joel]] |

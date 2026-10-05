@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=bfa435 type=6143a1 id=695ca7 sources=b903d8 name_key=61867a duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=0392b4 applied_by=a5672d -->
 |  |  |
 |---|---|
-|  | ![Divine : Reduced Movement Speed for 4 seconds](../assets/buffs/10149.png) |
+|  | ![Divine : Reduced Movement Speed for 4 seconds](wiki/assets/buffs/10149.png) |
 | **Buff id** | `10149` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

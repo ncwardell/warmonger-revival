@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=12e49b type=6143a1 id=410f98 sources=087320 name_key=10fe24 duration=0aac5a is_buff=b6589f stack_type=356a19 group=b6589f effects=763be2 icon=c4dc58 applied_by=fc570e -->
 |  |  |
 |---|---|
-|  | ![Disturbance of the Force : Increased Attack and Movement Speed](../assets/buffs/10113.png) |
+|  | ![Disturbance of the Force : Increased Attack and Movement Speed](wiki/assets/buffs/10113.png) |
 | **Buff id** | `10113` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

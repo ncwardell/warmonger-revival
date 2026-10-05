@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=a1665d type=6143a1 id=d5012c sources=ecc0d4 name_key=3e188d duration=2a0b1e is_buff=b6589f stack_type=356a19 group=e3cbba effects=a1bf0d icon=6547b0 applied_by=b29ec7 -->
 |  |  |
 |---|---|
-|  | ![Crippling Blow : Decreased Movement Speed](../assets/buffs/30055.png) |
+|  | ![Crippling Blow : Decreased Movement Speed](wiki/assets/buffs/30055.png) |
 | **Buff id** | `30055` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

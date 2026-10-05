@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=94c3d3 type=86a754 id=f16bc1 sources=89c70d name_key=c43d48 desc_key=ec28b5 kind=356a19 kind_name=9bc378 target=d99f6c range=77de68 cost=58a4ca cooldown=133145 effect_kind=356a19 effects=663fe9 damage_or_effect=fdaf06 tooltip_formula=5aa272 visual=fba7b6 icon=e4f418 used_by=dace8f -->
 |  |  |
 |---|---|
-|  | ![Blow of water](../assets/skills/20158.png) |
+|  | ![Blow of water](wiki/assets/skills/20158.png) |
 | **Skill id** | `20158` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

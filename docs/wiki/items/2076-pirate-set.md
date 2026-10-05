@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=33859c type=d36ca9 id=bae6cc sources=dd1ffe name_key=81a75d kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=8e0891 options=6b41a7 icon=13af3c obtained_from=46ac19 -->
 |  |  |
 |---|---|
-|  | ![Pirate Set](../assets/items/2076.png) |
+|  | ![Pirate Set](wiki/assets/items/2076.png) |
 | **Item id** | `2076` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

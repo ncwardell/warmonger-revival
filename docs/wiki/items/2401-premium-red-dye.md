@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=5c52ec type=d36ca9 id=5f0748 sources=489449 name_key=064746 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=7c9e44 icon=13495c obtained_from=18b281 -->
 |  |  |
 |---|---|
-|  | ![Premium Red Dye](../assets/items/2401.png) |
+|  | ![Premium Red Dye](wiki/assets/items/2401.png) |
 | **Item id** | `2401` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

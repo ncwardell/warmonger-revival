@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=a6821e type=d36ca9 id=2d3730 sources=2f25f2 name_key=d0f9ee kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=da4b92 period=7841fb weapon_base=35e995 stats=97d170 options=7651fe skills=927a9a reinforce=d435a6 icon=0288a0 obtained_from=d6e556 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Artamos](../assets/items/8504.png) |
+|  | ![Crystal : Artamos](wiki/assets/items/8504.png) |
 | **Item id** | `8504` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

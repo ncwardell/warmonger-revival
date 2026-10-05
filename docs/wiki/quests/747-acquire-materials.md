@@ -32,7 +32,7 @@ complete_talk: 830
 <!-- generated-keys: title=66283e type=eb5b2b id=5c1dc0 sources=08635a name_key=5debb6 kind=77de68 kind_name=01e781 giver=fb5a8b turn_in=fb5a8b offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=632667 excludes_bit=cb4e52 owned_field=8b7471 prev=5c3c3a next=97d170 stages=30caa7 objectives=d83537 rewards=3d8dbe offer_talk=459b50 complete_talk=201921 -->
 |  |  |
 |---|---|
-|  | ![Acquire materials](../assets/npcs/214.png) |
+|  | ![Acquire materials](wiki/assets/npcs/214.png) |
 | **Quest id** | `747` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/214-owen\|Owen]] |

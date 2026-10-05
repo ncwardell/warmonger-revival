@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f263e4 type=d36ca9 id=2b6312 sources=c4664b name_key=ea83cc kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 icon=db1a26 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dark Red Faded Passion Piece](../assets/items/1907.png) |
+|  | ![Dark Red Faded Passion Piece](wiki/assets/items/1907.png) |
 | **Item id** | `1907` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

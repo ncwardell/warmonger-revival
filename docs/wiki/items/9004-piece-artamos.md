@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=dd746a type=d36ca9 id=034e49 sources=a8431e name_key=b03509 kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=e4e88e obtained_from=839bd2 -->
 |  |  |
 |---|---|
-|  | ![Piece : Artamos](../assets/items/9004.png) |
+|  | ![Piece : Artamos](wiki/assets/items/9004.png) |
 | **Item id** | `9004` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

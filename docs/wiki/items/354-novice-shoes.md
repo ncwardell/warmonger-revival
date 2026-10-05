@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=f9156f type=d36ca9 id=1a1162 sources=6742cd name_key=2c71d8 kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=636210 icon=c29e17 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Novice Shoes](../assets/items/354.png) |
+|  | ![Novice Shoes](wiki/assets/items/354.png) |
 | **Item id** | `354` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

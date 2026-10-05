@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=1fbab2 type=d36ca9 id=751560 sources=7109d3 name_key=98b4df kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=e1c776 set=da4b92 reinforce=92cfce icon=678fa2 obtained_from=459332 -->
 |  |  |
 |---|---|
-|  | ![Skull's Bracelet](../assets/items/3017.png) |
+|  | ![Skull's Bracelet](wiki/assets/items/3017.png) |
 | **Item id** | `3017` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

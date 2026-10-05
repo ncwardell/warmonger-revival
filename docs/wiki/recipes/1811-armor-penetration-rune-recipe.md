@@ -20,7 +20,7 @@ level: 10
 <!-- generated-keys: title=b53746 type=61613a id=a03545 sources=692b02 result=e15948 materials=d20cc5 gold=c2d4c5 success_rate=310b86 category=1b6453 filter_mask=1b6453 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7102.png) |
+|  | ![](wiki/assets/items/7102.png) |
 | **Recipe id** | `1811` (`Item_Make`) |
 | **Makes** | [[wiki/items/7102-armor-penetration-rune\|Armor Penetration(%) Rune]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 10 |  |
-| ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
-| ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 10 |  |
+| ![](wiki/assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 10 |  |
+| ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
+| ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 10 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

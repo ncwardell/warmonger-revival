@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=80990b type=61613a id=72ab81 sources=d884fa result=fe94af materials=328294 gold=e1822d success_rate=310b86 category=356a19 filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/817.png) |
+|  | ![](wiki/assets/items/817.png) |
 | **Recipe id** | `608` (`Item_Make`) |
 | **Makes** | [[wiki/items/817-onyx-powder\|Onyx powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  |
+| ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2408-onyx-powder-recipe|recipe 2408]]
 

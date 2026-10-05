@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=b2d63c type=6143a1 id=daa094 sources=1b2234 name_key=28cc89 duration=0aac5a is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=9835a6 applied_by=5d5f68 -->
 |  |  |
 |---|---|
-|  | ![Earthquake: Stuns for 4 seconds](../assets/buffs/10148.png) |
+|  | ![Earthquake: Stuns for 4 seconds](wiki/assets/buffs/10148.png) |
 | **Buff id** | `10148` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

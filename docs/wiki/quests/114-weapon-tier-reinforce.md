@@ -30,7 +30,7 @@ complete_talk: 812
 <!-- generated-keys: title=d9e2d3 type=eb5b2b id=ecb793 sources=1a280d name_key=55724a kind=356a19 kind_name=0bac50 giver=65eab4 turn_in=65eab4 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=972a67 requires_bit=54ceb9 prev=46b5ec next=97d170 stages=30caa7 objectives=2be88c objectives_client=d17bd2 rewards=2b23be offer_talk=6f8246 complete_talk=872a31 -->
 |  |  |
 |---|---|
-|  | ![Weapon tier reinforce](../assets/npcs/237.png) |
+|  | ![Weapon tier reinforce](wiki/assets/npcs/237.png) |
 | **Quest id** | `114` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/237-farrell\|Farrell]] |

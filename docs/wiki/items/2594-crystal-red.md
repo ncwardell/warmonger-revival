@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=9b419a type=d36ca9 id=535b58 sources=189874 name_key=d6c6b7 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=e3f693 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Red](../assets/items/2594.png) |
+|  | ![Crystal : Red](wiki/assets/items/2594.png) |
 | **Item id** | `2594` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

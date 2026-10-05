@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=b55d71 type=d36ca9 id=5c12d9 sources=c78b14 name_key=d22a49 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=602e15 set=fe5dbb reinforce=92cfce icon=9a8fcb obtained_from=cbc46a -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Gloves](../assets/items/3513.png) |
+|  | ![Fame warrior Gloves](wiki/assets/items/3513.png) |
 | **Item id** | `3513` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

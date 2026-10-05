@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=2eead8 type=61613a id=dcdee6 sources=dbbce6 result=a4778f materials=88ba52 gold=e3cbba success_rate=310b86 category=356a19 filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2508.png) |
+|  | ![](wiki/assets/items/2508.png) |
 | **Recipe id** | `759` (`Item_Make`) |
 | **Makes** | [[wiki/items/2508-black-dye\|Black Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/871.png) | [[wiki/items/871-extracted-rosemary\|Extracted Rosemary]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/871.png) | [[wiki/items/871-extracted-rosemary\|Extracted Rosemary]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2609-black-dye-recipe|recipe 2609]]
 

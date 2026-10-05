@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z26_00.dds"
 <!-- generated-keys: title=63d073 type=c899cd id=887309 sources=235d6b name_kr=17a61a terrain=89a3d7 bounds=46ce3d size=114466 segments=1a4785 fields=584499 minimap=4a0e65 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 56 (Snowflower Plain)](../assets/zones/26.png) |
+|  | ![minimap of Field 56 (Snowflower Plain)](wiki/assets/zones/26.png) |
 | **Zone id** | `26` |
 | **ZoneDB name** | 필드_56 (English gloss: Field 56 (Snowflower Plain)) |
 | **Terrain name** | `56` |

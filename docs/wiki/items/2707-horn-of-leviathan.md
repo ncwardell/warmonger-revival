@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=108c7b type=d36ca9 id=01de37 sources=5fba63 name_key=2250ec kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=b0df2b obtained_from=933a94 -->
 |  |  |
 |---|---|
-|  | ![Horn of Leviathan](../assets/items/2707.png) |
+|  | ![Horn of Leviathan](wiki/assets/items/2707.png) |
 | **Item id** | `2707` |
 | **Kind** | Material (12) |
 | **Classes** | all |

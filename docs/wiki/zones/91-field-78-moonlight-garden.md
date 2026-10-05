@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z91_00.dds"
 <!-- generated-keys: title=e38eaa type=c899cd id=4cd66d sources=2bb2d8 name_kr=1c351c terrain=4a1aed bounds=48bddc size=114466 segments=25ba0d fields=88a276 minimap=fbecf6 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 78 (Moonlight Garden)](../assets/zones/91.png) |
+|  | ![minimap of Field 78 (Moonlight Garden)](wiki/assets/zones/91.png) |
 | **Zone id** | `91` |
 | **ZoneDB name** | 필드_78 (English gloss: Field 78 (Moonlight Garden)) |
 | **Terrain name** | `78` |

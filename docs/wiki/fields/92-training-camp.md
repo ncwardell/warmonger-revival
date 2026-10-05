@@ -35,7 +35,7 @@ spawn_points: []
 <!-- generated-keys: title=908c23 type=7a94db id=8ee51c sources=09cbd7 name_key=4c95bf kind=da9544 scene_type=356a19 max_users=310b86 group=bd307a nation=069950 nation_copies=908462 zones=0ae2ea segments=a9a20c gates=e4ed8d connections=99fdb5 npcs=724d9d monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 129](../assets/zones/129.png) |
+|  | ![minimap of zone 129](wiki/assets/zones/129.png) |
 | **Field id** | `92` |
 | **Kind** | town (SceneList type 1; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |

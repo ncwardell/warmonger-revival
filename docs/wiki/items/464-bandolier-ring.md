@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=606bda type=d36ca9 id=6f946e sources=e6621d name_key=f8b49c kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=81b2c3 reinforce=da4b92 icon=eb30cb obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Bandolier Ring](../assets/items/464.png) |
+|  | ![Bandolier Ring](wiki/assets/items/464.png) |
 | **Item id** | `464` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

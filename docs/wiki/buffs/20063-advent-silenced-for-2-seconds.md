@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=518f4a type=6143a1 id=838e48 sources=6a7c5a name_key=d98694 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=43a46d applied_by=37bfd2 -->
 |  |  |
 |---|---|
-|  | ![Advent : Silenced for 2 seconds.](../assets/buffs/20063.png) |
+|  | ![Advent : Silenced for 2 seconds.](wiki/assets/buffs/20063.png) |
 | **Buff id** | `20063` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

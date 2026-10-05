@@ -27,7 +27,7 @@ obtained_from: []
 <!-- generated-keys: title=cc7448 type=d36ca9 id=510b67 sources=2ba767 name_key=945380 kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 cooldown_s=e6c3dd cooldown_group=472b07 stats=6420c7 options=14e5b5 icon=62077e obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dimension Movement](../assets/items/1621.png) |
+|  | ![Dimension Movement](wiki/assets/items/1621.png) |
 | **Item id** | `1621` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=4164ff type=86a754 id=a45180 sources=ca346e name_key=74bb43 desc_key=01563b kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=e4e7cf cooldown=e3989d effect_kind=356a19 effects=2a8090 damage_or_effect=2ddc01 tooltip_formula=28fad8 visual=06cb3f icon=10f839 used_by=18feeb -->
 |  |  |
 |---|---|
-|  | ![Covert Step](../assets/skills/20202.png) |
+|  | ![Covert Step](wiki/assets/skills/20202.png) |
 | **Skill id** | `20202` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -44,7 +44,7 @@ obtained_from:
 <!-- generated-keys: title=a66ac6 type=d36ca9 id=8980dc sources=5422f1 name_key=bf3f9e kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=f4f99a reinforce=356a19 icon=c03e6f obtained_from=da954b -->
 |  |  |
 |---|---|
-|  | ![Gloves of Life](../assets/items/403.png) |
+|  | ![Gloves of Life](wiki/assets/items/403.png) |
 | **Item id** | `403` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

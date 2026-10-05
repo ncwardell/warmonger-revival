@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=21e5bf type=d36ca9 id=183723 sources=b66550 name_key=c53cea kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=c8300b obtained_from=5d4f98 -->
 |  |  |
 |---|---|
-|  | ![Ruler of Gaia Box](../assets/items/1026.png) |
+|  | ![Ruler of Gaia Box](wiki/assets/items/1026.png) |
 | **Item id** | `1026` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=2b393b type=6143a1 id=8c75b8 sources=b2a5d1 name_key=7b5909 duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=b534c0 applied_by=a08ef9 -->
 |  |  |
 |---|---|
-|  | ![Quick step back : Decreased Move Speed](../assets/buffs/10355.png) |
+|  | ![Quick step back : Decreased Move Speed](wiki/assets/buffs/10355.png) |
 | **Buff id** | `10355` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

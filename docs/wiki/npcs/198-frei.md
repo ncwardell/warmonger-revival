@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=53d874 type=3664ce id=c83730 sources=16f101 name_key=6f3b2e title_key=21d171 npc_title=955057 category=e1822d class_mask=da4b92 model=c5b76d scale=aa8f28 functions=40bee7 role=955057 talk_key=7b5881 portrait=263ce3 quests=e8bd47 quest_fields=46bf0f map=b37f6d x=1bd63a z=3bff14 positions=d40e9b -->
 |  |  |
 |---|---|
-|  | ![Frei](../assets/npcs/198.png) |
+|  | ![Frei](wiki/assets/npcs/198.png) |
 | **Unit id** | `198` |
 | **Title** | Oracle of Knowledge |
 | **Category** | NPC (category 50) |

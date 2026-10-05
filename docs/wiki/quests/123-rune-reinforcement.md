@@ -32,7 +32,7 @@ complete_talk: 841
 <!-- generated-keys: title=c0e37c type=eb5b2b id=40bd00 sources=2cf1e2 name_key=129481 kind=356a19 kind_name=0bac50 giver=de218c turn_in=de218c offer_maps=15f2a7 turn_in_maps=15f2a7 bit=8bd795 requires_bit=35e995 prev=a5a5cb next=97d170 stages=30caa7 objectives=2be88c objectives_client=2e9054 rewards=8a62c5 offer_talk=c1d2fb complete_talk=dcb63a -->
 |  |  |
 |---|---|
-|  | ![Rune Reinforcement](../assets/npcs/324.png) |
+|  | ![Rune Reinforcement](wiki/assets/npcs/324.png) |
 | **Quest id** | `123` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/324-casta\|Casta]] |

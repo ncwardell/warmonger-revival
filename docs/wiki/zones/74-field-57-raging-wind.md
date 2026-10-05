@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z74_00.dds"
 <!-- generated-keys: title=f9d94f type=c899cd id=1f1362 sources=0271fe name_kr=d5c508 terrain=8f07d8 bounds=6cd501 size=114466 segments=4f60f3 fields=404a1a minimap=e9d30c -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 57 (Raging Wind)](../assets/zones/74.png) |
+|  | ![minimap of Field 57 (Raging Wind)](wiki/assets/zones/74.png) |
 | **Zone id** | `74` |
 | **ZoneDB name** | 필드_57 (English gloss: Field 57 (Raging Wind)) |
 | **Terrain name** | `57` |

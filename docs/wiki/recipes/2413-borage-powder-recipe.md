@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=d91601 type=61613a id=3ae299 sources=dfc64d result=14c7b9 materials=342d84 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/827.png) |
+|  | ![](wiki/assets/items/827.png) |
 | **Recipe id** | `2413` (`Item_Make`) |
 | **Makes** | [[wiki/items/827-borage-powder\|Borage powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/826.png) | [[wiki/items/826-borage\|Borage]] | 1 |  |
+| ![](wiki/assets/items/826.png) | [[wiki/items/826-borage\|Borage]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/613-borage-powder-recipe|recipe 613]]
 

@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=ad71da type=d36ca9 id=0ac509 sources=a11465 name_key=e8904e kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=293688 set=1b6453 reinforce=92cfce icon=0b3c81 obtained_from=831861 -->
 |  |  |
 |---|---|
-|  | ![Komodo's Necklace](../assets/items/3035.png) |
+|  | ![Komodo's Necklace](wiki/assets/items/3035.png) |
 | **Item id** | `3035` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

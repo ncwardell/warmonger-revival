@@ -23,7 +23,7 @@ obtained_from: []
 <!-- generated-keys: title=252ff5 type=d36ca9 id=f1f020 sources=c73044 name_key=450103 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=7d25dc obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Decomposition Ring](../assets/items/2569.png) |
+|  | ![Decomposition Ring](wiki/assets/items/2569.png) |
 | **Item id** | `2569` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

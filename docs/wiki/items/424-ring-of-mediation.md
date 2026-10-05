@@ -40,7 +40,7 @@ obtained_from:
 <!-- generated-keys: title=c4e5f0 type=d36ca9 id=778736 sources=8bbe1b name_key=7972c5 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=89ce49 reinforce=356a19 icon=c31246 obtained_from=7ec3a7 -->
 |  |  |
 |---|---|
-|  | ![Ring of Mediation](../assets/items/424.png) |
+|  | ![Ring of Mediation](wiki/assets/items/424.png) |
 | **Item id** | `424` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

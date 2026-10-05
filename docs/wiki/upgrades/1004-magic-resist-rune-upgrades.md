@@ -24,7 +24,7 @@ kind: "rune_upgrade"
 <!-- generated-keys: title=bef495 type=4389c5 id=70b8dc sources=3e56b6 group=1b6453 rune=b3a1ea levels=dfb5f8 kind=6a6d0e -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7032.png) |
+|  | ![](wiki/assets/items/7032.png) |
 | **Rune line** | `JewelSocketMake` group 4 |
 | **Starts at** | [[wiki/items/7032-magic-resist-rune\|Magic Resist Rune]] |
 | **Success rates** | unknown (server side; patch notes give only trends) |
@@ -35,16 +35,16 @@ Each row upgrades the rune to the next item (C->S `0x4a8`). The +9 row has no ne
 
 | level |  | rune | becomes | materials | row |
 |---|---|---|---|---|---|
-| +0 | ![](../assets/items/7032.png) | [[wiki/items/7032-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7033-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 31 |
-| +1 | ![](../assets/items/7033.png) | [[wiki/items/7033-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7034-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 32 |
-| +2 | ![](../assets/items/7034.png) | [[wiki/items/7034-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7035-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 33 |
-| +3 | ![](../assets/items/7035.png) | [[wiki/items/7035-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7036-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 34 |
-| +4 | ![](../assets/items/7036.png) | [[wiki/items/7036-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7037-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 35 |
-| +5 | ![](../assets/items/7037.png) | [[wiki/items/7037-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7038-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 36 |
-| +6 | ![](../assets/items/7038.png) | [[wiki/items/7038-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7039-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 37 |
-| +7 | ![](../assets/items/7039.png) | [[wiki/items/7039-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7040-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 38 |
-| +8 | ![](../assets/items/7040.png) | [[wiki/items/7040-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7041-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 39 |
-| +9 | ![](../assets/items/7041.png) | [[wiki/items/7041-magic-resist-rune\|Magic Resist Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 40 |
+| +0 | ![](wiki/assets/items/7032.png) | [[wiki/items/7032-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7033-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 31 |
+| +1 | ![](wiki/assets/items/7033.png) | [[wiki/items/7033-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7034-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 32 |
+| +2 | ![](wiki/assets/items/7034.png) | [[wiki/items/7034-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7035-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 33 |
+| +3 | ![](wiki/assets/items/7035.png) | [[wiki/items/7035-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7036-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 34 |
+| +4 | ![](wiki/assets/items/7036.png) | [[wiki/items/7036-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7037-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 35 |
+| +5 | ![](wiki/assets/items/7037.png) | [[wiki/items/7037-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7038-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 36 |
+| +6 | ![](wiki/assets/items/7038.png) | [[wiki/items/7038-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7039-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 37 |
+| +7 | ![](wiki/assets/items/7039.png) | [[wiki/items/7039-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7040-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 38 |
+| +8 | ![](wiki/assets/items/7040.png) | [[wiki/items/7040-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/7041-magic-resist-rune\|Magic Resist Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 39 |
+| +9 | ![](wiki/assets/items/7041.png) | [[wiki/items/7041-magic-resist-rune\|Magic Resist Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 40 |
 
 ### Rules from the patch notes
 

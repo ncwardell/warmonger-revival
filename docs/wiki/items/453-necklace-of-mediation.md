@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=623426 type=d36ca9 id=4ac2bb sources=751631 name_key=63e5f0 kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=4f4432 reinforce=da4b92 icon=46fa1a obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Necklace of Mediation](../assets/items/453.png) |
+|  | ![Necklace of Mediation](wiki/assets/items/453.png) |
 | **Item id** | `453` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

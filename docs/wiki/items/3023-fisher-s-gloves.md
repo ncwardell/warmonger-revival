@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=37d194 type=d36ca9 id=9c700f sources=f3be13 name_key=9ca2d8 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=f17d5c set=77de68 reinforce=92cfce icon=74e639 obtained_from=095a54 -->
 |  |  |
 |---|---|
-|  | ![Fisher's Gloves](../assets/items/3023.png) |
+|  | ![Fisher's Gloves](wiki/assets/items/3023.png) |
 | **Item id** | `3023` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

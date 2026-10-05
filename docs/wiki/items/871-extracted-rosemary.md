@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=ac33ff type=d36ca9 id=edc10c sources=75c676 name_key=65e84e kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=2ad3f8 cost_pair=1c8ee8 stats=97d170 icon=19faea obtained_from=3fa7ab -->
 |  |  |
 |---|---|
-|  | ![Extracted Rosemary](../assets/items/871.png) |
+|  | ![Extracted Rosemary](wiki/assets/items/871.png) |
 | **Item id** | `871` |
 | **Kind** | Material (12) |
 | **Classes** | all |

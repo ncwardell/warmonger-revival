@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=fbe769 type=6143a1 id=b3da6f sources=8e734b name_key=32c91b duration=2a0b1e is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=f877b6 applied_by=3f9f52 -->
 |  |  |
 |---|---|
-|  | ![Reduces Movement Speed for 2 seconds.](../assets/buffs/10146.png) |
+|  | ![Reduces Movement Speed for 2 seconds.](wiki/assets/buffs/10146.png) |
 | **Buff id** | `10146` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

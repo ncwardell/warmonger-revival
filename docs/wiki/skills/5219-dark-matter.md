@@ -31,7 +31,7 @@ used_by: []
 <!-- generated-keys: title=b3792a type=86a754 id=afc22e sources=f095b8 name_key=ec827e desc_key=fd149a kind=356a19 kind_name=9bc378 target=04e8ed range=902ba3 area=fd20c7 cost=966b26 cooldown=fec9d6 delivery=93a212 effect_kind=da4b92 effects=99eecc damage_or_effect=46468a tooltip_formula=bf0019 visual=002647 icon=c23d4b used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dark Matter](../assets/skills/5219.png) |
+|  | ![Dark Matter](wiki/assets/skills/5219.png) |
 | **Skill id** | `5219` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 5 |

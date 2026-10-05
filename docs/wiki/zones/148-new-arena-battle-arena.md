@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z148_00.dds"
 <!-- generated-keys: title=b6f614 type=c899cd id=536fb6 sources=167eca name_kr=52177e terrain=2932d6 bounds=e175b8 size=770ba9 segments=63c97d fields=3833c5 minimap=6bd532 -->
 |  |  |
 |---|---|
-|  | ![minimap of New arena (Battle Arena)](../assets/zones/148.png) |
+|  | ![minimap of New arena (Battle Arena)](wiki/assets/zones/148.png) |
 | **Zone id** | `148` |
 | **ZoneDB name** | New_arena (English gloss: New arena (Battle Arena)) |
 | **Terrain name** | `new_arena` |

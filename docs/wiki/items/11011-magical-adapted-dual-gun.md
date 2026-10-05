@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=e0c382 type=d36ca9 id=fcae78 sources=2c7a05 name_key=b6fbe8 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=601ca9 stats=c43914 options=2c8fef skills=5566dd reinforce=7b5200 icon=5868a7 obtained_from=501dc8 -->
 |  |  |
 |---|---|
-|  | ![Magical adapted Dual Gun](../assets/items/11011.png) |
+|  | ![Magical adapted Dual Gun](wiki/assets/items/11011.png) |
 | **Item id** | `11011` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

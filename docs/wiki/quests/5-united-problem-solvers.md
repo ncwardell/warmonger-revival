@@ -30,7 +30,7 @@ complete_talk: 635
 <!-- generated-keys: title=ceb419 type=eb5b2b id=ac3478 sources=f68362 name_key=24b466 kind=b6589f kind_name=b3f808 giver=444e6c turn_in=f8f324 offer_maps=6e2020 turn_in_maps=46bf0f bit=ac3478 requires_bit=1b6453 prev=8f4e34 next=e6a0b3 stages=30caa7 objectives=8e6ab4 rewards=a8e717 offer_talk=08ec2e complete_talk=83a002 -->
 |  |  |
 |---|---|
-|  | ![United Problem Solvers](../assets/npcs/201.png) |
+|  | ![United Problem Solvers](wiki/assets/npcs/201.png) |
 | **Quest id** | `5` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/201-shaia\|Shaia]] |

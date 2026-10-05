@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=51b985 type=6143a1 id=58eb91 sources=750fb6 name_key=7e667a duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=154c4c icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![For Honor : Increase 20% Health,Mana,Damage,Spell power,Armor, M.R](../assets/buffs/3036.png) |
+|  | ![For Honor : Increase 20% Health,Mana,Damage,Spell power,Armor, M.R](wiki/assets/buffs/3036.png) |
 | **Buff id** | `3036` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -28,7 +28,7 @@ used_by: []
 <!-- generated-keys: title=4912df type=86a754 id=759e32 sources=d965bd name_key=ee30c5 desc_key=bc3e78 kind=356a19 kind_name=9bc378 target=d99f6c range=77de68 cost=e65f66 cooldown=133145 effect_kind=356a19 effects=e89364 damage_or_effect=e961f0 tooltip_formula=66be6c visual=4296ab icon=1a93f3 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![A Warrior's Body](../assets/skills/5196.png) |
+|  | ![A Warrior's Body](wiki/assets/skills/5196.png) |
 | **Skill id** | `5196` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -58,26 +58,26 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 1 | ![](../assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 1 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
-| 3 | ![](../assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 1 |  | Gold | 40 | 316 | 252 |
-| 4 | ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 1 |  | Gold | 30 | 237 | 189 |
-| 6 | ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
-| 7 | ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
-| 8 | ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
-| 9 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
-| 11 | ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
-| 12 | ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
-| 13 | ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
-| 14 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
-| 16 | ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
-| 17 | ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
-| 18 | ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
-| 19 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
-| 21 | ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
-| 22 | ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
-| 23 | ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
-| 24 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
+| 1 | ![](wiki/assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 1 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
+| 3 | ![](wiki/assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 1 |  | Gold | 40 | 316 | 252 |
+| 4 | ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 1 |  | Gold | 30 | 237 | 189 |
+| 6 | ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
+| 7 | ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
+| 8 | ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
+| 9 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
+| 11 | ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
+| 12 | ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
+| 13 | ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
+| 14 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
+| 16 | ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
+| 17 | ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
+| 18 | ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
+| 19 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
+| 21 | ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  | Gold | 40 | 316 | 252 |
+| 22 | ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  | Gold | 20 | 158 | 126 |
+| 23 | ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  | Gold | 30 | 237 | 189 |
+| 24 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 1 |  | Gold | 30 | 237 | 189 |
 
 12 entries repeat an item already listed (the client shows every entry).
 

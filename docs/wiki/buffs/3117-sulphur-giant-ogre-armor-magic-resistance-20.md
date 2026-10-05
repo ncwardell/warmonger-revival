@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=f2d811 type=6143a1 id=29af7e sources=4efc75 name_key=36d650 duration=995f11 is_buff=b6589f stack_type=356a19 group=b6589f effects=8fd074 icon=eb907e applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Sulphur Giant Ogre : Armor, Magic Resistance +20%](../assets/buffs/3117.png) |
+|  | ![Sulphur Giant Ogre : Armor, Magic Resistance +20%](wiki/assets/buffs/3117.png) |
 | **Buff id** | `3117` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

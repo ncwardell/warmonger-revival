@@ -28,7 +28,7 @@ time_limit_s: null
 <!-- generated-keys: title=a1b133 type=3e3f38 id=05a8ea sources=462a80 field=05a8ea max_users=ac3478 level=77de68 entry_cost=6dc8ea event=7cb6ef shown_rewards=8750e7 c17=667e62 image=2f6ead dungeon_slots=d63727 boss=a4d2f8 gear_tier=13930c gathering=83d28e time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 3) Tsunami Lake](../assets/dungeons/122.png) |
+|  | ![(Lv 3) Tsunami Lake](wiki/assets/dungeons/122.png) |
 | **Field** | [[wiki/fields/122-lv-3-tsunami-lake\|(Lv 3) Tsunami Lake (field 122)]] |
 | **Level** | 3 |
 | **Gear tier dropped** | T1 (guides) |

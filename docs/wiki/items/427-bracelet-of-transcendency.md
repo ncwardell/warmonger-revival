@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=168ff3 type=d36ca9 id=fba7b6 sources=21f4ea name_key=bf7d7a kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=88a052 reinforce=356a19 icon=582d6a obtained_from=dc9486 -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Transcendency](../assets/items/427.png) |
+|  | ![Bracelet of Transcendency](wiki/assets/items/427.png) |
 | **Item id** | `427` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

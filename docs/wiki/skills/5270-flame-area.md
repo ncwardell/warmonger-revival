@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=d01485 type=86a754 id=9e8c4f sources=8f242f name_key=bcd3b2 desc_key=3e9ff7 kind=356a19 kind_name=9bc378 target=d1cc1b range=c1dfd9 area=d82541 cost=2be88c cooldown=cf1f8c effect_kind=356a19 effects=2c5219 damage_or_effect=08f260 visual=f369b4 icon=56e68a used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Flame area](../assets/skills/5270.png) |
+|  | ![Flame area](wiki/assets/skills/5270.png) |
 | **Skill id** | `5270` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

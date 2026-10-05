@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=eff2d4 type=d36ca9 id=4dc778 sources=bda9c7 name_key=e966a6 kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=9a84fa reinforce=356a19 icon=a06501 obtained_from=1299b0 -->
 |  |  |
 |---|---|
-|  | ![Helmet of Honor](../assets/items/417.png) |
+|  | ![Helmet of Honor](wiki/assets/items/417.png) |
 | **Item id** | `417` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=fee13c type=d36ca9 id=76635f sources=51afea name_key=25f37d kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=c59f65 obtained_from=ab2c70 -->
 |  |  |
 |---|---|
-|  | ![Essence of Water](../assets/items/1933.png) |
+|  | ![Essence of Water](wiki/assets/items/1933.png) |
 | **Item id** | `1933` |
 | **Kind** | Material (12) |
 | **Classes** | all |

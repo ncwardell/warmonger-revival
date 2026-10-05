@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=db02bb type=86a754 id=666687 sources=048e65 name_key=4d66b1 desc_key=8af6f9 kind=356a19 kind_name=9bc378 target=e0ddef range=1b6453 area=6d01a6 cost=2be88c cooldown=4a6a0b effect_kind=b6589f effects=412fcb damage_or_effect=b16c17 icon=da8658 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Invisible prison](../assets/skills/20210.png) |
+|  | ![Invisible prison](wiki/assets/skills/20210.png) |
 | **Skill id** | `20210` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: player; up to 15 |

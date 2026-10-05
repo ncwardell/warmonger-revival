@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=67d908 type=d36ca9 id=eb25f6 sources=08a103 name_key=d8e052 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=e856d4 set=356a19 reinforce=92cfce icon=e0e781 obtained_from=d2ee6f -->
 |  |  |
 |---|---|
-|  | ![Death Head's Bracelet](../assets/items/3007.png) |
+|  | ![Death Head's Bracelet](wiki/assets/items/3007.png) |
 | **Item id** | `3007` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

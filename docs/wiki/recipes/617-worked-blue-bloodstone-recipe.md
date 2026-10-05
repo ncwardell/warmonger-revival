@@ -18,7 +18,7 @@ level: 20
 <!-- generated-keys: title=3228b1 type=61613a id=30222b sources=4389aa result=c7493f materials=949c06 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/863.png) |
+|  | ![](wiki/assets/items/863.png) |
 | **Recipe id** | `617` (`Item_Make`) |
 | **Makes** | [[wiki/items/863-worked-blue-bloodstone\|Worked Blue bloodstone]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 20
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 5 |  |
+| ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2417-worked-blue-bloodstone-recipe|recipe 2417]]
 

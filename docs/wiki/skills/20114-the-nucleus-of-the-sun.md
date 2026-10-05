@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=9a132a type=86a754 id=56e992 sources=864815 name_key=191d45 desc_key=cc025b kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=2c1580 damage_or_effect=0d880e icon=ab7449 used_by=fb7a90 -->
 |  |  |
 |---|---|
-|  | ![The nucleus of the sun](../assets/skills/20114.png) |
+|  | ![The nucleus of the sun](wiki/assets/skills/20114.png) |
 | **Skill id** | `20114` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

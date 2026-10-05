@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=4da44a type=d36ca9 id=60ab32 sources=56a1cd name_key=553a74 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=2ad3f8 cost_pair=1c8ee8 stats=97d170 icon=75ec7c obtained_from=b37775 -->
 |  |  |
 |---|---|
-|  | ![Worked Garnet](../assets/items/866.png) |
+|  | ![Worked Garnet](wiki/assets/items/866.png) |
 | **Item id** | `866` |
 | **Kind** | Material (12) |
 | **Classes** | all |

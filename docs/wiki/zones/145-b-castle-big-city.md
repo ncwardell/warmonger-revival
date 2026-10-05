@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z145_00.dds"
 <!-- generated-keys: title=13b3c5 type=c899cd id=50336b sources=b44a14 name_kr=0de64f terrain=ff6bd6 bounds=e09423 size=a1cfbb segments=c8d43a fields=f20d03 minimap=64cd15 -->
 |  |  |
 |---|---|
-|  | ![minimap of B Castle (big city)](../assets/zones/145.png) |
+|  | ![minimap of B Castle (big city)](wiki/assets/zones/145.png) |
 | **Zone id** | `145` |
 | **ZoneDB name** | B대도시 (English gloss: B Castle (big city)) |
 | **Terrain name** | `B_big city` |

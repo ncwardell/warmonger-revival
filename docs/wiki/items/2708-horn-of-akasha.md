@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=99b20d type=d36ca9 id=f17d5a sources=ead734 name_key=879ad7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=cf2a47 obtained_from=4660e5 -->
 |  |  |
 |---|---|
-|  | ![Horn of Akasha](../assets/items/2708.png) |
+|  | ![Horn of Akasha](wiki/assets/items/2708.png) |
 | **Item id** | `2708` |
 | **Kind** | Material (12) |
 | **Classes** | all |

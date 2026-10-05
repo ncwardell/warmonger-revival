@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=c896ec type=61613a id=2d3fbc sources=5991e0 result=d989a6 materials=ee7604 gold=15aa0c success_rate=310b86 category=356a19 filter_mask=4e63ab level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/717.png) |
+|  | ![](wiki/assets/items/717.png) |
 | **Recipe id** | `510` (`Item_Make`) |
 | **Makes** | [[wiki/items/717-tome-of-cooldown-b\|Tome of Cooldown (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/821.png) | [[wiki/items/821-peppermint-powder\|Peppermint powder]] | 20 |  |
-| ![](../assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
-| ![](../assets/items/849.png) | [[wiki/items/849-burning-water\|Burning water]] | 1 |  |
+| ![](wiki/assets/items/821.png) | [[wiki/items/821-peppermint-powder\|Peppermint powder]] | 20 |  |
+| ![](wiki/assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
+| ![](wiki/assets/items/849.png) | [[wiki/items/849-burning-water\|Burning water]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2304-tome-of-cooldown-b-recipe|recipe 2304]]
 

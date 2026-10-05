@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=79d925 type=d36ca9 id=a002f2 sources=7361c1 name_key=02d1f0 kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=c9caa4 icon=febace obtained_from=5bd388 -->
 |  |  |
 |---|---|
-|  | ![Black Hair Dye](../assets/items/2308.png) |
+|  | ![Black Hair Dye](wiki/assets/items/2308.png) |
 | **Item id** | `2308` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

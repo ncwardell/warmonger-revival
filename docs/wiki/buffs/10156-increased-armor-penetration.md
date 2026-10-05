@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=c5b689 type=6143a1 id=7e1d40 sources=5b448d name_key=bd6777 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=a678bf icon=b32353 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Increased Armor Penetration](../assets/buffs/10156.png) |
+|  | ![Increased Armor Penetration](wiki/assets/buffs/10156.png) |
 | **Buff id** | `10156` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

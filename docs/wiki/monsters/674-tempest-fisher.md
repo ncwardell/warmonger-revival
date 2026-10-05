@@ -32,7 +32,7 @@ spawn_fields: [122]
 <!-- generated-keys: title=c1779d type=9bbc46 id=ee4988 sources=6b42c2 name_key=e5b49b category=c1dfd9 class_mask=356a19 kill_group=848f94 model=b7103c model_name=df608e model_path=213684 scale=356a19 radius=356a19 projectile=66c4d1 sounds=12ed91 hero=fe5dbb boss_of=d4ee27 dungeon_rewards=4fc487 quest_targets=aaab23 quest_drops=9cd855 spawn_fields=d4ee27 -->
 |  |  |
 |---|---|
-|  | ![Tempest Fisher](../assets/monsters/674.png) |
+|  | ![Tempest Fisher](wiki/assets/monsters/674.png) |
 | **Unit id** | `674` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

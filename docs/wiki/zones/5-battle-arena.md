@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z5_00.dds"
 <!-- generated-keys: title=dd350c type=c899cd id=ac3478 sources=acdf45 name_kr=c99826 terrain=946cf3 bounds=9200db size=681360 segments=3fa0ba fields=97d170 minimap=0d802b -->
 |  |  |
 |---|---|
-|  | ![minimap of Battle arena](../assets/zones/5.png) |
+|  | ![minimap of Battle arena](wiki/assets/zones/5.png) |
 | **Zone id** | `5` |
 | **ZoneDB name** | 배틀아레나 (English gloss: Battle arena) |
 | **Terrain name** | `Battle_Arena_01` |

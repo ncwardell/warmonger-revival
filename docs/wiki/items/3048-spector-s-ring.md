@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=7e2805 type=d36ca9 id=709856 sources=cb12fe name_key=b24f11 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=9073d4 set=ac3478 reinforce=92cfce icon=ea601f obtained_from=71d1d6 -->
 |  |  |
 |---|---|
-|  | ![Spector's Ring](../assets/items/3048.png) |
+|  | ![Spector's Ring](wiki/assets/items/3048.png) |
 | **Item id** | `3048` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

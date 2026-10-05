@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=350c46 type=6143a1 id=26dbeb sources=3134a9 name_key=5b4df4 duration=bdf5bf is_buff=b6589f stack_type=356a19 group=b6589f effects=de69cf icon=c0fb59 applied_by=9d1a93 -->
 |  |  |
 |---|---|
-|  | ![Backstab : Your basic Attacks deal additional damage](../assets/buffs/10422.png) |
+|  | ![Backstab : Your basic Attacks deal additional damage](wiki/assets/buffs/10422.png) |
 | **Buff id** | `10422` |
 | **Duration** | 7 s (35 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

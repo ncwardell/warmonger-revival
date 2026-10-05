@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=7fa476 type=86a754 id=ff525e sources=cbe441 name_key=818454 desc_key=09dbbe kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=a7242f effect_kind=da4b92 effects=e29d16 damage_or_effect=d601a3 visual=e076fa icon=e5f8ba used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Artamos Transformation](../assets/skills/20201.png) |
+|  | ![Artamos Transformation](wiki/assets/skills/20201.png) |
 | **Skill id** | `20201` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

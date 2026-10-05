@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=c8a367 type=d36ca9 id=9e4e22 sources=776e2c name_key=91e14a kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=edcbc0 set=77de68 reinforce=92cfce icon=4dd0e9 obtained_from=73b5db -->
 |  |  |
 |---|---|
-|  | ![Fisher's Belt](../assets/items/3026.png) |
+|  | ![Fisher's Belt](wiki/assets/items/3026.png) |
 | **Item id** | `3026` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

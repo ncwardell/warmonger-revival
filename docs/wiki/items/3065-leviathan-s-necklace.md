@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=853e21 type=d36ca9 id=aa5006 sources=f689c8 name_key=30010b kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=0a826d set=0ade7c reinforce=92cfce icon=4f938b obtained_from=42e1f6 -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Necklace](../assets/items/3065.png) |
+|  | ![Leviathan's Necklace](wiki/assets/items/3065.png) |
 | **Item id** | `3065` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

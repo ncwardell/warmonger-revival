@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=a7f32c type=d36ca9 id=162cdc sources=dd1d59 name_key=2d11c0 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=43df00 cost_pair=439d8b flags=356a19 no_sell=7cb6ef use_buff=14e7c3 cooldown_s=f1abd6 cooldown_group=da4b92 stats=97d170 options=760626 icon=8f8284 obtained_from=4de660 -->
 |  |  |
 |---|---|
-|  | ![Potion of Mana (S)](../assets/items/892.png) |
+|  | ![Potion of Mana (S)](wiki/assets/items/892.png) |
 | **Item id** | `892` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

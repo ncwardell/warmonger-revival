@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=3c593c type=6143a1 id=bd9df7 sources=9a82ba name_key=15c839 duration=5d0a7b is_buff=b6589f stack_type=356a19 group=b6589f effects=cef9a9 icon=197b6c applied_by=1d79d8 -->
 |  |  |
 |---|---|
-|  | ![Nimble Pursuit : Your next basic attack deals additional damage based on your targets current HP.](../assets/buffs/30098.png) |
+|  | ![Nimble Pursuit : Your next basic attack deals additional damage based on your targets current HP.](wiki/assets/buffs/30098.png) |
 | **Buff id** | `30098` |
 | **Duration** | 6 s (30 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

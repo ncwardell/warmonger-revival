@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z28_00.dds"
 <!-- generated-keys: title=4d60b1 type=c899cd id=0a57cb sources=c04002 name_kr=6bd3f7 terrain=7ff8f8 bounds=fa9dc7 size=114466 segments=5cd95b fields=09000c minimap=6f71f8 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 66 (Earth of Abyss)](../assets/zones/28.png) |
+|  | ![minimap of Field 66 (Earth of Abyss)](wiki/assets/zones/28.png) |
 | **Zone id** | `28` |
 | **ZoneDB name** | 필드_66 (English gloss: Field 66 (Earth of Abyss)) |
 | **Terrain name** | `66` |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z133_00.dds"
 <!-- generated-keys: title=8ae8a9 type=c899cd id=d30f79 sources=6704b5 name_kr=fda145 terrain=8891e0 bounds=0a1b7e size=6f2826 segments=312458 fields=a5a5cb minimap=2831ae -->
 |  |  |
 |---|---|
-|  | ![minimap of Underworld 01 ((Lv 1) Skull Temple)](../assets/zones/133.png) |
+|  | ![minimap of Underworld 01 ((Lv 1) Skull Temple)](wiki/assets/zones/133.png) |
 | **Zone id** | `133` |
 | **ZoneDB name** | 언더월드_01 (English gloss: Underworld 01 ([Lv 1] Skull Temple)) |
 | **Terrain name** | `Underworld_01` |

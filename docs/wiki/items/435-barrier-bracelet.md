@@ -40,7 +40,7 @@ obtained_from:
 <!-- generated-keys: title=add77b type=d36ca9 id=784ef0 sources=dff717 name_key=3a13e9 kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=9836ea reinforce=356a19 icon=ce216b obtained_from=2aa768 -->
 |  |  |
 |---|---|
-|  | ![Barrier Bracelet](../assets/items/435.png) |
+|  | ![Barrier Bracelet](wiki/assets/items/435.png) |
 | **Item id** | `435` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

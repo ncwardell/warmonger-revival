@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=43bbc8 type=6143a1 id=d3c830 sources=1a9fba name_key=bc4d6a duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=ee94f5 icon=30da17 applied_by=04315e -->
 |  |  |
 |---|---|
-|  | ![Strengthen Tower](../assets/buffs/10282.png) |
+|  | ![Strengthen Tower](wiki/assets/buffs/10282.png) |
 | **Buff id** | `10282` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=6b2147 type=d36ca9 id=b1b164 sources=e5e44f name_key=7ebf26 kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 icon=bdd1ca obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Teleport](../assets/items/50001.png) |
+|  | ![Teleport](wiki/assets/items/50001.png) |
 | **Item id** | `50001` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

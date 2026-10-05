@@ -20,7 +20,7 @@ level: 10
 <!-- generated-keys: title=34f0f9 type=61613a id=8b92eb sources=528e7c result=054386 materials=665f88 gold=a5f4fd success_rate=310b86 category=ac3478 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1409.png) |
+|  | ![](wiki/assets/items/1409.png) |
 | **Recipe id** | `1908` (`Item_Make`) |
 | **Makes** | [[wiki/items/1409-reinforce-nexus\|Reinforce Nexus]] × 1 |
 | **Gold** | 30,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/858.png) | [[wiki/items/858-mysterious-core-stone\|Mysterious core stone]] | 1 |  |
-| ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 50 |  |
-| ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 50 |  |
+| ![](wiki/assets/items/858.png) | [[wiki/items/858-mysterious-core-stone\|Mysterious core stone]] | 1 |  |
+| ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 50 |  |
+| ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 50 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

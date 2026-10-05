@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=916956 type=6143a1 id=b42a6d sources=2f45ba name_key=7cc427 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=afc90b icon=b0e9d7 applied_by=7b4f8e -->
 |  |  |
 |---|---|
-|  | ![Kra Sun](../assets/buffs/20107.png) |
+|  | ![Kra Sun](wiki/assets/buffs/20107.png) |
 | **Buff id** | `20107` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

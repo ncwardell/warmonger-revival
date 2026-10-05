@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=6d2417 type=24f03d id=22d200 sources=4a3934 contents=8fb945 value_4c=f8682d opened_by_guess=541053 kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1030.png) |
+|  | ![](wiki/assets/items/1030.png) |
 | **RandomBox id** | `30` |
 | **Opened by** | [[wiki/items/1030-box-of-the-victorious-vi\|Box of the Victorious VI]] (*guess*, not confirmed) |
 | **Value @4c** | 300,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
-| 1 | ![](../assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 4 |  |
-| 2 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 32 |  |
-| 3 | ![](../assets/items/1802.png) | [[wiki/items/1802-life-saviour\|Life saviour]] | 3 |  |
-| 4 | ![](../assets/items/1802.png) | [[wiki/items/1802-life-saviour\|Life saviour]] | 3 |  |
-| 5 | ![](../assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
-| 6 | ![](../assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
-| 7 | ![](../assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
-| 8 | ![](../assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
-| 9 | ![](../assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
+| 0 | ![](wiki/assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
+| 1 | ![](wiki/assets/items/881.png) | [[wiki/items/881-potion-of-brisk-b\|Potion of Brisk (B)]] | 4 |  |
+| 2 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 32 |  |
+| 3 | ![](wiki/assets/items/1802.png) | [[wiki/items/1802-life-saviour\|Life saviour]] | 3 |  |
+| 4 | ![](wiki/assets/items/1802.png) | [[wiki/items/1802-life-saviour\|Life saviour]] | 3 |  |
+| 5 | ![](wiki/assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
+| 6 | ![](wiki/assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
+| 7 | ![](wiki/assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
+| 8 | ![](wiki/assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
+| 9 | ![](wiki/assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 250 |  |
 
 ### Why this box item
 

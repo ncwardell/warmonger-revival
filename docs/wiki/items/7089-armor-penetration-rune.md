@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=49e5d7 type=d36ca9 id=0b4bd9 sources=72e127 name_key=abfd66 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=902ba3 stats=df1a6d options=9b3b47 icon=1f353f obtained_from=1e8d12 -->
 |  |  |
 |---|---|
-|  | ![Armor Penetration Rune](../assets/items/7089.png) |
+|  | ![Armor Penetration Rune](wiki/assets/items/7089.png) |
 | **Item id** | `7089` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

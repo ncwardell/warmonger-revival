@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=2cfc8c type=61613a id=90af7e sources=8bfaa6 result=20b17a materials=a26f37 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=6ae6eb level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3507.png) |
+|  | ![](wiki/assets/items/3507.png) |
 | **Recipe id** | `355` (`Item_Make`) |
 | **Makes** | [[wiki/items/3507-fame-knight-bracelet\|Fame knight Bracelet]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 2 |  |
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 2 |  |
+| ![](wiki/assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 2 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/10003.png) | [[wiki/items/10003-magical-cystal-wand\|Magical Cystal Wand]] | 0 |  |
-| 1 | ![](../assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | 0 |  |
+| 0 | ![](wiki/assets/items/10003.png) | [[wiki/items/10003-magical-cystal-wand\|Magical Cystal Wand]] | 0 |  |
+| 1 | ![](wiki/assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | 0 |  |
 | 2 |  | item 20010 (not in `Item_Base`) | 0 |  |
 | 3 |  | item 10010 (not in `Item_Base`) | 0 |  |
-| 4 | ![](../assets/items/15005.png) | [[wiki/items/15005-skeleton-king-s-vision-bow\|Skeleton king's Vision Bow]] | 0 |  |
-| 5 | ![](../assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | 0 |  |
-| 6 | ![](../assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | 0 |  |
-| 7 | ![](../assets/items/15005.png) | [[wiki/items/15005-skeleton-king-s-vision-bow\|Skeleton king's Vision Bow]] | 0 |  |
+| 4 | ![](wiki/assets/items/15005.png) | [[wiki/items/15005-skeleton-king-s-vision-bow\|Skeleton king's Vision Bow]] | 0 |  |
+| 5 | ![](wiki/assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | 0 |  |
+| 6 | ![](wiki/assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | 0 |  |
+| 7 | ![](wiki/assets/items/15005.png) | [[wiki/items/15005-skeleton-king-s-vision-bow\|Skeleton king's Vision Bow]] | 0 |  |
 | 8 |  | item 20010 (not in `Item_Base`) | 0 |  |
-| 9 | ![](../assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | 0 |  |
+| 9 | ![](wiki/assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | 0 |  |
 <!-- generated:end -->
 
 ## Notes

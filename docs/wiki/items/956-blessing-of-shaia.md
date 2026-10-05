@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=2da28a type=d36ca9 id=5b0e28 sources=de800c name_key=87e073 kind=ca3512 kind_name=621a01 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=c8a910 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blessing of Shaia](../assets/items/956.png) |
+|  | ![Blessing of Shaia](wiki/assets/items/956.png) |
 | **Item id** | `956` |
 | **Kind** | Establish Fort (39) |
 | **Classes** | all |

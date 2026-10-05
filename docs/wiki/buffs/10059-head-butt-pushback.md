@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=08af83 type=6143a1 id=9e6431 sources=0b4814 name_key=d86753 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=dd02d3 applied_by=52aca3 -->
 |  |  |
 |---|---|
-|  | ![Head Butt : Pushback](../assets/buffs/10059.png) |
+|  | ![Head Butt : Pushback](wiki/assets/buffs/10059.png) |
 | **Buff id** | `10059` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

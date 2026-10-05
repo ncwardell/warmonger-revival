@@ -20,7 +20,7 @@ level: 2
 <!-- generated-keys: title=e23f9f type=61613a id=6f2c73 sources=d40c34 result=411e55 materials=b51e9c gold=352bc7 success_rate=310b86 category=da4b92 filter_mask=619013 superior=676423 level=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/15000.png) |
+|  | ![](wiki/assets/items/15000.png) |
 | **Recipe id** | `904` (`Item_Make`) |
 | **Makes** | [[wiki/items/15000-magical-shadow-bow\|Magical Shadow Bow]] × 1 |
 | **Gold** | 20,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,8 +34,8 @@ level: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 70 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 70 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

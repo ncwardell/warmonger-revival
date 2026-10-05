@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=92d1fe type=d36ca9 id=5dd8b5 sources=e990ca name_key=a25427 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=250840 reinforce=356a19 icon=4b7b43 obtained_from=03a12d -->
 |  |  |
 |---|---|
-|  | ![Necklace of Rise](../assets/items/441.png) |
+|  | ![Necklace of Rise](wiki/assets/items/441.png) |
 | **Item id** | `441` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

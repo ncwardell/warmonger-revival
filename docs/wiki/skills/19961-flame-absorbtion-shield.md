@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=0f12db type=86a754 id=f4d46d sources=85e825 name_key=cafb06 desc_key=ee5478 kind=356a19 kind_name=9bc378 target=55b685 range=1b6453 area=6d01a6 cost=d55bc7 cooldown=cf1f8c effect_kind=356a19 effects=e6a946 damage_or_effect=ca0678 visual=83fdc3 icon=e77ed7 used_by=917eaf -->
 |  |  |
 |---|---|
-|  | ![Flame Absorbtion Shield](../assets/skills/19961.png) |
+|  | ![Flame Absorbtion Shield](wiki/assets/skills/19961.png) |
 | **Skill id** | `19961` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

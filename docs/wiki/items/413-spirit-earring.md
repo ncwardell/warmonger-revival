@@ -44,7 +44,7 @@ obtained_from:
 <!-- generated-keys: title=3d4b74 type=d36ca9 id=5715aa sources=29a582 name_key=9aa4aa kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=bc5e36 reinforce=356a19 icon=02a24b obtained_from=cf8582 -->
 |  |  |
 |---|---|
-|  | ![Spirit Earring](../assets/items/413.png) |
+|  | ![Spirit Earring](wiki/assets/items/413.png) |
 | **Item id** | `413` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

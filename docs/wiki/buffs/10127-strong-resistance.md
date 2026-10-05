@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=8c7f2e type=6143a1 id=9a2a5f sources=cc8049 name_key=757e3d duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=07b4f1 icon=703af3 applied_by=629cfc -->
 |  |  |
 |---|---|
-|  | ![Strong Resistance](../assets/buffs/10127.png) |
+|  | ![Strong Resistance](wiki/assets/buffs/10127.png) |
 | **Buff id** | `10127` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

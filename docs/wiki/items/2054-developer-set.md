@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=e1223d type=d36ca9 id=e3bbbd sources=2ce54b name_key=ac5d0d kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 stats=97d170 options=c61b8c icon=5612e5 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Developer Set](../assets/items/2054.png) |
+|  | ![Developer Set](wiki/assets/items/2054.png) |
 | **Item id** | `2054` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

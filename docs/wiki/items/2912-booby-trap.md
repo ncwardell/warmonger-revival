@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=c53a2d type=d36ca9 id=ff08a3 sources=4367a2 name_key=a5f862 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=a9983e cost_pair=9550b6 flags=356a19 no_sell=7cb6ef use_skill=3c7d14 cooldown_s=2d0c8a cooldown_group=b3f0c7 stats=97d170 options=dc5cd2 icon=c4012e obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Booby trap.](../assets/items/2912.png) |
+|  | ![Booby trap.](wiki/assets/items/2912.png) |
 | **Item id** | `2912` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

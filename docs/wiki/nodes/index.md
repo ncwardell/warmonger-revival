@@ -15,9 +15,9 @@ Field objects the client places itself (`Trigger.cdb`): herb and ore gathering n
 |  | 9901 | [[wiki/nodes/9901-scout\|Scout]] | complete | 0 |
 |  | 10001 | [[wiki/nodes/10001-scout\|Scout]] | complete | 0 |
 |  | 10101 | [[wiki/nodes/10101-scout\|Scout]] | complete | 0 |
-| ![](../assets/nodes/10803.png) | 10803 | [[wiki/nodes/10803-scout-leader\|Scout Leader]] | complete | 0 |
-| ![](../assets/nodes/10904.png) | 10904 | [[wiki/nodes/10904-scout-leader\|Scout Leader]] | complete | 0 |
-| ![](../assets/nodes/11105.png) | 11105 | [[wiki/nodes/11105-scout-leader\|Scout Leader]] | complete | 0 |
+| ![](wiki/assets/nodes/10803.png) | 10803 | [[wiki/nodes/10803-scout-leader\|Scout Leader]] | complete | 0 |
+| ![](wiki/assets/nodes/10904.png) | 10904 | [[wiki/nodes/10904-scout-leader\|Scout Leader]] | complete | 0 |
+| ![](wiki/assets/nodes/11105.png) | 11105 | [[wiki/nodes/11105-scout-leader\|Scout Leader]] | complete | 0 |
 |  | 11406 | [[wiki/nodes/11406-knightage-s-leader\|Knightage's Leader]] | complete | 0 |
 |  | 11407 | [[wiki/nodes/11407-knightage-s-leader\|Knightage's Leader]] | complete | 0 |
 |  | 11408 | [[wiki/nodes/11408-knightage-s-leader\|Knightage's Leader]] | complete | 0 |

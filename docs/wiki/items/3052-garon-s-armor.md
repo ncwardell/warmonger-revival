@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=61c9e7 type=d36ca9 id=9a0f09 sources=d8e5a6 name_key=109bed kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=b39e3f set=c1dfd9 reinforce=92cfce icon=f2360c obtained_from=878f71 -->
 |  |  |
 |---|---|
-|  | ![Garon's Armor](../assets/items/3052.png) |
+|  | ![Garon's Armor](wiki/assets/items/3052.png) |
 | **Item id** | `3052` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

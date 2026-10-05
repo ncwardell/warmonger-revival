@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=688448 type=6143a1 id=ec8e8a sources=416c59 name_key=bd43bf duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=fbadd7 icon=4bb647 applied_by=eda4c4 -->
 |  |  |
 |---|---|
-|  | ![Rapid Dash : Increased Attack Speed](../assets/buffs/10174.png) |
+|  | ![Rapid Dash : Increased Attack Speed](wiki/assets/buffs/10174.png) |
 | **Buff id** | `10174` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

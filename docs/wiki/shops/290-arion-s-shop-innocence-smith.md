@@ -20,7 +20,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=1eea9f type=ffcf9c id=9d3237 sources=424f94 npc=bb3d98 stock=d24fe2 prices=97d170 price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Arion's shop (Innocence Smith)](../assets/npcs/241.png) |
+|  | ![Arion's shop (Innocence Smith)](wiki/assets/npcs/241.png) |
 | **Shop id** | `290` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/241-arion\|Arion]] (Innocence Smith) |
 | **Stock** | 5 entries, 5 distinct items |

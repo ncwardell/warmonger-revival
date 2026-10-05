@@ -33,7 +33,7 @@ complete_talk: 808
 <!-- generated-keys: title=a84d52 type=eb5b2b id=5e796e sources=0eb369 name_key=5a3101 kind=356a19 kind_name=0bac50 giver=91ad7d turn_in=91ad7d offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6692e requires_bit=bd307a prev=76cdc5 next=97d170 stages=30caa7 objectives=2be88c objectives_client=bee846 rewards=237d96 offer_talk=425ac6 complete_talk=38afd2 -->
 |  |  |
 |---|---|
-|  | ![Gear manufacturing](../assets/npcs/213.png) |
+|  | ![Gear manufacturing](wiki/assets/npcs/213.png) |
 | **Quest id** | `110` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/213-odin\|Odin]] |

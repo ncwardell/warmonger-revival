@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=bd76b7 type=24f03d id=d435a6 sources=e7b731 contents=de6602 value_4c=c2d4c5 opened_by_guess=183723 kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1026.png) |
+|  | ![](wiki/assets/items/1026.png) |
 | **RandomBox id** | `23` |
 | **Opened by** | [[wiki/items/1026-ruler-of-gaia-box\|Ruler of Gaia Box]] (*guess*, not confirmed) |
 | **Value @4c** | 50,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 150 |  |
-| 1 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 150 |  |
-| 2 | ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 60 |  |
-| 3 | ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 20 |  |
-| 4 | ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 100 |  |
-| 5 | ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 30 |  |
-| 6 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 200 |  |
-| 7 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
-| 8 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 200 |  |
-| 9 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
+| 0 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 150 |  |
+| 1 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 150 |  |
+| 2 | ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 60 |  |
+| 3 | ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 20 |  |
+| 4 | ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 100 |  |
+| 5 | ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 30 |  |
+| 6 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 200 |  |
+| 7 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
+| 8 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 200 |  |
+| 9 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
 
 ### Why this box item
 

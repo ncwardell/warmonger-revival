@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z61_00.dds"
 <!-- generated-keys: title=e9a3d2 type=c899cd id=6c1e67 sources=3bed72 name_kr=6ced9f terrain=971e41 bounds=d78d88 size=114466 segments=64c884 fields=54c441 minimap=ec13bc -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 42 (Crater of Abaddon)](../assets/zones/61.png) |
+|  | ![minimap of Field 42 (Crater of Abaddon)](wiki/assets/zones/61.png) |
 | **Zone id** | `61` |
 | **ZoneDB name** | 필드_42 (English gloss: Field 42 (Crater of Abaddon)) |
 | **Terrain name** | `42` |

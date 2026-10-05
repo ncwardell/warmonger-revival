@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=7980fa type=6143a1 id=3e2ae0 sources=5db5cd name_key=ff0e9f duration=8c4b49 is_buff=b6589f stack_type=356a19 group=b6589f effects=cf5663 icon=3500a1 applied_by=947e11 -->
 |  |  |
 |---|---|
-|  | ![Fury : Additional 30 Armor Penetration, 150 Attack Speed and 4 Health Regeneration](../assets/buffs/10054.png) |
+|  | ![Fury : Additional 30 Armor Penetration, 150 Attack Speed and 4 Health Regeneration](wiki/assets/buffs/10054.png) |
 | **Buff id** | `10054` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

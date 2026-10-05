@@ -33,7 +33,7 @@ complete_talk: 852
 <!-- generated-keys: title=6b56e0 type=eb5b2b id=bc3f9e sources=cb044e name_key=6af71c kind=77de68 kind_name=01e781 giver=37f9c0 turn_in=37f9c0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=f1abd6 excludes_bit=0a57cb owned_field=40bd00 prev=504845 next=97d170 stages=30caa7 objectives=08183c rewards=618b61 offer_talk=a093a3 complete_talk=2dcc38 -->
 |  |  |
 |---|---|
-|  | ![Weapon appropriation](../assets/npcs/205.png) |
+|  | ![Weapon appropriation](wiki/assets/npcs/205.png) |
 | **Quest id** | `733` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/205-lewellyn\|Lewellyn]] |

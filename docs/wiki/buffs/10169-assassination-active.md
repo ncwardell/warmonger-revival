@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=ea5e5f type=6143a1 id=084c34 sources=eeac85 name_key=5326ba duration=870e64 is_buff=b6589f stack_type=356a19 group=084c34 effects=261d5d icon=d212e9 applied_by=abf19f -->
 |  |  |
 |---|---|
-|  | ![Assassination : Active](../assets/buffs/10169.png) |
+|  | ![Assassination : Active](wiki/assets/buffs/10169.png) |
 | **Buff id** | `10169` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

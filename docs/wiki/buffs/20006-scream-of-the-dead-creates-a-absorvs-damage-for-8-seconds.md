@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=1b4bda type=6143a1 id=5fffae sources=bbb02b name_key=23cb4e duration=8c4b49 is_buff=b6589f stack_type=356a19 group=b6589f effects=76f459 icon=6665b9 applied_by=5ac7ba -->
 |  |  |
 |---|---|
-|  | ![Scream of the Dead : Creates a absorvs damage for 8 seconds](../assets/buffs/20006.png) |
+|  | ![Scream of the Dead : Creates a absorvs damage for 8 seconds](wiki/assets/buffs/20006.png) |
 | **Buff id** | `20006` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

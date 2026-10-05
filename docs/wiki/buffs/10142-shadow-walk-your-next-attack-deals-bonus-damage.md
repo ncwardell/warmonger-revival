@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=a6f985 type=6143a1 id=2505a3 sources=2134bc name_key=de0711 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=f97ee6 icon=67ccf4 applied_by=62846d -->
 |  |  |
 |---|---|
-|  | ![Shadow Walk : Your next Attack deals bonus damage](../assets/buffs/10142.png) |
+|  | ![Shadow Walk : Your next Attack deals bonus damage](wiki/assets/buffs/10142.png) |
 | **Buff id** | `10142` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -27,7 +27,7 @@ obtained_from: []
 <!-- generated-keys: title=024f31 type=d36ca9 id=422237 sources=e28bfe name_key=2c969c kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 cooldown_s=e6c3dd cooldown_group=4d134b stats=718df7 options=359884 icon=4fba65 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fragment of Ausdi](../assets/items/1604.png) |
+|  | ![Fragment of Ausdi](wiki/assets/items/1604.png) |
 | **Item id** | `1604` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

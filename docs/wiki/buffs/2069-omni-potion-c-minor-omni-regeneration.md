@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=f266d0 type=6143a1 id=100b22 sources=08c29c name_key=f5d1a0 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=113826 icon=f46d20 applied_by=8d6443 -->
 |  |  |
 |---|---|
-|  | ![Omni Potion (C) : Minor Omni Regeneration](../assets/buffs/2069.png) |
+|  | ![Omni Potion (C) : Minor Omni Regeneration](wiki/assets/buffs/2069.png) |
 | **Buff id** | `2069` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=c221b5 type=d36ca9 id=f0ee73 sources=6d5cc3 name_key=8b3fc0 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=ec445c options=8aef65 icon=88572b obtained_from=0e3206 -->
 |  |  |
 |---|---|
-|  | ![Military Set](../assets/items/2030.png) |
+|  | ![Military Set](wiki/assets/items/2030.png) |
 | **Item id** | `2030` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

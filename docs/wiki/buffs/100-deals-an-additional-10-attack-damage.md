@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=f3eec8 type=6143a1 id=310b86 sources=7c4beb name_key=8ca41a duration=faac5c is_buff=b6589f stack_type=356a19 group=b6589f effects=2b7bb6 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Deals an additional 10% Attack Damage.](../assets/buffs/100.png) |
+|  | ![Deals an additional 10% Attack Damage.](wiki/assets/buffs/100.png) |
 | **Buff id** | `100` |
 | **Duration** | 30 s (150 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

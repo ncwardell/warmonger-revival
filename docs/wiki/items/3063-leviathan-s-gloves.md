@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=e29df3 type=d36ca9 id=54b0f9 sources=6f9b45 name_key=0bedce kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=4f4d9e set=0ade7c reinforce=92cfce icon=e017f1 obtained_from=7d7a8d -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Gloves](../assets/items/3063.png) |
+|  | ![Leviathan's Gloves](wiki/assets/items/3063.png) |
 | **Item id** | `3063` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

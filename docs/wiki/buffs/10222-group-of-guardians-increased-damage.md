@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=28bcf5 type=6143a1 id=c38cfb sources=80838f name_key=d3fa62 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=da95f8 icon=30f6b2 applied_by=cf32dc -->
 |  |  |
 |---|---|
-|  | ![Group of Guardians : Increased damage](../assets/buffs/10222.png) |
+|  | ![Group of Guardians : Increased damage](wiki/assets/buffs/10222.png) |
 | **Buff id** | `10222` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

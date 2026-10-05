@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=6a281e type=d36ca9 id=36f2cb sources=d1d26b name_key=f7c3bf kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=1ae44d set=1b6453 reinforce=92cfce icon=c5e4dc obtained_from=385f7d -->
 |  |  |
 |---|---|
-|  | ![Komodo's Armor](../assets/items/3032.png) |
+|  | ![Komodo's Armor](wiki/assets/items/3032.png) |
 | **Item id** | `3032` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

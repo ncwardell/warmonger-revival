@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=8c7f2e type=d36ca9 id=85c163 sources=3208fb name_key=269e44 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=a9983e cost_pair=9550b6 flags=356a19 no_sell=7cb6ef use_skill=6d5db0 cooldown_s=2d0c8a cooldown_group=bd307a stats=97d170 options=d49b39 icon=34cabd obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Strong Resistance](../assets/items/2901.png) |
+|  | ![Strong Resistance](wiki/assets/items/2901.png) |
 | **Item id** | `2901` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

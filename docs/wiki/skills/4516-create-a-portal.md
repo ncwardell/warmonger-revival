@@ -25,7 +25,7 @@ tp: {"row": 12, "tp_cost": 1500, "cooldown_s": 120, "need_flags": 396, "c7": 1}
 <!-- generated-keys: title=35c199 type=86a754 id=121de4 sources=adc187 name_key=0835b8 desc_key=9d71d9 kind=356a19 kind_name=9bc378 target=f49bfe range=12c6fc cost=4e6c0e cooldown=d97414 effect_kind=b6589f effects=2f335a damage_or_effect=bf21a9 icon=7af3ea used_by=97d170 tp=2abebb -->
 |  |  |
 |---|---|
-|  | ![Create a Portal](../assets/skills/4516.png) |
+|  | ![Create a Portal](wiki/assets/skills/4516.png) |
 | **Skill id** | `4516` |
 | **Kind** | active (1) |
 | **Target** | ground; self, ally; units: -; up to 1 |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=bc0a06 type=6143a1 id=0164a5 sources=8810b4 name_key=ada4dc duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=7c2214 icon=be594a applied_by=99e02b -->
 |  |  |
 |---|---|
-|  | ![Omni Potion (B) : Strong Omni Regeneration](../assets/buffs/2070.png) |
+|  | ![Omni Potion (B) : Strong Omni Regeneration](wiki/assets/buffs/2070.png) |
 | **Buff id** | `2070` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

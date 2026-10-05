@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=93afc2 type=d36ca9 id=36ad2c sources=ec89c1 name_key=d96e9e kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=fe5dbb stats=2e156a options=0ca6e9 icon=858f76 obtained_from=7583a7 -->
 |  |  |
 |---|---|
-|  | ![Critical Strike (%) Rune](../assets/items/7210.png) |
+|  | ![Critical Strike (%) Rune](wiki/assets/items/7210.png) |
 | **Item id** | `7210` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

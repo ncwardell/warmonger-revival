@@ -24,7 +24,7 @@ time_limit_s: 10800
 <!-- generated-keys: title=a78e33 type=3e3f38 id=91dfde sources=8c38e5 field=91dfde max_users=310b86 entry_cost=6d13a2 event=5ffe53 shown_rewards=d76fc0 c17=32a70a image=511ace notice_key=4817ae schedule=c6cf6c boss=97d170 time_limit_s=1d5529 -->
 |  |  |
 |---|---|
-|  | ![Death's Rest (Passion)](../assets/dungeons/132.png) |
+|  | ![Death's Rest (Passion)](wiki/assets/dungeons/132.png) |
 | **Field** | [[wiki/fields/132-death-s-rest-passion\|Death's Rest (Passion) (field 132)]] |
 | **Max players** | 100 (SceneList) |
 | **Event dungeon** | yes |

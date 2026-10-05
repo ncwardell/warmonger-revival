@@ -57,7 +57,7 @@ obtained_from:
 <!-- generated-keys: title=97ba9c type=d36ca9 id=d2e19c sources=180739 name_key=4b6a3f kind=667be5 kind_name=8e0d16 classes=92d079 bind=2be88c price=f820eb cost_pair=7af57d stats=97d170 icon=ae239b obtained_from=b592c0 -->
 |  |  |
 |---|---|
-|  | ![Gem Stone : Yellow](../assets/items/694.png) |
+|  | ![Gem Stone : Yellow](wiki/assets/items/694.png) |
 | **Item id** | `694` |
 | **Kind** | Jewel (58) |
 | **Classes** | all |

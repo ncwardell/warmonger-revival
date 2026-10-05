@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=0a4187 type=d36ca9 id=8554fe sources=ede23d name_key=8351e9 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=32a324 cost_pair=395e20 stats=97d170 icon=eb1be5 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Yellow Jewel](../assets/items/1006.png) |
+|  | ![Yellow Jewel](wiki/assets/items/1006.png) |
 | **Item id** | `1006` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

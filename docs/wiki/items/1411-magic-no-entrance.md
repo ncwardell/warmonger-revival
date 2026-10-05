@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=e06122 type=d36ca9 id=4a7c9f sources=3f9bcc name_key=24ec7e kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=f72b09 icon=59ed87 obtained_from=865095 -->
 |  |  |
 |---|---|
-|  | ![Magic : No entrance](../assets/items/1411.png) |
+|  | ![Magic : No entrance](wiki/assets/items/1411.png) |
 | **Item id** | `1411` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

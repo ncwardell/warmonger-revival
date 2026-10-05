@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=04414b type=d36ca9 id=62a227 sources=e89810 name_key=2e5240 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=4f4d9e set=356a19 reinforce=92cfce icon=72ecbc obtained_from=c69546 -->
 |  |  |
 |---|---|
-|  | ![Death Head's Gloves](../assets/items/3003.png) |
+|  | ![Death Head's Gloves](wiki/assets/items/3003.png) |
 | **Item id** | `3003` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

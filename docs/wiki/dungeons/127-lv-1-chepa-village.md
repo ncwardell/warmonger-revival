@@ -30,7 +30,7 @@ time_limit_s: null
 <!-- generated-keys: title=a46136 type=3e3f38 id=008451 sources=e5a418 field=008451 max_users=ac3478 level=356a19 entry_cost=6d13a2 event=7cb6ef shown_rewards=82c08d c17=9195f8 image=c57209 dungeon_slots=969ce3 boss=00cb4f gear_tier=13930c gathering=3a8b4c time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 1) Chepa Village](../assets/dungeons/127.png) |
+|  | ![(Lv 1) Chepa Village](wiki/assets/dungeons/127.png) |
 | **Field** | [[wiki/fields/127-lv-1-chepa-village\|(Lv 1) Chepa Village (field 127)]] |
 | **Level** | 1 |
 | **Gear tier dropped** | T1 (guides) |

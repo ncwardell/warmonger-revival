@@ -26,7 +26,7 @@ complete_talk: 823
 <!-- generated-keys: title=a4656b type=eb5b2b id=92cfce sources=b32b8f name_key=a67b97 kind=b6589f kind_name=b3f808 giver=ad0cc6 turn_in=ad0cc6 bit=812ed4 requires_bit=8e63fd prev=8f80dd next=6ee44d stages=a80fa1 objectives=24b023 rewards=ee067c offer_talk=f4904f complete_talk=bf67a6 -->
 |  |  |
 |---|---|
-|  | ![Innocence's recovery operation](../assets/npcs/325.png) |
+|  | ![Innocence's recovery operation](wiki/assets/npcs/325.png) |
 | **Quest id** | `42` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/325-joel\|Joel]] |

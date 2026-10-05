@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=b0ad12 type=d36ca9 id=6e75d2 sources=74b6f5 name_key=fe3c2d kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=9913ea reinforce=da4b92 icon=993a60 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Rise](../assets/items/475.png) |
+|  | ![Bracelet of Rise](wiki/assets/items/475.png) |
 | **Item id** | `475` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

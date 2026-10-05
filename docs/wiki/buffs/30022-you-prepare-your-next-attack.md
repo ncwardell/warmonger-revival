@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=36b317 type=6143a1 id=c45fc9 sources=694cd1 name_key=16d4e0 duration=0aac5a is_buff=b6589f stack_type=356a19 group=9e4337 effects=85ed02 icon=fdf9b8 applied_by=8430b2 -->
 |  |  |
 |---|---|
-|  | ![You prepare your next Attack](../assets/buffs/30022.png) |
+|  | ![You prepare your next Attack](wiki/assets/buffs/30022.png) |
 | **Buff id** | `30022` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

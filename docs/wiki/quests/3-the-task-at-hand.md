@@ -31,7 +31,7 @@ complete_talk: 633
 <!-- generated-keys: title=372f51 type=eb5b2b id=77de68 sources=0a45ad name_key=390214 kind=b6589f kind_name=b3f808 giver=9d96c7 turn_in=9d96c7 offer_maps=6e2020 turn_in_maps=6e2020 bit=77de68 requires_bit=da4b92 prev=249983 next=8f4e34 stages=30caa7 objectives=fda49d rewards=8df38b offer_talk=bc6020 complete_talk=43b4d1 -->
 |  |  |
 |---|---|
-|  | ![The task at hand](../assets/npcs/239.png) |
+|  | ![The task at hand](wiki/assets/npcs/239.png) |
 | **Quest id** | `3` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/239-floyd\|Floyd]] |

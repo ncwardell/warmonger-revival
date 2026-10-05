@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=ec112e type=6143a1 id=c633d0 sources=3ecb91 name_key=ec5a2d duration=2a0b1e is_buff=b6589f stack_type=356a19 group=ac3478 effects=97d170 icon=d9b35f applied_by=a5e998 -->
 |  |  |
 |---|---|
-|  | ![Entangling Shot : Rooted for 2 seconds](../assets/buffs/10087.png) |
+|  | ![Entangling Shot : Rooted for 2 seconds](wiki/assets/buffs/10087.png) |
 | **Buff id** | `10087` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

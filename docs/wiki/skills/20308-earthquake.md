@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=b5f38e type=86a754 id=557425 sources=a8b04b name_key=19ff70 desc_key=4bf357 kind=356a19 kind_name=9bc378 target=9dc90e range=1b6453 area=6d01a6 cost=58a4ca cooldown=133145 effect_kind=da4b92 effects=75086a damage_or_effect=a12173 tooltip_formula=7fd566 visual=5fd7e3 icon=bf44a9 used_by=ce1a4a -->
 |  |  |
 |---|---|
-|  | ![Earthquake](../assets/skills/20308.png) |
+|  | ![Earthquake](wiki/assets/skills/20308.png) |
 | **Skill id** | `20308` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 10 |

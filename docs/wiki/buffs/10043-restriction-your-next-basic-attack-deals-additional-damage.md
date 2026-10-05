@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=9b0757 type=6143a1 id=8ad6f5 sources=1f195a name_key=001768 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=b6589f effects=86fae5 icon=b7a24b applied_by=4933e9 -->
 |  |  |
 |---|---|
-|  | ![Restriction : Your next basic attack deals additional damage](../assets/buffs/10043.png) |
+|  | ![Restriction : Your next basic attack deals additional damage](wiki/assets/buffs/10043.png) |
 | **Buff id** | `10043` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

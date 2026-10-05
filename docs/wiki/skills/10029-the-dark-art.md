@@ -35,7 +35,7 @@ used_by:
 <!-- generated-keys: title=9a9dcc type=86a754 id=38d0a0 sources=7407cb name_key=39c416 desc_key=4fad68 kind=356a19 kind_name=9bc378 target=f3d46d range=902ba3 cost=9e049c cooldown=7d0c8c movement=953fcf effect_kind=356a19 effects=d3cbbe damage_or_effect=0806d2 tooltip_formula=d9a0c2 requirements=7863fc visual=be461a icon=fdf9b8 used_by=42d45b -->
 |  |  |
 |---|---|
-|  | ![The Dark Art](../assets/skills/10029.png) |
+|  | ![The Dark Art](wiki/assets/skills/10029.png) |
 | **Skill id** | `10029` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 2 |

@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=fc558d type=86a754 id=9569d0 sources=e12eb7 name_key=9bd602 desc_key=fc9c4c kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=85d287 damage_or_effect=6aed41 icon=ff62ba used_by=5525ad -->
 |  |  |
 |---|---|
-|  | ![Power of the ax](../assets/skills/20267.png) |
+|  | ![Power of the ax](wiki/assets/skills/20267.png) |
 | **Skill id** | `20267` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

@@ -19,7 +19,7 @@ raw: {"c28": 200}
 <!-- generated-keys: title=c925da type=61613a id=0f8eab sources=08e4ea result=35179b materials=bb5905 gold=f8237d success_rate=310b86 category=1b6453 filter_mask=356a19 raw=fc6d8f -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7032.png) |
+|  | ![](wiki/assets/items/7032.png) |
 | **Recipe id** | `1804` (`Item_Make`) |
 | **Makes** | [[wiki/items/7032-magic-resist-rune\|Magic Resist Rune]] × 1 |
 | **Gold** | 5,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,8 +31,8 @@ raw: {"c28": 200}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
-| ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  |
 
 Unknown columns: `c28` = 200 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

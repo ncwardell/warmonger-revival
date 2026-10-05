@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=b3ac4f type=61613a id=a9d8fb sources=27d568 result=c81352 materials=8db568 gold=15aa0c success_rate=310b86 category=fe5dbb filter_mask=6c13bc level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/757.png) |
+|  | ![](wiki/assets/items/757.png) |
 | **Recipe id** | `2314` (`Item_Make`) |
 | **Makes** | [[wiki/items/757-flask-of-tenacity-b\|Flask of Tenacity (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/829.png) | [[wiki/items/829-spartium-powder\|Spartium powder]] | 20 |  |
-| ![](../assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
-| ![](../assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 1 |  |
+| ![](wiki/assets/items/829.png) | [[wiki/items/829-spartium-powder\|Spartium powder]] | 20 |  |
+| ![](wiki/assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
+| ![](wiki/assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/540-flask-of-tenacity-b-recipe|recipe 540]]
 

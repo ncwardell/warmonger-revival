@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=0ba64c type=6143a1 id=2d3377 sources=ce9f29 name_key=a804b5 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=a79a6b icon=e9f376 applied_by=3f1156 -->
 |  |  |
 |---|---|
-|  | ![The person who selected water](../assets/buffs/20162.png) |
+|  | ![The person who selected water](wiki/assets/buffs/20162.png) |
 | **Buff id** | `20162` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

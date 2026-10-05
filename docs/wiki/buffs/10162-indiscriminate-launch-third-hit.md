@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=f6642f type=6143a1 id=d09124 sources=0c2d93 name_key=5bbd94 duration=6c141f is_buff=b6589f stack_type=356a19 group=d09124 effects=98506d icon=4eabfa applied_by=b78584 -->
 |  |  |
 |---|---|
-|  | ![Indiscriminate Launch : Third hit](../assets/buffs/10162.png) |
+|  | ![Indiscriminate Launch : Third hit](wiki/assets/buffs/10162.png) |
 | **Buff id** | `10162` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

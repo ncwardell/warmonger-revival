@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=e83dd2 type=d36ca9 id=3c6f43 sources=20efaf name_key=f3eab2 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=7abf6c obtained_from=d5ef61 -->
 |  |  |
 |---|---|
-|  | ![Fin of Fisher](../assets/items/2703.png) |
+|  | ![Fin of Fisher](wiki/assets/items/2703.png) |
 | **Item id** | `2703` |
 | **Kind** | Material (12) |
 | **Classes** | all |

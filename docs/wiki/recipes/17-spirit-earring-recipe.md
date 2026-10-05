@@ -20,7 +20,7 @@ raw: {"c28": 150}
 <!-- generated-keys: title=4cc7f0 type=61613a id=0716d9 sources=8f910c result=024608 materials=f2c969 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=905b5a superior=614b67 level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/413.png) |
+|  | ![](wiki/assets/items/413.png) |
 | **Recipe id** | `17` (`Item_Make`) |
 | **Makes** | [[wiki/items/413-spirit-earring\|Spirit Earring]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 150}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

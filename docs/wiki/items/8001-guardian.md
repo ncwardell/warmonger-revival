@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=1817f8 type=d36ca9 id=0c7fa9 sources=62d76a name_key=5adabe kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a weapon_base=b7103c stats=97d170 options=d064e6 skills=8f4f64 reinforce=472b07 icon=13db30 obtained_from=118532 -->
 |  |  |
 |---|---|
-|  | ![Guardian](../assets/items/8001.png) |
+|  | ![Guardian](wiki/assets/items/8001.png) |
 | **Item id** | `8001` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z63_00.dds"
 <!-- generated-keys: title=5429bd type=c899cd id=a17554 sources=a05169 name_kr=490156 terrain=776645 bounds=ee2f87 size=114466 segments=5bbc63 fields=7aed3f minimap=45965c -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 44 (Sunstone Temple)](../assets/zones/63.png) |
+|  | ![minimap of Field 44 (Sunstone Temple)](wiki/assets/zones/63.png) |
 | **Zone id** | `63` |
 | **ZoneDB name** | 필드_44 (English gloss: Field 44 (Sunstone Temple)) |
 | **Terrain name** | `44` |

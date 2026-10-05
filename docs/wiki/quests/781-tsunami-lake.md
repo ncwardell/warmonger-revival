@@ -29,7 +29,7 @@ offer_talk: 864
 <!-- generated-keys: title=b98456 type=eb5b2b id=c7e47b sources=5d9fb8 name_key=9272ec kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=847ad4 offer_maps=15f2a7 bit=be461a requires_bit=fc074d automatic=5ffe53 prev=d8e285 next=09f263 stages=17e0b1 objectives=0558e4 rewards=8974c1 offer_talk=de1592 -->
 |  |  |
 |---|---|
-|  | ![Tsunami Lake](../assets/npcs/200.png) |
+|  | ![Tsunami Lake](wiki/assets/npcs/200.png) |
 | **Quest id** | `781` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

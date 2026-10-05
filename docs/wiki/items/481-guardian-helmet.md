@@ -33,7 +33,7 @@ obtained_from: []
 <!-- generated-keys: title=03b69b type=d36ca9 id=2978e0 sources=a402e3 name_key=c0157e kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=696055 reinforce=da4b92 icon=8a212e obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Guardian Helmet](../assets/items/481.png) |
+|  | ![Guardian Helmet](wiki/assets/items/481.png) |
 | **Item id** | `481` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

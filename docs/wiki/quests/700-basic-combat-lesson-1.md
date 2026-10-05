@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_09.png", "text_key": "Quest_HelpText_700"}
 <!-- generated-keys: title=aff359 type=eb5b2b id=d8e4bb sources=9c8a80 name_key=ba431e kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=b7103c automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=2177c8 rewards=f1841d help=fcaf5c -->
 |  |  |
 |---|---|
-|  | ![Basic Combat Lesson 1](../assets/quests/700.png) |
+|  | ![Basic Combat Lesson 1](wiki/assets/quests/700.png) |
 | **Quest id** | `700` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

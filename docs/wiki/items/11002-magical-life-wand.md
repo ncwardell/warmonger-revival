@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=e84d4a type=d36ca9 id=10e6d7 sources=3a3ac5 name_key=79b5fa kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=a929eb stats=1fb006 options=15dd9a skills=0006fa reinforce=7b5200 icon=e74aa3 obtained_from=501dc8 -->
 |  |  |
 |---|---|
-|  | ![Magical Life Wand](../assets/items/11002.png) |
+|  | ![Magical Life Wand](wiki/assets/items/11002.png) |
 | **Item id** | `11002` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

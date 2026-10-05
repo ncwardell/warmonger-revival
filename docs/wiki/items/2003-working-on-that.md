@@ -28,7 +28,7 @@ obtained_from: []
 <!-- generated-keys: title=e42e4f type=d36ca9 id=ab165c sources=4e9df7 name_key=4e0fa4 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=088270 cost_pair=101f43 period=365a69 stats=97d170 options=c8223e icon=86f522 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Working on that!](../assets/items/2003.png) |
+|  | ![Working on that!](wiki/assets/items/2003.png) |
 | **Item id** | `2003` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

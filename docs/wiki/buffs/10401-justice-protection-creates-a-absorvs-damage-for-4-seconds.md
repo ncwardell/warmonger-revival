@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=aade1c type=6143a1 id=a73f20 sources=18b072 name_key=405ecb duration=3d2da5 is_buff=b6589f stack_type=356a19 group=a73f20 effects=9ff02c icon=e85470 applied_by=0f745f -->
 |  |  |
 |---|---|
-|  | ![Justice Protection : Creates a absorvs damage for 4 seconds](../assets/buffs/10401.png) |
+|  | ![Justice Protection : Creates a absorvs damage for 4 seconds](wiki/assets/buffs/10401.png) |
 | **Buff id** | `10401` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

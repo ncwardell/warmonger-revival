@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z84_00.dds"
 <!-- generated-keys: title=838896 type=c899cd id=be461a sources=852354 name_kr=fc468a terrain=5ec734 bounds=ae3775 size=114466 segments=b0bb9f fields=bf79f8 minimap=d2314f -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 69 (Frostwind - West)](../assets/zones/84.png) |
+|  | ![minimap of Field 69 (Frostwind - West)](wiki/assets/zones/84.png) |
 | **Zone id** | `84` |
 | **ZoneDB name** | 필드_69 (English gloss: Field 69 (Frostwind - West)) |
 | **Terrain name** | `69` |

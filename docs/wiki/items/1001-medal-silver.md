@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=4f3099 type=d36ca9 id=dd0190 sources=2200e3 name_key=11168e kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 icon=e28414 obtained_from=7f8cf0 -->
 |  |  |
 |---|---|
-|  | ![Medal : Silver](../assets/items/1001.png) |
+|  | ![Medal : Silver](wiki/assets/items/1001.png) |
 | **Item id** | `1001` |
 | **Kind** | Material (12) |
 | **Classes** | all |

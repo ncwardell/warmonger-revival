@@ -36,7 +36,7 @@ complete_talk: 855
 <!-- generated-keys: title=64b9bc type=eb5b2b id=98fbc4 sources=2ea1ca name_key=6179d6 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=ad0cc6 offer_maps=15f2a7 bit=16b06b requires_bit=cb4e52 prev=f7a9ff next=97d170 prerequisites=ae2852 stages=30caa7 objectives=7f3f02 rewards=bf883d offer_talk=cbc34d complete_talk=ebcab2 -->
 |  |  |
 |---|---|
-|  | ![Innocence report](../assets/npcs/200.png) |
+|  | ![Innocence report](wiki/assets/npcs/200.png) |
 | **Quest id** | `44` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

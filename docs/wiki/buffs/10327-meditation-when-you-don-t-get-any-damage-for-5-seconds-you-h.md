@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=78c2a0 type=6143a1 id=80a17c sources=3a4b3c name_key=852014 duration=6c141f is_buff=b6589f stack_type=356a19 group=b3f0c7 effects=d6a85f icon=09b1e1 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Meditation : When you don't get any damage for 5 seconds, you heal for 4% of your maximum health every 5 seconds.](../assets/buffs/10327.png) |
+|  | ![Meditation : When you don't get any damage for 5 seconds, you heal for 4% of your maximum health every 5 seconds.](wiki/assets/buffs/10327.png) |
 | **Buff id** | `10327` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

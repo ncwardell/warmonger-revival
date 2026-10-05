@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=9e4245 type=d36ca9 id=8b954a sources=4529be name_key=7a2d63 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=c1dfd9 stats=03d72e options=b588e6 skills=b0a8d9 reinforce=cb4e52 icon=8ff19d obtained_from=1f6035 -->
 |  |  |
 |---|---|
-|  | ![Magical Blade Shield : Flame](../assets/items/10005.png) |
+|  | ![Magical Blade Shield : Flame](wiki/assets/items/10005.png) |
 | **Item id** | `10005` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

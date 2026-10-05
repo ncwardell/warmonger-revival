@@ -72,34 +72,34 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 2 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
-| 3 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 4 | ![](../assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 5 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
-| 6 | ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 7 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 8 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 9 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 10 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 11 | ![](../assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 12 | ![](../assets/items/695.png) | [[wiki/items/695-gem-stone-red\|Gem Stone : Red]] | 1 |  | Gold | 400 | 3,168 | 2,520 |
-| 13 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 14 | ![](../assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 15 | ![](../assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 16 | ![](../assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 17 | ![](../assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | 1 |  | Gold | 100 | 792 | 630 |
-| 18 | ![](../assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 19 | ![](../assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 20 | ![](../assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 21 | ![](../assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | 1 |  | Gold | 100 | 792 | 630 |
-| 22 | ![](../assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 23 | ![](../assets/items/425.png) | [[wiki/items/425-necklace-of-transcendency\|Necklace of Transcendency]] | 1 |  | Gold | 100 | 792 | 630 |
-| 24 | ![](../assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 25 | ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 26 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 27 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 28 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 29 | ![](../assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
+| 3 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 4 | ![](wiki/assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 5 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
+| 6 | ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 7 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 8 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 9 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 10 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 11 | ![](wiki/assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 12 | ![](wiki/assets/items/695.png) | [[wiki/items/695-gem-stone-red\|Gem Stone : Red]] | 1 |  | Gold | 400 | 3,168 | 2,520 |
+| 13 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 14 | ![](wiki/assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 15 | ![](wiki/assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 16 | ![](wiki/assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 17 | ![](wiki/assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | 1 |  | Gold | 100 | 792 | 630 |
+| 18 | ![](wiki/assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 19 | ![](wiki/assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 20 | ![](wiki/assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 21 | ![](wiki/assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | 1 |  | Gold | 100 | 792 | 630 |
+| 22 | ![](wiki/assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 23 | ![](wiki/assets/items/425.png) | [[wiki/items/425-necklace-of-transcendency\|Necklace of Transcendency]] | 1 |  | Gold | 100 | 792 | 630 |
+| 24 | ![](wiki/assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 25 | ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 26 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 27 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 28 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 29 | ![](wiki/assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
 
 14 entries repeat an item already listed (the client shows every entry).
 

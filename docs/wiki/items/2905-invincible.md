@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=c5420c type=d36ca9 id=faa414 sources=6f8ab9 name_key=005c49 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=a9983e cost_pair=9550b6 flags=356a19 no_sell=7cb6ef use_skill=ec7aea cooldown_s=2d0c8a cooldown_group=0ade7c stats=97d170 options=0cafb7 icon=cf9d81 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Invincible](../assets/items/2905.png) |
+|  | ![Invincible](wiki/assets/items/2905.png) |
 | **Item id** | `2905` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

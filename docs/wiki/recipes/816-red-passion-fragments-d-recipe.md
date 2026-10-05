@@ -18,7 +18,7 @@ level: 10
 <!-- generated-keys: title=61942d type=61613a id=f022da sources=a8b2cd result=3b5fe0 materials=d74ac9 gold=a6a084 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/611.png) |
+|  | ![](wiki/assets/items/611.png) |
 | **Recipe id** | `816` (`Item_Make`) |
 | **Makes** | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 100 |
 | **Gold** | 2,500 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 60 |  |
+| ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 60 |  |
 
 Other recipes for the same item: [[wiki/recipes/2107-red-passion-fragments-d-recipe|recipe 2107]]
 

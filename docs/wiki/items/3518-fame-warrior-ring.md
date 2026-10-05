@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=9b4df8 type=d36ca9 id=f15bb5 sources=979f32 name_key=3754f9 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=5a8544 set=fe5dbb reinforce=92cfce icon=3ded20 obtained_from=0fca25 -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Ring](../assets/items/3518.png) |
+|  | ![Fame warrior Ring](wiki/assets/items/3518.png) |
 | **Item id** | `3518` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

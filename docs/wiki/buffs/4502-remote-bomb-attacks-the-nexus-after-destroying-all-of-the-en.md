@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=438a96 type=6143a1 id=361a57 sources=153eda name_key=9f260b duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=413f00 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Remote Bomb: Attacks the Nexus after destroying all of the enemy's attacking Towers.](../assets/buffs/4502.png) |
+|  | ![Remote Bomb: Attacks the Nexus after destroying all of the enemy's attacking Towers.](wiki/assets/buffs/4502.png) |
 | **Buff id** | `4502` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

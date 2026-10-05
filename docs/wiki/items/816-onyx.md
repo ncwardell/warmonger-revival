@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=185f22 type=d36ca9 id=f022da sources=f01b46 name_key=ab9636 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a6a76d cost_pair=f565d5 stats=97d170 icon=3ae83f obtained_from=8151b9 -->
 |  |  |
 |---|---|
-|  | ![Onyx](../assets/items/816.png) |
+|  | ![Onyx](wiki/assets/items/816.png) |
 | **Item id** | `816` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=d97231 type=d36ca9 id=b365ea sources=bd673a name_key=ab44f9 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=b7f50c obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Parchment : Purple](../assets/items/1920.png) |
+|  | ![Parchment : Purple](wiki/assets/items/1920.png) |
 | **Item id** | `1920` |
 | **Kind** | Material (12) |
 | **Classes** | all |

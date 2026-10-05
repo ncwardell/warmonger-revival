@@ -20,7 +20,7 @@ raw: {"c28": 315}
 <!-- generated-keys: title=ee04f8 type=61613a id=64e095 sources=788ae2 result=65cc0d materials=3d5120 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=16666f superior=75986f level=ac3478 raw=e89e54 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/444.png) |
+|  | ![](wiki/assets/items/444.png) |
 | **Recipe id** | `48` (`Item_Make`) |
 | **Makes** | [[wiki/items/444-ring-of-rise\|Ring of Rise]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 315}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 21 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 21 |  |
 
 Unknown columns: `c28` = 315 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

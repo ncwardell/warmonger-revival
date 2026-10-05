@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=31d608 type=86a754 id=b2d754 sources=7c4e08 name_key=1bbad8 desc_key=d97ba0 kind=356a19 kind_name=9bc378 target=49c148 range=1b6453 area=6d01a6 cost=2be88c cooldown=2be88c effect_kind=f1abd6 effects=735872 damage_or_effect=8a0bac visual=ac3e7b icon=51436c used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Highly Concentrated Bomb](../assets/skills/4520.png) |
+|  | ![Highly Concentrated Bomb](wiki/assets/skills/4520.png) |
 | **Skill id** | `4520` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: player, structure; up to 1 |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=ffbf4b type=6143a1 id=31146f sources=27d080 name_key=e3b258 duration=0aac5a is_buff=b6589f stack_type=356a19 group=31146f effects=d146d8 icon=5a5175 applied_by=aeae39 -->
 |  |  |
 |---|---|
-|  | ![Sharp Edges : Bleeds for 3 seconds](../assets/buffs/10111.png) |
+|  | ![Sharp Edges : Bleeds for 3 seconds](wiki/assets/buffs/10111.png) |
 | **Buff id** | `10111` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

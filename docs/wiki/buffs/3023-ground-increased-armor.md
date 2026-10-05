@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=45ce4a type=6143a1 id=9c700f sources=67aca4 name_key=2d83d2 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=4d7471 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Ground : Increased Armor](../assets/buffs/3023.png) |
+|  | ![Ground : Increased Armor](wiki/assets/buffs/3023.png) |
 | **Buff id** | `3023` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=d01485 type=86a754 id=7ce2a3 sources=e51c8f name_key=55a845 desc_key=8415f6 kind=356a19 kind_name=9bc378 target=cacd0a range=c1dfd9 area=d82541 cost=d55bc7 cooldown=cf1f8c delivery=8af2f4 effect_kind=356a19 effects=3e7f8e damage_or_effect=bf21a9 visual=7ee51d icon=56e68a used_by=6a096c -->
 |  |  |
 |---|---|
-|  | ![Flame area](../assets/skills/19954.png) |
+|  | ![Flame area](wiki/assets/skills/19954.png) |
 | **Skill id** | `19954` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

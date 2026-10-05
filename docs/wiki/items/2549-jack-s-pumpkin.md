@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=0ba357 type=d36ca9 id=86c0f4 sources=4fde41 name_key=e2a822 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=d0a678 obtained_from=10b8df -->
 |  |  |
 |---|---|
-|  | ![Jack's Pumpkin](../assets/items/2549.png) |
+|  | ![Jack's Pumpkin](wiki/assets/items/2549.png) |
 | **Item id** | `2549` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

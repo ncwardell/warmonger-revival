@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=bd8c7a type=d36ca9 id=e11c34 sources=bf0625 name_key=ced417 kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=748fbd set=da4b92 reinforce=92cfce icon=171705 obtained_from=769863 -->
 |  |  |
 |---|---|
-|  | ![Skull's Shoes](../assets/items/3014.png) |
+|  | ![Skull's Shoes](wiki/assets/items/3014.png) |
 | **Item id** | `3014` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

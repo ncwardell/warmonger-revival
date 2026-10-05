@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=26a863 type=d36ca9 id=502845 sources=e921ba name_key=359569 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=ac3478 no_sell=7cb6ef summon_unit=c28097 stats=97d170 options=59f9ea icon=951709 obtained_from=fd63e6 -->
 |  |  |
 |---|---|
-|  | ![Warehouse Summon Scroll](../assets/items/921.png) |
+|  | ![Warehouse Summon Scroll](wiki/assets/items/921.png) |
 | **Item id** | `921` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

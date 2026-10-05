@@ -24,7 +24,7 @@ kind: "rune_upgrade"
 <!-- generated-keys: title=b578d0 type=4389c5 id=dd0190 sources=841fe7 group=356a19 rune=76096e levels=72849f kind=6a6d0e -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7002.png) |
+|  | ![](wiki/assets/items/7002.png) |
 | **Rune line** | `JewelSocketMake` group 1 |
 | **Starts at** | [[wiki/items/7002-attack-rune\|Attack Rune]] |
 | **Success rates** | unknown (server side; patch notes give only trends) |
@@ -35,16 +35,16 @@ Each row upgrades the rune to the next item (C->S `0x4a8`). The +9 row has no ne
 
 | level |  | rune | becomes | materials | row |
 |---|---|---|---|---|---|
-| +0 | ![](../assets/items/7002.png) | [[wiki/items/7002-attack-rune\|Attack Rune]] | [[wiki/items/7003-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 1 |
-| +1 | ![](../assets/items/7003.png) | [[wiki/items/7003-attack-rune\|Attack Rune]] | [[wiki/items/7004-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 2 |
-| +2 | ![](../assets/items/7004.png) | [[wiki/items/7004-attack-rune\|Attack Rune]] | [[wiki/items/7005-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 3 |
-| +3 | ![](../assets/items/7005.png) | [[wiki/items/7005-attack-rune\|Attack Rune]] | [[wiki/items/7006-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 4 |
-| +4 | ![](../assets/items/7006.png) | [[wiki/items/7006-attack-rune\|Attack Rune]] | [[wiki/items/7007-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 5 |
-| +5 | ![](../assets/items/7007.png) | [[wiki/items/7007-attack-rune\|Attack Rune]] | [[wiki/items/7008-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 6 |
-| +6 | ![](../assets/items/7008.png) | [[wiki/items/7008-attack-rune\|Attack Rune]] | [[wiki/items/7009-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 7 |
-| +7 | ![](../assets/items/7009.png) | [[wiki/items/7009-attack-rune\|Attack Rune]] | [[wiki/items/7010-attack-rune\|Attack Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 8 |
-| +8 | ![](../assets/items/7010.png) | [[wiki/items/7010-attack-rune\|Attack Rune]] | [[wiki/items/7011-attack-rune\|Attack Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 9 |
-| +9 | ![](../assets/items/7011.png) | [[wiki/items/7011-attack-rune\|Attack Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 10 |
+| +0 | ![](wiki/assets/items/7002.png) | [[wiki/items/7002-attack-rune\|Attack Rune]] | [[wiki/items/7003-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 1 |
+| +1 | ![](wiki/assets/items/7003.png) | [[wiki/items/7003-attack-rune\|Attack Rune]] | [[wiki/items/7004-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 2 |
+| +2 | ![](wiki/assets/items/7004.png) | [[wiki/items/7004-attack-rune\|Attack Rune]] | [[wiki/items/7005-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 3 |
+| +3 | ![](wiki/assets/items/7005.png) | [[wiki/items/7005-attack-rune\|Attack Rune]] | [[wiki/items/7006-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 4 |
+| +4 | ![](wiki/assets/items/7006.png) | [[wiki/items/7006-attack-rune\|Attack Rune]] | [[wiki/items/7007-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 5 |
+| +5 | ![](wiki/assets/items/7007.png) | [[wiki/items/7007-attack-rune\|Attack Rune]] | [[wiki/items/7008-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 6 |
+| +6 | ![](wiki/assets/items/7008.png) | [[wiki/items/7008-attack-rune\|Attack Rune]] | [[wiki/items/7009-attack-rune\|Attack Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 7 |
+| +7 | ![](wiki/assets/items/7009.png) | [[wiki/items/7009-attack-rune\|Attack Rune]] | [[wiki/items/7010-attack-rune\|Attack Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 8 |
+| +8 | ![](wiki/assets/items/7010.png) | [[wiki/items/7010-attack-rune\|Attack Rune]] | [[wiki/items/7011-attack-rune\|Attack Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 9 |
+| +9 | ![](wiki/assets/items/7011.png) | [[wiki/items/7011-attack-rune\|Attack Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 10 |
 
 ### Rules from the patch notes
 

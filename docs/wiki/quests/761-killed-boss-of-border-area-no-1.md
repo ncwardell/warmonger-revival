@@ -38,7 +38,7 @@ complete_talk: 857
 <!-- generated-keys: title=be7ff1 type=eb5b2b id=8d1218 sources=f2d583 name_key=d0da9d kind=356a19 kind_name=0bac50 level=a3b082 giver=65eab4 turn_in=65eab4 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=a17554 requires_bit=0a57cb prev=b891b8 next=4f2426 prerequisites=0ab6f2 stages=30caa7 objectives=6dad98 rewards=792da4 offer_talk=efe76d complete_talk=c44201 -->
 |  |  |
 |---|---|
-|  | ![killed boss of Border area No.1](../assets/npcs/237.png) |
+|  | ![killed boss of Border area No.1](wiki/assets/npcs/237.png) |
 | **Quest id** | `761` |
 | **Kind** | Sub (kind 1) |
 | **Level** | 24+ |

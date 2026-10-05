@@ -31,7 +31,7 @@ complete_talk: 839
 <!-- generated-keys: title=4cbc92 type=eb5b2b id=8bd795 sources=b2fcc9 name_key=2ce04c kind=356a19 kind_name=0bac50 giver=80ee25 turn_in=80ee25 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=35e995 requires_bit=d321d6 prev=d4ee27 next=4feada prerequisites=04b86a stages=30caa7 objectives=ba72ac rewards=3f5128 offer_talk=2dc292 complete_talk=706a95 -->
 |  |  |
 |---|---|
-|  | ![Create Rune](../assets/npcs/323.png) |
+|  | ![Create Rune](wiki/assets/npcs/323.png) |
 | **Quest id** | `121` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/323-alan\|Alan]] |

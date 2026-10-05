@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=91746b type=d36ca9 id=93ac19 sources=1b24af name_key=d07122 kind=b7eb6c kind_name=e687cb classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=18f68d reinforce=356a19 icon=2db0bc obtained_from=cb1008 -->
 |  |  |
 |---|---|
-|  | ![Armor of Honor](../assets/items/418.png) |
+|  | ![Armor of Honor](wiki/assets/items/418.png) |
 | **Item id** | `418` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

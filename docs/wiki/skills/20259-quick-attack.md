@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=67e85a type=86a754 id=12a91c sources=b1047e name_key=8c7e87 desc_key=ce84c4 kind=da4b92 kind_name=3844d5 target=069ef3 range=77de68 cost=2be88c cooldown=2be88c effect_kind=356a19 effects=ce6326 damage_or_effect=0fe15e requirements=be0cd2 visual=668f37 icon=e8b5ca used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Quick attack](../assets/skills/20259.png) |
+|  | ![Quick attack](wiki/assets/skills/20259.png) |
 | **Skill id** | `20259` |
 | **Kind** | passive (2) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

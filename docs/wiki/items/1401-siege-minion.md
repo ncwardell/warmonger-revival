@@ -23,7 +23,7 @@ obtained_from: []
 <!-- generated-keys: title=f5b5ca type=d36ca9 id=e4b5a2 sources=47ee44 name_key=ee7418 kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 options=12f131 icon=35d1e3 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Siege Minion](../assets/items/1401.png) |
+|  | ![Siege Minion](wiki/assets/items/1401.png) |
 | **Item id** | `1401` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

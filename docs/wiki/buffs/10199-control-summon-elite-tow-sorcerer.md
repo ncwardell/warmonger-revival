@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=4d6621 type=6143a1 id=96efe9 sources=fd771c name_key=aa0d0b duration=dc6a42 is_buff=b6589f stack_type=356a19 group=b6589f effects=905e19 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Control : Summon Elite Tow Sorcerer](../assets/buffs/10199.png) |
+|  | ![Control : Summon Elite Tow Sorcerer](wiki/assets/buffs/10199.png) |
 | **Buff id** | `10199` |
 | **Duration** | 10 min (3,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

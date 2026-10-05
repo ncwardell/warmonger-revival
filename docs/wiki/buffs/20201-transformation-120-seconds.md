@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=53faca type=6143a1 id=ff525e sources=5e3bb2 name_key=ae82bc duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=64f810 icon=e5f8ba applied_by=039d84 -->
 |  |  |
 |---|---|
-|  | ![Transformation : 120 Seconds](../assets/buffs/20201.png) |
+|  | ![Transformation : 120 Seconds](wiki/assets/buffs/20201.png) |
 | **Buff id** | `20201` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

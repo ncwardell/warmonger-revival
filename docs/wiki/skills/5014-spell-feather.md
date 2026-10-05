@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=41659a type=86a754 id=5cea47 sources=47c3ca name_key=46ff50 desc_key=96b780 kind=356a19 kind_name=9bc378 target=069ef3 range=0ade7c cost=4e8ae0 cooldown=d1c73e delivery=93a212 effect_kind=da4b92 effects=2b49f3 damage_or_effect=aa3908 tooltip_formula=c2e772 visual=2952ae icon=31f51a used_by=27cc4a -->
 |  |  |
 |---|---|
-|  | ![Spell Feather](../assets/skills/5014.png) |
+|  | ![Spell Feather](wiki/assets/skills/5014.png) |
 | **Skill id** | `5014` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

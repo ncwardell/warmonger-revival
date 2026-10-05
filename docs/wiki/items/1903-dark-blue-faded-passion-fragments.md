@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=e16fa4 type=d36ca9 id=b2526c sources=7cf865 name_key=00c91c kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=1f8546 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dark blue Faded Passion fragments](../assets/items/1903.png) |
+|  | ![Dark blue Faded Passion fragments](wiki/assets/items/1903.png) |
 | **Item id** | `1903` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

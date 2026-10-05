@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z137_00.dds"
 <!-- generated-keys: title=aeee5a type=c899cd id=e1a864 sources=6bbb52 name_kr=d14ea4 terrain=7d8b01 bounds=2f9887 size=6f2826 segments=ad9609 fields=4feada minimap=966cc8 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field dungeon 03(lizardman) ((Lv 4) Swamps of Snake Warrior)](../assets/zones/137.png) |
+|  | ![minimap of Field dungeon 03(lizardman) ((Lv 4) Swamps of Snake Warrior)](wiki/assets/zones/137.png) |
 | **Zone id** | `137` |
 | **ZoneDB name** | 필드던전_03(리자드맨) (English gloss: Field dungeon 03(lizardman) ([Lv 4] Swamps of Snake Warrior)) |
 | **Terrain name** | `FieldDungeon_03` |

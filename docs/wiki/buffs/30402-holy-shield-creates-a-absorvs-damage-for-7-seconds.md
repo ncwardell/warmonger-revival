@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=d22d28 type=6143a1 id=879677 sources=fc442c name_key=3dedca duration=bdf5bf is_buff=b6589f stack_type=77de68 group=74c0ab effects=4213bb icon=7da0f2 applied_by=03fd2f -->
 |  |  |
 |---|---|
-|  | ![Holy Shield : Creates a absorvs damage for 7 seconds](../assets/buffs/30402.png) |
+|  | ![Holy Shield : Creates a absorvs damage for 7 seconds](wiki/assets/buffs/30402.png) |
 | **Buff id** | `30402` |
 | **Duration** | 7 s (35 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

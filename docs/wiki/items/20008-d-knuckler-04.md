@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=cb5119 type=d36ca9 id=28dea5 sources=a683a2 name_key=80ed34 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=e1822d stats=c45f77 options=072f8d skills=97d170 reinforce=17ba07 icon=fea5bf obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![D-KnuckleR-04](../assets/items/20008.png) |
+|  | ![D-KnuckleR-04](wiki/assets/items/20008.png) |
 | **Item id** | `20008` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

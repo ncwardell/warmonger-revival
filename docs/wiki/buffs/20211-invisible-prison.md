@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=db02bb type=6143a1 id=4be437 sources=f196dd name_key=351026 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=da8658 applied_by=7a9c29 -->
 |  |  |
 |---|---|
-|  | ![Invisible prison](../assets/buffs/20211.png) |
+|  | ![Invisible prison](wiki/assets/buffs/20211.png) |
 | **Buff id** | `20211` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

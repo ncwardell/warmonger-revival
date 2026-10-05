@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=400bd0 type=d36ca9 id=b5ac90 sources=d666b9 name_key=0a2c78 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=da4b92 weapon_base=c09763 stats=97d170 options=c7dffc skills=f08e58 reinforce=d435a6 icon=e9f376 obtained_from=30bcb3 -->
 |  |  |
 |---|---|
-|  | ![Sarasvati](../assets/items/8003.png) |
+|  | ![Sarasvati](wiki/assets/items/8003.png) |
 | **Item id** | `8003` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

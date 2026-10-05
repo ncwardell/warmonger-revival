@@ -33,7 +33,7 @@ obtained_from: []
 <!-- generated-keys: title=91746b type=d36ca9 id=1b0a69 sources=8df8b1 name_key=d07122 kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=dff11e reinforce=da4b92 icon=2db0bc obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Armor of Honor](../assets/items/490.png) |
+|  | ![Armor of Honor](wiki/assets/items/490.png) |
 | **Item id** | `490` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

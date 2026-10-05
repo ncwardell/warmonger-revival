@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=d8843d type=3664ce id=584130 sources=806020 name_key=93f346 title_key=506468 npc_title=4aa619 category=e1822d class_mask=da4b92 model=dd500e scale=aa8f28 functions=40bee7 role=4aa619 quests=cf01e9 quest_fields=6e2020 map=16b06b x=a82d3f z=9082fe positions=6848ce -->
 |  |  |
 |---|---|
-|  | ![Floyd](../assets/npcs/239.png) |
+|  | ![Floyd](wiki/assets/npcs/239.png) |
 | **Unit id** | `239` |
 | **Title** | Biologist |
 | **Category** | NPC (category 50) |

@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=9ac475 type=86a754 id=703386 sources=e5829f name_key=280643 desc_key=b1bd6f kind=356a19 kind_name=9bc378 target=e84f24 range=1b6453 area=3e9947 cost=ff5a60 cooldown=ad2ac8 delivery=93a212 effect_kind=da4b92 effects=69769b damage_or_effect=f69851 tooltip_formula=79cd88 visual=ec7f1f icon=251b00 used_by=8f7d5d -->
 |  |  |
 |---|---|
-|  | ![Wrath of the West](../assets/skills/10025.png) |
+|  | ![Wrath of the West](wiki/assets/skills/10025.png) |
 | **Skill id** | `10025` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

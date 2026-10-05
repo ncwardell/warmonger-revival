@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=efc239 type=61613a id=581a8e sources=43a182 result=e2ca29 materials=f1353d gold=e3cbba success_rate=310b86 category=356a19 filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2305.png) |
+|  | ![](wiki/assets/items/2305.png) |
 | **Recipe id** | `766` (`Item_Make`) |
 | **Makes** | [[wiki/items/2305-white-hair-dye\|White Hair Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/874.png) | [[wiki/items/874-extracted-spartium\|Extracted Spartium]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/874.png) | [[wiki/items/874-extracted-spartium\|Extracted Spartium]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2616-white-hair-dye-recipe|recipe 2616]]
 

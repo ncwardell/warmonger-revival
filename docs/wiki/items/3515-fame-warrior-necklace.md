@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=c8609e type=d36ca9 id=b0ac3e sources=ffcd3b name_key=a2065d kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=b6325b set=fe5dbb reinforce=92cfce icon=68f322 obtained_from=a6fd8a -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Necklace](../assets/items/3515.png) |
+|  | ![Fame warrior Necklace](wiki/assets/items/3515.png) |
 | **Item id** | `3515` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

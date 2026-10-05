@@ -32,7 +32,7 @@ complete_talk: 656
 <!-- generated-keys: title=af04be type=eb5b2b id=1574bd sources=7fbb45 name_key=290175 kind=b6589f kind_name=b3f808 giver=65eab4 turn_in=65eab4 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=f1abd6 requires_bit=12c6fc prev=5c6c1d next=261072 stages=642aaf objectives=621ff9 rewards=44d999 offer_talk=4dcee7 complete_talk=e30e49 -->
 |  |  |
 |---|---|
-|  | ![Farrell's Request](../assets/npcs/237.png) |
+|  | ![Farrell's Request](wiki/assets/npcs/237.png) |
 | **Quest id** | `16` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/237-farrell\|Farrell]] |

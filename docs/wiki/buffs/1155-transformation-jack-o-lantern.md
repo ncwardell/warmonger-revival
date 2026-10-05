@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=7aefb1 type=6143a1 id=1955bf sources=e513ea name_key=21fcfa duration=995f11 is_buff=b6589f stack_type=356a19 group=e9a20a effects=2a4686 icon=c7a58c applied_by=720273 -->
 |  |  |
 |---|---|
-|  | ![Transformation : Jack O' Lantern](../assets/buffs/1155.png) |
+|  | ![Transformation : Jack O' Lantern](wiki/assets/buffs/1155.png) |
 | **Buff id** | `1155` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

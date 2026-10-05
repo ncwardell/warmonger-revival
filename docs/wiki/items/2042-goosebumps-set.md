@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=cc0579 type=d36ca9 id=74b580 sources=52c1cb name_key=b364d8 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=1d2b05 options=f9ce0f icon=2e3d37 obtained_from=7baad2 -->
 |  |  |
 |---|---|
-|  | ![Goosebumps Set](../assets/items/2042.png) |
+|  | ![Goosebumps Set](wiki/assets/items/2042.png) |
 | **Item id** | `2042` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

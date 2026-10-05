@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z29_00.dds"
 <!-- generated-keys: title=4b937e type=c899cd id=7719a1 sources=b07a63 name_kr=2882ce terrain=0de2a0 bounds=41fe11 size=114466 segments=f5c0e3 fields=0270af minimap=f90449 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 75 (Thunderstorm Ruin - Abyss)](../assets/zones/29.png) |
+|  | ![minimap of Field 75 (Thunderstorm Ruin - Abyss)](wiki/assets/zones/29.png) |
 | **Zone id** | `29` |
 | **ZoneDB name** | 필드_75 (English gloss: Field 75 (Thunderstorm Ruin - Abyss)) |
 | **Terrain name** | `75` |

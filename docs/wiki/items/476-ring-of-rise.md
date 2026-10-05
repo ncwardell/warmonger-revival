@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=37bfd6 type=d36ca9 id=38c07d sources=b92139 name_key=14208c kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=5be327 reinforce=da4b92 icon=ed0fd2 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Ring of Rise](../assets/items/476.png) |
+|  | ![Ring of Rise](wiki/assets/items/476.png) |
 | **Item id** | `476` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

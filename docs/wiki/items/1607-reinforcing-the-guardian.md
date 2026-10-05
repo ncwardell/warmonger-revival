@@ -22,7 +22,7 @@ obtained_from: []
 <!-- generated-keys: title=49d2a1 type=d36ca9 id=90f919 sources=8f9b55 name_key=d5a7f4 kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=4e9fda icon=cea19a obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Reinforcing the Guardian](../assets/items/1607.png) |
+|  | ![Reinforcing the Guardian](wiki/assets/items/1607.png) |
 | **Item id** | `1607` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

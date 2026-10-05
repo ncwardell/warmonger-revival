@@ -28,7 +28,7 @@ time_limit_s: null
 <!-- generated-keys: title=0f8440 type=3e3f38 id=0ca927 sources=024730 field=0ca927 max_users=ac3478 level=ac3478 entry_cost=11406a event=7cb6ef shown_rewards=3a1a59 c17=1938b7 image=fe7704 dungeon_slots=01fff0 boss=6d768e gear_tier=7b5982 gathering=0cbe10 time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 5) Tow Canyon](../assets/dungeons/125.png) |
+|  | ![(Lv 5) Tow Canyon](wiki/assets/dungeons/125.png) |
 | **Field** | [[wiki/fields/125-lv-5-tow-canyon\|(Lv 5) Tow Canyon (field 125)]] |
 | **Level** | 5 |
 | **Gear tier dropped** | T2 (guides) |

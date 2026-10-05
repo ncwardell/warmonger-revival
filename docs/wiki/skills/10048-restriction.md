@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=a3e44e type=86a754 id=5325f1 sources=a87a2a name_key=4bf999 desc_key=e022d5 kind=356a19 kind_name=9bc378 target=d99f6c range=da4b92 cost=060055 cooldown=5b7687 effect_kind=da4b92 effects=d5a9ed damage_or_effect=9185cd tooltip_formula=e5a074 visual=f67462 icon=b7a24b used_by=551e28 -->
 |  |  |
 |---|---|
-|  | ![Restriction](../assets/skills/10048.png) |
+|  | ![Restriction](wiki/assets/skills/10048.png) |
 | **Skill id** | `10048` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

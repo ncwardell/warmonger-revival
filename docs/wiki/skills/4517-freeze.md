@@ -28,7 +28,7 @@ used_by: []
 <!-- generated-keys: title=903854 type=86a754 id=898453 sources=90e0aa name_key=b9ea03 desc_key=4ec9b8 kind=356a19 kind_name=9bc378 target=2f9b00 range=fe5dbb area=950fc9 cost=2be88c cooldown=2be88c effect_kind=da4b92 effects=066730 damage_or_effect=4fcb65 icon=897d76 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Freeze](../assets/skills/4517.png) |
+|  | ![Freeze](wiki/assets/skills/4517.png) |
 | **Skill id** | `4517` |
 | **Kind** | active (1) |
 | **Target** | self; self, ally, enemy; units: player; up to 15 |

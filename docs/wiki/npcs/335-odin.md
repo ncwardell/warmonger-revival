@@ -33,7 +33,7 @@ positions:
 <!-- generated-keys: title=aa5e60 type=3664ce id=4728a2 sources=68d296 name_key=239d7b title_key=27670d npc_title=8543b1 category=e1822d class_mask=da4b92 model=f67462 scale=2afe7d functions=7d0bc3 role=8543b1 shop=c1dfd9 talk_key=8dc755 portrait=a30bd7 quests=ad1cbc quest_fields=46bf0f map=b37f6d x=187cc9 z=202cb5 positions=b73861 -->
 |  |  |
 |---|---|
-|  | ![Odin](../assets/npcs/335.png) |
+|  | ![Odin](wiki/assets/npcs/335.png) |
 | **Unit id** | `335` |
 | **Title** | Member of Blue Union |
 | **Category** | NPC (category 50) |

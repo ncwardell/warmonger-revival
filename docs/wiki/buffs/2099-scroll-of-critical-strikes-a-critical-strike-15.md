@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=4964ef type=6143a1 id=b0e922 sources=d4e5ac name_key=47ac35 duration=995f11 is_buff=b6589f stack_type=356a19 group=d32f6a effects=d61ba3 icon=2410a2 applied_by=c77cc7 -->
 |  |  |
 |---|---|
-|  | ![Scroll of Critical Strikes (A) : Critical Strike +15%](../assets/buffs/2099.png) |
+|  | ![Scroll of Critical Strikes (A) : Critical Strike +15%](wiki/assets/buffs/2099.png) |
 | **Buff id** | `2099` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

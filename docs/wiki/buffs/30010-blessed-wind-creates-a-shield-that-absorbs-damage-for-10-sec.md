@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=302751 type=6143a1 id=0f7153 sources=186daf name_key=9e5328 duration=6c749d is_buff=b6589f stack_type=356a19 group=b66ddc effects=a46c67 icon=1fd7a3 applied_by=b3697f -->
 |  |  |
 |---|---|
-|  | ![Blessed Wind: Creates a shield that absorbs Damage for 10 seconds](../assets/buffs/30010.png) |
+|  | ![Blessed Wind: Creates a shield that absorbs Damage for 10 seconds](wiki/assets/buffs/30010.png) |
 | **Buff id** | `30010` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=be5a45 type=86a754 id=e9e67b sources=7119cc name_key=dd759e desc_key=b13e38 kind=356a19 kind_name=9bc378 target=47c86e range=7b5200 area=f735bb cost=15d513 cooldown=dceb3e movement=5f1488 delivery=93a212 effect_kind=da4b92 effects=404646 damage_or_effect=98793a tooltip_formula=c2e772 visual=08d55d icon=749ca9 used_by=3441bf -->
 |  |  |
 |---|---|
-|  | ![Tsunami](../assets/skills/20306.png) |
+|  | ![Tsunami](wiki/assets/skills/20306.png) |
 | **Skill id** | `20306` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 10 |

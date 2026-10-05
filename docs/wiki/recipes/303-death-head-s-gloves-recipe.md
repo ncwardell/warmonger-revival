@@ -19,7 +19,7 @@ level: 10
 <!-- generated-keys: title=152587 type=61613a id=bbcbb1 sources=f22d16 result=b6d24f materials=40f776 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=6f5929 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3003.png) |
+|  | ![](wiki/assets/items/3003.png) |
 | **Recipe id** | `303` (`Item_Make`) |
 | **Makes** | [[wiki/items/3003-death-head-s-gloves\|Death Head's Gloves]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
-| ![](../assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
+| ![](wiki/assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
+| ![](wiki/assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

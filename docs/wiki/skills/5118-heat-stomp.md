@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=340165 type=86a754 id=d5a52f sources=881e68 name_key=2ad148 desc_key=dd5140 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=500aa4 cost=f67772 cooldown=c9c532 effect_kind=356a19 effects=db4d14 damage_or_effect=75d6a2 tooltip_formula=0fc93d visual=d6e3de icon=7055ca used_by=d0a398 -->
 |  |  |
 |---|---|
-|  | ![Heat Stomp](../assets/skills/5118.png) |
+|  | ![Heat Stomp](wiki/assets/skills/5118.png) |
 | **Skill id** | `5118` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

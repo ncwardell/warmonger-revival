@@ -28,7 +28,7 @@ used_by: []
 <!-- generated-keys: title=64c9d2 type=86a754 id=5c6f19 sources=13de60 name_key=f7e07c desc_key=38c75c kind=da4b92 kind_name=3844d5 target=069ef3 range=902ba3 cost=2be88c cooldown=2be88c effect_kind=356a19 effects=80689a damage_or_effect=cc6ce8 visual=f8c024 icon=2fe3b0 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Hunting Eye](../assets/skills/20216.png) |
+|  | ![Hunting Eye](wiki/assets/skills/20216.png) |
 | **Skill id** | `20216` |
 | **Kind** | passive (2) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=7fd242 type=d36ca9 id=918e02 sources=0689d5 name_key=9e1221 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=fb6443 stats=db11c4 options=96ad32 skills=a0d417 reinforce=17ba07 icon=e32f4e obtained_from=947977 -->
 |  |  |
 |---|---|
-|  | ![Magical Crush Hammer](../assets/items/20003.png) |
+|  | ![Magical Crush Hammer](wiki/assets/items/20003.png) |
 | **Item id** | `20003` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

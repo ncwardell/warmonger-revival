@@ -20,7 +20,7 @@ raw: {"c28": 195}
 <!-- generated-keys: title=0fabb6 type=61613a id=9cdda6 sources=00e04c result=bbaa32 materials=abbb5c gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=96c62c superior=9e9060 level=356a19 raw=0d675d -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/411.png) |
+|  | ![](wiki/assets/items/411.png) |
 | **Recipe id** | `2015` (`Item_Make`) |
 | **Makes** | [[wiki/items/411-guardian-shoes\|Guardian Shoes]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 195}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 13 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 13 |  |
 
 Unknown columns: `c28` = 195 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

@@ -30,7 +30,7 @@ offer_talk: 769
 <!-- generated-keys: title=3be468 type=eb5b2b id=e1f463 sources=66953d name_key=08312f kind=b6589f kind_name=b3f808 giver=7abdb8 turn_in=847ad4 offer_maps=15f2a7 bit=e99321 requires_bit=601ca9 automatic=5ffe53 prev=7b294d next=97d170 stages=a80fa1 objectives=2be88c objectives_client=bd4ad9 rewards=36d7e5 offer_talk=98079d -->
 |  |  |
 |---|---|
-|  | ![No4. Lords of the Land](../assets/npcs/210.png) |
+|  | ![No4. Lords of the Land](wiki/assets/npcs/210.png) |
 | **Quest id** | `765` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

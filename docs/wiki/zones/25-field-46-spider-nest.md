@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z25_00.dds"
 <!-- generated-keys: title=c43283 type=c899cd id=f6e112 sources=f10872 name_kr=107fc8 terrain=086b69 bounds=3a8336 size=114466 segments=027045 fields=10537b minimap=e63112 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 46 (Spider Nest)](../assets/zones/25.png) |
+|  | ![minimap of Field 46 (Spider Nest)](wiki/assets/zones/25.png) |
 | **Zone id** | `25` |
 | **ZoneDB name** | 필드_46 (English gloss: Field 46 (Spider Nest)) |
 | **Terrain name** | `46` |

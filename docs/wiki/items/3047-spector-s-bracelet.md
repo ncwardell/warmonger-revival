@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=c94a2e type=d36ca9 id=e956d3 sources=3df86e name_key=e97573 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=036c9e set=ac3478 reinforce=92cfce icon=828e5d obtained_from=1ac9e8 -->
 |  |  |
 |---|---|
-|  | ![Spector's Bracelet](../assets/items/3047.png) |
+|  | ![Spector's Bracelet](wiki/assets/items/3047.png) |
 | **Item id** | `3047` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

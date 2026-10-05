@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=c0db7a type=d36ca9 id=c5f248 sources=e99195 name_key=6f44e6 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8a138c cost_pair=b134fa flags=356a19 no_sell=7cb6ef use_buff=7b6b23 cooldown_s=f1abd6 cooldown_group=356a19 stats=97d170 options=8cd4d0 icon=093d07 obtained_from=bb4886 -->
 |  |  |
 |---|---|
-|  | ![Potion of Health (C)](../assets/items/885.png) |
+|  | ![Potion of Health (C)](wiki/assets/items/885.png) |
 | **Item id** | `885` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

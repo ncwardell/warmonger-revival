@@ -30,7 +30,7 @@ offer_talk: 736
 <!-- generated-keys: title=cfe39d type=eb5b2b id=17503a sources=2326c2 name_key=bbd4b9 kind=356a19 kind_name=0bac50 giver=fb5a8b turn_in=847ad4 offer_maps=15f2a7 bit=827bfc requires_bit=1574bd automatic=5ffe53 prev=79d296 next=97d170 stages=30caa7 objectives=7922c4 rewards=55abfa offer_talk=4b14fe -->
 |  |  |
 |---|---|
-|  | ![Hunting Ghosts (Spirit Avenue)](../assets/npcs/214.png) |
+|  | ![Hunting Ghosts (Spirit Avenue)](wiki/assets/npcs/214.png) |
 | **Quest id** | `108` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/214-owen\|Owen]] |

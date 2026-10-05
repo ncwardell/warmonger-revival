@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=cc0579 type=d36ca9 id=e4e36b sources=21a43a name_key=b364d8 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=1d2b05 options=8231fc icon=53a20a obtained_from=bdf4da -->
 |  |  |
 |---|---|
-|  | ![Goosebumps Set](../assets/items/2040.png) |
+|  | ![Goosebumps Set](wiki/assets/items/2040.png) |
 | **Item id** | `2040` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

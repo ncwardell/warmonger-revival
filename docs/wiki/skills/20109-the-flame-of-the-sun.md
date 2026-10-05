@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=779f54 type=86a754 id=0bb788 sources=eff054 name_key=024052 desc_key=94ae56 kind=356a19 kind_name=9bc378 target=9dc90e range=1b6453 area=d82541 cost=cb4f2a cooldown=bc9744 effect_kind=da4b92 effects=86ff8f damage_or_effect=844296 tooltip_formula=a8acf5 requirements=adeac3 visual=7a9556 icon=40f7db used_by=8a1b0f -->
 |  |  |
 |---|---|
-|  | ![The Flame of the Sun](../assets/skills/20109.png) |
+|  | ![The Flame of the Sun](wiki/assets/skills/20109.png) |
 | **Skill id** | `20109` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 10 |

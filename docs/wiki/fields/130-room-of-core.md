@@ -30,7 +30,7 @@ spawn_points: []
 <!-- generated-keys: title=052e88 type=7a94db id=2a7541 sources=6ae821 name_key=05bf33 kind=3e3f38 scene_type=77de68 max_users=22d200 group=b6589f zones=76eab3 segments=108ae9 gates=b7d380 connections=c07309 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 138](../assets/zones/138.png) |
+|  | ![minimap of zone 138](wiki/assets/zones/138.png) |
 | **Field id** | `130` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 30 (SceneList, column meaning *guessed*) |

@@ -31,7 +31,7 @@ positions:
 <!-- generated-keys: title=7f3a06 type=3664ce id=bc15c7 sources=114acf name_key=3a09e3 title_key=b24321 npc_title=aaa7ff category=e1822d class_mask=da4b92 model=fb6443 scale=aa8f28 functions=cc0051 role=aaa7ff talk_key=fa2d23 portrait=76267c quests=09ca2b quest_fields=18e60d map=2d0c8a x=2bd327 z=6875bc positions=56d66c -->
 |  |  |
 |---|---|
-|  | ![Bernice](../assets/npcs/224.png) |
+|  | ![Bernice](wiki/assets/npcs/224.png) |
 | **Unit id** | `224` |
 | **Title** | Oracle of Judgment |
 | **Category** | NPC (category 50) |

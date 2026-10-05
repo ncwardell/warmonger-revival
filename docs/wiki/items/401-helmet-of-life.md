@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=d7c1d5 type=d36ca9 id=63b4f9 sources=953a68 name_key=07e6e5 kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=6c87dd reinforce=356a19 icon=649bf6 obtained_from=6c4cd6 -->
 |  |  |
 |---|---|
-|  | ![Helmet of Life](../assets/items/401.png) |
+|  | ![Helmet of Life](wiki/assets/items/401.png) |
 | **Item id** | `401` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

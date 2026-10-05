@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=8290c8 type=d36ca9 id=624ec0 sources=ea02eb name_key=283161 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=c4f310 cost_pair=809c9f flags=356a19 no_sell=7cb6ef use_skill=22d200 cooldown_s=ac3478 cooldown_group=0716d9 stats=97d170 options=b7bc10 icon=7dc45a obtained_from=340a5a -->
 |  |  |
 |---|---|
-|  | ![Scroll : Return](../assets/items/906.png) |
+|  | ![Scroll : Return](wiki/assets/items/906.png) |
 | **Item id** | `906` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

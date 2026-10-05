@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=b64d0c type=d36ca9 id=ab7f7b sources=078cb6 name_key=d98a89 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=2be88c price=76d727 cost_pair=d2f20b stats=f66d39 reinforce=356a19 icon=8d54f0 obtained_from=bcbea4 -->
 |  |  |
 |---|---|
-|  | ![Spell Ring](../assets/items/400.png) |
+|  | ![Spell Ring](wiki/assets/items/400.png) |
 | **Item id** | `400` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

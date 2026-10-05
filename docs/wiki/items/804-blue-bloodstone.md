@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=e7606f type=d36ca9 id=43a784 sources=3657d4 name_key=d2d33c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=274c67 obtained_from=8151b9 -->
 |  |  |
 |---|---|
-|  | ![Blue bloodstone](../assets/items/804.png) |
+|  | ![Blue bloodstone](wiki/assets/items/804.png) |
 | **Item id** | `804` |
 | **Kind** | Material (12) |
 | **Classes** | all |

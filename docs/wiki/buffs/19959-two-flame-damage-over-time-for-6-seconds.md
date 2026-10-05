@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=17c920 type=6143a1 id=be82e6 sources=682cd0 name_key=fe8613 duration=0aac5a is_buff=b6589f stack_type=356a19 group=be82e6 effects=ef944b icon=593306 applied_by=0503e7 -->
 |  |  |
 |---|---|
-|  | ![Two Flame : Damage over time for 6 seconds](../assets/buffs/19959.png) |
+|  | ![Two Flame : Damage over time for 6 seconds](wiki/assets/buffs/19959.png) |
 | **Buff id** | `19959` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

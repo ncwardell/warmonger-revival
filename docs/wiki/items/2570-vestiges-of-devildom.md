@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=b626eb type=d36ca9 id=97a87e sources=db8351 name_key=cf0692 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=a61fb9 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Vestiges of devildom](../assets/items/2570.png) |
+|  | ![Vestiges of devildom](wiki/assets/items/2570.png) |
 | **Item id** | `2570` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

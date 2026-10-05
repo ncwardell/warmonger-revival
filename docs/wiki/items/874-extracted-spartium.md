@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=8cfa45 type=d36ca9 id=7d9f2b sources=2cc7fb name_key=e1d1a6 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=d98d6c cost_pair=9a5091 stats=97d170 icon=603157 obtained_from=32af07 -->
 |  |  |
 |---|---|
-|  | ![Extracted Spartium](../assets/items/874.png) |
+|  | ![Extracted Spartium](wiki/assets/items/874.png) |
 | **Item id** | `874` |
 | **Kind** | Material (12) |
 | **Classes** | all |

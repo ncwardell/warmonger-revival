@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=0cb684 type=d36ca9 id=5fbdc8 sources=846eec name_key=00f0db kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=ee5640 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Jasmine](../assets/items/824.png) |
+|  | ![Jasmine](wiki/assets/items/824.png) |
 | **Item id** | `824` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=704d8b type=d36ca9 id=c2fc6e sources=efd8c9 name_key=2a74d6 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=00d09b obtained_from=9c8978 -->
 |  |  |
 |---|---|
-|  | ![Dried flower](../assets/items/844.png) |
+|  | ![Dried flower](wiki/assets/items/844.png) |
 | **Item id** | `844` |
 | **Kind** | Material (12) |
 | **Classes** | all |

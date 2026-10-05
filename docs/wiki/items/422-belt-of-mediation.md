@@ -41,7 +41,7 @@ obtained_from:
 <!-- generated-keys: title=ddad67 type=d36ca9 id=020c48 sources=72bd58 name_key=2dad3d kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=d4497b reinforce=356a19 icon=7f6e42 obtained_from=51f590 -->
 |  |  |
 |---|---|
-|  | ![Belt of Mediation](../assets/items/422.png) |
+|  | ![Belt of Mediation](wiki/assets/items/422.png) |
 | **Item id** | `422` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

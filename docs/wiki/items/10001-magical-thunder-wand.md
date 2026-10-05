@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=3f4fa2 type=d36ca9 id=6c447a sources=cfee0f name_key=67c239 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=da4b92 stats=977f84 options=48596c skills=309bef reinforce=17ba07 icon=df9804 obtained_from=e6ef62 -->
 |  |  |
 |---|---|
-|  | ![Magical Thunder Wand](../assets/items/10001.png) |
+|  | ![Magical Thunder Wand](wiki/assets/items/10001.png) |
 | **Item id** | `10001` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

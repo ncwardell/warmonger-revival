@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z8_00.dds"
 <!-- generated-keys: title=eb482c type=c899cd id=fe5dbb sources=ea65c3 name_kr=0e6ccb terrain=ddf7e2 bounds=d2ddb2 size=5640eb segments=f7dc89 fields=bb2d63 minimap=d65f6d -->
 |  |  |
 |---|---|
-|  | ![minimap of Town B (Village)](../assets/zones/8.png) |
+|  | ![minimap of Town B (Village)](wiki/assets/zones/8.png) |
 | **Zone id** | `8` |
 | **ZoneDB name** | 마을B (English gloss: Town B (Village)) |
 | **Terrain name** | `B_Town_01` |

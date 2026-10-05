@@ -20,7 +20,7 @@ raw: {"c28": 300}
 <!-- generated-keys: title=56f80b type=61613a id=887309 sources=141e52 result=9034ff materials=a61815 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=e904c1 superior=2a14e2 level=356a19 raw=c65c1c -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/422.png) |
+|  | ![](wiki/assets/items/422.png) |
 | **Recipe id** | `26` (`Item_Make`) |
 | **Makes** | [[wiki/items/422-belt-of-mediation\|Belt of Mediation]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 300}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 20 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 20 |  |
 
 Unknown columns: `c28` = 300 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

@@ -18,7 +18,7 @@ level: 20
 <!-- generated-keys: title=738ac0 type=61613a id=01eebb sources=c6725a result=7a0a1d materials=3c2369 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6124cb level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/869.png) |
+|  | ![](wiki/assets/items/869.png) |
 | **Recipe id** | `623` (`Item_Make`) |
 | **Makes** | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 20
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/818.png) | [[wiki/items/818-lavender\|Lavender]] | 5 |  |
+| ![](wiki/assets/items/818.png) | [[wiki/items/818-lavender\|Lavender]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2423-extracted-lavender-recipe|recipe 2423]]
 

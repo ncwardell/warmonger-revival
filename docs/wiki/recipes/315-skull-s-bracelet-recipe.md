@@ -19,7 +19,7 @@ level: 10
 <!-- generated-keys: title=9713ed type=61613a id=f6b9b6 sources=4111a6 result=1f900b materials=bf54d7 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=6ae6eb level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3017.png) |
+|  | ![](wiki/assets/items/3017.png) |
 | **Recipe id** | `315` (`Item_Make`) |
 | **Makes** | [[wiki/items/3017-skull-s-bracelet\|Skull's Bracelet]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2702.png) | [[wiki/items/2702-skull-horn\|Skull Horn]] | 1 |  |
-| ![](../assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
+| ![](wiki/assets/items/2702.png) | [[wiki/items/2702-skull-horn\|Skull Horn]] | 1 |  |
+| ![](wiki/assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

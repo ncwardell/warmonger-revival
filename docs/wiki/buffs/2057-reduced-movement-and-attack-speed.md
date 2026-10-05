@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=318981 type=6143a1 id=77047a sources=41196d name_key=58f945 duration=faac5c is_buff=b6589f stack_type=356a19 group=e3cbba effects=0b8164 icon=f877b6 applied_by=269b9b -->
 |  |  |
 |---|---|
-|  | ![Reduced Movement and Attack Speed](../assets/buffs/2057.png) |
+|  | ![Reduced Movement and Attack Speed](wiki/assets/buffs/2057.png) |
 | **Buff id** | `2057` |
 | **Duration** | 30 s (150 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

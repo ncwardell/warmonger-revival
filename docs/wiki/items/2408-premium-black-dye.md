@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=c2e09e type=d36ca9 id=e29450 sources=3ca75c name_key=d528d9 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=97801e icon=a61fb9 obtained_from=90f472 -->
 |  |  |
 |---|---|
-|  | ![Premium Black Dye](../assets/items/2408.png) |
+|  | ![Premium Black Dye](wiki/assets/items/2408.png) |
 | **Item id** | `2408` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

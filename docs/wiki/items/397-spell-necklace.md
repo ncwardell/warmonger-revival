@@ -44,7 +44,7 @@ obtained_from:
 <!-- generated-keys: title=0d54f4 type=d36ca9 id=20387d sources=23732e name_key=f5e2f7 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=f66d39 reinforce=356a19 icon=d73da3 obtained_from=b1284b -->
 |  |  |
 |---|---|
-|  | ![Spell Necklace](../assets/items/397.png) |
+|  | ![Spell Necklace](wiki/assets/items/397.png) |
 | **Item id** | `397` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=f830da type=6143a1 id=104bc1 sources=91eace name_key=94cdda duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=f4309d icon=0392b4 applied_by=b25960 -->
 |  |  |
 |---|---|
-|  | ![Lightning spray : Reduced Armor and Magic Resistance, Movement speed](../assets/buffs/10432.png) |
+|  | ![Lightning spray : Reduced Armor and Magic Resistance, Movement speed](wiki/assets/buffs/10432.png) |
 | **Buff id** | `10432` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

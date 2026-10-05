@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=662740 type=d36ca9 id=2b964f sources=7c28ce name_key=529a0c kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=943da6 obtained_from=32383a -->
 |  |  |
 |---|---|
-|  | ![Secret document](../assets/items/2565.png) |
+|  | ![Secret document](wiki/assets/items/2565.png) |
 | **Item id** | `2565` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

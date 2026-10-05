@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=161bb9 type=24f03d id=827bfc sources=420ca8 contents=bf3390 value_4c=c2d4c5 opened_by_guess=6896dd kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1052.png) |
+|  | ![](wiki/assets/items/1052.png) |
 | **RandomBox id** | `47` |
 | **Opened by** | [[wiki/items/1052-silver-medal-reward-box\|(Silver) Medal Reward Box]] (*guess*, not confirmed) |
 | **Value @4c** | 50,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 30,000 |  |
-| 1 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 30,000 |  |
-| 2 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 60,000 |  |
-| 3 | ![](../assets/items/1002.png) | [[wiki/items/1002-medal-gold\|Medal : Gold]] | 1 |  |
-| 4 | ![](../assets/items/1053.png) | [[wiki/items/1053-gold-medal-reward-box\|(Gold) Medal Reward Box]] | 1 |  |
-| 5 | ![](../assets/items/1053.png) | [[wiki/items/1053-gold-medal-reward-box\|(Gold) Medal Reward Box]] | 1 |  |
-| 6 | ![](../assets/items/7002.png) | [[wiki/items/7002-attack-rune\|Attack Rune]] | 1 |  |
-| 7 | ![](../assets/items/7012.png) | [[wiki/items/7012-ability-power-rune\|Ability Power Rune]] | 1 |  |
-| 8 | ![](../assets/items/7022.png) | [[wiki/items/7022-armor-rune\|Armor Rune]] | 1 |  |
-| 9 | ![](../assets/items/7032.png) | [[wiki/items/7032-magic-resist-rune\|Magic Resist Rune]] | 1 |  |
+| 0 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 30,000 |  |
+| 1 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 30,000 |  |
+| 2 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 60,000 |  |
+| 3 | ![](wiki/assets/items/1002.png) | [[wiki/items/1002-medal-gold\|Medal : Gold]] | 1 |  |
+| 4 | ![](wiki/assets/items/1053.png) | [[wiki/items/1053-gold-medal-reward-box\|(Gold) Medal Reward Box]] | 1 |  |
+| 5 | ![](wiki/assets/items/1053.png) | [[wiki/items/1053-gold-medal-reward-box\|(Gold) Medal Reward Box]] | 1 |  |
+| 6 | ![](wiki/assets/items/7002.png) | [[wiki/items/7002-attack-rune\|Attack Rune]] | 1 |  |
+| 7 | ![](wiki/assets/items/7012.png) | [[wiki/items/7012-ability-power-rune\|Ability Power Rune]] | 1 |  |
+| 8 | ![](wiki/assets/items/7022.png) | [[wiki/items/7022-armor-rune\|Armor Rune]] | 1 |  |
+| 9 | ![](wiki/assets/items/7032.png) | [[wiki/items/7032-magic-resist-rune\|Magic Resist Rune]] | 1 |  |
 
 ### Why this box item
 

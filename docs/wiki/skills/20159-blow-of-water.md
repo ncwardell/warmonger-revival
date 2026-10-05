@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=94c3d3 type=86a754 id=e1c8cc sources=e719cf name_key=ebc26b desc_key=be9fe1 kind=ac3478 kind_name=65782b target=04e8ed range=77de68 area=500aa4 cost=2be88c cooldown=4a6a0b effect_kind=356a19 effects=9f1771 damage_or_effect=fea1e6 visual=2aed8c icon=e4f418 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blow of water](../assets/skills/20159.png) |
+|  | ![Blow of water](wiki/assets/skills/20159.png) |
 | **Skill id** | `20159` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; enemy; units: monster, player; up to 5 |

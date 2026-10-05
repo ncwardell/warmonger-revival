@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z56_00.dds"
 <!-- generated-keys: title=dcdb4b type=c899cd id=54ceb9 sources=6adcc8 name_kr=aed032 terrain=d206b9 bounds=9f33eb size=114466 segments=57c2a0 fields=91a33c minimap=792a8b -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 34 (Skymist Lake)](../assets/zones/56.png) |
+|  | ![minimap of Field 34 (Skymist Lake)](wiki/assets/zones/56.png) |
 | **Zone id** | `56` |
 | **ZoneDB name** | 필드_34 (English gloss: Field 34 (Skymist Lake)) |
 | **Terrain name** | `34` |

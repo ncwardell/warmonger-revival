@@ -21,7 +21,7 @@ raw: {"c2": 1}
 <!-- generated-keys: title=83ccdf type=61613a id=27e7ef sources=9106e6 result=cc9ac5 materials=b112e4 gold=409e95 success_rate=af3e13 category=da4b92 filter_mask=5fa282 level=77de68 raw=e722a2 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/15009.png) |
+|  | ![](wiki/assets/items/15009.png) |
 | **Recipe id** | `924` (`Item_Make`) |
 | **Makes** | [[wiki/items/15009-skeleton-king-s-magic-dagger\|Skeleton King's Magic Dagger]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,9 +34,9 @@ raw: {"c2": 1}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2751.png) | [[wiki/items/2751-the-death-head-s-sealed-weapon\|The Death Head's Sealed Weapon]] | 1 |  |
-| ![](../assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
-| ![](../assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 2 |  |
+| ![](wiki/assets/items/2751.png) | [[wiki/items/2751-the-death-head-s-sealed-weapon\|The Death Head's Sealed Weapon]] | 1 |  |
+| ![](wiki/assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
+| ![](wiki/assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 2 |  |
 
 Unknown columns: `c2` = 1 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

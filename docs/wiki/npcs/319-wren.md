@@ -26,7 +26,7 @@ z: null
 <!-- generated-keys: title=60ea71 type=3664ce id=a84c9a sources=bc7a2b name_key=7d155d title_key=ee2258 npc_title=b0845f category=e1822d class_mask=da4b92 model=af3e13 scale=aa8f28 functions=7dac55 role=b0845f shop=371786 talk_key=2634be portrait=399d90 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Wren](../assets/npcs/319.png) |
+|  | ![Wren](wiki/assets/npcs/319.png) |
 | **Unit id** | `319` |
 | **Title** | Merchant |
 | **Category** | NPC (category 50) |

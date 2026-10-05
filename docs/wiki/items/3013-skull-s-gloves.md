@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=142d56 type=d36ca9 id=9bf5ce sources=5f6a81 name_key=4973c2 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=75b0d9 set=da4b92 reinforce=92cfce icon=3766bf obtained_from=a5b1de -->
 |  |  |
 |---|---|
-|  | ![Skull's Gloves](../assets/items/3013.png) |
+|  | ![Skull's Gloves](wiki/assets/items/3013.png) |
 | **Item id** | `3013` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

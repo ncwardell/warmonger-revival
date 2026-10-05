@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=9a132a type=6143a1 id=745453 sources=035f8d name_key=6820fa duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=9729bb icon=ab7449 applied_by=4e4b90 -->
 |  |  |
 |---|---|
-|  | ![The nucleus of the sun](../assets/buffs/20112.png) |
+|  | ![The nucleus of the sun](wiki/assets/buffs/20112.png) |
 | **Buff id** | `20112` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

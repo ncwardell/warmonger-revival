@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=a5f2eb type=d36ca9 id=64ccc7 sources=f5034b name_key=64cd49 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 stats=97d170 options=c3ad06 icon=215cc9 obtained_from=8d98ff -->
 |  |  |
 |---|---|
-|  | ![Christmas Set](../assets/items/2087.png) |
+|  | ![Christmas Set](wiki/assets/items/2087.png) |
 | **Item id** | `2087` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

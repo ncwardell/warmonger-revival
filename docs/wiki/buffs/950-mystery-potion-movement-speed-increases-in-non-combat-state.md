@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=691314 type=6143a1 id=b63c6a sources=eaf7e4 name_key=0e275a duration=23bd3e is_buff=b6589f stack_type=356a19 group=b6589f effects=f76543 icon=c0e73b applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Mystery Potion Movement speed increases in non-combat state, increases mana.](../assets/buffs/950.png) |
+|  | ![Mystery Potion Movement speed increases in non-combat state, increases mana.](wiki/assets/buffs/950.png) |
 | **Buff id** | `950` |
 | **Duration** | 60 min (18,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

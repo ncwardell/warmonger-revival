@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=43bbc8 type=6143a1 id=dca5e1 sources=987b80 name_key=3579fd duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=7d6f09 icon=30da17 applied_by=a35c40 -->
 |  |  |
 |---|---|
-|  | ![Strengthen Tower](../assets/buffs/4507.png) |
+|  | ![Strengthen Tower](wiki/assets/buffs/4507.png) |
 | **Buff id** | `4507` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

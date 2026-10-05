@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=c10363 type=86a754 id=956224 sources=a6a3a7 name_key=7f8cc0 desc_key=882184 kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=deac18 cooldown=a93f07 delivery=93a212 effect_kind=b6589f effects=23a286 damage_or_effect=f91414 visual=f6b9b6 icon=072780 used_by=aaae7b -->
 |  |  |
 |---|---|
-|  | ![Petrification](../assets/skills/10180.png) |
+|  | ![Petrification](wiki/assets/skills/10180.png) |
 | **Skill id** | `10180` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

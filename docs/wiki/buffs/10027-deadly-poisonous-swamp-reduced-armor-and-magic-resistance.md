@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=47eb30 type=6143a1 id=b9cc0a sources=8d4e39 name_key=90c73a duration=870e64 is_buff=b6589f stack_type=356a19 group=b9cc0a effects=f8da5d icon=90d3d6 applied_by=65ba05 -->
 |  |  |
 |---|---|
-|  | ![Deadly Poisonous Swamp : Reduced Armor and Magic Resistance](../assets/buffs/10027.png) |
+|  | ![Deadly Poisonous Swamp : Reduced Armor and Magic Resistance](wiki/assets/buffs/10027.png) |
 | **Buff id** | `10027` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

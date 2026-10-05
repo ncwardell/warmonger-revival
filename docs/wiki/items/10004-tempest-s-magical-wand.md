@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=2ac65d type=d36ca9 id=75186a sources=256f7c name_key=6b3e75 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=ac3478 stats=977f84 options=59d394 skills=1f1f61 reinforce=cb4e52 icon=f31993 obtained_from=7907a5 -->
 |  |  |
 |---|---|
-|  | ![Tempest's magical wand](../assets/items/10004.png) |
+|  | ![Tempest's magical wand](wiki/assets/items/10004.png) |
 | **Item id** | `10004` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=54f21f type=6143a1 id=3a0582 sources=dc026a name_key=473fe7 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=812a0c icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Resistance](../assets/buffs/10125.png) |
+|  | ![Resistance](wiki/assets/buffs/10125.png) |
 | **Buff id** | `10125` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

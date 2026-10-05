@@ -28,7 +28,7 @@ offer_talk: 914
 <!-- generated-keys: title=23d277 type=eb5b2b id=05a8ea sources=993977 name_key=efe1c3 kind=356a19 kind_name=0bac50 giver=de218c turn_in=847ad4 offer_maps=15f2a7 bit=d321d6 requires_bit=17ba07 automatic=5ffe53 prev=707bff next=a5a5cb stages=30caa7 objectives=c0c1c7 rewards=33baa2 offer_talk=b70158 -->
 |  |  |
 |---|---|
-|  | ![Rune Equipment.](../assets/npcs/324.png) |
+|  | ![Rune Equipment.](wiki/assets/npcs/324.png) |
 | **Quest id** | `122` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/324-casta\|Casta]] |

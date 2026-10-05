@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=c87f5c type=d36ca9 id=7aeed2 sources=a44063 name_key=b9b268 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=15ffcd cost_pair=0a5b72 stats=97d170 icon=a0b59a obtained_from=9a1208 -->
 |  |  |
 |---|---|
-|  | ![Extracted Lavender](../assets/items/869.png) |
+|  | ![Extracted Lavender](wiki/assets/items/869.png) |
 | **Item id** | `869` |
 | **Kind** | Material (12) |
 | **Classes** | all |

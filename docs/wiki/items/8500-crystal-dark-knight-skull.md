@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=b00ded type=d36ca9 id=4b6e9e sources=f75ad8 name_key=283131 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a period=7841fb weapon_base=a72b20 stats=97d170 options=51d0ec skills=f2ce3f reinforce=472b07 icon=6f1b64 obtained_from=a41e2e -->
 |  |  |
 |---|---|
-|  | ![Crystal : Dark knight Skull](../assets/items/8500.png) |
+|  | ![Crystal : Dark knight Skull](wiki/assets/items/8500.png) |
 | **Item id** | `8500` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

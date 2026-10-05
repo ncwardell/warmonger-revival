@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=74155c type=86a754 id=175991 sources=d51697 name_key=f4c26b desc_key=853207 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=4aa5a5 effect_kind=da4b92 effects=f1a6a3 damage_or_effect=5c9829 visual=e076fa icon=e5f8ba used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Chepa Sorcerer Transformation](../assets/skills/20601.png) |
+|  | ![Chepa Sorcerer Transformation](wiki/assets/skills/20601.png) |
 | **Skill id** | `20601` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

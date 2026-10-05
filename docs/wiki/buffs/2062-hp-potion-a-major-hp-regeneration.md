@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=24899d type=6143a1 id=329bcc sources=4f5b96 name_key=fb0ff2 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=6a3780 icon=966ff7 applied_by=d8980d -->
 |  |  |
 |---|---|
-|  | ![HP Potion (A): Major HP Regeneration](../assets/buffs/2062.png) |
+|  | ![HP Potion (A): Major HP Regeneration](wiki/assets/buffs/2062.png) |
 | **Buff id** | `2062` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

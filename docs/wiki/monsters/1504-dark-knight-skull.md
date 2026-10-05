@@ -24,7 +24,7 @@ spawn_fields: [128]
 <!-- generated-keys: title=118473 type=9bbc46 id=cf9e83 sources=8e4c3a name_key=c1884e category=356a19 class_mask=356a19 model=64e095 model_name=de18f7 model_path=f4640e scale=555a5c radius=356a19 sounds=10cd19 hero=356a19 boss_of=c9e1d0 dungeon_rewards=781ba1 spawn_fields=c9e1d0 -->
 |  |  |
 |---|---|
-|  | ![Dark Knight Skull](../assets/monsters/1504.png) |
+|  | ![Dark Knight Skull](wiki/assets/monsters/1504.png) |
 | **Unit id** | `1504` |
 | **Category** | monster (`category@8a` = 1) |
 | **Class mask** | 1 (monster) |

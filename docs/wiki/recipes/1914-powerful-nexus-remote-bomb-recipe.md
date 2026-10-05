@@ -20,7 +20,7 @@ level: 1
 <!-- generated-keys: title=a331f8 type=61613a id=b86667 sources=8979d4 result=b18836 materials=cc1bed gold=c2d4c5 success_rate=310b86 category=ac3478 filter_mask=356a19 level=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1415.png) |
+|  | ![](wiki/assets/items/1415.png) |
 | **Recipe id** | `1914` (`Item_Make`) |
 | **Makes** | [[wiki/items/1415-powerful-nexus-remote-bomb\|Powerful Nexus Remote Bomb]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 1
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/859.png) | [[wiki/items/859-brilliant-core-stone\|Brilliant core stone]] | 1 |  |
-| ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 25 |  |
-| ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 25 |  |
+| ![](wiki/assets/items/859.png) | [[wiki/items/859-brilliant-core-stone\|Brilliant core stone]] | 1 |  |
+| ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 25 |  |
+| ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 25 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

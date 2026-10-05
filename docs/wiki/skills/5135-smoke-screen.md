@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=567d08 type=86a754 id=62d002 sources=98af03 name_key=660d4c desc_key=bf3c03 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=2be88c cooldown=ba8361 effect_kind=356a19 effects=bde9c9 damage_or_effect=becdbe icon=b75792 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Smoke Screen](../assets/skills/5135.png) |
+|  | ![Smoke Screen](wiki/assets/skills/5135.png) |
 | **Skill id** | `5135` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z3_00.dds"
 <!-- generated-keys: title=664c98 type=c899cd id=77de68 sources=de921d name_kr=f16a2d terrain=664c98 bounds=9aa70a size=be57ee segments=63c97d fields=97d170 minimap=f9bfda -->
 |  |  |
 |---|---|
-|  | ![minimap of Dungeon](../assets/zones/3.png) |
+|  | ![minimap of Dungeon](wiki/assets/zones/3.png) |
 | **Zone id** | `3` |
 | **ZoneDB name** | 던전 (English gloss: Dungeon) |
 | **Terrain name** | `Dungeon` |

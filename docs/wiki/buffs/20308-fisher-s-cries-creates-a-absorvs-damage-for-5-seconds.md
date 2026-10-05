@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=9b4260 type=6143a1 id=557425 sources=8df00e name_key=cdd1d1 duration=870e64 is_buff=b6589f stack_type=356a19 group=557425 effects=1b7b3a icon=f9031f applied_by=f7b9e9 -->
 |  |  |
 |---|---|
-|  | ![Fisher's cries : Creates a absorvs damage for 5 seconds](../assets/buffs/20308.png) |
+|  | ![Fisher's cries : Creates a absorvs damage for 5 seconds](wiki/assets/buffs/20308.png) |
 | **Buff id** | `20308` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

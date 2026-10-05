@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=2d4694 type=d36ca9 id=872a31 sources=8a006a name_key=9e7f9b kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=adfabd obtained_from=9b5455 -->
 |  |  |
 |---|---|
-|  | ![Red bloodstone](../assets/items/812.png) |
+|  | ![Red bloodstone](wiki/assets/items/812.png) |
 | **Item id** | `812` |
 | **Kind** | Material (12) |
 | **Classes** | all |

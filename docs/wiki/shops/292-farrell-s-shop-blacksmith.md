@@ -25,7 +25,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=b64223 type=ffcf9c id=85f100 sources=f82d48 npc=49cc8c stock=660f95 prices=97d170 price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Farrell's shop (Blacksmith)](../assets/npcs/317.png) |
+|  | ![Farrell's shop (Blacksmith)](wiki/assets/npcs/317.png) |
 | **Shop id** | `292` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/317-farrell\|Farrell]] (Blacksmith) |
 | **Stock** | 10 entries, 10 distinct items |

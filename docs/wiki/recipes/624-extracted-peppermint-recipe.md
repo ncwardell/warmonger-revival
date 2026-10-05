@@ -18,7 +18,7 @@ level: 20
 <!-- generated-keys: title=5d4f75 type=61613a id=5dca47 sources=7b0cbd result=3cd581 materials=b5501c gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6124cb level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/870.png) |
+|  | ![](wiki/assets/items/870.png) |
 | **Recipe id** | `624` (`Item_Make`) |
 | **Makes** | [[wiki/items/870-extracted-peppermint\|Extracted Peppermint]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 20
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/820.png) | [[wiki/items/820-peppermint\|Peppermint]] | 5 |  |
+| ![](wiki/assets/items/820.png) | [[wiki/items/820-peppermint\|Peppermint]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2424-extracted-peppermint-recipe|recipe 2424]]
 

@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=0d98bb type=d36ca9 id=600aec sources=21a9c3 name_key=005daa kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=4f54bb icon=166312 obtained_from=fcf83a -->
 |  |  |
 |---|---|
-|  | ![Yellow Dye](../assets/items/2503.png) |
+|  | ![Yellow Dye](wiki/assets/items/2503.png) |
 | **Item id** | `2503` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=5a107a type=6143a1 id=23ae30 sources=503cef name_key=c4516f duration=6c749d is_buff=b6589f stack_type=77de68 group=23ae30 effects=816ad5 icon=b1d574 applied_by=781db0 -->
 |  |  |
 |---|---|
-|  | ![Final Strikes : Creates a absorvs damage for 10 seconds](../assets/buffs/10346.png) |
+|  | ![Final Strikes : Creates a absorvs damage for 10 seconds](wiki/assets/buffs/10346.png) |
 | **Buff id** | `10346` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=b6c7d3 type=d36ca9 id=c7e47b sources=bbf1d9 name_key=0ee60f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=ac4818 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Archium Crystal](../assets/items/781.png) |
+|  | ![Archium Crystal](wiki/assets/items/781.png) |
 | **Item id** | `781` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -32,7 +32,7 @@ complete_talk: 879
 <!-- generated-keys: title=8a45bb type=eb5b2b id=6d3eeb sources=770dca name_key=6ba2e9 kind=356a19 kind_name=0bac50 giver=1caac0 turn_in=ad0cc6 offer_maps=15f2a7 bit=1d513c requires_bit=4d89d2 prev=f425d7 next=8d6f6c prerequisites=154ad3 stages=260252 objectives=6f2f72 rewards=066b5c offer_talk=02db8e complete_talk=339e2e -->
 |  |  |
 |---|---|
-|  | ![Innocence Crystal](../assets/npcs/200.png) |
+|  | ![Innocence Crystal](wiki/assets/npcs/200.png) |
 | **Quest id** | `692` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=a6fc02 type=6143a1 id=ac3d01 sources=42b334 name_key=a74332 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=5b7686 icon=c73343 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Gain 5% Armor and Life Steal](../assets/buffs/10112.png) |
+|  | ![Gain 5% Armor and Life Steal](wiki/assets/buffs/10112.png) |
 | **Buff id** | `10112` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

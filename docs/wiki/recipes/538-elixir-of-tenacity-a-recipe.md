@@ -20,7 +20,7 @@ level: 25
 <!-- generated-keys: title=29eab6 type=61613a id=093f0b sources=0d0699 result=58ffd1 materials=077a9e gold=28cc22 success_rate=310b86 category=356a19 filter_mask=348936 level=f6e112 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/754.png) |
+|  | ![](wiki/assets/items/754.png) |
 | **Recipe id** | `538` (`Item_Make`) |
 | **Makes** | [[wiki/items/754-elixir-of-tenacity-a\|Elixir of Tenacity (A)]] × 10 |
 | **Gold** | 900 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 25
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/827.png) | [[wiki/items/827-borage-powder\|Borage powder]] | 30 |  |
-| ![](../assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
-| ![](../assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 2 |  |
+| ![](wiki/assets/items/827.png) | [[wiki/items/827-borage-powder\|Borage powder]] | 30 |  |
+| ![](wiki/assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
+| ![](wiki/assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

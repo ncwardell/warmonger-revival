@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=b1c73b type=d36ca9 id=7e79a3 sources=41c94f name_key=f490c2 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=e78b95 options=977060 icon=a22bb5 obtained_from=77ebf0 -->
 |  |  |
 |---|---|
-|  | ![Dragon Slayer Set](../assets/items/2024.png) |
+|  | ![Dragon Slayer Set](wiki/assets/items/2024.png) |
 | **Item id** | `2024` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

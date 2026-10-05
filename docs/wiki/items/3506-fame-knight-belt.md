@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=d27e38 type=d36ca9 id=a1d131 sources=7baf31 name_key=6ea005 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=24cfd9 set=902ba3 reinforce=92cfce icon=2cc81a obtained_from=a25b19 -->
 |  |  |
 |---|---|
-|  | ![Fame knight Belt](../assets/items/3506.png) |
+|  | ![Fame knight Belt](wiki/assets/items/3506.png) |
 | **Item id** | `3506` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=511b6c type=d36ca9 id=b18a8b sources=acada5 name_key=a96caa kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=293688 set=902ba3 reinforce=92cfce icon=a1b468 obtained_from=83c059 -->
 |  |  |
 |---|---|
-|  | ![Fame knight Necklace](../assets/items/3505.png) |
+|  | ![Fame knight Necklace](wiki/assets/items/3505.png) |
 | **Item id** | `3505` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

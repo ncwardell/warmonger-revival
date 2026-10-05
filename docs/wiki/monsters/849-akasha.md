@@ -25,7 +25,7 @@ spawn_fields: [129]
 <!-- generated-keys: title=0a1de0 type=9bbc46 id=967d1c sources=051a9b name_key=5ed825 category=c1dfd9 class_mask=356a19 model=41f448 model_name=3e25a6 model_path=7ec7a7 scale=aa8f28 radius=356a19 projectile=43d6ee sounds=bfd9b2 hero=bd307a boss_of=0ae2ea dungeon_rewards=121ccb spawn_fields=0ae2ea -->
 |  |  |
 |---|---|
-|  | ![Akasha](../assets/monsters/849.png) |
+|  | ![Akasha](wiki/assets/monsters/849.png) |
 | **Unit id** | `849` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

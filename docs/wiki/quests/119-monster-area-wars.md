@@ -28,7 +28,7 @@ offer_talk: 787
 <!-- generated-keys: title=d1901b type=eb5b2b id=a2e33d sources=b812f7 name_key=f942fd kind=356a19 kind_name=0bac50 giver=37f9c0 turn_in=847ad4 offer_maps=15f2a7 bit=d0e2db requires_bit=12c6fc automatic=5ffe53 prev=5c6c1d next=97d170 stages=30caa7 objectives=2be88c objectives_client=8b8775 rewards=202a6f offer_talk=e00988 -->
 |  |  |
 |---|---|
-|  | ![Monster area wars](../assets/npcs/205.png) |
+|  | ![Monster area wars](wiki/assets/npcs/205.png) |
 | **Quest id** | `119` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/205-lewellyn\|Lewellyn]] |

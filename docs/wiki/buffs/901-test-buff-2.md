@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=0e036f type=6143a1 id=a071f3 sources=c6a163 name_key=55d920 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=aea35f icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Test Buff 2](../assets/buffs/901.png) |
+|  | ![Test Buff 2](wiki/assets/buffs/901.png) |
 | **Buff id** | `901` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

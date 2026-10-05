@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=5d8c5a type=86a754 id=8eef6a sources=8388a8 name_key=79c999 desc_key=f7ff82 kind=356a19 kind_name=9bc378 target=879c59 range=3028f5 area=febbd1 cost=29fd72 cooldown=7d0c8c effect_kind=b6589f effects=6a70e4 damage_or_effect=6619a2 icon=6e5b1d used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Concussive Shells](../assets/skills/5230.png) |
+|  | ![Concussive Shells](wiki/assets/skills/5230.png) |
 | **Skill id** | `5230` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: player, structure; up to 3 |

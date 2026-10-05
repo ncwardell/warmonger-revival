@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=b634ee type=d36ca9 id=5e6367 sources=7103b3 name_key=305e0f kind=b7eb6c kind_name=e687cb classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=ec86ed reinforce=356a19 icon=a5b1b1 obtained_from=6e93d2 -->
 |  |  |
 |---|---|
-|  | ![Armor of Life](../assets/items/402.png) |
+|  | ![Armor of Life](wiki/assets/items/402.png) |
 | **Item id** | `402` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

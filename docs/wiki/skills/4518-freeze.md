@@ -27,7 +27,7 @@ tp: {"row": 13, "tp_cost": 1500, "cooldown_s": 120, "need_flags": 396, "c7": 1}
 <!-- generated-keys: title=903854 type=86a754 id=d1d139 sources=f1b1f8 name_key=b9ea03 desc_key=4ec9b8 kind=356a19 kind_name=9bc378 target=d5ca9d range=3028f5 area=950fc9 cost=4e6c0e cooldown=d97414 effect_kind=356a19 effects=539d98 damage_or_effect=bf21a9 visual=869700 icon=897d76 used_by=97d170 tp=4c8e23 -->
 |  |  |
 |---|---|
-|  | ![Freeze](../assets/skills/4518.png) |
+|  | ![Freeze](wiki/assets/skills/4518.png) |
 | **Skill id** | `4518` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: player; up to 1 |

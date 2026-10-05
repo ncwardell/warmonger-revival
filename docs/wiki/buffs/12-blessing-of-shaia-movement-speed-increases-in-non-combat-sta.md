@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=ad2fe3 type=6143a1 id=7b5200 sources=8d9eda name_key=a9a017 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=f76543 icon=c0e73b applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blessing of Shaia Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 20%](../assets/buffs/12.png) |
+|  | ![Blessing of Shaia Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 20%](wiki/assets/buffs/12.png) |
 | **Buff id** | `12` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

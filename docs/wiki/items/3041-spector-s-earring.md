@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=b247c8 type=d36ca9 id=e61198 sources=5a6f1d name_key=e35897 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=6c86fe set=ac3478 reinforce=92cfce icon=02b4dd obtained_from=baf25d -->
 |  |  |
 |---|---|
-|  | ![Spector's Earring](../assets/items/3041.png) |
+|  | ![Spector's Earring](wiki/assets/items/3041.png) |
 | **Item id** | `3041` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

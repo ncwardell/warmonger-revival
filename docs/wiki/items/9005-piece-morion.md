@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=9ac089 type=d36ca9 id=c4528b sources=103509 name_key=bd23a5 kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=f6022e obtained_from=839bd2 -->
 |  |  |
 |---|---|
-|  | ![Piece : Morion](../assets/items/9005.png) |
+|  | ![Piece : Morion](wiki/assets/items/9005.png) |
 | **Item id** | `9005` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

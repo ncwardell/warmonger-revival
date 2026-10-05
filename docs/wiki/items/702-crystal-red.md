@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=9b419a type=d36ca9 id=a08521 sources=dde576 name_key=d6c6b7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=e3f693 obtained_from=0ca5ba -->
 |  |  |
 |---|---|
-|  | ![Crystal : Red](../assets/items/702.png) |
+|  | ![Crystal : Red](wiki/assets/items/702.png) |
 | **Item id** | `702` |
 | **Kind** | Material (12) |
 | **Classes** | all |

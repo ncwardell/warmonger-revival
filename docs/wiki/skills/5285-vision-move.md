@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=be7862 type=86a754 id=c783e9 sources=936ad8 name_key=5466cc desc_key=7bad18 kind=356a19 kind_name=9bc378 target=c9e051 range=b1d578 area=3b02d8 cost=e4e7cf cooldown=e3989d movement=953fcf effect_kind=da4b92 effects=97d170 damage_or_effect=bf21a9 visual=97705a icon=ad8fbf used_by=47fe66 -->
 |  |  |
 |---|---|
-|  | ![Vision Move](../assets/skills/5285.png) |
+|  | ![Vision Move](wiki/assets/skills/5285.png) |
 | **Skill id** | `5285` |
 | **Kind** | active (1) |
 | **Target** | ground; ally, enemy; units: monster, player; up to 1 |

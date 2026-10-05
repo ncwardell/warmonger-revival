@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z93_00.dds"
 <!-- generated-keys: title=735289 type=c899cd id=08a352 sources=e2154c name_kr=64ab15 terrain=1d0653 bounds=b337f5 size=114466 segments=40e8e1 fields=0bda79 minimap=da700b -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 80 (Windmist Valley)](../assets/zones/93.png) |
+|  | ![minimap of Field 80 (Windmist Valley)](wiki/assets/zones/93.png) |
 | **Zone id** | `93` |
 | **ZoneDB name** | 필드_80 (English gloss: Field 80 (Windmist Valley)) |
 | **Terrain name** | `80` |

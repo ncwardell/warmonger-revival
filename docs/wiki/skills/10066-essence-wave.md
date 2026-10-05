@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=ebf099 type=86a754 id=f44072 sources=1a60a1 name_key=715588 desc_key=e3ada4 kind=356a19 kind_name=9bc378 target=e84f24 range=0716d9 area=34415f cost=ebaf92 cooldown=8825ab delivery=93a212 effect_kind=356a19 effects=2719ea damage_or_effect=fe6745 tooltip_formula=05d6db visual=eb4ac3 icon=5f7b06 used_by=9b9e06 -->
 |  |  |
 |---|---|
-|  | ![Essence Wave](../assets/skills/10066.png) |
+|  | ![Essence Wave](wiki/assets/skills/10066.png) |
 | **Skill id** | `10066` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=b331de type=86a754 id=c5d9e5 sources=9279a0 name_key=a08f30 desc_key=333b54 kind=356a19 kind_name=9bc378 target=55b685 range=356a19 area=d82541 cost=5baaf6 cooldown=e0e4dd effect_kind=632667 effects=dbc7f6 damage_or_effect=45639c visual=7a6986 icon=771dfc used_by=44e0e1 -->
 |  |  |
 |---|---|
-|  | ![Blessing of water](../assets/skills/20156.png) |
+|  | ![Blessing of water](wiki/assets/skills/20156.png) |
 | **Skill id** | `20156` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

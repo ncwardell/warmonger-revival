@@ -22,8 +22,8 @@ dungeon: 133
 <!-- generated-keys: title=7f851f type=7a94db id=d30f79 sources=93d02e name_key=9c77e6 kind=884439 scene_type=c1dfd9 max_users=310b86 group=761f22 zones=d9b420 segments=5a389d connections=97d170 npcs=97d170 monsters=97d170 spawn_points=97d170 dungeon=d30f79 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 126](../assets/zones/126.png) |
-|  | ![Sinking Nest (Crystal)](../assets/dungeons/133.png) |
+|  | ![minimap of zone 126](wiki/assets/zones/126.png) |
+|  | ![Sinking Nest (Crystal)](wiki/assets/dungeons/133.png) |
 | **Field id** | `133` |
 | **Kind** | event dungeon (SceneList type 6; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |

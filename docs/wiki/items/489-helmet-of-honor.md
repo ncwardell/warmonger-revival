@@ -33,7 +33,7 @@ obtained_from: []
 <!-- generated-keys: title=eff2d4 type=d36ca9 id=343ae8 sources=189502 name_key=e966a6 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=a0beb3 reinforce=da4b92 icon=a06501 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Helmet of Honor](../assets/items/489.png) |
+|  | ![Helmet of Honor](wiki/assets/items/489.png) |
 | **Item id** | `489` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

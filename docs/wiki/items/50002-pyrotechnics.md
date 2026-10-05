@@ -26,7 +26,7 @@ obtained_from: []
 <!-- generated-keys: title=38244f type=d36ca9 id=3f9ca0 sources=5e9fa9 name_key=c49f60 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 flags=356a19 no_sell=7cb6ef use_skill=ec2603 stats=97d170 options=b60626 icon=130210 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Pyrotechnics](../assets/items/50002.png) |
+|  | ![Pyrotechnics](wiki/assets/items/50002.png) |
 | **Item id** | `50002` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

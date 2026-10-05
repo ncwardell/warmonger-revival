@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=0d9de5 type=86a754 id=c26323 sources=85442c name_key=6abe35 desc_key=f3d197 kind=356a19 kind_name=9bc378 target=5aa7bd range=902ba3 cost=a3f1df cooldown=f8ee77 movement=5f1488 effect_kind=356a19 effects=97d170 damage_or_effect=bf21a9 visual=140199 icon=6226bf used_by=07d8fb -->
 |  |  |
 |---|---|
-|  | ![Gallop](../assets/skills/20253.png) |
+|  | ![Gallop](wiki/assets/skills/20253.png) |
 | **Skill id** | `20253` |
 | **Kind** | active (1) |
 | **Target** | ground; -; units: monster, player; up to 1 |

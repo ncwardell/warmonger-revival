@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=13357a type=d36ca9 id=d4f9ea sources=c14d06 name_key=b726ff kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=5d0217 set=1b6453 reinforce=92cfce icon=04bb60 obtained_from=0b44ff -->
 |  |  |
 |---|---|
-|  | ![Komodo's Helmet](../assets/items/3031.png) |
+|  | ![Komodo's Helmet](wiki/assets/items/3031.png) |
 | **Item id** | `3031` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=19053b type=d36ca9 id=d04d50 sources=f45232 name_key=0dbc3a kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=d9d29b cost_pair=0847b0 stats=97d170 icon=0f7651 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Indigo](../assets/items/772.png) |
+|  | ![Crystal : Indigo](wiki/assets/items/772.png) |
 | **Item id** | `772` |
 | **Kind** | Material (12) |
 | **Classes** | all |

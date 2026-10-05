@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=7712d5 type=d36ca9 id=945467 sources=3d18c1 name_key=2f8ed7 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a period=7841fb weapon_base=d54ad0 stats=97d170 options=32c1d1 skills=56f33f reinforce=472b07 icon=83f443 obtained_from=b79798 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Tempest Fisher](../assets/items/8507.png) |
+|  | ![Crystal : Tempest Fisher](wiki/assets/items/8507.png) |
 | **Item id** | `8507` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

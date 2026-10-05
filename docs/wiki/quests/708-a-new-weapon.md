@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_18.png", "text_key": "Quest_HelpText_708"}
 <!-- generated-keys: title=a28e1b type=eb5b2b id=b6c3f8 sources=c2b3f1 name_key=80212d kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=eb4ac3 automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=b22a94 rewards=cb76bb help=ee7ddd -->
 |  |  |
 |---|---|
-|  | ![A new weapon](../assets/quests/708.png) |
+|  | ![A new weapon](wiki/assets/quests/708.png) |
 | **Quest id** | `708` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

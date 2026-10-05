@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=512431 type=6143a1 id=cd2f77 sources=9a26f9 name_key=1bec1e duration=995f11 is_buff=b6589f stack_type=356a19 group=d32f6a effects=ba37b4 icon=d184a9 applied_by=03f58e -->
 |  |  |
 |---|---|
-|  | ![Scroll of Cooldown Reduction (B) : 6% Cooldown Reduction](../assets/buffs/2090.png) |
+|  | ![Scroll of Cooldown Reduction (B) : 6% Cooldown Reduction](wiki/assets/buffs/2090.png) |
 | **Buff id** | `2090` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

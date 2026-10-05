@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z38_00.dds"
 <!-- generated-keys: title=796f01 type=c899cd id=5b384c sources=32d370 name_kr=bc8476 terrain=e21789 bounds=d2355b size=114466 segments=9b2e5d fields=758a13 minimap=8a0082 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 13 (Punish Peak)](../assets/zones/38.png) |
+|  | ![minimap of Field 13 (Punish Peak)](wiki/assets/zones/38.png) |
 | **Zone id** | `38` |
 | **ZoneDB name** | 필드_13 (English gloss: Field 13 (Punish Peak)) |
 | **Terrain name** | `13` |

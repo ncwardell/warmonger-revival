@@ -29,7 +29,7 @@ positions:
 <!-- generated-keys: title=b37e47 type=3664ce id=bbcbb1 sources=5286d1 name_key=d1ae66 title_key=8a975e npc_title=8ad434 category=e1822d class_mask=da4b92 model=cfa2ed scale=aa8f28 functions=3ee449 role=8ad434 talk_key=19cfbb portrait=742d9e map=775bc5 x=f31179 z=f4f2e4 positions=c2b7eb -->
 |  |  |
 |---|---|
-|  | ![Cathy](../assets/npcs/303.png) |
+|  | ![Cathy](wiki/assets/npcs/303.png) |
 | **Unit id** | `303` |
 | **Title** | Auction House Manager |
 | **Category** | NPC (category 50) |

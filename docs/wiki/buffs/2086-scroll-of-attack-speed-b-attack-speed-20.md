@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=bcb4c3 type=6143a1 id=aa23f7 sources=23e55d name_key=7a82e5 duration=995f11 is_buff=b6589f stack_type=356a19 group=d32f6a effects=94a4f7 icon=dac6cd applied_by=a67338 -->
 |  |  |
 |---|---|
-|  | ![Scroll of Attack Speed (B) : Attack Speed +20](../assets/buffs/2086.png) |
+|  | ![Scroll of Attack Speed (B) : Attack Speed +20](wiki/assets/buffs/2086.png) |
 | **Buff id** | `2086` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=977f92 type=6143a1 id=c77f98 sources=69765a name_key=0f749a duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=a9720d icon=4f180c applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![NPC Skill_Fire](../assets/buffs/10135.png) |
+|  | ![NPC Skill_Fire](wiki/assets/buffs/10135.png) |
 | **Buff id** | `10135` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

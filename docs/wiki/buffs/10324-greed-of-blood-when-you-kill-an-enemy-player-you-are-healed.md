@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=beb155 type=6143a1 id=81dc36 sources=4d10ec name_key=8cc9bb duration=6c141f is_buff=b6589f stack_type=356a19 group=9e6a55 effects=f26414 icon=d931bc applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Greed of blood : When you kill an enemy player, you are healed for 5% of your current health.](../assets/buffs/10324.png) |
+|  | ![Greed of blood : When you kill an enemy player, you are healed for 5% of your current health.](wiki/assets/buffs/10324.png) |
 | **Buff id** | `10324` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

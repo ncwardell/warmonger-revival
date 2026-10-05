@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=16bfdd type=d36ca9 id=fa5b7e sources=2d62b6 name_key=9ae739 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a flags=356a19 no_sell=7cb6ef opens_ui=b6589f cooldown_s=ac3478 cooldown_group=9e6a55 stats=97d170 options=877ff1 icon=123bd1 obtained_from=cad6e0 -->
 |  |  |
 |---|---|
-|  | ![Teleport Scroll (Premium)](../assets/items/913.png) |
+|  | ![Teleport Scroll (Premium)](wiki/assets/items/913.png) |
 | **Item id** | `913` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

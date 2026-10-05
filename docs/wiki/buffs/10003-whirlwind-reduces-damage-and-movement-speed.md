@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=913fcd type=6143a1 id=b27b41 sources=86b1a0 name_key=bbdaa6 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=22dadb icon=47a729 applied_by=8c1b92 -->
 |  |  |
 |---|---|
-|  | ![Whirlwind: Reduces Damage and Movement Speed](../assets/buffs/10003.png) |
+|  | ![Whirlwind: Reduces Damage and Movement Speed](wiki/assets/buffs/10003.png) |
 | **Buff id** | `10003` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

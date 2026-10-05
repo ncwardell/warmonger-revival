@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=46d857 type=86a754 id=656429 sources=760b4d name_key=f1ea09 desc_key=a8d50d kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=060055 cooldown=5b7687 delivery=93a212 effect_kind=da4b92 effects=7da3e1 damage_or_effect=8faab9 tooltip_formula=343e6f visual=0715d5 icon=fc253c used_by=ee8b07 -->
 |  |  |
 |---|---|
-|  | ![Thunder bolt](../assets/skills/5303.png) |
+|  | ![Thunder bolt](wiki/assets/skills/5303.png) |
 | **Skill id** | `5303` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

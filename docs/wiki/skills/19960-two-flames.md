@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=d8488b type=86a754 id=98aca3 sources=fcb73d name_key=10c2ca desc_key=1e7267 kind=356a19 kind_name=9bc378 target=c9e051 range=b1d578 area=728214 cost=060055 cooldown=5b7687 delivery=1d1859 effect_kind=356a19 effects=456ecb damage_or_effect=462b2d visual=329dc1 icon=593306 used_by=afa677 -->
 |  |  |
 |---|---|
-|  | ![Two Flames](../assets/skills/19960.png) |
+|  | ![Two Flames](wiki/assets/skills/19960.png) |
 | **Skill id** | `19960` |
 | **Kind** | active (1) |
 | **Target** | ground; ally, enemy; units: monster, player; up to 1 |

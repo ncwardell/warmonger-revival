@@ -34,15 +34,15 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | 0 |  |
-| 1 | ![](../assets/items/15002.png) | [[wiki/items/15002-magical-vision-bow\|Magical Vision Bow]] | 0 |  |
-| 2 | ![](../assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | 0 |  |
-| 3 | ![](../assets/items/10003.png) | [[wiki/items/10003-magical-cystal-wand\|Magical Cystal Wand]] | 0 |  |
+| 0 | ![](wiki/assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | 0 |  |
+| 1 | ![](wiki/assets/items/15002.png) | [[wiki/items/15002-magical-vision-bow\|Magical Vision Bow]] | 0 |  |
+| 2 | ![](wiki/assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | 0 |  |
+| 3 | ![](wiki/assets/items/10003.png) | [[wiki/items/10003-magical-cystal-wand\|Magical Cystal Wand]] | 0 |  |
 | 4 |  | item 15003 (not in `Item_Base`) | 0 |  |
-| 5 | ![](../assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | 0 |  |
+| 5 | ![](wiki/assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | 0 |  |
 | 6 |  | item 10010 (not in `Item_Base`) | 0 |  |
 | 7 |  | item 15003 (not in `Item_Base`) | 0 |  |
-| 8 | ![](../assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | 0 |  |
+| 8 | ![](wiki/assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | 0 |  |
 | 9 |  | item 10010 (not in `Item_Base`) | 0 |  |
 <!-- generated:end -->
 

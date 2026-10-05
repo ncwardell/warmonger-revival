@@ -28,7 +28,7 @@ positions:
 <!-- generated-keys: title=1a4861 type=3664ce id=7f03f3 sources=b5034a name_key=ed8141 category=e1822d class_mask=da4b92 model=df518c scale=bdc140 role=875cc6 quests=68cb74 quest_fields=6e2020 map=16b06b x=7df2da z=b78ecc positions=a6af5e -->
 |  |  |
 |---|---|
-|  | ![Shaia](../assets/npcs/201.png) |
+|  | ![Shaia](wiki/assets/npcs/201.png) |
 | **Unit id** | `201` |
 | **Role** | Guide |
 | **Category** | NPC (category 50) |

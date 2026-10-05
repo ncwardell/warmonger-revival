@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=ef4fc3 type=86a754 id=06682b sources=006ce5 name_key=43cf4e desc_key=3666f9 kind=356a19 kind_name=9bc378 target=47c86e range=b1d578 area=6d01a6 cost=966b26 cooldown=fec9d6 delivery=15a656 effect_kind=da4b92 effects=8a20a8 damage_or_effect=bf1784 tooltip_formula=c2e772 visual=d96adb icon=a6730c used_by=911e2f -->
 |  |  |
 |---|---|
-|  | ![Divine](../assets/skills/20309.png) |
+|  | ![Divine](wiki/assets/skills/20309.png) |
 | **Skill id** | `20309` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 10 |

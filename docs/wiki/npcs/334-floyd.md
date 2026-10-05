@@ -23,7 +23,7 @@ z: null
 <!-- generated-keys: title=d8843d type=3664ce id=fffb8e sources=4b3866 name_key=93f346 title_key=506468 npc_title=4aa619 category=e1822d class_mask=da4b92 model=93ac19 scale=aa8f28 functions=40bee7 role=4aa619 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Floyd](../assets/npcs/334.png) |
+|  | ![Floyd](wiki/assets/npcs/334.png) |
 | **Unit id** | `334` |
 | **Title** | Biologist |
 | **Category** | NPC (category 50) |

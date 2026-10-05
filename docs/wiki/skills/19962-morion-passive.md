@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=22f201 type=86a754 id=a441a4 sources=281411 name_key=a79b0c desc_key=8e3c80 kind=da4b92 kind_name=3844d5 target=d99f6c range=77de68 area=c0807e cost=2be88c cooldown=2be88c effect_kind=356a19 effects=5de2f1 damage_or_effect=6d1c08 icon=23f487 used_by=52475e -->
 |  |  |
 |---|---|
-|  | ![Morion Passive](../assets/skills/19962.png) |
+|  | ![Morion Passive](wiki/assets/skills/19962.png) |
 | **Skill id** | `19962` |
 | **Kind** | passive (2) |
 | **Target** | self; self; units: monster, player; up to 1 |

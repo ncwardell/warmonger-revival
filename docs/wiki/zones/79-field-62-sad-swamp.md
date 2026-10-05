@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z79_00.dds"
 <!-- generated-keys: title=bad65d type=c899cd id=b74f5e sources=1c9006 name_kr=2743c2 terrain=4c5b08 bounds=28ed37 size=114466 segments=5f3793 fields=0ff587 minimap=b5600c -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 62 (Sad Swamp)](../assets/zones/79.png) |
+|  | ![minimap of Field 62 (Sad Swamp)](wiki/assets/zones/79.png) |
 | **Zone id** | `79` |
 | **ZoneDB name** | 필드_62 (English gloss: Field 62 (Sad Swamp)) |
 | **Terrain name** | `62` |

@@ -42,7 +42,7 @@ obtained_from:
 <!-- generated-keys: title=8c38f6 type=d36ca9 id=6c0ac7 sources=31e8e0 name_key=37737c kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=5a9e73 reinforce=356a19 icon=6a1367 obtained_from=1cb3b5 -->
 |  |  |
 |---|---|
-|  | ![Bandolier Bracelet](../assets/items/431.png) |
+|  | ![Bandolier Bracelet](wiki/assets/items/431.png) |
 | **Item id** | `431` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

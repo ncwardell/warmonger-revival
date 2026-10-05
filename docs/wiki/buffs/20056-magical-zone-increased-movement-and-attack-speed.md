@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=5ac622 type=6143a1 id=5040e2 sources=9a8397 name_key=678edd duration=76674f is_buff=b6589f stack_type=356a19 group=b6589f effects=763be2 icon=d93629 applied_by=21f933 -->
 |  |  |
 |---|---|
-|  | ![Magical Zone : Increased Movement and Attack Speed.](../assets/buffs/20056.png) |
+|  | ![Magical Zone : Increased Movement and Attack Speed.](wiki/assets/buffs/20056.png) |
 | **Buff id** | `20056` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

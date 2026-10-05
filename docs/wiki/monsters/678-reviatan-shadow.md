@@ -29,7 +29,7 @@ spawn_fields: [126]
 <!-- generated-keys: title=245e76 type=9bbc46 id=b2029b sources=12917c name_key=f7953f category=c1dfd9 class_mask=356a19 kill_group=39b7a7 model=1f1362 model_name=1b7ed1 model_path=e1bf24 scale=aa8f28 radius=356a19 projectile=43d6ee sounds=bfd9b2 hero=7b5200 boss_of=d9b420 dungeon_rewards=c61337 quest_targets=fa745f spawn_fields=d9b420 -->
 |  |  |
 |---|---|
-|  | ![Reviatan Shadow](../assets/monsters/678.png) |
+|  | ![Reviatan Shadow](wiki/assets/monsters/678.png) |
 | **Unit id** | `678` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

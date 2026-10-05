@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=1c77e0 type=d36ca9 id=9366fd sources=918a57 name_key=ea57cb kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=edef53 icon=084020 obtained_from=d04393 -->
 |  |  |
 |---|---|
-|  | ![Purple Hair Dye](../assets/items/2309.png) |
+|  | ![Purple Hair Dye](wiki/assets/items/2309.png) |
 | **Item id** | `2309` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

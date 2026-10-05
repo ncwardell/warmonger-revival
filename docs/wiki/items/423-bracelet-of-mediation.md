@@ -41,7 +41,7 @@ obtained_from:
 <!-- generated-keys: title=dd1888 type=d36ca9 id=a785bd sources=ec05b7 name_key=903fdb kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=c9f209 reinforce=356a19 icon=12e00f obtained_from=cb9f40 -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Mediation](../assets/items/423.png) |
+|  | ![Bracelet of Mediation](wiki/assets/items/423.png) |
 | **Item id** | `423` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

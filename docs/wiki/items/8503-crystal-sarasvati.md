@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=9b5ace type=d36ca9 id=8308fe sources=a1004a name_key=695684 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=da4b92 period=7841fb weapon_base=c09763 stats=97d170 options=e78fe2 skills=f08e58 reinforce=d435a6 icon=0a3e2d obtained_from=8ff878 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Sarasvati](../assets/items/8503.png) |
+|  | ![Crystal : Sarasvati](wiki/assets/items/8503.png) |
 | **Item id** | `8503` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

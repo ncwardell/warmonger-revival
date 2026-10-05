@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=007156 type=d36ca9 id=7a9556 sources=152559 name_key=8adb94 kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=0ca990 reinforce=356a19 icon=8ad561 obtained_from=2d14dc -->
 |  |  |
 |---|---|
-|  | ![Gloves of Honor](../assets/items/420.png) |
+|  | ![Gloves of Honor](wiki/assets/items/420.png) |
 | **Item id** | `420` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

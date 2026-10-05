@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z77_00.dds"
 <!-- generated-keys: title=e6469a type=c899cd id=d321d6 sources=339a42 name_kr=8c3134 terrain=f99938 bounds=ea0ec5 size=114466 segments=28a847 fields=77eeff minimap=67743f -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 60 (Volcano Heart)](../assets/zones/77.png) |
+|  | ![minimap of Field 60 (Volcano Heart)](wiki/assets/zones/77.png) |
 | **Zone id** | `77` |
 | **ZoneDB name** | 필드_60 (English gloss: Field 60 (Volcano Heart)) |
 | **Terrain name** | `60` |

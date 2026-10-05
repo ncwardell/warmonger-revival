@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=a0a238 type=d36ca9 id=ad707e sources=bb700c name_key=bad6e2 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=c2a322 options=f1263d icon=87b25c obtained_from=e15751 -->
 |  |  |
 |---|---|
-|  | ![Maid Set](../assets/items/2036.png) |
+|  | ![Maid Set](wiki/assets/items/2036.png) |
 | **Item id** | `2036` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

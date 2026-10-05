@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=664b83 type=d36ca9 id=4e5ea1 sources=1fc3bb name_key=3b642b kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=8f7d96 obtained_from=105425 -->
 |  |  |
 |---|---|
-|  | ![The War hammer Garon's Sealed Weapon](../assets/items/2756.png) |
+|  | ![The War hammer Garon's Sealed Weapon](wiki/assets/items/2756.png) |
 | **Item id** | `2756` |
 | **Kind** | Material (12) |
 | **Classes** | all |

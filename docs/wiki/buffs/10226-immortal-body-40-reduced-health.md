@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=73dfec type=6143a1 id=d301dc sources=0f3afd name_key=059271 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=d03aa2 icon=a71171 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Immortal Body : 40% reduced Health](../assets/buffs/10226.png) |
+|  | ![Immortal Body : 40% reduced Health](wiki/assets/buffs/10226.png) |
 | **Buff id** | `10226` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

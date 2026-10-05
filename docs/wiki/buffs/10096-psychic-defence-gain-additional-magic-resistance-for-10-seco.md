@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=66ea5f type=6143a1 id=f686dc sources=55365f name_key=99d6e9 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=52ee92 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Psychic Defence : Gain additional Magic Resistance for 10 seconds](../assets/buffs/10096.png) |
+|  | ![Psychic Defence : Gain additional Magic Resistance for 10 seconds](wiki/assets/buffs/10096.png) |
 | **Buff id** | `10096` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

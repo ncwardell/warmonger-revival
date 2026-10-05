@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=acbaa2 type=6143a1 id=6fa07a sources=d2ccfb name_key=b7963c duration=870e64 is_buff=b6589f stack_type=356a19 group=6fa07a effects=a2c63c icon=6b4fc5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blessing of Order : You gain 10% Armor and Magic Resistance](../assets/buffs/10049.png) |
+|  | ![Blessing of Order : You gain 10% Armor and Magic Resistance](wiki/assets/buffs/10049.png) |
 | **Buff id** | `10049` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

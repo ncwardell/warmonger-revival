@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=391fb5 type=d36ca9 id=591f76 sources=a3f51a name_key=b6c973 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=e9cfbd set=0ade7c reinforce=92cfce icon=f36b25 obtained_from=8b8a05 -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Belt](../assets/items/3066.png) |
+|  | ![Leviathan's Belt](wiki/assets/items/3066.png) |
 | **Item id** | `3066` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=1ab57e type=6143a1 id=c7131f sources=7eec7e name_key=43b3c1 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=da9772 icon=96b2eb applied_by=9863f0 -->
 |  |  |
 |---|---|
-|  | ![HP Potion (S): Supreme HP Regeneration](../assets/buffs/2063.png) |
+|  | ![HP Potion (S): Supreme HP Regeneration](wiki/assets/buffs/2063.png) |
 | **Buff id** | `2063` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

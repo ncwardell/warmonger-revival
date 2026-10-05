@@ -22,7 +22,7 @@ obtained_from: []
 <!-- generated-keys: title=cebe3f type=d36ca9 id=9ab5e1 sources=b8a65d name_key=9611ae kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=96c19b icon=8b50ec obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fragment of Frey](../assets/items/1603.png) |
+|  | ![Fragment of Frey](wiki/assets/items/1603.png) |
 | **Item id** | `1603` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

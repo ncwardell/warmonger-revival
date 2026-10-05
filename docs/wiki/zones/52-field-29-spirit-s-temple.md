@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z52_00.dds"
 <!-- generated-keys: title=16ba6a type=c899cd id=a93349 sources=3ff350 name_kr=805cd3 terrain=f00733 bounds=e06c81 size=114466 segments=6ffdfe fields=f7cf3c minimap=ab40f3 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 29 (Spirit's Temple)](../assets/zones/52.png) |
+|  | ![minimap of Field 29 (Spirit's Temple)](wiki/assets/zones/52.png) |
 | **Zone id** | `52` |
 | **ZoneDB name** | 필드_29 (English gloss: Field 29 (Spirit's Temple)) |
 | **Terrain name** | `29` |

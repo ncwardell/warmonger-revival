@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=05a17a type=6143a1 id=7e1fa8 sources=4a0878 name_key=8b08c8 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=1833b7 icon=7beea6 applied_by=50b30f -->
 |  |  |
 |---|---|
-|  | ![Omni Potion (S) : Supreme Omni Regeneration](../assets/buffs/2072.png) |
+|  | ![Omni Potion (S) : Supreme Omni Regeneration](wiki/assets/buffs/2072.png) |
 | **Buff id** | `2072` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

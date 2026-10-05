@@ -21,7 +21,7 @@ raw: {"c27": 48}
 <!-- generated-keys: title=ef7b0f type=61613a id=13b724 sources=d5b745 result=87636a materials=66d95c gold=28cc22 success_rate=310b86 category=356a19 filter_mask=e91fa6 level=356a19 raw=513f82 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2599.png) |
+|  | ![](wiki/assets/items/2599.png) |
 | **Recipe id** | `599` (`Item_Make`) |
 | **Makes** | [[wiki/items/2599-tome-of-cooldown-quest\|Tome of Cooldown (Quest)]] × 10 |
 | **Gold** | 900 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,9 +34,9 @@ raw: {"c27": 48}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2595.png) | [[wiki/items/2595-peppermint-powder\|Peppermint powder]] | 30 |  |
-| ![](../assets/items/2596.png) | [[wiki/items/2596-empty-scroll-a\|Empty Scroll (A)]] | 1 |  |
-| ![](../assets/items/2597.png) | [[wiki/items/2597-burning-water\|Burning water]] | 2 |  |
+| ![](wiki/assets/items/2595.png) | [[wiki/items/2595-peppermint-powder\|Peppermint powder]] | 30 |  |
+| ![](wiki/assets/items/2596.png) | [[wiki/items/2596-empty-scroll-a\|Empty Scroll (A)]] | 1 |  |
+| ![](wiki/assets/items/2597.png) | [[wiki/items/2597-burning-water\|Burning water]] | 2 |  |
 
 Unknown columns: `c27` = 48 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

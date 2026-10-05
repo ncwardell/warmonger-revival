@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=f06fbf type=6143a1 id=c2e484 sources=e75834 name_key=abdc11 duration=0aac5a is_buff=b6589f stack_type=356a19 group=c2e484 effects=85ed02 icon=70aa6a applied_by=ebb670 -->
 |  |  |
 |---|---|
-|  | ![Final Strikes : Possible to perform the Final Strike now](../assets/buffs/10167.png) |
+|  | ![Final Strikes : Possible to perform the Final Strike now](wiki/assets/buffs/10167.png) |
 | **Buff id** | `10167` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

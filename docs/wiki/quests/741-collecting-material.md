@@ -32,7 +32,7 @@ complete_talk: 760
 <!-- generated-keys: title=e2c8e1 type=eb5b2b id=23b23b sources=669595 name_key=217c3a kind=77de68 kind_name=01e781 giver=91ad7d turn_in=91ad7d offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=7719a1 excludes_bit=22d200 owned_field=0ca927 prev=78415f next=97d170 stages=30caa7 objectives=122625 rewards=2ded0b offer_talk=dcdee6 complete_talk=1382ac -->
 |  |  |
 |---|---|
-|  | ![Collecting material](../assets/npcs/213.png) |
+|  | ![Collecting material](wiki/assets/npcs/213.png) |
 | **Quest id** | `741` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/213-odin\|Odin]] |

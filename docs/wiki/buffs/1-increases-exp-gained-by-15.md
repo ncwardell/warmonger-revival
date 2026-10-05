@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=8efc16 type=6143a1 id=356a19 sources=a9c5f8 name_key=2548e4 duration=78474f is_buff=356a19 stack_type=356a19 group=b6589f effects=b3fe7f icon=0392b4 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Increases EXP gained by 15%.](../assets/buffs/1.png) |
+|  | ![Increases EXP gained by 15%.](wiki/assets/buffs/1.png) |
 | **Buff id** | `1` |
 | **Duration** | 12 min 40 s (3,800 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 1 (is_buff?, guessed column) |

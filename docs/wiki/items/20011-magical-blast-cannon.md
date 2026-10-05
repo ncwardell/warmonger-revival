@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=633e77 type=d36ca9 id=95e708 sources=b31669 name_key=342d4f kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=c5b76d stats=db11c4 options=b2a212 skills=0c05f7 reinforce=17ba07 icon=127859 obtained_from=035b83 -->
 |  |  |
 |---|---|
-|  | ![Magical Blast Cannon](../assets/items/20011.png) |
+|  | ![Magical Blast Cannon](wiki/assets/items/20011.png) |
 | **Item id** | `20011` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

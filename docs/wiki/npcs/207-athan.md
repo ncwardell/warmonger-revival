@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=9e0248 type=3664ce id=3be76c sources=5aebd5 name_key=9afd73 title_key=36b546 npc_title=bc697c category=e1822d class_mask=da4b92 model=0ec09e scale=aa8f28 functions=7dac55 role=bc697c shop=3032a4 talk_key=630967 portrait=6aa998 quests=bd0b79 quest_fields=6c3da9 map=775bc5 x=c3a2bf z=f4f2e4 positions=262929 -->
 |  |  |
 |---|---|
-|  | ![Athan](../assets/npcs/207.png) |
+|  | ![Athan](wiki/assets/npcs/207.png) |
 | **Unit id** | `207` |
 | **Title** | Merits Merchant |
 | **Category** | NPC (category 50) |

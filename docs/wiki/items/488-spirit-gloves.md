@@ -33,7 +33,7 @@ obtained_from: []
 <!-- generated-keys: title=d714bc type=d36ca9 id=ee16ee sources=b41b6b name_key=db6919 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=c28f67 reinforce=da4b92 icon=2fcf58 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Spirit Gloves](../assets/items/488.png) |
+|  | ![Spirit Gloves](wiki/assets/items/488.png) |
 | **Item id** | `488` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

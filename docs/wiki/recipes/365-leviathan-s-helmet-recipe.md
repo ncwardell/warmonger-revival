@@ -19,7 +19,7 @@ level: 10
 <!-- generated-keys: title=49a0b1 type=61613a id=a0d043 sources=292e65 result=55ba59 materials=7ee920 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=da75bf level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3061.png) |
+|  | ![](wiki/assets/items/3061.png) |
 | **Recipe id** | `365` (`Item_Make`) |
 | **Makes** | [[wiki/items/3061-leviathan-s-helmet\|Leviathan's Helmet]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2707.png) | [[wiki/items/2707-horn-of-leviathan\|Horn of Leviathan]] | 1 |  |
-| ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  |
+| ![](wiki/assets/items/2707.png) | [[wiki/items/2707-horn-of-leviathan\|Horn of Leviathan]] | 1 |  |
+| ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

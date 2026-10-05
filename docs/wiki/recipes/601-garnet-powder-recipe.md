@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=1bf909 type=61613a id=3bb18d sources=b49f5c result=8eef74 materials=5c7f77 gold=e1822d success_rate=310b86 category=356a19 filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/803.png) |
+|  | ![](wiki/assets/items/803.png) |
 | **Recipe id** | `601` (`Item_Make`) |
 | **Makes** | [[wiki/items/803-garnet-powder\|Garnet powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 1 |  |
+| ![](wiki/assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2401-garnet-powder-recipe|recipe 2401]]
 

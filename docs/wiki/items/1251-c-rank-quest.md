@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=d00e38 type=d36ca9 id=8ce2f7 sources=6989c7 name_key=ba6b34 kind=98fbc4 kind_name=b94918 classes=92d079 bind=883bf8 price=2080a7 cost_pair=0f9a23 stats=97d170 icon=df3f62 obtained_from=4a7c1e -->
 |  |  |
 |---|---|
-|  | ![C Rank Quest](../assets/items/1251.png) |
+|  | ![C Rank Quest](wiki/assets/items/1251.png) |
 | **Item id** | `1251` |
 | **Kind** | Quest precept (44) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=6cc959 type=d36ca9 id=4b68e4 sources=c957fe name_key=e1ba97 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a6a76d cost_pair=f565d5 stats=97d170 icon=a96a92 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Peppermint](../assets/items/820.png) |
+|  | ![Peppermint](wiki/assets/items/820.png) |
 | **Item id** | `820` |
 | **Kind** | Material (12) |
 | **Classes** | all |

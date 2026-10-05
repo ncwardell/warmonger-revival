@@ -30,7 +30,7 @@ complete_talk: 632
 <!-- generated-keys: title=494589 type=eb5b2b id=da4b92 sources=679091 name_key=54b21d kind=b6589f kind_name=b3f808 giver=444e6c turn_in=9d96c7 offer_maps=6e2020 turn_in_maps=6e2020 bit=da4b92 requires_bit=356a19 prev=ef8166 next=f1e31d stages=a80fa1 objectives=dd2911 rewards=33dd9c offer_talk=2c9bae complete_talk=e7ee3e -->
 |  |  |
 |---|---|
-|  | ![The Slime is mine](../assets/npcs/201.png) |
+|  | ![The Slime is mine](wiki/assets/npcs/201.png) |
 | **Quest id** | `2` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/201-shaia\|Shaia]] |

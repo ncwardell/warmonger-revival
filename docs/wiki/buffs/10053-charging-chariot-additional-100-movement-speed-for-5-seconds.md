@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=6d66b5 type=6143a1 id=015271 sources=5fca03 name_key=de5a46 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=48390e icon=aa3f54 applied_by=af5180 -->
 |  |  |
 |---|---|
-|  | ![Charging Chariot : Additional 100 Movement Speed for 5 seconds](../assets/buffs/10053.png) |
+|  | ![Charging Chariot : Additional 100 Movement Speed for 5 seconds](wiki/assets/buffs/10053.png) |
 | **Buff id** | `10053` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -18,7 +18,7 @@ filter_mask: 1
 <!-- generated-keys: title=ef0150 type=61613a id=898d99 sources=57923d result=c08825 materials=978da3 gold=c2d4c5 success_rate=310b86 category=77de68 filter_mask=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/8507.png) |
+|  | ![](wiki/assets/items/8507.png) |
 | **Recipe id** | `1208` (`Item_Make`) |
 | **Makes** | [[wiki/items/8507-crystal-tempest-fisher\|Crystal : Tempest Fisher]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -30,8 +30,8 @@ filter_mask: 1
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/9007.png) | [[wiki/items/9007-piece-tempest-fisher\|Piece : Tempest Fisher]] | 5 |  |
-| ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 50 |  |
+| ![](wiki/assets/items/9007.png) | [[wiki/items/9007-piece-tempest-fisher\|Piece : Tempest Fisher]] | 5 |  |
+| ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 50 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

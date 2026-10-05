@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=d57dc5 type=6143a1 id=92d379 sources=3244d7 name_key=4b8027 duration=bdf5bf is_buff=b6589f stack_type=356a19 group=b6589f effects=fd7001 icon=1a93f3 applied_by=348087 -->
 |  |  |
 |---|---|
-|  | ![A Warrior's Body. Deal additional damage.](../assets/buffs/10239.png) |
+|  | ![A Warrior's Body. Deal additional damage.](wiki/assets/buffs/10239.png) |
 | **Buff id** | `10239` |
 | **Duration** | 7 s (35 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

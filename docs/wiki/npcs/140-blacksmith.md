@@ -21,7 +21,7 @@ z: null
 <!-- generated-keys: title=5088e1 type=3664ce id=c28aca sources=becf3e name_key=5076ed category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=ba093c role=61fd85 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Blacksmith](../assets/npcs/140.png) |
+|  | ![Blacksmith](wiki/assets/npcs/140.png) |
 | **Unit id** | `140` |
 | **Role** | Create |
 | **Category** | NPC (category 50) |

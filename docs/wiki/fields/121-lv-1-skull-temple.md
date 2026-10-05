@@ -34,8 +34,8 @@ dungeon: 121
 <!-- generated-keys: title=5cdb46 type=7a94db id=8bd795 sources=2d08d4 name_key=030599 kind=3e3f38 scene_type=77de68 max_users=ac3478 group=632667 zones=77bb32 segments=312458 gates=258554 connections=79a21f npcs=97d170 monsters=f56e9f spawn_points=97d170 triggers=834094 dungeon=8bd795 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 133](../assets/zones/133.png) |
-|  | ![(Lv 1) Skull Temple](../assets/dungeons/121.png) |
+|  | ![minimap of zone 133](wiki/assets/zones/133.png) |
+|  | ![(Lv 1) Skull Temple](wiki/assets/dungeons/121.png) |
 | **Field id** | `121` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=078006 type=d36ca9 id=82a506 sources=7a5261 name_key=1247a9 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a flags=356a19 no_sell=7cb6ef period=7841fb use_buff=7dd1c7 cooldown_s=da4b92 cooldown_group=0a57cb stats=97d170 options=4466cc icon=d885bb obtained_from=4d0a3c -->
 |  |  |
 |---|---|
-|  | ![Flask of Tenacity (A)](../assets/items/758.png) |
+|  | ![Flask of Tenacity (A)](wiki/assets/items/758.png) |
 | **Item id** | `758` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

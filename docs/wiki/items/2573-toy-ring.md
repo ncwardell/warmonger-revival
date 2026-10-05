@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=218b63 type=d36ca9 id=54d1aa sources=a955b3 name_key=d70797 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=3b8474 obtained_from=1fce85 -->
 |  |  |
 |---|---|
-|  | ![Toy Ring](../assets/items/2573.png) |
+|  | ![Toy Ring](wiki/assets/items/2573.png) |
 | **Item id** | `2573` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

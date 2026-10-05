@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=903854 type=d36ca9 id=9ebd73 sources=b58c47 name_key=5fe996 kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 options=274268 icon=897d76 obtained_from=775165 -->
 |  |  |
 |---|---|
-|  | ![Freeze](../assets/items/1407.png) |
+|  | ![Freeze](wiki/assets/items/1407.png) |
 | **Item id** | `1407` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

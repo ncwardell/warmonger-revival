@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=f4884a type=86a754 id=be82e6 sources=f4f246 name_key=1c3062 desc_key=25e2a7 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=58a4ca cooldown=133145 effect_kind=356a19 effects=db4d14 damage_or_effect=75d6a2 tooltip_formula=0fc93d visual=3352d0 icon=797c87 used_by=65459e -->
 |  |  |
 |---|---|
-|  | ![Flame wave](../assets/skills/19959.png) |
+|  | ![Flame wave](wiki/assets/skills/19959.png) |
 | **Skill id** | `19959` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

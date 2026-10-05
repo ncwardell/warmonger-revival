@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=1499ad type=d36ca9 id=758a25 sources=5e63c5 name_key=06096e kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=d1b67f cost_pair=686779 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=59a121 cooldown_s=da4b92 cooldown_group=0a57cb stats=97d170 options=c05ecd icon=881255 obtained_from=a31426 -->
 |  |  |
 |---|---|
-|  | ![Flask of Devour (S)](../assets/items/751.png) |
+|  | ![Flask of Devour (S)](wiki/assets/items/751.png) |
 | **Item id** | `751` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

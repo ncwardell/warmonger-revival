@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=06fd89 type=6143a1 id=52fe14 sources=74500a name_key=e3b787 duration=0aac5a is_buff=b6589f stack_type=356a19 group=b6589f effects=48390e icon=871e53 applied_by=af2f12 -->
 |  |  |
 |---|---|
-|  | ![Non-Aggression](../assets/buffs/10132.png) |
+|  | ![Non-Aggression](wiki/assets/buffs/10132.png) |
 | **Buff id** | `10132` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -18,7 +18,7 @@ level: 20
 <!-- generated-keys: title=f7f8fa type=61613a id=3f4ed2 sources=96ab44 result=4507ad materials=021947 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6124cb level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/874.png) |
+|  | ![](wiki/assets/items/874.png) |
 | **Recipe id** | `628` (`Item_Make`) |
 | **Makes** | [[wiki/items/874-extracted-spartium\|Extracted Spartium]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 20
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/828.png) | [[wiki/items/828-spartium\|Spartium]] | 5 |  |
+| ![](wiki/assets/items/828.png) | [[wiki/items/828-spartium\|Spartium]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2428-extracted-spartium-recipe|recipe 2428]]
 

@@ -19,7 +19,7 @@ level: 15
 <!-- generated-keys: title=0b3963 type=61613a id=73b235 sources=1a993c result=e4bb9b materials=f1353d gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2505.png) |
+|  | ![](wiki/assets/items/2505.png) |
 | **Recipe id** | `2606` (`Item_Make`) |
 | **Makes** | [[wiki/items/2505-white-dye\|White Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/874.png) | [[wiki/items/874-extracted-spartium\|Extracted Spartium]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/874.png) | [[wiki/items/874-extracted-spartium\|Extracted Spartium]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/756-white-dye-recipe|recipe 756]]
 

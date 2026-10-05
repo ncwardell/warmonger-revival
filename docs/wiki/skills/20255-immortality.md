@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=afcd70 type=86a754 id=9b656c sources=08834d name_key=a23d94 desc_key=893824 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=2be88c cooldown=e0e4dd effect_kind=b6589f effects=f902f6 damage_or_effect=d73c86 visual=b02b70 icon=99f337 used_by=9a5896 -->
 |  |  |
 |---|---|
-|  | ![Immortality](../assets/skills/20255.png) |
+|  | ![Immortality](wiki/assets/skills/20255.png) |
 | **Skill id** | `20255` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

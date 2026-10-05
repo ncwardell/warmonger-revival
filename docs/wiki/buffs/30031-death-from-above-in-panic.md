@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=8a9be6 type=6143a1 id=7686a4 sources=d176f2 name_key=84e7b9 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=902ba3 effects=97d170 icon=50dbdf applied_by=68ffbc -->
 |  |  |
 |---|---|
-|  | ![Death from Above : In Panic](../assets/buffs/30031.png) |
+|  | ![Death from Above : In Panic](wiki/assets/buffs/30031.png) |
 | **Buff id** | `30031` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

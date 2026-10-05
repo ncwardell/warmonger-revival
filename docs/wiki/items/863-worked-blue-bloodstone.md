@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=363966 type=d36ca9 id=c2145e sources=7ee535 name_key=ae1599 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=2ad3f8 cost_pair=1c8ee8 stats=97d170 icon=6adb1a obtained_from=7c1dd2 -->
 |  |  |
 |---|---|
-|  | ![Worked Blue bloodstone](../assets/items/863.png) |
+|  | ![Worked Blue bloodstone](wiki/assets/items/863.png) |
 | **Item id** | `863` |
 | **Kind** | Material (12) |
 | **Classes** | all |

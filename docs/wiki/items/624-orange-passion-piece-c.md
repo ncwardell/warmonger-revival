@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=de82fb type=d36ca9 id=5dca47 sources=165697 name_key=446506 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=e72ffc obtained_from=dc7f40 -->
 |  |  |
 |---|---|
-|  | ![Orange Passion Piece (C)](../assets/items/624.png) |
+|  | ![Orange Passion Piece (C)](wiki/assets/items/624.png) |
 | **Item id** | `624` |
 | **Kind** | Material (12) |
 | **Classes** | all |

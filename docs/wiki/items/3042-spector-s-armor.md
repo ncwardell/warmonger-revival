@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=3acb87 type=d36ca9 id=603d6a sources=401ebf name_key=02edaf kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=c606c7 set=ac3478 reinforce=92cfce icon=0121aa obtained_from=63a35c -->
 |  |  |
 |---|---|
-|  | ![Spector's Armor](../assets/items/3042.png) |
+|  | ![Spector's Armor](wiki/assets/items/3042.png) |
 | **Item id** | `3042` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

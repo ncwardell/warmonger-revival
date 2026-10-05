@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=c9399b type=86a754 id=ce665c sources=e5d24e name_key=dc782f desc_key=9cf1db kind=356a19 kind_name=9bc378 target=c9e051 range=b1d578 area=3b02d8 cost=911ade cooldown=fec9d6 movement=953fcf effect_kind=356a19 effects=75fe86 damage_or_effect=009308 icon=b746da used_by=eae9cf -->
 |  |  |
 |---|---|
-|  | ![Deception](../assets/skills/5463.png) |
+|  | ![Deception](wiki/assets/skills/5463.png) |
 | **Skill id** | `5463` |
 | **Kind** | active (1) |
 | **Target** | ground; ally, enemy; units: monster, player; up to 1 |

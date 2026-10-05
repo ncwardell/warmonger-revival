@@ -34,7 +34,7 @@ spawn_fields: [127]
 <!-- generated-keys: title=ea3216 type=9bbc46 id=c43d77 sources=fff8dc name_key=9e519f category=356a19 class_mask=356a19 kill_group=8a12a3 model=e26973 model_name=c5970a model_path=207e1f scale=555a5c radius=356a19 projectile=99316d sounds=c88901 hero=fa35e1 boss_of=cf6862 dungeon_rewards=3804f5 quest_targets=0f128f quest_drops=0a7d5e spawn_fields=cf6862 -->
 |  |  |
 |---|---|
-|  | ![Chepa Sorcerer](../assets/monsters/870.png) |
+|  | ![Chepa Sorcerer](wiki/assets/monsters/870.png) |
 | **Unit id** | `870` |
 | **Category** | monster (`category@8a` = 1) |
 | **Class mask** | 1 (monster) |

@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=677791 type=6143a1 id=91dfde sources=219276 name_key=eb31c9 duration=a8ffd8 is_buff=b6589f stack_type=356a19 group=b6589f effects=390bf3 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Strengthen your Fortress: Increases their overall Damage.](../assets/buffs/132.png) |
+|  | ![Strengthen your Fortress: Increases their overall Damage.](wiki/assets/buffs/132.png) |
 | **Buff id** | `132` |
 | **Duration** | 6 min 2 s (1,810 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

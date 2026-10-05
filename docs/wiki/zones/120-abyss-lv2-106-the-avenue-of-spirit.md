@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z120_00.dds"
 <!-- generated-keys: title=617f18 type=c899cd id=775bc5 sources=b4be4d name_kr=f24652 terrain=b8c94a bounds=5643c4 size=be57ee segments=b46245 fields=ca4ff6 minimap=d92e4d -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV2 106 (The avenue of spirit)](../assets/zones/120.png) |
+|  | ![minimap of Abyss LV2 106 (The avenue of spirit)](wiki/assets/zones/120.png) |
 | **Zone id** | `120` |
 | **ZoneDB name** | 어비스_LV2_106 (English gloss: Abyss LV2 106 (The avenue of spirit)) |
 | **Terrain name** | `Abyss_Lv02` |

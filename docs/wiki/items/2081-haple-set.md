@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=e1c17c type=d36ca9 id=ba6191 sources=a930e7 name_key=5e8478 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=26f84f cost_pair=f1ecef period=365a69 stats=e8b379 options=14c271 icon=1059a8 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Haple Set](../assets/items/2081.png) |
+|  | ![Haple Set](wiki/assets/items/2081.png) |
 | **Item id** | `2081` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

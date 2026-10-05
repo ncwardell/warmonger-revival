@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z64_00.dds"
 <!-- generated-keys: title=0898d7 type=c899cd id=c66c65 sources=399edf name_kr=d36842 terrain=6c7995 bounds=b05017 size=114466 segments=edd5f4 fields=02fb80 minimap=8530ed -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 45 (Sunstone Hill)](../assets/zones/64.png) |
+|  | ![minimap of Field 45 (Sunstone Hill)](wiki/assets/zones/64.png) |
 | **Zone id** | `64` |
 | **ZoneDB name** | 필드_45 (English gloss: Field 45 (Sunstone Hill)) |
 | **Terrain name** | `45` |

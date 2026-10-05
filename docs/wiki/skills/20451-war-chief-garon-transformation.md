@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=c7fe77 type=86a754 id=f561c2 sources=a62a4e name_key=c1c17c desc_key=e3a7e8 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=4aa5a5 effect_kind=da4b92 effects=8fb1e3 damage_or_effect=cb0813 visual=e076fa icon=140b66 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![War chief Garon Transformation](../assets/skills/20451.png) |
+|  | ![War chief Garon Transformation](wiki/assets/skills/20451.png) |
 | **Skill id** | `20451` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

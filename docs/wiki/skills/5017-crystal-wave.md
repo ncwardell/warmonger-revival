@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=1c8d34 type=86a754 id=d3ca45 sources=5c4873 name_key=6ccb5a desc_key=9cc80e kind=356a19 kind_name=9bc378 target=e84f24 range=902ba3 area=73f973 cost=9e049c cooldown=7d0c8c delivery=93a212 effect_kind=da4b92 effects=892f7e damage_or_effect=8810df tooltip_formula=bb1008 visual=1e7b95 icon=29c012 used_by=e652a6 -->
 |  |  |
 |---|---|
-|  | ![Crystal Wave](../assets/skills/5017.png) |
+|  | ![Crystal Wave](wiki/assets/skills/5017.png) |
 | **Skill id** | `5017` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

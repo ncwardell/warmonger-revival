@@ -44,7 +44,7 @@ obtained_from:
 <!-- generated-keys: title=5aa355 type=d36ca9 id=c35a9f sources=2f34b7 name_key=c6bbef kind=c5b76d kind_name=a64daf classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=3c7d94 reinforce=356a19 icon=112072 obtained_from=dff62f -->
 |  |  |
 |---|---|
-|  | ![Shoes of Life](../assets/items/404.png) |
+|  | ![Shoes of Life](wiki/assets/items/404.png) |
 | **Item id** | `404` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

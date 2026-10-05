@@ -62,30 +62,30 @@ kind: "gacha_pool"
 
 |  | item | kind | c3 |
 |---|---|---|---|
-| ![](../assets/items/9000.png) | [[wiki/items/9000-piece-dark-knight-skull\|Piece : Dark knight Skull]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/9001.png) | [[wiki/items/9001-piece-guardian\|Piece : Guardian]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/9002.png) | [[wiki/items/9002-piece-amaterasu\|Piece : Amaterasu]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/9003.png) | [[wiki/items/9003-piece-sarasvati\|Piece : Sarasvati]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/9004.png) | [[wiki/items/9004-piece-artamos\|Piece : Artamos]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/9005.png) | [[wiki/items/9005-piece-morion\|Piece : Morion]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/9006.png) | [[wiki/items/9006-piece-king-deathhead\|Piece : King Deathhead]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/9007.png) | [[wiki/items/9007-piece-tempest-fisher\|Piece : Tempest Fisher]] | Innocence Piece (36) | 0 |
-| ![](../assets/items/8500.png) | [[wiki/items/8500-crystal-dark-knight-skull\|Crystal : Dark knight Skull]] | Innocence (18) | 1 |
-| ![](../assets/items/8501.png) | [[wiki/items/8501-crystal-guardian\|Crystal : Guardian]] | Innocence (18) | 1 |
-| ![](../assets/items/8502.png) | [[wiki/items/8502-crystal-amaterasu\|Crystal : Amaterasu]] | Innocence (18) | 1 |
-| ![](../assets/items/8503.png) | [[wiki/items/8503-crystal-sarasvati\|Crystal : Sarasvati]] | Innocence (18) | 1 |
-| ![](../assets/items/8504.png) | [[wiki/items/8504-crystal-artamos\|Crystal : Artamos]] | Innocence (18) | 1 |
-| ![](../assets/items/8505.png) | [[wiki/items/8505-crystal-morion\|Crystal : Morion]] | Innocence (18) | 1 |
-| ![](../assets/items/8506.png) | [[wiki/items/8506-crystal-king-deathhead\|Crystal : King Deathhead]] | Innocence (18) | 1 |
-| ![](../assets/items/8507.png) | [[wiki/items/8507-crystal-tempest-fisher\|Crystal : Tempest Fisher]] | Innocence (18) | 1 |
-| ![](../assets/items/8000.png) | [[wiki/items/8000-dark-knight-skull\|Dark knight Skull]] | Innocence (18) | 2 |
-| ![](../assets/items/8001.png) | [[wiki/items/8001-guardian\|Guardian]] | Innocence (18) | 2 |
-| ![](../assets/items/8002.png) | [[wiki/items/8002-amaterasu\|Amaterasu]] | Innocence (18) | 2 |
-| ![](../assets/items/8003.png) | [[wiki/items/8003-sarasvati\|Sarasvati]] | Innocence (18) | 2 |
-| ![](../assets/items/8004.png) | [[wiki/items/8004-artamos\|Artamos]] | Innocence (18) | 2 |
-| ![](../assets/items/8005.png) | [[wiki/items/8005-morion\|Morion]] | Innocence (18) | 2 |
-| ![](../assets/items/8006.png) | [[wiki/items/8006-king-deathhead\|King Deathhead]] | Innocence (18) | 2 |
-| ![](../assets/items/8007.png) | [[wiki/items/8007-tempest-fisher\|Tempest Fisher]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/9000.png) | [[wiki/items/9000-piece-dark-knight-skull\|Piece : Dark knight Skull]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/9001.png) | [[wiki/items/9001-piece-guardian\|Piece : Guardian]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/9002.png) | [[wiki/items/9002-piece-amaterasu\|Piece : Amaterasu]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/9003.png) | [[wiki/items/9003-piece-sarasvati\|Piece : Sarasvati]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/9004.png) | [[wiki/items/9004-piece-artamos\|Piece : Artamos]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/9005.png) | [[wiki/items/9005-piece-morion\|Piece : Morion]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/9006.png) | [[wiki/items/9006-piece-king-deathhead\|Piece : King Deathhead]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/9007.png) | [[wiki/items/9007-piece-tempest-fisher\|Piece : Tempest Fisher]] | Innocence Piece (36) | 0 |
+| ![](wiki/assets/items/8500.png) | [[wiki/items/8500-crystal-dark-knight-skull\|Crystal : Dark knight Skull]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8501.png) | [[wiki/items/8501-crystal-guardian\|Crystal : Guardian]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8502.png) | [[wiki/items/8502-crystal-amaterasu\|Crystal : Amaterasu]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8503.png) | [[wiki/items/8503-crystal-sarasvati\|Crystal : Sarasvati]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8504.png) | [[wiki/items/8504-crystal-artamos\|Crystal : Artamos]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8505.png) | [[wiki/items/8505-crystal-morion\|Crystal : Morion]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8506.png) | [[wiki/items/8506-crystal-king-deathhead\|Crystal : King Deathhead]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8507.png) | [[wiki/items/8507-crystal-tempest-fisher\|Crystal : Tempest Fisher]] | Innocence (18) | 1 |
+| ![](wiki/assets/items/8000.png) | [[wiki/items/8000-dark-knight-skull\|Dark knight Skull]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/8001.png) | [[wiki/items/8001-guardian\|Guardian]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/8002.png) | [[wiki/items/8002-amaterasu\|Amaterasu]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/8003.png) | [[wiki/items/8003-sarasvati\|Sarasvati]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/8004.png) | [[wiki/items/8004-artamos\|Artamos]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/8005.png) | [[wiki/items/8005-morion\|Morion]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/8006.png) | [[wiki/items/8006-king-deathhead\|King Deathhead]] | Innocence (18) | 2 |
+| ![](wiki/assets/items/8007.png) | [[wiki/items/8007-tempest-fisher\|Tempest Fisher]] | Innocence (18) | 2 |
 
 ### Odds
 

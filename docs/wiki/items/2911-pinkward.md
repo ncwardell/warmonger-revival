@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=fb5880 type=d36ca9 id=95798f sources=5837b9 name_key=4f12eb kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=a9983e cost_pair=9550b6 flags=356a19 no_sell=7cb6ef use_skill=25b04c cooldown_s=2d0c8a cooldown_group=1574bd stats=97d170 options=d0408e icon=8066dc obtained_from=c7bab4 -->
 |  |  |
 |---|---|
-|  | ![Pinkward](../assets/items/2911.png) |
+|  | ![Pinkward](wiki/assets/items/2911.png) |
 | **Item id** | `2911` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

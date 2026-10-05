@@ -18,7 +18,7 @@ level: 20
 <!-- generated-keys: title=49b0c9 type=61613a id=2456ca sources=816600 result=f1a185 materials=f6e50c gold=7507d4 success_rate=310b86 category=356a19 filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/861.png) |
+|  | ![](wiki/assets/items/861.png) |
 | **Recipe id** | `615` (`Item_Make`) |
 | **Makes** | [[wiki/items/861-worked-red-bloodstone\|Worked Red bloodstone]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 20
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 5 |  |
+| ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2415-worked-red-bloodstone-recipe|recipe 2415]]
 

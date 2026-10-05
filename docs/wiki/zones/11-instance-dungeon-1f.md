@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z11_00.dds"
 <!-- generated-keys: title=4bd170 type=c899cd id=17ba07 sources=7b4d04 name_kr=5f3fd0 terrain=355668 bounds=666fe3 size=114466 segments=63c97d fields=97d170 minimap=460a27 -->
 |  |  |
 |---|---|
-|  | ![minimap of Instance dungeon 1F](../assets/zones/11.png) |
+|  | ![minimap of Instance dungeon 1F](wiki/assets/zones/11.png) |
 | **Zone id** | `11` |
 | **ZoneDB name** | 인던_1F (English gloss: Instance dungeon 1F) |
 | **Terrain name** | `Indun_01` |

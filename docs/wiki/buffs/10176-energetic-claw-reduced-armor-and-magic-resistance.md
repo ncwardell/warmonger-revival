@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=42558e type=6143a1 id=308a76 sources=14652b name_key=ffcba6 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=b6589f effects=f8da5d icon=e24f43 applied_by=6fa416 -->
 |  |  |
 |---|---|
-|  | ![Energetic Claw : Reduced Armor and Magic Resistance](../assets/buffs/10176.png) |
+|  | ![Energetic Claw : Reduced Armor and Magic Resistance](wiki/assets/buffs/10176.png) |
 | **Buff id** | `10176` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

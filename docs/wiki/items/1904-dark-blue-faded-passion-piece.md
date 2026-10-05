@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=274711 type=d36ca9 id=a80a66 sources=b49112 name_key=9e614f kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=fa056b obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dark blue Faded Passion Piece](../assets/items/1904.png) |
+|  | ![Dark blue Faded Passion Piece](wiki/assets/items/1904.png) |
 | **Item id** | `1904` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

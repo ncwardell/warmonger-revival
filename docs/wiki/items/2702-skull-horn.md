@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=b0814a type=d36ca9 id=ad9cc6 sources=3d58d8 name_key=17ed7f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=1f7bfa obtained_from=bf4268 -->
 |  |  |
 |---|---|
-|  | ![Skull Horn](../assets/items/2702.png) |
+|  | ![Skull Horn](wiki/assets/items/2702.png) |
 | **Item id** | `2702` |
 | **Kind** | Material (12) |
 | **Classes** | all |

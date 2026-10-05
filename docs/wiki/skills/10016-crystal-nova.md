@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=1b5868 type=86a754 id=d5483a sources=17dd81 name_key=242cba desc_key=004a7d kind=356a19 kind_name=9bc378 target=94d713 range=902ba3 area=1bac4b cost=da6e22 cooldown=e3989d effect_kind=b6589f effects=38431b damage_or_effect=9e80e2 visual=7f03f3 icon=baee3b used_by=079d66 -->
 |  |  |
 |---|---|
-|  | ![Crystal Nova](../assets/skills/10016.png) |
+|  | ![Crystal Nova](wiki/assets/skills/10016.png) |
 | **Skill id** | `10016` |
 | **Kind** | active (1) |
 | **Target** | self; self, enemy, party; units: monster, player; up to 10 |

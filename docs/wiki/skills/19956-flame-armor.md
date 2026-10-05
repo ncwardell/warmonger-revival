@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=3b8f74 type=86a754 id=1fb524 sources=3a4a8f name_key=a507a4 desc_key=7dffcf kind=77de68 kind_name=78ea43 target=d1cc1b range=1b6453 area=6d01a6 cost=7e5cd4 cooldown=367d78 effect_kind=356a19 effects=0b74ef damage_or_effect=8e896b tooltip_formula=0fc93d requirements=6c1d22 icon=04a3fd used_by=18e60b -->
 |  |  |
 |---|---|
-|  | ![Flame armor](../assets/skills/19956.png) |
+|  | ![Flame armor](wiki/assets/skills/19956.png) |
 | **Skill id** | `19956` |
 | **Kind** | kind 3 (3) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

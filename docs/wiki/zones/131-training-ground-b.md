@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z131_00.dds"
 <!-- generated-keys: title=de60ee type=c899cd id=e794a8 sources=0165d5 name_kr=e54400 terrain=b411f3 bounds=87c110 size=be57ee segments=772a13 fields=a7533a minimap=7c7a3a -->
 |  |  |
 |---|---|
-|  | ![minimap of Training Ground B](../assets/zones/131.png) |
+|  | ![minimap of Training Ground B](wiki/assets/zones/131.png) |
 | **Zone id** | `131` |
 | **ZoneDB name** | 훈련장_B (English gloss: Training Ground B) |
 | **Terrain name** | `B_training` |

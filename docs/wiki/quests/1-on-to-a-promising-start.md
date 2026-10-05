@@ -28,7 +28,7 @@ help: {"image": "ui/HelpImage/Help_02.png", "text_key": "Quest_HelpText_1"}
 <!-- generated-keys: title=07df90 type=eb5b2b id=356a19 sources=ccf428 name_key=2d5a68 kind=b6589f kind_name=b3f808 giver=444e6c turn_in=847ad4 offer_maps=6e2020 turn_in_maps=6e2020 bit=356a19 automatic=5ffe53 prev=97d170 next=249983 stages=30caa7 objectives=b10c30 rewards=0247a1 offer_talk=a79e9a help=a61787 -->
 |  |  |
 |---|---|
-|  | ![On to a promising start](../assets/quests/1.png) |
+|  | ![On to a promising start](wiki/assets/quests/1.png) |
 | **Quest id** | `1` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/201-shaia\|Shaia]] |

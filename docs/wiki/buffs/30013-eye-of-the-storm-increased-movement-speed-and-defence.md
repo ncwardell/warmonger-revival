@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=49a528 type=6143a1 id=68a3f1 sources=634534 name_key=099550 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=68a3f1 effects=cddaab icon=fae5ad applied_by=f0bfe1 -->
 |  |  |
 |---|---|
-|  | ![Eye of the Storm : Increased Movement Speed and defence](../assets/buffs/30013.png) |
+|  | ![Eye of the Storm : Increased Movement Speed and defence](wiki/assets/buffs/30013.png) |
 | **Buff id** | `30013` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=198157 type=6143a1 id=76411d sources=97068d name_key=b25151 duration=995f11 is_buff=b6589f stack_type=356a19 group=b6589f effects=112124 icon=eb907e applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Wasteland Ogre : Health, Mana +10%](../assets/buffs/3111.png) |
+|  | ![Wasteland Ogre : Health, Mana +10%](wiki/assets/buffs/3111.png) |
 | **Buff id** | `3111` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

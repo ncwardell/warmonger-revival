@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=e06581 type=6143a1 id=bdfceb sources=88d884 name_key=fdcc53 duration=76674f is_buff=b6589f stack_type=356a19 group=b6589f effects=c522ae icon=1bc8e5 applied_by=1ffc7d -->
 |  |  |
 |---|---|
-|  | ![Magical Zone : Time until it fades.](../assets/buffs/10245.png) |
+|  | ![Magical Zone : Time until it fades.](wiki/assets/buffs/10245.png) |
 | **Buff id** | `10245` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

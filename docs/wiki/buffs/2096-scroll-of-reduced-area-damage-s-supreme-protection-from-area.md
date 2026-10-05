@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=995804 type=6143a1 id=f426c6 sources=552efa name_key=25ab96 duration=995f11 is_buff=b6589f stack_type=356a19 group=d32f6a effects=71e67d icon=6af970 applied_by=4c2278 -->
 |  |  |
 |---|---|
-|  | ![Scroll of Reduced Area Damage (S) : Supreme protection from Area Damage.](../assets/buffs/2096.png) |
+|  | ![Scroll of Reduced Area Damage (S) : Supreme protection from Area Damage.](wiki/assets/buffs/2096.png) |
 | **Buff id** | `2096` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

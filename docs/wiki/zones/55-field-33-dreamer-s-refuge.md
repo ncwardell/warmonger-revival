@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z55_00.dds"
 <!-- generated-keys: title=1c235d type=c899cd id=8effee sources=e9ebb5 name_kr=420f85 terrain=85e20e bounds=87c8cf size=114466 segments=05c4c5 fields=78415f minimap=cb4d62 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 33 (Dreamer's Refuge)](../assets/zones/55.png) |
+|  | ![minimap of Field 33 (Dreamer's Refuge)](wiki/assets/zones/55.png) |
 | **Zone id** | `55` |
 | **ZoneDB name** | 필드_33 (English gloss: Field 33 (Dreamer's Refuge)) |
 | **Terrain name** | `33` |

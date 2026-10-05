@@ -33,7 +33,7 @@ offer_talk: 906
 <!-- generated-keys: title=a3f81d type=eb5b2b id=64e095 sources=77816b name_key=68acc7 kind=b6589f kind_name=b3f808 giver=58f603 turn_in=847ad4 offer_maps=15f2a7 bit=f38cfe requires_bit=a93349 automatic=5ffe53 prev=f7cf3c next=3915bb prerequisites=f2e0b4 stages=a80fa1 objectives=b08d76 rewards=60a240 offer_talk=624ec0 -->
 |  |  |
 |---|---|
-|  | ![Doping Create](../assets/npcs/208.png) |
+|  | ![Doping Create](wiki/assets/npcs/208.png) |
 | **Quest id** | `48` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/208-bell-thain\|Bell Thain]] |

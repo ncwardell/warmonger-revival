@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=0a3cac type=6143a1 id=b43de4 sources=1923c7 name_key=a7d0e5 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=da95f8 icon=159906 applied_by=4f6809 -->
 |  |  |
 |---|---|
-|  | ![Firm Hand : You deal additional damage based on your current Armor](../assets/buffs/10099.png) |
+|  | ![Firm Hand : You deal additional damage based on your current Armor](wiki/assets/buffs/10099.png) |
 | **Buff id** | `10099` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

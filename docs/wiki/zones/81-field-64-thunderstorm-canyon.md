@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z81_00.dds"
 <!-- generated-keys: title=1b7c42 type=c899cd id=1d513c sources=0e3260 name_kr=a97f84 terrain=2b8e1e bounds=725837 size=114466 segments=d3c589 fields=85cf27 minimap=57dd1e -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 64 (Thunderstorm Canyon)](../assets/zones/81.png) |
+|  | ![minimap of Field 64 (Thunderstorm Canyon)](wiki/assets/zones/81.png) |
 | **Zone id** | `81` |
 | **ZoneDB name** | 필드_64 (English gloss: Field 64 (Thunderstorm Canyon)) |
 | **Terrain name** | `64` |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f142c7 type=d36ca9 id=aa62ff sources=028249 name_key=29e00f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=69bc29 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blue Passion Fragments (A)](../assets/items/607.png) |
+|  | ![Blue Passion Fragments (A)](wiki/assets/items/607.png) |
 | **Item id** | `607` |
 | **Kind** | Material (12) |
 | **Classes** | all |

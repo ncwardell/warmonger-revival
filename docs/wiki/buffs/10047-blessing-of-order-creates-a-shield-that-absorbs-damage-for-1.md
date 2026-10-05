@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=799380 type=6143a1 id=ad886d sources=77573c name_key=92cab9 duration=6c749d is_buff=b6589f stack_type=356a19 group=ad886d effects=c20c9b icon=6b4fc5 applied_by=f4b1f6 -->
 |  |  |
 |---|---|
-|  | ![Blessing of Order: Creates a shield that absorbs Damage for 10 seconds](../assets/buffs/10047.png) |
+|  | ![Blessing of Order: Creates a shield that absorbs Damage for 10 seconds](wiki/assets/buffs/10047.png) |
 | **Buff id** | `10047` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

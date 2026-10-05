@@ -27,7 +27,7 @@ observed_prices:
 <!-- generated-keys: title=76b355 type=ffcf9c id=f0a4ac sources=91990c npc=3e4a5c stock=f963fb prices=8d1d70 price_rates=c44eae header=702516 observed_prices=d0398d -->
 |  |  |
 |---|---|
-|  | ![Wren's shop (Merchant) 287](../assets/npcs/238.png) |
+|  | ![Wren's shop (Merchant) 287](wiki/assets/npcs/238.png) |
 | **Shop id** | `287` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/238-wren\|Wren]] (Merchant) |
 | **Stock** | 4 entries, 4 distinct items |
@@ -40,10 +40,10 @@ observed_prices:
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 1 | ![](../assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 2 | ![](../assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
-| 3 | ![](../assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
+| 0 | ![](wiki/assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 1 | ![](wiki/assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 2 | ![](wiki/assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
+| 3 | ![](wiki/assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
 
 ### Prices seen in play
 

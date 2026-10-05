@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=862fa3 type=6143a1 id=d51943 sources=23e7fb name_key=964562 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=596634 applied_by=552a63 -->
 |  |  |
 |---|---|
-|  | ![Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : Resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.](../assets/buffs/3029.png) |
+|  | ![Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : Resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.](wiki/assets/buffs/3029.png) |
 | **Buff id** | `3029` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

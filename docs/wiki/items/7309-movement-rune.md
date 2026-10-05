@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=e6c26c type=d36ca9 id=bb7a16 sources=bee3a4 name_key=b9f16a kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=76bad9 options=30ea72 icon=64de37 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Movement(%) Rune](../assets/items/7309.png) |
+|  | ![Movement(%) Rune](wiki/assets/items/7309.png) |
 | **Item id** | `7309` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

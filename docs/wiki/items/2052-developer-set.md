@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=e1223d type=d36ca9 id=a2cf0c sources=e6f473 name_key=ac5d0d kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 stats=97d170 options=653999 icon=cd404f obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Developer Set](../assets/items/2052.png) |
+|  | ![Developer Set](wiki/assets/items/2052.png) |
 | **Item id** | `2052` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

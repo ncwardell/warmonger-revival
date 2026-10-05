@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=57b8ea type=6143a1 id=ca15ea sources=11884a name_key=0cc392 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=4ef473 icon=5c9a70 applied_by=0ba0c0 -->
 |  |  |
 |---|---|
-|  | ![Bloody anger : Increases Damage](../assets/buffs/20260.png) |
+|  | ![Bloody anger : Increases Damage](wiki/assets/buffs/20260.png) |
 | **Buff id** | `20260` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

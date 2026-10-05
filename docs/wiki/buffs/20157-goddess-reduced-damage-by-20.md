@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=4071e1 type=6143a1 id=1484ff sources=8a6fcc name_key=a3aff2 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=65f184 icon=cd5c85 applied_by=c8bb46 -->
 |  |  |
 |---|---|
-|  | ![Goddess : Reduced damage by 20%](../assets/buffs/20157.png) |
+|  | ![Goddess : Reduced damage by 20%](wiki/assets/buffs/20157.png) |
 | **Buff id** | `20157` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

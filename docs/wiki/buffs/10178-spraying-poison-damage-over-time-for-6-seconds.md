@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=5d1221 type=6143a1 id=9d2ce5 sources=e4b82e name_key=176e7d duration=5d0a7b is_buff=b6589f stack_type=356a19 group=9d2ce5 effects=d146d8 icon=9835a6 applied_by=d72cb0 -->
 |  |  |
 |---|---|
-|  | ![Spraying Poison : Damage over time for 6 seconds](../assets/buffs/10178.png) |
+|  | ![Spraying Poison : Damage over time for 6 seconds](wiki/assets/buffs/10178.png) |
 | **Buff id** | `10178` |
 | **Duration** | 6 s (30 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

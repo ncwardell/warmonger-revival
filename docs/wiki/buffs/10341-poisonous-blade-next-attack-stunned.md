@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=24b1c1 type=6143a1 id=209e7e sources=ec401b name_key=c58ac0 duration=5d0a7b is_buff=b6589f stack_type=356a19 group=b6589f effects=964648 icon=78290d applied_by=b12bf2 -->
 |  |  |
 |---|---|
-|  | ![Poisonous Blade : Next Attack Stunned](../assets/buffs/10341.png) |
+|  | ![Poisonous Blade : Next Attack Stunned](wiki/assets/buffs/10341.png) |
 | **Buff id** | `10341` |
 | **Duration** | 6 s (30 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

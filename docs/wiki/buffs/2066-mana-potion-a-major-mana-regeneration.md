@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=020ff3 type=6143a1 id=2dfa38 sources=32f1c3 name_key=aee417 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=c63e2d icon=a120a7 applied_by=4368a8 -->
 |  |  |
 |---|---|
-|  | ![Mana Potion (A) : Major Mana regeneration](../assets/buffs/2066.png) |
+|  | ![Mana Potion (A) : Major Mana regeneration](wiki/assets/buffs/2066.png) |
 | **Buff id** | `2066` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

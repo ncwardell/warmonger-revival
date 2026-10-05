@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=a64e00 type=6143a1 id=bba423 sources=6ca2c5 name_key=867c76 duration=995f11 is_buff=b6589f stack_type=356a19 group=b6589f effects=2b7bb6 icon=4a83a1 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Lava Ogre : Attack damage, Ability Power +10%](../assets/buffs/3112.png) |
+|  | ![Lava Ogre : Attack damage, Ability Power +10%](wiki/assets/buffs/3112.png) |
 | **Buff id** | `3112` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

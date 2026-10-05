@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=cee326 type=6143a1 id=98aca3 sources=b73ffc name_key=3fd218 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=98aca3 effects=816ad5 icon=e77ed7 applied_by=077771 -->
 |  |  |
 |---|---|
-|  | ![Flame Absorb shield : Creates a absorvs damage for 4 seconds](../assets/buffs/19960.png) |
+|  | ![Flame Absorb shield : Creates a absorvs damage for 4 seconds](wiki/assets/buffs/19960.png) |
 | **Buff id** | `19960` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

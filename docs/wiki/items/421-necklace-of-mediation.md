@@ -40,7 +40,7 @@ obtained_from:
 <!-- generated-keys: title=623426 type=d36ca9 id=1c76c4 sources=1789b5 name_key=63e5f0 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=3dba2f reinforce=356a19 icon=46fa1a obtained_from=e67239 -->
 |  |  |
 |---|---|
-|  | ![Necklace of Mediation](../assets/items/421.png) |
+|  | ![Necklace of Mediation](wiki/assets/items/421.png) |
 | **Item id** | `421` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

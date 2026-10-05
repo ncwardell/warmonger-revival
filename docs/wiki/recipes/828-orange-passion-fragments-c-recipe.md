@@ -18,7 +18,7 @@ level: 10
 <!-- generated-keys: title=90708d type=61613a id=0da8cb sources=1f242d result=838beb materials=b5d78e gold=409e95 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/623.png) |
+|  | ![](wiki/assets/items/623.png) |
 | **Recipe id** | `828` (`Item_Make`) |
 | **Makes** | [[wiki/items/623-orange-passion-fragments-c\|Orange Passion Fragments (C)]] × 20 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/624.png) | [[wiki/items/624-orange-passion-piece-c\|Orange Passion Piece (C)]] | 6 |  |
+| ![](wiki/assets/items/624.png) | [[wiki/items/624-orange-passion-piece-c\|Orange Passion Piece (C)]] | 6 |  |
 
 Other recipes for the same item: [[wiki/recipes/812-orange-passion-fragments-c-recipe|recipe 812]], [[wiki/recipes/2106-orange-passion-fragments-c-recipe|recipe 2106]]
 

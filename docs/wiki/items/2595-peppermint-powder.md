@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=848314 type=d36ca9 id=55d886 sources=dc50cc name_key=ce4302 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=041430 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Peppermint powder](../assets/items/2595.png) |
+|  | ![Peppermint powder](wiki/assets/items/2595.png) |
 | **Item id** | `2595` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

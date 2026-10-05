@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=07d4aa type=6143a1 id=b57b6f sources=f2bc67 name_key=299d53 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=208ff3 icon=a0a660 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Wrath of the Frost Queen](../assets/buffs/10120.png) |
+|  | ![Wrath of the Frost Queen](wiki/assets/buffs/10120.png) |
 | **Buff id** | `10120` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

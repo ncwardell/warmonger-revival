@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=12e4fc type=d36ca9 id=c43d77 sources=daa66e name_key=0919da kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=15ffcd cost_pair=0a5b72 stats=97d170 icon=ff2fc5 obtained_from=2c236b -->
 |  |  |
 |---|---|
-|  | ![Extracted Peppermint](../assets/items/870.png) |
+|  | ![Extracted Peppermint](wiki/assets/items/870.png) |
 | **Item id** | `870` |
 | **Kind** | Material (12) |
 | **Classes** | all |

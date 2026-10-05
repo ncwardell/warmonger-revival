@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z151_00.dds"
 <!-- generated-keys: title=4458bf type=c899cd id=b16a45 sources=9cca75 name_kr=b5ca11 terrain=3d582b bounds=844be8 size=fd111b segments=2e62a6 fields=97d170 minimap=f61ec4 -->
 |  |  |
 |---|---|
-|  | ![minimap of Tower of Fate basement](../assets/zones/151.png) |
+|  | ![minimap of Tower of Fate basement](wiki/assets/zones/151.png) |
 | **Zone id** | `151` |
 | **ZoneDB name** | 운명의탑_지하 (English gloss: Tower of Fate basement) |
 | **Terrain name** | `06` |

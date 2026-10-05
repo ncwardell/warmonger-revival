@@ -33,7 +33,7 @@ used_by: []
 <!-- generated-keys: title=deb569 type=86a754 id=f87c3c sources=965bb0 name_key=e2291c desc_key=5e6767 kind=356a19 kind_name=9bc378 target=d1cc1b range=ac3478 area=500aa4 cost=077e82 cooldown=4a6a0b effect_kind=da4b92 effects=9f4c43 damage_or_effect=73e5d9 tooltip_formula=67f65b weapon_type=da4b92 visual=c1aa04 icon=83e0e4 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Punishing Stomp](../assets/skills/10051.png) |
+|  | ![Punishing Stomp](wiki/assets/skills/10051.png) |
 | **Skill id** | `10051` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=138789 type=6143a1 id=73b318 sources=0614f6 name_key=2337c4 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=1b6453 effects=97d170 icon=b746da applied_by=a55d35 -->
 |  |  |
 |---|---|
-|  | ![Deceive : Hiding (3 secs)](../assets/buffs/30424.png) |
+|  | ![Deceive : Hiding (3 secs)](wiki/assets/buffs/30424.png) |
 | **Buff id** | `30424` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

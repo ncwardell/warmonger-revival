@@ -19,7 +19,7 @@ level: 10
 <!-- generated-keys: title=03c451 type=61613a id=a93c16 sources=7bc19b result=7a6473 materials=bf54d7 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=fa2cc6 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3014.png) |
+|  | ![](wiki/assets/items/3014.png) |
 | **Recipe id** | `312` (`Item_Make`) |
 | **Makes** | [[wiki/items/3014-skull-s-shoes\|Skull's Shoes]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2702.png) | [[wiki/items/2702-skull-horn\|Skull Horn]] | 1 |  |
-| ![](../assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
+| ![](wiki/assets/items/2702.png) | [[wiki/items/2702-skull-horn\|Skull Horn]] | 1 |  |
+| ![](wiki/assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

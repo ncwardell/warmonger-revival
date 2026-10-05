@@ -23,7 +23,7 @@ help: {"image": "ui/HelpImage/Help_02.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=935f88 type=eb5b2b id=0e55c1 sources=2b5fa0 name_key=c59b6a kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=356a19 prev=97d170 next=249983 stages=30caa7 objectives=92303d rewards=97d170 help=77dcdc -->
 |  |  |
 |---|---|
-|  | ![Basic function - Move character](../assets/quests/1501.png) |
+|  | ![Basic function - Move character](wiki/assets/quests/1501.png) |
 | **Quest id** | `1501` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

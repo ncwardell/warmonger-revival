@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=ad2d38 type=d36ca9 id=4c8596 sources=d0365b name_key=9ef3a3 kind=2e01e1 kind_name=94da97 classes=92d079 bind=883bf8 price=936627 cost_pair=ebf7c2 rarity=356a19 stats=97d170 icon=3deadf obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Rainbow Reinforcing Stone (Gear)](../assets/items/644.png) |
+|  | ![Rainbow Reinforcing Stone (Gear)](wiki/assets/items/644.png) |
 | **Item id** | `644` |
 | **Kind** | Grede Reinforcing Stone (49) |
 | **Classes** | all |

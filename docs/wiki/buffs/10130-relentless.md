@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=aba502 type=6143a1 id=6700d0 sources=920508 name_key=2cd865 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=053c73 icon=2fd0e6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Relentless](../assets/buffs/10130.png) |
+|  | ![Relentless](wiki/assets/buffs/10130.png) |
 | **Buff id** | `10130` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

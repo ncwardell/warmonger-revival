@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=cc2a97 type=6143a1 id=6c8ca6 sources=a553e6 name_key=411bae duration=2a0b1e is_buff=b6589f stack_type=356a19 group=ac3478 effects=97d170 icon=b6460f applied_by=4183bc -->
 |  |  |
 |---|---|
-|  | ![Immovable bondage : Rooted in place for 2 seconds](../assets/buffs/30427.png) |
+|  | ![Immovable bondage : Rooted in place for 2 seconds](wiki/assets/buffs/30427.png) |
 | **Buff id** | `30427` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=842a84 type=d36ca9 id=ebcab2 sources=4ee6b6 name_key=454ca9 kind=7b5200 kind_name=59f0ad classes=92d079 bind=883bf8 price=5e6090 cost_pair=54f6b7 stats=97d170 icon=50f4e7 obtained_from=fd9732 -->
 |  |  |
 |---|---|
-|  | ![Mysterious Passion](../assets/items/855.png) |
+|  | ![Mysterious Passion](wiki/assets/items/855.png) |
 | **Item id** | `855` |
 | **Kind** | Material (12) |
 | **Classes** | all |

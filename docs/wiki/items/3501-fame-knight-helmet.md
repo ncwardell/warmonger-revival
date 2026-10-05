@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=40a97a type=d36ca9 id=4a2c3f sources=e12adc name_key=9b7627 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=5d0217 set=902ba3 reinforce=92cfce icon=f5bc1d obtained_from=f27d06 -->
 |  |  |
 |---|---|
-|  | ![Fame knight Helmet](../assets/items/3501.png) |
+|  | ![Fame knight Helmet](wiki/assets/items/3501.png) |
 | **Item id** | `3501` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

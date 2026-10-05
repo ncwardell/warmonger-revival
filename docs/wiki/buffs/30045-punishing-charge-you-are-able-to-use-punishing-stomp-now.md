@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=a95705 type=6143a1 id=b30640 sources=f82645 name_key=5ad1e9 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=83e0e4 applied_by=98292f -->
 |  |  |
 |---|---|
-|  | ![Punishing Charge : You are able to use Punishing Stomp now](../assets/buffs/30045.png) |
+|  | ![Punishing Charge : You are able to use Punishing Stomp now](wiki/assets/buffs/30045.png) |
 | **Buff id** | `30045` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

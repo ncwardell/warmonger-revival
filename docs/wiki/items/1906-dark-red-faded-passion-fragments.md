@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=40a84b type=d36ca9 id=f58488 sources=f508da name_key=09f472 kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=82c3b7 cost_pair=a87fd8 stats=97d170 icon=4df9cd obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dark Red Faded Passion fragments](../assets/items/1906.png) |
+|  | ![Dark Red Faded Passion fragments](wiki/assets/items/1906.png) |
 | **Item id** | `1906` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

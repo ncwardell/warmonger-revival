@@ -18,7 +18,7 @@ level: 10
 <!-- generated-keys: title=2d960d type=61613a id=5375ef sources=3012aa result=652d61 materials=b39957 gold=c2d4c5 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/605.png) |
+|  | ![](wiki/assets/items/605.png) |
 | **Recipe id** | `825` (`Item_Make`) |
 | **Makes** | [[wiki/items/605-blue-passion-fragments-b\|Blue Passion Fragments (B)]] × 100 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 20 |  |
+| ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 20 |  |
 
 Other recipes for the same item: [[wiki/recipes/809-blue-passion-fragments-b-recipe|recipe 809]]
 

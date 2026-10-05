@@ -25,7 +25,7 @@ spawn_fields: [124]
 <!-- generated-keys: title=d638eb type=9bbc46 id=7f1426 sources=6d0fc2 name_key=731781 category=c1dfd9 class_mask=356a19 model=eb4ac3 model_name=25777e model_path=8c1900 scale=58e6d3 radius=356a19 projectile=81d51c sounds=823e44 hero=b1d578 boss_of=181a14 dungeon_rewards=3e13ad spawn_fields=181a14 -->
 |  |  |
 |---|---|
-|  | ![Great Summoner Spectre](../assets/monsters/1218.png) |
+|  | ![Great Summoner Spectre](wiki/assets/monsters/1218.png) |
 | **Unit id** | `1218` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

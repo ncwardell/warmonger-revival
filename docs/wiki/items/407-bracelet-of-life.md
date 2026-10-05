@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=27f5f4 type=d36ca9 id=e6de89 sources=50ace3 name_key=631cb1 kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=9671d1 reinforce=356a19 icon=9fd4c9 obtained_from=cc1eed -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Life](../assets/items/407.png) |
+|  | ![Bracelet of Life](wiki/assets/items/407.png) |
 | **Item id** | `407` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

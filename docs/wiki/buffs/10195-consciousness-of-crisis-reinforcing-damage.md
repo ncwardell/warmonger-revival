@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=f6f016 type=6143a1 id=edbba0 sources=6d0d07 name_key=307334 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=b61237 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Consciousness of Crisis : Reinforcing Damage](../assets/buffs/10195.png) |
+|  | ![Consciousness of Crisis : Reinforcing Damage](wiki/assets/buffs/10195.png) |
 | **Buff id** | `10195` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

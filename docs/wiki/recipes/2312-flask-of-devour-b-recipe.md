@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=c504a2 type=61613a id=dca684 sources=c614e6 result=bc61e2 materials=7c313e gold=15aa0c success_rate=310b86 category=fe5dbb filter_mask=6c13bc level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/749.png) |
+|  | ![](wiki/assets/items/749.png) |
 | **Recipe id** | `2312` (`Item_Make`) |
 | **Makes** | [[wiki/items/749-flask-of-devour-b\|Flask of Devour (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/825.png) | [[wiki/items/825-jasmine-powder\|Jasmine powder]] | 20 |  |
-| ![](../assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
-| ![](../assets/items/839.png) | [[wiki/items/839-wild-herb\|Wild herb]] | 1 |  |
+| ![](wiki/assets/items/825.png) | [[wiki/items/825-jasmine-powder\|Jasmine powder]] | 20 |  |
+| ![](wiki/assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
+| ![](wiki/assets/items/839.png) | [[wiki/items/839-wild-herb\|Wild herb]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/534-flask-of-devour-b-recipe|recipe 534]]
 

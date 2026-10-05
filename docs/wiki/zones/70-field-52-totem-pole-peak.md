@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z70_00.dds"
 <!-- generated-keys: title=4fee52 type=c899cd id=b7103c sources=eb7a15 name_kr=7256ff terrain=7dca57 bounds=cebf4b size=114466 segments=d79140 fields=8ca136 minimap=6c9499 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 52 (Totem Pole Peak)](../assets/zones/70.png) |
+|  | ![minimap of Field 52 (Totem Pole Peak)](wiki/assets/zones/70.png) |
 | **Zone id** | `70` |
 | **ZoneDB name** | 필드_52 (English gloss: Field 52 (Totem Pole Peak)) |
 | **Terrain name** | `52` |

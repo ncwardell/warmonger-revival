@@ -21,7 +21,7 @@ raw: {"c2": 1}
 <!-- generated-keys: title=88da81 type=61613a id=e29f7b sources=ff5f98 result=6c1f51 materials=e6d869 gold=409e95 success_rate=af3e13 category=da4b92 filter_mask=5c54ba level=77de68 raw=e722a2 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/10004.png) |
+|  | ![](wiki/assets/items/10004.png) |
 | **Recipe id** | `929` (`Item_Make`) |
 | **Makes** | [[wiki/items/10004-tempest-s-magical-wand\|Tempest's magical wand]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,9 +34,9 @@ raw: {"c2": 1}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2753.png) | [[wiki/items/2753-the-tempest-fisher-s-sealed-weapon\|The Tempest Fisher's Sealed Weapon]] | 1 |  |
-| ![](../assets/items/2703.png) | [[wiki/items/2703-fin-of-fisher\|Fin of Fisher]] | 1 |  |
-| ![](../assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 2 |  |
+| ![](wiki/assets/items/2753.png) | [[wiki/items/2753-the-tempest-fisher-s-sealed-weapon\|The Tempest Fisher's Sealed Weapon]] | 1 |  |
+| ![](wiki/assets/items/2703.png) | [[wiki/items/2703-fin-of-fisher\|Fin of Fisher]] | 1 |  |
+| ![](wiki/assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 2 |  |
 
 Unknown columns: `c2` = 1 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

@@ -47,7 +47,7 @@ obtained_from:
 <!-- generated-keys: title=13db69 type=d36ca9 id=6e9b99 sources=b2a531 name_key=b8a4fe kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=14e736 reinforce=356a19 icon=acb972 obtained_from=90650d -->
 |  |  |
 |---|---|
-|  | ![Guardian Gloves](../assets/items/412.png) |
+|  | ![Guardian Gloves](wiki/assets/items/412.png) |
 | **Item id** | `412` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

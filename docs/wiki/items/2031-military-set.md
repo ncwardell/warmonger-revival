@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=c221b5 type=d36ca9 id=0d0c9e sources=4e8232 name_key=8b3fc0 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=ec445c options=397e6f icon=eb7faa obtained_from=d19cc0 -->
 |  |  |
 |---|---|
-|  | ![Military Set](../assets/items/2031.png) |
+|  | ![Military Set](wiki/assets/items/2031.png) |
 | **Item id** | `2031` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

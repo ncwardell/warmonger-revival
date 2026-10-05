@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z68_00.dds"
 <!-- generated-keys: title=b722e9 type=c899cd id=b4c96d sources=345ff8 name_kr=4b42d4 terrain=b4766e bounds=1c79d5 size=114466 segments=53cb00 fields=d59264 minimap=de51a1 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 50 (Eclipsed Road)](../assets/zones/68.png) |
+|  | ![minimap of Field 50 (Eclipsed Road)](wiki/assets/zones/68.png) |
 | **Zone id** | `68` |
 | **ZoneDB name** | 필드_50 (English gloss: Field 50 (Eclipsed Road)) |
 | **Terrain name** | `50` |

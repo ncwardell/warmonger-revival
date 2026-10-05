@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=178ac7 type=6143a1 id=e50d5e sources=134947 name_key=9e1147 duration=0aac5a is_buff=b6589f stack_type=356a19 group=9a3e61 effects=e560af icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Explosion : Dead Time Buff](../assets/buffs/10184.png) |
+|  | ![Explosion : Dead Time Buff](wiki/assets/buffs/10184.png) |
 | **Buff id** | `10184` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

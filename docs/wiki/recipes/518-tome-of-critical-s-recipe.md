@@ -20,7 +20,7 @@ level: 30
 <!-- generated-keys: title=9fad63 type=61613a id=0486ff sources=a13aa1 result=bf81c2 materials=8c9532 gold=73ee49 success_rate=310b86 category=356a19 filter_mask=5d5e34 level=22d200 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/727.png) |
+|  | ![](wiki/assets/items/727.png) |
 | **Recipe id** | `518` (`Item_Make`) |
 | **Makes** | [[wiki/items/727-tome-of-critical-s\|Tome of Critical (S)]] × 10 |
 | **Gold** | 1,200 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 30
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/813.png) | [[wiki/items/813-red-bloodstone-powder\|Red bloodstone powder]] | 40 |  |
-| ![](../assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  |
-| ![](../assets/items/838.png) | [[wiki/items/838-ointment-of-spirit\|Ointment of Spirit]] | 3 |  |
+| ![](wiki/assets/items/813.png) | [[wiki/items/813-red-bloodstone-powder\|Red bloodstone powder]] | 40 |  |
+| ![](wiki/assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  |
+| ![](wiki/assets/items/838.png) | [[wiki/items/838-ointment-of-spirit\|Ointment of Spirit]] | 3 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

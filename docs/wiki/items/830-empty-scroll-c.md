@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=791187 type=d36ca9 id=201921 sources=361944 name_key=254bce kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=424a61 obtained_from=a591b7 -->
 |  |  |
 |---|---|
-|  | ![Empty Scroll (C)](../assets/items/830.png) |
+|  | ![Empty Scroll (C)](wiki/assets/items/830.png) |
 | **Item id** | `830` |
 | **Kind** | Material (12) |
 | **Classes** | all |

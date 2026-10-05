@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=8d143c type=24f03d id=e1822d sources=0b0cfd contents=719856 value_4c=15f8d1 opened_by_guess=54c179 kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1055.png) |
+|  | ![](wiki/assets/items/1055.png) |
 | **RandomBox id** | `50` |
 | **Opened by** | [[wiki/items/1055-diamond-medal-rewar-box\|(Diamond) Medal Rewar Box]] (*guess*, not confirmed) |
 | **Value @4c** | 500,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 300,000 |  |
-| 1 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 300,000 |  |
-| 2 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 560,000 |  |
-| 3 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 1,000,000 |  |
-| 4 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 1,000,000 |  |
-| 5 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 1,000,000 |  |
-| 6 | ![](../assets/items/7164.png) | [[wiki/items/7164-movement-rune\|Movement(%) Rune]] | 1 |  |
-| 7 | ![](../assets/items/7164.png) | [[wiki/items/7164-movement-rune\|Movement(%) Rune]] | 1 |  |
-| 8 | ![](../assets/items/7144.png) | [[wiki/items/7144-pvp-attack-rune\|PvP Attack Rune]] | 1 |  |
-| 9 | ![](../assets/items/7154.png) | [[wiki/items/7154-pvp-armor-rune\|PvP Armor Rune]] | 1 |  |
+| 0 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 300,000 |  |
+| 1 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 300,000 |  |
+| 2 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 560,000 |  |
+| 3 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 1,000,000 |  |
+| 4 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 1,000,000 |  |
+| 5 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 1,000,000 |  |
+| 6 | ![](wiki/assets/items/7164.png) | [[wiki/items/7164-movement-rune\|Movement(%) Rune]] | 1 |  |
+| 7 | ![](wiki/assets/items/7164.png) | [[wiki/items/7164-movement-rune\|Movement(%) Rune]] | 1 |  |
+| 8 | ![](wiki/assets/items/7144.png) | [[wiki/items/7144-pvp-attack-rune\|PvP Attack Rune]] | 1 |  |
+| 9 | ![](wiki/assets/items/7154.png) | [[wiki/items/7154-pvp-armor-rune\|PvP Armor Rune]] | 1 |  |
 
 ### Why this box item
 

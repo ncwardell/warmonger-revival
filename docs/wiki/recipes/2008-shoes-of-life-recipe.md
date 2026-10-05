@@ -20,7 +20,7 @@ raw: {"c28": 150}
 <!-- generated-keys: title=71518f type=61613a id=527dc6 sources=1be007 result=94e91b materials=f2c969 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=96c62c superior=d32a65 level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/404.png) |
+|  | ![](wiki/assets/items/404.png) |
 | **Recipe id** | `2008` (`Item_Make`) |
 | **Makes** | [[wiki/items/404-shoes-of-life\|Shoes of Life]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 150}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

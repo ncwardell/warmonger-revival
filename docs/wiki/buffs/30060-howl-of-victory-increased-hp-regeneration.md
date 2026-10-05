@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=43b2dd type=6143a1 id=b2169a sources=51fa62 name_key=242e6e duration=8c4b49 is_buff=b6589f stack_type=356a19 group=b6589f effects=6914b3 icon=384e30 applied_by=d01135 -->
 |  |  |
 |---|---|
-|  | ![Howl of Victory: Increased HP Regeneration](../assets/buffs/30060.png) |
+|  | ![Howl of Victory: Increased HP Regeneration](wiki/assets/buffs/30060.png) |
 | **Buff id** | `30060` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

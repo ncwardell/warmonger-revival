@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=483d7a type=86a754 id=ad886d sources=905ae2 name_key=91ecd2 desc_key=5827d7 kind=356a19 kind_name=9bc378 target=e84f24 range=0716d9 area=eebd23 cost=9e049c cooldown=7d0c8c delivery=93a212 effect_kind=356a19 effects=8728ff damage_or_effect=6acb7b tooltip_formula=d82a69 visual=4dea1d icon=8148c0 used_by=658e8c -->
 |  |  |
 |---|---|
-|  | ![Clear the Path](../assets/skills/10047.png) |
+|  | ![Clear the Path](wiki/assets/skills/10047.png) |
 | **Skill id** | `10047` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

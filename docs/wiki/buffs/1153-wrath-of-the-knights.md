@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=1522da type=6143a1 id=d27c5a sources=d0edee name_key=d028f9 duration=6c141f is_buff=b6589f stack_type=356a19 group=d27c5a effects=486768 icon=695d02 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Wrath of the Knights](../assets/buffs/1153.png) |
+|  | ![Wrath of the Knights](wiki/assets/buffs/1153.png) |
 | **Buff id** | `1153` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -19,7 +19,7 @@ level: 30
 <!-- generated-keys: title=9a7963 type=61613a id=a093a3 sources=fd8186 result=35c7df materials=844651 gold=e0b2d8 success_rate=310b86 category=356a19 filter_mask=7d14a3 level=22d200 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/888.png) |
+|  | ![](wiki/assets/items/888.png) |
 | **Recipe id** | `704` (`Item_Make`) |
 | **Makes** | [[wiki/items/888-potion-of-health-s\|Potion of Health (S)]] × 100 |
 | **Gold** | 4,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 30
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/837.png) | [[wiki/items/837-empty-flask-s\|Empty Flask (S)]] | 100 |  |
-| ![](../assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 2 |  |
+| ![](wiki/assets/items/837.png) | [[wiki/items/837-empty-flask-s\|Empty Flask (S)]] | 100 |  |
+| ![](wiki/assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

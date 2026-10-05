@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z122_00.dds"
 <!-- generated-keys: title=bb3646 type=c899cd id=05a8ea sources=427712 name_kr=a21788 terrain=04c7b1 bounds=b0ade3 size=be57ee segments=14e8a7 fields=48700a minimap=f94c05 -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV4 112 (Death's Rest)](../assets/zones/122.png) |
+|  | ![minimap of Abyss LV4 112 (Death's Rest)](wiki/assets/zones/122.png) |
 | **Zone id** | `122` |
 | **ZoneDB name** | 어비스_LV4_112 (English gloss: Abyss LV4 112 (Death's Rest)) |
 | **Terrain name** | `Abyss_Lv04` |

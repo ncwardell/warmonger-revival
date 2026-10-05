@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=84f93b type=d36ca9 id=33b82c sources=132d10 name_key=2fbb41 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=f73156 options=6be2c3 icon=ba5aa1 obtained_from=b10394 -->
 |  |  |
 |---|---|
-|  | ![Ninja Set](../assets/items/2051.png) |
+|  | ![Ninja Set](wiki/assets/items/2051.png) |
 | **Item id** | `2051` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

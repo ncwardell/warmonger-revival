@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=b3ef49 type=6143a1 id=8fc510 sources=7c9aec name_key=97290c duration=0aac5a is_buff=b6589f stack_type=356a19 group=8fc510 effects=85ed02 icon=62f758 applied_by=3ba7c8 -->
 |  |  |
 |---|---|
-|  | ![Punishment : Second skill available](../assets/buffs/10359.png) |
+|  | ![Punishment : Second skill available](wiki/assets/buffs/10359.png) |
 | **Buff id** | `10359` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

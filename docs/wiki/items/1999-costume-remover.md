@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=e8d186 type=d36ca9 id=fbc784 sources=b3f9e9 name_key=58d7e6 kind=fb6443 kind_name=5d34ea classes=92d079 bind=883bf8 price=ad75b5 cost_pair=cc1d90 stats=97d170 icon=f99dc5 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Costume Remover](../assets/items/1999.png) |
+|  | ![Costume Remover](wiki/assets/items/1999.png) |
 | **Item id** | `1999` |
 | **Kind** | Dye (45) |
 | **Classes** | all |

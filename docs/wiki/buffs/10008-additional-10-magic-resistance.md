@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=4d3867 type=6143a1 id=e3a530 sources=6b04fc name_key=749800 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=aeb489 icon=ce75c9 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional 10% Magic Resistance](../assets/buffs/10008.png) |
+|  | ![Additional 10% Magic Resistance](wiki/assets/buffs/10008.png) |
 | **Buff id** | `10008` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

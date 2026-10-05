@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=1434d0 type=6143a1 id=b16a45 sources=cdcc3f name_key=90c6eb duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=ee8f9d icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![40% Cooldown reduction, HP and Mana Regeneration](../assets/buffs/151.png) |
+|  | ![40% Cooldown reduction, HP and Mana Regeneration](wiki/assets/buffs/151.png) |
 | **Buff id** | `151` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

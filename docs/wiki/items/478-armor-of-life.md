@@ -32,7 +32,7 @@ obtained_from: []
 <!-- generated-keys: title=b634ee type=d36ca9 id=fbea31 sources=146a3c name_key=305e0f kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=97b234 reinforce=da4b92 icon=a5b1b1 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Armor of Life](../assets/items/478.png) |
+|  | ![Armor of Life](wiki/assets/items/478.png) |
 | **Item id** | `478` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

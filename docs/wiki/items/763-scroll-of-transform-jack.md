@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=e61e85 type=d36ca9 id=e1de5f sources=a69da7 name_key=112d3a kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a use_buff=1955bf cooldown_s=da4b92 cooldown_group=bc33ea stats=97d170 options=8e35bb icon=c7a58c obtained_from=3e6929 -->
 |  |  |
 |---|---|
-|  | ![Scroll of Transform : (Jack)](../assets/items/763.png) |
+|  | ![Scroll of Transform : (Jack)](wiki/assets/items/763.png) |
 | **Item id** | `763` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

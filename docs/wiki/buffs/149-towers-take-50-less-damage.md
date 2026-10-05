@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=09b864 type=6143a1 id=39dfc9 sources=d8b2f8 name_key=b0198b duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=66e118 icon=4041be applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Towers take 50% less Damage.](../assets/buffs/149.png) |
+|  | ![Towers take 50% less Damage.](wiki/assets/buffs/149.png) |
 | **Buff id** | `149` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

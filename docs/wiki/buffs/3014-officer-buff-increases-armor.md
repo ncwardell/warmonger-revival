@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=0d6d40 type=6143a1 id=e11c34 sources=874694 name_key=69a9ae duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=fe0162 icon=e1413d applied_by=9a19c0 -->
 |  |  |
 |---|---|
-|  | ![Officer Buff: Increases Armor](../assets/buffs/3014.png) |
+|  | ![Officer Buff: Increases Armor](wiki/assets/buffs/3014.png) |
 | **Buff id** | `3014` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

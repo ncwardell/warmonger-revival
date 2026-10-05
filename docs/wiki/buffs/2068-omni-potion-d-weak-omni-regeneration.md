@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=bf2eef type=6143a1 id=274438 sources=ef82e9 name_key=d6f630 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=dee64b icon=258247 applied_by=4834ca -->
 |  |  |
 |---|---|
-|  | ![Omni Potion (D) : Weak Omni Regeneration](../assets/buffs/2068.png) |
+|  | ![Omni Potion (D) : Weak Omni Regeneration](wiki/assets/buffs/2068.png) |
 | **Buff id** | `2068` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

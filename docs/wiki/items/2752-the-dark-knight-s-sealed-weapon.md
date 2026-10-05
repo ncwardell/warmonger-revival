@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=9a4674 type=d36ca9 id=fa92c3 sources=d591fb name_key=a99c25 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=1f9ef5 obtained_from=bf4268 -->
 |  |  |
 |---|---|
-|  | ![The Dark Knight.'s Sealed Weapon](../assets/items/2752.png) |
+|  | ![The Dark Knight.'s Sealed Weapon](wiki/assets/items/2752.png) |
 | **Item id** | `2752` |
 | **Kind** | Material (12) |
 | **Classes** | all |

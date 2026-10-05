@@ -31,7 +31,7 @@ used_by: []
 <!-- generated-keys: title=c366ec type=86a754 id=7faa30 sources=1bf86e name_key=6a26cf desc_key=152c9b kind=356a19 kind_name=9bc378 target=7056fd range=902ba3 area=0f29a2 cost=da6e22 cooldown=4aa5a5 effect_kind=da4b92 effects=00fcbd damage_or_effect=b947ef tooltip_formula=84be26 visual=5f6955 icon=f2ac4f used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Sweep](../assets/skills/5184.png) |
+|  | ![Sweep](wiki/assets/skills/5184.png) |
 | **Skill id** | `5184` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

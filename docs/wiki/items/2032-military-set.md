@@ -29,7 +29,7 @@ obtained_from: []
 <!-- generated-keys: title=c221b5 type=d36ca9 id=c53c71 sources=f70532 name_key=8b3fc0 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=365a69 stats=ec445c options=2d3bc7 icon=c0fe73 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Military Set](../assets/items/2032.png) |
+|  | ![Military Set](wiki/assets/items/2032.png) |
 | **Item id** | `2032` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

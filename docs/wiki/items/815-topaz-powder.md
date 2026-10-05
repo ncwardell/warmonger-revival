@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=be42f5 type=d36ca9 id=d528ed sources=7849de name_key=c90e27 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=5148be cost_pair=ad07dc stats=97d170 icon=117bf4 obtained_from=cac375 -->
 |  |  |
 |---|---|
-|  | ![Topaz powder](../assets/items/815.png) |
+|  | ![Topaz powder](wiki/assets/items/815.png) |
 | **Item id** | `815` |
 | **Kind** | Material (12) |
 | **Classes** | all |

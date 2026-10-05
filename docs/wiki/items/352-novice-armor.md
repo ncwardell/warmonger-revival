@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=03c681 type=d36ca9 id=efbc08 sources=d472d2 name_key=6c983b kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=636210 icon=a14826 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Novice Armor](../assets/items/352.png) |
+|  | ![Novice Armor](wiki/assets/items/352.png) |
 | **Item id** | `352` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

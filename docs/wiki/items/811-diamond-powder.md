@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=54d281 type=d36ca9 id=6f8246 sources=dd74ed name_key=9c9783 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=f0a5c3 cost_pair=9e699d stats=97d170 icon=0f7c9c obtained_from=ff166f -->
 |  |  |
 |---|---|
-|  | ![Diamond powder](../assets/items/811.png) |
+|  | ![Diamond powder](wiki/assets/items/811.png) |
 | **Item id** | `811` |
 | **Kind** | Material (12) |
 | **Classes** | all |

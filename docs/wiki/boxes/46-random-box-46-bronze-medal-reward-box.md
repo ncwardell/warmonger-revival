@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=9ca46a type=24f03d id=fe2ef4 sources=d211ae contents=d23380 value_4c=8a12a3 opened_by_guess=929f96 kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1051.png) |
+|  | ![](wiki/assets/items/1051.png) |
 | **RandomBox id** | `46` |
 | **Opened by** | [[wiki/items/1051-bronze-medal-reward-box\|(Bronze) Medal Reward Box]] (*guess*, not confirmed) |
 | **Value @4c** | 10,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 10,000 |  |
-| 1 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 10,000 |  |
-| 2 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 30,000 |  |
-| 3 | ![](../assets/items/1001.png) | [[wiki/items/1001-medal-silver\|Medal : Silver]] | 1 |  |
-| 4 | ![](../assets/items/1052.png) | [[wiki/items/1052-silver-medal-reward-box\|(Silver) Medal Reward Box]] | 1 |  |
-| 5 | ![](../assets/items/1052.png) | [[wiki/items/1052-silver-medal-reward-box\|(Silver) Medal Reward Box]] | 1 |  |
-| 6 | ![](../assets/items/7042.png) | [[wiki/items/7042-health-rune\|Health Rune]] | 1 |  |
-| 7 | ![](../assets/items/7052.png) | [[wiki/items/7052-mana-rune\|Mana Rune]] | 1 |  |
-| 8 | ![](../assets/items/7062.png) | [[wiki/items/7062-health-regeneration-rune\|Health Regeneration Rune]] | 1 |  |
-| 9 | ![](../assets/items/7072.png) | [[wiki/items/7072-mana-regeneration-rune\|Mana Regeneration Rune]] | 1 |  |
+| 0 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 10,000 |  |
+| 1 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 10,000 |  |
+| 2 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 30,000 |  |
+| 3 | ![](wiki/assets/items/1001.png) | [[wiki/items/1001-medal-silver\|Medal : Silver]] | 1 |  |
+| 4 | ![](wiki/assets/items/1052.png) | [[wiki/items/1052-silver-medal-reward-box\|(Silver) Medal Reward Box]] | 1 |  |
+| 5 | ![](wiki/assets/items/1052.png) | [[wiki/items/1052-silver-medal-reward-box\|(Silver) Medal Reward Box]] | 1 |  |
+| 6 | ![](wiki/assets/items/7042.png) | [[wiki/items/7042-health-rune\|Health Rune]] | 1 |  |
+| 7 | ![](wiki/assets/items/7052.png) | [[wiki/items/7052-mana-rune\|Mana Rune]] | 1 |  |
+| 8 | ![](wiki/assets/items/7062.png) | [[wiki/items/7062-health-regeneration-rune\|Health Regeneration Rune]] | 1 |  |
+| 9 | ![](wiki/assets/items/7072.png) | [[wiki/items/7072-mana-regeneration-rune\|Mana Regeneration Rune]] | 1 |  |
 
 ### Why this box item
 

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=fbc4b9 type=6143a1 id=cc01f2 sources=0369b0 name_key=5eec76 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=67d305 effects=74bc69 icon=1aeac2 applied_by=ef9b56 -->
 |  |  |
 |---|---|
-|  | ![blessing of Mother Nature : Absorbs damage](../assets/buffs/30336.png) |
+|  | ![blessing of Mother Nature : Absorbs damage](wiki/assets/buffs/30336.png) |
 | **Buff id** | `30336` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

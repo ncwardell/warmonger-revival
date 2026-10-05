@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3012.png) | [[wiki/items/3012-skull-s-armor\|Skull's Armor]] | 1 |  |
-| 1 | ![](../assets/items/3013.png) | [[wiki/items/3013-skull-s-gloves\|Skull's Gloves]] | 1 |  |
-| 2 | ![](../assets/items/3014.png) | [[wiki/items/3014-skull-s-shoes\|Skull's Shoes]] | 1 |  |
-| 3 | ![](../assets/items/3015.png) | [[wiki/items/3015-skull-s-necklace\|Skull's Necklace]] | 1 |  |
-| 4 | ![](../assets/items/3016.png) | [[wiki/items/3016-skull-s-belt\|Skull's Belt]] | 1 |  |
-| 5 | ![](../assets/items/3017.png) | [[wiki/items/3017-skull-s-bracelet\|Skull's Bracelet]] | 1 |  |
-| 6 | ![](../assets/items/3017.png) | [[wiki/items/3017-skull-s-bracelet\|Skull's Bracelet]] | 1 |  |
-| 7 | ![](../assets/items/3018.png) | [[wiki/items/3018-skull-s-ring\|Skull's Ring]] | 1 |  |
-| 8 | ![](../assets/items/3018.png) | [[wiki/items/3018-skull-s-ring\|Skull's Ring]] | 1 |  |
-| 9 | ![](../assets/items/3011.png) | [[wiki/items/3011-skull-s-helmet\|Skull's Helmet]] | 1 |  |
+| 0 | ![](wiki/assets/items/3012.png) | [[wiki/items/3012-skull-s-armor\|Skull's Armor]] | 1 |  |
+| 1 | ![](wiki/assets/items/3013.png) | [[wiki/items/3013-skull-s-gloves\|Skull's Gloves]] | 1 |  |
+| 2 | ![](wiki/assets/items/3014.png) | [[wiki/items/3014-skull-s-shoes\|Skull's Shoes]] | 1 |  |
+| 3 | ![](wiki/assets/items/3015.png) | [[wiki/items/3015-skull-s-necklace\|Skull's Necklace]] | 1 |  |
+| 4 | ![](wiki/assets/items/3016.png) | [[wiki/items/3016-skull-s-belt\|Skull's Belt]] | 1 |  |
+| 5 | ![](wiki/assets/items/3017.png) | [[wiki/items/3017-skull-s-bracelet\|Skull's Bracelet]] | 1 |  |
+| 6 | ![](wiki/assets/items/3017.png) | [[wiki/items/3017-skull-s-bracelet\|Skull's Bracelet]] | 1 |  |
+| 7 | ![](wiki/assets/items/3018.png) | [[wiki/items/3018-skull-s-ring\|Skull's Ring]] | 1 |  |
+| 8 | ![](wiki/assets/items/3018.png) | [[wiki/items/3018-skull-s-ring\|Skull's Ring]] | 1 |  |
+| 9 | ![](wiki/assets/items/3011.png) | [[wiki/items/3011-skull-s-helmet\|Skull's Helmet]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

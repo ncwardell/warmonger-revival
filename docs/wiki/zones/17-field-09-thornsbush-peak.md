@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z17_00.dds"
 <!-- generated-keys: title=237663 type=c899cd id=0716d9 sources=2370e5 name_kr=0a17a5 terrain=e0bd3c bounds=cb12af size=114466 segments=44c6fd fields=7a6055 minimap=6b1052 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 09 (Thornsbush peak)](../assets/zones/17.png) |
+|  | ![minimap of Field 09 (Thornsbush peak)](wiki/assets/zones/17.png) |
 | **Zone id** | `17` |
 | **ZoneDB name** | 필드_09 (English gloss: Field 09 (Thornsbush peak)) |
 | **Terrain name** | `09` |

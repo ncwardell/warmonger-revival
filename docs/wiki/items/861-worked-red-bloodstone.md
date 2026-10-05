@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=fc8d2d type=d36ca9 id=d5843c sources=2e29b1 name_key=7162c7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=2ad3f8 cost_pair=1c8ee8 stats=97d170 icon=e6c570 obtained_from=e0f9f3 -->
 |  |  |
 |---|---|
-|  | ![Worked Red bloodstone](../assets/items/861.png) |
+|  | ![Worked Red bloodstone](wiki/assets/items/861.png) |
 | **Item id** | `861` |
 | **Kind** | Material (12) |
 | **Classes** | all |

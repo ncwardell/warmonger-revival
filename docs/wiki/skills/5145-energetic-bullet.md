@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=41cc51 type=86a754 id=ee45e1 sources=700f08 name_key=1aa93c desc_key=5d60ab kind=356a19 kind_name=9bc378 target=e84f24 range=0ade7c area=728214 cost=deac18 cooldown=a93f07 delivery=93a212 effect_kind=356a19 effects=87f999 damage_or_effect=a1ff01 tooltip_formula=74c011 visual=b70706 icon=721c7c used_by=0564fd -->
 |  |  |
 |---|---|
-|  | ![Energetic Bullet](../assets/skills/5145.png) |
+|  | ![Energetic Bullet](wiki/assets/skills/5145.png) |
 | **Skill id** | `5145` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

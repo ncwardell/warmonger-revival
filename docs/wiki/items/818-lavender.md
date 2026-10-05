@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=c1c059 type=d36ca9 id=37a53d sources=a9eb02 name_key=960685 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a6a76d cost_pair=f565d5 stats=97d170 icon=5dffb4 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Lavender](../assets/items/818.png) |
+|  | ![Lavender](wiki/assets/items/818.png) |
 | **Item id** | `818` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ raw: {"c28": 150}
 <!-- generated-keys: title=3c2273 type=61613a id=ac3478 sources=8cbff5 result=9bf08a materials=f2c969 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=905b5a superior=bfb287 level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/401.png) |
+|  | ![](wiki/assets/items/401.png) |
 | **Recipe id** | `5` (`Item_Make`) |
 | **Makes** | [[wiki/items/401-helmet-of-life\|Helmet of Life]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 150}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

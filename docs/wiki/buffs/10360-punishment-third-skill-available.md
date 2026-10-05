@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=42d0ff type=6143a1 id=cec6c0 sources=8635f6 name_key=e8f9b0 duration=0aac5a is_buff=b6589f stack_type=356a19 group=cec6c0 effects=85ed02 icon=62f758 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Punishment : Third skill available](../assets/buffs/10360.png) |
+|  | ![Punishment : Third skill available](wiki/assets/buffs/10360.png) |
 | **Buff id** | `10360` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

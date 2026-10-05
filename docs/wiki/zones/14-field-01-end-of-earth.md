@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z14_00.dds"
 <!-- generated-keys: title=aabe9a type=c899cd id=fa35e1 sources=1bfba9 name_kr=18dd98 terrain=bd9154 bounds=223ae6 size=114466 segments=6ad877 fields=f629ae minimap=246b6c -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 01 (End of Earth)](../assets/zones/14.png) |
+|  | ![minimap of Field 01 (End of Earth)](wiki/assets/zones/14.png) |
 | **Zone id** | `14` |
 | **ZoneDB name** | 필드_01 (English gloss: Field 01 (End of Earth)) |
 | **Terrain name** | `01` |

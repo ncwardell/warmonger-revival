@@ -19,7 +19,7 @@ level: 10
 <!-- generated-keys: title=c75fa7 type=61613a id=a609bb sources=01e1e4 result=67f937 materials=54fac4 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=2806e0 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3036.png) |
+|  | ![](wiki/assets/items/3036.png) |
 | **Recipe id** | `330` (`Item_Make`) |
 | **Makes** | [[wiki/items/3036-komodo-s-belt\|Komodo's Belt]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2704.png) | [[wiki/items/2704-horn-of-komodo\|Horn of Komodo]] | 1 |  |
-| ![](../assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 1 |  |
+| ![](wiki/assets/items/2704.png) | [[wiki/items/2704-horn-of-komodo\|Horn of Komodo]] | 1 |  |
+| ![](wiki/assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

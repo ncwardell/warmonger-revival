@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=f2c6be type=6143a1 id=2b4002 sources=2c19bb name_key=bc9771 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=dfbb5d icon=ebd420 applied_by=9d935e -->
 |  |  |
 |---|---|
-|  | ![Fisher's essence : Increases Magic Penetration](../assets/buffs/20315.png) |
+|  | ![Fisher's essence : Increases Magic Penetration](wiki/assets/buffs/20315.png) |
 | **Buff id** | `20315` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=24df62 type=86a754 id=b4863e sources=82add5 name_key=8c1d9a desc_key=273bb4 kind=356a19 kind_name=9bc378 target=069ef3 range=fe5dbb cost=8b4fa7 cooldown=0156ad delivery=93a212 effect_kind=356a19 effects=bf32e7 damage_or_effect=6b45df tooltip_formula=4709a0 visual=784ef0 icon=48d69c used_by=314d29 -->
 |  |  |
 |---|---|
-|  | ![Capture Weakness](../assets/skills/20208.png) |
+|  | ![Capture Weakness](wiki/assets/skills/20208.png) |
 | **Skill id** | `20208` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

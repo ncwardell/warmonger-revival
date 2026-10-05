@@ -19,7 +19,7 @@ level: 10
 <!-- generated-keys: title=1baf0c type=61613a id=c41550 sources=a6578a result=db245b materials=33b7eb gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=a077fd level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3052.png) |
+|  | ![](wiki/assets/items/3052.png) |
 | **Recipe id** | `342` (`Item_Make`) |
 | **Makes** | [[wiki/items/3052-garon-s-armor\|Garon's Armor]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -32,8 +32,8 @@ level: 10
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2706.png) | [[wiki/items/2706-horn-of-garon\|Horn of Garon]] | 1 |  |
-| ![](../assets/items/1934.png) | [[wiki/items/1934-essence-of-earth\|Essence of Earth]] | 1 |  |
+| ![](wiki/assets/items/2706.png) | [[wiki/items/2706-horn-of-garon\|Horn of Garon]] | 1 |  |
+| ![](wiki/assets/items/1934.png) | [[wiki/items/1934-essence-of-earth\|Essence of Earth]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

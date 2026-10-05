@@ -25,7 +25,7 @@ used_by:
 <!-- generated-keys: title=d266c7 type=86a754 id=9101d1 sources=8ea2f9 name_key=ba91d8 desc_key=1a11c7 kind=da4b92 kind_name=3844d5 target=6d698f range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=04f123 damage_or_effect=e67847 icon=4e653c used_by=7308d3 -->
 |  |  |
 |---|---|
-|  | ![Aura of Death](../assets/skills/20012.png) |
+|  | ![Aura of Death](wiki/assets/skills/20012.png) |
 | **Skill id** | `20012` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 1 |

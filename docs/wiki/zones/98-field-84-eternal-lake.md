@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z98_00.dds"
 <!-- generated-keys: title=12a726 type=c899cd id=31bd9b sources=fbbe63 name_kr=51899a terrain=2ed3d5 bounds=75534d size=114466 segments=34f348 fields=8cfff9 minimap=f6f6ac -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 84 (Eternal Lake)](../assets/zones/98.png) |
+|  | ![minimap of Field 84 (Eternal Lake)](wiki/assets/zones/98.png) |
 | **Zone id** | `98` |
 | **ZoneDB name** | 필드_84 (English gloss: Field 84 (Eternal Lake)) |
 | **Terrain name** | `84` |

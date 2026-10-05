@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=bf04a1 type=86a754 id=38a676 sources=f13fee name_key=b02cb3 desc_key=9dc1e3 kind=356a19 kind_name=9bc378 target=d99f6c range=b6589f cost=911ade cooldown=628d31 effect_kind=b6589f effects=47c64c damage_or_effect=a75644 visual=9a61b8 icon=f0762b used_by=5034ba -->
 |  |  |
 |---|---|
-|  | ![Sound of Grudge](../assets/skills/5130.png) |
+|  | ![Sound of Grudge](wiki/assets/skills/5130.png) |
 | **Skill id** | `5130` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

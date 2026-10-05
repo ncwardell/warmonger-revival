@@ -41,7 +41,7 @@ obtained_from:
 <!-- generated-keys: title=30ded9 type=d36ca9 id=75988f sources=1c739c name_key=35f780 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=84b784 reinforce=356a19 icon=4aaf5d obtained_from=f03cf3 -->
 |  |  |
 |---|---|
-|  | ![Bandolier Necklace](../assets/items/429.png) |
+|  | ![Bandolier Necklace](wiki/assets/items/429.png) |
 | **Item id** | `429` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

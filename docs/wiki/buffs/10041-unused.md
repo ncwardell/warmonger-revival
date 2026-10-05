@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=1061bd type=6143a1 id=6486ab sources=e2da9b name_key=e326fd duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=8dbf84 icon=bfcc89 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![(Unused)](../assets/buffs/10041.png) |
+|  | ![(Unused)](wiki/assets/buffs/10041.png) |
 | **Buff id** | `10041` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

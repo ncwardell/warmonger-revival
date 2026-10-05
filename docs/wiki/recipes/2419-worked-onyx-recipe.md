@@ -18,7 +18,7 @@ level: 20
 <!-- generated-keys: title=44c3e8 type=61613a id=9fc70b sources=5abd0f result=5f2212 materials=478071 gold=7507d4 success_rate=310b86 category=fe5dbb filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/865.png) |
+|  | ![](wiki/assets/items/865.png) |
 | **Recipe id** | `2419` (`Item_Make`) |
 | **Makes** | [[wiki/items/865-worked-onyx\|Worked Onyx]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 20
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 5 |  |
+| ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/619-worked-onyx-recipe|recipe 619]]
 

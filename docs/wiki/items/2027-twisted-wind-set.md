@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=ef66ec type=d36ca9 id=64e0cf sources=6c0b2b name_key=ddfca9 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=1869b3 cost_pair=d558b3 period=365a69 stats=e8b379 options=bb577e icon=966910 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Twisted Wind Set](../assets/items/2027.png) |
+|  | ![Twisted Wind Set](wiki/assets/items/2027.png) |
 | **Item id** | `2027` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

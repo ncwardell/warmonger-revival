@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=915252 type=d36ca9 id=dc229a sources=5b810c name_key=d01593 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=297499 cost_pair=2306ff period=365a69 stats=8415ce options=27e721 icon=84e8d3 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Oracle Set](../assets/items/2082.png) |
+|  | ![Oracle Set](wiki/assets/items/2082.png) |
 | **Item id** | `2082` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

@@ -35,14 +35,14 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 | slot |  | item | count | p |
 |---|---|---|---|---|
 | 0 |  | item 10016 (not in `Item_Base`) | 0 |  |
-| 1 | ![](../assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | 0 |  |
-| 2 | ![](../assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | 0 |  |
-| 3 | ![](../assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | 0 |  |
-| 4 | ![](../assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | 0 |  |
-| 5 | ![](../assets/items/20014.png) | [[wiki/items/20014-skeleton-king-s-magic-cannon\|Skeleton King's Magic Cannon]] | 0 |  |
+| 1 | ![](wiki/assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | 0 |  |
+| 2 | ![](wiki/assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | 0 |  |
+| 3 | ![](wiki/assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | 0 |  |
+| 4 | ![](wiki/assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | 0 |  |
+| 5 | ![](wiki/assets/items/20014.png) | [[wiki/items/20014-skeleton-king-s-magic-cannon\|Skeleton King's Magic Cannon]] | 0 |  |
 | 6 |  | item 10016 (not in `Item_Base`) | 0 |  |
-| 7 | ![](../assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | 0 |  |
-| 8 | ![](../assets/items/20004.png) | [[wiki/items/20004-skeleton-king-s-magic-hammer\|Skeleton King's Magic Hammer]] | 0 |  |
+| 7 | ![](wiki/assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | 0 |  |
+| 8 | ![](wiki/assets/items/20004.png) | [[wiki/items/20004-skeleton-king-s-magic-hammer\|Skeleton King's Magic Hammer]] | 0 |  |
 | 9 |  | item 10016 (not in `Item_Base`) | 0 |  |
 <!-- generated:end -->
 

@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=b02aba type=d36ca9 id=afc97e sources=6402a6 name_key=f1af3e kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=d98d6c cost_pair=9a5091 stats=97d170 icon=b80b8d obtained_from=efebcc -->
 |  |  |
 |---|---|
-|  | ![Medal : Mithril](../assets/items/999.png) |
+|  | ![Medal : Mithril](wiki/assets/items/999.png) |
 | **Item id** | `999` |
 | **Kind** | Material (12) |
 | **Classes** | all |

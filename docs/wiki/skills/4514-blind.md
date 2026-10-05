@@ -26,7 +26,7 @@ tp: {"row": 11, "tp_cost": 1500, "cooldown_s": 120, "need_flags": 396, "c7": 2}
 <!-- generated-keys: title=b8d6a9 type=86a754 id=5663c4 sources=e374c5 name_key=dc1cac desc_key=2cf130 kind=356a19 kind_name=9bc378 target=cacd0a range=3028f5 area=d82541 cost=4e6c0e cooldown=d97414 effect_kind=b6589f effects=568e7e damage_or_effect=bf21a9 icon=494d30 used_by=97d170 tp=0ce064 -->
 |  |  |
 |---|---|
-|  | ![Blind](../assets/skills/4514.png) |
+|  | ![Blind](wiki/assets/skills/4514.png) |
 | **Skill id** | `4514` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

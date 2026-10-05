@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=1e409a type=6143a1 id=9b6d18 sources=6f812a name_key=ab4c8e duration=8c4b49 is_buff=b6589f stack_type=356a19 group=9b6d18 effects=8b8710 icon=9835a6 applied_by=527587 -->
 |  |  |
 |---|---|
-|  | ![Magical Protection : Creates a absorvs damage for 8 seconds](../assets/buffs/10247.png) |
+|  | ![Magical Protection : Creates a absorvs damage for 8 seconds](wiki/assets/buffs/10247.png) |
 | **Buff id** | `10247` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

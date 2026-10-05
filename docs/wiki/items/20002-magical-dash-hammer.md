@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=8b97dd type=d36ca9 id=a95eed sources=564bfc name_key=83e743 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=98fbc4 stats=76534b options=9f617c skills=81f6ae reinforce=17ba07 icon=48567c obtained_from=119090 -->
 |  |  |
 |---|---|
-|  | ![Magical Dash Hammer](../assets/items/20002.png) |
+|  | ![Magical Dash Hammer](wiki/assets/items/20002.png) |
 | **Item id** | `20002` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

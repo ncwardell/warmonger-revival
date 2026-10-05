@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=36bcc7 type=d36ca9 id=28cc22 sources=256efe name_key=c86bf2 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=5e245c reinforce=da4b92 icon=c01c43 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Test Item 1](../assets/items/900.png) |
+|  | ![Test Item 1](wiki/assets/items/900.png) |
 | **Item id** | `900` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

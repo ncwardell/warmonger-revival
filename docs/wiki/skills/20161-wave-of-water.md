@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=b1d687 type=86a754 id=d77b12 sources=cef068 name_key=db461c desc_key=f59ff0 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=d82541 cost=5baaf6 cooldown=e0e4dd effect_kind=356a19 effects=8a7f61 damage_or_effect=c76639 tooltip_formula=16f859 visual=75988f icon=63ba9c used_by=e222c4 -->
 |  |  |
 |---|---|
-|  | ![Wave of water](../assets/skills/20161.png) |
+|  | ![Wave of water](wiki/assets/skills/20161.png) |
 | **Skill id** | `20161` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

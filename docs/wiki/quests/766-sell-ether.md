@@ -30,7 +30,7 @@ offer_talk: 781
 <!-- generated-keys: title=fadf98 type=eb5b2b id=581a8e sources=60165e name_key=fd62fa kind=356a19 kind_name=0bac50 giver=7abdb8 turn_in=847ad4 offer_maps=15f2a7 bit=efa6e4 requires_bit=ecb793 automatic=5ffe53 prev=50b706 next=97d170 prerequisites=7dc7fa stages=30caa7 objectives=2be88c objectives_client=ae21c7 rewards=3a37a7 offer_talk=c7e47b -->
 |  |  |
 |---|---|
-|  | ![Sell Ether](../assets/npcs/210.png) |
+|  | ![Sell Ether](wiki/assets/npcs/210.png) |
 | **Quest id** | `766` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

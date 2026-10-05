@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=bbb98b type=6143a1 id=5df012 sources=3c4ff1 name_key=c7b12b duration=2a0b1e is_buff=b6589f stack_type=356a19 group=902ba3 effects=97d170 icon=0392b4 applied_by=57e286 -->
 |  |  |
 |---|---|
-|  | ![In Panic for 2 seconds](../assets/buffs/10192.png) |
+|  | ![In Panic for 2 seconds](wiki/assets/buffs/10192.png) |
 | **Buff id** | `10192` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

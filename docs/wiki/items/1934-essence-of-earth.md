@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=d7452b type=d36ca9 id=ba801e sources=8fbac1 name_key=81fd17 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=234394 obtained_from=9d2dab -->
 |  |  |
 |---|---|
-|  | ![Essence of Earth](../assets/items/1934.png) |
+|  | ![Essence of Earth](wiki/assets/items/1934.png) |
 | **Item id** | `1934` |
 | **Kind** | Material (12) |
 | **Classes** | all |

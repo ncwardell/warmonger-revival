@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3045.png) | [[wiki/items/3045-spector-s-necklace\|Spector's Necklace]] | 1 |  |
-| 1 | ![](../assets/items/3046.png) | [[wiki/items/3046-spector-s-belt\|Spector's Belt]] | 1 |  |
-| 2 | ![](../assets/items/3047.png) | [[wiki/items/3047-spector-s-bracelet\|Spector's Bracelet]] | 1 |  |
-| 3 | ![](../assets/items/3048.png) | [[wiki/items/3048-spector-s-ring\|Spector's Ring]] | 1 |  |
-| 4 | ![](../assets/items/3041.png) | [[wiki/items/3041-spector-s-earring\|Spector's Earring]] | 1 |  |
-| 5 | ![](../assets/items/3042.png) | [[wiki/items/3042-spector-s-armor\|Spector's Armor]] | 1 |  |
-| 6 | ![](../assets/items/3042.png) | [[wiki/items/3042-spector-s-armor\|Spector's Armor]] | 1 |  |
-| 7 | ![](../assets/items/3043.png) | [[wiki/items/3043-spector-s-gloves\|Spector's Gloves]] | 1 |  |
-| 8 | ![](../assets/items/3043.png) | [[wiki/items/3043-spector-s-gloves\|Spector's Gloves]] | 1 |  |
-| 9 | ![](../assets/items/3044.png) | [[wiki/items/3044-spector-s-shoes\|Spector's Shoes]] | 1 |  |
+| 0 | ![](wiki/assets/items/3045.png) | [[wiki/items/3045-spector-s-necklace\|Spector's Necklace]] | 1 |  |
+| 1 | ![](wiki/assets/items/3046.png) | [[wiki/items/3046-spector-s-belt\|Spector's Belt]] | 1 |  |
+| 2 | ![](wiki/assets/items/3047.png) | [[wiki/items/3047-spector-s-bracelet\|Spector's Bracelet]] | 1 |  |
+| 3 | ![](wiki/assets/items/3048.png) | [[wiki/items/3048-spector-s-ring\|Spector's Ring]] | 1 |  |
+| 4 | ![](wiki/assets/items/3041.png) | [[wiki/items/3041-spector-s-earring\|Spector's Earring]] | 1 |  |
+| 5 | ![](wiki/assets/items/3042.png) | [[wiki/items/3042-spector-s-armor\|Spector's Armor]] | 1 |  |
+| 6 | ![](wiki/assets/items/3042.png) | [[wiki/items/3042-spector-s-armor\|Spector's Armor]] | 1 |  |
+| 7 | ![](wiki/assets/items/3043.png) | [[wiki/items/3043-spector-s-gloves\|Spector's Gloves]] | 1 |  |
+| 8 | ![](wiki/assets/items/3043.png) | [[wiki/items/3043-spector-s-gloves\|Spector's Gloves]] | 1 |  |
+| 9 | ![](wiki/assets/items/3044.png) | [[wiki/items/3044-spector-s-shoes\|Spector's Shoes]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

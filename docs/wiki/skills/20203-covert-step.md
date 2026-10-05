@@ -28,7 +28,7 @@ used_by: []
 <!-- generated-keys: title=4164ff type=86a754 id=87f06e sources=ba85e3 name_key=8bed23 desc_key=788f33 kind=ac3478 kind_name=65782b target=069ef3 range=fe5dbb cost=2be88c cooldown=367d78 effect_kind=356a19 effects=5aa38c damage_or_effect=8eebda visual=bf9e99 icon=10f839 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Covert Step](../assets/skills/20203.png) |
+|  | ![Covert Step](wiki/assets/skills/20203.png) |
 | **Skill id** | `20203` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=bbf7a2 type=d36ca9 id=19be0e sources=4c2e0f name_key=3f4d74 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=902ba3 stats=b6a4e9 options=586751 icon=709a23 obtained_from=74e5ef -->
 |  |  |
 |---|---|
-|  | ![Armor Penetration(%) Rune](../assets/items/7109.png) |
+|  | ![Armor Penetration(%) Rune](wiki/assets/items/7109.png) |
 | **Item id** | `7109` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

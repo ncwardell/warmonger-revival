@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=38244f type=86a754 id=ec2603 sources=e376d9 name_key=61fa9a desc_key=243811 kind=356a19 kind_name=9bc378 target=e0d9b5 range=3028f5 area=394af4 cost=2be88c cooldown=2be88c effect_kind=b6589f effects=e7ea45 damage_or_effect=bf21a9 icon=130210 used_by=989c4b -->
 |  |  |
 |---|---|
-|  | ![Pyrotechnics](../assets/skills/5218.png) |
+|  | ![Pyrotechnics](wiki/assets/skills/5218.png) |
 | **Skill id** | `5218` |
 | **Kind** | active (1) |
 | **Target** | ground; -; units: -; up to 1 |

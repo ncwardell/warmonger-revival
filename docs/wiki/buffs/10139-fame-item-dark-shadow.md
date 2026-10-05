@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=370cf7 type=6143a1 id=937dd9 sources=2aed64 name_key=baea98 duration=870e64 is_buff=b6589f stack_type=356a19 group=1b6453 effects=97d170 icon=2fcf58 applied_by=bd62db -->
 |  |  |
 |---|---|
-|  | ![Fame item: Dark shadow](../assets/buffs/10139.png) |
+|  | ![Fame item: Dark shadow](wiki/assets/buffs/10139.png) |
 | **Buff id** | `10139` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

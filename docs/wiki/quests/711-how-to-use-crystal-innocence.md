@@ -26,7 +26,7 @@ help: {"image": "ui/HelpImage/Help_25.png", "text_key": "Quest_HelpText_711_1"}
 <!-- generated-keys: title=295b71 type=eb5b2b id=7919ae sources=43739f name_key=6b30fc kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=c09763 automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=2be88c objectives_client=7efaa2 rewards=b1853c help=f3f688 -->
 |  |  |
 |---|---|
-|  | ![How to use Crystal : Innocence](../assets/quests/711.png) |
+|  | ![How to use Crystal : Innocence](wiki/assets/quests/711.png) |
 | **Quest id** | `711` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

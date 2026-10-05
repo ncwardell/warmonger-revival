@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=54132f type=86a754 id=4ca891 sources=8794b4 name_key=cf9e92 desc_key=4724d6 kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=a6fc42 damage_or_effect=5543d6 icon=ebd420 used_by=6ee151 -->
 |  |  |
 |---|---|
-|  | ![Fisher's essence](../assets/skills/20313.png) |
+|  | ![Fisher's essence](wiki/assets/skills/20313.png) |
 | **Skill id** | `20313` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

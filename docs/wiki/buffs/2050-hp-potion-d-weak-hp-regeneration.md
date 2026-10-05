@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=6563e8 type=6143a1 id=cb58c3 sources=9a0ca6 name_key=eec714 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=04d34b icon=e23161 applied_by=8f43b1 -->
 |  |  |
 |---|---|
-|  | ![HP Potion (D): Weak HP Regeneration](../assets/buffs/2050.png) |
+|  | ![HP Potion (D): Weak HP Regeneration](wiki/assets/buffs/2050.png) |
 | **Buff id** | `2050` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

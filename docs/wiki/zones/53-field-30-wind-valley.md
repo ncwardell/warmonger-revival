@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z53_00.dds"
 <!-- generated-keys: title=686025 type=c899cd id=c5b76d sources=eabc65 name_kr=91e71b terrain=643319 bounds=5fa626 size=114466 segments=ae7b5d fields=82d3dd minimap=690c7e -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 30 (Wind Valley)](../assets/zones/53.png) |
+|  | ![minimap of Field 30 (Wind Valley)](wiki/assets/zones/53.png) |
 | **Zone id** | `53` |
 | **ZoneDB name** | 필드_30 (English gloss: Field 30 (Wind Valley)) |
 | **Terrain name** | `30` |

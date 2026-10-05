@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=31cd33 type=86a754 id=1e5872 sources=1b88ad name_key=6f0d4f desc_key=0fca3d kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=9fa5fb cooldown=752bf3 effect_kind=da4b92 effects=fea263 damage_or_effect=f4a963 tooltip_formula=fd41c2 visual=26e745 icon=e42156 used_by=8547fa -->
 |  |  |
 |---|---|
-|  | ![Blade storm](../assets/skills/5022.png) |
+|  | ![Blade storm](wiki/assets/skills/5022.png) |
 | **Skill id** | `5022` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=a1a85e type=6143a1 id=7b1e54 sources=7b85e5 name_key=14190c duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=f8da5d icon=baee3b applied_by=e37a2f -->
 |  |  |
 |---|---|
-|  | ![Crystal Burst : Reduced Armor and Magic Resistance](../assets/buffs/30019.png) |
+|  | ![Crystal Burst : Reduced Armor and Magic Resistance](wiki/assets/buffs/30019.png) |
 | **Buff id** | `30019` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

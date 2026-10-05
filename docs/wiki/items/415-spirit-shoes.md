@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=0cb41d type=d36ca9 id=8749f5 sources=b57fb2 name_key=a46ace kind=c5b76d kind_name=a64daf classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=70c2ae reinforce=356a19 icon=fa8ae0 obtained_from=aa9b0e -->
 |  |  |
 |---|---|
-|  | ![Spirit Shoes](../assets/items/415.png) |
+|  | ![Spirit Shoes](wiki/assets/items/415.png) |
 | **Item id** | `415` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

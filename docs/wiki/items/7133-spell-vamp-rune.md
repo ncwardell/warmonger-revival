@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=a02465 type=d36ca9 id=ffbcf0 sources=4ab6a2 name_key=1356f9 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=356a19 stats=6f7efa options=f4abe0 icon=aabc71 obtained_from=849e83 -->
 |  |  |
 |---|---|
-|  | ![Spell Vamp Rune](../assets/items/7133.png) |
+|  | ![Spell Vamp Rune](wiki/assets/items/7133.png) |
 | **Item id** | `7133` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

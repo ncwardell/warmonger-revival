@@ -28,7 +28,7 @@ time_limit_s: null
 <!-- generated-keys: title=12597b type=3e3f38 id=114d4e sources=cef1ec field=114d4e max_users=ac3478 level=902ba3 entry_cost=992c16 event=7cb6ef shown_rewards=d3c68f c17=527dc6 image=168686 dungeon_slots=899470 boss=33e996 gear_tier=7b5982 gathering=a8425a time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 7) Demon Hell](../assets/dungeons/126.png) |
+|  | ![(Lv 7) Demon Hell](wiki/assets/dungeons/126.png) |
 | **Field** | [[wiki/fields/126-lv-7-demon-hell\|(Lv 7) Demon Hell (field 126)]] |
 | **Level** | 7 |
 | **Gear tier dropped** | T2 (guides) |

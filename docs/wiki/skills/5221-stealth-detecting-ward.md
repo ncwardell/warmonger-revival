@@ -25,7 +25,7 @@ used_by:
 <!-- generated-keys: title=bbbaf8 type=86a754 id=25b04c sources=b7dc3e name_key=5a06df desc_key=75e80f kind=356a19 kind_name=9bc378 target=cacd0a range=f1abd6 cost=2be88c cooldown=4aa5a5 effect_kind=da4b92 effects=78e46a damage_or_effect=bf21a9 icon=8066dc used_by=7fa1aa -->
 |  |  |
 |---|---|
-|  | ![Stealth Detecting Ward](../assets/skills/5221.png) |
+|  | ![Stealth Detecting Ward](wiki/assets/skills/5221.png) |
 | **Skill id** | `5221` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

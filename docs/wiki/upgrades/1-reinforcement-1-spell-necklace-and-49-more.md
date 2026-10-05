@@ -20,7 +20,7 @@ kind: "reinforcement"
 <!-- generated-keys: title=f931c9 type=4389c5 id=356a19 sources=de7f5f gold=e3cbba steps=041219 used_by=3c6beb kind=701a6f -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/397.png) |
+|  | ![](wiki/assets/items/397.png) |
 | **Table** | `ItemSancMet` row 1 |
 | **Gold per attempt** | 1,000 |
 | **Success rates** | unknown (server side) |

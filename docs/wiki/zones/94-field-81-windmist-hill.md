@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z94_00.dds"
 <!-- generated-keys: title=827a65 type=c899cd id=215bb4 sources=128bc3 name_kr=011848 terrain=d6b25b bounds=9cb205 size=114466 segments=83ce42 fields=350acf minimap=95e947 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 81 (Windmist Hill)](../assets/zones/94.png) |
+|  | ![minimap of Field 81 (Windmist Hill)](wiki/assets/zones/94.png) |
 | **Zone id** | `94` |
 | **ZoneDB name** | 필드_81 (English gloss: Field 81 (Windmist Hill)) |
 | **Terrain name** | `81` |

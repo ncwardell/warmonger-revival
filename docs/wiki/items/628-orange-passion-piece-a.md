@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=7c2d55 type=d36ca9 id=3f4ed2 sources=0df1e7 name_key=08d435 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=7b7836 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Orange Passion Piece (A)](../assets/items/628.png) |
+|  | ![Orange Passion Piece (A)](wiki/assets/items/628.png) |
 | **Item id** | `628` |
 | **Kind** | Material (12) |
 | **Classes** | all |

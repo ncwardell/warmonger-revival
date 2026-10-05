@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=2bac66 type=6143a1 id=00fc1e sources=4fcd34 name_key=4af062 duration=6c749d is_buff=b6589f stack_type=356a19 group=00fc1e effects=b34cd3 icon=574aef applied_by=fb54dd -->
 |  |  |
 |---|---|
-|  | ![Anger of fire : Creates a absorvs damage for 10 seconds](../assets/buffs/19952.png) |
+|  | ![Anger of fire : Creates a absorvs damage for 10 seconds](wiki/assets/buffs/19952.png) |
 | **Buff id** | `19952` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

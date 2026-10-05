@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=0a864f type=61613a id=00ced1 sources=e4e0f0 result=933b19 materials=429446 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/829.png) |
+|  | ![](wiki/assets/items/829.png) |
 | **Recipe id** | `2414` (`Item_Make`) |
 | **Makes** | [[wiki/items/829-spartium-powder\|Spartium powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/828.png) | [[wiki/items/828-spartium\|Spartium]] | 1 |  |
+| ![](wiki/assets/items/828.png) | [[wiki/items/828-spartium\|Spartium]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/614-spartium-powder-recipe|recipe 614]]
 

@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=63bbcb type=d36ca9 id=5fa0f8 sources=62b255 name_key=af6861 kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=227fa4 obtained_from=09a06e -->
 |  |  |
 |---|---|
-|  | ![Piece : Tempest Fisher](../assets/items/9007.png) |
+|  | ![Piece : Tempest Fisher](wiki/assets/items/9007.png) |
 | **Item id** | `9007` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=b3ee48 type=d36ca9 id=b7ad56 sources=b87013 name_key=b5a1c2 kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=1ae44d set=0ade7c reinforce=92cfce icon=062015 obtained_from=ab3967 -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Armor](../assets/items/3062.png) |
+|  | ![Leviathan's Armor](wiki/assets/items/3062.png) |
 | **Item id** | `3062` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

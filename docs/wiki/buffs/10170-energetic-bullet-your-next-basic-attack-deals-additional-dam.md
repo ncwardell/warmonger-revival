@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=77a885 type=6143a1 id=c2c44c sources=293788 name_key=f3a179 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=e1ae3e icon=721c7c applied_by=1c7945 -->
 |  |  |
 |---|---|
-|  | ![Energetic Bullet : Your next basic attack deals additional damage](../assets/buffs/10170.png) |
+|  | ![Energetic Bullet : Your next basic attack deals additional damage](wiki/assets/buffs/10170.png) |
 | **Buff id** | `10170` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

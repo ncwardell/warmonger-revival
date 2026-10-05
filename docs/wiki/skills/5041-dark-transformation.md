@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=128bcd type=86a754 id=6fcba6 sources=40a70a name_key=9fa9d6 desc_key=21f141 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=9e049c cooldown=7d0c8c effect_kind=da4b92 effects=eaafb8 damage_or_effect=9044dc visual=19187d icon=3af2a9 used_by=8b1e19 -->
 |  |  |
 |---|---|
-|  | ![Dark Transformation](../assets/skills/5041.png) |
+|  | ![Dark Transformation](wiki/assets/skills/5041.png) |
 | **Skill id** | `5041` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -24,7 +24,7 @@ used_by:
 <!-- generated-keys: title=fc53ce type=86a754 id=8cbfd8 sources=a421b3 name_key=466587 desc_key=449a39 kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=97d170 damage_or_effect=bf21a9 icon=8f56ad used_by=83577e -->
 |  |  |
 |---|---|
-|  | ![Two suns (Kra, Tura)](../assets/skills/20104.png) |
+|  | ![Two suns (Kra, Tura)](wiki/assets/skills/20104.png) |
 | **Skill id** | `20104` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

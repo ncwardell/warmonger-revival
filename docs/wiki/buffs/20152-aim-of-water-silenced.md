@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=7ba20a type=6143a1 id=6fd491 sources=db89eb name_key=2c3d74 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=4cd48d applied_by=3f4d3c -->
 |  |  |
 |---|---|
-|  | ![Aim of water : Silenced](../assets/buffs/20152.png) |
+|  | ![Aim of water : Silenced](wiki/assets/buffs/20152.png) |
 | **Buff id** | `20152` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

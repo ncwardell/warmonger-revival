@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=9f9cfc type=d36ca9 id=c09008 sources=a765cc name_key=a70ecb kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=cd579c set=da4b92 reinforce=92cfce icon=fa9e13 obtained_from=c06cb6 -->
 |  |  |
 |---|---|
-|  | ![Skull's Necklace](../assets/items/3015.png) |
+|  | ![Skull's Necklace](wiki/assets/items/3015.png) |
 | **Item id** | `3015` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

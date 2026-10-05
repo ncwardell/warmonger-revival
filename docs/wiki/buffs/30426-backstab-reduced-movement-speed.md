@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=0f1ad2 type=6143a1 id=c0e80f sources=696c40 name_key=17d54c duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=c0fb59 applied_by=a40ba8 -->
 |  |  |
 |---|---|
-|  | ![Backstab : Reduced movement speed](../assets/buffs/30426.png) |
+|  | ![Backstab : Reduced movement speed](wiki/assets/buffs/30426.png) |
 | **Buff id** | `30426` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

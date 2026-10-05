@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=cf12d0 type=6143a1 id=14e7c3 sources=2c34ec name_key=bd20b2 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=43677d icon=8f8284 applied_by=aae0e0 -->
 |  |  |
 |---|---|
-|  | ![Mana Potion (S) : Supreme Mana regeneration](../assets/buffs/2067.png) |
+|  | ![Mana Potion (S) : Supreme Mana regeneration](wiki/assets/buffs/2067.png) |
 | **Buff id** | `2067` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

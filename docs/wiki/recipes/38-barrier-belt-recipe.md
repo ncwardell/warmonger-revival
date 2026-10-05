@@ -20,7 +20,7 @@ raw: {"c28": 300}
 <!-- generated-keys: title=35f1bc type=61613a id=5b384c sources=e5ebc7 result=b2db71 materials=a61815 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=e904c1 superior=7571a8 level=356a19 raw=c65c1c -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/434.png) |
+|  | ![](wiki/assets/items/434.png) |
 | **Recipe id** | `38` (`Item_Make`) |
 | **Makes** | [[wiki/items/434-barrier-belt\|Barrier Belt]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 300}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 20 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 20 |  |
 
 Unknown columns: `c28` = 300 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

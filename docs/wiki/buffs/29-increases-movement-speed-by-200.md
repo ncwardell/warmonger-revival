@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=9c6fe4 type=6143a1 id=7719a1 sources=bac20a name_key=a0ab5e duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=050d59 icon=559917 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Increases Movement Speed by 200.](../assets/buffs/29.png) |
+|  | ![Increases Movement Speed by 200.](wiki/assets/buffs/29.png) |
 | **Buff id** | `29` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

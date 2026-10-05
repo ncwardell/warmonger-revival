@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=ff2ca0 type=d36ca9 id=a1496d sources=6b3d6d name_key=a92f69 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=89578f obtained_from=9b5455 -->
 |  |  |
 |---|---|
-|  | ![Diamond](../assets/items/810.png) |
+|  | ![Diamond](wiki/assets/items/810.png) |
 | **Item id** | `810` |
 | **Kind** | Material (12) |
 | **Classes** | all |

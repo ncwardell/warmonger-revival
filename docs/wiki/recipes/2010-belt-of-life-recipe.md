@@ -20,7 +20,7 @@ raw: {"c28": 150}
 <!-- generated-keys: title=bbf943 type=61613a id=e22cd4 sources=765f4f result=9c6cbb materials=f2c969 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=e904c1 superior=f3256b level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/406.png) |
+|  | ![](wiki/assets/items/406.png) |
 | **Recipe id** | `2010` (`Item_Make`) |
 | **Makes** | [[wiki/items/406-belt-of-life\|Belt of Life]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 150}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

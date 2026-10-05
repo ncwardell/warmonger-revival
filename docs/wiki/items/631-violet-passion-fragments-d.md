@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=180041 type=d36ca9 id=6e9aaa sources=150710 name_key=b732ab kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=130c94 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Violet Passion Fragments (D)](../assets/items/631.png) |
+|  | ![Violet Passion Fragments (D)](wiki/assets/items/631.png) |
 | **Item id** | `631` |
 | **Kind** | Material (12) |
 | **Classes** | all |

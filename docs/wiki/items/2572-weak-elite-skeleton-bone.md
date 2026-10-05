@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=4980c9 type=d36ca9 id=e76288 sources=abceee name_key=f56945 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=b39509 obtained_from=847f44 -->
 |  |  |
 |---|---|
-|  | ![Weak Elite Skeleton bone](../assets/items/2572.png) |
+|  | ![Weak Elite Skeleton bone](wiki/assets/items/2572.png) |
 | **Item id** | `2572` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

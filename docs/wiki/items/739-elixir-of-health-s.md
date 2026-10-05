@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=a61a08 type=d36ca9 id=1c710b sources=f5fcbb name_key=7158ae kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=81b208 cost_pair=a530a9 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=612d9e cooldown_s=da4b92 cooldown_group=bc33ea stats=97d170 options=b0bd3e icon=49820a obtained_from=ab253b -->
 |  |  |
 |---|---|
-|  | ![Elixir of Health (S)](../assets/items/739.png) |
+|  | ![Elixir of Health (S)](wiki/assets/items/739.png) |
 | **Item id** | `739` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

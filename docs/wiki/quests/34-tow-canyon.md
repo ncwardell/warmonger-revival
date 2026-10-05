@@ -34,7 +34,7 @@ complete_talk: 799
 <!-- generated-keys: title=30a3eb type=eb5b2b id=f1f836 sources=aac74f name_key=edaf43 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=22d200 requires_bit=7719a1 prev=78415f next=b444ad stages=642aaf objectives=7556ae rewards=20e00d offer_talk=0c0266 complete_talk=01c0c9 -->
 |  |  |
 |---|---|
-|  | ![Tow Canyon](../assets/npcs/200.png) |
+|  | ![Tow Canyon](wiki/assets/npcs/200.png) |
 | **Quest id** | `34` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

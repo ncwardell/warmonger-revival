@@ -39,7 +39,7 @@ time_limit_s: null
 <!-- generated-keys: title=b263a8 type=3e3f38 id=2a2b47 sources=7280df field=2a2b47 max_users=ac3478 level=0ade7c entry_cost=13237d event=7cb6ef shown_rewards=4fa050 c17=9cdda6 image=fe7704 dungeon_slots=825448 boss=97d170 gathering=0cbe10 time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 9) Dragon Island](../assets/dungeons/142.png) |
+|  | ![(Lv 9) Dragon Island](wiki/assets/dungeons/142.png) |
 | **Field** | [[wiki/fields/142-lv-9-dragon-island\|(Lv 9) Dragon Island (field 142)]] |
 | **Level** | 9 |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |

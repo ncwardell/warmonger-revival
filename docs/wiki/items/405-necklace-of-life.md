@@ -43,7 +43,7 @@ obtained_from:
 <!-- generated-keys: title=3f8b96 type=d36ca9 id=7ee51d sources=3cb7f8 name_key=65b8c0 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=9671d1 reinforce=356a19 icon=01e276 obtained_from=7b73c4 -->
 |  |  |
 |---|---|
-|  | ![Necklace of Life](../assets/items/405.png) |
+|  | ![Necklace of Life](wiki/assets/items/405.png) |
 | **Item id** | `405` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

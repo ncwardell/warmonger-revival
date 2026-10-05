@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=702564 type=86a754 id=638177 sources=576d9b name_key=8cf4dd desc_key=4b4148 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=2f3f9b cooldown=a7242f effect_kind=b6589f effects=177a18 damage_or_effect=e74c67 visual=ef2afd icon=914e85 used_by=495531 -->
 |  |  |
 |---|---|
-|  | ![Overload](../assets/skills/20058.png) |
+|  | ![Overload](wiki/assets/skills/20058.png) |
 | **Skill id** | `20058` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

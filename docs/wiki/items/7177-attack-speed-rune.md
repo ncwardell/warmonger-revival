@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=55340f type=d36ca9 id=8c9448 sources=869a47 name_key=3d93f7 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=ac3478 stats=697318 options=109d7f icon=62341e obtained_from=3e99ad -->
 |  |  |
 |---|---|
-|  | ![Attack Speed(%) Rune](../assets/items/7177.png) |
+|  | ![Attack Speed(%) Rune](wiki/assets/items/7177.png) |
 | **Item id** | `7177` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

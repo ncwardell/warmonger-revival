@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z105_00.dds"
 <!-- generated-keys: title=00ac22 type=c899cd id=e114c4 sources=f57dba name_kr=d4ad74 terrain=14c5d4 bounds=3ac08f size=a1cfbb segments=ba85be fields=6c3da9 minimap=8de62d -->
 |  |  |
 |---|---|
-|  | ![minimap of C Fortress](../assets/zones/105.png) |
+|  | ![minimap of C Fortress](wiki/assets/zones/105.png) |
 | **Zone id** | `105` |
 | **ZoneDB name** | C_요새 (English gloss: C Fortress) |
 | **Terrain name** | `C_Town_01` |

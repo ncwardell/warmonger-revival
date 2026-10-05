@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=56ab9d type=6143a1 id=676465 sources=2ce11f name_key=65ce41 duration=995f11 is_buff=b6589f stack_type=356a19 group=88b726 effects=217d3f icon=f397b6 applied_by=efc6e8 -->
 |  |  |
 |---|---|
-|  | ![Flask of Devour (A) : 6 Mana Steal with each attack. Maximum Mana +150](../assets/buffs/2123.png) |
+|  | ![Flask of Devour (A) : 6 Mana Steal with each attack. Maximum Mana +150](wiki/assets/buffs/2123.png) |
 | **Buff id** | `2123` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

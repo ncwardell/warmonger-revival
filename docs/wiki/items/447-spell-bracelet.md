@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=89d360 type=d36ca9 id=08d55d sources=fe9dab name_key=b93aff kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=a1282b reinforce=da4b92 icon=14817e obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Spell Bracelet](../assets/items/447.png) |
+|  | ![Spell Bracelet](wiki/assets/items/447.png) |
 | **Item id** | `447` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

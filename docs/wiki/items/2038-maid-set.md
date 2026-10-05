@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=a0a238 type=d36ca9 id=3d8a2b sources=fe37e7 name_key=bad6e2 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=c2a322 options=c9cb73 icon=e5982a obtained_from=559cf1 -->
 |  |  |
 |---|---|
-|  | ![Maid Set](../assets/items/2038.png) |
+|  | ![Maid Set](wiki/assets/items/2038.png) |
 | **Item id** | `2038` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

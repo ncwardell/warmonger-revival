@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=be85bb type=6143a1 id=64adf5 sources=814cd0 name_key=0716d7 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=fe5dbb effects=ee66dc icon=072780 applied_by=22816a -->
 |  |  |
 |---|---|
-|  | ![Petrification : Stunned for 2 seconds](../assets/buffs/30214.png) |
+|  | ![Petrification : Stunned for 2 seconds](wiki/assets/buffs/30214.png) |
 | **Buff id** | `30214` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

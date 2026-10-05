@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z126_00.dds"
 <!-- generated-keys: title=38862e type=c899cd id=114d4e sources=45b9e5 name_kr=19e183 terrain=e7f954 bounds=6b1809 size=681360 segments=5a389d fields=1a22c5 minimap=88471b -->
 |  |  |
 |---|---|
-|  | ![minimap of Battlefield tutorial (Sinking Nest)](../assets/zones/126.png) |
+|  | ![minimap of Battlefield tutorial (Sinking Nest)](wiki/assets/zones/126.png) |
 | **Zone id** | `126` |
 | **ZoneDB name** | 전장 튜토리얼 (English gloss: Battlefield tutorial (Sinking Nest)) |
 | **Terrain name** | `Battlefield_Tutorial_01` |

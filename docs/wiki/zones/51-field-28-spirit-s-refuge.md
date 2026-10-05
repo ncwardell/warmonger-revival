@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z51_00.dds"
 <!-- generated-keys: title=8efc03 type=c899cd id=b7eb6c sources=d80219 name_kr=a5eeb0 terrain=e77de2 bounds=0da4e8 size=114466 segments=f66a0c fields=e90c00 minimap=7e0b0e -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 28 (Spirit's Refuge)](../assets/zones/51.png) |
+|  | ![minimap of Field 28 (Spirit's Refuge)](wiki/assets/zones/51.png) |
 | **Zone id** | `51` |
 | **ZoneDB name** | 필드_28 (English gloss: Field 28 (Spirit's Refuge)) |
 | **Terrain name** | `28` |

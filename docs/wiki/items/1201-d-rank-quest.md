@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=81a341 type=d36ca9 id=88308d sources=334db2 name_key=7a8d10 kind=98fbc4 kind_name=b94918 classes=92d079 bind=883bf8 price=9aa5c8 cost_pair=ca1927 stats=97d170 icon=eef668 obtained_from=4a7c1e -->
 |  |  |
 |---|---|
-|  | ![D Rank Quest](../assets/items/1201.png) |
+|  | ![D Rank Quest](wiki/assets/items/1201.png) |
 | **Item id** | `1201` |
 | **Kind** | Quest precept (44) |
 | **Classes** | all |

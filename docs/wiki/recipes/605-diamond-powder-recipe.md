@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=9873d8 type=61613a id=8290ab sources=15c447 result=ac8368 materials=431cf1 gold=e1822d success_rate=310b86 category=356a19 filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/811.png) |
+|  | ![](wiki/assets/items/811.png) |
 | **Recipe id** | `605` (`Item_Make`) |
 | **Makes** | [[wiki/items/811-diamond-powder\|Diamond powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  |
+| ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2405-diamond-powder-recipe|recipe 2405]]
 

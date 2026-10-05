@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=c1986d type=6143a1 id=d19102 sources=ff29f8 name_key=bea91f duration=76674f is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=072780 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Petrification: Silenced for 2 seconds](../assets/buffs/10215.png) |
+|  | ![Petrification: Silenced for 2 seconds](wiki/assets/buffs/10215.png) |
 | **Buff id** | `10215` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

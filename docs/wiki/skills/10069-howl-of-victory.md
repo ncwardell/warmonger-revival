@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=68d82e type=86a754 id=eb1f10 sources=b299bb name_key=2c11ca desc_key=1ae709 kind=356a19 kind_name=9bc378 target=55b685 range=b6589f area=e9876d cost=e4e7cf cooldown=e3989d effect_kind=632667 effects=8a7782 damage_or_effect=edb7a2 tooltip_formula=388a94 visual=1f1362 icon=384e30 used_by=dfcf24 -->
 |  |  |
 |---|---|
-|  | ![Howl of Victory](../assets/skills/10069.png) |
+|  | ![Howl of Victory](wiki/assets/skills/10069.png) |
 | **Skill id** | `10069` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

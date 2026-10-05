@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=8358ec type=d36ca9 id=58eb91 sources=cc44f7 name_key=0ceb25 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=24cfd9 set=1b6453 reinforce=92cfce icon=c8e0b4 obtained_from=b3fa39 -->
 |  |  |
 |---|---|
-|  | ![Komodo's Belt](../assets/items/3036.png) |
+|  | ![Komodo's Belt](wiki/assets/items/3036.png) |
 | **Item id** | `3036` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

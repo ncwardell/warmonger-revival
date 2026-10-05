@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=57da51 type=86a754 id=ff974f sources=1fb7fa name_key=7ab7cd desc_key=d4d9d4 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=4aa5a5 effect_kind=da4b92 effects=dd3945 damage_or_effect=9de065 visual=e076fa icon=e5f8ba used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Akasha Transformation](../assets/skills/20551.png) |
+|  | ![Akasha Transformation](wiki/assets/skills/20551.png) |
 | **Skill id** | `20551` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

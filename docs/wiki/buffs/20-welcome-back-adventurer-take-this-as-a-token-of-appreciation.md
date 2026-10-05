@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=661eeb type=6143a1 id=91032a sources=d23497 name_key=9fc0ad duration=ecf4ec is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=48077d applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Welcome back adventurer, take this as a token of appreciation.](../assets/buffs/20.png) |
+|  | ![Welcome back adventurer, take this as a token of appreciation.](wiki/assets/buffs/20.png) |
 | **Buff id** | `20` |
 | **Duration** | 2 min (600 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

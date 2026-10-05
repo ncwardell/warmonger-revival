@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=b29f55 type=6143a1 id=e659b3 sources=68c1cd name_key=39179c duration=bdf5bf is_buff=b6589f stack_type=356a19 group=b6589f effects=027940 icon=8527d3 applied_by=d56317 -->
 |  |  |
 |---|---|
-|  | ![Vision explosion : Stack](../assets/buffs/10442.png) |
+|  | ![Vision explosion : Stack](wiki/assets/buffs/10442.png) |
 | **Buff id** | `10442` |
 | **Duration** | 7 s (35 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

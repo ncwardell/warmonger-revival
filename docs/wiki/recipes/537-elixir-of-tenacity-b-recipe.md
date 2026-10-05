@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=1beaca type=61613a id=7ec243 sources=3c1791 result=3506c8 materials=116a6f gold=15aa0c success_rate=310b86 category=356a19 filter_mask=be4de6 level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/753.png) |
+|  | ![](wiki/assets/items/753.png) |
 | **Recipe id** | `537` (`Item_Make`) |
 | **Makes** | [[wiki/items/753-elixir-of-tenacity-b\|Elixir of Tenacity (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/827.png) | [[wiki/items/827-borage-powder\|Borage powder]] | 20 |  |
-| ![](../assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
-| ![](../assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 1 |  |
+| ![](wiki/assets/items/827.png) | [[wiki/items/827-borage-powder\|Borage powder]] | 20 |  |
+| ![](wiki/assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
+| ![](wiki/assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2313-elixir-of-tenacity-b-recipe|recipe 2313]]
 

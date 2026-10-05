@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=d2695d type=6143a1 id=ed6429 sources=3f5668 name_key=433f96 duration=0aac5a is_buff=b6589f stack_type=356a19 group=b6589f effects=53926e icon=7bf15f applied_by=52e753 -->
 |  |  |
 |---|---|
-|  | ![Shield of the Sun : Movement Speed](../assets/buffs/20105.png) |
+|  | ![Shield of the Sun : Movement Speed](wiki/assets/buffs/20105.png) |
 | **Buff id** | `20105` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

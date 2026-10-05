@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=340ccb type=6143a1 id=1574bd sources=d8e77d name_key=ec3681 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=f76543 icon=4b5615 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blessing of Shaia (Donation +30%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 50%](../assets/buffs/16.png) |
+|  | ![Blessing of Shaia (Donation +30%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 50%](wiki/assets/buffs/16.png) |
 | **Buff id** | `16` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

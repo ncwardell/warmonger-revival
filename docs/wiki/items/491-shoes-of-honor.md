@@ -31,7 +31,7 @@ obtained_from: []
 <!-- generated-keys: title=48182a type=d36ca9 id=014a1a sources=f7dc94 name_key=9da94e kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=b88a7b reinforce=da4b92 icon=dbd5a1 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Shoes of Honor](../assets/items/491.png) |
+|  | ![Shoes of Honor](wiki/assets/items/491.png) |
 | **Item id** | `491` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=8a4061 type=d36ca9 id=264bb3 sources=98eb2b name_key=e94e8b kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=549124 obtained_from=8151b9 -->
 |  |  |
 |---|---|
-|  | ![Emerald](../assets/items/806.png) |
+|  | ![Emerald](wiki/assets/items/806.png) |
 | **Item id** | `806` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=ef4980 type=6143a1 id=0b3106 sources=ff9651 name_key=d012cd duration=6c141f is_buff=b6589f stack_type=356a19 group=9e6a55 effects=d11cfa icon=ff28db applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Predator : When you kill an enemy player, you gain 2 Ability Power (Maximum +10). When you die all stacks are lost.](../assets/buffs/10323.png) |
+|  | ![Predator : When you kill an enemy player, you gain 2 Ability Power (Maximum +10). When you die all stacks are lost.](wiki/assets/buffs/10323.png) |
 | **Buff id** | `10323` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

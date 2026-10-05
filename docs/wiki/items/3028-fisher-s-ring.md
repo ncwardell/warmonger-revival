@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=30257e type=d36ca9 id=e8498b sources=6651c4 name_key=8e5c15 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=4cc1c7 set=77de68 reinforce=92cfce icon=78e9ca obtained_from=bf7823 -->
 |  |  |
 |---|---|
-|  | ![Fisher's Ring](../assets/items/3028.png) |
+|  | ![Fisher's Ring](wiki/assets/items/3028.png) |
 | **Item id** | `3028` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

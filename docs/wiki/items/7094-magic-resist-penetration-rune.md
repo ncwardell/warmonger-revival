@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=641d2f type=d36ca9 id=8382a6 sources=a1567d name_key=5c640d kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=da4b92 stats=80aa65 options=054ccf icon=f74d6b obtained_from=fab362 -->
 |  |  |
 |---|---|
-|  | ![Magic resist Penetration Rune](../assets/items/7094.png) |
+|  | ![Magic resist Penetration Rune](wiki/assets/items/7094.png) |
 | **Item id** | `7094` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

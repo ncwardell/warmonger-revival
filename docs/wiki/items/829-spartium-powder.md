@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=b40aa9 type=d36ca9 id=459b50 sources=7e8ccf name_key=f03a61 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a650d9 cost_pair=48084b stats=97d170 icon=e3f1ed obtained_from=346017 -->
 |  |  |
 |---|---|
-|  | ![Spartium powder](../assets/items/829.png) |
+|  | ![Spartium powder](wiki/assets/items/829.png) |
 | **Item id** | `829` |
 | **Kind** | Material (12) |
 | **Classes** | all |

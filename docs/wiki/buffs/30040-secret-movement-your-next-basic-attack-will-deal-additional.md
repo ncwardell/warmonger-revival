@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=1c6871 type=6143a1 id=eef562 sources=477892 name_key=19010e duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=f02107 icon=a12d2b applied_by=17df31 -->
 |  |  |
 |---|---|
-|  | ![Secret Movement : Your next basic attack will deal additional damage](../assets/buffs/30040.png) |
+|  | ![Secret Movement : Your next basic attack will deal additional damage](wiki/assets/buffs/30040.png) |
 | **Buff id** | `30040` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

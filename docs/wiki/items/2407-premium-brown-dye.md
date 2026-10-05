@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=859a23 type=d36ca9 id=a60214 sources=7ec94b name_key=672b4e kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=fff1d3 icon=f3a191 obtained_from=2ed3c4 -->
 |  |  |
 |---|---|
-|  | ![Premium Brown Dye](../assets/items/2407.png) |
+|  | ![Premium Brown Dye](wiki/assets/items/2407.png) |
 | **Item id** | `2407` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

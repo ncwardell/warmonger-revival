@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=5b771c type=d36ca9 id=0a6bd7 sources=8a69c8 name_key=482f4e kind=fe2ef4 kind_name=5b771c classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=fa2569 obtained_from=c64b75 -->
 |  |  |
 |---|---|
-|  | ![Auto decomposition hammer](../assets/items/948.png) |
+|  | ![Auto decomposition hammer](wiki/assets/items/948.png) |
 | **Item id** | `948` |
 | **Kind** | Auto decomposition hammer (46) |
 | **Classes** | all |

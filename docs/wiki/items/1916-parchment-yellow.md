@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=0214bf type=d36ca9 id=57ba76 sources=0c2a47 name_key=7e68b0 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=406f64 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Parchment : Yellow](../assets/items/1916.png) |
+|  | ![Parchment : Yellow](wiki/assets/items/1916.png) |
 | **Item id** | `1916` |
 | **Kind** | Material (12) |
 | **Classes** | all |

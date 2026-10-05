@@ -24,7 +24,7 @@ time_limit_s: 10800
 <!-- generated-keys: title=7f851f type=3e3f38 id=d30f79 sources=46748f field=d30f79 max_users=310b86 entry_cost=70723b event=5ffe53 shown_rewards=f62141 c17=084b3a image=34756c notice_key=87226b schedule=803f37 boss=97d170 time_limit_s=1d5529 -->
 |  |  |
 |---|---|
-|  | ![Sinking Nest (Crystal)](../assets/dungeons/133.png) |
+|  | ![Sinking Nest (Crystal)](wiki/assets/dungeons/133.png) |
 | **Field** | [[wiki/fields/133-sinking-nest-crystal\|Sinking Nest (Crystal) (field 133)]] |
 | **Max players** | 100 (SceneList) |
 | **Event dungeon** | yes |

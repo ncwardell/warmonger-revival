@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=7e5455 type=d36ca9 id=bf67a6 sources=348769 name_key=15d04b kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a213ed cost_pair=32167a stats=97d170 icon=37fe31 obtained_from=914438 -->
 |  |  |
 |---|---|
-|  | ![Rosemary powder](../assets/items/823.png) |
+|  | ![Rosemary powder](wiki/assets/items/823.png) |
 | **Item id** | `823` |
 | **Kind** | Material (12) |
 | **Classes** | all |

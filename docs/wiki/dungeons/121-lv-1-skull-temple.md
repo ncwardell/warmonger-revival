@@ -29,7 +29,7 @@ time_limit_s: null
 <!-- generated-keys: title=5cdb46 type=3e3f38 id=8bd795 sources=e3dda6 field=8bd795 max_users=ac3478 level=356a19 entry_cost=3510f5 event=7cb6ef shown_rewards=e8b4f2 c17=2e8c02 image=d7b848 dungeon_slots=068b5b boss=69effa gear_tier=13930c gathering=42ca89 time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 1) Skull Temple](../assets/dungeons/121.png) |
+|  | ![(Lv 1) Skull Temple](wiki/assets/dungeons/121.png) |
 | **Field** | [[wiki/fields/121-lv-1-skull-temple\|(Lv 1) Skull Temple (field 121)]] |
 | **Level** | 1 |
 | **Gear tier dropped** | T1 (guides) |

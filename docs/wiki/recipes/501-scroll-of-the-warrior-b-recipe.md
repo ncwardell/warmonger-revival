@@ -20,7 +20,7 @@ level: 24
 <!-- generated-keys: title=4ac12c type=61613a id=2c9a62 sources=fff83c result=75ae89 materials=b16108 gold=15aa0c success_rate=310b86 category=356a19 filter_mask=2604f8 level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/705.png) |
+|  | ![](wiki/assets/items/705.png) |
 | **Recipe id** | `501` (`Item_Make`) |
 | **Makes** | [[wiki/items/705-scroll-of-the-warrior-b\|Scroll of the Warrior (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 24
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/803.png) | [[wiki/items/803-garnet-powder\|Garnet powder]] | 20 |  |
-| ![](../assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
-| ![](../assets/items/848.png) | [[wiki/items/848-medical-herb-water\|Medical herb water]] | 1 |  |
+| ![](wiki/assets/items/803.png) | [[wiki/items/803-garnet-powder\|Garnet powder]] | 20 |  |
+| ![](wiki/assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
+| ![](wiki/assets/items/848.png) | [[wiki/items/848-medical-herb-water\|Medical herb water]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2301-scroll-of-the-warrior-b-recipe|recipe 2301]]
 

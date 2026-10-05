@@ -20,7 +20,7 @@ raw: {"c28": 150}
 <!-- generated-keys: title=a65446 type=61613a id=17ba07 sources=d7fb32 result=178ae7 materials=f2c969 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=b9c2bc superior=560dc6 level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/407.png) |
+|  | ![](wiki/assets/items/407.png) |
 | **Recipe id** | `11` (`Item_Make`) |
 | **Makes** | [[wiki/items/407-bracelet-of-life\|Bracelet of Life]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 150}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

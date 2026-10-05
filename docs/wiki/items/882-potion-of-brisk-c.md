@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=fd9c01 type=d36ca9 id=042ccd sources=444150 name_key=040c4a kind=92cfce kind_name=2be88c classes=92d079 bind=2be88c price=ef31a1 cost_pair=7d7884 flags=356a19 no_sell=7cb6ef cooldown_s=356a19 cooldown_group=7719a1 stats=97d170 options=0daed7 icon=0f7d2c obtained_from=e37e58 -->
 |  |  |
 |---|---|
-|  | ![Potion of Brisk (C)](../assets/items/882.png) |
+|  | ![Potion of Brisk (C)](wiki/assets/items/882.png) |
 | **Item id** | `882` |
 | **Kind** | ? (42) |
 | **Classes** | all |

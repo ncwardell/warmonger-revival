@@ -20,7 +20,7 @@ level: 25
 <!-- generated-keys: title=0aa78b type=61613a id=3f1522 sources=d1a1bc result=6f8bc0 materials=2a4a01 gold=28cc22 success_rate=310b86 category=356a19 filter_mask=e91fa6 level=f6e112 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/722.png) |
+|  | ![](wiki/assets/items/722.png) |
 | **Recipe id** | `514` (`Item_Make`) |
 | **Makes** | [[wiki/items/722-tome-of-patience-a\|Tome of Patience (A)]] × 10 |
 | **Gold** | 900 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 25
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 30 |  |
-| ![](../assets/items/832.png) | [[wiki/items/832-empty-scroll-a\|Empty Scroll (A)]] | 1 |  |
-| ![](../assets/items/840.png) | [[wiki/items/840-soft-leather\|Soft leather]] | 2 |  |
+| ![](wiki/assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 30 |  |
+| ![](wiki/assets/items/832.png) | [[wiki/items/832-empty-scroll-a\|Empty Scroll (A)]] | 1 |  |
+| ![](wiki/assets/items/840.png) | [[wiki/items/840-soft-leather\|Soft leather]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

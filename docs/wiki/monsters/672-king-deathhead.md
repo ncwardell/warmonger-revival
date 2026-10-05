@@ -31,7 +31,7 @@ spawn_fields: [121]
 <!-- generated-keys: title=07072a type=9bbc46 id=540d3e sources=a485e1 name_key=7a499b category=c1dfd9 class_mask=356a19 kill_group=c1e866 model=972a67 model_name=0cf010 model_path=6a4c49 scale=555a5c radius=356a19 sounds=10cd19 hero=902ba3 boss_of=a5a5cb dungeon_rewards=56688c quest_targets=9221ca quest_drops=e0591e spawn_fields=a5a5cb -->
 |  |  |
 |---|---|
-|  | ![King Deathhead](../assets/monsters/672.png) |
+|  | ![King Deathhead](wiki/assets/monsters/672.png) |
 | **Unit id** | `672` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

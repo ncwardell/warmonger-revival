@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=8a878f type=86a754 id=fe762c sources=cca404 name_key=691fd3 desc_key=e466c5 kind=356a19 kind_name=9bc378 target=53cfaf range=0ade7c cost=4e8ae0 cooldown=d1c73e movement=953fcf effect_kind=da4b92 effects=251efa damage_or_effect=109465 tooltip_formula=bb15e1 visual=9e44d2 icon=6c8b2c used_by=473267 -->
 |  |  |
 |---|---|
-|  | ![Blink like wind](../assets/skills/10024.png) |
+|  | ![Blink like wind](wiki/assets/skills/10024.png) |
 | **Skill id** | `10024` |
 | **Kind** | active (1) |
 | **Target** | unit; ally, enemy; units: monster, player; up to 2 |

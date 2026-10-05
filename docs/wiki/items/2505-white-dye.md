@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=fd00fe type=d36ca9 id=57b99b sources=e69a51 name_key=729fae kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=00f44d cost_pair=c5bac5 stats=97d170 options=de7a02 icon=b46c98 obtained_from=d0c36d -->
 |  |  |
 |---|---|
-|  | ![White Dye](../assets/items/2505.png) |
+|  | ![White Dye](wiki/assets/items/2505.png) |
 | **Item id** | `2505` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

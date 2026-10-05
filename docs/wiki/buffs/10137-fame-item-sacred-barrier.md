@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=b4f004 type=6143a1 id=78c8a9 sources=a1478b name_key=52eda5 duration=0aac5a is_buff=b6589f stack_type=356a19 group=17ba07 effects=97d170 icon=938ca4 applied_by=1b9187 -->
 |  |  |
 |---|---|
-|  | ![Fame item: Sacred Barrier](../assets/buffs/10137.png) |
+|  | ![Fame item: Sacred Barrier](wiki/assets/buffs/10137.png) |
 | **Buff id** | `10137` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

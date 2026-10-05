@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=939fff type=d36ca9 id=c5aa7a sources=fe6870 name_key=c71966 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=13be50 set=1b6453 reinforce=92cfce icon=21f6ba obtained_from=1dd174 -->
 |  |  |
 |---|---|
-|  | ![Komodo's Bracelet](../assets/items/3037.png) |
+|  | ![Komodo's Bracelet](wiki/assets/items/3037.png) |
 | **Item id** | `3037` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

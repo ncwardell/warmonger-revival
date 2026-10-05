@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=8455fc type=6143a1 id=88308d sources=007c77 name_key=de9ebe duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=2d4d9f icon=1bf876 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional 30% Mana Regeneration](../assets/buffs/1201.png) |
+|  | ![Additional 30% Mana Regeneration](wiki/assets/buffs/1201.png) |
 | **Buff id** | `1201` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

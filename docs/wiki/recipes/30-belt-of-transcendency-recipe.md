@@ -20,7 +20,7 @@ raw: {"c28": 300}
 <!-- generated-keys: title=dc93ed type=61613a id=22d200 sources=fc3489 result=b0eb7a materials=a61815 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=e904c1 superior=03129c level=356a19 raw=c65c1c -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/426.png) |
+|  | ![](wiki/assets/items/426.png) |
 | **Recipe id** | `30` (`Item_Make`) |
 | **Makes** | [[wiki/items/426-belt-of-transcendency\|Belt of Transcendency]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 300}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 20 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 20 |  |
 
 Unknown columns: `c28` = 300 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

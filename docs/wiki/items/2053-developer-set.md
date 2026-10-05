@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=e1223d type=d36ca9 id=5ca404 sources=3783d2 name_key=ac5d0d kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 stats=97d170 options=41a699 icon=e3306b obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Developer Set](../assets/items/2053.png) |
+|  | ![Developer Set](wiki/assets/items/2053.png) |
 | **Item id** | `2053` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=79fbe1 type=6143a1 id=5325f1 sources=7941cb name_key=9f4ecd duration=76674f is_buff=b6589f stack_type=356a19 group=b6589f effects=41f15b icon=6b4fc5 applied_by=39d8bc -->
 |  |  |
 |---|---|
-|  | ![Blessing of Order : Explosion](../assets/buffs/10048.png) |
+|  | ![Blessing of Order : Explosion](wiki/assets/buffs/10048.png) |
 | **Buff id** | `10048` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

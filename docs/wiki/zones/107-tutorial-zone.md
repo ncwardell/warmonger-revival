@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z107_00.dds"
 <!-- generated-keys: title=d85a18 type=c899cd id=524e05 sources=8b5255 name_kr=624870 terrain=bd9154 bounds=1301f4 size=523505 segments=0fbb4f fields=97d170 minimap=f6c0db -->
 |  |  |
 |---|---|
-|  | ![minimap of Tutorial zone](../assets/zones/107.png) |
+|  | ![minimap of Tutorial zone](wiki/assets/zones/107.png) |
 | **Zone id** | `107` |
 | **ZoneDB name** | 튜토리얼존 (English gloss: Tutorial zone) |
 | **Terrain name** | `01` |

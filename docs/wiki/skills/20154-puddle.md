@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=def61d type=86a754 id=c3733c sources=c8856e name_key=0f4c26 desc_key=fdb4ec kind=356a19 kind_name=9bc378 target=cacd0a range=fe5dbb area=6d01a6 cost=911ade cooldown=628d31 delivery=8af2f4 effect_kind=356a19 effects=30c39d damage_or_effect=bf21a9 visual=a785bd icon=f7179c used_by=35fe02 -->
 |  |  |
 |---|---|
-|  | ![Puddle](../assets/skills/20154.png) |
+|  | ![Puddle](wiki/assets/skills/20154.png) |
 | **Skill id** | `20154` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=e4391e type=6143a1 id=6c447a sources=3114a0 name_key=9de87b duration=6c141f is_buff=b6589f stack_type=356a19 group=6c447a effects=6914b3 icon=bccb6d applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Improved HP Regeneration](../assets/buffs/10001.png) |
+|  | ![Improved HP Regeneration](wiki/assets/buffs/10001.png) |
 | **Buff id** | `10001` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

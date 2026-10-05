@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=6e3a79 type=6143a1 id=c97f04 sources=db0c56 name_key=923e62 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=123fa3 icon=e79476 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Improved Hand: Increases attack speed](../assets/buffs/20213.png) |
+|  | ![Improved Hand: Increases attack speed](wiki/assets/buffs/20213.png) |
 | **Buff id** | `20213` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

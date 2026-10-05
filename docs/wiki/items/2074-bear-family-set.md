@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=482a95 type=d36ca9 id=a82299 sources=4592d1 name_key=3b8cd9 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=a0f8d4 options=f6427c icon=713e6f obtained_from=070bc9 -->
 |  |  |
 |---|---|
-|  | ![Bear family Set](../assets/items/2074.png) |
+|  | ![Bear family Set](wiki/assets/items/2074.png) |
 | **Item id** | `2074` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

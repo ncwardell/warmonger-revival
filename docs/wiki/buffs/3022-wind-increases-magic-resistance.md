@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=ae48bb type=6143a1 id=8dfb87 sources=a7014c name_key=97ebbc duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=fe0162 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Wind: Increases Magic Resistance](../assets/buffs/3022.png) |
+|  | ![Wind: Increases Magic Resistance](wiki/assets/buffs/3022.png) |
 | **Buff id** | `3022` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

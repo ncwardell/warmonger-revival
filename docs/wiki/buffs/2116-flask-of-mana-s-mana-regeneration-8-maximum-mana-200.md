@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=e9c3fc type=6143a1 id=397423 sources=20f526 name_key=974c76 duration=995f11 is_buff=b6589f stack_type=356a19 group=88b726 effects=5748d3 icon=16039e applied_by=0c6030 -->
 |  |  |
 |---|---|
-|  | ![Flask of Mana (S) : Mana Regeneration +8, Maximum Mana +200](../assets/buffs/2116.png) |
+|  | ![Flask of Mana (S) : Mana Regeneration +8, Maximum Mana +200](wiki/assets/buffs/2116.png) |
 | **Buff id** | `2116` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

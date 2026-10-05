@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=4c34e7 type=6143a1 id=fcf3e8 sources=40311b name_key=8f8fa1 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=712e4c icon=86c28e applied_by=1f1947 -->
 |  |  |
 |---|---|
-|  | ![Breeze : Increased Ability Power and Movement Speed](../assets/buffs/10012.png) |
+|  | ![Breeze : Increased Ability Power and Movement Speed](wiki/assets/buffs/10012.png) |
 | **Buff id** | `10012` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

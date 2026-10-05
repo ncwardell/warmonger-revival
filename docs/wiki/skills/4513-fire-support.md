@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=925671 type=86a754 id=59742a sources=110e59 name_key=378901 desc_key=2832bf kind=356a19 kind_name=9bc378 target=9dc90e range=fe5dbb area=950fc9 cost=2be88c cooldown=2be88c effect_kind=f1abd6 effects=5e5352 damage_or_effect=c20b74 visual=1b04f2 icon=913d4f used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fire Support](../assets/skills/4513.png) |
+|  | ![Fire Support](wiki/assets/skills/4513.png) |
 | **Skill id** | `4513` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 10 |

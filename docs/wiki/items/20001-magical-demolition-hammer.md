@@ -39,7 +39,7 @@ obtained_from:
 <!-- generated-keys: title=a03be2 type=d36ca9 id=8a91c6 sources=012254 name_key=cb1fa2 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=0286dd stats=76534b options=69b5d6 skills=03532f reinforce=17ba07 icon=5b3439 obtained_from=18844b -->
 |  |  |
 |---|---|
-|  | ![Magical Demolition Hammer](../assets/items/20001.png) |
+|  | ![Magical Demolition Hammer](wiki/assets/items/20001.png) |
 | **Item id** | `20001` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

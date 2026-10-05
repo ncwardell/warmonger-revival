@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=915252 type=d36ca9 id=e575dc sources=3ac171 name_key=d01593 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=8c6ae2 cost_pair=982f5a period=365a69 stats=8415ce options=e96dd6 icon=a90139 obtained_from=80052a -->
 |  |  |
 |---|---|
-|  | ![Oracle Set](../assets/items/2022.png) |
+|  | ![Oracle Set](wiki/assets/items/2022.png) |
 | **Item id** | `2022` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

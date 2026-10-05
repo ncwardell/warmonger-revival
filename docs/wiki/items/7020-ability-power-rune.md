@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=df6caa type=d36ca9 id=839914 sources=7ba4e5 name_key=a03114 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=fe5dbb stats=2554f5 options=27669a icon=f7335c obtained_from=c089c8 -->
 |  |  |
 |---|---|
-|  | ![Ability Power Rune](../assets/items/7020.png) |
+|  | ![Ability Power Rune](wiki/assets/items/7020.png) |
 | **Item id** | `7020` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

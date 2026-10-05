@@ -75,7 +75,7 @@ obtained_from:
 <!-- generated-keys: title=e320e0 type=d36ca9 id=73fb97 sources=0b23d8 name_key=668126 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=bdc6b2 obtained_from=738f7c -->
 |  |  |
 |---|---|
-|  | ![Blue Passion Piece (D)](../assets/items/602.png) |
+|  | ![Blue Passion Piece (D)](wiki/assets/items/602.png) |
 | **Item id** | `602` |
 | **Kind** | Material (12) |
 | **Classes** | all |

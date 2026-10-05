@@ -20,7 +20,7 @@ level: 2
 <!-- generated-keys: title=bf7e51 type=61613a id=a071f3 sources=cdb7bc result=a0302b materials=b51e9c gold=352bc7 success_rate=310b86 category=da4b92 filter_mask=b0800a superior=0ced31 level=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/10015.png) |
+|  | ![](wiki/assets/items/10015.png) |
 | **Recipe id** | `901` (`Item_Make`) |
 | **Makes** | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] × 1 |
 | **Gold** | 20,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,8 +34,8 @@ level: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 70 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 70 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

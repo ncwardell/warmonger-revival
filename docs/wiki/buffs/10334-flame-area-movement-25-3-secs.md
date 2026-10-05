@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=32c9b2 type=6143a1 id=a5fce0 sources=37df2d name_key=629f07 duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=07b4f1 icon=56e68a applied_by=7b9893 -->
 |  |  |
 |---|---|
-|  | ![Flame area : Movement -25% (3 Secs)](../assets/buffs/10334.png) |
+|  | ![Flame area : Movement -25% (3 Secs)](wiki/assets/buffs/10334.png) |
 | **Buff id** | `10334` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

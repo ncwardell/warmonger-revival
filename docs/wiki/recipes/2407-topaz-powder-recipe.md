@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=bb1fd1 type=61613a id=a60214 sources=258aec result=370d4a materials=ec9322 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/815.png) |
+|  | ![](wiki/assets/items/815.png) |
 | **Recipe id** | `2407` (`Item_Make`) |
 | **Makes** | [[wiki/items/815-topaz-powder\|Topaz powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  |
+| ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/607-topaz-powder-recipe|recipe 607]]
 

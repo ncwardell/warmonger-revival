@@ -31,7 +31,7 @@ positions:
 <!-- generated-keys: title=3c9146 type=3664ce id=c0ba17 sources=622e8d name_key=8fc47f title_key=c11b05 npc_title=b29ca0 category=e1822d class_mask=da4b92 model=3c3316 scale=58e6d3 functions=cf1117 role=b29ca0 talk_key=678323 portrait=bad4e3 quests=9961ab quest_fields=18e60d map=2d0c8a x=51a422 z=324963 positions=6dc95f -->
 |  |  |
 |---|---|
-|  | ![Krister](../assets/npcs/219.png) |
+|  | ![Krister](wiki/assets/npcs/219.png) |
 | **Unit id** | `219` |
 | **Title** | Stock Administrator |
 | **Category** | NPC (category 50) |

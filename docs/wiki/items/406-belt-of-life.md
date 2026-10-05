@@ -43,7 +43,7 @@ obtained_from:
 <!-- generated-keys: title=6130fb type=d36ca9 id=b20297 sources=0f4704 name_key=c30af1 kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=f820eb cost_pair=7af57d stats=9671d1 reinforce=356a19 icon=c34017 obtained_from=d4c819 -->
 |  |  |
 |---|---|
-|  | ![Belt of Life](../assets/items/406.png) |
+|  | ![Belt of Life](wiki/assets/items/406.png) |
 | **Item id** | `406` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

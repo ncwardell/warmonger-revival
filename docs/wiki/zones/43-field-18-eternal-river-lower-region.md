@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z43_00.dds"
 <!-- generated-keys: title=eb9b62 type=c899cd id=0286dd sources=f7ee63 name_kr=7c5d81 terrain=c362b7 bounds=6e96f1 size=114466 segments=3d35c4 fields=83a1aa minimap=100262 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 18 (Eternal River - Lower Region)](../assets/zones/43.png) |
+|  | ![minimap of Field 18 (Eternal River - Lower Region)](wiki/assets/zones/43.png) |
 | **Zone id** | `43` |
 | **ZoneDB name** | 필드_18 (English gloss: Field 18 (Eternal River - Lower Region)) |
 | **Terrain name** | `18` |

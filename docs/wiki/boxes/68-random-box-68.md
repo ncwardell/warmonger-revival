@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3518.png) | [[wiki/items/3518-fame-warrior-ring\|Fame warrior Ring]] | 1 |  |
-| 1 | ![](../assets/items/3511.png) | [[wiki/items/3511-fame-warrior-helmet\|Fame warrior Helmet]] | 1 |  |
-| 2 | ![](../assets/items/3512.png) | [[wiki/items/3512-fame-warrior-armor\|Fame warrior Armor]] | 1 |  |
-| 3 | ![](../assets/items/3513.png) | [[wiki/items/3513-fame-warrior-gloves\|Fame warrior Gloves]] | 1 |  |
-| 4 | ![](../assets/items/3514.png) | [[wiki/items/3514-fame-warrior-shoes\|Fame warrior Shoes]] | 1 |  |
-| 5 | ![](../assets/items/3515.png) | [[wiki/items/3515-fame-warrior-necklace\|Fame warrior Necklace]] | 1 |  |
-| 6 | ![](../assets/items/3515.png) | [[wiki/items/3515-fame-warrior-necklace\|Fame warrior Necklace]] | 1 |  |
-| 7 | ![](../assets/items/3516.png) | [[wiki/items/3516-fame-warrior-belt\|Fame warrior Belt]] | 1 |  |
-| 8 | ![](../assets/items/3516.png) | [[wiki/items/3516-fame-warrior-belt\|Fame warrior Belt]] | 1 |  |
-| 9 | ![](../assets/items/3517.png) | [[wiki/items/3517-fame-warrior-bracelet\|Fame warrior Bracelet]] | 1 |  |
+| 0 | ![](wiki/assets/items/3518.png) | [[wiki/items/3518-fame-warrior-ring\|Fame warrior Ring]] | 1 |  |
+| 1 | ![](wiki/assets/items/3511.png) | [[wiki/items/3511-fame-warrior-helmet\|Fame warrior Helmet]] | 1 |  |
+| 2 | ![](wiki/assets/items/3512.png) | [[wiki/items/3512-fame-warrior-armor\|Fame warrior Armor]] | 1 |  |
+| 3 | ![](wiki/assets/items/3513.png) | [[wiki/items/3513-fame-warrior-gloves\|Fame warrior Gloves]] | 1 |  |
+| 4 | ![](wiki/assets/items/3514.png) | [[wiki/items/3514-fame-warrior-shoes\|Fame warrior Shoes]] | 1 |  |
+| 5 | ![](wiki/assets/items/3515.png) | [[wiki/items/3515-fame-warrior-necklace\|Fame warrior Necklace]] | 1 |  |
+| 6 | ![](wiki/assets/items/3515.png) | [[wiki/items/3515-fame-warrior-necklace\|Fame warrior Necklace]] | 1 |  |
+| 7 | ![](wiki/assets/items/3516.png) | [[wiki/items/3516-fame-warrior-belt\|Fame warrior Belt]] | 1 |  |
+| 8 | ![](wiki/assets/items/3516.png) | [[wiki/items/3516-fame-warrior-belt\|Fame warrior Belt]] | 1 |  |
+| 9 | ![](wiki/assets/items/3517.png) | [[wiki/items/3517-fame-warrior-bracelet\|Fame warrior Bracelet]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

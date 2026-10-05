@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=8c59dd type=d36ca9 id=329dc1 sources=1dc8e6 name_key=caf7cf kind=b7eb6c kind_name=e687cb classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=44cc1d reinforce=356a19 icon=411f91 obtained_from=e4a17d -->
 |  |  |
 |---|---|
-|  | ![Guardian Armor](../assets/items/410.png) |
+|  | ![Guardian Armor](wiki/assets/items/410.png) |
 | **Item id** | `410` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ raw: {"c28": 225}
 <!-- generated-keys: title=b1fffd type=61613a id=e575dc sources=5411a2 result=f9ae6f materials=6c1e5f gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=4d3e51 superior=f38539 level=356a19 raw=aa6768 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/418.png) |
+|  | ![](wiki/assets/items/418.png) |
 | **Recipe id** | `2022` (`Item_Make`) |
 | **Makes** | [[wiki/items/418-armor-of-honor\|Armor of Honor]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 225}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 15 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 15 |  |
 
 Unknown columns: `c28` = 225 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

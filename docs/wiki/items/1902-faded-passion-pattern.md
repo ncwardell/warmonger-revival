@@ -54,7 +54,7 @@ obtained_from:
 <!-- generated-keys: title=c514b5 type=d36ca9 id=30c9e2 sources=0d3662 name_key=eb7ace kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=f820eb cost_pair=7af57d stats=97d170 icon=65c456 obtained_from=fd2800 -->
 |  |  |
 |---|---|
-|  | ![Faded Passion Pattern](../assets/items/1902.png) |
+|  | ![Faded Passion Pattern](wiki/assets/items/1902.png) |
 | **Item id** | `1902` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

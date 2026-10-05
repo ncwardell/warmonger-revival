@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z23_00.dds"
 <!-- generated-keys: title=44d56a type=c899cd id=d435a6 sources=8693ba name_kr=a52e88 terrain=b034c0 bounds=7ba7f5 size=114466 segments=41f2f2 fields=5c3c3a minimap=9eb807 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 35 (Skymist Temple)](../assets/zones/23.png) |
+|  | ![minimap of Field 35 (Skymist Temple)](wiki/assets/zones/23.png) |
 | **Zone id** | `23` |
 | **ZoneDB name** | 필드_35 (English gloss: Field 35 (Skymist Temple)) |
 | **Terrain name** | `35` |

@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=36a6f4 type=d36ca9 id=e65493 sources=47b337 name_key=d58c3e kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=c25437 obtained_from=ac0240 -->
 |  |  |
 |---|---|
-|  | ![The Death Head's Pipe](../assets/items/2585.png) |
+|  | ![The Death Head's Pipe](wiki/assets/items/2585.png) |
 | **Item id** | `2585` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=70c3ef type=6143a1 id=add9a4 sources=fa6a91 name_key=8467d3 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=3b602b applied_by=708236 -->
 |  |  |
 |---|---|
-|  | ![Double Time : Decrease Movement Speed by 30%](../assets/buffs/30084.png) |
+|  | ![Double Time : Decrease Movement Speed by 30%](wiki/assets/buffs/30084.png) |
 | **Buff id** | `30084` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

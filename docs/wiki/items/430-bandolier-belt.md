@@ -42,7 +42,7 @@ obtained_from:
 <!-- generated-keys: title=c599bf type=d36ca9 id=f8c024 sources=10e076 name_key=b3f63b kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=f18b5e reinforce=356a19 icon=bd3edc obtained_from=5d1e0d -->
 |  |  |
 |---|---|
-|  | ![Bandolier Belt](../assets/items/430.png) |
+|  | ![Bandolier Belt](wiki/assets/items/430.png) |
 | **Item id** | `430` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

@@ -33,7 +33,7 @@ complete_talk: 705
 <!-- generated-keys: title=76581d type=eb5b2b id=b19dc1 sources=4bfc46 name_key=25aaad kind=77de68 kind_name=01e781 giver=37f9c0 turn_in=37f9c0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=fa35e1 excludes_bit=12c6fc owned_field=b4182b prev=017b8e next=97d170 stages=30caa7 objectives=c25c18 rewards=795576 offer_talk=9deb86 complete_talk=794bb3 -->
 |  |  |
 |---|---|
-|  | ![Find lost item](../assets/npcs/205.png) |
+|  | ![Find lost item](wiki/assets/npcs/205.png) |
 | **Quest id** | `724` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/205-lewellyn\|Lewellyn]] |

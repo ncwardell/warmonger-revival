@@ -26,7 +26,7 @@ teleport_to: null
 <!-- generated-keys: title=0e443d type=3664ce id=0bad86 sources=506199 name_key=5ff69f title_key=9c5675 npc_title=30fc05 category=e1822d class_mask=da4b92 model=eb65e2 scale=469369 functions=b85d7e role=30fc05 talk_key=9b525c portrait=f77fdc map=2be88c x=2be88c z=2be88c teleport_to=2be88c -->
 |  |  |
 |---|---|
-|  | ![Lars](../assets/npcs/216.png) |
+|  | ![Lars](wiki/assets/npcs/216.png) |
 | **Unit id** | `216` |
 | **Title** | Castle Teleporter |
 | **Category** | NPC (category 50) |

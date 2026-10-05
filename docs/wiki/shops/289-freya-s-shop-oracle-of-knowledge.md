@@ -29,7 +29,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=513feb type=ffcf9c id=6b0f4d sources=5b0863 npc=4bef22 stock=c1cbb9 prices=844572 price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Freya's shop (Oracle of Knowledge)](../assets/npcs/200.png) |
+|  | ![Freya's shop (Oracle of Knowledge)](wiki/assets/npcs/200.png) |
 | **Shop id** | `289` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/200-freya\|Freya]] (Oracle of Knowledge) |
 | **Stock** | 7 entries, 7 distinct items |
@@ -42,13 +42,13 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1201.png) | [[wiki/items/1201-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
-| 1 | ![](../assets/items/1202.png) | [[wiki/items/1202-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
-| 2 | ![](../assets/items/1203.png) | [[wiki/items/1203-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
-| 3 | ![](../assets/items/1204.png) | [[wiki/items/1204-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
-| 4 | ![](../assets/items/1251.png) | [[wiki/items/1251-c-rank-quest\|C Rank Quest]] | 1 |  | Gold | 25,000 | 198,000 | 157,500 |
-| 5 | ![](../assets/items/1252.png) | [[wiki/items/1252-c-rank-quest\|C Rank Quest]] | 1 |  | Gold | 25,000 | 198,000 | 157,500 |
-| 6 | ![](../assets/items/1253.png) | [[wiki/items/1253-c-rank-quest\|C Rank Quest]] | 1 |  | Gold | 25,000 | 198,000 | 157,500 |
+| 0 | ![](wiki/assets/items/1201.png) | [[wiki/items/1201-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
+| 1 | ![](wiki/assets/items/1202.png) | [[wiki/items/1202-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
+| 2 | ![](wiki/assets/items/1203.png) | [[wiki/items/1203-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
+| 3 | ![](wiki/assets/items/1204.png) | [[wiki/items/1204-d-rank-quest\|D Rank Quest]] | 1 |  | Gold | 10,000 | 79,200 | 63,000 |
+| 4 | ![](wiki/assets/items/1251.png) | [[wiki/items/1251-c-rank-quest\|C Rank Quest]] | 1 |  | Gold | 25,000 | 198,000 | 157,500 |
+| 5 | ![](wiki/assets/items/1252.png) | [[wiki/items/1252-c-rank-quest\|C Rank Quest]] | 1 |  | Gold | 25,000 | 198,000 | 157,500 |
+| 6 | ![](wiki/assets/items/1253.png) | [[wiki/items/1253-c-rank-quest\|C Rank Quest]] | 1 |  | Gold | 25,000 | 198,000 | 157,500 |
 
 ### How prices are worked out
 

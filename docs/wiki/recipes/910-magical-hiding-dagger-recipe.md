@@ -20,7 +20,7 @@ level: 2
 <!-- generated-keys: title=46ec0c type=61613a id=c70dfb sources=739fb8 result=352e37 materials=b51e9c gold=352bc7 success_rate=310b86 category=da4b92 filter_mask=619013 superior=a77033 level=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/15008.png) |
+|  | ![](wiki/assets/items/15008.png) |
 | **Recipe id** | `910` (`Item_Make`) |
 | **Makes** | [[wiki/items/15008-magical-hiding-dagger\|Magical hiding Dagger]] × 1 |
 | **Gold** | 20,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,8 +34,8 @@ level: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 70 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 5 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 70 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

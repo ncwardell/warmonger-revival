@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=817f52 type=d36ca9 id=a52b27 sources=adf524 name_key=df42d1 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=b41627 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Violet Passion Piece (S)](../assets/items/640.png) |
+|  | ![Violet Passion Piece (S)](wiki/assets/items/640.png) |
 | **Item id** | `640` |
 | **Kind** | Material (12) |
 | **Classes** | all |

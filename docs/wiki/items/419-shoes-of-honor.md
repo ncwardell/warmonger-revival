@@ -44,7 +44,7 @@ obtained_from:
 <!-- generated-keys: title=48182a type=d36ca9 id=1f0037 sources=0eb174 name_key=9da94e kind=c5b76d kind_name=a64daf classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=dee974 reinforce=356a19 icon=dbd5a1 obtained_from=985213 -->
 |  |  |
 |---|---|
-|  | ![Shoes of Honor](../assets/items/419.png) |
+|  | ![Shoes of Honor](wiki/assets/items/419.png) |
 | **Item id** | `419` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=de265a type=61613a id=80cc9f sources=07c8dd result=9b5d99 materials=7e7991 gold=e1822d success_rate=310b86 category=356a19 filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/819.png) |
+|  | ![](wiki/assets/items/819.png) |
 | **Recipe id** | `609` (`Item_Make`) |
 | **Makes** | [[wiki/items/819-lavender-powder\|Lavender powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/818.png) | [[wiki/items/818-lavender\|Lavender]] | 1 |  |
+| ![](wiki/assets/items/818.png) | [[wiki/items/818-lavender\|Lavender]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2409-lavender-powder-recipe|recipe 2409]]
 

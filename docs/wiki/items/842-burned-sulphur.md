@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=ee28df type=d36ca9 id=62362f sources=e2208d name_key=330b5f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=541354 obtained_from=9e6b7d -->
 |  |  |
 |---|---|
-|  | ![Burned sulphur](../assets/items/842.png) |
+|  | ![Burned sulphur](wiki/assets/items/842.png) |
 | **Item id** | `842` |
 | **Kind** | Material (12) |
 | **Classes** | all |

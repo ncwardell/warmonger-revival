@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=72aeb0 type=6143a1 id=9cdda6 sources=8620a3 name_key=38a22b duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=e582ae icon=f877b6 applied_by=267159 -->
 |  |  |
 |---|---|
-|  | ![Amplified damage : Reduced Attack and Movement Speed.](../assets/buffs/2015.png) |
+|  | ![Amplified damage : Reduced Attack and Movement Speed.](wiki/assets/buffs/2015.png) |
 | **Buff id** | `2015` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

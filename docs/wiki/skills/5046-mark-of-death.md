@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=832dcc type=86a754 id=7840f8 sources=c14572 name_key=5c9396 desc_key=5dfcb5 kind=356a19 kind_name=9bc378 target=069ef3 range=17ba07 cost=da6e22 cooldown=4aa5a5 effect_kind=356a19 effects=f177bb damage_or_effect=b6ffee visual=752ae7 icon=c3bc1a used_by=2099a3 -->
 |  |  |
 |---|---|
-|  | ![Mark of Death](../assets/skills/5046.png) |
+|  | ![Mark of Death](wiki/assets/skills/5046.png) |
 | **Skill id** | `5046` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

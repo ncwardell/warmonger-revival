@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=665431 type=86a754 id=d81d94 sources=836f1e name_key=235a29 desc_key=c2e07b kind=356a19 kind_name=9bc378 target=d99f6c range=77de68 cost=ad8002 cooldown=371007 effect_kind=da4b92 effects=0d8289 damage_or_effect=4a8ace tooltip_formula=c2460e visual=a165fb icon=01c963 used_by=8f3663 -->
 |  |  |
 |---|---|
-|  | ![Soul Infestation](../assets/skills/5036.png) |
+|  | ![Soul Infestation](wiki/assets/skills/5036.png) |
 | **Skill id** | `5036` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

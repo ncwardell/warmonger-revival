@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=1ad06a type=6143a1 id=103caf sources=1d425a name_key=c8cfbe duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=0ec3a9 icon=26a405 applied_by=418822 -->
 |  |  |
 |---|---|
-|  | ![Absorb Magic : Reduced incoming damage.](../assets/buffs/20060.png) |
+|  | ![Absorb Magic : Reduced incoming damage.](wiki/assets/buffs/20060.png) |
 | **Buff id** | `20060` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

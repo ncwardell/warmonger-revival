@@ -26,7 +26,7 @@ used_by: []
 <!-- generated-keys: title=def61d type=86a754 id=232bb1 sources=1777cb name_key=5f3186 desc_key=9c96a7 kind=356a19 kind_name=9bc378 target=9dc90e range=fe5dbb area=6d01a6 cost=2be88c cooldown=628d31 effect_kind=356a19 effects=173227 damage_or_effect=9eec18 visual=778736 icon=f7179c used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Puddle](../assets/skills/20155.png) |
+|  | ![Puddle](wiki/assets/skills/20155.png) |
 | **Skill id** | `20155` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 10 |

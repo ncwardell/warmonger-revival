@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=4d9b72 type=d36ca9 id=00d47e sources=f3cda9 name_key=47724f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=e19323 obtained_from=094e70 -->
 |  |  |
 |---|---|
-|  | ![Essence of Wind](../assets/items/1931.png) |
+|  | ![Essence of Wind](wiki/assets/items/1931.png) |
 | **Item id** | `1931` |
 | **Kind** | Material (12) |
 | **Classes** | all |

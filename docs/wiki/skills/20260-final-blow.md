@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=df8af1 type=86a754 id=ca15ea sources=c56700 name_key=8ec0e6 desc_key=9292ca kind=356a19 kind_name=9bc378 target=069ef3 range=77de68 cost=12e604 cooldown=e0e4dd effect_kind=356a19 effects=5d01a0 damage_or_effect=fc30e9 tooltip_formula=719b28 visual=06be19 icon=9c415d used_by=9fc538 -->
 |  |  |
 |---|---|
-|  | ![Final blow](../assets/skills/20260.png) |
+|  | ![Final blow](wiki/assets/skills/20260.png) |
 | **Skill id** | `20260` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

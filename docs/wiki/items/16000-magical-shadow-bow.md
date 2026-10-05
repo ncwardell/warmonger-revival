@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=548004 type=d36ca9 id=7c2b08 sources=7a693e name_key=b1355f kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=05a8ea stats=c43914 options=df29a4 skills=3dd0c8 reinforce=7b5200 icon=aa77fd obtained_from=501dc8 -->
 |  |  |
 |---|---|
-|  | ![Magical Shadow Bow](../assets/items/16000.png) |
+|  | ![Magical Shadow Bow](wiki/assets/items/16000.png) |
 | **Item id** | `16000` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=6f3f84 type=d36ca9 id=128351 sources=8cb210 name_key=1cc3b5 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=b2b876 obtained_from=44710a -->
 |  |  |
 |---|---|
-|  | ![Help of Gaia Box](../assets/items/1024.png) |
+|  | ![Help of Gaia Box](wiki/assets/items/1024.png) |
 | **Item id** | `1024` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

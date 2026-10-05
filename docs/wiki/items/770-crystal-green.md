@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=4ecfbf type=d36ca9 id=5b5b33 sources=626ba5 name_key=96c410 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=b44108 cost_pair=25a45d stats=97d170 icon=e51e44 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Green](../assets/items/770.png) |
+|  | ![Crystal : Green](wiki/assets/items/770.png) |
 | **Item id** | `770` |
 | **Kind** | Material (12) |
 | **Classes** | all |

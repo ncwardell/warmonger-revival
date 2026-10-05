@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=5194fc type=6143a1 id=857b78 sources=e1b9ef name_key=b86848 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=b61237 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fire: Increases Damage](../assets/buffs/3021.png) |
+|  | ![Fire: Increases Damage](wiki/assets/buffs/3021.png) |
 | **Buff id** | `3021` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

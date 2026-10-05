@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=2db420 type=6143a1 id=9217b6 sources=228107 name_key=afe707 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=d212e9 applied_by=976d3f -->
 |  |  |
 |---|---|
-|  | ![Assassination : Silenced](../assets/buffs/10168.png) |
+|  | ![Assassination : Silenced](wiki/assets/buffs/10168.png) |
 | **Buff id** | `10168` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

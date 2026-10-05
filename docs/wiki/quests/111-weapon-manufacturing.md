@@ -35,7 +35,7 @@ complete_talk: 810
 <!-- generated-keys: title=2dce85 type=eb5b2b id=6216f8 sources=713d6c name_key=ec508b kind=356a19 kind_name=0bac50 classes=30141f giver=65eab4 turn_in=65eab4 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=f1f836 requires_bit=12c6fc prev=5c6c1d next=97d170 prerequisites=7ecdc9 stages=30caa7 objectives=2be88c objectives_client=6bbeab rewards=7fc5e4 offer_talk=cd8b7a complete_talk=a1496d -->
 |  |  |
 |---|---|
-|  | ![Weapon manufacturing](../assets/npcs/237.png) |
+|  | ![Weapon manufacturing](wiki/assets/npcs/237.png) |
 | **Quest id** | `111` |
 | **Kind** | Sub (kind 1) |
 | **Classes** | Saint |

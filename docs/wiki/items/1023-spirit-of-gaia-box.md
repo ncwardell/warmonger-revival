@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=bb4f41 type=d36ca9 id=138825 sources=492556 name_key=ff386e kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=88ba07 obtained_from=4f9d62 -->
 |  |  |
 |---|---|
-|  | ![Spirit of Gaia Box](../assets/items/1023.png) |
+|  | ![Spirit of Gaia Box](wiki/assets/items/1023.png) |
 | **Item id** | `1023` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

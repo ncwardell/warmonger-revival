@@ -33,7 +33,7 @@ complete_talk: 791
 <!-- generated-keys: title=8bdd22 type=eb5b2b id=22d200 sources=fed299 name_key=f78ae2 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=f6e112 requires_bit=887309 prev=f36b47 next=d5de15 stages=642aaf objectives=b9e4f5 rewards=a4589f offer_talk=4912f5 complete_talk=732506 -->
 |  |  |
 |---|---|
-|  | ![Chepa Village](../assets/npcs/200.png) |
+|  | ![Chepa Village](wiki/assets/npcs/200.png) |
 | **Quest id** | `30` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

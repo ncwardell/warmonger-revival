@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=17b215 type=86a754 id=490a2b sources=18d76e name_key=978aec desc_key=40bce5 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=911ade cooldown=628d31 effect_kind=da4b92 effects=255f2a damage_or_effect=87cc95 visual=25293f icon=8f0410 used_by=a27dc1 -->
 |  |  |
 |---|---|
-|  | ![Wings of fair wind](../assets/skills/10023.png) |
+|  | ![Wings of fair wind](wiki/assets/skills/10023.png) |
 | **Skill id** | `10023` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

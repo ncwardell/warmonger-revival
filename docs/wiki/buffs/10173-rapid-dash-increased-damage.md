@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=c34ea9 type=6143a1 id=3480ce sources=683a04 name_key=eb407a duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=97631f icon=4bb647 applied_by=bf0de3 -->
 |  |  |
 |---|---|
-|  | ![Rapid Dash : Increased damage](../assets/buffs/10173.png) |
+|  | ![Rapid Dash : Increased damage](wiki/assets/buffs/10173.png) |
 | **Buff id** | `10173` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -20,7 +20,7 @@ level: 25
 <!-- generated-keys: title=8c871a type=61613a id=0313e6 sources=938649 result=1a2cfe materials=02c146 gold=28cc22 success_rate=310b86 category=356a19 filter_mask=348936 level=f6e112 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/746.png) |
+|  | ![](wiki/assets/items/746.png) |
 | **Recipe id** | `532` (`Item_Make`) |
 | **Makes** | [[wiki/items/746-elixir-of-vampirism-a\|Elixir of Vampirism (A)]] × 10 |
 | **Gold** | 900 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 25
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 30 |  |
-| ![](../assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
-| ![](../assets/items/839.png) | [[wiki/items/839-wild-herb\|Wild herb]] | 2 |  |
+| ![](wiki/assets/items/823.png) | [[wiki/items/823-rosemary-powder\|Rosemary powder]] | 30 |  |
+| ![](wiki/assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
+| ![](wiki/assets/items/839.png) | [[wiki/items/839-wild-herb\|Wild herb]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

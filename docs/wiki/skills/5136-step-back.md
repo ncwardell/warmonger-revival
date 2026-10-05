@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=4e3e91 type=86a754 id=dfd71b sources=27af1f name_key=b04740 desc_key=4fa5c6 kind=356a19 kind_name=9bc378 target=aa5d92 range=c1dfd9 cost=911ade cooldown=628d31 movement=5f1488 delivery=93a212 effect_kind=356a19 effects=d3096d damage_or_effect=16c1dd tooltip_formula=5fe65c visual=68b519 icon=b534c0 used_by=94f28a -->
 |  |  |
 |---|---|
-|  | ![Step Back](../assets/skills/5136.png) |
+|  | ![Step Back](wiki/assets/skills/5136.png) |
 | **Skill id** | `5136` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 1 |

@@ -18,7 +18,7 @@ filter_mask: 1
 <!-- generated-keys: title=914053 type=61613a id=b74e9c sources=18904a result=820869 materials=361ea6 gold=c2d4c5 success_rate=310b86 category=77de68 filter_mask=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/8504.png) |
+|  | ![](wiki/assets/items/8504.png) |
 | **Recipe id** | `1205` (`Item_Make`) |
 | **Makes** | [[wiki/items/8504-crystal-artamos\|Crystal : Artamos]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -30,8 +30,8 @@ filter_mask: 1
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/9004.png) | [[wiki/items/9004-piece-artamos\|Piece : Artamos]] | 5 |  |
-| ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 50 |  |
+| ![](wiki/assets/items/9004.png) | [[wiki/items/9004-piece-artamos\|Piece : Artamos]] | 5 |  |
+| ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 50 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

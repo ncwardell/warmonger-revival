@@ -93,7 +93,7 @@ obtained_from:
 <!-- generated-keys: title=dbf68d type=d36ca9 id=d69b92 sources=fe8749 name_key=281e37 kind=667be5 kind_name=8e0d16 classes=92d079 bind=2be88c price=32a324 cost_pair=395e20 stats=97d170 icon=5cdcd2 obtained_from=a26223 -->
 |  |  |
 |---|---|
-|  | ![Gem Stone : Blue](../assets/items/693.png) |
+|  | ![Gem Stone : Blue](wiki/assets/items/693.png) |
 | **Item id** | `693` |
 | **Kind** | Jewel (58) |
 | **Classes** | all |

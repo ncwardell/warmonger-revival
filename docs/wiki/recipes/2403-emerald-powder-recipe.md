@@ -18,7 +18,7 @@ level: 15
 <!-- generated-keys: title=17175a type=61613a id=df7ab4 sources=9e8817 result=5788a2 materials=b6f3a6 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/807.png) |
+|  | ![](wiki/assets/items/807.png) |
 | **Recipe id** | `2403` (`Item_Make`) |
 | **Makes** | [[wiki/items/807-emerald-powder\|Emerald powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -31,7 +31,7 @@ level: 15
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 1 |  |
+| ![](wiki/assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/603-emerald-powder-recipe|recipe 603]]
 

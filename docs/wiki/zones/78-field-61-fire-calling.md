@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z78_00.dds"
 <!-- generated-keys: title=00e076 type=c899cd id=eb4ac3 sources=24c6f2 name_kr=887181 terrain=5d09fc bounds=784d99 size=114466 segments=7294ce fields=065175 minimap=fc8427 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 61 (Fire Calling)](../assets/zones/78.png) |
+|  | ![minimap of Field 61 (Fire Calling)](wiki/assets/zones/78.png) |
 | **Zone id** | `78` |
 | **ZoneDB name** | 필드_61 (English gloss: Field 61 (Fire Calling)) |
 | **Terrain name** | `61` |

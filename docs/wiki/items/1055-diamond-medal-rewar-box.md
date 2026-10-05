@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=baa86b type=d36ca9 id=54c179 sources=b43cf6 name_key=06fcce kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=6c20b5 obtained_from=f6f52a -->
 |  |  |
 |---|---|
-|  | ![(Diamond) Medal Rewar Box](../assets/items/1055.png) |
+|  | ![(Diamond) Medal Rewar Box](wiki/assets/items/1055.png) |
 | **Item id** | `1055` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

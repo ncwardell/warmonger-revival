@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=9f26e5 type=6143a1 id=39e214 sources=80e0ec name_key=9aef50 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=48c46c icon=f877b6 applied_by=81adec -->
 |  |  |
 |---|---|
-|  | ![Stone Guard Attack : Reduced Movement Speed.](../assets/buffs/2014.png) |
+|  | ![Stone Guard Attack : Reduced Movement Speed.](wiki/assets/buffs/2014.png) |
 | **Buff id** | `2014` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

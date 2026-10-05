@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=25425b type=d36ca9 id=dcb63a sources=e41baa name_key=c349bb kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=f36e7a obtained_from=b5b4ea -->
 |  |  |
 |---|---|
-|  | ![Clown mushroom](../assets/items/841.png) |
+|  | ![Clown mushroom](wiki/assets/items/841.png) |
 | **Item id** | `841` |
 | **Kind** | Material (12) |
 | **Classes** | all |

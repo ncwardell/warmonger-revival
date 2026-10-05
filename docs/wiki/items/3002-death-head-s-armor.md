@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=89a328 type=d36ca9 id=5c8745 sources=54c1cf name_key=7013ba kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=633c45 set=356a19 reinforce=92cfce icon=cee6d2 obtained_from=058bbe -->
 |  |  |
 |---|---|
-|  | ![Death Head's Armor](../assets/items/3002.png) |
+|  | ![Death Head's Armor](wiki/assets/items/3002.png) |
 | **Item id** | `3002` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=2e0f3f type=d36ca9 id=d9935e sources=74f6dd name_key=2de208 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=3a94d5 obtained_from=413214 -->
 |  |  |
 |---|---|
-|  | ![Lords of the Land Box](../assets/items/1028.png) |
+|  | ![Lords of the Land Box](wiki/assets/items/1028.png) |
 | **Item id** | `1028` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

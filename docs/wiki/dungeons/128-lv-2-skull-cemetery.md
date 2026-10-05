@@ -28,7 +28,7 @@ time_limit_s: null
 <!-- generated-keys: title=006667 type=3e3f38 id=b4182b sources=cb6130 field=b4182b max_users=ac3478 level=da4b92 entry_cost=3354a5 event=7cb6ef shown_rewards=ee6072 c17=ab165c image=d3bc8e dungeon_slots=079694 boss=0c12c5 gear_tier=13930c gathering=83d28e time_limit_s=2be88c -->
 |  |  |
 |---|---|
-|  | ![(Lv 2) Skull Cemetery](../assets/dungeons/128.png) |
+|  | ![(Lv 2) Skull Cemetery](wiki/assets/dungeons/128.png) |
 | **Field** | [[wiki/fields/128-lv-2-skull-cemetery\|(Lv 2) Skull Cemetery (field 128)]] |
 | **Level** | 2 |
 | **Gear tier dropped** | T1 (guides) |

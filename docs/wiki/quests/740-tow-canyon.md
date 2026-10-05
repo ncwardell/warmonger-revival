@@ -30,7 +30,7 @@ offer_talk: 757
 <!-- generated-keys: title=30a3eb type=eb5b2b id=2e0ab5 sources=9a5a30 name_key=e138c5 kind=77de68 kind_name=01e781 giver=4518d0 turn_in=847ad4 offer_maps=15f2a7 bit=b6589f requires_bit=7719a1 excludes_bit=22d200 owned_field=0ca927 automatic=5ffe53 prev=78415f next=97d170 stages=30caa7 objectives=06941f rewards=7af226 offer_talk=d64ce8 -->
 |  |  |
 |---|---|
-|  | ![Tow Canyon](../assets/npcs/204.png) |
+|  | ![Tow Canyon](wiki/assets/npcs/204.png) |
 | **Quest id** | `740` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/204-wren\|Wren]] |

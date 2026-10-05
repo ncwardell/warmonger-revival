@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=b41d2e type=6143a1 id=d9dc46 sources=5e88d3 name_key=13bece duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=372eb2 applied_by=6b22e1 -->
 |  |  |
 |---|---|
-|  | ![Crushing Blow : Silenced for 2 seconds](../assets/buffs/10058.png) |
+|  | ![Crushing Blow : Silenced for 2 seconds](wiki/assets/buffs/10058.png) |
 | **Buff id** | `10058` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

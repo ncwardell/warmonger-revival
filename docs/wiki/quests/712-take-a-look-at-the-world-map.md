@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_16.png", "text_key": "Quest_HelpText_712"}
 <!-- generated-keys: title=4bce5a type=eb5b2b id=a85f2d sources=b97b37 name_key=870993 kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=76546f automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=9056b5 rewards=1fff9d help=3f6f74 -->
 |  |  |
 |---|---|
-|  | ![Take a look at the World Map.](../assets/quests/712.png) |
+|  | ![Take a look at the World Map.](wiki/assets/quests/712.png) |
 | **Quest id** | `712` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

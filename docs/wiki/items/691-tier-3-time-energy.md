@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=02d7bb type=d36ca9 id=3da7e2 sources=e3afa2 name_key=2dad6a kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=d14d3d cost_pair=fc48b1 use_buff=eee440 cooldown_s=da4b92 cooldown_group=d435a6 stats=97d170 options=473949 icon=d033fe obtained_from=506632 -->
 |  |  |
 |---|---|
-|  | ![Tier 3 : Time energy](../assets/items/691.png) |
+|  | ![Tier 3 : Time energy](wiki/assets/items/691.png) |
 | **Item id** | `691` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

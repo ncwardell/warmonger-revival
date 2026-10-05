@@ -32,7 +32,7 @@ used_by: []
 <!-- generated-keys: title=982e1b type=86a754 id=add40f sources=64b333 name_key=ef4301 desc_key=cb76e1 kind=ac3478 kind_name=65782b target=069ef3 range=da4b92 cost=2be88c cooldown=367d78 effect_kind=356a19 effects=63ac25 damage_or_effect=1a5f44 tooltip_formula=4d8780 weapon_type=356a19 visual=ec2b67 icon=c0fb59 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Backstab](../assets/skills/10462.png) |
+|  | ![Backstab](wiki/assets/skills/10462.png) |
 | **Skill id** | `10462` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

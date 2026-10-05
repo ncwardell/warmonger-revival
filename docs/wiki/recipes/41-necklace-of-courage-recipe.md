@@ -20,7 +20,7 @@ raw: {"c28": 375}
 <!-- generated-keys: title=b202f7 type=61613a id=761f22 sources=9eef67 result=388179 materials=564a71 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=208649 superior=23f2d3 level=ac3478 raw=a694ad -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/437.png) |
+|  | ![](wiki/assets/items/437.png) |
 | **Recipe id** | `41` (`Item_Make`) |
 | **Makes** | [[wiki/items/437-necklace-of-courage\|Necklace of Courage]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -34,7 +34,7 @@ raw: {"c28": 375}
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 25 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 25 |  |
 
 Unknown columns: `c28` = 375 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

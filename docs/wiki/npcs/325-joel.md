@@ -26,7 +26,7 @@ z: null
 <!-- generated-keys: title=ca3de7 type=3664ce id=4551b2 sources=1813b7 name_key=9328be title_key=2e3c1f npc_title=b013bb category=e1822d class_mask=da4b92 model=c5b76d scale=aa8f28 functions=d406ea role=b013bb talk_key=57a96a portrait=008ab1 quests=52eed3 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Joel](../assets/npcs/325.png) |
+|  | ![Joel](wiki/assets/npcs/325.png) |
 | **Unit id** | `325` |
 | **Title** | Priest |
 | **Category** | NPC (category 50) |

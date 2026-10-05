@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=82f746 type=6143a1 id=22cdd7 sources=594839 name_key=88a1d2 duration=6c749d is_buff=b6589f stack_type=356a19 group=22cdd7 effects=656ee4 icon=c3bc1a applied_by=07895d -->
 |  |  |
 |---|---|
-|  | ![Mark of Death : Reduced Armor](../assets/buffs/10042.png) |
+|  | ![Mark of Death : Reduced Armor](wiki/assets/buffs/10042.png) |
 | **Buff id** | `10042` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

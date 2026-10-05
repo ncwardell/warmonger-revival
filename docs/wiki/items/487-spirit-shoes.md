@@ -31,7 +31,7 @@ obtained_from: []
 <!-- generated-keys: title=0cb41d type=d36ca9 id=8f98b6 sources=5e0e9b name_key=a46ace kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=25e930 reinforce=da4b92 icon=fa8ae0 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Spirit Shoes](../assets/items/487.png) |
+|  | ![Spirit Shoes](wiki/assets/items/487.png) |
 | **Item id** | `487` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

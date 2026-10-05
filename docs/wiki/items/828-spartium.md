@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f7e5ed type=d36ca9 id=0da8cb sources=2430f7 name_key=f6cbfe kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 icon=33fb42 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Spartium](../assets/items/828.png) |
+|  | ![Spartium](wiki/assets/items/828.png) |
 | **Item id** | `828` |
 | **Kind** | Material (12) |
 | **Classes** | all |

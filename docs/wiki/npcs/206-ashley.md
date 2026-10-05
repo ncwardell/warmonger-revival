@@ -31,7 +31,7 @@ positions:
 <!-- generated-keys: title=8bb19e type=3664ce id=4afa8f sources=3dcb13 name_key=4a7a05 title_key=f5f511 npc_title=e9cdd2 category=e1822d class_mask=da4b92 model=2a79f1 scale=aa8f28 functions=ff474b role=e9cdd2 shop=7f3541 talk_key=48ccbb portrait=71efa1 map=775bc5 x=a9df41 z=73bf7b positions=468f56 -->
 |  |  |
 |---|---|
-|  | ![Ashley](../assets/npcs/206.png) |
+|  | ![Ashley](wiki/assets/npcs/206.png) |
 | **Unit id** | `206` |
 | **Title** | Merits Costume Merchant |
 | **Category** | NPC (category 50) |

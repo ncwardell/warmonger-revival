@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=a05746 type=86a754 id=3511e9 sources=bf7626 name_key=932a3a desc_key=3f88d3 kind=da4b92 kind_name=3844d5 target=6d698f range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=ca9c27 damage_or_effect=8d75f9 icon=a71171 used_by=b11f0b -->
 |  |  |
 |---|---|
-|  | ![Guardian Avenger](../assets/skills/20017.png) |
+|  | ![Guardian Avenger](wiki/assets/skills/20017.png) |
 | **Skill id** | `20017` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 1 |

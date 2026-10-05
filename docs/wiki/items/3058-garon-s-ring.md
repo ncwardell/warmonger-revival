@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=41b8e2 type=d36ca9 id=68ffef sources=457b29 name_key=055b2a kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=cecbd1 set=c1dfd9 reinforce=92cfce icon=f5d5a1 obtained_from=269e02 -->
 |  |  |
 |---|---|
-|  | ![Garon's Ring](../assets/items/3058.png) |
+|  | ![Garon's Ring](wiki/assets/items/3058.png) |
 | **Item id** | `3058` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z35_00.dds"
 <!-- generated-keys: title=abfb6d type=c899cd id=972a67 sources=b5907d name_kr=4d1a0c terrain=361952 bounds=c44b9e size=114466 segments=405cb5 fields=bd703d minimap=0205f8 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 07 (Moonshadow Wood)](../assets/zones/35.png) |
+|  | ![minimap of Field 07 (Moonshadow Wood)](wiki/assets/zones/35.png) |
 | **Zone id** | `35` |
 | **ZoneDB name** | 필드_07 (English gloss: Field 07 (Moonshadow Wood)) |
 | **Terrain name** | `07` |
