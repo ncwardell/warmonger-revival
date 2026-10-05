@@ -2,9 +2,10 @@
 title: "Siege Minion"
 type: "skill"
 id: 4506
-status: "stub"
-missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 4506", "client: Skill_TP.cdb row 6", "gameplay: [[gameplay/pvp-and-matches]]"]
+status: "complete"
+missing: []
+sources: ["client: Skill_Base.cdb id 4506", "client: Skill_TP.cdb row 6", "gameplay: [[gameplay/pvp-and-matches]]", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "guide: [[gameplay/pvp-and-matches]] TP skills (effect text)", "notes: [[gameplay/events-and-schedules]] §7, WM 0511 and WM 1018 (cooldown 100 → 60 s)", "guide: [[gameplay/crush-mechanics]] §6 (CO: 500 TP; history)", "video: [[gameplay/video-fort-war]] §1, §4, P1 2:08 (−1,000 TP)", "image: [[gameplay/pvp-and-matches]] TP skills (damage_or_effect text; client tooltip agrees)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
+manual: ["damage_or_effect"]
 name_key: "Skill_4506"
 desc_key: "SkillComment_4506"
 kind: 1
@@ -17,7 +18,7 @@ cooldown: {"ms": 60000, "group": 0, "from": "Skill_TP"}
 effect_kind: 0
 effects:
   - {"slot": 1, "type": 449, "value": 13008, "rate": 1}
-damage_or_effect: {}
+damage_or_effect: {"text": "Summons a weak tanking siege minion; field war only"}
 icon: {"file": "Policy_01.png", "index": 35}
 used_by: []
 tp: {"row": 6, "tp_cost": 1000, "cooldown_s": 60, "need_flags": 392, "c7": 1}
@@ -25,7 +26,7 @@ observed:
   - {"tp": 1000, "cooldown_s": 100, "effect": "Summons a weak tanking minion; field war only", "source": "gameplay/pvp-and-matches line 34"}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=f5b5ca type=86a754 id=40951c sources=5b7fa0 name_key=718a6a desc_key=c8b4e8 kind=356a19 kind_name=9bc378 target=ae67d6 range=356a19 area=394af4 cost=f53c41 cooldown=c18e3b effect_kind=b6589f effects=51e4dc damage_or_effect=bf21a9 icon=35d1e3 used_by=97d170 tp=15871a observed=680686 -->
+<!-- generated-keys: title=f5b5ca type=86a754 id=40951c sources=5b7fa0 name_key=718a6a desc_key=c8b4e8 kind=356a19 kind_name=9bc378 target=ae67d6 range=356a19 area=394af4 cost=f53c41 cooldown=c18e3b effect_kind=b6589f effects=51e4dc icon=35d1e3 used_by=97d170 tp=15871a observed=680686 -->
 |  |  |
 |---|---|
 |  | ![Siege Minion](wiki/assets/skills/4506.png) |
@@ -78,19 +79,22 @@ Numbers from the gameplay pages (guides, patch notes, video), not from the clien
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- Effect: summons a weak minion that tanks for you; **field war only** (guide image and the client tooltip) ([[gameplay/pvp-and-matches]] TP skills). *image + client*
+- Patch history: made a basic (always available) TP skill and strengthened in [WM 0511](https://steamcommunity.com/games/718790/announcements/detail/3822871998312896536); cooldown 100 → **60 s** with its ability raised in [WM 1018](https://steamcommunity.com/games/718790/announcements/detail/2403126706515770404) ([[gameplay/events-and-schedules]] §7). The client has 60 s. In Crush Online the Strategy panel listed Siege Minion at 500 TP ([[gameplay/crush-mechanics]] §6). *notes*
+- Seen in play: "MISZA set a Siege Minion" and a 1,000 TP drop (5,550 → 4,550) in [[gameplay/video-fort-war]] §1, §4 ([P1 2:08](https://www.youtube.com/watch?v=XoSM3RbZon0&t=128s)). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/events-and-schedules]] §7, [[gameplay/crush-mechanics]] §6, [[gameplay/video-fort-war]] §1, §4, [[gameplay/crush-patch-notes]] 2017-03-02.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The guide image shows a 100 s cooldown (before WM 1018); the client and WM 1018 say 60 s. Client kept. Crush Online's 500 TP is history.
 
 <!-- credit:start -->
 ---

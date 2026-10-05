@@ -84,7 +84,7 @@ Speaker: [[wiki/npcs/239-floyd|Floyd]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From Floyd: 5 Bee Needle (2552) from Bees (731) and 5 Snake Leather (2551) from Cobras (732), both dropped on every kill; the tracker calls the second item "Cobra Leather" ([7:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=450s), [[gameplay/video-tutorial-walkthrough]] step 6). Panel: 3,500 exp + Helmet of Life (401) ([7:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=420s)). Turned in at [12:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=755s), [9:46](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=586s) and [5:45](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=345s). Lesson 704 (Equip Gear) starts with it ([[gameplay/video-character-creation-and-tutorial]] §3 step 7). *video*
 
 ## Behaviour
 
@@ -92,7 +92,10 @@ Speaker: [[wiki/npcs/239-floyd|Floyd]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

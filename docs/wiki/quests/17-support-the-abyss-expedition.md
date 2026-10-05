@@ -90,7 +90,7 @@ Speaker: [[wiki/nodes/10803-scout-leader|Scout Leader]] / [[wiki/nodes/10904-sco
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Freya: the Tow Chief is stirring up an uprising; meet the Scout Leader in the Abyss ([41:25](https://www.youtube.com/watch?v=s04CSN16w1s&t=2485s)). Done in The land of Greed (108) at [52:15](https://www.youtube.com/watch?v=s04CSN16w1s&t=3135s); the Scout Leader (241) stood within 6 units of Trigger 10803 ([[gameplay/video-early-quests]] §3). Panel: 180,000 exp, then 100 Potion of Health or Potion of Mana [C]. The chain continues with the class copy 80/81/82 ([[gameplay/video-early-quests]] step 21, [[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). *video*
 
 ## Behaviour
 
@@ -98,7 +98,10 @@ Speaker: [[wiki/nodes/10803-scout-leader|Scout Leader]] / [[wiki/nodes/10904-sco
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

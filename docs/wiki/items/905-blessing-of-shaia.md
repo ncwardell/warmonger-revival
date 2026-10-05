@@ -4,7 +4,7 @@ type: "item"
 id: 905
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 905"]
+sources: ["client: Item_Base.cdb id 905", "notes: [[gameplay/reinforce-and-runes]] §7 (WM 0705/0802)", "notes: [[gameplay/events-and-schedules]] §6 (WM 0809/0817/1107)"]
 name_key: "ItemName_905"
 kind: 38
 kind_name: "Premium Item"
@@ -50,7 +50,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Patch notes (WM 0705, WM 0802) turned the Mystical Potion into "Blessing of Shaia": out of combat it gives move speed +150 and mana +200; only one can be active and it does not stack ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, *notes*). The Shaia Blessing point system (WM 0809) also has a Blessing of Shaia item worth 1,000 points (2,000 from WM 1107), priced 3,000 → 1,500 (WM 0817, currency not stated) ([[gameplay/events-and-schedules|Events and schedules]] §6).
 
 ## Behaviour
 
@@ -58,11 +58,12 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §7 (WM 0705/0802)
+- notes: [[gameplay/events-and-schedules]] §6 (WM 0809/0817/1107)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Is the Shaia Blessing point item (events §6) this item or item 956 "Blessing of Shaia"?
 
 <!-- credit:start -->
 ---

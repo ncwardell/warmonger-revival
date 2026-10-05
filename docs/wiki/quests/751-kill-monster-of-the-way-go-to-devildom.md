@@ -2,14 +2,15 @@
 title: "Kill monster of The way go to devildom"
 type: "quest"
 id: 751
-status: "stub"
-missing: ["giver"]
-sources: ["client: Quest.cdb id 751", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 893"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 751", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 893", "notes: [[gameplay/patch-history]] 0329 (three repeatable Abyss quests at Athan; matching them to 749-751, which Athan turns in, is *inferred*)"]
+manual: ["giver"]
 name_key: "Quest_Title_664"
 kind: 3
 kind_name: "Free"
 level: {"min": 25, "max": 29}
-giver: null
+giver: {"npc": 207}
 turn_in: {"npc": 207}
 turn_in_maps: [120, 120, 120]
 bit: 0
@@ -31,13 +32,14 @@ rewards:
 complete_talk: 893
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=da9596 type=eb5b2b id=758a25 sources=217702 name_key=e9a54b kind=77de68 kind_name=01e781 level=23bb23 giver=2be88c turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=66acc7 stages=30caa7 objectives=6fe6bb rewards=62046f complete_talk=20b550 -->
+<!-- generated-keys: title=da9596 type=eb5b2b id=758a25 sources=217702 name_key=e9a54b kind=77de68 kind_name=01e781 level=23bb23 turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=66acc7 stages=30caa7 objectives=6fe6bb rewards=62046f complete_talk=20b550 -->
 |  |  |
 |---|---|
+|  | ![Kill monster of The way go to devildom](wiki/assets/npcs/207.png) |
 | **Quest id** | `751` |
 | **Kind** | Free (kind 3) |
 | **Level** | 25–29 |
-| **Giver** | **unknown** |
+| **Giver** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turn in** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turned in on** | [[wiki/fields/120-fortress\|Fortress]] (120) |
 | **Completion bit** | none (no bit is set: can be taken again) |
@@ -75,7 +77,7 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The WM 0329 patch added three repeatable Abyss quests at Athan ([[gameplay/patch-history]]); with 749 and 750 (seen in video) this is the third, for The way go to devildom. Not seen in a video. *patch notes + inferred*
 
 ## Behaviour
 
@@ -83,7 +85,9 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/patch-history]]
 
 ## Open questions
 

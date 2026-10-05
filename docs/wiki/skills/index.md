@@ -8,7 +8,7 @@ title: "Skills"
 
 Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the hero set), hero transform skills, war TP skills, skills cast by items, and unused developer rows. Damage numbers are not in the client: the effect slots and the tooltip formula are the best evidence of what a skill did.
 
-675 pages: 395 complete, 0 partial, 280 stub. Back to the [[wiki/index|game wiki]].
+675 pages: 402 complete, 21 partial, 252 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -37,7 +37,7 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 |  | 27 | [[wiki/skills/27\|Skill 27]] | stub | 1 |
 |  | 28 | [[wiki/skills/28\|Skill 28]] | stub | 1 |
 |  | 29 | [[wiki/skills/29\|Skill 29]] | stub | 2 |
-| ![](wiki/assets/skills/30.png) | 30 | [[wiki/skills/30-return\|Return]] | stub | 3 |
+| ![](wiki/assets/skills/30.png) | 30 | [[wiki/skills/30-return\|Return]] | partial | 3 |
 | ![](wiki/assets/skills/31.png) | 31 | [[wiki/skills/31-return\|Return]] | stub | 3 |
 | ![](wiki/assets/skills/32.png) | 32 | [[wiki/skills/32-return\|Return]] | stub | 3 |
 |  | 33 | [[wiki/skills/33\|Skill 33]] | stub | 2 |
@@ -130,31 +130,31 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 |  | 4205 | [[wiki/skills/4205\|Skill 4205]] | stub | 1 |
 | ![](wiki/assets/skills/4500.png) | 4500 | [[wiki/skills/4500-shield-recovery\|Shield recovery]] | complete | 0 |
 | ![](wiki/assets/skills/4501.png) | 4501 | [[wiki/skills/4501-shield-recovery\|Shield recovery]] | complete | 0 |
-| ![](wiki/assets/skills/4502.png) | 4502 | [[wiki/skills/4502-remote-bomb\|Remote Bomb]] | stub | 1 |
+| ![](wiki/assets/skills/4502.png) | 4502 | [[wiki/skills/4502-remote-bomb\|Remote Bomb]] | complete | 0 |
 | ![](wiki/assets/skills/4503.png) | 4503 | [[wiki/skills/4503\|Skill 4503]] | stub | 2 |
-| ![](wiki/assets/skills/4504.png) | 4504 | [[wiki/skills/4504-nexus-remote-bomb\|Nexus Remote Bomb]] | stub | 1 |
+| ![](wiki/assets/skills/4504.png) | 4504 | [[wiki/skills/4504-nexus-remote-bomb\|Nexus Remote Bomb]] | complete | 0 |
 | ![](wiki/assets/skills/4505.png) | 4505 | [[wiki/skills/4505\|Skill 4505]] | stub | 2 |
-| ![](wiki/assets/skills/4506.png) | 4506 | [[wiki/skills/4506-siege-minion\|Siege Minion]] | stub | 1 |
+| ![](wiki/assets/skills/4506.png) | 4506 | [[wiki/skills/4506-siege-minion\|Siege Minion]] | complete | 0 |
 | ![](wiki/assets/skills/4507.png) | 4507 | [[wiki/skills/4507-fortified\|Fortified]] | complete | 0 |
 | ![](wiki/assets/skills/4509.png) | 4509 | [[wiki/skills/4509-i-ll-be-back\|I'll be back!]] | complete | 0 |
-| ![](wiki/assets/skills/4510.png) | 4510 | [[wiki/skills/4510-recovery-shot\|Recovery Shot]] | stub | 1 |
+| ![](wiki/assets/skills/4510.png) | 4510 | [[wiki/skills/4510-recovery-shot\|Recovery Shot]] | partial | 1 |
 | ![](wiki/assets/skills/4511.png) | 4511 | [[wiki/skills/4511-recovery-shot\|Recovery shot]] | stub | 2 |
-| ![](wiki/assets/skills/4512.png) | 4512 | [[wiki/skills/4512-fire-support\|Fire Support]] | stub | 1 |
+| ![](wiki/assets/skills/4512.png) | 4512 | [[wiki/skills/4512-fire-support\|Fire Support]] | partial | 1 |
 | ![](wiki/assets/skills/4513.png) | 4513 | [[wiki/skills/4513-fire-support\|Fire Support]] | stub | 2 |
-| ![](wiki/assets/skills/4514.png) | 4514 | [[wiki/skills/4514-blind\|Blind]] | stub | 1 |
+| ![](wiki/assets/skills/4514.png) | 4514 | [[wiki/skills/4514-blind\|Blind]] | partial | 1 |
 | ![](wiki/assets/skills/4515.png) | 4515 | [[wiki/skills/4515-blind-attack\|Blind Attack]] | stub | 2 |
-| ![](wiki/assets/skills/4516.png) | 4516 | [[wiki/skills/4516-create-a-portal\|Create a Portal]] | stub | 1 |
+| ![](wiki/assets/skills/4516.png) | 4516 | [[wiki/skills/4516-create-a-portal\|Create a Portal]] | partial | 1 |
 | ![](wiki/assets/skills/4517.png) | 4517 | [[wiki/skills/4517-freeze\|Freeze]] | stub | 2 |
-| ![](wiki/assets/skills/4518.png) | 4518 | [[wiki/skills/4518-freeze\|Freeze]] | stub | 1 |
-| ![](wiki/assets/skills/4519.png) | 4519 | [[wiki/skills/4519-highly-concentrated-bomb\|Highly Concentrated Bomb]] | stub | 1 |
+| ![](wiki/assets/skills/4518.png) | 4518 | [[wiki/skills/4518-freeze\|Freeze]] | partial | 1 |
+| ![](wiki/assets/skills/4519.png) | 4519 | [[wiki/skills/4519-highly-concentrated-bomb\|Highly Concentrated Bomb]] | partial | 1 |
 | ![](wiki/assets/skills/4520.png) | 4520 | [[wiki/skills/4520-highly-concentrated-bomb\|Highly Concentrated Bomb]] | stub | 2 |
-| ![](wiki/assets/skills/4521.png) | 4521 | [[wiki/skills/4521-powerful-remote-bomb\|Powerful Remote Bomb]] | stub | 1 |
+| ![](wiki/assets/skills/4521.png) | 4521 | [[wiki/skills/4521-powerful-remote-bomb\|Powerful Remote Bomb]] | complete | 0 |
 | ![](wiki/assets/skills/4522.png) | 4522 | [[wiki/skills/4522\|Skill 4522]] | stub | 2 |
-| ![](wiki/assets/skills/4523.png) | 4523 | [[wiki/skills/4523-powerful-nexus-remote-bomb\|Powerful Nexus Remote Bomb]] | stub | 1 |
+| ![](wiki/assets/skills/4523.png) | 4523 | [[wiki/skills/4523-powerful-nexus-remote-bomb\|Powerful Nexus Remote Bomb]] | complete | 0 |
 | ![](wiki/assets/skills/4524.png) | 4524 | [[wiki/skills/4524\|Skill 4524]] | stub | 2 |
-| ![](wiki/assets/skills/4525.png) | 4525 | [[wiki/skills/4525-powerful-remote-bomb\|Powerful Remote Bomb]] | stub | 1 |
+| ![](wiki/assets/skills/4525.png) | 4525 | [[wiki/skills/4525-powerful-remote-bomb\|Powerful Remote Bomb]] | complete | 0 |
 | ![](wiki/assets/skills/4526.png) | 4526 | [[wiki/skills/4526\|Skill 4526]] | stub | 2 |
-| ![](wiki/assets/skills/4527.png) | 4527 | [[wiki/skills/4527-remote-bomb\|Remote Bomb]] | stub | 1 |
+| ![](wiki/assets/skills/4527.png) | 4527 | [[wiki/skills/4527-remote-bomb\|Remote Bomb]] | complete | 0 |
 | ![](wiki/assets/skills/4528.png) | 4528 | [[wiki/skills/4528\|Skill 4528]] | stub | 2 |
 | ![](wiki/assets/skills/4701.png) | 4701 | [[wiki/skills/4701\|초록]] | stub | 2 |
 | ![](wiki/assets/skills/4702.png) | 4702 | [[wiki/skills/4702\|초록]] | stub | 2 |
@@ -202,7 +202,7 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 | ![](wiki/assets/skills/5034.png) | 5034 | [[wiki/skills/5034-arrow-of-destruction\|Arrow of Destruction]] | complete | 0 |
 | ![](wiki/assets/skills/5035.png) | 5035 | [[wiki/skills/5035-death-from-above\|Death from Above]] | stub | 1 |
 | ![](wiki/assets/skills/5036.png) | 5036 | [[wiki/skills/5036-soul-infestation\|Soul Infestation]] | complete | 0 |
-|  | 5037 | [[wiki/skills/5037-soul-infestation\|Soul Infestation]] | stub | 1 |
+|  | 5037 | [[wiki/skills/5037-soul-infestation\|Soul Infestation]] | partial | 1 |
 | ![](wiki/assets/skills/5038.png) | 5038 | [[wiki/skills/5038-aura-of-demise\|Aura of Demise]] | complete | 0 |
 |  | 5039 | [[wiki/skills/5039-aura-of-demise\|Aura of Demise]] | stub | 2 |
 | ![](wiki/assets/skills/5040.png) | 5040 | [[wiki/skills/5040-severe-blow\|Severe Blow]] | complete | 0 |
@@ -230,7 +230,7 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 | ![](wiki/assets/skills/5062.png) | 5062 | [[wiki/skills/5062-meteor\|Meteor]] | complete | 0 |
 | ![](wiki/assets/skills/5063.png) | 5063 | [[wiki/skills/5063-mystic-arrow\|Mystic Arrow]] | complete | 0 |
 | ![](wiki/assets/skills/5064.png) | 5064 | [[wiki/skills/5064-essence-manipulation\|Essence Manipulation]] | complete | 0 |
-| ![](wiki/assets/skills/5065.png) | 5065 | [[wiki/skills/5065-vision-move\|Vision Move]] | stub | 1 |
+| ![](wiki/assets/skills/5065.png) | 5065 | [[wiki/skills/5065-vision-move\|Vision Move]] | partial | 1 |
 | ![](wiki/assets/skills/5066.png) | 5066 | [[wiki/skills/5066-essence-wave\|Essence Wave]] | complete | 0 |
 | ![](wiki/assets/skills/5067.png) | 5067 | [[wiki/skills/5067-crushing-blow\|Crushing Blow]] | complete | 0 |
 | ![](wiki/assets/skills/5068.png) | 5068 | [[wiki/skills/5068-head-butt\|Head Butt]] | complete | 0 |
@@ -239,7 +239,7 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 | ![](wiki/assets/skills/5102.png) | 5102 | [[wiki/skills/5102-ankle-aim\|Ankle Aim]] | complete | 0 |
 | ![](wiki/assets/skills/5103.png) | 5103 | [[wiki/skills/5103-rapid-reload\|Rapid Reload]] | complete | 0 |
 | ![](wiki/assets/skills/5104.png) | 5104 | [[wiki/skills/5104-entangling-bullet\|Entangling Bullet]] | complete | 0 |
-| ![](wiki/assets/skills/5105.png) | 5105 | [[wiki/skills/5105-suppressing-fire\|Suppressing Fire]] | stub | 1 |
+| ![](wiki/assets/skills/5105.png) | 5105 | [[wiki/skills/5105-suppressing-fire\|Suppressing Fire]] | partial | 1 |
 |  | 5106 | [[wiki/skills/5106-bullet-shower\|Bullet shower]] | stub | 1 |
 | ![](wiki/assets/skills/5107.png) | 5107 | [[wiki/skills/5107-nimble-pursuit\|Nimble Pursuit]] | complete | 0 |
 | ![](wiki/assets/skills/5108.png) | 5108 | [[wiki/skills/5108-triggers-nimble-pursuit\|Triggers Nimble Pursuit.]] | stub | 2 |
@@ -334,11 +334,11 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 |  | 5202 | [[wiki/skills/5202\|Skill 5202]] | stub | 1 |
 |  | 5203 | [[wiki/skills/5203\|Skill 5203]] | stub | 1 |
 |  | 5204 | [[wiki/skills/5204\|Skill 5204]] | stub | 1 |
-| ![](wiki/assets/skills/5213.png) | 5213 | [[wiki/skills/5213-flare\|Flare]] | stub | 2 |
-| ![](wiki/assets/skills/5218.png) | 5218 | [[wiki/skills/5218-pyrotechnics\|Pyrotechnics]] | stub | 3 |
+| ![](wiki/assets/skills/5213.png) | 5213 | [[wiki/skills/5213-flare\|Flare]] | partial | 2 |
+| ![](wiki/assets/skills/5218.png) | 5218 | [[wiki/skills/5218-pyrotechnics\|Pyrotechnics]] | partial | 3 |
 | ![](wiki/assets/skills/5219.png) | 5219 | [[wiki/skills/5219-dark-matter\|Dark Matter]] | complete | 0 |
-| ![](wiki/assets/skills/5220.png) | 5220 | [[wiki/skills/5220-ward\|Ward]] | stub | 2 |
-| ![](wiki/assets/skills/5221.png) | 5221 | [[wiki/skills/5221-stealth-detecting-ward\|Stealth Detecting Ward]] | stub | 2 |
+| ![](wiki/assets/skills/5220.png) | 5220 | [[wiki/skills/5220-ward\|Ward]] | partial | 2 |
+| ![](wiki/assets/skills/5221.png) | 5221 | [[wiki/skills/5221-stealth-detecting-ward\|Stealth Detecting Ward]] | partial | 2 |
 | ![](wiki/assets/skills/5223.png) | 5223 | [[wiki/skills/5223-trap\|Trap]] | stub | 2 |
 | ![](wiki/assets/skills/5224.png) | 5224 | [[wiki/skills/5224-triggering-trap\|Triggering Trap]] | stub | 1 |
 | ![](wiki/assets/skills/5225.png) | 5225 | [[wiki/skills/5225-blind\|Blind]] | stub | 1 |
@@ -357,17 +357,17 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 | ![](wiki/assets/skills/5272.png) | 5272 | [[wiki/skills/5272-flame-armor\|Flame armor]] | complete | 0 |
 | ![](wiki/assets/skills/5273.png) | 5273 | [[wiki/skills/5273\|Skill 5273]] | stub | 1 |
 | ![](wiki/assets/skills/5274.png) | 5274 | [[wiki/skills/5274\|Skill 5274]] | stub | 1 |
-| ![](wiki/assets/skills/5275.png) | 5275 | [[wiki/skills/5275\|Skill 5275]] | stub | 1 |
-| ![](wiki/assets/skills/5276.png) | 5276 | [[wiki/skills/5276\|Skill 5276]] | stub | 1 |
+| ![](wiki/assets/skills/5275.png) | 5275 | [[wiki/skills/5275\|Skill 5275]] | partial | 1 |
+| ![](wiki/assets/skills/5276.png) | 5276 | [[wiki/skills/5276\|Skill 5276]] | partial | 1 |
 | ![](wiki/assets/skills/5277.png) | 5277 | [[wiki/skills/5277-mother-nature-s-blessing\|Mother Nature's Blessing]] | complete | 0 |
 | ![](wiki/assets/skills/5278.png) | 5278 | [[wiki/skills/5278-explosion\|Explosion]] | stub | 1 |
 | ![](wiki/assets/skills/5279.png) | 5279 | [[wiki/skills/5279-blessing-of-light\|Blessing of Light]] | complete | 0 |
 | ![](wiki/assets/skills/5280.png) | 5280 | [[wiki/skills/5280-essential-blessing\|Essential Blessing]] | complete | 0 |
-| ![](wiki/assets/skills/5281.png) | 5281 | [[wiki/skills/5281-savior-s-gift\|Savior's Gift]] | stub | 1 |
+| ![](wiki/assets/skills/5281.png) | 5281 | [[wiki/skills/5281-savior-s-gift\|Savior's Gift]] | partial | 1 |
 | ![](wiki/assets/skills/5282.png) | 5282 | [[wiki/skills/5282-savior-s-gift\|Savior's Gift]] | stub | 1 |
 | ![](wiki/assets/skills/5283.png) | 5283 | [[wiki/skills/5283-mystic-arrow\|Mystic Arrow]] | complete | 0 |
 | ![](wiki/assets/skills/5284.png) | 5284 | [[wiki/skills/5284-essence-manipulation\|Essence Manipulation]] | complete | 0 |
-| ![](wiki/assets/skills/5285.png) | 5285 | [[wiki/skills/5285-vision-move\|Vision Move]] | stub | 1 |
+| ![](wiki/assets/skills/5285.png) | 5285 | [[wiki/skills/5285-vision-move\|Vision Move]] | partial | 1 |
 | ![](wiki/assets/skills/5286.png) | 5286 | [[wiki/skills/5286-essence-wave\|Essence Wave]] | complete | 0 |
 | ![](wiki/assets/skills/5287.png) | 5287 | [[wiki/skills/5287-poisonous-blade\|Poisonous Blade]] | complete | 0 |
 | ![](wiki/assets/skills/5288.png) | 5288 | [[wiki/skills/5288-poisonous-blade-active\|Poisonous Blade : Active]] | stub | 2 |
@@ -479,7 +479,7 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 | ![](wiki/assets/skills/10062.png) | 10062 | [[wiki/skills/10062-meteor\|Meteor]] | complete | 0 |
 | ![](wiki/assets/skills/10063.png) | 10063 | [[wiki/skills/10063-mystic-arrow\|Mystic Arrow]] | complete | 0 |
 | ![](wiki/assets/skills/10064.png) | 10064 | [[wiki/skills/10064-essence-manipulation\|Essence Manipulation]] | complete | 0 |
-| ![](wiki/assets/skills/10065.png) | 10065 | [[wiki/skills/10065-vision-move\|Vision Move]] | stub | 1 |
+| ![](wiki/assets/skills/10065.png) | 10065 | [[wiki/skills/10065-vision-move\|Vision Move]] | partial | 1 |
 | ![](wiki/assets/skills/10066.png) | 10066 | [[wiki/skills/10066-essence-wave\|Essence Wave]] | complete | 0 |
 | ![](wiki/assets/skills/10067.png) | 10067 | [[wiki/skills/10067-crushing-blow\|Crushing Blow]] | complete | 0 |
 | ![](wiki/assets/skills/10068.png) | 10068 | [[wiki/skills/10068-head-butt\|Head Butt]] | complete | 0 |
@@ -513,7 +513,7 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 | ![](wiki/assets/skills/10278.png) | 10278 | [[wiki/skills/10278-explosion\|Explosion]] | stub | 1 |
 | ![](wiki/assets/skills/10279.png) | 10279 | [[wiki/skills/10279-blessing-of-light\|Blessing of Light]] | complete | 0 |
 | ![](wiki/assets/skills/10280.png) | 10280 | [[wiki/skills/10280-essential-blessing\|Essential Blessing]] | complete | 0 |
-| ![](wiki/assets/skills/10281.png) | 10281 | [[wiki/skills/10281-savior-s-gift\|Savior's Gift]] | stub | 1 |
+| ![](wiki/assets/skills/10281.png) | 10281 | [[wiki/skills/10281-savior-s-gift\|Savior's Gift]] | partial | 1 |
 | ![](wiki/assets/skills/10282.png) | 10282 | [[wiki/skills/10282-savior-s-gift\|Savior's Gift]] | stub | 1 |
 | ![](wiki/assets/skills/10351.png) | 10351 | [[wiki/skills/10351-divine-recovery\|Divine Recovery]] | complete | 0 |
 | ![](wiki/assets/skills/10352.png) | 10352 | [[wiki/skills/10352-protection-of-justice\|Protection of Justice]] | complete | 0 |
@@ -559,7 +559,7 @@ Every skill in the client's `Skill_Base` table: weapon skills (Q/W/E/R and the h
 | ![](wiki/assets/skills/20006.png) | 20006 | [[wiki/skills/20006-heaven-and-earth\|Heaven and Earth]] | complete | 0 |
 | ![](wiki/assets/skills/20007.png) | 20007 | [[wiki/skills/20007-sweep\|Sweep]] | complete | 0 |
 | ![](wiki/assets/skills/20008.png) | 20008 | [[wiki/skills/20008-scream-of-the-dead\|Scream of the Dead]] | complete | 0 |
-| ![](wiki/assets/skills/20009.png) | 20009 | [[wiki/skills/20009-tomb-of-the-dead\|Tomb of the Dead]] | stub | 1 |
+| ![](wiki/assets/skills/20009.png) | 20009 | [[wiki/skills/20009-tomb-of-the-dead\|Tomb of the Dead]] | partial | 1 |
 | ![](wiki/assets/skills/20010.png) | 20010 | [[wiki/skills/20010-tomb-of-the-dead\|Tomb of the Dead]] | stub | 1 |
 | ![](wiki/assets/skills/20011.png) | 20011 | [[wiki/skills/20011-guardian-avenger\|Guardian Avenger]] | complete | 0 |
 | ![](wiki/assets/skills/20012.png) | 20012 | [[wiki/skills/20012-aura-of-death\|Aura of Death]] | complete | 0 |

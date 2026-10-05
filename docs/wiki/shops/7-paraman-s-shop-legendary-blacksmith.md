@@ -4,7 +4,7 @@ type: "shop"
 id: 7
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 7", "client: UnitDB.cdb u16@a2 = 7 (units 336)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 7", "client: UnitDB.cdb u16@a2 = 7 (units 336)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "client: [[gameplay/consumables]] §4 (Training Camp Owen 337 craft list 8, Odin list 6 = Item_Make category 0 copy, passion converter category 7)"]
 npc: [336]
 stock:
   - {"slot": 0, "item": 601, "count": 1, "p1": 0, "p2": 0}
@@ -91,7 +91,7 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Opened by unit 336 (Paraman, Legendary Blacksmith). The Training Camp has its own passion converter, `Item_Make` category 7, which needs 220 instead of 200 fragments (*client*, [[gameplay/consumables|consumables]] §4). This list's stock is exactly the passion fragments (601, 611, 1900), which fits that role (*guess*). The Fortress Paraman (322) crafts superior Skeleton King's weapons ([[gameplay/maps-and-dungeons|maps]] §5).
 
 ## Behaviour
 
@@ -99,11 +99,11 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/consumables]] §4 (Training Camp Owen 337 craft list 8, Odin list 6 = Item_Make category 0 copy, passion converter category 7) (*client*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- As with shops 6 and 8, the `UnitDB` value 7 may be a craft-list id rather than a shop ([[gameplay/consumables|consumables]] §4) (*guess*). No source places unit 336.
 
 <!-- credit:start -->
 ---

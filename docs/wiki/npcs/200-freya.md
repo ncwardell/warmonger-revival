@@ -93,19 +93,28 @@ Dialogue rows (`QuestTalk`; full text on the quest pages):
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Freya is the Fortress's Oracle of Knowledge. A screenshot puts her on the plaza just south of the central pillar, with the mail box icon to the east, the auction icon just north and the blue portal icon just south ([[gameplay/precept-shop|Precept shop]] §5). *image*
+- Her shop (client `Npc_Carry` 289) sells only the precept scrolls 1201–1204 and 1251–1253, so she is the precept seller ([[gameplay/precept-shop|Precept shop]] §1). *client*. Crush Online prices in October 2016 were 4,650 / 9,300 / 18,600 gold for D / C / B ([[gameplay/crush-mechanics|Crush Online mechanics]] §1). Precept quests give no EXP ([[gameplay/warmonger-forum|Warmonger forum]] §4). *forum*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Main-story quests in the April 2018 video: she takes "An urgent message" (12), gives "Battle preparations" (13 → 14: talk to Cassia, craft 100 Potion of Health [C] at Owen, return), "Support the Abyss expedition" (17), "Meeting Freya" (19, sends the player to Bernice in the Castle) and "[Group] Ancient Ghosts" (21). After quest 20 she shows the cash-item features ([[gameplay/video-early-quests|Video notes: first session]] §2, [38:09](https://www.youtube.com/watch?v=s04CSN16w1s&t=2289s), [38:32](https://www.youtube.com/watch?v=s04CSN16w1s&t=2312s), [56:57](https://www.youtube.com/watch?v=s04CSN16w1s&t=3417s), [1:05:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=3920s)). *video*
+- Crush-era screenshots show her giving "Defensive aggression" (kill Tempest Fisher or Slayer Komodo, then talk to Freya), a quest that is not in the client's `Quest.tsv` ([[gameplay/lords-of-the-land|Lords of the Land]] §5, [[gameplay/precept-shop|Precept shop]] §6). *image*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/precept-shop|Precept shop]]
+- [[gameplay/crush-mechanics|Crush Online mechanics]]
+- [[gameplay/warmonger-forum|Warmonger forum]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/lords-of-the-land|Lords of the Land]]
+- [[gameplay/server-rules|Server rules]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Precept prices: 4,650 / 9,300 / 18,600 gold in Crush Online (2016) against 10k / 25k / 50k in the client `Item_Base` ([[gameplay/server-rules|Server rules]], source hunt). No Warmonger price is known.
 
 <!-- credit:start -->
 ---

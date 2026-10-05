@@ -4,7 +4,7 @@ type: "item"
 id: 945
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 945"]
+sources: ["client: Item_Base.cdb id 945", "image: [[gameplay/progression-and-economy]] §4 (Wren prices)", "image: [[gameplay/items-and-crafting]] §3"]
 name_key: "ItemName_945"
 kind: 46
 kind_name: "Auto decomposition hammer"
@@ -49,7 +49,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Wren sold it for **158,400 gold** in spring 2018 (base 20,000, × 7.92 shop rate) ([[gameplay/progression-and-economy|Progression and economy]] §4, *image*). Auto-decomposition modes: not used / gemstone / below 1, 2 or 3 tier, with a durability-like gauge ([[gameplay/items-and-crafting|Items and crafting]] §3).
 
 ## Behaviour
 
@@ -57,7 +57,8 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/progression-and-economy]] §4 (Wren prices)
+- image: [[gameplay/items-and-crafting]] §3
 
 ## Open questions
 

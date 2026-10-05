@@ -90,7 +90,7 @@ Speaker: [[wiki/npcs/201-shaia|Shaia]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+In the walkthrough video Frei offers this copy after quest 100 is handed in ([20:20](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1220s), dialogue 637): she names the first challenge, hunting the Chepa leaders, and the tracker then reads "Talk to Shaia". Shaia completes it and gives quest 7 ([20:55](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1255s), [[gameplay/video-tutorial-walkthrough]] steps 16–17). The other two videos got quest 6 instead ([[gameplay/video-early-quests]] step 7, [[gameplay/video-character-creation-and-tutorial]] §3 step 11). *video*
 
 ## Behaviour
 
@@ -98,11 +98,15 @@ Speaker: [[wiki/npcs/201-shaia|Shaia]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Quests 6 and 45 share completion bit 6. Which one the original server gave, and when, differed between the videos ([[gameplay/video-tutorial-walkthrough]] step 16, [[gameplay/video-character-creation-and-tutorial]] §3 step 11). *video*
 
 <!-- credit:start -->
 ---

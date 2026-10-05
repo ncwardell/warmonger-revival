@@ -4,7 +4,7 @@ type: "skill"
 id: 20001
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 20001"]
+sources: ["client: Skill_Base.cdb id 20001", "guide: [[gameplay/classes-and-legions]] §1 (hero usable only at level 30)", "notes: [[gameplay/classes-and-legions]] §5 Heroes, [[gameplay/events-and-schedules]] §9, [[gameplay/patch-history]] Heroes (WM 0621 cooldown 10 → 120 s, 0402 durability, 0628 gear share, 1107 Innocence Crystal)", "video: [[gameplay/video-fort-war]] §1 Hero form, P2 0:07 (HP/MP ×2.2, HP 50 % on transform, ≥ 8.5 min, X countdown ~10 s)"]
 name_key: "Skill_20001"
 desc_key: "SkillComment_20001"
 kind: 1
@@ -56,7 +56,10 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Hero transformation (key X). Heroes are unlocked from gacha hero pieces and usable only at the max level 30 ([[gameplay/classes-and-legions]] §1, guides). *guide*
+- Patch history: transformation cooldown 10 → **120 s** ([WM 0621](https://steamcommunity.com/games/718790/announcements/detail/2499943313629707204)); hero durability 24 → 240 ([WM 0402](https://steamcommunity.com/games/718790/announcements/detail/2383968106583377018)); a hero gets a share of the gear stats, 35 % at T1+0, 45 % at T1+15, 65 % at T2+10, 100 % at T3+15 ([WM 0628](https://steamcommunity.com/games/718790/announcements/detail/2499943313654890838)); Innocence Crystal durability 1,500, −5 per second while transformed, no level limit ([WM 1107](https://steamcommunity.com/games/718790/announcements/detail/2423394805992652770)) ([[gameplay/classes-and-legions]] §5 Heroes, [[gameplay/events-and-schedules]] §9, [[gameplay/patch-history]] Heroes). *notes*
+- Dark Knight Skull hero balance: passive cooldown fixed at 300 s ([WM 0615](https://steamcommunity.com/games/718790/announcements/detail/2842216343262999426)), see [[wiki/skills/20000-dark-knight-skull-passive|20000]] ([[gameplay/classes-and-legions]] §5 Heroes). *notes*
+- Seen in play in [[gameplay/video-fort-war]] §1 Hero form ([P2 0:07](https://www.youtube.com/watch?v=6_z6CUpZj30&t=7s)): max HP / MP went from 7,282 / 1,660 to 16,214 / 3,645 (×2.2); HP was set to exactly 50 % of the new max and MP to 25 %; the form lasted at least 8.5 min of heavy fighting; the X slot then counted down from about 10 s. *video*
 
 ## Behaviour
 
@@ -64,11 +67,12 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §1, §5 Heroes, [[gameplay/events-and-schedules]] §9, [[gameplay/patch-history]] Heroes, [[gameplay/video-fort-war]] §1.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Cooldown: the June 2018 video (uploaded 24 Jun, three days after WM 0621) shows the X slot counting down from about 10 s after transforming, while WM 0621 and this client row say 120 s. The video may predate the patch. Client kept.
+- Hero stats: observed max HP 16,214 is not base 7,282 + `HeroData` hp 10,890, so the stat formula is unknown ([[gameplay/video-fort-war]] §5).
 
 <!-- credit:start -->
 ---

@@ -4,10 +4,6 @@ type: "monster"
 id: 711
 status: "partial"
 missing: ["attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops"]
-hp: 400
-level: 5
-spawns: [{"field": 89, "x": 354.0, "z": 3750.0, "count": 1}]
-server_policy_source: "design: prototype HP, level and exact spawn; north-west Training Ground is supported by video-tutorial-walkthrough step 18; point checked on the owned-client navmesh"
 sources: ["client: UnitDB.cdb id 711", "client: Quest.cdb kill objectives (quests 7, 757, 762, 1023)", "design: 400 HP, level 5 and exact spawn chosen for the quest-test server; see [[testing]]", "video: [[gameplay/video-tutorial-walkthrough]] step 18, north-west Training Ground clearing; exact point checked on owned-client navmesh"]
 name_key: "UnitName_711"
 category: 1
@@ -28,6 +24,11 @@ quest_targets:
 quest_drops:
   - {"quest": 762, "item": 2588, "rate": 50, "need": 1}
 spawn_fields: [89, 93, 97, 123]
+hp: 400
+level: 5
+spawns:
+  - {"field": 89, "x": 354.0, "z": 3750.0, "count": 1}
+server_policy_source: "design: prototype HP, level and exact spawn; north-west Training Ground is supported by video-tutorial-walkthrough step 18; point checked on the owned-client navmesh"
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=8184f6 type=9bbc46 id=7919ae sources=fe12e5 name_key=2e4981 category=356a19 class_mask=356a19 kill_group=d5483a model=632667 model_name=aae49c model_path=baa448 scale=da4b92 radius=356a19 projectile=091d03 sounds=8b163d quest_targets=ea3b97 quest_drops=e2f35d spawn_fields=31c28e -->
@@ -49,8 +50,8 @@ None of these is in the client; they were server data. Fill them in the front ma
 
 | field | value |
 |---|---|
-| hp | **missing** |
-| level | **missing** |
+| hp | 400 |
+| level | 5 |
 | attack | **missing** |
 | armor | **missing** |
 | magic_resist | **missing** |
@@ -60,7 +61,13 @@ None of these is in the client; they were server data. Fill them in the front ma
 | kill_exp | **missing** |
 | kill_gold | **missing** |
 | drops | **missing** |
-| spawns | **missing** |
+| spawns | 1 entries (below) |
+
+### Spawns
+
+| field | x | z | count | respawn s |
+|---|---|---|---|---|
+| [[wiki/fields/89-training-ground\|Training Ground]] | 354.0 | 3750.0 | 1 |  |
 
 ### Quests
 
@@ -119,15 +126,15 @@ runtime fields; the front matter and this note contain the current test values.
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Stands among normal Chepa Warriors and Archers in the north-west clearing of the Training Ground; each is a single kill for quest 7 (video, [[gameplay/video-tutorial-walkthrough]] step 18 at [21:50](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1310s)). Shaia's dialogue says the Chepa leaders are "in the north"; in the Erion copy both died in the round stone arena in the north of the Training Ground (video, [[gameplay/video-character-creation-and-tutorial]] §3 step 15 at [13:10](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=790s)). The charmanmugen video calls the place the Training Ground's spiral circle (video, [[gameplay/video-early-quests]] §2 item 7).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] step 18 and § Monsters and damage; [[gameplay/video-character-creation-and-tutorial]] §3; [[gameplay/video-early-quests]] §2
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- No source shows this officer's HP, level or damage: the videos show only bars ([[gameplay/video-tutorial-walkthrough]] § Monsters and damage). The 400 HP / level 5 in the front matter remain test values.
 
 <!-- credit:start -->
 ---

@@ -77,7 +77,7 @@ Stages (`flag1..5` = [1, 2, 3, 4, 5]): objectives unlock in steps; with the firs
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Monthly Boss Hunt ([[gameplay/progression-and-economy]] §2, *image*). The WM 1107 patch cut it from 100 to 50 bosses ([[gameplay/events-and-schedules]], [[gameplay/server-rules]]); the client row asks for 50. *patch notes + client*
 
 ## Behaviour
 
@@ -85,11 +85,15 @@ Stages (`flag1..5` = [1, 2, 3, 4, 5]): objectives unlock in steps; with the firs
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
+- [[gameplay/events-and-schedules]]
+- [[gameplay/server-rules]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The strategy guide's 100 bosses is the pre-1107 value ([[gameplay/progression-and-economy]] §2); the client's 50 is kept.
 
 <!-- credit:start -->
 ---

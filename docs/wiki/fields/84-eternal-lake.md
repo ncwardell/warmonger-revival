@@ -2,9 +2,9 @@
 title: "Eternal Lake"
 type: "field"
 id: 84
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 84", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 84"]
+sources: ["client: SceneList.cdb id 84", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 84", "video: [[gameplay/video-fort-war]] §2-§3 (gate 941 to field 14; world-map war label); player: [[gameplay/crush-patch-notes]]"]
 name_key: "FieldName_84"
 kind: "land"
 scene_type: 2
@@ -82,7 +82,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Gate 941 at (3760.31, 673.16) in Eternal River - Upper Region (14) leads here; the June 2018 war panel for that front read "Eternal Lake" ([[gameplay/video-fort-war|fort-war video notes]] §2-§3). A Crush patch fixed Eternal Lake being computed as a T8 dungeon ([[gameplay/crush-patch-notes]]). *client + video + player*
 
 ## Behaviour
 

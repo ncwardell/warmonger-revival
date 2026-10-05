@@ -4,7 +4,7 @@ type: "zone"
 id: 140
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 140", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 140", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "video + client: [[gameplay/video-dungeon-run]] §5 (Crush 2016 minimap = 256-unit square centred on this zone; Trigger rows confirmed)"]
 name_kr: "필드던전_04(유령)"
 terrain: "FieldDungeon_04"
 bounds: {"x0": 1824, "z0": 1792, "x1": 2015, "z1": 2047}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The minimap texture covers a 256 × 256 square centred on this 192 × 256 zone (x 1792-2048, z 1792-2048); every gathering icon in a 2016 Crush video matched a `Trigger` row of field 124 within about 5 units ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5). *video + client*
 
 ## Behaviour
 

@@ -4,7 +4,7 @@ type: "field"
 id: 120
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 120", "doc: gameplay/npc-locations §2 (Fortress = ZoneDB 103-105, one per nation)", "client: Teleport_List.cdb field 120", "client: Quest.cdb (quests and objectives in field 120)", "doc: gameplay/npc-locations § 3. Fortress (field 120)"]
+sources: ["client: SceneList.cdb id 120", "doc: gameplay/npc-locations §2 (Fortress = ZoneDB 103-105, one per nation)", "client: Teleport_List.cdb field 120", "client: Quest.cdb (quests and objectives in field 120)", "doc: gameplay/npc-locations § 3. Fortress (field 120)", "guide: [[gameplay/arena-ranking-rewards]] 'Battle Arena NPC stands on the top/middle of a Fortress' (Crush Online 2016) + client unit 240 (Arena NPC)", "video: [[gameplay/video-tutorial-walkthrough]] §1 step 31 (Nexus arrival beside Haley), video", "video: [[gameplay/video-early-quests]] §1 (Haley destinations and prices), video", "image: [[gameplay/maps-and-dungeons]] §1 and §5 (teleporter prices, fortress portal, fort counts), image", "video: [[gameplay/video-fort-war]] §1 (return to own legion's fort after a siege), video"]
 name_key: "FieldName_120"
 kind: "town"
 scene_type: 1
@@ -23,12 +23,12 @@ connections:
   - {"to": 103, "gate": 1901, "to_gate": 0}
   - {"to": 105, "gate": 1902, "to_gate": 0}
   - {"to": 107, "gate": 1903, "to_gate": 0}
-npcs: [99, 200, 204, 205, 207, 208, 210, 212, 213, 214, 217, 237, 242, 323, 324, 206, 211, 218, 300, 303, 311, 322, 304]
+npcs: [99, 200, 204, 205, 207, 208, 210, 212, 213, 214, 217, 237, 242, 323, 324, 206, 211, 218, 300, 303, 311, 322, 240, 304]
 monsters: []
 spawn_points: []
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=3ec720 type=7a94db id=775bc5 sources=600668 name_key=a40dd1 kind=da9544 scene_type=356a19 max_users=310b86 group=fa35e1 zones=3e5d13 segments=b94d6e gates=496ae8 connections=e35a24 npcs=53cd3c monsters=97d170 spawn_points=97d170 -->
+<!-- generated-keys: title=3ec720 type=7a94db id=775bc5 sources=600668 name_key=a40dd1 kind=da9544 scene_type=356a19 max_users=310b86 group=fa35e1 zones=3e5d13 segments=b94d6e gates=496ae8 connections=e35a24 npcs=12d39f monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
 |  | ![minimap of zone 103](wiki/assets/zones/103.png) |
@@ -67,7 +67,7 @@ Positions come from the NPC's own page (`x`, `z`). The client does not place tow
 | [[wiki/npcs/213-odin\|Odin]] | 213 | 1991.9, 1703.6 | quests [[wiki/quests/110-gear-manufacturing\|110]], [[wiki/quests/726-gathering-plant-and-ore\|726]], [[wiki/quests/728-gathering-plant-and-ore\|728]], [[wiki/quests/730-gathering-plant-and-ore\|730]], [[wiki/quests/734-gathering-plant-and-ore\|734]] …; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/214-owen\|Owen]] | 214 | 1998.9, 1709 | quests [[wiki/quests/14-battle-preparations\|14]], [[wiki/quests/47-create-potion\|47]], [[wiki/quests/48-doping-create\|48]], [[wiki/quests/108-hunting-ghosts-spirit-avenue\|108]], [[wiki/quests/725-collecting-material\|725]] …; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/217-haley\|Haley]] | 217 | 1927.6, 1616.4 | quests [[wiki/quests/104-delivering-punishment\|104]]; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
-| [[wiki/npcs/237-farrell\|Farrell]] | 237 |  | quests [[wiki/quests/16-farrell-s-request\|16]], [[wiki/quests/111-weapon-manufacturing\|111]], [[wiki/quests/112-weapon-manufacturing\|112]], [[wiki/quests/113-weapon-manufacturing\|113]], [[wiki/quests/114-weapon-tier-reinforce\|114]] …; NPC page (`map` / `positions`) |
+| [[wiki/npcs/237-farrell\|Farrell]] | 237 | 1995, 1700 | quests [[wiki/quests/16-farrell-s-request\|16]], [[wiki/quests/111-weapon-manufacturing\|111]], [[wiki/quests/112-weapon-manufacturing\|112]], [[wiki/quests/113-weapon-manufacturing\|113]], [[wiki/quests/114-weapon-tier-reinforce\|114]] …; NPC page (`map` / `positions`) |
 | [[wiki/npcs/242-raon\|Raon]] | 242 |  | quests [[wiki/quests/705-legion-how-to-use-add-on\|705]], [[wiki/quests/774-highly-concentrated-bomb-create\|774]], [[wiki/quests/775-highly-concentrated-bomb-create\|775]], [[wiki/quests/776-highly-concentrated-bomb-create\|776]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/323-alan\|Alan]] | 323 | 1939, 1704.9 | quests [[wiki/quests/121-create-rune\|121]], [[wiki/quests/697-create-rune\|697]]; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/324-casta\|Casta]] | 324 | 1942.8, 1704.1 | quests [[wiki/quests/122-rune-equipment\|122]], [[wiki/quests/123-rune-reinforcement\|123]], [[wiki/quests/698-rune-equipment\|698]], [[wiki/quests/699-rune-reinforcement\|699]], [[wiki/quests/1516-item-equip-or-release-rune\|1516]]; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
@@ -78,7 +78,8 @@ Positions come from the NPC's own page (`x`, `z`). The client does not place tow
 | [[wiki/npcs/303-cathy\|Cathy]] | 303 | 1924.8, 1666.7 | [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/311-fortress-portal\|Fortress Portal]] | 311 | 1981, 1561 | [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/322-paraman\|Paraman]] | 322 | 1959.5, 1699.5 | [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
-| [[wiki/npcs/304-fergus\|Fergus]] | 304 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/240-candice\|Candice]] | 240 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/304-fergus\|Fergus]] | 304 | 1892, 1708 | NPC page (`map` / `positions`) |
 
 ### Monsters
 
@@ -121,7 +122,13 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One field id serves every fort; the three copies sit at segment origins (1792, 1536), (2048, 1536) and (2304, 1536) and share one layout ([[gameplay/npc-locations|NPC locations]] §2). In spring 2018 Arslan held 4 forts and Erion 4 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *client + image*
+- The minimap title carries the owning legion's name, e.g. "Scourge Fortress" or "UG Fortress" ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §3 step 23; [[gameplay/video-fort-war|fort-war video notes]] §1; [[gameplay/video-early-quests|first-session video]] §1). *video*
+- Arrival: clicking a Nexus in Gaia lands the player beside Haley (217) in the arrival plaza ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 31). After a siege the player is returned to their own legion's fort ([[gameplay/video-fort-war|fort-war video notes]] §1). *video*
+- Haley (Teleporter) offers Castle 10,000 gold, Fortress 6,000 gold, Gaia and Abyss free ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1, image); a June 2018 video shows Fortress at 4,000 ("TOP Fortress (4000)") ([[gameplay/video-early-quests|first-session video]] §1). From WM 0110 a Haley teleport costs 20 yellow jewels ([[gameplay/events-and-schedules|Events and schedules]] §9). The Abyss option presumably lands in 103 / 105 / 107 by nation (`Teleport_List` 1901-1903, *guess*, [[gameplay/abyss-map|Abyss map]]).
+- The Fortress Portal (unit 311, bottom-right) sends players to a dungeon matched to their level ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). The "Mysterious World" tabs (Death's Rest (Passion) 132, Sinking Nest 133) open from the fortress gate ([[gameplay/patch-history|Patch history]], WM 0110). *guide*
+- Hadrian (211, top-left) takes donations to the fort and handles "Fort Information" and "Civil war application" ([[gameplay/classes-and-legions|Classes and legions]] §4; [[gameplay/video-early-quests|first-session video]] §3). The weekly Civil War (Sunday 20:00) is fought inside the fort; members must be inside at 20:00 ([[gameplay/classes-and-legions|Classes and legions]] §4). *guide + video*
+- In Crush Online the Battle Arena NPC (Candice, 240) stood on the top/middle of a Fortress ([[gameplay/arena-ranking-rewards|Arena ranking rewards]]; [[gameplay/sources]]). *guide*
 
 ## Behaviour
 
@@ -129,11 +136,11 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations|NPC locations]], [[gameplay/maps-and-dungeons|Maps and dungeons]], [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/video-early-quests|first-session video]], [[gameplay/video-fort-war|fort-war video notes]], [[gameplay/classes-and-legions|Classes and legions]], [[gameplay/arena-ranking-rewards|Arena ranking rewards]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Fortress teleport price: 6,000 gold in the spring-2018 guide image versus 4,000 in the June 2018 video; possibly a fort-tax or patch difference ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1, [[gameplay/video-early-quests|first-session video]] §1).
 
 <!-- credit:start -->
 ---

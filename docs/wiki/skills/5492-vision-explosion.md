@@ -4,7 +4,7 @@ type: "skill"
 id: 5492
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5492", "client: StringAll_Eng SkillComment_5492 (tooltip value tags)", "gameplay: [[gameplay/classes-and-legions]]"]
+sources: ["client: Skill_Base.cdb id 5492", "client: StringAll_Eng SkillComment_5492 (tooltip value tags)", "gameplay: [[gameplay/classes-and-legions]]", "notes: [[gameplay/classes-and-legions]] §5 Skeleton King's Vision Bow, WM 0110 (cooldown and mana match client)"]
 name_key: "Skill_5492"
 desc_key: "SkillComment_5492"
 kind: 1
@@ -97,7 +97,7 @@ Numbers from the gameplay pages (guides, patch notes, video), not from the clien
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [WM 0110](https://steamcommunity.com/games/718790/announcements/detail/2417771014047971842) (text + image 2) introduced Skeleton King's Vision Bow (item 15005) with this W: 17 s cooldown, 95 mana; 85 + 0.83 AD + 0.6875 AP around you, plus more per Vision stack used (stacks from basic attacks, max 10, last 7 s) ([[gameplay/classes-and-legions]] §5). Cooldown and mana match the client exactly. *notes*
 
 ## Behaviour
 
@@ -105,11 +105,11 @@ Numbers from the gameplay pages (guides, patch notes, video), not from the clien
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Skeleton King's Vision Bow.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Multipliers: the patch note's AD/AP factors differ slightly from the client tooltip (the client tooltip has 85 + 85 % AD + 70 % AP); the note may quote values at a different weapon level. Client kept.
 
 <!-- credit:start -->
 ---

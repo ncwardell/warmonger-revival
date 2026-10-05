@@ -4,7 +4,7 @@ type: "item"
 id: 764
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 764"]
+sources: ["client: Item_Base.cdb id 764", "notes: [[gameplay/reinforce-and-runes]] §7 (WM 0726, CO 1222)"]
 name_key: "ItemName_764"
 kind: 11
 kind_name: "Normal"
@@ -67,7 +67,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Drop chance **+40 % for 1 hour** in Warmonger (WM 0726; client buff 2134 = 40 %). In Crush Online it was +20 % for 1 h at 500 jewels, or 10 for 4,500 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, [[gameplay/crush-patch-notes|Crush patch notes]] 2016-12-22, *notes*).
 
 ## Behaviour
 
@@ -75,11 +75,11 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §7 (WM 0726, CO 1222)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online's +20 % differs from the client's +40 %; the client value is used.
 
 <!-- credit:start -->
 ---

@@ -4,7 +4,7 @@ type: "item"
 id: 739
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 739"]
+sources: ["client: Item_Base.cdb id 739", "notes: [[gameplay/reinforce-and-runes]] §7 (WM 0124)"]
 name_key: "ItemName_739"
 kind: 11
 kind_name: "Normal"
@@ -67,7 +67,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+WM 0124 doubled the Elixir of Health's HP regen from 1/2/3/4 to **2/4/6/8** (C/B/A/S); the client buffs 2109–2112 already carry the new values plus max HP +100…+400 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, *notes + client*). One active elixir at a time ([[gameplay/consumables|Consumables]] §1).
 
 ## Behaviour
 
@@ -75,7 +75,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §7 (WM 0124)
 
 ## Open questions
 

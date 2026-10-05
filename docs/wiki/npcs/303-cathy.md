@@ -63,7 +63,8 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Auction House manager (coins icon) in the Fortress ([[gameplay/npc-locations|NPC locations]] §3; [[gameplay/maps-and-dungeons|Maps and dungeons]] §5). The auction house charges a 5% commission when an item is listed, and listings last 6 days ([[gameplay/progression-and-economy|Progression and economy]] §5). *guide + image*
+- She sold the VIP ticket: 6,000,000 gold or 2,000 jewels; with gold only VIP 1 is reachable ([[gameplay/warmonger-forum|Warmonger forum]] §8). In Crush Online the 30-day ticket went from 6 M to 9 M, then 12.5 M gold, then jewels only ([[gameplay/crush-mechanics|Crush Online mechanics]] §10). *staff / forum*
 
 ## Behaviour
 
@@ -71,7 +72,13 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/progression-and-economy|Progression and economy]]
+- [[gameplay/warmonger-forum|Warmonger forum]]
+- [[gameplay/crush-mechanics|Crush Online mechanics]]
 
 ## Open questions
 

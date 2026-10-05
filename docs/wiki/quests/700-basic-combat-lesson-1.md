@@ -62,7 +62,7 @@ Image `ui/HelpImage/Help_09.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts with quest 2 after talking to Shaia: use a basic attack; the tip says to attack the slime with a right click; 200 exp ([4:00](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=240s), [3:00](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=180s)). Finishing it gives level 2 together with quest 1's 500 exp ([3:25](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=205s)). *video*
 
 ## Behaviour
 
@@ -70,7 +70,7 @@ Image `ui/HelpImage/Help_09.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 

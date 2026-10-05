@@ -76,15 +76,21 @@ Sells 9 items (`Npc_Carry` row 286; full list on [[wiki/shops/286-cassia-s-shop-
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Material merchant in the north-east of the Fortress (shop 286) ([[gameplay/npc-locations|NPC locations]] §3). She sells Empty Scroll [C]–[S] (830–833; 50 / 60 / 80 / 100 base), Empty Flask [C]–[S] (834–837; 80 / 100 / 150 / 200) and Worked oil (846, 100) ([[gameplay/consumables|Consumables]] §5; [[gameplay/maps-and-dungeons|Maps and dungeons]] §5). *client + guide*
+- Her dialogue sends the player to Odin or Owen to craft ([[gameplay/video-early-quests|Video notes: first session]] §3). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest 13 "Battle preparations" (talk to Cassia) pays 100 Empty Flask [C], 30,000 gold, 15/15 fragments and 5 Crystal: Blue, then leads to quest 14 at Owen ([[gameplay/video-early-quests|Video notes: first session]] §2 step 15, [40:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2420s)). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/consumables|Consumables]]
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/video-early-quests|Video notes: first session]]
 
 ## Open questions
 

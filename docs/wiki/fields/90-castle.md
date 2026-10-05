@@ -4,7 +4,7 @@ type: "field"
 id: 90
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 90", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 90", "client: Quest.cdb (quests and objectives in field 90)"]
+sources: ["client: SceneList.cdb id 90", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 90", "client: Quest.cdb (quests and objectives in field 90)", "video: [[gameplay/video-early-quests]] §3 NPCs, Castle 90 positions (Bernice, Patrick, Krister, Kesley, Bell Thain), video-measured ±4-8 units", "video: [[gameplay/video-tutorial-walkthrough]] §1 step 29 (Imperial Guards at the entrance), video", "client + video: [[gameplay/npc-locations]] §6 (gates, portal offering 'move to Fortress')"]
 name_key: "FieldName_90"
 kind: "town"
 scene_type: 1
@@ -21,12 +21,12 @@ gates:
 connections:
   - {"to": 88, "gate": 1199, "to_gate": 1198, "paired": true}
   - {"to": 88, "gate": 1199, "to_gate": 0}
-npcs: [219, 242, 327, 2001, 199, 224]
+npcs: [219, 242, 327, 2001, 189, 190, 191, 192, 193, 194, 195, 196, 197, 199, 224, 318, 208]
 monsters: []
 spawn_points: []
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=b1fd66 type=7a94db id=2d0c8a sources=4fafc5 name_key=8f3ae6 kind=da9544 scene_type=356a19 max_users=310b86 group=bd307a nation=a20b0f nation_copies=95169d zones=610dd1 segments=ee0f85 worldmap_rect=e9d9e1 gates=5ed218 connections=fd2af1 npcs=540523 monsters=97d170 spawn_points=97d170 -->
+<!-- generated-keys: title=b1fd66 type=7a94db id=2d0c8a sources=4fafc5 name_key=8f3ae6 kind=da9544 scene_type=356a19 max_users=310b86 group=bd307a nation=a20b0f nation_copies=95169d zones=610dd1 segments=ee0f85 worldmap_rect=e9d9e1 gates=5ed218 connections=fd2af1 npcs=14278f monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
 |  | ![minimap of zone 144](wiki/assets/zones/144.png) |
@@ -62,8 +62,19 @@ Positions come from the NPC's own page (`x`, `z`). The client does not place tow
 | [[wiki/npcs/242-raon\|Raon]] | 242 |  | quests [[wiki/quests/1530-legion-create-core\|1530]] |
 | [[wiki/npcs/327-aenes\|Aenes]] | 327 |  | quests [[wiki/quests/38-innocence-s-recovery-operation\|38]], [[wiki/quests/44-innocence-report\|44]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/2001-corpse-bride\|Corpse Bride]] | 2001 |  | quests [[wiki/quests/901-trick-or-treat\|901]]; NPC page (`map` / `positions`) |
+| [[wiki/npcs/189-imperial-guard\|Imperial Guard]] | 189 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/190-imperial-guard\|Imperial Guard]] | 190 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/191-imperial-guard\|Imperial Guard]] | 191 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/192-imperial-guard\|Imperial Guard]] | 192 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/193-imperial-guard\|Imperial Guard]] | 193 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/194-imperial-guard\|Imperial Guard]] | 194 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/195-imperial-guard\|Imperial Guard]] | 195 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/196-imperial-guard\|Imperial Guard]] | 196 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/197-imperial-guard\|Imperial Guard]] | 197 |  | NPC page (`map` / `positions`) |
 | [[wiki/npcs/199-patrick\|Patrick]] | 199 | 486.1, 4292.5 | NPC page (`map` / `positions`) |
 | [[wiki/npcs/224-bernice\|Bernice]] | 224 | 493.8, 4285.8 | NPC page (`map` / `positions`) |
+| [[wiki/npcs/318-kesley\|Kesley]] | 318 | 480.8, 4146.2 | NPC page (`map` / `positions`) |
+| [[wiki/npcs/208-bell-thain\|Bell Thain]] | 208 |  | hand-entered |
 
 ### Monsters
 
@@ -94,7 +105,10 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Arslan copy of the Castle. NPC positions (measured here): Bernice (224) 493.8, 4285.8; Patrick (199) 486.1, 4292.5; Krister (219) 489.7, 4139.6; Kesley 480.8, 4146.2; Bell Thain (208) about 482, 4122 ([[gameplay/video-early-quests|first-session video]] §3, [58:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3480s)-[59:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3541s)). Bell Thain (Training Officer, 208) is listed here from that sighting; he also stands in the Fortress. *video*
+- Imperial Guards (red armour, halberds; UnitDB 189-197) stand at the entrance from the Training Camp, and four or more stand on the plaza near Bernice ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 29; [[gameplay/video-early-quests|first-session video]] §3). *video*
+- A portal in the Castle offers "move to Fortress" ([video](https://www.youtube.com/watch?v=cqYz3j59MFI&t=1876s), [[gameplay/npc-locations|NPC locations]] §6). Players also arrive by Scroll: Castle (quest 19) or Haley's Castle teleport (10,000 gold) ([[gameplay/video-early-quests|first-session video]] §1; [[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *video + image*
+- Bernice offers a nation change to a disaffected player; the nation is per account and is changed at the castle ([[gameplay/video-early-quests|first-session video]] §2 quest 22; [[gameplay/classes-and-legions|Classes and legions]] §2). Gear, weapons and elixirs could also be crafted at the nation castle ([[gameplay/events-and-schedules|Events and schedules]]). *video + guide*
 
 ## Behaviour
 
@@ -102,11 +116,13 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests|first-session video]], [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/npc-locations|NPC locations]], [[gameplay/classes-and-legions|Classes and legions]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The Castle's Kesley (Legion Administrator) may be unit 210 (the Fortress Kesley) or 318, a second Kesley row in UnitDB; the video page leaves it as "210 (318?)" ([[gameplay/video-early-quests|first-session video]] §3), so neither id is listed here yet.
+- Which of the nine Imperial Guard rows (189-197, three models) belong to which nation's castle is not known.
+- The position of the "move to Fortress" portal was not measured.
 
 <!-- credit:start -->
 ---

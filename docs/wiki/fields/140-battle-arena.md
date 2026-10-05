@@ -4,7 +4,7 @@ type: "field"
 id: 140
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 140", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 140"]
+sources: ["client: SceneList.cdb id 140", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 140", "notes: [[gameplay/events-and-schedules]] (Battle Arena hours, max 5 per team), [[gameplay/patch-history]] (WM 0712 / 1107 schedule)", "forum: [[gameplay/warmonger-forum]] §6 (Crush arena map: one lane plus jungle camps)", "client: [[gameplay/arena-ranking-rewards]] (Battle Arena zones ZoneDB 5 and 148; arena NPC 240)"]
 name_key: "FieldName_140"
 kind: "arena"
 scene_type: 4
@@ -77,7 +77,10 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Battle Arena schedule (server time): 04/06/10/12/16/18/22/24 from WM 0712; later only 06 and 18, when War of Warmonger is skipped ([[gameplay/events-and-schedules|Events and schedules]]; [[gameplay/patch-history|Patch history]]). Max 5 players per team (WM 0719). *notes*
+- Crush Online players described the arena as one lane plus jungle camps, with a centre zone granting SP and a nexus that does not heal; empty queues gave bot matches ([[gameplay/warmonger-forum]] §6). Crush staff later held it once an hour on channels with more than 100 players ([[gameplay/crush-patch-notes]]). *forum + staff*
+- Life Saviour potions cannot be used in the arena ([[gameplay/events-and-schedules|Events and schedules]]). *notes*
+- The client lists two Battle Arena zones: ZoneDB 5 `Battle_Arena_01` and ZoneDB 148 `new_arena` (this field's zone) ([[gameplay/arena-ranking-rewards|Arena ranking rewards]]). *client*
 
 ## Behaviour
 

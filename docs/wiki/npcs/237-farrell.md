@@ -2,9 +2,10 @@
 title: "Farrell"
 type: "npc"
 id: 237
-status: "stub"
-missing: ["x", "z"]
-sources: ["client: UnitDB.cdb id 237", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "client: Quest.cdb giver/receiver field (map only; no position)"]
+status: "complete"
+missing: []
+sources: ["client: UnitDB.cdb id 237", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "client: Quest.cdb giver/receiver field (map only; no position)", "guide + guess: [[gameplay/npc-locations]] §3 (strategy guide puts Farrell 'next to Odin'; suggested point about (1995, 1700))"]
+manual: ["x", "z"]
 name_key: "TitleName_12"
 title_key: "UnitName_237"
 npc_title: "Blacksmith"
@@ -20,11 +21,11 @@ portrait: "ui/NPCProfile/Quest_Reinforce.dds"
 quests: {"gives": [16, 111, 112, 113, 114, 120, 761, 762], "receives": [16, 111, 112, 113, 114, 761, 762, 845]}
 quest_fields: [120]
 map: 120
-x: null
-z: null
+x: 1995.0
+z: 1700.0
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=1ce8ba type=3664ce id=3c3316 sources=c37b02 name_key=e2d294 title_key=5076ed npc_title=5088e1 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=ba093c role=5088e1 talk_key=971ba2 portrait=d2d345 quests=b30468 quest_fields=6c3da9 map=775bc5 x=2be88c z=2be88c -->
+<!-- generated-keys: title=1ce8ba type=3664ce id=3c3316 sources=c37b02 name_key=e2d294 title_key=5076ed npc_title=5088e1 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=ba093c role=5088e1 talk_key=971ba2 portrait=d2d345 quests=b30468 quest_fields=6c3da9 map=775bc5 -->
 |  |  |
 |---|---|
 |  | ![Farrell](wiki/assets/npcs/237.png) |
@@ -32,7 +33,7 @@ z: null
 | **Title** | Blacksmith |
 | **Category** | NPC (category 50) |
 | **Menu** | Create (`19`) |
-| **Stands in** | [[wiki/fields/120-fortress\|Fortress]] (position unknown) |
+| **Stands in** | [[wiki/fields/120-fortress\|Fortress]] at (1995.0, 1700.0) |
 | **Model** | ObjectList `238`, scale 1.5 |
 | **Portrait** | `ui/NPCProfile/Quest_Reinforce.dds` |
 
@@ -60,7 +61,9 @@ The client has one unit row per placement or variant: [[wiki/npcs/317-farrell|Fa
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Fortress blacksmith: weapons and Passion conversion (both directions) ([[gameplay/maps-and-dungeons|Maps and dungeons]] §5; [[gameplay/items-and-crafting|Items and crafting]] §3). A guide puts him next to Odin, with the rune NPCs to the left; the suggested point (1995, 1700) comes from that ([[gameplay/npc-locations|NPC locations]] §3). *guide + guess*
+- Normal weapons take 3 or 5 medal-bought materials plus 50 / 70 / 100 crystals ([[gameplay/items-and-crafting|Items and crafting]] §3). *guide*
+- A quest tracker shows "Craft Spell Charge [B]" sending the player to Farrell ([[gameplay/skull-artifact-set|Skull artifact set]] §4). In Crush Online a patch let "Blacksmith Farrel" buy and sell items ([[gameplay/crush-patch-notes|Crush patch notes]]). *image / staff*
 
 ## Behaviour
 
@@ -68,11 +71,17 @@ The client has one unit row per placement or variant: [[wiki/npcs/317-farrell|Fa
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/items-and-crafting|Items and crafting]]
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/skull-artifact-set|Skull artifact set]]
+- [[gameplay/crush-patch-notes|Crush patch notes]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The minimap also shows an anvil icon next to Ashley at (1892, 1708); it may be Farrell or Fergus ([[gameplay/npc-locations|NPC locations]] §3). This page uses the guide's "next to Odin".
 
 <!-- credit:start -->
 ---

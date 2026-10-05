@@ -2,9 +2,9 @@
 title: "The land of Greed"
 type: "field"
 id: 108
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 108", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 108", "client: Quest.cdb (quests and objectives in field 108)", "client: Trigger.cdb field 108"]
+sources: ["client: SceneList.cdb id 108", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 108", "client: Quest.cdb (quests and objectives in field 108)", "client: Trigger.cdb field 108", "client + image: [[gameplay/abyss-map]] Portal table, Routes and Markers (unlabelled portals image-measured ±5 units)", "video: [[gameplay/video-early-quests]] §1-§3 and §6 (Land of Greed quests, Scout Leader, Gem Stone: Blue drops), video"]
 name_key: "FieldName_108"
 kind: "field"
 scene_type: 5
@@ -20,6 +20,8 @@ gates:
 connections:
   - {"to": 103, "gate": 1109, "to_gate": 1122}
   - {"to": 113, "gate": 1140, "to_gate": 1134}
+  - {"to": 105, "gate": null, "to_gate": null, "at": [318, 2755], "to_at": [1217, 2365], "source": "image"}
+  - {"to": 107, "gate": null, "to_gate": null, "at": [445, 2621], "to_at": [1593, 2362], "source": "image"}
 npcs: []
 monsters: [721, 722, 723, 724, 826, 10001, 10002]
 spawn_points: []
@@ -49,6 +51,8 @@ triggers:
 |---|---|---|---|---|
 | 1109 | 456.63, 2761.09 | [[wiki/fields/103-place-for-scattered-troops\|Place for Scattered troops]] | 1122 | FieldName_108 |
 | 1140 | 308.96, 2619.52 | [[wiki/fields/113-the-avenue-of-spirit\|The avenue of spirit]] | 1134 | FieldName_108 |
+
+Other connections (hand-entered): to 105, gate None, to_gate None, at [318, 2755], to_at [1217, 2365], source image; to 107, gate None, to_gate None, at [445, 2621], to_at [1593, 2362], source image
 
 Entered from: [[wiki/fields/103-place-for-scattered-troops|Place for Scattered troops]] (gate 1122 → 1109), [[wiki/fields/113-the-avenue-of-spirit|The avenue of spirit]] (gate 1134 → 1140)
 
@@ -105,7 +109,13 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 3. The three Land of Greed copies join the nations' level-2 fields (108 links 103, 105, 107; 109 links 102, 105, 106; 111 links 103, 104, 107), so players of different nations meet here ([[gameplay/abyss-map|Abyss map]] Routes). *image*
+- Portals: top-right 1109 → 103; bottom-left 1140 → 113; top-left (about 318, 2755) → 105; bottom-right (about 445, 2621) → 107 ([[gameplay/abyss-map|Abyss map]]). *client + image*
+- Seven open clearings at about (390, 2738), (362, 2713), (332, 2683), (385, 2689), (432, 2693), (404, 2668) and (376, 2637); the centre one (385, 2689) carries a red multi-dot icon, probably a boss or elite group; red dots in three others may be monsters ([[gameplay/abyss-map|Abyss map]] Markers, meanings *guess*). *image*
+- The Scout Leader is Trigger 10803; the April 2018 video measured him within 6 units of it ([[gameplay/video-early-quests|first-session video]] §3). Quests 17 and 80-82 "Support the Abyss expedition" are done here: 10 Tow, 10 Elite Tow and the Tow's Chief (826); the repeatable 749 / 1101 asks 50 Tow + 50 Elite Tow ([[gameplay/video-early-quests|first-session video]] §2 items 16-17, 21; [[gameplay/warmonger-forum]] §3). *client + video*
+- The ES guide names Tow monsters as the Abyss target for levels 1-25 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
+- Gem Stone: Blue drops in the Land of Greed ([[gameplay/video-early-quests|first-session video]] §6). *video*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -113,7 +123,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]], [[gameplay/video-early-quests|first-session video]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

@@ -4,7 +4,7 @@ type: "item"
 id: 690
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 690"]
+sources: ["client: Item_Base.cdb id 690", "notes: [[gameplay/reinforce-and-runes]] §7 (WM 0726 image 3)", "image: [[gameplay/progression-and-economy]] §4 (Athan prices)"]
 name_key: "ItemName_690"
 kind: 11
 kind_name: "Normal"
@@ -60,7 +60,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From WM 0726 Time Energy raises drop rate **and** EXP by 10 / 20 / 30 % for 10 minutes (tier 1/2/3); client buffs 2135–2137 match ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, *image + client*). Athan sold them for 1 bronze / 1 silver / 1 gold medal, and they were needed for hard-mode dungeons until that was removed ([[gameplay/progression-and-economy|Progression and economy]] §4, [[gameplay/maps-and-dungeons|Maps and dungeons]] §2, *image + guide*).
 
 ## Behaviour
 
@@ -68,7 +68,8 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §7 (WM 0726 image 3)
+- image: [[gameplay/progression-and-economy]] §4 (Athan prices)
 
 ## Open questions
 

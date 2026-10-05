@@ -2,7 +2,7 @@
 title: "Guardian Bot-t"
 type: "monster"
 id: 606
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 606"]
 name_key: "UnitName_606"
@@ -58,7 +58,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- A war bot labelled "Bot: Guardian" had HP 3600 (+180) at [108:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=6520s) in the Mist Lake war, but that is after 1:43:10, when staff were changing monster stats live, so it is not copied (video, unreliable, [[gameplay/video-early-quests]] §5).
 
 ## Behaviour
 
@@ -66,11 +66,11 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §5
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Is unit 606 "Guardian Bot-t" the "Bot: Guardian" of the video? The name match is not certain. Warmonger patch 1107 allowed up to 15 bots per side in War of Warmonger ([[gameplay/patch-history]] § PvP, events, forts).
 
 <!-- credit:start -->
 ---

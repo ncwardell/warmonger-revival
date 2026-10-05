@@ -2,9 +2,9 @@
 title: "Skeleton King's Magic Hammer recipe"
 type: "recipe"
 id: 925
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 925", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 925", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide + image: [[gameplay/items-and-crafting]] §3 (Paraman makes the superior Skeleton King's weapons; 150,000 gold + 3 materials, can fail, fort Weapon mastery 3); unit 322 per [[gameplay/npc-locations]] §3"]
 result: {"item": 20004, "count": 1}
 materials:
   - {"item": 2751, "count": 1}
@@ -15,6 +15,7 @@ success_rate: 40
 category: 2
 filter_mask: 33554497
 level: 3
+npc: [322]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=2d908e type=61613a id=5994e3 sources=dd979b result=d5215a materials=b112e4 gold=409e95 success_rate=af3e13 category=da4b92 filter_mask=bdac30 level=77de68 -->
@@ -27,7 +28,7 @@ level: 3
 | **Success** | 40 % |
 | **Level (c24, *guess*)** | 3 |
 | **Category / filter** | 2 / `0x2000041` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/322-paraman\|Paraman]] |
 
 ### Materials
 
@@ -46,19 +47,21 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Superior Skeleton King's weapons come from **Paraman** (Legendary Blacksmith, unit 322): a guide screenshot shows **150,000 gold + 3 materials**, a fail warning and fort Weapon mastery 3; stats Attack +140, AP +60, range +200 ([[gameplay/items-and-crafting|Items and crafting]] §3, *image*). The client's 100,000 gold × 1.5 fort rate gives the 150,000 shown.
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Success 40 % in the client. The craft window warns "There is a chance to fail in creating this item" for superior items ([[gameplay/items-and-crafting|Items and crafting]] §3, *image*).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide + image: [[gameplay/items-and-crafting]] §3 (Paraman makes the superior Skeleton King's weapons; 150,000 gold + 3 materials, can fail, fort Weapon mastery 3); unit 322 per [[gameplay/npc-locations]] §3
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The client files these rows in the same Item_Make category (2) as Farrell's weapons and passion conversion; the guide puts them at Paraman. Paraman 322's UnitDB function is "Weapon Alchemy" rather than "Create" ([[wiki/npcs/322-paraman|Paraman]]).
 
 <!-- credit:start -->
 ---

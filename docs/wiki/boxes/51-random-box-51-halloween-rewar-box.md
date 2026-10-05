@@ -2,9 +2,9 @@
 title: "Random box 51 (Halloween Rewar Box?)"
 type: "box"
 id: 51
-status: "stub"
+status: "partial"
 missing: ["odds", "opened_by"]
-sources: ["client: RandomBox.cdb id 51", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)"]
+sources: ["client: RandomBox.cdb id 51", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)", "staff: [[gameplay/crush-patch-notes]] 2016-10-27 (Trick or Treat quest at Corpse Bride; reward box with skill stone \"Creep Jack\")"]
 contents:
   - {"slot": 0, "item": 763, "count": 1, "p": 0}
   - {"slot": 1, "item": 1021, "count": 50000, "p": 0}
@@ -60,7 +60,7 @@ No client column links a box item to a RandomBox row. The guess pairs rows and b
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The Crush Online Halloween event (27 Oct 2016) had the quest "Trick or Treat" from Corpse Bride in the nation castle: hunt Jack O'Lantern and get a reward box with the skill stone "Creep Jack" (players said it had only 120 charges) ([[gameplay/crush-patch-notes|Crush patch notes]], *staff + player*). The final client keeps the box (1056), the Jack transform scroll (763) and Jack O'Lantern (unit 2000).
 
 ## Behaviour
 
@@ -68,11 +68,11 @@ No client column links a box item to a RandomBox row. The guess pairs rows and b
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- staff: [[gameplay/crush-patch-notes]] 2016-10-27 (Trick or Treat quest at Corpse Bride; reward box with skill stone "Creep Jack")
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The Crush box gave a skill stone; this row gives the Jack transform scroll and other items instead. Odds are unknown.
 
 <!-- credit:start -->
 ---

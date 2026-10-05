@@ -100,7 +100,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+A guide screenshot names the chain "Group – Border Area Hard Mode": go to a dungeon, kill its boss, talk to Freya ([[gameplay/progression-and-economy]] §1, *image*).
 
 ## Behaviour
 
@@ -108,7 +108,9 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
 
 ## Open questions
 

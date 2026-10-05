@@ -2,9 +2,9 @@
 title: "Moonstone"
 type: "node"
 id: 12413
-status: "stub"
+status: "partial"
 missing: ["respawn_s"]
-sources: ["client: Trigger.cdb id 12413"]
+sources: ["client: Trigger.cdb id 12413", "video: [[gameplay/video-dungeon-run]] §5 (south-east nodes not drawn on the minimap at that moment)"]
 kind: "gather"
 field: 124
 x: 1996.32
@@ -35,7 +35,7 @@ Gathering nodes are client data only for their place and material. How long a no
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Not drawn on the minimap in the 2016 Crush Online video of Ghost Fortress, while every other node of the field matched its icon ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5). *video*
 
 ## Behaviour
 
@@ -47,7 +47,7 @@ Gathering nodes are client data only for their place and material. How long a no
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Whether this node was hidden (already gathered, or spawning later) at that moment; respawn time unknown.
 
 <!-- credit:start -->
 ---

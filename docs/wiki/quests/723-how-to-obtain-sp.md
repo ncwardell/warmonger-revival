@@ -60,7 +60,7 @@ Image `ui/HelpImage/Help_23.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Shown on screen as "How to obtain SP" in June 2018 ([25:55](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1555s), [[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). *video*
 
 ## Behaviour
 
@@ -68,11 +68,13 @@ Image `ui/HelpImage/Help_23.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+[[gameplay/video-character-creation-and-tutorial]] says the client string for this lesson reads "Automatism decomposition point recharging" although the objective text matches; this wiki's title comes from the client and reads "How to obtain SP", so the two string tables may differ.
 
 <!-- credit:start -->
 ---

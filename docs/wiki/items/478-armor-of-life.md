@@ -2,9 +2,9 @@
 title: "Armor of Life"
 type: "item"
 id: 478
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 478"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 478", "client: Item_Make superior column (c19 chance / fail_item, read as superior result, *guess*) + notes: [[gameplay/reinforce-and-runes]] §4 (WM 0726: crafted gear has a small chance to come out superior)"]
 name_key: "ItemName_402"
 kind: 51
 kind_name: "Armor"
@@ -26,7 +26,9 @@ stats:
   - {"code": 105, "stat": "Movement(%)", "value": 10, "scale": "flat"}
 reinforce: 2
 icon: {"file": "Items_10.png", "index": 13}
-obtained_from: []
+obtained_from:
+  - {"how": "craft_superior", "recipe": 6, "chance": 5}
+  - {"how": "craft_superior", "recipe": 2006, "chance": 5}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=b634ee type=d36ca9 id=fbea31 sources=146a3c name_key=305e0f kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=97b234 reinforce=da4b92 icon=a5b1b1 obtained_from=97d170 -->
@@ -72,7 +74,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 6, chance 5 (hand-entered)
+- how craft_superior, recipe 2006, chance 5 (hand-entered)
 
 ### Mentioned in
 
@@ -83,7 +86,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The superior version of the normal piece: Odin's recipe 6 (and the Training Camp copy 2006) lists this item with a 5 % chance in its superior column. Crafted gear has a small chance to come out superior from WM 0726 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*); reading the column as the superior result is a *guess*. The WM 1018 Gear gacha also lists Superior Gear ([[gameplay/events-and-schedules|Events and schedules]] §10).
 
 ## Behaviour
 
@@ -91,11 +94,11 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: Item_Make superior column (c19 chance / fail_item, read as superior result, *guess*) + notes: [[gameplay/reinforce-and-runes]] §4 (WM 0726: crafted gear has a small chance to come out superior)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+[[gameplay/gear-stats]] §4 calls ids 445–492 the "T2 rows", but in the client they are the superior result of the normal recipes; tiers are a per-item level, not a separate id ([[gameplay/items-and-crafting|Items and crafting]] §1).
 
 <!-- credit:start -->
 ---

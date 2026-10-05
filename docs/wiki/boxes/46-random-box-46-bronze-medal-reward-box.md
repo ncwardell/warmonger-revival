@@ -2,9 +2,9 @@
 title: "Random box 46 ([Bronze] Medal Reward Box?)"
 type: "box"
 id: 46
-status: "stub"
+status: "partial"
 missing: ["odds", "opened_by"]
-sources: ["client: RandomBox.cdb id 46", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)"]
+sources: ["client: RandomBox.cdb id 46", "contract: items.yaml use_item 0x42d (random box -> 0x427 reason 0x46 per item)", "image: [[gameplay/progression-and-economy]] §3–4 (Athan sells the medal boxes for 4 bronze / 3 silver / 2 gold / 1 mithril; Mithril medals only from Gold/Mithril boxes) + staff: [[gameplay/crush-patch-notes]] (Dec 2016: Magic Crafting Stone only from the Diamond box; Feb 2017: medal boxes drop more medals)"]
 contents:
   - {"slot": 0, "item": 1021, "count": 10000, "p": 0}
   - {"slot": 1, "item": 1021, "count": 10000, "p": 0}
@@ -59,19 +59,19 @@ No client column links a box item to a RandomBox row. The guess pairs rows and b
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The [Bronze] Medal Reward Box is sold by Athan for **4 bronze medals** ([[gameplay/progression-and-economy|Progression and economy]] §4, *image*; [[gameplay/crush-patch-notes|Crush patch notes]], *client*). Mithril medals came only from the Gold and Mithril boxes ([[gameplay/progression-and-economy|Progression and economy]] §3, *guide*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online changed all box loot in Dec 2016 (image lost) and made the medal boxes drop more medals in Feb 2017 ([[gameplay/crush-patch-notes|Crush patch notes]], *staff*).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/progression-and-economy]] §3–4 (Athan sells the medal boxes for 4 bronze / 3 silver / 2 gold / 1 mithril; Mithril medals only from Gold/Mithril boxes) + staff: [[gameplay/crush-patch-notes]] (Dec 2016: Magic Crafting Stone only from the Diamond box; Feb 2017: medal boxes drop more medals)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+No odds survive; [[gameplay/sources|Sources]] (open item 10) lists box odds as unknown.
 
 <!-- credit:start -->
 ---

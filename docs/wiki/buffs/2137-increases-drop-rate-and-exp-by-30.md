@@ -4,7 +4,7 @@ type: "buff"
 id: 2137
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 2137", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 2137", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §3", "notes: [[gameplay/reinforce-and-runes]] §7 and [[gameplay/patch-history]] Dungeons, WM 0726 (matches client)"]
 name_key: "SkillBuff_2137"
 duration: {"ticks": 3000, "seconds": 600.0, "permanent": false}
 is_buff: 0
@@ -53,7 +53,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Tier 3 : Time energy (item 691): drop chance and EXP +30 % for 10 min (3,000 ticks) ([[gameplay/consumables]] §3). From [WM 0726](https://steamcommunity.com/games/718790/announcements/detail/2462791699369817744) Time Energy became these buffs (it was the dungeon entry fee before) ([[gameplay/reinforce-and-runes]] §7; [[gameplay/patch-history]] Dungeons). Exclusive group 2135 ([[gameplay/consumables]] §1). *client + notes*
 
 ## Behaviour
 
@@ -61,7 +61,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §3, [[gameplay/reinforce-and-runes]] §7, [[gameplay/patch-history]].
 
 ## Open questions
 

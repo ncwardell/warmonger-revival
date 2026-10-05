@@ -2,7 +2,7 @@
 title: "Siege Minion"
 type: "monster"
 id: 1104
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 1104"]
 name_key: "UnitName_1104"
@@ -88,7 +88,8 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Summoned by the always-available TP skill **Siege Minion** (4506): a weak tanking minion, field war only (guide + client, [[gameplay/pvp-and-matches]] §1). Cost 1,000 TP; cooldown cut from 100 s to 60 s and its ability raised in Warmonger patch 1018 (notes, [[gameplay/events-and-schedules]] §7); made a basic TP skill and strengthened in patch 0511 ([[gameplay/events-and-schedules]] §7).
+- A war video shows "MISZA set a Siege Minion" and the side's TP dropping by 1,000 (video, [[gameplay/video-fort-war]] §1).
 
 ## Behaviour
 
@@ -96,11 +97,11 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/pvp-and-matches]] §1; [[gameplay/events-and-schedules]] §7; [[gameplay/video-fort-war]] §1
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- This page is tied to the skill by name only (unit 1104 "Siege Minion").
 
 <!-- credit:start -->
 ---

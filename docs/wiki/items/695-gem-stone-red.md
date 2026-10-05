@@ -2,7 +2,7 @@
 title: "Gem Stone : Red"
 type: "item"
 id: 695
-status: "stub"
+status: "partial"
 missing: ["stats"]
 sources: ["client: Item_Base.cdb id 695"]
 name_key: "ItemName_695"
@@ -78,7 +78,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Decomposing a Gem Stone gives crystals ([[gameplay/items-and-crafting|Items and crafting]] §3, *guide*; [[gameplay/consumables|Consumables]] §5); Nas Village's entry window advertises Gem Stone Blue/Yellow/Red ([[gameplay/video-dungeon-run|Nas Village run video]] §1, *client*).
 
 ## Behaviour
 
@@ -90,7 +90,7 @@ obtained_from:
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+`stats` is required for kind 58 but a gem stone has no stats in any source; the requirement may not apply.
 
 <!-- credit:start -->
 ---

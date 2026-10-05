@@ -2,7 +2,7 @@
 title: "Weapon Level (+) reinforcement"
 type: "quest"
 id: 713
-status: "stub"
+status: "partial"
 missing: ["objectives"]
 sources: ["client: Quest.cdb id 713", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-tutorial-walkthrough]] steps 3-5 (lesson exp shown = table value)"]
 name_key: "Quest_Title_661"
@@ -66,7 +66,7 @@ Image `ui/HelpImage/Help_22.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Ran from 39:15 to 59:25 in the first-session video ([[gameplay/video-early-quests]] step 19) and followed "Battle preparations" in the June 2018 video ([[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). *video*
 
 ## Behaviour
 
@@ -74,7 +74,10 @@ Image `ui/HelpImage/Help_22.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

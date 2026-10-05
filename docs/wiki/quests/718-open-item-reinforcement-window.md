@@ -64,7 +64,7 @@ Image `ui/HelpImage/Help_21.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts at the quest 12 turn-in together with lesson 712 ([33:15](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1995s), [[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). *video*
 
 ## Behaviour
 
@@ -72,7 +72,9 @@ Image `ui/HelpImage/Help_21.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

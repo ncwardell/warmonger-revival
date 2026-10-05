@@ -64,7 +64,7 @@ None in the client.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Decompose blue jewels; runs alongside quest 14 ([[gameplay/video-early-quests]] step 15). *video*
 
 ## Behaviour
 
@@ -72,7 +72,9 @@ None in the client.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

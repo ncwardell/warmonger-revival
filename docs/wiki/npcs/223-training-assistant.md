@@ -2,7 +2,7 @@
 title: "Training Assistant"
 type: "npc"
 id: 223
-status: "stub"
+status: "partial"
 missing: ["map", "x", "z", "role"]
 sources: ["client: UnitDB.cdb id 223"]
 name_key: "UnitName_223"
@@ -35,7 +35,7 @@ The client has one unit row per placement or variant: [[wiki/npcs/220-training-a
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Candidate unit for the tutorial map (field 117), where no client table places anything ([[gameplay/npc-locations|NPC locations]] §6). *client*
 
 ## Behaviour
 
@@ -43,11 +43,14 @@ The client has one unit row per placement or variant: [[wiki/npcs/220-training-a
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The March and June 2018 videos never visit field 117, and the Training Assistants 220–223 never appear ([[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] §6). They may belong to an older build.
 
 <!-- credit:start -->
 ---

@@ -4,7 +4,7 @@ type: "item"
 id: 740
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 740"]
+sources: ["client: Item_Base.cdb id 740", "notes: [[gameplay/reinforce-and-runes]] §7 (WM 0124)"]
 name_key: "ItemName_740"
 kind: 11
 kind_name: "Normal"
@@ -66,7 +66,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+WM 0124 doubled the Flask of Mana's MP regen from 1/2/3/4 to **2/4/6/8** (C/B/A/S); the client buffs 2113–2116 match, plus max MP +50…+200 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, *notes + client*). One active flask at a time ([[gameplay/consumables|Consumables]] §1).
 
 ## Behaviour
 
@@ -74,7 +74,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §7 (WM 0124)
 
 ## Open questions
 

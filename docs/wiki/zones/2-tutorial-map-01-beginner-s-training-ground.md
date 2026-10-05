@@ -4,7 +4,7 @@ type: "zone"
 id: 2
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 2", "doc: spec/navmesh (tutorial spawn in ZoneDB 2 tutorial_map_01)"]
+sources: ["client: ZoneDB.cdb id 2", "doc: spec/navmesh (tutorial spawn in ZoneDB 2 tutorial_map_01)", "client + video: [[gameplay/npc-locations]] §6; [[gameplay/video-character-creation-and-tutorial]] §6 (never visited in 2018)"]
 name_kr: "튜토리얼맵_01"
 terrain: "tutorial_map_01"
 bounds: {"x0": 1344, "z0": 352, "x1": 1503, "z1": 479}
@@ -46,7 +46,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Map of field 117 (Beginner's Training Ground). No client table places anything here; a safe navmesh spawn point is (1427, 429) ([[gameplay/npc-locations|NPC locations]] §6). The 2018 builds never sent players here: new characters started in the Training Ground ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §6). *client + video*
 
 ## Behaviour
 

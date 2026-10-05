@@ -2,7 +2,7 @@
 title: "Corpse Bride"
 type: "npc"
 id: 2001
-status: "stub"
+status: "partial"
 missing: ["x", "z"]
 sources: ["client: UnitDB.cdb id 2001", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "client: Quest.cdb giver/receiver field (map only; no position)"]
 name_key: "TitleName_28"
@@ -54,7 +54,7 @@ Skill 5000001, Skill 5000001, Skill 5000002, Skill 5000002, Skill 4040001
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Event NPC in the nation Castle. In Crush Online's Halloween 2016 event she gave "Trick or Treat": hunt Jack O'Lantern in PvE for a reward box with the skill stone "Creep Jack" ([[gameplay/crush-patch-notes|Crush patch notes]] 2016-10-27). *staff*
 
 ## Behaviour
 
@@ -62,7 +62,9 @@ Skill 5000001, Skill 5000001, Skill 5000002, Skill 5000002, Skill 4040001
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/crush-patch-notes|Crush patch notes]]
 
 ## Open questions
 

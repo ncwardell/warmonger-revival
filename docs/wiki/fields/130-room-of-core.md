@@ -2,9 +2,9 @@
 title: "Room of Core"
 type: "field"
 id: 130
-status: "stub"
-missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 130", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 130"]
+status: "partial"
+missing: ["monsters"]
+sources: ["client: SceneList.cdb id 130", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 130", "video: [[gameplay/video-fort-war]] §2 Room of Core (room centres read off minimap_z138, ±5 units; Entry Core 1047, Invasion Core 1048, Heart of Magic 1049, Anti-Aircraft Defence Equipment 1036 room ±1)", "video: [[gameplay/video-fort-war]] §1, §3 (40:00 siege timer, TP reset, about 14 s respawn at the attackers' Nexus)"]
 name_key: "FieldName_130"
 kind: "dungeon"
 scene_type: 3
@@ -24,7 +24,11 @@ connections:
   - {"to": null, "gate": 1306, "kind": "exit"}
 npcs: []
 monsters: []
-spawn_points: []
+spawn_points:
+  - {"unit": 1047, "x": 364, "z": 3934, "count": 1, "kind": "structure", "note": "Entry Core, ring south-west"}
+  - {"unit": 1048, "x": 476, "z": 4001, "count": 1, "kind": "structure", "note": "Invasion Core, ring north-east"}
+  - {"unit": 1049, "x": 421, "z": 3971, "count": 1, "kind": "structure", "note": "Heart of Magic, centre room"}
+  - {"unit": 1036, "x": 471, "z": 3941, "count": 1, "kind": "structure", "note": "Anti-Aircraft Defence Equipment, ring south-east (room ±1)"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=052e88 type=7a94db id=2a7541 sources=6ae821 name_key=05bf33 kind=3e3f38 scene_type=77de68 max_users=22d200 group=b6589f zones=76eab3 segments=108ae9 gates=b7d380 connections=c07309 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
@@ -60,7 +64,12 @@ None known yet.
 
 ### Spawn points
 
-Monster spawn positions are not in the client data (`map.jpk` has no spawn files; [[spec/monsters|Monsters]]). Add them to the monster's page (`spawns:` with `field`, `x`, `z`) or here as `spawn_points:` (`unit`, `x`, `z`, `count`, `radius`, `respawn_s`).
+| unit | x | z | count | kind | note |
+|---|---|---|---|---|---|
+| Entry Core | 364 | 3934 | 1 | structure | Entry Core, ring south-west |
+| Invasion Core | 476 | 4001 | 1 | structure | Invasion Core, ring north-east |
+| Heart of Magic | 421 | 3971 | 1 | structure | Heart of Magic, centre room |
+| Anti-Aircraft Defence Equipment | 471 | 3941 | 1 | structure | Anti-Aircraft Defence Equipment, ring south-east (room ±1) |
 
 ### Navmesh
 
@@ -80,19 +89,22 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Floor 1 of a fort siege. Clicking the defenders' nexus after a won land war opens the siege; attackers land beside their own Nexus in the outer south room, about (376, 3869), with a new 40:00 timer and TP reset to 0 / 10,000 ([[gameplay/video-fort-war|fort-war video notes]] §1, §3). *video*
+- Layout: a ring of six hexagonal rooms around a closed centre room, three outer rooms to the south-west and one detached room to the north-east. Ring centres: south-west (364, 3934) Entry Core; north-west (361, 3996); north (426, 4031); north-east (476, 4001) Invasion Core; south-east (471, 3941) where the air defence stood; south (419, 3909). Centre room (421, 3971): Heart of Magic. The six cores are UnitDB 1043-1048 (Water, Wind, Earth, Fire, Entry, Invasion) ([[gameplay/video-fort-war|fort-war video notes]] §2). *video + client*
+- The detached north-east room (476, 4044) holds gates 1302 ↔ 1303 and a pink star; after the air defence fell a white glow appeared in the outer west room (314, 3954) ([[gameplay/video-fort-war|fort-war video notes]] §2). *video; purposes guessed*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Capture Entry, then the ring cores, then Invasion; either side can retake cores. Destroying the Heart of Magic stops the Divine Guard and the guardian's recovery; destroying the air defence opens the way to the guardian's room ([[gameplay/video-fort-war|fort-war video notes]] §3; [[gameplay/classes-and-legions|Classes and legions]] §4). *video + guide*
+- Respawn in the siege took about 14 s, at the attackers' Nexus ([[gameplay/video-fort-war|fort-war video notes]] §1). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-fort-war|fort-war video notes]], [[gameplay/classes-and-legions|Classes and legions]], [[gameplay/server-rules|Server rules]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- HP of the cores, Heart of Magic and guardian; what ends the siege (the recorded defeat came 7 min 55 s in); which room holds the portal to field 131 ([[gameplay/video-fort-war|fort-war video notes]] §5). The structures are listed under `spawn_points`; regular monsters are not known.
 
 <!-- credit:start -->
 ---

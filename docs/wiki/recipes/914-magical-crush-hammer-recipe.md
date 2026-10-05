@@ -2,9 +2,9 @@
 title: "Magical Crush Hammer recipe"
 type: "recipe"
 id: 914
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 914", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 914", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/items-and-crafting]] §3 (Farrell makes normal weapons and does passion conversion, Item_Make rows 801–827); unit 237 per [[gameplay/npc-locations]] §3 (Farrell 237/317)"]
 result: {"item": 20003, "count": 1}
 materials:
   - {"item": 854, "count": 3}
@@ -15,6 +15,7 @@ category: 2
 filter_mask: 16777281
 superior: {"chance": 5, "item": 21003}
 level: 1
+npc: [237]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=424de7 type=61613a id=b70158 sources=161caf result=a6e8cb materials=c06eb2 gold=8a12a3 success_rate=310b86 category=da4b92 filter_mask=24f4fd superior=4bb771 level=356a19 -->
@@ -28,7 +29,7 @@ level: 1
 | **Superior result** | 5 % → [[wiki/items/21003-magical-crush-hammer\|Magical Crush Hammer]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 2 / `0x1000041` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/237-farrell\|Farrell]] |
 
 ### Materials
 
@@ -48,7 +49,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Normal weapons are crafted at **Farrell** from 3 or 5 of a medal-bought material (2 bronze medals each at Athan) plus 50 / 70 / 100 crystals ([[gameplay/items-and-crafting|Items and crafting]] §3, *guide*). From WM 0920 crafted weapons have a small chance to come out **superior** ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -56,11 +59,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/items-and-crafting]] §3 (Farrell makes normal weapons and does passion conversion, Item_Make rows 801–827); unit 237 per [[gameplay/npc-locations]] §3 (Farrell 237/317)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Farrell's unit id: the fortress Farrell is 237; a second Farrell (317) has no recorded position ([[gameplay/npc-locations]] §3).
 
 <!-- credit:start -->
 ---

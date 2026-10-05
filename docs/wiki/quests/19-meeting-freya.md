@@ -77,7 +77,7 @@ Speaker: [[wiki/npcs/224-bernice|Bernice]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Freya: meet Bernice on the plaza first ([56:55](https://www.youtube.com/watch?v=s04CSN16w1s&t=3415s)). The player used the Castle scroll and talked to Bernice (224, Oracle of Judgment) in the Castle at [57:55](https://www.youtube.com/watch?v=s04CSN16w1s&t=3475s). Panel: 200,000 exp. Bernice also offers unhappy players a change of nation ([[gameplay/video-early-quests]] step 22). *video*
 
 ## Behaviour
 
@@ -85,7 +85,9 @@ Speaker: [[wiki/npcs/224-bernice|Bernice]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

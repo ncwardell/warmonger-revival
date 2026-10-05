@@ -8,7 +8,7 @@ title: "Zones"
 
 Every terrain zone in the client's `ZoneDB` table, with its minimap: the world rectangle, the terrain segments and navmesh, and the [[wiki/fields/index|fields]] that use it. Names are English glosses of the Korean ZoneDB names.
 
-153 pages: 137 complete, 0 partial, 16 stub. Back to the [[wiki/index|game wiki]].
+153 pages: 137 complete, 1 partial, 15 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -17,7 +17,7 @@ Every terrain zone in the client's `ZoneDB` table, with its minimap: the world r
 | ![](wiki/assets/zones/2.png) | 2 | [[wiki/zones/2-tutorial-map-01-beginner-s-training-ground\|Tutorial map 01 (Beginner's Training Ground)]] | complete | 0 |
 | ![](wiki/assets/zones/3.png) | 3 | [[wiki/zones/3-dungeon\|Dungeon]] | stub | 1 |
 |  | 4 | [[wiki/zones/4-logo\|Logo]] | complete | 0 |
-| ![](wiki/assets/zones/5.png) | 5 | [[wiki/zones/5-battle-arena\|Battle arena]] | stub | 1 |
+| ![](wiki/assets/zones/5.png) | 5 | [[wiki/zones/5-battle-arena\|Battle arena]] | partial | 1 |
 | ![](wiki/assets/zones/6.png) | 6 | [[wiki/zones/6-town-c-village\|Town C (Village)]] | complete | 0 |
 |  | 7 | [[wiki/zones/7-new\|New]] | stub | 1 |
 | ![](wiki/assets/zones/8.png) | 8 | [[wiki/zones/8-town-b-village\|Town B (Village)]] | complete | 0 |

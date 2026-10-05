@@ -2,9 +2,9 @@
 title: "Life saviour (Premium)"
 type: "item"
 id: 1801
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 1801"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 1801", "notes: [[gameplay/events-and-schedules]] §11 (Crush Online: Premium Life Saviour, bundle of 25 for 1,000 jewels in the auction house)"]
 name_key: "ItemName_1801"
 kind: 11
 kind_name: "Normal"
@@ -24,7 +24,8 @@ options:
   - {"code": 261, "value": 120}
   - {"code": 262, "value": 15}
 icon: {"file": "Items_07.png", "index": 58}
-obtained_from: []
+obtained_from:
+  - {"how": "auction_house_bundle", "count": 25, "price": 1000, "currency": "jewels"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=3ac1c7 type=d36ca9 id=775ea0 sources=82677b name_key=6885ce kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=902ba3 no_sell=5ffe53 use_skill=11c5ea cooldown_s=775bc5 cooldown_group=f1abd6 stats=97d170 options=0f51d7 icon=0afb33 obtained_from=97d170 -->
@@ -61,12 +62,12 @@ obtained_from: []
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how auction_house_bundle, count 25, price 1000, currency jewels (hand-entered)
 <!-- generated:end -->
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online sold the Premium Life Saviour in bundles of 25 for **1,000 jewels** in the auction house; it heals 50 % of max HP, cannot be used in the battle arena and has a **120 s** cooldown (the client's cooldown is 120 s too) ([[gameplay/events-and-schedules|Events and schedules]] §11, *notes*). The fame version (1802) cost 1,000 fame at the merits merchant.
 
 ## Behaviour
 
@@ -74,7 +75,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/events-and-schedules]] §11 (Crush Online: Premium Life Saviour, bundle of 25 for 1,000 jewels in the auction house)
 
 ## Open questions
 

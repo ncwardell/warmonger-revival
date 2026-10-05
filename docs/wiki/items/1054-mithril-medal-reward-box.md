@@ -4,7 +4,7 @@ type: "item"
 id: 1054
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1054"]
+sources: ["client: Item_Base.cdb id 1054", "image: [[gameplay/progression-and-economy]] §3–4", "client: [[gameplay/crush-patch-notes]] 2016-12-15"]
 name_key: "ItemName_1054"
 kind: 43
 kind_name: "Random Box"
@@ -46,7 +46,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Athan sells it for **1 mithril** medals ([[gameplay/progression-and-economy|Progression and economy]] §4, *image*; [[gameplay/crush-patch-notes|Crush patch notes]], *client*). Mithril medals came only from the Gold and Mithril boxes ([[gameplay/progression-and-economy|Progression and economy]] §3).
 
 ## Behaviour
 
@@ -54,7 +54,8 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/progression-and-economy]] §3–4
+- client: [[gameplay/crush-patch-notes]] 2016-12-15
 
 ## Open questions
 

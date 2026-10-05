@@ -4,7 +4,7 @@ type: "item"
 id: 1931
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1931"]
+sources: ["client: Item_Base.cdb id 1931", "image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)"]
 name_key: "ItemName_1931"
 kind: 12
 kind_name: "Material"
@@ -25,6 +25,7 @@ obtained_from:
   - {"how": "shop", "shop": 401}
   - {"how": "dungeon", "field": 127}
   - {"how": "dungeon", "field": 142}
+  - {"how": "fort_guardian_drop", "count": 1}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=4d9b72 type=d36ca9 id=00d47e sources=f3cda9 name_key=47724f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=e19323 obtained_from=094e70 -->
@@ -52,6 +53,7 @@ obtained_from:
 - Sold in [[wiki/shops/401-shop-401-no-npc|Shop 401 (no NPC)]] (no NPC found)
 - Shown as a reward of dungeon [[wiki/dungeons/127-lv-1-chepa-village|(Lv 1) Chepa Village]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 
@@ -72,7 +74,9 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+On the Fort Guardian drop list from WM 0817: each of up to 15 players who defeat the guardian gets one drop from the list, this item ×1 ([[gameplay/events-and-schedules|Events and schedules]] §5, *image + notes*).
+
+Boss-set essences: Fort Guardians drop them at a very small chance (WM 0809), more often from WM 0920; each border dungeon's entry window shows one essence among its rewards ([[gameplay/reinforce-and-runes|Reinforce and runes]] §6, *notes + client*).
 
 ## Behaviour
 
@@ -80,7 +84,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)
 
 ## Open questions
 

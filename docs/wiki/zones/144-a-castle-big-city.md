@@ -4,7 +4,7 @@ type: "zone"
 id: 144
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 144", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 144", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: [[gameplay/npc-locations]] §2 (Castle copies and segment origins)"]
 name_kr: "A대도시"
 terrain: "A_big city"
 bounds: {"x0": 256, "z0": 4096, "x1": 511, "z1": 4351}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Castle of field 90, segment origin (256, 4096); the three Castle copies have identical meshes ([[gameplay/npc-locations|NPC locations]] §2). *client*
 
 ## Behaviour
 

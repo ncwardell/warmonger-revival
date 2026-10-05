@@ -2,7 +2,7 @@
 title: "Gear Level (+) reinforcement"
 type: "quest"
 id: 720
-status: "stub"
+status: "partial"
 missing: ["objectives"]
 sources: ["client: Quest.cdb id 720", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-tutorial-walkthrough]] steps 3-5 (lesson exp shown = table value)"]
 name_key: "Quest_Title_720"
@@ -64,7 +64,7 @@ Image `ui/HelpImage/Help_22.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Ran from 45:00 to 61:25 in the first-session video, after the player crafted gear for quest 110 ([[gameplay/video-early-quests]] step 19). *video*
 
 ## Behaviour
 
@@ -72,7 +72,9 @@ Image `ui/HelpImage/Help_22.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

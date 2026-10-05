@@ -81,15 +81,24 @@ The client has one unit row per placement or variant: [[wiki/npcs/313-odin|Odin 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Blue Union crafter for gear (armour and accessories) in the east arm of the Fortress ([[gameplay/npc-locations|NPC locations]] §3; [[gameplay/maps-and-dungeons|Maps and dungeons]] §5). Life gear costs 0 gold to craft and Honor / Rise gear 15,000 gold ([[gameplay/video-early-quests|Video notes: first session]] §3). *video*
+- Normal gear takes 10–30 Blue Crystals per piece, for example Ring of Spell for 10 Blue Crystals and 15,000 gold ([[gameplay/items-and-crafting|Items and crafting]] §3). Courage and Rise gear can only be crafted here, never dropped ([[gameplay/items-and-crafting|Items and crafting]] §1). *guide*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest 110 "Gear manufacturing": craft one piece of gear here; the panel shows 10,000 exp and 30,000 gold ([[gameplay/video-early-quests|Video notes: first session]] §2 step 19, [42:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=2555s)). *video*
+- A Crush-era screenshot shows his repeat quest "Destroy the hell of demon" (10 Demon Hunters and 10 Elite Demon Hunters) ([[gameplay/lords-of-the-land|Lords of the Land]] §5). A repeatable Refined Oils quest unlocks after an Odin quest that asks for 2 Garnet and 2 Bloodstone ([[gameplay/warmonger-forum|Warmonger forum]] §4). *image / forum*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/items-and-crafting|Items and crafting]]
+- [[gameplay/lords-of-the-land|Lords of the Land]]
+- [[gameplay/warmonger-forum|Warmonger forum]]
 
 ## Open questions
 

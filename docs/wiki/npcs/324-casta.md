@@ -73,7 +73,8 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Rune manager next to Alan. She upgrades, sets and removes runes ([[gameplay/items-and-crafting|Items and crafting]] §2; [[gameplay/maps-and-dungeons|Maps and dungeons]] §5); the April 2018 video shows rune socketing here ([[gameplay/video-early-quests|Video notes: first session]] §3, [49:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2960s)). *guide + video*
+- In Crush Online she opened weapon sockets and inserted or removed jewel stones. A failed socket opening could destroy the weapon, and removing a stone destroyed it ([[gameplay/crush-patch-notes|Crush patch notes]] 2017-03-02). *staff*
 
 ## Behaviour
 
@@ -81,7 +82,12 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/items-and-crafting|Items and crafting]]
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/crush-patch-notes|Crush patch notes]]
 
 ## Open questions
 

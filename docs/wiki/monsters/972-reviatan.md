@@ -2,7 +2,7 @@
 title: "Reviatan"
 type: "monster"
 id: 972
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 972", "docs: [[gameplay/dungeon-drops]] (boss of field 126)", "client: DungeonAdmission.cdb (rewards advertised by the dungeon, no rates)"]
 name_key: "UnitName_972"
@@ -98,19 +98,25 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Boss of [[wiki/dungeons/126-lv-7-demon-hell|[Lv 7] Demon Hell (126)]] (guides + client ids, [[gameplay/maps-and-dungeons]] §2; [[gameplay/dungeon-drops]] §1) — "Reviatan", listed only by [[gameplay/dungeon-drops]]. Crush Online name: Akasha/Reviathan (Crush Online sheet, listed for both Lv 7 and Lv 8; the forum says Akasha / Leviathan); the client's rewards for this dungeon show Leviathan's horn and sealed weapon ([[gameplay/dungeon-drops]] §1–2; [[gameplay/crush-mechanics]] §9).
+- That dungeon drops T2 named-set gear, already reinforced at a random level (+0 to +11 seen) (image + guide, [[gameplay/maps-and-dungeons]] §2).
+- Other units with this boss's name: [[wiki/monsters/678-reviatan-shadow|678]], [[wiki/monsters/740-reviatan-shadow|740]], [[wiki/monsters/739-commander-reviatan|739]].
+- The dungeons guide shows the Demon Hell boss as **two** identical figures (a multi-boss fight); the PvE text of the Remote Bomb TP skill ("attacks all bosses after attacking the middle boss") fits (image, [[gameplay/maps-and-dungeons]] §2).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Drops: the dungeon entry panel advertises this dungeon's essence, horn and sealed weapon (client, front matter `dungeon_rewards`; no rates). Crush Online players said every boss (dungeon or world map) could drop every essence (player, [[gameplay/crush-mechanics]] §9). Warmonger patch 0920 raised boss-material drop rates from dungeon bosses and fort guardians (notes, [[gameplay/patch-history]] § Numbers pass (October 2026)).
+- The forum says a dungeon boss only exists while the land is monster-invaded (forum, [[gameplay/warmonger-forum]] §3); in hard mode the boss waits at the end (guide, [[gameplay/maps-and-dungeons]] §2).
+- Crush Online patch 2016-12-15 let dungeon elites drop a scroll that summoned one extra boss, once per boss (this boss is on the list); the client's summon items 2585–2589 do not include one for it (staff + client, [[gameplay/crush-patch-notes]] § 2016-12-15).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/dungeon-drops]] §1–2, [[gameplay/maps-and-dungeons]] §2, [[gameplay/crush-mechanics]] §9, [[gameplay/warmonger-forum]] §3, [[gameplay/crush-patch-notes]] § 2016-12-15, [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- HP, level, damage, exp and drop rates: no source gives them. [[gameplay/sources]] §9 lists boss videos (Commander Reviatan solo, Komodo 5-man) that could give HP against damage numbers.
+- The guides do not say which of this boss's unit ids is the normal-mode, hard-mode or field version.
 
 <!-- credit:start -->
 ---

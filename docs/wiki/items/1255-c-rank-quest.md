@@ -2,9 +2,9 @@
 title: "C Rank Quest"
 type: "item"
 id: 1255
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 1255"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 1255", "image: [[gameplay/precept-shop]] §1 (Crush Online Oct 2016: Freya sold Rank[C] precepts at 9,300 gold and Rank[B] at 18,600; client ids grouped per rank on that page)"]
 name_key: "ItemName_1202"
 kind: 44
 kind_name: "Quest precept"
@@ -15,7 +15,8 @@ cost_pair:
   - {"currency": 2, "amount": 25000}
 stats: []
 icon: {"file": "Items_07.png", "index": 37}
-obtained_from: []
+obtained_from:
+  - {"how": "shop_crush_2016", "npc": 200, "price": 9300, "currency": "gold"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=d00e38 type=d36ca9 id=cc6f6e sources=e788d5 name_key=ba6b34 kind=98fbc4 kind_name=b94918 classes=92d079 bind=883bf8 price=2080a7 cost_pair=0f9a23 stats=97d170 icon=df3f62 obtained_from=97d170 -->
@@ -37,7 +38,7 @@ obtained_from: []
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how shop_crush_2016, npc 200, price 9300, currency gold (hand-entered)
 
 ### Mentioned in
 
@@ -46,7 +47,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Freya sold the Rank[C] precept for **9,300 gold** in October 2016 ([[gameplay/precept-shop|Precept shop]] §1, *image*); the client's base price is 25,000.
 
 ## Behaviour
 
@@ -54,11 +55,11 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/precept-shop]] §1 (Crush Online Oct 2016: Freya sold Rank[C] precepts at 9,300 gold and Rank[B] at 18,600; client ids grouped per rank on that page)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The client's shop 289 sells only 1251–1253 for rank C, and this precept points to quest 815, which is not in `Quest.tsv` ([[gameplay/precept-shop|Precept shop]] §1). So it was probably not sold in the final game.
 
 <!-- credit:start -->
 ---

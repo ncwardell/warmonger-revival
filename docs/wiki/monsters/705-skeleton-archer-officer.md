@@ -2,7 +2,7 @@
 title: "Skeleton Archer Officer"
 type: "monster"
 id: 705
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 705", "client: Quest.cdb kill objectives (quests 107)"]
 name_key: "UnitName_705"
@@ -97,7 +97,8 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Stands in the south of [[wiki/fields/99-corpse-incineration|Corpse incineration (99)]], guarded by elite skeletons; target of quest 107 (video + client, [[gameplay/video-tutorial-walkthrough]] step 24 at [28:00](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1680s); [[gameplay/video-character-creation-and-tutorial]] step 20).
+- An officer's speech bubble shouts "Kill them!!" (video, [[gameplay/video-tutorial-walkthrough]] step 24).
 
 ## Behaviour
 
@@ -105,7 +106,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] step 24; [[gameplay/video-early-quests]] §2, §5; [[gameplay/video-character-creation-and-tutorial]] step 20
 
 ## Open questions
 

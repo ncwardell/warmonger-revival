@@ -4,7 +4,7 @@ type: "zone"
 id: 128
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 128", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 128", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: [[gameplay/npc-locations]] §2 (segment origins; minimap = ZoneDB rectangle check)"]
 name_kr: "캠핑장_A"
 terrain: "A_campingsite"
 bounds: {"x0": 288, "z0": 3392, "x1": 447, "z1": 3551}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Training Camp of field 88, segment origin (256, 3328) ([[gameplay/npc-locations|NPC locations]] §2). The minimap mapping was checked by drawing field 88's four gates onto this texture: each lands at the end of one arm ([[gameplay/npc-locations|NPC locations]] §2). *client*
 
 ## Behaviour
 

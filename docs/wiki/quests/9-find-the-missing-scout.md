@@ -99,15 +99,18 @@ Speaker: [[wiki/nodes/9901-scout|Scout]] / [[wiki/nodes/10001-scout|Scout]] / [[
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From Frei: a scout carrying important information is overdue; talk to the Guard (215) at the Corpse incineration gate in the south of the camp, then find the Scout in Corpse incineration ([21:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=1295s), [23:45](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1425s)). The Guard's dialogue is QuestTalk 640 ([24:02](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1442s)). The Scout is the quest gadget at Trigger 9901 (465.27, 2259.45 in field 99) ([[gameplay/video-tutorial-walkthrough]] steps 21–23). Panel: 10,400 exp, then 100× Potion of Health [C] (885) or 100× Potion of Mana [C] (889). Done at [26:15](https://www.youtube.com/watch?v=s04CSN16w1s&t=1575s), [26:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1590s) and [18:10](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1090s). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Finding the Scout completes this quest and starts quest 10 and side quest 107 together ([[gameplay/video-tutorial-walkthrough]] step 23, [[gameplay/video-character-creation-and-tutorial]] §3 step 20). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

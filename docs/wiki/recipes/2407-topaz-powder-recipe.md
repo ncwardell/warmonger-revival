@@ -2,9 +2,9 @@
 title: "Topaz powder recipe"
 type: "recipe"
 id: 2407
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2407", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2407", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)"]
 result: {"item": 815, "count": 10}
 materials:
   - {"item": 814, "count": 1}
@@ -13,6 +13,7 @@ success_rate: 100
 category: 8
 filter_mask: 8192
 level: 15
+npc: [337]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=bb1fd1 type=61613a id=a60214 sources=258aec result=370d4a materials=ec9322 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=b48f6f level=f1abd6 -->
@@ -25,7 +26,7 @@ level: 15
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 8 / `0x2000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
@@ -44,7 +45,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp Owen (unit 337) offers a short list: only B-grade scrolls, tomes, elixirs and flasks and only C and B potions ([[gameplay/consumables|Consumables]] §4, *client*).
 
 ## Behaviour
 
@@ -52,7 +53,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)
 
 ## Open questions
 

@@ -2,9 +2,10 @@
 title: "Join & Create Legion"
 type: "quest"
 id: 752
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 752", "client: QuestTalk.cdb id 741", "client: QuestTalk.cdb id 742"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 752", "client: QuestTalk.cdb id 741", "client: QuestTalk.cdb id 742", "image: [[gameplay/classes-and-legions]] (\"Join & Create Legion\" quest, return to Kesley); video: [[gameplay/video-early-quests]] step 20 (objective type 21 = join or create a legion, *inferred* from title and tracker)"]
+manual: ["objectives"]
 name_key: "Quest_Title_743"
 kind: 1
 kind_name: "Sub"
@@ -18,7 +19,9 @@ next: [753, 754]
 prerequisites:
   - {"type": 7, "what": "legion?", "a": -1}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 21, "what": "join_or_create_legion", "text_key": "Quest_QuickText_743_1"}
+  - {"n": 2, "type": 0, "what": "report", "text_key": "Quest_QuickText_650_3"}
 objectives_client:
   - {"n": 1, "type": 21, "what": null, "text_key": "Quest_QuickText_743_1"}
   - {"n": 2, "type": 0, "what": "report", "text_key": "Quest_QuickText_650_3"}
@@ -28,7 +31,7 @@ offer_talk: 741
 complete_talk: 742
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=33f137 type=eb5b2b id=b7ecf1 sources=335b9b name_key=fb86ce kind=356a19 kind_name=0bac50 giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=310b86 prev=97d170 next=93d31a prerequisites=af2dc3 stages=30caa7 objectives=2be88c objectives_client=54bea2 rewards=7a6730 offer_talk=23b23b complete_talk=02c8be -->
+<!-- generated-keys: title=33f137 type=eb5b2b id=b7ecf1 sources=335b9b name_key=fb86ce kind=356a19 kind_name=0bac50 giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=310b86 prev=97d170 next=93d31a prerequisites=af2dc3 stages=30caa7 objectives_client=54bea2 rewards=7a6730 offer_talk=23b23b complete_talk=02c8be -->
 |  |  |
 |---|---|
 |  | ![Join & Create Legion](wiki/assets/npcs/210.png) |
@@ -52,9 +55,6 @@ complete_talk: 742
 | 7 | legion? | a=-1 |
 
 ### Objectives
-
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
 
 1. Type 21 — join or create a legion?; values none — tracker: “Join Legion or Create Legion.”
 2. Report (tracker line; done by turning the quest in) — tracker: “Return to Kesley”
@@ -92,7 +92,7 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Offered by Kesley (210) in the Fortress at [47:10](https://www.youtube.com/watch?v=s04CSN16w1s&t=2830s); reward Medal: Bronze (1000). The first-session player never finished it; "Join the Legion" (753) appeared at [75:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=4540s) ([[gameplay/video-early-quests]] step 20). A guide screenshot shows the quest with its last step, return to Kesley ([[gameplay/classes-and-legions]]). The June 2018 player was offered it in the Fortress too ([[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). *video + image*
 
 ## Behaviour
 
@@ -100,7 +100,11 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/classes-and-legions]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

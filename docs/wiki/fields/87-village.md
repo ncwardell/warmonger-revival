@@ -2,9 +2,9 @@
 title: "Village"
 type: "field"
 id: 87
-status: "stub"
+status: "partial"
 missing: ["npcs", "connections"]
-sources: ["client: SceneList.cdb id 87", "doc: gameplay/npc-locations §2", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 87"]
+sources: ["client: SceneList.cdb id 87", "doc: gameplay/npc-locations §2", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 87", "client + video: [[gameplay/npc-locations]] §2 and §6 (Village = old copy of the town map; start-point gates only)"]
 name_key: "FieldName_87"
 kind: "town"
 scene_type: 1
@@ -73,7 +73,9 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Village is the old copy of the town map: its segments use the same navmesh as the Fortress. Segment origin of this copy: (2560, 256) ([[gameplay/npc-locations|NPC locations]] §2). *client*
+- Its only `Teleport_List` row is gate 0 at (2688.83, 382.86), which links to itself, so it is a spawn point, not a way out. The Arslan start point (2688.83, 382.86) is local (128.8, 126.9), the centre of the Fortress plaza ([[gameplay/npc-locations|NPC locations]] §2, §6). *client*
+- In 2018 players went Training Camp → Castle → Fortress; the camp's Village gate had no portal icon ([video](https://www.youtube.com/watch?v=E-87WgbO_vo&t=845s), [[gameplay/npc-locations|NPC locations]] §2). No video shows NPCs here ([[gameplay/npc-locations|NPC locations]] §6). *video*
 
 ## Behaviour
 
@@ -85,7 +87,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Whether players could reach the Village at all in the 2018 game, and which NPCs (if any) stood here, is unknown; `npcs` and `connections` stay empty until a source turns up.
 
 <!-- credit:start -->
 ---

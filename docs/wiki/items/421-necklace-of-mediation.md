@@ -4,7 +4,7 @@ type: "item"
 id: 421
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 421"]
+sources: ["client: Item_Base.cdb id 421", "image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)"]
 name_key: "ItemName_421"
 kind: 54
 kind_name: "Necklace"
@@ -35,6 +35,8 @@ obtained_from:
   - {"how": "gacha", "pool": 0}
   - {"how": "gacha", "pool": 1}
   - {"how": "gacha", "pool": 4}
+  - {"how": "dungeon_drop", "field": 127, "tier": 1}
+  - {"how": "dungeon_drop", "field": 124, "tier": 2}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=623426 type=d36ca9 id=1c76c4 sources=1789b5 name_key=63e5f0 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=3dba2f reinforce=356a19 icon=46fa1a obtained_from=e67239 -->
@@ -92,11 +94,13 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 127, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
 <!-- generated:end -->
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Drops in the border dungeons Chepa Village (127), Ghost Fortress (124), already reinforced at a random level (+0 up to +11 seen); Lv 1–4 dungeons drop it at tier 1, Lv 5–8 at tier 2 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2, *image*). Sockets are rolled when the item drops ([[gameplay/items-and-crafting|Items and crafting]] §2).
 
 ## Behaviour
 
@@ -104,7 +108,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)
 
 ## Open questions
 

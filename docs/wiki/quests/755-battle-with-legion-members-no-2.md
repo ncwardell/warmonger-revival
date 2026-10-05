@@ -2,7 +2,7 @@
 title: "Battle with Legion members No. 2"
 type: "quest"
 id: 755
-status: "stub"
+status: "partial"
 missing: ["objectives"]
 sources: ["client: Quest.cdb id 755", "client: QuestTalk.cdb id 747", "client: QuestTalk.cdb id 748"]
 name_key: "Quest_Title_746"
@@ -92,7 +92,7 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+A Crush Online screenshot shows the tracker entry "Battle with Legion members No. 2": battle together with 10 legion members, then return to Kelsey ([[gameplay/precept-shop]] §6, [[gameplay/skull-artifact-set]]). *image*
 
 ## Behaviour
 
@@ -100,11 +100,14 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/precept-shop]]
+- [[gameplay/skull-artifact-set]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The "10" is not in the client row (objective type 23, a = 2, b = 1); it may come from the tracker text or from the 2016 server ([[gameplay/precept-shop]] §6). The screenshot spells the NPC "Kelsey", other pages "Kesley".
 
 <!-- credit:start -->
 ---

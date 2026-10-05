@@ -2,9 +2,9 @@
 title: "Gear gacha (tiers 2-3)"
 type: "gacha"
 id: 4
-status: "stub"
+status: "partial"
 missing: ["odds"]
-sources: ["client: Gacha_04.cdb", "client strings: GUI_Herobind_GachaText_4", "contract: items.yaml hero_gacha 0x4aa, server_rules gacha_odds", "docs: [[gameplay/events-and-schedules]] §10 (WM 1018 image 2: card prices in jewels; pool-to-card match inferred from contents and GUI_Herobind_GachaText_N)"]
+sources: ["client: Gacha_04.cdb", "client strings: GUI_Herobind_GachaText_4", "contract: items.yaml hero_gacha 0x4aa, server_rules gacha_odds", "docs: [[gameplay/events-and-schedules]] §10 (WM 1018 image 2: card prices in jewels; pool-to-card match inferred from contents and GUI_Herobind_GachaText_N)", "image + guide: [[gameplay/progression-and-economy]] §6 (paid cards Artifact 1,000 / Weapon 2,000 / Innocence 2,000 jewels, a second row at 10,000; purple or yellow jewels) + notes: [[gameplay/events-and-schedules]] §10 (WM 1018 pools, odds never published)"]
 pool: 4
 contents:
   - {"item": 397, "grade": 3, "c4": 1}
@@ -439,7 +439,7 @@ Not in the client (`Gacha_NN` has items and grades only). The contract's `gacha_
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Paid card (Gear (tiers 2–3)). Spring 2018 guides show the paid cards Artifact 1,000, Weapon 2,000 and Innocence 2,000 jewels, plus a second row of the same three at 10,000 each (multi-draw, *guess*), payable with purple or yellow jewels ([[gameplay/progression-and-economy|Progression and economy]] §6, *image + guide*). Gacha gear was described as small stat boosts, not pay-to-win.
 
 ## Behaviour
 
@@ -447,11 +447,11 @@ Not in the client (`Gacha_NN` has items and grades only). The contract's `gacha_
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + guide: [[gameplay/progression-and-economy]] §6 (paid cards Artifact 1,000 / Weapon 2,000 / Innocence 2,000 jewels, a second row at 10,000; purple or yellow jewels) + notes: [[gameplay/events-and-schedules]] §10 (WM 1018 pools, odds never published)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Odds were never published and the client pools have no odds column ([[gameplay/events-and-schedules|Events and schedules]] §10); the contract's gacha_odds are invented. Counting draws in a video is the only lead ([[gameplay/sources|Sources]], open item 10).
 
 <!-- credit:start -->
 ---

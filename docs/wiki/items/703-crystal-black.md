@@ -4,7 +4,7 @@ type: "item"
 id: 703
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 703"]
+sources: ["client: Item_Base.cdb id 703", "image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)", "video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)"]
 name_key: "ItemName_703"
 kind: 12
 kind_name: "Material"
@@ -17,6 +17,8 @@ stats: []
 icon: {"file": "Items_05.png", "index": 43}
 obtained_from:
   - {"how": "shop", "shop": 401}
+  - {"how": "fort_guardian_drop", "count": 25}
+  - {"how": "dungeon_drop", "field": 133, "count": [1, 6]}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=4ec238 type=d36ca9 id=8fc1bb sources=a24deb name_key=db9ed1 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=c4f310 cost_pair=809c9f stats=97d170 icon=1a2f64 obtained_from=397bbc -->
@@ -36,6 +38,8 @@ obtained_from:
 ### Where to get it
 
 - Sold in [[wiki/shops/401-shop-401-no-npc|Shop 401 (no NPC)]] (no NPC found)
+- how fort_guardian_drop, count 25 (hand-entered)
+- how dungeon_drop, field 133, count [1, 6] (hand-entered)
 
 ### Used for
 
@@ -82,7 +86,9 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+On the Fort Guardian drop list from WM 0817: each of up to 15 players who defeat the guardian gets one drop from the list, this item ×25 ([[gameplay/events-and-schedules|Events and schedules]] §5, *image + notes*).
+
+Seen dropping in the event dungeon Nas Village Entrance (hard, field 133 *guess*) in quantities 1–6 ([[gameplay/video-dungeon-run|Nas Village run video]] §4, *video*); Nas is the guides' best place for crystals and gold ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3).
 
 ## Behaviour
 
@@ -90,7 +96,8 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)
+- video: [[gameplay/video-dungeon-run]] §4 (Nas Village Entrance hard run, 28 Jun 2018; field 133 is a client + guess match)
 
 ## Open questions
 

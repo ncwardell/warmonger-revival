@@ -2,7 +2,7 @@
 title: "Great Summoner Spectre"
 type: "monster"
 id: 1218
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 1218", "client: HeroData.cdb id 10 (hero transform of the same name)", "docs: [[gameplay/dungeon-drops]] (boss of field 124)", "docs: [[gameplay/maps-and-dungeons]] (boss of field 124)", "client: DungeonAdmission.cdb (rewards advertised by the dungeon, no rates)"]
 name_key: "UnitName_1218"
@@ -103,19 +103,25 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Boss of [[wiki/dungeons/124-lv-6-ghost-fortress|[Lv 6] Ghost Fortress (124)]] (guides + client ids, [[gameplay/maps-and-dungeons]] §2; [[gameplay/dungeon-drops]] §1). Crush Online name: Great Summoner Spectre (Crush Online sheet, *Fortress of Ghost*, Lv 5 there) ([[gameplay/dungeon-drops]] §1–2; [[gameplay/crush-mechanics]] §9).
+- That dungeon drops T2 named-set gear, already reinforced at a random level (+0 to +11 seen) (image + guide, [[gameplay/maps-and-dungeons]] §2).
+- Other units with this boss's name: [[wiki/monsters/676-great-summoner-spectre|676]], [[wiki/monsters/743-great-summoner-spectre|743]].
+- Warmonger patch 0809 added a **Spector** boss set (3 bonus steps); the essences for these sets drop from fort guardians (notes, [[gameplay/patch-history]] § Items).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Drops: the dungeon entry panel advertises this dungeon's essence, horn and sealed weapon (client, front matter `dungeon_rewards`; no rates). Crush Online players said every boss (dungeon or world map) could drop every essence (player, [[gameplay/crush-mechanics]] §9). Warmonger patch 0920 raised boss-material drop rates from dungeon bosses and fort guardians (notes, [[gameplay/patch-history]] § Numbers pass (October 2026)).
+- The forum says a dungeon boss only exists while the land is monster-invaded (forum, [[gameplay/warmonger-forum]] §3); in hard mode the boss waits at the end (guide, [[gameplay/maps-and-dungeons]] §2).
+- Crush Online patch 2016-12-15 let dungeon elites drop a scroll that summoned one extra boss, once per boss (this boss is on the list); the client's summon items 2585–2589 do not include one for it (staff + client, [[gameplay/crush-patch-notes]] § 2016-12-15).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/dungeon-drops]] §1–2, [[gameplay/maps-and-dungeons]] §2, [[gameplay/crush-mechanics]] §9, [[gameplay/warmonger-forum]] §3, [[gameplay/crush-patch-notes]] § 2016-12-15, [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- HP, level, damage, exp and drop rates: no source gives them. [[gameplay/sources]] §9 lists boss videos (Commander Reviatan solo, Komodo 5-man) that could give HP against damage numbers.
+- The guides do not say which of this boss's unit ids is the normal-mode, hard-mode or field version.
 
 <!-- credit:start -->
 ---

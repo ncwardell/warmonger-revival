@@ -2,9 +2,9 @@
 title: "Farrell's shop (Blacksmith)"
 type: "shop"
 id: 292
-status: "stub"
+status: "partial"
 missing: ["prices"]
-sources: ["client: Npc_Carry.cdb shop 292", "client: UnitDB.cdb u16@a2 = 292 (units 317)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 292", "client: UnitDB.cdb u16@a2 = 292 (units 317)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "guide + image: [[gameplay/items-and-crafting]] §3 and [[gameplay/maps-and-dungeons]] §5 (Farrell: weapons and passion conversion)", "staff: [[gameplay/crush-patch-notes]] 2016-12-22 (Blacksmith Farrel now buys and sells items)", "guide + guess: [[gameplay/npc-locations]] §3 (Farrell 237/317 next to Odin, about (1995, 1700))"]
 npc: [317]
 stock:
   - {"slot": 0, "item": 8651, "count": 1, "p1": 0, "p2": 0}
@@ -56,7 +56,9 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Farrell (unit 317; 237 is another Farrell) is the Blacksmith. He crafts weapons and converts Passion (*guides + image*, [[gameplay/items-and-crafting|crafting]] §3, [[gameplay/maps-and-dungeons|maps]] §5). One guide puts him next to Odin on the Fortress east arm; a server can place him at about (1995, 1700) (*guide + guess*, [[gameplay/npc-locations|NPC locations]] §3).
+
+Crush Online added a shop to him on 22 Dec 2016 ("Blacksmith Farrel now buys and sells items", *staff*, [[gameplay/crush-patch-notes|CO patch notes]] 2016-12-22).
 
 ## Behaviour
 
@@ -64,11 +66,14 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/items-and-crafting]] §3 and [[gameplay/maps-and-dungeons]] §5 (Farrell: weapons and passion conversion) (*guide + image*)
+- [[gameplay/crush-patch-notes]] 2016-12-22 (Blacksmith Farrel now buys and sells items) (*staff*)
+- [[gameplay/npc-locations]] §3 (Farrell 237/317 next to Odin, about (1995, 1700)) (*guide + guess*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- `prices` stays missing: the ten stocked ids (8650-8665) have no `Item_Base` row, and no source shows what Farrell sold.
+- Rank 1-2 Striker skill stones were sold for gold from the same patch ([[gameplay/crush-patch-notes|CO patch notes]] 2016-12-22). The notes do not name the NPC.
 
 <!-- credit:start -->
 ---

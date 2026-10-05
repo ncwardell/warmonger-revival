@@ -4,7 +4,7 @@ type: "skill"
 id: 5041
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5041"]
+sources: ["client: Skill_Base.cdb id 5041", "video: [[gameplay/video-character-creation-and-tutorial]] §1 Character creation, 1:50 (cooldown, mana and effect text at level 1; match client)", "video: [[gameplay/video-tutorial-walkthrough]] step 1, 1:38 (Guardian skill preview)"]
 name_key: "Skill_5041"
 desc_key: "SkillComment_5041"
 kind: 1
@@ -71,7 +71,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Shown on the character-creation screen of the June 2018 relaunch as the R skill of the starting Guardian weapon Magical Demolition Hammer (item 20001), at level 1: 60 s cooldown, 340 mana, "more HP regeneration and movement speed for 10 s" ([[gameplay/video-character-creation-and-tutorial]] §1, [1:50](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=110s)). Cooldown and mana cost match the client. *video*
+- The Arslan tutorial video shows the same Guardian preview (Q Soul Infestation, W Aura of Demise, E Severe Blow, R Dark Transformation) ([[gameplay/video-tutorial-walkthrough]] step 1, [1:38](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=98s)). *video*
 
 ## Behaviour
 
@@ -79,7 +80,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-character-creation-and-tutorial]] §1 (ZonderCoRe, June 2018), [[gameplay/video-tutorial-walkthrough]] step 1.
 
 ## Open questions
 

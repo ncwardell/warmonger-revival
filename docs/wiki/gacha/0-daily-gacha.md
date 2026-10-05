@@ -2,9 +2,9 @@
 title: "Daily gacha"
 type: "gacha"
 id: 0
-status: "stub"
+status: "partial"
 missing: ["odds"]
-sources: ["client: Gacha_00.cdb", "client strings: GUI_Herobind_GachaText_0", "contract: items.yaml hero_gacha 0x4aa, server_rules gacha_odds"]
+sources: ["client: Gacha_00.cdb", "client strings: GUI_Herobind_GachaText_0", "contract: items.yaml hero_gacha 0x4aa, server_rules gacha_odds", "image + guide: [[gameplay/progression-and-economy]] §6 (free Daily card every 12 h, items tier 1–3, 10 rewards) + notes: [[gameplay/events-and-schedules]] §9 (WM 0726: daily gacha 5 → 10 rewards, adds yellow-jewel packs 100/200/1,000 and T1–3 weapons/gear)"]
 pool: 0
 contents:
   - {"item": 397, "grade": 2}
@@ -232,7 +232,7 @@ Not in the client (`Gacha_NN` has items and grades only). The contract's `gacha_
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The free **Daily** card can be drawn every 12 hours and gives tier 1–3 items; the definitive guide says 10 rewards (equipment, weapons, hero pieces, yellow jewels) ([[gameplay/progression-and-economy|Progression and economy]] §6, *image + guide*). WM 0726 raised the daily gacha from 5 to 10 rewards and added yellow-jewel packs of 100 / 200 / 1,000 and T1–3 weapons and gear ([[gameplay/events-and-schedules|Events and schedules]] §9, *notes*).
 
 ## Behaviour
 
@@ -240,11 +240,11 @@ Not in the client (`Gacha_NN` has items and grades only). The contract's `gacha_
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + guide: [[gameplay/progression-and-economy]] §6 (free Daily card every 12 h, items tier 1–3, 10 rewards) + notes: [[gameplay/events-and-schedules]] §9 (WM 0726: daily gacha 5 → 10 rewards, adds yellow-jewel packs 100/200/1,000 and T1–3 weapons/gear)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Odds were never published and the client pools have no odds column ([[gameplay/events-and-schedules|Events and schedules]] §10); the contract's gacha_odds are invented. Counting draws in a video is the only lead ([[gameplay/sources|Sources]], open item 10).
 
 <!-- credit:start -->
 ---

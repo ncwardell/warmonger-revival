@@ -2,9 +2,9 @@
 title: "Shop 401 (no NPC)"
 type: "shop"
 id: 401
-status: "stub"
+status: "partial"
 missing: ["npc"]
-sources: ["client: Npc_Carry.cdb shop 401", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 401", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "client: [[gameplay/consumables]] §3 (Drop Chance Potion 764 in Npc_Carry list 401)"]
 npc: []
 stock:
   - {"slot": 0, "item": 700, "count": 25, "p1": 0, "p2": 0}
@@ -110,7 +110,7 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+This list holds the Drop Chance Potion (764, +40 % item drop chance for 1 h, base 10 gold) (*client*, [[gameplay/consumables|consumables]] §3). No NPC opens it. In the client, the potion is sold in the [[wiki/shops/1000-cash-mall|Cash Mall]] (entry 30).
 
 ## Behaviour
 
@@ -118,7 +118,7 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/consumables]] §3 (Drop Chance Potion 764 in Npc_Carry list 401) (*client*)
 
 ## Open questions
 

@@ -2,9 +2,9 @@
 title: "[Lv 6] Ghost Fortress"
 type: "field"
 id: 124
-status: "stub"
+status: "partial"
 missing: ["spawn_points"]
-sources: ["client: SceneList.cdb id 124", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 124", "client: Quest.cdb (quests and objectives in field 124)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 124"]
+sources: ["client: SceneList.cdb id 124", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 124", "client: Quest.cdb (quests and objectives in field 124)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 124", "image: [[gameplay/maps-and-dungeons]] §2 (minimap layout from the dungeons guide screenshots)", "notes: [[gameplay/patch-history]] (WM 0615 unlock level 25; WM 0402/0404 open time and respawn)", "video: [[gameplay/video-dungeon-run]] §5 (Crush 2016: 20:00 timer, ghosts near the entrance, Trigger rows confirmed on the minimap)"]
 name_key: "FieldName_124"
 kind: "dungeon"
 scene_type: 3
@@ -131,15 +131,19 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Minimap layout (Ghost Fortress): entry top-left, two long lobes, marker centre ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). Legend: framed box = entry portal, yellow four-arrow marker = probably the boss / exit, green leaves = herb nodes, blue diamonds = mineral nodes, pink stars = probably elite spawns. *image*
+- Unlock level 25 (WM 0615, [[gameplay/patch-history|Patch history]]). *notes*
+- Crush Online called it "[Lv 5] Fortress of Ghost"; a 2016 video shows a 20:00 instance timer, Red and Black Ghosts near the entrance, and every minimap icon within about 5 units of this field's `Trigger` rows and portals (entry 1236, FiledPortal 1237/1238), so the gathering nodes can be loaded straight from `Trigger.cdb` ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5). *video + client*
+- Crush Online had Ghost Fortress at level 5 and Tow Canyon at level 6; the Warmonger client order (Tow 5, Ghost 6) is the one to use ([[gameplay/crush-mechanics|Crush mechanics]]; [[gameplay/server-rules|Server rules]]).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Solo, monsters do not respawn; with 2+ party members in hard mode they do. Reported respawn: first after 3-5 min then every minute (3 players), or starting at 9-10 min on the dungeon timer ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). WM 0404: with more than 2 users monsters respawn after 5 min; WM 0402 cut dungeon open time from 20 to 15 min ([[gameplay/patch-history|Patch history]]). *guides + notes*
+- One portal is one instance with at most 5 players; the "Can not enter" option locks it ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/maps-and-dungeons|Maps and dungeons]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

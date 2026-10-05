@@ -88,7 +88,7 @@ Speaker: [[wiki/npcs/335-odin|Odin]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Odin (335, Blue Union, Training Camp) needs 10 Weak Skeleton bone (2571) and 10 Weak Elite Skeleton bone (2572) from the skeleton groups 10003/10004 (units 700–703) in Corpse incineration ([22:45](https://www.youtube.com/watch?v=s04CSN16w1s&t=1365s), [29:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1770s), [15:55](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=955s)). Panel: 14,500 exp, 10,000 gold, Crystal: Blue ×10, then Spell Belt (398) or Belt of Life (406). Turned in at [36:10](https://www.youtube.com/watch?v=s04CSN16w1s&t=2170s) and [20:25](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1225s). *video*
 
 ## Behaviour
 
@@ -96,7 +96,7 @@ Speaker: [[wiki/npcs/335-odin|Odin]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 

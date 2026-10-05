@@ -4,7 +4,7 @@ type: "shop"
 id: 1001
 status: "complete"
 missing: []
-sources: ["client: ExpandSlot.cdb", "contract: items.yaml expand_capacity 0x47f, server_rules capacity", "docs: [[gameplay/video-character-creation-and-tutorial]] 16:20"]
+sources: ["client: ExpandSlot.cdb", "contract: items.yaml expand_capacity 0x47f, server_rules capacity", "docs: [[gameplay/video-character-creation-and-tutorial]] 16:20", "player: [[gameplay/crush-patch-notes]] 2016-10-11 (first warehouse row 10 → 40 jewels; last steps 500 / 750 / 1,000)", "forum: [[gameplay/warmonger-forum]] §8 (warehouse expansion last steps 500 / 750 / 1,000 jewels)", "guide: [[gameplay/progression-and-economy]] §3, §5 (bag, warehouse and character slots expand with jewels)"]
 steps:
   - {"step": 1, "bag": {"currency": 2, "amount": 0}, "warehouse": {"currency": 2, "amount": 0}, "cost3": 0}
   - {"step": 2, "bag": {"currency": 2, "amount": 0}, "warehouse": {"currency": 2, "amount": 0}, "cost3": 0}
@@ -26,6 +26,10 @@ steps:
   - {"step": 18, "bag": {"currency": 0, "amount": 0}, "warehouse": {"currency": 13, "amount": 5000}, "cost3": 0}
 observed_prices:
   - {"what": "bag step 5", "shown": 5000, "currency": "Gold", "source": "docs: [[gameplay/video-character-creation-and-tutorial]] 16:20 (lesson 706 'Expand your Inventory': 'Gold : 5000')"}
+  - {"what": "warehouse step 3", "shown": 40, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player)", "note": "first paid warehouse row; 10 before the 11 Oct 2016 patch"}
+  - {"what": "warehouse step 6", "shown": 500, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8", "note": "one of the 'last steps' of Crush Online"}
+  - {"what": "warehouse step 7", "shown": 750, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8", "note": "one of the 'last steps' of Crush Online"}
+  - {"what": "warehouse step 8", "shown": 1000, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8", "note": "one of the 'last steps' of Crush Online"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=ee1fc4 type=ffcf9c id=dd0190 sources=e994a5 steps=089a2b observed_prices=93be22 -->
@@ -63,6 +67,10 @@ Currency 2 = gold, 13 = jewels (yellow then purple, contract `jewels`). `cost3` 
 ### Seen in play
 
 - bag step 5: 5,000 Gold ([[gameplay/video-character-creation-and-tutorial]] 16:20 (lesson 706 'Expand your Inventory': 'Gold : 5000'))
+- warehouse step 3: 40 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player))
+- warehouse step 6: 500 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8)
+- warehouse step 7: 750 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8)
+- warehouse step 8: 1,000 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8)
 
 ### Seen in
 
@@ -78,7 +86,9 @@ Currency 2 = gold, 13 = jewels (yellow then purple, contract `jewels`). `cost3` 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Bag and warehouse rows (and character slots) are bought with jewels: yellow jewels or purple (real-money) jewels (*guide*, [[gameplay/progression-and-economy|economy]] §3, §5). The early bag rows cost gold. The 2018 tutorial lesson 706 "Expand your Inventory" asked 5,000 gold ([[gameplay/video-character-creation-and-tutorial|character creation video]] 16:20).
+
+The Crush Online warehouse prices match the client: the 11 Oct 2016 patch raised the first paid warehouse row from 10 to **40** jewels, and players quoted the last steps as 500 / 750 / 1,000 jewels, which is the client's sequence 40, 80, 250, 500, 750, 1,000 (*player*, [[gameplay/crush-patch-notes|CO patch notes]] 2016-10-11; *forum*, [[gameplay/warmonger-forum|Warmonger forum]] §8). Slot prices were lowered again on 12 Oct 2016 after complaints, with no numbers given ([[gameplay/crush-patch-notes|CO patch notes]] 2016-10-12).
 
 ## Behaviour
 
@@ -86,11 +96,14 @@ Currency 2 = gold, 13 = jewels (yellow then purple, contract `jewels`). `cost3` 
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/crush-patch-notes]] 2016-10-11 (first warehouse row 10 → 40 jewels; last steps 500 / 750 / 1,000) (*player*)
+- [[gameplay/warmonger-forum]] §8 (warehouse expansion last steps 500 / 750 / 1,000 jewels) (*forum*)
+- [[gameplay/progression-and-economy]] §3, §5 (bag, warehouse and character slots expand with jewels) (*guide*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Mapping the Crush Online "last steps" 500 / 750 / 1,000 onto client steps 6-8 is inferred from the matching sequence. In 2016 those were the last steps ("one more step after that"), but the client continues to step 18 ([[gameplay/warmonger-forum|Warmonger forum]] §8).
+- Which jewel colour each row accepts is not stated per row.
 
 <!-- credit:start -->
 ---

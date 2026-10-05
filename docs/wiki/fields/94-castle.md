@@ -4,7 +4,7 @@ type: "field"
 id: 94
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 94", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 94", "client: Quest.cdb (quests and objectives in field 94)"]
+sources: ["client: SceneList.cdb id 94", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 94", "client: Quest.cdb (quests and objectives in field 94)", "video: [[gameplay/video-early-quests]] §3 NPCs, Castle 90 positions (Bernice, Patrick, Krister, Kesley, Bell Thain), video-measured ±4-8 units; Erion copy derived via the segment origins of [[gameplay/npc-locations]] §2", "video: [[gameplay/video-tutorial-walkthrough]] §1 step 29 (Imperial Guards at the entrance), video", "client + video: [[gameplay/npc-locations]] §6 (gates, portal offering 'move to Fortress')"]
 name_key: "FieldName_94"
 kind: "town"
 scene_type: 1
@@ -20,7 +20,7 @@ gates:
 connections:
   - {"to": 92, "gate": 1197, "to_gate": 1196, "paired": true}
   - {"to": 92, "gate": 1197, "to_gate": 0}
-npcs: [219, 327, 2001, 199, 224]
+npcs: [219, 327, 2001, 199, 224, 208]
 monsters: []
 spawn_points: []
 ---
@@ -61,6 +61,7 @@ Positions come from the NPC's own page (`x`, `z`). The client does not place tow
 | [[wiki/npcs/2001-corpse-bride\|Corpse Bride]] | 2001 |  | quests [[wiki/quests/902-trick-or-treat\|902]] |
 | [[wiki/npcs/199-patrick\|Patrick]] | 199 | 742.1, 4292.5 | NPC page (`map` / `positions`) |
 | [[wiki/npcs/224-bernice\|Bernice]] | 224 | 749.8, 4285.8 | NPC page (`map` / `positions`) |
+| [[wiki/npcs/208-bell-thain\|Bell Thain]] | 208 |  | hand-entered |
 
 ### Monsters
 
@@ -89,7 +90,10 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Erion copy of the Castle. NPC positions (derived from the Arslan copy by adding 256 in x (all home maps share one mesh, [[gameplay/npc-locations|NPC locations]] §2)): Bernice (224) 749.8, 4285.8; Patrick (199) 742.1, 4292.5; Krister (219) 745.7, 4139.6; Kesley 736.8, 4146.2; Bell Thain (208) about 738, 4122 ([[gameplay/video-early-quests|first-session video]] §3, [58:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3480s)-[59:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3541s)). Bell Thain (Training Officer, 208) is listed here from that sighting; he also stands in the Fortress. *video*
+- Imperial Guards (red armour, halberds; UnitDB 189-197) stand at the entrance from the Training Camp, and four or more stand on the plaza near Bernice ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 29; [[gameplay/video-early-quests|first-session video]] §3). *video*
+- A portal in the Castle offers "move to Fortress" ([video](https://www.youtube.com/watch?v=cqYz3j59MFI&t=1876s), [[gameplay/npc-locations|NPC locations]] §6). Players also arrive by Scroll: Castle (quest 19) or Haley's Castle teleport (10,000 gold) ([[gameplay/video-early-quests|first-session video]] §1; [[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *video + image*
+- Bernice offers a nation change to a disaffected player; the nation is per account and is changed at the castle ([[gameplay/video-early-quests|first-session video]] §2 quest 22; [[gameplay/classes-and-legions|Classes and legions]] §2). Gear, weapons and elixirs could also be crafted at the nation castle ([[gameplay/events-and-schedules|Events and schedules]]). *video + guide*
 
 ## Behaviour
 
@@ -97,11 +101,13 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests|first-session video]], [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/npc-locations|NPC locations]], [[gameplay/classes-and-legions|Classes and legions]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The Castle's Kesley (Legion Administrator) may be unit 210 (the Fortress Kesley) or 318, a second Kesley row in UnitDB; the video page leaves it as "210 (318?)" ([[gameplay/video-early-quests|first-session video]] §3), so neither id is listed here yet.
+- Which of the nine Imperial Guard rows (189-197, three models) belong to which nation's castle is not known.
+- The position of the "move to Fortress" portal was not measured.
 
 <!-- credit:start -->
 ---

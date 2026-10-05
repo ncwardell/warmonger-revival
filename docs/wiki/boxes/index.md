@@ -8,7 +8,7 @@ title: "Random boxes"
 
 Every row of the client's `RandomBox` table: the ten possible results of a box item. Odds are not in the client, and which box item opens which row is not either (the pages give a guess).
 
-40 pages: 0 complete, 0 partial, 40 stub. Back to the [[wiki/index|game wiki]].
+40 pages: 0 complete, 15 partial, 25 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -17,12 +17,12 @@ Every row of the client's `RandomBox` table: the ten possible results of a box i
 |  | 3 | [[wiki/boxes/3-random-box-3\|Random box 3]] | stub | 2 |
 |  | 4 | [[wiki/boxes/4-random-box-4\|Random box 4]] | stub | 2 |
 |  | 5 | [[wiki/boxes/5-random-box-5\|Random box 5]] | stub | 2 |
-|  | 20 | [[wiki/boxes/20-random-box-20-spirit-of-gaia-box\|Random box 20 (Spirit of Gaia Box?)]] | stub | 2 |
-|  | 21 | [[wiki/boxes/21-random-box-21-help-of-gaia-box\|Random box 21 (Help of Gaia Box?)]] | stub | 2 |
-|  | 22 | [[wiki/boxes/22-random-box-22-impact-of-gaia-box\|Random box 22 (Impact of Gaia Box?)]] | stub | 2 |
-|  | 23 | [[wiki/boxes/23-random-box-23-ruler-of-gaia-box\|Random box 23 (Ruler of Gaia Box?)]] | stub | 2 |
-|  | 24 | [[wiki/boxes/24-random-box-24-phase-of-gaia-box\|Random box 24 (Phase of Gaia Box?)]] | stub | 2 |
-|  | 25 | [[wiki/boxes/25-random-box-25-lords-of-the-land-box\|Random box 25 (Lords of the Land Box?)]] | stub | 2 |
+|  | 20 | [[wiki/boxes/20-random-box-20-spirit-of-gaia-box\|Random box 20 (Spirit of Gaia Box?)]] | partial | 2 |
+|  | 21 | [[wiki/boxes/21-random-box-21-help-of-gaia-box\|Random box 21 (Help of Gaia Box?)]] | partial | 2 |
+|  | 22 | [[wiki/boxes/22-random-box-22-impact-of-gaia-box\|Random box 22 (Impact of Gaia Box?)]] | partial | 2 |
+|  | 23 | [[wiki/boxes/23-random-box-23-ruler-of-gaia-box\|Random box 23 (Ruler of Gaia Box?)]] | partial | 2 |
+|  | 24 | [[wiki/boxes/24-random-box-24-phase-of-gaia-box\|Random box 24 (Phase of Gaia Box?)]] | partial | 2 |
+|  | 25 | [[wiki/boxes/25-random-box-25-lords-of-the-land-box\|Random box 25 (Lords of the Land Box?)]] | partial | 2 |
 |  | 30 | [[wiki/boxes/30-random-box-30-box-of-the-victorious-vi\|Random box 30 (Box of the Victorious VI?)]] | stub | 2 |
 |  | 31 | [[wiki/boxes/31-random-box-31-box-of-the-victorious-v\|Random box 31 (Box of the Victorious V?)]] | stub | 2 |
 |  | 32 | [[wiki/boxes/32-random-box-32-box-of-the-victorious-iv\|Random box 32 (Box of the Victorious IV?)]] | stub | 2 |
@@ -35,12 +35,12 @@ Every row of the client's `RandomBox` table: the ten possible results of a box i
 |  | 43 | [[wiki/boxes/43-random-box-43-box-of-the-participant-iii\|Random box 43 (Box of the Participant III?)]] | stub | 2 |
 |  | 44 | [[wiki/boxes/44-random-box-44-box-of-the-participant-ii\|Random box 44 (Box of the Participant II?)]] | stub | 2 |
 |  | 45 | [[wiki/boxes/45-random-box-45-box-of-the-participant-i\|Random box 45 (Box of the Participant I?)]] | stub | 2 |
-|  | 46 | [[wiki/boxes/46-random-box-46-bronze-medal-reward-box\|Random box 46 ((Bronze) Medal Reward Box?)]] | stub | 2 |
-|  | 47 | [[wiki/boxes/47-random-box-47-silver-medal-reward-box\|Random box 47 ((Silver) Medal Reward Box?)]] | stub | 2 |
-|  | 48 | [[wiki/boxes/48-random-box-48-gold-medal-reward-box\|Random box 48 ((Gold) Medal Reward Box?)]] | stub | 2 |
-|  | 49 | [[wiki/boxes/49-random-box-49-mithril-medal-reward-box\|Random box 49 ((Mithril) Medal Reward Box?)]] | stub | 2 |
-|  | 50 | [[wiki/boxes/50-random-box-50-diamond-medal-rewar-box\|Random box 50 ((Diamond) Medal Rewar Box?)]] | stub | 2 |
-|  | 51 | [[wiki/boxes/51-random-box-51-halloween-rewar-box\|Random box 51 (Halloween Rewar Box?)]] | stub | 2 |
+|  | 46 | [[wiki/boxes/46-random-box-46-bronze-medal-reward-box\|Random box 46 ((Bronze) Medal Reward Box?)]] | partial | 2 |
+|  | 47 | [[wiki/boxes/47-random-box-47-silver-medal-reward-box\|Random box 47 ((Silver) Medal Reward Box?)]] | partial | 2 |
+|  | 48 | [[wiki/boxes/48-random-box-48-gold-medal-reward-box\|Random box 48 ((Gold) Medal Reward Box?)]] | partial | 2 |
+|  | 49 | [[wiki/boxes/49-random-box-49-mithril-medal-reward-box\|Random box 49 ((Mithril) Medal Reward Box?)]] | partial | 2 |
+|  | 50 | [[wiki/boxes/50-random-box-50-diamond-medal-rewar-box\|Random box 50 ((Diamond) Medal Rewar Box?)]] | partial | 2 |
+|  | 51 | [[wiki/boxes/51-random-box-51-halloween-rewar-box\|Random box 51 (Halloween Rewar Box?)]] | partial | 2 |
 |  | 61 | [[wiki/boxes/61-random-box-61\|Random box 61]] | stub | 2 |
 |  | 62 | [[wiki/boxes/62-random-box-62\|Random box 62]] | stub | 2 |
 |  | 63 | [[wiki/boxes/63-random-box-63\|Random box 63]] | stub | 2 |
@@ -49,8 +49,8 @@ Every row of the client's `RandomBox` table: the ten possible results of a box i
 |  | 66 | [[wiki/boxes/66-random-box-66\|Random box 66]] | stub | 2 |
 |  | 67 | [[wiki/boxes/67-random-box-67\|Random box 67]] | stub | 2 |
 |  | 68 | [[wiki/boxes/68-random-box-68\|Random box 68]] | stub | 2 |
-|  | 81 | [[wiki/boxes/81-random-box-81-random-box-of-dye\|Random box 81 (Random box of dye?)]] | stub | 2 |
-|  | 82 | [[wiki/boxes/82-random-box-82-random-box-of-dye\|Random box 82 (Random box of dye?)]] | stub | 2 |
-|  | 83 | [[wiki/boxes/83-random-box-83-random-box-of-dye\|Random box 83 (Random box of dye?)]] | stub | 2 |
+|  | 81 | [[wiki/boxes/81-random-box-81-random-box-of-dye\|Random box 81 (Random box of dye?)]] | partial | 2 |
+|  | 82 | [[wiki/boxes/82-random-box-82-random-box-of-dye\|Random box 82 (Random box of dye?)]] | partial | 2 |
+|  | 83 | [[wiki/boxes/83-random-box-83-random-box-of-dye\|Random box 83 (Random box of dye?)]] | partial | 2 |
 
 *Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*

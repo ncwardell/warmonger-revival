@@ -2,9 +2,9 @@
 title: "Soul Infestation"
 type: "skill"
 id: 5037
-status: "stub"
+status: "partial"
 missing: ["cost"]
-sources: ["client: Skill_Base.cdb id 5037"]
+sources: ["client: Skill_Base.cdb id 5037", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0124 (Soul Infestation basic-attack damage; link to 5037 via buff 10034 is inferred)"]
 name_key: "Skill_5037"
 desc_key: "SkillComment_5037"
 kind: 5
@@ -66,7 +66,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The basic attack that [[wiki/skills/5036-soul-infestation|Soul Infestation]] swaps in through buff 10034 (*client*). [WM 0124](https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617) describes it: basic attacks deal 10 + 60 % AP + 75 % AD magic damage and hit several targets ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -74,7 +74,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 

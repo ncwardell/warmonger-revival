@@ -2,7 +2,7 @@
 title: "Basic function - Skill Use"
 type: "quest"
 id: 1503
-status: "stub"
+status: "partial"
 missing: ["turn_in"]
 sources: ["client: Quest.cdb id 1503", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)"]
 name_key: "Quest_Title_Help_667"
@@ -53,7 +53,7 @@ Image `ui/HelpImage/Help_10.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The HUD's Help button opens an "Advice" list of the lessons finished so far: Basic function – Move character, Basic attack, Skill Use, QuickSlot Use and Item – Gear Wear at [6:35](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=395s); these are the `Quest_Title_Help_<n>` strings of quests 1, 700, 701, 722 and 704 ([[gameplay/video-character-creation-and-tutorial]] §2). *video + client*
 
 ## Behaviour
 
@@ -61,7 +61,9 @@ Image `ui/HelpImage/Help_10.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

@@ -4,7 +4,7 @@ type: "zone"
 id: 138
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 138", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 138", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "video: [[gameplay/video-fort-war]] §2 (minimap overlay; room centres ±5 units)"]
 name_kr: "코어실"
 terrain: "Core_01"
 bounds: {"x0": 256, "z0": 3840, "x1": 511, "z1": 4095}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The siege video's minimap lines up exactly with this zone's texture: a ring of six hexagonal rooms around a closed centre room, three outer rooms to the south-west and one detached room to the north-east; texture pixels map as x = 256 + px/2, z = 4096 − py/2 ([[gameplay/video-fort-war|fort-war video notes]] §2). *video*
 
 ## Behaviour
 

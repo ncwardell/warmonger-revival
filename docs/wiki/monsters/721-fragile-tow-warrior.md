@@ -2,7 +2,7 @@
 title: "Fragile Tow Warrior"
 type: "monster"
 id: 721
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 721", "client: Quest.cdb kill objectives (quests 80, 81, 82, 749, 1101)"]
 name_key: "UnitName_721"
@@ -97,15 +97,16 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Seen killed in The land of Greed (Abyss Lv 3, field 108) for quests 749 and 81 (video, [[gameplay/video-early-quests]] §2 items 17 and 21, §5); a Guardian player farmed them in field 109 (video, [[gameplay/video-character-creation-and-tutorial]] §3 "After the tutorial").
+- Gem Stone: Blue (693) drops in the Land of Greed (video, [[gameplay/video-early-quests]] §6).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online Abyss Tow quest: 10 Tow, 10 Elite Tow and 1 boss in the Abyss field next to the starting zone, about 5–10 minutes (forum, [[gameplay/warmonger-forum]] §3). The ES guide names Tow monsters as the farm target at levels 1–25; Abyss monsters stop giving loot at level 30 (guide, [[gameplay/maps-and-dungeons]] §1).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §2, §5–6; [[gameplay/video-character-creation-and-tutorial]]; [[gameplay/warmonger-forum]] §3; [[gameplay/maps-and-dungeons]] §1
 
 ## Open questions
 

@@ -2,7 +2,7 @@
 title: "Skeleton Archer"
 type: "monster"
 id: 701
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 701", "client: Quest.cdb kill objectives (quests 101)"]
 name_key: "UnitName_701"
@@ -102,15 +102,16 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Lives in [[wiki/fields/99-corpse-incineration|Corpse incineration (99)]]; kill group 10003 for quest 101 (Weak Skeleton bone) (video + client, [[gameplay/video-tutorial-walkthrough]] step 22 at [24:12](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1452s), step 26).
+- Skeletons hit the player (a low-level Guardian) for about 19; the player's basic hits did 109 damage to them (video, [[gameplay/video-tutorial-walkthrough]] § Monsters and damage).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest items drop at the `Quest.tsv` rate: every kill of a matching monster gave one while the quest was active (video, [[gameplay/video-early-quests]] §6).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] steps 22–26 and § Monsters and damage; [[gameplay/video-early-quests]] §2, §5
 
 ## Open questions
 

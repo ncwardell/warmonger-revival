@@ -2,9 +2,10 @@
 title: "[Weekly] Kill Player and Bot"
 type: "quest"
 id: 962
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 962", "client: NoticeQuest.cdb id 7"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 962", "client: NoticeQuest.cdb id 7", "image: [[gameplay/pvp-and-matches]] (type 2 = kill enemy players, from the daily 10 and monthly 240 rows); count 70 = client b"]
+manual: ["objectives"]
 name_key: "Quest_Title_955"
 kind: 10
 kind_name: "Weekly"
@@ -18,7 +19,8 @@ next: []
 prerequisites:
   - {"type": 4, "what": "level", "min": 29}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 2, "what": "kill_player", "count": 70, "a": 5, "c": 1, "text_key": "Quest_QuickText_955_1"}
 objectives_client:
   - {"n": 1, "type": 2, "what": null, "a": 5, "b": 70, "c": 1, "text_key": "Quest_QuickText_955_1"}
 rewards:
@@ -29,7 +31,7 @@ board:
   - {"row": 7, "tab": 2}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=07d17e type=eb5b2b id=89c48c sources=944495 name_key=bab9cb kind=b1d578 kind_name=f3fde7 level=6d8d3c giver=4cde45 turn_in=847ad4 periodic=440243 automatic=5ffe53 prev=97d170 next=97d170 prerequisites=1efb5e stages=30caa7 objectives=2be88c objectives_client=6bed45 rewards=0771c9 help=0e023b board=359b5e -->
+<!-- generated-keys: title=07d17e type=eb5b2b id=89c48c sources=944495 name_key=bab9cb kind=b1d578 kind_name=f3fde7 level=6d8d3c giver=4cde45 turn_in=847ad4 periodic=440243 automatic=5ffe53 prev=97d170 next=97d170 prerequisites=1efb5e stages=30caa7 objectives_client=6bed45 rewards=0771c9 help=0e023b board=359b5e -->
 |  |  |
 |---|---|
 | **Quest id** | `962` |
@@ -54,10 +56,7 @@ board:
 
 ### Objectives
 
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
-
-1. Type 2 — kill enemy players?; values a=5, b=70, c=1 — tracker: “Destroy the enemy player and Bot from the Gaia field”
+1. Type 2 — kill enemy players?; values a=5, c=1 — tracker: “Destroy the enemy player and Bot from the Gaia field (0/70)”
 
 ### Rewards
 
@@ -73,7 +72,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Weekly Kill Player; daily and monthly versions exist ([[gameplay/pvp-and-matches]], [[gameplay/progression-and-economy]] §2, *image*). From WM 0124 bot kills count ([[gameplay/events-and-schedules]] §1). *image + patch notes*
 
 ## Behaviour
 
@@ -81,7 +80,11 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/pvp-and-matches]]
+- [[gameplay/progression-and-economy]]
+- [[gameplay/events-and-schedules]]
 
 ## Open questions
 

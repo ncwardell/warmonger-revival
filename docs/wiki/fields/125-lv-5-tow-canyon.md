@@ -2,9 +2,9 @@
 title: "[Lv 5] Tow Canyon"
 type: "field"
 id: 125
-status: "stub"
+status: "partial"
 missing: ["spawn_points"]
-sources: ["client: SceneList.cdb id 125", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 125", "client: Quest.cdb (quests and objectives in field 125)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 125"]
+sources: ["client: SceneList.cdb id 125", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 125", "client: Quest.cdb (quests and objectives in field 125)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 125", "image: [[gameplay/maps-and-dungeons]] §2 (minimap layout from the dungeons guide screenshots)", "notes: [[gameplay/patch-history]] (WM 0615 unlock level 24; WM 0402/0404 open time and respawn)"]
 name_key: "FieldName_125"
 kind: "dungeon"
 scene_type: 3
@@ -131,15 +131,18 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Minimap layout (Tow Canyon): entry top-left, two columns of chambers, marker top-right; pink stars down the east side ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). Legend: framed box = entry portal, yellow four-arrow marker = probably the boss / exit, green leaves = herb nodes, blue diamonds = mineral nodes, pink stars = probably elite spawns. *image*
+- Unlock level 24 (WM 0615, [[gameplay/patch-history|Patch history]]). *notes*
+- Crush Online had Ghost Fortress at level 5 and Tow Canyon at level 6; the Warmonger client order (Tow 5, Ghost 6) is the one to use ([[gameplay/crush-mechanics|Crush mechanics]]; [[gameplay/server-rules|Server rules]]).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Solo, monsters do not respawn; with 2+ party members in hard mode they do. Reported respawn: first after 3-5 min then every minute (3 players), or starting at 9-10 min on the dungeon timer ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). WM 0404: with more than 2 users monsters respawn after 5 min; WM 0402 cut dungeon open time from 20 to 15 min ([[gameplay/patch-history|Patch history]]). *guides + notes*
+- One portal is one instance with at most 5 players; the "Can not enter" option locks it ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/maps-and-dungeons|Maps and dungeons]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

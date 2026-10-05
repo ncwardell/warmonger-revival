@@ -2,9 +2,9 @@
 title: "Recovery Shot"
 type: "skill"
 id: 4510
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 4510", "client: Skill_TP.cdb row 9"]
+sources: ["client: Skill_Base.cdb id 4510", "client: Skill_TP.cdb row 9", "guide: [[gameplay/pvp-and-matches]] TP skills (team pool; nexus/tower grid)", "notes: [[gameplay/events-and-schedules]] §6 Shaia Legion donations, WM 1128 (Recovery Shot core at tier 2)", "notes: [[gameplay/crush-patch-notes]] 2017-03-02 and [[gameplay/crush-mechanics]] §6 (CO TP-skill rules; history)"]
 name_key: "Skill_4510"
 desc_key: "SkillComment_4510"
 kind: 1
@@ -59,15 +59,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- TP is one pool for the whole side: when any ally uses a TP skill the pool drops for everyone ([[gameplay/pvp-and-matches]]; [[gameplay/video-fort-war]] §1 TP). TP skills are opened by right-clicking your Nexus or a Tower ([[gameplay/pvp-and-matches]] TP skills). *guide + video*
+- The legion donation system of [WM 1128](https://steamcommunity.com/games/718790/announcements/detail/2415515408464895311) unlocks a **Recovery Shot** core at tier 2 (6,000,000 gold, core durability 50) ([[gameplay/events-and-schedules]] §6). More TP skills unlock when the legion places cores ([[gameplay/pvp-and-matches]] TP skills). *notes + image*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online rules (history): changing TP skills during a war was allowed but locked them for 180 s ([[gameplay/crush-patch-notes]] 2017-03-02); strategy skills could not be used on fortress floor 2 ([[gameplay/crush-mechanics]] §6, staff).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/pvp-and-matches]] TP skills, [[gameplay/events-and-schedules]] §6, [[gameplay/crush-patch-notes]] 2017-03-02, [[gameplay/crush-mechanics]] §6.
 
 ## Open questions
 

@@ -2,9 +2,9 @@
 title: "Crystal : Guardian recipe"
 type: "recipe"
 id: 1202
-status: "stub"
+status: "partial"
 missing: ["npc"]
-sources: ["client: Item_Make.cdb id 1202", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+sources: ["client: Item_Make.cdb id 1202", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "notes: [[gameplay/events-and-schedules]] §9 (WM 1107: Innocence Crystal = 5 Innocence Pieces + Red fragments; durability 1,500, −5/s)"]
 result: {"item": 8501, "count": 1}
 materials:
   - {"item": 9001, "count": 5}
@@ -38,7 +38,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The WM 1107 patch notes describe the Innocence Crystal recipe as **5 Innocence Pieces + Red fragments**, which matches this row (5 × Piece + 50 Red Passion Fragments [D]) ([[gameplay/events-and-schedules|Events and schedules]] §9, *notes + client*). The crystal has no level limit and 1,500 durability, losing 5 per second while transformed (same source).
 
 ## Behaviour
 
@@ -46,11 +46,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/events-and-schedules]] §9 (WM 1107: Innocence Crystal = 5 Innocence Pieces + Red fragments; durability 1,500, −5/s)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Which NPC offers Item_Make category 3 (Innocence crystals and heroes) is not in any source; the guides name only Farrell, Odin, Alan, Owen and Paraman ([[gameplay/items-and-crafting|Items and crafting]] §3).
 
 <!-- credit:start -->
 ---

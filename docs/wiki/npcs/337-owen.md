@@ -74,7 +74,8 @@ The client has one unit row per placement or variant: [[wiki/npcs/214-owen|Owen 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Training Camp Owen. His craft list (8) is shorter than the Fortress list: only B-grade scrolls, tomes, elixirs and flasks, and only C and B potions ([[gameplay/consumables|Consumables]] §4; [[gameplay/server-rules|Server rules]], round 2). *client*
+- In the June 2018 video he has only a greeting line ([[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] step 14, [9:05](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=545s)). *video*
 
 ## Behaviour
 
@@ -82,7 +83,11 @@ The client has one unit row per placement or variant: [[wiki/npcs/214-owen|Owen 
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/consumables|Consumables]]
+- [[gameplay/server-rules|Server rules]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 

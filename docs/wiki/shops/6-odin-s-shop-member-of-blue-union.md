@@ -4,7 +4,7 @@ type: "shop"
 id: 6
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 6", "client: UnitDB.cdb u16@a2 = 6 (units 335)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 6", "client: UnitDB.cdb u16@a2 = 6 (units 335)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "client: [[gameplay/consumables]] §4 (Training Camp Owen 337 craft list 8, Odin list 6 = Item_Make category 0 copy, passion converter category 7)", "video: [[gameplay/npc-locations]] §4 Training Camp, video-measured (±3 units) (Odin 335)"]
 npc: [335]
 stock:
   - {"slot": 0, "item": 601, "count": 1, "p1": 0, "p2": 0}
@@ -95,7 +95,7 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Opened by the Training Camp Odin (unit 335, Member of Blue Union) (*video*, [[gameplay/npc-locations|NPC locations]] §4). In the camp he gives quest 101 "All sorts of Fragile bones" ([[gameplay/video-character-creation-and-tutorial|character creation video]] step 18). He crafts gear like the Fortress Odin: his craft list 6 is a copy of `Item_Make` category 0 (*client*, [[gameplay/consumables|consumables]] §4).
 
 ## Behaviour
 
@@ -103,11 +103,12 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/consumables]] §4 (Training Camp Owen 337 craft list 8, Odin list 6 = Item_Make category 0 copy, passion converter category 7) (*client*)
+- [[gameplay/npc-locations]] §4 Training Camp, video-measured (±3 units) (Odin 335) (*video*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/consumables|Consumables]] §4 reads the same `UnitDB` value (6) as Odin's craft list. This `Npc_Carry` row may never open as a shop; it holds only fragments 601, 611 and 1900 (*guess*).
 
 <!-- credit:start -->
 ---

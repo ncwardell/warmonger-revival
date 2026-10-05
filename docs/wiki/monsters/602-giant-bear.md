@@ -2,7 +2,7 @@
 title: "Giant Bear"
 type: "monster"
 id: 602
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 602"]
 name_key: "UnitName_602"
@@ -84,19 +84,23 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/pvp-and-matches]] §1 lists this unit among the land-war **jungle bosses** (Giant Bear) (client ids; the guides do not say which id spawns on which land).
+- A June 2018 war video shows a Giant Bear jungle camp at about (3748, 636) in [[wiki/fields/14-eternal-river-upper-region|Eternal River – Upper Region (14)]]; the side's TP rose by 1,500 as it died (cause a *guess*) (video, [[gameplay/video-fort-war]] §1–2).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Spawns first at 35:00 on the 40:00 war clock, then 5 minutes after each death (guides, [[gameplay/pvp-and-matches]] §1; blog, [[gameplay/events-and-schedules]] §8).
+- When killed it joins the killer's team and pushes the nearest enemy towers, then the nexus (guides, [[gameplay/pvp-and-matches]] §1).
+- TP for the kill: 3,000 for a Bear (strategy guide) or 1,500 (blog) (guides, [[gameplay/pvp-and-matches]] §1; [[gameplay/events-and-schedules]] §8).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/pvp-and-matches]] §1; [[gameplay/events-and-schedules]] §8; [[gameplay/video-fort-war]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Which jungle id spawns where is unknown, so no `spawns` are set.
+- Respawn: the guides say 5 min for the Bear; in the war video the jungle returned about 4 min after the Giant Bear camp died (video + guess, [[gameplay/video-fort-war]] §1).
 
 <!-- credit:start -->
 ---

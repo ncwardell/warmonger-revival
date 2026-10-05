@@ -2,9 +2,9 @@
 title: "Reinforcement 11: Magical Storm Wand and 51 more"
 type: "upgrade"
 id: 11
-status: "stub"
+status: "partial"
 missing: ["success_rates"]
-sources: ["client: ItemSancMet.cdb id 11", "client: Item_Base.cdb c41@92 (inferred link to ItemSancMet)", "contract: items.yaml reinforce 0x436, server_rules craft_reinforce_rune_odds"]
+sources: ["client: ItemSancMet.cdb id 11", "client: Item_Base.cdb c41@92 (inferred link to ItemSancMet)", "contract: items.yaml reinforce 0x436, server_rules craft_reinforce_rune_odds", "notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412: a failed reinforce drops the item one level and uses up the materials; Reinforcing Adjuvants, item 1100, prevent the drop)"]
 gold: 1000
 steps:
   - {"step": 1, "materials": [{"item": 611, "count": 1}]}
@@ -15,6 +15,8 @@ steps:
   - {"step": 6, "materials": [{"item": 616, "count": 8}]}
 used_by: [10000, 10001, 10002, 10003, 10006, 10007, 10008, 10009, 10011, 10012, 10013, 10015, 10017, 10018, 10019, 10020, 15000, 15001, 15002, 15004, 15006, 15007, 15008, 15010, 15011, 15012, 15013, 15014, 15015, 15016, 15017, 15018, 15019, 20001, 20002, 20003, 20005, 20006, 20007, 20008, 20009, 20011, 20012, 20013, 20015, 20016, 20017, 20018, 20019, 20020, 20021, 40003]
 kind: "reinforcement"
+on_failure: "drop_one_level"
+failure_protection_item: 1100
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=1018e5 type=4389c5 id=17ba07 sources=b04eb7 gold=e3cbba steps=17ceab used_by=259af8 kind=701a6f -->
@@ -52,19 +54,25 @@ Six material steps per row. Whether a step is a reinforce level band or a tier i
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Each tier runs +0…+15 and is reinforced with gold + passion; Red Passion is for weapons, Blue Passion for gear, and amounts grow each level ([[gameplay/items-and-crafting|Items and crafting]] §1, *guides*). Tier-up (+15 → next tier +0) also consumes a second identical +15 item plus Orange Passion and gold ([[gameplay/items-and-crafting|Items and crafting]] §1; per-tier Orange / Brilliant Passion table in [[gameplay/reinforce-and-runes|Reinforce and runes]] §4).
+
+Seen in game (mid-2018): the T1 Magical Crystal Wand (10003, which uses this row) cost **1,000 gold + 3 Red Passion Fragments [D]** for +0→+1; Attack 80→82, AP 100→108, range 750 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, [[gameplay/items-and-crafting|Items and crafting]] §1, *image*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Before WM 0412 a failed reinforce destroyed the item; after it, the item **drops one level** (+3 → +2) and the materials are used up. **Reinforcing Adjuvants** (item 1100) prevent the drop ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+Success falls slowly with tier and rarity, starting at a lower tier for rarer items (WM 0406); Rainbow Reinforcing Stones (641–646) only work on items of their own rarity (WM 0420); a notice appears before reinforcing items of different rarities (WM 0621) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*). No rates were published.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412: a failed reinforce drops the item one level and uses up the materials; Reinforcing Adjuvants, item 1100, prevent the drop)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The wand screenshot shows 3 Red Passion Fragments [D] for +0→+1, but step 1 of this row is 1 × 611, so a step is not simply one level (*guess*: steps are tiers, [[gameplay/reinforce-and-runes|Reinforce and runes]] §4).
+
+The 2018 guides say reinforcing "never fails" ([[gameplay/items-and-crafting|Items and crafting]] §1), while the WM 0406/0412 patch notes describe falling success and a one-level drop on failure ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4). This page follows the patch notes.
 
 <!-- credit:start -->
 ---

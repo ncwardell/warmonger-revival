@@ -2,7 +2,7 @@
 title: "Elite Nas Archer"
 type: "monster"
 id: 691
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 691"]
 name_key: "UnitName_691"
@@ -76,19 +76,23 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One of the client's six Nas units for the Nas Village Entrance event dungeon ([[wiki/dungeons/133-sinking-nest-crystal|Sinking Nest (Crystal), 133]]) (client, [[gameplay/video-dungeon-run]] §2).
+- A June 2018 hard-mode run shows packs of about 5–7 warriors with shields and bow archers at six stops along the dungeon; positions are on the dungeon page (video, [[gameplay/video-dungeon-run]] §2).
+- Party members hit them for about 2,180–2,400 and most died after a few hits; the HP cannot be read at 360p (video, [[gameplay/video-dungeon-run]] §2).
+- The archers carry a projectile id (1240, or 662 for the Superior one) (client, [[gameplay/video-dungeon-run]] §2).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- With 3 players a cleared pack was back after about 90–100 s (video, [[gameplay/video-dungeon-run]] §3).
+- Loot per kill: one or two stacks of Faded Passion fragments/Piece/Pattern (1900–1902) and crystals (700–703) (video, [[gameplay/video-dungeon-run]] §4).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-dungeon-run]] §2–4
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Which of the six Nas ids spawn in the run is a *guess*, so no `spawns` are set.
 
 <!-- credit:start -->
 ---

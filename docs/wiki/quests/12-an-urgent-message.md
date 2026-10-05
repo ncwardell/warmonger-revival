@@ -76,7 +76,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Deliver the letter to Freya (200) in the Fortress: done at [38:05](https://www.youtube.com/watch?v=s04CSN16w1s&t=2285s) and [33:05](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1985s). The walkthrough's chat at the turn-in showed 20 Blue and 20 Red Passion Fragments [D] and 10 Crystal: Blue, then level 13 ([[gameplay/video-tutorial-walkthrough]] step 32). Quest 13 and lessons 712 and 718 start next. *video*
 
 ## Behaviour
 
@@ -84,11 +84,14 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The table also lists 44,000 exp and an Armor Rune (7022). Neither video captured the reward panel, and the rune does not appear in the walkthrough's chat lines ([[gameplay/video-early-quests]] step 13, [[gameplay/video-tutorial-walkthrough]] step 32).
 
 <!-- credit:start -->
 ---

@@ -61,7 +61,7 @@ Image `ui/HelpImage/Help_07.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts with quest 3: open the inventory (I) and equip a piece of gear; 600 exp. Equipping quest 2's Gloves of Life completed it ([4:25](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=265s)–[4:30](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=270s), [7:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=450s)). *video*
 
 ## Behaviour
 
@@ -69,7 +69,7 @@ Image `ui/HelpImage/Help_07.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 

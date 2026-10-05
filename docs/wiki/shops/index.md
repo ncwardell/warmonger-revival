@@ -8,7 +8,7 @@ title: "Shops"
 
 Every NPC shop in the client's `Npc_Carry` table (stock, prices and the NPCs that open it), plus the Cash Mall (`PrimiumShop`, page 1000) and bag/warehouse expansion prices (`ExpandSlot`, page 1001). Gacha pools and random boxes have their own sections ([[wiki/gacha/index|Gacha pools]], [[wiki/boxes/index|Random boxes]]).
 
-173 pages: 14 complete, 0 partial, 159 stub. Back to the [[wiki/index|game wiki]].
+173 pages: 14 complete, 44 partial, 115 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -80,47 +80,47 @@ Every NPC shop in the client's `Npc_Carry` table (stock, prices and the NPCs tha
 |  | 70 | [[wiki/shops/70-shop-70-no-npc\|Shop 70 (no NPC)]] | stub | 1 |
 |  | 71 | [[wiki/shops/71-shop-71-no-npc\|Shop 71 (no NPC)]] | stub | 1 |
 |  | 72 | [[wiki/shops/72-shop-72-no-npc\|Shop 72 (no NPC)]] | stub | 1 |
-|  | 73 | [[wiki/shops/73-shop-73-no-npc\|Shop 73 (no NPC)]] | stub | 1 |
-|  | 74 | [[wiki/shops/74-shop-74-no-npc\|Shop 74 (no NPC)]] | stub | 1 |
-|  | 75 | [[wiki/shops/75-shop-75-no-npc\|Shop 75 (no NPC)]] | stub | 1 |
-|  | 76 | [[wiki/shops/76-shop-76-no-npc\|Shop 76 (no NPC)]] | stub | 1 |
-|  | 77 | [[wiki/shops/77-shop-77-no-npc\|Shop 77 (no NPC)]] | stub | 1 |
-|  | 78 | [[wiki/shops/78-shop-78-no-npc\|Shop 78 (no NPC)]] | stub | 1 |
-|  | 79 | [[wiki/shops/79-shop-79-no-npc\|Shop 79 (no NPC)]] | stub | 1 |
-|  | 80 | [[wiki/shops/80-shop-80-no-npc\|Shop 80 (no NPC)]] | stub | 1 |
-|  | 81 | [[wiki/shops/81-shop-81-no-npc\|Shop 81 (no NPC)]] | stub | 1 |
-|  | 82 | [[wiki/shops/82-shop-82-no-npc\|Shop 82 (no NPC)]] | stub | 1 |
-|  | 83 | [[wiki/shops/83-shop-83-no-npc\|Shop 83 (no NPC)]] | stub | 1 |
-|  | 84 | [[wiki/shops/84-shop-84-no-npc\|Shop 84 (no NPC)]] | stub | 1 |
-|  | 85 | [[wiki/shops/85-shop-85-no-npc\|Shop 85 (no NPC)]] | stub | 1 |
-|  | 86 | [[wiki/shops/86-shop-86-no-npc\|Shop 86 (no NPC)]] | stub | 1 |
-|  | 87 | [[wiki/shops/87-shop-87-no-npc\|Shop 87 (no NPC)]] | stub | 1 |
-|  | 88 | [[wiki/shops/88-shop-88-no-npc\|Shop 88 (no NPC)]] | stub | 1 |
-|  | 89 | [[wiki/shops/89-shop-89-no-npc\|Shop 89 (no NPC)]] | stub | 1 |
-|  | 90 | [[wiki/shops/90-shop-90-no-npc\|Shop 90 (no NPC)]] | stub | 1 |
-|  | 91 | [[wiki/shops/91-shop-91-no-npc\|Shop 91 (no NPC)]] | stub | 1 |
-|  | 92 | [[wiki/shops/92-shop-92-no-npc\|Shop 92 (no NPC)]] | stub | 1 |
-|  | 93 | [[wiki/shops/93-shop-93-no-npc\|Shop 93 (no NPC)]] | stub | 1 |
-|  | 94 | [[wiki/shops/94-shop-94-no-npc\|Shop 94 (no NPC)]] | stub | 1 |
-|  | 95 | [[wiki/shops/95-shop-95-no-npc\|Shop 95 (no NPC)]] | stub | 1 |
-|  | 96 | [[wiki/shops/96-shop-96-no-npc\|Shop 96 (no NPC)]] | stub | 1 |
-|  | 97 | [[wiki/shops/97-shop-97-no-npc\|Shop 97 (no NPC)]] | stub | 1 |
-|  | 98 | [[wiki/shops/98-shop-98-no-npc\|Shop 98 (no NPC)]] | stub | 1 |
-|  | 99 | [[wiki/shops/99-shop-99-no-npc\|Shop 99 (no NPC)]] | stub | 1 |
-|  | 100 | [[wiki/shops/100-shop-100-no-npc\|Shop 100 (no NPC)]] | stub | 1 |
-|  | 101 | [[wiki/shops/101-shop-101-no-npc\|Shop 101 (no NPC)]] | stub | 1 |
-|  | 102 | [[wiki/shops/102-shop-102-no-npc\|Shop 102 (no NPC)]] | stub | 1 |
-|  | 103 | [[wiki/shops/103-shop-103-no-npc\|Shop 103 (no NPC)]] | stub | 1 |
-|  | 104 | [[wiki/shops/104-shop-104-no-npc\|Shop 104 (no NPC)]] | stub | 1 |
-|  | 105 | [[wiki/shops/105-shop-105-no-npc\|Shop 105 (no NPC)]] | stub | 1 |
-|  | 106 | [[wiki/shops/106-shop-106-no-npc\|Shop 106 (no NPC)]] | stub | 1 |
-|  | 107 | [[wiki/shops/107-shop-107-no-npc\|Shop 107 (no NPC)]] | stub | 1 |
-|  | 108 | [[wiki/shops/108-shop-108-no-npc\|Shop 108 (no NPC)]] | stub | 1 |
-|  | 109 | [[wiki/shops/109-shop-109-no-npc\|Shop 109 (no NPC)]] | stub | 1 |
-|  | 110 | [[wiki/shops/110-shop-110-no-npc\|Shop 110 (no NPC)]] | stub | 1 |
-|  | 111 | [[wiki/shops/111-shop-111-no-npc\|Shop 111 (no NPC)]] | stub | 1 |
-|  | 112 | [[wiki/shops/112-shop-112-no-npc\|Shop 112 (no NPC)]] | stub | 1 |
-|  | 113 | [[wiki/shops/113-shop-113-no-npc\|Shop 113 (no NPC)]] | stub | 1 |
+|  | 73 | [[wiki/shops/73-shop-73-no-npc\|Shop 73 (no NPC)]] | partial | 1 |
+|  | 74 | [[wiki/shops/74-shop-74-no-npc\|Shop 74 (no NPC)]] | partial | 1 |
+|  | 75 | [[wiki/shops/75-shop-75-no-npc\|Shop 75 (no NPC)]] | partial | 1 |
+|  | 76 | [[wiki/shops/76-shop-76-no-npc\|Shop 76 (no NPC)]] | partial | 1 |
+|  | 77 | [[wiki/shops/77-shop-77-no-npc\|Shop 77 (no NPC)]] | partial | 1 |
+|  | 78 | [[wiki/shops/78-shop-78-no-npc\|Shop 78 (no NPC)]] | partial | 1 |
+|  | 79 | [[wiki/shops/79-shop-79-no-npc\|Shop 79 (no NPC)]] | partial | 1 |
+|  | 80 | [[wiki/shops/80-shop-80-no-npc\|Shop 80 (no NPC)]] | partial | 1 |
+|  | 81 | [[wiki/shops/81-shop-81-no-npc\|Shop 81 (no NPC)]] | partial | 1 |
+|  | 82 | [[wiki/shops/82-shop-82-no-npc\|Shop 82 (no NPC)]] | partial | 1 |
+|  | 83 | [[wiki/shops/83-shop-83-no-npc\|Shop 83 (no NPC)]] | partial | 1 |
+|  | 84 | [[wiki/shops/84-shop-84-no-npc\|Shop 84 (no NPC)]] | partial | 1 |
+|  | 85 | [[wiki/shops/85-shop-85-no-npc\|Shop 85 (no NPC)]] | partial | 1 |
+|  | 86 | [[wiki/shops/86-shop-86-no-npc\|Shop 86 (no NPC)]] | partial | 1 |
+|  | 87 | [[wiki/shops/87-shop-87-no-npc\|Shop 87 (no NPC)]] | partial | 1 |
+|  | 88 | [[wiki/shops/88-shop-88-no-npc\|Shop 88 (no NPC)]] | partial | 1 |
+|  | 89 | [[wiki/shops/89-shop-89-no-npc\|Shop 89 (no NPC)]] | partial | 1 |
+|  | 90 | [[wiki/shops/90-shop-90-no-npc\|Shop 90 (no NPC)]] | partial | 1 |
+|  | 91 | [[wiki/shops/91-shop-91-no-npc\|Shop 91 (no NPC)]] | partial | 1 |
+|  | 92 | [[wiki/shops/92-shop-92-no-npc\|Shop 92 (no NPC)]] | partial | 1 |
+|  | 93 | [[wiki/shops/93-shop-93-no-npc\|Shop 93 (no NPC)]] | partial | 1 |
+|  | 94 | [[wiki/shops/94-shop-94-no-npc\|Shop 94 (no NPC)]] | partial | 1 |
+|  | 95 | [[wiki/shops/95-shop-95-no-npc\|Shop 95 (no NPC)]] | partial | 1 |
+|  | 96 | [[wiki/shops/96-shop-96-no-npc\|Shop 96 (no NPC)]] | partial | 1 |
+|  | 97 | [[wiki/shops/97-shop-97-no-npc\|Shop 97 (no NPC)]] | partial | 1 |
+|  | 98 | [[wiki/shops/98-shop-98-no-npc\|Shop 98 (no NPC)]] | partial | 1 |
+|  | 99 | [[wiki/shops/99-shop-99-no-npc\|Shop 99 (no NPC)]] | partial | 1 |
+|  | 100 | [[wiki/shops/100-shop-100-no-npc\|Shop 100 (no NPC)]] | partial | 1 |
+|  | 101 | [[wiki/shops/101-shop-101-no-npc\|Shop 101 (no NPC)]] | partial | 1 |
+|  | 102 | [[wiki/shops/102-shop-102-no-npc\|Shop 102 (no NPC)]] | partial | 1 |
+|  | 103 | [[wiki/shops/103-shop-103-no-npc\|Shop 103 (no NPC)]] | partial | 1 |
+|  | 104 | [[wiki/shops/104-shop-104-no-npc\|Shop 104 (no NPC)]] | partial | 1 |
+|  | 105 | [[wiki/shops/105-shop-105-no-npc\|Shop 105 (no NPC)]] | partial | 1 |
+|  | 106 | [[wiki/shops/106-shop-106-no-npc\|Shop 106 (no NPC)]] | partial | 1 |
+|  | 107 | [[wiki/shops/107-shop-107-no-npc\|Shop 107 (no NPC)]] | partial | 1 |
+|  | 108 | [[wiki/shops/108-shop-108-no-npc\|Shop 108 (no NPC)]] | partial | 1 |
+|  | 109 | [[wiki/shops/109-shop-109-no-npc\|Shop 109 (no NPC)]] | partial | 1 |
+|  | 110 | [[wiki/shops/110-shop-110-no-npc\|Shop 110 (no NPC)]] | partial | 1 |
+|  | 111 | [[wiki/shops/111-shop-111-no-npc\|Shop 111 (no NPC)]] | partial | 1 |
+|  | 112 | [[wiki/shops/112-shop-112-no-npc\|Shop 112 (no NPC)]] | partial | 1 |
+|  | 113 | [[wiki/shops/113-shop-113-no-npc\|Shop 113 (no NPC)]] | partial | 1 |
 |  | 114 | [[wiki/shops/114-shop-114-no-npc\|Shop 114 (no NPC)]] | stub | 1 |
 |  | 115 | [[wiki/shops/115-shop-115-no-npc\|Shop 115 (no NPC)]] | stub | 1 |
 |  | 116 | [[wiki/shops/116-shop-116-no-npc\|Shop 116 (no NPC)]] | stub | 1 |
@@ -159,9 +159,9 @@ Every NPC shop in the client's `Npc_Carry` table (stock, prices and the NPCs tha
 |  | 287 | [[wiki/shops/287-wren-s-shop-merchant-287\|Wren's shop (Merchant) 287]] | complete | 0 |
 |  | 288 | [[wiki/shops/288-candice-s-shop-arena-merchant\|Candice's shop (Arena Merchant)]] | complete | 0 |
 |  | 289 | [[wiki/shops/289-freya-s-shop-oracle-of-knowledge\|Freya's shop (Oracle of Knowledge)]] | complete | 0 |
-|  | 290 | [[wiki/shops/290-arion-s-shop-innocence-smith\|Arion's shop (Innocence Smith)]] | stub | 1 |
+|  | 290 | [[wiki/shops/290-arion-s-shop-innocence-smith\|Arion's shop (Innocence Smith)]] | partial | 1 |
 |  | 291 | [[wiki/shops/291-wren-s-shop-merchant-291\|Wren's shop (Merchant) 291]] | complete | 0 |
-|  | 292 | [[wiki/shops/292-farrell-s-shop-blacksmith\|Farrell's shop (Blacksmith)]] | stub | 1 |
+|  | 292 | [[wiki/shops/292-farrell-s-shop-blacksmith\|Farrell's shop (Blacksmith)]] | partial | 1 |
 |  | 301 | [[wiki/shops/301-shop-301-no-npc\|Shop 301 (no NPC)]] | stub | 1 |
 |  | 302 | [[wiki/shops/302-shop-302-no-npc\|Shop 302 (no NPC)]] | stub | 1 |
 |  | 303 | [[wiki/shops/303-shop-303-no-npc\|Shop 303 (no NPC)]] | stub | 1 |
@@ -182,7 +182,7 @@ Every NPC shop in the client's `Npc_Carry` table (stock, prices and the NPCs tha
 |  | 318 | [[wiki/shops/318-shop-318-no-npc\|Shop 318 (no NPC)]] | stub | 1 |
 |  | 319 | [[wiki/shops/319-shop-319-no-npc\|Shop 319 (no NPC)]] | stub | 1 |
 |  | 320 | [[wiki/shops/320-shop-320-no-npc\|Shop 320 (no NPC)]] | stub | 1 |
-|  | 401 | [[wiki/shops/401-shop-401-no-npc\|Shop 401 (no NPC)]] | stub | 1 |
+|  | 401 | [[wiki/shops/401-shop-401-no-npc\|Shop 401 (no NPC)]] | partial | 1 |
 |  | 1000 | [[wiki/shops/1000-cash-mall\|Cash Mall]] | complete | 0 |
 |  | 1001 | [[wiki/shops/1001-bag-and-warehouse-expansion\|Bag and warehouse expansion]] | complete | 0 |
 

@@ -71,7 +71,8 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Rune maker, left of the smiths by the diamond minimap icon ([[gameplay/maps-and-dungeons|Maps and dungeons]] §5). Runes are crafted here, in tiers T1–T3; T2 and T3 need the fort's Rune mastery ([[gameplay/items-and-crafting|Items and crafting]] §2). *guide*
+- In Crush Online (March 2017) Alan sold the jewel stones that go into weapon sockets ([[gameplay/crush-patch-notes|Crush patch notes]] 2017-03-02). *staff*
 
 ## Behaviour
 
@@ -79,7 +80,11 @@ Town NPC positions are not in the client data; these were measured from video an
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/items-and-crafting|Items and crafting]]
+- [[gameplay/crush-patch-notes|Crush patch notes]]
 
 ## Open questions
 

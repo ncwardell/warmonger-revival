@@ -2,7 +2,7 @@
 title: "Tow Canyon : Hunting"
 type: "quest"
 id: 1031
-status: "stub"
+status: "partial"
 missing: ["giver"]
 sources: ["client: Quest.cdb id 1031", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 757", "client: QuestTalk.cdb id 849"]
 name_key: "Quest_Title_1031"
@@ -76,7 +76,7 @@ Speaker: [[wiki/nodes/12511-dispatch-knight|Dispatch Knight]] (gadget 11)
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Repeatable ("Free") quest. The WM 0110 patch moved repeatable quests to a "Free Quests" tab on the quest board, and WM 0124 removed that tab again ([[gameplay/patch-history]]). *patch notes*
 
 ## Behaviour
 
@@ -84,11 +84,13 @@ Speaker: [[wiki/nodes/12511-dispatch-knight|Dispatch Knight]] (gadget 11)
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The client names no giver for this row. Whether it was offered from the quest board or by the NPC of its first "talk" step is not known ([[gameplay/patch-history]] 0110/0124).
 
 <!-- credit:start -->
 ---

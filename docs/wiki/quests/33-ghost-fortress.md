@@ -109,11 +109,14 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/crush-mechanics]]
+- [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online had Ghost Fortress as the level-5 and Tow Canyon as the level-6 dungeon, and players reported quest markers mixed up between the two; the Warmonger client names field 124 "[Lv 6] Ghost Fortress" and 125 "[Lv 5] Tow Canyon", and WM 0615 unlocks Tow Canyon at 24 and Ghost Fortress at 25 ([[gameplay/crush-mechanics]], [[gameplay/patch-history]]). The client order is used.
 
 <!-- credit:start -->
 ---

@@ -4,7 +4,7 @@ type: "item"
 id: 857
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 857"]
+sources: ["client: Item_Base.cdb id 857", "notes + client: [[gameplay/reinforce-and-runes]] §5", "image: [[gameplay/progression-and-economy]] §4 (Athan)"]
 name_key: "ItemName_857"
 kind: 12
 kind_name: "Material"
@@ -123,7 +123,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Amplifying Passion: **5 silver or 3 gold medals** from WM 0920 (client: 5 in currency 12); the noob guide shows 5 bronze ([[gameplay/reinforce-and-runes|Reinforce and runes]] §5, [[gameplay/progression-and-economy|Progression and economy]] §4, *notes + image + client*). The fame materials are the third material of the WM 0920 rune costs and the tier-up extras ([[gameplay/reinforce-and-runes|Reinforce and runes]] §1, §4).
 
 ## Behaviour
 
@@ -131,11 +131,12 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes + client: [[gameplay/reinforce-and-runes]] §5
+- image: [[gameplay/progression-and-economy]] §4 (Athan)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Athan's screenshot and the client disagree on the medal kind for some of these; the client is used.
 
 <!-- credit:start -->
 ---

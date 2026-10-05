@@ -80,15 +80,19 @@ The client has one unit row per placement or variant: [[wiki/npcs/334-floyd|Floy
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Biologist in the Training Ground. Three videos place her within about 1.3 units of the listed point ([[gameplay/video-early-quests|Video notes: first session]] §3; [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §2; [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] §4). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Takes quest 2 (3 Slime Mucus; panel 1,200 exp and Gloves of Life 403) and gives quest 3 "The task at hand" (5 Bee Needle, 5 Cobra/Snake Leather; panel 3,500 exp and Helmet of Life 401), then quest 4 "Go to Shaia" ([[gameplay/video-early-quests|Video notes: first session]] §2 steps 2–4, [6:45](https://www.youtube.com/watch?v=s04CSN16w1s&t=405s), [12:37](https://www.youtube.com/watch?v=s04CSN16w1s&t=757s); [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] steps 5–7). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 

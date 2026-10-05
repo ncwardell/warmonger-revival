@@ -4,7 +4,7 @@ type: "buff"
 id: 10442
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 10442", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 10442", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "notes: [[gameplay/classes-and-legions]] §5 Skeleton King's Vision Bow, WM 0110 (max 10 stacks, 7 s; matches client)"]
 name_key: "SkillBuff_10442"
 duration: {"ticks": 35, "seconds": 7.0, "permanent": false}
 is_buff: 0
@@ -48,7 +48,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Vision stack of Skeleton King's Vision Bow (item 15005). [WM 0110](https://steamcommunity.com/games/718790/announcements/detail/2417771014047971842): stacks come from basic attacks, up to 10, and last 7 s; Vision Explosion (W) spends them and Essence Wave (R) adds one per enemy hit ([[gameplay/classes-and-legions]] §5). The client buff (7 s, value 10) matches. *notes*
 
 ## Behaviour
 
@@ -56,7 +56,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5.
 
 ## Open questions
 

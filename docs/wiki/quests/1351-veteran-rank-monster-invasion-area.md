@@ -2,7 +2,7 @@
 title: "[Veteran Rank] Monster Invasion Area"
 type: "quest"
 id: 1351
-status: "stub"
+status: "partial"
 missing: ["objectives", "rewards"]
 sources: ["client: Quest.cdb id 1351", "client: NoticeQuest.cdb id 49", "client: QuestTalk.cdb id 720", "client: QuestTalk.cdb id 915"]
 name_key: "Quest_Title_1351"
@@ -94,7 +94,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The WM 0110 patch moved mission quests to a "War Quests" tab on the quest board, for level 30 and up ([[gameplay/patch-history]]). *patch notes*
 
 ## Behaviour
 
@@ -102,7 +102,9 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/patch-history]]
 
 ## Open questions
 

@@ -2,7 +2,7 @@
 title: "Rank[D] Crafting"
 type: "quest"
 id: 803
-status: "stub"
+status: "partial"
 missing: ["giver"]
 sources: ["client: Quest.cdb id 803", "client: QuestTalk.cdb id 720"]
 name_key: "Quest_Title_1299"
@@ -73,7 +73,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Started by using a precept scroll (item kind 44), not by talking to an NPC: Rank[D] scrolls 1201–1204 start quests 800–803 and Rank[C] scrolls 1251–1255 start 811–815 (`opt1_value`). Shop 289, Freya's, sells 1201–1204 and 1251–1253 ([[gameplay/precept-shop]] §1). In October 2016 a D scroll cost 4,650 gold and a C scroll 9,300 ([[gameplay/precept-shop]] §1, *image*). Only one precept quest can be active; it shows in red in the quest log as "Rank [D/C/B] Crafting" in its own "Precept" group, and dropping it and buying another scroll re-rolls it ([[gameplay/precept-shop]] §2, *guide*). Players said precept quests give no exp ([[gameplay/warmonger-forum]] §3).
 
 ## Behaviour
 
@@ -81,11 +81,15 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/precept-shop]]
+- [[gameplay/warmonger-forum]]
+- [[gameplay/crush-mechanics]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+In 2016 the server rolled a random quest and paid random medals (D mostly bronze, C silver) plus 20–150 D spell stones ([[gameplay/crush-mechanics]] §1, [[gameplay/precept-shop]] §2); this client row pays a fixed set of Passion fragments and no medals. A minimum level of 30 (pre type 4, a = 30) is a guess. Players in early 2017 said precepts had been removed ([[gameplay/crush-mechanics]]). The client has no giver shape for "started by an item", so `giver` stays empty.
 
 <!-- credit:start -->
 ---

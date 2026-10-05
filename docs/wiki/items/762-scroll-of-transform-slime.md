@@ -4,7 +4,7 @@ type: "item"
 id: 762
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 762"]
+sources: ["client: Item_Base.cdb id 762", "notes: [[gameplay/reinforce-and-runes]] §7 (WM 0503)"]
 name_key: "ItemName_762"
 kind: 19
 kind_name: "Spell Reinforcement Stone"
@@ -57,7 +57,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Transformation scrolls last **5 minutes** since WM 0503 (were 3) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, *notes*); the client buff duration is 5 min too ([[gameplay/consumables|Consumables]] §3).
 
 ## Behaviour
 
@@ -65,7 +65,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §7 (WM 0503)
 
 ## Open questions
 

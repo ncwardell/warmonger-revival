@@ -99,7 +99,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Talk to Owen (214), craft 100 Potion of Health [C], then return to Freya ([40:30](https://www.youtube.com/watch?v=s04CSN16w1s&t=2430s)–[41:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2480s); [[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). Panel: 50,000 exp + Shoes of Life (404) + 15/15 Passion Fragments + Auto decomposition hammer (948). Lesson 721 (decompose blue jewels) runs alongside ([[gameplay/video-early-quests]] step 15). *video*
 
 ## Behaviour
 
@@ -107,7 +107,10 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-character-creation-and-tutorial]]
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

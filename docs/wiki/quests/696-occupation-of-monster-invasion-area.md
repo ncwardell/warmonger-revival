@@ -2,7 +2,7 @@
 title: "Occupation of Monster Invasion Area"
 type: "quest"
 id: 696
-status: "stub"
+status: "partial"
 missing: ["objectives"]
 sources: ["client: Quest.cdb id 696", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-tutorial-walkthrough]] steps 3-5 (lesson exp shown = table value)"]
 name_key: "Quest_Title_697"
@@ -63,7 +63,7 @@ Stages (`flag1..5` = [1, 2, 5, 5, 5]): objectives unlock in steps; with the firs
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+A guide screenshot shows this quest's steps: go to the invasion area, build a tower, build all towers and win ([[gameplay/maps-and-dungeons]], *image*).
 
 ## Behaviour
 
@@ -71,7 +71,9 @@ Stages (`flag1..5` = [1, 2, 5, 5, 5]): objectives unlock in steps; with the firs
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/maps-and-dungeons]]
 
 ## Open questions
 

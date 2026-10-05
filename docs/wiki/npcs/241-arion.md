@@ -2,7 +2,7 @@
 title: "Arion"
 type: "npc"
 id: 241
-status: "stub"
+status: "partial"
 missing: ["map", "x", "z"]
 sources: ["client: UnitDB.cdb id 241"]
 name_key: "TitleName_20"
@@ -53,7 +53,8 @@ Sells 5 items (`Npc_Carry` row 290; full list on [[wiki/shops/290-arion-s-shop-i
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- In Crush Online Arion was the core smith: the premium core "Sacred Area" could be crafted at Arion with the right labs ([[gameplay/crush-patch-notes|Crush patch notes]]). On the 2018 Warmonger forum, five [Low] cores were sold by Arion for 192,000 personal gold ([[gameplay/warmonger-forum|Warmonger forum]] §5). *staff / forum*
+- Not yet placed ([[gameplay/npc-locations|NPC locations]] §8).
 
 ## Behaviour
 
@@ -61,11 +62,15 @@ Sells 5 items (`Npc_Carry` row 290; full list on [[wiki/shops/290-arion-s-shop-i
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/crush-patch-notes|Crush patch notes]]
+- [[gameplay/warmonger-forum|Warmonger forum]]
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The client title is "Innocence Smith" (hero pieces), while the sources call Arion a core smith. Raon (242) has the title "Legion Core Smith". The role may have moved between builds.
 
 <!-- credit:start -->
 ---

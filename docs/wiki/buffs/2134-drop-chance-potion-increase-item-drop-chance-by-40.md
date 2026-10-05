@@ -4,7 +4,7 @@ type: "buff"
 id: 2134
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 2134", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 2134", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §3", "notes: [[gameplay/reinforce-and-runes]] §7, WM 0726 (+40 % for 1 h; matches client)", "notes: [[gameplay/crush-patch-notes]] 2016-12-22 (CO +20 %; history)"]
 name_key: "SkillBuff_2134"
 duration: {"ticks": 18000, "seconds": 3600.0, "permanent": false}
 is_buff: 0
@@ -51,7 +51,8 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of the Drop Chance Potion (item 764): item drop chance +40 % for 1 h (18,000 ticks) ([[gameplay/consumables]] §3). [WM 0726](https://steamcommunity.com/games/718790/announcements/detail/2462791699369817744) set the potion at +40 % for 1 h; in Crush Online it was +20 % for 1 h, sold for 500 jewels or 10 for 4,500 ([[gameplay/reinforce-and-runes]] §7; [[gameplay/crush-patch-notes]]). *client + notes*
+- Its exclusive group is 2034 (Drop chance) ([[gameplay/consumables]] §1). *client*
 
 ## Behaviour
 
@@ -59,11 +60,11 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §3, [[gameplay/reinforce-and-runes]] §7, [[gameplay/crush-patch-notes]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online +20 % vs WM / client +40 %. Client kept.
 
 <!-- credit:start -->
 ---

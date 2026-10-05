@@ -4,7 +4,7 @@ type: "buff"
 id: 1155
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 1155", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 1155", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "client: [[gameplay/consumables]] §1, §3", "notes: [[gameplay/reinforce-and-runes]] §7, WM 0503 (3 → 5 min; matches client)", "notes: [[gameplay/crush-patch-notes]] Halloween event (history)"]
 name_key: "SkillBuff_1155"
 duration: {"ticks": 1500, "seconds": 300.0, "permanent": false}
 is_buff: 0
@@ -55,7 +55,8 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of Scroll of Transform: Jack (item 763): turns the user into unit 2000 for 5 min ([[gameplay/consumables]] §3). [WM 0503](https://steamcommunity.com/games/718790/announcements/detail/2394104285094559240) raised the transformation scroll duration 3 → **5 min** ([[gameplay/reinforce-and-runes]] §7). Exclusive group 1150 (Transform) ([[gameplay/consumables]] §1). *client + notes*
+- Jack O' Lantern dates from the Crush Online Halloween event "Trick or Treat" (Oct 2016); unit 2000 and item 763 are still in the client ([[gameplay/crush-patch-notes]] 2016-10-27). *staff + client*
 
 ## Behaviour
 
@@ -63,7 +64,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/consumables]] §3, [[gameplay/reinforce-and-runes]] §7, [[gameplay/crush-patch-notes]].
 
 ## Open questions
 

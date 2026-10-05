@@ -2,9 +2,9 @@
 title: "Spirit's Refuge"
 type: "field"
 id: 28
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 28", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 28"]
+sources: ["client: SceneList.cdb id 28", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 28", "image + guide: [[gameplay/maps-and-dungeons]] §4 (Holy Thing example)"]
 name_key: "FieldName_28"
 kind: "land"
 scene_type: 2
@@ -84,7 +84,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Example of a land carrying a "Holy Thing" (blue triangle icon); while grey it could be farmed like a T7/T8 grey land for red or blue T3 fragments ([[gameplay/maps-and-dungeons|Maps and dungeons]] §4). *image + guide*
 
 ## Behaviour
 

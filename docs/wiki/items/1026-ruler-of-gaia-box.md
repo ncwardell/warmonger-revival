@@ -4,7 +4,7 @@ type: "item"
 id: 1026
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1026"]
+sources: ["client: Item_Base.cdb id 1026", "client + guide: [[gameplay/lords-of-the-land]] §3–4", "notes: [[gameplay/events-and-schedules]] §2 (WM 0426, WM 0920)"]
 name_key: "ItemName_1026"
 kind: 43
 kind_name: "Random Box"
@@ -46,7 +46,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Lords of the Land reward box for stack level 4 (client `WinAffect`) ([[gameplay/lords-of-the-land|Lords of the Land]] §3). From WM 0426 the reward became Blue/Yellow crystals by buff level, and from WM 0920 opening it costs **200,000 gold** (was 300,000) ([[gameplay/events-and-schedules|Events and schedules]] §2, *notes*). Kelsey's quests 117/763/764/765 also give boxes 1024–1027 ([[gameplay/lords-of-the-land|Lords of the Land]] §4).
 
 ## Behaviour
 
@@ -54,11 +54,12 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client + guide: [[gameplay/lords-of-the-land]] §3–4
+- notes: [[gameplay/events-and-schedules]] §2 (WM 0426, WM 0920)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Contents: [[gameplay/lords-of-the-land|Lords of the Land]] §3 says they are unknown; the boxes section guesses RandomBox row 23 ([[wiki/boxes/index|Random boxes]]).
 
 <!-- credit:start -->
 ---

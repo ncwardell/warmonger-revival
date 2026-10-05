@@ -2,9 +2,9 @@
 title: "Invincible buff when moving Abyss"
 type: "buff"
 id: 952
-status: "stub"
+status: "partial"
 missing: ["effects"]
-sources: ["client: Skill_Buff.cdb id 952", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 952", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "notes: [[gameplay/events-and-schedules]] §9 and [[gameplay/patch-history]], WM 0404 (5 s; matches client)"]
 name_key: "SkillBuff_952"
 duration: {"ticks": 25, "seconds": 5.0, "permanent": false}
 is_buff: 0
@@ -37,7 +37,7 @@ No effect codes in the client: what this buff does (a stun, a mark, a status) is
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [WM 0404](https://steamcommunity.com/games/718790/announcements/detail/2394101748794304355) gave players **5 s** of immunity on moving in the Abyss ([[gameplay/events-and-schedules]] §9; [[gameplay/patch-history]] Dungeons and world). The client buff lasts 25 ticks = 5 s. *notes*
 
 ## Behaviour
 
@@ -45,11 +45,11 @@ No effect codes in the client: what this buff does (a stun, a mark, a status) is
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/events-and-schedules]] §9, [[gameplay/patch-history]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Effects: the client row has no effect code and no source names one; invulnerability is implied by the name only.
 
 <!-- credit:start -->
 ---

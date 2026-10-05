@@ -69,7 +69,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Weekly Monster Hunt: kill 250 monsters for 10 Dimensional Energy and 1 silver medal; weekly quests reset on Monday at 00:00 ([[gameplay/progression-and-economy]] §2, [[gameplay/server-rules]], *image*). The client row agrees: 10 × item 688 and 1 × item 1001. *image + client*
 
 ## Behaviour
 
@@ -77,7 +77,10 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
+- [[gameplay/server-rules]]
 
 ## Open questions
 

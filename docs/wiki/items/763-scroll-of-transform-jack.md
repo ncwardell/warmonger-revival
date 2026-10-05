@@ -4,7 +4,7 @@ type: "item"
 id: 763
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 763"]
+sources: ["client: Item_Base.cdb id 763", "staff + client: [[gameplay/crush-patch-notes]] 2016-10-27 (Halloween event; item 763 still in the client)"]
 name_key: "ItemName_763"
 kind: 11
 kind_name: "Normal"
@@ -62,7 +62,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Event item: the Halloween reward box (1056) holds it, and Jack O'Lantern (unit 2000) came from the Crush Online Halloween event of 27 Oct 2016 ([[gameplay/crush-patch-notes|Crush patch notes]], *staff + client*). Lasts 5 minutes like the other transform scrolls ([[gameplay/consumables|Consumables]] §3).
 
 ## Behaviour
 
@@ -70,7 +70,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- staff + client: [[gameplay/crush-patch-notes]] 2016-10-27 (Halloween event; item 763 still in the client)
 
 ## Open questions
 

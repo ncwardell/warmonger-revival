@@ -93,7 +93,7 @@ Speaker: [[wiki/npcs/212-cassia|Cassia]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From Freya at [38:30](https://www.youtube.com/watch?v=s04CSN16w1s&t=2310s): talk to Cassia (212, Material Merchant), who sends the player to Odin or Owen to craft ([40:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2420s), [33:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=2010s), [[gameplay/video-early-quests]] §3). Pays Empty Flask [C] ×100, 30,000 gold, 15 Blue and 15 Red Passion Fragments and Crystal: Blue ×5 ([[gameplay/video-early-quests]] step 15). *video*
 
 ## Behaviour
 
@@ -101,7 +101,9 @@ Speaker: [[wiki/npcs/212-cassia|Cassia]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

@@ -2,7 +2,7 @@
 title: "Elite Skeleton Warrior"
 type: "monster"
 id: 702
-status: "stub"
+status: "partial"
 missing: ["level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 702", "client: Quest.cdb kill objectives (quests 101)", "video: [[gameplay/video-early-quests|Video notes: the first 20 levels]] §5, target frame at [31:50](https://www.youtube.com/watch?v=s04CSN16w1s&t=1910s): HP 600, regen +12/tick (2% of max) (Elite Skeleton Warrior during quest 101 (kill group 10004 = 702/703))"]
 name_key: "UnitName_702"
@@ -105,15 +105,17 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Lives in [[wiki/fields/99-corpse-incineration|Corpse incineration (99)]]; kill group 10004 for quest 101 (Weak Elite Skeleton bone) (video + client, [[gameplay/video-tutorial-walkthrough]] step 22 at [24:12](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1452s), step 26).
+- Skeletons hit the player (a low-level Guardian) for about 19; the player's basic hits did 109 damage to them (video, [[gameplay/video-tutorial-walkthrough]] § Monsters and damage).
+- The target frame read HP 600 with regeneration +12 (2% of max) at [31:50](https://www.youtube.com/watch?v=s04CSN16w1s&t=1910s) (video, [[gameplay/video-early-quests]] §5); that value is in the front matter.
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest items drop at the `Quest.tsv` rate: every kill of a matching monster gave one while the quest was active (video, [[gameplay/video-early-quests]] §6).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough]] steps 22–26 and § Monsters and damage; [[gameplay/video-early-quests]] §2, §5
 
 ## Open questions
 

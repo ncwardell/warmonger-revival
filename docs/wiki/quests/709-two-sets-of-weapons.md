@@ -52,7 +52,7 @@ rewards:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Swap between the two weapon sets; appeared at [92:55](https://www.youtube.com/watch?v=s04CSN16w1s&t=5575s) ([[gameplay/video-early-quests]] step 26). *video*
 
 ## Behaviour
 
@@ -60,11 +60,14 @@ rewards:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-tutorial-walkthrough]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The first-session notes give Space as the swap key, while the walkthrough's hotbar shows X as weapon swap ([[gameplay/video-early-quests]] step 26, [[gameplay/video-tutorial-walkthrough]] §3). *video*
 
 <!-- credit:start -->
 ---

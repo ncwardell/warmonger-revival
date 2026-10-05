@@ -2,7 +2,7 @@
 title: "Join the Legion"
 type: "quest"
 id: 753
-status: "stub"
+status: "partial"
 missing: ["objectives"]
 sources: ["client: Quest.cdb id 753", "client: QuestTalk.cdb id 743", "client: QuestTalk.cdb id 744"]
 name_key: "Quest_Title_744"
@@ -89,7 +89,7 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Appeared in the tracker at [75:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=4540s) after "Join & Create Legion" (752), which the player had not finished ([[gameplay/video-early-quests]] step 20). *video*
 
 ## Behaviour
 
@@ -97,7 +97,9 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

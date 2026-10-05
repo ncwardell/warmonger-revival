@@ -4,7 +4,7 @@ type: "zone"
 id: 148
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 148", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 148", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: [[gameplay/arena-ranking-rewards]] (Battle Arena zones)"]
 name_kr: "New_arena"
 terrain: "new_arena"
 bounds: {"x0": 256, "z0": 1920, "x1": 479, "z1": 2015}
@@ -46,7 +46,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One of the two zones the client gives the Battle Arena, with ZoneDB 5 `Battle_Arena_01` ([[gameplay/arena-ranking-rewards|Arena ranking rewards]]). *client*
 
 ## Behaviour
 

@@ -4,7 +4,7 @@ type: "item"
 id: 854
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 854"]
+sources: ["client: Item_Base.cdb id 854", "notes + client: [[gameplay/reinforce-and-runes]] §5", "image: [[gameplay/progression-and-economy]] §4 (Athan)"]
 name_key: "ItemName_854"
 kind: 12
 kind_name: "Material"
@@ -178,7 +178,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Shining Passion: client price 2 in currency 10; the noob guide shows Athan selling it for 2 silver medals ([[gameplay/reinforce-and-runes|Reinforce and runes]] §5, [[gameplay/progression-and-economy|Progression and economy]] §4, *notes + image + client*). The fame materials are the third material of the WM 0920 rune costs and the tier-up extras ([[gameplay/reinforce-and-runes|Reinforce and runes]] §1, §4).
 
 ## Behaviour
 
@@ -186,7 +186,8 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes + client: [[gameplay/reinforce-and-runes]] §5
+- image: [[gameplay/progression-and-economy]] §4 (Athan)
 
 ## Open questions
 

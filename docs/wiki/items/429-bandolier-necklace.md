@@ -4,7 +4,7 @@ type: "item"
 id: 429
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 429"]
+sources: ["client: Item_Base.cdb id 429", "image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)"]
 name_key: "ItemName_429"
 kind: 54
 kind_name: "Necklace"
@@ -36,6 +36,8 @@ obtained_from:
   - {"how": "gacha", "pool": 0}
   - {"how": "gacha", "pool": 1}
   - {"how": "gacha", "pool": 4}
+  - {"how": "dungeon_drop", "field": 121, "tier": 1}
+  - {"how": "dungeon_drop", "field": 125, "tier": 2}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=30ded9 type=d36ca9 id=75988f sources=1c739c name_key=35f780 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=84b784 reinforce=356a19 icon=4aaf5d obtained_from=f03cf3 -->
@@ -94,6 +96,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 121, tier 1 (hand-entered)
+- how dungeon_drop, field 125, tier 2 (hand-entered)
 
 ### Mentioned in
 
@@ -102,7 +106,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Drops in the border dungeons Skull Temple (121), Tow Canyon (125), already reinforced at a random level (+0 up to +11 seen); Lv 1–4 dungeons drop it at tier 1, Lv 5–8 at tier 2 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2, *image*). Sockets are rolled when the item drops ([[gameplay/items-and-crafting|Items and crafting]] §2).
 
 ## Behaviour
 
@@ -110,7 +114,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/maps-and-dungeons]] §2 (2018 dungeons guide loot grids; Lv 1–4 drop T1, Lv 5–8 T2, pre-reinforced +0…+11; 2–3 rarer drops per dungeon missing)
 
 ## Open questions
 

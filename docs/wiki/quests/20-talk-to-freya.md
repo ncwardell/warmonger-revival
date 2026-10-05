@@ -2,7 +2,7 @@
 title: "Talk to Freya"
 type: "quest"
 id: 20
-status: "stub"
+status: "partial"
 missing: ["next"]
 sources: ["client: Quest.cdb id 20", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-early-quests]] §4 (kind 0 quest exp shown = table ÷ 1.1)", "client: QuestTalk.cdb id 667"]
 name_key: "Quest_Title_646"
@@ -91,7 +91,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Patrick (199, the Castle's Oracle of Knowledge) gives the "Letter to Oracle of Knowledge" to carry to Freya ([58:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=3500s)); done at [64:50](https://www.youtube.com/watch?v=s04CSN16w1s&t=3890s). Panel: 300,000 exp, then one ×5 of Scroll of the Warrior [A], Tome of Attack SPD [A], Scroll of the Magician [A] or Tome of Cooldown [A]. Freya then shows the cash-item features ([[gameplay/video-early-quests]] step 23). *video*
 
 ## Behaviour
 
@@ -99,11 +99,13 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The client chains no quest after this one. In the video Freya offered quest 21 right after it ([65:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=3920s)), but 21 requires quest 17's bit, so the video does not show what 20 unlocks ([[gameplay/video-early-quests]] steps 23–24).
 
 <!-- credit:start -->
 ---

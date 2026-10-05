@@ -87,15 +87,19 @@ Speaker: [[wiki/npcs/239-floyd|Floyd]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Shaia sends the player for 3 Slime Mucus (2550) from Slimes (604); every kill dropped one, matching the 100% rate ([[gameplay/video-early-quests]] step 2 and §6, [[gameplay/video-tutorial-walkthrough]] step 4). Turned in to Floyd at [6:45](https://www.youtube.com/watch?v=s04CSN16w1s&t=405s), [7:06](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=426s) and [4:20](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=260s); every panel showed 1,200 exp and Gloves of Life (403). Floyd offers quest 3 straight away. *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Tracker: "Slime mucus obtained (0/3)", then "Bring them to Floyd". When the count is full the tracker's "!" turns to "?" ([3:55](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=235s)). Lessons 700, 701 and 722 start and finish during the slime hunt ([[gameplay/video-character-creation-and-tutorial]] §3 steps 2–4). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

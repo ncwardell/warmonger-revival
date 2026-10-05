@@ -2,9 +2,9 @@
 title: "Corpse incineration"
 type: "field"
 id: 99
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 99", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 99", "client: Quest.cdb (quests and objectives in field 99)", "client: Trigger.cdb field 99"]
+sources: ["client: SceneList.cdb id 99", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 99", "client: Quest.cdb (quests and objectives in field 99)", "client: Trigger.cdb field 99", "video: [[gameplay/video-tutorial-walkthrough]] §1 steps 21-25 and §3 Monsters (arrival at gate 1500; skeleton and officer areas), video", "client + image: [[gameplay/abyss-map]] Portal table and Routes"]
 name_key: "FieldName_99"
 kind: "field"
 scene_type: 5
@@ -110,7 +110,11 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 1, Arslan entrance. Players come from Training Camp 88 (gate 1503) and arrive beside the "Training Camp" return portal, gate 1500 at (306.03, 2254.17) ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 22; [[gameplay/abyss-map|Abyss map]]). *client + video*
+- Monsters: Skeleton Warrior (700), Skeleton Archer (701), Elite Skeleton Warrior (702), Elite Skeleton Archer (703); the Skeleton Warrior Officer (704) and Skeleton Archer Officer (705) stand in the south of the field, guarded by elites ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 steps 22-24, §3). *video*
+- The Scout is a client-placed gadget (Trigger 9901, [[wiki/nodes/9901-scout|Scout]]), not a UnitDB NPC ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §2). *client + video*
+- Portals: top-left 1500 back to the camp; bottom-left 1106 (312.96, 2102.09) to Death's Rest 102 (gate 1100). Arslan route down: 99 → 102 → 109 → 113 → 114 ([[gameplay/abyss-map|Abyss map]]). *client + image*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -118,11 +122,12 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/abyss-map|Abyss map]], [[gameplay/patch-history|Patch history]], [[gameplay/maps-and-dungeons|Maps and dungeons]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- `Teleport_List` links gate 1500 to gate 1500 (itself); [[gameplay/abyss-map|Abyss map]] reads it as the way back to the camp gate 1503, which the video confirms (the player arrives at the Guard).
+- `npcs` stays empty: the only NPC seen here is the Scout gadget. Spawn coordinates are not measured; the forum image MGtluQH shows the elite skeleton spawn area ([[gameplay/sources]]).
 
 <!-- credit:start -->
 ---

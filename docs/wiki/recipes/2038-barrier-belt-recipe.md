@@ -2,9 +2,9 @@
 title: "Barrier Belt recipe"
 type: "recipe"
 id: 2038
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2038", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2038", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)"]
 result: {"item": 434, "count": 1}
 materials:
   - {"item": 700, "count": 20}
@@ -15,6 +15,7 @@ filter_mask: 16777248
 superior: {"chance": 5, "item": 466}
 level: 1
 raw: {"c28": 300}
+npc: [335]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=35f1bc type=61613a id=3d8a2b sources=d578b0 result=b2db71 materials=a61815 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=e904c1 superior=7571a8 level=356a19 raw=c65c1c -->
@@ -28,7 +29,7 @@ raw: {"c28": 300}
 | **Superior result** | 5 % → [[wiki/items/466-barrier-belt\|Barrier Belt]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 6 / `0x1000020` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/335-odin\|Odin]] |
 
 ### Materials
 
@@ -49,7 +50,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp copy of Odin's gear list, offered by the camp's Odin (unit 335) ([[gameplay/consumables|Consumables]] §4, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -57,7 +60,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)
 
 ## Open questions
 

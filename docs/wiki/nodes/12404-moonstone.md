@@ -2,9 +2,9 @@
 title: "Moonstone"
 type: "node"
 id: 12404
-status: "stub"
+status: "partial"
 missing: ["respawn_s"]
-sources: ["client: Trigger.cdb id 12404"]
+sources: ["client: Trigger.cdb id 12404", "video: [[gameplay/video-dungeon-run]] §5 (Crush 2016 minimap icon matches this row within ≈5 units; gathered, ≈3 s cast)"]
 kind: "gather"
 field: 124
 x: 1881.23
@@ -35,11 +35,11 @@ Gathering nodes are client data only for their place and material. How long a no
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Its minimap icon in a 2016 Crush Online video of Ghost Fortress sits at (1880, 1925); gathered in the video at (1880, 1923), within about 5 units of this row, so the 2016 node layout equals the final client's `Trigger` table ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5). *video + client*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Gathering Moonstone took about **3 s** (cast bar, then "You acquired Moonstone"), and a hit from a Black Ghost did not interrupt it. After leaving and re-entering the dungeon (a fresh instance) node 12401 could be gathered again ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5). *video*
 
 ## Sources
 
@@ -47,7 +47,7 @@ Gathering nodes are client data only for their place and material. How long a no
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- How long a node takes to come back inside one instance (`respawn_s`) and how many items it gives are not shown in any source; the video only shows that a fresh instance has the node again ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5).
 
 <!-- credit:start -->
 ---

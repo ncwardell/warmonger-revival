@@ -2,7 +2,7 @@
 title: "Transmission equipment"
 type: "npc"
 id: 81
-status: "stub"
+status: "partial"
 missing: ["map", "x", "z", "role"]
 sources: ["client: UnitDB.cdb id 81"]
 name_key: "UnitName_81"
@@ -39,11 +39,13 @@ Skill 3060001
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/crush-mechanics|Crush Online mechanics]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online players say killing the "transmission gate" in a land raised its safety factor by 5, but only if the player left and came back after the boss died ([[gameplay/crush-mechanics|Crush Online mechanics]] §6). That may be this unit; nothing confirms it. *player*
 
 <!-- credit:start -->
 ---

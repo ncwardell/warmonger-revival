@@ -4,7 +4,7 @@ type: "skill"
 id: 10022
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 10022", "client: StringAll_Eng SkillComment_10022 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 10022", "client: StringAll_Eng SkillComment_10022 (tooltip value tags)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0329/0402 (AD to AP)"]
 name_key: "Skill_10022"
 desc_key: "SkillComment_10022"
 kind: 1
@@ -71,7 +71,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Patch history: [WM 0329](https://steamcommunity.com/games/718790/announcements/detail/2383968106570216224) / [WM 0402](https://steamcommunity.com/games/718790/announcements/detail/2383968106583377018) moved Magical Wrath Blade's Q from AD to AP scaling; the client tooltip uses AP. The note names the weapon, not an item id; it is copied to every same-name copy of the skill. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -79,7 +79,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 

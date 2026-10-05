@@ -4,7 +4,7 @@ type: "skill"
 id: 5491
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 5491", "client: StringAll_Eng SkillComment_5491 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 5491", "client: StringAll_Eng SkillComment_5491 (tooltip value tags)", "notes: [[gameplay/classes-and-legions]] §5 Skeleton King's Vision Bow, WM 0110 (cooldown and mana match client)"]
 name_key: "Skill_5491"
 desc_key: "SkillComment_5491"
 kind: 1
@@ -80,7 +80,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [WM 0110](https://steamcommunity.com/games/718790/announcements/detail/2417771014047971842) (text + image 2) introduced Skeleton King's Vision Bow (item 15005) with this Q: 5 s cooldown, 75 mana; 85 + 0.8 AD + 0.625 AP, and attack speed up for 6 s on hit ([[gameplay/classes-and-legions]] §5). Cooldown and mana match the client exactly. *notes*
 
 ## Behaviour
 
@@ -88,11 +88,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Skeleton King's Vision Bow.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Multipliers: the patch note's AD/AP factors differ slightly from the client tooltip (the client tooltip has 85 + 80 % AD + 65 % AP); the note may quote values at a different weapon level. Client kept.
 
 <!-- credit:start -->
 ---

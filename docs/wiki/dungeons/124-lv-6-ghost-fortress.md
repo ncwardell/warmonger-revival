@@ -4,7 +4,8 @@ type: "dungeon"
 id: 124
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 124", "client: DungeonAdmission.cdb field 124", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 124", "doc: gameplay/video-dungeon-run §5 (Crush Online 2016 video: the instance timer counts down from 20:00)"]
+sources: ["client: SceneList.cdb id 124", "client: DungeonAdmission.cdb field 124", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 124", "doc: gameplay/video-dungeon-run §5 (Crush Online 2016 video: the instance timer counts down from 20:00)", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 124
 max_users: 5
 level: 6
@@ -22,10 +23,11 @@ dungeon_slots:
 boss: [676, 743, 1218]
 gear_tier: "T2"
 gathering: [808, 818, 820]
-time_limit_s: 1200
+time_limit_s: 900
+unlock_level: 25
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=6a2ed2 type=3e3f38 id=f38cfe sources=3e10ee field=f38cfe max_users=ac3478 level=c1dfd9 entry_cost=215a89 event=7cb6ef shown_rewards=51a1e7 c17=aca6d6 image=41ca94 dungeon_slots=e54862 boss=d1729a gear_tier=7b5982 gathering=020cf6 time_limit_s=73ee49 -->
+<!-- generated-keys: title=6a2ed2 type=3e3f38 id=f38cfe sources=3e10ee field=f38cfe max_users=ac3478 level=c1dfd9 entry_cost=215a89 event=7cb6ef shown_rewards=51a1e7 c17=aca6d6 image=41ca94 dungeon_slots=e54862 boss=d1729a gear_tier=7b5982 gathering=020cf6 -->
 |  |  |
 |---|---|
 |  | ![(Lv 6) Ghost Fortress](wiki/assets/dungeons/124.png) |
@@ -34,7 +36,7 @@ time_limit_s: 1200
 | **Gear tier dropped** | T2 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
-| **Time limit** | 20 min |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/6.png` |
 | **c17 (unknown)** | 2007 |
 
@@ -84,19 +86,36 @@ Respawn (solo: none; party: about every minute), party loot and the hard-mode ru
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Boss: [[wiki/monsters/676-great-summoner-spectre|Great Summoner Spectre 676]] / [[wiki/monsters/743-great-summoner-spectre|743]] / [[wiki/monsters/1218-great-summoner-spectre|1218]] (guides + client ids, [[gameplay/maps-and-dungeons]] §2 and [[gameplay/dungeon-drops]] §1).
+- Crush Online name: Fortress of Ghost, **Lv 5** in Crush Online (the client and the 2018 guides make it Lv 6) (sheet / forum, [[gameplay/dungeon-drops]] §1, [[gameplay/crush-mechanics]] §9).
+- Materials named by the 2018 dungeons guide: Moonstone ×4, Lavender ×3 and Peppermint ×5 (guide, [[gameplay/maps-and-dungeons]] §2). The gathering list in the front matter comes from the client's `Trigger` table.
+- Gear: drops T2 named-set gear, already reinforced at a random level (seen +0 to +11). Sets seen in this dungeon: Guardian helmet/armor, Honor helmet/armor, Life gloves/shoes/necklace/belt, Mediation necklace/belt/ring/bracelet. The guide's author says 2–3 rarer drops are missing from the list (image + guide, [[gameplay/maps-and-dungeons]] §2).
+- Map (from the guide's minimap): entry top-left, two long lobes; marker in the centre (image, [[gameplay/maps-and-dungeons]] §2).
+- Unlocks at character level 25 (Warmonger patch 0615, [[gameplay/patch-history]] § Dungeons and world).
+- The Spanish upgrade guide names it the best Red Passion T2 farm (guide, [[gameplay/maps-and-dungeons]] §2).
+- A Crush Online video (2016) shows the instance timer counting down from 20:00, a gather cast of about 3 s, Moonstone nodes at `Trigger` 12401 and 12404, and Red and Black Ghosts near the entrance. Every minimap node matches a `Trigger` row of field 124, so the node layout did not change between Crush and the final client (video + client, [[gameplay/video-dungeon-run]] §5).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Hard mode has more and stronger monsters, better loot and a boss at the end; normal mode is easy (guide, [[gameplay/maps-and-dungeons]] §2).
+- Respawn: solo, monsters do not respawn; with 2+ party members in hard mode they do. Guides give the first refill after 3–5 min (3 players) then about every minute, or after 9 min / when the timer shows 10:00 (guides, [[gameplay/maps-and-dungeons]] §2). Warmonger patch 0404: with more than 2 users monsters respawn after 5 min (notes, [[gameplay/patch-history]] § Dungeons and world).
+- Time limit: Warmonger patch 0402 cut the dungeon open time from 20 to 15 min (notes, [[gameplay/patch-history]]); in Crush Online, when the timer ran out nothing dropped and the party was teleported out (staff, [[gameplay/crush-mechanics]] §9).
+- Loot: in March 2018 only the last hitter got loot; later every living party member who damaged the monster got a drop, and a party raised the drop rate (guides, [[gameplay/maps-and-dungeons]] §2). Crush Online scaled monster count and loot with party size; a solo player got about 1/5 of a full group's loot (player, [[gameplay/crush-mechanics]] §9).
+- Max 5 players per portal instance; with "Can not enter" ticked nobody else can join (guide, [[gameplay/maps-and-dungeons]] §1).
+- The dungeon tier a land shows depends on its distance from the nation's main fort (guides, [[gameplay/maps-and-dungeons]] §1; [[gameplay/patch-history]] WM 0726).
+- In Crush Online (patch 2016-12-15) the dungeon elites dropped a scroll that summoned one extra boss, once per boss (staff, [[gameplay/crush-patch-notes]] § 2016-12-15). The forum says the dungeon boss only exists while the land is monster-invaded (forum, [[gameplay/warmonger-forum]] §3).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/maps-and-dungeons]] §1–2, [[gameplay/dungeon-drops]] §1–2, [[gameplay/patch-history]] § Dungeons and world, [[gameplay/crush-mechanics]] §9 and §12, [[gameplay/crush-patch-notes]] § 2016-12-15, [[gameplay/warmonger-forum]] §3, [[gameplay/video-dungeon-run]] §5
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Entry cost: the client's `DungeonAdmission` (front matter) asks 8 / 12 Dimensional Energy (normal / hard). The 2018 guide table and Warmonger patch 0726 give 8 / 20, and the spring-2018 UI showed hard = 8 + 1 silver (UI showed 8 + 2) (guides + image, [[gameplay/maps-and-dungeons]] §2; [[gameplay/patch-history]]). The client (final build) is used; the guide numbers are history.
+- `time_limit_s` 900 assumes the "dungeon open time" of Warmonger patch 0402 is the instance timer (the Crush Online timer was 20:00, [[gameplay/video-dungeon-run]] §5). No source shows the Warmonger timer on screen.
+- Conflict: the Crush Online video (2016) shows a 20:00 timer (1200 s, the value the generator wrote); Warmonger patch 0402 (2018) cut it to 15 min, so 900 s is used here and `time_limit_s` is listed in `manual`.
+- Level swap: Crush Online had Ghost Fortress at Lv 5 and Tow Canyon at Lv 6; players reported quest markers mixed up between the two ([[gameplay/crush-mechanics]] §9). The client order is used.
+- The guides do not say which of the boss's unit ids is the normal-mode, hard-mode or field version.
 
 <!-- credit:start -->
 ---

@@ -2,9 +2,9 @@
 title: "Prison"
 type: "field"
 id: 110
-status: "stub"
-missing: ["spawn_points", "monsters", "npcs", "connections"]
-sources: ["client: SceneList.cdb id 110", "client: ZoneDB name 어비스_LV3_110 (abyss zones are named after their field)"]
+status: "partial"
+missing: ["spawn_points", "monsters", "connections"]
+sources: ["client: SceneList.cdb id 110", "client: ZoneDB name 어비스_LV3_110 (abyss zones are named after their field)", "image + guess: [[gameplay/abyss-map]] Routes (not in the image, no gate touches it)", "client: [[gameplay/npc-locations]] §8 (ladi 320 placed in Prison, field 110, by Quest.tsv)", "player: [[gameplay/crush-mechanics]] (Crush anti-cheat sent players to Prison for 3-5 min)"]
 name_key: "FieldName_110"
 kind: "field"
 scene_type: 5
@@ -13,12 +13,12 @@ group: 12
 zones: [115]
 segments: ["ZP03_10"]
 connections: []
-npcs: []
+npcs: [320]
 monsters: []
 spawn_points: []
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=16f818 type=7a94db id=5e796e sources=626023 name_key=7f9135 kind=7a94db scene_type=ac3478 max_users=310b86 group=7b5200 zones=4c100a segments=9fb9ce connections=97d170 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
+<!-- generated-keys: title=16f818 type=7a94db id=5e796e sources=626023 name_key=7f9135 kind=7a94db scene_type=ac3478 max_users=310b86 group=7b5200 zones=4c100a segments=9fb9ce connections=97d170 npcs=a7cc33 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
 |  | ![minimap of zone 115](wiki/assets/zones/115.png) |
@@ -36,7 +36,11 @@ No `Teleport_List` row: the client places no gate here.
 
 ### NPCs
 
-None known yet.
+Positions come from the NPC's own page (`x`, `z`). The client does not place town NPCs; the server spawns them ([[gameplay/npc-locations|NPC locations]] §1).
+
+| NPC | unit | position | why it is listed |
+|---|---|---|---|
+| [[wiki/npcs/320-ladi\|ladi]] | 320 |  | NPC page (`map` / `positions`) |
 
 ### Monsters
 
@@ -64,7 +68,9 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- No gate in the client table touches this field and the stitched Abyss image does not show it ([[gameplay/abyss-map|Abyss map]]). The server notes say to keep it closed until a source turns up ([[gameplay/server-rules|Server rules]]). *client + guess*
+- Quests place ladi (320) here ([[gameplay/npc-locations|NPC locations]] §8). *client*
+- In Crush Online the anti-cheat sent suspected speed-hackers (and some laggy honest players) to **Prison** for about 3-5 minutes ([[gameplay/crush-mechanics|Crush mechanics]]). *player*
 
 ## Behaviour
 
@@ -76,7 +82,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- How players entered (probably only by the server, e.g. the anti-cheat), and whether it had monsters.
 
 <!-- credit:start -->
 ---

@@ -61,7 +61,7 @@ Image `ui/HelpImage/Help_17.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts when Scroll: Gaia (quest 11) lands the player beside a nexus: "Click the Nexus to get to the Fortress", with the tip "You can move to Fortress through click Nexus" ([32:25](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1945s)). Clicking the nexus opens the world map with a Fortress / Owner Legion panel ([21:35](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1295s)); arriving shows "MISSION COMPLETE: Go to the Fortress" and pays 10,000 exp (level 12 in the walkthrough, [32:55](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1975s)). *video*
 
 ## Behaviour
 
@@ -69,7 +69,7 @@ Image `ui/HelpImage/Help_17.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 

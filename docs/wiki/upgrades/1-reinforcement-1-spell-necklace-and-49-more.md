@@ -2,9 +2,9 @@
 title: "Reinforcement 1: Spell Necklace and 49 more"
 type: "upgrade"
 id: 1
-status: "stub"
+status: "partial"
 missing: ["success_rates"]
-sources: ["client: ItemSancMet.cdb id 1", "client: Item_Base.cdb c41@92 (inferred link to ItemSancMet)", "contract: items.yaml reinforce 0x436, server_rules craft_reinforce_rune_odds"]
+sources: ["client: ItemSancMet.cdb id 1", "client: Item_Base.cdb c41@92 (inferred link to ItemSancMet)", "contract: items.yaml reinforce 0x436, server_rules craft_reinforce_rune_odds", "notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412: a failed reinforce drops the item one level and uses up the materials; Reinforcing Adjuvants, item 1100, prevent the drop)"]
 gold: 1000
 steps:
   - {"step": 1, "materials": [{"item": 601, "count": 1}]}
@@ -15,6 +15,8 @@ steps:
   - {"step": 6, "materials": [{"item": 606, "count": 7}]}
 used_by: [1, 2, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444]
 kind: "reinforcement"
+on_failure: "drop_one_level"
+failure_protection_item: 1100
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=f931c9 type=4389c5 id=356a19 sources=de7f5f gold=e3cbba steps=041219 used_by=3c6beb kind=701a6f -->
@@ -52,19 +54,25 @@ Six material steps per row. Whether a step is a reinforce level band or a tier i
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Each tier runs +0…+15 and is reinforced with gold + passion; Red Passion is for weapons, Blue Passion for gear, and amounts grow each level ([[gameplay/items-and-crafting|Items and crafting]] §1, *guides*). Tier-up (+15 → next tier +0) also consumes a second identical +15 item plus Orange Passion and gold ([[gameplay/items-and-crafting|Items and crafting]] §1; per-tier Orange / Brilliant Passion table in [[gameplay/reinforce-and-runes|Reinforce and runes]] §4).
+
+Seen in game (mid-2018): a T1 helmet +0→+1 cost **1,000 gold + 2 Blue Passion Fragments [D]**; Armor 40→44, MR 20→23, HP +10 ([[gameplay/items-and-crafting|Items and crafting]] §1, *image*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Before WM 0412 a failed reinforce destroyed the item; after it, the item **drops one level** (+3 → +2) and the materials are used up. **Reinforcing Adjuvants** (item 1100) prevent the drop ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+Success falls slowly with tier and rarity, starting at a lower tier for rarer items (WM 0406); Rainbow Reinforcing Stones (641–646) only work on items of their own rarity (WM 0420); a notice appears before reinforcing items of different rarities (WM 0621) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*). No rates were published.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412: a failed reinforce drops the item one level and uses up the materials; Reinforcing Adjuvants, item 1100, prevent the drop)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The screenshot's 2 Blue Passion Fragments [D] for +0→+1 do not match step 1 of this row (1 × 601); which helmet it was, and how steps map to levels, is not known.
+
+The 2018 guides say reinforcing "never fails" ([[gameplay/items-and-crafting|Items and crafting]] §1), while the WM 0406/0412 patch notes describe falling success and a one-level drop on failure ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4). This page follows the patch notes.
 
 <!-- credit:start -->
 ---

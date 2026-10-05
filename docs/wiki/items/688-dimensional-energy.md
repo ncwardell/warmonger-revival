@@ -4,7 +4,7 @@ type: "item"
 id: 688
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 688"]
+sources: ["client: Item_Base.cdb id 688", "image: [[gameplay/progression-and-economy]] §2 (daily Monster Hunt 50 monsters → 1 bronze medal; weekly 250 → 1 silver medal + 10 Dimensional Energy)", "image: [[gameplay/maps-and-dungeons]] §2", "image: [[gameplay/progression-and-economy]] §2, §4"]
 name_key: "ItemName_688"
 kind: 12
 kind_name: "Material"
@@ -39,6 +39,7 @@ obtained_from:
   - {"how": "quest_reward", "quest": 784, "count": 4}
   - {"how": "quest_reward", "quest": 960, "count": 10}
   - {"how": "quest_reward", "quest": 980, "count": 20}
+  - {"how": "weekly_quest", "quest": "Monster Hunt", "count": 10}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=cfbaef type=d36ca9 id=8ff059 sources=5f747b name_key=bb0f83 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=12ecfe cost_pair=ed494c stats=97d170 icon=e70f55 obtained_from=02f6a5 -->
@@ -80,6 +81,7 @@ obtained_from:
 - Reward of quest [[wiki/quests/784-swamps-of-the-snake-warrior|Swamps of the Snake Warrior]] × 4
 - Reward of quest [[wiki/quests/960-weekly-monster-hunt|(Weekly) Monster Hunt]] × 10
 - Reward of quest [[wiki/quests/980-monthly-boss-hunt|(Monthly) Boss Hunt]] × 20
+- how weekly_quest, quest Monster Hunt, count 10 (hand-entered)
 
 ### Used for
 
@@ -115,7 +117,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Wren sells it in every fortress for **5,500 gold** (base 5,000, a 1.1 × rate unlike other goods) ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2, [[gameplay/progression-and-economy|Progression and economy]] §4, *image*). Dungeon entry costs it (2–10 normal; hard costs changed several times; the server should read `DungeonAdmission`) ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). The weekly Monster Hunt pays 10 ([[gameplay/progression-and-economy|Progression and economy]] §2).
 
 ## Behaviour
 
@@ -123,7 +125,9 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/progression-and-economy]] §2 (daily Monster Hunt 50 monsters → 1 bronze medal; weekly 250 → 1 silver medal + 10 Dimensional Energy)
+- image: [[gameplay/maps-and-dungeons]] §2
+- image: [[gameplay/progression-and-economy]] §2, §4
 
 ## Open questions
 

@@ -2,9 +2,9 @@
 title: "[Lv 9] Dragon Island"
 type: "field"
 id: 142
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 142", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 142", "client: Trigger.cdb field 142"]
+sources: ["client: SceneList.cdb id 142", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 142", "client: Trigger.cdb field 142", "notes: [[gameplay/patch-history]] (WM 0920: Dragon Island only through a field dimension gate)", "client: [[gameplay/maps-and-dungeons]] §2 (not in any 2018 guide; DungeonAdmission 10 / 23)"]
 name_key: "FieldName_142"
 kind: "dungeon"
 scene_type: 3
@@ -120,11 +120,12 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Dragon Island is reached only through a field dimension gate (WM 0920, [[gameplay/patch-history|Patch history]]). It is in no 2018 guide; the client's entry cost is 10 / 23 Dimensional Energy ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). *notes + client*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Solo, monsters do not respawn; with 2+ party members in hard mode they do. Reported respawn: first after 3-5 min then every minute (3 players), or starting at 9-10 min on the dungeon timer ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). WM 0404: with more than 2 users monsters respawn after 5 min; WM 0402 cut dungeon open time from 20 to 15 min ([[gameplay/patch-history|Patch history]]). *guides + notes*
+- One portal is one instance with at most 5 players; the "Can not enter" option locks it ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Sources
 
@@ -132,7 +133,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Boss, monsters and drops are unknown beyond the client's advertised rewards ([[gameplay/dungeon-drops]]).
 
 <!-- credit:start -->
 ---

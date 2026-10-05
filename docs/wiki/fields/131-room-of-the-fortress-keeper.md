@@ -2,9 +2,9 @@
 title: "Room of the Fortress Keeper"
 type: "field"
 id: 131
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 131", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 131"]
+sources: ["client: SceneList.cdb id 131", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 131", "guide: [[gameplay/classes-and-legions]] §4 (floor 2 hero-only boss; guardian Crusader Cherubim 825; fit of fields 130/131 to the two floors is a guess)", "client: [[gameplay/video-fort-war]] §2 (gates 1301, 1304/1305/1307)"]
 name_key: "FieldName_131"
 kind: "dungeon"
 scene_type: 3
@@ -81,7 +81,8 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Probably floor 2 of a fort siege, the guardian's room: the guides describe a very strong boss that needs heroes, and the fort guardian **Crusader Cherubim** (UnitDB 825); killing it removes one fort shield and pays part of the fort's taxes to the winners ([[gameplay/classes-and-legions|Classes and legions]] §4, fit to this field *guess*). *guide*
+- Gates 1301 at (546.46, 3867.4) and 1304 / 1305 / 1307 near (664-678, 4028-4046); no video reaches this room ([[gameplay/video-fort-war|fort-war video notes]] §2). *client*
 
 ## Behaviour
 
@@ -93,7 +94,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Layout and the guardian's HP; whether 825 is the only boss here ([[gameplay/video-fort-war|fort-war video notes]] §5).
 
 <!-- credit:start -->
 ---

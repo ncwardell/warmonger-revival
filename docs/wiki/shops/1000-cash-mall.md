@@ -4,7 +4,7 @@ type: "shop"
 id: 1000
 status: "complete"
 missing: []
-sources: ["client: PrimiumShop.cdb (57 rows)", "contract: items.yaml cash_mall_buy 0x484 (price@08 x (100 - @14) / 100, purple jewels)", "client strings: GUI_Herobind_Title, GUI_Herobind_ShopFilter_1..4"]
+sources: ["client: PrimiumShop.cdb (57 rows)", "contract: items.yaml cash_mall_buy 0x484 (price@08 x (100 - @14) / 100, purple jewels)", "client strings: GUI_Herobind_Title, GUI_Herobind_ShopFilter_1..4", "guide: [[gameplay/progression-and-economy]] §3, §6 (Shop Mall takes purple jewels only; +5 % drop rate item and premium dye; Turkish guide)", "notes: [[gameplay/patch-history]] WM 0404 (cash-mall items bind on pickup)", "notes: [[gameplay/events-and-schedules]] §6 (WM 0817 Blessing of Shaia price 3,000 → 1,500)", "staff: [[gameplay/crush-patch-notes]] 2016-10-11, 2016-10-27, 2016-12-15, 2016-12-22 (Crush Online costume and Drop Chance Potion prices)", "client: [[gameplay/crush-mechanics]] §10 (PrimiumShop has no VIP ticket)"]
 stock:
   - {"entry": 1, "item": 1100, "price": 5000, "discount": 0, "tab": 1, "c3": 0, "c10": 10}
   - {"entry": 2, "item": 2006, "price": 2000, "discount": 0, "tab": 2, "c3": 0, "c10": 0}
@@ -121,6 +121,18 @@ prices:
   - {"entry": 55, "item": 2086, "currency": 7, "currency_name": "Purple Jewel", "buy": 5000}
   - {"entry": 56, "item": 2087, "currency": 7, "currency_name": "Purple Jewel", "buy": 5000}
   - {"entry": 57, "item": 913, "currency": 7, "currency_name": "Purple Jewel", "buy": 400}
+observed_prices:
+  - {"item": 764, "shown": 500, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "Crush Online: +20 % drops for 1 h, or 10 for 4,500; client entry 30 is 1,000 and +40 %"}
+  - {"item": 905, "shown": 1500, "currency": "Jewels (guess)", "source": "docs: [[gameplay/events-and-schedules]] §6 (WM 0817 notes)", "note": "Blessing of Shaia price cut 3,000 → 1,500 on 17 Aug 2018; currency not stated"}
+  - {"item": 2006, "shown": 2000, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "Summer set, 14 days"}
+  - {"item": 2024, "shown": 2500, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "Dragon Slayer set, 14 days"}
+  - {"item": 2033, "shown": 2000, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "Athlete set, 14 days"}
+  - {"item": 2036, "shown": 2000, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "Maid set, 14 days"}
+  - {"item": 2030, "shown": 2000, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "Military set, 14 days"}
+  - {"item": 2040, "shown": 2500, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "'Goosebam' (Goosebumps) set, 14 days"}
+  - {"item": 2085, "shown": 3800, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-22 (Crush Online staff)", "note": "Christmas drop costume, +10 % drop chance, 14 days"}
+  - {"item": 2085, "shown": 5000, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-12-15 (Crush Online staff)", "note": "Xmas costumes, 3 of them, until 9 Jan 2017"}
+  - {"item": 2043, "shown": 10000, "currency": "Jewels", "source": "docs: [[gameplay/crush-patch-notes]] 2016-10-27 (Crush Online staff)", "note": "Halloween costumes, each, until 7 Nov 2016"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=54ea41 type=ffcf9c id=e3cbba sources=0bf796 stock=647948 prices=c14f22 -->
@@ -204,19 +216,30 @@ prices:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Players called this the **Shop Mall**. It takes **purple jewels** only, which come only from real money (*guide*, [[gameplay/progression-and-economy|economy]] §3, §6). The Turkish guide names its convenience items: a **+5 % drop rate** item and premium dye (*guide*, [[gameplay/progression-and-economy|economy]] §6). The client's premium dyes 2400-2409 are here.
+
+The Blessing of Shaia (905) dropped from 3,000 to **1,500** on 17 Aug 2018 (currency not stated, jewels *guess*), which is the client price (*notes*, [[gameplay/events-and-schedules|events]] §6).
+
+Crush Online prices (2016), for history: costumes cost 2,000-2,500 jewels for 14 days (Summer, Athlete, Maid and Military 2,000; Dragon Slayer and Goosebam 2,500; Christmas 3,800 with +10 % drop chance), Halloween costumes 10,000 and the first Xmas costumes 5,000 for a limited time, and the Drop Chance Potion 500 jewels (*staff*, [[gameplay/crush-patch-notes|CO patch notes]] 2016-10-27, 2016-12-15, 2016-12-22). The Punisher Athletic and Military sets were added on 11 Oct 2016 ([[gameplay/crush-patch-notes|CO patch notes]] 2016-10-11).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- From 4 Apr 2018, cash-mall items bind on pickup ([[gameplay/patch-history|patch history]] 0404).
+- Crush Online shop costumes were limited to 14 days from 22 Dec 2016, and the Halloween sets were removed ([[gameplay/crush-patch-notes|CO patch notes]] 2016-12-22).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/progression-and-economy]] §3, §6 (Shop Mall takes purple jewels only; +5 % drop rate item and premium dye; Turkish guide) (*guide*)
+- [[gameplay/patch-history]] WM 0404 (cash-mall items bind on pickup) (*notes*)
+- [[gameplay/events-and-schedules]] §6 (WM 0817 Blessing of Shaia price 3,000 → 1,500) (*notes*)
+- [[gameplay/crush-patch-notes]] 2016-10-11, 2016-10-27, 2016-12-15, 2016-12-22 (Crush Online costume and Drop Chance Potion prices) (*staff*)
+- [[gameplay/crush-mechanics]] §10 (PrimiumShop has no VIP ticket) (*client*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The guide's "+5 % drop rate" item does not match any client entry: the Drop Chance Potion (764) gives +40 % (Crush Online: +20 %) ([[gameplay/progression-and-economy|economy]] §6, [[gameplay/crush-mechanics|Crush mechanics]] §12).
+- The client prices every costume at 2,000 (Halloween and Christmas at 5,000 during their sale window). The Crush Online prices differ for Dragon Slayer, Goosebumps and Christmas; the client values are kept.
+- Premium Life Saviour (25 for 1,000 jewels) and the High Reinforcing Adjuvant (2,000 jewels) were Crush Online **auction house** items, not mall rows ([[gameplay/crush-patch-notes|CO patch notes]] 2016-11-23). Whether entry 1 (Reinforcing adjuvants 1100, 5,000) is the same item is not known.
 
 <!-- credit:start -->
 ---

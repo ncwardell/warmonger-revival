@@ -2,9 +2,9 @@
 title: "Halloween Set"
 type: "item"
 id: 2043
-status: "stub"
+status: "partial"
 missing: ["stats"]
-sources: ["client: Item_Base.cdb id 2043"]
+sources: ["client: Item_Base.cdb id 2043", "staff: [[gameplay/crush-patch-notes]] 2016-10-27 (Halloween costumes 10,000 jewels each, until 7 Nov 2016; costumes 2043–2045 still in the client)"]
 name_key: "ItemName_2043"
 kind: 32
 kind_name: "Costume"
@@ -21,6 +21,7 @@ options:
 icon: {"file": "Costume_01.dds", "index": 40}
 obtained_from:
   - {"how": "premium_shop", "entry": 51}
+  - {"how": "costume_shop_crush", "price": 10000, "currency": "jewels"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=2cd269 type=d36ca9 id=f56b03 sources=57338e name_key=af1505 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 stats=97d170 options=b82237 icon=06d0d9 obtained_from=9547ae -->
@@ -46,11 +47,12 @@ obtained_from:
 ### Where to get it
 
 - Premium shop entry 51: 5,000 (currency code 2, discount 0%)
+- how costume_shop_crush, price 10000, currency jewels (hand-entered)
 <!-- generated:end -->
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online sold the Halloween costumes for **10,000 jewels** each until 7 Nov 2016; the sets were removed from the shop on 22 Dec 2016 ([[gameplay/crush-patch-notes|Crush patch notes]], *staff*).
 
 ## Behaviour
 
@@ -58,11 +60,11 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- staff: [[gameplay/crush-patch-notes]] 2016-10-27 (Halloween costumes 10,000 jewels each, until 7 Nov 2016; costumes 2043–2045 still in the client)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+No source gives this costume's stats; the client row has only appearance options (208/209).
 
 <!-- credit:start -->
 ---

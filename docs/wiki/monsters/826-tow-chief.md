@@ -2,7 +2,7 @@
 title: "Tow Chief"
 type: "monster"
 id: 826
-status: "stub"
+status: "partial"
 missing: ["level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 826", "client: Quest.cdb kill objectives (quests 80, 81, 82)", "video: [[gameplay/video-early-quests|Video notes: the first 20 levels]] §5, target frame at [70:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=4200s): HP 5000, regen +100/tick (2% of max) (Tow Chief 826)"]
 name_key: "UnitName_826"
@@ -106,19 +106,23 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Quest boss of The land of Greed (field 108): quests 80–82 "Support the Abyss expedition" ask for 10 Tow, 10 Elite Tow and the Tow's Chief, rewarding 220,000 exp and a class weapon (client, [[gameplay/warmonger-forum]] §3; video, [[gameplay/video-early-quests]] §2 item 21).
+- The target frame read HP 5000 with regeneration +100 at [70:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=4200s) and again at [88:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=5300s) (video, [[gameplay/video-early-quests]] §5).
+- [[gameplay/abyss-map]] § Markers inside fields (image, *guess*) shows a red multi-dot icon in the centre clearing of field 108 at about (385, 2689), probably a boss or elite group.
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online forum: the Tow Chief dropped only reinforcement stones, spell-stone patterns and, very rarely, Essence of Darkness, and had to be killed by a level 15–20 (or 25) character (forum + player, [[gameplay/warmonger-forum]] §3; [[gameplay/crush-mechanics]] §9).
+- Crush Online quest version: kill 10 Tow, 10 Elite Tow and the boss for 5 Shining Stones + 10 D reinforcement stones (forum, [[gameplay/warmonger-forum]] §3).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §2, §5; [[gameplay/warmonger-forum]] §3; [[gameplay/crush-mechanics]] §9; [[gameplay/abyss-map]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Drops: the Crush Online loot (reinforcement stones, spell-stone patterns) has no Warmonger item ids; only Essence of Darkness (1930) carries over, with no rate.
+- Spawn point: the abyss-map icon at (385, 2689) is not identified, so it is not copied into `spawns`.
 
 <!-- credit:start -->
 ---

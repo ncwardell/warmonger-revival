@@ -2,9 +2,9 @@
 title: "Arion's shop (Innocence Smith)"
 type: "shop"
 id: 290
-status: "stub"
+status: "partial"
 missing: ["prices"]
-sources: ["client: Npc_Carry.cdb shop 290", "client: UnitDB.cdb u16@a2 = 290 (units 241)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)"]
+sources: ["client: Npc_Carry.cdb shop 290", "client: UnitDB.cdb u16@a2 = 290 (units 241)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "forum: [[gameplay/warmonger-forum]] §5 (5 [Low] cores sold by NPC Arion for 192,000 personal gold, Crush Online)", "staff: [[gameplay/crush-patch-notes]] 2016-10-14 (Arion, core smith, crafts the premium core Sacred Area)", "client: [[gameplay/npc-locations]] §8 (Arion/Arkin 241/243 still unplaced)"]
 npc: [241]
 stock:
   - {"slot": 0, "item": 1624, "count": 1, "p1": 0, "p2": 0}
@@ -46,7 +46,9 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Arion (unit 241) is the core smith. In Crush Online he crafted fort cores; the premium core Sacred Area could be made there with the right labs (*staff*, [[gameplay/crush-patch-notes|CO patch notes]] 2016-10-14). Players wrote that **5 [Low] cores** were sold by Arion for 192,000 personal gold; crafted cores (28 kinds) were installed at Hadrian (*forum*, [[gameplay/warmonger-forum|Warmonger forum]] §5).
+
+The client list has exactly five entries (1624-1628), none of them in `Item_Base`. They may be those five [Low] cores (*guess*).
 
 ## Behaviour
 
@@ -54,11 +56,14 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/warmonger-forum]] §5 (5 [Low] cores sold by NPC Arion for 192,000 personal gold, Crush Online) (*forum*)
+- [[gameplay/crush-patch-notes]] 2016-10-14 (Arion, core smith, crafts the premium core Sacred Area) (*staff*)
+- [[gameplay/npc-locations]] §8 (Arion/Arkin 241/243 still unplaced) (*client*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- `prices` stays missing: the stocked ids have no `Item_Base` row, so no currency or base is known. The 192,000 gold is a Crush Online forum figure. It does not say whether that is per core or for all five.
+- Where Arion stands is unknown ([[gameplay/npc-locations|NPC locations]] §8). [[gameplay/video-early-quests|early quests]] §3 gives unit 241 as the Scout Leader in the Land of Greed, which conflicts with UnitDB naming 241 Arion.
 
 <!-- credit:start -->
 ---

@@ -2,9 +2,9 @@
 title: "The avenue of spirit"
 type: "field"
 id: 106
-status: "stub"
-missing: ["spawn_points", "monsters", "npcs", "connections"]
-sources: ["client: SceneList.cdb id 106", "client: ZoneDB name 어비스_LV2_106 (abyss zones are named after their field)"]
+status: "partial"
+missing: ["spawn_points", "monsters", "npcs"]
+sources: ["client: SceneList.cdb id 106", "client: ZoneDB name 어비스_LV2_106 (abyss zones are named after their field)", "client + image: [[gameplay/abyss-map]] Portal table (TL ≈ (1330, 2494) to 101; BR gate 1126 ≈ (1476, 2362) to 109 gate 1114)"]
 name_key: "FieldName_116"
 kind: "field"
 scene_type: 5
@@ -13,7 +13,9 @@ group: 12
 neighbours: [101, 110]
 zones: [120]
 segments: ["ZP05_09"]
-connections: []
+connections:
+  - {"to": 101, "gate": null, "to_gate": null, "at": [1330, 2494], "to_at": [823, 2103], "source": "image"}
+  - {"to": 109, "gate": 1126, "to_gate": 1114, "at": [1476, 2362], "source": "client link, image position"}
 npcs: []
 monsters: []
 spawn_points: []
@@ -34,6 +36,8 @@ spawn_points: []
 ### Gates and connections
 
 No `Teleport_List` row: the client places no gate here.
+
+Other connections (hand-entered): to 101, gate None, to_gate None, at [1330, 2494], to_at [823, 2103], source image; to 109, gate 1126, to_gate 1114, at [1476, 2362], source client link, image position
 
 Entered from: [[wiki/fields/109-the-land-of-greed|The land of Greed]] (gate 1114 → 1126)
 
@@ -70,7 +74,8 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 2 on the Armia route (101 → 106 → 109 → 113 → 114). Top-left portal (about 1330, 2494) links to Corpse incineration 101; bottom-right portal (gate 1126, about 1476, 2362) links to The land of Greed 109 gate 1114 ([[gameplay/abyss-map|Abyss map]]). *client + image*
+- A large blue crystal or object stands in the middle, about (1440, 2425): a landmark, not marked as a boss ([[gameplay/abyss-map|Abyss map]] Markers). *image*
 
 ## Behaviour
 
@@ -82,7 +87,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]] lists this field's in-game name as "Place for Scattered troops", while this page carries the FieldNames title "The avenue of spirit".
 
 <!-- credit:start -->
 ---

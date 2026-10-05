@@ -2,9 +2,9 @@
 title: "Recovery Shot recipe"
 type: "recipe"
 id: 1902
-status: "stub"
+status: "partial"
 missing: ["npc"]
-sources: ["client: Item_Make.cdb id 1902", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+sources: ["client: Item_Make.cdb id 1902", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide + notes: [[gameplay/classes-and-legions]] (fort mastery gates core crafting); [[gameplay/events-and-schedules]] §5–6"]
 result: {"item": 1403, "count": 1}
 materials:
   - {"item": 859, "count": 1}
@@ -48,7 +48,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Legion cores: crafting cores in a fort is gated by the fort's mastery, like weapons, gear and runes ([[gameplay/classes-and-legions|Classes and legions]], *guide + image*). Placing a Reinforce Nexus, Amplification Ether, Magic: No Entrance or Twisted Dimension core gives the legion the land (WM 0621), and Shaia Legion donation tiers unlock several cores ([[gameplay/events-and-schedules|Events and schedules]] §5–6, *notes*).
 
 ## Behaviour
 
@@ -56,11 +56,11 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide + notes: [[gameplay/classes-and-legions]] (fort mastery gates core crafting); [[gameplay/events-and-schedules]] §5–6
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Which NPC offers Item_Make category 5 (legion cores) is not in any source.
 
 <!-- credit:start -->
 ---

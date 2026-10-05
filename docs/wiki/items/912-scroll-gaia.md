@@ -2,9 +2,9 @@
 title: "Scroll : Gaia"
 type: "item"
 id: 912
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 912"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 912", "video: [[gameplay/video-character-creation-and-tutorial]] §21 and [[gameplay/video-early-quests]] §13 (given by Frei when quest 11 \"An urgent message\" is offered)"]
 name_key: "ItemName_909"
 kind: 11
 kind_name: "Normal"
@@ -25,7 +25,8 @@ options:
   - {"code": 261, "value": 5}
   - {"code": 262, "value": 17}
 icon: {"file": "Items_05.png", "index": 36}
-obtained_from: []
+obtained_from:
+  - {"how": "quest_given", "quest": 11, "npc": 198}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=78d91b type=d36ca9 id=3f989f sources=91dcdd name_key=e6fb63 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a flags=356a19 no_sell=7cb6ef use_skill=972a67 cooldown_s=ac3478 cooldown_group=0716d9 stats=97d170 options=15b1a4 icon=e2dc46 obtained_from=97d170 -->
@@ -55,7 +56,7 @@ obtained_from: []
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how quest_given, quest 11, npc 198 (hand-entered)
 
 ### Mentioned in
 
@@ -66,7 +67,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Frei (unit 198) hands the player Scroll : Gaia and the Urgent Letter when offering quest 11 "An urgent message"; the scroll is used to travel to Gaia and the nexus there leads to the Fortress ([[gameplay/video-character-creation-and-tutorial|Character creation video]] §21–23, [[gameplay/video-early-quests|Early quests video]] §13, *video*). A use shows a cast bar and "Return to Gaia" ([[gameplay/video-tutorial-walkthrough|Tutorial walkthrough video]], *video*).
 
 ## Behaviour
 
@@ -74,7 +75,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- video: [[gameplay/video-character-creation-and-tutorial]] §21 and [[gameplay/video-early-quests]] §13 (given by Frei when quest 11 "An urgent message" is offered)
 
 ## Open questions
 

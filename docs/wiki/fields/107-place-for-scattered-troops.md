@@ -2,9 +2,9 @@
 title: "Place for Scattered troops"
 type: "field"
 id: 107
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 107", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 107", "client: Quest.cdb (quests and objectives in field 107)"]
+sources: ["client: SceneList.cdb id 107", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 107", "client: Quest.cdb (quests and objectives in field 107)", "client + image: [[gameplay/abyss-map]] Portal table and Routes (unlabelled portals image-measured ±5 units)", "video: [[gameplay/video-early-quests]] §1 (Fortress → 103 at 51:25) and §2 quest 104 (Lizards in 103/105/107), video"]
 name_key: "FieldName_107"
 kind: "field"
 scene_type: 5
@@ -19,6 +19,7 @@ gates:
   - {"gate": 1124, "x": 1732.58, "z": 2362.85, "to_gate": 1107, "to_field": 111, "label": "FieldName_107"}
 connections:
   - {"to": 111, "gate": 1124, "to_gate": 1107}
+  - {"to": 108, "gate": null, "to_gate": null, "at": [1593, 2362], "to_at": [445, 2621], "source": "image"}
 npcs: []
 monsters: [650, 651, 652, 653, 10006, 10005]
 spawn_points: []
@@ -45,6 +46,8 @@ spawn_points: []
 | gate | at (x, z) | leads to | arrives at gate | label |
 |---|---|---|---|---|
 | 1124 | 1732.58, 2362.85 | [[wiki/fields/111-the-land-of-greed\|The land of Greed]] | 1107 | FieldName_107 |
+
+Other connections (hand-entered): to 108, gate None, to_gate None, at [1593, 2362], to_at [445, 2621], source image
 
 Entered from: [[wiki/fields/111-the-land-of-greed|The land of Greed]] (gate 1107 → 1124), [[wiki/fields/120-fortress|Fortress]] (gate 1903 → ?)
 
@@ -88,7 +91,10 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 2 hub; the fortress teleporter's free "Abyss" option probably lands here for Armia players (`Teleport_List` 1901-1903, *guess*, [[gameplay/abyss-map|Abyss map]]). In the June 2018 video the Arslan player arrived in 103 from the Fortress ([[gameplay/video-early-quests|first-session video]] §1). *client + video*
+- Portals: bottom-right 1124 → 111 (gate 1107); bottom-left (about 1593, 2362) → 108; top-right (about 1727, 2501) has no line and a green dot, perhaps the fortress arrival (*guess*) ([[gameplay/abyss-map|Abyss map]]). Route: Fortress → 107 → 108 or 111 → 113 → 114. *client + image*
+- Quest 104 "Delivering Punishment" (Haley) sends players here for 10 Lizard (group 10005) and 10 Elite Lizard (group 10006); the video kills Fragile (Elite) Lizard Swordsmen and Lancers. Gem Stone: Blue dropped here ([[gameplay/video-early-quests|first-session video]] §2 item 18, §5, §6). *video + client*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -96,7 +102,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]], [[gameplay/video-early-quests|first-session video]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

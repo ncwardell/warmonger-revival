@@ -2,9 +2,9 @@
 title: "Training Ground"
 type: "field"
 id: 93
-status: "stub"
+status: "partial"
 missing: ["spawn_points"]
-sources: ["client: SceneList.cdb id 93", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 93", "client: Quest.cdb (quests and objectives in field 93)", "doc: gameplay/npc-locations § 5. Training Ground (fields 89 / 93 / 97)"]
+sources: ["client: SceneList.cdb id 93", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 93", "client: Quest.cdb (quests and objectives in field 93)", "doc: gameplay/npc-locations § 5. Training Ground (fields 89 / 93 / 97)", "video: [[gameplay/video-tutorial-walkthrough]] §1 steps 2-18 and §3 Monsters (monster areas), video", "video: [[gameplay/video-character-creation-and-tutorial]] §3-§6 (Erion copy: spawn, Shaia, Floyd, officers in the north arena), video-measured", "video: [[gameplay/video-early-quests]] §1 map order, §2 quests 1-7, §3 Shaia/Floyd sightings, video"]
 name_key: "FieldName_93"
 kind: "field"
 scene_type: 5
@@ -106,7 +106,11 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- New characters start here, not in field 117: both 2018 launch videos load the character straight into the Training Ground with quest 1 active ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1, [[gameplay/video-early-quests|first-session video]] §1, [[gameplay/video-character-creation-and-tutorial|character-creation video]] §6). This is the Erion copy; the new-character spawn was measured here at (686.3, 3652.3), local (174.3, 68.3), about 31 units north-west of gate 1206 to the Training Camp ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §4, [2:34](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=154s))..
+- Monster areas, in the order the quests send players: Slime (604) in the south; Bee (731) and Cobra (732) in the middle, on the "training hill"; Chepa Warrior (727) and Chepa Archer (728) in the round clearings of the northern lobes; the Chepa Warrior Officer (710) and Chepa Archer Officer (711) in the north-west clearing, among normal Chepas ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §3 Monsters, step 18; [[gameplay/video-early-quests|first-session video]] §2 item 7 "spiral circle"; [[gameplay/video-character-creation-and-tutorial|character-creation video]] §3 step 15 "round stone arena in the north"). *video*
+- Gate to the Training Camp is the south-east portal labelled "Training Camp"; every gate asks "Do you want to leave the area?" first ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §3 Teleports used; [[gameplay/video-early-quests|first-session video]] §1). *video*
+- On the world map the Training Camp, Castle and Training Ground form an island at the top ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §3 UI). *video*
+- Segment origin of this copy: (512, 3584). Positions in one copy carry over to the others by adding the origin difference ([[gameplay/npc-locations|NPC locations]] §2). *client*
 
 ## Behaviour
 
@@ -114,11 +118,12 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/video-early-quests|first-session video]], [[gameplay/video-character-creation-and-tutorial|character-creation video]]; segment origins from [[gameplay/npc-locations|NPC locations]] §2.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Shaia: two 2018 videos measure her at about (433.5-433.8, 3662) in the Arslan copy, about 10 units east of the table value (423.9, 3664.8) in [[gameplay/npc-locations|NPC locations]] §5; the Erion-copy sighting (local 168.0, 79.5) agrees with the table ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §2, [[gameplay/video-early-quests|first-session video]] §3, [[gameplay/video-character-creation-and-tutorial|character-creation video]] §4).
+- Spawn points: the videos give the areas above but no per-monster coordinates, counts or respawn times.
 
 <!-- credit:start -->
 ---

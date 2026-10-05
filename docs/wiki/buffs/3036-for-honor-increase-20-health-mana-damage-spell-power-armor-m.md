@@ -4,7 +4,7 @@ type: "buff"
 id: 3036
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 3036"]
+sources: ["client: Skill_Buff.cdb id 3036", "notes: [[gameplay/crush-patch-notes]] 2016-10-19 (CO rule: < 8 territories, PvP only)"]
 name_key: "SkillBuff_3036"
 duration: {"ticks": 2100000000, "permanent": true}
 is_buff: 0
@@ -45,7 +45,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online "For Honor" channel buff (patch 2016-10-19): a nation with fewer than 8 territories on a channel got +20 % HP, MP, damage, spell power, armor and MR in PvP only, switched off once it held more than 8 ([[gameplay/crush-patch-notes]] 2016-10-19). The client buff carries 20 % values. *staff*
 
 ## Behaviour
 
@@ -53,7 +53,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/crush-patch-notes]] 2016-10-19.
 
 ## Open questions
 

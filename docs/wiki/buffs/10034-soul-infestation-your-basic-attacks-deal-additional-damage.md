@@ -4,7 +4,7 @@ type: "buff"
 id: 10034
 status: "complete"
 missing: []
-sources: ["client: Skill_Buff.cdb id 10034", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)"]
+sources: ["client: Skill_Buff.cdb id 10034", "gameplay: [[gameplay/consumables]] (Skill_Buff duration = 200 ms ticks)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0124", "video: [[gameplay/video-character-creation-and-tutorial]] §1, 1:50", "guide: [[gameplay/crush-mechanics]] §5"]
 name_key: "SkillBuff_10034"
 duration: {"ticks": 30, "seconds": 6.0, "permanent": false}
 is_buff: 0
@@ -48,7 +48,8 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Buff of [[wiki/skills/5036-soul-infestation|Soul Infestation]]. While it lasts basic attacks deal 10 + 60 % AP + 75 % AD magic damage and hit several targets ([WM 0124](https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617), [[gameplay/classes-and-legions]] §5 Weapons); the character-creation screen describes it as "basic attacks deal +10 damage and hit several enemies" ([[gameplay/video-character-creation-and-tutorial]] §1). *notes + video*
+- Crush Online players called it autoattacks turned into area magic damage while active ([[gameplay/crush-mechanics]] §5). *player*
 
 ## Behaviour
 
@@ -56,7 +57,7 @@ Effect codes read as `ItemOption` stat codes (*assumed*: a few rows disagree wit
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5, [[gameplay/video-character-creation-and-tutorial]] §1, [[gameplay/crush-mechanics]] §5.
 
 ## Open questions
 

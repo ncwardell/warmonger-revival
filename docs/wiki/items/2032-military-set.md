@@ -2,9 +2,9 @@
 title: "Military Set"
 type: "item"
 id: 2032
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 2032"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 2032", "staff: [[gameplay/crush-patch-notes]] 2016-10-11 (Punisher Athletic and Military sets added) and 2016-12-22 (Military 2,000 jewels, 14 days)"]
 name_key: "ItemName_2030"
 kind: 32
 kind_name: "Costume"
@@ -23,7 +23,8 @@ options:
   - {"code": 209, "value": 20}
   - {"code": 209, "value": 0}
 icon: {"file": "Costume_01.dds", "index": 26}
-obtained_from: []
+obtained_from:
+  - {"how": "costume_shop_crush", "price": 2000, "currency": "jewels", "days": 14}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=c221b5 type=d36ca9 id=c53c71 sources=f70532 name_key=8b3fc0 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=365a69 stats=ec445c options=2d3bc7 icon=c0fe73 obtained_from=97d170 -->
@@ -57,12 +58,12 @@ obtained_from: []
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how costume_shop_crush, price 2000, currency jewels, days 14 (hand-entered)
 <!-- generated:end -->
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The Military set was added to the Crush Online costume shop with the Punisher Athletic set (11 Oct 2016) and cost **2,000 jewels** for 14 days from 22 Dec 2016 ([[gameplay/crush-patch-notes|Crush patch notes]], *staff*). WM 0920 cut costume medal prices to 10 gold / 25 silver medals ([[gameplay/reinforce-and-runes|Reinforce and runes]] §5, *notes*).
 
 ## Behaviour
 
@@ -70,7 +71,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- staff: [[gameplay/crush-patch-notes]] 2016-10-11 (Punisher Athletic and Military sets added) and 2016-12-22 (Military 2,000 jewels, 14 days)
 
 ## Open questions
 

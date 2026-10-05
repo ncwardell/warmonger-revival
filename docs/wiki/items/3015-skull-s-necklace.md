@@ -4,7 +4,7 @@ type: "item"
 id: 3015
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 3015"]
+sources: ["client: Item_Base.cdb id 3015", "image: [[gameplay/skull-artifact-set]] (Crush Online tooltips, Feb 2017)"]
 name_key: "ItemName_3015"
 kind: 54
 kind_name: "Necklace"
@@ -106,7 +106,7 @@ ItemSancMet row 42 (inferred from Item_Base +0x92), 5,000 gold per attempt. Succ
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online called this piece **Necklace of Skull** (Feb 2017 tooltip). The Crush set bonus was offensive (3 pieces Attack +30, which a bug report said pushed players to the 1,000 Attack cap); Warmonger made it Armor / Magic Resist ([[gameplay/skull-artifact-set|Skull artifact set]], *image*; WM 0809 values in [[gameplay/reinforce-and-runes|Reinforce and runes]] §6).
 
 ## Behaviour
 
@@ -114,7 +114,7 @@ ItemSancMet row 42 (inferred from Item_Base +0x92), 5,000 gold per attempt. Succ
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/skull-artifact-set]] (Crush Online tooltips, Feb 2017)
 
 ## Open questions
 

@@ -2,9 +2,9 @@
 title: "Windmist Valley"
 type: "field"
 id: 80
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 80", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 80"]
+sources: ["client: SceneList.cdb id 80", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 80", "image: [[gameplay/lords-of-the-land]] §5 (Crush 2016 map: war, Armia defending, Erion attacking)"]
 name_key: "FieldName_80"
 kind: "land"
 scene_type: 2
@@ -84,7 +84,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- A Crush Online map from October 2016 shows a war here with Armia defending and Erion attacking ([[gameplay/lords-of-the-land|Lords of the Land]] §5). *image*
 
 ## Behaviour
 

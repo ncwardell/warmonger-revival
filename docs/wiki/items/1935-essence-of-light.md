@@ -4,7 +4,7 @@ type: "item"
 id: 1935
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 1935"]
+sources: ["client: Item_Base.cdb id 1935", "image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)"]
 name_key: "ItemName_1935"
 kind: 12
 kind_name: "Material"
@@ -27,6 +27,7 @@ obtained_from:
   - {"how": "dungeon", "field": 125}
   - {"how": "dungeon", "field": 126}
   - {"how": "dungeon", "field": 142}
+  - {"how": "fort_guardian_drop", "count": 1}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=643626 type=d36ca9 id=3c2675 sources=d02a17 name_key=058266 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=d9128d obtained_from=f38252 -->
@@ -56,6 +57,7 @@ obtained_from:
 - Shown as a reward of dungeon [[wiki/dungeons/125-lv-5-tow-canyon|(Lv 5) Tow Canyon]]
 - Shown as a reward of dungeon [[wiki/dungeons/126-lv-7-demon-hell|(Lv 7) Demon Hell]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 
@@ -93,7 +95,9 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+On the Fort Guardian drop list from WM 0817: each of up to 15 players who defeat the guardian gets one drop from the list, this item ×1 ([[gameplay/events-and-schedules|Events and schedules]] §5, *image + notes*).
+
+Boss-set essences: Fort Guardians drop them at a very small chance (WM 0809), more often from WM 0920; each border dungeon's entry window shows one essence among its rewards ([[gameplay/reinforce-and-runes|Reinforce and runes]] §6, *notes + client*).
 
 ## Behaviour
 
@@ -101,7 +105,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image + notes: [[gameplay/events-and-schedules]] §5 (WM 0817 Fort Guardian drop list: each of up to 15 players gets one item)
 
 ## Open questions
 

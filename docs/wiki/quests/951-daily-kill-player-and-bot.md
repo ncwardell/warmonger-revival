@@ -2,9 +2,10 @@
 title: "[Daily] Kill Player and Bot"
 type: "quest"
 id: 951
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 951", "client: NoticeQuest.cdb id 2"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 951", "client: NoticeQuest.cdb id 2", "image: [[gameplay/pvp-and-matches]] (daily Kill Player = 10 enemy players in Gaia; matches objective type 2, b = 10)"]
+manual: ["objectives"]
 name_key: "Quest_Title_951"
 kind: 9
 kind_name: "Daily"
@@ -18,7 +19,8 @@ next: []
 prerequisites:
   - {"type": 4, "what": "level", "min": 28}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 2, "what": "kill_player", "count": 10, "a": 5, "c": 1, "text_key": "Quest_QuickText_951_1"}
 objectives_client:
   - {"n": 1, "type": 2, "what": null, "a": 5, "b": 10, "c": 1, "text_key": "Quest_QuickText_951_1"}
 rewards:
@@ -29,7 +31,7 @@ board:
   - {"row": 2, "tab": 2}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=5e0890 type=eb5b2b id=69fa65 sources=df6b7b name_key=730f24 kind=0ade7c kind_name=b6566f level=84a59c giver=e2bffb turn_in=847ad4 periodic=e8ab7f automatic=5ffe53 prev=97d170 next=97d170 prerequisites=c3110a stages=30caa7 objectives=2be88c objectives_client=d4c61b rewards=d06c9a help=c5042f board=266e71 -->
+<!-- generated-keys: title=5e0890 type=eb5b2b id=69fa65 sources=df6b7b name_key=730f24 kind=0ade7c kind_name=b6566f level=84a59c giver=e2bffb turn_in=847ad4 periodic=e8ab7f automatic=5ffe53 prev=97d170 next=97d170 prerequisites=c3110a stages=30caa7 objectives_client=d4c61b rewards=d06c9a help=c5042f board=266e71 -->
 |  |  |
 |---|---|
 | **Quest id** | `951` |
@@ -54,10 +56,7 @@ board:
 
 ### Objectives
 
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
-
-1. Type 2 — kill enemy players?; values a=5, b=10, c=1 — tracker: “Destroy the enemy player and Bot from the Gaia field”
+1. Type 2 — kill enemy players?; values a=5, c=1 — tracker: “Destroy the enemy player and Bot from the Gaia field (0/10)”
 
 ### Rewards
 
@@ -73,7 +72,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Daily Kill Player: kill 10 enemy players in Gaia fields ([[gameplay/pvp-and-matches]], *image*). From WM 0124 bots killed in War of Warmonger also count ([[gameplay/events-and-schedules]] §1), and the quest gives "a little" exp and gold ([[gameplay/patch-history]]). *image + patch notes*
 
 ## Behaviour
 
@@ -81,7 +80,11 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/pvp-and-matches]]
+- [[gameplay/events-and-schedules]]
+- [[gameplay/patch-history]]
 
 ## Open questions
 

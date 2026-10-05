@@ -2,9 +2,9 @@
 title: "Elixir of Vampirism [B] recipe"
 type: "recipe"
 id: 531
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 531", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 531", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)"]
 result: {"item": 745, "count": 10}
 materials:
   - {"item": 823, "count": 20}
@@ -15,6 +15,7 @@ success_rate: 100
 category: 1
 filter_mask: 2097160
 level: 24
+npc: [214]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=7f5292 type=61613a id=9d94ce sources=83b6db result=0f29c3 materials=295d8f gold=15aa0c success_rate=310b86 category=356a19 filter_mask=be4de6 level=4d134b -->
@@ -27,7 +28,7 @@ level: 24
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 24 |
 | **Category / filter** | 1 / `0x200008` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
@@ -44,7 +45,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crafted at **Owen** (Red Union, unit 214) in the fortress, which has the full alchemy list ([[gameplay/consumables|Consumables]] §4, *client*). Alchemy recipes always succeed (100 %) ([[gameplay/consumables|Consumables]] §1, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -52,7 +55,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (fortress Owen, unit 214, has the full Item_Make category 1 list)
 
 ## Open questions
 

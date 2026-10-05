@@ -4,7 +4,8 @@ type: "skill"
 id: 20000
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 20000"]
+sources: ["client: Skill_Base.cdb id 20000", "notes: [[gameplay/classes-and-legions]] §5 Heroes and [[gameplay/events-and-schedules]] §9, WM 0615 (passive cooldown 300 s; hero 'Dark Knight' read as Dark Knight Skull)"]
+manual: ["cooldown"]
 name_key: "Skill_20000"
 desc_key: "SkillComment_20000"
 kind: 2
@@ -13,7 +14,7 @@ target: {"type": 3, "type_name": "self", "relation": [], "unit_classes": [], "ma
 range: 0
 area: {"shape": 1, "shape_name": "circle", "radius": 3.0, "width_or_angle": 3.0}
 cost: null
-cooldown: null
+cooldown: {"ms": 300000, "group": 0, "from": "WM 0615 patch note"}
 effect_kind: 0
 effects:
   - {"slot": 1, "type": 300, "value": 20020, "rate": 100}
@@ -26,7 +27,7 @@ used_by:
   - {"weapon_base": 69, "slot": 3, "items": [8000, 8500]}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=ee81e2 type=86a754 id=352bc7 sources=d2a9eb name_key=1ed34f desc_key=cbf080 kind=da4b92 kind_name=3844d5 target=17c4ad range=b6589f area=344636 cost=2be88c cooldown=2be88c effect_kind=b6589f effects=e969da damage_or_effect=35efea visual=efbc08 icon=30f6b2 used_by=bd3a9e -->
+<!-- generated-keys: title=ee81e2 type=86a754 id=352bc7 sources=d2a9eb name_key=1ed34f desc_key=cbf080 kind=da4b92 kind_name=3844d5 target=17c4ad range=b6589f area=344636 cost=2be88c effect_kind=b6589f effects=e969da damage_or_effect=35efea visual=efbc08 icon=30f6b2 used_by=bd3a9e -->
 |  |  |
 |---|---|
 |  | ![Dark Knight Skull Passive](wiki/assets/skills/20000.png) |
@@ -35,6 +36,7 @@ used_by:
 | **Target** | self; -; units: -; up to 1 |
 | **Range** | 0 (world units) |
 | **Area** | circle, radius 3, width/angle 3 |
+| **Cooldown** | 300 s |
 | **Visual** | skillVisual 352 `화염 구슬 이펙트` |
 | **Icon** | `ui/icons/Policy.png` cell 37 |
 
@@ -61,7 +63,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- [WM 0615](https://steamcommunity.com/games/718790/announcements/detail/2842216343262999426) fixed the **Dark Knight** hero passive's cooldown at **300 s** ([[gameplay/classes-and-legions]] §5 Heroes, [[gameplay/events-and-schedules]] §9). The client row has no cooldown; the 300 s is entered from the patch note. The passive's tooltip (resurrect within 5 s) is why a long cooldown matters. *notes*
+- Listed among the Dark Knight Skull hero skills in [[gameplay/video-fort-war]] §1. *client*
 
 ## Behaviour
 
@@ -69,11 +72,11 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Heroes, [[gameplay/events-and-schedules]] §9, [[gameplay/video-fort-war]] §1.
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The note says "Dark Knight"; this page reads it as the Dark Knight Skull hero (the only Dark Knight hero in `HeroData`). *inferred*
 
 <!-- credit:start -->
 ---

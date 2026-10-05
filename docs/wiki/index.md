@@ -12,22 +12,22 @@ Every page starts from the original client's own data (names, stats, prices, que
 
 | section | pages | complete | partial | stub |
 |---|---|---|---|---|
-| [[wiki/items/index\|Items]] | 1192 | 832 | 0 | 360 |
-| [[wiki/skills/index\|Skills]] | 675 | 395 | 0 | 280 |
-| [[wiki/buffs/index\|Buffs]] | 842 | 663 | 0 | 179 |
-| [[wiki/monsters/index\|Monsters]] | 331 | 0 | 2 | 329 |
-| [[wiki/npcs/index\|NPCs]] | 100 | 28 | 0 | 72 |
-| [[wiki/quests/index\|Quests]] | 291 | 132 | 0 | 159 |
-| [[wiki/shops/index\|Shops]] | 173 | 14 | 0 | 159 |
-| [[wiki/fields/index\|Fields (maps)]] | 138 | 8 | 0 | 130 |
-| [[wiki/zones/index\|Zones]] | 153 | 137 | 0 | 16 |
-| [[wiki/dungeons/index\|Dungeons]] | 15 | 1 | 0 | 14 |
-| [[wiki/boxes/index\|Random boxes]] | 40 | 0 | 0 | 40 |
-| [[wiki/gacha/index\|Gacha pools]] | 7 | 0 | 0 | 7 |
-| [[wiki/nodes/index\|Nodes]] | 123 | 19 | 0 | 104 |
-| [[wiki/recipes/index\|Recipes]] | 465 | 0 | 0 | 465 |
-| [[wiki/upgrades/index\|Upgrades]] | 102 | 0 | 0 | 102 |
-| **total** | 4647 | 2229 | 2 | 2416 |
+| [[wiki/items/index\|Items]] | 1192 | 871 | 20 | 301 |
+| [[wiki/skills/index\|Skills]] | 675 | 402 | 21 | 252 |
+| [[wiki/buffs/index\|Buffs]] | 842 | 668 | 3 | 171 |
+| [[wiki/monsters/index\|Monsters]] | 331 | 0 | 100 | 231 |
+| [[wiki/npcs/index\|NPCs]] | 100 | 33 | 38 | 29 |
+| [[wiki/quests/index\|Quests]] | 291 | 144 | 77 | 70 |
+| [[wiki/shops/index\|Shops]] | 173 | 14 | 44 | 115 |
+| [[wiki/fields/index\|Fields (maps)]] | 138 | 9 | 69 | 60 |
+| [[wiki/zones/index\|Zones]] | 153 | 137 | 1 | 15 |
+| [[wiki/dungeons/index\|Dungeons]] | 15 | 9 | 6 | 0 |
+| [[wiki/boxes/index\|Random boxes]] | 40 | 0 | 15 | 25 |
+| [[wiki/gacha/index\|Gacha pools]] | 7 | 0 | 7 | 0 |
+| [[wiki/nodes/index\|Nodes]] | 123 | 19 | 12 | 92 |
+| [[wiki/recipes/index\|Recipes]] | 465 | 435 | 30 | 0 |
+| [[wiki/upgrades/index\|Upgrades]] | 102 | 0 | 102 | 0 |
+| **total** | 4647 | 2741 | 545 | 1361 |
 
 **complete** = every field the server needs has a value (from the client data or added by hand); **partial** = fields are still missing but someone has added to the page; **stub** = fields are missing and the page holds only what the client data gives.
 

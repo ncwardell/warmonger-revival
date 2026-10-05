@@ -2,9 +2,9 @@
 title: "Potion of Health [C] recipe"
 type: "recipe"
 id: 2501
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2501", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2501", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)"]
 result: {"item": 885, "count": 100}
 materials:
   - {"item": 834, "count": 100}
@@ -14,6 +14,7 @@ success_rate: 100
 category: 8
 filter_mask: 1048577
 level: 5
+npc: [337]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=76839f type=61613a id=8cbb39 sources=6079fc result=b2edb8 materials=96df78 gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=06f592 level=ac3478 -->
@@ -26,7 +27,7 @@ level: 5
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 5 |
 | **Category / filter** | 8 / `0x100001` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
@@ -48,7 +49,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp Owen (unit 337) offers a short list: only B-grade scrolls, tomes, elixirs and flasks and only C and B potions ([[gameplay/consumables|Consumables]] §4, *client*).
 
 ## Behaviour
 
@@ -56,7 +57,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)
 
 ## Open questions
 

@@ -79,19 +79,25 @@ The client has one unit row per placement or variant: [[wiki/npcs/202-shaia|Shai
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Shaia is the guide in the Training Ground, a hovering fairy ([[gameplay/video-early-quests|Video notes: first session]] §3). Her target frame reads 30000 / 30000 (+500) ([[gameplay/video-early-quests|Video notes: first session]] §5, [4:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=260s)). *video*
+- New characters spawn about 14 units south of her, at about (435.5, 3648) in the Arslan copy ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §2) or local (174.3, 68.3) in the Erion copy ([[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] §4). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Quest 1 "On to a promising start" is active on arrival; talking to her completes it and starts quest 2 (3 Slime Mucus for Floyd). She takes quest 4, gives quest 5 (a letter to Frei) and, after Frei's quest 6/45, gives quest 7 (kill the two Chepa officers in the north) ([[gameplay/video-early-quests|Video notes: first session]] §2 steps 1–7; [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] steps 2–17; [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] §3). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Position: [[gameplay/npc-locations|NPC locations]] §5 has (423.9, 3664.8), but two later videos agree on about (433.6, 3662), roughly 10 units further east ([[gameplay/video-early-quests|Video notes: first session]] §3: 3 sightings; [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §2: 2 sightings). The Erion-copy sighting (local 168.0, 79.5) matches the [[gameplay/npc-locations|NPC locations]] value instead ([[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] §4). The generated value is kept.
 
 <!-- credit:start -->
 ---

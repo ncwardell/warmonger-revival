@@ -2,9 +2,10 @@
 title: "Expand your Inventory"
 type: "quest"
 id: 706
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 706", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-tutorial-walkthrough]] steps 3-5 (lesson exp shown = table value)"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 706", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-tutorial-walkthrough]] steps 3-5 (lesson exp shown = table value)", "video: [[gameplay/video-tutorial-walkthrough]] step 14, [[gameplay/video-character-creation-and-tutorial]] §3 step 17 (objective = expand the inventory once; completes on expansion)"]
+manual: ["objectives"]
 name_key: "Quest_Title_670"
 kind: 2
 kind_name: "Guide"
@@ -15,7 +16,8 @@ automatic: true
 prev: []
 next: []
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 17, "what": "expand_inventory", "a": 1, "b": 5, "text_key": "Quest_QuickText_670_1"}
 objectives_client:
   - {"n": 1, "type": 17, "what": null, "a": 1, "b": 5, "text_key": "Quest_QuickText_670_1"}
 rewards:
@@ -23,7 +25,7 @@ rewards:
 help: {"image": "ui/HelpImage/Help_12.png", "text_key": "Quest_HelpText_706"}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=989940 type=eb5b2b id=de9a90 sources=c6ed99 name_key=07f11e kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=d54ad0 automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=2be88c objectives_client=cc22f8 rewards=891137 help=241e00 -->
+<!-- generated-keys: title=989940 type=eb5b2b id=de9a90 sources=c6ed99 name_key=07f11e kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=d54ad0 automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives_client=cc22f8 rewards=891137 help=241e00 -->
 |  |  |
 |---|---|
 |  | ![Expand your Inventory](wiki/assets/quests/706.png) |
@@ -41,9 +43,6 @@ help: {"image": "ui/HelpImage/Help_12.png", "text_key": "Quest_HelpText_706"}
 - **Shares completion bit 76 with:** [[wiki/quests/1508-item-inventory-expansion|Item - Inventory expansion]] (completing one closes the others)
 
 ### Objectives
-
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
 
 1. Type 17 — expand inventory?; values a=1, b=5 — tracker: “Press [I] to open your Inventory and expand it once.”
 
@@ -65,7 +64,7 @@ Image `ui/HelpImage/Help_12.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts at the quest 100 turn-in: press I and expand the inventory once; 700 exp ([19:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1170s)). Expanding asked "Gold : 5000", used up the gold from quest 100, and completed the lesson ([16:20](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=980s)–[16:35](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=995s)). *video*
 
 ## Behaviour
 
@@ -73,11 +72,11 @@ Image `ui/HelpImage/Help_12.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+What parameters a = 1 and b = 5 of objective type 17 mean is not known; the video only shows that one expansion completes it.
 
 <!-- credit:start -->
 ---

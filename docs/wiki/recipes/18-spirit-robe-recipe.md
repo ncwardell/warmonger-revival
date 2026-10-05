@@ -2,9 +2,9 @@
 title: "Spirit Robe recipe"
 type: "recipe"
 id: 18
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 18", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 18", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/items-and-crafting]] §3 (Odin crafts gear; Courage/Rise are craft-only at Odin) + client via [[gameplay/consumables]] §4 (Training Camp Odin's craft list 6 is a copy of Item_Make category 0); category 0 → fortress Odin 213 is inferred"]
 result: {"item": 414, "count": 1}
 materials:
   - {"item": 700, "count": 15}
@@ -15,6 +15,7 @@ filter_mask: 16777218
 superior: {"chance": 5, "item": 486}
 level: 1
 raw: {"c28": 225}
+npc: [213]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=31f8bc type=61613a id=9e6a55 sources=9ae649 result=b1b221 materials=6c1e5f gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=4d3e51 superior=2eb4fa level=356a19 raw=aa6768 -->
@@ -28,7 +29,7 @@ raw: {"c28": 225}
 | **Superior result** | 5 % → [[wiki/items/486-spirit-robe\|Spirit Robe]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 0 / `0x1000002` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
@@ -49,19 +50,21 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crafted at **Odin** (Blue Union, unit 213) in the fortress: the guides name Odin as the gear crafter ([[gameplay/items-and-crafting|Items and crafting]] §3). Normal gear costs 10–30 Blue Crystals per piece (*guide*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Sockets (1–3) are rolled when the item is created and never added later ([[gameplay/items-and-crafting|Items and crafting]] §2, *guide*). From WM 0726 crafted gear has a small chance to come out **superior**; from WM 0824 yellow jewels can stand in for missing materials on normal gear ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/items-and-crafting]] §3 (Odin crafts gear; Courage/Rise are craft-only at Odin) + client via [[gameplay/consumables]] §4 (Training Camp Odin's craft list 6 is a copy of Item_Make category 0); category 0 → fortress Odin 213 is inferred
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Category 0 → Odin is inferred from the Training Camp copy (list 6) and the guides; the client does not link a craft list to the fortress Odin directly. WM 0824 also lets gear be crafted at the nation castle; which castle NPC offers it is not recorded ([[gameplay/events-and-schedules|Events and schedules]] §5).
 
 <!-- credit:start -->
 ---

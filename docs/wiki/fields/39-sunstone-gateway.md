@@ -2,9 +2,9 @@
 title: "Sunstone gateway"
 type: "field"
 id: 39
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 39", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 39"]
+sources: ["client: SceneList.cdb id 39", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 39", "guide + image: [[gameplay/maps-and-dungeons]] §1, §3"]
 name_key: "FieldName_39"
 kind: "land"
 scene_type: 2
@@ -84,7 +84,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Part of the grey (monster-held) band between Arslan and Erion in spring 2018, and one of the lands where Nas Village opened ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1, §3). *image + guide*
 
 ## Behaviour
 

@@ -79,7 +79,8 @@ The client has one unit row per placement or variant: [[wiki/npcs/315-lewellyn|L
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Fortress scroll merchant (shop 282; one guide spells it "Llewellyn") ([[gameplay/maps-and-dungeons|Maps and dungeons]] §5). Shop 282 sells the C-grade clickables 704, 708, 712, 716, 720, 724, 736, 740, 744, 748, 752 and 756; B, A and S grades are only crafted at Owen ([[gameplay/consumables|Consumables]] §5, §4). *client*
+- She does not sell C-grade Armor PNT or Magic PNT scrolls, so those were probably unobtainable or drop-only ([[gameplay/consumables|Consumables]] §4.1). *client + guess*
 
 ## Behaviour
 
@@ -87,7 +88,10 @@ The client has one unit row per placement or variant: [[wiki/npcs/315-lewellyn|L
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/maps-and-dungeons|Maps and dungeons]]
+- [[gameplay/consumables|Consumables]]
 
 ## Open questions
 

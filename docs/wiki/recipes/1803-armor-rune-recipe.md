@@ -2,9 +2,9 @@
 title: "Armor Rune recipe"
 type: "recipe"
 id: 1803
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 1803", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 1803", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "guide: [[gameplay/items-and-crafting]] §2 (runes are crafted at Alan, Rune Maker, unit 323 per [[gameplay/npc-locations]] §3)"]
 result: {"item": 7022, "count": 1}
 materials:
   - {"item": 700, "count": 10}
@@ -14,6 +14,7 @@ success_rate: 100
 category: 4
 filter_mask: 1
 raw: {"c28": 200}
+npc: [323]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=659273 type=61613a id=176b1b sources=479280 result=761490 materials=e45e55 gold=f8237d success_rate=310b86 category=1b6453 filter_mask=356a19 raw=fc6d8f -->
@@ -25,7 +26,7 @@ raw: {"c28": 200}
 | **Gold** | 5,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Category / filter** | 4 / `0x1` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/323-alan\|Alan]] |
 
 ### Materials
 
@@ -48,7 +49,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Runes are crafted at **Alan** (Rune Maker, unit 323) in the fortress; T2/T3 runes need the fort's Rune mastery ([[gameplay/items-and-crafting|Items and crafting]] §2, *guide*). From WM 0824 yellow jewels can stand in for missing materials on T1 runes ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -56,7 +59,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide: [[gameplay/items-and-crafting]] §2 (runes are crafted at Alan, Rune Maker, unit 323 per [[gameplay/npc-locations]] §3)
 
 ## Open questions
 

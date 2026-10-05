@@ -2,7 +2,7 @@
 title: "King Deathhead"
 type: "monster"
 id: 1501
-status: "stub"
+status: "partial"
 missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 1501", "client: HeroData.cdb id 7 (hero transform of the same name)", "docs: [[gameplay/dungeon-drops]] (boss of field 121)", "client: DungeonAdmission.cdb (rewards advertised by the dungeon, no rates)"]
 name_key: "UnitName_1501"
@@ -96,19 +96,26 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Boss of [[wiki/dungeons/121-lv-1-skull-temple|[Lv 1] Skull Temple (121)]] (guides + client ids, [[gameplay/maps-and-dungeons]] §2; [[gameplay/dungeon-drops]] §1) — listed only by [[gameplay/dungeon-drops]]. Crush Online name: Deathhead (Crush Online sheet, *Temple of the Skull*, Lv 1) ([[gameplay/dungeon-drops]] §1–2; [[gameplay/crush-mechanics]] §9).
+- That dungeon drops T1 named-set gear, already reinforced at a random level (+0 to +11 seen) (image + guide, [[gameplay/maps-and-dungeons]] §2).
+- Other units with this boss's name: [[wiki/monsters/672-king-deathhead|672]], [[wiki/monsters/804-tough-king-deathhead|804]].
+- Forum: the Lv 1–2 bosses (Deathhead, Death Knight) could be soloed with base gear and potions (forum, [[gameplay/warmonger-forum]] §3). Essence of Darkness "drops from the Tier 1 dungeon boss" (Crush forum, [[gameplay/dungeon-drops]] §1); in Warmonger the T1/T2 boss was shielded unless the nation held more than one fort on the channel (forum, [[gameplay/warmonger-forum]] §3).
+- Warmonger patch 0809 added a **Death Head** boss set (3 bonus steps); the essences for these sets drop from fort guardians (notes, [[gameplay/patch-history]] § Items).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Drops: the dungeon entry panel advertises this dungeon's essence, horn and sealed weapon (client, front matter `dungeon_rewards`; no rates). Crush Online players said every boss (dungeon or world map) could drop every essence (player, [[gameplay/crush-mechanics]] §9). Warmonger patch 0920 raised boss-material drop rates from dungeon bosses and fort guardians (notes, [[gameplay/patch-history]] § Numbers pass (October 2026)).
+- The forum says a dungeon boss only exists while the land is monster-invaded (forum, [[gameplay/warmonger-forum]] §3); in hard mode the boss waits at the end (guide, [[gameplay/maps-and-dungeons]] §2).
+- Crush Online patch 2016-12-15: elites in boundary-area dungeons dropped a scroll that summoned one extra boss, once per boss; this boss's scroll is [[wiki/items/2585-the-death-head-s-pipe|The Death Head's Pipe (2585)]] in the client (staff + client, [[gameplay/crush-patch-notes]] § 2016-12-15).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/dungeon-drops]] §1–2, [[gameplay/maps-and-dungeons]] §2, [[gameplay/crush-mechanics]] §9, [[gameplay/warmonger-forum]] §3, [[gameplay/crush-patch-notes]] § 2016-12-15, [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- HP, level, damage, exp and drop rates: no source gives them. [[gameplay/sources]] §9 lists boss videos (Commander Reviatan solo, Komodo 5-man) that could give HP against damage numbers.
+- The guides do not say which of this boss's unit ids is the normal-mode, hard-mode or field version.
 
 <!-- credit:start -->
 ---

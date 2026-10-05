@@ -83,15 +83,20 @@ Dialogue rows (`QuestTalk`; full text on the quest pages):
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Oracle of Knowledge in the Training Camp. The measured point (358.8, 3469.1) is not walkable on the owned client's navmesh; the Python test server uses (360.8, 3466.1) nearby. That is a placement fix for testing, not a better measurement ([[gameplay/npc-locations|NPC locations]] §4). A later video measures (362.6, 3467.6) ([[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] §2). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Takes quest 5 (Shaia's letter), sends the player back to Shaia (6/45), takes quest 7 (the Chepa officers), gives quest 9 "Find the missing Scout", takes quests 10 and 107 from Corpse incineration, and gives quest 11 "An urgent message" with the Scroll: Gaia and Urgent Letter ([[gameplay/video-early-quests|Video notes: first session]] §2 steps 5–13; [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] steps 10–27; [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]] §3). *video*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]]
+- [[gameplay/video-early-quests|Video notes: first session]]
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]]
 
 ## Open questions
 

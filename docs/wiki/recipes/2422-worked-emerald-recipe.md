@@ -2,9 +2,9 @@
 title: "Worked Emerald recipe"
 type: "recipe"
 id: 2422
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2422", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2422", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)"]
 result: {"item": 868, "count": 1}
 materials:
   - {"item": 806, "count": 5}
@@ -13,6 +13,7 @@ success_rate: 100
 category: 8
 filter_mask: 256
 level: 20
+npc: [337]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=86a830 type=61613a id=ce7175 sources=28d329 result=bc1d09 materials=d105b6 gold=7507d4 success_rate=310b86 category=fe5dbb filter_mask=dd7c1a level=91032a -->
@@ -25,7 +26,7 @@ level: 20
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 8 / `0x100` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
@@ -40,7 +41,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp Owen (unit 337) offers a short list: only B-grade scrolls, tomes, elixirs and flasks and only C and B potions ([[gameplay/consumables|Consumables]] §4, *client*).
 
 ## Behaviour
 
@@ -48,7 +49,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Owen, unit 337, craft list 8 in UnitDB)
 
 ## Open questions
 

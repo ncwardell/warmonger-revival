@@ -4,7 +4,7 @@ type: "skill"
 id: 10007
 status: "complete"
 missing: []
-sources: ["client: Skill_Base.cdb id 10007", "client: StringAll_Eng SkillComment_10007 (tooltip value tags)"]
+sources: ["client: Skill_Base.cdb id 10007", "client: StringAll_Eng SkillComment_10007 (tooltip value tags)", "notes: [[gameplay/classes-and-legions]] §5 Weapons, WM 0412 (cooldown 70 → 60 s, note says E)"]
 name_key: "Skill_10007"
 desc_key: "SkillComment_10007"
 kind: 1
@@ -72,7 +72,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Patch history: [WM 0412](https://steamcommunity.com/games/718790/announcements/detail/2394102381817542359) cut a Magical Thunder Wand cooldown 70 → 60 s. The note calls it the "E", but in the client the 60 s skill is this R. ([[gameplay/classes-and-legions]] §5 Weapons). *notes*
 
 ## Behaviour
 
@@ -80,7 +80,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/classes-and-legions]] §5 Weapons.
 
 ## Open questions
 

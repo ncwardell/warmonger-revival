@@ -2,9 +2,9 @@
 title: "Raging Wind"
 type: "field"
 id: 57
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 57", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 57"]
+sources: ["client: SceneList.cdb id 57", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 57", "video: [[gameplay/video-dungeon-run]] §1, §7 (stone portal ring to Nas Village at ≈ (4452, 1070), ±5 units)"]
 name_key: "FieldName_57"
 kind: "land"
 scene_type: 2
@@ -85,7 +85,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- In June 2018 a stone portal ring at about (4452, 1070) here opened the "Connected World" dialog for the event dungeon Nas Village Entrance (field 133), and the party came back here when the dungeon finished ([[gameplay/video-dungeon-run|dungeon-run video notes]] §1, §7). Event-dungeon portals appear on random lands, so this is one sighting, not a fixed gate. *video*
 
 ## Behaviour
 

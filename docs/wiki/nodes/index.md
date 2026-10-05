@@ -8,7 +8,7 @@ title: "Nodes"
 
 Field objects the client places itself (`Trigger.cdb`): herb and ore gathering nodes in the dungeons, and the talkable quest gadgets (Scout, Scout Leader, Ghost soldier ...). Town NPCs are under [[wiki/npcs/index|NPCs]].
 
-123 pages: 19 complete, 0 partial, 104 stub. Back to the [[wiki/index|game wiki]].
+123 pages: 19 complete, 12 partial, 92 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -55,20 +55,20 @@ Field objects the client places itself (`Trigger.cdb`): herb and ore gathering n
 |  | 12316 | [[wiki/nodes/12316-a-doubtful-character\|A Doubtful character]] | complete | 0 |
 |  | 12317 | [[wiki/nodes/12317-a-doubtful-character\|A Doubtful character]] | complete | 0 |
 |  | 12318 | [[wiki/nodes/12318-swamp-mushroom\|Swamp mushroom]] | complete | 0 |
-|  | 12401 | [[wiki/nodes/12401-moonstone\|Moonstone]] | stub | 1 |
-|  | 12402 | [[wiki/nodes/12402-lavender\|Lavender]] | stub | 1 |
-|  | 12403 | [[wiki/nodes/12403-peppermint\|Peppermint]] | stub | 1 |
-|  | 12404 | [[wiki/nodes/12404-moonstone\|Moonstone]] | stub | 1 |
-|  | 12405 | [[wiki/nodes/12405-lavender\|Lavender]] | stub | 1 |
-|  | 12406 | [[wiki/nodes/12406-peppermint\|Peppermint]] | stub | 1 |
-|  | 12407 | [[wiki/nodes/12407-lavender\|Lavender]] | stub | 1 |
-|  | 12408 | [[wiki/nodes/12408-peppermint\|Peppermint]] | stub | 1 |
+|  | 12401 | [[wiki/nodes/12401-moonstone\|Moonstone]] | partial | 1 |
+|  | 12402 | [[wiki/nodes/12402-lavender\|Lavender]] | partial | 1 |
+|  | 12403 | [[wiki/nodes/12403-peppermint\|Peppermint]] | partial | 1 |
+|  | 12404 | [[wiki/nodes/12404-moonstone\|Moonstone]] | partial | 1 |
+|  | 12405 | [[wiki/nodes/12405-lavender\|Lavender]] | partial | 1 |
+|  | 12406 | [[wiki/nodes/12406-peppermint\|Peppermint]] | partial | 1 |
+|  | 12407 | [[wiki/nodes/12407-lavender\|Lavender]] | partial | 1 |
+|  | 12408 | [[wiki/nodes/12408-peppermint\|Peppermint]] | partial | 1 |
 |  | 12409 | [[wiki/nodes/12409-ghost-soldier\|Ghost soldier]] | complete | 0 |
 |  | 12410 | [[wiki/nodes/12410-ghost-soldier\|Ghost soldier]] | complete | 0 |
-|  | 12411 | [[wiki/nodes/12411-moonstone\|Moonstone]] | stub | 1 |
-|  | 12412 | [[wiki/nodes/12412-peppermint\|Peppermint]] | stub | 1 |
-|  | 12413 | [[wiki/nodes/12413-moonstone\|Moonstone]] | stub | 1 |
-|  | 12414 | [[wiki/nodes/12414-peppermint\|Peppermint]] | stub | 1 |
+|  | 12411 | [[wiki/nodes/12411-moonstone\|Moonstone]] | partial | 1 |
+|  | 12412 | [[wiki/nodes/12412-peppermint\|Peppermint]] | partial | 1 |
+|  | 12413 | [[wiki/nodes/12413-moonstone\|Moonstone]] | partial | 1 |
+|  | 12414 | [[wiki/nodes/12414-peppermint\|Peppermint]] | partial | 1 |
 |  | 12501 | [[wiki/nodes/12501-emerald\|Emerald]] | stub | 1 |
 |  | 12502 | [[wiki/nodes/12502-rosemary\|Rosemary]] | stub | 1 |
 |  | 12503 | [[wiki/nodes/12503-jasmine\|Jasmine]] | stub | 1 |

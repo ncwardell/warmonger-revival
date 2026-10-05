@@ -2,9 +2,9 @@
 title: "Medal : Arena"
 type: "item"
 id: 1007
-status: "stub"
-missing: ["obtained_from"]
-sources: ["client: Item_Base.cdb id 1007"]
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 1007", "guide + client: [[gameplay/arena-ranking-rewards]] §Weekly arena payment (Crush Online, Oct 2016)"]
 name_key: "ItemName_1007"
 kind: 12
 kind_name: "Material"
@@ -15,7 +15,8 @@ cost_pair:
   - {"currency": 2, "amount": 10}
 stats: []
 icon: {"file": "Items_05.png", "index": 19}
-obtained_from: []
+obtained_from:
+  - {"how": "arena_weekly_reward", "count": 10, "rank": "51-100"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=183d62 type=d36ca9 id=1ccace sources=9ce09a name_key=f188a2 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 icon=6fb1f3 obtained_from=97d170 -->
@@ -34,7 +35,7 @@ obtained_from: []
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how arena_weekly_reward, count 10, rank 51-100 (hand-entered)
 
 ### Mentioned in
 
@@ -44,7 +45,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Paid by the weekly arena payment mail: one player ranked 51st–100th got **10** arena medals ([[gameplay/arena-ranking-rewards|Arena ranking rewards]], *guide*, Crush Online Oct 2016). The amounts for other rank bands are not known.
 
 ## Behaviour
 
@@ -52,7 +53,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- guide + client: [[gameplay/arena-ranking-rewards]] §Weekly arena payment (Crush Online, Oct 2016)
 
 ## Open questions
 

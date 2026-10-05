@@ -2,9 +2,9 @@
 title: "The land of Greed"
 type: "field"
 id: 111
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 111", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 111", "client: Quest.cdb (quests and objectives in field 111)", "client: Trigger.cdb field 111"]
+sources: ["client: SceneList.cdb id 111", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 111", "client: Quest.cdb (quests and objectives in field 111)", "client: Trigger.cdb field 111", "client + image: [[gameplay/abyss-map]] Portal table, Routes and Markers (unlabelled portals image-measured ±5 units)", "video: [[gameplay/video-early-quests]] §1-§3 and §6 (Land of Greed quests, Scout Leader, Gem Stone: Blue drops), video"]
 name_key: "FieldName_111"
 kind: "field"
 scene_type: 5
@@ -21,6 +21,8 @@ gates:
 connections:
   - {"to": 107, "gate": 1107, "to_gate": 1124}
   - {"to": 113, "gate": 1137, "to_gate": 1142}
+  - {"to": 103, "gate": null, "to_gate": null, "at": [1080, 2757], "to_at": [569, 2361], "source": "image"}
+  - {"to": 104, "gate": null, "to_gate": null, "at": [1215, 2623], "to_at": [828, 2361], "source": "image"}
 npcs: []
 monsters: [721, 722, 723, 724, 826, 10001, 10002]
 spawn_points: []
@@ -50,6 +52,8 @@ triggers:
 |---|---|---|---|---|
 | 1107 | 1225.76, 2761.94 | [[wiki/fields/107-place-for-scattered-troops\|Place for Scattered troops]] | 1124 | FieldName_111 |
 | 1137 | 1080.11, 2620.79 | [[wiki/fields/113-the-avenue-of-spirit\|The avenue of spirit]] | 1142 | FieldName_111 |
+
+Other connections (hand-entered): to 103, gate None, to_gate None, at [1080, 2757], to_at [569, 2361], source image; to 104, gate None, to_gate None, at [1215, 2623], to_at [828, 2361], source image
 
 Entered from: [[wiki/fields/107-place-for-scattered-troops|Place for Scattered troops]] (gate 1124 → 1107), [[wiki/fields/113-the-avenue-of-spirit|The avenue of spirit]] (gate 1142 → 1137)
 
@@ -107,7 +111,11 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 3. The three Land of Greed copies join the nations' level-2 fields (108 links 103, 105, 107; 109 links 102, 105, 106; 111 links 103, 104, 107), so players of different nations meet here ([[gameplay/abyss-map|Abyss map]] Routes). *image*
+- Portals: top-right 1107 → 107; bottom-left 1137 → 113; top-left (about 1080, 2757) → 103; bottom-right (about 1215, 2623) → 104 ([[gameplay/abyss-map|Abyss map]]). *client + image*
+- One clearing with a blue dot at about (1103, 2686) and a large red crystal landmark north of the centre, about (1140, 2740) ([[gameplay/abyss-map|Abyss map]] Markers). *image*
+- Gem Stone: Blue drops in the Land of Greed ([[gameplay/video-early-quests|first-session video]] §6). *video*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -115,7 +123,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]], [[gameplay/video-early-quests|first-session video]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

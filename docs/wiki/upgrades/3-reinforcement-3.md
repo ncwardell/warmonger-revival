@@ -2,9 +2,9 @@
 title: "Reinforcement 3"
 type: "upgrade"
 id: 3
-status: "stub"
+status: "partial"
 missing: ["success_rates"]
-sources: ["client: ItemSancMet.cdb id 3", "client: Item_Base.cdb c41@92 (inferred link to ItemSancMet)", "contract: items.yaml reinforce 0x436, server_rules craft_reinforce_rune_odds"]
+sources: ["client: ItemSancMet.cdb id 3", "client: Item_Base.cdb c41@92 (inferred link to ItemSancMet)", "contract: items.yaml reinforce 0x436, server_rules craft_reinforce_rune_odds", "notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412: a failed reinforce drops the item one level and uses up the materials; Reinforcing Adjuvants, item 1100, prevent the drop)"]
 gold: 1000
 steps:
   - {"step": 1, "materials": [{"item": 601, "count": 8}]}
@@ -15,6 +15,8 @@ steps:
   - {"step": 6, "materials": [{"item": 606, "count": 30}]}
 used_by: []
 kind: "reinforcement"
+on_failure: "drop_one_level"
+failure_protection_item: 1100
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=f4bb0e type=4389c5 id=77de68 sources=15468e gold=e3cbba steps=1ad139 used_by=97d170 kind=701a6f -->
@@ -47,19 +49,21 @@ Six material steps per row. Whether a step is a reinforce level band or a tier i
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Each tier runs +0…+15 and is reinforced with gold + passion; Red Passion is for weapons, Blue Passion for gear, and amounts grow each level ([[gameplay/items-and-crafting|Items and crafting]] §1, *guides*). Tier-up (+15 → next tier +0) also consumes a second identical +15 item plus Orange Passion and gold ([[gameplay/items-and-crafting|Items and crafting]] §1; per-tier Orange / Brilliant Passion table in [[gameplay/reinforce-and-runes|Reinforce and runes]] §4).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Before WM 0412 a failed reinforce destroyed the item; after it, the item **drops one level** (+3 → +2) and the materials are used up. **Reinforcing Adjuvants** (item 1100) prevent the drop ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*).
+
+Success falls slowly with tier and rarity, starting at a lower tier for rarer items (WM 0406); Rainbow Reinforcing Stones (641–646) only work on items of their own rarity (WM 0420); a notice appears before reinforcing items of different rarities (WM 0621) ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4, *notes*). No rates were published.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- notes: [[gameplay/reinforce-and-runes]] §4 (WM 0412: a failed reinforce drops the item one level and uses up the materials; Reinforcing Adjuvants, item 1100, prevent the drop)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The 2018 guides say reinforcing "never fails" ([[gameplay/items-and-crafting|Items and crafting]] §1), while the WM 0406/0412 patch notes describe falling success and a one-level drop on failure ([[gameplay/reinforce-and-runes|Reinforce and runes]] §4). This page follows the patch notes.
 
 <!-- credit:start -->
 ---

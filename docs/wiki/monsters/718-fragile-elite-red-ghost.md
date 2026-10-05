@@ -2,7 +2,7 @@
 title: "Fragile Elite Red Ghost"
 type: "monster"
 id: 718
-status: "stub"
+status: "partial"
 missing: ["level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
 sources: ["client: UnitDB.cdb id 718", "client: Quest.cdb kill objectives (quests 108, 750, 1102)", "video: [[gameplay/video-early-quests|Video notes: the first 20 levels]] §5, target frame at [83:15](https://www.youtube.com/watch?v=s04CSN16w1s&t=4995s): HP 2000, regen +40/tick (2% of max) (Fragile Elite Black / Red Ghost)"]
 name_key: "UnitName_718"
@@ -94,7 +94,8 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Seen killed in The avenue of spirit (Abyss Lv 4, field 113) (video, [[gameplay/video-early-quests]] §1, §5).
+- The target frame read HP 2000 with regeneration +40 (2% of max) at [83:15](https://www.youtube.com/watch?v=s04CSN16w1s&t=4995s) (video, [[gameplay/video-early-quests]] §5).
 
 ## Behaviour
 
@@ -102,7 +103,7 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-early-quests]] §1, §5
 
 ## Open questions
 

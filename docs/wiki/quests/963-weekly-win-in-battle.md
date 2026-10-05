@@ -2,7 +2,7 @@
 title: "[Weekly] Win in battle"
 type: "quest"
 id: 963
-status: "stub"
+status: "partial"
 missing: ["objectives", "rewards"]
 sources: ["client: Quest.cdb id 963", "client: NoticeQuest.cdb id 9"]
 name_key: "Quest_Title_956"
@@ -78,7 +78,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Daily, weekly and monthly "Win in Battle" quests appear in the guides' quest window; queued battles existed alongside land wars ([[gameplay/progression-and-economy]] §2, [[gameplay/pvp-and-matches]], *image*).
 
 ## Behaviour
 
@@ -86,11 +86,15 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
+- [[gameplay/pvp-and-matches]]
+- [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Reward types 10 and 5 are not decoded. The guides say max-level daily/weekly/monthly quests pay yellow jewels ([[gameplay/progression-and-economy]] §2), and WM 0726 gave daily quests more jewels and fame ([[gameplay/patch-history]]); type 10 = jewels and type 5 = fame would fit, but that is a guess.
 
 <!-- credit:start -->
 ---

@@ -2,9 +2,9 @@
 title: "Ring of Life recipe"
 type: "recipe"
 id: 2012
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2012", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2012", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)"]
 result: {"item": 408, "count": 1}
 materials:
   - {"item": 700, "count": 10}
@@ -15,6 +15,7 @@ filter_mask: 16777344
 superior: {"chance": 5, "item": 452}
 level: 1
 raw: {"c28": 150}
+npc: [335]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=097edd type=61613a id=084b3a sources=17ad1d result=d44200 materials=f2c969 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=16666f superior=22443a level=356a19 raw=d75d65 -->
@@ -28,7 +29,7 @@ raw: {"c28": 150}
 | **Superior result** | 5 % → [[wiki/items/452-ring-of-life\|Ring of Life]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 6 / `0x1000080` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/335-odin\|Odin]] |
 
 ### Materials
 
@@ -53,7 +54,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp copy of Odin's gear list, offered by the camp's Odin (unit 335) ([[gameplay/consumables|Consumables]] §4, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -61,7 +64,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)
 
 ## Open questions
 

@@ -4,7 +4,7 @@ type: "item"
 id: 948
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 948"]
+sources: ["client: Item_Base.cdb id 948", "video: [[gameplay/video-early-quests]] §15"]
 name_key: "ItemName_948"
 kind: 46
 kind_name: "Auto decomposition hammer"
@@ -47,7 +47,7 @@ obtained_from:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Quest 14 "Battle preparations" (Freya) rewards this hammer with Shoes of Life ([[gameplay/video-early-quests|Early quests video]] §15, *video*). Auto-decomposition modes: not used / gemstone / below 1, 2 or 3 tier ([[gameplay/items-and-crafting|Items and crafting]] §3).
 
 ## Behaviour
 
@@ -55,7 +55,7 @@ obtained_from:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- video: [[gameplay/video-early-quests]] §15
 
 ## Open questions
 

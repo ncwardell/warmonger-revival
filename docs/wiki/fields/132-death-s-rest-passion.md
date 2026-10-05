@@ -2,9 +2,9 @@
 title: "Death's Rest (Passion)"
 type: "field"
 id: 132
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters", "connections"]
-sources: ["client: SceneList.cdb id 132"]
+sources: ["client: SceneList.cdb id 132", "notes: [[gameplay/patch-history]] (WM 0110: 'Mysterious World' via the fortress gate, tab Death's Rest (Passion))", "client: [[gameplay/events-and-schedules]] §9 (entry 2 Dimensional Energy)"]
 name_key: "FieldName_132"
 kind: "event_dungeon"
 scene_type: 6
@@ -57,7 +57,7 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/132-death-s-rest-passion
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Death's Rest (Passion) is a tab of the "Mysterious World" border area, reached through the fortress gate ([[gameplay/patch-history|Patch history]], WM 0110). Entry costs 2 Dimensional Energy ([[gameplay/events-and-schedules|Events and schedules]] §9). `Event_Dungeon` gives it a 180-minute window ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3). *notes + client*
 
 ## Behaviour
 
@@ -69,7 +69,7 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/132-death-s-rest-passion
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-dungeon-run|dungeon-run video notes]] §6 guesses that field 132 is Siren Lake (by elimination from the world-map list), while the WM 0110 notes name it Death's Rest (Passion), matching FieldNames. The page keeps the client name.
 
 <!-- credit:start -->
 ---

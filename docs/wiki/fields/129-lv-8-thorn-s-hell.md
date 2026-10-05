@@ -2,9 +2,9 @@
 title: "[Lv 8] Thorn's Hell"
 type: "field"
 id: 129
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "connections"]
-sources: ["client: SceneList.cdb id 129", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Quest.cdb (quests and objectives in field 129)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 129"]
+sources: ["client: SceneList.cdb id 129", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Quest.cdb (quests and objectives in field 129)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 129", "image: [[gameplay/maps-and-dungeons]] §2 (minimap layout from the dungeons guide screenshots)", "notes: [[gameplay/patch-history]] (WM 0615 unlock level 27; WM 0402/0404 open time and respawn)", "image: [[gameplay/lords-of-the-land]] §5"]
 name_key: "FieldName_129"
 kind: "dungeon"
 scene_type: 3
@@ -109,15 +109,18 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Minimap layout (Thorn's Hell): one large irregular area; entry bottom-centre, marker top-centre. The boss is shown as three figures ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). Legend: framed box = entry portal, yellow four-arrow marker = probably the boss / exit, green leaves = herb nodes, blue diamonds = mineral nodes, pink stars = probably elite spawns. *image*
+- Unlock level 27 (WM 0615, [[gameplay/patch-history|Patch history]]). *notes*
+- A grey-land war minimap in October 2016 showed this dungeon ([[gameplay/lords-of-the-land|Lords of the Land]] §5). *image*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Solo, monsters do not respawn; with 2+ party members in hard mode they do. Reported respawn: first after 3-5 min then every minute (3 players), or starting at 9-10 min on the dungeon timer ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). WM 0404: with more than 2 users monsters respawn after 5 min; WM 0402 cut dungeon open time from 20 to 15 min ([[gameplay/patch-history|Patch history]]). *guides + notes*
+- One portal is one instance with at most 5 players; the "Can not enter" option locks it ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/maps-and-dungeons|Maps and dungeons]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

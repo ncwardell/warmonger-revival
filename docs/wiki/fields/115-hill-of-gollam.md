@@ -2,9 +2,9 @@
 title: "Hill of Gollam"
 type: "field"
 id: 115
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters", "connections"]
-sources: ["client: SceneList.cdb id 115"]
+sources: ["client: SceneList.cdb id 115", "guide: [[gameplay/maps-and-dungeons]] §2-§3 (Gollam Hill: seen on End of Earth, drops, entry 5 / 10)", "client + video: [[gameplay/video-dungeon-run]] §6 (Event_Dungeon row 115, 180-minute window, value 12 on the world-map list)"]
 name_key: "FieldName_115"
 kind: "dungeon"
 scene_type: 3
@@ -55,7 +55,9 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/115-hill-of-gollam|Hill 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Event dungeon "Gollam Hill" (Hill of Gollam). It opened on random lands on a schedule; the guides saw it on End of Earth. Drops named by the guides: Red Bloodstone, Diamond, Garnet, Topaz ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3). *guide*
+- Entry: 5 / 10 Dimensional Energy (normal / hard) in the 2018 guides; client `DungeonAdmission` 5 / 5 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). *guide + client*
+- `Event_Dungeon` gives it a 180-minute window; the world map's Event Dungeon list shows the number 12 next to it, matching that row ([[gameplay/video-dungeon-run|dungeon-run video notes]] §6). *client + video*
 
 ## Behaviour
 
@@ -67,7 +69,7 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/115-hill-of-gollam|Hill 
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Monsters, layout and entrance gate are unknown.
 
 <!-- credit:start -->
 ---

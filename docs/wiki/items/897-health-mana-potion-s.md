@@ -4,7 +4,7 @@ type: "item"
 id: 897
 status: "complete"
 missing: []
-sources: ["client: Item_Base.cdb id 897"]
+sources: ["client: Item_Base.cdb id 897", "image: [[gameplay/potion-regen]] (Crush forum thread, Mar 2017)"]
 name_key: "ItemName_897"
 kind: 11
 kind_name: "Normal"
@@ -70,7 +70,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Measured on the live Crush Online server (Mar 2017): the S potion paid only part of its tooltip total because 3–4 regen ticks (about 6 s apart) fell inside its 16 s; extra per tick ≈ buff value × 3.2 ([[gameplay/potion-regen|Potion regeneration]], *image + guess*). A revival can pay it faithfully or as the tooltip says (same page).
 
 ## Behaviour
 
@@ -78,7 +78,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- image: [[gameplay/potion-regen]] (Crush forum thread, Mar 2017)
 
 ## Open questions
 

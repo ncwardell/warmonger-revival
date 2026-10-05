@@ -90,7 +90,7 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Shaia says the Chepa leaders are in the north (dialogue 685). Kill one Chepa Warrior Officer (710) and one Chepa Archer Officer (711); they stand among normal Chepas in the round clearing in the north-west of the Training Ground ([[gameplay/video-tutorial-walkthrough]] step 18, [[gameplay/video-character-creation-and-tutorial]] §3 step 15). Report to Frei: done at [21:05](https://www.youtube.com/watch?v=s04CSN16w1s&t=1265s), [23:35](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1415s) and [15:30](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=930s). Panel: 9,100 exp + Scroll: Return ×10 (906), then a choice of Spell Ring (400) or Ring of Life (408). Frei then offers quest 9. *video*
 
 ## Behaviour
 
@@ -102,7 +102,10 @@ are granted alongside the selected ring. The server uses the raw reward amount;
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

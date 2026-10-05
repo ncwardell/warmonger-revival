@@ -4,7 +4,7 @@ type: "shop"
 id: 281
 status: "complete"
 missing: []
-sources: ["client: Npc_Carry.cdb shop 281", "client: UnitDB.cdb u16@a2 = 281 (units 203, 204, 330)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "docs: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)"]
+sources: ["client: Npc_Carry.cdb shop 281", "client: UnitDB.cdb u16@a2 = 281 (units 203, 204, 330)", "docs: [[gameplay/progression-and-economy]] §4 (shop prices 7.92 x base, sell 6.3 x base; guide images)", "docs: [[gameplay/video-tutorial-walkthrough]] 14:20 (Wren 287: 79 gold; sell 315 / 630)", "contract: items.yaml server_rules.price_formula (client FUN_004e0603 / FUN_004e06b5)", "docs: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)", "video: [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Wren 204)", "image: [[gameplay/maps-and-dungeons]] §5 (fortress layout, Wren's stock) and §2 Entry cost (Dimensional Energy 5,500 in every fortress)", "guide: [[gameplay/progression-and-economy]] §4, Crush Online shop prices (Crush stats guide, 2016)", "notes: [[gameplay/patch-history]] (WM 0328 Dimensional Energy 2,000 gold; WM 0404 Pyrotechnics sold for gold at Wren)", "player/staff: [[gameplay/crush-mechanics]] §3 (Magic Crafting Stone and Return scroll prices; dynamic NPC prices)", "staff: [[gameplay/crush-patch-notes]] 2016-12-15 (Magic Crafting Stone removed from the merchant)", "client: [[gameplay/consumables]] §4.2 (Wren sells the D potions)"]
 npc: [203, 204, 330]
 stock:
   - {"slot": 0, "item": 883, "count": 1, "p1": 0, "p2": 0}
@@ -48,6 +48,10 @@ observed_prices:
   - {"item": 947, "shown": 1346400, "currency": "Gold", "source": "docs: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)"}
   - {"item": 949, "shown": 3960000, "currency": "Gold", "source": "docs: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)"}
   - {"item": 1105, "shown": 3960, "currency": "Gold", "source": "docs: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)"}
+  - {"item": 883, "shown": 96, "currency": "Gold", "source": "docs: [[gameplay/progression-and-economy]] §4 (Crush stats guide, 2016)", "note": "Crush Online price (x9.6 base)"}
+  - {"item": 884, "shown": 96, "currency": "Gold", "source": "docs: [[gameplay/progression-and-economy]] §4 (Crush stats guide, 2016)", "note": "Crush Online price (x9.6 base)"}
+  - {"item": 908, "shown": 24000, "currency": "Gold", "source": "docs: [[gameplay/progression-and-economy]] §4 (Crush stats guide, 2016)", "note": "Crush Online price (x9.6 base)"}
+  - {"item": 688, "shown": 2000, "currency": "Gold", "source": "docs: [[gameplay/patch-history]] WM 0328 (patch notes)", "note": "price cut announced 28 Mar 2018; guides later show 5,500"}
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=c2e85d type=ffcf9c id=d8502b sources=1bc495 npc=337b87 stock=d2e0c7 prices=b56340 price_rates=c44eae header=702516 observed_prices=bea614 -->
@@ -83,7 +87,7 @@ observed_prices:
 
 ### Prices seen in play
 
-Source: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)
+Source: [[gameplay/patch-history]] WM 0328 (patch notes); [[gameplay/progression-and-economy]] §4 (Crush stats guide, 2016); [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)
 
 | item | shown | formula | match | note |
 |---|---|---|---|---|
@@ -96,6 +100,10 @@ Source: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018
 | [[wiki/items/947-auto-decomposition-hammer-b\|Auto decomposition hammer (B)]] | 1,346,400 Gold | 1,346,400 | yes |  |
 | [[wiki/items/949-auto-decomposition-hammer-a\|Auto decomposition hammer (A)]] | 3,960,000 Gold | 3,960,000 | yes |  |
 | [[wiki/items/1105-pyrotechnics\|Pyrotechnics]] | 3,960 Gold | 3,960 | yes |  |
+| [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 96 Gold | 79 | no | Crush Online price (x9.6 base) |
+| [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 96 Gold | 79 | no | Crush Online price (x9.6 base) |
+| [[wiki/items/908-scroll-castle\|Scroll : Castle]] | 24,000 Gold | 19,800 | no | Crush Online price (x9.6 base) |
+| [[wiki/items/688-dimensional-energy\|Dimensional energy]] | 2,000 Gold | 5,500 | no | price cut announced 28 Mar 2018; guides later show 5,500 |
 
 ### How prices are worked out
 
@@ -109,19 +117,33 @@ The client computes every price from `Item_Base` (contract `price_formula`, `FUN
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Wren the Merchant (units 203, 204, 330) runs the fortress general store. Unit 204 stands on the Fortress east arm, at the top of the right-hand stairs (*video*, [[gameplay/npc-locations|NPC locations]] §3; *image*, [[gameplay/maps-and-dungeons|maps]] §5).
+
+She sells HP/MP potions [D], Return / Gaia / Castle scrolls, Dimensional Energy, auto-decomposition hammers and Pyrotechnics (*image*, [[gameplay/maps-and-dungeons|maps]] §5; *client*, [[gameplay/consumables|consumables]] §4.2). Pyrotechnics became a gold item at Wren in the 4 Apr 2018 patch ([[gameplay/patch-history|patch history]] 0404). Dimensional Energy cost **5,500** gold in every fortress (*guides + image*, [[gameplay/maps-and-dungeons|maps]] §2 Entry cost).
+
+Spring 2018 prices seen in guides are in the table above (*image*, [[gameplay/progression-and-economy|economy]] §4). In Crush Online (2016) the same shop showed potions and scrolls at 96, the Castle scroll at 24,000, Nexus Return at 480 and the Magic Crafting Stone at 48,000 gold, i.e. 9.6 x base ([[gameplay/progression-and-economy|economy]] §4).
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Gold items cost 7.92 x base and sell for 6.3 x base; Dimensional Energy costs 1.1 x base (*image*, [[gameplay/progression-and-economy|economy]] §4).
+- Crush Online staff described NPC prices as a "dynamic gold economy" tied to the land a nation holds. The Magic Crafting Stone moved 37,000 → 48,000 → 42,500 gold and the Return scroll 72 → 96 (*staff/player*, [[gameplay/crush-mechanics|Crush mechanics]] §3).
+- The Magic Crafting Stone was taken out of the shop on 15 Dec 2016 and came only from the [Diamond] Medal Reward Box after that (*staff*, [[gameplay/crush-patch-notes|CO patch notes]] 2016-12-15).
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations]] §3 Fortress, video-measured (±3 units) (Wren 204) (*video*)
+- [[gameplay/maps-and-dungeons]] §5 (fortress layout, Wren's stock) and §2 Entry cost (Dimensional Energy 5,500 in every fortress) (*image*)
+- [[gameplay/progression-and-economy]] §4, Crush Online shop prices (Crush stats guide, 2016) (*guide*)
+- [[gameplay/patch-history]] (WM 0328 Dimensional Energy 2,000 gold; WM 0404 Pyrotechnics sold for gold at Wren) (*notes*)
+- [[gameplay/crush-mechanics]] §3 (Magic Crafting Stone and Return scroll prices; dynamic NPC prices) (*player/staff*)
+- [[gameplay/crush-patch-notes]] 2016-12-15 (Magic Crafting Stone removed from the merchant) (*staff*)
+- [[gameplay/consumables]] §4.2 (Wren sells the D potions) (*client*)
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- The guides show Return and Gaia scrolls at 79 gold, which needs a base of 10 (items 911/912). This shop stocks 906/909 (base 80, 633 at these rates) ([[gameplay/progression-and-economy|economy]] §4).
+- Dimensional Energy: 2,000 gold after the 28 Mar 2018 patch ([[gameplay/patch-history|patch history]] 0328), against 5,500 in the guides and base 5,000 in the client. The client value is kept.
+- If prices really followed nation land (Crush Online), the server needs a rule for `price_rates`. The 7.92 / 6.3 rates are from one fortress in spring 2018.
 
 <!-- credit:start -->
 ---

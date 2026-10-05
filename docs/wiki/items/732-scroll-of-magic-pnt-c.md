@@ -2,7 +2,7 @@
 title: "Scroll of Magic PNT [C]"
 type: "item"
 id: 732
-status: "stub"
+status: "partial"
 missing: ["obtained_from"]
 sources: ["client: Item_Base.cdb id 732"]
 name_key: "ItemName_732"
@@ -60,7 +60,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Scrolls of Armor and Magic Penetration were removed from the game in WM 0420 ([[gameplay/reinforce-and-runes|Reinforce and runes]] §7, *notes*). No recipe makes them (Owen's matching rows 519–524 have result 0) and Lewellyn does not sell the C grade ([[gameplay/consumables|Consumables]] §4.1, *client*).
 
 ## Behaviour
 
@@ -72,7 +72,7 @@ Nothing in the client data. Monster drops are server data: add them to the monst
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Map Owen's rows 519–521 (Topaz) to Armor PNT and 522–524 (Jasmine) to Magic PNT, or leave the scrolls unobtainable as after WM 0420? ([[gameplay/consumables|Consumables]] §4.1, *guess*)
 
 <!-- credit:start -->
 ---

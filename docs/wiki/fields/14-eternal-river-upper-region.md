@@ -2,9 +2,9 @@
 title: "Eternal River - Upper Region"
 type: "field"
 id: 14
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 14", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 14"]
+sources: ["client: SceneList.cdb id 14", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 14", "video: [[gameplay/video-tutorial-walkthrough]] §1 step 30-31 (Scroll: Gaia arrival, Nexus to the Fortress), video", "image: [[gameplay/lords-of-the-land]] §6 (Oct 2016 ownership snapshot)", "video: [[gameplay/video-fort-war]] §2 (tower area ≈ (3724, 677), Giant Bear camp ≈ (3748, 636), defenders' nexus ≈ (3693, 625)), video-measured ±5 units"]
 name_key: "FieldName_14"
 kind: "land"
 scene_type: 2
@@ -22,6 +22,7 @@ connections:
   - {"to": 13, "gate": 231, "to_gate": 241}
   - {"to": 19, "gate": 290, "to_gate": 242}
   - {"to": 84, "gate": 941, "to_gate": 240}
+  - {"to": 120, "gate": null, "to_gate": null, "via": "nexus", "source": "video"}
 npcs: []
 monsters: []
 spawn_points: []
@@ -51,6 +52,8 @@ A land of Gaia. Who owns it (Arslan, Erion, Armia or monsters) changes in play a
 | 231 | 3648.37, 559.81 | [[wiki/fields/13-punish-peak\|Punish Peak]] | 241 | FieldName_14 |
 | 290 | 3759.9, 571.1 | [[wiki/fields/19-death-valley\|Death Valley]] | 242 | FieldName_14 |
 | 941 | 3760.31, 673.16 | [[wiki/fields/84-eternal-lake\|Eternal Lake]] | 240 | FieldName_14 |
+
+Other connections (hand-entered): to 120, gate None, to_gate None, via nexus, source video
 
 Entered from: [[wiki/fields/13-punish-peak|Punish Peak]] (gate 241 → 231), [[wiki/fields/19-death-valley|Death Valley]] (gate 242 → 290), [[wiki/fields/84-eternal-lake|Eternal Lake]] (gate 240 → 941)
 
@@ -87,7 +90,10 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Arslan characters using their first Scroll: Gaia (quest 11) landed here, a front-line field, with a Nexus east of the arrival point; clicking the Nexus moves the player to the Fortress ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 steps 30-31, §2). *video*
+- June 2018 land war seen here (Arslan defending, Erion attacking): a tower area at about (3724, 677), a Giant Bear jungle camp at about (3748, 636), a second (Ogre) camp, and the defenders' Reinforced Nexus at about (3693, 625). Jungle monsters returned about 4 minutes after being cleared. The Reinforced Nexus read about "120,000 (+6,000)" max HP (360p, low confidence) ([[gameplay/video-fort-war|fort-war video notes]] §1-§2). *video*
+- After the attackers destroyed the nexus a Siege was declared on this land, and clicking the nexus took them to the Room of Core (130) ([[gameplay/video-fort-war|fort-war video notes]] §3). The world map labelled that war "Eternal Lake". *video*
+- On the October 2016 Crush world map (Erion's view) this land was in the brown NPC-held block on the west ([[gameplay/lords-of-the-land|Lords of the Land]] §6). *image*
 
 ## Behaviour
 
@@ -95,11 +101,11 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/video-fort-war|fort-war video notes]], [[gameplay/pvp-and-matches|PvP and matches]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Which Giant Bear / Ogre unit ids (several rows each in UnitDB, [[gameplay/pvp-and-matches|PvP and matches]] §1) spawn here, and the land's ordinary monsters.
 
 <!-- credit:start -->
 ---

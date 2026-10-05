@@ -2,9 +2,9 @@
 title: "Ring of Transcendency recipe"
 type: "recipe"
 id: 2032
-status: "stub"
-missing: ["npc"]
-sources: ["client: Item_Make.cdb id 2032", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+status: "complete"
+missing: []
+sources: ["client: Item_Make.cdb id 2032", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)", "client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)"]
 result: {"item": 428, "count": 1}
 materials:
   - {"item": 700, "count": 11}
@@ -15,6 +15,7 @@ filter_mask: 16777344
 superior: {"chance": 5, "item": 460}
 level: 1
 raw: {"c28": 165}
+npc: [335]
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=0496ea type=61613a id=c53c71 sources=8ee0da result=d530f2 materials=1925b2 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=16666f superior=5b3487 level=356a19 raw=2b2a6b -->
@@ -28,7 +29,7 @@ raw: {"c28": 165}
 | **Superior result** | 5 % → [[wiki/items/460-ring-of-transcendency\|Ring of Transcendency]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 6 / `0x1000080` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/335-odin\|Odin]] |
 
 ### Materials
 
@@ -45,7 +46,9 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Training Camp copy of Odin's gear list, offered by the camp's Odin (unit 335) ([[gameplay/consumables|Consumables]] §4, *client*).
+
+Gold here is the client's base cost. In-game screenshots show the fort's price rate on top, ×1.5 in the fort that was photographed ([[gameplay/items-and-crafting|Items and crafting]] §3, [[gameplay/consumables|Consumables]] §1, *image*).
 
 ## Behaviour
 
@@ -53,7 +56,7 @@ NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- client: [[gameplay/consumables]] §4 (Training Camp Odin, unit 335, craft list 6 in UnitDB)
 
 ## Open questions
 

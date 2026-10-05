@@ -2,9 +2,9 @@
 title: "Tomb of the Dead"
 type: "skill"
 id: 20009
-status: "stub"
+status: "partial"
 missing: ["damage_or_effect"]
-sources: ["client: Skill_Base.cdb id 20009"]
+sources: ["client: Skill_Base.cdb id 20009", "video: [[gameplay/video-fort-war]] §1 Hero form (hero skill list; client WeaponBase 69)"]
 name_key: "Skill_5186"
 desc_key: "SkillComment_5186"
 kind: 1
@@ -64,7 +64,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One of the Dark Knight Skull hero skills (weapon 69, item 8000), the hero used in the June 2018 fort-war video ([[gameplay/video-fort-war]] §1 Hero form). Only its R, Heaven and Earth, is shown in use. *video + client*
 
 ## Behaviour
 
@@ -72,7 +72,7 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- Gameplay pages this page draws on: [[gameplay/video-fort-war]] §1.
 
 ## Open questions
 

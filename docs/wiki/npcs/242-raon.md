@@ -2,7 +2,7 @@
 title: "Raon"
 type: "npc"
 id: 242
-status: "stub"
+status: "partial"
 missing: ["x", "z"]
 sources: ["client: UnitDB.cdb id 242", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "client: Quest.cdb giver/receiver field (map only; no position)"]
 name_key: "TitleName_36"
@@ -58,7 +58,7 @@ No measured position yet. The client's quests put this NPC in [[wiki/fields/120-
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Legion Core Smith. Not yet placed; the client's quests suggest the Fortress or the Castle ([[gameplay/npc-locations|NPC locations]] §8). *client*
 
 ## Behaviour
 
@@ -66,7 +66,9 @@ No measured position yet. The client's quests put this NPC in [[wiki/fields/120-
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Facts above come from these gameplay pages (each fact carries its own link and confidence):
+
+- [[gameplay/npc-locations|NPC locations]]
 
 ## Open questions
 

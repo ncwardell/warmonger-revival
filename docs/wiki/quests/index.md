@@ -8,7 +8,7 @@ title: "Quests"
 
 Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (tutorial tips), repeatable, war, daily/weekly/monthly board quests and advice quests, with givers, objectives, rewards, chain and dialogue. The tutorial chain as played is described in [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough]] and [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial]].
 
-291 pages: 132 complete, 0 partial, 159 stub. Back to the [[wiki/index|game wiki]].
+291 pages: 144 complete, 77 partial, 70 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -29,7 +29,7 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 16 | [[wiki/quests/16-farrell-s-request\|Farrell's Request]] | complete | 0 |
 |  | 17 | [[wiki/quests/17-support-the-abyss-expedition\|Support the Abyss expedition]] | complete | 0 |
 |  | 19 | [[wiki/quests/19-meeting-freya\|Meeting Freya]] | complete | 0 |
-|  | 20 | [[wiki/quests/20-talk-to-freya\|Talk to Freya]] | stub | 1 |
+|  | 20 | [[wiki/quests/20-talk-to-freya\|Talk to Freya]] | partial | 1 |
 |  | 21 | [[wiki/quests/21-group-ancient-ghosts\|(Group) Ancient Ghosts]] | complete | 0 |
 |  | 22 | [[wiki/quests/22-repel-the-black-skeleton-invasion\|Repel the Black Skeleton Invasion]] | complete | 0 |
 |  | 23 | [[wiki/quests/23-stepping-up-your-game\|Stepping up your game]] | stub | 1 |
@@ -60,9 +60,9 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 50 | [[wiki/quests/50-war-winning-means\|War - Winning means]] | stub | 1 |
 |  | 51 | [[wiki/quests/51-war-winning-means\|War - Winning means]] | complete | 0 |
 |  | 53 | [[wiki/quests/53-safety-factor-management\|Safety factor Management]] | stub | 2 |
-|  | 80 | [[wiki/quests/80-support-the-abyss-expedition\|Support the Abyss expedition]] | stub | 1 |
-|  | 81 | [[wiki/quests/81-support-the-abyss-expedition\|Support the Abyss expedition]] | stub | 1 |
-|  | 82 | [[wiki/quests/82-support-the-abyss-expedition\|Support the Abyss expedition]] | stub | 1 |
+|  | 80 | [[wiki/quests/80-support-the-abyss-expedition\|Support the Abyss expedition]] | partial | 1 |
+|  | 81 | [[wiki/quests/81-support-the-abyss-expedition\|Support the Abyss expedition]] | partial | 1 |
+|  | 82 | [[wiki/quests/82-support-the-abyss-expedition\|Support the Abyss expedition]] | partial | 1 |
 |  | 100 | [[wiki/quests/100-hunting-for-furs\|Hunting for Furs]] | complete | 0 |
 |  | 101 | [[wiki/quests/101-all-sorts-of-fragile-bones\|All sorts of Fragile bones]] | complete | 0 |
 |  | 102 | [[wiki/quests/102-wren-s-sister-wren\|Wren's sister Wren?]] | complete | 0 |
@@ -72,12 +72,12 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 107 | [[wiki/quests/107-hunting-skeletons\|Hunting Skeletons]] | complete | 0 |
 |  | 108 | [[wiki/quests/108-hunting-ghosts-spirit-avenue\|Hunting Ghosts (Spirit Avenue)]] | complete | 0 |
 |  | 109 | [[wiki/quests/109-for-the-honor\|For the honor]] | stub | 1 |
-|  | 110 | [[wiki/quests/110-gear-manufacturing\|Gear manufacturing]] | stub | 1 |
+|  | 110 | [[wiki/quests/110-gear-manufacturing\|Gear manufacturing]] | complete | 0 |
 |  | 111 | [[wiki/quests/111-weapon-manufacturing\|Weapon manufacturing]] | stub | 1 |
 |  | 112 | [[wiki/quests/112-weapon-manufacturing\|Weapon manufacturing]] | stub | 1 |
 |  | 113 | [[wiki/quests/113-weapon-manufacturing\|Weapon manufacturing]] | stub | 1 |
 |  | 114 | [[wiki/quests/114-weapon-tier-reinforce\|Weapon tier reinforce]] | stub | 1 |
-|  | 117 | [[wiki/quests/117-lords-of-the-land\|Lords of the Land]] | stub | 1 |
+|  | 117 | [[wiki/quests/117-lords-of-the-land\|Lords of the Land]] | complete | 0 |
 |  | 119 | [[wiki/quests/119-monster-area-wars\|Monster area wars]] | stub | 1 |
 |  | 120 | [[wiki/quests/120-enemy-territory\|Enemy territory]] | stub | 1 |
 |  | 121 | [[wiki/quests/121-create-rune\|Create Rune]] | complete | 0 |
@@ -89,7 +89,7 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 693 | [[wiki/quests/693-create-innocence-crystal\|Create Innocence Crystal]] | stub | 1 |
 |  | 694 | [[wiki/quests/694-occupation-of-monster-area\|Occupation of Monster area]] | stub | 1 |
 |  | 695 | [[wiki/quests/695-occupation-of-enemy-territory\|Occupation of Enemy territory]] | stub | 1 |
-|  | 696 | [[wiki/quests/696-occupation-of-monster-invasion-area\|Occupation of Monster Invasion Area]] | stub | 1 |
+|  | 696 | [[wiki/quests/696-occupation-of-monster-invasion-area\|Occupation of Monster Invasion Area]] | partial | 1 |
 |  | 697 | [[wiki/quests/697-create-rune\|Create Rune]] | complete | 0 |
 |  | 698 | [[wiki/quests/698-rune-equipment\|Rune Equipment.]] | complete | 0 |
 |  | 699 | [[wiki/quests/699-rune-reinforcement\|Rune Reinforcement]] | complete | 0 |
@@ -99,18 +99,18 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 703 | [[wiki/quests/703-equip-innocence-s\|Equip Innocence's]] | complete | 0 |
 | ![](wiki/assets/quests/704.png) | 704 | [[wiki/quests/704-equip-gear\|Equip Gear]] | complete | 0 |
 |  | 705 | [[wiki/quests/705-legion-how-to-use-add-on\|Legion - How to use add-on]] | stub | 1 |
-| ![](wiki/assets/quests/706.png) | 706 | [[wiki/quests/706-expand-your-inventory\|Expand your Inventory]] | stub | 1 |
+| ![](wiki/assets/quests/706.png) | 706 | [[wiki/quests/706-expand-your-inventory\|Expand your Inventory]] | complete | 0 |
 |  | 707 | [[wiki/quests/707-how-to-use-innocence-s\|How to use Innocence's]] | stub | 1 |
 | ![](wiki/assets/quests/708.png) | 708 | [[wiki/quests/708-a-new-weapon\|A new weapon]] | complete | 0 |
 |  | 709 | [[wiki/quests/709-two-sets-of-weapons\|Two sets of weapons]] | complete | 0 |
 | ![](wiki/assets/quests/710.png) | 710 | [[wiki/quests/710-equip-crystal-innocence\|Equip Crystal : Innocence]] | complete | 0 |
 | ![](wiki/assets/quests/711.png) | 711 | [[wiki/quests/711-how-to-use-crystal-innocence\|How to use Crystal : Innocence]] | stub | 1 |
 | ![](wiki/assets/quests/712.png) | 712 | [[wiki/quests/712-take-a-look-at-the-world-map\|Take a look at the World Map.]] | complete | 0 |
-| ![](wiki/assets/quests/713.png) | 713 | [[wiki/quests/713-weapon-level-reinforcement\|Weapon Level (+) reinforcement]] | stub | 1 |
+| ![](wiki/assets/quests/713.png) | 713 | [[wiki/quests/713-weapon-level-reinforcement\|Weapon Level (+) reinforcement]] | partial | 1 |
 |  | 714 | [[wiki/quests/714-buy-time-energy\|Buy time energy]] | complete | 0 |
 | ![](wiki/assets/quests/718.png) | 718 | [[wiki/quests/718-open-item-reinforcement-window\|Open item reinforcement window]] | complete | 0 |
 | ![](wiki/assets/quests/719.png) | 719 | [[wiki/quests/719-go-to-the-fortress\|Go to the Fortress]] | complete | 0 |
-| ![](wiki/assets/quests/720.png) | 720 | [[wiki/quests/720-gear-level-reinforcement\|Gear Level (+) reinforcement]] | stub | 1 |
+| ![](wiki/assets/quests/720.png) | 720 | [[wiki/quests/720-gear-level-reinforcement\|Gear Level (+) reinforcement]] | partial | 1 |
 |  | 721 | [[wiki/quests/721-battle-preparations\|Battle preparations]] | complete | 0 |
 |  | 722 | [[wiki/quests/722-juicy-potions\|Juicy Potions]] | complete | 0 |
 | ![](wiki/assets/quests/723.png) | 723 | [[wiki/quests/723-how-to-obtain-sp\|How to obtain SP]] | complete | 0 |
@@ -139,13 +139,13 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 746 | [[wiki/quests/746-devil-s-material\|Devil's material]] | complete | 0 |
 |  | 747 | [[wiki/quests/747-acquire-materials\|Acquire materials]] | complete | 0 |
 |  | 748 | [[wiki/quests/748-ore-and-plant-collection\|Ore and plant collection]] | complete | 0 |
-|  | 749 | [[wiki/quests/749-kill-monster-of-the-land-of-greed\|Kill monster of The land of Greed]] | stub | 1 |
-|  | 750 | [[wiki/quests/750-kill-monster-of-the-avenue-of-spirit\|Kill monster of The avenue of spirit]] | stub | 1 |
-|  | 751 | [[wiki/quests/751-kill-monster-of-the-way-go-to-devildom\|Kill monster of The way go to devildom]] | stub | 1 |
-|  | 752 | [[wiki/quests/752-join-create-legion\|Join & Create Legion]] | stub | 1 |
-|  | 753 | [[wiki/quests/753-join-the-legion\|Join the Legion]] | stub | 1 |
+|  | 749 | [[wiki/quests/749-kill-monster-of-the-land-of-greed\|Kill monster of The land of Greed]] | complete | 0 |
+|  | 750 | [[wiki/quests/750-kill-monster-of-the-avenue-of-spirit\|Kill monster of The avenue of spirit]] | complete | 0 |
+|  | 751 | [[wiki/quests/751-kill-monster-of-the-way-go-to-devildom\|Kill monster of The way go to devildom]] | complete | 0 |
+|  | 752 | [[wiki/quests/752-join-create-legion\|Join & Create Legion]] | complete | 0 |
+|  | 753 | [[wiki/quests/753-join-the-legion\|Join the Legion]] | partial | 1 |
 |  | 754 | [[wiki/quests/754-battle-with-legion-members-no-1\|Battle with Legion members No. 1]] | stub | 1 |
-|  | 755 | [[wiki/quests/755-battle-with-legion-members-no-2\|Battle with Legion members No. 2]] | stub | 1 |
+|  | 755 | [[wiki/quests/755-battle-with-legion-members-no-2\|Battle with Legion members No. 2]] | partial | 1 |
 |  | 756 | [[wiki/quests/756-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
 |  | 757 | [[wiki/quests/757-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
 |  | 758 | [[wiki/quests/758-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
@@ -153,15 +153,15 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 760 | [[wiki/quests/760-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
 |  | 761 | [[wiki/quests/761-killed-boss-of-border-area-no-1\|killed boss of Border area No.1]] | complete | 0 |
 |  | 762 | [[wiki/quests/762-killed-boss-of-border-area-no-2\|killed boss of Border area No.2]] | complete | 0 |
-|  | 763 | [[wiki/quests/763-no2-lords-of-the-land\|No2. Lords of the Land]] | stub | 1 |
-|  | 764 | [[wiki/quests/764-no3-lords-of-the-land\|No3. Lords of the Land]] | stub | 1 |
-|  | 765 | [[wiki/quests/765-no4-lords-of-the-land\|No4. Lords of the Land]] | stub | 2 |
+|  | 763 | [[wiki/quests/763-no2-lords-of-the-land\|No2. Lords of the Land]] | complete | 0 |
+|  | 764 | [[wiki/quests/764-no3-lords-of-the-land\|No3. Lords of the Land]] | complete | 0 |
+|  | 765 | [[wiki/quests/765-no4-lords-of-the-land\|No4. Lords of the Land]] | partial | 1 |
 |  | 766 | [[wiki/quests/766-sell-ether\|Sell Ether]] | stub | 1 |
 |  | 767 | [[wiki/quests/767-buy-ether\|Buy Ether]] | stub | 1 |
-|  | 768 | [[wiki/quests/768-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | stub | 1 |
+|  | 768 | [[wiki/quests/768-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | partial | 1 |
 |  | 769 | [[wiki/quests/769-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
 |  | 770 | [[wiki/quests/770-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
-|  | 771 | [[wiki/quests/771-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | stub | 1 |
+|  | 771 | [[wiki/quests/771-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | partial | 1 |
 |  | 772 | [[wiki/quests/772-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
 |  | 773 | [[wiki/quests/773-group-border-area-hard-mode\|Group - Border Area Hard Mode]] | complete | 0 |
 |  | 774 | [[wiki/quests/774-highly-concentrated-bomb-create\|Highly Concentrated Bomb Create]] | complete | 0 |
@@ -178,15 +178,15 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 785 | [[wiki/quests/785-the-strange-flowers-in-the-lake\|The strange flowers in the lake]] | complete | 0 |
 |  | 786 | [[wiki/quests/786-mushrooms-in-the-komodo-area\|Mushrooms in the Komodo area]] | complete | 0 |
 | ![](wiki/assets/quests/787.png) | 787 | [[wiki/quests/787-open-the-questboard\|Open The QuestBoard]] | complete | 0 |
-|  | 800 | [[wiki/quests/800-rank-d-crafting\|Rank(D) Crafting]] | stub | 3 |
-|  | 801 | [[wiki/quests/801-rank-d-crafting\|Rank(D) Crafting]] | stub | 2 |
-|  | 802 | [[wiki/quests/802-rank-d-crafting\|Rank(D) Crafting]] | stub | 2 |
-|  | 803 | [[wiki/quests/803-rank-d-crafting\|Rank(D) Crafting]] | stub | 1 |
-|  | 811 | [[wiki/quests/811-rank-c-crafting\|Rank(C) Crafting]] | stub | 3 |
-|  | 812 | [[wiki/quests/812-rank-c-crafting\|Rank(C) Crafting]] | stub | 3 |
-|  | 813 | [[wiki/quests/813-rank-c-crafting\|Rank(C) Crafting]] | stub | 3 |
-|  | 814 | [[wiki/quests/814-chepa-village-hunting\|Chepa Village : Hunting]] | stub | 3 |
-|  | 815 | [[wiki/quests/815-chepa-village-hunting\|Chepa Village : Hunting]] | stub | 3 |
+|  | 800 | [[wiki/quests/800-rank-d-crafting\|Rank(D) Crafting]] | partial | 3 |
+|  | 801 | [[wiki/quests/801-rank-d-crafting\|Rank(D) Crafting]] | partial | 2 |
+|  | 802 | [[wiki/quests/802-rank-d-crafting\|Rank(D) Crafting]] | partial | 2 |
+|  | 803 | [[wiki/quests/803-rank-d-crafting\|Rank(D) Crafting]] | partial | 1 |
+|  | 811 | [[wiki/quests/811-rank-c-crafting\|Rank(C) Crafting]] | partial | 3 |
+|  | 812 | [[wiki/quests/812-rank-c-crafting\|Rank(C) Crafting]] | partial | 3 |
+|  | 813 | [[wiki/quests/813-rank-c-crafting\|Rank(C) Crafting]] | partial | 3 |
+|  | 814 | [[wiki/quests/814-chepa-village-hunting\|Chepa Village : Hunting]] | partial | 3 |
+|  | 815 | [[wiki/quests/815-chepa-village-hunting\|Chepa Village : Hunting]] | partial | 3 |
 |  | 821 | [[wiki/quests/821-chepa-village-collecting-material\|Chepa Village : Collecting material]] | stub | 3 |
 |  | 822 | [[wiki/quests/822-chepa-village-collecting-material\|Chepa Village : Collecting material]] | stub | 3 |
 |  | 823 | [[wiki/quests/823-chepa-village-collecting-material\|Chepa Village : Collecting material]] | stub | 3 |
@@ -204,85 +204,85 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 836 | [[wiki/quests/836\|Quest 836]] | complete | 0 |
 |  | 837 | [[wiki/quests/837\|Quest 837]] | complete | 0 |
 |  | 838 | [[wiki/quests/838-npc-territory\|NPC territory]] | stub | 2 |
-|  | 839 | [[wiki/quests/839-battle-arena\|Battle Arena]] | stub | 2 |
+|  | 839 | [[wiki/quests/839-battle-arena\|Battle Arena]] | partial | 2 |
 |  | 840 | [[wiki/quests/840-battle-with-legion-members\|Battle with legion members.]] | stub | 2 |
 |  | 841 | [[wiki/quests/841-gather-resourses-at-connected-world\|Gather resourses at Connected World]] | stub | 1 |
 |  | 842 | [[wiki/quests/842-enemy-territory\|Enemy territory]] | stub | 2 |
-|  | 843 | [[wiki/quests/843-battle-arena\|Battle Arena]] | stub | 1 |
+|  | 843 | [[wiki/quests/843-battle-arena\|Battle Arena]] | partial | 1 |
 |  | 844 | [[wiki/quests/844-gather-resourses-at-connected-world\|Gather resourses at Connected World]] | stub | 1 |
 |  | 845 | [[wiki/quests/845-gather-resourses-at-connected-world\|Gather resourses at Connected World]] | stub | 1 |
 |  | 901 | [[wiki/quests/901-trick-or-treat\|Trick or Treat!!]] | complete | 0 |
 |  | 902 | [[wiki/quests/902-trick-or-treat\|Trick or Treat!!]] | complete | 0 |
 |  | 903 | [[wiki/quests/903-trick-or-treat\|Trick or Treat!!]] | complete | 0 |
 |  | 950 | [[wiki/quests/950-daily-monster-hunt\|(Daily) Monster Hunt]] | complete | 0 |
-|  | 951 | [[wiki/quests/951-daily-kill-player-and-bot\|(Daily) Kill Player and Bot]] | stub | 1 |
-|  | 952 | [[wiki/quests/952-daily-win-in-battle\|(Daily) Win in Battle]] | stub | 2 |
+|  | 951 | [[wiki/quests/951-daily-kill-player-and-bot\|(Daily) Kill Player and Bot]] | complete | 0 |
+|  | 952 | [[wiki/quests/952-daily-win-in-battle\|(Daily) Win in Battle]] | partial | 2 |
 |  | 953 | [[wiki/quests/953-daily-win-in-mock-battle\|(Daily) Win in Mock Battle]] | stub | 2 |
-|  | 954 | [[wiki/quests/954-daily-monster-area-wars\|(Daily) Monster area wars]] | stub | 1 |
+|  | 954 | [[wiki/quests/954-daily-monster-area-wars\|(Daily) Monster area wars]] | partial | 1 |
 |  | 960 | [[wiki/quests/960-weekly-monster-hunt\|(Weekly) Monster Hunt]] | complete | 0 |
-|  | 961 | [[wiki/quests/961-weekly-doping\|(Weekly) Doping]] | stub | 2 |
-|  | 962 | [[wiki/quests/962-weekly-kill-player-and-bot\|(Weekly) Kill Player and Bot]] | stub | 1 |
-|  | 963 | [[wiki/quests/963-weekly-win-in-battle\|(Weekly) Win in battle]] | stub | 2 |
+|  | 961 | [[wiki/quests/961-weekly-doping\|(Weekly) Doping]] | partial | 1 |
+|  | 962 | [[wiki/quests/962-weekly-kill-player-and-bot\|(Weekly) Kill Player and Bot]] | complete | 0 |
+|  | 963 | [[wiki/quests/963-weekly-win-in-battle\|(Weekly) Win in battle]] | partial | 2 |
 |  | 964 | [[wiki/quests/964-weekly-win-in-mock-battle\|(Weekly) Win in Mock Battle]] | stub | 2 |
-|  | 965 | [[wiki/quests/965-weekly-monster-area-wars\|(Weekly) Monster area wars]] | stub | 1 |
+|  | 965 | [[wiki/quests/965-weekly-monster-area-wars\|(Weekly) Monster area wars]] | partial | 1 |
 |  | 980 | [[wiki/quests/980-monthly-boss-hunt\|(Monthly) Boss Hunt]] | complete | 0 |
-|  | 981 | [[wiki/quests/981-monthly-doping\|(Monthly) Doping]] | stub | 2 |
-|  | 982 | [[wiki/quests/982-monthly-kill-player-and-bot\|(Monthly) Kill Player and Bot]] | stub | 1 |
-|  | 983 | [[wiki/quests/983-monthly-monster-area-wars\|(Monthly) Monster area wars]] | stub | 1 |
-|  | 984 | [[wiki/quests/984-monthly-win-in-battle\|(Monthly) Win in battle]] | stub | 2 |
+|  | 981 | [[wiki/quests/981-monthly-doping\|(Monthly) Doping]] | partial | 1 |
+|  | 982 | [[wiki/quests/982-monthly-kill-player-and-bot\|(Monthly) Kill Player and Bot]] | complete | 0 |
+|  | 983 | [[wiki/quests/983-monthly-monster-area-wars\|(Monthly) Monster area wars]] | partial | 1 |
+|  | 984 | [[wiki/quests/984-monthly-win-in-battle\|(Monthly) Win in battle]] | partial | 2 |
 |  | 985 | [[wiki/quests/985-monthly-win-in-mock-battle\|(Monthly) Win in Mock Battle]] | stub | 2 |
-|  | 1001 | [[wiki/quests/1001-chepa-village-hunting\|Chepa Village : Hunting]] | stub | 1 |
-|  | 1002 | [[wiki/quests/1002-chepa-village-collecting-material\|Chepa Village : Collecting material]] | stub | 1 |
-|  | 1003 | [[wiki/quests/1003-chepa-village-boss-hunting\|Chepa Village : Boss Hunting]] | stub | 1 |
-|  | 1006 | [[wiki/quests/1006-skull-temple-hunting\|Skull Temple : Hunting]] | stub | 1 |
-|  | 1007 | [[wiki/quests/1007-skull-temple-collecting-material\|Skull Temple : Collecting material]] | stub | 1 |
-|  | 1008 | [[wiki/quests/1008-skull-temple-boss-hunting\|Skull Temple : Boss Hunting]] | stub | 1 |
-|  | 1011 | [[wiki/quests/1011-skull-cemetery-hunting\|Skull Cemetery : Hunting]] | stub | 1 |
-|  | 1012 | [[wiki/quests/1012-skull-cemetery-collecting-material\|Skull Cemetery : Collecting material]] | stub | 1 |
-|  | 1013 | [[wiki/quests/1013-skull-cemetery-boss-hunting\|Skull Cemetery : Boss Hunting]] | stub | 1 |
-|  | 1016 | [[wiki/quests/1016-tsunami-lake-hunting\|Tsunami Lake : Hunting]] | stub | 1 |
-|  | 1017 | [[wiki/quests/1017-tsunami-lake-collecting-material\|Tsunami Lake : Collecting material]] | stub | 1 |
-|  | 1018 | [[wiki/quests/1018-tsunami-lake-boss-hunting\|Tsunami Lake : Boss Hunting]] | stub | 1 |
-|  | 1021 | [[wiki/quests/1021-swamps-of-the-snake-warrior-hunting\|Swamps of the Snake Warrior : Hunting]] | stub | 1 |
-|  | 1022 | [[wiki/quests/1022-swamps-of-the-snake-warrior-collecting-material\|Swamps of the Snake Warrior : Collecting material]] | stub | 1 |
-|  | 1023 | [[wiki/quests/1023-swamps-of-the-snake-warrior-boss-hunting\|Swamps of the Snake Warrior : Boss Hunting]] | stub | 1 |
-|  | 1026 | [[wiki/quests/1026-ghost-fortress-hunting\|Ghost Fortress : Hunting]] | stub | 1 |
-|  | 1027 | [[wiki/quests/1027-ghost-fortress-hunting\|Ghost Fortress : Hunting]] | stub | 1 |
-|  | 1028 | [[wiki/quests/1028-ghost-fortress-collecting-material\|Ghost Fortress : Collecting material]] | stub | 1 |
-|  | 1029 | [[wiki/quests/1029-ghost-fortress-boss-hunting\|Ghost Fortress : Boss Hunting]] | stub | 1 |
-|  | 1031 | [[wiki/quests/1031-tow-canyon-hunting\|Tow Canyon : Hunting]] | stub | 1 |
-|  | 1032 | [[wiki/quests/1032-tow-canyon-hunting\|Tow Canyon : Hunting]] | stub | 1 |
-|  | 1033 | [[wiki/quests/1033-tow-canyon-collecting-material\|Tow Canyon : Collecting material]] | stub | 1 |
-|  | 1034 | [[wiki/quests/1034-tow-canyon-boss-hunting\|Tow Canyon : Boss Hunting]] | stub | 1 |
-|  | 1036 | [[wiki/quests/1036-demon-hell-hunting\|Demon Hell : Hunting]] | stub | 1 |
-|  | 1037 | [[wiki/quests/1037-demon-hell-hunting\|Demon Hell : Hunting]] | stub | 1 |
-|  | 1038 | [[wiki/quests/1038-demon-hell-collecting-material\|Demon Hell : Collecting material]] | stub | 1 |
-|  | 1039 | [[wiki/quests/1039-demon-hell-boss-hunting\|Demon Hell : Boss Hunting]] | stub | 1 |
-|  | 1041 | [[wiki/quests/1041-thorn-s-hell-hunting\|Thorn's Hell : Hunting]] | stub | 1 |
-|  | 1042 | [[wiki/quests/1042-thorn-s-hell-collecting-material\|Thorn's Hell : Collecting material]] | stub | 1 |
-|  | 1043 | [[wiki/quests/1043-thorn-s-hell-boss-hunting\|Thorn's Hell : Boss Hunting]] | stub | 2 |
-|  | 1101 | [[wiki/quests/1101-the-land-of-greed-kill-monster\|The Land of Greed : Kill monster]] | stub | 1 |
-|  | 1102 | [[wiki/quests/1102-the-avenue-of-spirit-kill-monster\|The Avenue of spirit : Kill monster]] | stub | 1 |
-|  | 1103 | [[wiki/quests/1103-the-way-go-to-devildom-kill-monster\|The Way go to devildom : Kill monster]] | stub | 1 |
-|  | 1301 | [[wiki/quests/1301-soldier-rank-kill-player\|(Soldier Rank) Kill Player]] | stub | 2 |
-|  | 1302 | [[wiki/quests/1302-soldier-rank-create-dimension-gate\|(Soldier Rank) Create Dimension Gate]] | stub | 2 |
-|  | 1303 | [[wiki/quests/1303-soldier-rank-imprint\|(Soldier Rank) Imprint]] | stub | 2 |
-|  | 1304 | [[wiki/quests/1304-soldier-rank-nexus-destruction\|(Soldier Rank) Nexus Destruction]] | stub | 1 |
-|  | 1351 | [[wiki/quests/1351-veteran-rank-monster-invasion-area\|(Veteran Rank) Monster Invasion Area]] | stub | 2 |
-|  | 1352 | [[wiki/quests/1352-veteran-rank-monster-area\|(Veteran Rank) Monster area]] | stub | 2 |
-|  | 1353 | [[wiki/quests/1353-veteran-rank-enemy-territory\|(Veteran Rank) Enemy territory]] | stub | 2 |
-| ![](wiki/assets/quests/1501.png) | 1501 | [[wiki/quests/1501-basic-function-move-character\|Basic function - Move character]] | stub | 1 |
-| ![](wiki/assets/quests/1502.png) | 1502 | [[wiki/quests/1502-basic-function-basic-attack\|Basic function - Basic attack]] | stub | 1 |
-| ![](wiki/assets/quests/1503.png) | 1503 | [[wiki/quests/1503-basic-function-skill-use\|Basic function - Skill Use]] | stub | 1 |
-|  | 1504 | [[wiki/quests/1504-basic-function-quickslot-use\|Basic function - QuickSlot Use]] | stub | 1 |
+|  | 1001 | [[wiki/quests/1001-chepa-village-hunting\|Chepa Village : Hunting]] | partial | 1 |
+|  | 1002 | [[wiki/quests/1002-chepa-village-collecting-material\|Chepa Village : Collecting material]] | partial | 1 |
+|  | 1003 | [[wiki/quests/1003-chepa-village-boss-hunting\|Chepa Village : Boss Hunting]] | partial | 1 |
+|  | 1006 | [[wiki/quests/1006-skull-temple-hunting\|Skull Temple : Hunting]] | partial | 1 |
+|  | 1007 | [[wiki/quests/1007-skull-temple-collecting-material\|Skull Temple : Collecting material]] | partial | 1 |
+|  | 1008 | [[wiki/quests/1008-skull-temple-boss-hunting\|Skull Temple : Boss Hunting]] | partial | 1 |
+|  | 1011 | [[wiki/quests/1011-skull-cemetery-hunting\|Skull Cemetery : Hunting]] | partial | 1 |
+|  | 1012 | [[wiki/quests/1012-skull-cemetery-collecting-material\|Skull Cemetery : Collecting material]] | partial | 1 |
+|  | 1013 | [[wiki/quests/1013-skull-cemetery-boss-hunting\|Skull Cemetery : Boss Hunting]] | partial | 1 |
+|  | 1016 | [[wiki/quests/1016-tsunami-lake-hunting\|Tsunami Lake : Hunting]] | partial | 1 |
+|  | 1017 | [[wiki/quests/1017-tsunami-lake-collecting-material\|Tsunami Lake : Collecting material]] | partial | 1 |
+|  | 1018 | [[wiki/quests/1018-tsunami-lake-boss-hunting\|Tsunami Lake : Boss Hunting]] | partial | 1 |
+|  | 1021 | [[wiki/quests/1021-swamps-of-the-snake-warrior-hunting\|Swamps of the Snake Warrior : Hunting]] | partial | 1 |
+|  | 1022 | [[wiki/quests/1022-swamps-of-the-snake-warrior-collecting-material\|Swamps of the Snake Warrior : Collecting material]] | partial | 1 |
+|  | 1023 | [[wiki/quests/1023-swamps-of-the-snake-warrior-boss-hunting\|Swamps of the Snake Warrior : Boss Hunting]] | partial | 1 |
+|  | 1026 | [[wiki/quests/1026-ghost-fortress-hunting\|Ghost Fortress : Hunting]] | partial | 1 |
+|  | 1027 | [[wiki/quests/1027-ghost-fortress-hunting\|Ghost Fortress : Hunting]] | partial | 1 |
+|  | 1028 | [[wiki/quests/1028-ghost-fortress-collecting-material\|Ghost Fortress : Collecting material]] | partial | 1 |
+|  | 1029 | [[wiki/quests/1029-ghost-fortress-boss-hunting\|Ghost Fortress : Boss Hunting]] | partial | 1 |
+|  | 1031 | [[wiki/quests/1031-tow-canyon-hunting\|Tow Canyon : Hunting]] | partial | 1 |
+|  | 1032 | [[wiki/quests/1032-tow-canyon-hunting\|Tow Canyon : Hunting]] | partial | 1 |
+|  | 1033 | [[wiki/quests/1033-tow-canyon-collecting-material\|Tow Canyon : Collecting material]] | partial | 1 |
+|  | 1034 | [[wiki/quests/1034-tow-canyon-boss-hunting\|Tow Canyon : Boss Hunting]] | partial | 1 |
+|  | 1036 | [[wiki/quests/1036-demon-hell-hunting\|Demon Hell : Hunting]] | partial | 1 |
+|  | 1037 | [[wiki/quests/1037-demon-hell-hunting\|Demon Hell : Hunting]] | partial | 1 |
+|  | 1038 | [[wiki/quests/1038-demon-hell-collecting-material\|Demon Hell : Collecting material]] | partial | 1 |
+|  | 1039 | [[wiki/quests/1039-demon-hell-boss-hunting\|Demon Hell : Boss Hunting]] | partial | 1 |
+|  | 1041 | [[wiki/quests/1041-thorn-s-hell-hunting\|Thorn's Hell : Hunting]] | partial | 1 |
+|  | 1042 | [[wiki/quests/1042-thorn-s-hell-collecting-material\|Thorn's Hell : Collecting material]] | partial | 1 |
+|  | 1043 | [[wiki/quests/1043-thorn-s-hell-boss-hunting\|Thorn's Hell : Boss Hunting]] | partial | 2 |
+|  | 1101 | [[wiki/quests/1101-the-land-of-greed-kill-monster\|The Land of Greed : Kill monster]] | partial | 1 |
+|  | 1102 | [[wiki/quests/1102-the-avenue-of-spirit-kill-monster\|The Avenue of spirit : Kill monster]] | partial | 1 |
+|  | 1103 | [[wiki/quests/1103-the-way-go-to-devildom-kill-monster\|The Way go to devildom : Kill monster]] | partial | 1 |
+|  | 1301 | [[wiki/quests/1301-soldier-rank-kill-player\|(Soldier Rank) Kill Player]] | partial | 2 |
+|  | 1302 | [[wiki/quests/1302-soldier-rank-create-dimension-gate\|(Soldier Rank) Create Dimension Gate]] | partial | 2 |
+|  | 1303 | [[wiki/quests/1303-soldier-rank-imprint\|(Soldier Rank) Imprint]] | partial | 2 |
+|  | 1304 | [[wiki/quests/1304-soldier-rank-nexus-destruction\|(Soldier Rank) Nexus Destruction]] | partial | 1 |
+|  | 1351 | [[wiki/quests/1351-veteran-rank-monster-invasion-area\|(Veteran Rank) Monster Invasion Area]] | partial | 2 |
+|  | 1352 | [[wiki/quests/1352-veteran-rank-monster-area\|(Veteran Rank) Monster area]] | partial | 2 |
+|  | 1353 | [[wiki/quests/1353-veteran-rank-enemy-territory\|(Veteran Rank) Enemy territory]] | partial | 2 |
+| ![](wiki/assets/quests/1501.png) | 1501 | [[wiki/quests/1501-basic-function-move-character\|Basic function - Move character]] | partial | 1 |
+| ![](wiki/assets/quests/1502.png) | 1502 | [[wiki/quests/1502-basic-function-basic-attack\|Basic function - Basic attack]] | partial | 1 |
+| ![](wiki/assets/quests/1503.png) | 1503 | [[wiki/quests/1503-basic-function-skill-use\|Basic function - Skill Use]] | partial | 1 |
+|  | 1504 | [[wiki/quests/1504-basic-function-quickslot-use\|Basic function - QuickSlot Use]] | partial | 1 |
 | ![](wiki/assets/quests/1505.png) | 1505 | [[wiki/quests/1505-basic-function-go-to-the-fortress\|Basic function - Go to the Fortress]] | stub | 1 |
 | ![](wiki/assets/quests/1506.png) | 1506 | [[wiki/quests/1506-basic-function-world-map\|Basic function - World Map]] | stub | 1 |
-| ![](wiki/assets/quests/1507.png) | 1507 | [[wiki/quests/1507-item-gear-wear\|Item - Gear Wear]] | stub | 1 |
+| ![](wiki/assets/quests/1507.png) | 1507 | [[wiki/quests/1507-item-gear-wear\|Item - Gear Wear]] | partial | 1 |
 | ![](wiki/assets/quests/1508.png) | 1508 | [[wiki/quests/1508-item-inventory-expansion\|Item - Inventory expansion]] | stub | 2 |
 | ![](wiki/assets/quests/1509.png) | 1509 | [[wiki/quests/1509-item-weapon-wear\|Item - Weapon Wear]] | stub | 1 |
 |  | 1510 | [[wiki/quests/1510-item-change-weapon\|Item - Change weapon]] | stub | 1 |
 | ![](wiki/assets/quests/1511.png) | 1511 | [[wiki/quests/1511-item-open-item-reinforce-window\|Item - Open item reinforce window]] | stub | 1 |
-| ![](wiki/assets/quests/1512.png) | 1512 | [[wiki/quests/1512-item-level-reinforcement\|Item - Level (+) reinforcement]] | stub | 2 |
+| ![](wiki/assets/quests/1512.png) | 1512 | [[wiki/quests/1512-item-level-reinforcement\|Item - Level (+) reinforcement]] | partial | 2 |
 | ![](wiki/assets/quests/1513.png) | 1513 | [[wiki/quests/1513-item-decompose-way-outomatic-condition\|Item - Decompose Way&Outomatic condition]] | stub | 1 |
 |  | 1514 | [[wiki/quests/1514-item-tier-reinforce\|Item - Tier reinforce]] | stub | 2 |
 |  | 1515 | [[wiki/quests/1515-item-create-rune\|Item - Create Rune]] | stub | 2 |
