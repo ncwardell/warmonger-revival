@@ -1,0 +1,43 @@
+name: wiki
+on:
+  push:
+    branches: [main]
+    paths: [docs/**, wiki/**, .github/workflows/pages.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency: {group: pages, cancel-in-progress: true}
+env:
+  QUARTZ_REF: 97a2d05  # bump deliberately; Quartz changes often
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0, path: repo}  # history gives pages real dates
+      - uses: actions/setup-node@v4
+        with: {node-version: 24}
+      - name: Fetch Quartz
+        run: |
+          git clone https://github.com/jackyzha0/quartz.git quartz
+          git -C quartz checkout "$QUARTZ_REF"
+      - name: Build wiki
+        working-directory: quartz
+        run: |
+          npm ci
+          rm -rf content && cp -r ../repo/docs content
+          cp ../repo/wiki/quartz.config.yaml quartz.config.yaml
+          npx quartz plugin install
+          npx quartz build
+          rm -f public/CNAME
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: quartz/public}
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: {name: github-pages, url: "${{ steps.deployment.outputs.page_url }}"}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -17,3 +17,7 @@ out/
 server/characters.json
 *.local.*
 __pycache__/
+public/
+
+# Obsidian workspace state (open docs/ as a vault; settings stay local).
+docs/.obsidian/

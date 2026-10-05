@@ -1,5 +1,7 @@
 # Warmonger Revival
 
+**Wiki: https://ncwardell.github.io/warmonger-revival/** — everything known about the game, with sources.
+
 A community replacement server for **Warmonger** (formerly **Crush Online**), the free-to-play MOBA-style PvP MMO by GAMESinFLAMES / Joyimpact. Its official servers closed on 1 April 2019. This project rebuilds the server from the game client so the game can be played again.
 
 > This repository contains **no game files**. You need your own copy of the client (it is still downloadable from Steam if it is in your library: *Warmonger Chronicles*, app 718790). Never commit the client, its archives, or anything extracted from them.
@@ -20,7 +22,7 @@ Not yet: other players (multi-client sessions), quests, NPC dialogue, shops, par
 
 - `server/` — a small Python 3 asyncio server. `stub.py` owns the sockets (login 8815, game 8813, web 8080); `handlers.py` maps opcodes to reply functions and is **reloaded on save**, so you can change replies while a client stays connected. `world.py`, `ai.py`, `skills.py` and `loot.py` hold game systems.
 - `tools/` — `sof.py` (the client's encrypted config, incl. `point` to aim it at a server), `jpk.py` (the game's archives: renamed MPQ), `navmesh.py` (walkability checks).
-- `docs/spec/` — what has been reverse engineered: packet layouts per opcode, world loading, combat, skills, monsters, matches, archive and navmesh formats.
+- `docs/` — the wiki (Obsidian-style Markdown, published to GitHub Pages): gameplay facts with sources in `docs/gameplay/`, and in `docs/spec/` what has been reverse engineered: packet layouts per opcode, world loading, combat, skills, monsters, matches, archive and navmesh formats.
 - `contract/` — the protocol contract: every opcode, field layouts, required replies and flows (being generated).
 - `ghidra/` — the Ghidra script used to decompile the client for analysis (output stays local).
 

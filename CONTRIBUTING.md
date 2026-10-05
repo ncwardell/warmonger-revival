@@ -18,7 +18,11 @@ Thanks for helping bring Warmonger back. Everything here is learned from the cli
 5. **Test.** Each module has a `__main__` self-test that must run without game data:
    `cd server && for m in world ai skills loot; do python3 $m.py; done`
    Then try it in the real client and say what you saw in the PR.
-6. **Document.** Update `contract/<system>.yaml` and/or `docs/spec/` with what you learned.
+6. **Document.** Update `contract/<system>.yaml` and/or the wiki (`docs/`) with what you learned.
+
+## The wiki
+
+`docs/` is the wiki: open it as an Obsidian vault, link pages with `[[wikilinks]]`, and cite a source for every fact (see `docs/wiki-style.md`). Game knowledge from guides, videos and memory is as welcome as code — put it in `docs/gameplay/`. Pushes to `main` publish it to https://ncwardell.github.io/warmonger-revival/.
 
 ## Style
 
