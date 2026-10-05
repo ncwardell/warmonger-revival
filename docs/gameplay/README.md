@@ -32,3 +32,22 @@ Steam guides for Warmonger (app 718790) and Crush Online (app 475630):
 | [WARMONGER REHBER](https://steamcommunity.com/sharedfiles/filedetails/?id=1460533609) | TR | general, forts and dungeon tiers |
 | [Guia Básico - Warmonger](https://steamcommunity.com/sharedfiles/filedetails/?id=1544645226) | PT-BR | classes, legions |
 | [Crush Online basics](https://steamcommunity.com/sharedfiles/filedetails/?id=780459080) | EN | wars, conquering lands |
+| [All The Additional Effect Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=814958862) | EN | Crush Online random item add-on stats, old shop prices |
+
+Authors, in table order: Zombids (from Overdose's blog guia-warmonger.blogspot.com), Zombids, corentyn1 ("Dracoco"), Kayne, InDeed, fissehans, Zombids, Zombids, boboboom.d, Baylor, Agouha, Made In Heaven. The guide listings for both apps hold only these twelve (page 2 of the 718790 list repeats page 1).
+
+All ~250 screenshots in these guides were viewed (world maps, dungeon minimaps, boss and loot screens, shop, crafting, reinforce, rune, quest, gacha, auction and nation-info windows). Their contents are described in our own words in the topic pages; none are copied here. The guide comment threads were read too (the dungeon guide's comments add facts on sockets and craft-only sets).
+
+Client tables used for cross-checks: `FieldNames`, `Dungeon`, `DungeonAdmission`, `Event_Dungeon`, `UnitDB`, `Item_Base`, `Item_Make`, `Skill_TP`, `FortMastery`, `Level_Table` (all in `data/tables/`).
+
+## Dead or unreachable sources
+
+- **warwiki.net** — the community gear database the definitive guide linked for full T3+15 stats. Gone; check archive.org.
+- **guia-warmonger.blogspot.com** — Overdose's Spanish guide that the definitive guide was copied from.
+- The Google Doc "Overview of clickables" linked from the buffs guide (crafting recipes for consumables).
+
+## Worth a human look
+
+- The world-map screenshots in the [strategy guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1460486971) and the [noob guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1345368744): they show every land name, owner and dungeon tier icon at one moment in 2018, which could seed the initial land ownership.
+- The dungeon minimaps in the [dungeons guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1344219430) next to the client's `minimap_z<id>` textures, to place spawns, gather nodes and bosses.
+- The "First steps video lvl 1–17" linked from the [definitive guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1459948573) §First Steps (the tutorial and early quest flow).
