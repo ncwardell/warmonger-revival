@@ -1,0 +1,356 @@
+# Warmonger / Crush Online - protocol contract: "system" subsystem
+# (system messages, confirm prompts, GM tool / GM commands, slash commands, revive request, misc).
+#
+# Conventions: offsets are from packet start (16-byte header, payload at +0x10).
+# C->S payload words are obfuscated ~(w - key) when key != 0; the fields below are the DECODED values.
+# "extra" = header +0x06. The client drops any S->C packet of 16 bytes or less.
+#
+# The message engine every system-message opcode feeds into (verified in disassembly):
+#   FUN_00498a40(id, d1, d2, str, box_param, chat_type)
+#     - looks the id up in system_msg.cdb (data/tables/system_msg.tsv, loader FUN_00498386).
+#       An unknown id shows nothing.
+#     - FUN_00498643 formats the text: the first "%d" <- d1, the next "%d" <- d2, then each "%s"
+#       <- the next space-separated token of str (strtok on " ").
+#     - display column (record +0x04):
+#         1 = system line in the chat window only (colour 0xf000)
+#         2 = modal OK box (msgbox kind 0, FUN_00451fcf), plus the chat line
+#         3 = CONFIRM box (msgbox kind 3, flags 0x20000021, parent = game scene). Pressing OK makes
+#             CGameScene::OnMsgBox (FUN_0048cd72) send C->S 0x41d {+0x10 id, +0x14 box_param}.
+#             Plus the chat line.
+#         4 = chat line of chat type 7 (system/notice colour)
+#         5 = on-screen alert text (FUN_005b0036 -> scene FUN_004864c1), plus the chat line
+#     - chat_type != 0 overrides the chat channel the line is written to
+#       (FUN_0057fd07 type: 2 whisper, 6 shout, 7 system ...). Servers should send 0.
+#     - The chat line is written only while the game scene (DAT_0084e3ec) exists.
+
+opcodes:
+  - opcode: 0x41b
+    name: system_message
+    direction: s2c
+    s2c:
+      min_size: 0x18
+      extra: "not read (the existing server sends the player uid)"
+      fields:
+        - {offset: 0x10, type: u32, name: msg_id, values: "system_msg.cdb id (0..284)", notes: "no %d/%s arguments: d1 = d2 = 0, str = empty"}
+        - {offset: 0x14, type: u32, name: chat_type_override, values: "0 = use the table default (send 0)", notes: "the 6th argument of FUN_00498a40; non-zero moves the chat line to that chat channel type. It is NOT a text parameter."}
+      accepted_if: "always handled; an id missing from system_msg.cdb prints nothing, but the special-id side effects below still run"
+    server_reply: "none expected"
+    client_effect: >-
+      Shows the message per its display type (see header). A display-type-3 id becomes a confirm box,
+      and its OK answer is C->S 0x41d {id, 0}. Special ids, run after the message is shown:
+      3 (StrDef_MatchFail) zeroes the match-queue block acct+0xb1b0 (0xe4 bytes) and fires UI event 0x36.
+      0x48 (72 UpgradeFail) and 0x61 (97 MakeFail) format the text again and show it in
+      PanelMakeItemMsgbox (GUI 0x5d, opened if hidden; FUN_00549f74). For 0x61 an open PanelMakeItem
+      (GUI 0x5c) with +0xec > 0 also gets a 1.1 s timer (+0xf0 = now + 0x44c, FUN_0054b289). Nothing is closed.
+      0x86 (134 EnemyAttackNexus) finds the first unit with unit+0x3a4 != 0 and unit+0x35c byte 0x22/0x23
+      for which FUN_004872bd(own, unit) returns 0 (not hostile), and pings its position on the minimap.
+    handler: FUN_00477307
+    send_sites: []
+    confidence: high
+    evidence: "Disasm 0x477316-0x477329 pushes (+0x10,0,0,0,0,+0x14) to FUN_00498a40. Live: loot.py sends 36 InventoryIsFull (display 5). Verify pass: 0x48/0x61 path 0x47743b-0x47750e opens PanelMakeItemMsgbox (RTTI 0x8359f8), not a close/reset."
+    verified: true
+
+  - opcode: 0x41c
+    name: system_message_args
+    direction: s2c
+    s2c:
+      min_size: 0x21
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u32, name: msg_id, values: "system_msg.cdb id", notes: ""}
+        - {offset: 0x14, type: u32, name: chat_type_override, values: "0", notes: "same as 0x41b +0x14"}
+        - {offset: 0x18, type: u32, name: arg1, values: "first %d (e.g. field id for <dicf %d>, guild id for <dictg %d>, item id for <dicti %d>)", notes: "for ids 0x73/0x74 it is also the war field id"}
+        - {offset: 0x1c, type: u32, name: arg2, values: "second %d", notes: ""}
+        - {offset: 0x20, type: "char[]", name: str_args, values: "NUL-terminated ASCII; space-separated tokens fill each %s in order", notes: "length not bounded by the client (strtok works on the receive buffer). Suggest at most 255 chars plus a NUL (size <= 0x120)."}
+      accepted_if: "always handled; unknown id prints nothing"
+    server_reply: "none. Display-type-3 ids still produce C->S 0x41d {id, 0} on OK (box_param is 0 on this path)."
+    client_effect: >-
+      Formats and shows the message. Ids 0x73 (115 Strdef_StartedPVP) and 0x74 (116 Strdef_StartedPVE):
+      the client checks the local option byte options+0x1a6 ("war alarm", object FUN_0041197d,
+      toggled by the alarm box's "check" box). It looks up the current field (acct+0x652) and the
+      field in +0x18 (FUN_004288e2 -> FUN_004e1c8d). If both exist, the WarAlram panel exists with
+      panel+0x14 != 0, and the current field type
+      (+0xc) == 1 with acct+0x64c >= 0, or type == 2 with FUN_0044ad5f()+0xad == 0, it opens
+      PanelMsgboxWarAlram (GUI 0x82) "DoYouJoinWarSomeFiled_S" naming the target field.
+      Its "yes" opens the world map focused on that field (FUN_0057414d(1, field)) and sends no packet.
+    handler: FUN_00477525
+    send_sites: []
+    confidence: high
+    evidence: "Disasm 0x477543-0x47755d pushes (+0x10,+0x18,+0x1c,&+0x20,0,+0x14). WarAlram yes = FUN_005296be."
+    verified: true
+
+  - opcode: 0x41d
+    name: confirm_prompt
+    direction: both
+    c2s:
+      size: 0x40
+      extra: "sender uid (unit+0x35e)"
+      fields:
+        - {offset: 0x10, type: u32, name: prompt_id, values: "0x1a (move-map box) or the system_msg id of a display-type-3 message", notes: "echo of S->C +0x10"}
+        - {offset: 0x14, type: u32, name: prompt_param, values: "echo of S->C 0x41d +0x14 (0 when the box came from 0x41b/0x41c)", notes: ""}
+        - {offset: 0x18, type: "bytes[0x28]", name: zero, values: "0", notes: "memset to 0"}
+    s2c:
+      min_size: 0x19
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u32, name: prompt_id, values: "0x1a = move-map prompt (PanelMsgboxMoveMap); 0xe3 = timed notice box; any other = generic system message", notes: ""}
+        - {offset: 0x14, type: u32, name: prompt_param, values: "server-chosen cookie (e.g. destination id); also the first %d of the text", notes: "kept by the box and echoed in the C->S answer"}
+        - {offset: 0x18, type: "char[]", name: str_args, values: "NUL-terminated; fills %s", notes: ""}
+      accepted_if: >-
+        0x1a: needs the local player unit and its char record (DAT_0084a758 / +0x3a0) and no
+        CLoadingProcess running (DAT_0084f92c == 0). Otherwise the packet is ignored completely and no
+        text is shown. The box also needs PanelMsgboxMoveMap (GUI 0x8b) to exist with panel+0x14 != 0.
+        0xe3: needs the GUI manager DAT_0084b084 and a free msgbox slot (5 slots). Others: always.
+    server_reply: >-
+      To the C->S answer: run the action identified by prompt_id/prompt_param. For 0x1a (or id 26
+      StrDef_DoTeleport / 128 Strdef_MoveEntrance) do the map move: 0x44e/0x44f (+0x2000 on a scene
+      change; see world.md/loading.md). For invites such as 21 AreYouJoinRoom or 42 AreYouJoinGuild,
+      do the join. A missing answer means declined. Cancel sends nothing and nothing times out.
+    client_effect: >-
+      S->C 0x1a: text = sysmsg 0x1a formatted (%d = +0x14, %s = +0x18). Opens PanelMsgboxMoveMap
+      (GUI 0x8b) through FUN_00529289, which stores id -> panel+0x24, param -> +0x28 and the player
+      position triple -> +0x2c..+0x34. OK (FUN_0052754d) sends C->S 0x41d {panel+0x24, panel+0x28}.
+      S->C 0xe3: GUI-manager msgbox FUN_0045c7da(style 9, box id 0x42, text, flags 0, 10.0 s, data +0x14).
+      Text = sysmsg 227 (NewbieChannelMove) formatted with %d = +0x14 and %s = +0x18.
+      CGameScene::OnMsgBox has no case for 9 or 0x42, so no answer is sent (not traced further).
+      Any other id: FUN_00498a40(id, d1 = +0x14, d2 = 0, str = +0x18, box_param = +0x14, chat 0).
+      A display-type-3 id gives a confirm box whose OK sends C->S 0x41d {id, +0x14}.
+    handler: FUN_00477741
+    send_sites: ["FUN_0048cd72 (CGameScene msgbox kind 3 OK, site 0x48ce7c)", "FUN_0052754d (PanelMsgboxMoveMap ok, 0x52759f)", "FUN_005272dd (PanelMsgboxBattleArenaInvite ok, 0x52734a; unreachable, no opener for GUI 0x81 and its +0x24/+0x28 are never set)"]
+    confidence: high
+    evidence: "Disasm 0x4778ba-0x4778cd (generic path args); 0x48ce3a-0x48cea8 (kind 3 + button 1 -> 0x41d); 0x52758a-0x5275ad. Vtables: 52754d = PanelMsgboxMoveMap slot 3, 48cd72 = CGameScene slot 1. 0xe3 path 0x477761-0x4777ab (f32 10.0 at 0x728124)."
+    verified: true
+
+  - opcode: 0x41a
+    name: revive_request
+    direction: c2s
+    c2s:
+      size: 0x14
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: one, values: "always 1", notes: "the same for both buttons and for the timeout"}
+    server_reply: >-
+      Revive the sender if dead: 0x421 {HP, MP, maxHP, maxMP} with HP > 0 plus 0x416 type 1 at the
+      respawn point, or 0x804 at the respawn point (combat.md/monsters.md). Broadcast the revive to
+      observers. Ignore it if the sender is alive.
+    client_effect: >-
+      Sent by CGameScene::OnMsgBox (FUN_0048cd72) for msgbox kind 5 when the button is 1 or 3 or the
+      result is 32000 (0x7d00, timeout). The kind-5 box is "WaitingRevive", opened in FUN_0048d666
+      when the death countdown (stat +0x40 seconds, unit field +0x78) reaches 0 and the local unit
+      is still dead (+0x36c == 0). It has a 60.0 s timer and flags 0xf00. The send needs the network
+      object connected (FUN_0046ffbf).
+    handler: null
+    send_sites: ["FUN_0048cd72 (site 0x48ce0b, header built inline 0xA53C0014)"]
+    confidence: high
+    evidence: "Disasm 0x48cdbc-0x48ce2f; box created at 0x48e2ab-0x48e2da with string 'WaitingRevive' and f32 60.0 at 0x728250. Purpose: revive/respawn request (inventory called it unknown). Arguably belongs to combat. The '0x804 at the respawn point' alternative is not verified for the player's own unit."
+    verified: true
+
+  - opcode: 0x2003
+    name: create_scene_message_popup
+    direction: s2c
+    s2c:
+      min_size: 0x1c
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: unknown, values: "unknown (not read)", notes: "send 0"}
+        - {offset: 0x18, type: u32, name: msg_id, values: "system_msg.cdb id, e.g. 18 AlreadyUseName, 19 CharacterFull", notes: "text only; no %d/%s formatting (FUN_00498118)"}
+      accepted_if: "only while CCreateScene is active (DAT_00850bd8 set by its OnEnter FUN_00501190 and cleared by FUN_00501199); otherwise ignored"
+    server_reply: "none; the box's OK only closes it (CCreateScene::OnMsgBox FUN_00501225 acts on kind 1 only)"
+    client_effect: "Closes open boxes (FUN_0045199e), then shows msgbox kind 3 with the message text (FUN_00501af1 -> FUN_0045202a)."
+    handler: FUN_00470124
+    send_sites: []
+    confidence: medium
+    evidence: "DAT_00850bd8 is written only by vtable slots 7/8 of CCreateScene (RTTI). Its use as the create-character error channel is inferred. Handler and box path verified; the use is not."
+    verified: true
+
+  - opcode: 0x495
+    name: gm_command
+    direction: c2s
+    c2s:
+      size: 0x118
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: code, values: "GMTool buttons: 1 Search, 2 Teleport(go to), 3 Kick, 4 Summon, 5 Recall, 6 MapMove, 8 ToggleSnoop, 9 ToggleNoDam, 0xf TKill, 0x10 THpEdit, 0x12 CastleMove, 0x67 WorldNotice, 0x68 Notice. Cheat box (command table 0x833aa0): 0x0a move, 0x0e fame, 0x0f mobkill, 0x10 mobhp, 0x11 mobcreate, 0x12 castle, 0x64 serveropen, 0x65 servershutdown, 0x66 worldservershutdown, 0x67 worldnotice, 0x68 notice, 0x69 usercount, 0x6a fortmove, 0x6b towerreset, 0xc8 droprate, 0xc9 medaldouble, 0xca returnuser, 0xcb returnuserset, 0xcc pvpbotenable, 0xcd botaiolduse, 0xce msprocessuse, 0x12f newbiechannel, 0x134 nationblock", notes: ""}
+        - {offset: 0x14, type: u32, name: zero, values: "0", notes: ""}
+        - {offset: 0x18, type: "char[256]", name: text, values: "Search: name typed. Teleport/Kick/Summon/Recall: '%d' uid from the last 0x496 result. TKill: '%d' uid of the selected target (panel+0x12c), sent only if that uid < 0x2b07. THp (button; edit box THpEdit): '%d %s' target uid and the typed HP. MapMove: '%d' map id. CastleMove: '%d' 1..3. Notice: the text. Cheat: the arguments joined by single spaces, without the command name", notes: "ASCII, strncpy_s 0x100"}
+    server_reply: >-
+      Code 1 (Search): S->C 0x496 with the result. Others: server-defined (see server_rules), for
+      example a warp of the GM or the target with 0x44e, a kick, or a notice broadcast. Refuse
+      silently when the sender is not a GM.
+    client_effect: "none locally (ToggleChat, ChannelMove and BtnClear are local-only buttons)"
+    handler: null
+    send_sites: ["FUN_00521bfa (GMTool buttons, 0x52120c..0x522395)", "FUN_00521194 (Notice/WorldNotice)", "FUN_005216d6 (EditCheat '/cmd', 0x5218bd)", "FUN_0057ed4c (chat '/cmd', 0x57ee58; unreachable because chat list A holds only 'time', whose +0x0c is 0)"]
+    confidence: high
+    evidence: "examples.md B1/B2. Every GMTool send is gated by FUN_004b8cc6 (own char record +0x656 >= 200) at 0x521c30. Verify pass: codes and text formats re-read in FUN_00521bfa/FUN_00521194/FUN_005216d6; command table 0x833aa0 dumped (24 entries, 0x114 stride)."
+    verified: true
+
+  - opcode: 0x496
+    name: gm_search_result
+    direction: s2c
+    s2c:
+      min_size: 0x64
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: i16, name: channel, values: "channel index of the found user (shown +1)", notes: "Teleport/Summon/Recall/Kick are enabled only when it equals the GM's own channel acct+0x64a"}
+        - {offset: 0x12, type: "bytes[10]", name: unknown_12, values: "unknown", notes: "send 0"}
+        - {offset: 0x1c, type: u32, name: field_id, values: "map/field id; name from the field table (FUN_004e1c8d +8)", notes: ""}
+        - {offset: 0x20, type: "bytes[12]", name: unknown_20, values: "unknown", notes: "send 0"}
+        - {offset: 0x2c, type: i16, name: uid, values: "0 = not found (shows the search text + 'Offline or No Name')", notes: "used by the Teleport/Kick/Summon/Recall buttons"}
+        - {offset: 0x2e, type: "char[42]", name: name, values: "ASCII, NUL-terminated; shown as '%s (%d)' with uid", notes: "region runs up to +0x58"}
+        - {offset: 0x58, type: u16, name: class, values: "0..9 index into the class table DAT_00832f78 (0x38 stride, +0x34 name key)", notes: ""}
+        - {offset: 0x5a, type: "bytes[2]", name: unknown_5a, values: "unknown", notes: ""}
+        - {offset: 0x5c, type: i16, name: nation, values: "nation index for 'NationName'", notes: ""}
+        - {offset: 0x5e, type: i8, name: level, values: "level", notes: ""}
+        - {offset: 0x5f, type: u8, name: unknown_5f, values: "unknown", notes: ""}
+        - {offset: 0x60, type: u32, name: guild_id, values: "0 = none; else the name is looked up (FUN_004b68b6)", notes: ""}
+      accepted_if: "always copies 0x64 bytes from packet start into PanelGMTool+0xc8 (GUI 0x90) and sets +0xc4 = 1; the display refreshes only while the panel is visible, and the panel closes itself if own char+0x656 < 200 (FUN_0052092b)"
+    server_reply: "none"
+    client_effect: "Fills the GM tool's user info (name (uid), channel, level, nation, class, field, guild). Also refreshes the Chat/Snoop/Unbeatable labels; Snoop and Unbeatable read own unit effect ids 0x390/0x391 (FUN_004b98ee; Skill_Buff 912/913 'Test Buff')."
+    handler: FUN_00471f92
+    send_sites: []
+    confidence: medium
+    evidence: "FUN_005212bc copies 0x19 dwords. Field use in FUN_00520bae / disasm 0x520c9e-0x520d9e. The inventory's 'open GM tool' name is wrong: the handler only casts the existing panel and does not open it. Verify pass: panel+0xc8 base; +0xd8/+0xe4/+0xf4/+0xf6/+0x120/+0x124/+0x126/+0x128 map to the packet offsets above."
+    verified: true
+
+  - opcode: 0x404
+    name: slash_command
+    direction: c2s
+    c2s:
+      size: 0x114
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: command_code, values: "command table entry +0x08", notes: ""}
+        - {offset: 0x14, type: "char[256]", name: args, values: "arguments joined with single spaces", notes: ""}
+    server_reply: "none known"
+    client_effect: "none"
+    handler: null
+    send_sites: ["FUN_005216d6 (0x521986)", "FUN_0057ed4c (0x57ef21)"]
+    confidence: high
+    evidence: "Header built inline 0xA53C0114. Sent only when a table entry has +0x0c == 0 and +0x08 > 0. No entry of the 24-entry table at 0x833aa0 has +0x08 != 0, so this build never sends it. A server may ignore it."
+    verified: true
+
+  - opcode: 0x4b7
+    name: shop_buyback_list_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: zero, values: "0", notes: "no payload"}
+    server_reply: "S->C 0x4b8 (extra must equal own uid, 0x114 bytes; the client copies packet bytes 0..0x113 into PanelItemShop+0x4b8 and sets panel+0x38 = 1) holding the buy-back list. A non-zero +0x10 dword is also stored in acct+0xb3b4 (FUN_00471022). Layout belongs to the items/shop contract."
+    client_effect: "PanelItemShop (GUI 0x3c) 'BuyBack' tab: clears its local 0x114-byte list and asks the server for it. Also re-sent after a buy-back purchase (0x431) while the tab is active."
+    handler: null
+    send_sites: ["FUN_005699dd (called from PanelItemShop FUN_0056b897)"]
+    confidence: medium
+    evidence: "FUN_0056b897 = PanelItemShop slot 3, 'BuyBack' button -> panel+0x38 = 1 -> FUN_005699dd. Misassigned: belongs to items/shop. Verify pass: FUN_005699dd memsets panel+0x4b8 (0x114) and sends 0x4b7 size 0x18; the re-send after 0x431 was not checked."
+    verified: true
+
+  - opcode: 0x4c1
+    name: warehouse_gold_transfer
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: direction, values: "0 = deposit (MoneyDeposit), 1 = withdraw (MoneyWithdraw)", notes: "panel+0x24, set by FUN_00563838"}
+        - {offset: 0x14, type: i32, name: amount, values: "gold typed in the edit box; never 0 (0 is not sent)", notes: "parsed with FUN_006dc85a"}
+    server_reply: "S->C 0x4c2 (extra = own uid): +0x10 u32 new warehouse gold (acct+0x341c), +0x14 u32 new carried gold (own char record (unit+0x3a0)+0x283). Then UI event 0x1b. On failure send 0x41b 52 StrDef_NotEnoughMONEY."
+    client_effect: "PanelCargoDeposit (CargoDepositWithdraw.panel, GUI 0x32) OK: sends this and closes the panel."
+    handler: null
+    send_sites: ["FUN_005634df (PanelCargoDeposit slot 3, sites 0x563559/0x563563)"]
+    confidence: medium
+    evidence: "FUN_00563838 strings MoneyDeposit/MoneyWithdraw; FUN_005635a8 shows acct+0x341c, which only 0x4c2/0x428 write. Misassigned: belongs to items/warehouse. Verify pass: FUN_005634df +0x10 = (panel+0x24 != 0), +0x14 = parsed amount; FUN_004702af read."
+    verified: true
+
+flows:
+  - name: plain system message / error reply
+    steps:
+      - "C->S any request the server refuses"
+      - "S->C 0x41b {+0x10 sysmsg id (e.g. 31 NotNow, 52 NotEnoughMONEY), +0x14 0}"
+  - name: formatted announcement
+    steps:
+      - "S->C 0x41c {+0x10 id (e.g. 120 Strdef_DungeonUserAdd), +0x14 0, +0x18 %d1, +0x1c %d2, +0x20 'name1 name2'}"
+  - name: server confirm prompt (display-type-3 sysmsg, e.g. invite)
+    steps:
+      - "S->C 0x41d {+0x10 sysmsg id with display 3 (21 AreYouJoinRoom, 42 AreYouJoinGuild, 23..30 war entry prompts), +0x14 cookie (also the %d), +0x18 %s args}"
+      - "client shows the OK/Cancel box; Cancel sends nothing"
+      - "C->S 0x41d {+0x10 same id, +0x14 cookie}"
+      - "server performs the action, or replies 0x41b with an error id"
+  - name: move-map prompt
+    steps:
+      - "S->C 0x41d {+0x10 0x1a, +0x14 destination cookie (map/teleport id), +0x18 ''} (only when not loading)"
+      - "client opens PanelMsgboxMoveMap with sysmsg 26 text"
+      - "C->S 0x41d {+0x10 0x1a, +0x14 cookie} on OK"
+      - "S->C 0x44e/0x44f warp (+0x2000 world entry if the scene changes); see world.md/loading.md"
+  - name: death -> revive
+    steps:
+      - "S->C 0x420/0x421 HP 0 for the player: the client starts the stat +0x40 countdown ('RemainReviveSec_D')"
+      - "countdown reaches 0 while still dead: client shows the 'WaitingRevive' box (60 s)"
+      - "C->S 0x41a {+0x10 1} on button 1, button 3 or timeout"
+      - "S->C 0x421 {HP>0...} + 0x416 type 1 at the respawn point (or 0x804), and the same to observers"
+  - name: GM user search and actions
+    steps:
+      - "GM (own char+0x656 >= 200) opens GMTool (GUI 0x90)"
+      - "C->S 0x495 {+0x10 1, +0x14 0, +0x18 'name'}"
+      - "S->C 0x496 {+0x10 channel, +0x1c field, +0x2c uid (0 = not found), +0x2e name, +0x58 class, +0x5c nation, +0x5e level, +0x60 guild}"
+      - "C->S 0x495 {+0x10 2/3/4/5, +0x18 '%d' uid} (only if the result's channel == own channel)"
+      - "server warps or kicks (e.g. 0x44e to the GM or to the target)"
+  - name: character-create error
+    steps:
+      - "C->S 0x407 create character"
+      - "S->C 0x2003 {+0x18 18 AlreadyUseName or 19 CharacterFull} (while in CCreateScene)"
+      - "UNVERIFIED: the 0x407 reply handler FUN_00477a62 always sets CCreateScene+0xf0 = 1 and ignores a reply whose id (+0x20/+0x24) is <= 0. Whether the create scene needs that flag after a failure is unknown; sending 0x407 with id 0 before 0x2003 may be needed."
+  - name: NPC shop buy-back tab
+    steps:
+      - "C->S 0x4b7 (empty)"
+      - "S->C 0x4b8 (0x114 bytes, buy-back list; items contract)"
+  - name: warehouse gold
+    steps:
+      - "C->S 0x4c1 {+0x10 0 deposit / 1 withdraw, +0x14 amount}"
+      - "S->C 0x4c2 {+0x10 warehouse gold, +0x14 carried gold}"
+
+server_rules:
+  - name: which system message to send
+    client_expects: "A valid system_msg.cdb id. The display column decides the presentation (1 chat line, 2 OK box, 3 confirm box that answers with 0x41d, 4 notice line, 5 on-screen alert). An unknown id shows nothing."
+    data_table: "data/setting/system_msg.cdb (data/tables/system_msg.tsv: 241 ids, StringAll_Eng keys; display counts 92x1, 32x2, 15x3, 100x4, 2x5)"
+    suggested_default: "Use 0x41b for argument-less errors, 0x41c when %d/%s are needed, and 0x41d only for prompts (display 3) whose answer the server must match by id+cookie. Always send +0x14 (0x41b/0x41c) = 0."
+  - name: confirm-prompt state
+    client_expects: "The client keeps nothing but id+cookie and answers only on OK. Several prompts can be open at once."
+    data_table: "none"
+    suggested_default: "Keep a per-player pending map {id: cookie, expiry}. Accept a 0x41d answer only if it matches a pending prompt, then delete it. Expire after about 60 s (treat as declined)."
+  - name: when to offer a move-map prompt (0x41d id 0x1a)
+    client_expects: "The server decides (the client never asks). Ignored during loading."
+    data_table: "Teleport_List.cdb, WorldmapData.cdb, ZoneDB.cdb (map/zone links), navmesh region data"
+    suggested_default: "Send it when the player enters a map-exit/portal region; cookie = destination map id; on the answer, warp with 0x44e (same sceneidx) or a full scene change."
+  - name: revive policy
+    client_expects: "After its countdown the client sends 0x41a and waits; it does not revive itself."
+    data_table: "Level_Table / stat block +0x40 revive delay (5 s in the current server), ZoneDB for the respawn point"
+    suggested_default: "On 0x41a from a dead player, revive at the map's respawn/bind point with full HP/MP. Keep the existing timer-based auto revive as a fallback, but don't revive twice."
+  - name: GM authority
+    client_expects: "The client treats own char record +0x656 (u8) >= 200 as GM. That byte is also the guild-grade byte and is set by 0x2000 +0x6da, 0x803 +0x48, 0x2013 +0x18 and 0x429 type 5. The GMTool system-menu button is created hidden (FUN_0057c730), so the panel is effectively dev-only."
+    data_table: "account table on the server (no client data)"
+    suggested_default: "Store a gm_level per account. Check it server-side for every 0x495 (the client gate is cosmetic). Never set +0x656 >= 200 for normal players, or they get GM chat markup."
+  - name: GM command semantics
+    client_expects: "Only the code and the text arrive. Meanings follow from the command names; arguments are free-form."
+    data_table: "command table 0x833aa0 (examples.md B1)"
+    suggested_default: "Implement 1 search (-> 0x496), 2 go-to, 4 summon, 5 recall, 3 kick, 6 mapmove, 0xf kill, 0x10 set HP, 0x67/0x68 notice. Log and ignore the rest (server open/shutdown, droprate ...)."
+  - name: notice broadcast
+    client_expects: "No dedicated notice opcode was found. Chat lines arrive by S->C 0x800 (handler FUN_00477be3: +0x10 i16, +0x12 i8 chat type, +0x13 i8 text-encoding flag, +0x14 char[40] name, +0x3c text). Chat type 7 is drawn in the system colour 0xf000."
+    data_table: "none"
+    suggested_default: "Broadcast GM notice/worldnotice text as S->C 0x800 with chat type 7 (low confidence; confirm in the social contract). A sysmsg cannot carry free text without a %s template."
+  - name: GM toggle state display
+    client_expects: "The Snoop/Unbeatable labels read effect ids 0x390/0x391 on the GM's own unit."
+    data_table: "Skill_Buff.cdb 912/913"
+    suggested_default: "On ToggleSnoop/ToggleNoDam, add or remove buff 912/913 on the GM with the normal buff-list update (0x41e); apply no-damage server-side."
+  - name: '/time chat command'
+    client_expects: "Chat '/time' sends C->S 0x800 chat type 1 with text '/time' (local table entry 'time', FUN_0046382b). It is not a 0x404/0x495."
+    data_table: "none"
+    suggested_default: "Answer with a 0x800 system line holding the server time, or ignore it."
+  - name: create-scene errors
+    client_expects: "0x2003 shows a sysmsg box only during character creation."
+    data_table: "system_msg ids 18, 19, 20"
+    suggested_default: "Send 0x2003 {+0x18 18} for a duplicate name and {+0x18 19} for full slots, instead of the 0x407 success reply."
+  - name: unused or never-sent opcodes
+    client_expects: "0x404 is never sent by this build. PanelMsgboxBattleArenaInvite (GUI 0x81) has no opener, so its 0x41d path is dead."
+    data_table: "none"
+    suggested_default: "Accept and ignore 0x404."

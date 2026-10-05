@@ -1,0 +1,207 @@
+opcode	dir	subsystem	name	s2c_handler	c2s_size	c2s_builder_funcs	c2s_header_sites
+0x401	C2S	session	heartbeat/keepalive (0x10, header only, FUN_004a7d17); also 0x1c variant +0x10 u32 1/0 from GUI msg 0x62/0x63		0x10/0x1c	004a7d17 00520368	0x4a7d49 0x520557 0x520590
+0x404	C2S	system	slash command (+0x10 u32 command id, +0x14 char[256] args; GM variant is 0x495)		0x114	005216d6 0057ed4c	0x521986 0x57ef21
+0x405	both	session	S: login-screen kick/error notice; C: login-server account request (0x48, account+password, login state 3)	FUN_0047000f	0x48	004958d2	0x495ad1
+0x406	C2S	session	select character / enter world request (+0x10 u64 char id) -> 0x2000		0x20	0049229d	0x4922ff
+0x407	both	session	create character (request/result)	FUN_00477a62	0x260	00504dcc	0x50528e
+0x408	C2S	session	delete character request (+0x18 u64 char id) -> 0x2004		0x20	00492bb3	0x492c68
+0x409	C2S	session	leave game (back to char select / quit)		0x14	0048d666	0x48df5f 0x48e0d1
+0x40a	both	session	channel move (request/result)	FUN_00472165	0x28	00487809 0048d666	0x4878b2 0x48db16
+0x40c	C2S	world	change nation request		0x28	00532186	0x5321dd
+0x40f	both	combat	skill precast/charge (C announce, S visual)	FUN_004734b3	0x14	00461f47	0x461f89
+0x410	both	combat	skill cast announce / broadcast (no damage)	FUN_00474062	0x38	00461fc1	0x462032
+0x411	both	combat	attack/skill hit (C report, S result up to 12 targets)	FUN_00475654	0x64	004621bd 00462af7 005a233f 005a2f4d 005a3de6	0x46221d 0x462c07 0x5a260c 0x5a3261 0x5a3e50
+0x412	both	combat	skill hit with knock-back/displacement	FUN_0047445f	0x88	0046260d 005a233f 005a2f4d 005a3942 005a3de6	0x4627ab 0x5a2472 0x5a309e 0x5a3a73 0x5a3f36
+0x413	S2C	combat	damage tick on entity (DoT/environment)	FUN_00478c1a			
+0x414	S2C	world	fort/scene-object state table refresh (100 x {u16 id,i8,u8})	FUN_00474fda			
+0x415	both	quests	quest state change (request/update)	FUN_004706c2	0x18	00462db9 0056e3d8	0x462e11 0x56e497
+0x416	both	world	movement (client move / server move broadcast)	FUN_004728ff	0x20	004156b0 0048d666 004bba89	0x415b56 0x48d7dc 0x4bbbbd
+0x417	C2S	world	camera pan/detach position (no reply)		0x1c	00450acd 00450caf 004512cd	0x450b13 0x450f28 0x451751
+0x41a	C2S	system	message-box #5 confirm (+0x10=1; buttons 1/3/timeout 32000) - purpose unknown		0x14	0048cd72	0x48ce0b
+0x41b	S2C	system	system message by id	FUN_00477307			
+0x41c	S2C	system	system message with args (+ war join prompt)	FUN_00477525			
+0x41d	both	system	confirm prompt (move-map etc.) / answer	FUN_00477741	0x40	0048cd72 005272dd 0052754d	0x48ce7c 0x52734a 0x52759f
+0x41e	S2C	combat	buff/status list for entity	FUN_00470eeb			
+0x41f	S2C	combat	full stat block for entity	FUN_004733a4			
+0x420	S2C	combat	HP/MP update	FUN_00473401			
+0x421	S2C	combat	HP/MP + max update	FUN_0047341e			
+0x422	S2C	combat	exp / level update	FUN_0047684e			
+0x423	S2C	items	container 2 contents (8 items)	FUN_0047043d			
+0x424	S2C	items	inventory contents (70 items)	FUN_004703cf			
+0x425	S2C	items	warehouse/storage contents (90 items)	FUN_00470406			
+0x426	S2C	items	equipment/appearance change for entity	FUN_004725ae			
+0x427	S2C	items	single item slot update	FUN_00478d54			
+0x428	S2C	items	character value update (gold etc.)	FUN_00476461			
+0x429	S2C	combat	character attribute update (nation, etc.)	FUN_00470dd1			
+0x42a	both	items	move/swap item between slots	FUN_00470376	0x18	0048bd47 0048c6b6 0048c92a 00532bce 00562cc2 00562e24 005794d3	0x48bdf1 0x48c707 0x48caa9 0x48cc6e 0x532ea9 0x562deb 0x562f58 0x579dec 0x579ec4 0x57a283 0x57a4fb
+0x42b	C2S	combat	item-triggered skill use (no S->C handler)		0x38	004621bd 0046260d	0x46253a 0x462947
+0x42c	C2S	items	inventory item destroy/discard		0x18	005794d3	0x5797f3
+0x42d	both	items	use item	FUN_00470316	0x18	0057349b 0058707f	0x573682 0x5871d0
+0x42f	S2C	items	item-shop (cash) info	FUN_00470fb2			
+0x430	C2S	items	NPC shop buy (gold/medal/fame currencies)		0x1c	00569af3 0056b897	0x569e00 0x56bb31
+0x431	C2S	items	NPC shop sell (with amount)		0x1c	0056b897	0x56bbf2
+0x432	C2S	items	inventory item action with quantity (split/drop stack)		0x18	005794d3	0x5799d1
+0x433	C2S	items	auction register/bid		0x60	0053a0e0	0x53a6f2
+0x434	C2S	items	auction search		0x58	0053a0e0	0x53a48c
+0x435	C2S	items	item craft/combine (3 material slots, gold cost)		0x54	0054cfe4	0x54d13c 0x54d272
+0x436	C2S	items	item reinforce request		0x28	0054837c	0x5484f6
+0x437	C2S	items	dyeing: select part		0x14	0054af6a	0x54b04e
+0x438	C2S	items	dyeing: apply/complete		0x14	0054af6a	0x54b0ad
+0x439	S2C	pvp	match: map ping / objective position	FUN_00474e60			
+0x43a	S2C	pvp	match: periodic status / scoreboard	FUN_004711a8			
+0x43b	S2C	pvp	match: info / start (team assignment)	FUN_00471125			
+0x43c	S2C	pvp	match: roster	FUN_00471192			
+0x43d	S2C	pvp	match: team scores	FUN_004711be			
+0x43e	S2C	world	bulk entity death-fade/despawn	FUN_00471087			
+0x43f	S2C	world	bulk position snapshot	FUN_004751ca			
+0x440	S2C	pvp	match: result	FUN_004711ea			
+0x441	both	pvp	match room: join / team change	FUN_00471715	0x18	0054099e	0x540c89 0x540db8
+0x442	both	pvp	match room: member left / leave	FUN_00471736	0x18	0054099e 005431a5 00543e9a	0x540b35 0x540bcf 0x543237 0x543f4c
+0x443	S2C	pvp	match: kill event / score credit	FUN_00471200			
+0x445	C2S	world	world map / field status request		0x18	005738f5 0057867a 00598a5f	0x573972 0x578742 0x598f5b
+0x446	S2C	pvp	war/world-map full state (nations, forts)	FUN_00474eb1			
+0x447	C2S	world	world-map location detail request (+0x10 u32 location id)		0x18	00573858	0x5738c0
+0x448	S2C	pvp	war/base state change (single event)	FUN_00471751			
+0x449	C2S	world	world-map info refresh request		0x18	005738f5 0057867a	0x5739a4 0x578773
+0x44a	S2C	pvp	base/fort owner table	FUN_00471771			
+0x44b	C2S	quests	NPC service request (NPC menu entries 4/0x27/0x28)		0x18	0056dd87	0x56de66 0x56e0f1
+0x44c	S2C	world	teleporter NPC offer (destinations + costs)	FUN_00479d4c			
+0x44d	S2C	world	open teleport panel (list with counters)	FUN_00470f83			
+0x44e	both	world	warp / teleport (request and result)	FUN_00473548	0x28/0x2c	00479d4c 00487809 0048796a 0048cd72 0051c4a7 00535cb8 0053f3fa 0056dd87 0056fee1 0057349b 005ad62b	0x479ddf 0x487841 0x4879fe 0x48cf0c 0x51c4fb 0x535e76 0x535f24 0x53f6dc 0x56e123 0x56ff93 0x573633 0x5ad761
+0x44f	S2C	world	warp / scene change with scene data block	FUN_00473ab5			
+0x450	both	combat	channelled interaction on another unit (capture/rescue cast)	FUN_0047963d	0x1c	00462f64 0046316b	0x463017 0x4631b4
+0x451	both	world	interact with object/unit start/stop	FUN_004750f0	0x18	00462d41 00462db9 00462eea 0046307a 004630f4 00487809	0x462d74 0x462ea4 0x462f1d 0x4630ad 0x463127 0x4878e8 0x48791e
+0x452	S2C	items	shop price-rate update	FUN_00470d80			
+0x453	S2C	world	unit stat/appearance refresh	FUN_004732fd			
+0x454	C2S	items	inventory sort (ItemSort)		0x58	004e1653	0x4e176b
+0x455	C2S	social	guild create		0x1e8	0055335a	0x5537ff
+0x456	both	social	guild disband	FUN_004799cf	0x18	00557cdc	0x55801d
+0x457	S2C	social	guild info (with my member index)	FUN_004712a6			
+0x458	both	social	guild info (no member index) / request	FUN_004712f3	0x18	004b42c5	0x4b432e
+0x45b	both	social	guild invite / member added	FUN_0047133c	0x58	004b500f 00557cdc	0x4b509c 0x557d88
+0x45c	both	social	guild kick/leave	FUN_004713d9	0x58	00557cdc	0x557e38
+0x45d	S2C	social	guild member field update	FUN_0047140c			
+0x45e	both	social	guild cargo (warehouse) open/close	FUN_004778da	0x2c4	005523e8 0055247e	0x55243f 0x5524d0
+0x45f	both	social	guild cargo item move	FUN_00471451	0x2ec	005525c2 005527ec 005794d3	0x552732 0x55293e 0x552c20 0x552d5e 0x57a03c
+0x460	both	social	guild upgrade/donate (funds)	FUN_0047146b	0x28	0055231e	0x552370
+0x461	both	social	guild member rank change	FUN_004714d2	0x70	00557cdc	0x557f76
+0x462	both	social	guild settings	FUN_00471501	0x1c	00559a59	0x55aade
+0x463	C2S	social	guild command (purpose unclear)		0x14	00557cdc	0x5580a4
+0x464	C2S	social	guild notice edit		0xd4	0055789c 00559a59	0x557982 0x55a9c5
+0x465	both	social	guild ether trade (buy/sell)	FUN_00476a53	0x30	00559a59	0x55a77f 0x55a7c2
+0x466	both	social	guild war invite	FUN_00479ad8	0x44	00559a59	0x55b1d2
+0x467	C2S	social	guild war invite answer		0x44	0051238b	0x51240a
+0x468	both	social	guild stock/share trade (variant A)	FUN_00471530	0x48	0054f172 00550824	0x54f218 0x550c0c
+0x469	both	social	guild stock/share trade (variant B)	FUN_00471530	0x48	0054f172 00550824	0x54f290 0x550c9b
+0x46a	both	social	guild dividend	FUN_00476c02	0x48	00559a59	0x55ac57
+0x46b	C2S	pvp	custom game: create room		0xc8	00542175 00542b01	0x5425c9 0x542bf8
+0x46c	C2S	pvp	custom game: room list request		0x18	00542a5e 00542b01	0x542ad1 0x542bac
+0x46d	S2C	pvp	custom game room list	FUN_00471696			
+0x46e	both	pvp	custom game join / rejoin	FUN_004716c5	0x18	00540814 00542b01	0x540871 0x5408a6 0x542c57
+0x46f	C2S	pvp	custom game: invite by name		0x3c	00541c21	0x541cce
+0x470	both	pvp	match queue (state push and register/cancel)	FUN_004705ac	0xec	00428e81 005360a0 005362e8 00571c20 00571e3a	0x428eca 0x53614f 0x5363e8 0x571c5f 0x571f12
+0x471	C2S	pvp	match team: invite by name		0x3c	0053623e	0x536289
+0x472	S2C	pvp	match team invite / team-state push	FUN_004717d1			
+0x473	C2S	pvp	nation info request (world map)		0x18	0051f196 0057867a	0x51f67b 0x5787a4
+0x474	C2S	pvp	nation info panel request		0x18	00534aaa	0x534b08
+0x475	S2C	pvp	per-nation war data	FUN_00471791			
+0x476	S2C	pvp	war statistics block	FUN_004717b1			
+0x479	S2C	pvp	fort record update	FUN_00471883			
+0x47a	C2S	world	warp to fort/field via world map (with channel)		0x24	005275df 00532f62 0057349b	0x5276c1 0x534163 0x5737f1
+0x47b	S2C	pvp	set my mapfort	FUN_0047069f			
+0x47c	S2C	pvp	war result / season block	FUN_00471948			
+0x47e	C2S	pvp	dungeon / instance entry request		0x18	00529cf6 0057349b	0x529d68 0x5735d5
+0x47f	both	items	expand bag capacity	FUN_00470240	0x18	005629d5 005794d3	0x562b06 0x579907
+0x481	S2C	pvp	dungeon entry panel data	FUN_004719d5			
+0x482	C2S	social	inspect player request		0x18	005714b0	0x57156b
+0x483	S2C	social	inspect player result	FUN_00471a4e			
+0x484	C2S	items	jewel shop buy		0x1c	005648f8	0x5650fe
+0x485	C2S	quests	request achievement list		0x18	0052f2a5	0x52f2df
+0x486	S2C	quests	achievement table	FUN_00470731			
+0x487	C2S	quests	claim achievement reward		0x18	0052f30b	0x52f418
+0x488	S2C	quests	achievement table + jewel balance	FUN_00470763			
+0x489	S2C	quests	achievement(s) completed notice	FUN_00479c30			
+0x48a	C2S	quests	claim win/affect reward		0x18	0052cf63	0x52cfb1
+0x48b	S2C	quests	affect reward result	FUN_00476fa7			
+0x48c	C2S	world	world-map location action (warp/move to location)		0x18	00578c17	0x578d39
+0x48d	S2C	pvp	match scoreboard / battle result	FUN_00471a6d			
+0x48e	C2S	quests	quest accept / complete		0x18	0055c84c 00597990 0059a36b	0x55c9bf 0x597a08 0x59a463
+0x48f	C2S	quests	quest objective/choice action		0x18	00597a70	0x597ab3
+0x490	S2C	quests	quest list (full)	FUN_0047529d			
+0x491	S2C	quests	quest slot update	FUN_004752b3			
+0x492	C2S	quests	quest reward/item choice		0x1c	00597b0e 00597c31	0x597be3 0x597cfa
+0x493	both	items	exchange decomposition points for item	FUN_00471b4e	0x484	005794d3	0x579bb7
+0x494	C2S	items	save quick-slot bar		0x28	005125e8	0x512613
+0x495	C2S	system	GM command		0x118	00521194 005216d6 00521bfa 0057ed4c	0x52120c 0x5218bd 0x521d6c 0x521e38 0x521ec6 0x521f54 0x521fe2 0x522068 0x52218f 0x522259 0x5222d2 0x522348 0x522395 0x57ee58
+0x496	S2C	system	open GM tool	FUN_00471f92			
+0x498	C2S	social	mail/item list action (dialog 0x45)		0x30	0053a7c2	0x53a819
+0x499	both	session	buy character slot (character select)	FUN_0047630a	0x20	004935a7	0x49361c
+0x49b	S2C	world	batch entity state events	FUN_00470508			
+0x49c	both	social	guild war: request eligibility	FUN_004707c5	0x18	0056dd87	0x56e27f
+0x49d	C2S	social	guild war: submit request		0x24	0052892d	0x528b07
+0x49e	C2S	pvp	fort: collect tax		0x1c	00532f62	0x533b87
+0x4a0	C2S	items	sort bag 6		0x6c	004e17f2	0x4e18c8
+0x4a1	C2S	items	use item after cast bar		0x18	00546fb0	0x5470a4
+0x4a2	S2C	combat	entity stats / equipment refresh	FUN_004752cb			
+0x4a3	C2S	quests	buy quest slot page		0x18	0055c84c	0x55c942
+0x4a4	S2C	quests	quest page purchase result	FUN_00475412			
+0x4a5	C2S	pvp	fort level up		0x20	00532f62	0x533c35
+0x4a6	C2S	pvp	fort facility purchase		0xd0	00532bce	0x532ce2
+0x4a7	C2S	items	socket jewel equip / unequip		0x1c	00545aa1 00546730	0x545b89 0x546a6f
+0x4a8	C2S	items	jewel upgrade / item craft		0x58	005452af	0x545431
+0x4a9	S2C	items	special slot item update	FUN_004704c8			
+0x4aa	both	items	hero gacha draw	FUN_00472798	0xcc	00514328 005648f8	0x5149a2 0x564e2c 0x5653ee
+0x4ac	both	social	party command	FUN_00471fcc	0x40	0052646e 005274c0 0057e777 00581078 005cf655	0x5264f7 0x526549 0x526581 0x527502 0x57e870 0x58218c 0x5cf872
+0x4ad	S2C	social	party member list	FUN_004770a1			
+0x4b1	C2S	items	set decomposition mode		0x18	00579420	0x579497
+0x4b2	S2C	items	decomposition result	FUN_00471c88			
+0x4b3	S2C	items	decomposition points / mode	FUN_004707e8			
+0x4b4	C2S	combat	TP skill selection		0x14	0052d716	0x52d780
+0x4b5	S2C	pvp	war score/status update	FUN_00471e7e			
+0x4b6	C2S	combat	action on a target unit (with position)		0x1c	004f98ac 004fa44d 00586bf6	0x4f997b 0x4fa8ff 0x586c9d
+0x4b7	C2S	system	reset/refresh list		0x18	005699dd	0x569a38
+0x4b8	S2C	items	item shop open/data	FUN_00471022			
+0x4b9	C2S	items	medal/fame shop purchase		0x28	00569e93	0x56a15f
+0x4ba	C2S	combat	target/point command		0x20	004a9930	0x4a9d24
+0x4bc	C2S	social	guild storage item move		0x38	00553cdd 00553e5e 005794d3	0x553e05 0x554136 0x57a1c5 0x57a6f1
+0x4bd	S2C	social	guild info block	FUN_004715b6			
+0x4be	C2S	social	guild action		0x18	00559a59	0x559c12
+0x4bf	S2C	social	guild status update	FUN_00471611			
+0x4c0	C2S	social	guild request with value		0x24	00559a59 0057349b	0x55a5e1 0x573565
+0x4c1	C2S	system	numeric input submit		0x18	005634df	0x563559 0x563563
+0x4c2	S2C	items	money update	FUN_004702af			
+0x4c3	C2S	pvp	fort mastery item		0x1c	00532f62	0x533ddf
+0x4c5	S2C	social	unit guild mark update	FUN_00470848			
+0x4c6	S2C	pvp	war team stats	FUN_004711d4			
+0x4c7	C2S	social	guild member action		0x20	004b4d75	0x4b4e04
+0x4c8	S2C	social	guild/panel action result	FUN_00476d05			
+0x4ca	C2S	world	request unknown unit (+0x10 u32 uid)		0x18	00475654	0x475784
+0x800	both	social	chat message	FUN_00477be3	0x13c	004637e3 00580a68	0x463867 0x580e7a
+0x803	S2C	world	spawn unit (full) [C2S builds are local debug fakes]	FUN_00477d13			
+0x804	S2C	world	unit full refresh / respawn at position	FUN_00472f4d			
+0x805	S2C	world	spawn unit (compact)	FUN_0047858b			
+0x806	S2C	world	remove/kill unit [C2S builds are local debug fakes]	FUN_00470223			
+0x808	both	social	mail recipient lookup	FUN_0047056b	0x48	0053ca95	0x53d0f4
+0x809	C2S	social	send mail		0x328	0053d182	0x53d876
+0x80a	C2S	social	take attachments from selected mails		0x68	0053e862	0x53e8dd
+0x80b	S2C	social	new mail notice	FUN_00476dd6			
+0x80c	both	social	read mail	FUN_00474f00	0x20	0053dfdb	0x53e0a1
+0x80d	C2S	social	take one attachment / pay bill		0x18	0053e862	0x53eba6 0x53ec8e
+0x80e	C2S	social	take money attachment		0x18	0053e862	0x53ed4f
+0x80f	S2C	social	mail update	FUN_00474f00			
+0x811	C2S	social	friend invite		0x58	004b6b31 00531320	0x4b6baa 0x5313bb
+0x812	C2S	social	friend invite answer		0x28	00530b0a	0x531164 0x5311fd
+0x813	S2C	social	friend invite received	FUN_00476ed3			
+0x816	both	pvp	fort donation	FUN_00476e53	0x1c	005293ab	0x529541
+0x2000	S2C	world	enter world (char accepted; also in-game warp)	FUN_00472272			
+0x2001	S2C	session	character list	FUN_004760b2			
+0x2003	S2C	system	system message popup	FUN_00470124			
+0x2004	S2C	session	delete character result	FUN_00470140			
+0x2009	S2C	session	profile block, part 2	FUN_004700e3			
+0x200f	both	items	jewel (cash) balance refresh (both dirs)	FUN_004754d5	0x40	00429671 004935a7	0x4296e0 0x4936a3
+0x2013	S2C	social	own guild-membership update	FUN_0047018b			
+0x2015	S2C	social	guild joined / guild data	FUN_00471216			
+0x4200	C2S	session	game-server login (request character list)		0x60	0048d666 004958d2	0x48dd2b 0x4959c5 0x4960c7
+0x4201	S2C	session	login result	FUN_00470032			
+0x4202	C2S	session	force/retry login after login error 7 (account+password, version 0x41e)		0x60	00494da9	0x494dee
+0x4207	C2S	session	token login request		0x9c	004958d2	0x49595b

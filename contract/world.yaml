@@ -1,0 +1,788 @@
+# Warmonger / Crush Online: client<->server contract, WORLD subsystem
+# (world entry, scene/map change and warps, unit spawn/despawn/refresh, movement, camera,
+#  world map / field status, scene objects).
+#
+# Conventions
+# - All offsets are from packet start; payload begins at +0x10. Header: u16 len | u16 0xA53C |
+#   u16 opcode | u16 extra | u32 tick | u32 key.
+# - Server packets: key 0 (plaintext), tick = monotonic ms (0 is accepted), length > 0x10 and
+#   <= 0x1010 (ring-slot size). The dispatcher FUN_0047a36c checks only magic and len > 0x10;
+#   there is NO per-opcode size check, so "min_size" below = the highest offset the handler reads.
+# - C->S packets: extra = own uid (acct+0xec / unit+0x35e) for every in-world packet; payload
+#   words obfuscated as ~(w - key) when key != 0.
+# - uid ranges: players 1..0x3F6, monsters/NPCs 0x3F7..0x2B05 (client debug/script mobs 0x2B06+,
+#   corpse rename target 0x521A). Handlers branch on uid < 0x3F7 (player) vs >= 0x3F7.
+# - acct = *DAT_00847ac8. Scene state: acct+0x63c warp struct {i32 x*100, i32 y*100, i32 z*100,
+#   u16 0x9f, i8 mapfort, u8 fortTeam, u32 mapGuild, i32 mapid, i32 sceneidx, 100 x {u16 id,i8,u8}};
+#   acct+0x652 mapid, +0x656 sceneidx, +0x64c mapfort, +0x64d fort team, +0x64e mapGuild,
+#   +0x64a channel, +0x65a scene-object (gadget) state table.
+# - "rec" = unit record (unit+0x3a0, 0x65f bytes); "stats block" = 0x5c bytes at rec+0x443
+#   {u32 HP, u32 MP, u32 maxHP, u32 maxMP, ..., +0x1c i16 attack speed, +0x1e i16 attack range,
+#   +0x36 i16 move speed (x0.01 units/s; 450 = 4.5), +0x40 i16 revive delay s, ...}.
+# - Buff list = u32 bitmask of 32 slots + one packed 12-byte entry per set bit (u16 buff id first).
+# Sources: decompiled.c / disasm.txt (re-checked for this file), spec/world.md, movement.md,
+# loading.md, group00..03.md, combat.md, monsters.md, contract/examples.md, live server
+# server/{handlers,world,ai,loot}.py (live-tested = confirmed working).
+
+opcodes:
+
+  # ------------------------------------------------------------------ world entry
+  - opcode: 0x2000
+    name: enter_world
+    direction: s2c
+    s2c:
+      min_size: 0x704
+      extra: "the player's own unit uid (1..0x3F6); stored to entry+0x1ae, net+0xc, acct+0xec; every later C->S carries it"
+      fields:
+        - {offset: 0x10, type: u64, name: char_id, values: "must equal the u64 id of one of the 0x2001 slots (FUN_0042843a) else the WHOLE packet is silently ignored", notes: "becomes selected char acct+0x600/0x604"}
+        - {offset: 0x18, type: i16, name: sceneidx, values: "0..0x7FFF; instance id. Keep identical in later in-scene 0x44e/0x44f", notes: "acct+0x656 = (int)(short), SIGN-extended; 0x44e/0x44f compare it with a ZERO-extended u16 and 0x47b with a u32, so a value >= 0x8000 never matches and every later warp becomes a full reload (verified FUN_00472272 vs FUN_00473548)"}
+        - {offset: 0x1a, type: i16, name: mapid, values: "map table id (FUN_004e1c8d), 0..0x7FFF; 0x78 = fortress map special UI", notes: "acct+0x652 (sign-extended); drives UI/fort tables only, never terrain"}
+        - {offset: 0x1c, type: f32, name: x, values: "world x; must lie in an existing Map/ZPxx_yy_00.zp piece with navmesh, never (0,0)", notes: "stored as i32 x*100 at acct+0x63c"}
+        - {offset: 0x20, type: f32, name: z, values: "world z (same rule)", notes: "y forced 0, taken from terrain"}
+        - {offset: 0x24, type: i8, name: team, values: "0..3 nation/team", notes: "own entry rec+0x655; team table acct+0x3628+idx*0x1a50"}
+        - {offset: 0x25, type: i8, name: mapfort, values: "-1 = none, 0..19 fort index on this map", notes: "acct+0x64c"}
+        - {offset: 0x26, type: "bytes[2]", name: pad, values: "0", notes: "unused"}
+        - {offset: 0x28, type: "bytes[0x6b0]", name: profile, values: "zeros accepted", notes: "copied verbatim to acct+0x27cc; +0x2c container2 8x16B (= 0x423), +0xac inventory 70x16B (= 0x424), +0x50c u16[8] quick-slot codes, +0x51c u8[8] quick-slot types (0 item,1 skill), +0x524 15x0x18 quest slots, +0x68c 0x28B quest flags, +0x6b4..+0x6c0 u32 title fields (= 0x4a9), +0x6c4 u16,+0x6c6 u16,+0x6c8 u32 quest counters"}
+        - {offset: 0x6d8, type: i16, name: item_use_gate, values: "unknown semantics; compared with an item-table byte", notes: "acct+0xb1a8"}
+        - {offset: 0x6da, type: u8, name: guild_grade, values: "", notes: "own rec+0x656"}
+        - {offset: 0x6db, type: u8, name: fort_owner_team, values: "team owning this map/fort", notes: "acct+0x64d"}
+        - {offset: 0x6dc, type: u32, name: unread_mail, values: "", notes: "acct+0xb298/0xb29c"}
+        - {offset: 0x6e0, type: u16, name: channel, values: "0-based channel index (UI shows +1)", notes: "acct+0x64a; 0x47a refuses the current one"}
+        - {offset: 0x6e4, type: u32, name: map_guild, values: "guild id owning this map, 0 = none", notes: "acct+0x64e; 0x47a world-map warp needs own guild == this"}
+        - {offset: 0x6e8, type: u32, name: currency_a, values: "", notes: "acct+0x634"}
+        - {offset: 0x6ec, type: u32, name: jewel_bonus, values: "", notes: "acct+0x630"}
+        - {offset: 0x6f0, type: u32, name: jewels, values: "", notes: "acct+0x638"}
+        - {offset: 0x6f4, type: u32, name: threshold_b1ac, values: "unknown", notes: "acct+0xb1ac (FUN_00567f59/005681bc)"}
+        - {offset: 0x6f8, type: u32, name: server_time, values: "unix seconds", notes: "time resync"}
+        - {offset: 0x6fc, type: u32, name: fort_extra_a, values: "", notes: "fort record [team][mapfort]+0xa8, only if 0 <= mapfort < 20"}
+        - {offset: 0x700, type: u32, name: fort_extra_b, values: "", notes: "fort record +0xac, same condition"}
+      accepted_if: "char_id matches a 0x2001 slot. Out of game: switches char-select -> game scene, builds the OWN avatar locally from the slot record (no self 0x803), creates quest manager. In game (resent): kills the running load and starts a NEW load = full reload; do not resend 0x2000 as a warp."
+    server_reply: "n/a (it IS the reply to C->S 0x406 {+0x10 u64 char id}, extra = session tag). Must be followed immediately by 0x41f (stats; HP > 0 revives the avatar which is built dead with speed 0), then optional 0x421/0x422/0x41e/0x424/0x423/0x2009/0x490/0x486, then 0x803/0x805(+0x804) for every unit in view."
+    client_effect: "Scene 4 (game) + CLoadingProcess (ends by itself at step 0x19; 1 Hz reload loop if the position is on a missing terrain piece). Avatar built from slot record; profile block applied; UI refresh 0x44091c(7)."
+    handler: FUN_00472272
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "group03/loading.md traced; live-tested by server handlers.enter_world (0x704 bytes, sceneidx/mapid 87, team, mapfort -1, time). Verifier re-read FUN_00472272: profile copy 0x1ac dwords +0x28 -> acct+0x27cc, all listed acct stores match; note +0x6f8 time resync (FUN_0046ff6d) runs BEFORE the char-id check, so it applies even when the packet is otherwise ignored."
+
+  # ------------------------------------------------------------------ unit spawn / despawn / refresh
+  - opcode: 0x803
+    name: spawn_unit_full
+    direction: s2c
+    s2c:
+      min_size: "player 0xf0 + 12*popcount(buffmask) (send 0x270); monster 0x40 + 12*popcount (send 0x1c0)"
+      extra: "uid of the unit; branch: < 0x3F7 player layout, >= 0x3F7 monster/NPC layout. Same uid as an existing unit = in-place update (no re-create, no reposition)."
+      fields:
+        - {offset: 0x10, type: "char[40]", name: name, values: "ASCII NUL-padded", notes: "PLAYER branch only; rec+0x20b and widened to rec+0x1b3"}
+        - {offset: 0x38, type: f32, name: x, values: "world", notes: "player branch"}
+        - {offset: 0x3c, type: f32, name: z, values: "world", notes: "player branch"}
+        - {offset: 0x40, type: u16, name: class_id, values: "non-zero UnitDB id, else packet ignored", notes: "player branch; rec+0x239"}
+        - {offset: 0x42, type: u16, name: battle_side, values: "0 or match team/party; non-zero on both overrides team for friend/foe", notes: "player; rec+0x659"}
+        - {offset: 0x44, type: i16, name: guild_id, values: "0 = none", notes: "player; rec+0x27f"}
+        - {offset: 0x46, type: u8, name: heading, values: "0..255 = full turn", notes: "player"}
+        - {offset: 0x47, type: u8, name: spawn_fx, values: "0 none; 1..3 play appear action 0x3d", notes: "player"}
+        - {offset: 0x48, type: u8, name: guild_grade, values: "", notes: "player; rec+0x656"}
+        - {offset: 0x49, type: u8, name: level, values: ">= 1", notes: "player; rec+0x237"}
+        - {offset: 0x4a, type: i8, name: team, values: "0..3", notes: "player; rec+0x655"}
+        - {offset: 0x4b, type: u8, name: fort_role, values: "0 (value 4 tested by UI)", notes: "player; rec+0x64c"}
+        - {offset: 0x4c, type: u8, name: flag_byte, values: "0; bits 0x80/0x02 tested by nameplate/minimap", notes: "player; rec+0x64b"}
+        - {offset: 0x50, type: u32, name: status_flags, values: "0; 0x200 visual state, 0x80/0x2000/0x4000 mount-type", notes: "player; rec+0x64d"}
+        - {offset: 0x54, type: u32, name: appearance_a, values: "copy of slot rec+0x38", notes: "player"}
+        - {offset: 0x58, type: u32, name: appearance_b, values: "copy of slot rec+0x3c", notes: "player"}
+        - {offset: 0x5c, type: u16, name: territory_buff, values: "0", notes: "player; FUN_0046fe22 -> rec+0x297"}
+        - {offset: 0x60, type: "bytes[0x5c]", name: stats, values: "HP (+0x60) must be > 0 else created dead; move speed i16 at +0x96", notes: "player; rec+0x443"}
+        - {offset: 0xbc, type: "bytes[0x20]", name: equipment, values: "2 x 16B items, copy slot rec+0x40", notes: "player"}
+        - {offset: 0xdc, type: "bytes[0x10]", name: costume, values: "copy slot rec+0x60", notes: "player"}
+        - {offset: 0xec, type: u32, name: buff_mask, values: "bitmask", notes: "player"}
+        - {offset: 0xf0, type: "struct[n]", name: buffs, values: "12 B each, packed in bit order", notes: "player"}
+        - {offset: 0x10, type: u16, name: template_id, values: "non-zero UnitDB id else ignored", notes: "MONSTER/NPC branch; rec+0x239"}
+        - {offset: 0x12, type: u8, name: level, values: "", notes: "monster"}
+        - {offset: 0x13, type: u8, name: category, values: "0 = use UnitDB +0x8a (1 monster, 4/9/50 NPC kinds)", notes: "monster; send 0"}
+        - {offset: 0x14, type: f32, name: x, values: "world", notes: "monster"}
+        - {offset: 0x18, type: f32, name: z, values: "world", notes: "monster"}
+        - {offset: 0x1c, type: u32, name: status_flags, values: "0", notes: "monster"}
+        - {offset: 0x20, type: u32, name: hp, values: "> 0 (0 spawns a corpse)", notes: "monster"}
+        - {offset: 0x24, type: u32, name: max_hp, values: "", notes: "monster"}
+        - {offset: 0x28, type: u32, name: mp, values: "", notes: "monster"}
+        - {offset: 0x2c, type: u32, name: max_mp, values: "", notes: "monster"}
+        - {offset: 0x30, type: u16, name: stat_1c, values: "0", notes: "monster; stats +0x1c (attack speed)"}
+        - {offset: 0x32, type: u8, name: heading, values: "0..255", notes: "monster"}
+        - {offset: 0x33, type: u8, name: spawn_fx, values: "0/1..3", notes: "monster"}
+        - {offset: 0x34, type: i8, name: team, values: "0 neutral/attackable by all, 1..3 nation", notes: "monster"}
+        - {offset: 0x36, type: u16, name: battle_side, values: "0", notes: "monster"}
+        - {offset: 0x38, type: i16, name: guild_id, values: "0 (fort guards)", notes: "monster"}
+        - {offset: 0x3a, type: u16, name: territory_buff, values: "0", notes: "monster"}
+        - {offset: 0x3c, type: u32, name: buff_mask, values: "", notes: "monster"}
+        - {offset: 0x40, type: "struct[n]", name: buffs, values: "12 B each", notes: "monster"}
+      accepted_if: "class/template id non-zero and present in UnitDB (FUN_00499180) else silently dropped. Monster branch carries NO move speed (stats +0x36 = 0) and no name (UnitDB row+8)."
+    server_reply: "n/a"
+    client_effect: "Creates the unit (model + movement controller synchronously, so 0x416 may follow immediately); buffs, UI unit-added event. Update path rewrites fields and refreshes model; for the own uid also HP/revive sync + HUD."
+    handler: FUN_00477d13
+    send_sites: ["FUN_0051c52e (local debug fake)", "FUN_005ad62b (dead script code, local)"]
+    confidence: high
+    verified: true
+    evidence: "world.md full trace 0x477d56..0x4781ee; examples.md A1/A2 local builds; live server world.spawn (monster 0x1c0) works."
+
+  - opcode: 0x805
+    name: spawn_unit_compact
+    direction: s2c
+    s2c:
+      min_size: "player 0x68, monster 0x38"
+      extra: "uid; same player/monster branch rule and update-in-place rule as 0x803"
+      fields:
+        - {offset: 0x10, type: f32, name: x, values: "", notes: "both"}
+        - {offset: 0x14, type: f32, name: z, values: "", notes: "both"}
+        - {offset: 0x18, type: u8, name: heading, values: "", notes: "both"}
+        - {offset: 0x19, type: u8, name: category, values: "0", notes: "monster only"}
+        - {offset: 0x1a, type: u8, name: level, values: "", notes: "both"}
+        - {offset: 0x1b, type: i8, name: team, values: "", notes: "both"}
+        - {offset: 0x1c, type: u16, name: battle_side, values: "", notes: "both"}
+        - {offset: 0x1e, type: u16, name: class_or_template, values: "required non-zero UnitDB id", notes: "both"}
+        - {offset: 0x20, type: u32, name: appearance_a, values: "", notes: "player"}
+        - {offset: 0x22, type: i16, name: guild_id, values: "", notes: "monster"}
+        - {offset: 0x24, type: u32, name: "appearance_b (player) / status_flags (monster)", values: "", notes: ""}
+        - {offset: 0x28, type: "u8 (player) / u32 (monster)", name: "guild_grade (player) / hp (monster)", values: "monster HP > 0", notes: ""}
+        - {offset: 0x2a, type: i16, name: guild_id, values: "", notes: "player"}
+        - {offset: 0x2c, type: u32, name: "status_flags (player) / max_hp (monster)", values: "", notes: ""}
+        - {offset: 0x30, type: u32, name: "hp (player) / mp (monster)", values: "player HP > 0", notes: ""}
+        - {offset: 0x34, type: u32, name: "max_hp (player) / max_mp (monster)", values: "", notes: ""}
+        - {offset: 0x38, type: u32, name: mp, values: "", notes: "player"}
+        - {offset: 0x3c, type: u32, name: max_mp, values: "", notes: "player"}
+        - {offset: 0x40, type: "char[40]", name: name, values: "", notes: "player"}
+      accepted_if: "as 0x803. No spawn_fx, no equipment, no buffs, speed 0."
+    server_reply: "n/a"
+    client_effect: "Creates the unit with base model; follow with 0x41f/0x804 for speed (players also need 0x426/0x803 for equipment)."
+    handler: FUN_0047858b
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "world.md layout (supersedes group03); server world.spawn_compact builds it (not used live)."
+
+  - opcode: 0x804
+    name: unit_refresh_reposition
+    direction: s2c
+    s2c:
+      min_size: "0xbc + 12*popcount(mask at +0xb8)"
+      extra: "uid of an EXISTING unit (unknown uid = ignored, never creates); works for the own uid too"
+      fields:
+        - {offset: 0x10, type: f32, name: x, values: "", notes: "snaps (FUN_004fee28) if > 5 units from the current position or unit y < -100"}
+        - {offset: 0x14, type: f32, name: z, values: "", notes: ""}
+        - {offset: 0x18, type: u8, name: heading, values: "", notes: ""}
+        - {offset: 0x19, type: i8, name: team, values: "", notes: "all units"}
+        - {offset: 0x1a, type: u16, name: battle_side, values: "", notes: "rec+0x659"}
+        - {offset: 0x1c, type: u32, name: status_flags, values: "", notes: "diffed by FUN_00470a7b"}
+        - {offset: 0x20, type: i16, name: guild_id, values: "", notes: "players only"}
+        - {offset: 0x22, type: u8, name: fort_role, values: "", notes: "players only; rec+0x64c"}
+        - {offset: 0x23, type: u8, name: level, values: "", notes: "all units"}
+        - {offset: 0x24, type: u8, name: guild_grade, values: "", notes: "players only"}
+        - {offset: 0x25, type: u8, name: flag_byte, values: "", notes: "players only; rec+0x64b"}
+        - {offset: 0x28, type: "bytes[0x5c]", name: stats, values: "HP first; move speed i16 at +0x5e; attack speed +0x44, range +0x46", notes: "all units"}
+        - {offset: 0x84, type: "bytes[0x20]", name: equipment, values: "", notes: "players"}
+        - {offset: 0xa4, type: "bytes[0x10]", name: costume, values: "", notes: "players"}
+        - {offset: 0xb4, type: u16, name: territory_buff, values: "", notes: "FUN_0046fe22"}
+        - {offset: 0xb8, type: u32, name: buff_mask, values: "", notes: ""}
+        - {offset: 0xbc, type: "struct[n]", name: buffs, values: "12 B packed", notes: ""}
+      accepted_if: "uid exists. HP > 0 on a dead unit revives it (FUN_004890cb -> FUN_00487e82); HP < 1 kills it."
+    server_reply: "n/a"
+    client_effect: "Full stat/appearance refresh, reposition, revive. The generic respawn packet; the way to give monsters a move speed after 0x803."
+    handler: FUN_00472f4d
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "world.md/combat.md; live server world.refresh (0xbc, speed 300) after every 0x803 and for respawns; works."
+
+  - opcode: 0x806
+    name: remove_or_kill_unit
+    direction: s2c
+    s2c:
+      min_size: 0x14
+      extra: "uid (the own unit is never affected)"
+      fields:
+        - {offset: 0x10, type: u32, name: mode, values: "1 = death pose (if not dead) then fade-remove 4 s; 2 = remove immediately (left view/logout); 5 = die in place, corpse stays (HP set 0); 6 = if alive (unit+0x5f8 > 0): hide and rename uid to 0x521A, removed +1.5 s (frees the uid for an immediate re-spawn), else as 1; other = ignored", notes: "FUN_0044e059"}
+      accepted_if: "uid exists and is not the own unit. Mode 6 ignored for uid > 0x5218 (uid 0x5217/0x5218: removal timer set but not renamed). Mode 1 (and mode 6 on a dead unit) does NOTHING unless the game scene is active (DAT_0084e3ec); mode 5 and 2 work in any scene."
+    server_reply: "n/a"
+    client_effect: "Death animation and/or removal from the unit map."
+    handler: FUN_00470223
+    send_sites: ["FUN_005ad62b (dead script code, local)"]
+    confidence: high
+    verified: true
+    evidence: "FUN_0044e059 re-read for this file; examples.md A1; live server world.remove(uid, 2) on 0x4ca miss."
+
+  - opcode: 0x43e
+    name: bulk_death_fade_or_remove
+    direction: s2c
+    s2c:
+      min_size: "0x14 + 4*n (max 30 entries -> 0x8a)"
+      extra: "unused (0)"
+      fields:
+        - {offset: 0x10, type: u16, name: unused, values: "0", notes: "not read"}
+        - {offset: 0x12, type: "struct[30]", name: entries, values: "{i16 uid, u8 action, u8 pad}; list ends at uid 0", notes: "action 1 = death pose (if not dead) + fade-remove (as 0x806 mode 1); 2 = remove immediately; others ignored"}
+      accepted_if: "each uid must exist and not be the own unit; stops at the first uid 0 or after 30."
+    server_reply: "n/a"
+    client_effect: "Batched despawn. NOT a revive (group00 was wrong)."
+    handler: FUN_00471087
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00471087 re-read: entry ptr starts +0x14 with uid at -2; action 1 -> FUN_00488565+FUN_00487e17, 2 -> FUN_0044cf52(uid,1,0)."
+
+  - opcode: 0x49b
+    name: bulk_unit_state_events
+    direction: s2c
+    s2c:
+      min_size: 0x332
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u16, name: unused, values: "0", notes: "not read"}
+        - {offset: 0x12, type: "struct[200]", name: entries, values: "{i16 uid (<= 0 skipped), i8 mode, u8 pad}", notes: "each becomes a synthetic 0x806 {extra=uid, +0x10 = (i32)mode} -> modes 1/2/5/6 as 0x806"}
+      accepted_if: "fixed 200-entry loop; send the full 0x332 bytes zero-padded."
+    server_reply: "n/a"
+    client_effect: "Up to 200 kill/remove events at once (area clear, scene teardown)."
+    handler: FUN_00470508
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00470508 re-read; examples.md A3."
+
+  - opcode: 0x43f
+    name: bulk_position_snapshot
+    direction: s2c
+    s2c:
+      min_size: 0x230
+      extra: "unused"
+      fields:
+        - {offset: 0x08, type: u32, name: tick, values: "header tick; copied into every synthetic 0x416", notes: ""}
+        - {offset: 0x10, type: u32, name: unknown_10, values: "unknown (not read)", notes: ""}
+        - {offset: 0x14, type: "struct[40]", name: moves, values: "{i16 uid, u16 speed, f32 x, f32 z}; uid > 0 and != own uid", notes: "each -> synthetic 0x416 {heading 0x7f, type 0x20, speed, x, z}: unit walks to (x,z) at speed"}
+        - {offset: 0x1f4, type: "struct[15]", name: removals, values: "{i16 uid, i8 mode, u8}; uid > 0", notes: "each -> synthetic 0x806 with that mode"}
+      accepted_if: "fixed loops of 40 and 15 entries; zero entries skipped."
+    server_reply: "n/a"
+    client_effect: "Batched movement for server-driven units plus left-view removals."
+    handler: FUN_004751ca
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "world.md, examples.md A3 (site 0x475247 / 0x475281)."
+
+  - opcode: 0x453
+    name: unit_stats_buffs_refresh
+    direction: s2c
+    s2c:
+      min_size: "0x78 + 12*popcount(mask)"
+      extra: "uid (if no unit has that uid, the stats go to the OWN selected character entry FUN_00428494 when its +0x1ae == uid, i.e. stats sent for the own uid before the avatar exists; any other unknown uid is dropped)"
+      fields:
+        - {offset: 0x10, type: u32, name: status_flags, values: "rec+0x64d; bit 0x200 toggles an effect", notes: "FUN_00470a7b diffs"}
+        - {offset: 0x14, type: "bytes[0x5c]", name: stats, values: "stats block (HP first)", notes: "FUN_00472103 -> FUN_004bc97c (same path as 0x41f: speed, HP sync/revive)"}
+        - {offset: 0x70, type: u32, name: unknown_70, values: "unknown (not read)", notes: ""}
+        - {offset: 0x74, type: u32, name: buff_mask, values: "32 slots", notes: ""}
+        - {offset: 0x78, type: "struct[n]", name: buffs, values: "12 B packed, ascending bit order -> buff slots rec+0x49f", notes: "FUN_0046fd59"}
+      accepted_if: "no checks beyond uid lookup."
+    server_reply: "n/a"
+    client_effect: "Updates stats, buff list and status-flag visuals of any unit (no position, no equipment)."
+    handler: FUN_004732fd
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004732fd re-read. +0x78 entries are buff slots (rec+0x49f), not equipment as group01 guessed. Verifier: FUN_00472103 fallback is FUN_00428494 (own char entry)."
+
+  - opcode: 0x4ca
+    name: request_unknown_unit
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: uid, values: "1..0x2B06, a unit the client has not spawned", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    server_reply: "To the sender: that unit's 0x803 (+0x804 for speed), or 0x803 + 0x420 HP 0 if it is a corpse, or 0x806 mode 2 if it no longer exists."
+    client_effect: "Sent only from the 0x411 hit handler when the ATTACKER uid is unknown and the own unit exists; rate-limited by a 100-entry cache with 50 s expiry (acct-relative +0xb09c/+0xb22c). Unknown targets and 0x416 for unknown uids do NOT trigger it."
+    handler: none
+    send_sites: [FUN_00475654]
+    confidence: high
+    verified: true
+    evidence: "disasm 0x4756c2..0x47579a re-read; live server world.unknown_unit."
+
+  # ------------------------------------------------------------------ movement / camera
+  - opcode: 0x416
+    name: move
+    direction: both
+    c2s:
+      size: 0x20
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u8, name: heading, values: "0..255 (angle = h*2pi/256)", notes: ""}
+        - {offset: 0x11, type: u8, name: type, values: "0x20 normal walk/run; 0x02 standing on a moving platform/CTrigger; 0x00 stopped (sent once when >= 1.5 units from last send); 0x01 stuck resync request (navmesh lookup failed ~5 s, repeats every 30 s, only while not loading); 0x04 clock-drift anti-cheat (timeGetTime vs _time drift > 15 s)", notes: ""}
+        - {offset: 0x12, type: u8, name: stance, values: "unit+0x38; 0x00/0xff flips, not used for movement", notes: ""}
+        - {offset: 0x13, type: u8, name: pad, values: "0", notes: ""}
+        - {offset: 0x14, type: u16, name: speed, values: "stats +0x36 (450 = 4.5 u/s)", notes: ""}
+        - {offset: 0x16, type: u16, name: pad2, values: "0", notes: ""}
+        - {offset: 0x18, type: f32, name: x, values: "predicted point ~0.5 s ahead on the path (or path end), not the current position; current position for type 0", notes: ""}
+        - {offset: 0x1c, type: f32, name: z, values: "", notes: ""}
+    s2c:
+      min_size: 0x20
+      extra: "uid of the unit to move"
+      fields:
+        - {offset: 0x10, type: u8, name: heading, values: "used as final facing (type 2, or type 0 with zero distance)", notes: ""}
+        - {offset: 0x11, type: u8, name: type, values: "0 = walk there and stop; 1 = snap/teleport (own unit); 2 = move + stick to platform, set heading at end; 0x10 = move; 0x20 = move (what 0x43f expands to); others dropped", notes: ""}
+        - {offset: 0x12, type: u8, name: stance, values: "", notes: ""}
+        - {offset: 0x14, type: u16, name: speed, values: "written to the unit's stats +0x36 each time; animation rate = speed*0.05", notes: ""}
+        - {offset: 0x18, type: f32, name: x, values: "destination", notes: ""}
+        - {offset: 0x1c, type: f32, name: z, values: "destination", notes: ""}
+      accepted_if: "game scene active, uid spawned, rec and movement controller (unit+0x368) present (else silently dropped). SIDE EFFECT (verifier, disasm 0x47295d..0x472994): if the unit is dead (unit+0x36c == 0) the handler first calls FUN_004890cb(unit, max(HP,1), MP), which REVIVES it (FUN_00487e82) unless unit+0x36d is set -- never send 0x416 for a corpse. Any unit (own included) that is not visible (unit+0xc == 0) with no load running and distance in (16,256] -> snap. Own unit: type 1 snaps; types 0/2/0x10/0x20 that path-find successfully push a BLANK command (zeroed, -1 markers) into the own movement queue (FUN_00461040/FUN_00460b41) rather than the destination -- effect unverified, probably cancels the local path, so do not send them for the own uid. Monsters (uid > 0x3F6) in a locked state (FUN_004b8824) and remote units with unit+0x5c0 set (knockback/cast lock) are dropped; other type values dropped."
+    server_reply: "C->S type 0x00/0x02/0x20: update the server position and forward the same 32 bytes (extra = mover uid, key 0) to every OTHER client that has the mover spawned; never echo to the sender. Type 1: reply to the sender only with S->C 0x416 type 1 and the authoritative (valid, on-navmesh) position. Type 4: log/ignore."
+    client_effect: "Remote units path-find (FUN_004fe276) and walk to (x,z). Own unit is simulated locally at 10 Hz with no acknowledgement; client sends every 0.5 s while moving, within 300 ms after a heading change > 0x23/256."
+    handler: FUN_004728ff
+    send_sites: [FUN_004bba89, FUN_0048d666, FUN_004156b0]
+    confidence: high
+    evidence: "movement.md/world.md; live server echoes off, answers type 1, AI drives monsters with S->C type 0/1/2."
+
+  - opcode: 0x417
+    name: camera_focus_report
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: f32, name: x, values: "world x of the free camera focus point; 0 when re-locked", notes: ""}
+        - {offset: 0x14, type: f32, name: z, values: "world z; 0 when re-locked", notes: ""}
+        - {offset: 0x18, type: u8, name: detached, values: "1 = camera detached/panning, 0 = camera locked back onto the avatar", notes: ""}
+        - {offset: 0x19, type: "bytes[3]", name: pad, values: "0", notes: ""}
+    server_reply: "none"
+    client_effect: "Sent by the camera object DAT_0084a7b0: once when the free-camera flag (camera+0xcc) is cleared (0,0,0), and while panning at most every 0.5 s (0x720d38) with detached = 1."
+    handler: none
+    send_sites: [FUN_00450acd, FUN_00450caf, FUN_004512cd]
+    confidence: high
+    verified: true
+    evidence: "disasm at 0x450b13/0x450f28/0x451751 re-read; live server ignores it."
+
+  # ------------------------------------------------------------------ warps / scene change
+  - opcode: 0x44e
+    name: warp
+    direction: both
+    c2s:
+      size: 0x28
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: npc_uid, values: "teleporter NPC / portal owner uid; 0 for map portals and world-map warps", notes: ""}
+        - {offset: 0x12, type: u16, name: pad, values: "0", notes: ""}
+        - {offset: 0x14, type: u32, name: destination, values: "0 = 'open the teleport offer' (NPC click); else destination id: map id (0x44c/0x44d list entry value), fort id (fortress entries, map 0x78), portal link id (trigger param), world-map location id", notes: ""}
+        - {offset: 0x18, type: u32, name: dungeon_id, values: "0 except the dungeon-entry panel (FUN_00535cb8: panel+0x28)", notes: "medium"}
+        - {offset: 0x1c, type: i32, name: cost, values: "tax/fee the client agreed to (0 = free); dungeon panel puts its selected index here", notes: ""}
+        - {offset: 0x20, type: u16, name: party_flag, values: "dungeon panel only: 1 if panel+0x1f8 +0x2a0 set (party/group entry), else 0", notes: "low"}
+        - {offset: 0x24, type: u16, name: worldmap_flag, values: "1 = sent from the WorldMap panel (msgbox 0x35), else 0", notes: "group01 placed this at +0x20; disasm writes [ebp-0x8] = +0x24"}
+      variants: "NPC click on category-4 NPC (FUN_0056fee1) / NPC menu teleport (FUN_0056dd87): {npc_uid} only. Offer confirm msgbox 0xc: FUN_00487809 sends {npc_uid, destination, cost}; FUN_0048cd72 sends {npc_uid, destination, cost = 0} (+0x1c explicitly zeroed, disasm 0x48cf1e) -- do not rely on +0x1c, derive the fee server-side. PanelTeleport pick (FUN_0053f3fa): {npc_uid, destination = entry value, cost 0}. Map portal trigger (FUN_0048796a: trigger param +0x8 must be 1, same trigger id (+0x0) throttled 3 s, not when the current map-table row byte +2 is set (match maps), own unit present): {0, portal link id (trigger +0xc), 0}. Dungeon panel (FUN_00535cb8): {npc_uid, 0, dungeon_id, index, party_flag} or {npc_uid, dest(i16 panel+0x9c), 0}. WorldMap msgbox 0x35 (FUN_0057349b): {location u16 at +0x10, destination, worldmap_flag 1}. PanelDevTest (FUN_0051c4a7): {+0x10 Edit1, +0x14 Edit0}."
+    s2c:
+      min_size: 0x2c
+      extra: "uid of the unit to move (must exist)"
+      fields:
+        - {offset: 0x10, type: u16, name: mapid, values: "", notes: "acct+0x652"}
+        - {offset: 0x12, type: u16, name: sceneidx, values: "== current acct+0x656 -> in-place teleport; != -> full scene change/reload", notes: ""}
+        - {offset: 0x14, type: f32, name: x, values: "world", notes: ""}
+        - {offset: 0x18, type: f32, name: z, values: "world", notes: "y from terrain"}
+        - {offset: 0x1c, type: u16, name: pad, values: "0", notes: "not read"}
+        - {offset: 0x1e, type: i8, name: mapfort, values: "-1 none, 0..19", notes: "acct+0x64c"}
+        - {offset: 0x1f, type: u8, name: fort_owner_team, values: "", notes: "acct+0x64d"}
+        - {offset: 0x20, type: u32, name: map_guild, values: "", notes: "acct+0x64e"}
+        - {offset: 0x24, type: u32, name: fort_extra_a, values: "", notes: "fort record +0x80 (+0x28 base); same-scene path only, only if 0 <= mapfort < 20"}
+        - {offset: 0x28, type: u32, name: fort_extra_b, values: "", notes: "fort record +0x84"}
+      accepted_if: "uid exists. Non-own uid: just snaps that unit (FUN_004fee28). Own uid needs the game scene (DAT_0084e3ec). Same sceneidx: stops the path, clears the auto-travel order unless in auto-travel mode 0xb, updates acct scene fields, snaps the avatar, patches a running loader. Different sceneidx: closes PanelGameResultSimple, kills any load, starts a new CLoadingProcess at (x,z); in auto-travel mode it continues the route (FUN_00598a5f, which sends 0x445)."
+    server_reply: "To C->S with destination 0 from an NPC: S->C 0x44c (offer) or 0x44d (panel list). To a C->S with a destination: validate (NPC range, cost <= money, destination allowed), deduct the cost (0x428 gold update), then S->C 0x44e (or 0x44f for scene with gadgets) to the sender with the destination mapid/sceneidx/x/z; broadcast 0x806 mode 2 to old viewers and 0x803 to new viewers. Refusal: no packet exists for it; send nothing or a system message (0x2003)."
+    client_effect: "Teleport (same scene) or scene change (new load); terrain is chosen by x/z only."
+    handler: FUN_00473548
+    send_sites: [FUN_00479d4c, FUN_00487809, FUN_0048796a, FUN_0048cd72, FUN_0051c4a7, FUN_00535cb8, FUN_0053f3fa, FUN_0056dd87, FUN_0056fee1, FUN_0057349b, FUN_005ad62b]
+    confidence: high
+    verified: true
+    evidence: "S->C: FUN_00473548 re-read, examples.md A1 (local teleport), live server handlers.warp (0x2c, same sceneidx). C->S fields from disasm of every send site (medium for meanings of +0x18/+0x20). Verifier re-read all 12 send sites: offsets confirmed; corrected FUN_0048cd72 cost and portal trigger-type condition. Both S->C paths also call FUN_0058b445 (clear travel order) unless order mode is 0xb; the scene-change bookkeeping (FUN_00470940/FUN_0059795b/panel 0x43 close) runs even outside the game scene."
+
+  - opcode: 0x44f
+    name: warp_with_scene_objects
+    direction: s2c
+    s2c:
+      min_size: 0x1bc
+      extra: "uid of the unit to move (must exist)"
+      fields:
+        - {offset: 0x10, type: u16, name: mapid, values: "", notes: "as 0x44e"}
+        - {offset: 0x12, type: u16, name: sceneidx, values: "same/different rule as 0x44e", notes: ""}
+        - {offset: 0x14, type: f32, name: x, values: "", notes: ""}
+        - {offset: 0x18, type: f32, name: z, values: "", notes: ""}
+        - {offset: 0x1e, type: i8, name: mapfort, values: "", notes: ""}
+        - {offset: 0x1f, type: u8, name: fort_owner_team, values: "", notes: ""}
+        - {offset: 0x20, type: u32, name: map_guild, values: "", notes: ""}
+        - {offset: 0x24, type: u32, name: fort_extra_a, values: "", notes: "same-scene path only"}
+        - {offset: 0x28, type: u32, name: fort_extra_b, values: "", notes: ""}
+        - {offset: 0x2c, type: "struct[100]", name: scene_objects, values: "{u16 gadget id, i8 state 0..2, u8}", notes: "scene change: copied to acct+0x65a and applied at loader step 0x17; same scene: only into the running loader's struct (FUN_004a7dbe(...,0)), NOT into acct+0x65a"}
+      accepted_if: "as 0x44e."
+    server_reply: "n/a"
+    client_effect: "Warp/scene change that also seeds the scene-object (gadget) state table: entering an instance, match map or fort with interactive objects."
+    handler: FUN_00473ab5
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00473ab5 re-read (copy of 100 dwords from +0x2c)."
+
+  - opcode: 0x44c
+    name: teleporter_offer
+    direction: s2c
+    s2c:
+      min_size: "0x3c (auto-travel mode); 0x720 when PanelTeleport reads the fort table"
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: i16, name: npc_uid, values: "must exist (panel path); echoed in C->S 0x44e +0x10", notes: ""}
+        - {offset: 0x12, type: u16, name: home_map, values: "0 = none; map id listed as a destination (panel path), cost +0x18", notes: "medium"}
+        - {offset: 0x14, type: "u16[2]", name: destinations, values: "map ids; map-table type (+0xc) 5 = 'Abssy' (abyss), else normal field", notes: ""}
+        - {offset: 0x18, type: u32, name: home_cost, values: "cost of +0x12 entry", notes: "panel path; medium"}
+        - {offset: 0x1c, type: i32, name: cost, values: "0 = free (DoYouTeleport_S), else DoYouTeleportTax_SS; refused locally with MoneyIsLow if > money rec+0x283", notes: ""}
+        - {offset: 0x20, type: "i32[4]", name: fort_costs, values: "", notes: "per fortress entry"}
+        - {offset: 0x30, type: "i16[4]", name: fort_ids, values: "> 0 = fortress destination ('Fortress', map 0x78)", notes: ""}
+        - {offset: 0x38, type: "u8[4]", name: fort_enabled, values: "non-zero = selectable (auto-travel path)", notes: ""}
+        - {offset: 0x3c, type: "u8[4]", name: fort_value, values: "unknown; shown by PanelTeleport", notes: "low"}
+        - {offset: 0x40, type: "bytes[0x14]", name: unknown_40, values: "unknown", notes: ""}
+        - {offset: 0x54, type: "struct[87]", name: fort_records, values: "20-byte base records; copied to the own-nation war table (acct+0x9f68 stride 0x20) when 0 <= mapfort < 20; record +0x0 nation filter, +0xc enabled byte -> extra list entries", notes: "low"}
+      accepted_if: "Auto-travel mode (order +0xc == 0xb): picks the destination matching the target map's type and opens a confirm msgbox 0xc; otherwise opens PanelTeleport (FUN_00540042) with the list. Needs the own unit and a live connection."
+    server_reply: "none directly; the player's choice arrives as C->S 0x44e {npc_uid, destination, cost}."
+    client_effect: "Teleporter dialog/panel."
+    handler: FUN_00479d4c
+    send_sites: []
+    confidence: medium
+    evidence: "FUN_00479d4c + FUN_00540042 decompiled and disasm 0x540042..0x540530 (field offsets); string keys DoYouTeleport_S/DoYouTeleportTax_SS/MoneyIsLow/Fortress/Abssy. Verifier: auto-travel path re-read -- for a target map of type 5 or 1 the abyss destination is offered with cost FORCED 0 (+0x1c ignored); types 2/3/other use the normal destination with cost +0x1c; else the 4 fort entries (+0x38 enabled, +0x30 id, +0x20 cost); nothing found -> order cleared (FUN_0058b445). The auto-travel path does NOT check that the npc uid exists. Fort table 87 x 20 B at +0x54 confirmed (ends at 0x720)."
+
+  - opcode: 0x44d
+    name: teleport_panel_counters
+    direction: s2c
+    s2c:
+      min_size: 0x24
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: i16, name: npc_uid, values: "must exist", notes: ""}
+        - {offset: 0x12, type: "u16[3]", name: map_ids, values: "0 = empty slot; must exist in the map table", notes: ""}
+        - {offset: 0x18, type: "u16[3]", name: destination_values, values: "sent back as C->S 0x44e +0x14", notes: ""}
+        - {offset: 0x1e, type: "i8[3]", name: counters, values: "shown as '%s (%d/20)' (occupancy out of 20)", notes: ""}
+      accepted_if: "PanelTeleport exists and npc uid spawned."
+    server_reply: "none directly; choice -> C->S 0x44e {npc_uid, destination = value}."
+    client_effect: "Opens PanelTeleport in mode 3 (capacity-limited destinations, e.g. dungeons/instances)."
+    handler: FUN_00470f83
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_0054066b re-read; packet pointer passed by the handler."
+
+  - opcode: 0x47a
+    name: worldmap_fort_or_channel_warp
+    direction: c2s
+    c2s:
+      size: 0x24
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: mapfort, values: "current fort index 0..19", notes: ""}
+        - {offset: 0x14, type: u32, name: map_id, values: "destination map (table 9 row id)", notes: ""}
+        - {offset: 0x18, type: u8, name: option, values: "row/option byte (low byte of the msgbox arg)", notes: "medium"}
+        - {offset: 0x1c, type: u32, name: fort_value, values: "fort record [mapfort] byte +0x2c (non-zero) / fort record +4 byte (NationInfo)", notes: "low"}
+        - {offset: 0x20, type: u32, name: channel_or_arg, values: "channel index (channel select) or msgbox arg / same as +0x1c (NationInfo)", notes: ""}
+    server_reply: "Scene change to the chosen fort/field/channel: S->C 0x44f (or 0x44e) with a different sceneidx (new instance/channel), new mapid, mapfort and the channel; or nothing if refused. Client starts a 5 s wait timer (FUN_00585e9a(map,5000))."
+    client_effect: "WorldMap (msgbox 0x32/0x33/0x43: only if own guild == mapGuild and mapfort valid), ChannelSelect (refused locally if channel load < 0 or >= 10000 = maintenance, or == current channel), NationInfo fort list (type 3)."
+    handler: none
+    send_sites: [FUN_0057349b, FUN_005275df, FUN_00532f62]
+    confidence: medium
+    verified: true
+    evidence: "FUN_0057349b decompiled; disasm 0x5276c1 and 0x534163 re-read."
+
+  - opcode: 0x48c
+    name: worldmap_move_to_location
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: location_id, values: "selected world-map location panel+0x40; NOT range-checked on this path (only WalkMap checks 1..0x56) -- server must validate", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    server_reply: "unknown; most likely a warp (S->C 0x44e/0x44f) to that location if allowed (location enabled flag panel[0xec]+10 must be 0 for the button to send)."
+    client_effect: "WorldMap location button; the alternative 'WalkMap' button auto-travels locally (no packet)."
+    handler: none
+    send_sites: [FUN_00578c17]
+    confidence: low
+    evidence: "FUN_00578c17 decompiled; no reply evidence."
+
+  # ------------------------------------------------------------------ world map / field status
+  - opcode: 0x445
+    name: worldmap_war_state_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: empty, values: "0", notes: ""}
+    server_reply: "S->C 0x446 (war/world-map full state, min 0x7dc: 87 x 20-byte base records, nation data); its handler FUN_00474eb1 applies the state (FUN_0042a814), then if the pending handle questmgr+0x5c (set by the FUN_00598a5f sender at 0x598f79) is non-zero it clears it and calls FUN_00598a5f(handle,1) to RESUME the auto-travel route -- so without a 0x446 reply auto-travel stalls after every scene change."
+    client_effect: "WorldMap open (FUN_0057867a, with 0x449 and 0x473) and every N s while open (FUN_005738f5, with 0x449, then 0x447); auto-travel continuation after a scene change (FUN_00598a5f)."
+    handler: none
+    send_sites: [FUN_005738f5, FUN_0057867a, FUN_00598a5f]
+    confidence: medium
+    verified: true
+    evidence: "senders decompiled/disasm; pairing with 0x446 from group01 + pending-handle store at 0x598f79; verifier re-read FUN_00474eb1 (consumes the handle)."
+
+  - opcode: 0x449
+    name: worldmap_owner_refresh_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: empty, values: "0", notes: ""}
+    server_reply: "S->C 0x44a (base/fort owner table: +0x10 u32, +0x14 u16[87]) -> WorldMap UI notify 0x22 (inferred pairing)."
+    client_effect: "Always sent right after 0x445."
+    handler: none
+    send_sites: [FUN_005738f5, FUN_0057867a]
+    confidence: medium
+    evidence: "senders decompiled; reply inferred from WorldMap panel event 0x22 handler. Verifier: 0x44a handler FUN_00471771 -> FUN_0042861a copies +0x10 u32 to the fort record base and 87 x u16 from +0x14 (stride 0x20 into this+0x695c), then notify 0x22 -- layout confirmed, pairing still inferred."
+
+  - opcode: 0x447
+    name: worldmap_location_detail_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: location_id, values: "1..0x56 (FUN_0042855d valid range)", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    server_reply: "S->C 0x48d (battle record/scoreboard for that location, 0x652 bytes -> acct+0xab4c, WorldMap UI notify 0x23 renders it via FUN_00576302). Medium-low: the client clears acct+0xab3c..+0xb18c (exactly the 0x48d area) and stores the id there before sending."
+    client_effect: "Sent when a location is selected (notify 0x20 from 0x446 event arg, list clicks) and on the WorldMap poll; header built inline (0xa53c0018)."
+    handler: none
+    send_sites: [FUN_00573858]
+    confidence: medium
+    evidence: "FUN_00573858 decompiled (verifier: memset acct+0xab3c len 0x650, id stored at +0xab3c, sent only if FUN_0042855d(id) != 0); buffer overlap with FUN_00471a6d (0x48d) writes at acct+0xab4c..0xb18a; FUN_00578e21 event 0x23 -> FUN_00576302. Pairing still inferred."
+
+  - opcode: 0x414
+    name: scene_object_state_table
+    direction: s2c
+    s2c:
+      min_size: 0x1a2
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u16, name: unused, values: "0", notes: "not read"}
+        - {offset: 0x12, type: "struct[100]", name: entries, values: "{u16 gadget id, i8 state 0..2 (eSobState; > 2 logs an error), u8}", notes: "diffed against acct+0x65a; changed entries call gadget SetState(state, animate=1); an id that moved slots resets the old gadget to state 0"}
+      accepted_if: "fixed 100-entry loop; entries equal to the stored ones are skipped."
+    server_reply: "n/a"
+    client_effect: "Updates scene objects (gates, capture points, switches) and their quest/minimap markers; ends with a quest-manager refresh (FUN_00470940/FUN_00599b7f). Not a quest list (group00 was wrong)."
+    handler: FUN_00474fda
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00474fda + FUN_00483b5c ('eSobState Over(%d)') re-read."
+
+  # ------------------------------------------------------------------ interaction
+  - opcode: 0x451
+    name: interact
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: target, values: "gadget id (kind 1) or unit uid (kind 2) or msgbox target (kind 0)", notes: ""}
+        - {offset: 0x12, type: u16, name: kind, values: "1 = gadget/scene object, 2 = unit (corpse loot, NPC), 0 = message-box variant", notes: ""}
+        - {offset: 0x14, type: u16, name: state, values: "kind 1/2: 1 start, 0 stop/complete/cancel. kind 0: 1 (msgbox 0x49 OK) or 2 (msgbox 0x4a OK)", notes: ""}
+        - {offset: 0x16, type: u16, name: object_type, values: "gadget record[6] (5 = scene-object type); 0 for units", notes: ""}
+      variants: "FUN_00462d41 gadget start {id,1,1,type}; FUN_00462db9 gadget complete {id,1,0,type} preceded by C->S 0x415 for a matching scene object in state 1 of type 5; FUN_00462eea gadget cancel {id,1,0,type}; FUN_0046307a unit start {uid,2,1,0}; FUN_004630f4 unit stop {uid,2,0,0}; FUN_00487809 msgbox 0x49/0x4a {arg,0,1|2,0}."
+    s2c:
+      min_size: 0x18
+      extra: "actor uid (must exist)"
+      fields:
+        - {offset: 0x10, type: u16, name: target, values: "", notes: ""}
+        - {offset: 0x12, type: u16, name: kind, values: "1: requires +0x16 == 5 and the gadget to exist -> event 0xc {actor, start = (state == 1), gadget}; 2: target unit must exist and game scene active -> event 0xd {actor, target, state}; other kinds dropped", notes: ""}
+        - {offset: 0x14, type: u16, name: state, values: "", notes: ""}
+        - {offset: 0x16, type: u16, name: object_type, values: "", notes: ""}
+      accepted_if: "actor exists; see kind rules."
+    server_reply: "No ack needed (live-tested). Broadcast S->C 0x451 (extra = actor) to other viewers so they play the interaction animation. Kind 2 on a corpse with loot -> loot pickup packets (loot.py). Completion of a capture gadget -> 0x415/0x414 state change broadcast."
+    client_effect: "S->C for the own actor drives the local interaction state machine (FUN_005865f3); for others plays the animation (FUN_004bd8d5)."
+    handler: FUN_004750f0
+    send_sites: [FUN_00462d41, FUN_00462db9, FUN_00462eea, FUN_0046307a, FUN_004630f4, FUN_00487809]
+    confidence: medium
+    verified: true
+    evidence: "handler and all senders re-read; live server loot.interact accepts kind 2 state 1 without reply. Verifier re-read FUN_004750f0, FUN_00462d41/db9/eea, FUN_0046307a/4630f4 and msgbox 0x49/0x4a (disasm 0x4878e2/0x487918): offsets confirmed. All gadget/unit senders are gated on interaction object +0x60 != 0."
+
+  - opcode: 0x415
+    name: scene_object_state_change
+    direction: both
+    claimed: "inventory lists it under quests; it is the single-entry form of 0x414 (scene objects)"
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: mapid, values: "acct+0x652", notes: ""}
+        - {offset: 0x12, type: u16, name: pad, values: "0", notes: ""}
+        - {offset: 0x14, type: u16, name: gadget_id, values: "entry from acct+0x65a", notes: ""}
+        - {offset: 0x16, type: i8, name: state, values: "current state from the table (gadget path: sent only when it is 1; NPC path: any state)", notes: ""}
+        - {offset: 0x17, type: u8, name: pad2, values: "table pad byte copied verbatim", notes: "+0x14..+0x17 is the whole 4-byte table entry"}
+      variants: "FUN_00462db9 (gadget interaction completed): only for gadget record type (+0xc) == 5 and table state == 1, followed by C->S 0x451 {id,1,0,type}. FUN_0056e3d8 (NPC dialog action, verifier-found 2nd sender, disasm 0x56e491): the NPC's linked scene-object record (unit+0x328) must pass a level window (record +0x1e min level, +0x1f max level, 0 = no limit, vs own rec+0x237) and have type +0xc in {1,3,4,6}; sends the matching table entry in ANY state, no 0x451."
+    s2c:
+      min_size: 0x18
+      extra: "unused"
+      fields:
+        - {offset: 0x14, type: u16, name: gadget_id, values: "must be in the acct+0x65a table", notes: ""}
+        - {offset: 0x16, type: i8, name: state, values: "0..2", notes: ""}
+      accepted_if: "gadget id non-zero and present in the table and the state differs."
+    server_reply: "Broadcast S->C 0x415 {gadget id, new state} (or 0x414 table) to everyone in the scene after validating the activation."
+    client_effect: "Gadget SetState + marker refresh."
+    handler: FUN_004706c2
+    send_sites: [FUN_00462db9, FUN_0056e3d8]
+    confidence: medium
+    verified: true
+    evidence: "FUN_004706c2 and FUN_00462db9 re-read. Verifier: S->C handler confirmed ({+0x14 id, +0x16 state}; table updated even when the gadget object is missing, SetState only if it exists); second C->S sender FUN_0056e3d8 added."
+
+  - opcode: 0x47b
+    name: set_mapfort
+    direction: s2c
+    claimed: "inventory lists it under pvp; it only edits the world scene state"
+    s2c:
+      min_size: 0x1c
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: i8, name: mapfort, values: "-1..19", notes: "acct+0x64c"}
+        - {offset: 0x18, type: u32, name: sceneidx, values: "applied only if equal to the current sceneidx", notes: ""}
+      accepted_if: "sceneidx matches."
+    server_reply: "n/a"
+    client_effect: "Changes the current fort index without a warp."
+    handler: FUN_0047069f
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_0047069f re-read."
+
+  # ------------------------------------------------------------------ nation
+  - opcode: 0x40c
+    name: change_nation_request
+    direction: c2s
+    c2s:
+      size: 0x28
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u64, name: char_id, values: "own rec+0x203/+0x207", notes: ""}
+        - {offset: 0x18, type: u32, name: new_nation, values: "1..3 (msgbox arg)", notes: ""}
+        - {offset: 0x1c, type: "bytes[12]", name: pad, values: "0", notes: ""}
+    server_reply: "S->C 0x429 (attribute update) with +0x10 = 1, +0x14 = nation, extra = player uid; plus 0x428 gold if a fee is charged (group00, not re-verified). Then 0x804/0x803 with the new team to viewers."
+    client_effect: "PanelChangeNation (msgbox 0x31 OK); also calls FUN_004dad9d(new, old) locally."
+    handler: none
+    send_sites: [FUN_00532186]
+    confidence: medium
+    verified: true
+    evidence: "disasm 0x5321dd re-read; reply from group00. Arguably belongs to the character/nation subsystem."
+
+flows:
+  - name: enter_world
+    steps:
+      - "C->S 0x406 (0x20, extra = session tag from 0x2001, +0x10 u64 char id; rate-limited 1/5 s)"
+      - "S->C 0x2000 (0x704, extra = new player uid, +0x10 char id, +0x18 sceneidx, +0x1a mapid, +0x1c/+0x20 x/z on valid terrain, +0x24 team, +0x25 mapfort -1, +0x6e0 channel, +0x6f8 time)"
+      - "S->C 0x41f (extra = uid, stats with HP > 0 and speed 450) -- mandatory: revives the avatar built dead"
+      - "S->C optional 0x421 / 0x422 / 0x41e / 0x424 / 0x423 / 0x2009 / 0x490 / 0x486 / skill re-equip 0x426"
+      - "S->C 0x803 (or 0x805) for every unit in view, each monster followed by 0x804 (speed)"
+      - "S->C 0x803 of the new player to every other client that can see them"
+      - "client loads (CLoadingProcess) and finishes by itself; no packet ends loading"
+  - name: movement_relay
+    steps:
+      - "C->S 0x416 type 0x20/0x02 every 0.5 s while moving (lookahead x/z), type 0x00 once on stop"
+      - "server: store position; S->C 0x416 (same 32 bytes, extra = mover uid) to every other viewer; never echo"
+      - "AOI: units entering a viewer's range -> 0x803/0x805 (+0x804); leaving -> 0x806 mode 2 or 0x43f removals"
+  - name: stuck_resync
+    steps:
+      - "C->S 0x416 type 1 (navmesh lookup failed at the player position for ~5 s; repeats every 30 s)"
+      - "S->C 0x416 type 1 to the sender only, extra = own uid, x/z = authoritative on-navmesh position"
+  - name: server_driven_unit_movement
+    steps:
+      - "S->C 0x416 (extra = monster uid, type 0/2/0x20, speed, destination) per unit, or"
+      - "S->C 0x43f batch (40 moves + 15 removals) about once per second per client"
+  - name: unknown_attacker
+    steps:
+      - "S->C 0x411 names an attacker uid the client lacks"
+      - "C->S 0x4ca (+0x10 uid), at most once per uid per 50 s"
+      - "S->C 0x803 + 0x804 (alive), 0x803 + 0x420 HP 0 (corpse), or 0x806 mode 2 (gone)"
+  - name: monster_death_and_respawn
+    steps:
+      - "S->C 0x420 HP 0 or 0x806 mode 5 (dies, corpse stays)"
+      - "after the corpse delay: S->C 0x806 mode 1 (fade out) or keep the corpse"
+      - "respawn: S->C 0x804 with HP = max at the home position (revives in place if the uid still exists), else 0x803 + 0x804"
+      - "alternative: 0x806 mode 6 frees the uid at once so a fresh 0x803 can reuse it"
+  - name: npc_teleport
+    steps:
+      - "player clicks a teleporter NPC (category 4) or picks Teleport in the NPC menu -> C->S 0x44e {+0x10 npc uid, +0x14 0}"
+      - "S->C 0x44c {npc uid, destinations, costs} (or 0x44d for a counted list)"
+      - "client: msgbox DoYouTeleport_S / DoYouTeleportTax_SS (refused locally if cost > money) or PanelTeleport"
+      - "C->S 0x44e {+0x10 npc uid, +0x14 destination, +0x1c cost}"
+      - "server: validate, deduct cost (0x428), S->C 0x44e/0x44f to the sender (new sceneidx = scene change, same = teleport)"
+      - "server: 0x806 mode 2 to old viewers, 0x803(+0x804) to new viewers, units of the new area to the player"
+      - "auto-travel (order mode 0xb): the 0x44c offer is answered locally by msgbox 0xc; after the scene change the client sends C->S 0x445 and only resumes the route when S->C 0x446 arrives (FUN_00474eb1 -> FUN_00598a5f)"
+  - name: map_portal
+    steps:
+      - "player walks into a portal trigger -> C->S 0x44e {+0x10 0, +0x14 portal link id, +0x1c 0} (same trigger at most every 3 s; not in match maps)"
+      - "S->C 0x44e or 0x44f to the linked destination"
+  - name: worldmap_open_and_poll
+    steps:
+      - "C->S 0x445, 0x449, 0x473 {+0x10 own nation} on open; 0x445 + 0x449 (+ 0x447 for the selected location) on every poll"
+      - "S->C 0x446 (full war state), 0x44a (owner table), nation info for 0x473, 0x48d for 0x447"
+  - name: worldmap_warp
+    steps:
+      - "location warp button -> C->S 0x48c {+0x10 location id}, or msgbox 0x35 -> C->S 0x44e {+0x10 location, +0x14 dest, +0x24 1}"
+      - "guild-owned fort / field / channel -> C->S 0x47a {mapfort, map id, option, fort value, channel}"
+      - "S->C 0x44f/0x44e scene change (new sceneidx/mapid/mapfort); client waits on a 5 s timer"
+      - "other WorldMap msgboxes in the same handler FUN_0057349b (owned by other subsystems): 0x36 -> C->S 0x42d (use item; +0x10 map row from table 1, likely a teleport scroll) with a 1 s timer; 0x34 -> C->S 0x4c0 {+0x10 own guild id, +0x14 map id (table 0xb), +0x18 row, +0x1c/+0x20 arg} with a 5 s timer; 0x26 -> C->S 0x47e (nation vote, pvp)"
+  - name: gadget_interaction
+    steps:
+      - "C->S 0x451 {gadget id, 1, 1, type} (start)"
+      - "S->C 0x451 broadcast to the other viewers (animation)"
+      - "on completion: C->S 0x415 {mapid, gadget, state 1} (scene object of type 5 in state 1), then C->S 0x451 {gadget, 1, 0, type}"
+      - "server: S->C 0x415 {gadget, new state} or 0x414 table to everyone in the scene"
+      - "alternative trigger: NPC dialog action on an NPC linked to a scene object (types 1/3/4/6, level window) -> C->S 0x415 {mapid, entry} only (FUN_0056e3d8); answer the same way"
+  - name: in_scene_teleport_by_server
+    steps:
+      - "S->C 0x44e (0x2c, extra = own uid, current sceneidx, new x/z), or S->C 0x416 type 1 for a short snap, or 0x804 for any unit"
+
+server_rules:
+  - name: spawn_point_and_terrain
+    client_expects: "0x2000/0x44e x/z inside an existing Map/ZPxx_yy_00.zp piece with navmesh, else a 1 Hz reload loop or 0x416 type-1 resyncs"
+    informed_by: "map.jpk piece list, navmesh tool (tools/navmesh.py), WorldmapData/Teleport_List, StartPos-type tables in data/setting"
+    default: "per-map spawn = a validated on-navmesh point; never (0,0)"
+  - name: sceneidx_allocation
+    client_expects: "same sceneidx = in-place teleport, different = full reload; instance identity only"
+    informed_by: "none (server-only concept)"
+    default: "one sceneidx per (map, channel, instance), in 0..0x7FFF (0x2000 sign-extends it, 0x44e/0x44f zero-extend, 0x47b compares u32); keep it stable across in-scene warps"
+  - name: uid_allocation
+    client_expects: "players 1..0x3F6, monsters/NPCs 0x3F7..0x2B05, unique per scene; the own uid fixed from 0x2000"
+    informed_by: "none"
+    default: "per-scene allocators; reuse a monster uid only after 0x806 mode 2/6 or with 0x804 revive"
+  - name: area_of_interest
+    client_expects: "units spawned before any 0x416 for them; removed with 0x806/0x43e/0x43f/0x49b; client renders a 5x5 window of 256-unit pieces (about +-512 units)"
+    informed_by: "terrain window size; 0x417 camera focus point when detached"
+    default: "view radius ~200 units around the player (plus around the camera focus while 0x417 detached = 1); hysteresis on exit"
+  - name: npc_placement
+    client_expects: "the client never places NPCs from map data; every shop/quest/teleporter NPC must be spawned with 0x803/0x805 (UnitDB id, category from UnitDB +0x8a)"
+    informed_by: "UnitDB.cdb, NPC position tables in data/setting (Npc*/Unit* tables)"
+    default: "static NPC spawn list per map, sent on entry"
+  - name: move_validation
+    client_expects: "no acknowledgement; correction only via 0x416 type 1"
+    informed_by: "navmesh, stats +0x36 speed"
+    default: "accept positions within speed x elapsed x 1.5 + 3 units; otherwise send type-1 correction"
+  - name: monster_move_speed
+    client_expects: "speed only from 0x41f/0x804/0x416/0x43f (0x803 carries none)"
+    informed_by: "UnitDB / monster tables"
+    default: "300 (live server) for monsters, 450 players"
+  - name: teleport_destinations_and_costs
+    client_expects: "0x44c lists (map ids, fort ids, costs) and the 0x44e destination id semantics"
+    informed_by: "WorldmapData/Teleport_List, map table (FUN_004e1c8d: +0xc map type, 5 = abyss), fort tables"
+    default: "per-teleporter-NPC destination list from Teleport_List; cost 0 until economy exists; destination id = map id; spawn = map's portal arrival point"
+  - name: portal_links
+    client_expects: "C->S 0x44e +0x14 = trigger link id from map trigger data"
+    informed_by: "map trigger data in map.jpk (CTrigger params)"
+    default: "table link id -> (mapid, x, z)"
+  - name: world_map_state
+    client_expects: "0x446/0x44a/0x48d contents (87 bases, owners, battle records)"
+    informed_by: "fort/base tables in data/setting"
+    default: "all bases neutral/owner 0, empty records; answer every poll so the panel does not wait"
+  - name: scene_objects
+    client_expects: "gadget ids and states 0..2 in 0x414/0x415/0x44f"
+    informed_by: "map gadget data (gadget record[6] type 5)"
+    default: "all zero until capture points are implemented"
+  - name: channel_list
+    client_expects: "channel table at acct+0x618 (0x74-byte entries, +0x70 u16 load, >= 10000 = maintenance) and 0x2000 +0x6e0 current channel"
+    informed_by: "server config"
+    default: "single channel 0"
+  - name: change_nation_policy
+    client_expects: "0x429 confirmation"
+    informed_by: "none"
+    default: "allow free change when the account nation is 0; otherwise fee/cooldown policy"

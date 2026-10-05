@@ -1,0 +1,1304 @@
+# Warmonger / Crush Online: client<->server contract, SOCIAL subsystem
+# (chat on every channel and whisper, party, legion = guild: create/join/ranks/permissions/
+#  warehouse/ether/stock/dividend/donation/core/battlefield summon, friends/block list/invites,
+#  mail, player inspect).
+#
+# Conventions (same as world.yaml)
+# - All offsets are from packet start; payload begins at +0x10. Header: u16 len | u16 0xA53C |
+#   u16 opcode | u16 extra | u32 tick | u32 key. Server packets: key 0, len > 0x10. The dispatcher
+#   FUN_0047a36c does NOT check per-opcode sizes, so s2c.min_size = highest offset the handler reads.
+# - C->S: extra = own uid (unit+0x35e) for every packet below; payload words obfuscated as
+#   ~(w - key) when key != 0. Builder FUN_004a730b(buf, op, size, extra, clear=1) zero-fills.
+# - "me" = local unit DAT_0084a758, "rec" = me+0x3a0 (char record): rec+0x203 u64 char id,
+#   rec+0x20b char[40] name (ANSI), rec+0x27f i16 guild id, rec+0x651 u32 fame, rec+0x655 u8 nation,
+#   rec+0x656 u8 fame rank (0..19 FameRank.tsv, >=200 = GM), rec+0x64c u8 my guild grade.
+#   acct = *DAT_00847ac8. "guild mgr" = FUN_00428772() object; "grec" = guild record = mgr+8
+#   (0x198 bytes, returned by FUN_004b3f39 only while grec+0xe4 == rec+0x27f).
+# - Strings: names (char/guild) are ANSI (CP_ACP, CP949 on the original Korean build; MultiByteToWideChar(0));
+#   chat text, guild notice, mail title/body (web) are UTF-8 (code page 0xFDE9). Mail body/title in
+#   C->S 0x809 are UTF-16LE.
+# - Messages: most social error/success texts are system_msg ids (data/tables/system_msg.tsv).
+#   The server shows them with S->C 0x41d {+0x10 id, +0x14 param, +0x18 %s args} (system.yaml) or
+#   0x2003 {+0x18 id}. A display-type-3 id (e.g. 42 StrDef_AreYouJoinGuild) is a Yes/No box whose
+#   Yes answer comes back as C->S 0x41d {+0x10 id, +0x14 param}.
+#
+# BIG FINDING: friend list, block list, pending friend invites, mail list + unread counter, guild
+# member list, guild names (<dictg %d>), guild stock lists, rankings and the auction house are NOT
+# TCP packets. The client fetches them over HTTP from the "web" endpoint of serverlist.sof
+# (server/stub.py :8080) with POST application/x-www-form-urlencoded and parses an XML reply
+# <ROOT><ROW><TAG>value</TAG>...</ROW>...</ROOT> (FUN_006d7b70 parser; one ROW per record).
+# Dispatcher: FUN_0047b95b (request kind at req+8; status at req+0: 4 = OK, 3 = failed; body at
+# req+0x100c). See web_endpoints below; the TCP opcodes only carry the realtime deltas.
+#
+# Sources: decompiled.c / disasm.txt (re-checked for this file), spec/group01..03.md,
+# contract/examples.md, StringAll_Eng.cdb, data/tables/{system_msg,Level_Table_Guild,GuildMastery,
+# GuildMissionReward,FameRank,constants}.tsv. The live server implements none of these yet
+# (no confirmed-working examples; server/handlers.py only has the WorldChannel.asp stub).
+
+opcodes:
+
+  # ================================================================== CHAT
+  - opcode: 0x800
+    name: chat_message
+    direction: both
+    c2s:
+      size: 0x13c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: i16, name: peerage, values: "type 8: sender fame rank (rec+0x656); else 0", notes: "set only for type 8"}
+        - {offset: 0x12, type: u8, name: chat_type, values: "1 normal/local (default tab), 2 whisper, 3 battle ('!' prefix), 4 legion ('$', needs guild), 5 nation ('@'), 6 world/shout (/World tab), 7 system (server only), 8 command/peerage ('#', needs fame rank >= 15), 9 party ('%', needs party)", notes: "prefix char is stripped; default type = chat panel +0x90 (current tab, set by /General /Legion /Country /Battle /World slash words). '/name text' = whisper"}
+        - {offset: 0x13, type: u8, name: lang, values: "client language id DAT_00846e98 (1 = English build)", notes: "receiver: 0 -> decode text as ANSI, non-zero -> UTF-8. Forward unchanged"}
+        - {offset: 0x14, type: "char[40]", name: name, values: "type 2: whisper TARGET name; other types: own name (UNIT+0x41c string, i.e. me+0x41c, not rec+0x41c)", notes: "ANSI (WideCharToMultiByte CP_ACP via FUN_0042d75d)"}
+        - {offset: 0x3c, type: "char[255]", name: text, values: "UTF-8, NUL-terminated, <= 254 bytes", notes: "built by FUN_0042db5b (WideCharToMultiByte 0xFDE9)"}
+    s2c:
+      min_size: 0x3d
+      extra: "sender uid (unit looked up with FUN_0044d3b9; 0/unknown is allowed, then no speech balloon)"
+      fields:
+        - {offset: 0x10, type: i16, name: peerage, values: "type 8: sender fame rank; else 0", notes: "passed through to the chat line builder"}
+        - {offset: 0x12, type: u8, name: chat_type, values: "1..9 as C->S. Tab mask/colour: 1 Local 0x1, 2 Whisper 0x8, 3 War 0x2, 4 Guild 0x4, 5 Nation 0x20, 6 World 0x10 ('Shout [name] : text'), 7 System 0xF000 (+ notice ticker FUN_0051ac1c), 8 Peerage 0x20 (+ notice popup FUN_0059c4a6), 9 Party 0x40", notes: "any other value: nothing printed"}
+        - {offset: 0x13, type: u8, name: lang, values: "0 = text is ANSI, else UTF-8", notes: "server-made lines: use 1 + UTF-8"}
+        - {offset: 0x14, type: "char[40]", name: sender_name, values: "ANSI. For type 2 when extra == my uid it is the target ('To [x]'), otherwise the sender ('From [x]')", notes: "if non-empty and on my block list (friend mgr list +0x14, 0x48-byte entries) the line is DROPPED"}
+        - {offset: 0x3c, type: "char[255]", name: text, values: "per +0x13", notes: ""}
+      accepted_if: "game scene up (DAT_0084e3ec != 0); sender name not on the block list. A speech balloon is shown when the sender unit is visible and is not me. Viewers with fame rank >= 200 (GM) get extra sender info on types 1 and 5."
+    server_reply: >-
+      Do NOT echo to the sender: the client prints its own line locally right after sending
+      (FUN_00580a68 -> FUN_0057fd07(me, type, ...)). Relay 0x800 (same type/lang/text, extra = sender
+      uid, +0x14 = sender name) to: type 1 players in view range of the sender; 2 the named player only
+      (offline/unknown -> 0x41d sysmsg 98 StrDef_NotExistFriend or a type-7 line to the sender);
+      3 same battle/match; 4 online legion members; 5 same nation (rec+0x655); 6 everyone on the
+      world/channel; 8 everyone (sender fame rank >= 15 re-checked server-side); 9 party members.
+      Type 1 text "/time" (sent by the local command table, FUN_004637e3) is a request for the server
+      time: answer with a type-7 line.
+    client_effect: "chat window line in the colour of constants.tsv ChatColor (System0, System1, Local, War, Guild, Nation, Peerage, World, Whisper, Party) on tabs by mask; balloon over the sender"
+    handler: FUN_00477be3
+    send_sites: [FUN_00580a68, FUN_004637e3]
+    confidence: high
+    verified: true
+    evidence: "send at 0x580e7a (inline 0xa53c013c); local echo 0x580fe8; receive -> FUN_0057fd07 type switch; encodings via FUN_0042d65e/0042dc73. Re-verified: +0x10/+0x12/+0x13/+0x14/+0x3c, text WideCharToMultiByte(0xFDE9), receiver block-list drop via FUN_004b6b02, GM (rank>199) extras on types 1/5"
+
+  # ================================================================== PARTY
+  - opcode: 0x4ac
+    name: party_command
+    direction: both
+    c2s:
+      size: 0x40
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: subcmd, values: "0 invite, 1 accept invite, 3 leave, 4 kick, 5 give leader", notes: "2 is never sent; declining an invite sends nothing"}
+        - {offset: 0x14, type: u32, name: target_uid, values: "0 invite: target uid when invited from the unit popup (FUN_005cf655), 0 when by name (chat /partyinvite or chat-name popup); 1: the INVITER uid copied from S->C +0x14; 3: own uid; 4/5: member uid (1..0x3F6, only the leader's menu offers it)", notes: ""}
+        - {offset: 0x18, type: "char[40]", name: name, values: "0: target name; 1: inviter name copied from S->C +0x18; 3/4/5: empty", notes: "ANSI"}
+    s2c:
+      min_size: 0x40
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u32, name: subcmd, values: "must be 0 (invite); anything else is ignored", notes: ""}
+        - {offset: 0x14, type: u32, name: inviter_uid, values: "non-zero", notes: "echoed back in the accept"}
+        - {offset: 0x18, type: "char[40]", name: inviter_name, values: "non-empty, ANSI", notes: "shown in msg_partyinviteyou_s"}
+        - {offset: 0x40, type: "bytes[0]", name: end, values: "", notes: "the box stores the first 0x40 bytes"}
+      accepted_if: "+0x10 == 0, +0x18[0] != 0, +0x14 != 0, me loaded"
+    server_reply: >-
+      0 invite: resolve target (uid if non-zero else name); refuse if target is in a party (0x41d sysmsg
+      234 StrDef_AlreadJoinParty) or offline (98); else S->C 0x4ac {0, inviter uid, inviter name} to
+      the target. 1 accept: create/extend the party, then 0x4ad to every member. 3/4: remove the member,
+      0x4ad to the remaining members and 0x4ad with party_id 0 to the removed one. 5: set leader, 0x4ad
+      to all.
+    client_effect: "S->C opens PanelMsgboxPartyInvite (dialog 0x8a) 'X invite you party'; OK sends subcmd 1"
+    handler: FUN_00471fcc
+    send_sites: [FUN_0052646e, FUN_005274c0, FUN_0057e71d, FUN_00581078, FUN_005cf655]
+    confidence: high
+    verified: true
+    evidence: "Move=5/Ban=4/Exit=3 at 0x52646e; accept copies panel+0x38/+0x3c (stored S->C +0x14/+0x18) at 0x527502; invites at 0x57e870/0x58218c/0x5cf872"
+
+  - opcode: 0x4ad
+    name: party_member_list
+    direction: s2c
+    s2c:
+      min_size: 0x108
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u32, name: party_id, values: "0 = not in a party (chat '%' and party UI disabled); else any non-zero id", notes: "-> acct+0xb2b4"}
+        - {offset: 0x14, type: u32, name: leader_uid, values: "uid of the leader", notes: "-> acct+0xb2b8; if == my uid I get Ban/Move in the member menu"}
+        - {offset: 0x18, type: "struct[5]", name: members, values: "5 x 0x30 bytes; empty slot = uid 0", notes: "-> acct+0xb2bc. Order = slot order in the party frame"}
+        - {offset: 0x18, type: u16, name: "members[i].uid", values: "unit uid", notes: "+i*0x30"}
+        - {offset: 0x1a, type: "bytes[4]", name: "members[i].unknown", values: "unknown (send 0)", notes: ""}
+        - {offset: 0x1e, type: u8, name: "members[i].status_cache", values: "send 0", notes: "client overwrites it with the unit's rec+0x64b badge flags"}
+        - {offset: 0x20, type: "char[40]", name: "members[i].name", values: "ANSI, non-empty for a used slot", notes: ""}
+      accepted_if: "always (the add/del chat lines are only printed when the new party_id != 0; party_id 0 silently replaces the list)"
+    server_reply: "none"
+    client_effect: "diffs against the old list and prints msg_partyadd_s / msg_partydel_s (skips my own uid), then replaces the list and fires UI event 0x3b (party frame). Member HP etc. come from the units themselves (must be in view)."
+    handler: FUN_004770a1
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004770a1 loops 5 x 0x30 from +0x18 (name at entry+8), copies 0x3c dwords to acct+0xb2bc; leader compare at 0x5264xx/0x526540"
+
+  # ================================================================== FRIENDS / BLOCK LIST
+  - opcode: 0x811
+    name: friend_invite
+    direction: c2s
+    c2s:
+      size: 0x58
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: zero, values: "0", notes: ""}
+        - {offset: 0x18, type: u64, name: my_char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x28, type: "char[40]", name: target_name, values: "ANSI; never my own name; (unit popup path) not already in my friend list", notes: ""}
+    server_reply: >-
+      Unknown name -> 0x41d sysmsg 98; already friends -> 137; already invited -> 139; else store a
+      pending invite (target's InviteList.asp), send S->C 0x813 to the target if online and 0x41d 135
+      StrDef_FriendInviteSuccess to the sender.
+    client_effect: "none (no reply opcode is awaited)"
+    handler: ""
+    send_sites: [FUN_004b6b31, FUN_00531320]
+    confidence: high
+    verified: true
+    evidence: "builds at 0x4b6baa / 0x5313bb: +0x18 = rec+0x203, name at +0x28"
+
+  - opcode: 0x812
+    name: friend_invite_answer
+    direction: c2s
+    c2s:
+      size: 0x28
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: accept, values: "1 = Accept, 0 = Refusal", notes: "buttons of the 'Not accepted' tab of the friend panel"}
+        - {offset: 0x18, type: u64, name: my_char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x20, type: u64, name: inviter_char_id, values: "CHAR_UID of the selected InviteList.asp row", notes: ""}
+    server_reply: "delete the pending invite; on accept add each to the other's friend list and send 0x41d sysmsg 136 StrDef_FriendAddSuccess (both if online). The client already removed the row locally (FUN_004b7fbd) and re-reads FriendList.asp when the tab is shown."
+    client_effect: "row removed from the invite tab"
+    handler: ""
+    send_sites: [FUN_00530b0a]
+    confidence: high
+    verified: true
+    evidence: "0x531164 (accept, +0x10=1) / 0x5311fd (deny, +0x10=0); +0x20 from list entry +0xb0; both only from friend-panel tab 2"
+
+  - opcode: 0x813
+    name: friend_invite_received
+    direction: s2c
+    s2c:
+      min_size: 0x50
+      extra: "not read"
+      fields:
+        - {offset: 0x18, type: u64, name: inviter_char_id, values: "non-zero (0 -> ignored)", notes: ""}
+        - {offset: 0x28, type: "char[40]", name: inviter_name, values: "ANSI", notes: "GUI_Friend_MB_RecvInvite_S"}
+      accepted_if: "+0x18 != 0"
+    server_reply: "none; the answer is a later 0x812"
+    client_effect: "Yes/No box (dialog 0x3c). Yes opens the friend panel on the 'Not accepted' tab, which requests InviteList.asp; the actual accept is 0x812 from there"
+    handler: FUN_00476ed3
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00476ed3 (+0x18/+0x1c non-zero test, name +0x28 ANSI); scene dialog 0x3c in FUN_0048cd72 opens panel 0x76 tab 2"
+
+  # ================================================================== MAIL
+  - opcode: 0x808
+    name: mail_recipient_lookup
+    direction: both
+    c2s:
+      size: 0x48
+      extra: "sender uid"
+      fields:
+        - {offset: 0x18, type: "char[40]", name: recipient_name, values: "ANSI", notes: "'Check Name' button"}
+    s2c:
+      min_size: 0x18
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u64, name: char_id, values: "found -> the recipient's char id (result 0 'OkCheckRecvCharName'); 0 or all-ones -> 1 'NoNameCharacter'; 0xFFFFFFFF_FFFFFFFE -> 2 'NotSameNation' (recipient is in another nation)", notes: "result posted as UI event 0x2f; texts from FUN_0053dd97"}
+      accepted_if: "always"
+    server_reply: "S->C 0x808 with the char id; 0 if unknown; 0xFFFFFFFFFFFFFFFE if the recipient's nation differs from the sender's"
+    client_effect: "mail-compose name check result"
+    handler: FUN_0047056b
+    send_sites: [FUN_0053ca95]
+    confidence: medium
+    evidence: "handler FUN_0047056b result mapping exact; UI texts at FUN_0053dd97 event 0x2f: 0 OkCheckRecvCharName, 2 NotSameNation, else NoNameCharacter; C->S name at +0x18 (0x53d0f4)"
+
+  - opcode: 0x809
+    name: send_mail
+    direction: c2s
+    c2s:
+      size: 0x328
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u64, name: my_char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x18, type: "char[40]", name: recipient_name, values: "ANSI", notes: ""}
+        - {offset: 0x48, type: u8, name: kind, values: "bit 0x01 = bill (demand money), 0x10 = has attachment/money, 0 = plain", notes: "same bits as MAIL_TYPE"}
+        - {offset: 0x4c, type: u32, name: money, values: "attached money, or billed amount when kind & 1", notes: ""}
+        - {offset: 0x50, type: "char[40]", name: my_name, values: "rec+0x20b", notes: ""}
+        - {offset: 0x80, type: "bytes[0x50]", name: items, values: "5 x 16-byte item records (attachments)", notes: ""}
+        - {offset: 0xd8, type: "u16[5]", name: item_slots, values: "inventory slot of each attachment, 0xFFFF = empty", notes: "spec called them counts; they are per-attachment slot ids"}
+        - {offset: 0xe2, type: "wchar[256]", name: body, values: "UTF-16LE", notes: ""}
+        - {offset: 0x2e2, type: "wchar[32]", name: title, values: "UTF-16LE", notes: ""}
+    server_reply: "no opcode is awaited. Validate items/money (remove from sender: 0x4c2 money, item packets), charge tax (GUI_Mail_Send_Tax), store the mail, send 0x80b to the recipient if online."
+    client_effect: "MailSendComplete box is shown locally"
+    handler: ""
+    send_sites: [FUN_0053d182]
+    confidence: medium
+    verified: true
+    evidence: "0x53d876 build (buf ebp-0x4c0): +0x10 id, +0x18 name, +0x48 kind (1 if bill else 0x10 if money/attachment), +0x4c money, +0x50 rec+0x20b, +0x80 items, +0xd8 u16[5] (0xFFFF default), body +0xe2 0x100 wchar, title +0x2e2 0x20 wchar"
+
+  - opcode: 0x80a
+    name: mail_delete_selected
+    direction: c2s
+    c2s:
+      size: 0x68
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u64, name: my_char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x18, type: "u64[10]", name: mail_ids, values: "selected MAIL_UIDs (checked rows of the list), 0 = unused", notes: "sent after DoYouSelectDelMail / DoYouSelectDelMailItem ('There are items attached. Are you sure you want to delete them?') -> dialog result 0x2a"}
+    server_reply: "DELETE those mails (attachments included). No reply is awaited; the client has already erased them from its list."
+    client_effect: "client erases each selected mail from acct+0xb2a4 (FUN_0053e81d = vector erase), decrements the unread counter for unread ones, then re-reads MailList.asp"
+    handler: ""
+    send_sites: [FUN_0053e862]
+    confidence: high
+    verified: true
+    evidence: "FUN_0053e862 param 0x2a; confirm box at 0x53e5b2/0x53e5b9 is DoYouSelectDelMailItem/DoYouSelectDelMail with result 0x2a (0x53e5cc); entries erased locally. CORRECTED: was 'take selected'"
+
+  - opcode: 0x80b
+    name: new_mail_notice
+    direction: s2c
+    s2c:
+      min_size: 0x20
+      extra: "not read"
+      fields:
+        - {offset: 0x18, type: u32, name: total, values: "total mails", notes: "-> acct+0xb29c"}
+        - {offset: 0x1c, type: u32, name: unread, values: "unread mails", notes: "-> acct+0xb298 (mail icon)"}
+      accepted_if: "always (the chat line only when the game scene exists)"
+    server_reply: "none"
+    client_effect: "chat line msg_mailarrival; mail indicator"
+    handler: FUN_00476dd6
+    send_sites: []
+    confidence: high
+    evidence: "FUN_00476dd6"
+
+  - opcode: 0x80c
+    name: mail_read
+    direction: both
+    c2s:
+      size: 0x20
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u64, name: my_char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x18, type: u64, name: mail_id, values: "MAIL_UID from MailList.asp", notes: ""}
+    s2c:
+      min_size: 0xa4
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u64, name: mail_id, values: "must match an entry of the client's web mail list (acct+0xb2a4 vector, 0x110-byte entries) and be non-zero", notes: ""}
+        - {offset: 0x18, type: u8, name: mail_type, values: "MAIL_TYPE bits (0x01 bill, 0x04 system, 0x10 money/attachment)", notes: "-> entry+8"}
+        - {offset: 0x19, type: u8, name: read_flags, values: "bit0 read, bit1 attachment taken/bill paid (greys the line)", notes: "-> entry+9; if the old value was 0 the unread counter is decremented"}
+        - {offset: 0x1c, type: u32, name: unknown_1c, values: "unknown (probably money/bill amount)", notes: "-> entry+0xc"}
+        - {offset: 0x50, type: "bytes[0x54]", name: attachments, values: "probably u32 money + 5 x 16-byte item records (mirrors 0x809 +0x4c/+0x80)", notes: "-> entry+0x40; entry+0x98 = 1 (details loaded)"}
+      accepted_if: "mail id present in the list"
+    server_reply: "S->C 0x80c with the attachment block; mark read. Remember this mail id per session: 0x80d/0x80e carry no id."
+    client_effect: "fills the read view (UI event 0x2d)"
+    handler: FUN_00474f00
+    send_sites: [FUN_0053dfdb]
+    confidence: medium
+    verified: true
+    evidence: "FUN_00474f00: id +0x10/+0x14 must be > 0 and in the list; +0x1c->entry+0xc, +0x18->entry+8, +0x19->entry+9, 0x15 dwords +0x50->entry+0x40, entry+0x98=1, event 0x2d. C->S 0x80c in FUN_0053dfdb {+0x10 my id, +0x18 mail id}. Attachment layout inside +0x50 still inferred"
+
+  - opcode: 0x80d
+    name: mail_take_item_or_pay_bill
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: zero, values: "always 0", notes: "client BUG: the mail id is written before FUN_004a730b(clear=1) wipes it"}
+    server_reply: "act on the mail last opened with 0x80c. Two buttons send it: 'Receive Item' (DoYouRecvMailitem, result 0x2d; client checks free bag slots >= attached items, else StrDef_InventoryIsFull) -> move the attachments (items and money) to the reader; 'Payments' (DoYouPay, result 0x2c; only when MAIL_TYPE & 1 and the bill <= my gold rec+0x283, else MoneyIsLow) -> take the billed money from the reader, credit the sender, mark paid. The server must tell them apart by the open mail's MAIL_TYPE bit 0x01. Then S->C 0x80f for that mail (+ money/item updates)."
+    client_effect: "none awaited"
+    handler: ""
+    send_sites: [FUN_0053e862]
+    confidence: high
+    verified: true
+    evidence: "0x53eb7b..0x53eba6 (id at ebp-0xc/-0x8 = +0x10/+0x14, buffer ebp-0x1c, clear=edi=1) and 0x53ec93; confirm boxes 0x53e607 (0x2d) / 0x53e657 DoYouPay (0x2c)"
+
+  - opcode: 0x80e
+    name: mail_return_to_sender
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: zero, values: "always 0", notes: "same write-then-clear bug; the only client guard is 'a mail is open' (open mail id > 0), NOT money > 0"}
+    server_reply: "return the last opened mail (0x80c) to its sender (GUI_Mail_Header_Return '[Return]' mail with the attachments) and remove it from the reader's box. No reply is awaited."
+    client_effect: "client erases the open mail from its list (FUN_0053e81d) and goes back to the list view"
+    handler: ""
+    send_sites: [FUN_0053e862]
+    confidence: high
+    verified: true
+    evidence: "0x53ed30..0x53ed4f; FUN_0053e862 param 0x2b, whose confirm box is DoYouReturnMail (0x53e6a4, button GUI_Mail_Read_ReturnMail 'Return'). CORRECTED: was 'take money'"
+
+  - opcode: 0x80f
+    name: mail_update
+    direction: s2c
+    s2c:
+      min_size: 0xa4
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: "struct", name: same_as_0x80c, values: "identical layout to S->C 0x80c", notes: "same handler"}
+      accepted_if: "mail id present in the list"
+    server_reply: "none"
+    client_effect: "refresh one mail entry"
+    handler: FUN_00474f00
+    send_sites: []
+    confidence: medium
+    evidence: "dispatcher maps 0x80c and 0x80f to FUN_00474f00"
+
+  # ================================================================== INSPECT
+  - opcode: 0x482
+    name: inspect_player_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: target_uid, values: "a player unit (type 2, uid < 0x2EEF)", notes: "PanelTargetInfo remembers it"}
+    server_reply: "S->C 0x483 to the sender"
+    client_effect: ""
+    handler: ""
+    send_sites: [FUN_005714b0]
+    confidence: high
+    evidence: "spec/group02.md"
+
+  - opcode: 0x483
+    name: inspect_player_result
+    direction: s2c
+    s2c:
+      min_size: 0xfc
+      extra: "not read"
+      fields:
+        - {offset: 0x44, type: u32, name: fame, values: "target fame", notes: "-> target rec+0x651"}
+        - {offset: 0x4c, type: "bytes[16]", name: appearance, values: "costume/appearance words", notes: "-> rec+0x263"}
+        - {offset: 0x5c, type: "bytes[32]", name: equip_codes, values: "equipment item codes", notes: "-> rec+0x243"}
+        - {offset: 0x7c, type: "bytes[0x80]", name: detail, values: "detail block copied to the panel (likely equipment records)", notes: ""}
+        - {offset: 0x10, type: "bytes[0x34]", name: unknown_10, values: "unknown", notes: ""}
+      accepted_if: "TargetInfo panel open; target taken from the panel's stored uid"
+    server_reply: "none"
+    client_effect: "fills PanelTargetInfo"
+    handler: FUN_00471a4e
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00471a4e -> FUN_005715a1: +0x7c 0x80 bytes -> panel+0xa8, +0x5c 0x20 -> rec+0x243, +0x4c..+0x58 -> rec+0x263, +0x44 -> rec+0x651; unit from panel+0x70 (C->S 0x482 +0x10 at 0x571573)"
+
+  # ================================================================== GUILD (LEGION) core
+  - opcode: 0x455
+    name: guild_create
+    direction: c2s
+    c2s:
+      size: 0x1e8
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u8, name: zero, values: "0", notes: "position of grec+0x00"}
+        - {offset: 0x11, type: "char[32]", name: guild_name, values: "ANSI, 1..31 bytes (client refuses >= 32: GuildNameIsLong)", notes: "laid out like grec+0x01"}
+        - {offset: 0x1b0, type: "char[40]", name: creator_name, values: "rec+0x20b", notes: ""}
+    server_reply: >-
+      Check: not already in a guild (sysmsg 80), name free/allowed (GuildNameIsIgnore box, or sysmsg 77),
+      cost paid (GUI_GuildCreate_Cost; deduct gold with 0x4c2). On success S->C 0x2015 to the creator
+      (creator becomes grade 4) and refresh the guild name cache (GuildName.asp / GuildNameAllPage.asp).
+    client_effect: "Guild_Create panel closes"
+    handler: ""
+    send_sites: [FUN_0055335a]
+    confidence: high
+    verified: true
+    evidence: "0x5537ff build (buf ebp-0x2a0: name ebp-0x28f = +0x11 via FUN_0042d75d CP_ACP, length < 0x20 checked at 0x55378e; creator ebp-0xf0 = +0x1b0)"
+
+  - opcode: 0x2015
+    name: guild_created
+    direction: s2c
+    s2c:
+      min_size: 0x1e4
+      extra: "MUST equal my uid, else ignored"
+      fields:
+        - {offset: 0x10, type: "struct[0x198]", name: guild_record, values: "grec layout, see 0x457", notes: ""}
+        - {offset: 0xf4, type: i32, name: guild_id, values: "> 0 (<= 0 only clears my guild state)", notes: "grec+0xe4; -> rec+0x27f"}
+        - {offset: 0x1a8, type: "struct[0x3c]", name: my_member_record, values: "member record (see 0x45b) of the creator, grade 4", notes: ""}
+      accepted_if: "extra == my uid, me loaded"
+    server_reply: "none"
+    client_effect: "clears the old guild, loads the record with my grade = 4 (Legion Master), adds the member, sysmsg 0x4c (76 StrDef_CreateGuild 'A Legion was established.'); a changed guild id triggers GuildMemberList.asp and GuildName.asp"
+    handler: FUN_00471216
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00471216: extra == me+0x35e; rec+0x27f = +0xf4; FUN_004b4a7b clear; if +0xf4 > 0: FUN_004b6a18(+0x10, 4); FUN_004b4e5f(+0x1a8); sysmsg 0x4c"
+
+  - opcode: 0x457
+    name: guild_info_with_grade
+    direction: s2c
+    s2c:
+      min_size: 0x1ac
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u8, name: "grec+0x00", values: "unknown; echoed by the client in 0x465 +0x12 (likely nation)", notes: ""}
+        - {offset: 0x11, type: "char[32]", name: "grec.name", values: "ANSI guild name", notes: "also cached as the <dictg id> name"}
+        - {offset: 0x31, type: "char[0xbe]", name: "grec.notice", values: "UTF-8 legion notice (Info tab)", notes: "set by 0x464"}
+        - {offset: 0xf4, type: i32, name: "grec.guild_id", values: "> 0", notes: "-> rec+0x27f (as i16)"}
+        - {offset: 0xf8, type: u32, name: "grec.exp", values: "guild exp; level up needs >= Level_Table_Guild exp of the next level", notes: "grec+0xe8"}
+        - {offset: 0xfc, type: u32, name: "grec.fame", values: "legion fame ('NationFame' field)", notes: ""}
+        - {offset: 0x100, type: u32, name: "grec.ether", values: "ether amount", notes: "0x465/0x4bf update it"}
+        - {offset: 0x104, type: "bytes[4]", name: "grec+0xf4", values: "unknown", notes: ""}
+        - {offset: 0x108, type: i16, name: "grec.level", values: "1..10 (Level_Table_Guild.tsv)", notes: "max members = table max_members"}
+        - {offset: 0x10a, type: i16, name: "grec.stock_cur", values: "shares (shown 'cur / total' in TotalStock)", notes: "0x468/0x46a update"}
+        - {offset: 0x10c, type: i16, name: "grec.stock_total", values: "total shares; 0 -> dividend refused 'CantDivident'", notes: ""}
+        - {offset: 0x10e, type: i16, name: "grec.member_count", values: "members", notes: "0x45b +1 / 0x45c -1 locally"}
+        - {offset: 0x110, type: "u16[5]", name: "grec.permissions", values: "permission bitmask per grade 0..4: 0x1 notice?, 0x2 ether trade/dividend, 0x4 warehouse deposit, 0x8 warehouse withdraw, 0x10 fort manage, 0x20 invite, 0x40 exile?, 0x80 grade change, 0x100/0x200 battlefield summon / war nexus?, 0x800 core equip", notes: "FUN_004b3f6d(bit) tests perms[my grade]; set by 0x462"}
+        - {offset: 0x11a, type: "bytes[2]", name: "grec+0x10a", values: "unknown", notes: ""}
+        - {offset: 0x11c, type: u32, name: "grec.dividend_time", values: "last/next dividend time (GUI_GuildDividend_NotToday_S)", notes: "written by 0x46a +0x34"}
+        - {offset: 0x130, type: i64, name: "grec.gold", values: "legion gold", notes: "grec+0x120"}
+        - {offset: 0x138, type: "bytes[0x60]", name: "grec.cores", values: "6 x 16-byte item records = guild core slots (container 0xb)", notes: "grec+0x128; 0x4bd replaces it"}
+        - {offset: 0x198, type: i8, name: "grec+0x188", values: "unknown (0x4bf +0x20)", notes: ""}
+        - {offset: 0x19a, type: "u16[5]", name: "grec+0x18a", values: "unknown ids (0x4bf +0x22); read with item lookups on the Info/Core tab", notes: ""}
+        - {offset: 0x1a8, type: i32, name: my_grade, values: "0 Recruit, 1 Regular Soldier, 2 Centurion, 3 Sub Master, 4 Legion Master; < 0 = leave unchanged", notes: "-> mgr+0x918, rec+0x64c, my member entry"}
+        - {offset: 0x10, type: "bytes[0x198]", name: other_record_bytes, values: "every grec byte not listed above is unknown: send 0", notes: "record is copied whole (0x198 bytes)"}
+      accepted_if: "me loaded"
+    server_reply: "none"
+    client_effect: "copies the record; if the guild id changed: clears members, requests GuildMemberList.asp, caches the name; UI event 0x28"
+    handler: FUN_004712a6
+    send_sites: []
+    confidence: medium
+    evidence: "FUN_004b6a18 copy 0x66 dwords; field use from Info panel 0x554d21..0x555c18, 0x4b3f6d, 0x557cdc; offsets in this entry are PACKET offsets (= grec + 0x10)"
+
+  - opcode: 0x458
+    name: guild_info
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: guild_id, values: "rec+0x27f (only sent when non-zero)", notes: "client rate limit 2 s; sent at world entry/channel move (FUN_00489d6d), on opening the legion panel (FUN_005599dd) and after 0x45b adds me"}
+        - {offset: 0x14, type: u32, name: zero, values: "0", notes: ""}
+    s2c:
+      min_size: 0x1a8
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: "struct[0x198]", name: guild_record, values: "as 0x457", notes: "my grade is NOT touched"}
+      accepted_if: "me loaded"
+    server_reply: "S->C 0x458 (or 0x457 with my grade) for that guild"
+    client_effect: "as 0x457"
+    handler: FUN_004712f3
+    send_sites: [FUN_004b42c5]
+    confidence: high
+    verified: true
+    evidence: "FUN_004b42c5 inline 0xa53c0018 build (+0x10 guild id, +0x14 0, 2000 ms limit); handler FUN_004712f3 sets rec+0x27f = +0xf4 then FUN_004b6a18(+0x10, -1)"
+
+  - opcode: 0x45b
+    name: guild_invite_or_member_added
+    direction: both
+    c2s:
+      size: 0x58
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "my guild id", notes: "the popup path (FUN_004b500f) writes rec+0x27f as i16 at +0x10"}
+        - {offset: 0x20, type: "char[40]", name: invitee_name, values: "ANSI, not my own name", notes: "popup path requires permission 0x20"}
+    s2c:
+      min_size: 0x54
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: i16, name: guild_id, values: "guild of the member", notes: "if the member is me: rec+0x27f = this"}
+        - {offset: 0x18, type: u64, name: "member.char_id", values: "", notes: "member record (0x3c bytes) starts at +0x18"}
+        - {offset: 0x20, type: "char[40]", name: "member.name", values: "ANSI; EMPTY = only update grade/points/session of an existing member", notes: ""}
+        - {offset: 0x48, type: u8, name: "member.grade", values: "0..4; 4 demotes any other grade-4 member locally to 0 (master hand-over)", notes: ""}
+        - {offset: 0x4c, type: u32, name: "member.guild_point", values: "CHAR_GUILD_POINT (contribution)", notes: ""}
+        - {offset: 0x50, type: u32, name: "member.session", values: "online uid (CHAR_SESSION); 0 = offline", notes: "used as the kick target uid in 0x45c"}
+      accepted_if: "me loaded"
+    server_reply: >-
+      C->S (invite): check permission (grec.permissions[grade] & 0x20), target exists/online/no guild,
+      member cap. Then S->C 0x41d {+0x10 = 42 (StrDef_AreYouJoinGuild, a Yes/No type-3 message),
+      +0x14 = guild id} to the invitee. Yes comes back as C->S 0x41d {42, guild id}: add the member,
+      send 0x457 (grade 0) to the new member and S->C 0x45b with the new member record to all online
+      members (incl. the new one), plus 0x2013 to the new member.
+    client_effect: "member list insert/update (UI event 0x29); grec member count +1 UNCONDITIONALLY (also for an empty-name update of an existing member, so do not use 0x45b for updates; use 0x461/0x45d); if it is me and my guild was 0 and the record is not loaded, sends 0x458"
+    handler: FUN_0047133c
+    send_sites: [FUN_00557cdc, FUN_004b500f]
+    confidence: high
+    verified: true
+    evidence: "FUN_00557cdc cmd 0xd (buf local_f0: +0x10 u16 guild id, +0x20 name), FUN_004b500f (inline 0xa53c0058); member record = FUN_004b4e5f (char id +0, name +8, grade +0x30, +0x34, +0x38); type-3 sysmsg -> FUN_00498a40 dialog 3 (id, +0x14) -> FUN_0048cd72 case 3 Yes -> C->S 0x41d {+0x10 id, +0x14 param} size 0x40"
+
+  - opcode: 0x45c
+    name: guild_kick_or_leave
+    direction: both
+    c2s:
+      size: 0x58
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "mgr guild id (written as a WORD; +0x12 stays 0)", notes: ""}
+        - {offset: 0x18, type: u64, name: target_char_id, values: "own id = leave; member id = kick (never a grade-4 member)", notes: "kick asks DoYouBanMember first (dialog 0xe)"}
+        - {offset: 0x50, type: u32, name: target_uid, values: "leave: own uid; kick: member.session", notes: ""}
+    s2c:
+      min_size: 0x20
+      extra: "not read"
+      fields:
+        - {offset: 0x18, type: u64, name: removed_char_id, values: "", notes: ""}
+      accepted_if: "me loaded and my guild record loaded"
+    server_reply: >-
+      Leave: master may not leave (GuildMasterImpossibleDropout is client text; server sysmsg 83).
+      Kick: needs permission (0x40 assumed) and target grade < kicker grade (else sysmsg 85).
+      Send S->C 0x45c to the remaining online members, and to the removed player 0x456 {+0x14 = 0}
+      (clears his guild state; 0x45c alone does NOT clear it), 0x2013 with guild id 0, and 0x41d
+      sysmsg 82 (left) or 84 (banished).
+    client_effect: "member removed, count -1, UI event 0x29"
+    handler: FUN_004713d9
+    send_sites: [FUN_00557cdc]
+    confidence: high
+    verified: true
+    evidence: "FUN_00557cdc cmd 0xe (buf local_98: +0x10 WORD, +0x18 char id, +0x50 uid; grade-4 target refused); S->C FUN_004713d9 -> FUN_004b4b8f(+0x18): erase + count -1 even if not found; does not touch rec+0x27f"
+
+  - opcode: 0x45d
+    name: guild_member_session_update
+    direction: s2c
+    s2c:
+      min_size: 0x24
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u32, name: guild_id, values: "must equal my guild id", notes: ""}
+        - {offset: 0x18, type: u64, name: char_id, values: "member", notes: "0 -> ignored"}
+        - {offset: 0x20, type: u32, name: session, values: "online uid, 0 = logged off", notes: "-> member.session (CHAR_SESSION)"}
+      accepted_if: "guild ids match; member present"
+    server_reply: "none"
+    client_effect: "member online state in the Member tab"
+    handler: FUN_0047140c
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_0047140c: FUN_004b3f16() == +0x10 (u32 compare); FUN_004b4b49(+0x18 u64, +0x20) writes node+0x50 (= wire member +0x38)"
+
+  - opcode: 0x456
+    name: guild_disband
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: guild_id, values: "my guild id", notes: "Dismantle button, master only (UI)"}
+        - {offset: 0x14, type: u32, name: zero, values: "0", notes: ""}
+    s2c:
+      min_size: 0x18
+      extra: "not read"
+      fields:
+        - {offset: 0x14, type: i32, name: result, values: "0 = my guild is gone (clears rec+0x27f and all guild state); -1 GuildDeleteFail_RemainMember; -2 GuildDeleteFail_StockHave (stock > 100); -3 GuildDeleteFail_EtherHave", notes: "other values: nothing"}
+      accepted_if: "me loaded"
+    server_reply: "success: 0x456 {0} to every member (also used to drop a single member, see 0x45c) + sysmsg 88; failure: 0x456 {-1/-2/-3} to the requester"
+    client_effect: "clear guild / system line"
+    handler: FUN_004799cf
+    send_sites: [FUN_00557cdc]
+    confidence: high
+    verified: true
+    evidence: "FUN_004799cf (+0x14 == 0 -> rec+0x27f = 0, FUN_004b4a7b, event 0x28; -1/-2/-3 texts; no client text on success); cmd 0x10 at 0x55801d {+0x10 guild id, +0x14 0}"
+
+  - opcode: 0x461
+    name: guild_member_grade_change
+    direction: both
+    c2s:
+      size: 0x70
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u64, name: my_char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x18, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x1c, type: u16, name: new_grade, values: "0..4; 4 = hand over Legion Master", notes: "client applies it locally at once and drops itself to 0 when giving 4"}
+        - {offset: 0x20, type: "struct[0x40]", name: member_node, values: "the member's 0x40 bytes (char id, name, OLD grade, point, session, 4 more)", notes: "requires my permission 0x80"}
+    s2c:
+      min_size: 0x5c
+      extra: "not read"
+      fields:
+        - {offset: 0x1a, type: i16, name: sysmsg, values: "0 = none, else system_msg id shown (e.g. 246 Strdef_GUILD_MEMBER_RANK3, 204, 206)", notes: ""}
+        - {offset: 0x20, type: "struct[0x3c]", name: member_record, values: "member record with the NEW grade at +0x50", notes: "member must already exist"}
+      accepted_if: "my guild record loaded"
+    server_reply: "validate (max 3 Sub Masters -> 246; permission -> 206); S->C 0x461 to all online members; also 0x2013 to the changed member"
+    client_effect: "member updated, UI event 0x29"
+    handler: FUN_004714d2
+    send_sites: [FUN_00557cdc]
+    confidence: high
+    verified: true
+    evidence: "FUN_00557cdc cmd 0xf: requires (grec+0x100)[my grade] byte & 0x80, member found, new grade != old and != -1; buf local_108 +0x10 my id, +0x18 u16 guild, +0x1c u16 grade, +0x20 0x40 bytes. S->C FUN_004714d2 -> FUN_004b5130: member must exist; +0x1a i16 sysmsg"
+
+  - opcode: 0x462
+    name: guild_permissions
+    direction: both
+    c2s:
+      size: 0x1c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x12, type: "u16[5]", name: permissions, values: "bitmask per grade 0..4 (see 0x457)", notes: "Guild_Permission panel 'ok' (dialog 0x4f); client also writes it into grec+0x100 locally"}
+    s2c:
+      min_size: 0x1c
+      extra: "not read"
+      fields:
+        - {offset: 0x12, type: "u16[5]", name: permissions, values: "", notes: "-> grec+0x100"}
+      accepted_if: "my guild record loaded"
+    server_reply: "master only; store and send S->C 0x462 to all online members"
+    client_effect: "UI event 0x28"
+    handler: FUN_00471501
+    send_sites: ["0x55aade (FUN_00559a59 area)"]
+    confidence: high
+    verified: true
+    evidence: "0x55aade copies panel+0x42 (10 bytes) to +0x12 and to grec+0x100, +0x10 = WORD grec+0xe4; FUN_004b405f copies +0x12..+0x1b -> mgr+0x108 (= grec+0x100)"
+
+  - opcode: 0x463
+    name: guild_level_up
+    direction: c2s
+    c2s:
+      size: 0x14
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x12, type: u16, name: arg, values: "dialog parameter (unknown, probably 0)", notes: ""}
+    server_reply: "after DoYouGuildLevelup_D (dialog 0x11; client checked gold >= next level cost c4 and exp >= next level exp of Level_Table_Guild): take the gold, level+1, push 0x458 to members"
+    client_effect: ""
+    handler: ""
+    send_sites: [FUN_00557cdc]
+    confidence: medium
+    verified: true
+    evidence: "dialog 0x11 opened at 0x55a1d2 with DoYouGuildLevelup_D; answer = FUN_00557cdc cmd 0x11 -> 0x463 {+0x10 WORD grec+0xe4, +0x12 WORD dialog param_4}"
+
+  - opcode: 0x464
+    name: guild_notice_edit
+    direction: c2s
+    c2s:
+      size: 0xd4
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x12, type: "char[0xbe]", name: notice, values: "UTF-8 (FUN_0042d274)", notes: "grec+0x21"}
+    server_reply: "permission 0x1 (assumed); store; push the record (0x458) to online members"
+    client_effect: "client shows the new text locally"
+    handler: ""
+    send_sites: [FUN_0055789c, "0x55a9c5"]
+    confidence: high
+    verified: true
+    evidence: "0x55a9c5 and 0x557982 (buf: +0x10 WORD guild id, +0x12 FUN_0042d274(0xbe) = WideCharToMultiByte 0xFDE9); Info panel reads grec+0x21 with FUN_0042dc73 (UTF-8)"
+
+  - opcode: 0x2013
+    name: own_fame_rank_and_guild
+    direction: s2c
+    s2c:
+      min_size: 0x28
+      extra: "uid of the unit it applies to (normally mine)"
+      fields:
+        - {offset: 0x18, type: u8, name: fame_rank, values: "0..19 (FameRank.tsv); >= 200 GM", notes: "-> rec+0x656 (spec called it guild grade: it is the fame rank)"}
+        - {offset: 0x1c, type: i16, name: guild_id, values: "0 = none", notes: "-> rec+0x27f"}
+        - {offset: 0x20, type: u32, name: unread_mail, values: "unread mail count", notes: "-> acct+0xb298; written even if the unit is unknown"}
+        - {offset: 0x24, type: u32, name: fame, values: "fame points", notes: "-> rec+0x651"}
+      accepted_if: "unit found by extra, or the char-select entry with uid == extra"
+    server_reply: "none. CAUTION: every 0x2013 overwrites fame rank, guild id AND fame of that unit, and the unread-mail counter - always send the current values of all four, never zeros, when using it to set the guild id"
+    client_effect: "own name plate / chat permissions"
+    handler: FUN_0047018b
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_0047018b: +0x18 byte -> +0x656, +0x1c WORD -> +0x27f, +0x24 -> +0x651, +0x20 -> acct+0xb298 always; +0x651/+0x656 identified as fame/fame rank from the match reward code (0x4fcb..)"
+
+  - opcode: 0x4c5
+    name: unit_fame_rank_update
+    direction: s2c
+    s2c:
+      min_size: 0x16
+      extra: "unit uid, must be < 0x3F7 (players)"
+      fields:
+        - {offset: 0x10, type: u32, name: fame, values: "", notes: "-> rec+0x651"}
+        - {offset: 0x14, type: u8, name: fame_rank, values: "", notes: "-> rec+0x656"}
+        - {offset: 0x15, type: u8, name: badge_flags, values: "bits 0x2/0x4/0x8/0x10 pick NewUI_TargetInfo.BG5..BG2", notes: "-> rec+0x64b"}
+      accepted_if: "uid < 0x3F7 and unit known"
+    server_reply: "none"
+    client_effect: "target frame background / rank display"
+    handler: FUN_00470848
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00470848 (extra < 0x3F7, +0x10 u32, +0x14 u8, +0x15 u8). MISASSIGNED: not a guild mark; belongs to world/pvp (fame)"
+
+  # ================================================================== GUILD warehouse / core
+  - opcode: 0x45e
+    name: guild_warehouse_open_close
+    direction: both
+    c2s:
+      size: 0x2c4
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x298, type: u16, name: open, values: "1 = open (Warehouse NPC), 0 = close", notes: "written as a WORD"}
+    s2c:
+      min_size: 0x2c4
+      extra: "not read"
+      fields:
+        - {offset: 0x14, type: "bytes[0x284]", name: warehouse, values: "+0x00 u32 size/expansion level (0x460 sets it); rest = item records (layout unknown, likely 16-byte items)", notes: "-> mgr+0x1a0"}
+        - {offset: 0x29a, type: i16, name: other_users, values: "< 1 -> opens PanelGuildCargo; >= 1 -> 'StrDef_GUILD_Cargo_using' with +0x29c", notes: ""}
+        - {offset: 0x29c, type: "char[40]", name: user_name, values: "ANSI name of the member using it", notes: ""}
+      accepted_if: "me loaded and guild mgr present. The block is always stored, but the panel only opens (or shows 'in use') while PanelGuildCargo (dialog 0x53) +0x1c is non-zero, i.e. after the client's own open request and before its close (close clears +0x1c)"
+    server_reply: "open: lock the warehouse to one member; S->C 0x45e {block, 0}. Close: release (no reply needed)"
+    client_effect: "opens the warehouse panel (0x53)"
+    handler: FUN_004778da
+    send_sites: [FUN_005523e8, FUN_0055247e]
+    confidence: medium
+    verified: true
+    evidence: "builds 0x55243f/0x5524d0 (buf ebp-0x2c8: +0x10 WORD guild id, +0x298 WORD 1/0); handler FUN_004778da: FUN_004b3fb6 copies 0xa1 dwords (0x284) from +0x14 to mgr+0x1a0; +0x29a i16; +0x29c name"
+
+  - opcode: 0x45f
+    name: guild_warehouse_item_move
+    direction: both
+    c2s:
+      size: 0x2ec
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: panel_arg, values: "value passed when the warehouse was opened (panel +0x1c)", notes: "unknown meaning"}
+        - {offset: 0x14, type: u32, name: direction, values: "1 = warehouse -> bag (withdraw, perm 0x8); other sites 0 (deposit, perm 0x4) - verify", notes: ""}
+        - {offset: 0x18, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x1a, type: u8, name: src_container, values: "", notes: ""}
+        - {offset: 0x1b, type: u8, name: src_slot, values: "", notes: ""}
+        - {offset: 0x1c, type: u8, name: dst_container, values: "1 = bag on withdraw", notes: ""}
+        - {offset: 0x1d, type: u8, name: dst_slot, values: "first free slot", notes: ""}
+        - {offset: 0x20, type: "bytes[16]", name: src_item, values: "item record being moved", notes: ""}
+        - {offset: 0x30, type: "bytes[16]", name: dst_item, values: "current content of the destination slot", notes: ""}
+    s2c:
+      min_size: 0x2ec
+      extra: "not read"
+      fields:
+        - {offset: 0x68, type: "bytes[0x284]", name: warehouse, values: "new warehouse block", notes: "-> mgr+0x1a0, UI event 0x2b"}
+      accepted_if: "always"
+    server_reply: "S->C 0x45f with the updated block (to all members with the panel open) + the bag-side item update"
+    client_effect: "refresh warehouse"
+    handler: FUN_00471451
+    send_sites: [FUN_005525c2, FUN_005527ec, FUN_005794d3]
+    confidence: medium
+    evidence: "0x552732 build (withdraw); deposit sites 0x55293e/0x552c20/0x552d5e not re-read"
+
+  - opcode: 0x460
+    name: guild_warehouse_expand
+    direction: both
+    c2s:
+      size: 0x28
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "rec+0x27f", notes: ""}
+        - {offset: 0x12, type: u16, name: item_slot, values: "bag slot of the expansion item", notes: "AreYouExtendGuildCargo (dialog 0x4b)"}
+        - {offset: 0x14, type: u32, name: item_uid, values: "item+0x14 of that slot", notes: ""}
+    s2c:
+      min_size: 0x28
+      extra: "not read"
+      fields:
+        - {offset: 0x12, type: i16, name: new_size, values: "applied when +0x18 == 0", notes: "-> warehouse block +0"}
+        - {offset: 0x18, type: i16, name: sysmsg, values: "0 = ok, else system_msg id", notes: ""}
+        - {offset: 0x20, type: i64, name: guild_gold, values: "", notes: "-> grec+0x120"}
+      accepted_if: "guild record loaded"
+    server_reply: "consume the item, grow the warehouse, S->C 0x460"
+    client_effect: ""
+    handler: FUN_0047146b
+    send_sites: [FUN_0055231e]
+    confidence: medium
+    evidence: "FUN_0055231e (dialog 0x4b, FUN_004e1c8d item); renamed from 'upgrade/donate'. S->C FUN_0047146b verified: gold +0x20/+0x24 -> grec+0x120 always, +0x18 == 0 -> FUN_004b3ffb(+0x12) (warehouse block +0), else sysmsg +0x18"
+
+  - opcode: 0x4bc
+    name: guild_core_equip
+    direction: c2s
+    c2s:
+      size: 0x38
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x12, type: u8, name: container, values: "0x0B = guild core container", notes: ""}
+        - {offset: 0x13, type: u8, name: slot_a, values: "", notes: "exact roles of +0x13..+0x15 not split (src slot / dst slot / flag)"}
+        - {offset: 0x14, type: u8, name: slot_b, values: "", notes: ""}
+        - {offset: 0x15, type: u8, name: flag, values: "", notes: ""}
+        - {offset: 0x18, type: "bytes[16]", name: item_a, values: "", notes: ""}
+        - {offset: 0x28, type: "bytes[16]", name: item_b, values: "", notes: ""}
+    server_reply: "permission 0x800 (GUI_Guild_ErrMsg_CoreEquipPermision); update grec cores and send 0x4bd to members"
+    client_effect: ""
+    handler: ""
+    send_sites: [FUN_00553cdd, FUN_00553e5e, FUN_005794d3]
+    confidence: low
+    evidence: "spec/group03.md + permission bit 0x800 at 0x553aad/0x553d8e/0x5540b7"
+
+  - opcode: 0x4bd
+    name: guild_cores
+    direction: s2c
+    s2c:
+      min_size: 0x74
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: i16, name: guild_id, values: "must equal mine", notes: ""}
+        - {offset: 0x14, type: "bytes[0x60]", name: cores, values: "6 x 16-byte core item records", notes: "-> grec+0x128; refreshes container 0xb"}
+      accepted_if: "guild ids match"
+    server_reply: "none"
+    client_effect: "Core tab / TP skills needing a core (Tooltip_TPSKILL_NeedGuildCore)"
+    handler: FUN_004715b6
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_004715b6: grec+0xe4 == (i16)+0x10; copies 0x18 dwords +0x14 -> grec+0x128, FUN_004e1425(0xb)"
+
+  - opcode: 0x4bf
+    name: guild_ether_core_status
+    direction: s2c
+    s2c:
+      min_size: 0x2c
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u32, name: sysmsg, values: "0 = none, else system_msg id", notes: ""}
+        - {offset: 0x14, type: u32, name: guild_id, values: "must equal mine", notes: ""}
+        - {offset: 0x18, type: u32, name: sysmsg_param, values: "", notes: ""}
+        - {offset: 0x1c, type: u32, name: ether, values: "", notes: "-> grec+0xf0"}
+        - {offset: 0x20, type: u8, name: unknown_188, values: "unknown", notes: "-> grec+0x188"}
+        - {offset: 0x22, type: "u16[5]", name: unknown_18a, values: "unknown", notes: "-> grec+0x18a"}
+      accepted_if: "guild ids match"
+    server_reply: "none"
+    client_effect: "UI event 0x28"
+    handler: FUN_00471611
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00471611: grec+0xe4 == +0x14; +0x1c -> grec+0xf0, +0x20 -> grec+0x188, 5 WORDs +0x22 -> grec+0x18a; sysmsg +0x10 with param +0x18"
+
+  - opcode: 0x4c0
+    name: guild_core_item_use
+    direction: c2s
+    c2s:
+      size: 0x24
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: guild_id, values: "", notes: ""}
+        - {offset: 0x14, type: u32, name: item_code, values: "code of the core item in container 0xb (item kind 0x3c, type 3)", notes: ""}
+        - {offset: 0x18, type: u8, name: core_slot, values: "0..5", notes: ""}
+        - {offset: 0x1c, type: u32, name: sceneidx, values: "acct+0x656", notes: "both +0x1c and +0x20 carry it"}
+        - {offset: 0x20, type: u32, name: sceneidx2, values: "acct+0x656", notes: ""}
+    server_reply: "cast the core's TP skill (combat.yaml skill packets); client starts a 5 s cooldown"
+    client_effect: ""
+    handler: ""
+    send_sites: ["0x55a5e1 (guild panel)", FUN_0057349b]
+    confidence: medium
+    evidence: "0x55a4c4..0x55a63d; MISASSIGNED-ish: belongs to combat/TP skills"
+
+  # ================================================================== GUILD economy
+  - opcode: 0x465
+    name: guild_ether_trade
+    direction: both
+    c2s:
+      size: 0x30
+      extra: "sender uid"
+      fields:
+        - {offset: 0x11, type: u8, name: mode, values: "3 = sell ether, 4 = buy ether", notes: "perm 0x2"}
+        - {offset: 0x12, type: u8, name: grec0, values: "grec+0x00 (unknown byte)", notes: ""}
+        - {offset: 0x14, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x18, type: u32, name: amount, values: "ether amount (1..100000)", notes: ""}
+        - {offset: 0x20, type: i64, name: snap_a, values: "buy: guild gold; sell: ether", notes: "client snapshot, do not trust"}
+        - {offset: 0x28, type: i64, name: snap_b, values: "buy: ether; sell: guild gold", notes: ""}
+    s2c:
+      min_size: 0x30
+      extra: "not read"
+      fields:
+        - {offset: 0x11, type: u8, name: mode, values: "3 or 4", notes: ""}
+        - {offset: 0x20, type: u32, name: a, values: "mode 3: new ether; mode 4: new gold low", notes: ""}
+        - {offset: 0x24, type: u32, name: b, values: "mode 4: new gold high", notes: ""}
+        - {offset: 0x28, type: u32, name: c, values: "mode 3: new gold low; mode 4: new ether", notes: ""}
+        - {offset: 0x2c, type: u32, name: d, values: "mode 3: new gold high", notes: ""}
+      accepted_if: "guild record loaded"
+    server_reply: "apply with the server's ether price; S->C 0x465 to the trader (others: 0x458)"
+    client_effect: "msg_guildtrade_sellehter / msg_guildtrade_buyehter, result box"
+    handler: FUN_00476a53
+    send_sites: ["0x55a77f", "0x55a7c2"]
+    confidence: high
+    verified: true
+    evidence: "0x55a77f (mode 4: +0x20 gold i64, +0x28 ether sign-extended) / 0x55a7c2 (mode 3: +0x20 ether, +0x28 gold); +0x12 = grec byte 0, +0x14 WORD guild id, +0x18 amount. FUN_00476a53: mode 3 ether<-+0x20, gold<-+0x28/+0x2c; mode 4 gold<-+0x20/+0x24, ether<-+0x28; no guild-id check"
+
+  - opcode: 0x468
+    name: guild_stock_buy
+    direction: both
+    c2s:
+      size: 0x48
+      extra: "sender uid"
+      fields:
+        - {offset: 0x18, type: u64, name: my_char_id, values: "", notes: ""}
+        - {offset: 0x20, type: u32, name: guild_uid, values: "GUILD_UID of the selected GuildStrockList.asp row", notes: ""}
+        - {offset: 0x24, type: u32, name: count, values: "shares (<= MAXSTOCK-CURSTOCK)", notes: ""}
+        - {offset: 0x28, type: u32, name: price_a, values: "selected row value (FACEVALUE?), row +0xa4", notes: "low confidence; +0x28/+0x2c come from adjacent row dwords +0xa4/+0xa8 and are probably ONE i64 price"}
+        - {offset: 0x2c, type: u32, name: price_b, values: "selected row value, row +0xa8 (high half?)", notes: ""}
+        - {offset: 0x30, type: u8, name: nation, values: "row NATION", notes: ""}
+    s2c:
+      min_size: 0x26
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: i32, name: result, values: "0 ok, else system_msg id (218 buy fail, 219 sell fail, 224, 277)", notes: ""}
+        - {offset: 0x14, type: u32, name: guild_id, values: "applied only if == my guild", notes: ""}
+        - {offset: 0x18, type: i64, name: guild_gold, values: "", notes: "-> grec+0x120"}
+        - {offset: 0x20, type: u16, name: stock_cur, values: "", notes: "-> grec+0xfa"}
+        - {offset: 0x24, type: u16, name: stock_total, values: "", notes: "-> grec+0xfc"}
+      accepted_if: "always (fields applied only for my guild)"
+    server_reply: "S->C 0x468 also answers 0x469; then the client re-reads GuildStrock(List).asp (UI event 0x2c)"
+    client_effect: ""
+    handler: FUN_00471530
+    send_sites: [FUN_0054f172, FUN_00550824]
+    confidence: medium
+    verified: true
+    evidence: "0x54f218 build (buf ebp-0x4c: +0x18 id, +0x20 row+0x8c, +0x24 count <= row+0x9c - row+0x98, +0x28/+0x2c row+0xa4/+0xa8, +0x30 byte row+0x90); FUN_00471530: +0x10 != 0 -> sysmsg; else if grec+0xe4 == +0x14: gold +0x18, grec+0xfa <- +0x20, grec+0xfc <- +0x24; event 0x2c"
+
+  - opcode: 0x469
+    name: guild_stock_sell
+    direction: c2s
+    c2s:
+      size: 0x48
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u64, name: stock_uid, values: "STOCK_UID of the GuildStrock.asp row", notes: ""}
+        - {offset: 0x18, type: u64, name: my_char_id, values: "", notes: ""}
+        - {offset: 0x20, type: u32, name: guild_uid, values: "GUILD_UID of the row", notes: ""}
+        - {offset: 0x24, type: u32, name: count, values: "<= STOCK_AMOUNT", notes: ""}
+        - {offset: 0x28, type: u32, name: price_a, values: "row value (PURCHASE_VALUE?)", notes: ""}
+        - {offset: 0x2c, type: u32, name: price_b, values: "row value", notes: ""}
+        - {offset: 0x30, type: u8, name: nation, values: "my nation rec+0x655", notes: ""}
+    s2c:
+      min_size: 0x26
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: "struct", name: as_0x468, values: "the dispatcher sends opcode 0x469 to the same handler FUN_00471530", notes: ""}
+      accepted_if: "as 0x468"
+    server_reply: "S->C 0x468 (or 0x469) with the result"
+    client_effect: ""
+    handler: FUN_00471530
+    send_sites: [FUN_0054f172, FUN_00550824]
+    confidence: medium
+    verified: true
+    evidence: "0x54f290 build (+0x10/+0x14 row+0x154/+0x158, +0x18 id, +0x20 row+0x16c, +0x24 count <= row+0x15c, +0x28/+0x2c row+0x164/+0x168, +0x30 rec+0x655)"
+
+  - opcode: 0x46a
+    name: guild_dividend
+    direction: both
+    c2s:
+      size: 0x48
+      extra: "sender uid"
+      fields:
+        - {offset: 0x18, type: u64, name: my_char_id, values: "", notes: ""}
+        - {offset: 0x20, type: i32, name: guild_id, values: "rec+0x27f", notes: ""}
+        - {offset: 0x24, type: "bytes[12]", name: zero, values: "0", notes: ""}
+        - {offset: 0x30, type: u8, name: nation, values: "rec+0x655", notes: ""}
+    s2c:
+      min_size: 0x38
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: i32, name: result, values: "0 ok, else system_msg id (220/221/222)", notes: ""}
+        - {offset: 0x14, type: u32, name: guild_id, values: "", notes: ""}
+        - {offset: 0x18, type: i64, name: guild_gold, values: "", notes: "-> grec+0x120"}
+        - {offset: 0x20, type: u16, name: stock_cur, values: "", notes: "-> grec+0xfa"}
+        - {offset: 0x24, type: u16, name: stock_total, values: "", notes: "-> grec+0xfc"}
+        - {offset: 0x28, type: i64, name: distributed, values: "amount for GUI_GuildManage_DividendMsg_D", notes: ""}
+        - {offset: 0x34, type: u32, name: dividend_time, values: "", notes: "-> grec+0x10c"}
+      accepted_if: "always"
+    server_reply: "pay holders (mail 'Mail_Title_14 [Share dividend]'), S->C 0x46a"
+    client_effect: "message box with the distributed amount"
+    handler: FUN_00476c02
+    send_sites: ["0x55ac57"]
+    confidence: high
+    verified: true
+    evidence: "client precheck: gold > 2,000,000 and stock_total != 0 (0x55ab8d..0x55ac34); build 0x55ac57 (+0x18 id, +0x20 movsx rec+0x27f, +0x24..+0x2f 0, +0x30 rec+0x655); FUN_00476c02 as listed"
+
+  - opcode: 0x4c7
+    name: guild_donation
+    direction: c2s
+    c2s:
+      size: 0x20
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x12, type: u16, name: kind, values: "1 = gold, 2 = jewel", notes: ""}
+        - {offset: 0x14, type: u32, name: amount, values: "200000 (gold) / 100 (jewel)", notes: "fixed by the client"}
+        - {offset: 0x18, type: u64, name: my_char_id, values: "", notes: ""}
+    server_reply: "S->C 0x4c8 with the result and the new donation state"
+    client_effect: "donation panel waits (panel+0xdc = 1)"
+    handler: ""
+    send_sites: [FUN_004b4d75]
+    confidence: high
+    verified: true
+    evidence: "FUN_00557cdc cmd 0x4c (only when mgr+0x924 == button index) -> FUN_004b4d75(1,200000 | 2,100): +0x10 WORD guild, +0x12 WORD kind, +0x14 amount, +0x18 my id"
+
+  - opcode: 0x4c8
+    name: guild_donation_result
+    direction: s2c
+    s2c:
+      min_size: 0x20
+      extra: "not read"
+      fields:
+        - {offset: 0x12, type: u16, name: code, values: "0x11d -> sysmsg 0x11a = 282 'Gold is only once a day'; 0x11c -> sysmsg 0x11c = 284 'Item rewards has been acquired'; 0x11e -> 'TryAgainPlease'; other -> silent", notes: "exact (0x476d1a..0x476d98)"}
+        - {offset: 0x14, type: u8, name: donate_state, values: "-> mgr+0x924; the client only donates when this byte equals the button index (0 gold, 1 jewel)", notes: ""}
+        - {offset: 0x18, type: u32, name: donation_a, values: "-> mgr+0x5b4 (probably weekly total)", notes: ""}
+        - {offset: 0x1c, type: u32, name: donation_b, values: "-> mgr+0x5b8 (probably level/reward flags)", notes: ""}
+      accepted_if: "fields applied only while my guild record is loaded"
+    server_reply: "none"
+    client_effect: "refreshes Guild_Donation panel"
+    handler: FUN_00476d05
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00476d05 + FUN_004b4019 (+0x18 -> mgr+0x5b4, +0x1c -> mgr+0x5b8, +0x14 -> mgr+0x924, only while grec loaded); clears donation panel +0xe0 wait flag"
+
+  - opcode: 0x4be
+    name: guild_reward_claim
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: guild_id, values: "", notes: ""}
+        - {offset: 0x14, type: u32, name: index, values: "0..4, selected reward row", notes: "'Reward' button of legion tab 0x47 (mission/donation rewards)"}
+    server_reply: "grant the reward (sysmsg 284), refresh with 0x4c8/0x458"
+    client_effect: ""
+    handler: ""
+    send_sites: ["0x559c12"]
+    confidence: low
+    evidence: "0x559bc7..0x559c23; which reward table is unproven"
+
+  # ================================================================== GUILD battlefield summon / civil war
+  - opcode: 0x466
+    name: guild_battlefield_summon
+    direction: both
+    c2s:
+      size: 0x44
+      extra: "sender uid"
+      fields:
+        - {offset: 0x12, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x14, type: u16, name: channel, values: "acct+0x64a (summoner's channel)", notes: ""}
+        - {offset: 0x16, type: u16, name: map_id, values: "acct+0x652 (summoner's map)", notes: ""}
+        - {offset: 0x18, type: "char[40]", name: member_name, values: "the summoned MEMBER (member popup)", notes: "not a guild name"}
+        - {offset: 0x40, type: u16, name: member_session, values: "member.session (online uid)", notes: ""}
+    s2c:
+      min_size: 0x44
+      extra: "not read"
+      fields:
+        - {offset: 0x12, type: i16, name: guild_id, values: "must equal mine", notes: ""}
+        - {offset: 0x14, type: i16, name: channel, values: "", notes: "echoed in 0x467"}
+        - {offset: 0x16, type: i16, name: map_id, values: "", notes: "echoed in 0x467"}
+        - {offset: 0x18, type: "char[40]", name: summoner_name, values: "ANSI", notes: "GUI_Guild_WarInvite_PopupMsg 'The %s summoned you to the battlefield'"}
+        - {offset: 0x40, type: u16, name: cookie, values: "anything; echoed in 0x467", notes: "whole 0x44 bytes stored at mgr+0x928"}
+      accepted_if: "guild ids match"
+    server_reply: "C->S: forward S->C 0x466 to that member (permission 0x100/0x200 'Battlefield summoned' assumed)"
+    client_effect: "Yes/No box (dialog 0x41)"
+    handler: FUN_00479ad8
+    send_sites: ["0x55b1d2"]
+    confidence: high
+    verified: true
+    evidence: "0x55b1d2 build (buf ebp-0xfc: +0x12 grec+0xe4, +0x14 acct+0x64a, +0x16 acct+0x652, +0x18 node+8 name, +0x40 node+0x38 session); FUN_00479ad8 copies 0x11 dwords to mgr+0x928; spec's 'war invite to a guild' was wrong"
+
+  - opcode: 0x467
+    name: guild_battlefield_summon_accept
+    direction: c2s
+    c2s:
+      size: 0x44
+      extra: "sender uid"
+      fields:
+        - {offset: 0x12, type: u16, name: guild_id, values: "", notes: ""}
+        - {offset: 0x14, type: u16, name: channel, values: "from the box", notes: ""}
+        - {offset: 0x16, type: u16, name: map_id, values: "from the box", notes: ""}
+        - {offset: 0x18, type: "char[40]", name: summoner_name, values: "stored S->C +0x18", notes: ""}
+        - {offset: 0x40, type: u16, name: cookie, values: "stored S->C +0x40", notes: ""}
+    server_reply: "warp the member to the summoner (channel/map change via world.yaml 0x44e/0x2000). Only sent on Yes."
+    client_effect: ""
+    handler: ""
+    send_sites: [FUN_0051238b]
+    confidence: high
+    verified: true
+    evidence: "0x51240a (+0x12 grec+0xe4, +0x14/+0x16 box params, +0x18 mgr+0x940, +0x40 mgr+0x968)"
+
+  - opcode: 0x49c
+    name: civil_war_request_eligibility
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: nation, values: "rec+0x655", notes: ""}
+        - {offset: 0x14, type: u32, name: fort_id, values: "acct+0x64c", notes: ""}
+    s2c:
+      min_size: 0x18
+      extra: "not read"
+      fields:
+        - {offset: 0x10, type: u32, name: result, values: "1 open Guild_GuildWarRequest (bet), 2/3/4 Stay/NotTime/End/War panels, 5 msg_AlreadyGuildWarRequest", notes: ""}
+        - {offset: 0x14, type: u32, name: unknown, values: "unknown (current challenger guild id for <dictg %d>?)", notes: ""}
+      accepted_if: "client waiting flag set (only after its own request)"
+    server_reply: "S->C 0x49c"
+    client_effect: "opens the civil war panel"
+    handler: FUN_004707c5
+    send_sites: [FUN_0056dd87]
+    confidence: medium
+    evidence: "spec/group02.md; FUN_004707c5 -> FUN_004887ff"
+
+  - opcode: 0x49d
+    name: civil_war_bid
+    direction: c2s
+    c2s:
+      size: 0x24
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: nation, values: "", notes: ""}
+        - {offset: 0x14, type: u32, name: fort_id, values: "", notes: ""}
+        - {offset: 0x18, type: u32, name: guild_id, values: "rec+0x27f", notes: ""}
+        - {offset: 0x1c, type: u32, name: bet, values: "guild gold bet", notes: "client checks GuildMoneyIsLow"}
+    server_reply: "0x41d sysmsg 236 Strdef_GuildWar_Succ or 237..240 failures"
+    client_effect: ""
+    handler: ""
+    send_sites: [FUN_0052892d]
+    confidence: medium
+    evidence: "spec/group02.md"
+
+  # ================================================================== misassigned
+  - opcode: 0x498
+    name: auction_buy
+    direction: c2s
+    c2s:
+      size: 0x30
+      extra: "sender uid"
+      fields:
+        - {offset: 0x18, type: u64, name: auction_uid, values: "AUCTION_UID of the selected Auction.asp row", notes: ""}
+        - {offset: 0x20, type: u64, name: my_char_id, values: "", notes: ""}
+        - {offset: 0x28, type: u16, name: entry_08, values: "row field +8 (likely ITEM_INDEX)", notes: ""}
+        - {offset: 0x2a, type: u16, name: entry_10, values: "row field +0x10 (likely ITEM_COUNT)", notes: ""}
+        - {offset: 0x2c, type: u32, name: entry_14, values: "row field +0x14 (likely ITEM_PRICE)", notes: ""}
+    server_reply: "unknown; client re-reads the list after 2 s"
+    client_effect: ""
+    handler: ""
+    send_sites: [FUN_0053a7c2]
+    confidence: medium
+    evidence: "MISASSIGNED: PanelAuction (dialog 0x45), not mail; belongs to items/auction"
+
+flows:
+  - name: chat (any channel)
+    steps:
+      - "C->S 0x800 {+0x12 type, +0x13 lang, +0x14 own name | whisper target, +0x3c UTF-8 text}; client already printed it"
+      - "S->C 0x800 {same, extra = sender uid, +0x14 = sender name} to each recipient of the channel, NOT the sender"
+      - "whisper to an offline/unknown name: S->C 0x41d sysmsg 98 (or 0x800 type 7) to the sender"
+  - name: party invite and join
+    steps:
+      - "C->S 0x4ac {0, target uid | 0, target name}"
+      - "S->C 0x4ac {0, inviter uid, inviter name} to the target (PanelMsgboxPartyInvite)"
+      - "C->S 0x4ac {1, inviter uid, inviter name} from the target on OK (nothing on cancel)"
+      - "S->C 0x4ad {party id, leader uid, 5 members} to every member"
+  - name: party leave / kick / leader
+    steps:
+      - "C->S 0x4ac {3, own uid} | {4, member uid} | {5, member uid}"
+      - "S->C 0x4ad to remaining members; S->C 0x4ad {party_id 0} to the one who left; disband when < 2 members"
+  - name: friend invite
+    steps:
+      - "C->S 0x811 {my id, target name}"
+      - "S->C 0x41d sysmsg 135 to the inviter; store invite; S->C 0x813 {inviter id, inviter name} to the target if online"
+      - "target: Yes -> friend panel tab 2 -> POST InviteList.asp (charuid) -> XML rows"
+      - "C->S 0x812 {1|0, my id, inviter id}"
+      - "S->C 0x41d sysmsg 136 to both; later FriendList.asp returns the new friend"
+  - name: friend panel / block list (web)
+    steps:
+      - "world entry (FUN_00487c28): POST FriendList.asp, BlackList.asp, InviteList.asp (page=0&PageSize=200&charuid=<my id>)"
+      - "delete friend: POST DelFriend.asp (charuid, fcharuid) -> reply = new FriendList rows"
+      - "block: POST AddBlack.asp (charuid, blackName) -> <Result> 1 ok (client then re-reads BlackList.asp), -1 NoNameCharacter, -2 AlreadyBanUser"
+      - "unblock: POST DelBlack.asp (charuid, fcharuid) -> reply = new BlackList rows"
+  - name: mail
+    steps:
+      - "login/periodic: POST MailList.asp (charname) kind 4 -> TOTALCOUNT/UNREADCOUNT only; S->C 0x2013 +0x20 / 0x80b also set the unread counter"
+      - "open mail box: POST MailList.asp (charname) kind 3 -> rows (MAIL_UID, MAIL_TYPE, MAIL_READ, Time, SEND_CHAR_NAME, MAIL_TITLE, MAIL_MSG)"
+      - "C->S 0x80c {my id, mail id} -> S->C 0x80c {mail id, type, flags, attachments}; server remembers 'open mail'"
+      - "receive attachments (DoYouRecvMailitem) or pay bill (DoYouPay): C->S 0x80d (empty) -> apply to the open mail (bill if MAIL_TYPE & 1, else take items+money); S->C 0x80f + 0x4c2/item updates"
+      - "return to sender (DoYouReturnMail): C->S 0x80e (empty) -> move the open mail back to its sender as a [Return] mail; client already erased it locally"
+      - "delete selected (DoYouSelectDelMail): C->S 0x80a {my id, up to 10 mail ids} -> delete; client already erased them and re-reads MailList.asp"
+      - "compose: C->S 0x808 {name} -> S->C 0x808 {char id | 0 unknown | 0xFFFFFFFFFFFFFFFE other nation}; C->S 0x809 {...} -> recipient gets S->C 0x80b {total, unread}"
+  - name: create legion
+    steps:
+      - "C->S 0x455 {+0x11 name, +0x1b0 my name}"
+      - "S->C 0x4c2 gold update; S->C 0x2015 {extra = my uid, record (id > 0), my member record grade 4}"
+      - "client: POST GuildMemberList.asp (guildidx, page 0, PageSize 128) and GuildName.asp (guildidx) -> <NAME>"
+  - name: legion invite and join
+    steps:
+      - "C->S 0x45b {guild id, invitee name}"
+      - "S->C 0x41d {+0x10 42, +0x14 guild id} to the invitee (Yes/No 'X has invited you to join')"
+      - "C->S 0x41d {42, guild id} on Yes"
+      - "S->C 0x457 {record, my_grade 0} + 0x2013 {current fame rank, guild id, unread mail, fame} to the new member; S->C 0x45b {guild id, member record} to all online members (exactly once per new member: each 0x45b bumps the client's member count)"
+  - name: legion leave / kick
+    steps:
+      - "C->S 0x45c {guild id, target char id, target uid}"
+      - "S->C 0x45c {char id} to remaining members; S->C 0x456 {+0x14 0} + 0x2013 {current fame rank, guild 0, unread mail, fame} + 0x41d sysmsg 82/84 to the removed player"
+  - name: legion info refresh at world entry
+    steps:
+      - "S->C 0x2000 enter world (rec+0x27f from the char slot)"
+      - "C->S 0x458 {guild id} (FUN_00489d6d) -> S->C 0x457 {record, my grade} (use 0x457 so the grade is set)"
+      - "client: GuildMemberList.asp; S->C 0x45d per member log-in/out afterwards"
+  - name: grade change / permissions / notice / level up
+    steps:
+      - "C->S 0x461 {my id, guild id, new grade, member node} -> S->C 0x461 {sysmsg, member record} to members"
+      - "C->S 0x462 {guild id, perms[5]} -> S->C 0x462 to members"
+      - "C->S 0x464 {guild id, UTF-8 notice} -> S->C 0x458 to members"
+      - "C->S 0x463 {guild id, arg} -> S->C 0x458 to members (level/gold changed)"
+  - name: legion warehouse
+    steps:
+      - "C->S 0x45e {guild id, open 1} -> S->C 0x45e {block, other_users 0} (or other_users 1 + name when busy); an unsolicited 0x45e only updates the stored block, the panel needs the client's open request first"
+      - "C->S 0x45f {... move ...} -> S->C 0x45f {+0x68 block} + bag item update"
+      - "C->S 0x45e {guild id, open 0} (no reply)"
+  - name: battlefield summon
+    steps:
+      - "C->S 0x466 {guild id, channel, map, member name, member session}"
+      - "S->C 0x466 {guild id, channel, map, summoner name, cookie} to that member"
+      - "C->S 0x467 {echo} on Yes -> server warps the member"
+  - name: guild names at character select
+    steps:
+      - "S->C 0x2001 character list -> client POST GuildNameAllPage.asp Page=0,1,2... until a page has no rows (<U> id, <A> ?, <N> name)"
+
+web_endpoints:   # HTTP POST to the serverlist 'web' host; form body; reply XML <ROOT><ROW>...</ROW></ROOT>
+  - {path: /JoyImpact/FriendList.asp, kind: 0x10, form: "page=0&PageSize=200&charuid=<u64>", row_tags: "CHAR_UID (i64), CHAR_FACE (int, class/face icon), CHAR_SESSION (int, online uid/0), nation (int), CHAR_NAME (UTF-8)", parser: FUN_004b8125}
+  - {path: /JoyImpact/DelFriend.asp, kind: 0x13, form: "page=0&PageSize=200&charuid=<u64>&fcharuid=<u64>", row_tags: "same as FriendList (the reply IS the new friend list)", parser: FUN_004b8125}
+  - {path: /JoyImpact/BlackList.asp, kind: 0x11, form: "page=0&PageSize=200&charuid=<u64>", row_tags: "CHAR_UID, CHAR_NAME (UTF-8)", parser: FUN_004b838b}
+  - {path: /JoyImpact/DelBlack.asp, kind: 0x15, form: "page=0&PageSize=200&charuid=<u64>&fcharuid=<u64>", row_tags: "same as BlackList", parser: FUN_004b838b}
+  - {path: /JoyImpact/AddBlack.asp, kind: 0x14, form: "charuid=<u64>&blackName=<url-encoded name>", row_tags: "Result: 1 ok (client then requests BlackList.asp), -1 NoNameCharacter, -2 AlreadyBanUser", parser: FUN_004b7bc6}
+  - {path: /JoyImpact/InviteList.asp, kind: 0x12, form: "page=0&PageSize=200&charuid=<u64>", row_tags: "CHAR_UID (inviter), CHAR_NAME", parser: FUN_004b85ac}
+  - {path: /JoyImpact/MailList.asp, kind: "3 (list) / 4 (counts)", form: "charname=<url-encoded own name>", row_tags: "every row: TOTALCOUNT, UNREADCOUNT; kind 3 rows also MAIL_UID (i64), MAIL_TYPE (bits 1 bill, 4 system, 0x10 money/item), MAIL_READ (bit0 read, bit1 taken/paid), Time (remaining days), SEND_CHAR_NAME (<40 bytes), MAIL_TITLE (UTF-8), MAIL_MSG (UTF-8)", parser: FUN_0047b95b}
+  - {path: /JoyImpact/GuildMemberList.asp, kind: 0xd, form: "guildidx=<id>&page=0&PageSize=128", row_tags: "CHAR_UID (i64), CHAR_FAME_RANK (= guild GRADE 0..4 despite the name), CHAR_GUILD_POINT, CHAR_SESSION (online uid/0), LAST_CONN (int), CHAR_NAME (ANSI)", parser: FUN_004b5a1d}
+  - {path: /JoyImpact/GuildName.asp, kind: 0xe, form: "guildidx=<id>", row_tags: "NAME (UTF-8)", parser: FUN_004b569b}
+  - {path: /JoyImpact/GuildNameAllPage.asp, kind: 0xf, form: "Page=<n>", row_tags: "U (guild id), A (int, unused), N (name, UTF-8); client asks page n+1 while a page returns rows", parser: FUN_004b6533}
+  - {path: /JoyImpact/GuildStrockList.asp, kind: 1, form: "Nation=<n>", row_tags: "GUILD_UID, NATION, LEVEL, CURSTOCK, MAXSTOCK, FACEVALUE", parser: FUN_00551e1a}
+  - {path: /JoyImpact/GuildStrock.asp, kind: 2, form: "charname=<name>", row_tags: "GUILD_UID, PURCHASE_VALUE, STOCK_AMOUNT, FACEVALUE, STOCK_UID, CHAR_NAME, PURCHASE_DATE", parser: FUN_00551a86}
+
+server_rules:
+  - name: social lists live behind the web endpoint
+    expects: "HTTP POST + XML for friends, blocks, invites, mail list, guild members, guild names, stock lists (web_endpoints). Without them the panels stay empty but nothing breaks."
+    data: "server/stub.py handle_http + WEB_PAGES"
+    default: "serve all 12 pages from the same in-memory store as the TCP server; reply an empty <ROOT/> when nothing exists"
+  - name: chat routing and range
+    expects: "no echo to the sender; per-type audience (see 0x800); speech balloons only for visible senders"
+    data: "none"
+    default: "type 1 = same scene within ~40 m (or the whole scene); 3 = same match; 6 = same channel; rate limit 1 line/0.5 s per sender; length cap 254 bytes"
+  - name: block list is client-side only
+    expects: "the client drops chat whose +0x14 name is on its block list"
+    data: "BlackList.asp"
+    default: "also refuse whispers, party/friend/guild invites from blocked players on the server"
+  - name: party rules
+    expects: "max 5 members (5 slots in 0x4ad); leader uid; party id non-zero"
+    data: "none"
+    default: "party id = leader's uid; leader leaves -> next member leads; disband at 1 member; exp/loot sharing is server-only (none required by the client)"
+  - name: guild grades and permissions
+    expects: "grades 0..4 (GuildGradeName_0..4); perms u16 per grade; master is grade 4 and unique; max 3 Sub Masters (sysmsg 246)"
+    data: "StringAll GUI_GuildPermission_*"
+    default: "grade 4: 0xFFFF; 3: all except 0x80 hand-over; 2: 0x1|0x4|0x8|0x20; 1: 0x4; 0: 0"
+  - name: guild level, member cap and level-up cost
+    expects: "client compares grec exp/gold with Level_Table_Guild (exp, max members, cost c4)"
+    data: "Level_Table_Guild.tsv (10 levels: exp 0..1,170,227,036; members 200..2000; cost 0..54,875,874)"
+    default: "use the table as-is; guild exp from members' kills/missions (GuildMissionReward.tsv)"
+  - name: guild creation cost and name rules
+    expects: "name < 32 bytes ANSI; cost shown in the Guild_Create panel"
+    data: "unknown (GUI_GuildCreate_Cost text only)"
+    default: "cost 100,000 gold; names 2..16 chars, unique, no profanity"
+  - name: guild mastery
+    expects: "15 masteries with per-level costs and need_guild_lv (GuildMastery.tsv); no C->S opcode for buying mastery was found in this subsystem"
+    data: "GuildMastery.tsv"
+    default: "leave unimplemented until the buying packet is found (probably in another subsystem)"
+  - name: ether price and dividend
+    expects: "ether buy/sell price; dividend allowed once a week, needs gold > 2,000,000, stock 100 kept by the guild"
+    data: "none (strings only)"
+    default: "fixed ether price 1,000 gold; dividend = (gold - 2,000,000) / 20 split pro rata by shares; 7-day cooldown"
+  - name: donation
+    expects: "gold 200,000 once a day, jewel 100; 60 donors/day; reward tiers 3M..45M gold"
+    data: "StringAll GUI_GuildDonation_*"
+    default: "as the strings say; weekly reset Monday 00:00"
+  - name: mail rules
+    expects: "5 attachments + money or a bill; tax; expiry ('Time' remaining days); system mails (Mail_Title_1..15)"
+    data: "StringAll Mail_Title_n / Mail_Msg_n"
+    default: "tax 5% of money + 100 per item; expiry 30 days; returned to sender on expiry"
+  - name: open-mail state for 0x80d/0x80e
+    expects: "both packets arrive with zero payload (client bug)"
+    data: "none"
+    default: "track the mail id of the last 0x80c per session and act on it"
+  - name: guild member session ids
+    expects: "member.session = online uid (used as kick target and summon target), 0 when offline"
+    data: "none"
+    default: "send 0x45d on every login/logout of a member"

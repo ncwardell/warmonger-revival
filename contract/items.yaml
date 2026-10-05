@@ -1,0 +1,1065 @@
+# Warmonger / Crush Online: client<->server contract, ITEMS subsystem
+# (inventory/bag, equipment, warehouse, quick slots, item move/split/use/destroy/sort,
+#  gold / fame / medals / jewels, NPC shop + buyback, cash mall + hero gacha, crafting,
+#  reinforce, rune sockets, dye, costume carve, decomposition, auction).
+#
+# Conventions
+# - All offsets are from packet start; payload begins at +0x10. Header: u16 len | u16 0xA53C |
+#   u16 opcode | u16 extra | u32 tick | u32 key. Server packets: key 0, tick any (0 accepted),
+#   len > 0x10. The dispatcher FUN_0047a36c has NO per-opcode size check: "min_size" = highest
+#   byte the handler reads.
+# - C->S: extra = own uid (unit+0x35e) except 0x200f (session tag acct+0xec). Payload words are
+#   obfuscated ~(w - key) when key != 0.
+# - acct = *DAT_00847ac8 (account/profile state). me = own unit (DAT_0084a758); rec = me+0x3a0
+#   (unit record). The 0x2000 profile block (packet +0x28..+0x6d7) is copied to acct+0x27cc, so
+#   acct+N  <=>  0x2000 packet offset N-0x27cc+0x28.
+#
+# ITEM RECORD (16 bytes, "item16") - the unit of every container, verified from FUN_004dfe59,
+# FUN_004dfa01, FUN_0056b6ca, FUN_00545f6d, FUN_004e0603, tooltip FUN_005c5xxx:
+#   +0x0 u16 Item_Base code (0 = empty slot)
+#   +0x2 u8  flags: bit0 (1) = bound ("LockOn"; set on equip of Item_Base bind=2 items),
+#            bit1 (2) = second tooltip flag (unknown), bit3 (8) = cannot sell ("ItemFlagsMsgNoSell"),
+#            bit4 (0x10) = cannot be dragged/moved (checked at 0x562f25)
+#   +0x3 s8  tier/grade 0..9 (price multiplier table 100,150,200,400,800,1600,3200,6400,12800,25600 %;
+#            decomposition cost index 0..6; "Tier" in rune panel; craft material grade match)
+#   +0x4 u8  stack count (only for stackable kinds, FUN_00440e65(kind) > 0; 0 is read as 1)
+#   +0x5 u8  unknown (0)
+#   +0x6 u16[3] rune sockets: 0 = no socket, 1 = open empty socket, else rune item code
+#   +0xc u32 unknown (0) - probably period/expiry for timed items ("CantTimeLimitItem"); unverified
+#
+# CONTAINERS (FUN_004dfe59(container, slot)); "container" bytes in packets use these ids:
+#   1  bag            70 slots  acct+0x2850 (= 0x2000 +0xac; 0x424). Usable = acct+0x27cc * 5 (rows).
+#   2  gear/armour     8 slots  acct+0x27d0 (= 0x2000 +0x2c; 0x423). Item kinds 50..57
+#                             (helmet, armor, gloves, shoes, necklace, belt, bracelet, ring).
+#   3  weapons         2 slots  rec+0x243 (slot 0 main, slot 1 sub). Kind 31. Drives the skill bar.
+#   4  costume         1 slot   rec+0x263. Kind 32.
+#   5  Innocence/hero  1 slot   acct+0x2e58 (= 0x2000 +0x6b4; 0x4a9). Kind 18.
+#   6  warehouse      90 slots  acct+0x2e7c (0x425 / 0x2009). Usable = acct+0x3420 * 5.
+#   7  guild warehouse 40, 9 fort storage 6/fort, 0xb guild 6 (social subsystem: 0x45f/0x4bc).
+#   0xa (0x427 only) = another player's weapon visual.
+# CURRENCIES: gold rec+0x283 (u32); fame rec+0x287; warehouse gold acct+0x341c; Yellow Jewel
+#   (item 1006, "auction/production") acct+0x634 = currency code 8; Purple Jewel (cash, premium
+#   items) acct+0x638 = code 7; code 0xd = 7+8 summed; decomposition points rec+0x293 (u16);
+#   medals are bag items 1000 Bronze, 1001 Silver, 1002 Gold, 1007 Arena (counted by FUN_004e048c).
+# Item_Base currency codes (record +0x1f buy currency, +0x24/+0x25 cost-pair currencies):
+#   1/2/0x11 gold, 9/0x10/0x13 (unknown currency), 10 bronze, 11 silver, 12 gold medal,
+#   15 arena medal, 0x12 fame. Raw (not rate-scaled) prices: 9/0xa/0xb/0xc/0xf/0x10 always;
+#   0x12/0x13 only in the cost pair (see server_rules price_formula).
+# Item_Base record offsets used by the client: +0x1c kind, +0x1e required rank (vs rec+0x656),
+#   +0x1f buy currency, +0x20 buy price, +0x24 u8[2] + +0x26 i32[2] cost pair checked on buy,
+#   +0x2e fame requirement, +0x32 bind (1 on pickup, 2 on equip), +0x33 class mask, +0x36 flags
+#   (bit1 = no sell), +0x3e 10 x {u16 opt type, i32 value} (opt 0x105 = cooldown s, 0x106 =
+#   cooldown group, 0xd2 = cast-time item, 0x153 = opens UI 8, 200 = WeaponBase id).
+# Sources: decompiled.c / disasm.txt (re-read for this file), spec/group00..03.md, skills.md,
+# monsters.md (loot), world.md, contract/examples.md (no item packets there), live server
+# server/{skills,loot}.py (0x427/0x428/0x42a/0x494 live-tested = confirmed working).
+
+opcodes:
+
+  # ------------------------------------------------------------------ container snapshots
+  - opcode: 0x424
+    name: bag_contents
+    direction: s2c
+    s2c:
+      min_size: 0x470
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: "item16[70]", name: bag, values: "70 x 16-byte item records, slot order; code 0 = empty", notes: "memcpy 0x460 bytes -> acct+0x2850 (container 1)"}
+      accepted_if: "always (no extra/unit check). If the inventory UI exists (DAT_00850a0c) all 70 slots are redrawn (FUN_004e1425(1,-1))."
+    server_reply: "none"
+    client_effect: "replaces the whole bag; no popup, no message"
+    handler: FUN_004703cf
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "handler is a plain 0x118-dword copy; same bytes as 0x2000 +0xac which the live server fills"
+
+  - opcode: 0x423
+    name: gear_contents
+    direction: s2c
+    s2c:
+      min_size: 0x90
+      extra: "own uid (or the not-yet-spawned selected character's uid)"
+      fields:
+        - {offset: 0x10, type: "item16[8]", name: gear, values: "armour/accessory slots, kinds 50..57", notes: "-> acct+0x27d0 (container 2)"}
+      accepted_if: "extra resolves to the own unit (DAT_0084a758), or no unit exists and the pending char-select record (FUN_00428494) has +0x1ae == extra; otherwise dropped"
+    server_reply: "none"
+    client_effect: "replaces container 2; redraws it when the inventory UI exists. Does NOT redraw the avatar or recompute stats (send 0x41f/0x804 for stats)."
+    handler: FUN_0047043d
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_0047043d copies 0x20 dwords to acct+0x27d0; FUN_004e0087 container 2 = 8 slots; equip path sends kinds 50..57 to container 2"
+
+  - opcode: 0x425
+    name: warehouse_contents
+    direction: s2c
+    s2c:
+      min_size: 0x5b0
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: "item16[90]", name: warehouse, values: "code 0 = empty", notes: "-> acct+0x2e7c (container 6)"}
+      accepted_if: "always"
+    server_reply: "none"
+    client_effect: "replaces the warehouse; redraws it if the inventory UI exists. Warehouse gold (acct+0x341c) and capacity (acct+0x3420) are NOT in this packet (they come with 0x2009 +0x5b8/+0x5bc, 0x4c2, 0x47f)."
+    handler: FUN_00470406
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "copy of 0x168 dwords; 0x2009 copies 0x7a8 bytes from +0x18 to the same acct+0x2e7c (warehouse 0x5a0, then +0x5a0 gold, +0x5a4 rows)"
+
+  - opcode: 0x4a9
+    name: innocence_slot_update
+    direction: s2c
+    s2c:
+      min_size: 0x24
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: u32, name: unused, values: "0", notes: "not read"}
+        - {offset: 0x14, type: item16, name: item, values: "Innocence (kind 18) item or zeros", notes: "-> acct+0x2e58 (container 5 slot 0)"}
+      accepted_if: "own unit and its record exist"
+    server_reply: "none"
+    client_effect: "stores container 5, fires UI event 0x3a (hero/Innocence display). Same store as 0x427 container 5."
+    handler: FUN_004704c8
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004704c8; FUN_004dfe59(5,0) = acct+0x2e58; equip of kind 0x12 targets container 5"
+
+  # ------------------------------------------------------------------ single-slot / visual updates
+  - opcode: 0x427
+    name: item_slot_update
+    direction: s2c
+    s2c:
+      min_size: 0x28
+      extra: "uid of the unit whose container changes (own uid for containers 1/2/5/6)"
+      fields:
+        - {offset: 0x10, type: u16, name: reason, values: "0 = silent; otherwise a system_msg.cdb id printed with the item code as %d. Special: 0x46 (70 GetItem) = acquire popup 'You acquired X' / 'X x N' (N = new count - old count) + slot highlight; 0x48 (72 UpgradeFail) / 0x4a (74 UpgradeSuccess) = reinforce result (PanelMakeItemMsgbox + PanelItemReinforce refresh, 0x4a on kind 31/50..57 also raises quest event 0x2715); 0x5f (95 MakeBigSuccess) / 0x60 (96 MakeSuccess) = craft result popup, PanelMakeItem refresh, count shown = delta; 0xf8 / 0xf9 (249 JewelSocketUpgrade_Fail) = rune upgrade success / fail (PanelJewelUpgrade); 0xfa / 0xfb = rune set / removed (PanelJewelSocket refresh FUN_00546309(code, slot); 0xfa also quest event 0x271c)", notes: "special panels only for container 1 and item code > 0 (exception: 0xf8/0xf9 run the PanelJewelUpgrade result even when the new code is 0); the 0x4a quest event 0x2715 runs for any container; the generic message fires for any non-zero reason (FUN_00498605/FUN_00498a40)"}
+        - {offset: 0x12, type: u16, name: container, values: "1 bag, 2 gear, 3 weapon, 4 costume, 5 Innocence, 6 warehouse, 0xa other player's main weapon visual", notes: "other values: only the reason message runs"}
+        - {offset: 0x14, type: u16, name: slot, values: "bag <70, gear <8, weapon 0/1, costume/Innocence 0, warehouse <90", notes: "not range-checked by the handler: stay in range"}
+        - {offset: 0x18, type: item16, name: item, values: "new slot content; zeros = empty", notes: "copied verbatim"}
+      accepted_if: "extra must resolve to a spawned unit (FUN_0044d294) else the WHOLE packet is dropped (no message). Containers 1/2/5/6 additionally require extra == own unit. Container 3 and 4 work for any unit (other players' weapon/costume). Container 0xa only for OTHER units (moves the old main weapon visual to +0x253 and plays effect 0x21b)."
+    server_reply: "none"
+    client_effect: "container 3: stores rec+0x243+slot*16, redraws avatar (FUN_004bd738); for self also reloads the weapon's 4 skills (FUN_005848d5(slot)) + skill bar event 0x18. Container 4: costume redraw (FUN_004bc19e). Container 1: stores, redraws slot, highlight/popup as per reason. Container 5: also UI event 0x3a."
+    handler: FUN_00478d54
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "live server: container 3 slot 0 fills the skill bar (skills.py), container 1 reason 0x46 loot popup (loot.py); reasons cross-checked against system_msg.cdb ids 70/72/74/95/96/249"
+
+  - opcode: 0x426
+    name: equipment_and_stats_refresh
+    direction: s2c
+    s2c:
+      min_size: "0x98 + 12 * popcount(+0x94)"
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: "item16[2]", name: weapons, values: "main, sub weapon", notes: "self: written to container 3 slots 0/1 via FUN_004e1301; others: rec+0x243/+0x253"}
+        - {offset: 0x30, type: u32, name: status_flags, values: "unit status bits", notes: "FUN_00470a7b (rec+0x64d)"}
+        - {offset: 0x34, type: "bytes[0x5c]", name: stats, values: "stats block {u32 HP, MP, maxHP, maxMP, ...}", notes: "FUN_00472103 -> rec+0x443 (see world.yaml stats block)"}
+        - {offset: 0x94, type: u32, name: slot_mask, values: "bitmask of 32 buff/visual slots", notes: ""}
+        - {offset: 0x98, type: "struct[n]", name: entries, values: "one 12-byte entry per set bit, ascending (u16 buff id first)", notes: "FUN_0046fd59 (unit slot table)"}
+      accepted_if: "unit must exist (and have a record) for the weapon part; the stat/buff parts are applied first by uid regardless"
+    server_reply: "none"
+    client_effect: "self: sets both weapon slots, redraws avatar, reloads BOTH skill sets (FUN_005848d5(-1)), refreshes HUD/skill controller. Others: weapon visuals. Plays effect 0x21b on the unit."
+    handler: FUN_004725ae
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_004725ae re-read; layout shared with 0x453/0x41e. Not live-tested (server uses 0x427 instead)."
+
+  - opcode: 0x428
+    name: character_value_update
+    direction: s2c
+    s2c:
+      min_size: "0x1c (0x20 for field 9)"
+      extra: "unit uid (own uid for gold/jewels)"
+      fields:
+        - {offset: 0x10, type: u16, name: reason, values: "6 with field 2 = 'Strdef_NationPayMoney' (%s Gold has been paid in the country) when the delta > 0; 4 or 5 with field 0xd = acquire popup for item 1006 Yellow Jewel x delta; else 0", notes: ""}
+        - {offset: 0x12, type: u16, name: field, values: "2 gold -> rec+0x283 (or pending record); 3 warehouse gold -> acct+0x341c; 5 rec+0x447 (MP) UI 0xf; 7 Purple Jewel -> acct+0x638; 9 fame block; 0xd jewel pair; 0xe match manager +0xb0 (UI 0x1d)", notes: "other values ignored"}
+        - {offset: 0x14, type: u32, name: value, values: "new TOTAL (not a delta). Field 9: fame rec+0x287. Field 0xd: Yellow Jewel acct+0x634", notes: ""}
+        - {offset: 0x18, type: u32, name: value2, values: "field 9: u8 rank rec+0x656 (low byte); field 0xd: Purple Jewel acct+0x638", notes: ""}
+        - {offset: 0x1c, type: u32, name: value3, values: "field 9 only: nation fame rec+0x651", notes: ""}
+      accepted_if: "field 2/9: own or any spawned unit, else the pending char-select record with +0x1ae == extra. Field 0xd: popup only when extra is the own unit."
+    server_reply: "none"
+    client_effect: "updates the value and fires UI event 0x1b (money display) / 0x1c (fame) / 0xf (MP)"
+    handler: FUN_00476461
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "field 2 live-tested by loot.py (gold total); other branches read in FUN_00476461"
+
+  - opcode: 0x4c2
+    name: money_update
+    direction: s2c
+    s2c:
+      min_size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u32, name: warehouse_gold, values: "new warehouse gold total", notes: "-> acct+0x341c (always written)"}
+        - {offset: 0x14, type: u32, name: gold, values: "new carried gold total", notes: "-> rec+0x283 of the own unit, or the pending record if extra matches"}
+      accepted_if: "always for +0x10; +0x14 goes to the own record whenever it exists (extra NOT checked), else to the pending char-select record only if its +0x1ae == extra"
+    server_reply: "none"
+    client_effect: "both gold displays refresh (UI event 0x1b)"
+    handler: FUN_004702af
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "acct+0x341c is shown by the warehouse panel (FUN_00562bcx/FUN_005635a8) next to rec+0x283; the natural reply to C->S 0x4c1"
+
+  - opcode: 0x200f
+    name: jewel_balance_refresh
+    direction: both
+    c2s:
+      size: 0x40
+      extra: "session tag acct+0xec (not the uid)"
+      fields:
+        - {offset: 0x10, type: "char[32]", name: account, values: "account name (acct+0x70), uppercased", notes: ""}
+        - {offset: 0x30, type: "bytes[0x10]", name: zero, values: "0", notes: ""}
+    s2c:
+      min_size: 0x40
+      extra: "ignored"
+      fields:
+        - {offset: 0x38, type: u32, name: purple_jewels, values: "cash jewel balance", notes: "-> acct+0x638"}
+        - {offset: 0x3c, type: u32, name: jewel_bonus, values: "unknown secondary value", notes: "-> acct+0x630 (also 0x2000 +0x6ec)"}
+      accepted_if: "always"
+    server_reply: "S->C 0x200f with the current balances (to the sender)"
+    client_effect: "stores balances, UI event 0x1b"
+    handler: FUN_004754d5
+    send_sites: ["FUN_00429671 (0x4296e0, in game, once per 10 s)", "FUN_004935a7 (0x4936a3, char-select JewelRefresh button)"]
+    confidence: high
+    evidence: "both send sites re-read (FUN_004a730b(buf,0x200f,0x40,acct+0xec,1) + strcpy account at +0x10)"
+
+  # ------------------------------------------------------------------ moving items
+  - opcode: 0x42a
+    name: move_item
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: dst_container, values: "container id (1,2,3,4,5,6)", notes: ""}
+        - {offset: 0x11, type: u8, name: dst_slot, values: "", notes: ""}
+        - {offset: 0x12, type: u8, name: src_container, values: "", notes: ""}
+        - {offset: 0x13, type: u8, name: src_slot, values: "", notes: ""}
+      notes: "Senders: equip FUN_0048bd47 (src bag; dst 3/<0|1> weapon kind 31 after class/rank/'same weapon' checks, dst 4/0 costume kind 32, dst 5/0 Innocence kind 18 (level check), dst 2/<slot> gear kinds 50..57; bind-on-equip asks 'EquipAndItemLock' first); unequip FUN_0048c6b6 (dst 1/<first free bag slot>, src 3|2|5|4); main/sub swap FUN_0048c92a (dst 3/1, src 3/0, rate-limited, needs both weapons; or explicit slots); drag-drop FUN_00562cc2 / FUN_00532bce / inventory drag in FUN_00579707 (bag<->warehouse, bag<->bag, kind 37 'Holy Things' path); items with flag 0x10 are not draggable"
+    s2c:
+      min_size: 0x14
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: dst_container, values: "echo", notes: ""}
+        - {offset: 0x11, type: u8, name: dst_slot, values: "echo", notes: ""}
+        - {offset: 0x12, type: u8, name: src_container, values: "echo", notes: ""}
+        - {offset: 0x13, type: u8, name: src_slot, values: "echo", notes: ""}
+      accepted_if: "game scene active (DAT_0084e3ec), extra resolves to ANY spawned unit with a record (not checked to be the own unit); the swap (FUN_004e1357) always acts on the OWN containers. Both (container,slot) must be valid in FUN_004dfe59 else nothing happens"
+    server_reply: "accept: echo the same 4 bytes (extra = uid) to the sender only; when container 3 or 4 is involved follow with 0x427 for that slot (the echo does not redraw the avatar or reload skills) and broadcast 0x427 container 3/4 (or 0x426) to nearby players for the visual. Refuse: send nothing (or 0x41b with a reason)."
+    client_effect: "swaps the two 16-byte records in local state (FUN_004e1357), fires UI event 0x14, redraws both slots. Pure swap: no stacking/merging."
+    handler: FUN_00470376
+    send_sites: ["FUN_0048bd47", "FUN_0048c6b6", "FUN_0048c92a", "FUN_00532bce", "FUN_00562cc2", "FUN_00579707"]
+    confidence: high
+    verified: true
+    evidence: "echo + 0x427 container 3 live-tested (skills.py move_item); senders re-read"
+
+  - opcode: 0x432
+    name: split_stack
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: src_slot, values: "bag slot holding the stack", notes: "container 1 implied"}
+        - {offset: 0x11, type: u8, name: dst_slot, values: "first empty bag slot (FUN_004e0087(1)) chosen by the client", notes: ""}
+        - {offset: 0x12, type: u16, name: quantity, values: "1 .. stack-1 (typed in the msgbox, checked 0 < q < count)", notes: ""}
+        - {offset: 0x14, type: u16, name: item_code, values: "code at src_slot", notes: ""}
+    server_reply: "0x427 (reason 0) for src_slot with count - quantity and 0x427 (reason 0) for dst_slot with a copy of the record and count = quantity. Refuse silently on mismatch."
+    client_effect: "none until the 0x427s arrive"
+    handler: null
+    send_sites: ["FUN_00579707 (msgbox 0x19, 0x5799d1)"]
+    confidence: high
+    verified: true
+    evidence: "disasm 0x579930..0x579a07: FUN_004e0087(1) for +0x11, _wtoi(input) for +0x12, FUN_004dfe59(1,slot) code check"
+
+  - opcode: 0x42c
+    name: destroy_item
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: container, values: "1 (bag)", notes: ""}
+        - {offset: 0x11, type: u8, name: slot, values: "bag slot", notes: ""}
+        - {offset: 0x12, type: u16, name: item_code, values: "code the client saw in the slot", notes: "client checks it before sending"}
+    server_reply: "0x427 (reason 0, container 1, slot, zeros). Quest items: refuse with 0x41b system message 145 (Strdef_CantDestroyQuestItem) and resend the slot."
+    client_effect: "only clears the slot's UI lock flag; the slot is emptied by the 0x427"
+    handler: null
+    send_sites: ["FUN_00579707 (msgbox 0x17 'Destroy', 0x5797f3)"]
+    confidence: high
+    verified: true
+    evidence: "disasm 0x579756..0x579817; inventory button GUI_Inventory_TipDelete"
+
+  - opcode: 0x454
+    name: sort_bag
+    direction: c2s
+    c2s:
+      size: 0x58
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: "u8[70]", name: order, values: "order[i] = the OLD bag slot whose item is now at slot i", notes: "client already applied the new order locally (FUN_004e1301 for all 70)"}
+        - {offset: 0x56, type: "bytes[2]", name: pad, values: "0", notes: ""}
+    server_reply: "none required; apply the same permutation to the stored bag (new[i] = old[order[i]]). Optionally resend 0x424."
+    client_effect: "sorted locally before sending (button ItemSort)"
+    handler: null
+    send_sites: ["0x4e16a7 (undecompiled; listed FUN_004e1653 is a helper)"]
+    confidence: high
+    verified: true
+    evidence: "disasm 0x4e16a7..0x4e17f1"
+
+  - opcode: 0x4a0
+    name: sort_warehouse
+    direction: c2s
+    c2s:
+      size: 0x6c
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: "u8[90]", name: order, values: "order[i] = old warehouse slot now at slot i", notes: "container 6; applied locally first"}
+        - {offset: 0x6a, type: "bytes[2]", name: pad, values: "0", notes: ""}
+    server_reply: "none; permute the stored warehouse the same way"
+    client_effect: "sorted locally"
+    handler: null
+    send_sites: ["FUN_004e17f2"]
+    confidence: high
+    verified: true
+    evidence: "disasm 0x4e17f2..0x4e190b: container 6, 0x5a entries, push 0x6c/0x4a0"
+
+  - opcode: 0x494
+    name: save_quick_slots
+    direction: c2s
+    c2s:
+      size: 0x28
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: "u8[8]", name: types, values: "0 item, 1 skill (skill only shows cooldowns)", notes: "mirror of acct+0x2cc0 (0x2000 +0x51c)"}
+        - {offset: 0x18, type: "u16[8]", name: codes, values: "item code / skill id, 0 = empty", notes: "mirror of acct+0x2cb0 (0x2000 +0x50c)"}
+    server_reply: "none; persist and return it in the next 0x2000 profile (+0x51c types, +0x50c codes)"
+    client_effect: "-"
+    handler: null
+    send_sites: ["FUN_005125e8"]
+    confidence: high
+    verified: true
+    evidence: "live server skills.save_quick_slots round-trips it"
+
+  - opcode: 0x47f
+    name: expand_capacity
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u32, name: container, values: "1 bag, 6 warehouse", notes: ""}
+        - {offset: 0x14, type: u32, name: step, values: "ExpandSlot.cdb row id the player clicked (the msgbox param)", notes: "bag uses currency1@04/cost1@08, warehouse currency2@0c/cost2@10; currency 2 = gold (checked vs rec+0x283), 13 = jewels code 0xd (acct+0x634 + acct+0x638); client refuses with MoneyIsLow / NotEnoughJewel"}
+    s2c:
+      min_size: 0x18
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: u32, name: container, values: "1 or 6 (anything else ignored)", notes: ""}
+        - {offset: 0x14, type: u8, name: rows, values: "new usable rows; usable slots = rows * 5 (bag max 14, warehouse max 18)", notes: "1 -> acct+0x27cc (= 0x2000 +0x28), 6 -> acct+0x3420 (= 0x2009 +0x5bc)"}
+      accepted_if: "always"
+    server_reply: "S->C 0x47f {container, new rows} + 0x428 field 2 (gold) or 0x428 field 0xd (jewels) with the new totals"
+    client_effect: "redraws the container's locked rows, UI event 0x12"
+    handler: FUN_00470240
+    send_sites: ["FUN_00579707 (msgbox 0x18, container 1, 0x579907)", "FUN_005629d5 (msgbox 0x18 in warehouse, container 6, 0x562b06)"]
+    confidence: high
+    verified: true
+    evidence: "both send sites and FUN_004284d4 (currency 0xd) re-read; ExpandSlot.tsv"
+
+  # ------------------------------------------------------------------ using items
+  - opcode: 0x42d
+    name: use_item
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: container, values: "1 (bag) from the confirm box; any container from the quick bar path", notes: ""}
+        - {offset: 0x11, type: u8, name: slot, values: "", notes: ""}
+        - {offset: 0x12, type: u16, name: item_code, values: "code in that slot (verified by the client)", notes: ""}
+        - {offset: 0x14, type: u16, name: quantity, values: "1 (direct use FUN_0058707f); msgbox-0x36 path sends the stack count read by FUN_004dfe59", notes: "box 0x36 meaning not traced (probably 'use all')"}
+        - {offset: 0x16, type: u16, name: box_param, values: "msgbox 0x36 parameter; 0 on the direct path", notes: "unknown"}
+    s2c:
+      min_size: 0x14
+      extra: "uid of the user"
+      fields:
+        - {offset: 0x12, type: u16, name: item_code, values: "item used", notes: ""}
+      accepted_if: "extra must be the own unit; otherwise ignored"
+    server_reply: "apply the effect (heal -> 0x420/0x41f, buff -> 0x41e/0x41c, exp box -> 0x422, random box -> 0x427 reason 0x46 per item), send 0x427 for the slot with the authoritative count (zeros when used up), and echo S->C 0x42d {+0x12 code} to the user to start the cooldown"
+    client_effect: "C->S send already decrements the stack locally for stackable kinds (FUN_004e14a9; count < 2 clears the slot to zeros) and starts a 1 s global item lock (FUN_00585e9a(code,1000)). S->C: starts the item's own cooldown (opt 0x105 seconds, group opt 0x106, reduced by rec+0x491 %) and plays the item def +0xa4 effect on the own unit. Items with opt 0xd2 (cast time) go through a cast bar first; opt 0x153 opens UI 8 instead of sending."
+    handler: FUN_00470316
+    send_sites: ["FUN_0057349b (msgbox 0x36, 0x573682)", "FUN_0058707f (quick bar / direct use, 0x5871d0)"]
+    confidence: medium
+    verified: true
+    evidence: "both sites re-read in disasm; handler re-read. Effect replies are design choices (client has no item-effect table beyond options)."
+
+  # ------------------------------------------------------------------ NPC shop
+  - opcode: 0x42f
+    name: npc_shop_data
+    direction: s2c
+    s2c:
+      min_size: 0x47c
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u16, name: npc_uid, values: "shop NPC uid", notes: "-> panel+0x1c; echoed in C->S 0x430/0x431"}
+        - {offset: 0x12, type: u16, name: pad, values: "0", notes: ""}
+        - {offset: 0x14, type: u32, name: buy_rate, values: "price percent (see server_rules price_formula)", notes: "-> acct+0xb3b4"}
+        - {offset: 0x18, type: u32, name: sell_rate, values: "price percent", notes: "-> acct+0xb3b8"}
+        - {offset: 0x1c, type: "item16[70]", name: stock, values: "shop items, code 0 = empty; count byte +4 used for stacks", notes: "-> panel+0x58; index in this list = C->S 0x430 +0x12"}
+      accepted_if: "extra == own uid. Data lands in PanelItemShop (panel 0x3c) in NPC-shop mode; the handler does not show the panel (it refreshes it if open)."
+    server_reply: "none"
+    client_effect: "overrides the stock the client already loaded from Npc_Carry.cdb. NOT needed for normal shops: NPC function 1 (Shop) opens the panel locally with Npc_Carry[UnitDB+0xa2] (FUN_0056bd8b) and sends nothing."
+    handler: FUN_00470fb2
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00470fb2 -> FUN_0056be7c copies 0x47c bytes from packet start to panel+0x3c"
+
+  - opcode: 0x452
+    name: shop_price_rates
+    direction: s2c
+    s2c:
+      min_size: 0x1c
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: u32, name: buy_rate, values: "percent multiplier on Item_Base buy prices (client init value 1)", notes: "-> acct+0xb3b4"}
+        - {offset: 0x14, type: u32, name: sell_rate, values: "percent multiplier on sell prices (client init 1)", notes: "-> acct+0xb3b8"}
+        - {offset: 0x18, type: i32, name: sysmsg, values: "system_msg id to show, 0 = none", notes: ""}
+      accepted_if: "always"
+    server_reply: "none"
+    client_effect: "stores both rates (also sent back by the client in 0x430/0x431 +0x18), UI event 0x27 (shop refresh)"
+    handler: FUN_00470d80
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00470d80; price helpers FUN_004e0603/FUN_004e052e/FUN_004e06b5 multiply by these values and divide by 100"
+
+  - opcode: 0x430
+    name: shop_buy
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u16, name: npc_uid, values: "panel+0x1c (the NPC the shop was opened on)", notes: ""}
+        - {offset: 0x12, type: u16, name: shop_index, values: "0..69 index into the shop list (Npc_Carry row items, or 0x42f stock)", notes: ""}
+        - {offset: 0x14, type: u16, name: quantity, values: "1 for non-stackables (FUN_00569af3); typed amount for stackables (FUN_0056b897)", notes: ""}
+        - {offset: 0x16, type: u16, name: item_code, values: "code of that shop entry", notes: ""}
+        - {offset: 0x18, type: u32, name: buy_rate, values: "client's acct+0xb3b4", notes: "server should ignore and use its own"}
+    server_reply: "check the NPC, index, code, bag space and cost; deduct (gold -> 0x428 field 2; fame -> 0x428 field 9; medals -> 0x427 updates of the medal stacks); add the item -> 0x427 container 1 (reason 0x46 shows 'You acquired', 0 is silent). Refuse: 0x41b (52 NotEnoughMONEY / 59 NotEnoughFame / 36 InventoryIsFull)."
+    client_effect: "client pre-checks bag space (StrDef_InventoryIsFull), both cost pairs (MoneyIsLow, Medal*IsLow, FameIsLow); no local change"
+    handler: null
+    send_sites: ["FUN_00569af3 (0x569e00)", "FUN_0056b897 (amount dialog, 0x56bb31)"]
+    confidence: high
+    verified: true
+    evidence: "both inline headers 0xa53c001c re-read; locals map +0x10..+0x18 exactly"
+
+  - opcode: 0x431
+    name: shop_sell
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: container, values: "1 (bag)", notes: ""}
+        - {offset: 0x11, type: u8, name: slot, values: "bag slot", notes: ""}
+        - {offset: 0x12, type: u16, name: npc_uid, values: "panel+0x1c", notes: ""}
+        - {offset: 0x14, type: u16, name: item_code, values: "code in the slot (re-checked)", notes: ""}
+        - {offset: 0x16, type: u16, name: quantity, values: "1..stack", notes: ""}
+        - {offset: 0x18, type: u32, name: sell_rate, values: "client's acct+0xb3b8", notes: "ignore"}
+    server_reply: "remove quantity -> 0x427 container 1 (reason 0); add gold -> 0x428 field 2 (new total); remember the sold record for the buyback list (0x4b8). Refuse quest items with 0x41b 144, no-sell items with 146."
+    client_effect: "client blocks fame/medal-priced items (CantSellFameItem), Item_Base +0x36 bit 2 and record flag 8 (ItemFlagsMsgNoSell); if the panel is in buyback mode it re-requests the list (0x4b7)"
+    handler: null
+    send_sites: ["FUN_0056b897 (0x56bbf2)"]
+    confidence: high
+    verified: true
+    evidence: "inline header re-read: local_14 = CONCAT11(slot,1), local_12 = npc, local_10 = code, local_e = amount, local_c = sell rate"
+
+  - opcode: 0x4b7
+    name: shop_buyback_list_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: zero, values: "0", notes: "no payload"}
+    server_reply: "S->C 0x4b8 with the player's recently sold items"
+    client_effect: "clears the panel's buyback list (panel+0x4b8, 0x114 bytes) before sending"
+    handler: null
+    send_sites: ["FUN_005699dd (0x569a38)"]
+    confidence: medium
+    verified: true
+    evidence: "FUN_005699dd; called when the shop's 'BuyBack' toggle is switched on and after a sell in buyback mode. Was 'system: reset/refresh list' in the inventory (misassigned)."
+
+  - opcode: 0x4b8
+    name: shop_buyback_list
+    direction: s2c
+    s2c:
+      min_size: 0x114
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u32, name: buy_rate, values: "non-zero overwrites acct+0xb3b4; 0 keeps it", notes: "NOT a cash balance"}
+        - {offset: 0x14, type: "item16[16]", name: buyback, values: "sold items, code 0 = empty; index = C->S 0x4b9 +0x10", notes: "-> panel+0x4cc"}
+      accepted_if: "extra == own uid; PanelItemShop exists"
+    server_reply: "none"
+    client_effect: "switches PanelItemShop to buyback mode (panel+0x38 = 1) and lists the 16 items (price = buy price formula x count)"
+    handler: FUN_00471022
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00471022 -> FUN_0056bf08 copies 0x114 bytes from packet start to panel+0x4b8 (list = packet +0x14); string 'BuyBack' at 0x744cec toggles the mode"
+
+  - opcode: 0x4b9
+    name: shop_buyback
+    direction: c2s
+    c2s:
+      size: 0x28
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u16, name: index, values: "0..15 buyback list index", notes: ""}
+        - {offset: 0x14, type: u32, name: buy_rate, values: "client's acct+0xb3b4", notes: "ignore"}
+        - {offset: 0x18, type: item16, name: item, values: "the listed record (client verified it equals the list entry)", notes: ""}
+    server_reply: "charge the buy price (gold 0x428 field 2, or medals/fame), put the item back -> 0x427 container 1, remove it from the list and resend 0x4b8"
+    client_effect: "client checks currency (Money/Medal*/Fame) for price x count and the fame requirement"
+    handler: null
+    send_sites: ["FUN_00569e93 (0x56a15f)"]
+    confidence: medium
+    verified: true
+    evidence: "disasm 0x56a135..0x56a190; only allowed when panel+0x38 != 0 (buyback mode). Was labelled 'medal/fame shop purchase' (wrong: medal/fame items are bought with 0x430)."
+
+  # ------------------------------------------------------------------ warehouse gold
+  - opcode: 0x4c1
+    name: warehouse_gold_transfer
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u32, name: direction, values: "0 = deposit (carried -> warehouse), 1 = withdraw", notes: "panel+0x24 mode"}
+        - {offset: 0x14, type: u32, name: amount, values: "> 0; client clamps to the source balance and to 2,000,000,000 - destination", notes: ""}
+    server_reply: "S->C 0x4c2 {warehouse gold, carried gold}"
+    client_effect: "none until 0x4c2"
+    handler: null
+    send_sites: ["FUN_005634df (0x563559 / 0x563563)"]
+    confidence: medium
+    verified: true
+    evidence: "FUN_005634df/FUN_005635a8 (warehouse gold dialog: acct+0x341c vs rec+0x283, limit 2e9). Was 'system: numeric input submit' (misassigned)."
+
+  # ------------------------------------------------------------------ cash mall / gacha
+  - opcode: 0x484
+    name: cash_mall_buy
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u32, name: product_id, values: "PrimiumShop.cdb id@00", notes: ""}
+        - {offset: 0x14, type: u32, name: item_code, values: "PrimiumShop item@04", notes: ""}
+        - {offset: 0x18, type: u32, name: price, values: "price@08 * (100 - discount@14) / 100, in Purple Jewels", notes: "client checks currency code 7 (acct+0x638) >= price, else StrDef_NotEnoughJewel"}
+    server_reply: "deduct Purple Jewels -> 0x428 field 7 (or field 0xd / 0x200f); add item -> 0x427 container 1 reason 0x46. Refuse: 0x41b 57 (NotEnoughJewel) or 36 (bag full)."
+    client_effect: "none until replies"
+    handler: null
+    send_sites: ["FUN_005648f8 cash mall ('HeroBind'/Cash Mall NPC function 0x26) (0x5650fe)"]
+    confidence: medium
+    verified: true
+    evidence: "disasm 0x565004..0x56512f: [esi], [esi+4], computed price; 'ChargeJewel' button nearby. Corrects the old 'u64 product id' reading."
+
+  - opcode: 0x4aa
+    name: hero_gacha
+    direction: both
+    c2s:
+      size: 0xcc
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: gacha_type, values: "0 = free daily draw (allowed when server time >= acct+0xb1ac, else GUI_Herobind_Daliy_MSG); 1..6 = paid pools Gacha_01..06.cdb", notes: "paid: client checks jewels (code 0xd) and free bag slots >= {3,10,10,5,10,10,10}[type]"}
+        - {offset: 0x11, type: "bytes[0xbb]", name: zero, values: "0", notes: ""}
+    s2c:
+      min_size: 0xcc
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: i8, name: gacha_type, values: "1..6 plays the per-type result effect; 0 none", notes: ""}
+        - {offset: 0x12, type: "u16[10]", name: slots, values: "bag slot for each result", notes: ""}
+        - {offset: 0x28, type: "item16[10]", name: items, values: "drawn items (code 0 = unused entry); written into the bag at slots[i]", notes: "count delta is shown when the slot already held the same code"}
+        - {offset: 0xc8, type: u32, name: next_free_time, values: "unix seconds of the next free draw; 0 keeps acct+0xb1ac", notes: "also 0x2000 +0x6f4"}
+      accepted_if: "own unit exists"
+    server_reply: "S->C 0x4aa with the results; charge jewels with 0x428 field 0xd (paid types)"
+    client_effect: "writes the items into the bag, closes PanelHeroGacha, fills PanelHeroGachaResult"
+    handler: FUN_00472798
+    send_sites: ["FUN_00514328 (0x5149a2)", "FUN_005648f8 (0x564e2c, 0x5653ee type 0)"]
+    confidence: medium
+    verified: true
+    evidence: "handler and three sites re-read; draw odds are server-only (Gacha_xx.cdb has items+grade, no rates)"
+
+  # ------------------------------------------------------------------ crafting / enhancement
+  - opcode: 0x435
+    name: craft_item
+    direction: c2s
+    c2s:
+      size: 0x54
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u16, name: npc_uid, values: "crafting NPC", notes: "panel+0x1c"}
+        - {offset: 0x12, type: u16, name: recipe_id, values: "Item_Make.cdb id", notes: "panel+0x30"}
+        - {offset: 0x14, type: i32, name: amount, values: "number to craft / repeat counter (panel+0x144)", notes: "second send variant (panel+0x140 != 0) carries only npc, recipe and this value"}
+        - {offset: 0x18, type: "i32[3]", name: material_slots, values: "bag slot of each recipe material (first slot whose code and, if required, tier match); 0 when unused", notes: ""}
+        - {offset: 0x24, type: "item16[3]", name: materials, values: "copies of those bag records", notes: ""}
+    server_reply: "consume materials and gold (0x427 per material slot, 0x428 field 2), roll success% (Item_Make success%@38), give the result -> 0x427 container 1 reason 0x60 (MakeSuccess) / 0x5f (MakeBigSuccess); on failure 0x41b 97 (MakeFail) and any fail item"
+    client_effect: "client only warns MoneyIsLow when gold < recipe+0x50 * 1.5 but still sends; then plays the progress UI"
+    handler: null
+    send_sites: ["FUN_0054cfe4 (0x54d13c, 0x54d272)"]
+    confidence: medium
+    verified: true
+    evidence: "FUN_0054cfe4 re-read (memset 0x54, header 0xa53c0054). Meaning of the second variant (panel+0x140) unknown."
+
+  - opcode: 0x436
+    name: reinforce_item
+    direction: c2s
+    c2s:
+      size: 0x28
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: container, values: "container of the target item (panel+0xb4; 1 bag expected)", notes: ""}
+        - {offset: 0x11, type: u8, name: slot, values: "target slot (panel+0xb8)", notes: ""}
+        - {offset: 0x12, type: "u8[5]", name: material_slots, values: "bag slots of up to 5 materials", notes: ""}
+        - {offset: 0x17, type: u8, name: mode, values: "panel+0x6c: 0 level reinforce, 1 grade (tier) reinforce", notes: "GUI_Inventory_LevelReinforce / GradeReinforce"}
+        - {offset: 0x18, type: u16, name: item_code, values: "target code", notes: ""}
+        - {offset: 0x1a, type: "u16[5]", name: material_codes, values: "", notes: ""}
+        - {offset: 0x24, type: u32, name: gold_cost, values: "ItemSancMet gold", notes: "client subtracts it from rec+0x283 itself"}
+    server_reply: "0x427 container 1 for the target with reason 0x4a (UpgradeSuccess) or 0x48 (UpgradeFail) and the new record; 0x427 reason 0 for every material slot; 0x428 field 2 with the true gold total"
+    client_effect: "client locally removes the materials (FUN_004e152b) and the gold before the reply; 'Repeat Reinforce' resends every 1.5 s"
+    handler: null
+    send_sites: ["FUN_0054837c (0x5484f6)"]
+    confidence: medium
+    verified: true
+    evidence: "FUN_0054837c re-read: local_2c/2b/auStack_2a/25/24/auStack_22/18 at +0x10/+0x11/+0x12/+0x17/+0x18/+0x1a/+0x24"
+
+  - opcode: 0x4a7
+    name: rune_socket_set
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: item_slot, values: "bag slot of the target weapon/gear (kind 31 or 50..57)", notes: "panel+0x74"}
+        - {offset: 0x11, type: u8, name: socket, values: "socket index 0..2 (panel+0x8c)", notes: "item record +0x6 + 2*socket. VERIFIED: FUN_00546384(rune, bag_slot, socket) stores panel+0x88 = rune bag slot, panel+0x8c = socket (<3, must be 1 = open); FUN_00546730 indexes sockets with panel+0x8c"}
+        - {offset: 0x12, type: u8, name: rune_slot, values: "set: bag slot of the rune (panel+0x88); remove: 0", notes: "corrected: the first pass had +0x11/+0x12 swapped"}
+        - {offset: 0x14, type: u16, name: rune_def_id, values: "first u16 of FUN_004e3a00(rune code): set = the new rune; remove = the rune currently in that socket", notes: "(JewelSocketMake id - medium)"}
+        - {offset: 0x16, type: u16, name: op, values: "1 = set rune, 0 = remove", notes: ""}
+        - {offset: 0x18, type: u16, name: item_code, values: "target code", notes: ""}
+        - {offset: 0x1a, type: u16, name: rune_code, values: "rune item code (0 on remove)", notes: ""}
+    server_reply: "0x427 container 1 for the target with reason 0xfa (set) / 0xfb (removed) and sockets updated (+0x6 u16[3]: rune code, 1 = open empty); 0x427 for the rune slot (consumed / returned)"
+    client_effect: "none until 0x427; 0xfa/0xfb refresh PanelJewelSocket"
+    handler: null
+    send_sites: ["FUN_00545aa1 (0x545b89)", "FUN_00546730 (0x546a6f)"]
+    confidence: medium
+    verified: true
+    evidence: "FUN_00545aa1 locals; panel+0x64 = target record, +0x74 its slot (FUN_00546309); socket array read at +0x6 by FUN_00545f6d"
+
+  - opcode: 0x4a8
+    name: rune_upgrade
+    direction: c2s
+    c2s:
+      size: 0x58
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u16, name: recipe_id, values: "first u16 of FUN_004e3a00(rune code) record (JewelSocketMake)", notes: ""}
+        - {offset: 0x12, type: u16, name: rune_code, values: "rune being upgraded (panel+0x28)", notes: ""}
+        - {offset: 0x14, type: u8, name: rune_slot, values: "its bag slot (panel+0x38)", notes: ""}
+        - {offset: 0x18, type: "i32[3]", name: material_slots, values: "bag slot found for each recipe material (record +0x14 codes, +0x20 counts)", notes: ""}
+        - {offset: 0x24, type: "item16[3]", name: materials, values: "copies of the material records", notes: ""}
+        - {offset: 0x54, type: u16, name: extra_item_code, values: "panel+0x64 (optional helper item, unknown)", notes: ""}
+        - {offset: 0x56, type: u8, name: extra_item_slot, values: "panel+0x74", notes: ""}
+    server_reply: "0x427 container 1 reason 0xf8 (success, upgraded rune JewelSocketMake next_item) or 0xf9 (fail, 249) for the rune slot; 0x427 for each consumed material"
+    client_effect: "progress UI, then PanelJewelUpgrade refresh on 0xf8/0xf9"
+    handler: null
+    send_sites: ["FUN_005452af (0x545431)"]
+    confidence: medium
+    verified: true
+    evidence: "FUN_005452af re-read"
+
+  - opcode: 0x437
+    name: dye_costume
+    direction: c2s
+    c2s:
+      size: 0x14
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: part, values: "costume part 0..2 (cpart1..3)", notes: ""}
+        - {offset: 0x12, type: u16, name: dye_slot, values: "bag slot of the dye (kind 14/45)", notes: ""}
+    server_reply: "consume the dye (0x427 container 1), change the costume colour (0x427 container 4 to self and nearby players; where the colour lives in the record is unknown)"
+    client_effect: "client shows 'DyeingComplete' right after sending"
+    handler: null
+    send_sites: ["FUN_0054af6a (0x54b04e)"]
+    confidence: medium
+    verified: true
+    evidence: "disasm 0x54afdd..0x54b06e (PanelDyeing mode 0); colour storage not found"
+
+  - opcode: 0x438
+    name: dye_hair
+    direction: c2s
+    c2s:
+      size: 0x14
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u16, name: dye_slot, values: "bag slot of the hair dye (kind 21)", notes: ""}
+    server_reply: "consume the dye; new hair colour via an appearance refresh (opcode not identified)"
+    client_effect: "shows 'DyeingComplete' right after sending"
+    handler: null
+    send_sites: ["FUN_0054af6a (0x54b0ad)"]
+    confidence: medium
+    verified: true
+    evidence: "disasm 0x54b070..0x54b0c7 (PanelDyeing mode 1 = GUI_DyeingHair). Old labels 'select part' / 'apply' were wrong."
+
+  - opcode: 0x4a1
+    name: carve_costume
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: container, values: "1", notes: ""}
+        - {offset: 0x11, type: u8, name: slot, values: "bag slot of the costume", notes: ""}
+        - {offset: 0x14, type: u32, name: item_code, values: "costume code", notes: ""}
+    server_reply: "0x427 container 1 with the carved costume (effect removed / converted; exact transformation unknown)"
+    client_effect: "sent when the PanelCostumeLock progress bar finishes and the slot still holds the same record; otherwise 'TryAgainPlease'"
+    handler: null
+    send_sites: ["FUN_00546fb0 (0x5470a4)"]
+    confidence: medium
+    verified: true
+    evidence: "FUN_00546fb0 belongs to PanelCostumeLock (vftable FUN_00546c6b); GUI_CostumeLock_Msg_DoLock. Was 'use item after cast bar'."
+
+  # ------------------------------------------------------------------ decomposition
+  - opcode: 0x493
+    name: decompose_item
+    direction: both
+    c2s:
+      size: 0x484
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u8, name: slot, values: "bag slot of the item", notes: ""}
+        - {offset: 0x12, type: u16, name: item_code, values: "code in that slot", notes: "client requires a decomposable kind (31, 18, 58, 50..57; FUN_004dfb3a), points rec+0x293 >= cost[tier] (table 0x833314), and a free bag slot"}
+        - {offset: 0x14, type: "bytes[0x470]", name: zero, values: "0", notes: ""}
+    s2c:
+      min_size: 0x482
+      extra: "ignored"
+      fields:
+        - {offset: 0x14, type: "item16[70]", name: bag, values: "full bag after decomposition", notes: "-> acct+0x2850"}
+        - {offset: 0x474, type: "u16[3]", name: gained_codes, values: "0 = none", notes: "popup per code"}
+        - {offset: 0x47a, type: "u16[3]", name: gained_counts, values: "", notes: "same codes are merged"}
+        - {offset: 0x480, type: u16, name: points, values: "decomposition points left", notes: "-> rec+0x293"}
+      accepted_if: "own record exists"
+    server_reply: "S->C 0x493 (full bag, gains, points)"
+    client_effect: "acquire popups, bag replaced, UI event 0x3c"
+    handler: FUN_00471b4e
+    send_sites: ["FUN_00579707 (msgbox 0x48 'GUI_Inventory_Decom_Item_S', 0x579bb7)"]
+    confidence: medium
+    verified: true
+    evidence: "disasm 0x579a81..0x579bfe; FUN_00471b4e. Old name 'exchange points for item' was wrong."
+
+  - opcode: 0x4b1
+    name: set_auto_decompose_mode
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: u32, name: mode, values: "0 off, 1 gemstones, 2 tier<=1, 3 tier<=2, 4 tier<=3 (GUI_Inventory_Auto_Combo0..4)", notes: "client sets rec+0x295 itself"}
+    server_reply: "none required (0x4b3 to confirm)"
+    client_effect: "-"
+    handler: null
+    send_sites: ["FUN_00579420 (DecomCombo)"]
+    confidence: high
+    verified: true
+    evidence: "FUN_00579420"
+
+  - opcode: 0x4b2
+    name: auto_decompose_result
+    direction: s2c
+    s2c:
+      min_size: 0x48
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: u16, name: points, values: "decomposition points", notes: "-> rec+0x293"}
+        - {offset: 0x12, type: "u16[3]", name: slots, values: "bag slots (<70) receiving results", notes: ""}
+        - {offset: 0x18, type: "item16[3]", name: items, values: "new records for those slots (code 0 = skip)", notes: ""}
+      accepted_if: "own record exists"
+    server_reply: "none"
+    client_effect: "writes the slots, highlights them, acquire popups (count delta), UI event 0x3c"
+    handler: FUN_00471c88
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00471c88; sent by the old server when a picked-up item matched the auto mode (hammer items 945..949 give points)"
+
+  - opcode: 0x4b3
+    name: decompose_state
+    direction: s2c
+    s2c:
+      min_size: 0x13
+      extra: "ignored"
+      fields:
+        - {offset: 0x10, type: u16, name: points, values: "", notes: "-> rec+0x293"}
+        - {offset: 0x12, type: u8, name: mode, values: "0..4", notes: "-> rec+0x295"}
+      accepted_if: "own record exists"
+    server_reply: "none"
+    client_effect: "UI event 0x3c (flag = points increased)"
+    handler: FUN_004707e8
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004707e8"
+
+  # ------------------------------------------------------------------ auction
+  - opcode: 0x433
+    name: auction_register
+    direction: c2s
+    c2s:
+      size: 0x60
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: "char[40]", name: seller, values: "own name rec+0x20b", notes: ""}
+        - {offset: 0x38, type: i32, name: nation, values: "rec+0x655", notes: ""}
+        - {offset: 0x3c, type: u32, name: slot, values: "bag slot (panel+0x144)", notes: ""}
+        - {offset: 0x40, type: u32, name: unknown_14c, values: "panel+0x14c (count or duration)", notes: "unknown"}
+        - {offset: 0x44, type: u32, name: price, values: "> 0 (else InputPrice)", notes: "panel+0x148"}
+        - {offset: 0x48, type: u64, name: char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x50, type: item16, name: item, values: "the bag record (verified equal)", notes: ""}
+    server_reply: "remove the item (0x427 container 1); no auction-list S->C opcode was found, so the listing result channel is unknown"
+    client_effect: "msgbox 0x72 'Sell'; clears the sell slot"
+    handler: null
+    send_sites: ["PanelAuction msg handler (0x53a6f2)"]
+    confidence: low
+    evidence: "disasm 0x53a627..0x53a785. No S->C handler references PanelAuction; listings may never have shipped in this build."
+
+  - opcode: 0x434
+    name: auction_buy
+    direction: c2s
+    c2s:
+      size: 0x58
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: "char[40]", name: buyer, values: "own name rec+0x20b", notes: ""}
+        - {offset: 0x38, type: u8, name: nation, values: "rec+0x655", notes: ""}
+        - {offset: 0x39, type: u8, name: flag, values: "1 when panel+0xe4 == 0", notes: "unknown"}
+        - {offset: 0x3a, type: u16, name: item_code, values: "panel+0xc8", notes: ""}
+        - {offset: 0x3c, type: u16, name: unknown_d0, values: "panel+0xd0 (count?)", notes: ""}
+        - {offset: 0x40, type: u32, name: gold_price, values: "panel+0xd4 when paying gold (checked vs rec+0x283)", notes: "0 otherwise"}
+        - {offset: 0x44, type: u32, name: jewel_price, values: "panel+0xd8 when paying Yellow Jewels (code 8, acct+0x634)", notes: "0 otherwise"}
+        - {offset: 0x48, type: u64, name: listing_id, values: "panel+0xc0", notes: "matches 0x70-byte listing records"}
+        - {offset: 0x50, type: u64, name: char_id, values: "rec+0x203", notes: ""}
+    server_reply: "unknown (item via 0x427 / mail; currency via 0x428)"
+    client_effect: "msgbox 0x71 'Buy'"
+    handler: null
+    send_sites: ["PanelAuction msg handler (0x53a48c)"]
+    confidence: low
+    evidence: "disasm 0x53a454..0x53a622. Old label 'auction search' was wrong."
+
+  - opcode: 0x498
+    name: auction_cancel
+    direction: c2s
+    c2s:
+      size: 0x30
+      extra: "own uid"
+      fields:
+        - {offset: 0x18, type: u64, name: listing_id, values: "own listing", notes: ""}
+        - {offset: 0x20, type: u64, name: char_id, values: "rec+0x203", notes: ""}
+        - {offset: 0x28, type: u16, name: item_code, values: "listing +0x08", notes: ""}
+        - {offset: 0x2a, type: u16, name: unknown, values: "listing +0x10", notes: ""}
+        - {offset: 0x2c, type: u32, name: unknown2, values: "listing +0x14", notes: ""}
+    server_reply: "unknown"
+    client_effect: "msgbox 0x45 confirm"
+    handler: null
+    send_sites: ["FUN_0053a7c2 (0x53a819)"]
+    confidence: low
+    evidence: "FUN_0053a7c2 is a PanelAuction method (list at +0x44). Was 'social: mail/item list action' (misassigned)."
+
+flows:
+  - name: enter_world_items
+    steps:
+      - "S->C 0x2000: +0x28 bag rows (acct+0x27cc), +0x2c gear 8x16, +0xac bag 70x16, +0x50c/+0x51c quick bar, +0x6b4 Innocence item, +0x6e8 Yellow Jewel, +0x6f0 Purple Jewel, +0x6f4 next free gacha time; slot record +0x40/+0x50 main/sub weapon, gold/fame in the record"
+      - "S->C 0x41f (stats, mandatory)"
+      - "S->C 0x427 container 3 slot 0 (and slot 1) reason 0 = equipped weapon(s) -> fills the skill bar (live-tested)"
+      - "S->C 0x452 {buy rate, sell rate, 0} (recommended, see price_formula)"
+      - "S->C 0x2009 (warehouse 90x16 at +0x18, warehouse gold +0x5b8, warehouse rows +0x5bc) or 0x425 + 0x4c2 + 0x47f type 6"
+      - "S->C 0x4b3 {points, mode} (optional)"
+  - name: equip_weapon_from_bag
+    steps:
+      - "C->S 0x42a {dst 3, slot 0|1, src 1, bag slot}"
+      - "S->C 0x42a echo (sender) -> local swap"
+      - "S->C 0x427 {reason 0, container 3, slot, weapon item} (sender) -> avatar + skill reload"
+      - "S->C 0x427 container 3 (or 0x426) to nearby players for the visual"
+  - name: equip_or_unequip_gear (armour/accessory, container 2)
+    steps:
+      - "C->S 0x42a {dst 2, slot, src 1, bag slot} (or reverse for unequip)"
+      - "S->C 0x42a echo -> local swap only; the client does NOT recompute stats or redraw the avatar from it"
+      - "S->C 0x41f / 0x426 with the new stats (missing from the first pass: gear changes stats, so a stats packet is required)"
+      - "flags bit0 (bound) set on equip of Item_Base bind=2 items -> resend 0x427 container 2 slot with the bound record"
+  - name: unequip
+    steps:
+      - "C->S 0x42a {dst 1, free bag slot, src 3|2|4|5, slot}"
+      - "S->C 0x42a echo; S->C 0x427 for the equipment slot (zeros) when container 3/4"
+  - name: main_sub_weapon_swap
+    steps:
+      - "C->S 0x42a {3,1,3,0}"
+      - "S->C 0x42a echo; S->C 0x427 container 3 slot 0 and slot 1"
+  - name: npc_shop_buy
+    steps:
+      - "client: NPC menu function 1 -> PanelItemShop opens locally with Npc_Carry[UnitDB+0xa2] (no packet)"
+      - "C->S 0x430 {npc uid, index, qty, code, rate}"
+      - "S->C 0x428 {0, 2, new gold} (or field 9 fame / 0x427 medal stacks)"
+      - "S->C 0x427 {0x46 or 0, 1, slot, item}"
+  - name: npc_shop_sell_and_buyback
+    steps:
+      - "C->S 0x431 {1, slot, npc uid, code, qty, rate}"
+      - "S->C 0x427 {0, 1, slot, remaining or zeros}; S->C 0x428 {0, 2, new gold}"
+      - "C->S 0x4b7 (BuyBack toggled)"
+      - "S->C 0x4b8 {rate|0, 16 sold items}"
+      - "C->S 0x4b9 {index, rate, item}"
+      - "S->C 0x428 gold; S->C 0x427 bag slot; S->C 0x4b8 refreshed"
+  - name: use_consumable
+    steps:
+      - "C->S 0x42d {1, slot, code, 1, 0} (client already decremented the stack and locked items 1 s)"
+      - "S->C effect packets (0x420/0x41f HP-MP, 0x41e buffs, ...)"
+      - "S->C 0x427 {0, 1, slot, authoritative record}"
+      - "S->C 0x42d {+0x12 code} extra = uid -> cooldown + use FX"
+  - name: destroy_item
+    steps:
+      - "C->S 0x42c {1, slot, code}"
+      - "S->C 0x427 {0, 1, slot, zeros}"
+  - name: split_stack
+    steps:
+      - "C->S 0x432 {src slot, dst slot, qty, code}"
+      - "S->C 0x427 src (count - qty); S->C 0x427 dst (copy, count = qty)"
+  - name: bag_to_warehouse
+    steps:
+      - "client: NPC function 0xf/0x1c (Warehouse) opens the panel locally"
+      - "C->S 0x42a {6, wh slot, 1, bag slot} (or reverse)"
+      - "S->C 0x42a echo"
+  - name: warehouse_gold
+    steps:
+      - "C->S 0x4c1 {0 deposit | 1 withdraw, amount}"
+      - "S->C 0x4c2 {warehouse gold, carried gold}"
+  - name: expand_bag_or_warehouse
+    steps:
+      - "C->S 0x47f {1|6, ExpandSlot step}"
+      - "S->C 0x428 {0, 2, gold} or {0, 0xd, yellow, purple}"
+      - "S->C 0x47f {1|6, new rows}"
+  - name: sort
+    steps:
+      - "C->S 0x454 {u8[70] order} or 0x4a0 {u8[90] order} (already applied by the client)"
+      - "no reply"
+  - name: craft
+    steps:
+      - "C->S 0x435 {npc, recipe, amount, material slots, material records}"
+      - "S->C 0x427 reason 0 per consumed material slot; S->C 0x428 gold"
+      - "S->C 0x427 {0x60|0x5f, 1, slot, result}  or 0x41b 97 on failure"
+  - name: reinforce
+    steps:
+      - "C->S 0x436 {container, slot, mat slots, mode, code, mat codes, gold}"
+      - "S->C 0x427 {0x4a success | 0x48 fail, 1, slot, new record}"
+      - "S->C 0x427 reason 0 per material slot; S->C 0x428 gold"
+  - name: rune_socket
+    steps:
+      - "C->S 0x4a7 {item slot, socket, rune slot (0 on remove), def id, 1|0, item code, rune code (0 on remove)}"
+      - "S->C 0x427 {0xfa|0xfb, 1, item slot, record with sockets}"
+      - "S->C 0x427 {0, 1, rune slot, ...}"
+  - name: rune_upgrade
+    steps:
+      - "C->S 0x4a8 {recipe, rune code, rune slot, material slots/records}"
+      - "S->C 0x427 {0xf8|0xf9, 1, rune slot, record}; 0x427 per material"
+  - name: decompose
+    steps:
+      - "C->S 0x493 {slot, code}"
+      - "S->C 0x493 {full bag, gained codes/counts, points}"
+      - "auto mode: C->S 0x4b1 {mode}; on loot S->C 0x4b2 {points, slots, items}; S->C 0x4b3 {points, mode} to resync"
+  - name: cash_mall
+    steps:
+      - "C->S 0x200f (balance refresh, rate-limited 10 s) -> S->C 0x200f {+0x38 purple, +0x3c bonus}"
+      - "C->S 0x484 {product id, item code, price}"
+      - "S->C 0x428 {0, 7, purple} ; S->C 0x427 {0x46, 1, slot, item}"
+  - name: hero_gacha
+    steps:
+      - "C->S 0x4aa {type}"
+      - "S->C 0x428 {0, 0xd, yellow, purple} (paid types)"
+      - "S->C 0x4aa {type, slots[10], items[10], next free time}"
+  - name: dye_and_carve
+    steps:
+      - "C->S 0x437 {part, dye slot} | 0x438 {dye slot} | 0x4a1 {1, slot, code}"
+      - "S->C 0x427 container 1 (dye consumed / costume changed); 0x427 container 4 broadcast if the worn costume changed"
+  - name: loot_pickup (live-tested, monsters.md)
+    steps:
+      - "S->C 0x427 {0x46, 1, slot, item} per item (popup)"
+      - "S->C 0x428 {0, 2, gold total}"
+      - "S->C 0x41b {36} when the bag is full"
+  - name: auction (incomplete)
+    steps:
+      - "C->S 0x433 register / 0x434 buy / 0x498 cancel"
+      - "S->C unknown: no handler fills PanelAuction lists"
+
+server_rules:
+  - name: item_record_and_ids
+    client_expects: "every container slot is the 16-byte item16 record; code 0 = empty; count byte only for stackable kinds (Item_Base kind via FUN_00440e65); sockets at +0x6"
+    data_table: "Item_Base.cdb (kind@1c, stack rules), ItemKind.tsv"
+    suggested_default: "store item16 verbatim per slot; stack cap 99 (live server); never send count 0 for a non-empty stackable slot (shown as 1)"
+  - name: authoritative_echo_vs_local_changes
+    client_expects: "the client changes local state BEFORE any reply for: 0x454/0x4a0 sort, 0x42d stack decrement, 0x436 material/gold removal, 0x4b1 mode. Everything else waits for a server packet."
+    data_table: "-"
+    suggested_default: "mirror those local changes on the server; after any refusal resend the affected slots (0x427) and money (0x428) to undo the client's optimistic edit"
+  - name: move_validation
+    client_expects: "0x42a is a blind swap; the client checks class (+0x33 mask), rank (+0x1e vs rec+0x656), same-weapon, Innocence level, bind prompt"
+    data_table: "Item_Base kind@1c, req_class@33, bind@32, +0x1e"
+    suggested_default: "allow only kind-compatible moves: container 3 = kind 31, 4 = 32, 5 = 18, 2 = 50..57 (slot = kind-50 suggested), 6 only within capacity; set flags bit0 on equip of bind=2 items and on pickup of bind=1; merge equal stackable codes instead of swapping (send two 0x427 instead of the echo)"
+  - name: capacity
+    client_expects: "usable bag slots = acct+0x27cc * 5, warehouse = acct+0x3420 * 5; locked rows are drawn locked"
+    data_table: "ExpandSlot.cdb (bag cost1, warehouse cost2; currency 2 gold, 13 jewels)"
+    suggested_default: "start bag rows 2 (10 slots) and warehouse rows 2 unless decided otherwise (ExpandSlot steps 1-2 cost 0 for the bag); require step == current rows + 1; max 14 / 18"
+  - name: price_formula
+    client_expects: "buy price from Item_Base +0x1f/+0x20 (FUN_004e0603) = scale(tier, price/100) * buy_rate + (price % 100) * buy_rate / 100, then +10%; currency 0x11: price +10%; currencies 9/0xa/0xb/0xc/0xf/0x10: raw price; EVERY other code (incl. 0x12 fame, 0x13, 1, 2) takes the rate formula. Cost pair +0x24/+0x26 (FUN_004e052e): raw for 9/0xa/0xb/0xc/0xf/0x10/0x12/0x13, 0x11 = +10%, others rate formula +10%. Sell (FUN_004e06b5) = rate formula with sell_rate then -10%; 0x11: x9/10 then -10% (= 81%); raw codes return the raw price without the -10%. scale(t,x) = {100,150,200,400,800,1600,3200,6400,12800,25600}[t] * x / 100. Rates are PERCENT values: the client initialises both to 1, which makes every gold price ~1/100."
+    data_table: "Item_Base buy_currency@1f, buy_price@20, cost pair @24/@26, item16 +3 tier"
+    suggested_default: "send 0x452 {100, 100, 0} after enter world (assumed original behaviour; unverified) and charge with the same formula"
+  - name: shop_stock
+    client_expects: "NPC shops are client data: UnitDB +0xa2 -> Npc_Carry.cdb row -> 70 item16; 0x430 +0x12 indexes that list"
+    data_table: "UnitDB.cdb @a2, Npc_Carry.cdb"
+    suggested_default: "validate 0x430 against the same row; 0x42f only for dynamic shops"
+  - name: buyback
+    client_expects: "16-entry list per player, requested with 0x4b7"
+    data_table: "-"
+    suggested_default: "keep the last 16 sold item16 records per character (newest first), price = buy price"
+  - name: jewels
+    client_expects: "two balances: Purple (cash, acct+0x638, code 7) for cash mall; Yellow (acct+0x634, code 8) for auction/production; code 0xd = sum (bag expansion, gacha)"
+    data_table: "PrimiumShop.cdb (price@08, discount%@14), ExpandSlot"
+    suggested_default: "spend Yellow first then Purple for code-0xd costs (assumption); report both via 0x428 field 0xd"
+  - name: item_effects_and_cooldowns
+    client_expects: "cooldown from item options 0x105 (s) / 0x106 (group); effect visuals from item def +0xa4"
+    data_table: "Item_Base opt pairs (ItemOption.tsv), Skill_Buff for buff items, RandomBox.cdb for boxes (kind 28/29/30/43)"
+    suggested_default: "implement HP/MP potions, buff scrolls, Exp boxes, random boxes; enforce the cooldown server side"
+  - name: craft_reinforce_rune_odds
+    client_expects: "success/fail reasons only; rolls and outputs are server-side"
+    data_table: "Item_Make.cdb (success%@38, result@3c, fail item@44, gold), ItemSancMet.cdb (gold, 6 steps x 5 materials), JewelSocketMake.cdb (next_item, materials), Item_Jewel.cdb (server-only rune stats)"
+    suggested_default: "use the table success% (100 if absent); on reinforce fail keep the item (GUI_WeaponReinforce_FailMsg says materials are destroyed)"
+  - name: gacha_odds
+    client_expects: "type 0 free once per period (acct+0xb1ac vs server time), types 1..6 paid; needs {3,10,10,5,10,10,10} free slots"
+    data_table: "Gacha_00..06.cdb (item, grade; no rates), GUI_Herobind_GachaText_* (tiers per pool)"
+    suggested_default: "uniform within grade, grade weights 70/25/5 (invented); free draw every 12 h (GUI_Herobind_GachaText_0)"
+  - name: decomposition
+    client_expects: "points cost by tier from client table 0x833314; gains are server-side"
+    data_table: "Item_Make rows with GUI_ItemMakeFilter_Ore2/Plant2 (decompose) if any; hammer items 945..949 grant points"
+    suggested_default: "return 1-3 tier-appropriate materials (e.g. 601/611 Passion Fragments) and charge the client's cost"
+  - name: gold_and_currency_limits
+    client_expects: "u32 totals; warehouse transfer clamps at 2,000,000,000"
+    data_table: "-"
+    suggested_default: "cap all currencies at 2,000,000,000; always send totals (0x428/0x4c2), never deltas"
+  - name: auction
+    client_expects: "PanelAuction exists and sends 0x433/0x434/0x498, but no S->C path fills its lists"
+    data_table: "-"
+    suggested_default: "ignore auction packets (reply nothing) until a list channel is found"
+  - name: misassigned_opcodes
+    client_expects: "-"
+    data_table: "contract/inventory.tsv"
+    suggested_default: "move 0x4b7 (system -> items: buyback list request), 0x4c1 (system -> items: warehouse gold), 0x498 (social -> items: auction cancel) here. 0x45f/0x4bc (guild warehouse moves) stay in social but use container ids 7/9/0xb and item16 records. Renamed: 0x434 search->buy, 0x433 register/bid->register, 0x4b9 medal shop->buyback, 0x4a1 cast-bar use->carve costume, 0x437/0x438 select/apply->costume/hair dye, 0x493 exchange->decompose, 0x4b8 cash info->buyback list, 0x42f cash info->NPC shop stock."

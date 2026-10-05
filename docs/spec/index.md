@@ -21,4 +21,5 @@ The client's config `Data/config/serverlist.sof` is RC4 with a 40-bit key, `MD5(
 
 - Per-opcode first pass: [[group00]], [[group01]], [[group02]], [[group03]]
 - Systems: [[loading]] (world loading), [[world]] (spawning, movement relay), [[movement]], [[combat]], [[skills]], [[monsters]] (incl. AI and loot), [[match]]
-- Formats: [[jpk]] (archives), [[navmesh]] (walkable ground)
+- Formats: [[jpk]] (archives), [[navmesh]] (walkable ground), [[data-tables]] (the game's data tables)
+- Contract: [[contract/index|every opcode, by system]]

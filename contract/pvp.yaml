@@ -1,0 +1,922 @@
+# Warmonger / Crush Online - PvP subsystem contract
+# Scope: match queue, battlefield/arena match lifecycle, custom game rooms, scoreboards/rewards,
+# fort/castle (field) war, nation war / world map, nation vote, dungeon entry panel.
+#
+# Conventions
+# - All offsets are from packet start (16-byte header: u16 len | u16 0xA53C | u16 opcode | u16 extra | u32 tick | u32 key).
+# - acct = *DAT_00847ac8 (global game state). self = DAT_0084a758 (own unit, uid at +0x35e, char record at +0x3a0).
+# - char = unit+0x3a0 record: +0x655 i8 nation (0 neutral, 1..3 nations), +0x659 u16 match team id, +0x283 u32 gold.
+# - mgr = CWarDataManager singleton DAT_0084a75c (0x2b0 bytes), via FUN_0044ad5f; reset FUN_004fbd4c.
+# - war = acct+0x3628 world-war data object: 4 nation blocks x 0x1a50 (index = nation id 0..3), then
+#   87 field records x 0x20 at war+0x6940 (index = SceneList field id 1..86), war+0x7420 0xe4-byte resource block,
+#   war+0x7514 last-event block (0x650). FUN_004285cf() = own nation block (char+0x655 must be 0..3), FUN_004285ff(n) = block n.
+# - nation block (0x1a50): +0x00 u32 nation id, +0x08 u8, +0x09 u8, +0x0c..+0x18 u32 x4, +0x28 20 fort records x 0xb0,
+#   +0xde8 0x130 block, +0xf18 20 x 0x28 fort counters (10 x u32 each), +0x1238 u8, +0x1240 0x6e0 stats block,
+#   +0x1920 0x130 vote block.
+# - FORT RECORD (0xb0), shared by 0x448/0x475/0x479 and read by the debug panel FUN_0051f196 ("IDX/FortSlot/Guild/Type/State",
+#   "Channel/MapID/TownID", "Core Slot/ItemIndex") and PanelFortInfo FUN_005343e8:
+#     +0x00 i8 fort slot (0..19, must equal the index it is stored at) | +0x01 i8 type | +0x02 i8 channel index (compared to acct+0x64a)
+#     +0x03 i8 shield ("GUI_FortInfo_Shield") | +0x04 u8 field id (SceneList id 1..86; 0 = slot empty/not present)
+#     +0x06 i8 town id | +0x08 i16 owning guild id | +0x0c u32 state (non-zero = active)
+#     +0x10 u32 fort level, 0-based (UI shows +1; C->S 0x4a5 sends this+1) | +0x18 i64 fort funds (tax pool; cost check for 0x4a6; TaxRecv enabled when > 0)
+#     +0x20 6 x 16-byte core slots (+0 i16 item index, 0 = empty) | +0x80 u8 lab flag bits | +0x81 u8[6] lab level bits (NationInfo Lab0..Lab5)
+#     +0xac u32 level progress (7-segment gauge vs FortMastery/level table; full when >= table value)
+#     all other bytes unknown.
+# - FIELD RECORD (0x20 in client, first 0x14 from the server in 0x446): +0x00 i8 owner nation (N) | +0x01 i8 attacking nation
+#   | +0x02 i8 state | +0x03 i8 war type | +0x08 u32 flags (bits 0xe0 = forts of owner nation present here; 0x8000 = show bonus icon)
+#   | +0x0c i8 kind (7 = +2 hop penalty in route calc) | rest of the first 0x14 unknown. Client-computed: +0x14 hop distance from own forts,
+#   +0x18 derived value. +0x1c u16 from 0x44a.
+# Confidence: high = read from code at every step; medium = layout certain, meaning inferred; low = guess.
+# Server code (server/*.py) has NO pvp packets yet; nothing here is live-tested. match.md flows are code-verified only.
+
+opcodes:
+
+  # ---------------------------------------------------------------- match queue / team queue
+  - opcode: 0x470
+    name: match_queue
+    direction: both
+    c2s:
+      size: 0xec
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u8, name: action, values: "1 = register solo (Match.panel Single / minimap button), 2 = register team (MatchTeam Start, FUN_005362e8), 4 = cancel (minimap 'MatchOnDoYouCancle' or auto-cancel FUN_00428e81)", notes: ""}
+        - {offset: 0x11, type: u8, name: offer_kind, values: "echo of acct+0xb1bd (last S->C state-0 +0x11)", notes: ""}
+        - {offset: 0x12, type: u8, name: echo, values: "echo of acct+0xb1be (last S->C +0x12)", notes: ""}
+        - {offset: 0x13, type: "bytes[0xd9]", name: pad, values: "0", notes: ""}
+    s2c:
+      min_size: 0xec
+      extra: "player uid (not read)"
+      fields:
+        - {offset: 0x10, type: u8, name: state, values: "0 = match offered (Match button available), 1 = queued solo, 2 = queued team, 3 = team formed", notes: "-> acct+0xb1bc"}
+        - {offset: 0x11, type: u8, name: offer_kind, values: "0 = 'War of Warmonger is being held', 1 = 'Battle Arena is held' (GUI_MatchPopup_Message_%d)", notes: "stored to acct+0xb1bd only when state == 0"}
+        - {offset: 0x12, type: u8, name: echo, values: "any; client echoes it back", notes: "-> acct+0xb1be"}
+        - {offset: 0x14, type: i16, name: sysmsg_id, values: "0 = none; else system_msg id shown (state 0 only)", notes: ""}
+        - {offset: 0x16, type: "u16[5]", name: team_uids, values: "team member uids, first = leader; 0 = empty", notes: "-> acct+0xb1c0"}
+        - {offset: 0x20, type: "char[5][40]", name: team_names, values: "member names (CP949)", notes: "-> acct+0xb1ca"}
+        - {offset: 0xe8, type: u32, name: offer_lifetime_s, values: "seconds; expiry = now + v*1000 (acct+0xb1b4). Suggest 86400", notes: "minimap tick FUN_00572593 wipes the 0xe4-byte queue block when it passes while state == 0"}
+      accepted_if: "always applied; sets acct+0xb1b0 = 1 (gates all match UI). state != 0 also records acct+0xb1b8 = now (queue start time)"
+    server_reply: "To C->S action 1/2: reply 0x470 state 1/2 to the sender (team: to every member). To action 4: reply 0x470 state 0 (re-offer) or nothing. Ignore action 4 from a player who is already in a match (the client auto-sends it when match data arrives while queued)."
+    client_effect: "Match.panel / minimap Match button availability, 'Queue' indicator (GUI_Minimap_Match_Waiting), UI event 0x36; sysmsg on offer."
+    handler: FUN_004705ac
+    send_sites: [FUN_005360a0, FUN_005362e8, FUN_00571c20, FUN_00571e3a, FUN_00428e81]
+    confidence: high
+    verified: true
+    evidence: "FUN_004705ac and FUN_00428e81 read in full; send sites 0x53614f(1),0x5363e8(var),0x571c5f(4),0x571f12(1),0x428eca(4); match.md step 1-3"
+
+  - opcode: 0x471
+    name: match_team_invite_by_name
+    direction: c2s
+    c2s:
+      size: 0x3c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "char[40]", name: invitee_name, values: "character name typed in msgbox 0x2e InputInviteCharName (CP949, NUL-padded)", notes: ""}
+    server_reply: "0x472 to the invitee (team state, opens MatchTeam panel); then 0x470/0x472 state 3 with the updated member list to all members. If the name is unknown/offline, a 0x41b sysmsg (id unknown)."
+    client_effect: "none locally"
+    handler: null
+    send_sites: [FUN_0053623e]
+    confidence: medium
+    verified: true
+    evidence: "site 0x536289 copies 0x28 bytes of the input to +0x10; reply chain inferred"
+
+  - opcode: 0x472
+    name: match_team_state
+    direction: s2c
+    s2c:
+      min_size: 0xec
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: state, values: "as 0x470 (3 = team formed)", notes: "-> acct+0xb1bc"}
+        - {offset: 0x12, type: u8, name: echo, values: "any", notes: "-> acct+0xb1be"}
+        - {offset: 0x16, type: "u16[5]", name: team_uids, values: "first = leader", notes: ""}
+        - {offset: 0x20, type: "char[5][40]", name: team_names, values: "", notes: ""}
+      accepted_if: "always; sets acct+0xb1b0 = 1 but does NOT set offer kind (+0xb1bd) or expiry"
+    server_reply: none
+    client_effect: "UI event 0x36, opens GuiTogglePanel 0x74 (MatchTeam.panel) if closed."
+    handler: FUN_004717d1
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004717d1 read"
+
+  # ---------------------------------------------------------------- match lifecycle (mgr)
+  - opcode: 0x43b
+    name: match_info_start
+    direction: s2c
+    s2c:
+      min_size: 0x16e
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: match_type, values: "row of DAT_0083a888: 2/3/4 queued (teams by nation), 6/0xa custom room, 7 team-id no lobby, 8/9 fort war, 0xc, 0xd (no medals), 5 no scoreboard", notes: "-> mgr+0xad"}
+        - {offset: 0x11, type: u8, name: state, values: "1 lobby/recruiting, 2 preparing (low), 3 = START (client rewrites to 4 'in progress'), 7/9 finished", notes: "-> mgr+0xac"}
+        - {offset: 0x12, type: u8, name: progress, values: "0..100 (fort-war gauge, type 8)", notes: "-> mgr+0xae"}
+        - {offset: 0x13, type: "u8[2]", name: unknown_13, values: "unknown; 0", notes: "-> mgr+0xbc/+0xc0"}
+        - {offset: 0x16, type: "u16[2]", name: side_values, values: "flag2 types: at state 3 the client writes +0x16[team] to char+0x659 of every member of the 0x43c ROSTER (mgr+0x0c uids / mgr+0x84 team, spawned units only) - NOT the +0x20 team table; with no 0x43c roster since the last scene change nothing is written (use 1, 2; 0 = none). flag2=0 types: nation per side (4 = any other)", notes: "-> mgr+0xb6"}
+        - {offset: 0x1c, type: u32, name: remaining_s, values: "seconds left (HUD counts down locally, display cap 5940)", notes: "-> mgr+0xa4"}
+        - {offset: 0x20, type: "struct[2][15]{u32 uid, u16 kills, u16 assists}", name: team_table, values: "team 0 = Defence, 1 = Attack; uid 0 = empty", notes: "-> mgr+0xcc; own team = table containing self uid"}
+        - {offset: 0x110, type: "u32[2]", name: tp, values: "TP per team (gauge cap 10000)", notes: "own -> mgr+0xb0"}
+        - {offset: 0x118, type: "struct[2]{u32,u32}", name: unknown_118, values: "unknown", notes: "-> mgr+0x288"}
+        - {offset: 0x128, type: "struct[3]{u32,u32}", name: unknown_128, values: "unknown", notes: "-> mgr+0x298"}
+        - {offset: 0x140, type: "struct[2]{u32,u32}", name: unknown_140, values: "unknown", notes: "-> mgr+0x278"}
+        - {offset: 0x150, type: "u32[4]", name: unknown_150, values: "unknown (same as 0x43d)", notes: "-> mgr+0x1bc"}
+        - {offset: 0x160, type: u16, name: unknown_160, values: "unknown", notes: "-> mgr+0x1cc"}
+        - {offset: 0x162, type: "u16[6]", name: queue_panel_counts, values: "queue/dungeon panel counters; only if that panel is open", notes: ""}
+      accepted_if: "always. If acct+0xb1bc is 1/2 (queued) the client first sends C->S 0x470 action 4 and clears the queue UI. Scoreboard rows are built only for SPAWNED units (FUN_0044d3b9)."
+    server_reply: none
+    client_effect: "HUD Teamscore.panel appears (time, kill/assist, TP gauge), UI 0x32 fired; at state 3 sets char+0x659 for flag2 types; refreshes queue panel (FUN_004e1425(0xb))."
+    handler: FUN_00471125
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004fc4e7 via match.md step 5 (layout H, meanings M)"
+
+  - opcode: 0x43c
+    name: match_roster
+    direction: s2c
+    s2c:
+      min_size: 0xa8
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: match_type, values: "6 or 0xa for custom rooms", notes: "-> mgr+0xad"}
+        - {offset: 0x11, type: u8, name: state, values: "1 = lobby (opens PanelCustomGameMatch when type has f4 and manager was idle); 3 -> rewritten 4", notes: "-> mgr+0xac"}
+        - {offset: 0x12, type: "i8[30]", name: member_team, values: "0 Def, 1 Att, -1 (0xff) undecided", notes: "-> mgr+0x84"}
+        - {offset: 0x30, type: "u32[30]", name: member_uids, values: "first = host; 0 = empty slot", notes: "-> mgr+0x0c; mgr+0x08 = host; mgr+0x04 = 1 if host == self"}
+      accepted_if: "always. If acct+0xb1b0 != 0 calls FUN_00428e81 (cancels queue if queued). Manager wiped first only if state was 0."
+    server_reply: none
+    client_effect: "roster rebuilt (FUN_004fc016), UI 0x32; custom lobby GUI 0x65 opened (FUN_00489d6d(0x65))."
+    handler: FUN_00471192
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004fc70a read in full"
+
+  - opcode: 0x43a
+    name: match_status
+    direction: s2c
+    s2c:
+      min_size: 0x15a
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: state, values: "as 0x43b; 7/9 = finished (hides HUD)", notes: ""}
+        - {offset: 0x11, type: u8, name: progress, values: "0..100", notes: ""}
+        - {offset: 0x14, type: u32, name: remaining_s, values: "", notes: ""}
+        - {offset: 0x18, type: "u32[2]", name: tp, values: "TP per team; applied only when the state changed", notes: ""}
+        - {offset: 0x20, type: "struct[2][15]{u32 uid, u16 kills, u16 assists}", name: team_table, values: "as 0x43b; rows rebuilt if any uid changed", notes: ""}
+        - {offset: 0x110, type: "bytes[0x38]", name: blocks, values: "unknown; same blocks as 0x43b +0x118/+0x128/+0x140 shifted by -8", notes: ""}
+        - {offset: 0x148, type: "u32[4]", name: unknown_148, values: "unknown", notes: ""}
+        - {offset: 0x158, type: u16, name: unknown_158, values: "unknown", notes: ""}
+      accepted_if: "always; auto-cancels queue like 0x43b"
+    server_reply: none
+    client_effect: "full status refresh of HUD and Tab scoreboard."
+    handler: FUN_004711a8
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_004fc840 via match.md step 6"
+
+  - opcode: 0x43d
+    name: match_team_scores_aux
+    direction: s2c
+    s2c:
+      min_size: 0x22
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: "u32[4]", name: values, values: "unknown; no reader found", notes: "-> mgr+0x1bc..+0x1c8"}
+        - {offset: 0x20, type: u16, name: value16, values: "unknown", notes: "-> mgr+0x1cc"}
+      accepted_if: "always"
+    server_reply: none
+    client_effect: "stores values, fires UI 0x32 with current state (HUD refresh). Optional for a server."
+    handler: FUN_004711be
+    send_sites: []
+    confidence: medium
+    evidence: "FUN_004fb223 read (layout high, no consumer found)"
+
+  - opcode: 0x439
+    name: match_map_ping
+    direction: s2c
+    s2c:
+      min_size: 0x1c
+      extra: "unit uid the ping is about; if == self and flag == 1 a message is shown"
+      fields:
+        - {offset: 0x10, type: u8, name: flag, values: "1 + extra == self -> notice 0x1462 (category 0x2711)", notes: ""}
+        - {offset: 0x14, type: f32, name: x, values: "world x", notes: ""}
+        - {offset: 0x18, type: f32, name: z, values: "world z (terrain height looked up by the client)", notes: ""}
+      accepted_if: "always (match manager must exist)"
+    server_reply: none
+    client_effect: "spawns a ground FX at (x, z) and a minimap marker (FUN_00572fce(1))."
+    handler: FUN_00474e60
+    send_sites: []
+    confidence: medium
+    evidence: "FUN_00474e60 / FUN_004fb3c7 read; message text not resolved"
+
+  - opcode: 0x4c6
+    name: match_minimap_markers
+    direction: s2c
+    s2c:
+      min_size: 0x40
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: "struct[4]{i16 seconds, i16 uid, f32 x, f32 z}", name: markers, values: "seconds: countdown shown as '%d' at (x, z) while 0 < seconds <= 120 (0 = off). uid: 0 = marker active now; != 0 = marker SUPPRESSED (hidden, countdown paused) while that unit exists client-side; when the unit is gone the client zeroes uid and the countdown starts (respawn-timer style). The marker never follows the unit.", notes: "-> mgr+0x1d4, mgr+0x1d0 = receive time; FUN_00572593 (0x572678..0x5727e3) decrements once per second, only while mgr+0xad (match type) != 0"}
+      accepted_if: "always"
+    server_reply: none
+    client_effect: "up to 4 timed minimap countdown markers at fixed positions."
+    handler: FUN_004711d4
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_004fb254 copies 4 x 12 bytes; field split from match.md (minimap tick). MISLABELLED in inventory as 'war team stats'."
+
+  - opcode: 0x443
+    name: match_kill
+    direction: s2c
+    s2c:
+      min_size: 0x68
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u16, name: killer_uid, values: "", notes: "kill count +1 in local rows"}
+        - {offset: 0x12, type: u16, name: victim_uid, values: "< 0x3f7 = player", notes: ""}
+        - {offset: 0x14, type: u16, name: points_killer, values: "added to self char+0x233 if self is killer (cap 31,250,000)", notes: ""}
+        - {offset: 0x16, type: u16, name: points_assist, values: "added to self char+0x233 if self assisted", notes: ""}
+        - {offset: 0x18, type: "u16[15]", name: assist_list_a, values: "assister uids; 0 = empty slot (skipped, NOT a terminator)", notes: "merged with list b; killer uid and duplicates removed"}
+        - {offset: 0x36, type: "u16[15]", name: assist_list_b, values: "assister uids, same treatment as list a (each merged uid gets assists +1; self in either list -> +0x16 points)", notes: ""}
+        - {offset: 0x54, type: "u32[2]", name: tp, values: "TP per team", notes: "own -> mgr+0xb0"}
+        - {offset: 0x5c, type: "u32[3]", name: killer_stats, values: "-> killer char+0x613/+0x617/+0x61b (unknown meaning)", notes: ""}
+      accepted_if: "self spawned. Kill/assist row counters are incremented only when the victim is a player (uid < 0x3f7) or a unit of kind 4; points (+0x14/+0x16) are applied regardless."
+    server_reply: none
+    client_effect: "kill/assist counters, TP gauge, personal points."
+    handler: FUN_00471200
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_004fcc10 via match.md step 6"
+
+  - opcode: 0x4b5
+    name: war_score_tick
+    direction: s2c
+    s2c:
+      min_size: 0x54
+      extra: "unit uid; notice shown only if that unit exists"
+      fields:
+        - {offset: 0x10, type: u16, name: notice_kind, values: "0 none, 1 -> sysmsg 0xFF, 2 -> sysmsg 0x100 (args: +0x12 value and the name of unit 'extra')", notes: ""}
+        - {offset: 0x12, type: u16, name: notice_param, values: "numeric sysmsg arg; notice suppressed when 0", notes: ""}
+        - {offset: 0x14, type: "u32[2]", name: tp, values: "TP per team", notes: "own -> mgr+0xb0"}
+        - {offset: 0x1c, type: "bytes[0x38]", name: unknown_1c, values: "unknown", notes: "+0x1c u32[4] -> mgr+0x288, +0x2c u32[6] -> mgr+0x298, +0x44 u32[4] -> mgr+0x278 (same three blocks as 0x43b +0x118/+0x128/+0x140)"}
+      accepted_if: "always"
+    server_reply: none
+    client_effect: "UI events 0x1a/0x1d (TP gauge refresh)."
+    handler: FUN_00471e7e
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "group03 + match.md step 6"
+
+  - opcode: 0x440
+    name: match_result
+    direction: s2c
+    s2c:
+      min_size: 0x220
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: result, values: "0 = win, 1 = lose, other = neither", notes: "win/lose counter FUN_0059c2ab"}
+        - {offset: 0x11, type: u8, name: char_296, values: "echo current char+0x296", notes: ""}
+        - {offset: 0x12, type: u8, name: char_656, values: "echo current char+0x656 (scoreboard Race column)", notes: ""}
+        - {offset: 0x14, type: u8, name: panel_type, values: "match type for the panel (13 = no medals; 8/9 fort-war text)", notes: ""}
+        - {offset: 0x18, type: u32, name: unknown_18, values: "unknown", notes: "-> mgr+0x228"}
+        - {offset: 0x1c, type: "u32[3]", name: medals, values: "gold, silver, bronze counts", notes: ""}
+        - {offset: 0x28, type: u32, name: legion_contribution, values: "0 hides", notes: ""}
+        - {offset: 0x2c, type: u32, name: legion_fame, values: "0 hides", notes: ""}
+        - {offset: 0x30, type: u32, name: fame, values: "ADDED to char+0x287 and +0x651", notes: ""}
+        - {offset: 0x34, type: u32, name: icon_flags, values: "0x08/0x10/0x20 medal icon variants, 0x40, 0x80, 0x200/0x400/0x800/0x1000 highlight medal rows", notes: ""}
+        - {offset: 0x38, type: u32, name: fortwar_value, values: "types 8/9", notes: ""}
+        - {offset: 0x3c, type: u32, name: money, values: "ADDED to gold char+0x283", notes: ""}
+        - {offset: 0x40, type: u16, name: title, values: "echo current char+0x297", notes: ""}
+        - {offset: 0x44, type: "bytes[0x5c]", name: stat_block, values: "real current stats (HP < 1 = dead)", notes: "-> char+0x443"}
+        - {offset: 0xa0, type: "bytes[0x180]", name: equip_table, values: "echo current 32 x 12-byte slot table or gear vanishes", notes: "-> char+0x49f"}
+      accepted_if: "self must be spawned"
+    server_reply: none
+    client_effect: "freezes Tab scoreboard, UI 0x33 opens GameResultSimple (GUI 0x43), applies rewards, resets mgr to state 0, HUD disappears."
+    handler: FUN_004711ea
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_004fc9c5 via match.md step 7"
+
+  - opcode: 0x48d
+    name: field_war_scoreboard
+    direction: s2c
+    s2c:
+      min_size: 0x652
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: "u32[2]", name: team_values, values: "unknown; no reader found", notes: "-> acct+0xab4c"}
+        - {offset: 0x18, type: "u32[3]", name: unknown_18, values: "unknown; no reader found", notes: "-> acct+0xab54"}
+        - {offset: 0x24, type: "struct[2][15]{u32 unknown, u16 kills, u16 assists}", name: stats, values: "per team per slot", notes: "-> acct+0xab60"}
+        - {offset: 0x114, type: "struct[2][15]{char[0x2a] name, u16 class}", name: players, values: "empty name = slot unused; class indexes icon table 0x83d698", notes: "-> acct+0xac50"}
+        - {offset: 0x63c, type: "bytes[4]", name: gap, values: "not copied", notes: ""}
+        - {offset: 0x640, type: "struct[2]{i8 award13[3], i8 award12[3], i8 award11[3]}", name: awards, values: "slot indices (0..14) of up to 3 players per award icon (icons 0x13, 0x12, 0x11); -1 = none", notes: "-> acct+0xb178; a 4th icon (0x14) is computed client-side for top kill+assist"}
+      accepted_if: "acct valid"
+    server_reply: none
+    client_effect: "UI 0x23; World-map GameInfoWM panel (FUN_00578e21 -> FUN_00576302) lists ListA/ListD with Name/Race/Kill/Assist/Icon0-3 and AttKill/AttAssist/DefKill/DefAssist totals; ExitAtt/ExitDef buttons."
+    handler: FUN_00471a6d
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00471a6d + FUN_00576302 read; team 0 = first list (ListA), order vs Att/Def low"
+
+  # ---------------------------------------------------------------- custom rooms
+  - opcode: 0x46c
+    name: custom_room_list_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: pad, values: "0", notes: ""}
+    server_reply: "0x46d room list to the sender."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_00542a5e, FUN_00542b01]
+    confidence: high
+    verified: true
+    evidence: "sites 0x542ad1 (list open), 0x542bac (Refresh); match.md section 5"
+
+  - opcode: 0x46d
+    name: custom_room_list
+    direction: s2c
+    s2c:
+      min_size: 0x72c
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: "struct[10]{i16 room_id, i16 field_id, i16 valid, char[40] host, char[128] room_name, i8 players, bytes[5], i16 cost_count}", name: rooms, values: "entry 0xb6 bytes: +0 room id (!=0), +2 field id (valid SceneList field; 0 ends list), +4 >0 = valid, +6 host name, +0x2e room name, +0xae current players (shown 'n / field max'), +0xb4 cost item count ('Mat')", notes: ""}
+      accepted_if: "ignored unless CustomGameList (GUI 0x62) is open"
+    server_reply: none
+    client_effect: "fills CustomGameList (FUN_0054310d / render FUN_00542de8)."
+    handler: FUN_00471696
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "match.md section 6; entry fields from render"
+
+  - opcode: 0x46b
+    name: custom_room_create
+    direction: c2s
+    c2s:
+      size: 0xc8
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: unknown_10, values: "0", notes: ""}
+        - {offset: 0x12, type: u16, name: field_id, values: "Create dialog: selected map/field id; list-panel quick path: constant 0x77 (119)", notes: ""}
+        - {offset: 0x16, type: "char[40]", name: host_name, values: "own name (char record)", notes: ""}
+        - {offset: 0x3e, type: "char[128]", name: room_name, values: "Create dialog only; client rejects >= 120 chars", notes: ""}
+        - {offset: 0xc2, type: u8, name: quick_flag, values: "0 from Create dialog; 1 from the list panel quick path", notes: ""}
+        - {offset: 0xc4, type: u16, name: max_players, values: "MatCnt (Create dialog)", notes: ""}
+      accepted_if: ""
+    server_reply: "Create room, then 0x43c (type 6 or 0xa, state 1, member_uids[0] = creator, member_team[0] = 0xff) to the creator; this opens the lobby."
+    client_effect: "none until 0x43c"
+    handler: null
+    send_sites: [FUN_00542175, FUN_00542b01]
+    confidence: medium
+    verified: true
+    evidence: "sites 0x5425c9 (dialog: +0x12 field, +0x16 own name char+0x20b, +0x3e name 0x80, +0xc2 0, +0xc4 count>0) and 0x542bf8 (list path when panel+0x40 flag set: +0x12 = 0x77, +0xc2 = 1, no room name). The list path sends EITHER 0x46b (flag set) OR 0x46e join (flag clear, 0x542c57) - never both; FUN_00542175 = Create dialog"
+
+  - opcode: 0x46e
+    name: custom_room_join_rejoin
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u16, name: mode, values: "0 = join from list, 1 = Rejoin (CustomGameRejoin yes), 2 = decline", notes: ""}
+        - {offset: 0x12, type: u16, name: room_id, values: "room id (mode 0)", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    s2c:
+      min_size: 0x11
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: kind, values: "3 = offer rejoin (opens CustomGameRejoin GUI 0x66, or deferred via acct+0xb294 until the scene is ready); other values ignored", notes: ""}
+      accepted_if: "+0x10 == 3"
+    server_reply: "mode 0: add to room, send 0x43c to the joiner and 0x441 (extra = joiner, team 0xff, +0x14 = 0) to existing members; full room -> sysmsg. mode 1: warp back into the running match (0x44f) + 0x43b. mode 2: none."
+    client_effect: "S->C: rejoin prompt"
+    handler: FUN_004716c5
+    send_sites: [FUN_00540814, FUN_00542b01]
+    confidence: medium
+    verified: true
+    evidence: "FUN_004716c5 read; sites 0x540871/0x5408a6 (Rejoin), 0x542c57 (inline header 0xa53c0018)"
+
+  - opcode: 0x46f
+    name: custom_room_invite_by_name
+    direction: c2s
+    c2s:
+      size: 0x3c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: "char[40]", name: invitee_name, values: "", notes: ""}
+        - {offset: 0x38, type: u16, name: zero_38, values: "always 0 (site 0x541ce8 stores ax after xor eax,eax; the uid load at 0x541cd8 goes to the header extra +6)", notes: "VERIFIER: was mislabelled 'own uid'"}
+    server_reply: "unknown; presumably a prompt to the invitee (no dedicated S->C invite opcode found; 0x46e kind 3 is rejoin only)."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_00541c21]
+    confidence: medium
+    verified: true
+    evidence: "inline header 0xa53c003c at 0x541cce; name 0x28 bytes to +0x10 (0x541d2a); +0x38 = 0 (0x541ce8)"
+
+  - opcode: 0x441
+    name: custom_room_team
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: team, values: "0 = Def, 1 = Att, 0xffffffff = Wait (undecided)", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    s2c:
+      min_size: 0x18
+      extra: "member uid"
+      fields:
+        - {offset: 0x10, type: u8, name: team, values: "0/1/0xff", notes: ""}
+        - {offset: 0x14, type: u32, name: new_host_uid, values: "0 = team change / join (member added to first free slot if absent); non-zero = host change only (team ignored)", notes: ""}
+      accepted_if: "current mgr type has f4 (custom room); otherwise only UI 0x32 fires"
+    server_reply: "Broadcast S->C 0x441 (extra = requester, +0x10 = team, +0x14 = 0) to all room members."
+    client_effect: "lobby roster refresh (FUN_004fc016), UI 0x32."
+    handler: FUN_00471715
+    send_sites: [FUN_0054099e]
+    confidence: high
+    verified: true
+    evidence: "FUN_004fd4ff read; C->S sites 0x540db8 (Att/Def), 0x540c89 (Wait)"
+
+  - opcode: 0x442
+    name: custom_room_start_or_leave
+    direction: both
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: action, values: "0 = host Start (only if every roster member has team != -1, else 'SomeUserNotSelectTeam'), 1 = leave room / leave match", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    s2c:
+      min_size: 0x14
+      extra: "uid of the member who left"
+      fields: []
+      accepted_if: "mgr type has f4; uid removed from roster (uid slot 0, team 0xff); UI 0x32 fires either way"
+    server_reply: "action 0 (host only): run the match start flow for all members. action 1: broadcast S->C 0x442 (extra = leaver) to remaining members; if host left, send 0x441 with +0x14 = new host; if in a finished match, warp leaver back (0x44f) and re-push 0x470 state 0."
+    client_effect: "roster slot cleared, UI 0x32."
+    handler: FUN_00471736
+    send_sites: [FUN_0054099e, FUN_005431a5, FUN_00543e9a]
+    confidence: high
+    verified: true
+    evidence: "FUN_004fd5a9 read; sites 0x540b35 Start, 0x540bcf lobby Exit, 0x543237 result Exit, 0x543f4c ExitAtt/ExitDef"
+
+  # ---------------------------------------------------------------- world war / world map
+  - opcode: 0x446
+    name: world_war_state
+    direction: s2c
+    s2c:
+      min_size: 0x7dc
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u32, name: nation_id, values: "own nation 1..3 (must equal char+0x655; FUN_00429127 skips routing if not 1..3)", notes: "-> own nation block +0x00"}
+        - {offset: 0x14, type: u32, name: nation_value, values: "unknown", notes: "-> own nation block +0x18"}
+        - {offset: 0x18, type: u32, name: event_arg, values: "passed with UI notify 0x20", notes: ""}
+        - {offset: 0x1c, type: "struct[87]{bytes[20]}", name: fields, values: "field records index 0..86 (= SceneList id; 0 unused): +0 i8 owner nation, +1 i8 attacking nation, +2 i8 state, +3 i8 war type, +8 u32 flags, +0xc i8 kind, rest unknown", notes: "-> war+0x6940 stride 0x20"}
+        - {offset: 0x6e8, type: "struct[16]{u16 item_id, u16[5] unknown}", name: resources, values: "world-map 'Resource' icons (item id 0 = empty, max 8 shown)", notes: "-> war+0x7420 (whole 0xe4 bytes copied)"}
+        - {offset: 0x7a8, type: "bytes[0x24]", name: unknown_7a8, values: "unknown", notes: "tail of the 0xe4 block"}
+        - {offset: 0x7cc, type: "u32[4]", name: unknown_7cc, values: "unknown; no reader found", notes: "-> acct+0xab2c..+0xab38"}
+      accepted_if: "acct valid; own nation block exists (char+0x655 in 0..3)"
+    server_reply: none
+    client_effect: "world-map/field ownership, route distances recomputed (FUN_00429127), UI 0x20; clears the pending world-map wait handle and runs FUN_00598a5f."
+    handler: FUN_00474eb1
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_0042a814, FUN_00429127, debug panel FUN_0051f196 'FieldData: N/Flag/War Type/State/AttNation'"
+
+  - opcode: 0x448
+    name: war_event
+    direction: s2c
+    s2c:
+      min_size: 0xd0
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u16, name: event_id, values: "unknown enumeration", notes: "-> war+0x7514"}
+        - {offset: 0x12, type: u8, name: kind, values: "4 = only the three u16 at +0x18 are used", notes: ""}
+        - {offset: 0x13, type: u8, name: arg8, values: "unknown", notes: "-> war+0x7518"}
+        - {offset: 0x14, type: u32, name: arg32, values: "unknown", notes: "-> war+0x7520"}
+        - {offset: 0x18, type: "u16[3]", name: args16, values: "unknown", notes: "-> war+0x751a"}
+        - {offset: 0x1e, type: i8, name: nation, values: "nation whose fort record follows (0..3)", notes: ""}
+        - {offset: 0x20, type: "bytes[0xb0]", name: fort_record, values: "FORT RECORD (see header); +0x20 = fort slot 0..19, +0x24 = field id (0 = no record)", notes: "stored into that nation's block"}
+      accepted_if: "acct valid. Event fields always stored (+0x13/+0x14 only when kind != 4). Record applied only if kind != 4, field id +0x24 in 1..86, nation +0x1e in 0..3, slot +0x20 in 0..19. If +0x24 > 86 or slot > 19 (with a valid nation) the handler RETURNS EARLY: no route recompute and no UI 0x21 (0x4295b7/0x4295bc). Invalid nation: record skipped but routes recomputed and UI 0x21 still fires."
+    server_reply: none
+    client_effect: "UI 0x21 with arg = +0x24 (0 if none); route distances recomputed when a record was applied."
+    handler: FUN_00471751
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00429516 read; event meanings unknown"
+
+  - opcode: 0x44a
+    name: field_bonus_table
+    direction: s2c
+    s2c:
+      min_size: 0xc4
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u32, name: nation_id, values: "own nation", notes: "-> own nation block +0x00"}
+        - {offset: 0x14, type: "u16[87]", name: field_value, values: "per field id: id looked up in table DAT_00853c94 (loader FUN_005c18d6, DungeonAdmission per tables README); its +0x18 is a CommonIcon id drawn on the world map; 0 = none", notes: "-> war+0x695c stride 0x20"}
+      accepted_if: "acct valid; own nation block exists"
+    server_reply: none
+    client_effect: "UI 0x22; world-map field icon (FUN_005d410b)."
+    handler: FUN_00471771
+    send_sites: []
+    confidence: low
+    verified: true
+    evidence: "FUN_0042861a read; meaning from one consumer at decompiled.c:418321. Group01 'owner nation/guild' label is not supported"
+
+  - opcode: 0x473
+    name: nation_info_request_worldmap
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: i32, name: nation_id, values: "own char+0x655", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    server_reply: "0x475 for that nation (and 0x476 stats). Sent on WorldMap open after 0x445/0x449."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_0057867a, FUN_0051f196]
+    confidence: medium
+    evidence: "debug panel builds it with FUN_004a730b(0x473, 0x18) then dumps the own nation fort list"
+
+  - opcode: 0x474
+    name: nation_info_panel_request
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: i32, name: nation_id, values: "own nation", notes: ""}
+        - {offset: 0x14, type: u32, name: pad, values: "0", notes: ""}
+    server_reply: "0x475 (+ 0x476) for that nation."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_00534aaa]
+    confidence: medium
+    evidence: "PanelNationInfo (GUI 0x2b) open"
+
+  - opcode: 0x475
+    name: nation_war_data
+    direction: s2c
+    s2c:
+      min_size: 0x4b8
+      extra: "unused"
+      fields:
+        - {offset: 0x14, type: i8, name: nation_id, values: "0..3, else ignored", notes: "-> block +0x00 and +0x08"}
+        - {offset: 0x15, type: u8, name: unknown_15, values: "unknown", notes: "-> block +0x09"}
+        - {offset: 0x18, type: "u32[4]", name: nation_values, values: "unknown", notes: "-> block +0x0c..+0x18"}
+        - {offset: 0x28, type: "struct[4]{u32[10]}", name: fort_counters, values: "counters for the fort in the matching record below; meaning unknown", notes: "-> block +0xf18 + slot*0x28"}
+        - {offset: 0xc8, type: "struct[4]{bytes[0xb0]}", name: fort_records, values: "FORT RECORD; applied only if record+4 (field id) != 0, stored at record+0 slot", notes: "-> block +0x28 + slot*0xb0"}
+        - {offset: 0x388, type: "bytes[0x130]", name: nation_block, values: "unknown", notes: "-> block +0xde8"}
+      accepted_if: "+0x14 in 0..3 (any nation, not only own); clears block +0x1238. A record is applied when its +0x04 field id != 0; its +0x00 slot is NOT bounds-checked (signed char * 0xb0) - the server must keep it 0..19 or it corrupts memory. Only 4 forts per packet: send several packets for up to 20 forts."
+    server_reply: none
+    client_effect: "UI 0x1e (nation info / world map fort lists, PanelFortInfo)."
+    handler: FUN_00471791
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_0042865a read; fort record labels from FUN_0051f196/FUN_005343e8"
+
+  - opcode: 0x476
+    name: nation_war_stats
+    direction: s2c
+    s2c:
+      min_size: 0x6f8
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: unknown_10, values: "not read", notes: ""}
+        - {offset: 0x18, type: "bytes[0x6e0]", name: stats, values: "unknown layout; no consumer identified", notes: "-> own nation block +0x1240"}
+      accepted_if: "own nation block exists (char+0x655 in 0..3)"
+    server_reply: none
+    client_effect: "UI 0x1e."
+    handler: FUN_004717b1
+    send_sites: []
+    confidence: low
+    evidence: "FUN_0042873d read (copy only)"
+
+  - opcode: 0x479
+    name: fort_record_update
+    direction: s2c
+    s2c:
+      min_size: 0xf0
+      extra: "unused"
+      fields:
+        - {offset: 0x11, type: i8, name: nation_id, values: "0..3", notes: ""}
+        - {offset: 0x12, type: i8, name: fort_slot, values: "0..19, else ignored", notes: ""}
+        - {offset: 0x14, type: "u32[10]", name: fort_counters, values: "unknown meaning", notes: "-> block +0xf18 + slot*0x28"}
+        - {offset: 0x40, type: "bytes[0xb0]", name: fort_record, values: "FORT RECORD; +0x48 = owning guild", notes: "-> block +0x28 + slot*0xb0"}
+      accepted_if: "slot 0..19 and nation 0..3"
+    server_reply: none
+    client_effect: "UI 0x1e, panel refresh FUN_004e1425(9). If slot == acct+0x64c (my current fort): acct+0x64e mapGuild = +0x48 and minimap refresh."
+    handler: FUN_00471883
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_00471883 read in full"
+
+  - opcode: 0x47b
+    name: set_my_mapfort
+    direction: s2c
+    s2c:
+      min_size: 0x1c
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: i8, name: mapfort, values: "fort slot 0..19 of the current scene, -1 = none", notes: "-> acct+0x64c"}
+        - {offset: 0x18, type: u32, name: sceneidx, values: "must equal acct+0x656 (current sceneidx) or ignored", notes: ""}
+      accepted_if: "+0x18 == current sceneidx"
+    server_reply: none
+    client_effect: "sets the fort context used by fort panels (tax, donate, level up, mastery) and 0x479 mapGuild update."
+    handler: FUN_0047069f
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "FUN_0047069f read"
+
+  - opcode: 0x47c
+    name: nation_vote_block
+    direction: s2c
+    s2c:
+      min_size: 0x140
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: open_alarm, values: "!= 0 opens VoteAlram (GUI 0x2e), or defers via acct+0xb295 until the scene is ready", notes: "first byte of the copied block"}
+        - {offset: 0x11, type: "bytes[0x1f]", name: unknown_11, values: "unknown (likely vote kind/remaining time)", notes: ""}
+        - {offset: 0x30, type: "struct[3]{char[0x20] guild_name, char[0x38] candidate_name}", name: candidates, values: "three candidates shown in Vote.panel Name0-2 ('<guild>') ", notes: "-> own nation block +0x1940, stride 0x58"}
+        - {offset: 0x138, type: "bytes[8]", name: unknown_138, values: "unknown", notes: ""}
+      accepted_if: "NO guard: FUN_00471948 writes the 0x130 bytes to FUN_004285cf()+0x1920 without a null check, so sending it while self is not spawned or char+0x655 is outside 0..3 writes to address 0x1920 and CRASHES the client. Send only in world with nation 0..3."
+    server_reply: none
+    client_effect: "stores the 0x130 block at own nation block +0x1920; VoteAlram -> Vote.panel (GUI 0x2f) lists candidates."
+    handler: FUN_00471948
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "FUN_00471948 + Vote panel fill FUN_00529ed5 (reads +0x1940/+0x1960 stride 0x58). Inventory label 'war result / season block' is wrong: it is the nation (marshal) vote."
+
+  - opcode: 0x47e
+    name: nation_vote_cast
+    direction: c2s
+    c2s:
+      size: 0x18
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: i32, name: nation_id, values: "own char+0x655 (sign-extended)", notes: ""}
+        - {offset: 0x14, type: u32, name: choice, values: "Vote.panel: candidate 0..2 (Sel0-2 + ok). Msgbox result 0x26 path (FUN_0057349b): 0..3 (probably the policy vote, 'StrDef_VotePolicy')", notes: ""}
+    server_reply: "unknown; presumably a sysmsg (0x41b) and an updated 0x47c. No direct S->C."
+    client_effect: "Vote panel closes"
+    handler: null
+    send_sites: [FUN_00529cf6, FUN_0057349b]
+    confidence: medium
+    verified: true
+    evidence: "FUN_00529cf6 is the PanelVote (ui/Panel/game/NationInfo/Vote.panel) button handler. MISASSIGNED as 'dungeon / instance entry request': dungeon entry actually sends C->S 0x44e (see flows)."
+
+  - opcode: 0x481
+    name: dungeon_entry_panel
+    direction: s2c
+    s2c:
+      min_size: 0x134
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: nation_filter, values: "0 = everyone, else must equal char+0x655", notes: ""}
+        - {offset: 0x12, type: u16, name: zone_id, values: "entrance/zone id echoed in the 0x44e entry request +0x10", notes: "-> panel+0x24"}
+        - {offset: 0x16, type: i16, name: leader_flag, values: "!= 0 enables the group controls; == 1 and self not in the party list disables Start", notes: "low"}
+        - {offset: 0x18, type: i16, name: group_dungeon_id, values: "0 = solo entry (ticket check from DungeonAdmission); != 0 = party entry, sent as 0x44e +0x14", notes: ""}
+        - {offset: 0x1a, type: "i16[10]", name: dungeon_fields, values: "selectable dungeon field ids (DungeonAdmission.field, e.g. 121..129), 0 = end. On mapid 0x78 entries are hidden below levels 20..28 and a second list of SceneList type-6 fields is added", notes: ""}
+        - {offset: 0x30, type: "struct[5]{u32 level, u32 class, bytes[4], char[40] name}", name: party_members, values: "class 1..9 (0 = empty slot); name matched against the party list acct+0xb2c4", notes: "count > 4 ready entries -> 'Strdef_DungeonUserCountOver'"}
+      accepted_if: "self spawned and nation filter passes; whole 0x134 bytes copied to the panel"
+    server_reply: none
+    client_effect: "opens PanelDungeonEntry3 (GUI 0x68, DungeonEntry3.panel) with tickets (Mat1/Mat2 x count from DungeonAdmission) and rewards; Start sends C->S 0x44e (size 0x28)."
+    handler: FUN_004719d5
+    send_sites: []
+    confidence: medium
+    evidence: "FUN_00535827 (fill), FUN_005350a2 (render), FUN_00535cb8 (Start -> 0x44e at 0x535e70/0x535f1e)"
+
+  # ---------------------------------------------------------------- fort management
+  - opcode: 0x49e
+    name: fort_collect_tax
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: fort_slot, values: "acct+0x64c (0..19)", notes: ""}
+        - {offset: 0x14, type: "bytes[8]", name: pad, values: "0", notes: ""}
+    server_reply: "Move fort funds (record +0x18) to the guild treasury; send 0x479 with the updated record (+0x18 = 0) and the guild money update. No dedicated ack."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_00532f62]
+    confidence: medium
+    verified: true
+    evidence: "site 0x533b87 (button 'TaxRecv') in handler 0x533ad7: requires guild permission bit 0x10 (FUN_004b3f6d(0x10)), own guild == mapGuild (acct+0x64e), slot acct+0x64c <= 19"
+
+  - opcode: 0x4a5
+    name: fort_level_up
+    direction: c2s
+    c2s:
+      size: 0x20
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: fort_slot, values: "0..19", notes: ""}
+        - {offset: 0x14, type: i32, name: nation_id, values: "char+0x655", notes: ""}
+        - {offset: 0x18, type: u32, name: guild_id, values: "own guild id (guild obj +0xe4)", notes: ""}
+        - {offset: 0x1c, type: u32, name: new_level, values: "fort record +0x10 + 1", notes: ""}
+    server_reply: "Validate guild owns fort and funds; send 0x479 with the new level."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_00532f62]
+    confidence: high
+    verified: true
+    evidence: "site 0x533c35 read: +0x10 edi slot, +0x14 nation, +0x18 guild, +0x1c [rec+0x10]+1"
+
+  - opcode: 0x4a6
+    name: fort_mastery_purchase
+    direction: c2s
+    c2s:
+      size: 0xd0
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: fort_slot, values: "acct+0x64c", notes: ""}
+        - {offset: 0x14, type: i32, name: nation_id, values: "", notes: ""}
+        - {offset: 0x18, type: u32, name: guild_id, values: "", notes: ""}
+        - {offset: 0x1c, type: u32, name: mastery_id, values: "dword +0 of the table record returned by FUN_005a8cd7(msgbox param) (FortMastery per author; table not re-verified)", notes: ""}
+        - {offset: 0x20, type: "bytes[0xb0]", name: pad, values: "0", notes: ""}
+    server_reply: "Deduct FortMastery cost (table rec +0x14) from fort funds (record +0x18), apply mastery, send 0x479."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_00532bce]
+    confidence: medium
+    verified: true
+    evidence: "FUN_00532bce: msgbox 0x44 yes; requires guild permission bit 0x10 and guild == mapGuild; client checks cost <= fort funds"
+
+  - opcode: 0x4c3
+    name: fort_mastery_item
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: u32, name: fort_slot, values: "acct+0x64c", notes: ""}
+        - {offset: 0x14, type: u32, name: item_id, values: "item code from inventory (item kind 0x25 = 37 only)", notes: ""}
+        - {offset: 0x18, type: u8, name: slot, values: "index 0..5 of the clicked item button (panel+0x6c table); also the index into item container 9 (FUN_004dfe59(9, idx)) whose u16 item code goes to +0x14", notes: ""}
+    server_reply: "Consume the item, put it in a fort core slot (record +0x20 table), send 0x479 and an inventory update."
+    client_effect: "none"
+    handler: null
+    send_sites: [FUN_00532f62]
+    confidence: medium
+    verified: true
+    evidence: "site 0x533ddf in button handler 0x533ad7 (not decompiled; follows FUN_00532f62): requires guild permission bit 0x10 (FUN_004b3f6d), item in container 9 slot idx, Item_Base kind (+0x1c) == 0x25, own nation block, guild == mapGuild, slot <= 19"
+
+  - opcode: 0x816
+    name: fort_donation
+    direction: both
+    c2s:
+      size: 0x1c
+      extra: "sender uid"
+      fields:
+        - {offset: 0x10, type: i32, name: fort_slot, values: "acct+0x64c (0..19)", notes: ""}
+        - {offset: 0x14, type: u32, name: amount, values: "gold typed into msgbox_fortdonate (> 0 and <= gold, else 'MoneyIsLow')", notes: ""}
+        - {offset: 0x18, type: u32, name: current_gold, values: "char+0x283 at send time", notes: ""}
+    s2c:
+      min_size: 0x1c
+      extra: "unused"
+      fields:
+        - {offset: 0x18, type: u32, name: new_gold, values: "remaining gold", notes: "-> char+0x283"}
+      accepted_if: "self spawned"
+    server_reply: "0x816 to the sender with +0x18 = gold after deduction; add amount to fort funds/progress and send 0x479."
+    client_effect: "gold updated, 'GUI_FortDonate_Sucess' notice."
+    handler: FUN_00476e53
+    send_sites: [sub_00529408]
+    confidence: high
+    verified: true
+    evidence: "site 0x529541 in the msgbox_fortdonate OK handler at 0x529408 (not decompiled; FUN_005293ab is only the panel init): +0x10 movsx acct+0x64c (0..19 checked), +0x14 atoi(input) (> 0 else msg 0x73b234, <= gold else 'MoneyIsLow'), +0x18 edi = char+0x283. FUN_00476e53 read"
+
+flows:
+  - name: match offer and solo queue
+    steps:
+      - "S->C 0x470 (state 0, +0x11 offer kind 0/1, +0xe8 86400) after enter world, after every match, after a cancel"
+      - "C->S 0x470 (action 1, +0x11 echo, +0x12 echo)"
+      - "S->C 0x470 (state 1)"
+      - "[cancel] C->S 0x470 action 4 -> S->C 0x470 state 0"
+  - name: team queue
+    steps:
+      - "client: Match.panel Team -> MatchTeam.panel (local state 3)"
+      - "C->S 0x471 (+0x10 invitee name)"
+      - "S->C 0x472 to invitee (state 3, +0x16 uids leader first, +0x20 names) -> MatchTeam panel opens"
+      - "S->C 0x470 or 0x472 state 3 with the member list to every member"
+      - "C->S 0x470 action 2 (leader Start)"
+      - "S->C 0x470 state 2 to all members"
+  - name: queued match (arena / War of Warmonger)
+    steps:
+      - "S->C 0x44f to each participant (extra = uid, +0x10 mapid 140/141, +0x12 NEW sceneidx, x/z on loaded terrain); scene change wipes mgr"
+      - "S->C 0x803 spawn of all participants (+0x42 match team for flag2 types)"
+      - "S->C 0x43b (type 2/3/4 or 7, state 3, +0x16 sides, +0x1c seconds, +0x20 team table, +0x110 TP)"
+      - "C->S 0x470 action 4 (auto, ignore)"
+      - "loop: S->C 0x4b5 TP tick / 0x443 kill / 0x439 ping / 0x4c6 markers / 0x43a status"
+      - "S->C 0x43a state 7 (optional) then S->C 0x440 result (+0x10 0 win / 1 lose, echoed char fields, real stats + equipment)"
+      - "C->S 0x442 action 1 (Exit, flag2 types) or server timeout ~5 s"
+      - "S->C 0x44f back to world (original mapid, different sceneidx), respawns, then S->C 0x470 state 0"
+  - name: custom game room
+    steps:
+      - "NPC Training Officer opens CustomGameList (GUI 0x62); C->S 0x46c"
+      - "S->C 0x46d (10 rooms)"
+      - "create: C->S 0x46b (+0x12 field, +0x3e room name, +0xc4 max) | join: C->S 0x46e (mode 0, +0x12 room id)"
+      - "S->C 0x43c to the new member (type 6/0xa, state 1, teams, uids, host first) -> lobby GUI 0x65"
+      - "S->C 0x441 (extra = joiner, team 0xff, +0x14 0) to existing members"
+      - "C->S 0x441 (team 0/1/-1) -> broadcast S->C 0x441"
+      - "C->S 0x46f (invite name) -> server-side prompt (unknown)"
+      - "leave: C->S 0x442 (1) -> broadcast S->C 0x442 extra = leaver; host change S->C 0x441 +0x14 = new host"
+      - "host: C->S 0x442 (0) -> 0x44f warp (wipes mgr: roster uids, host flag, state)"
+      - "S->C 0x43c AGAIN after the warp (type 6/0xa, state 2, member_team + member_uids): 0x43b's state-3 team-id loop iterates the 0x43c roster (mgr+0x0c/+0x84), which the scene change zeroed; without this re-send char+0x659 is only set by 0x803 +0x42"
+      - "S->C 0x803 spawns (+0x42 match team 1/2), then S->C 0x43b (same type, state 3, +0x16 = {1,2}) and the rest of the queued-match steps"
+      - "reconnect: S->C 0x46e (+0x10 3) -> C->S 0x46e mode 1 (rejoin) / 2 (decline)"
+  - name: world map / nation war refresh
+    steps:
+      - "C->S 0x445 (world-map status) + C->S 0x449 (refresh) [owned by world subsystem], on open also C->S 0x473 (nation)"
+      - "S->C 0x446 (field ownership, resources) -> clears world-map wait handle"
+      - "S->C 0x44a (per-field bonus/icon ids)"
+      - "S->C 0x475 x ceil(forts/4) (nation values + fort records + counters)"
+      - "S->C 0x476 (stats block)"
+      - "events during war: S->C 0x448 (event + optional fort record), S->C 0x479 (single fort), S->C 0x48d (field-war scoreboard for GameInfoWM)"
+  - name: entering a fort scene
+    steps:
+      - "S->C 0x44f/0x44e scene change (mapfort byte +0x1e)"
+      - "S->C 0x47b (+0x10 fort slot, +0x18 = new sceneidx) to set acct+0x64c"
+      - "S->C 0x479 for that fort (sets mapGuild acct+0x64e when slot matches)"
+  - name: fort management (owning guild)
+    steps:
+      - "C->S 0x816 donate (slot, amount, gold) -> S->C 0x816 (+0x18 new gold) + S->C 0x479"
+      - "C->S 0x49e collect tax (slot) -> S->C 0x479 (+0x18 funds 0) + guild money update"
+      - "C->S 0x4a5 level up (slot, nation, guild, level+1) -> S->C 0x479"
+      - "C->S 0x4a6 buy mastery (slot, nation, guild, FortMastery id) -> S->C 0x479"
+      - "C->S 0x4c3 mastery item (slot, item, slot) -> S->C 0x479 + inventory update"
+  - name: nation (marshal) vote
+    steps:
+      - "S->C 0x47c (+0x10 != 0, +0x30 three candidates) -> VoteAlram (GUI 0x2e) -> Vote.panel (GUI 0x2f)"
+      - "C->S 0x47e (+0x10 nation, +0x14 choice 0..2)"
+      - "server: sysmsg/updated 0x47c (unknown)"
+  - name: dungeon entry
+    steps:
+      - "server (NPC/portal trigger): S->C 0x481 (+0x12 zone, +0x18 group id or 0, +0x1a field ids, +0x30 party rows)"
+      - "client Start: C->S 0x44e size 0x28: solo +0x10 u16 zone, +0x14 0, +0x18 selected field id, +0x1c cost set (0/1), +0x20 u16 option checkbox; party +0x10 zone, +0x14 group id, +0x1c 0"
+      - "S->C 0x44f/0x44e warp into the dungeon scene (world subsystem)"
+
+server_rules:
+  - name: match_offer_schedule
+    client_expects: "0x470 state 0 with +0x11 offer kind and a lifetime; without it the Match button is hidden"
+    data_table: "none (server-only schedule)"
+    suggested_default: "always offer kind 1 (Battle Arena) with +0xe8 86400; re-push after login, every match, every cancel"
+  - name: matchmaking
+    client_expects: "nothing between 0x470 state 1/2 and the warp; no accept round trip"
+    data_table: "Level_Table (level brackets), char+0x655 nation"
+    suggested_default: "start when 2 players (or 1 for testing) are queued; teams balanced by count; type 2 for nation teams, 7 for mixed teams with match team ids 1/2"
+  - name: arena_location
+    client_expects: "0x44f mapid 140/141 with x/z on an existing terrain zone and a new sceneidx"
+    data_table: "SceneList, ZoneDB, ZoneTable, map.jpk (encrypted, coordinates unknown)"
+    suggested_default: "reuse a known-good world area with a dedicated sceneidx until arena coordinates are recovered"
+  - name: match_duration_and_win
+    client_expects: "remaining seconds in 0x43b/0x43a; TP per team (cap display 10000); winner only in 0x440"
+    data_table: "Skill_TP (TP skills), none for scoring"
+    suggested_default: "600 s; kill = +100 TP to killer team, tower kill = +1000; first to 10000 or higher TP at time-out wins; draw = both lose"
+  - name: match_rewards
+    client_expects: "0x440 medals, fame (added), money (added), legion fame/contribution, icon flags"
+    data_table: "WinAffect (war-winner buff), FameRank"
+    suggested_default: "win: 1 gold medal, fame 100, money 1000; lose: 1 bronze, fame 20, money 200; award gold/silver/bronze to top-3 kill+assist"
+  - name: kill_points
+    client_expects: "0x443 +0x14/+0x16 points added to char+0x233"
+    data_table: "none"
+    suggested_default: "killer 10, assister 5"
+  - name: custom_room_rules
+    client_expects: "room ids, max players per field ('n / max'), cost item count; host = first roster uid; Start only when all have a team"
+    data_table: "SceneList maxUsers column, DungeonAdmission cost items"
+    suggested_default: "room id = increasing counter, max 30, cost 0; host leaving promotes the next member"
+  - name: field_and_fort_ownership
+    client_expects: "per-field owner/attacker/state/war type (0x446), per-nation fort records with guild, level, funds, shield, cores (0x475/0x479)"
+    data_table: "SceneList (fields 1..86, links for routing), FortMastery, Level_Table_Guild, Policy/PolicyActive (server-only)"
+    suggested_default: "nations 1..3 each own their home fields; forts start unowned (guild 0, level 0, funds 0, state 1); no war events until a war schedule is designed"
+  - name: war_schedule_and_state_values
+    client_expects: "field +2 state, +3 war type, 0x448 event ids, 0x43b types 8/9 for fort war"
+    data_table: "none recovered (enumerations unknown)"
+    suggested_default: "keep all 0 (peace) until enumerations are recovered from panel strings"
+  - name: fort_economy
+    client_expects: "fort funds i64 (record +0x18), level (+0x10), progress (+0xac)"
+    data_table: "FortMastery (costs at rec +0x14), Level_Table_Guild"
+    suggested_default: "tax = 5% of NPC shop sales in the fort's field into funds; donation adds 1:1 to funds and progress; level up costs the FortMastery level threshold"
+  - name: nation_vote
+    client_expects: "three candidates (guild name + character name) in 0x47c; choice index back in 0x47e"
+    data_table: "Policy (server-only) for the policy vote"
+    suggested_default: "weekly marshal vote: candidates = top 3 guild masters by fame of that nation; one vote per account; winner gets WinAffect buff"
+  - name: dungeon_entry
+    client_expects: "0x481 field list and party rows; 0x44e request with field id and cost set; client pre-checks ticket counts"
+    data_table: "DungeonAdmission (tickets: item 688 x N per cost set), Dungeon (groups), Event_Dungeon (schedule)"
+    suggested_default: "deduct the tickets server-side again, warp to the dungeon field's default spawn, max 4 party members (the client refuses Start with 'Strdef_DungeonUserCountOver' when all 5 0x481 party rows are filled: cmp edx,5 at 0x535eb6)"
+  - name: misassignment_notes
+    client_expects: "n/a"
+    data_table: "n/a"
+    suggested_default: "0x47e is the nation vote cast (not dungeon entry; dungeon entry is C->S 0x44e). 0x47c is the vote block (not war result). 0x4c6 is minimap markers (not team stats). 0x48d is the world-map field-war scoreboard (not the match result). 0x445/0x449/0x47a (world-map requests and fort warp) belong to this flow but are owned by the world subsystem."

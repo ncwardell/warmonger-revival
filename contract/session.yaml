@@ -1,0 +1,581 @@
+# Warmonger / Crush Online: client<->server contract, SESSION subsystem
+# (login server + game-server login, character list / select / create / delete / buy slot,
+#  channels and channel move, leave game, heartbeat, time sync, disconnect, web .asp endpoints).
+#
+# Conventions
+# - All offsets are from packet start; payload begins at +0x10. Header: u16 len | u16 0xA53C |
+#   u16 opcode | u16 extra | u32 tick | u32 key.
+# - Server packets: plaintext (key 0); the client never de-obfuscates S->C. The dispatcher
+#   FUN_0047a36c checks only magic (else 'PACKET HEADER ERROR') and len > 0x10 (else
+#   'PACKET SIZE ERROR'); there is no per-opcode size check, so min_size = highest offset the
+#   handler reads. Max packet 0x1000. EVERY accepted S->C packet sets the client's tick base:
+#   FUN_0046ff2e(hdr+0x08) -> client tick = last server tick + elapsed ms (FUN_0046fefd); that tick
+#   is what the client writes into C->S header +0x08. Tick 0 is accepted (live-tested).
+# - C->S packets: built by FUN_004a730b (zero-fills, never writes tick/key) or inline
+#   (0xA53C0xxx immediates). Send path FUN_004a7d7c -> FUN_004a73b6 sets hdr+0x0c = key
+#   (net+0xc, low 16 bits) and, when key != 0, rewrites every u32 word from +0x10 as ~(w - key);
+#   FUN_004a7c0d stamps hdr+0x08 = tick and drops the packet if the socket is not connected (<0x13).
+#   key = 0 until S->C 0x2000 sets net+0xc = player uid; so login/char-select packets are plaintext
+#   ON A FRESH CONNECTION ONLY. The key is cleared only when a new connection is set up (FUN_00470d15 ->
+#   FUN_004a7407 memsets the socket object incl. socket+8 = net+0xc); S->C 0x2001 does NOT reset it. So after
+#   0x409 mode 0 -> 0x2001 on the same connection, char-select packets (0x406/0x407/0x408/0x499) keep
+#   header +0x0c = the OLD player uid and their payloads are obfuscated with it (verified in code, not live).
+# - extra on char-select packets (0x406/0x407/0x408/0x499/0x200f) = acct+0xec = the 0x2001 'session
+#   tag'; after 0x2000 acct+0xec = player uid.
+# - acct = *DAT_00847ac8 (account/session object). entry[i] = acct+0x7ea+i*0x65f (5 slots);
+#   rec = the 0x240-byte character record at entry+0x203 (rec+N = entry+0x203+N).
+#   acct+0x70 wstring account name, +0xa8 wstring password (typed), +0xee char[256] login token,
+#   +0xe0/+0xe4 u32 session ticket A/B, +0xe8 u8 'login ok seen', +0xea i16 channel index from
+#   0x4201, +0x618 ptr selected world (serverlist entry, 0x1d8 B), +0x61c/+0x620 connect ip/port,
+#   +0x624 current channel index, +0x628 account UID, +0x62c u8 account nation, +0x634/+0x638
+#   currency A / jewels, +0x630 jewel bonus.
+# - World entry (0x1d8 B, from serverlist.sof): +0x38 wstring Login address ('ip:port', empty =
+#   none), +0x70 web host, +0x1c0 i16 world index, +0x1c2 u8 WORLD_STATE, +0x1c4 vector of channel
+#   entries (0x74 B each: +0x00 wstring 'ip:port' of that game server, +0x70 i16 load value,
+#   +0x72 u8 newbie flag, +0x73 u8 'state known'), +0x1d5/+0x1d6/+0x1d7 u8 NatBlock1..3.
+# - Connections: login server = world 'Login' (8815 in our serverlist.sof), game server = the
+#   selected channel's address (gs1 = channel 0, 8813), web = 'web' host (HTTP POST, port 80/8080).
+#   Command line: '-ologin <token>' stores a token (DAT_00846ea4, flag DAT_00846ea2); '-steam'
+#   sets DAT_00846ea1; '-nosg' is what our launcher uses (no token -> empty token in 0x4207).
+# Sources: decompiled.c / disasm.txt (re-checked for this file), spec/group00..03.md,
+# spec/world.md, contract/examples.md, server/{stub,handlers,proto}.py and the live server log
+# the server log (live-tested = confirmed working).
+
+opcodes:
+
+  # ------------------------------------------------------------------ keepalive
+  - opcode: 0x401
+    name: heartbeat
+    direction: c2s
+    c2s:
+      size: 0x10
+      extra: "net key (= player uid once in world, 0 before); header only"
+      fields: []
+      variants:
+        - {size: 0x1c, extra: "0", fields: [{offset: 0x10, type: u32, name: dev_toggle, values: "1 (button 0x62) / 0 (button 0x63)", notes: "PanelDevTest buttons only (FUN_00520368, inline header 0xA53C001C at 0x520557/0x520590); panel has no opener in the shipped client; meaning unknown"}]}
+    s2c: null
+    server_reply: "none. Treat any received packet as liveness."
+    client_effect: "sent by FUN_00428e23 (main-loop timer) every 240 s (0x7253b8 = 240.0, accumulated frame seconds) whenever a socket exists, in every scene (login, char select, game). Live log: 0x401 extra=1 key=1 len 16 about 4 min after entering the world."
+    handler: null
+    send_sites: [FUN_004a7d17 (via FUN_0046fff4), FUN_00520368]
+    confidence: high
+    verified: true
+    evidence: "FUN_004a7d17 builds 0xA53C0010 / 0x401 / extra = socket+8; FUN_00428e23 compares the accumulator with 240.0; stub.log 22:04:31 '<- op=0x0401 extra=0x0001 key=0x0001 len=16'"
+
+  # ------------------------------------------------------------------ login
+  - opcode: 0x405
+    name: legacy_login / login_notice
+    direction: both
+    c2s:
+      size: 0x48
+      extra: "0"
+      fields:
+        - {offset: 0x10, type: u32, name: zero, values: "0", notes: ""}
+        - {offset: 0x14, type: "char[32]", name: account, values: "acct+0x70 (typed id), narrow", notes: ""}
+        - {offset: 0x34, type: "char[20]", name: password, values: "acct+0xa8 (typed password), narrow, plaintext", notes: ""}
+      notes: "Sent only in login state 3 when the selected world has NO Login address (DAT_00846ea0 == 0); the socket then goes straight to channel 0's game server. The shipped serverlist.sof has a Login address, so this path is not used in production config."
+    s2c:
+      min_size: 0x1c
+      extra: "unused"
+      fields:
+        - {offset: 0x18, type: u32, name: reason, values: "0x14 (= sysmsg 20 StrDef_AccountEmpty 'This account is not registered with us.') is the only value acted on", notes: "anything else is ignored"}
+      accepted_if: "login scene exists (DAT_0084e84c) and +0x18 == 0x14; otherwise dropped"
+    server_reply: "for C->S 0x405 (legacy path, low confidence): unknown account -> S->C 0x405 {+0x18 = 0x14}; success -> either S->C 0x2001 directly (state 3 -> FUN_0049630a -> state 8), or S->C 0x4201 OK: state 5, after 1 s FUN_00496470 sets state 6 (it skips the reconnect because DAT_00846ea0 == 0), and the login-scene update FUN_00496b5c sees no connect in progress but a connected socket and moves to state 7, which sends C->S 0x4200 (tickets from the 0x4201) on this same connection. (Corrected by verifier: the earlier claim that a 0x4201 does nothing here was wrong.)"
+    client_effect: "S->C: FUN_004966f8(3, 0x14) -> error dialog with system message 20 text, login state -> 10 (error; user retries)."
+    handler: FUN_0047000f
+    send_sites: [FUN_004958d2]
+    confidence: medium
+    verified: true
+    verifier_note: "layout and handler verified; server_reply corrected (0x4201 OK does lead to 0x4200 on the same connection)"
+    evidence: "inline header 0xA53C0048/0x405 at 0x495ad1 (ebp-0x58), account -> ebp-0x44 (+0x14), password -> ebp-0x24 (+0x34); handler body 'if (DAT_0084e84c && pkt+0x18 == 0x14) FUN_004966f8(3,0x14)'; system_msg.tsv id 20"
+
+  - opcode: 0x4207
+    name: token_login
+    direction: c2s
+    c2s:
+      size: 0x9c
+      extra: "0"
+      fields:
+        - {offset: 0x10, type: u32, name: zero, values: "0", notes: ""}
+        - {offset: 0x14, type: "char[128]", name: token, values: "acct+0xee (first 0x80 bytes): the '-ologin <token>' command-line value or the OAuth/Steam token; ALL ZERO when started with -nosg (live)", notes: "typed id/password are NOT sent here"}
+        - {offset: 0x94, type: u32, name: client_version, values: "0x41e (1054)", notes: "constant; NOTES.local.md calls 0x41e an opcode, it is this version number"}
+        - {offset: 0x98, type: u8, name: marker, values: "0xff", notes: ""}
+        - {offset: 0x99, type: "bytes[3]", name: pad, values: "0", notes: ""}
+    s2c: null
+    server_reply: "S->C 0x4201 to the sender on the same (login) connection. Do NOT close the socket afterwards: the client closes it itself when it connects to the game server; a server-side close while still in the login scene shows 'Please try again in a few minutes'."
+    client_effect: "login state 3 (90 s timeout -> state 0xb). Sent when the world has a Login address (DAT_00846ea0 = 1) and the socket exists."
+    handler: null
+    send_sites: [FUN_004958d2]
+    confidence: high
+    verified: true
+    evidence: "FUN_004a730b(buf,0x4207,0x9c,0,1) at 0x49595b; rep movs 0x20 dwords acct+0xee -> ebp-0x98 (+0x14); [ebp-0x18]=0x41e (+0x94), [ebp-0x14]=0xff (+0x98); stub.log: 3 live logins '[login] <- op=0x4207 ... len=156' body all zero then '1e040000ff000000'"
+
+  - opcode: 0x4201
+    name: login_result
+    direction: s2c
+    s2c:
+      min_size: 0x40
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: i32, name: result, values: "OK when r == 1 or r < 3 (0, 1, 2, negatives). Errors (FUN_004966f8): 3/4 'Invalid username/password combination', 5 LOGIN_ERR_WEB, 6 LOGIN_ERR_WEBTIME, 7 = already logged in -> client immediately sends C->S 0x4202 (no dialog), 8 'Client Version doesn't match', 9 'administrator is currently verifying' (disabled/banned), >= 10 GUI_Login_Msg_Err_Default", notes: ""}
+        - {offset: 0x14, type: i16, name: channel_index, values: "0-based index into the selected world's channel list (serverlist.sof gsN); must be < channel count or 'CantConnect2'", notes: "acct+0xea; overridden by the channel the user picked in the login UI (+0xd8 - 1) if any; echoed in 0x4200 +0x44"}
+        - {offset: 0x16, type: "bytes[2]", name: pad, values: "0", notes: ""}
+        - {offset: 0x18, type: u32, name: ticket_a, values: "server-chosen session ticket / account id", notes: "acct+0xe0, echoed in 0x4200 +0x50"}
+        - {offset: 0x1c, type: u32, name: ticket_b, values: "second ticket word", notes: "acct+0xe4, echoed in 0x4200 +0x54"}
+        - {offset: 0x20, type: "char[32]", name: account_name, values: "narrow, NUL-terminated", notes: "converted (FUN_0042d65e) into acct+0x70, replacing the typed id; echoed in 0x4200 +0x10 and 0x200f +0x10"}
+      accepted_if: "always parsed; the OK branch also clears acct+0x628 and only proceeds when the login scene exists and acct+0xe8 == 0 (first OK only). Error branch needs the login scene."
+    server_reply: "none (client sends 0x4200 to the game server by itself)."
+    client_effect: "OK: acct+0xe8 = 1, login state 5; after 1.0 s FUN_00496470: state 6, 'Connecting to game server', connect to channel[channel_index] address (60 s timeout -> state 0xb, refused -> 'Can not connect to game server now'); once connected state 7 sends 0x4200. Error: dialog + state 10 (7 excepted)."
+    handler: FUN_00470032
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "handler body; FUN_00496470 uses acct+0xea as channel index into world+0x1c4 (0x74 B entries); FUN_004966f8 switch at 0x496740 and StringAll_Eng texts; live: stub login_ok() result 0, index 0, A=B=1"
+
+  - opcode: 0x4202
+    name: force_login_retry
+    direction: c2s
+    c2s:
+      size: 0x60
+      extra: "0"
+      fields:
+        - {offset: 0x10, type: "char[32]", name: account, values: "acct+0x70", notes: ""}
+        - {offset: 0x30, type: "char[20]", name: password, values: "acct+0xa8 (typed password; empty in token mode)", notes: ""}
+        - {offset: 0x44, type: u8, name: channel_index, values: "0", notes: ""}
+        - {offset: 0x48, type: u32, name: client_version, values: "0x41e", notes: ""}
+        - {offset: 0x4c, type: u8, name: marker, values: "0xff", notes: ""}
+        - {offset: 0x50, type: u32, name: ticket_a, values: "0", notes: ""}
+        - {offset: 0x54, type: u32, name: ticket_b, values: "0", notes: ""}
+      notes: "same layout as 0x4200; sent automatically on the current (login) connection when 0x4201 returns result 7, together with 'Connecting to login server.'"
+    s2c: null
+    server_reply: "disconnect / kick the other session of this account (it may be told with sysmsg 118 'Account already logged in connection closed.'), then S->C 0x4201 result 0 to this sender."
+    client_effect: "login state is left unchanged (still waiting for 0x4201)."
+    handler: null
+    send_sites: [FUN_00494da9]
+    confidence: medium
+    verified: true
+    verifier_note: "layout verified at 0x494dee; reply semantics still inferred"
+    evidence: "inline header 0xA53C0060/0x4202 at 0x494dee (ebp-0xa8): account ebp-0x98, password ebp-0x78, [ebp-0x64]=0, [ebp-0x60]=0x41e, [ebp-0x5c]=0xff; called from FUN_004966f8 case 7 (0x49682c). Reply semantics inferred."
+
+  - opcode: 0x4200
+    name: game_server_login
+    direction: c2s
+    c2s:
+      size: 0x60
+      extra: "0"
+      fields:
+        - {offset: 0x10, type: "char[32]", name: account, values: "acct+0x70 (name from 0x4201, else typed id)", notes: "live: the account name from 0x4201"}
+        - {offset: 0x30, type: "char[20]", name: password, values: "acct+0xa8 typed password (plaintext; empty in token mode / live)", notes: ""}
+        - {offset: 0x44, type: u8, name: channel_index, values: "login: acct+0xea (0x4201 +0x14); channel move: 0x40a +0x20", notes: ""}
+        - {offset: 0x45, type: "bytes[3]", name: pad, values: "0", notes: ""}
+        - {offset: 0x48, type: u32, name: client_version, values: "0x41e", notes: ""}
+        - {offset: 0x4c, type: u8, name: move_key, values: "0xff on login; 0x40a +0x10 on a channel move", notes: "tells a fresh login (0xff) from a channel-move reconnect"}
+        - {offset: 0x50, type: u32, name: ticket_a, values: "0x4201 +0x18 / 0x40a +0x18", notes: ""}
+        - {offset: 0x54, type: u32, name: ticket_b, values: "0x4201 +0x1c / 0x40a +0x1c", notes: ""}
+        - {offset: 0x58, type: "bytes[8]", name: pad, values: "0", notes: ""}
+    s2c: null
+    server_reply: "fresh login (+0x4c = 0xff): S->C 0x2001 character list (extra = new session tag). Channel-move reconnect (+0x4c = key byte from our 0x40a, tickets match): the client is still in the game scene, so reply S->C 0x2000 for the same character (+0x6e0 = new channel; it restarts loading = full reload) followed by the normal enter-world burst; do NOT send 0x2001 there (in game it throws the player back to character select)."
+    client_effect: "login state 7 -> waits for 0x2001 (no timeout)."
+    handler: null
+    send_sites: [FUN_004958d2 (state 7, 0x4960c7), FUN_0048d666 (channel move state 4, 0x48dd2b), FUN_004958d2 (0x4959c5, effectively unreachable: needs the socket check to fail then succeed back to back)]
+    confidence: high
+    verified: true
+    evidence: "0x4960c7: account->ebp-0x60, password->ebp-0x40, acct+0xea->ebp-0x2c (+0x44), 0x41e->ebp-0x28, 0xff->ebp-0x24, acct+0xe0/e4->ebp-0x20/-0x1c; 0x48dd2b: game-scene copy of 0x40a +0x10/+0x18/+0x1c/+0x20 -> +0x4c/+0x50/+0x54/+0x44; stub.log '[game] <- op=0x4200 len=96' body = 'player'..., +0x48 1e040000, +0x4c ff, +0x50 1, +0x54 1 -> 0x2001 (live)"
+
+  # ------------------------------------------------------------------ character select
+  - opcode: 0x2001
+    name: character_list
+    direction: s2c
+    s2c:
+      min_size: 0xb8c
+      extra: "session tag (any non-colliding u16; stub uses 1) -> acct+0xec; echoed in the extra of 0x406/0x407/0x408/0x499/0x200f"
+      fields:
+        - {offset: 0x10, type: "struct[5] (0x240 each)", name: slots, values: "slot i at +0x10+i*0x240, copied verbatim to entry[i]+0x203", notes: "record layout below"}
+        - {offset: 0x10, type: u64, name: "rec+0x00 char_id", values: "0 = empty slot; 0xFFFFFFFF_FFFFFFFF = locked slot (buyable with 0x499); else the character id (> 0)", notes: ""}
+        - {offset: 0x18, type: "char[40]", name: "rec+0x08 name", values: "narrow, NUL-terminated (converted to wchar entry+0x1b3)", notes: ""}
+        - {offset: 0x44, type: u8, name: "rec+0x34 level", values: ">= 1 (stub forces 1; 0 breaks the avatar)", notes: ""}
+        - {offset: 0x46, type: u16, name: "rec+0x36 class", values: "class / unit id from Create_Char (1 Saint, 4 Punisher, 5 Gardian, 7 Valkyrie); non-zero and valid or entering the world aborts (FUN_0048b435)", notes: ""}
+        - {offset: 0x48, type: u32, name: "rec+0x38 appearance_a", values: "the bytes sent by 0x407 +0x58 (face/hair/colour choices)", notes: ""}
+        - {offset: 0x4c, type: u32, name: "rec+0x3c appearance_b", values: "0x407 +0x5c", notes: ""}
+        - {offset: 0x50, type: "bytes[0x30]", name: "rec+0x40 equipment", values: "rec+0x40 main weapon 16-byte item (u16 item code first; 0x407 +0x60), up to rec+0x6f", notes: "same fields 0x803 sends at +0xbc..+0xeb"}
+        - {offset: 0x8c, type: i16, name: "rec+0x7c guild_id", values: "< 1 = no guild (delete allowed), else delete refused client-side", notes: ""}
+        - {offset: 0x9c, type: u32, name: "rec+0x8c delete_time", values: "unix seconds the slot was emptied; an empty slot is reusable when 0 or older than 86400 s", notes: "client-side only gate"}
+        - {offset: 0x10, type: "bytes", name: "rec other", values: "unknown; zeros accepted (rec+0x80 is used by the stub as gold)", notes: ""}
+        - {offset: 0xb50, type: u32, name: account_uid, values: "account id", notes: "acct+0x628; used in web/analytics URLs; when it was 0 before, FUN_0040ea95 runs (first login)"}
+        - {offset: 0xb54, type: "bytes[0x20]", name: unused, values: "0", notes: "not read"}
+        - {offset: 0xb74, type: u8, name: account_nation, values: "0 = not chosen yet (char create then asks for nation 1..3), else 1..3", notes: "acct+0x62c and every entry+0x655"}
+        - {offset: 0xb78, type: u32, name: currency_a, values: "", notes: "acct+0x634 (0x499 compares its +0x18 with this)"}
+        - {offset: 0xb7c, type: u32, name: jewels, values: "cash balance", notes: "acct+0x638"}
+        - {offset: 0xb80, type: u32, name: server_time, values: "unix seconds", notes: "time sync: net+0xb084 = this, net+0xb088 = local tick; server clock = this + elapsed_ms/1000 (FUN_0046ff4e). Used for slot delete cooldown etc."}
+        - {offset: 0xb84, type: u8, name: unknown_b3ac, values: "unknown", notes: "acct+0xb3ac; no reader found"}
+        - {offset: 0xb88, type: u32, name: unknown_b3b0, values: "unknown", notes: "acct+0xb3b0; no reader found"}
+      accepted_if: "always applied. Each slot entry gets unit id (entry+0x1ae) = slot number 1..5 until 0x2000."
+    server_reply: "none; the player then sends 0x406 / 0x407 / 0x408 / 0x499 / 0x200f."
+    client_effect: "login scene: state 8 -> 9 -> character-select scene (FUN_004298e4(3)). Game scene: resets the character state (FUN_00429d08(0)), kills the game process and switches to character select (so it is the right answer to C->S 0x409 mode 0). Char-select scene: data replaced in place only; the handler calls no char-select refresh (the slot widgets are built by FUN_0049284d / FUN_00491f17, which 0x2001 never reaches), so a slot restored this way is probably not redrawn until the list is rebuilt (verifier: code-read, not live-tested)."
+    handler: FUN_004760b2
+    send_sites: []
+    confidence: high
+    verified: true
+    verifier_note: "all offsets verified in FUN_004760b2; corrected: no UI redraw in char-select scene"
+    evidence: "handler body (memcpy 0x90 dwords per slot, name +8, nation byte, offsets 0xb50..0xb88); live: handlers.character_list -> 0xb8c bytes, char select shown"
+
+  - opcode: 0x406
+    name: select_character
+    direction: c2s
+    c2s:
+      size: 0x20
+      extra: "session tag (acct+0xec from 0x2001)"
+      fields:
+        - {offset: 0x10, type: u64, name: char_id, values: "rec+0x00 of the selected slot", notes: ""}
+        - {offset: 0x18, type: "bytes[8]", name: pad, values: "0", notes: ""}
+    s2c: null
+    server_reply: "S->C 0x2000 (extra = new player uid, +0x10 = same char id) + 0x41f and the enter-world burst (see world.yaml). An unknown/foreign char id: no valid answer exists in the client; send nothing or 0x2001 again."
+    client_effect: "rate-limited to one per 5 s (this+0x9c); only when a slot is selected (FUN_0042841a)."
+    handler: null
+    send_sites: [FUN_0049229d (button 'SelBtn' / double click via FUN_004935a7)]
+    confidence: high
+    verified: true
+    evidence: "inline header 0xA53C0020/0x406 at 0x4922ff, char id -> ebp-0x14/-0x10 (= +0x10/+0x14); stub.log '<- op=0x0406 extra=0x0001 ... body=0100000000000000...' -> 0x2000 (live)"
+
+  - opcode: 0x407
+    name: create_character
+    direction: both
+    c2s:
+      size: 0x260
+      extra: "session tag (acct+0xec)"
+      fields:
+        - {offset: 0x10, type: u32, name: slot, values: "first slot with id 0 and delete_time 0 or > 86400 s old (0..4)", notes: ""}
+        - {offset: 0x14, type: u32, name: zero, values: "0", notes: ""}
+        - {offset: 0x18, type: u8, name: nation, values: "1..3 (create panel this+0x9c; 0 or > 3 -> 'Please select a nation.' and nothing is sent)", notes: "chosen only when the account nation is 0; otherwise the account nation"}
+        - {offset: 0x19, type: "bytes[7]", name: pad, values: "0", notes: ""}
+        - {offset: 0x20, type: "struct (0x240)", name: record, values: "a character record; client fills only the fields below, rest 0", notes: "rec+N = packet +0x20+N"}
+        - {offset: 0x28, type: "char[40]", name: "rec+0x08 name", values: "client-validated: 1..16 chars, ASCII letters/digits only, no whitespace (FUN_005a617b(min 1, max 0x11)); forbidden words -> 'Use a different name.'", notes: ""}
+        - {offset: 0x56, type: u16, name: "rec+0x36 class", values: "Create_Char class id 1/4/5 (7 Valkyrie is refused client-side)", notes: "create panel this+0x98"}
+        - {offset: 0x58, type: u32, name: "rec+0x38 appearance_a", values: "4 bytes this+0xa4..a7: +0x58 face index, +0x59 hair index (Create_Char face/hair lists), others unknown", notes: "labels from the UI handlers FUN_005030fb/FUN_00503146"}
+        - {offset: 0x5c, type: u32, name: "rec+0x3c appearance_b", values: "4 bytes this+0xa8..ab: +0x5f colour index (FUN_00503191), others unknown", notes: ""}
+        - {offset: 0x60, type: u16, name: "rec+0x40 weapon_code", values: "starting weapon item code chosen from Create_Char weaponN_item of the class (e.g. 10017/10011/10001/10002 Saint)", notes: "u16 item code = first field of the 16-byte main-weapon item"}
+      notes: "C->S also requires the account nation (acct+0x62c) or a nation pick; shows 'Requesting character creation ...' and waits."
+    s2c:
+      min_size: 0x260
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u32, name: slot, values: "0..4 (NOT bounds-checked: an invalid slot corrupts memory)", notes: "entry+0x1ae = slot+1"}
+        - {offset: 0x18, type: u8, name: nation, values: "1..3; non-zero also sets the account nation acct+0x62c", notes: "entry+0x655"}
+        - {offset: 0x20, type: "struct (0x240)", name: record, values: "full record as in 0x2001; +0x20 u64 char id must be > 0", notes: "copied to entry[slot]+0x203; name re-read from +0x28"}
+      accepted_if: "i64 at +0x20 > 0; otherwise ignored. In both cases the create panel's 'answered' flag DAT_00850bd8+0xf0 is SET to 1 first (it is passed to FUN_004932f1 when the panel closes); nothing is reset."
+    server_reply: "success: S->C 0x407 echoing the request with a new unique u64 char id at +0x20 and the server-completed record (level rec+0x34 >= 1, stats, starting items). Failure: S->C 0x407 with id 0 plus S->C 0x2003 {+0x18 sysmsg id, e.g. 18 'The character name is already in use.'} (0x2003 only shows while the create panel exists)."
+    client_effect: "copies the slot, closes the create panel (back to char select) and selects the new character."
+    handler: FUN_00477a62
+    send_sites: [FUN_00504dcc]
+    confidence: high
+    verified: true
+    verifier_note: "C->S/S->C offsets verified (0x50528e, FUN_00477a62); corrected: +0xf0 flag is set, not reset"
+    evidence: "FUN_004a730b(ebp-0x318,0x407,0x260,acct+0xec,1) at 0x50528e; slot->ebp-0x308, this+0x9c->ebp-0x300 (+0x18), name->ebp-0x2f0 (+0x28, 0x28 bytes), this+0x98->ebp-0x2c2 (+0x56), this+0xa4->+0x58, this+0xa8->+0x5c, this+0xb0->+0x60; live create works with the echo (handlers.create_character)"
+
+  - opcode: 0x408
+    name: delete_character
+    direction: c2s
+    c2s:
+      size: 0x20
+      extra: "session tag (acct+0xec)"
+      fields:
+        - {offset: 0x10, type: u64, name: char_id, values: "rec+0x00 of the slot", notes: "the opcode inventory said +0x18; the disassembly writes ebp-0x14/-0x10 = +0x10/+0x14"}
+        - {offset: 0x18, type: u32, name: zero, values: "0", notes: ""}
+        - {offset: 0x1c, type: u32, name: pad, values: "0", notes: ""}
+    s2c: null
+    server_reply: "S->C 0x2004 {+0x10 char id, +0x18 0} on success; on refusal 0x2004 {+0x18 sysmsg id}. The client already wiped the slot locally; a fresh 0x2001 restores the data but does not redraw the list in the char-select scene (see 0x2001). Untested alternative that also redraws: S->C 0x407 with slot + the original record (FUN_00477a62 copies it and calls FUN_004924b2 in char select). Simplest: avoid refusals (the client already blocks guild members)."
+    client_effect: "only after the confirm dialog 5 ('Do you really want to delete this character...'), only for a real character (id not 0/-1) with guild id < 1 ('You have to leave your legion first'). Right after sending, FUN_00492a89 wipes the slot locally and stamps delete_time = server clock (optimistic)."
+    handler: null
+    send_sites: [FUN_00492bb3]
+    confidence: high
+    verified: true
+    verifier_note: "layout verified at 0x492c68; refusal-restore advice corrected"
+    evidence: "inline header at 0x492c68 (ebp-0x24): [esi+0x203]->ebp-0x14, [esi+0x207]->ebp-0x10, ebp-0xc = 0; then call 0x492a89 with the id; FUN_004935a7 'delete' branch checks entry+0x27f < 1"
+
+  - opcode: 0x2004
+    name: delete_character_result
+    direction: s2c
+    s2c:
+      min_size: 0x1c
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u64, name: char_id, values: "deleted char id; <= 0 just closes the message box", notes: ""}
+        - {offset: 0x18, type: u32, name: error, values: "0 = success; else a system_msg id shown in message box type 9", notes: ""}
+      accepted_if: "char-select scene (DAT_0084e840) for the wipe / error box"
+    server_reply: "none"
+    client_effect: "success: FUN_00492a89 wipes the matching slot (no-op if already wiped), removes the preview unit and refreshes the list. Error: popup with the message, resets the select rate limiter."
+    handler: FUN_00470140
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "handler body; FUN_00492a89 / FUN_00492447"
+
+  - opcode: 0x499
+    name: buy_character_slot
+    direction: both
+    c2s:
+      size: 0x20
+      extra: "session tag (acct+0xec)"
+      fields:
+        - {offset: 0x10, type: "bytes[0x10]", name: zero, values: "all 0", notes: "no slot index is sent"}
+      notes: "sent on 'ok' of the 'Do you want to buy extra slot?' dialog (dialog 6), which the 'create' button opens when no free slot exists but a locked slot (id -1) does"
+    s2c:
+      min_size: 0x20
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u32, name: result, values: "0 = ok; else 'You have failed to buy slot.'", notes: ""}
+        - {offset: 0x14, type: i32, name: slot, values: "0..4 (the slot unlocked)", notes: "its char id becomes 0 (empty)"}
+        - {offset: 0x18, type: u32, name: currency_a, values: "new value", notes: "acct+0x634"}
+        - {offset: 0x1c, type: u32, name: jewels, values: "new jewel balance", notes: "acct+0x638; a change in either triggers the currency-changed refresh"}
+      accepted_if: "result == 0 and 0 <= slot < 5 for the unlock; otherwise only the fail message"
+    server_reply: "S->C 0x499 {result 0, slot = first locked slot, new balances} after charging the price; or {result != 0} if not affordable / no locked slot."
+    client_effect: "'You bought new slot.', slot list refresh."
+    handler: FUN_0047630a
+    send_sites: [FUN_004935a7]
+    confidence: high
+    verified: true
+    evidence: "FUN_004a730b(ebp-0x30,0x499,0x20,acct+0xec,1) at 0x49361c in the dialog-6 'ok' branch; handler body"
+
+  - opcode: 0x2009
+    name: storage_block_part2
+    direction: s2c
+    s2c:
+      min_size: 0x7c0
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: "bytes[8]", name: unused, values: "0", notes: "not read"}
+        - {offset: 0x18, type: "bytes[0x7a8]", name: profile_part2, values: "zeros accepted", notes: "copied to acct+0x2e7c (right after the 0x2000 profile block); 0x425 (FUN_00470406) fills the same area from its +0x10 (0x5a0 bytes = 90 x 16-byte items: storage/warehouse)"}
+      accepted_if: "always"
+    server_reply: "none"
+    client_effect: "refreshes UI tab 6 (storage) and fires UI event 0x38."
+    handler: FUN_004700e3
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "handler copies 0x1ea dwords from +0x18 to acct+0x2e7c; world.md enter-world burst lists it as optional. Probably belongs to the items/storage subsystem (same area as 0x425), not session."
+
+  # ------------------------------------------------------------------ leaving / channels
+  - opcode: 0x409
+    name: leave_game
+    direction: c2s
+    c2s:
+      size: 0x14
+      extra: "own uid (char-select path: unit+0x35e; exit path: acct+0xec = uid)"
+      fields:
+        - {offset: 0x10, type: u32, name: mode, values: "1 = exit the client (system menu quit); 0 = back to character select", notes: "group00.md called the 0 path uninitialised; FUN_004a730b zero-fills, so it is 0"}
+    s2c: null
+    server_reply: "mode 1: none; save and drop the session (the client closes the socket after 1 s). mode 0: save, then S->C 0x2001 (fresh list, new session tag) on the same connection: the 0x2001 handler kills the game scene and opens character select. If nothing arrives within 3 s the client closes the socket and goes to the login scene (or quits outright when started with -ologin)."
+    client_effect: "game-scene countdown first: 4950 ms (0x1356) set by FUN_0059c700 (mode 2, back to select) or by WM_CLOSE in the window proc (mode 3, exit); while counting, FUN_0048634f (busy/combat) cancels it (+0xa0 = +0xac = 0, message). Then send; mode 2 then waits 3000 ms, closes the socket (FUN_0046ffd1) and goes to the login scene (or FUN_00429d08(1) + quit with -ologin); mode 3 waits 1000 ms then FUN_00429d08(1) + quit (FUN_0040abc1), no explicit socket close."
+    handler: null
+    send_sites: [FUN_0048d666 (0x48df5f mode 0, 0x48e0d1 mode 1)]
+    confidence: high
+    verified: true
+    verifier_note: "payload/extra verified; corrected: 4.95 s countdown before send, busy-cancel, mode 3 quits without explicit close"
+    evidence: "0x48df5f: FUN_004a730b(...,0x409,0x14,[ebx+0xb0],clear=1) then extra := unit+0x35e; 0x48e0d1: extra acct+0xec, [ebp-0x14] = 1; timers 3000/1000; stub.log '<- op=0x0409 extra=0x0001 key=0x0001 len=20 body=01000000' then disconnect 2 s later (live). The 0x2001 reply is inferred from FUN_004760b2's in-game branch (not live-tested)."
+
+  - opcode: 0x40a
+    name: channel_move
+    direction: both
+    c2s:
+      size: 0x28
+      extra: "own uid"
+      fields:
+        - {offset: 0x10, type: "bytes[0x10]", name: zero, values: "0", notes: ""}
+        - {offset: 0x20, type: u32, name: target_channel, values: "0-based index into the world's channel list", notes: ""}
+        - {offset: 0x24, type: u32, name: zero2, values: "0", notes: ""}
+      notes: "two senders: PanelChannelMove (FUN_005315a7: refused with message 0x10 while busy/in combat, FUN_0048634f) starts a 4.95 s countdown, then FUN_0048d666 sends it (state 1 -> 2); or immediately on OK of dialog 0x42 'Do you want to move to %d Channel?' (FUN_00487809), which S->C 0x41d {+0x10 0xe3, +0x14 channel} opens (newbie-channel move)."
+    s2c:
+      min_size: 0x28
+      extra: "unused"
+      fields:
+        - {offset: 0x10, type: u8, name: move_key, values: "any byte != 0xff (echoed in 0x4200 +0x4c to flag a channel move)", notes: ""}
+        - {offset: 0x11, type: "bytes[7]", name: pad, values: "0", notes: ""}
+        - {offset: 0x18, type: u32, name: ticket_a, values: "transfer ticket", notes: "-> acct+0xe0 and 0x4200 +0x50"}
+        - {offset: 0x1c, type: u32, name: ticket_b, values: "transfer ticket", notes: "-> acct+0xe4 and 0x4200 +0x54"}
+        - {offset: 0x20, type: u32, name: channel, values: "target index; must differ from the current channel acct+0x624 and be < channel count, else silently ignored", notes: "-> acct+0x624 and 0x4200 +0x44"}
+        - {offset: 0x24, type: u32, name: error, values: "0 = ok; else system_msg id shown via FUN_00498a40 (nothing else happens)", notes: ""}
+      accepted_if: "error == 0 and channel valid and different from the current one. NO scene guard: the ok branch writes DAT_0084e3ec+0xb8 (game scene) and reads acct+0x618 unconditionally, so send 0x40a only to a client in the game scene (else it crashes)."
+    server_reply: "S->C 0x40a to the sender: ok = {+0x10 key byte, +0x18/+0x1c ticket, +0x20 requested channel, +0x24 0}; refuse = {+0x24 sysmsg id}. Then expect a new connection to that channel's server with C->S 0x4200 carrying the ticket, answered with 0x2000 (see 0x4200)."
+    client_effect: "ok: closes the socket, clears match info acct+0xb1b0, copies the packet into the game scene (+0xb8), state 3 -> connect to the channel's ip:port taken from the CLIENT-SIDE serverlist (never from the packet), acct+0xec = 0; state 4 -> 0x4200 when connected, rebuilds the own slot record and HUD."
+    handler: FUN_00472165
+    send_sites: [FUN_0048d666 (0x48db16), FUN_00487809 (0x4878b2)]
+    confidence: high
+    verified: true
+    verifier_note: "layouts verified (0x48db16, 0x4878b2, FUN_00472165, 0x48dd2b); added: no scene guard; newbie (dialog 0x42) path risk"
+    evidence: "0x48db16: FUN_004a730b(ebp-0x38,0x40a,0x28,uid,1), [ebx+0xb0] -> ebp-0x18 (+0x20); 0x4878b2: dialog 0x42 param -> ebp-0xc (+0x20); handler body; 0x48dd2b mapping of the copied packet; FUN_00477741 opens dialog 0x42 for 0x41d code 0xe3"
+
+flows:
+  - name: login_production_path (serverlist world has a Login address; live-tested)
+    steps:
+      - "client (login state 1) polls web WorldChannel.asp (world=N) for every world and ChannelList.asp every 30 s; an empty HTTP 200 body is accepted (live)"
+      - "user logs in (typed id/password are stored, not sent yet); state 2: connect to the Login address (60 s timeout)"
+      - "C->S 0x4207 (0x9c, extra 0, +0x14 token char[128] (zeros with -nosg), +0x94 0x41e, +0x98 0xff) on the login connection"
+      - "S->C 0x4201 (0x40, +0x10 result 0, +0x14 channel index 0, +0x18/+0x1c ticket A/B, +0x20 account name)"
+      - "client waits 1 s, closes the login socket itself, connects to channel[+0x14]'s game server"
+      - "C->S 0x4200 (0x60, extra 0, +0x10 account, +0x30 password, +0x44 channel, +0x48 0x41e, +0x4c 0xff, +0x50/+0x54 ticket)"
+      - "S->C 0x2001 (0xb8c, extra = session tag, 5 slot records, +0xb50 account uid, +0xb74 nation, +0xb78/+0xb7c balances, +0xb80 unix time) -> character select scene"
+  - name: login_error_and_duplicate_session
+    steps:
+      - "S->C 0x4201 with +0x10 = 3/4 bad credentials, 8 version, 9 disabled, 5/6 web errors, >= 10 default -> dialog, state 10"
+      - "S->C 0x4201 with +0x10 = 7 (already logged in) -> C->S 0x4202 (0x60: account, password, +0x48 0x41e, +0x4c 0xff) on the same connection"
+      - "server kicks the older session (optionally telling it sysmsg 118) -> S->C 0x4201 result 0 -> normal path"
+  - name: legacy_direct_login (world without Login address; not used by the shipped serverlist)
+    steps:
+      - "client connects straight to channel 0's game server"
+      - "C->S 0x405 (0x48, +0x14 account char[32], +0x34 password char[20])"
+      - "S->C 0x405 {+0x18 0x14} = account not registered, or (inferred) S->C 0x2001 on success"
+  - name: select_character_enter_world
+    steps:
+      - "C->S 0x406 (0x20, extra = session tag, +0x10 u64 char id; 1 per 5 s)"
+      - "S->C 0x2000 (extra = player uid -> becomes the obfuscation key) + 0x41f + enter-world burst (world.yaml); from now on C->S payloads are ~(w - uid)"
+  - name: create_character
+    steps:
+      - "client validates name (1..16 alnum), nation (if account nation 0), class != 7, finds the first free slot"
+      - "C->S 0x407 (0x260, extra = session tag, +0x10 slot, +0x18 nation, +0x28 name, +0x56 class, +0x58/+0x5c appearance, +0x60 weapon code)"
+      - "S->C 0x407 echo with +0x20 u64 new char id > 0 and the completed record -> slot filled, back to char select with it selected"
+      - "failure: S->C 0x407 with id 0 + S->C 0x2003 {+0x18 sysmsg id (18 name in use)}"
+  - name: delete_character
+    steps:
+      - "confirm dialog; client refuses guild members"
+      - "C->S 0x408 (0x20, extra = session tag, +0x10 u64 char id) and the client wipes the slot at once"
+      - "S->C 0x2004 {+0x10 id, +0x18 0} (or {+0x18 sysmsg}; restoring the wiped slot: 0x2001 restores data but does not redraw in char select; a 0x407 echo of the old record may, untested)"
+  - name: buy_character_slot
+    steps:
+      - "'create' with no free slot but a locked (id -1) slot -> 'Do you want to buy extra slot?' -> ok"
+      - "C->S 0x499 (0x20, extra = session tag, no payload)"
+      - "S->C 0x499 {+0x10 0, +0x14 slot, +0x18 currency A, +0x1c jewels}"
+      - "optional: C->S 0x200f (jewel refresh, 1 per 10 s) -> S->C 0x200f {+0x38 jewels, +0x3c bonus}"
+  - name: back_to_character_select_from_game
+    steps:
+      - "menu button (FUN_0059c700) -> 4.95 s countdown (cancelled if busy/in combat, FUN_0048634f) -> C->S 0x409 {+0x10 0}"
+      - "S->C 0x2001 (new list; client leaves the game scene and opens character select on the same connection). NOTE: the net key is not reset, so later char-select C->S packets carry key = old uid in +0x0c and are obfuscated with it"
+      - "fallback if no 0x2001 within 3 s: client closes the socket -> login scene (or exits if launched with -ologin)"
+  - name: exit_game
+    steps:
+      - "window close (WM_CLOSE) -> 4.95 s countdown (cancelled if busy) -> C->S 0x409 {+0x10 1} (extra = uid); client quits 1 s later; server saves and drops the session"
+  - name: back_from_character_select
+    steps:
+      - "char-select 'back': no packet; client closes the socket and returns to the login scene (quits when launched with -ologin)"
+  - name: channel_move
+    steps:
+      - "PanelChannelMove pick (not while busy) -> 4.95 s countdown -> C->S 0x40a {+0x20 target channel}"
+      - "S->C 0x40a {+0x10 key byte, +0x18/+0x1c ticket, +0x20 channel, +0x24 0}"
+      - "client closes the socket, connects to that channel's ip:port from serverlist.sof"
+      - "C->S 0x4200 {+0x44 channel, +0x4c key byte, +0x50/+0x54 ticket}"
+      - "S->C 0x2000 (same char, new uid allowed, +0x6e0 channel) + enter-world burst (full reload)"
+  - name: server_initiated_newbie_channel_move
+    steps:
+      - "S->C 0x41d {+0x10 0xe3 (sysmsg 227), +0x14 channel index} -> dialog 0x42 'Do you want to move to %d Channel?'"
+      - "OK -> C->S 0x40a {+0x20 = that channel} immediately (no countdown), then as channel_move"
+      - "RISK (verifier, code-read): FUN_00487809 does not set game-scene +0xac = 1, and FUN_0048d666 only runs the state 3/4 reconnect (connect + 0x4200) when +0xac == 1 (set only by PanelChannelMove FUN_005315a7). CGameScene ctor FUN_00428bc3 / init FUN_0048b435 never initialise +0xac. So after the 0x40a ok (socket closed, +0xa0 = 3) a client that never used PanelChannelMove may never reconnect. Test live before relying on 0x41d code 0xe3."
+  - name: keepalive
+    steps:
+      - "C->S 0x401 (header only, extra = key) every 240 s on whatever connection is open; no reply"
+  - name: disconnect
+    steps:
+      - "server closes the socket: login scene -> 'Please try again in a few minutes' (state 10); char select / game -> DisconnectProcess panel (ui/panel/disconnect.panel); during an exit -> client quits"
+      - "client closes the socket: after 0x4201 (moving to the game server), after 0x409, on 0x40a ok, on char-select back"
+
+server_rules:
+  - name: authentication
+    client_expects: "login server answers 0x4207 with 0x4201; the token is all zeros when the client runs with -nosg, and the typed id/password only reach the GAME server in 0x4200 (+0x10/+0x30, plaintext). 0x405 is a legacy id/password path."
+    informed_by: "none (accounts are server-side)"
+    default: "accept 0x4207 (token login or anonymous dev login), issue a random ticket A/B bound to the account, and authenticate 0x4200 by (account name, ticket A, ticket B); optionally check the 0x4200 password. Reject with 0x4201 result 3."
+  - name: version_check
+    client_expects: "client version 0x41e (1054) in 0x4207 +0x94, 0x4200/0x4202 +0x48; result 8 shows 'Client Version doesn't match'"
+    informed_by: "none"
+    default: "accept 0x41e only; else 0x4201 result 8"
+  - name: channel_assignment
+    client_expects: "0x4201 +0x14 is a 0-based index into the channel list of the selected world in the CLIENT's serverlist.sof (gs1 = 0); out of range -> 'Can not connect now'. The ip:port always comes from serverlist.sof."
+    informed_by: "Data/config/serverlist.sof (tools/sof.py), WorldChannel/ChannelList load values"
+    default: "index 0 (one game server); for several channels run one listener per gsN entry"
+  - name: duplicate_login
+    client_expects: "result 7 makes the client send 0x4202 automatically (no dialog)"
+    informed_by: "system_msg 118 'Account already logged in connection closed.'"
+    default: "on 0x4207/0x4200 for an account already online: answer 7; on 0x4202 kick the old session and answer 0"
+  - name: session_tag
+    client_expects: "0x2001 extra is echoed in the extra of 0x406/0x407/0x408/0x499/0x200f until 0x2000; 0x2000 extra (player uid) replaces it"
+    informed_by: "none"
+    default: "use the connection's future player uid as the tag (stub: 1); verify it on char-select packets"
+  - name: player_uid_and_key
+    client_expects: "0x2000 extra = player uid 1..0x3F6, unique in the scene; it becomes the obfuscation key for all later C->S payloads and the extra of every in-world packet and of 0x401"
+    informed_by: "none"
+    default: "allocate per scene/channel; de-obfuscate with key = header +0x0c"
+  - name: character_ids
+    client_expects: "u64 > 0, never 0 or 0xFFFFFFFF_FFFFFFFF (those mean empty / locked); unique per account list"
+    informed_by: "none"
+    default: "global autoincrement"
+  - name: slots
+    client_expects: "exactly 5 slot records in 0x2001; locked = id -1 (buyable via 0x499); empty = id 0 with rec+0x8c delete time (reusable after 86400 s, client clock = 0x2001 +0xb80)"
+    informed_by: "none (ExpandSlot.tsv is inventory/storage expansion, not character slots)"
+    default: "3 open + 2 locked slots, or all 5 open; slot price for 0x499: unknown (spec notes cite 5000 jewels, unverified)"
+  - name: character_creation_rules
+    client_expects: "name 1..16 ASCII letters/digits; class 1/4/5 (7 refused client-side); starting weapon item code one of the class's Create_Char weaponN_item; nation 1..3 when the account has none; NatBlockN != 0 (WorldChannel.asp) greys out nation N"
+    informed_by: "Create_Char.tsv (classes, weapons, face/hair/colour lists), UnitDB.tsv, Item_Base.tsv, Level_Table.tsv, system_msg.tsv (18 name in use)"
+    default: "re-validate everything, enforce unique names (0x407 id 0 + 0x2003 sysmsg 18), fill level 1, base stats from UnitDB/Level_Table, give the chosen weapon as rec+0x40 item, set the account nation from +0x18 on the first character"
+  - name: delete_rules
+    client_expects: "client blocks guild members and wipes the slot before the answer"
+    informed_by: "system_msg (e.g. 81/281 guild-related), Strdef texts"
+    default: "refuse if in a guild or owning a guild; on success stamp delete time = now; on refusal see 0x408 server_reply (0x2001 alone does not redraw the slot)"
+  - name: leave_to_character_select
+    client_expects: "after 0x409 mode 0 a 0x2001 within 3 s keeps the connection; otherwise the client disconnects"
+    informed_by: "none"
+    default: "save the character, despawn it for others (0x806), send 0x2001; keep the connection; keep de-obfuscating that connection's C->S with key = header +0x0c (still the old uid, the client does not reset it)"
+  - name: channel_move_tickets
+    client_expects: "0x40a ok carries an opaque key byte + 2 u32 tickets that come back in the next 0x4200; the target channel must differ from the current one"
+    informed_by: "none"
+    default: "random key byte (not 0xff) + ticket; valid 30 s, single use; reply 0x2000 on the new channel with the stored position. Refuse while in combat/match with a sysmsg id in +0x24"
+  - name: heartbeat_timeout
+    client_expects: "C->S 0x401 only every 240 s; no client-side receive timeout exists"
+    informed_by: "none"
+    default: "drop a connection after 600 s of silence"
+  - name: clocks
+    client_expects: "unix seconds in 0x2001 +0xb80 and 0x2000 +0x6f8; server ms tick in every S->C header +0x08 (the client re-bases its outgoing tick on each packet; 0 accepted)"
+    informed_by: "none"
+    default: "UTC unix time; header tick = server monotonic ms (so C->S ticks become comparable to server time)"
+  - name: login_socket_close
+    client_expects: "the login server must not close the socket after 0x4201; the client closes it when it moves to the game server (a server-side close in the login scene shows an error)"
+    informed_by: "live stub (login and game on different ports)"
+    default: "keep it open; close idle login connections after 60 s"
+  - name: web_endpoints
+    client_expects: "HTTP POST, Content-Type application/x-www-form-urlencoded, to http://<serverlist web host>/JoyImpact/<Page>.asp; status must be 200; body <= 0x32000 bytes parsed as XML: a root element with one child per row, each tag read by name inside the row (FUN_006d4400) as an integer/text. Connect timeout 1000 ms. Empty 200 body = no rows (accepted)"
+    informed_by: "none (web DB was server-side)"
+    default: "serve empty 200 bodies for everything except what a feature needs; see web_endpoints below"
+  - name: world_and_channel_state
+    client_expects: "WorldChannel.asp row: WORLD (= serverlist world index), WORLD_STATE (> 0 online / green 'Medium', <= 0 maintenance), NatBlock1..3 (non-zero = that nation cannot be chosen), CH_01..CH_05 per-channel load (< 0 or > 9999 'Check'/maintenance, < 400 'Medium' green, >= 400 'High' red; any listed channel is marked known), NEWBIE_CHANNEL (read, unused). The stub notes that its WorldChannel reply stopped the client from attempting the TCP login (cause not found; the XML shape or WORLD_STATE handling may be wrong)."
+    informed_by: "player counts per channel"
+    default: "empty reply (known to work) until a full row is verified live"
+
+web_endpoints:
+  # Job ids are the queue type the result dispatcher FUN_0047b95b switches on.
+  - {page: WorldChannel.asp, job: 0x19, sender: FUN_00429eae, when: "login scene state 1, every 30 s, once per world", form: "world=%d (world index world+0x1c0)", response_tags: [WORLD, WORLD_STATE, NatBlock1, NatBlock2, NatBlock3, CH_01, CH_02, CH_03, CH_04, CH_05, NEWBIE_CHANNEL], parser: FUN_0042a92f, effect: "world+0x1c2 state, +0x1d5..0x1d7 nation blocks, channel load +0x70 / known +0x73; UI event 0x49", confidence: medium}
+  - {page: ChannelList.asp, job: 0x1a, sender: FUN_0042a16b, when: "login scene (states 1 and 4, every 30 s) and on entering the login scene with -ologin", form: "world=%d (selected world)", response_tags: [WORLD, CH_01, CH_02, CH_03, CH_04, CH_05, NEWBIE_CHANNEL], parser: FUN_0042a5a3, effect: "channel loads of the selected world; UI event 0x4a", confidence: medium}
+  - {page: MailList.asp, job: "4 (FUN_00429b13) / 3 (FUN_0053edf2)", sender: "FUN_00429b13, FUN_0053edf2", when: "in game (mail UI / login refresh)", form: "charname=<own name>", response_tags: [TOTALCOUNT, UNREADCOUNT, MAIL_UID, MAIL_TYPE, MAIL_READ, SEND_CHAR_NAME, MAIL_TITLE, MAIL_MSG], parser: "inline in FUN_0047b95b", effect: "mail list / unread counter", confidence: low}
+  - {page: ArenaInfo.asp, job: 0x16, sender: FUN_0056763c, when: "in game", form: "charuid=%lld", response_tags: [WEEK_WIN, WEEK_LOSE, WEEK_POINT, SEASON_WIN, SEASON_LOSE, SEASON_POINT], parser: "inline in FUN_0047b95b", effect: "acct+0xb190..0xb1a4 arena record", confidence: medium}
+  - {page: FriendList.asp, job: 0x10, sender: FUN_004b6cad, when: "in game (live: InviteList/FriendList/BlackList requested ~10 s after entering)", form: "page=0&PageSize=200&charuid=%lld", response_tags: [CHAR_UID, CHAR_FACE, CHAR_SESSION, nation, CHAR_NAME], parser: FUN_004b8125, effect: "friend list", confidence: low}
+  - {page: DelFriend.asp, job: 0x13, sender: FUN_004b72ec, when: "in game", form: "page=0&PageSize=200&charuid=%lld&fcharuid=%lld", response_tags: [CHAR_UID, CHAR_FACE, CHAR_SESSION, nation, CHAR_NAME], parser: FUN_004b8125, effect: "friend list after delete", confidence: low}
+  - {page: BlackList.asp, job: 0x11, sender: FUN_004b6ec2, when: "in game", form: "page=0&PageSize=200&charuid=%lld", response_tags: [CHAR_UID, CHAR_NAME], parser: FUN_004b838b, effect: "block list", confidence: low}
+  - {page: DelBlack.asp, job: 0x15, sender: FUN_004b789a, when: "in game", form: "page=0&PageSize=200&charuid=%lld&fcharuid=%lld", response_tags: [CHAR_UID, CHAR_NAME], parser: FUN_004b838b, effect: "block list after delete", confidence: low}
+  - {page: AddBlack.asp, job: 0x14, sender: FUN_004b7507, when: "in game", form: "charuid=%lld&blackName=<name>", response_tags: [Result], parser: FUN_004b7bc6, effect: "messages NoNameCharacter / AlreadyBanUser", confidence: low}
+  - {page: InviteList.asp, job: 0x12, sender: FUN_004b70d7, when: "in game", form: "page=0&PageSize=200&charuid=%lld", response_tags: [CHAR_UID, CHAR_NAME], parser: FUN_004b85ac, effect: "friend-invite list", confidence: low}
+  - {page: GuildMemberList.asp, job: 0xd, sender: FUN_004b51d5, when: "in game", form: "guildidx=%d&page=%d&PageSize=%d", response_tags: [CHAR_UID, CHAR_FAME_RANK, CHAR_GUILD_POINT, CHAR_SESSION, LAST_CONN, CHAR_NAME], parser: FUN_004b5a1d, effect: "guild member list", confidence: low}
+  - {page: GuildName.asp, job: 0xe, sender: FUN_004b618e, when: "in game", form: "guildidx=%d", response_tags: [NAME], parser: FUN_004b569b, effect: "guild name lookup", confidence: low}
+  - {page: GuildNameAllPage.asp, job: 0xf, sender: FUN_004b5416, when: "after every 0x2001 (live)", form: "Page=%d", response_tags: [U, A, N], parser: FUN_004b6533, effect: "guild name cache", confidence: low}
+  - {page: GuildStrockList.asp, job: 1, sender: FUN_005502a4, when: "in game", form: "Nation=%d", response_tags: [GUILD_UID, NATION, LEVEL, CURSTOCK, MAXSTOCK, FACEVALUE], parser: FUN_00551e1a, effect: "guild stock list", confidence: low}
+  - {page: GuildStrock.asp, job: 2, sender: FUN_005504c0, when: "in game", form: "charname=<name>", response_tags: [GUILD_UID, PURCHASE_VALUE, STOCK_AMOUNT, FACEVALUE, STOCK_UID, CHAR_NAME, PURCHASE_DATE], parser: FUN_00551a86, effect: "own guild stock", confidence: low}
+  - {page: NationInfoRenew.asp, job: 0x17, sender: FUN_0052b4cc, when: "nation info panel", form: "MyNation=%d&MyGuild=%d", response_tags: [RANK, LEVEL, FAME_TOTAL, FAME_SEASON, FORT_IDX, CH_NUM, WORLD_INFO, FORT_NATION, FORT_SLOT, FORT_MAP, FORT_GUILD, FORT_CHANNEL, FORT_CORE1, FORT_CORE2, FORT_CORE3, FORT_CORE4, FORT_CORE5, FORT_CORE6, POLICY_DAY, NATION_NOTICE], parser: FUN_0052c160, effect: "nation / fort overview", confidence: low}
+  - {page: Auction.asp, job: 10, sender: FUN_00536f32, when: "auction UI", form: "page=%d&PageSize=%d&Nation=%d[&ItemKind=%d][&ItemName=<s>]", response_tags: [AUCTION_UID, ITEM_INDEX, ITEM_GRADE, ITEM_COUNT, ITEM_PRICE, JEWEL_ONLY, AUCTION_DATE, ITEM_CODE, CHAR_NAME], parser: FUN_0053a9af, effect: "auction list", confidence: low}
+  - {page: SystemAuction.asp, job: 0xb, sender: FUN_00537378, when: "auction UI", form: "page=%d&PageSize=%d&Nation=0[&ItemKind=%d][&ItemName=<s>]", response_tags: [AUCTION_UID, ITEM_INDEX, ITEM_GRADE, ITEM_COUNT, ITEM_PRICE, JEWEL_ONLY, AUCTION_DATE, ITEM_CODE, CHAR_NAME], parser: FUN_0053ad4b, effect: "system auction list", confidence: low}
+  - {page: MyAuction.asp, job: 0xc, sender: FUN_005377ab, when: "auction UI", form: "page=%d&PageSize=%d&charname=<name>", response_tags: [AUCTION_UID, ITEM_INDEX, ITEM_GRADE, ITEM_COUNT, ITEM_PRICE, JEWEL_ONLY, AUCTION_DATE, ITEM_CODE, CHAR_NAME], parser: FUN_0053b0d6, effect: "own auctions", confidence: low}
+  - {page: RankChar.asp, job: 5, sender: FUN_0055f472, when: "ranking UI", form: "page=%d&Nation=%d&pagesize=%d", response_tags: [TOTALCOUNT, CHAR_FACE, FAMERANK, RANKCHANGE, CHAR_NAME], parser: FUN_005616a3, effect: "character ranking", confidence: low}
+  - {page: RankGuild.asp, job: 6, sender: FUN_0055f699, when: "ranking UI", form: "page=%d&Nation=%d&pagesize=%d", response_tags: [TOTALCOUNT, RANKCHANGE, LEVEL, FAME_SEASON, MASTER_NAME, GUILD_NAME], parser: FUN_005619da, effect: "guild ranking", confidence: low}
+  - {page: RankCharSearch.asp, job: 7, sender: FUN_0055fae4, when: "ranking UI", form: "Nation=%d&PageSize=%d&CharName=<s>", response_tags: [TOTALCOUNT, CHAR_FACE, FAMERANK, FAME, RANK, RANKCHANGE, PAGE, CHAR_NAME], parser: FUN_005620b6, effect: "ranking search (GUI_Ranking_NotFind if empty)", confidence: low}
+  - {page: RankGuildSearch.asp, job: 8, sender: FUN_0055fe89, when: "ranking UI", form: "Nation=%d&PageSize=%d&GuildName=<s>", response_tags: [TOTALCOUNT, RANK, RANKCHANGE, LEVEL, FAME_SEASON, PAGE, MASTER_NAME, GUILD_NAME], parser: FUN_0056244d, effect: "guild ranking search", confidence: low}
+  - {page: RankCharArena.asp, job: 9, sender: FUN_0055f8c0, when: "ranking UI", form: "page=%d&PageSize=%d&RankType=%d", response_tags: [TOTALCOUNT, CHAR_FACE, POINT, RANKCHANGE, CHAR_NAME], parser: FUN_00561d7f, effect: "arena ranking", confidence: low}
+
+notes_on_assignment:
+  - "0x2009 is the second half of the 0x2000 profile (storage area shared with 0x425): items/storage rather than session."
+  - "0x408 char id is at +0x10, not +0x18 as the inventory says (+0x18 is a zero u32)."
+  - "0x401 0x1c variant is a dead dev-panel toggle, not a heartbeat."
+  - "Related opcodes owned elsewhere: 0x2000 enter world (world), 0x41f stats (combat/world), 0x2003 sysmsg popup and 0x41d confirm prompt (system; 0x41d code 0xe3 starts the newbie channel move), 0x200f jewel refresh (items)."
+  - "NOTES.local.md lists '0x41e C->S Steam/OAuth login'; 0x41e is the client version constant inside 0x4207/0x4200/0x4202, the token login opcode is 0x4207."

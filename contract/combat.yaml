@@ -1,0 +1,726 @@
+# Warmonger / Crush Online — protocol contract: COMBAT subsystem
+# Basic attacks, skills/casts, hit reports, damage/heal, buffs/debuffs, death/revive,
+# stats/HP/MP/exp/level-up, TP (war) skills, mastery.
+#
+# Conventions
+# - Every offset is from the start of the packet (16-byte header, payload at +0x10).
+# - Header: u16 len | u16 0xA53C | u16 opcode | u16 extra | u32 tick | u32 key.
+#   C->S payload u32 words are obfuscated ~(w - key) when key != 0; S->C packets are
+#   plaintext (key 0) and must be > 16 bytes.
+# - "uid" = unit id (header extra / unit+0x35e). Players 1..0x3F6, monsters/NPCs 0x3F7..0x2B05.
+# - "char" = a unit's char record (unit+0x3a0). Stat block = 0x5c bytes at char+0x443.
+# - "me" = the local player unit (DAT_0084a758). "in game" = DAT_0084e3ec != 0.
+# - A min_size is the highest byte the handler reads. The dispatcher FUN_0047a36c does not
+#   check sizes, so send at least that many bytes (zero-filled).
+# - Sources: decompiled decompiled.c, decompiled disasm.txt, docs/spec/{combat,skills,monsters,world,group00-03}.md,
+#   WarmongerRevamp/server/{world,ai,skills,handlers}.py (live-tested). The contract/examples.md
+#   ground-truth set has no client-built packet for any opcode in this file (its local
+#   packets are 0x803/0x806/0x44e/0x416 only).
+#
+# Corrections to the earlier specs found while writing this contract
+# - 0x411 S->C: a non-zero skill id unknown to Skill_Base is NOT ignored. FUN_00497fba
+#   returns 0, so the handler takes the basic-attack branch (every target gets the
+#   swing/hit event with +0x16 as motion). (combat.md section 2.1 said "ignored".)
+# - 0x411/0x412 flags 0x1000/0x2000 do not show UI notices. When the attacker is me, the
+#   handler feeds the quest/achievement manager FUN_00597c31 (event 0x2711 "attack/skill
+#   used", or 0x271d for flag 0x2000 - 0x411 ONLY; the 0x412 handler has no 0x2000 branch
+#   and always uses 0x2711), which may send C->S 0x492 (quest progress).
+# - 0x412 S->C push: a target moves only when it is not the caster, its new x > 0 and z > 0
+#   (strictly positive), its status flags lack bit 0x1000, and skill+0x2b is 3 (knock-back,
+#   event 8) or 4 (pull, event 9). The caster's own dash/blink destination is carried in the
+#   target slot whose uid == caster (the client puts itself in the list).
+# - 0x413: +0x12 source uid is looked up and the resulting UNIT POINTER is OR'd into the
+#   number style (style = ptr | 0x40000000 | 0x100 if damage != 0; disasm 0x478c3f/0x478cc3).
+#   FUN_00485f58 ignores its first argument, so the source does not affect HP. Send 0 (or an
+#   unspawned uid) to get the clean 0x40000000 style. [verifier correction]
+# - 0x421: the death/revive check (FUN_004890cb) only runs in game; HP/MP/max values are
+#   written either way.
+# - 0x422: also shows an exp-gain popup with (new exp - old exp) and, for other players
+#   with +0x11 != 0, plays a level-up effect on them.
+# - 0x429 type 3 is the GUILD ID (char+0x27f), type 5 the guild grade (char+0x656), not
+#   "title/rank". Only type 1 (nation) is combat-relevant (friend/foe).
+# - 0x4a2 +0x30 is the 32 x 12-byte BUFF table (FUN_0046fd59 -> FUN_004bf542), not
+#   equipment; +0x14 is a system-message id, not an effect id; +0x20 is the costume slot.
+# - 0x450 +0x12/+0x14 are system-message ids (formatted with the target's name), not effect
+#   ids; action 10 writes +0x18 into the TARGET's current HP (capture gauge).
+# - 0x4b4 +0x10 is the uid of the TP NPC whose panel is open, +0x12 the Skill_TP id.
+# - 0x4b6 is the TP-skill USE command (HUD buttons in "mode 1"), not a generic action.
+# - 0x4ba is a command to the player's owned/summoned unit (category 0x0b, owner == me).
+#
+# Misassignment notes
+# - 0x429 is mostly social (guild id/grade); 0x4a2 is a whole-character refresh (world);
+#   0x450 is a match capture/rescue mechanic (pvp); 0x4ba is summon/pet control (pvp/world).
+#   They are documented here as assigned.
+# - Opcodes this subsystem depends on but that belong elsewhere: 0x803/0x804/0x806/0x43e
+#   (spawn, refresh/respawn, remove), 0x4ca (unknown-unit query), 0x427/0x426 (equipment
+#   -> skill bar), 0x41b (system message), 0x443 (match kill feed), 0x4b5 (war status incl.
+#   the TP HUD table), 0x424/0x428 field 0xe (TP balance), 0x492 (quest progress).
+# - Mastery: no character-mastery opcode exists in the client. Mastery.cdb (CMasteryDB,
+#   DAT_00846958) is only read by the icon/tooltip code (FUN_004e8fd8 case 4, keyed by
+#   char+0x239 class). Guild/fort mastery are guild/pvp opcodes (0x4c3 etc.).
+
+opcodes:
+
+  - opcode: 0x40f
+    name: skill_precast
+    direction: both
+    c2s:
+      size: 0x14
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u32, name: skill_id, values: "Skill_Base id of a skill with a cast time (Skill_Base +0x4f > 0)", notes: "nothing else in the packet"}
+      sent_when: "ActionSkill FUN_00461f47 starts the charge/precast phase; only if the connection is up (FUN_0046ffbf)."
+    s2c:
+      min_size: 0x14
+      extra: "caster uid"
+      fields:
+        - {offset: 0x10, type: u32, name: skill_id, values: "Skill_Base id", notes: "looked up with FUN_004c2f58"}
+      accepted_if: "caster uid (extra) is a spawned unit AND skill_id is in Skill_Base; otherwise dropped silently."
+    server_reply: "None to the sender. Forward the packet unchanged (extra = caster) to every other client that sees the caster. Do not echo to the caster (it would replay its own precast animation)."
+    client_effect: "Posts unit event 4 (ground-target skill, skill+0x17 == 2) or 1 (other) to the caster via FUN_0048d424 with the cast time skill+0x4f: remote caster plays the charge animation/bar."
+    handler: FUN_004734b3
+    send_sites: [FUN_00461f47]
+    confidence: high
+    verified: true
+    evidence: "Handler read directly; sender builds 0xa53c0014 inline (combat.md 1.5); server world.cast() returns nothing (live)."
+
+  - opcode: 0x410
+    name: skill_cast_announce
+    direction: both
+    c2s:
+      size: 0x38
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u16, name: caster_uid, values: "me", notes: ""}
+        - {offset: 0x12, type: u16, name: display_skill_id, values: "skill as slotted on the bar (ActionSkill+0x1c, FUN_004871cf maps buff overrides)", notes: "echo"}
+        - {offset: 0x14, type: i16, name: skill_id, values: "Skill_Base id", notes: ""}
+        - {offset: 0x16, type: u16, name: pad, values: "0", notes: ""}
+        - {offset: 0x18, type: "bytes[8]", name: unused, values: "0", notes: ""}
+        - {offset: 0x20, type: f32, name: target_x_or_uid, values: "ActionSkill point x (ActionSkill+0xf0); replaced by float(target uid) (and +0x24 = 0) when (skill+0x34 == 1 AND skill+0x32 == 1) OR skill+0x34 == 2 (disasm 0x4620a2..0x4620b2; byte offsets, NOT +0x17/+0x19/+0x1a)", notes: "verifier-corrected"}
+        - {offset: 0x24, type: f32, name: target_z, values: "ground point z; 0 for unit target", notes: ""}
+        - {offset: 0x28, type: f32, name: move_x, values: "dash/blink destination x (FUN_005852a4) or 0", notes: "0,0 = no displacement"}
+        - {offset: 0x2c, type: f32, name: move_z, values: "dash/blink destination z or 0", notes: ""}
+        - {offset: 0x30, type: u32, name: caster_hp, values: "0 (server fills)", notes: ""}
+        - {offset: 0x34, type: u32, name: caster_mp, values: "0 (server fills)", notes: ""}
+      sent_when: "FUN_00461fc1 (via FUN_00463214) at the fire frame of a skill with delivery skill+0x34 != 0 (projectile / ground field). The hits arrive later as 0x411/0x412 with flag 0x200."
+    s2c:
+      min_size: 0x38
+      extra: "caster uid (not read; set it anyway)"
+      fields:
+        - {offset: 0x10, type: i16, name: caster_uid, values: "spawned unit", notes: "unknown caster -> no animation (HP/MP update is a no-op too since the unit is unknown)"}
+        - {offset: 0x14, type: i16, name: skill_id, values: "Skill_Base id", notes: "unknown -> no animation, but +0x30/+0x34 caster HP/MP ARE still applied (FUN_00472079 runs after the skipped block)"}
+        - {offset: 0x20, type: f32, name: target_x_or_uid, values: "as C->S", notes: "every skill with skill+0x17 != 2 (not only unit-target) is read as float(uid); unknown unit or template class 0x10 -> the handler returns early (HP/MP below NOT applied)"}
+        - {offset: 0x24, type: f32, name: target_z, values: "", notes: ""}
+        - {offset: 0x28, type: f32, name: move_x, values: "", notes: "used only for remote casters with skill+0x26 == 1 (event 11 teleport) or 2 (event 10 dash); 0,0 with a dash skill -> FUN_004bcfe9 and return without the HP/MP update"}
+        - {offset: 0x2c, type: f32, name: move_z, values: "", notes: ""}
+        - {offset: 0x30, type: u32, name: caster_hp, values: "the caster's REAL current HP", notes: "applied by FUN_00472079; < 1 kills the caster"}
+        - {offset: 0x34, type: u32, name: caster_mp, values: "caster's current MP after the cost", notes: ""}
+      accepted_if: "No gate on the HP/MP part except the two early returns. Animation needs caster spawned and skill known (FUN_004c2f58). Early return (no HP/MP) when skill+0x17 != 2 and float(+0x20) is not a spawned unit / is template class 0x10, or for a remote caster with skill+0x26 in {1,2} and +0x28 == +0x2c == 0 (FUN_004bcfe9)."
+    server_reply: "Deduct cost (Skill_Base +0x39/+0x3d), start the server cooldown, then send 0x410 with +0x30/+0x34 = caster HP/MP to every other observer of the caster; send the caster a 0x420 {HP, MP} if its MP changed. Echoing 0x410 to the caster re-plays the cast event on its own avatar - avoid."
+    client_effect: "Remote caster turns toward the point/target (skill+0x30 face flag), plays the cast animation (event 5 ground / 2 unit) and the dash/teleport (events 10/11). Then caster HP/MP are set."
+    handler: FUN_00474062
+    send_sites: [FUN_00461fc1]
+    confidence: high
+    verified: true
+    evidence: "Handler and sender read directly; layout matches combat.md 1.4/2.3; world.cast() (live) sends nothing back when alone."
+
+  - opcode: 0x411
+    name: hit
+    direction: both
+    c2s:
+      size: 0x64
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u16, name: attacker_uid, values: "me", notes: "drop the packet if != sender"}
+        - {offset: 0x12, type: u16, name: display_skill_id, values: "0 for basic attack; else bar skill id", notes: "echo"}
+        - {offset: 0x14, type: i16, name: skill_id, values: "0 = basic attack; else Skill_Base id", notes: ""}
+        - {offset: 0x16, type: u16, name: motion, values: "basic: attack motion/combo index (ActionAttack+0x64); skill: 0 (SFX senders: projectile FX param)", notes: "echo; remote clients use it for the swing animation"}
+        - {offset: 0x18, type: u16, name: flags, values: "0x0100 basic attack replaced by a buff skill (FUN_004b96e4); 0x0200 projectile/field tick (SFX senders); 0x1000 command mode 1; 0x2000 command mode 2 (ActionSkill+0x110)", notes: "echo; server ORs in 0x4 crit / 0x8 evade"}
+        - {offset: 0x1a, type: u16, name: lethal_mask, values: "0", notes: "server fills"}
+        - {offset: 0x1c, type: f32, name: attacker_x, values: "", notes: ""}
+        - {offset: 0x20, type: f32, name: attacker_z, values: "", notes: ""}
+        - {offset: 0x24, type: f32, name: target_x, values: "target unit position or ground point; 0 for basic attacks", notes: ""}
+        - {offset: 0x28, type: f32, name: target_z, values: "", notes: ""}
+        - {offset: 0x2c, type: u32, name: attacker_hp, values: "0", notes: "server fills"}
+        - {offset: 0x30, type: u32, name: attacker_mp, values: "0", notes: "server fills"}
+        - {offset: 0x34, type: "struct[12] {u16 uid, i16 amount}", name: targets, values: "basic: slot 0 = clicked target. Skill: slot 0 = clicked target (skill+0x17 == 1) or self (+0x17 == 3, or kind +0x0c == 4); AoE (skill+0x43 == 1) gathered by FUN_00588a96/FUN_00588e87 within skill+0x44 of the point, max skill+0x22, nearest first", notes: "amount always 0 from the client; uid 0 = empty"}
+      sent_when: "Basic attack impact frame (FUN_00462af7); instant skill fire with skill+0x34 == 0, +0x2b == 0, +0x26 == 0 (FUN_004621bd); projectile/field SFX reaching targets with hit_packet 0-2 (FUN_005a233f, FUN_005a2f4d, FUN_005a3de6; one per field tick). Replaced by 0x42b when the skill came from an item."
+    s2c:
+      min_size: 0x64
+      extra: "attacker uid (damage numbers are also shown to the client whose uid == extra)"
+      fields:
+        - {offset: 0x10, type: i16, name: attacker_uid, values: "", notes: "unknown uid in 1..0x2B05 while me exists -> client sends C->S 0x4ca {u32 uid} (100-entry cache, 50 s); targets are still processed"}
+        - {offset: 0x12, type: u16, name: display_skill_id, values: "echo", notes: "not read by the handler"}
+        - {offset: 0x14, type: i16, name: skill_id, values: "0 basic; else Skill_Base id", notes: "<= 0 or unknown id -> basic-attack branch"}
+        - {offset: 0x16, type: u16, name: motion, values: "basic: swing motion index (low byte, high byte packed into the event); skill: projectile FX param (passed to FUN_005a344c for delivery 2 SFX)", notes: "monsters: 0 works (live)"}
+        - {offset: 0x18, type: u16, name: flags, values: "0x0004 critical (crit SFX + number style 0x10); 0x0008 evade (shows 'Evade', no blood); 0x0100/0x0200/0x1000/0x2000 echo", notes: "basic attack: 0 is treated as 1"}
+        - {offset: 0x1a, type: u16, name: lethal_mask, values: "bit i = target i may reach 0 HP", notes: "FUN_00485e4b: if HP < dmg then HP = bit ? 0 : 1 else HP -= dmg"}
+        - {offset: 0x1c, type: f32, name: attacker_x, values: "echo", notes: "not read by the S->C handler"}
+        - {offset: 0x20, type: f32, name: attacker_z, values: "echo", notes: ""}
+        - {offset: 0x24, type: f32, name: target_x, values: "ground point", notes: "used for ground skills' cast FX (skill+0x17 == 2) and AoE projectile FX"}
+        - {offset: 0x28, type: f32, name: target_z, values: "", notes: ""}
+        - {offset: 0x2c, type: u32, name: attacker_hp, values: "attacker's REAL current HP", notes: "applied to the attacker on every receiver (FUN_00472079); 0 KILLS the attacker"}
+        - {offset: 0x30, type: u32, name: attacker_mp, values: "attacker's current MP", notes: ""}
+        - {offset: 0x34, type: "struct[12] {u16 uid, i16 amount}", name: targets, values: "amount = damage; skill+0x67 == 0x1f heal HP / 0x21 restore MP (no damage applied); 0x2d applies the amount as HP DAMAGE (with lethal bit) AND drains the same amount of MP (FUN_00485e4b then FUN_00485f58)", notes: "uid 0, unknown, or template class 0x10 skipped. Note FUN_00485e4b: HP == dmg reaches 0 even without the lethal bit (only HP < dmg is clamped to 1)"}
+      accepted_if: "in game (else dropped). No other gate; each target slot is processed independently."
+    server_reply: "Validate (attacker == sender, alive, skill owned via equipped weapon, cooldown, cost, range), fill +0x36+4i damage, OR crit/evade bits into +0x18, set +0x1a lethal bits, +0x2c/+0x30 attacker HP/MP; send S->C 0x411 (extra = attacker) to every client that sees the attacker or a target INCLUDING the sender. Then for each kill 0x420 {HP 0} (optional, confirms) and loot; then match 0x443 for PvP kills."
+    client_effect: "Damage applied immediately (absorb shield: buff slot 0 with effect 0x1b8 takes MP first; else entry+6 absorb counter); heal/MP effects (skill+0x67 0x1f heal HP, 0x21 restore MP, 0x2d drain MP) via FUN_00485f58 clamped to max. Remote attacker: basic = event 6 swing then hit at impact; skill = cast event 2/5 then per-target event 7. Local attacker (basic-attack branch only, and only while DAT_00853cc8+0x78 != 0): first hit attaches to the running action (FUN_00585202). Numbers via FUN_00487ff8 (styles 0x40 normal, 0x10 crit, 4 evade, 0x20000000 heal, 0x4000000 MP). Target with HP < 1 after the hit plays death (FUN_00488565). Local attacker also feeds quest/achievement events 0x2711/0x271d."
+    handler: FUN_00475654
+    send_sites: [FUN_004621bd, FUN_00462af7, FUN_005a233f, FUN_005a2f4d, FUN_005a3de6]
+    confidence: high
+    verified: true
+    evidence: "Handler re-read in full; server world.hit()/ai.py attack (live-tested: kills, crits, lethal bit, player death)."
+
+  - opcode: 0x412
+    name: hit_displace
+    direction: both
+    c2s:
+      size: 0x88
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u16, name: caster_uid, values: "me", notes: ""}
+        - {offset: 0x12, type: u16, name: display_skill_id, values: "", notes: "echo"}
+        - {offset: 0x14, type: i16, name: skill_id, values: "Skill_Base id", notes: ""}
+        - {offset: 0x16, type: u16, name: pad, values: "0", notes: ""}
+        - {offset: 0x18, type: u16, name: flags, values: "as 0x411 (0x200 SFX, 0x1000/0x2000 command mode)", notes: "echo"}
+        - {offset: 0x1a, type: u16, name: lethal_mask, values: "0", notes: "server fills (7 bits)"}
+        - {offset: 0x1c, type: f32, name: caster_x, values: "", notes: ""}
+        - {offset: 0x20, type: f32, name: caster_z, values: "", notes: ""}
+        - {offset: 0x24, type: f32, name: target_x, values: "target unit position for skill+0x17 == 1 with a target; otherwise 0 (FUN_0046260d zeroes local_30/local_28 and only fills them in the unit-target branch - no ground point is sent)", notes: "verifier-corrected"}
+        - {offset: 0x28, type: f32, name: target_z, values: "", notes: ""}
+        - {offset: 0x2c, type: u32, name: caster_hp, values: "0", notes: "server fills"}
+        - {offset: 0x30, type: u32, name: caster_mp, values: "0", notes: "server fills"}
+        - {offset: 0x34, type: "struct[7] {u16 uid, i16 amount}", name: targets, values: "clicked target and/or AoE list; for dash/blink skills (skill+0x26 1/2) the CASTER's own uid is in the list (slot 1 after a unit target, slot 0 for a ground target)", notes: "amount 0"}
+        - {offset: 0x50, type: "f32[7]", name: new_x, values: "per slot: push/pull destination (FUN_00585771) or, in the caster's slot, its dash destination (FUN_005852a4); 0 = not moved", notes: ""}
+        - {offset: 0x6c, type: "f32[7]", name: new_z, values: "as new_x", notes: ""}
+      sent_when: "FUN_0046260d at fire time for instant skills with knock-back/pull (skill+0x2b != 0) or dash/blink (skill+0x26 != 0); SFX senders FUN_005a233f/FUN_005a2f4d/FUN_005a3942/FUN_005a3de6 for projectiles with hit_packet 3-4."
+    s2c:
+      min_size: 0x88
+      extra: "caster uid"
+      fields:
+        - {offset: 0x10, type: i16, name: caster_uid, values: "", notes: "may be unknown (targets still processed, no animation)"}
+        - {offset: 0x14, type: i16, name: skill_id, values: "Skill_Base id", notes: "unknown -> whole packet dropped"}
+        - {offset: 0x18, type: u16, name: flags, values: "as 0x411", notes: "passed into the hit event"}
+        - {offset: 0x1a, type: u16, name: lethal_mask, values: "bits 0..6", notes: ""}
+        - {offset: 0x1c, type: f32, name: caster_x, values: "", notes: "start point of the knock/pull event"}
+        - {offset: 0x20, type: f32, name: caster_z, values: "", notes: ""}
+        - {offset: 0x24, type: f32, name: target_x, values: "ground point for AoE FX", notes: ""}
+        - {offset: 0x28, type: f32, name: target_z, values: "", notes: ""}
+        - {offset: 0x2c, type: u32, name: caster_hp, values: "caster's REAL HP", notes: "0 kills the caster"}
+        - {offset: 0x30, type: u32, name: caster_mp, values: "", notes: ""}
+        - {offset: 0x34, type: "struct[7] {u16 uid, i16 amount}", name: targets, values: "damage per slot", notes: "heal types (0x1f/0x21/0x2d) apply NO damage here and no heal either"}
+        - {offset: 0x50, type: "f32[7]", name: new_x, values: "", notes: "target moved only if: not the caster, x > 0 AND z > 0, target status flags lack 0x1000, skill+0x2b == 3 (event 8 knock-back) or 4 (event 9 pull). Caster slot: dash (event 10) / blink (event 11) for remote casters"}
+        - {offset: 0x6c, type: "f32[7]", name: new_z, values: "", notes: ""}
+      accepted_if: "in game, me exists, and skill_id is in Skill_Base. ABORT (no damage, no HP/MP, nothing) when the caster is a spawned REMOTE unit, skill+0x26 is 1/2 (or 0x33/0x34), its own uid is in the target list and that slot's new_x == new_z == 0 -> FUN_004bcfe9 and return (0x474abd). Never echo a dash with a zero caster destination."
+    server_reply: "As 0x411 with 7 slots: fill damage, lethal bits, caster HP/MP; clamp new_x/new_z to walkable ground (navmesh) and update server positions of moved units (and the caster's own position from its slot); broadcast 0x412 (extra = caster) to all observers INCLUDING the sender. Deaths as 0x411."
+    client_effect: "Damage (FUN_00485e4b), per-target hit event 7, knock/pull movement, remote-caster dash (event 10) / blink (event 11), caster HP/MP; local caster feeds quest event 0x2711 (no 0x271d branch here). The FUN_004b9d66/FUN_0058b479/FUN_0058b455 calls are DEAD code (inside a block guarded by caster != me, then tested for caster == me), so nothing ends the local caster's action. A pushed local player has its action cancelled. Template class 0x10 targets are NOT skipped here (unlike 0x411)."
+    handler: FUN_0047445f
+    send_sites: [FUN_0046260d, FUN_005a233f, FUN_005a2f4d, FUN_005a3942, FUN_005a3de6]
+    confidence: high
+    verified: true
+    evidence: "Handler and sender read; world.hit_push() live-tested (skill 5024 dash, 10 packets in the 04 Oct log)."
+
+  - opcode: 0x413
+    name: damage_tick
+    direction: s2c
+    s2c:
+      min_size: 0x30
+      extra: "not read (send the target uid)"
+      fields:
+        - {offset: 0x10, type: "bytes[2]", name: unused, values: "0", notes: ""}
+        - {offset: 0x12, type: i16, name: source_uid, values: "send 0 (or an unspawned uid)", notes: "looked up with FUN_0044d3b9 and the unit POINTER is OR'd into the damage-number style dword (0x478cc3) - a spawned source corrupts the style bits. FUN_00485f58(src, target, 1, dmg) ignores src; type 1 just copies char HP to the bar HP (unit+0x5f8)."}
+        - {offset: 0x14, type: "bytes[0x16]", name: unused, values: "0", notes: "not read"}
+        - {offset: 0x2a, type: u16, name: lethal, values: "0 = HP stops at 1; non-zero = may reach 0", notes: ""}
+        - {offset: 0x2c, type: u16, name: target_uid, values: "spawned unit", notes: "unknown -> ignored"}
+        - {offset: 0x2e, type: i16, name: damage, values: "> 0", notes: "goes through the absorb-shield logic"}
+      accepted_if: "target uid is spawned AND has a char record (unit+0x3a0): the death check at 0x478c99 dereferences it unconditionally - a char-less target crashes the client. No in-game check."
+    server_reply: "n/a (server-initiated)."
+    client_effect: "HP -= damage (absorb first); number shown on the target with style (src ptr | 0x40000000, |0x100 when non-zero) to every receiver; HP < 1 -> unit+0x36c cleared and death animation (FUN_00488565) - this runs on EVERY 0x413 to a unit at HP < 1, even if already dead, so stop ticking dead units; UI event 0xf (HP bars)."
+    handler: FUN_00478c1a
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "Handler read directly."
+
+  - opcode: 0x41e
+    name: buff_list
+    direction: s2c
+    s2c:
+      min_size: "0x1c + 12 x popcount(mask)"
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: u32, name: status_flags, values: "bit field -> char+0x64d. Each bit n (1..19) adds a restriction mask from table 0x8331a8: bit1 0x8, bit2 0x9c, bit4 0x20, bit5 0x10, bit6 0x2, bit7 0x83, bit8 0xd3, bit9 0x93, bit10 0x1, bit11 0xc, bit12 0x100, bit13 0x80, bit14 0x81, bit19 0xf (bits 3, 15-18 = 0; table dumped from Client.exe). Restriction 0x1 = no basic attack, 0x2 = no skills, 0x10 = no movement/action (also drops 0x416 for monsters), 0x80 = skill bar disabled. Raw bit 0x200 plays a visual effect on change: GAINING 0x200 -> FUN_004bcdc1(0xc), LOSING it -> FUN_004bcdc1(9) (verifier: the original text had these reversed); 0x400 = untargetable; 0x1000 = immune to knock-back/pull", notes: "for me (FUN_00470a7b; local_8 = NEW flags, param = OLD): GAINING raw bit 0x80/0x2000/0x4000 cancels the action and sets controller+0x76 = 1/2/3 (verifier: not 'losing'); restriction 0x1 or 0x10 active also cancels the action; otherwise +0x76 = 0. Status flags are only applied to a spawned unit with a char record (no pending-record path)."}
+        - {offset: 0x14, type: u16, name: win_affect, values: "low byte = WinAffect.cdb level (char+0x297), high byte = time (char+0x298); 0 = none", notes: "applies the WinAffect row's buff (+8) to the unit (FUN_004bf8c1); war-winner (lord of the land) reward"}
+        - {offset: 0x18, type: u32, name: slot_mask, values: "bit i = buff slot i present (0..31)", notes: "missing slots are cleared"}
+        - {offset: 0x1c, type: "struct[n] (12 B each, ascending slot order)", name: buffs, values: "+0 i16 buff id (Skill_Buff.cdb, 0 = empty); +2 u16 source/param (transform source uid for effect 0x167); +4 i16 stacks/count; +6 u16 absorb amount (shield; slot 0 only is consulted on damage); +8 u32 remaining seconds (x1000 ms; buff record +0x4c == 2100000000 = permanent, value used raw)", notes: "full replace of the 32-slot table at char+0x49f"}
+      accepted_if: "unit spawned (else buffs and win_affect - but NOT status_flags - are stored into the pending char-select record if its +0x1ae == uid)."
+    server_reply: "n/a. Re-send the whole list for that unit on every buff add/remove/expiry to all observers (no delta opcode exists)."
+    client_effect: "Rebuilds the unit's buff table: buff icons, effects (FUN_004bd1d9), transform (effect 0x167 copies the source's appearance), level overrides 0xe7/0xe8 -> char+0x657/+0x658, mana shield 0x1b8, basic-attack override 0x192/0x193/0x194/0x19b, 0x3e9 item cooldown; for me reloads skill overrides (FUN_005849b2, UI event 0x18) and skill-bar state."
+    handler: FUN_00470eeb
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "Handler + FUN_004bf542/FUN_004bf8c1/FUN_00470a7b read; entry layout from the client's own debug dump ('Slot ID Cnt Time S'); meaning of the restriction bits from FUN_00587abf/FUN_005883b9/FUN_004728ff uses."
+
+  - opcode: 0x41f
+    name: stat_block
+    direction: s2c
+    s2c:
+      min_size: 0x6c
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: u32, name: hp, values: "current HP", notes: "< 1 on a live unit = death (in game); > 0 on a dead unit = revive"}
+        - {offset: 0x14, type: u32, name: mp, values: "current MP", notes: ""}
+        - {offset: 0x18, type: u32, name: max_hp, values: "", notes: ""}
+        - {offset: 0x1c, type: u32, name: max_mp, values: "", notes: ""}
+        - {offset: 0x20, type: i16, name: bonus_max_hp, values: "shown as 'max (bonus)' in the character panel", notes: ""}
+        - {offset: 0x22, type: i16, name: bonus_max_mp, values: "", notes: ""}
+        - {offset: 0x24, type: u32, name: attack_damage, values: "panel 'Damage'", notes: "display only"}
+        - {offset: 0x28, type: u32, name: magic_damage, values: "panel 'MagicDam'", notes: "display only"}
+        - {offset: 0x2c, type: i16, name: attack_speed, values: "x0.002 swings/s; players clamped 200..1000 (FUN_004b8b5f); 500 = 1.0", notes: "drives swing timing; 0 breaks basic attacks"}
+        - {offset: 0x2e, type: i16, name: basic_attack_range, values: "x0.01 world units; 200 melee (live), ~700 ranged (guess)", notes: "0 = the avatar never swings (live bug)"}
+        - {offset: 0x30, type: i16, name: crit_rate, values: "x0.1 % (panel 'CriRate' %0.1f%%)", notes: "display only"}
+        - {offset: 0x32, type: i16, name: crit_damage_pct, values: "panel 'Cri' %d%%", notes: "display only"}
+        - {offset: 0x34, type: i16, name: armor, values: "panel 'Defence'", notes: ""}
+        - {offset: 0x36, type: i16, name: magic_resist, values: "panel 'MagicDef'", notes: ""}
+        - {offset: 0x38, type: "bytes[4]", name: unknown_38, values: "unknown", notes: ""}
+        - {offset: 0x3c, type: i16, name: armor_pen_a, values: "panel 'DefPen' (one of flat / %; pair with +0x40)", notes: ""}
+        - {offset: 0x3e, type: i16, name: magic_pen_a, values: "panel 'MagicPen' (pair with +0x42)", notes: ""}
+        - {offset: 0x40, type: i16, name: armor_pen_b, values: "", notes: ""}
+        - {offset: 0x42, type: i16, name: magic_pen_b, values: "", notes: ""}
+        - {offset: 0x44, type: "bytes[2]", name: unknown_44, values: "unknown", notes: ""}
+        - {offset: 0x46, type: u16, name: move_speed, values: "x0.01 units/s; 450 = default", notes: "0 = cannot move"}
+        - {offset: 0x48, type: i16, name: life_steal_pct, values: "panel 'AttDrainHP'", notes: ""}
+        - {offset: 0x4a, type: "bytes[2]", name: unknown_4a, values: "unknown", notes: ""}
+        - {offset: 0x4c, type: i16, name: spell_vamp_pct, values: "panel 'MagicDrainHP'", notes: ""}
+        - {offset: 0x4e, type: "bytes[2]", name: unknown_4e, values: "unknown", notes: ""}
+        - {offset: 0x50, type: i16, name: revive_delay_s, values: "seconds the dead client counts down (live: 5)", notes: ""}
+        - {offset: 0x52, type: i8, name: achieve_buff, values: "> 0 shows the HUD 'AchieveBuff' indicator", notes: "medium"}
+        - {offset: 0x53, type: u8, name: unknown_53, values: "unknown", notes: ""}
+        - {offset: 0x54, type: i16, name: mp_cost_reduction_pct, values: "skill MP costs x (100 - v)%", notes: "client-side cost gate uses it"}
+        - {offset: 0x56, type: i16, name: cooldown_reduction_pct, values: "panel 'Cooltime'; client cooldowns x (100 - v)%", notes: ""}
+        - {offset: 0x58, type: "bytes[6]", name: unknown_58, values: "unknown (%d%% panel values per world.md)", notes: ""}
+        - {offset: 0x5e, type: i16, name: duration_reduction_pct, values: "a duration in ms is scaled by (100 - v)% when 0 < v < 100 (read at 0x585e27)", notes: "low; likely CC/cast-time reduction"}
+        - {offset: 0x60, type: i16, name: crit_damage_reduction_pct, values: "panel 'CriReduce'", notes: ""}
+        - {offset: 0x62, type: i16, name: toughness_pct, values: "panel 'Resist'", notes: ""}
+        - {offset: 0x64, type: i16, name: area_damage_reduction_pct, values: "panel 'WideReduce'", notes: ""}
+        - {offset: 0x66, type: "bytes[6]", name: unknown_66, values: "unknown", notes: ""}
+      accepted_if: "unit spawned; else copied into the pending char-select record if its +0x1ae == uid (so it may precede the spawn)."
+    server_reply: "n/a. REQUIRED for me right after 0x2000 (the avatar is built with HP 0 and speed 0) and after every stat change (level-up, equip, buff that changes stats). Also usable for any unit (monster speed)."
+    client_effect: "Copies 0x5c bytes to char+0x443, bar HP = HP, movement/attack-speed controller updated (FUN_004bc97c), death/revive check when in game, UI events 0xf and 0x48."
+    handler: FUN_004733a4
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "Handler read; HP/MP/maxes, speed, attack speed, range, revive delay live-tested; panel labels mapped from FUN_005667b4 (labels and reads in the same order); unknown_* not read anywhere found."
+
+  - opcode: 0x420
+    name: hp_mp
+    direction: s2c
+    s2c:
+      min_size: 0x18
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: u32, name: hp, values: "", notes: "< 1 kills a live unit (incl. me); > 0 revives a dead unit in place"}
+        - {offset: 0x14, type: u32, name: mp, values: "", notes: ""}
+      accepted_if: "unit spawned with a char record, and (HP, MP) differ from the stored values (identical values = no-op, no death/revive check)."
+    server_reply: "n/a."
+    client_effect: "FUN_00472079: bar HP += delta, char HP/MP set, FUN_004890cb death (alive -> 0, FUN_00488565, HP/MP zeroed, my revive countdown) or revive (FUN_00487e82, alive flags 0x0101, idle animation), UI event 0xf."
+    handler: FUN_00473401
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "Handler read; live: death confirm (CONFIRM_DEATH) and leash heal."
+
+  - opcode: 0x421
+    name: hp_mp_max
+    direction: s2c
+    s2c:
+      min_size: 0x20
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: u32, name: hp, values: "", notes: ""}
+        - {offset: 0x14, type: u32, name: mp, values: "", notes: ""}
+        - {offset: 0x18, type: u32, name: max_hp, values: "", notes: ""}
+        - {offset: 0x1c, type: u32, name: max_mp, values: "", notes: ""}
+      accepted_if: "unit spawned. The death/revive check runs only in game; values are written regardless of change."
+    server_reply: "n/a."
+    client_effect: "Death/revive as 0x420 (checked before the write), then HP/MP/max HP/max MP stored, UI event 0xf. Does not update the bar HP (unit+0x5f8) directly."
+    handler: FUN_0047341e
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "Handler read; live: player revive in place (ai.py)."
+
+  - opcode: 0x422
+    name: exp_level
+    direction: s2c
+    s2c:
+      min_size: 0x18
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: u8, name: level, values: "1..30 (Level_Table has rows 0..30)", notes: "me only: char+0x237"}
+        - {offset: 0x11, type: u8, name: level_up, values: "1 = level-up (effect + 'msg_levelup_d'); 0 = exp change only", notes: "for other units only non-zero matters (plays the level-up effect on them)"}
+        - {offset: 0x12, type: "bytes[2]", name: pad, values: "0", notes: ""}
+        - {offset: 0x14, type: u32, name: exp, values: "total exp (char+0x233); exp bar = exp vs Level_Table[level+1].exp", notes: "me only"}
+      accepted_if: "unit spawned. For other units only +0x11 is used (effect); level/exp are stored only for me."
+    server_reply: "n/a. After a level-up also send 0x41f (new stats) and 0x421 (full HP/MP if the design refills)."
+    client_effect: "Me: store level/exp, UI event 0x26; level_up == 1: UI event 0x24, exp-gain popup, system message msg_levelup_d with the level, level 27 (0x1b) opens the quest board panel, FUN_0040fd14(level). level_up != 1 (any other value) and exp increased: UI event 0x24 + exp-gain popup (+delta). Others with level_up != 0: level-up visual effect."
+    handler: FUN_0047684e
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "Handler read directly."
+
+  - opcode: 0x429
+    name: char_attribute
+    direction: s2c
+    s2c:
+      min_size: 0x18
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: u32, name: type, values: "1 = nation/team (char+0x655, u8: 0 neutral, 1..3); 3 = guild id (char+0x27f, i16; UI event 0x28; no-op if unchanged); 5 = guild grade (char+0x656, u8; UI event 0x1c); other = ignored", notes: ""}
+        - {offset: 0x14, type: u32, name: value, values: "per type", notes: ""}
+      accepted_if: "type 1/5: unit spawned, or the pending char-select record +0x1ae == uid; type 3: unit spawned with a char record."
+    server_reply: "n/a. Reply to C->S 0x40c (change nation) with type 1."
+    client_effect: "Updates the attribute; nation drives friend/foe (FUN_004872bd) and thus targeting/skill relation checks."
+    handler: FUN_00470dd1
+    send_sites: []
+    confidence: high
+    verified: true
+    evidence: "Handler read; char+0x27f = guild id per world.md."
+
+  - opcode: 0x42b
+    name: item_skill_use
+    direction: c2s
+    c2s:
+      size: 0x38
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u8, name: container, values: "container of the item (command +7 -> ActionSkill+0x108)", notes: ""}
+        - {offset: 0x11, type: u8, name: slot, values: "slot of the item (ActionSkill+0x10a)", notes: ""}
+        - {offset: 0x12, type: u16, name: item_code, values: "Item_Base id (ActionSkill+0x10c, non-zero)", notes: ""}
+        - {offset: 0x14, type: u16, name: one, values: "1", notes: ""}
+        - {offset: 0x16, type: "u16[12]", name: target_uids, values: "0x411 path: the 12 target uids (same selection as 0x411); 0x412 path: all 0", notes: ""}
+        - {offset: 0x2e, type: "bytes[2]", name: pad, values: "0", notes: ""}
+        - {offset: 0x30, type: f32, name: x, values: "0x411 path: target point x; 0x412 path: the caster's dash destination if it is in the list, else the target point", notes: ""}
+        - {offset: 0x34, type: f32, name: z, values: "", notes: ""}
+      sent_when: "Instead of 0x411/0x412 when the ActionSkill came from an item (scroll/consumable). No skill id is sent, no client cooldown is started; the client then decrements the stack locally (FUN_004e14a9: count - 1, or clears the slot)."
+    s2c: null
+    server_reply: "Resolve the skill from the item (server rule item_skill_map), validate the item is in container/slot, consume one, run the skill as for 0x411/0x412 and broadcast the S->C 0x411/0x412 (extra = sender) with skill_id = the item's skill; send 0x427 for the slot only if the server's count differs from the client's local decrement."
+    client_effect: "n/a (no S->C handler)."
+    handler: null
+    send_sites: [FUN_004621bd, FUN_0046260d]
+    confidence: medium
+    verified: true
+    evidence: "Both builders read (0xa53c0038 inline). The item->skill mapping is not in the packet; item options 301/340 carry skill-like values (e.g. 340 = 4006 on 'Scroll: Return') - unverified."
+
+  - opcode: 0x450
+    name: channel_interact
+    direction: both
+    c2s:
+      size: 0x1c
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u16, name: target_uid, values: "unit being channelled on", notes: ""}
+        - {offset: 0x12, type: "bytes[4]", name: zero, values: "0", notes: ""}
+        - {offset: 0x16, type: u16, name: action, values: "10 = tick (sent each time the 1 s accumulator passes 1.0 while holding); 11 = stop/cancel", notes: ""}
+        - {offset: 0x18, type: "bytes[4]", name: zero2, values: "0", notes: ""}
+      sent_when: "ActionInteract mode 1 (+0x108 == 1): FUN_00462f64 every ~1 s, FUN_0046316b on stop. Target uid 0x5219 is special-cased (no send, state 9). Mode 2 instead opens the TP panel (see 0x4b4)."
+    s2c:
+      min_size: 0x1c
+      extra: "actor uid (the channeller; may be unknown)"
+      fields:
+        - {offset: 0x10, type: u16, name: target_uid, values: "must be spawned with a char record", notes: "else dropped"}
+        - {offset: 0x12, type: u16, name: msg_ally, values: "system-message id shown on completion (formatted with the target's name) when the target is not hostile to me; in match type 3 (match obj +0xad) it is used whenever the target nation is 1..3", notes: "0 = none"}
+        - {offset: 0x14, type: u16, name: msg_enemy, values: "system-message id when the target is hostile to me (match type 3: when the target nation is outside 1..3)", notes: "0 = none"}
+        - {offset: 0x16, type: i16, name: action, values: "0 abort; 1 completed; 10 progress; 11/12/14 ended (remove effect); 13 ended + AR code 0x20 AR_CANT_IMPRINT_OTHERNOW", notes: "11..14 stop my channel when actor == me"}
+        - {offset: 0x18, type: i16, name: value, values: "action 0: > 0 plays a sound; action 1: new side of the target (u16 battle side char+0x659 when the match def flag +2 == 1, else u8 nation char+0x655); action 10: written to the TARGET's current HP (capture gauge), also used as the event value", notes: ""}
+      accepted_if: "target spawned with a char record."
+    server_reply: "To each C->S action 10: S->C 0x450 action 10 with the new progress in +0x18 (to the actor and observers). When progress completes: action 1 with the target's new side/nation and the two message ids. On C->S 11 or interruption (damage, move, death): action 11 (or 13 to show AR_CANT_IMPRINT_OTHERNOW). Silence leaves the client channelling."
+    client_effect: "Progress: target HP set, event 0xd on the actor, effect 0x6e (0x462 for unit category '4') until removed; completion: side change, UI event 0xe, sound, system message."
+    handler: FUN_0047963d
+    send_sites: [FUN_00462f64, FUN_0046316b]
+    confidence: medium
+    evidence: "Handler and both senders read; capture semantics (HP as gauge, side change) inferred."
+
+  - opcode: 0x4a2
+    name: character_refresh
+    direction: s2c
+    s2c:
+      min_size: 0x20c
+      extra: "unit uid"
+      fields:
+        - {offset: 0x10, type: u16, name: quest_counter_a, values: "-> acct+0x2e68 (same field as 0x4a4 +0x10)", notes: "own unit only"}
+        - {offset: 0x12, type: u16, name: quest_pages, values: "-> acct+0x2e6a unlocked quest pages (as 0x4a4 +0x12)", notes: "own unit only"}
+        - {offset: 0x14, type: u32, name: sys_msg_id, values: "system message to show (FUN_00498605/FUN_00498a40); 0 = none", notes: "own unit only"}
+        - {offset: 0x18, type: u32, name: acct_2e6c, values: "-> acct+0x2e6c", notes: "unknown meaning"}
+        - {offset: 0x1c, type: u32, name: fame, values: "-> char+0x651", notes: ""}
+        - {offset: 0x20, type: "bytes[16]", name: costume_item, values: "16-byte item -> char+0x263 (costume/special slot); model rebuilt (FUN_004bc19e)", notes: ""}
+        - {offset: 0x30, type: "struct[32] (12 B)", name: buffs, values: "full 32-slot buff table, unpacked (layout as 0x41e entries)", notes: "-> FUN_0046fd59"}
+        - {offset: 0x1b0, type: "bytes[0x5c]", name: stat_block, values: "as 0x41f +0x10", notes: "-> FUN_00472103"}
+      accepted_if: "Stats/buffs: as 0x41f/0x41e (pending record allowed). The rest needs the unit spawned, or (counters only) acct+0xec == uid."
+    server_reply: "n/a."
+    client_effect: "Stats + buffs + costume + fame; for me also quest-page counters, UI events 0x26/0x1c, container 4 refresh (FUN_004e1425(4,0)), quest manager refresh (FUN_005990ce), optional system message."
+    handler: FUN_004752cb
+    send_sites: []
+    confidence: medium
+    verified: true
+    evidence: "Handler read; group02.md's 'equipment' block corrected to buffs (FUN_0046fd59 feeds the buff table)."
+
+  - opcode: 0x4b4
+    name: tp_skill_buy
+    direction: c2s
+    c2s:
+      size: 0x14
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u16, name: npc_uid, values: "uid of the war NPC whose PanelTPSkillQuick is open (unit category 0x1f or 0x22)", notes: ""}
+        - {offset: 0x12, type: u16, name: tp_id, values: "Skill_TP.cdb id (first byte of the TP def) of the chosen entry", notes: ""}
+      sent_when: "PanelTPSkillQuick (FUN_0052d716) on clicking an ExtSkill%d button that is enabled. The panel opens when an interaction in mode 2 targets a unit of category 0x1f/0x22 (FUN_00461eef -> FUN_0052d6b7). A button is enabled (FUN_0052d54b) when: TP cost (def+4) <= match TP (match obj +0xb0), guild grade char+0x656 >= def+0xc, the match type (match obj +0xad) bit is clear in def+0x10, match obj +0xbc+side*4 >= def+0x18, and def+0x1c != 1 or a guild item (container 0xb, option 0x1cd) grants this tp_id."
+    s2c: null
+    server_reply: "No direct reply opcode found. Expected: deduct TP (send the new TP balance via 0x424/0x428 field 0xe = match obj +0xb0), grant the TP skill (summon its unit if any) and publish it in the match TP HUD table (match obj +0x280: 6 x {u16 tp_id, u16 unit uid, u32 start tick}, written by 0x4b5 - pvp subsystem). On refusal: 0x41b system message."
+    client_effect: "n/a."
+    handler: null
+    send_sites: [FUN_0052d716]
+    confidence: medium
+    verified: true
+    evidence: "Sender and panel code read; reply path inferred."
+
+  - opcode: 0x4b6
+    name: tp_skill_use
+    direction: c2s
+    c2s:
+      size: 0x1c
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u16, name: tp_unit_uid, values: "unit uid from the TP HUD entry (button+0x34c / targeting+0xa4): the unit the TP skill belongs to", notes: "low"}
+        - {offset: 0x12, type: u16, name: tp_id, values: "TP def id byte (button+0x349 / targeting+0xa1)", notes: ""}
+        - {offset: 0x14, type: f32, name: x, values: "self-type skill: the TP unit's position; unit-target skill (FUN_004f98ac): the clicked unit's position; ground skill (FUN_004fa44d): the ground point clamped to skill range +0x41", notes: "no target uid is sent"}
+        - {offset: 0x18, type: f32, name: z, values: "", notes: ""}
+      sent_when: "Pressing a TP HUD button (PanelTPSkillHud, buttons have mode byte +0x348 = 1): FUN_005883b9 -> FUN_00586bf6 sends at once for self-type skills; for unit/ground skills a targeting cursor in mode 1 sends on click (FUN_004f98ac / FUN_004fa44d, fires UI event 0x45). No local cast animation."
+    s2c: null
+    server_reply: "Unknown. Expected: validate the TP skill cooldown (Skill_TP col 4 seconds) and run the skill (Skill_TP skill_id -> Skill_Base) server-side, broadcasting 0x410/0x411/0x412 with the TP unit (or the player) as caster; re-publish the HUD entry start tick (0x4b5) for its cooldown display."
+    client_effect: "n/a."
+    handler: null
+    send_sites: [FUN_00586bf6, FUN_004f98ac, FUN_004fa44d]
+    confidence: low
+    evidence: "All three builders read; the 'mode 1' buttons are filled only by PanelTPSkillHud FUN_0052d7d7 from match obj +0x280. Server behaviour unknown."
+
+  - opcode: 0x4ba
+    name: summon_command
+    direction: c2s
+    c2s:
+      size: 0x20
+      extra: "sender uid (me)"
+      fields:
+        - {offset: 0x10, type: u16, name: unit_uid, values: "my owned unit: category (unit+0x35c) 0x0b and owner char+0x4d1 == my uid (first such unit found)", notes: ""}
+        - {offset: 0x12, type: u16, name: mode, values: "2 = attack the clicked hostile unit; 1 = move to a point (ground click, or a non-hostile unit's position)", notes: ""}
+        - {offset: 0x14, type: u16, name: target_uid, values: "mode 2: hostile unit uid; mode 1: 0", notes: ""}
+        - {offset: 0x16, type: "bytes[2]", name: pad, values: "0", notes: ""}
+        - {offset: 0x18, type: f32, name: x, values: "mode 1 destination x", notes: ""}
+        - {offset: 0x1c, type: f32, name: z, values: "mode 1 destination z", notes: ""}
+      sent_when: "FUN_004a9930: right mouse button (message 2) with modifier flag 0x8 held, while me owns a category-0x0b unit."
+    s2c: null
+    server_reply: "None required. Drive the owned unit: 0x416 moves for mode 1; chase + 0x411 attacks (extra = the unit) for mode 2."
+    client_effect: "n/a."
+    handler: null
+    send_sites: [FUN_004a9930]
+    confidence: medium
+    verified: true
+    evidence: "Disassembly of the builder read; the category-0x0b owner check identifies it as a summon/pet command."
+
+flows:
+
+  - name: enter_world_combat_state
+    steps:
+      - "S->C 0x2000 (enter world; builds the avatar with HP 0, speed 0)"
+      - "S->C 0x41f (extra = me): HP/MP/maxes > 0, +0x2c attack speed 500, +0x2e basic range 200, +0x46 speed 450, +0x50 revive delay 5  [required]"
+      - "S->C 0x427 container 3 slot 0 (and slot 1) = equipped weapon(s) -> skill bar loads (skills.md)"
+      - "S->C 0x422 {level, 0, exp} (optional; slot record already has them)"
+      - "S->C 0x41e {flags 0, win 0, mask 0} (optional, empty buffs)"
+      - "S->C 0x803/0x805 + 0x804/0x41f per visible unit (monsters need a speed)"
+
+  - name: basic_attack_player_on_monster
+    steps:
+      - "client: walks into range (dist < target radius + stat +0x1e x 0.01), swings (no packet before impact)"
+      - "C->S 0x411 {+0x10 me, +0x14 0, +0x16 motion, +0x1c/+0x20 my x,z, +0x34 {monster uid, 0}}"
+      - "S->C 0x411 to sender + observers (extra = me): +0x36 damage, +0x18 |= 0x4 crit / 0x8 evade, +0x1a bit 0 if lethal, +0x2c/+0x30 my HP/MP"
+      - "if killed: S->C 0x420 {HP 0, MP 0} extra = monster (optional confirm) + loot (0x427/0x428 per loot.py)"
+      - "later: S->C 0x804 respawn at home with full HP"
+
+  - name: instant_skill
+    steps:
+      - "client gates locally: target, range (skill +0x41), own cooldown, global cooldown, cost (MP x (100 - stat +0x54)%)"
+      - "[if cast time > 0] C->S 0x40f {skill}; S->C 0x40f to others"
+      - "C->S 0x411 {+0x12 display id, +0x14 skill, +0x24/+0x28 point, +0x34 targets}  (or 0x412 for knock-back/dash, see below)"
+      - "S->C 0x411 to all incl. sender: damage/heal per slot, flags, lethal mask, +0x2c/+0x30 caster HP/MP (MP already minus cost)"
+      - "deaths as basic attack"
+
+  - name: projectile_or_ground_field_skill
+    steps:
+      - "[cast time] C->S 0x40f -> S->C 0x40f to others"
+      - "C->S 0x410 {skill, point or float(target uid), dash dest} at the fire frame"
+      - "S->C 0x410 to others with +0x30/+0x34 caster HP/MP; S->C 0x420 {HP, MP} to the caster"
+      - "per impact / per field tick (Skill_Base +0x35): C->S 0x411 (hit_packet 0-2) or 0x412 (3-4) with flags 0x200"
+      - "S->C 0x411/0x412 results to all incl. sender (server must not charge cost again for 0x200 hits)"
+
+  - name: knockback_or_dash_skill
+    steps:
+      - "C->S 0x412 {targets incl. own uid for dash skills, +0x50/+0x6c destinations}"
+      - "server: clamp destinations to the navmesh (both coordinates must stay > 0), move server positions"
+      - "S->C 0x412 to all incl. sender (damage, lethal mask, destinations echoed); for a dash/blink skill the caster slot must carry a non-zero destination, else remote clients abort the WHOLE packet (no damage shown)"
+
+  - name: monster_attacks_player
+    steps:
+      - "S->C 0x416 type 2 chase (extra = monster) / type 0 stop-and-face"
+      - "S->C 0x411 every attack interval (extra = monster): +0x10 monster, +0x14 0 (or a unit skill id), +0x16 motion 0, +0x1c/+0x20 monster x,z, +0x24/+0x28 player x,z, +0x2c monster HP (> 0!), +0x30 MP, +0x34 {player uid, damage}, +0x1a bit 0 if lethal"
+      - "if the player died: S->C 0x420 {0, MP} extra = player"
+
+  - name: player_death_and_revive
+    steps:
+      - "lethal 0x411/0x412/0x413, or 0x420/0x421/0x41f with HP 0: client plays death and counts down stat +0x50 (revive delay) seconds, then shows 'WaitingRevive'; it sends NOTHING"
+      - "server waits revive delay, then either: S->C 0x421 {max HP, max MP, max HP, max MP} (revive in place) + S->C 0x416 type 1 (snap to spawn) [live-tested]"
+      - "or: S->C 0x804 (extra = player) at the respawn point with HP > 0 (must carry full player state: equipment, team, buffs) to the player and observers"
+      - "or (scene change): 0x44e/0x44f/0x2000 then 0x41f with HP > 0"
+      - "observers: S->C 0x420 {HP > 0} or 0x804 for the revived player"
+
+  - name: monster_death_and_respawn
+    steps:
+      - "lethal hit (S->C 0x411/0x412 lethal bit) -> death animation on every receiver"
+      - "S->C 0x420 {0,0} (optional confirm)"
+      - "after the respawn time: S->C 0x804 (extra = monster) at home, full HP, speed"
+      - "C->S 0x4ca {uid} for a unit the client lost -> S->C 0x803 + 0x420 HP 0 (still dead) / 0x803 + 0x804 (alive) / 0x806 mode 2 (gone)"
+
+  - name: buff_apply_and_expire
+    steps:
+      - "C->S 0x411 for a buff skill (e.g. 5023, self target slot 0 = caster)"
+      - "S->C 0x411 echo (amount 0 shows nothing)"
+      - "S->C 0x41e (extra = target) with the new full buff table (12-byte entries, remaining seconds) and status flags"
+      - "if the buff changes stats: S->C 0x41f for the target"
+      - "on expiry/dispel: S->C 0x41e without the entry (+ 0x41f)"
+
+  - name: damage_over_time
+    steps:
+      - "every tick: S->C 0x413 {+0x12 0 (a spawned source corrupts the number style), +0x2a 1 if lethal allowed, +0x2c target (must have a char record), +0x2e damage} to observers; stop ticking once the target is dead (each tick at HP < 1 replays the death animation)"
+      - "on death: client handles it; optional 0x420 HP 0"
+
+  - name: exp_and_level_up
+    steps:
+      - "kill credited -> S->C 0x422 {level, 0, new exp} (popup shows the gain)"
+      - "exp >= Level_Table[level+1].exp -> S->C 0x422 {level + 1, 1, exp}"
+      - "S->C 0x41f with the new stats; S->C 0x421 if HP/MP refilled"
+      - "others: S->C 0x422 {level, 1, -} with extra = the player (level-up effect) and 0x804/0x803 +level for nameplates"
+
+  - name: channel_capture
+    steps:
+      - "C->S 0x450 {target, action 10} about once per second while holding"
+      - "S->C 0x450 {target, action 10, +0x18 progress} to actor + observers"
+      - "complete: S->C 0x450 {target, msg_ally, msg_enemy, action 1, +0x18 new side}"
+      - "cancel: C->S 0x450 action 11 / interruption -> S->C 0x450 action 11 (or 13)"
+
+  - name: tp_skill_purchase_and_use
+    steps:
+      - "player interacts (mode 2) with a war NPC of category 0x1f/0x22 -> PanelTPSkillQuick opens (client only)"
+      - "C->S 0x4b4 {npc uid, tp id}"
+      - "S->C TP balance (0x424/0x428 field 0xe) + war status 0x4b5 publishing {tp id, unit uid, start tick} in the TP HUD table [inferred]"
+      - "player presses the HUD button: C->S 0x4b6 {tp unit uid, tp id, x, z}"
+      - "S->C 0x410/0x411/0x412 for the resulting skill (Skill_TP skill_id) [inferred]"
+
+  - name: summon_command
+    steps:
+      - "C->S 0x4ba {owned unit, mode 2, target uid} or {owned unit, mode 1, x, z}"
+      - "S->C 0x416 (extra = owned unit) moves; S->C 0x411 attacks (extra = owned unit)"
+
+  - name: item_triggered_skill
+    steps:
+      - "C->S 0x42b {container, slot, item code, 1, 12 target uids, x, z} (client decrements the stack locally)"
+      - "S->C 0x411 or 0x412 (extra = sender, +0x14 = the item's skill) to all incl. sender"
+      - "S->C 0x427 for the slot if the authoritative count differs"
+
+server_rules:
+
+  - name: hit_authority_and_validation
+    client_expects: "The client picks targets, plays animations and reports hits with damage 0; it never re-requests a result. A dropped report just shows no numbers."
+    data_table: "Skill_Base (range +0x41, AoE +0x43/+0x44, max targets +0x22, relation +0x16, target type +0x17), stat block +0x1e (basic range)"
+    suggested_default: "Accept when attacker == sender and alive, skill is one of the 8 skills of the equipped weapons (WeaponBase) or 0, target alive, hostile per relation bits, distance <= range + target radius + 3 units lag margin, at most max targets. Drop silently otherwise."
+
+  - name: damage_formula
+    client_expects: "Any i16 per target; 0 shows nothing unless flag 0x8 (Evade). Crit flag 0x4 only changes the style."
+    data_table: "Skill_Base effect slots (+0x80.. 4 x {type, value, rate}; damage numbers are not in the client), stat block (attack/magic damage, armor, MR, pen, crit rate x0.1 %, crit damage %, reductions), ItemOption codes, Level_Table atk?/def? columns"
+    suggested_default: "dmg = max(1, (atk x skill_coeff) x 100 / (100 + max(0, armor - pen))) x rand(0.9..1.1); crit if rand < crit_rate/1000 -> x (1.5 + crit_damage%/100 - target crit_damage_reduction%/100); evade if rand < target dodge%. Basic attack coeff 1.0, skills 1.5-3.0 by tier; current server: basic 30, skill flat, monster (40 + 15 x (level-1)) x 0.8..1.2, 5 % crit."
+
+  - name: lethal_bit_and_hp_tracking
+    client_expects: "+0x1a bit set for every target whose server HP reached 0; +0x2c/+0x30 must be the attacker's real HP/MP (0 kills the attacker on every client)."
+    data_table: "none"
+    suggested_default: "Track HP/MP for every unit server-side; set the bit only when HP hits 0; always fill attacker HP from server state (monsters included)."
+
+  - name: skill_costs_and_cooldowns
+    client_expects: "The client gates and starts its own cooldowns (skill +0x5b ms x (100 - CDR)%), and cannot be told to reset them (no opcode)."
+    data_table: "Skill_Base cost type +0x39 (4 HP %, 5 MP, 6 EXP, 0xe TP) / value +0x3d, cooldown +0x5b ms, cd group +0x0d; stat block +0x54 MP reduction, +0x56 CDR"
+    suggested_default: "Deduct cost once per cast (on 0x410, or on the first non-0x200 0x411/0x412); enforce cooldown x 0.9 tolerance; silently drop early casts. Report new MP in +0x30 and a 0x420 to the caster."
+
+  - name: heal_and_mana_effects
+    client_expects: "For skill effect type +0x67 = 0x1f (heal HP), 0x21 (restore MP), 0x2d (drain MP) the 0x411 amount is applied as a heal/restore/drain clamped to max; 0x412 applies none of them."
+    data_table: "Skill_Base +0x67 (col 49) and effect slots"
+    suggested_default: "Heal = Skill_Base effect value x (1 + magic_damage/1000); send heals only via 0x411; follow with 0x420 for the healed unit if exactness matters."
+
+  - name: buffs_and_status
+    client_expects: "Full buff table per unit via 0x41e (also inside 0x803/0x804/0x426/0x453/0x4a2) with remaining seconds; status flags select client restrictions (no attack/skills/move/untargetable/knock-back immunity)."
+    data_table: "Skill_Buff.cdb (duration ms, category +0x44, 3 x {effect code, value}), Skill_Base effect slots (type 314/330 = apply buff, value = buff id, rate %), WinAffect.cdb"
+    suggested_default: "Apply buffs from skill effect slots by rate; slots 0..31 first free (slot 0 reserved for absorb shields); re-send 0x41e on every change and on expiry tick; recompute stats and send 0x41f when an effect changes a stat; map CC effects to status bits (stun = bit 5 -> restriction 0x10, silence = bit 13 -> 0x80, disarm = bit 10 -> 0x1)."
+
+  - name: absorb_shields
+    client_expects: "Buff slot 0 entry +6 is an absorb pool decremented by damage; when used up the client clears slot 0 itself. Effect 0x1b8 in slot 0 = mana shield (damage hits MP first)."
+    data_table: "Skill_Buff effect values"
+    suggested_default: "Mirror the client's arithmetic server-side so HP stays in sync; put shields in slot 0 only."
+
+  - name: knockback_clamping
+    client_expects: "The client computes push/pull/dash destinations; zero or non-positive coordinates mean 'not moved'."
+    data_table: "navmesh (tools/navmesh.py)"
+    suggested_default: "Accept destinations within skill range + 2 units of the start, snap to walkable navmesh, never emit coordinates <= 0; update server positions."
+
+  - name: death_and_respawn
+    client_expects: "After death the client counts down stat +0x50 seconds and waits; it never requests a revive. A unit is revived by any HP > 0 update (0x420/0x421/0x41f/0x804)."
+    data_table: "none (respawn points: map/zone data, world.PLAYER spawn)"
+    suggested_default: "Revive delay 5 s (open world), match rules per match subsystem; revive at the nearest town/nation spawn with full HP/MP via 0x421 + 0x416 type 1; monsters respawn after 30 s at home via 0x804."
+
+  - name: exp_rewards_and_levels
+    client_expects: "0x422 total exp; exp bar target = Level_Table[level+1].exp; level cap = last Level_Table row (30)."
+    data_table: "Level_Table.cdb (exp@04, hp?/mp?/atk?/def? linear per-level values), UnitDB (no exp column), Quest rewards (type 2 = exp)"
+    suggested_default: "Kill exp = 10 + 5 x monster level x (1 - 0.1 x max(0, player level - monster level)), min 1; on level-up add Level_Table per-level HP/MP/atk/def to base stats, refill HP/MP, send 0x422 {lvl, 1, exp} + 0x41f + 0x421."
+
+  - name: stat_derivation
+    client_expects: "Every display stat and attack speed/range/move speed come from the server's stat block; nothing is computed client-side except the item tooltip."
+    data_table: "Level_Table per-level values, Item_Base options (ItemOption codes: 1 attack, 2 AP, 3 AS, 4 range, 5 move, 6 armor, 7 MR, 9 crit, 31 HP, 33 MP, 41 life steal, 1xx %-variants, 212 CDR), SetBounsItem, Item_Jewel (server-only), WeaponBase, buffs"
+    suggested_default: "base(class, level) + sum(item options) + set bonuses + buffs; attack range from the weapon (melee 200, guns/bows/wands/cannon 700); attack speed 500; move speed 450; resend 0x41f after any change (equip 0x42a, level, buff)."
+
+  - name: item_skill_map
+    client_expects: "0x42b names only the item; the server must know which skill it triggers."
+    data_table: "Item_Base option types 301/340 (values like 2135, 4006 look like skill ids) - unverified"
+    suggested_default: "Map item -> Skill_Base id from the item's option 301 or 340 value when it is a valid Skill_Base id; otherwise reject (no reply)."
+
+  - name: tp_economy
+    client_expects: "TP balance at match obj +0xb0 (cost check), 6-entry TP HUD table at match obj +0x280; 0x4b4 to buy, 0x4b6 to use."
+    data_table: "Skill_TP.cdb (id, skill_id, tp_cost, cooldown_s, grade/side/match-type/guild-item requirements), Skill_Base 45xx/47xx"
+    suggested_default: "Earn TP from kills/captures in matches (e.g. 100 per kill, 300 per capture); on 0x4b4 check the same enable rules as FUN_0052d54b, deduct cost, add the HUD entry; on 0x4b6 enforce the Skill_TP cooldown and execute the skill server-side."
+
+  - name: capture_channel
+    client_expects: "Progress replies to each 1 s tick (0x450 action 10), a completion (action 1) or an end (11/13)."
+    data_table: "match/fort data (match subsystem)"
+    suggested_default: "Capture takes 5 ticks; any damage to the channeller or a move cancels (action 11); completion flips the target's side and broadcasts action 1 to all."
+
+  - name: friend_or_foe
+    client_expects: "Relation (FUN_004872bd) from nation char+0x655 and battle side char+0x659 (non-zero on both overrides nation); the client already refuses invalid targets."
+    data_table: "none"
+    suggested_default: "Use the same rule server-side: same non-zero battle side = ally; else same nation = ally; nation 0 monsters hostile to all players; status bit 0x400 = untargetable."
+
+  - name: mastery
+    client_expects: "No client packet reads or writes character mastery; Mastery.cdb is icon/tooltip data only."
+    data_table: "Mastery.cdb (78 nodes: class, tier, max level, slot)"
+    suggested_default: "Not implemented in the protocol; if wanted, fold mastery bonuses into the server-computed stat block (0x41f) and buffs."
+
+  - name: summon_control
+    client_expects: "0x4ba commands only units of category 0x0b whose char+0x4d1 is the player's uid."
+    data_table: "UnitDB (category +0x8a)"
+    suggested_default: "Spawn summons with category 0x0b and owner = player uid (0x803 field feeding char+0x4d1); obey 0x4ba: move (0x416) or attack (0x411 extra = summon)."
