@@ -69,6 +69,80 @@ From the [Turkish guide][g-tr] §Kale Yönetimi unless marked:
   - **Ru Fragment** — **+5% max HP**, same rules.
   - **Innus's Fragment** — lets a fort move up to **2 cells**; each move costs **10 durability** and drops the fort's current shields; fort-owning legions only.
 - Client: `Item_Base` kind 37 = *Holy Things*, kind 39 = *Establish Fort*, kind 60 = *Legion Core*. *client*.
+- Patch changes: from [WM 1107][wm1107] the Holy Thing appears on **one** land only, and getting the same core again raises the tier of the Holy Thing item. [WM 0830][wm0830] and [WM 0110][wm0110] changed where its fort is placed; the first placement has a small random factor. *notes*
+
+## 5. Balance numbers from the patch notes
+
+Weapon, hero and class values changed in the official patch notes, in date order. Multipliers are percent of AD/AP. Cross-checked against client `Skill_Base` (cooldown_ms, cost) where the skill could be found. Tags: *notes*, *client*. More system numbers are in [[gameplay/reinforce-and-runes]] and [[gameplay/events-and-schedules]].
+
+### Classes
+
+- Magic Resist gained per level ([WM 0420][wm0420]): **Punisher +3 (90 at Lv 30), Saint +4 (120), Guardian +6 (150)**. *notes*
+- HP/MP regeneration ticks every **1 s** (was 5 s); item regen values were rescaled so total output stayed the same ([WM 0420][wm0420]). *notes*
+- The Armor/MR penetration formula was changed to make penetration stronger ([WM 0412][wm0412]); exact formula not given. *notes*
+
+### Weapons
+
+| Patch | Weapon (client item) | Change |
+|---|---|---|
+| [0329][wm0329] / [0402][wm0402] | Magical Dash Blade, Magical Wrath Blade | Q/W (Dash) and Q/E (Wrath) scaling AD → AP |
+| [0412][wm0412] | Magical Life Wand (10002) | R range 8 → 6, recovery 6 → 5 |
+| [0412][wm0412] | Magical Storm Wand | E AP multiplier 20 → 40 |
+| [0412][wm0412] | Magical Crystal Wand | W bonus attack and move speed 13% → 15%; E armor/MR buff and debuff 10% → 20%; R slow 2 → 4 s |
+| [0412][wm0412] | Magical Dash Blade, Magical Wrath Blade | per-level growth AP 2 → 8, AD 8 → 2 |
+| [0412][wm0412] | Magical Thunder Wand (10001) | Q AP base 70 → 80; W 90 → 100; "E" cooldown 70 → 60 s (in the client the 60 s skill is the R, *Might of Thunder God*, skill 5007) |
+| [0420][wm0420] | Magical Life Wand | W AP 80 → 60; E AP 90 → 60 |
+| [0420][wm0420] | Magical Wrath Blade | E AP 120 → 100; R AP 120 → 100, HP multiplier 30 → 20 |
+| [0420][wm0420] | Magical Devil Wand (10020) | R cooldown 70 → 60 s, AP 70 → 100 (the client still has *Dark Matter* at 70 s) |
+| [0420][wm0420] | Magical Hiding Dagger (15008) | Q cooldown 15 → 19 s, W 20 → 25 s (client: *Backstab* 20 s, *Deception* 25 s) |
+| [0426][wm0426] | Magical Wrath Blade | R base damage no longer scales with AP |
+| [0426][wm0426] | Magical Judge Dagger | E armor/MR debuff 10% → 20% |
+| [0426][wm0426] | Magical Blood Dagger | E gives +100 attack speed for 5 s |
+| [0712][wm0712] | Skeleton King's Magic Dagger | E AP → AD; R silence 2 → 3 s |
+| [0712][wm0712] | Magical Devil Wand | E cooldown 22 → 15 s (the client has both: *Hush* 5178 at 22 s and 5472 at 15 s) |
+| [0712][wm0712] | Skeleton King's Magic Cannon | Q and R AP → AD + AP; per-level growth AD +10 → +8 and AP +2 |
+| [0719][wm0719] | Wrath Blade | E max multiplier at T3 1.2 → 0.8 AP |
+| [0830][wm0830] | Magical Protect Mace | damage up to ×5 per basic attack |
+| [0124][wm0124] | Magical Demolition Hammer | Q *Soul Infestation*: basic attacks deal 10 + 60% AP + 75% AD magic damage (bonus AD 100% → 75%, AP 30% → 60%), hits several targets |
+
+**Skeleton King's Vision Bow** (superior Punisher bow, item 15005; [WM 0110][wm0110] text + image 2): Attack +140, AP +10, range 750 at T1+0. Skills *notes*, matching client skills 5491–5494 exactly *client*:
+
+| Key | Skill | Cooldown | Mana | Effect |
+|---|---|---|---|---|
+| Q | Mystic Arrow | 5 s | 75 | 85 + 0.8 AD + 0.625 AP; on hit, attack speed up for 6 s |
+| W | Vision Explosion | 17 s | 95 | 85 + 0.83 AD + 0.6875 AP around you, plus more per Vision stack used (stacks from basic attacks, max 10, last 7 s) |
+| E | Vision Move | 15 s | 125 | teleport to target point |
+| R | Essence Wave | 55 s | 330 | 120 + 1.0 AD + 0.875 AP to all hit; +1 Vision stack per enemy hit |
+
+### Heroes
+
+| Patch | Hero | Change |
+|---|---|---|
+| [0412][wm0412] | Artamos | crit chance 10% → 5% |
+| [0412][wm0412] | Sarasbati | HP → AD conversion 10% → 5% |
+| [0412][wm0412], [0420][wm0420] | Amaterasu | MP → AP conversion 10% → 15% → back to 10% |
+| [0412][wm0412] | Death Head | crit chance 5% → 3% |
+| [0420][wm0420] | Tempest Fisher | MR penetration 20 → 10 |
+| [0615][wm0615] | Dark Knight | passive cooldown fixed at 300 s |
+
+- Share of gear stats a hero gets ([WM 0628][wm0628]): hero T1+0 **35%**, T1+15 **45%**, T2+10 **65%**, T3+15 **100%**. *notes*
+- Transformation cooldown 10 → **120 s** ([WM 0621][wm0621]). *notes*
+- Costume "Ninja": dodge +5%, move +5% ([WM 0412][wm0412]). *notes*
+
+[wm0329]: https://steamcommunity.com/games/718790/announcements/detail/2383968106570216224
+[wm0402]: https://steamcommunity.com/games/718790/announcements/detail/2383968106583377018
+[wm0412]: https://steamcommunity.com/games/718790/announcements/detail/2394102381817542359
+[wm0420]: https://steamcommunity.com/games/718790/announcements/detail/2758894130315567397
+[wm0426]: https://steamcommunity.com/games/718790/announcements/detail/2394103650887775295
+[wm0615]: https://steamcommunity.com/games/718790/announcements/detail/2842216343262999426
+[wm0621]: https://steamcommunity.com/games/718790/announcements/detail/2499943313629707204
+[wm0628]: https://steamcommunity.com/games/718790/announcements/detail/2499943313654890838
+[wm0712]: https://steamcommunity.com/games/718790/announcements/detail/2838841185432966428
+[wm0719]: https://steamcommunity.com/games/718790/announcements/detail/2412125660633804214
+[wm0830]: https://steamcommunity.com/games/718790/announcements/detail/2447032361187005747
+[wm1107]: https://steamcommunity.com/games/718790/announcements/detail/2423394805992652770
+[wm0110]: https://steamcommunity.com/games/718790/announcements/detail/2417771014047971842
+[wm0124]: https://steamcommunity.com/games/718790/announcements/detail/2425653583381829617
 
 [g-noob]: https://steamcommunity.com/sharedfiles/filedetails/?id=1345368744
 [g-def]: https://steamcommunity.com/sharedfiles/filedetails/?id=1459948573

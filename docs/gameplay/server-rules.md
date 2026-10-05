@@ -114,3 +114,56 @@ Where the client data and a 2018 guide disagree, **the client is the final build
 - [ ] Safety factor ticks every 30 min (distance-scaled); ≤30 gives an 80% invasion chance; <0 = monster-owned; dungeon clear +5. — WM 0726 — **M**
 - [ ] Fort shields recover in 3 h with 1 h invulnerability after each loss. — WM 0705 — **M**
 - [ ] Transformation cooldown 120 s; hero gets 35–100% of gear stats by gear tier. — WM 0621 / 0628 — **M**
+
+## Added from the numbers pass (see [[gameplay/reinforce-and-runes]], [[gameplay/events-and-schedules]])
+
+Format: rule — value — source — confidence.
+
+### Runes and gear
+
+- [ ] Rune upgrade cost per step: crystals + Red Passion (+ one Shining/Mysterious/Brilliant/Amplifying from mid-tier steps) — read client `JewelSocketMake` (row = rune item 7002–7211, `next_item`) — WM 0920 image = client, exact — **H**
+- [ ] Rune tiers: T1 Attack/AP/Armor/MR/HP/MP/HP regen/MP regen/AS%; T2 ArPen/MRPen/Life Steal/Spell Vamp/Move%/CDR/Crit%; T3 ArPen%/MRPen%/PvP Attack/PvP Armor/Crit Damage — client `JewelSocketMake` groups — **H**
+- [ ] Rune max level — +9 (launch +5) — WM 0613 / 0726 — **H**
+- [ ] Rune stat per level — client `Item_Jewel` (server-only). The patch caps (Armor 45, MR 60, AP 60, AD 45, MP regen 102 at +9) are older and lower — WM 0412/0420 vs client — **H** (client) / **L** (patch values)
+- [ ] Rune success rate falls with level, starting at +6–7 (rarity 1), +5–6 (rarity 2), +4–5 (rarity 3); single-digit % drop per level; overall raised in 0920; exact rates unknown (server-side) — WM 0404/0406/0920 — **L**
+- [ ] Runes and gear stats get the PvP stat correction in PvP and War of Warmonger — WM 1107 — **M**
+- [ ] Max item tier T4+15; T4 tier-up needs Brilliant Passion as well as Orange — WM 0920 — **M**
+- [ ] Rainbow Reinforcing Stone (641–646) works only on items of its own rarity — WM 0420 — **M**
+- [ ] Crafted gear and weapons have a small chance to become superior — WM 0726 / 0920 — **M** (chance unknown)
+- [ ] Normal gear and T1 runes craftable with yellow jewels standing in for missing materials (cost scales with the shortfall) — WM 0824 — **M**
+- [ ] Boss/fame set bonuses at 3/5/8 pieces, values per client `SetBounsItem` — WM 0809 = client — **H**
+- [ ] Elixir of Health / Flask of Mana C–S regen +2/4/6/8 (client buffs 2109–2116) — WM 0124 = client — **H**
+- [ ] Time Energy T1/T2/T3 = drop and EXP +10/20/30% for 10 min; Drop Chance Potion +40% for 1 h — WM 0726 = client buffs 2134–2137 — **H**
+- [ ] Brilliant Passion 5 silver or 1 gold medal; Amplifying 5 silver or 3 gold; costumes 10 gold / 25 silver medals — WM 0920 — **M**
+- [ ] Fame shop (Mertris): Blue gemstone 10, Yellow gemstone 50 accumulated fame ("Contribution") — WM 0712 / 0920 — **M**
+
+### PvP, events, forts
+
+- [ ] Fame per result: Gaia PvP win 200 / lose 40; siege win 1,000 / lose 200; per medal gold 1,500 / silver 250 / bronze 50; fame only if you stay to the end — WM 0712 images, 0713 hotfix — **M**
+- [ ] Battle Arena and War of Warmonger: win 500 / lose 100 (unit unclear), WoW ranking points +2 / +1, medals ×2; WoW ranking pays medals weekly and yellow jewels monthly — WM 0712 image 2 — **M**
+- [ ] Weekend multipliers: global drop ×1.5 and/or PvP medals ×2 for a time window (see the dated list) — WM event posts — **H**
+- [ ] Double Event Field: weaker nation only, one per hour, near its border, ×2 medals when taken — WM 0628 — **M**
+- [ ] Event notice 5 min before start — WM 0712 — **M**
+- [ ] Fort inviolable time by nation fort count (final: 2 forts 30 min, 3 forts 5 min, 4 none); fort invincibility removed once a nation has more than one fort — WM 0726 / 0817 / 0920 — **M**
+- [ ] Fort floor-1 nexus HP 90,000, armor 540; no crits on buildings; Heart of Magic down = guardian/Crusader stops regenerating — WM 0809 / 0503 / 0628 — **M**
+- [ ] Fort Guardian kill: up to 15 killers each get one drop from {6 essences ×1, 100 D-fragment Blue, 100 D-fragment Red, 25 of each crystal} — WM 0817 image — **M**
+- [ ] New fort's mastery level = building legion's level — WM 0817 — **M**
+- [ ] Defenders' gear bonus capped at T3+5, larger for nations with fewer forts; 3 s invincibility on internal fort portals — WM 0621 / 0628 / 0705 — **M**
+- [ ] Shaia Blessing: pool max 10,000; town/offline gain 5 per min up to 1,000 (was 2,000); item +2,000 (was 1,000); −10 per monster (was 5), −100 per boss; tiers 1–2,000 (+20% hunt EXP/drop) and 2,001–10,000 (+30%, war 130%) — WM 0809 image / 1107 — **M**
+- [ ] Shaia Legion donations: 200,000 gold/day per player (+1 donation per 100 jewels); 7 weekly tiers 3/6/10/15/25/35/45 M gold → Shaia +10/10/10/20/20/20/30% and cores (Recovery Shot, Fire Support, Reinforce Nexus, Battlefield Summoner, Powerful Remote Bomb, Twisted Dimension) — WM 1128 image — **M**
+- [ ] TP skills: costs and cooldowns per client `Skill_TP` — WM 1018 image = client — **H**
+- [ ] Jungle: medium jungle mob spawns at PvP start; Troll/Ogre at 36:00, respawn 4 min; Bear at 35:00, respawn 5 min — WM 0830, blog — **M**
+- [ ] Lord of the Land reward box costs 200,000 gold to open (was 300,000); buff needs ≥1 medal in the fight — WM 0920 / 0426 — **M**
+- [ ] Hero durability 240; transformation scroll 5 min; Innocence Crystal durability 1,500, −5/s while transformed, no level limit — WM 0402 / 0503 / 1107 — **M**
+- [ ] Mysterious World: Death's Rest (132) 2 and Sinking Nest (133) 4 Dimensional Energy (client); Sinking Nest 3 h limit — client + WM 0124 — **H** (cost) / **M** (limit)
+
+### Economy and misc
+
+- [ ] Mail 1,000 gold (with package 10,000); no mail between nations — WM 0404 / 0802 — **M**
+- [ ] Costume duration counts only while worn (2,610 min for timed costumes) — WM 0406 — **M**
+- [ ] Haley teleport 20 yellow jewels; premium Teleport Scroll (913) in the cash mall — WM 0110 — **M**
+- [ ] Daily gacha 10 rewards incl. yellow-jewel packs 100/200/1,000 and T1–3 gear/weapons — WM 0726 — **M**
+- [ ] Gacha pools by price (1,000 gear / 2,000 weapon / 2,000 innocence / 4,000 gear T2–3 / 5,000 weapon T2–3), odds unknown — WM 1018 image — **M**
+- [ ] Monthly Boss Hunt quest 50 bosses — WM 1107 — **M**
+- [ ] Character MR per level: Punisher +3, Saint +4, Guardian +6 (90/120/150 at Lv 30) — WM 0420 — **M** (check `Level_Table` / class base stats)
+- [ ] Nexus attack range just above 750 — WM 0124 — **M**

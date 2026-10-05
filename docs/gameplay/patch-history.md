@@ -22,8 +22,8 @@ Rules and numbers from the official Steam announcements (Warmonger 2018–19 = *
 
 - Max tier rose to **T4+15** (WM 0920); runes **+9** from WM 0726 (+5 at launch, WM [0613](https://steamcommunity.com/games/718790/announcements/detail/2431262783620368792)).
 - From WM 0412 a failed upgrade no longer destroys the item: it drops one level and materials are used; "Reinforcing Adjuvants" prevent the drop.
-- Crystal cost per reinforce step and tier (WM [0420](https://steamcommunity.com/games/718790/announcements/detail/2758894130315567397), image table): T1 Blue 20/30/40/60/80/100/120 then Yellow 20/30/40; T2 Yellow 20–80 then Red 20–80; T3 Red 30–80 then Black 20–120.
-- Rune materials +1…+9 for T1–T3 and item crafting costs in Orange/Shining/Brilliant Passion (WM 0920, image tables); Brilliant Passion 5 silver or 1 gold medal.
+- Crystal cost per level and tier (WM [0420](https://steamcommunity.com/games/718790/announcements/detail/2758894130315567397), image table, after the patch): T1 Blue 20/30/40/60/80/100/120 then Yellow 20/30/40; T2 Yellow 20–80 then Red 20–80; T3 Red 30–80 then Black 20–120. The table has 10 rows (0–9), so these are almost certainly **rune** levels, not gear steps; before/after tables are in [[gameplay/reinforce-and-runes]] §2.
+- Rune materials +1…+9 for T1–T3 and item crafting costs in Orange/Shining/Brilliant Passion (WM 0920, image tables); Brilliant Passion 5 silver or 1 gold medal. The rune table matches the client's `JewelSocketMake` exactly; both tables are transcribed in [[gameplay/reinforce-and-runes]].
 - Rune caps at +9: Armor 45, MR 60, AP 60, AD 45, Mana regen 102 (WM 0412/0420). Runes take the PvP stat correction (WM [1107](https://steamcommunity.com/games/718790/announcements/detail/2423394805992652770)).
 - Boss sets (Death Head, Skull, Fisher, Komodo, Spector, Garon, Fame Knight, Fame Warrior) with 3 bonus steps (WM [0809](https://steamcommunity.com/games/718790/announcements/detail/2454911758739952435)); essences for them drop from fort guardians.
 - HP/MP regen tick 5 s → 1 s (WM 0420). Normal gear and T1 runes craftable with yellow jewels replacing missing materials (WM [0824](https://steamcommunity.com/games/718790/announcements/detail/2444779293804741322)). All gear can roll up to 3 sockets.
@@ -49,10 +49,32 @@ Rules and numbers from the official Steam announcements (Warmonger 2018–19 = *
 - Gacha pools by price (WM 1018): 1000 gear T1–3, 2000 weapon / innocence; daily gacha 5 → 10 rewards (WM 0726).
 - Early Access 27 Mar 2018; launch wipe 14 Jun 2018 (WM [0605](https://steamcommunity.com/games/718790/announcements/detail/2396358622015638297)); closure announced 12 Mar 2019, servers off 1 Apr 2019 (WM [0312](https://steamcommunity.com/games/718790/announcements/detail/2530366080613548634)). Crush Online's Steam servers closed 1 May 2017 (CO [0301](https://steamcommunity.com/games/475630/announcements/detail/4249665521684531476)).
 
+## Numbers pass (October 2026)
+
+A second read of all 57 Warmonger and 30 Crush Online announcements (the CO feed lists each one twice) and every image in them. The tables and detailed values are in:
+
+- [[gameplay/reinforce-and-runes]]: rune upgrade materials (0920, = client `JewelSocketMake`), older rune crystal tables (0420 before/after), rune caps and fail-rate notes, gear failure penalty, tier-up Orange/Brilliant Passion table (0920), boss-set bonuses (0809, = client `SetBounsItem`), consumable changes (elixirs/flasks 0124 = client buffs).
+- [[gameplay/events-and-schedules]]: the 0712 and 1107 hour-by-hour schedules, match rewards and fame tables (0712, 0511), all weekend drop/medal events with dates, Double Event Field, fort/siege values, Fort Guardian drop list (0817), Shaia Blessing points (0809/1107), Shaia Legion donation tiers (1128), TP skill table (1018), gacha pools (1018), Crush Online ranks, prices and events.
+- [[gameplay/classes-and-legions]] §5: weapon, hero and class balance numbers per patch, and the Skeleton King's Vision Bow (0110, = client skills 5491–5494).
+
+Per-patch numbers not repeated in those pages:
+
+- **0328**: Dimensional Energy price cut to 2,000 gold (later 5,000 base again in the client); character creation wait 24 h → 1 h; decomposition and premium scroll gold prices lowered.
+- **0329**: tower and nexus attack/defence raised; tower range raised; NPC invasion chance raised; 3 repeatable Abyss quests at Athan; Abyss drop rate lowered; no item drops in the training ground.
+- **0402**: party bonus and kills only count on the same map; hero durability 24 → 240.
+- **0404**: weekly maintenance on Thursdays; cash top-up needs a minimum level; cash-mall items bind on pickup; Pyrotechnics sold for gold at Wren.
+- **0511**: Abyss made non-PK; new characters get beginner helmet, armour, gloves and shoes; Legion Core battleground summon.
+- **0615**: border-area unlock levels (0/20–27), see Dungeons above.
+- **0726**: daily-quest panel shown automatically above Lv 27; more jewels and fame from daily quests; returning-player reward package.
+- **0920**: monster drop chances on Gaia fields and in dungeons changed; boss-material drop rates from fort guardians and dungeon bosses raised; "cumulative fame" renamed **Contribution**.
+- **1107**: Nation Support Fund now needs Gaia field battles; sieges add to it; daily/weekly/monthly Monster Area Wars quests also count War of Warmonger.
+- **0110**: normal-rarity gear no longer bound (tradeable); repeatable quests moved to "Free Quests" on the quest board and mission quests to "War Quests" (Lv 30+). **0124** removed Free Quests from the board again.
+- **0124**: daily Kill Player gives a little EXP and gold; mana-draining toggle skills keep draining at full mana.
+
 ## Other sources
 
-- **guia-warmonger.blogspot.com** (Overdose, ES) — still online: pages como-empezar, dungeons, mejorar-tu-equipo, runas, alquimia, pvp-jcj, lista-armasarmaduras.
-- **warwiki.net** — dead; the Wayback Machine has its RSS feed (`https://web.archive.org/web/20181117140931/http://warwiki.net/feed/`) with the Currency and Maps/Farming articles.
+- **guia-warmonger.blogspot.com** (Overdose, ES) — still online. It has **10 static pages and no posts** (the posts feed is empty): warmonger-espanol, como-empezar, dungeons, mejorar-tu-equipo, runas, alquimia, pvp-jcj, lista-armasarmaduras, links-oficiales, ayudanos-mejorar. All were read and their ~22 images viewed. New numbers: jungle mobs 1,500 TP each, tower 500 TP, 3-player dungeon respawn 5 min then every 1 min, Dimensional Energy 5,500 gold; its dungeon cost table is the same image as WM 0726. Its gear-list page only links to warwiki's *normal-gear* article.
+- **warwiki.net** — dead and barely archived. The Wayback CDX for `warwiki.net/*` (and `www.`) lists about 70 captures: the homepage (2010–2018, the pre-2018 ones are an unrelated WordPress site), `/feed/`, `/comments/feed/` (empty) and theme files. **None of the ~35 article pages** (normal-gear, superior-gear, rare-gear, each slot, each weapon type, the three rune pages, upgrading/crafting, dungeons, fortress-management …) and none of the uploaded images were captured; all return 404 from the archive (checked Oct 2026). The only text left is the RSS feed (`https://web.archive.org/web/20181117140931/http://warwiki.net/feed/`, 10 items dated 22–30 Jul 2018), of which three have bodies: Currency, Maps and Farming Mechanics, Customising the Game. Their numbers are already in the wiki: Avenue of Spirit and Scattered Troops 3 bronze Time Energy + 5 Dimensional Energy, Gollam/Siren/Nas 10; safety −5 per abandoned war; respawn after 9 min in a party.
 - **Archived CO forum** — `https://web.archive.org/web/2016*/http://www.crush-game.com/forum/threads/*` (about 370 threads: patch notes, dungeon/boss lists, legions and forts, civil war, VIP).
 - **Steam discussions** — `https://steamcommunity.com/app/718790/discussions/` (440 topics, General only).
 - CO artifact EP/stat sheet (Google Sheets): https://docs.google.com/spreadsheets/d/1nDMzbRY59x-ZcVXyQ22yrkPLDhwprgPD7AVJpirYWUY
