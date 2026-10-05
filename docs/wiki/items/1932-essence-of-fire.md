@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Essence of Fire](wiki/assets/items/1932.png) |
 | **Item id** | `1932` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 6 |

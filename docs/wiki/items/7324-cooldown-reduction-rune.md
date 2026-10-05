@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![Cooldown Reduction Rune](wiki/assets/items/7324.png) |
 | **Item id** | `7324` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

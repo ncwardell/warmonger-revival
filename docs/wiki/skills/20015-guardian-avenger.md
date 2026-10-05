@@ -49,8 +49,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Dark Knight Skull, skill 4
-- Hero Dark Knight Skull, skill 4
+- Hero [[wiki/heroes/1-dark-knight-skull|Dark Knight Skull]], skill 4
+- Hero [[wiki/heroes/51-dark-knight-skull-crystal|Dark Knight Skull (Crystal)]], skill 4
 <!-- generated:end -->
 
 ## Notes

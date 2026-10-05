@@ -27,6 +27,7 @@ obtained_from:
 |  | ![The Tempest Fisher's Sealed Weapon](wiki/assets/items/2753.png) |
 | **Item id** | `2753` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_Item.png` cell 3 |

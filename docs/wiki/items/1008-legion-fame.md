@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Legion Fame](wiki/assets/items/1008.png) |
 | **Item id** | `1008` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 0 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 21 |

@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fame knight Helmet](wiki/assets/items/3501.png) |
 | **Item id** | `3501` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

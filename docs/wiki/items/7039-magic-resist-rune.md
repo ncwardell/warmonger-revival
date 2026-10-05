@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Magic Resist Rune](wiki/assets/items/7039.png) |
 | **Item id** | `7039` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

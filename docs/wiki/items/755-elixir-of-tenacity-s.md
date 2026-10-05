@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Elixir of Tenacity (S)](wiki/assets/items/755.png) |
 | **Item id** | `755` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 17 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 27) |
 | **On use: buff** | [[wiki/buffs/2128-elixir-of-tenacity-s-tenacity-40-life-steal-with-each-attack\|Elixir of Tenacity (S) : Tenacity +40, Life Steal with each attack +12]] |
 | **Icon** | `ui/icons/Items_03.png` cell 47 |

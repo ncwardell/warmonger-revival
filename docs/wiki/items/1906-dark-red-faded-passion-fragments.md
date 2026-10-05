@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Dark Red Faded Passion fragments](wiki/assets/items/1906.png) |
 | **Item id** | `1906` |
 | **Kind** | Normal (1) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 5 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 3 |

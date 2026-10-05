@@ -35,10 +35,12 @@ obtained_from:
 |  | ![Crystal : Tempest Fisher](wiki/assets/items/8507.png) |
 | **Item id** | `8507` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/58-tempest-fisher-crystal\|Tempest Fisher (Crystal)]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1,500 = the crystal's durability (−5 per second transformed, WM 1107) |
 | **Icon** | `ui/icons/Items_20.png` cell 47 |
 
 ### Other options

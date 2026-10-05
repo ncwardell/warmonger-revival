@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Burning water](wiki/assets/items/849.png) |
 | **Item id** | `849` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 43 |

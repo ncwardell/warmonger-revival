@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Fisher's Bracelet](wiki/assets/items/3027.png) |
 | **Item id** | `3027` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

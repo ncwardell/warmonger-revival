@@ -34,6 +34,7 @@ obtained_from: []
 |  | ![Scroll : Castle](wiki/assets/items/911.png) |
 | **Item id** | `911` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Cooldown** | 5 s (group 17) |

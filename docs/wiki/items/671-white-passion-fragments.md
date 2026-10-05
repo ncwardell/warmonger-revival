@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![White Passion Fragments](wiki/assets/items/671.png) |
 | **Item id** | `671` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 30 |

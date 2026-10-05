@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Armor of Life](wiki/assets/items/478.png) |
 | **Item id** | `478` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

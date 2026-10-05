@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Necklace of Rise](wiki/assets/items/441.png) |
 | **Item id** | `441` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 34 |

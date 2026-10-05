@@ -23,6 +23,7 @@ obtained_from: []
 |---|---|
 | **Item id** | `904` |
 | **Kind** | Exp Box (47) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Artifacts_01.png` cell 17 |

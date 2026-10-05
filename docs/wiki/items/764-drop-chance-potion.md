@@ -31,6 +31,7 @@ obtained_from:
 |  | ![Drop Chance Potion](wiki/assets/items/764.png) |
 | **Item id** | `764` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

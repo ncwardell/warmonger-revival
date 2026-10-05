@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![Mana Regeneration Rune](wiki/assets/items/7259.png) |
 | **Item id** | `7259` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

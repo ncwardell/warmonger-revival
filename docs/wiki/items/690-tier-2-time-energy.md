@@ -33,6 +33,7 @@ obtained_from:
 |  | ![Tier 2 : Time energy](wiki/assets/items/690.png) |
 | **Item id** | `690` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1 Silver Medal |

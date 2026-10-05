@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Box of the Arena Help](wiki/assets/items/1050.png) |
 | **Item id** | `1050` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,000 Gold |

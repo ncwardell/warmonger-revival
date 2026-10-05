@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Fame warrior Shoes](wiki/assets/items/3514.png) |
 | **Item id** | `3514` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Komodo's Belt](wiki/assets/items/3036.png) |
 | **Item id** | `3036` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

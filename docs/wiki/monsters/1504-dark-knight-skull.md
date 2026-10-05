@@ -30,7 +30,7 @@ spawn_fields: [128]
 | **Class mask** | 1 (monster) |
 | **Model** | ObjectList `48` MOB_Seleton King_02 (`character/npc/monster/mob_seleton king/mob_seleton king_02.mo`) |
 | **Scale** | 2.5 (second scale / radius 1) |
-| **Hero transform** | Dark Knight Skull |
+| **Hero transform** | [[wiki/heroes/1-dark-knight-skull\|Dark Knight Skull]] |
 | **Boss of** | [[wiki/dungeons/128-lv-2-skull-cemetery\|(Lv 2) Skull Cemetery]] |
 
 ### Server stats

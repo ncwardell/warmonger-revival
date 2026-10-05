@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Tome of Critical (A)](wiki/assets/items/726.png) |
 | **Item id** | `726` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 13 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 26) |
 | **On use: buff** | [[wiki/buffs/2099-scroll-of-critical-strikes-a-critical-strike-15\|Scroll of Critical Strikes (A) : Critical Strike +15%]] |
 | **Icon** | `ui/icons/Items_30.png` cell 16 |

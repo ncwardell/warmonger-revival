@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Ability Power Rune](wiki/assets/items/7017.png) |
 | **Item id** | `7017` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

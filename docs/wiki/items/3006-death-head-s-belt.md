@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Death Head's Belt](wiki/assets/items/3006.png) |
 | **Item id** | `3006` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

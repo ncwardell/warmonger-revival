@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Battle Arena Scroll](wiki/assets/items/910.png) |
 | **Item id** | `910` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Cooldown** | 3 s (group 17) |

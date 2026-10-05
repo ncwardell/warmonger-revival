@@ -25,6 +25,7 @@ obtained_from:
 |  | ![B Rank Quest](wiki/assets/items/1302.png) |
 | **Item id** | `1302` |
 | **Kind** | Quest precept (44) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 50,000 Gold |

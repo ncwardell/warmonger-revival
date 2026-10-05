@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Costume Remover](wiki/assets/items/1999.png) |
 | **Item id** | `1999` |
 | **Kind** | Dye (45) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 50,000 Gold |

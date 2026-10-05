@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Horn of Komodo](wiki/assets/items/2704.png) |
 | **Item id** | `2704` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 3 |

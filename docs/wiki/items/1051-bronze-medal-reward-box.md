@@ -27,6 +27,7 @@ obtained_from:
 |  | ![(Bronze) Medal Reward Box](wiki/assets/items/1051.png) |
 | **Item id** | `1051` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 4 Bronze Medal |

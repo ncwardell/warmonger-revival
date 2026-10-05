@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Necklace of Mediation](wiki/assets/items/453.png) |
 | **Item id** | `453` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

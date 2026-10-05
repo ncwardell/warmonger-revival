@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Box of the Participant I](wiki/assets/items/1045.png) |
 | **Item id** | `1045` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 7 Arena Medal |

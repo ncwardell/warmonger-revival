@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Black Chepa Fur](wiki/assets/items/2653.png) |
 | **Item id** | `2653` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 20 Gold |

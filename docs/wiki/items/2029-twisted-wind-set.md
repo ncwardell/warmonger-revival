@@ -33,10 +33,12 @@ obtained_from:
 |  | ![Twisted Wind Set](wiki/assets/items/2029.png) |
 | **Item id** | `2029` |
 | **Kind** | Costume (32) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
+| **Costume set** | [[wiki/costumes/2027-twisted-wind-set\|Twisted Wind Set]] |
 | **Bind** | on pickup |
 | **Buy price** | 50 Bronze Medal |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 23 |
 
 ### Stats

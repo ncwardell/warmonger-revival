@@ -34,11 +34,13 @@ obtained_from:
 |  | ![Crystal : Sarasvati](wiki/assets/items/8503.png) |
 | **Item id** | `8503` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/54-sarasvati-crystal\|Sarasvati (Crystal)]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Rarity (guessed column)** | 2 |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1,500 = the crystal's durability (−5 per second transformed, WM 1107) |
 | **Icon** | `ui/icons/Items_20.png` cell 43 |
 
 ### Other options

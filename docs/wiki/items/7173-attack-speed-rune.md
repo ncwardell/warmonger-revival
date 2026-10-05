@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Attack Speed(%) Rune](wiki/assets/items/7173.png) |
 | **Item id** | `7173` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

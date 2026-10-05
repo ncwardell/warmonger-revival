@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Teleport](wiki/assets/items/50000.png) |
 | **Item id** | `50000` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **On use: skill** | [[wiki/skills/800-rune-of-teleportation\|Rune of Teleportation]] |

@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Skull's Armor](wiki/assets/items/3012.png) |
 | **Item id** | `3012` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

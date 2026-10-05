@@ -32,9 +32,11 @@ obtained_from:
 |  | ![Athletics Set](wiki/assets/items/2033.png) |
 | **Item id** | `2033` |
 | **Kind** | Costume (32) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
+| **Costume set** | [[wiki/costumes/2033-athletics-set\|Athletics Set]] |
 | **Bind** | on pickup |
-| **Period** | 2160 (unit unknown; costume duration) |
+| **Period** | 2,160 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 27 |
 
 ### Stats

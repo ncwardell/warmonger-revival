@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Fragment of Grabie](wiki/assets/items/1600.png) |
 | **Item id** | `1600` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 60 |

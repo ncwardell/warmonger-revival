@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fisher's Helmet](wiki/assets/items/3021.png) |
 | **Item id** | `3021` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

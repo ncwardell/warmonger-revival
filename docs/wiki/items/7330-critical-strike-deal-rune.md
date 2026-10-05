@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![Critical Strike Deal Rune](wiki/assets/items/7330.png) |
 | **Item id** | `7330` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Spector's Shoes](wiki/assets/items/3044.png) |
 | **Item id** | `3044` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

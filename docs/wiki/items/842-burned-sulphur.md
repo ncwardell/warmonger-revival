@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Burned sulphur](wiki/assets/items/842.png) |
 | **Item id** | `842` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 36 |

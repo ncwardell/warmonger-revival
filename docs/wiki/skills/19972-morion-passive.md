@@ -64,16 +64,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Morion, skill 6
-- Hero Morion, skill 7
-- Hero Morion, skill 8
-- Hero Morion, skill 9
-- Hero Morion, skill 10
-- Hero Morion, skill 6
-- Hero Morion, skill 7
-- Hero Morion, skill 8
-- Hero Morion, skill 9
-- Hero Morion, skill 10
+- Hero [[wiki/heroes/6-morion|Morion]], skill 6
+- Hero [[wiki/heroes/6-morion|Morion]], skill 7
+- Hero [[wiki/heroes/6-morion|Morion]], skill 8
+- Hero [[wiki/heroes/6-morion|Morion]], skill 9
+- Hero [[wiki/heroes/6-morion|Morion]], skill 10
+- Hero [[wiki/heroes/56-morion-crystal|Morion (Crystal)]], skill 6
+- Hero [[wiki/heroes/56-morion-crystal|Morion (Crystal)]], skill 7
+- Hero [[wiki/heroes/56-morion-crystal|Morion (Crystal)]], skill 8
+- Hero [[wiki/heroes/56-morion-crystal|Morion (Crystal)]], skill 9
+- Hero [[wiki/heroes/56-morion-crystal|Morion (Crystal)]], skill 10
 <!-- generated:end -->
 
 ## Notes

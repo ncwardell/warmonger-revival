@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Komodo's Helmet](wiki/assets/items/3031.png) |
 | **Item id** | `3031` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

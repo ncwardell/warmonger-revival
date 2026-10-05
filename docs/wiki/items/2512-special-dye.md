@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Special Dye](wiki/assets/items/2512.png) |
 | **Item id** | `2512` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 200 Gold |

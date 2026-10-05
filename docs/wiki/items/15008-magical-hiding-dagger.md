@@ -34,7 +34,8 @@ obtained_from:
 |  | ![Magical hiding Dagger](wiki/assets/items/15008.png) |
 | **Item id** | `15008` |
 | **Kind** | Weapon (31) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/weapons-punisher\|Punisher weapons]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_PCM_01.dds` cell 18 |

@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Garon's Gloves](wiki/assets/items/3053.png) |
 | **Item id** | `3053` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

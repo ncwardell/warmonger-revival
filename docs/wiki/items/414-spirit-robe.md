@@ -50,6 +50,7 @@ obtained_from:
 |  | ![Spirit Robe](wiki/assets/items/414.png) |
 | **Item id** | `414` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 53 |

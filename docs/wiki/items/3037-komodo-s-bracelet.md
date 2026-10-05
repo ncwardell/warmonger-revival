@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Komodo's Bracelet](wiki/assets/items/3037.png) |
 | **Item id** | `3037` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

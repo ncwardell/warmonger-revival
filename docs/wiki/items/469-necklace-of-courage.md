@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Necklace of Courage](wiki/assets/items/469.png) |
 | **Item id** | `469` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

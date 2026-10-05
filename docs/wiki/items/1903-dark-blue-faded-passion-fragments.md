@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Dark blue Faded Passion fragments](wiki/assets/items/1903.png) |
 | **Item id** | `1903` |
 | **Kind** | Normal (1) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 0 |

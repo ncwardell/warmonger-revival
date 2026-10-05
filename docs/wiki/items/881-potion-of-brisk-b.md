@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Potion of Brisk (B)](wiki/assets/items/881.png) |
 | **Item id** | `881` |
 | **Kind** | ? (42) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 1 Silver Medal |
 | **Cooldown** | 1 s (group 29) |

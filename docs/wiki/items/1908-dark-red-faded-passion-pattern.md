@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Dark Red Faded Passion Pattern](wiki/assets/items/1908.png) |
 | **Item id** | `1908` |
 | **Kind** | Normal (1) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 5 |

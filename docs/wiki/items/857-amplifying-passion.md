@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Amplifying Passion](wiki/assets/items/857.png) |
 | **Item id** | `857` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 5 Gold Medal |

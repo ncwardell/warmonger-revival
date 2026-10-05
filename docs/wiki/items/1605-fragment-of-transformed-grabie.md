@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Fragment of Transformed Grabie](wiki/assets/items/1605.png) |
 | **Item id** | `1605` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_15.png` cell 0 |

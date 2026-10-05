@@ -27,6 +27,7 @@ obtained_from:
 |  | ![DeathHead Horn](wiki/assets/items/2701.png) |
 | **Item id** | `2701` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 0 |

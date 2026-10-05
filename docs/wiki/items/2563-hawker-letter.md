@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Hawker letter](wiki/assets/items/2563.png) |
 | **Item id** | `2563` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Borage](wiki/assets/items/826.png) |
 | **Item id** | `826` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 24 |

@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Ring of Courage](wiki/assets/items/440.png) |
 | **Item id** | `440` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 36 |

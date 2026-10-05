@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Violet Passion Piece (B)](wiki/assets/items/636.png) |
 | **Item id** | `636` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 17 |

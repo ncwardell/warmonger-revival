@@ -34,6 +34,7 @@ obtained_from:
 |  | ![Tier 1 : Time energy](wiki/assets/items/689.png) |
 | **Item id** | `689` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1 Bronze Medal |

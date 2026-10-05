@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Elite Fisher's Scales](wiki/assets/items/2576.png) |
 | **Item id** | `2576` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

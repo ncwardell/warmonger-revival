@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Green Hair Dye](wiki/assets/items/2306.png) |
 | **Item id** | `2306` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

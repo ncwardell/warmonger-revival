@@ -57,7 +57,7 @@ board:
 ### Objectives
 
 1. Talk to [[wiki/npcs/200-freya|Freya]] (dialogue 915) — tracker: “Go to Freya” — on [[wiki/fields/120-fortress|Fortress]] (120)
-2. Kill Warrior (Male) × 3 — tracker: “Nexus Destruction from PvP (0/3)”
+2. Kill [[wiki/classes/5-guardian|Guardian]] × 3 — tracker: “Nexus Destruction from PvP (0/3)”
 5. Report (tracker line; done by turning the quest in) — tracker: “Talk to Freya” — on [[wiki/fields/120-fortress|Fortress]] (120)
 
 Stages (`flag1..5` = [1, 5, 5, 5, 5]): objectives unlock in steps; with the first unfinished objective *i*, objectives 1..flag*i* are active (contract/quests.yaml).

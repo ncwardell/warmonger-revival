@@ -33,7 +33,9 @@ obtained_from:
 |  | ![Morion](wiki/assets/items/8005.png) |
 | **Item id** | `8005` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/6-morion\|Morion]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Rarity (guessed column)** | 1 |

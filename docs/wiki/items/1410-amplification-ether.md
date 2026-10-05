@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Amplification Ether](wiki/assets/items/1410.png) |
 | **Item id** | `1410` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Policy.png` cell 44 |

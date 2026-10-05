@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Box of the Victorious I](wiki/assets/items/1035.png) |
 | **Item id** | `1035` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 5 Arena Medal |

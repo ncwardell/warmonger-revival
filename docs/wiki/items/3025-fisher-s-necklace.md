@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Fisher's Necklace](wiki/assets/items/3025.png) |
 | **Item id** | `3025` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

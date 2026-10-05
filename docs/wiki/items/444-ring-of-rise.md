@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Ring of Rise](wiki/assets/items/444.png) |
 | **Item id** | `444` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 13 |

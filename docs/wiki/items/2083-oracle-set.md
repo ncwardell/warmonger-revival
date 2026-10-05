@@ -33,10 +33,12 @@ obtained_from:
 |  | ![Oracle Set](wiki/assets/items/2083.png) |
 | **Item id** | `2083` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2021-oracle-set\|Oracle Set]] |
 | **Bind** | on pickup |
 | **Buy price** | 30 Bronze Medal |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 16 |
 
 ### Stats

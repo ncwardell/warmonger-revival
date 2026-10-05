@@ -50,7 +50,7 @@ complete_talk: 720
 
 ### Objectives
 
-1. Kill Warrior (Male) × 3 — tracker: “Nexus Destruction from PvP (0/3)”
+1. Kill [[wiki/classes/5-guardian|Guardian]] × 3 — tracker: “Nexus Destruction from PvP (0/3)”
 5. Report (tracker line; done by turning the quest in) — tracker: “Talk to Freya”
 
 ### Rewards

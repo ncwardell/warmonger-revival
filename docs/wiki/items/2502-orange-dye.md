@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Orange Dye](wiki/assets/items/2502.png) |
 | **Item id** | `2502` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 106 Gold |

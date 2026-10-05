@@ -50,6 +50,7 @@ obtained_from:
 |  | ![Spell Ring](wiki/assets/items/400.png) |
 | **Item id** | `400` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 110 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 27 |

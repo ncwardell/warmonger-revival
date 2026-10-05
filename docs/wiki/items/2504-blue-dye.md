@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Blue Dye](wiki/assets/items/2504.png) |
 | **Item id** | `2504` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 98 Gold |

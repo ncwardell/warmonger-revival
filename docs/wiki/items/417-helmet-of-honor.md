@@ -50,6 +50,7 @@ obtained_from:
 |  | ![Helmet of Honor](wiki/assets/items/417.png) |
 | **Item id** | `417` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 39 |

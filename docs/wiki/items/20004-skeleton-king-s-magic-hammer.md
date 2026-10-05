@@ -36,7 +36,8 @@ obtained_from:
 |  | ![Skeleton King's Magic Hammer](wiki/assets/items/20004.png) |
 | **Item id** | `20004` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

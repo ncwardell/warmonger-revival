@@ -32,6 +32,7 @@ obtained_from:
 |  | ![Scroll of Transform : (Slime)](wiki/assets/items/762.png) |
 | **Item id** | `762` |
 | **Kind** | Spell Reinforcement Stone (19) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 1,000 Gold |
 | **Cooldown** | 2 s (group 27) |

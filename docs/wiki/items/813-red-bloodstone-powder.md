@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Red bloodstone powder](wiki/assets/items/813.png) |
 | **Item id** | `813` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 2 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 21 |

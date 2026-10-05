@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Gem stone : Black](wiki/assets/items/696.png) |
 | **Item id** | `696` |
 | **Kind** | Jewel (58) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Buy price** | 800 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 9 |

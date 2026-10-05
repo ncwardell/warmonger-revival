@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Strong Resistance](wiki/assets/items/2901.png) |
 | **Item id** | `2901` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10,000 Gold (+10%) |
 | **Cooldown** | 90 s (group 13) |

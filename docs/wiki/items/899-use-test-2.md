@@ -35,6 +35,7 @@ obtained_from: []
 |---|---|
 | **Item id** | `899` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Buy price** | 300 Gold |
 | **Cooldown** | 60 s (group 3) |

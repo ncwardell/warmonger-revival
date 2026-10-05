@@ -36,9 +36,10 @@ obtained_from:
 |  | ![Flask of Mana (B)](wiki/assets/items/741.png) |
 | **Item id** | `741` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 11 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 28) |
 | **On use: buff** | [[wiki/buffs/2114-flask-of-mana-b-mana-regeneration-4-maximum-mana-100\|Flask of Mana (B) : Mana Regeneration +4, Maximum Mana +100]] |
 | **Icon** | `ui/icons/Items_30.png` cell 26 |

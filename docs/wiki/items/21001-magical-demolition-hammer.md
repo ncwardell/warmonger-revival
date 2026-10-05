@@ -36,7 +36,8 @@ obtained_from:
 |  | ![Magical Demolition Hammer](wiki/assets/items/21001.png) |
 | **Item id** | `21001` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

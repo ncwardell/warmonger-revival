@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Spirit of Gaia Box](wiki/assets/items/1023.png) |
 | **Item id** | `1023` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,000 Gold |

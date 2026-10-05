@@ -34,6 +34,7 @@ obtained_from:
 |  | ![Health Mana Potion (A)](wiki/assets/items/896.png) |
 | **Item id** | `896` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 151 Gold |
 | **Cooldown** | 15 s (group 3) |

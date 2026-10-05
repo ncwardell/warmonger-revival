@@ -49,8 +49,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Sarasvati, skill 3
-- Hero Sarasvati, skill 3
+- Hero [[wiki/heroes/4-sarasvati|Sarasvati]], skill 3
+- Hero [[wiki/heroes/54-sarasvati-crystal|Sarasvati (Crystal)]], skill 3
 <!-- generated:end -->
 
 ## Notes

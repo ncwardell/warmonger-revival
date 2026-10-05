@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Shaia Stone](wiki/assets/items/1012.png) |
 | **Item id** | `1012` |
 | **Kind** | Exp Box (47) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

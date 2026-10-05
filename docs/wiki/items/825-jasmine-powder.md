@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Jasmine powder](wiki/assets/items/825.png) |
 | **Item id** | `825` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 2 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 29 |

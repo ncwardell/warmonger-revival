@@ -32,6 +32,7 @@ obtained_from:
 |  | ![Scroll of Transform : (Golem)](wiki/assets/items/760.png) |
 | **Item id** | `760` |
 | **Kind** | Spell Reinforcement Stone (19) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 1,000 Gold |
 | **Cooldown** | 2 s (group 27) |

@@ -30,7 +30,9 @@ obtained_from:
 |  | ![Christmas Set](wiki/assets/items/2087.png) |
 | **Item id** | `2087` |
 | **Kind** | Costume (32) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
+| **Costume set** | [[wiki/costumes/2046-christmas-set\|Christmas Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 41 |
 

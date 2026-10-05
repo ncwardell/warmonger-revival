@@ -30,7 +30,9 @@ obtained_from:
 |  | ![Christmas Set](wiki/assets/items/2085.png) |
 | **Item id** | `2085` |
 | **Kind** | Costume (32) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
+| **Costume set** | [[wiki/costumes/2046-christmas-set\|Christmas Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 43 |
 

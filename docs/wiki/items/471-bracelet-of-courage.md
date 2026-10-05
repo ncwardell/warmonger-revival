@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Bracelet of Courage](wiki/assets/items/471.png) |
 | **Item id** | `471` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

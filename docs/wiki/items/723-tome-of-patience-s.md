@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Tome of Patience (S)](wiki/assets/items/723.png) |
 | **Item id** | `723` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 21 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 26) |
 | **On use: buff** | [[wiki/buffs/2096-scroll-of-reduced-area-damage-s-supreme-protection-from-area\|Scroll of Reduced Area Damage (S) : Supreme protection from Area Damage.]] |
 | **Icon** | `ui/icons/Items_30.png` cell 19 |

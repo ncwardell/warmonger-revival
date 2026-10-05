@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Bandolier Bracelet](wiki/assets/items/463.png) |
 | **Item id** | `463` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

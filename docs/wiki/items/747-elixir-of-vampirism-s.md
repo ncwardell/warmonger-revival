@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Elixir of Vampirism (S)](wiki/assets/items/747.png) |
 | **Item id** | `747` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 21 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 27) |
 | **On use: buff** | [[wiki/buffs/2120-elixir-of-vampirism-s-12-life-steal-with-each-attack-maximum\|Elixir of Vampirism (S) : 12 Life Steal with each attack. Maximum Health +400]] |
 | **Icon** | `ui/icons/Items_03.png` cell 35 |

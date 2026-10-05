@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fame warrior Ring](wiki/assets/items/3518.png) |
 | **Item id** | `3518` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

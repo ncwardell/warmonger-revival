@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Medal : Mithril](wiki/assets/items/999.png) |
 | **Item id** | `999` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 45 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 20 |

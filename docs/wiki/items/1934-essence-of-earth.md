@@ -34,6 +34,7 @@ obtained_from:
 |  | ![Essence of Earth](wiki/assets/items/1934.png) |
 | **Item id** | `1934` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 3 |

@@ -50,6 +50,7 @@ obtained_from:
 |  | ![Armor of Life](wiki/assets/items/402.png) |
 | **Item id** | `402` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 13 |

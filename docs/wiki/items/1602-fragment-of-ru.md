@@ -25,6 +25,7 @@ obtained_from: []
 |  | ![Fragment of Ru](wiki/assets/items/1602.png) |
 | **Item id** | `1602` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 57 |

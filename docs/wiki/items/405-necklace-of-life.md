@@ -49,6 +49,7 @@ obtained_from:
 |  | ![Necklace of Life](wiki/assets/items/405.png) |
 | **Item id** | `405` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 32 |

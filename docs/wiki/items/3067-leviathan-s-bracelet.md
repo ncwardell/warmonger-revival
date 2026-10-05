@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Leviathan's Bracelet](wiki/assets/items/3067.png) |
 | **Item id** | `3067` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

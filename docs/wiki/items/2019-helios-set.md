@@ -33,10 +33,12 @@ obtained_from:
 |  | ![Helios Set](wiki/assets/items/2019.png) |
 | **Item id** | `2019` |
 | **Kind** | Costume (32) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
+| **Costume set** | [[wiki/costumes/2018-helios-set\|Helios Set]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold Medal |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 13 |
 
 ### Stats

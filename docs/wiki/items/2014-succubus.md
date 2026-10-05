@@ -31,10 +31,12 @@ obtained_from: []
 |  | ![Succubus](wiki/assets/items/2014.png) |
 | **Item id** | `2014` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2004-succubus\|Succubus]] |
 | **Bind** | on pickup |
 | **Buy price** | 5,000 Gold |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 8 |
 
 ### Other options

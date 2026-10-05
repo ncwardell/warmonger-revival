@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Guardian Helmet](wiki/assets/items/481.png) |
 | **Item id** | `481` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

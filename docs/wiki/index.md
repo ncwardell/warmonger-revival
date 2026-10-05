@@ -6,7 +6,7 @@ title: "Game wiki"
 
 # Game wiki
 
-One page per thing in the game: every item, skill, buff, monster, NPC, quest, shop, map and dungeon. The pages are the **source of truth the server is built from**: the structured part at the top of each page (front matter) is what the server loads.
+One page per thing in the game: every item, skill, buff, monster, NPC, quest, shop, map and dungeon, plus the classes, hero forms, costumes, masteries, achievements and fame ranks. The pages are the **source of truth the server is built from**: the structured part at the top of each page (front matter) is what the server loads.
 
 Every page starts from the original client's own data (names, stats, prices, quest texts, icons) and is then filled in by hand. Values the client never had (monster HP, drop rates, damage formulas, where NPCs stand) are what is still missing.
 
@@ -22,12 +22,20 @@ Every page starts from the original client's own data (names, stats, prices, que
 | [[wiki/fields/index\|Fields (maps)]] | 138 | 9 | 69 | 60 |
 | [[wiki/zones/index\|Zones]] | 153 | 137 | 1 | 15 |
 | [[wiki/dungeons/index\|Dungeons]] | 15 | 9 | 6 | 0 |
+| [[wiki/classes/index\|Classes]] | 4 | 1 | 0 | 3 |
+| [[wiki/heroes/index\|Heroes]] | 22 | 8 | 0 | 14 |
+| [[wiki/costumes/index\|Costumes]] | 20 | 17 | 0 | 3 |
+| [[wiki/masteries/index\|Masteries]] | 120 | 42 | 0 | 78 |
+| [[wiki/achievements/index\|Achievements]] | 32 | 0 | 0 | 32 |
+| [[wiki/fame-ranks/index\|Fame ranks]] | 20 | 19 | 0 | 1 |
 | [[wiki/boxes/index\|Random boxes]] | 40 | 0 | 15 | 25 |
 | [[wiki/gacha/index\|Gacha pools]] | 7 | 0 | 7 | 0 |
 | [[wiki/nodes/index\|Nodes]] | 123 | 19 | 12 | 92 |
 | [[wiki/recipes/index\|Recipes]] | 465 | 435 | 30 | 0 |
 | [[wiki/upgrades/index\|Upgrades]] | 102 | 0 | 102 | 0 |
-| **total** | 4647 | 2741 | 545 | 1361 |
+| **total** | 4865 | 2828 | 545 | 1492 |
+
+**Item categories:** [[wiki/items/weapons-saint\|Saint weapons]] · [[wiki/items/weapons-punisher\|Punisher weapons]] · [[wiki/items/weapons-guardian\|Guardian weapons]] · [[wiki/items/armor-helmet\|Helmets]] · [[wiki/items/armor-body\|Body armour]] · [[wiki/items/armor-gloves\|Gloves]] · [[wiki/items/armor-shoes\|Shoes]] · [[wiki/items/accessories\|Accessories]] · [[wiki/items/runes\|Runes and gem stones]] · [[wiki/items/costume-items\|Costume items]] · [[wiki/items/hero-items\|Innocence (hero) items]] · [[wiki/items/consumables\|Consumables]] · [[wiki/items/materials\|Materials]] · [[wiki/items/quest-items\|Quest items]] · [[wiki/items/boxes-and-packages\|Boxes and packages]] · [[wiki/items/other-items\|Other items]]
 
 **complete** = every field the server needs has a value (from the client data or added by hand); **partial** = fields are still missing but someone has added to the page; **stub** = fields are missing and the page holds only what the client data gives.
 

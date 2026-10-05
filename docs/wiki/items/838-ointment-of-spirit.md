@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Ointment of Spirit](wiki/assets/items/838.png) |
 | **Item id** | `838` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 32 |

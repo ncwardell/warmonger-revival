@@ -32,7 +32,7 @@ spawn_fields: [122]
 | **Model** | ObjectList `70` MOB_fisher Boss_01 (`character/npc/monster/mob_fisher/mob_fisher boss_01.mo`) |
 | **Scale** | 1 (second scale / radius 1) |
 | **Projectile?** | `u32@bc` = 774 (archers carry one; meaning *inferred*) |
-| **Hero transform** | Tempest Fisher |
+| **Hero transform** | [[wiki/heroes/8-tempest-fisher\|Tempest Fisher]] |
 | **Boss of** | [[wiki/dungeons/122-lv-3-tsunami-lake\|(Lv 3) Tsunami Lake]] |
 
 ### Server stats

@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Half-innocence](wiki/assets/items/2583.png) |
 | **Item id** | `2583` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

@@ -32,6 +32,7 @@ obtained_from:
 |  | ![Scroll of Transform : (Demon)](wiki/assets/items/761.png) |
 | **Item id** | `761` |
 | **Kind** | Spell Reinforcement Stone (19) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 1,000 Gold |
 | **Cooldown** | 2 s (group 27) |

@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Highland wool](wiki/assets/items/843.png) |
 | **Item id** | `843` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 37 |

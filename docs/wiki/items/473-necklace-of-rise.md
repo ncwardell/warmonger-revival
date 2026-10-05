@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Necklace of Rise](wiki/assets/items/473.png) |
 | **Item id** | `473` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

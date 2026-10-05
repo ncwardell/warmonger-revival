@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![Magic resist Penetration(%) Rune](wiki/assets/items/7278.png) |
 | **Item id** | `7278` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

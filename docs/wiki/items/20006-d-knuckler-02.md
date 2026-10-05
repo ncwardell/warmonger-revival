@@ -33,7 +33,8 @@ obtained_from: []
 |  | ![D-KnuckleR-02](wiki/assets/items/20006.png) |
 | **Item id** | `20006` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_01.png` cell 30 |

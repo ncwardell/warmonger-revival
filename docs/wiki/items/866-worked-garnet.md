@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Worked Garnet](wiki/assets/items/866.png) |
 | **Item id** | `866` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 90 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 15 |

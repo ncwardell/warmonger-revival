@@ -48,6 +48,7 @@ obtained_from:
 |  | ![Barrier Ring](wiki/assets/items/436.png) |
 | **Item id** | `436` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 8 |

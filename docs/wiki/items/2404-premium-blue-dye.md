@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium Blue Dye](wiki/assets/items/2404.png) |
 | **Item id** | `2404` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 98 Gold |

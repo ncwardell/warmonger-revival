@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fame warrior Armor](wiki/assets/items/3512.png) |
 | **Item id** | `3512` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

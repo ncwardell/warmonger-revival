@@ -25,6 +25,7 @@ obtained_from:
 |  | ![D Rank Quest](wiki/assets/items/1202.png) |
 | **Item id** | `1202` |
 | **Kind** | Quest precept (44) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10,000 Gold |

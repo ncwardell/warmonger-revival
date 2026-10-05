@@ -29,6 +29,7 @@ obtained_from: []
 |  | ![Teleport](wiki/assets/items/902.png) |
 | **Item id** | `902` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **On use: skill** | [[wiki/skills/800-rune-of-teleportation\|Rune of Teleportation]] |

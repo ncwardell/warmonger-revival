@@ -25,6 +25,7 @@ obtained_from: []
 |  | ![Reinforcing the Guardian](wiki/assets/items/1607.png) |
 | **Item id** | `1607` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Policy.png` cell 8 |

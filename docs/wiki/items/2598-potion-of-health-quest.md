@@ -34,6 +34,7 @@ obtained_from:
 |  | ![Potion of Health (Quest)](wiki/assets/items/2598.png) |
 | **Item id** | `2598` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 135 Gold |
 | **Cooldown** | 15 s (group 1) |

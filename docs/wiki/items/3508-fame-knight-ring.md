@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Fame knight Ring](wiki/assets/items/3508.png) |
 | **Item id** | `3508` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

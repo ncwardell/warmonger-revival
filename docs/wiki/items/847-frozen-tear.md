@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Frozen tear](wiki/assets/items/847.png) |
 | **Item id** | `847` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 41 |

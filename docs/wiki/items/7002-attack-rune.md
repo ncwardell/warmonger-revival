@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Attack Rune](wiki/assets/items/7002.png) |
 | **Item id** | `7002` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Flask of Devour (C)](wiki/assets/items/748.png) |
 | **Item id** | `748` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 60 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 28) |
 | **On use: buff** | [[wiki/buffs/2121-flask-of-devour-c-2-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (C) : 2 Mana Steal with each attack. Maximum Mana +50]] |
 | **Icon** | `ui/icons/Items_30.png` cell 24 |

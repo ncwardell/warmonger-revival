@@ -35,6 +35,7 @@ obtained_from:
 |  | ![White Hair Dye](wiki/assets/items/2305.png) |
 | **Item id** | `2305` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 98 Gold |

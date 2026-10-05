@@ -29,6 +29,7 @@ obtained_from: []
 |  | ![TP Charge bead](wiki/assets/items/879.png) |
 | **Item id** | `879` |
 | **Kind** | TP Acquirement (22) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10,000 Gold |
 | **Cooldown** | 300 s (group -) |

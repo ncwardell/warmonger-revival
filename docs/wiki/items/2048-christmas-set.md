@@ -31,9 +31,11 @@ obtained_from:
 |  | ![Christmas Set](wiki/assets/items/2048.png) |
 | **Item id** | `2048` |
 | **Kind** | Costume (32) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
+| **Costume set** | [[wiki/costumes/2046-christmas-set\|Christmas Set]] |
 | **Bind** | on pickup |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 41 |
 
 ### Stats

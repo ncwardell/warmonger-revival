@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Mysterious Passion](wiki/assets/items/855.png) |
 | **Item id** | `855` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 5 Bronze Medal |

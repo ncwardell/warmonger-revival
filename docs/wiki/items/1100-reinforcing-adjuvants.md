@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Reinforcing adjuvants](wiki/assets/items/1100.png) |
 | **Item id** | `1100` |
 | **Kind** | Reinforcement adjuvants (20) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1 currency 16 (unknown) |

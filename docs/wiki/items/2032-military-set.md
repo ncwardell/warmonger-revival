@@ -33,9 +33,11 @@ obtained_from:
 |  | ![Military Set](wiki/assets/items/2032.png) |
 | **Item id** | `2032` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2030-military-set\|Military Set]] |
 | **Bind** | on pickup |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 26 |
 
 ### Stats

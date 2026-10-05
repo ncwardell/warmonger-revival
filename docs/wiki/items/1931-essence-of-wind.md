@@ -34,6 +34,7 @@ obtained_from:
 |  | ![Essence of Wind](wiki/assets/items/1931.png) |
 | **Item id** | `1931` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 35 |

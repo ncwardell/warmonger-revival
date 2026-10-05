@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Create a Portal](wiki/assets/items/1406.png) |
 | **Item id** | `1406` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Policy_01.png` cell 42 |

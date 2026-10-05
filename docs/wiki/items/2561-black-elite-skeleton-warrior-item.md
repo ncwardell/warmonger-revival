@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Black Elite Skeleton Warrior Item](wiki/assets/items/2561.png) |
 | **Item id** | `2561` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 20 Gold |

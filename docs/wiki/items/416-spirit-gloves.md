@@ -50,6 +50,7 @@ obtained_from:
 |  | ![Spirit Gloves](wiki/assets/items/416.png) |
 | **Item id** | `416` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 54 |

@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Essence of Light](wiki/assets/items/1935.png) |
 | **Item id** | `1935` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 4 |

@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Piece : Guardian](wiki/assets/items/9001.png) |
 | **Item id** | `9001` |
 | **Kind** | Innocence Piece (36) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

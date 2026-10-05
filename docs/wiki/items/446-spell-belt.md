@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Spell Belt](wiki/assets/items/446.png) |
 | **Item id** | `446` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Spirit Gloves](wiki/assets/items/488.png) |
 | **Item id** | `488` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

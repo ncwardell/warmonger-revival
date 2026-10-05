@@ -47,6 +47,7 @@ obtained_from:
 |  | ![Bandolier Bracelet](wiki/assets/items/431.png) |
 | **Item id** | `431` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 62 |

@@ -96,6 +96,7 @@ obtained_from:
 |  | ![Gem Stone : Blue](wiki/assets/items/693.png) |
 | **Item id** | `693` |
 | **Kind** | Jewel (58) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Buy price** | 0 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 6 |

@@ -33,10 +33,12 @@ obtained_from:
 |  | ![Helios Set](wiki/assets/items/2018.png) |
 | **Item id** | `2018` |
 | **Kind** | Costume (32) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
+| **Costume set** | [[wiki/costumes/2018-helios-set\|Helios Set]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold Medal |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 12 |
 
 ### Stats

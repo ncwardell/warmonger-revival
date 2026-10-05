@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fisher's Gloves](wiki/assets/items/3023.png) |
 | **Item id** | `3023` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

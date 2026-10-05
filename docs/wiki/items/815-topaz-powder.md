@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Topaz powder](wiki/assets/items/815.png) |
 | **Item id** | `815` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 3 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 26 |

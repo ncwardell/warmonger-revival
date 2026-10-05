@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Spirit Shoes](wiki/assets/items/487.png) |
 | **Item id** | `487` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

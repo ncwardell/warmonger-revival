@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Red Passion Fragments (A)](wiki/assets/items/617.png) |
 | **Item id** | `617` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 19 |

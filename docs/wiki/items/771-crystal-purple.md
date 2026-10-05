@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Crystal : Purple](wiki/assets/items/771.png) |
 | **Item id** | `771` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 320 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 18 |

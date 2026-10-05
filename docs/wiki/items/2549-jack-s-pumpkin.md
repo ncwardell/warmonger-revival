@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Jack's Pumpkin](wiki/assets/items/2549.png) |
 | **Item id** | `2549` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 20 Gold |

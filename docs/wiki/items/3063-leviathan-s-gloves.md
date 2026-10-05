@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Leviathan's Gloves](wiki/assets/items/3063.png) |
 | **Item id** | `3063` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

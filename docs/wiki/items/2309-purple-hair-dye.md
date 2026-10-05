@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Purple Hair Dye](wiki/assets/items/2309.png) |
 | **Item id** | `2309` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 106 Gold |

@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Bracelet of Courage](wiki/assets/items/439.png) |
 | **Item id** | `439` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 32 |

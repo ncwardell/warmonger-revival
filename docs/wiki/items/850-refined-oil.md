@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Refined oil](wiki/assets/items/850.png) |
 | **Item id** | `850` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 44 |

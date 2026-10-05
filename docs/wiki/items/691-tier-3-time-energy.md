@@ -33,6 +33,7 @@ obtained_from:
 |  | ![Tier 3 : Time energy](wiki/assets/items/691.png) |
 | **Item id** | `691` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1 Gold Medal |

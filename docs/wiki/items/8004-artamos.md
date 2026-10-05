@@ -33,7 +33,9 @@ obtained_from:
 |  | ![Artamos](wiki/assets/items/8004.png) |
 | **Item id** | `8004` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/5-artamos\|Artamos]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Rarity (guessed column)** | 2 |

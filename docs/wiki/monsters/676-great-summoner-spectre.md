@@ -37,7 +37,7 @@ spawn_fields: [124]
 | **Model** | ObjectList `78` MOB_GhostKing_01_0_0_0_00_00 (`character/npc/monster/npc_evil/mob_ghostking_01.mo`) |
 | **Scale** | 1.7 (second scale / radius 1) |
 | **Projectile?** | `u32@bc` = 865 (archers carry one; meaning *inferred*) |
-| **Hero transform** | Great Summoner Spectre |
+| **Hero transform** | [[wiki/heroes/10-great-summoner-spectre\|Great Summoner Spectre]] |
 | **Boss of** | [[wiki/dungeons/124-lv-6-ghost-fortress\|(Lv 6) Ghost Fortress]] |
 
 ### Server stats

@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Medal : Arena](wiki/assets/items/1007.png) |
 | **Item id** | `1007` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 19 |

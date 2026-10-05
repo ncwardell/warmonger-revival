@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Scroll : Return](wiki/assets/items/906.png) |
 | **Item id** | `906` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 80 Gold |
 | **Cooldown** | 5 s (group 17) |

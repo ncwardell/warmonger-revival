@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Belt of Courage](wiki/assets/items/470.png) |
 | **Item id** | `470` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

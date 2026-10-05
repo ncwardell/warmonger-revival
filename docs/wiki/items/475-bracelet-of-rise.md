@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Bracelet of Rise](wiki/assets/items/475.png) |
 | **Item id** | `475` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

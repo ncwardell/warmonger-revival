@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Merchant Summon Scroll](wiki/assets/items/922.png) |
 | **Item id** | `922` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

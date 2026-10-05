@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fame warrior Bracelet](wiki/assets/items/3517.png) |
 | **Item id** | `3517` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

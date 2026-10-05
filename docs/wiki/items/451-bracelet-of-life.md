@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Bracelet of Life](wiki/assets/items/451.png) |
 | **Item id** | `451` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

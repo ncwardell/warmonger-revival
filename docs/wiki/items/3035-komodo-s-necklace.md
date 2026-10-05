@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Komodo's Necklace](wiki/assets/items/3035.png) |
 | **Item id** | `3035` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

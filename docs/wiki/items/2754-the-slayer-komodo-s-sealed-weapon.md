@@ -27,6 +27,7 @@ obtained_from:
 |  | ![The Slayer Komodo's Sealed Weapon](wiki/assets/items/2754.png) |
 | **Item id** | `2754` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_Item.png` cell 4 |

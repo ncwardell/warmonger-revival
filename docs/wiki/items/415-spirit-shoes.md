@@ -51,6 +51,7 @@ obtained_from:
 |  | ![Spirit Shoes](wiki/assets/items/415.png) |
 | **Item id** | `415` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 42 |

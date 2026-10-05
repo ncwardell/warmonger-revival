@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Snow flower](wiki/assets/items/845.png) |
 | **Item id** | `845` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 39 |

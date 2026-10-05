@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Orange Passion Piece (A)](wiki/assets/items/628.png) |
 | **Item id** | `628` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 45 |

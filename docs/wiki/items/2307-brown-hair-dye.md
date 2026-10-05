@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Brown Hair Dye](wiki/assets/items/2307.png) |
 | **Item id** | `2307` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

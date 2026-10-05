@@ -32,6 +32,7 @@ obtained_from:
 |  | ![Scroll of Transform : (Jack)](wiki/assets/items/763.png) |
 | **Item id** | `763` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Cooldown** | 2 s (group 27) |

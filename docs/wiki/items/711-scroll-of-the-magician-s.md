@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Scroll of the Magician (S)](wiki/assets/items/711.png) |
 | **Item id** | `711` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 21 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 25) |
 | **On use: buff** | [[wiki/buffs/2084-tome-of-the-magician-s-ability-power-120\|Tome of the Magician (S) : Ability Power +120]] |
 | **Icon** | `ui/icons/Items_03.png` cell 59 |

@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Auto decomposition hammer (D)](wiki/assets/items/945.png) |
 | **Item id** | `945` |
 | **Kind** | Auto decomposition hammer (46) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 20,000 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 60 |

@@ -57,16 +57,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Sarasvati, skill 6
-- Hero Sarasvati, skill 7
-- Hero Sarasvati, skill 8
-- Hero Sarasvati, skill 9
-- Hero Sarasvati, skill 10
-- Hero Sarasvati, skill 6
-- Hero Sarasvati, skill 7
-- Hero Sarasvati, skill 8
-- Hero Sarasvati, skill 9
-- Hero Sarasvati, skill 10
+- Hero [[wiki/heroes/4-sarasvati|Sarasvati]], skill 6
+- Hero [[wiki/heroes/4-sarasvati|Sarasvati]], skill 7
+- Hero [[wiki/heroes/4-sarasvati|Sarasvati]], skill 8
+- Hero [[wiki/heroes/4-sarasvati|Sarasvati]], skill 9
+- Hero [[wiki/heroes/4-sarasvati|Sarasvati]], skill 10
+- Hero [[wiki/heroes/54-sarasvati-crystal|Sarasvati (Crystal)]], skill 6
+- Hero [[wiki/heroes/54-sarasvati-crystal|Sarasvati (Crystal)]], skill 7
+- Hero [[wiki/heroes/54-sarasvati-crystal|Sarasvati (Crystal)]], skill 8
+- Hero [[wiki/heroes/54-sarasvati-crystal|Sarasvati (Crystal)]], skill 9
+- Hero [[wiki/heroes/54-sarasvati-crystal|Sarasvati (Crystal)]], skill 10
 <!-- generated:end -->
 
 ## Notes

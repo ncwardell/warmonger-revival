@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Auto decomposition hammer](wiki/assets/items/948.png) |
 | **Item id** | `948` |
 | **Kind** | Auto decomposition hammer (46) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

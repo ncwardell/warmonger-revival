@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![Mana Rune](wiki/assets/items/7243.png) |
 | **Item id** | `7243` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

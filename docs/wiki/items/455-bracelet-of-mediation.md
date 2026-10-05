@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Bracelet of Mediation](wiki/assets/items/455.png) |
 | **Item id** | `455` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

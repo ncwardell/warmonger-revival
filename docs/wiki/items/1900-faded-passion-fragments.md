@@ -100,6 +100,7 @@ obtained_from:
 |  | ![Faded Passion fragments](wiki/assets/items/1900.png) |
 | **Item id** | `1900` |
 | **Kind** | Normal (1) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 35 |

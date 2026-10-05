@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Celerity](wiki/assets/items/2906.png) |
 | **Item id** | `2906` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10,000 Gold (+10%) |
 | **Cooldown** | 90 s (group 10) |

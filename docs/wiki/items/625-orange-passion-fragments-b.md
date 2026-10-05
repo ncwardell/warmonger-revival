@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Orange Passion Fragments (B)](wiki/assets/items/625.png) |
 | **Item id** | `625` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 39 |

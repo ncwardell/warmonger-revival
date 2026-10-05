@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Red Passion Fragments (B)](wiki/assets/items/615.png) |
 | **Item id** | `615` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 13 |

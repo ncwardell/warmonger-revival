@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Blessing of Shaia](wiki/assets/items/956.png) |
 | **Item id** | `956` |
 | **Kind** | Establish Fort (39) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

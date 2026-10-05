@@ -33,7 +33,9 @@ obtained_from:
 |  | ![Amaterasu](wiki/assets/items/8002.png) |
 | **Item id** | `8002` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/3-amaterasu\|Amaterasu]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Rarity (guessed column)** | 2 |

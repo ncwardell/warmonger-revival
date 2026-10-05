@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Yellow Jewel](wiki/assets/items/1006.png) |
 | **Item id** | `1006` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 0 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 39 |

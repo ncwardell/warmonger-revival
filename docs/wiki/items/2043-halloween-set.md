@@ -30,7 +30,9 @@ obtained_from:
 |  | ![Halloween Set](wiki/assets/items/2043.png) |
 | **Item id** | `2043` |
 | **Kind** | Costume (32) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
+| **Costume set** | [[wiki/costumes/2043-halloween-set\|Halloween Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 40 |
 

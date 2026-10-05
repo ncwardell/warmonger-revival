@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Gloves of Honor](wiki/assets/items/492.png) |
 | **Item id** | `492` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

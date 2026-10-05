@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Lizard spear](wiki/assets/items/2678.png) |
 | **Item id** | `2678` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

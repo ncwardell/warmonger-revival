@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Random box of dye](wiki/assets/items/1059.png) |
 | **Item id** | `1059` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Buy price** | 3 Bronze Medal |
 | **Icon** | `ui/icons/Items_01.png` cell 17 |

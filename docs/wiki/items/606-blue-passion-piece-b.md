@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Blue Passion Piece (B)](wiki/assets/items/606.png) |
 | **Item id** | `606` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 15 |

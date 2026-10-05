@@ -25,6 +25,7 @@ obtained_from: []
 |  | ![Growth's Knowledge](wiki/assets/items/1618.png) |
 | **Item id** | `1618` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 57 |

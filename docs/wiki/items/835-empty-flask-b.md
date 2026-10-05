@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Empty Flask (B)](wiki/assets/items/835.png) |
 | **Item id** | `835` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 7 |

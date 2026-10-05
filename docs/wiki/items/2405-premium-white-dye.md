@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium White Dye](wiki/assets/items/2405.png) |
 | **Item id** | `2405` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 98 Gold |

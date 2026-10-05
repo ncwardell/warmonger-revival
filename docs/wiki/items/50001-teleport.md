@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Teleport](wiki/assets/items/50001.png) |
 | **Item id** | `50001` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 12 |

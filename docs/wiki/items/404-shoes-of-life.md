@@ -49,6 +49,7 @@ obtained_from:
 |  | ![Shoes of Life](wiki/assets/items/404.png) |
 | **Item id** | `404` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 15 |

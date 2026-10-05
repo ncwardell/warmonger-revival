@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Brown Dye](wiki/assets/items/2507.png) |
 | **Item id** | `2507` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

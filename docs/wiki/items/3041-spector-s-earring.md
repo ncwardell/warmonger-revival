@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Spector's Earring](wiki/assets/items/3041.png) |
 | **Item id** | `3041` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

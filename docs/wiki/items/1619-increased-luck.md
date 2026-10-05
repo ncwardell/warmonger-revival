@@ -25,6 +25,7 @@ obtained_from: []
 |  | ![Increased Luck](wiki/assets/items/1619.png) |
 | **Item id** | `1619` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 59 |

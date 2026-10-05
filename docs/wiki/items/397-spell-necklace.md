@@ -49,6 +49,7 @@ obtained_from:
 |  | ![Spell Necklace](wiki/assets/items/397.png) |
 | **Item id** | `397` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 24 |

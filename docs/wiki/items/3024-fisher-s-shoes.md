@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Fisher's Shoes](wiki/assets/items/3024.png) |
 | **Item id** | `3024` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

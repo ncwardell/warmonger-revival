@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Potion of Brisk (A)](wiki/assets/items/880.png) |
 | **Item id** | `880` |
 | **Kind** | ? (42) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 1 Gold Medal |
 | **Cooldown** | 1 s (group 29) |

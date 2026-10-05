@@ -28,6 +28,7 @@ obtained_from:
 |  | ![Blessing of Shaia](wiki/assets/items/905.png) |
 | **Item id** | `905` |
 | **Kind** | Premium Item (38) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_15.png` cell 9 |

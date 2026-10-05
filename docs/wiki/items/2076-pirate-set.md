@@ -32,9 +32,11 @@ obtained_from:
 |  | ![Pirate Set](wiki/assets/items/2076.png) |
 | **Item id** | `2076` |
 | **Kind** | Costume (32) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
+| **Costume set** | [[wiki/costumes/2076-pirate-set\|Pirate Set]] |
 | **Bind** | on pickup |
-| **Period** | 2160 (unit unknown; costume duration) |
+| **Period** | 2,160 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 49 |
 
 ### Stats

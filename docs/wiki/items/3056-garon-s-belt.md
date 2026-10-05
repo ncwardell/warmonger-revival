@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Garon's Belt](wiki/assets/items/3056.png) |
 | **Item id** | `3056` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

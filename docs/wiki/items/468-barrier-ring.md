@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Barrier Ring](wiki/assets/items/468.png) |
 | **Item id** | `468` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

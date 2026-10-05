@@ -28,6 +28,7 @@ obtained_from: []
 |  | ![Novice Gloves](wiki/assets/items/353.png) |
 | **Item id** | `353` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

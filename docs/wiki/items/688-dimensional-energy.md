@@ -48,6 +48,7 @@ obtained_from:
 |  | ![Dimensional energy](wiki/assets/items/688.png) |
 | **Item id** | `688` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 5,000 Gold (+10%) |
 | **Icon** | `ui/icons/Items_15.png` cell 15 |

@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium Pink Dye](wiki/assets/items/2400.png) |
 | **Item id** | `2400` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Red Hair Dye](wiki/assets/items/2301.png) |
 | **Item id** | `2301` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

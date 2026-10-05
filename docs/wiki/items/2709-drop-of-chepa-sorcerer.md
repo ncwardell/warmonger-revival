@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Drop of Chepa Sorcerer](wiki/assets/items/2709.png) |
 | **Item id** | `2709` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 8 |

@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Extracted Spartium](wiki/assets/items/874.png) |
 | **Item id** | `874` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 45 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 14 |

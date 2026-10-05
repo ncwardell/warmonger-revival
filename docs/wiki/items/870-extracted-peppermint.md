@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Extracted Peppermint](wiki/assets/items/870.png) |
 | **Item id** | `870` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 135 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 10 |

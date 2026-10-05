@@ -60,6 +60,7 @@ obtained_from:
 |  | ![Gem Stone : Yellow](wiki/assets/items/694.png) |
 | **Item id** | `694` |
 | **Kind** | Jewel (58) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Buy price** | 200 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 7 |

@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Skull's Bracelet](wiki/assets/items/3017.png) |
 | **Item id** | `3017` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

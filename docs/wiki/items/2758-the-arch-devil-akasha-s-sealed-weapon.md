@@ -27,6 +27,7 @@ obtained_from:
 |  | ![The Arch devil Akasha's Sealed Weapon](wiki/assets/items/2758.png) |
 | **Item id** | `2758` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_Item.png` cell 8 |

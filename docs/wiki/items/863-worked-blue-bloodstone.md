@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Worked Blue bloodstone](wiki/assets/items/863.png) |
 | **Item id** | `863` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 90 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 41 |

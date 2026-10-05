@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Peppermint](wiki/assets/items/820.png) |
 | **Item id** | `820` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 30 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 21 |

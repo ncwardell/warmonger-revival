@@ -48,6 +48,7 @@ obtained_from:
 |  | ![Shoes of Honor](wiki/assets/items/419.png) |
 | **Item id** | `419` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 53 |

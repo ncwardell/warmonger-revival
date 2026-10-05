@@ -32,9 +32,11 @@ obtained_from:
 |  | ![Bear family Set](wiki/assets/items/2074.png) |
 | **Item id** | `2074` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2073-bear-family-set\|Bear family Set]] |
 | **Bind** | on pickup |
-| **Period** | 2160 (unit unknown; costume duration) |
+| **Period** | 2,160 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 47 |
 
 ### Stats

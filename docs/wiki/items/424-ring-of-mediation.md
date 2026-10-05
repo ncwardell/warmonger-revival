@@ -45,6 +45,7 @@ obtained_from:
 |  | ![Ring of Mediation](wiki/assets/items/424.png) |
 | **Item id** | `424` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 8 |

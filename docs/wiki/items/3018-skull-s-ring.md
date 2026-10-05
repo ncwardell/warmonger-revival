@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Skull's Ring](wiki/assets/items/3018.png) |
 | **Item id** | `3018` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Garnet powder](wiki/assets/items/803.png) |
 | **Item id** | `803` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 2 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 24 |

@@ -46,6 +46,7 @@ obtained_from:
 |  | ![Belt of Mediation](wiki/assets/items/422.png) |
 | **Item id** | `422` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 59 |

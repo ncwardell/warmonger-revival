@@ -28,6 +28,7 @@ obtained_from:
 |  | ![(Gold) Medal Reward Box](wiki/assets/items/1053.png) |
 | **Item id** | `1053` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2 Gold Medal |

@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium Brown Dye](wiki/assets/items/2407.png) |
 | **Item id** | `2407` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

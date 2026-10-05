@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Pyrotechnics](wiki/assets/items/1105.png) |
 | **Item id** | `1105` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |

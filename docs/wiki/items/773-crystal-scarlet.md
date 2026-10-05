@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Crystal : Scarlet](wiki/assets/items/773.png) |
 | **Item id** | `773` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 1,280 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 20 |

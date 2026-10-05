@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Broken Innocence](wiki/assets/items/2548.png) |
 | **Item id** | `2548` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 20 Gold |

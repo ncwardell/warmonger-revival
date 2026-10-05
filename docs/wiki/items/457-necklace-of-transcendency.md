@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Necklace of Transcendency](wiki/assets/items/457.png) |
 | **Item id** | `457` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

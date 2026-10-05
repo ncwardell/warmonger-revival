@@ -30,7 +30,7 @@ spawn_fields: [125]
 | **Class mask** | 1 (monster) |
 | **Model** | ObjectList `97` MOB_Orc_Lord_01 (`character/npc/monster/mob_orc/mob_orc_lord_01.mo`) |
 | **Scale** | 1.5 (second scale / radius 1) |
-| **Hero transform** | War Chief Garon |
+| **Hero transform** | [[wiki/heroes/11-war-chief-garon\|War Chief Garon]] |
 | **Boss of** | [[wiki/dungeons/125-lv-5-tow-canyon\|(Lv 5) Tow Canyon]] |
 
 ### Server stats

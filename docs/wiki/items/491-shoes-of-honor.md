@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Shoes of Honor](wiki/assets/items/491.png) |
 | **Item id** | `491` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

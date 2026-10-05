@@ -37,7 +37,8 @@ obtained_from:
 |  | ![Magical Dash Hammer](wiki/assets/items/20002.png) |
 | **Item id** | `20002` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_PCD_01.dds` cell 18 |

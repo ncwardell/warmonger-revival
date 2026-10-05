@@ -45,6 +45,7 @@ obtained_from:
 |  | ![Bandolier Ring](wiki/assets/items/432.png) |
 | **Item id** | `432` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 5 |

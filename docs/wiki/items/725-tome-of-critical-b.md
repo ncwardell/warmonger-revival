@@ -36,9 +36,10 @@ obtained_from:
 |  | ![Tome of Critical (B)](wiki/assets/items/725.png) |
 | **Item id** | `725` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 9 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 26) |
 | **On use: buff** | [[wiki/buffs/2098-scroll-of-critical-strikes-b-critical-strike-10\|Scroll of Critical Strikes (B) : Critical Strike +10%]] |
 | **Icon** | `ui/icons/Items_30.png` cell 12 |

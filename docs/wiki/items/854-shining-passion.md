@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Shining Passion](wiki/assets/items/854.png) |
 | **Item id** | `854` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2 Bronze Medal |

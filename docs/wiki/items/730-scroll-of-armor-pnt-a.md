@@ -34,9 +34,10 @@ obtained_from: []
 |  | ![Scroll of Armor PNT (A)](wiki/assets/items/730.png) |
 | **Item id** | `730` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 15 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 25) |
 | **On use: buff** | [[wiki/buffs/2103-tome-of-armor-penetration-a-armor-penetration-6\|Tome of Armor Penetration (A) : Armor Penetration +6]] |
 | **Icon** | `ui/icons/Items_04.png` cell 14 |

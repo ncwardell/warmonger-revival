@@ -28,7 +28,9 @@ obtained_from: []
 |  | ![Developer Set](wiki/assets/items/2052.png) |
 | **Item id** | `2052` |
 | **Kind** | Costume (32) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
+| **Costume set** | [[wiki/costumes/2052-developer-set\|Developer Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 54 |
 

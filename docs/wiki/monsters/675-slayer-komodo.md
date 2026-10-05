@@ -38,7 +38,7 @@ spawn_fields: [123]
 | **Kill group** | `10016` with [[wiki/monsters/710-chepa-warrior-officer\|Chepa Warrior Officer]], [[wiki/monsters/711-chepa-archer-officer\|Chepa Archer Officer]] |
 | **Model** | ObjectList `73` MOB_LizardmanLord_01 (`character/npc/monster/mob_lizardman/mob_lizardmanlord_01.mo`) |
 | **Scale** | 1.5 (second scale / radius 1) |
-| **Hero transform** | Slayer Komodo |
+| **Hero transform** | [[wiki/heroes/9-slayer-komodo\|Slayer Komodo]] |
 | **Boss of** | [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior\|(Lv 4) Swamps of Snake Warrior]] |
 
 ### Server stats

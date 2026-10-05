@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Invincible](wiki/assets/items/2905.png) |
 | **Item id** | `2905` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10,000 Gold (+10%) |
 | **Cooldown** | 90 s (group 9) |

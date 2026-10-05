@@ -26,6 +26,7 @@ obtained_from: []
 |  | ![Fire Support](wiki/assets/items/1502.png) |
 | **Item id** | `1502` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Policy_01.png` cell 43 |

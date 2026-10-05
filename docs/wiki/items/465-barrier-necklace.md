@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Barrier Necklace](wiki/assets/items/465.png) |
 | **Item id** | `465` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

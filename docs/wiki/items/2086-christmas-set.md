@@ -30,7 +30,9 @@ obtained_from:
 |  | ![Christmas Set](wiki/assets/items/2086.png) |
 | **Item id** | `2086` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2046-christmas-set\|Christmas Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 42 |
 

@@ -36,6 +36,7 @@ obtained_from:
 |  | ![White Dye](wiki/assets/items/2505.png) |
 | **Item id** | `2505` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 98 Gold |

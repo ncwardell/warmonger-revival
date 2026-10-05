@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Crystal : Black](wiki/assets/items/703.png) |
 | **Item id** | `703` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 80 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 43 |

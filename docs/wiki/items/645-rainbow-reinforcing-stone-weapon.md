@@ -25,6 +25,7 @@ obtained_from: []
 |  | ![Rainbow Reinforcing Stone (Weapon)](wiki/assets/items/645.png) |
 | **Item id** | `645` |
 | **Kind** | Grede Reinforcing Stone (48) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 100 Gold |

@@ -48,6 +48,7 @@ obtained_from:
 |  | ![Crystal : Blue](wiki/assets/items/700.png) |
 | **Item id** | `700` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 40 |

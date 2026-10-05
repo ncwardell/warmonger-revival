@@ -28,7 +28,9 @@ obtained_from: []
 |  | ![Developer Set](wiki/assets/items/2053.png) |
 | **Item id** | `2053` |
 | **Kind** | Costume (32) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
+| **Costume set** | [[wiki/costumes/2052-developer-set\|Developer Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 56 |
 

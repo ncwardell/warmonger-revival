@@ -32,7 +32,7 @@ spawn_fields: [129]
 | **Model** | ObjectList `346` MOB_DemonLord_01_0_1_0_00_00 (`character/npc/monster/mob_demon/mob_demonlord_02.mo`) |
 | **Scale** | 1.5 (second scale / radius 1) |
 | **Projectile?** | `u32@bc` = 853 (archers carry one; meaning *inferred*) |
-| **Hero transform** | Akasha |
+| **Hero transform** | [[wiki/heroes/13-akasha\|Akasha]] |
 | **Boss of** | [[wiki/dungeons/129-lv-8-thorn-s-hell\|(Lv 8) Thorn's Hell]] |
 
 ### Server stats

@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium Purple Dye](wiki/assets/items/2409.png) |
 | **Item id** | `2409` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 106 Gold |

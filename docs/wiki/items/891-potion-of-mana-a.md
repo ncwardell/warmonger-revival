@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Potion of Mana (A)](wiki/assets/items/891.png) |
 | **Item id** | `891` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 135 Gold |
 | **Cooldown** | 15 s (group 2) |

@@ -34,7 +34,8 @@ obtained_from:
 |  | ![Magical adapted Dual Gun](wiki/assets/items/11011.png) |
 | **Item id** | `11011` |
 | **Kind** | Weapon (31) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/weapons-saint\|Saint weapons]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

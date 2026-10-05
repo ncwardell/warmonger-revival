@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Crystal : Yellow](wiki/assets/items/701.png) |
 | **Item id** | `701` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 41 |

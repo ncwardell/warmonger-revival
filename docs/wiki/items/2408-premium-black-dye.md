@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium Black Dye](wiki/assets/items/2408.png) |
 | **Item id** | `2408` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 106 Gold |

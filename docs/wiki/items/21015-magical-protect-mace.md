@@ -36,7 +36,8 @@ obtained_from:
 |  | ![Magical Protect Mace](wiki/assets/items/21015.png) |
 | **Item id** | `21015` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

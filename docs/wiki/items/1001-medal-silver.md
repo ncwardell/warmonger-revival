@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Medal : Silver](wiki/assets/items/1001.png) |
 | **Item id** | `1001` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 32 |

@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Bandolier Ring](wiki/assets/items/464.png) |
 | **Item id** | `464` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

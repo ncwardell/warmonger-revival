@@ -28,6 +28,7 @@ obtained_from: []
 |  | ![Yellow Jewel (5000)](wiki/assets/items/1016.png) |
 | **Item id** | `1016` |
 | **Kind** | Package Item (33) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 100 Gold |

@@ -67,6 +67,7 @@ obtained_from:
 |  | ![Faded Passion Piece](wiki/assets/items/1901.png) |
 | **Item id** | `1901` |
 | **Kind** | Normal (1) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 36 |

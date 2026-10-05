@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Orange Hair Dye](wiki/assets/items/2302.png) |
 | **Item id** | `2302` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 106 Gold |

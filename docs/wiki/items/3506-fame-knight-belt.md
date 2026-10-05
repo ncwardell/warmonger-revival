@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Fame knight Belt](wiki/assets/items/3506.png) |
 | **Item id** | `3506` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

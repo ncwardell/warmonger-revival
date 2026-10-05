@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Green Dye](wiki/assets/items/2506.png) |
 | **Item id** | `2506` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

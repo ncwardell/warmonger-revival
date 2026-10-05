@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Peppermint powder](wiki/assets/items/821.png) |
 | **Item id** | `821` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 3 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 27 |

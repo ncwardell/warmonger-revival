@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Spector's Belt](wiki/assets/items/3046.png) |
 | **Item id** | `3046` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

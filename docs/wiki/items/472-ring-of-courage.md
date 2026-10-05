@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Ring of Courage](wiki/assets/items/472.png) |
 | **Item id** | `472` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

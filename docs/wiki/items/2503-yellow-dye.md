@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Yellow Dye](wiki/assets/items/2503.png) |
 | **Item id** | `2503` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 106 Gold |

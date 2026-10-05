@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Extracted Rosemary](wiki/assets/items/871.png) |
 | **Item id** | `871` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 90 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 12 |

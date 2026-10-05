@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Fame knight Necklace](wiki/assets/items/3505.png) |
 | **Item id** | `3505` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

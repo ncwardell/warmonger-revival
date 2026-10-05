@@ -50,6 +50,7 @@ obtained_from:
 |  | ![Spirit Earring](wiki/assets/items/413.png) |
 | **Item id** | `413` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 38 |

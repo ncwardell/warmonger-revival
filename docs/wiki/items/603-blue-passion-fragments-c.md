@@ -62,6 +62,7 @@ obtained_from:
 |  | ![Blue Passion Fragments (C)](wiki/assets/items/603.png) |
 | **Item id** | `603` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 6 |

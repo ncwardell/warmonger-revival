@@ -33,7 +33,8 @@ obtained_from: []
 |  | ![D-MaceShd-03](wiki/assets/items/20017.png) |
 | **Item id** | `20017` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_01.png` cell 32 |

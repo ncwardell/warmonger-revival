@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fame knight Gloves](wiki/assets/items/3503.png) |
 | **Item id** | `3503` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

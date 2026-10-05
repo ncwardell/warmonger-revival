@@ -32,9 +32,11 @@ obtained_from:
 |  | ![Goosebumps Set](wiki/assets/items/2041.png) |
 | **Item id** | `2041` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2040-goosebumps-set\|Goosebumps Set]] |
 | **Bind** | on pickup |
-| **Period** | 2160 (unit unknown; costume duration) |
+| **Period** | 2,160 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 37 |
 
 ### Stats

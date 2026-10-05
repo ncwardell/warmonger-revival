@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Potion of Health (A)](wiki/assets/items/887.png) |
 | **Item id** | `887` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 135 Gold |
 | **Cooldown** | 15 s (group 1) |

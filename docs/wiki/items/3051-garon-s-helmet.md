@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Garon's Helmet](wiki/assets/items/3051.png) |
 | **Item id** | `3051` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -28,6 +28,7 @@ obtained_from:
 |  | ![Jasmine](wiki/assets/items/824.png) |
 | **Item id** | `824` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 23 |

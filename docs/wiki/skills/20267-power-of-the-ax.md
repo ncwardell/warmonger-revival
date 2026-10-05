@@ -57,16 +57,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero King Deathhead, skill 6
-- Hero King Deathhead, skill 7
-- Hero King Deathhead, skill 8
-- Hero King Deathhead, skill 9
-- Hero King Deathhead, skill 10
-- Hero King Deathhead, skill 6
-- Hero King Deathhead, skill 7
-- Hero King Deathhead, skill 8
-- Hero King Deathhead, skill 9
-- Hero King Deathhead, skill 10
+- Hero [[wiki/heroes/7-king-deathhead|King Deathhead]], skill 6
+- Hero [[wiki/heroes/7-king-deathhead|King Deathhead]], skill 7
+- Hero [[wiki/heroes/7-king-deathhead|King Deathhead]], skill 8
+- Hero [[wiki/heroes/7-king-deathhead|King Deathhead]], skill 9
+- Hero [[wiki/heroes/7-king-deathhead|King Deathhead]], skill 10
+- Hero [[wiki/heroes/57-king-deathhead-crystal|King Deathhead (Crystal)]], skill 6
+- Hero [[wiki/heroes/57-king-deathhead-crystal|King Deathhead (Crystal)]], skill 7
+- Hero [[wiki/heroes/57-king-deathhead-crystal|King Deathhead (Crystal)]], skill 8
+- Hero [[wiki/heroes/57-king-deathhead-crystal|King Deathhead (Crystal)]], skill 9
+- Hero [[wiki/heroes/57-king-deathhead-crystal|King Deathhead (Crystal)]], skill 10
 <!-- generated:end -->
 
 ## Notes

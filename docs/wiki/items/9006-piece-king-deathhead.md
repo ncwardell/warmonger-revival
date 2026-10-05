@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Piece : King Deathhead](wiki/assets/items/9006.png) |
 | **Item id** | `9006` |
 | **Kind** | Innocence Piece (36) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

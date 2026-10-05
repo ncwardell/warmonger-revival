@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Rosemary powder](wiki/assets/items/823.png) |
 | **Item id** | `823` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 2 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 28 |

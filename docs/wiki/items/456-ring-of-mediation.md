@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Ring of Mediation](wiki/assets/items/456.png) |
 | **Item id** | `456` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

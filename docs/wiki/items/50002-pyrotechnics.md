@@ -29,6 +29,7 @@ obtained_from: []
 |  | ![Pyrotechnics](wiki/assets/items/50002.png) |
 | **Item id** | `50002` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **On use: skill** | [[wiki/skills/5218-pyrotechnics\|Pyrotechnics]] |

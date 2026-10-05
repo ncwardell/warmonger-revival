@@ -51,6 +51,7 @@ obtained_from:
 |  | ![Helmet of Life](wiki/assets/items/401.png) |
 | **Item id** | `401` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 12 |

@@ -36,9 +36,10 @@ obtained_from:
 |  | ![Tome of Cooldown (B)](wiki/assets/items/717.png) |
 | **Item id** | `717` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 11 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 26) |
 | **On use: buff** | [[wiki/buffs/2090-scroll-of-cooldown-reduction-b-6-cooldown-reduction\|Scroll of Cooldown Reduction (B) : 6% Cooldown Reduction]] |
 | **Icon** | `ui/icons/Items_30.png` cell 13 |

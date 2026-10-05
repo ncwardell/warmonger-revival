@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Parchment : Green](wiki/assets/items/1917.png) |
 | **Item id** | `1917` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 52 |

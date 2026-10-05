@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Crystal : Green](wiki/assets/items/770.png) |
 | **Item id** | `770` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 160 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 17 |

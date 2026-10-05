@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Dark blue Faded Passion Pattern](wiki/assets/items/1905.png) |
 | **Item id** | `1905` |
 | **Kind** | Normal (1) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 80 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 2 |

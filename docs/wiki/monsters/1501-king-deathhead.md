@@ -30,7 +30,7 @@ spawn_fields: [121]
 | **Class mask** | 1 (monster) |
 | **Model** | ObjectList `35` MOB_Seleton King_01 (`character/npc/monster/mob_seleton king/mob_seleton king_01.mo`) |
 | **Scale** | 2.5 (second scale / radius 1) |
-| **Hero transform** | King Deathhead |
+| **Hero transform** | [[wiki/heroes/7-king-deathhead\|King Deathhead]] |
 | **Boss of** | [[wiki/dungeons/121-lv-1-skull-temple\|(Lv 1) Skull Temple]] |
 
 ### Server stats

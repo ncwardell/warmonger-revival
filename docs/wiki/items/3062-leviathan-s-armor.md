@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Leviathan's Armor](wiki/assets/items/3062.png) |
 | **Item id** | `3062` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

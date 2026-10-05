@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Life saviour](wiki/assets/items/1802.png) |
 | **Item id** | `1802` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold Medal |

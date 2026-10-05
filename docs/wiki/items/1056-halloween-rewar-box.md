@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Halloween Rewar Box](wiki/assets/items/1056.png) |
 | **Item id** | `1056` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

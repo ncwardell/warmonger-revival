@@ -32,7 +32,9 @@ obtained_from:
 |  | ![Tempest Fisher](wiki/assets/items/8007.png) |
 | **Item id** | `8007` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/8-tempest-fisher\|Tempest Fisher]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 20 |

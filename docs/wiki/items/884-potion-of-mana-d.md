@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Potion of Mana (D)](wiki/assets/items/884.png) |
 | **Item id** | `884` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Cooldown** | 15 s (group 2) |

@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Death Head's Necklace](wiki/assets/items/3005.png) |
 | **Item id** | `3005` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Fame knight Bracelet](wiki/assets/items/3507.png) |
 | **Item id** | `3507` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

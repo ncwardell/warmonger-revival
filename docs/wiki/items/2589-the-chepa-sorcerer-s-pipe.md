@@ -25,6 +25,7 @@ obtained_from:
 |  | ![The Chepa Sorcerer's Pipe](wiki/assets/items/2589.png) |
 | **Item id** | `2589` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

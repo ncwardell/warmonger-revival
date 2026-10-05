@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Diamond](wiki/assets/items/810.png) |
 | **Item id** | `810` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 40 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 17 |

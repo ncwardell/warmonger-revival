@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Belt of Life](wiki/assets/items/450.png) |
 | **Item id** | `450` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

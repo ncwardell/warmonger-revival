@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Elite Skeleton Archer Item](wiki/assets/items/2558.png) |
 | **Item id** | `2558` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 20 Gold |

@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Shoes of Life](wiki/assets/items/480.png) |
 | **Item id** | `480` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

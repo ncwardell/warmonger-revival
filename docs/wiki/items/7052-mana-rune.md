@@ -33,6 +33,7 @@ obtained_from:
 |  | ![Mana Rune](wiki/assets/items/7052.png) |
 | **Item id** | `7052` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

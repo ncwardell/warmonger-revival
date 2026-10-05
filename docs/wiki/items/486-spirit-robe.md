@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Spirit Robe](wiki/assets/items/486.png) |
 | **Item id** | `486` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

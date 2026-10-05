@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Ring of Life](wiki/assets/items/452.png) |
 | **Item id** | `452` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Mysterious core stone](wiki/assets/items/858.png) |
 | **Item id** | `858` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 49 |

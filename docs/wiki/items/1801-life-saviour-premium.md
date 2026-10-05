@@ -34,6 +34,7 @@ obtained_from:
 |  | ![Life saviour (Premium)](wiki/assets/items/1801.png) |
 | **Item id** | `1801` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

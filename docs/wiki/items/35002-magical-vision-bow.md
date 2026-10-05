@@ -34,7 +34,8 @@ obtained_from:
 |  | ![Magical Vision Bow](wiki/assets/items/35002.png) |
 | **Item id** | `35002` |
 | **Kind** | Weapon (31) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/weapons-punisher\|Punisher weapons]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

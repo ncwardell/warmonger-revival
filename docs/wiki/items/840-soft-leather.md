@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Soft leather](wiki/assets/items/840.png) |
 | **Item id** | `840` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 34 |

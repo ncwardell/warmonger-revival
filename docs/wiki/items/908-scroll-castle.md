@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Scroll : Castle](wiki/assets/items/908.png) |
 | **Item id** | `908` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 2,500 Gold |
 | **Cooldown** | 5 s (group 17) |

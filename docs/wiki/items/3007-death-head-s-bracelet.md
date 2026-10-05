@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Death Head's Bracelet](wiki/assets/items/3007.png) |
 | **Item id** | `3007` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

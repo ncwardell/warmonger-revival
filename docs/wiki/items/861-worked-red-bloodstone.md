@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Worked Red bloodstone](wiki/assets/items/861.png) |
 | **Item id** | `861` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 90 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 38 |

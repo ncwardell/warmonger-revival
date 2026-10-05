@@ -33,7 +33,9 @@ obtained_from:
 |  | ![Sarasvati](wiki/assets/items/8003.png) |
 | **Item id** | `8003` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/4-sarasvati\|Sarasvati]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Rarity (guessed column)** | 2 |

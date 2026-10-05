@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Booby trap.](wiki/assets/items/2912.png) |
 | **Item id** | `2912` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10,000 Gold (+10%) |
 | **Cooldown** | 90 s (group 19) |

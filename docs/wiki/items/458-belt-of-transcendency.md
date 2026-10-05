@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Belt of Transcendency](wiki/assets/items/458.png) |
 | **Item id** | `458` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

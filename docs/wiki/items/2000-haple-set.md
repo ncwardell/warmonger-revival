@@ -33,10 +33,12 @@ obtained_from:
 |  | ![Haple Set](wiki/assets/items/2000.png) |
 | **Item id** | `2000` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2000-haple-set\|Haple Set]] |
 | **Bind** | on pickup |
 | **Buy price** | 100 Gold |
-| **Period** | 2610 (unit unknown; costume duration) |
+| **Period** | 2,610 min of wearing time (costume duration, WM 0406; [[gameplay/events-and-schedules\|Events]] §9) |
 | **Icon** | `ui/icons/Costume_01.dds` cell 6 |
 
 ### Stats

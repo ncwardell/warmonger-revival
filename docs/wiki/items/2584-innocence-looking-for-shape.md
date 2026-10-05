@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Innocence looking for shape](wiki/assets/items/2584.png) |
 | **Item id** | `2584` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

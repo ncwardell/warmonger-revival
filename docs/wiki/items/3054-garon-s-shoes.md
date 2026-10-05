@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Garon's Shoes](wiki/assets/items/3054.png) |
 | **Item id** | `3054` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

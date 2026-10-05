@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Ring of Rise](wiki/assets/items/476.png) |
 | **Item id** | `476` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

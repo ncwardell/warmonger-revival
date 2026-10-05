@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Freeze](wiki/assets/items/1407.png) |
 | **Item id** | `1407` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Policy_01.png` cell 44 |

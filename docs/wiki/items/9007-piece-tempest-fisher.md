@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Piece : Tempest Fisher](wiki/assets/items/9007.png) |
 | **Item id** | `9007` |
 | **Kind** | Innocence Piece (36) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

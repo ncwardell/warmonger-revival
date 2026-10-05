@@ -34,7 +34,8 @@ obtained_from:
 |  | ![Magical Frost Bow](wiki/assets/items/16004.png) |
 | **Item id** | `16004` |
 | **Kind** | Weapon (31) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/weapons-punisher\|Punisher weapons]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

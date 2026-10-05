@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Belt of Courage](wiki/assets/items/438.png) |
 | **Item id** | `438` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 19 |

@@ -57,16 +57,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Amaterasu, skill 6
-- Hero Amaterasu, skill 7
-- Hero Amaterasu, skill 8
-- Hero Amaterasu, skill 9
-- Hero Amaterasu, skill 10
-- Hero Amaterasu, skill 6
-- Hero Amaterasu, skill 7
-- Hero Amaterasu, skill 8
-- Hero Amaterasu, skill 9
-- Hero Amaterasu, skill 10
+- Hero [[wiki/heroes/3-amaterasu|Amaterasu]], skill 6
+- Hero [[wiki/heroes/3-amaterasu|Amaterasu]], skill 7
+- Hero [[wiki/heroes/3-amaterasu|Amaterasu]], skill 8
+- Hero [[wiki/heroes/3-amaterasu|Amaterasu]], skill 9
+- Hero [[wiki/heroes/3-amaterasu|Amaterasu]], skill 10
+- Hero [[wiki/heroes/53-amaterasu-crystal|Amaterasu (Crystal)]], skill 6
+- Hero [[wiki/heroes/53-amaterasu-crystal|Amaterasu (Crystal)]], skill 7
+- Hero [[wiki/heroes/53-amaterasu-crystal|Amaterasu (Crystal)]], skill 8
+- Hero [[wiki/heroes/53-amaterasu-crystal|Amaterasu (Crystal)]], skill 9
+- Hero [[wiki/heroes/53-amaterasu-crystal|Amaterasu (Crystal)]], skill 10
 <!-- generated:end -->
 
 ## Notes

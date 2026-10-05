@@ -29,6 +29,7 @@ obtained_from: []
 |---|---|
 | **Item id** | `901` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 0 Gold |
 | **Icon** | `ui/icons/Artifacts_02.png` cell 10 |

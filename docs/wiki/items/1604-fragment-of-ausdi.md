@@ -30,6 +30,7 @@ obtained_from: []
 |  | ![Fragment of Ausdi](wiki/assets/items/1604.png) |
 | **Item id** | `1604` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Cooldown** | 60 s (group 24) |

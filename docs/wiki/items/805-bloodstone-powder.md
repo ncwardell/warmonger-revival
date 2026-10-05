@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Bloodstone powder](wiki/assets/items/805.png) |
 | **Item id** | `805` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 2 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 20 |

@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Unknown Crystal](wiki/assets/items/2674.png) |
 | **Item id** | `2674` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

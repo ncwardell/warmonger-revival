@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Test Item 1](wiki/assets/items/900.png) |
 | **Item id** | `900` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 2 |

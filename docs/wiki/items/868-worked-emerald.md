@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Worked Emerald](wiki/assets/items/868.png) |
 | **Item id** | `868` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 180 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 16 |

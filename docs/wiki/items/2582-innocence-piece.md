@@ -28,6 +28,7 @@ obtained_from:
 |  | ![Innocence Piece](wiki/assets/items/2582.png) |
 | **Item id** | `2582` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

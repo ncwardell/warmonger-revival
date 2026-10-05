@@ -47,6 +47,7 @@ obtained_from:
 |  | ![Bandolier Belt](wiki/assets/items/430.png) |
 | **Item id** | `430` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 4 |

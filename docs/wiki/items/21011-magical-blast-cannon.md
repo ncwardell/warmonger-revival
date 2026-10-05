@@ -34,7 +34,8 @@ obtained_from:
 |  | ![Magical Blast Cannon](wiki/assets/items/21011.png) |
 | **Item id** | `21011` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

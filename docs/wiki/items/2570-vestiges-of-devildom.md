@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Vestiges of devildom](wiki/assets/items/2570.png) |
 | **Item id** | `2570` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

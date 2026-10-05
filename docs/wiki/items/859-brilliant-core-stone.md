@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Brilliant core stone](wiki/assets/items/859.png) |
 | **Item id** | `859` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 200 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 50 |

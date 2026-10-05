@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Crystal : Indigo](wiki/assets/items/772.png) |
 | **Item id** | `772` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 640 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 19 |

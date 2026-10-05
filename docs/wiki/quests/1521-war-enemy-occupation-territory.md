@@ -47,7 +47,7 @@ help: {"text_key": "Quest_Title_Help_String_695"}
 1. Type 30 — build nexus?; values a=2, b=1 — tracker: “Construct Nexus when entering the war zone”
 2. Kill Attack Tower × 1 — tracker: “Destroy attack tower and build friendly attack tower (TP point required for construction)   (Nexus is invulnerable if you have two or more attack towers)”
 3. Type 29 — attack tower?; values a=2, b=1 — tracker: “Destroy enemy nexus when occupying territory”
-4. Kill Warrior (Male) × 1
+4. Kill [[wiki/classes/5-guardian|Guardian]] × 1
 
 Stages (`flag1..5` = [1, 2, 3, 5, 5]): objectives unlock in steps; with the first unfinished objective *i*, objectives 1..flag*i* are active (contract/quests.yaml).
 

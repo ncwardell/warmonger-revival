@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![Spell Vamp Rune](wiki/assets/items/7290.png) |
 | **Item id** | `7290` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

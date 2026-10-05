@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Spector's Necklace](wiki/assets/items/3045.png) |
 | **Item id** | `3045` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -28,6 +28,7 @@ obtained_from: []
 |  | ![Novice Helmet](wiki/assets/items/351.png) |
 | **Item id** | `351` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

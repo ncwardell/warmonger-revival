@@ -28,6 +28,7 @@ obtained_from:
 |  | ![Rosemary](wiki/assets/items/822.png) |
 | **Item id** | `822` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 22 |

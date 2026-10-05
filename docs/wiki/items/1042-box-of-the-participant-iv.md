@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Box of the Participant IV](wiki/assets/items/1042.png) |
 | **Item id** | `1042` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,000 Gold |

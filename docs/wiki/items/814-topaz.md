@@ -31,6 +31,7 @@ obtained_from:
 |  | ![Topaz](wiki/assets/items/814.png) |
 | **Item id** | `814` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 30 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 18 |

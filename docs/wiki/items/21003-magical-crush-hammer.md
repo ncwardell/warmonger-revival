@@ -34,7 +34,8 @@ obtained_from:
 |  | ![Magical Crush Hammer](wiki/assets/items/21003.png) |
 | **Item id** | `21003` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

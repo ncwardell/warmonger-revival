@@ -25,6 +25,7 @@ obtained_from: []
 |  | ![Fragment of Frey](wiki/assets/items/1603.png) |
 | **Item id** | `1603` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 59 |

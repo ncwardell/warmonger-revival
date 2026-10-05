@@ -49,6 +49,7 @@ obtained_from:
 |  | ![Spell Belt](wiki/assets/items/398.png) |
 | **Item id** | `398` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 200 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 25 |

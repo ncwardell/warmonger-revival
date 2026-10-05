@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Spirit Earring](wiki/assets/items/485.png) |
 | **Item id** | `485` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

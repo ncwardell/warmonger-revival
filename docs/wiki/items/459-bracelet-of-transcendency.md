@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Bracelet of Transcendency](wiki/assets/items/459.png) |
 | **Item id** | `459` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

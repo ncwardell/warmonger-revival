@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Red Passion Piece (S)](wiki/assets/items/620.png) |
 | **Item id** | `620` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_26.png` cell 28 |

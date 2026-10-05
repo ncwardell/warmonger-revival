@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Mail box Summon Scroll](wiki/assets/items/923.png) |
 | **Item id** | `923` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

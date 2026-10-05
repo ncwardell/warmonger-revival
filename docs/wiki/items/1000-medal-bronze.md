@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Medal : Bronze](wiki/assets/items/1000.png) |
 | **Item id** | `1000` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 5 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 31 |

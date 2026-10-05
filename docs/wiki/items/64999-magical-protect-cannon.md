@@ -30,7 +30,8 @@ obtained_from: []
 |  | ![Magical Protect Cannon](wiki/assets/items/64999.png) |
 | **Item id** | `64999` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 90,000 Gold |
 | **Icon** | `ui/icons/Weapon_PCD_01.dds` cell 0 |

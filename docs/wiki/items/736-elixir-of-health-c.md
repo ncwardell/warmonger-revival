@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Elixir of Health (C)](wiki/assets/items/736.png) |
 | **Item id** | `736` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 70 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 27) |
 | **On use: buff** | [[wiki/buffs/2109-elixir-of-health-c-health-regeneration-2-maximum-health-100\|Elixir of Health (C) : Health Regeneration +2, Maximum Health +100]] |
 | **Icon** | `ui/icons/Items_03.png` cell 28 |

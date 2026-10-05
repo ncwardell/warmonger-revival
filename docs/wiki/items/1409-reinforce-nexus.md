@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Reinforce Nexus](wiki/assets/items/1409.png) |
 | **Item id** | `1409` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Policy.png` cell 43 |

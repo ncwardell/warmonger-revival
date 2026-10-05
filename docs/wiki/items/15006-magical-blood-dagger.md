@@ -35,7 +35,8 @@ obtained_from:
 |  | ![Magical Blood Dagger](wiki/assets/items/15006.png) |
 | **Item id** | `15006` |
 | **Kind** | Weapon (31) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/weapons-punisher\|Punisher weapons]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_PCM_01.dds` cell 17 |

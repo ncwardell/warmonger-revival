@@ -49,6 +49,7 @@ obtained_from:
 |  | ![Gloves of Honor](wiki/assets/items/420.png) |
 | **Item id** | `420` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 26 |

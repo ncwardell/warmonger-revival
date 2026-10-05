@@ -32,7 +32,8 @@ obtained_from: []
 |---|---|
 | **Item id** | `10007` |
 | **Kind** | Weapon (31) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/weapons-saint\|Saint weapons]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Artifacts_01.png` cell 24 |

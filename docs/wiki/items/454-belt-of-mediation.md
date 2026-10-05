@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Belt of Mediation](wiki/assets/items/454.png) |
 | **Item id** | `454` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

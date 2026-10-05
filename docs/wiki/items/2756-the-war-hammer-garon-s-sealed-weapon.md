@@ -27,6 +27,7 @@ obtained_from:
 |  | ![The War hammer Garon's Sealed Weapon](wiki/assets/items/2756.png) |
 | **Item id** | `2756` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_Item.png` cell 6 |

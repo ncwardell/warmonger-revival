@@ -46,6 +46,7 @@ obtained_from:
 |  | ![Ring of Transcendency](wiki/assets/items/428.png) |
 | **Item id** | `428` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 10 |

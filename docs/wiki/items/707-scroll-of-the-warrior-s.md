@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Scroll of the Warrior (S)](wiki/assets/items/707.png) |
 | **Item id** | `707` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 21 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 25) |
 | **On use: buff** | [[wiki/buffs/2080-tome-of-the-warrior-s-damage-160\|Tome of the Warrior (S) : Damage +160]] |
 | **Icon** | `ui/icons/Items_03.png` cell 55 |

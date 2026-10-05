@@ -58,6 +58,7 @@ obtained_from:
 |  | ![Faded Passion Pattern](wiki/assets/items/1902.png) |
 | **Item id** | `1902` |
 | **Kind** | Normal (1) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 200 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 37 |

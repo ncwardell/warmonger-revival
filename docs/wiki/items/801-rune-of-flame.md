@@ -30,6 +30,7 @@ obtained_from: []
 |---|---|
 | **Item id** | `801` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Buy price** | 4,000 Gold |
 | **Cooldown** | 90 s (group 4) |

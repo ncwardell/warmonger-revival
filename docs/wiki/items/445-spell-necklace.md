@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Spell Necklace](wiki/assets/items/445.png) |
 | **Item id** | `445` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

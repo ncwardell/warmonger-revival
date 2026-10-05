@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Spartium powder](wiki/assets/items/829.png) |
 | **Item id** | `829` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 1 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 31 |

@@ -25,6 +25,7 @@ obtained_from: []
 |  | ![Secret of the Fortress](wiki/assets/items/1606.png) |
 | **Item id** | `1606` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Policy.png` cell 26 |

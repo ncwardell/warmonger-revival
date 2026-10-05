@@ -51,6 +51,7 @@ obtained_from:
 |  | ![Bracelet of Life](wiki/assets/items/407.png) |
 | **Item id** | `407` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 34 |

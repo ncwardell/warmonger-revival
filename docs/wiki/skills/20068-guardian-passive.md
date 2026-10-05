@@ -62,16 +62,16 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Guardian, skill 6
-- Hero Guardian, skill 7
-- Hero Guardian, skill 8
-- Hero Guardian, skill 9
-- Hero Guardian, skill 10
-- Hero Guardian, skill 6
-- Hero Guardian, skill 7
-- Hero Guardian, skill 8
-- Hero Guardian, skill 9
-- Hero Guardian, skill 10
+- Hero [[wiki/heroes/2-guardian|Guardian]], skill 6
+- Hero [[wiki/heroes/2-guardian|Guardian]], skill 7
+- Hero [[wiki/heroes/2-guardian|Guardian]], skill 8
+- Hero [[wiki/heroes/2-guardian|Guardian]], skill 9
+- Hero [[wiki/heroes/2-guardian|Guardian]], skill 10
+- Hero [[wiki/heroes/52-guardian-crystal|Guardian (Crystal)]], skill 6
+- Hero [[wiki/heroes/52-guardian-crystal|Guardian (Crystal)]], skill 7
+- Hero [[wiki/heroes/52-guardian-crystal|Guardian (Crystal)]], skill 8
+- Hero [[wiki/heroes/52-guardian-crystal|Guardian (Crystal)]], skill 9
+- Hero [[wiki/heroes/52-guardian-crystal|Guardian (Crystal)]], skill 10
 <!-- generated:end -->
 
 ## Notes

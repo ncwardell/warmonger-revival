@@ -25,6 +25,7 @@ obtained_from:
 |  | ![C Rank Quest](wiki/assets/items/1252.png) |
 | **Item id** | `1252` |
 | **Kind** | Quest precept (44) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 25,000 Gold |

@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Dried flower](wiki/assets/items/844.png) |
 | **Item id** | `844` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 38 |

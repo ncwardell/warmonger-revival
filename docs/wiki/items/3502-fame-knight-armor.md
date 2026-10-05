@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fame knight Armor](wiki/assets/items/3502.png) |
 | **Item id** | `3502` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

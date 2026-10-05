@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Brilliant Passion](wiki/assets/items/856.png) |
 | **Item id** | `856` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 5 Silver Medal |

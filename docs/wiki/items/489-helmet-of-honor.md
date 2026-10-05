@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Helmet of Honor](wiki/assets/items/489.png) |
 | **Item id** | `489` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

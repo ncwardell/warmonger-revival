@@ -35,7 +35,8 @@ obtained_from:
 |  | ![Skeleton King's Magic Dagger](wiki/assets/items/35009.png) |
 | **Item id** | `35009` |
 | **Kind** | Weapon (31) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/weapons-punisher\|Punisher weapons]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 2 |

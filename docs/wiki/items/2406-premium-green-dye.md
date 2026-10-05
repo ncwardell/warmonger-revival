@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium Green Dye](wiki/assets/items/2406.png) |
 | **Item id** | `2406` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

@@ -26,6 +26,7 @@ obtained_from: []
 |---|---|
 | **Item id** | `903` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **On use: buff** | [[wiki/buffs/902-test-buff-2\|Test Buff 2]] |

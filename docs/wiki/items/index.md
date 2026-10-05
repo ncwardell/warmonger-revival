@@ -8,6 +8,8 @@ title: "Items"
 
 Every item in the client's `Item_Base` table: equipment, weapons, runes, consumables, materials, quest items and the pseudo-items used for gold, fame and exp rewards.
 
+**Categories:** [[wiki/items/weapons-saint\|Saint weapons]] · [[wiki/items/weapons-punisher\|Punisher weapons]] · [[wiki/items/weapons-guardian\|Guardian weapons]] · [[wiki/items/armor-helmet\|Helmets]] · [[wiki/items/armor-body\|Body armour]] · [[wiki/items/armor-gloves\|Gloves]] · [[wiki/items/armor-shoes\|Shoes]] · [[wiki/items/accessories\|Accessories]] · [[wiki/items/runes\|Runes and gem stones]] · [[wiki/items/costume-items\|Costume items]] · [[wiki/items/hero-items\|Innocence (hero) items]] · [[wiki/items/consumables\|Consumables]] · [[wiki/items/materials\|Materials]] · [[wiki/items/quest-items\|Quest items]] · [[wiki/items/boxes-and-packages\|Boxes and packages]] · [[wiki/items/other-items\|Other items]]
+
 1192 pages: 871 complete, 20 partial, 301 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |

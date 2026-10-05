@@ -30,7 +30,9 @@ obtained_from:
 |  | ![Halloween Set](wiki/assets/items/2044.png) |
 | **Item id** | `2044` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2043-halloween-set\|Halloween Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 39 |
 

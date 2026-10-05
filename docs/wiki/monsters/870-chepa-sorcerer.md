@@ -42,7 +42,7 @@ spawn_fields: [127]
 | **Model** | ObjectList `300` MOB_Chepa03 (`character/npc/monster/mob_chepa/mob_chepa01.mo`) |
 | **Scale** | 2.5 (second scale / radius 1) |
 | **Projectile?** | `u32@bc` = 642 (archers carry one; meaning *inferred*) |
-| **Hero transform** | Chepa Sorcerer |
+| **Hero transform** | [[wiki/heroes/14-chepa-sorcerer\|Chepa Sorcerer]] |
 | **Boss of** | [[wiki/dungeons/127-lv-1-chepa-village\|(Lv 1) Chepa Village]] |
 
 ### Server stats

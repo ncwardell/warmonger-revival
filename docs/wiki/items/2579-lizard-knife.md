@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Lizard knife](wiki/assets/items/2579.png) |
 | **Item id** | `2579` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Skull's Belt](wiki/assets/items/3016.png) |
 | **Item id** | `3016` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

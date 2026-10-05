@@ -30,6 +30,7 @@ obtained_from: []
 |  | ![Fragment of Innus](wiki/assets/items/1601.png) |
 | **Item id** | `1601` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Cooldown** | 60 s (group 20) |

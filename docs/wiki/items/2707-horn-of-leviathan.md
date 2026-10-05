@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Horn of Leviathan](wiki/assets/items/2707.png) |
 | **Item id** | `2707` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 6 |

@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Yellow Hair Dye](wiki/assets/items/2303.png) |
 | **Item id** | `2303` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 106 Gold |

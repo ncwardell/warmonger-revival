@@ -32,7 +32,9 @@ obtained_from:
 |  | ![King Deathhead](wiki/assets/items/8006.png) |
 | **Item id** | `8006` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/7-king-deathhead\|King Deathhead]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 18 |

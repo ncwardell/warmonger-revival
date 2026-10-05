@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Worked Onyx](wiki/assets/items/865.png) |
 | **Item id** | `865` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 135 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 47 |

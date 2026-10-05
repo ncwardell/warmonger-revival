@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Barrier Belt](wiki/assets/items/466.png) |
 | **Item id** | `466` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

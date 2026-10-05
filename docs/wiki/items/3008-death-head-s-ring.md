@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Death Head's Ring](wiki/assets/items/3008.png) |
 | **Item id** | `3008` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Gloves of Life](wiki/assets/items/479.png) |
 | **Item id** | `479` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

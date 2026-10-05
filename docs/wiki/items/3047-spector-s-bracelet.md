@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Spector's Bracelet](wiki/assets/items/3047.png) |
 | **Item id** | `3047` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

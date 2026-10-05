@@ -30,7 +30,9 @@ obtained_from:
 |  | ![Halloween Set](wiki/assets/items/2045.png) |
 | **Item id** | `2045` |
 | **Kind** | Costume (32) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
+| **Costume set** | [[wiki/costumes/2043-halloween-set\|Halloween Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 38 |
 

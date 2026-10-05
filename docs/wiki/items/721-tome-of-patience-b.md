@@ -36,9 +36,10 @@ obtained_from:
 |  | ![Tome of Patience (B)](wiki/assets/items/721.png) |
 | **Item id** | `721` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 9 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 26) |
 | **On use: buff** | [[wiki/buffs/2094-scroll-of-reduced-area-damage-b-strong-protection-from-area\|Scroll of Reduced Area Damage (B) : Strong protection from Area Damage.]] |
 | **Icon** | `ui/icons/Items_30.png` cell 11 |

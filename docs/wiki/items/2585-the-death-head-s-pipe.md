@@ -25,6 +25,7 @@ obtained_from:
 |  | ![The Death Head's Pipe](wiki/assets/items/2585.png) |
 | **Item id** | `2585` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

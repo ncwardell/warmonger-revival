@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Red Dye](wiki/assets/items/2501.png) |
 | **Item id** | `2501` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

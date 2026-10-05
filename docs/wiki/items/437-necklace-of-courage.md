@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Necklace of Courage](wiki/assets/items/437.png) |
 | **Item id** | `437` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 35 |

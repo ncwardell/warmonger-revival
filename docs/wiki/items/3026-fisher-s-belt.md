@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Fisher's Belt](wiki/assets/items/3026.png) |
 | **Item id** | `3026` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

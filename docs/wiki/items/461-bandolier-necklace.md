@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Bandolier Necklace](wiki/assets/items/461.png) |
 | **Item id** | `461` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,500 Gold |

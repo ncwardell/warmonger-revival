@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Bandolier Belt](wiki/assets/items/462.png) |
 | **Item id** | `462` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

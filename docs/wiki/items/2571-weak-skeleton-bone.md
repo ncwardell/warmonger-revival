@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Weak Skeleton bone](wiki/assets/items/2571.png) |
 | **Item id** | `2571` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 20 Gold |

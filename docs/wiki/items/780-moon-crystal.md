@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Moon Crystal](wiki/assets/items/780.png) |
 | **Item id** | `780` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 40 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 2 |

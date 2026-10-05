@@ -51,6 +51,7 @@ obtained_from:
 |  | ![Guardian Helmet](wiki/assets/items/409.png) |
 | **Item id** | `409` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 36 |

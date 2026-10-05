@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Death Head's Helmet](wiki/assets/items/3001.png) |
 | **Item id** | `3001` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Spector's Ring](wiki/assets/items/3048.png) |
 | **Item id** | `3048` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

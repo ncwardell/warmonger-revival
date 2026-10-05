@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Urgent Letter](wiki/assets/items/2567.png) |
 | **Item id** | `2567` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

@@ -35,9 +35,10 @@ obtained_from:
 |  | ![Flask of Tenacity (S)](wiki/assets/items/759.png) |
 | **Item id** | `759` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 17 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 28) |
 | **On use: buff** | [[wiki/buffs/2132-flask-of-tenacity-s-tenacity-40-mana-steal-with-each-attack\|Flask of Tenacity (S) : Tenacity +40, Mana Steal with each attack +8]] |
 | **Icon** | `ui/icons/Items_30.png` cell 31 |

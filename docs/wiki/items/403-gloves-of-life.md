@@ -50,6 +50,7 @@ obtained_from:
 |  | ![Gloves of Life](wiki/assets/items/403.png) |
 | **Item id** | `403` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 14 |

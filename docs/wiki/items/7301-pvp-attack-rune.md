@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![PvP Attack Rune](wiki/assets/items/7301.png) |
 | **Item id** | `7301` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

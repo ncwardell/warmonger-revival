@@ -34,9 +34,10 @@ obtained_from: []
 |  | ![Scroll of Armor PNT (C)](wiki/assets/items/728.png) |
 | **Item id** | `728` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 70 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 25) |
 | **On use: buff** | [[wiki/buffs/2101-tome-of-armor-penetration-c-armor-penetration-2\|Tome of Armor Penetration (C) : Armor Penetration +2]] |
 | **Icon** | `ui/icons/Items_04.png` cell 12 |

@@ -49,6 +49,7 @@ obtained_from:
 |  | ![Belt of Life](wiki/assets/items/406.png) |
 | **Item id** | `406` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 200 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 33 |

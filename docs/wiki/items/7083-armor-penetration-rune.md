@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Armor Penetration Rune](wiki/assets/items/7083.png) |
 | **Item id** | `7083` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

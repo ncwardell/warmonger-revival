@@ -51,6 +51,7 @@ obtained_from:
 |  | ![Armor of Honor](wiki/assets/items/418.png) |
 | **Item id** | `418` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 58 |

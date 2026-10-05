@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Diamond powder](wiki/assets/items/811.png) |
 | **Item id** | `811` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 4 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 25 |

@@ -41,6 +41,7 @@ obtained_from:
 |  | ![Yellow Jewel (5000)](wiki/assets/items/1010.png) |
 | **Item id** | `1010` |
 | **Kind** | Sealed Stone (34) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Buy price** | 0 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 39 |

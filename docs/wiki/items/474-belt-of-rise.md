@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Belt of Rise](wiki/assets/items/474.png) |
 | **Item id** | `474` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

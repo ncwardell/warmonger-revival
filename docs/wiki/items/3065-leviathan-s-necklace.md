@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Leviathan's Necklace](wiki/assets/items/3065.png) |
 | **Item id** | `3065` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -36,9 +36,10 @@ obtained_from:
 |  | ![Tome of Attack SPD (A)](wiki/assets/items/714.png) |
 | **Item id** | `714` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 15 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 26) |
 | **On use: buff** | [[wiki/buffs/2087-scroll-of-attack-speed-a-attack-speed-30\|Scroll of Attack Speed (A) : Attack Speed +30]] |
 | **Icon** | `ui/icons/Items_30.png` cell 14 |

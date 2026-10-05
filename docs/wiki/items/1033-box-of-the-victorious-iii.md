@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Box of the Victorious III](wiki/assets/items/1033.png) |
 | **Item id** | `1033` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,000 Gold |

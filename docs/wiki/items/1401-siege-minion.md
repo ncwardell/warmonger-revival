@@ -26,6 +26,7 @@ obtained_from: []
 |  | ![Siege Minion](wiki/assets/items/1401.png) |
 | **Item id** | `1401` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Policy_01.png` cell 35 |

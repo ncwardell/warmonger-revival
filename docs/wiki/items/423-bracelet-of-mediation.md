@@ -46,6 +46,7 @@ obtained_from:
 |  | ![Bracelet of Mediation](wiki/assets/items/423.png) |
 | **Item id** | `423` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 7 |

@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Bracelet of Rise](wiki/assets/items/443.png) |
 | **Item id** | `443` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_06.png` cell 33 |

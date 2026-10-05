@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Clown mushroom](wiki/assets/items/841.png) |
 | **Item id** | `841` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 35 |

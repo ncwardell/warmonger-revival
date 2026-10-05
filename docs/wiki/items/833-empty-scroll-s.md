@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Empty Scroll (S)](wiki/assets/items/833.png) |
 | **Item id** | `833` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 25 |

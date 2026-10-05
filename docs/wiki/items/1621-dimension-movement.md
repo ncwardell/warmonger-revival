@@ -30,6 +30,7 @@ obtained_from: []
 |  | ![Dimension Movement](wiki/assets/items/1621.png) |
 | **Item id** | `1621` |
 | **Kind** | Holy Things (37) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 100 Gold |
 | **Cooldown** | 60 s (group 21) |

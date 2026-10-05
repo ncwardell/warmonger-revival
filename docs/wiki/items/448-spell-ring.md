@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Spell Ring](wiki/assets/items/448.png) |
 | **Item id** | `448` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

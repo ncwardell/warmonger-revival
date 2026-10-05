@@ -38,7 +38,8 @@ obtained_from:
 |  | ![Skeleton King's Magic Cannon](wiki/assets/items/20014.png) |
 | **Item id** | `20014` |
 | **Kind** | Weapon (31) |
-| **Classes** | Guardian |
+| **Category** | [[wiki/items/weapons-guardian\|Guardian weapons]] |
+| **Classes** | [[wiki/classes/5-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Rarity (guessed column)** | 1 |

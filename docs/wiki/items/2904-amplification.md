@@ -33,6 +33,7 @@ obtained_from: []
 |  | ![Amplification](wiki/assets/items/2904.png) |
 | **Item id** | `2904` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10,000 Gold (+10%) |
 | **Cooldown** | 90 s (group 8) |

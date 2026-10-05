@@ -49,6 +49,7 @@ obtained_from:
 |  | ![Barrier Belt](wiki/assets/items/434.png) |
 | **Item id** | `434` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 21 |

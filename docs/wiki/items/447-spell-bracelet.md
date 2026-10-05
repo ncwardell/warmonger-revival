@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Spell Bracelet](wiki/assets/items/447.png) |
 | **Item id** | `447` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

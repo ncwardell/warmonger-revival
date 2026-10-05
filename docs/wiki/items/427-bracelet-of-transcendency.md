@@ -51,6 +51,7 @@ obtained_from:
 |  | ![Bracelet of Transcendency](wiki/assets/items/427.png) |
 | **Item id** | `427` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 0 |

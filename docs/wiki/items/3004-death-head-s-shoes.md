@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Death Head's Shoes](wiki/assets/items/3004.png) |
 | **Item id** | `3004` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Horn of Garon](wiki/assets/items/2706.png) |
 | **Item id** | `2706` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 5 |

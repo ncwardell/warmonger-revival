@@ -28,6 +28,7 @@ obtained_from:
 |  | ![Medical herb water](wiki/assets/items/848.png) |
 | **Item id** | `848` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 42 |

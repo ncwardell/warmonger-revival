@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Recovery Shot](wiki/assets/items/1403.png) |
 | **Item id** | `1403` |
 | **Kind** | Legion Core (60) |
+| **Category** | [[wiki/items/other-items\|Other items]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Policy_01.png` cell 40 |

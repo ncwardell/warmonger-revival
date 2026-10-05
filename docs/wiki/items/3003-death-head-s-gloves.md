@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Death Head's Gloves](wiki/assets/items/3003.png) |
 | **Item id** | `3003` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

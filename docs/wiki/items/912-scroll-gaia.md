@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Scroll : Gaia](wiki/assets/items/912.png) |
 | **Item id** | `912` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Cooldown** | 5 s (group 17) |

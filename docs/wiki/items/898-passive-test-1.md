@@ -30,6 +30,7 @@ obtained_from: []
 |---|---|
 | **Item id** | `898` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Buy price** | 300 Gold |
 | **Icon** | `ui/icons/Artifacts_01.png` cell 22 |

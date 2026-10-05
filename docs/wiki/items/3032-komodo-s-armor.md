@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Komodo's Armor](wiki/assets/items/3032.png) |
 | **Item id** | `3032` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

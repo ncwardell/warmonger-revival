@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Leviathan's Helmet](wiki/assets/items/3061.png) |
 | **Item id** | `3061` |
 | **Kind** | Helmet (50) |
+| **Category** | [[wiki/items/armor-helmet\|Helmets]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

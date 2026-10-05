@@ -27,6 +27,7 @@ obtained_from:
 |  | ![Bone of Spector](wiki/assets/items/2705.png) |
 | **Item id** | `2705` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 4 |

@@ -32,6 +32,7 @@ obtained_from:
 |  | ![Crystal : Red](wiki/assets/items/702.png) |
 | **Item id** | `702` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 40 Gold |
 | **Icon** | `ui/icons/Items_05.png` cell 42 |

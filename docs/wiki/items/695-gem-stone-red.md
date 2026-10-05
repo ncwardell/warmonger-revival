@@ -41,6 +41,7 @@ obtained_from:
 |  | ![Gem Stone : Red](wiki/assets/items/695.png) |
 | **Item id** | `695` |
 | **Kind** | Jewel (58) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Buy price** | 400 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 8 |

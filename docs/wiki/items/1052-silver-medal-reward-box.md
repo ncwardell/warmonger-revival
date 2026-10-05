@@ -28,6 +28,7 @@ obtained_from:
 |  | ![(Silver) Medal Reward Box](wiki/assets/items/1052.png) |
 | **Item id** | `1052` |
 | **Kind** | Random Box (43) |
+| **Category** | [[wiki/items/boxes-and-packages\|Boxes and packages]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 3 Silver Medal |

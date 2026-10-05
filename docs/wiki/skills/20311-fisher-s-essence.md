@@ -49,8 +49,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Tempest Fisher, skill 1
-- Hero Tempest Fisher, skill 1
+- Hero [[wiki/heroes/8-tempest-fisher|Tempest Fisher]], skill 1
+- Hero [[wiki/heroes/58-tempest-fisher-crystal|Tempest Fisher (Crystal)]], skill 1
 <!-- generated:end -->
 
 ## Notes

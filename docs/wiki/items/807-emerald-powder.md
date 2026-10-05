@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Emerald powder](wiki/assets/items/807.png) |
 | **Item id** | `807` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 4 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 23 |

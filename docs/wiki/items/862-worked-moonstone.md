@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Worked Moonstone](wiki/assets/items/862.png) |
 | **Item id** | `862` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 135 Gold |
 | **Icon** | `ui/icons/Items_07.png` cell 21 |

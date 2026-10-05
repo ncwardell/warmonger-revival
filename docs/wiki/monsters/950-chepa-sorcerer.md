@@ -30,7 +30,7 @@ spawn_fields: [127]
 | **Class mask** | 1 (monster) |
 | **Model** | ObjectList `300` MOB_Chepa03 (`character/npc/monster/mob_chepa/mob_chepa01.mo`) |
 | **Scale** | 1.2 (second scale / radius 1) |
-| **Hero transform** | Chepa Sorcerer |
+| **Hero transform** | [[wiki/heroes/14-chepa-sorcerer\|Chepa Sorcerer]] |
 | **Boss of** | [[wiki/dungeons/127-lv-1-chepa-village\|(Lv 1) Chepa Village]] |
 
 ### Server stats

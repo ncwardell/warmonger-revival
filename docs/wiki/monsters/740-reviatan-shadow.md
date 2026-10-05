@@ -32,7 +32,7 @@ spawn_fields: [126]
 | **Model** | ObjectList `75` MOB_DemonLord_Shadow_01 (`character/npc/monster/mob_demon/mob_demonlord_01.mo`) |
 | **Scale** | 1.3 (second scale / radius 1) |
 | **Projectile?** | `u32@bc` = 853 (archers carry one; meaning *inferred*) |
-| **Hero transform** | Reviatan Shadow |
+| **Hero transform** | [[wiki/heroes/12-reviatan-shadow\|Reviatan Shadow]] |
 | **Boss of** | [[wiki/dungeons/126-lv-7-demon-hell\|(Lv 7) Demon Hell]] |
 
 ### Server stats

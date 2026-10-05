@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Fame warrior Necklace](wiki/assets/items/3515.png) |
 | **Item id** | `3515` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

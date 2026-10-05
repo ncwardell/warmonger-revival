@@ -40,6 +40,7 @@ obtained_from:
 |  | ![Skull's Gloves](wiki/assets/items/3013.png) |
 | **Item id** | `3013` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

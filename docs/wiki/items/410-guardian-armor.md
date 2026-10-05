@@ -52,6 +52,7 @@ obtained_from:
 |  | ![Guardian Armor](wiki/assets/items/410.png) |
 | **Item id** | `410` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 37 |

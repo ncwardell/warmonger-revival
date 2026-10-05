@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Armor of Honor](wiki/assets/items/490.png) |
 | **Item id** | `490` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 2,000 Gold |

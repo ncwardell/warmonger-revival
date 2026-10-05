@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Skeleton bone](wiki/assets/items/2555.png) |
 | **Item id** | `2555` |
 | **Kind** | Quest (17) |
+| **Category** | [[wiki/items/quest-items\|Quest items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 20 Gold |

@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Fame knight Shoes](wiki/assets/items/3504.png) |
 | **Item id** | `3504` |
 | **Kind** | Shoes (53) |
+| **Category** | [[wiki/items/armor-shoes\|Shoes]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

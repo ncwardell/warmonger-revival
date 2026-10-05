@@ -32,7 +32,9 @@ obtained_from:
 |  | ![Dark knight Skull](wiki/assets/items/8000.png) |
 | **Item id** | `8000` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/1-dark-knight-skull\|Dark Knight Skull]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 19 |

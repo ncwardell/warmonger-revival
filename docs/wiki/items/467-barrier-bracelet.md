@@ -37,6 +37,7 @@ obtained_from:
 |  | ![Barrier Bracelet](wiki/assets/items/467.png) |
 | **Item id** | `467` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,300 Gold |

@@ -36,6 +36,7 @@ obtained_from:
 |  | ![Pink Dye](wiki/assets/items/2500.png) |
 | **Item id** | `2500` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

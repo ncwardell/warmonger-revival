@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Belt of Rise](wiki/assets/items/442.png) |
 | **Item id** | `442` |
 | **Kind** | Belt (55) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 150 Gold |
 | **Icon** | `ui/icons/Items_08.png` cell 18 |

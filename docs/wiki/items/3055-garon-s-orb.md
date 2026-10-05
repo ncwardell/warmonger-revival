@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Garon's Orb](wiki/assets/items/3055.png) |
 | **Item id** | `3055` |
 | **Kind** | Necklace (54) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

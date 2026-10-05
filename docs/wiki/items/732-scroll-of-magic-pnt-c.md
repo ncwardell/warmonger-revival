@@ -34,9 +34,10 @@ obtained_from: []
 |  | ![Scroll of Magic PNT (C)](wiki/assets/items/732.png) |
 | **Item id** | `732` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 60 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 25) |
 | **On use: buff** | [[wiki/buffs/2105-tome-of-magic-penetration-c-magic-penetration-2\|Tome of Magic Penetration (C) : Magic Penetration +2]] |
 | **Icon** | `ui/icons/Items_04.png` cell 16 |

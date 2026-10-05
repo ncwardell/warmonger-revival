@@ -45,6 +45,7 @@ obtained_from:
 |  | ![Barrier Bracelet](wiki/assets/items/435.png) |
 | **Item id** | `435` |
 | **Kind** | Bracelet (56) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 130 Gold |
 | **Icon** | `ui/icons/Items_02.png` cell 63 |

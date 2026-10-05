@@ -51,6 +51,7 @@ obtained_from:
 |  | ![Ring of Life](wiki/assets/items/408.png) |
 | **Item id** | `408` |
 | **Kind** | Ring (57) |
+| **Category** | [[wiki/items/accessories\|Accessories]] |
 | **Classes** | all |
 | **Buy price** | 110 Gold |
 | **Icon** | `ui/icons/Items_10.png` cell 35 |

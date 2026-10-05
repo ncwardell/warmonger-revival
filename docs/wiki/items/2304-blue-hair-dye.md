@@ -35,6 +35,7 @@ obtained_from:
 |  | ![Blue Hair Dye](wiki/assets/items/2304.png) |
 | **Item id** | `2304` |
 | **Kind** | Hair dye (21) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 98 Gold |

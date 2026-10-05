@@ -47,7 +47,7 @@ complete_talk: 909
 
 ### Objectives
 
-1. Kill Warrior (Male) × 1 — tracker: “Destroy Nexus of enemy (0/1)”
+1. Kill [[wiki/classes/5-guardian|Guardian]] × 1 — tracker: “Destroy Nexus of enemy (0/1)”
 2. Report (tracker line; done by turning the quest in) — tracker: “Meeting Balten”
 
 Stages (`flag1..5` = [1, 5, 5, 5, 5]): objectives unlock in steps; with the first unfinished objective *i*, objectives 1..flag*i* are active (contract/quests.yaml).

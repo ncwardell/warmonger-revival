@@ -32,7 +32,9 @@ obtained_from:
 |  | ![Guardian](wiki/assets/items/8001.png) |
 | **Item id** | `8001` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/2-guardian\|Guardian]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_20.png` cell 27 |

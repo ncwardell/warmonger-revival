@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Worked Diamond](wiki/assets/items/867.png) |
 | **Item id** | `867` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 180 Gold |
 | **Icon** | `ui/icons/Items_01.png` cell 46 |

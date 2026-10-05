@@ -39,6 +39,7 @@ obtained_from:
 |  | ![Garon's Armor](wiki/assets/items/3052.png) |
 | **Item id** | `3052` |
 | **Kind** | Armor (51) |
+| **Category** | [[wiki/items/armor-body\|Body armour]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

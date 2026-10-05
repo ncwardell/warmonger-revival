@@ -28,7 +28,9 @@ obtained_from: []
 |  | ![Developer Set](wiki/assets/items/2054.png) |
 | **Item id** | `2054` |
 | **Kind** | Costume (32) |
-| **Classes** | Punisher |
+| **Category** | [[wiki/items/costume-items\|Costume items]] |
+| **Classes** | [[wiki/classes/4-punisher\|Punisher]] |
+| **Costume set** | [[wiki/costumes/2052-developer-set\|Developer Set]] |
 | **Bind** | on pickup |
 | **Icon** | `ui/icons/Costume_01.dds` cell 55 |
 

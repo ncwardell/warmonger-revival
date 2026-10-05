@@ -27,6 +27,7 @@ obtained_from: []
 |  | ![PvP Armor Rune](wiki/assets/items/7305.png) |
 | **Item id** | `7305` |
 | **Kind** | Rune (35) |
+| **Category** | [[wiki/items/runes\|Runes and gem stones]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

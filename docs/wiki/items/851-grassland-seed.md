@@ -24,6 +24,7 @@ obtained_from: []
 |  | ![Grassland seed](wiki/assets/items/851.png) |
 | **Item id** | `851` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 50 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 45 |

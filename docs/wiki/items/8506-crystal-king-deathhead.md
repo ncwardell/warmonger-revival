@@ -35,10 +35,12 @@ obtained_from:
 |  | ![Crystal : King Deathhead](wiki/assets/items/8506.png) |
 | **Item id** | `8506` |
 | **Kind** | Innocence (18) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
+| **Hero form** | [[wiki/heroes/57-king-deathhead-crystal\|King Deathhead (Crystal)]] |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1,500 = the crystal's durability (−5 per second transformed, WM 1107) |
 | **Icon** | `ui/icons/Items_20.png` cell 46 |
 
 ### Other options

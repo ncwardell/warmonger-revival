@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Spartium](wiki/assets/items/828.png) |
 | **Item id** | `828` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 10 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 25 |

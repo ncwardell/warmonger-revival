@@ -35,7 +35,8 @@ obtained_from:
 |  | ![Magical Devil Wand](wiki/assets/items/10020.png) |
 | **Item id** | `10020` |
 | **Kind** | Weapon (31) |
-| **Classes** | Saint |
+| **Category** | [[wiki/items/weapons-saint\|Saint weapons]] |
+| **Classes** | [[wiki/classes/1-saint\|Saint]] |
 | **Bind** | on pickup |
 | **Buy price** | 500 Gold |
 | **Icon** | `ui/icons/Weapon_PCE_01.dds` cell 39 |

@@ -52,6 +52,7 @@ obtained_from:
 |  | ![Guardian Gloves](wiki/assets/items/412.png) |
 | **Item id** | `412` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Buy price** | 120 Gold |
 | **Icon** | `ui/icons/Items_09.png` cell 38 |

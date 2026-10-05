@@ -29,6 +29,7 @@ obtained_from:
 |  | ![Premium Red Dye](wiki/assets/items/2401.png) |
 | **Item id** | `2401` |
 | **Kind** | Dye (14) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 114 Gold |

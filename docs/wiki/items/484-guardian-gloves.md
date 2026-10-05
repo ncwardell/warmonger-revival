@@ -38,6 +38,7 @@ obtained_from:
 |  | ![Guardian Gloves](wiki/assets/items/484.png) |
 | **Item id** | `484` |
 | **Kind** | Gloves (52) |
+| **Category** | [[wiki/items/armor-gloves\|Gloves]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 1,100 Gold |

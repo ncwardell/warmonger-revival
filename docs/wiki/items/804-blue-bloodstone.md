@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Blue bloodstone](wiki/assets/items/804.png) |
 | **Item id** | `804` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 20 Gold |
 | **Icon** | `ui/icons/Items_03.png` cell 12 |

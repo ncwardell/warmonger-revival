@@ -36,9 +36,10 @@ obtained_from:
 |  | ![Scroll of the Warrior (B)](wiki/assets/items/705.png) |
 | **Item id** | `705` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Buy price** | 9 Gold |
-| **Period** | 1500 (unit unknown; costume duration) |
+| **Period** | 1500 (unit unknown) |
 | **Cooldown** | 2 s (group 25) |
 | **On use: buff** | [[wiki/buffs/2078-tome-of-the-warrior-b-damage-64\|Tome of the Warrior (B): Damage +64]] |
 | **Icon** | `ui/icons/Items_03.png` cell 53 |

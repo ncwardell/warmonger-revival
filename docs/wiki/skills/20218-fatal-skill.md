@@ -49,8 +49,8 @@ Raw `Skill_Base` effect slots; the client never applies them, the server does. M
 
 ### Used by
 
-- Hero Artamos, skill 3
-- Hero Artamos, skill 3
+- Hero [[wiki/heroes/5-artamos|Artamos]], skill 3
+- Hero [[wiki/heroes/55-artamos-crystal|Artamos (Crystal)]], skill 3
 <!-- generated:end -->
 
 ## Notes

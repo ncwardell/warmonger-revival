@@ -26,6 +26,7 @@ obtained_from:
 |  | ![Borage powder](wiki/assets/items/827.png) |
 | **Item id** | `827` |
 | **Kind** | Material (12) |
+| **Category** | [[wiki/items/materials\|Materials]] |
 | **Classes** | all |
 | **Buy price** | 1 Gold |
 | **Icon** | `ui/icons/Items_04.png` cell 30 |

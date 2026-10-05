@@ -30,6 +30,7 @@ obtained_from:
 |  | ![Warehouse Summon Scroll](wiki/assets/items/921.png) |
 | **Item id** | `921` |
 | **Kind** | Normal (11) |
+| **Category** | [[wiki/items/consumables\|Consumables]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 0 Gold |

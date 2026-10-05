@@ -25,6 +25,7 @@ obtained_from:
 |  | ![Piece : Morion](wiki/assets/items/9005.png) |
 | **Item id** | `9005` |
 | **Kind** | Innocence Piece (36) |
+| **Category** | [[wiki/items/hero-items\|Innocence (hero) items]] |
 | **Classes** | all |
 | **Bind** | on pickup |
 | **Buy price** | 10 Gold |

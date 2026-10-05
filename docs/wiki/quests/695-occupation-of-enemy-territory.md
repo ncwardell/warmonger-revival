@@ -49,7 +49,7 @@ rewards:
 1. Type 30 — build nexus?; values a=2, b=1 — tracker: “Constructing Nexus for the first time”
 2. Kill Attack Tower × 1 — tracker: “Destroy a tower (0/1)”
 3. Type 29 — attack tower?; values a=2, b=1 — tracker: “Constructing tower”
-4. Kill Warrior (Male) × 1 — tracker: “Destroy enemy nexus”
+4. Kill [[wiki/classes/5-guardian|Guardian]] × 1 — tracker: “Destroy enemy nexus”
 
 Stages (`flag1..5` = [1, 2, 3, 5, 5]): objectives unlock in steps; with the first unfinished objective *i*, objectives 1..flag*i* are active (contract/quests.yaml).
 
