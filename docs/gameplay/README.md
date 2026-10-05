@@ -13,6 +13,7 @@ What Warmonger was like to play, collected from player guides and other sources 
 - [[gameplay/items-and-crafting|Items and crafting]] — materials, upgrades, gear sources
 - [[gameplay/progression-and-economy|Progression and economy]] — levels, quests, currencies
 - [[gameplay/pvp-and-matches|PvP and matches]] — land wars, forts, matches
+- [[gameplay/patch-history|Patch notes and other sources]] — official announcements 2016–19, blog, archived wiki and forum
 - [[gameplay/server-rules|Server rules checklist]] — concrete rules a server must implement, with sources
 
 ## Sources
@@ -51,3 +52,10 @@ Client tables used for cross-checks: `FieldNames`, `Dungeon`, `DungeonAdmission`
 - The world-map screenshots in the [strategy guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1460486971) and the [noob guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1345368744): they show every land name, owner and dungeon tier icon at one moment in 2018, which could seed the initial land ownership.
 - The dungeon minimaps in the [dungeons guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1344219430) next to the client's `minimap_z<id>` textures, to place spawns, gather nodes and bosses.
 - The "First steps video lvl 1–17" linked from the [definitive guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1459948573) §First Steps (the tutorial and early quest flow).
+- **Videos** (YouTube ids; we cannot watch them):
+  - fort war: ZonderCoRe 6_z6CUpZj30 (hero form), JPd7TCu-44o (core room); Dackmen E5rqHNAFaz8, BcbszKkUbbQ (nexus boss), iyMgWsBYOxc (legion war)
+  - 15 v 15 battles: Dackmen NCHwg0oQVbg, LTZm_Hb3mNA; Guardian mass PvP: VhHADbLm7HE, JngxzCCUc9Q, kU2RuzoNOnc
+  - dungeons and farming: Nas Village run eL5hx5C9iZw; AFK Red Passion farm onNr7IVnDu8; rune to +7 dpofIAFX2wM; rush-map conquest JcKtjYFPFfw
+  - long sessions: s04CSN16w1s (2.5 h), IQI0yh1S0-Y, CqCY2ULeVGw, cqYz3j59MFI; Spanish basics awKR2rF-3nM, q5lJoBiDwfY
+  - Crush Online era: 2umwpYlKAvg (fort battle, guardian boss, lands), yAK2gjqTCrk (tutorial)
+- Patch-note table images on the Steam announcements (TP skills, reinforce crystals, rune materials, schedules) — read once, worth re-checking by eye. See [[gameplay/patch-history]].

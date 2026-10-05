@@ -104,3 +104,13 @@ Where the client data and a 2018 guide disagree, **the client is the final build
 [g-tr]: https://steamcommunity.com/sharedfiles/filedetails/?id=1460533609
 [g-ptbr]: https://steamcommunity.com/sharedfiles/filedetails/?id=1544645226
 [g-crush-basics]: https://steamcommunity.com/sharedfiles/filedetails/?id=780459080
+
+## Added from patch notes (see [[gameplay/patch-history]])
+
+- [ ] Event schedule (server time): War of Warmonger every 2 h, Battle Arena 06/18, Holy Things 07/19, Sunday 20:00 Civil War (WM 1107). — announcements — **M**
+- [ ] War of Warmonger filled with up to 15 bots per side; Battle Arena max 5 per team. — WM 1107 / 0719 — **M**
+- [ ] Failed reinforcement drops one level and consumes materials; Reinforcing Adjuvant prevents it. — WM 0412 — **M**
+- [ ] Dungeon level measured from the nation's Main Fortress; border-area unlock levels 0/20–27. — WM 0726 / 0615 — **M**
+- [ ] Safety factor ticks every 30 min (distance-scaled); ≤30 gives an 80% invasion chance; <0 = monster-owned; dungeon clear +5. — WM 0726 — **M**
+- [ ] Fort shields recover in 3 h with 1 h invulnerability after each loss. — WM 0705 — **M**
+- [ ] Transformation cooldown 120 s; hero gets 35–100% of gear stats by gear tier. — WM 0621 / 0628 — **M**
