@@ -17,6 +17,9 @@ What Warmonger was like to play, collected from player guides and other sources 
 - [[gameplay/events-and-schedules|Events, schedules and PvP rewards]] — hourly schedules, fame/medal rewards, weekend events, forts, Shaia, gacha pools
 - [[gameplay/patch-history|Patch notes and other sources]] — official announcements 2016–19, blog, archived wiki and forum
 - [[gameplay/server-rules|Server rules checklist]] — concrete rules a server must implement, with sources
+- [[gameplay/videos|Videos]] — 86 gameplay videos by topic, with timestamps; start here for the tutorial
+- [[gameplay/gear-stats|Gear stats]], [[gameplay/dungeon-drops|Dungeon drops]], [[gameplay/stat-values|Stat values]] — from the Crush Share player spreadsheet
+- [[gameplay/abyss-map|Abyss map and portals]], [[gameplay/lords-of-the-land|Lords of the Land]], [[gameplay/skull-artifact-set|Skull artifact set]], [[gameplay/potion-regen|Potion regeneration]], [[gameplay/arena-ranking-rewards|Arena ranking rewards]], [[gameplay/precept-shop|Precept shop]] — from player screenshots
 
 ## Sources
 
