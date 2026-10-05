@@ -18,13 +18,13 @@ Working against the real client:
 
 Implemented for testing: separate player sessions, mutual player spawning, movement and combat relay, a shared monster world, private loot, and despawning on leave. Synthetic two-client socket tests pass; see `docs/spec/world.md` for the current client verification status.
 
-New for testing: durable inventory, equipment, gold, quick-bar and quest saves, plus an optional first-four-quests experiment. See [solo testing](docs/testing.md) for the steps and current limits.
+New for testing: durable inventory, equipment, gold, quick-bar and quest saves, plus an optional quests 1-7 experiment: travel to Frei in Training Camp, return for the Chepa officers, and choose a ring reward. The Frei follow-up uses a documented prototype route where the client and video evidence disagree. See [solo testing](docs/testing.md) for the steps and current limits.
 
 Not yet: the remaining quests and NPC services, shops, party/guild/chat, matches and fort war, and real stats/damage formulas. See [Contributing](CONTRIBUTING.md) and the issue tracker.
 
 ## How it works
 
-The short version: `docs/gameplay/` is sourced evidence of what the original game was; `docs/wiki/` is the game's canonical data (one page per item, monster, NPC, quest, skill, map, shop…) and the server's only source of numbers; `server/` holds logic; `contract/` is the protocol. Details: [How the project fits together](https://ncwardell.github.io/warmonger-revival/how-it-fits).
+The short version: `docs/gameplay/` is sourced evidence of what the original game was; `docs/wiki/` is the game's canonical data (one page per item, monster, NPC, quest, skill, map, shop…); `server/` holds logic; `contract/` is the protocol. The server now reads quests 1-7 and the two Chepa officers from wiki pages. Other systems still use local client tables or prototype constants while migration continues. Details: [How the project fits together](https://ncwardell.github.io/warmonger-revival/how-it-fits).
 
 
 - `server/` — a small Python 3 asyncio server. `stub.py` owns the sockets (login 8815, game 8813, web 8080); `handlers.py` maps opcodes to reply functions and is **reloaded on save**, so you can change replies while a client stays connected. `world.py`, `ai.py`, `skills.py` and `loot.py` hold game systems.

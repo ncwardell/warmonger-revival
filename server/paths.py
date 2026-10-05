@@ -7,5 +7,6 @@ Set WARMONGER_DATA to override; the default is ./data at the repository root
 import os
 import pathlib
 
-DATA = pathlib.Path(os.environ.get("WARMONGER_DATA", pathlib.Path(__file__).resolve().parent.parent / "data"))
+REPO = pathlib.Path(__file__).resolve().parent.parent
+DATA = pathlib.Path(os.environ.get("WARMONGER_DATA", REPO / "data"))
 SETTING = DATA / "setting"

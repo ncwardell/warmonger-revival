@@ -27,16 +27,8 @@ class TravelTests(test_progress.GameTestCase):
                 p.start()
                 self.addCleanup(p.stop)
         super().setUp()
-        # Exercise the real table loader, including distinct giver/receiver maps.
-        row = [b"0"] * 143
-        fields = {0: 5, 3: 4, 5: 5, 7: 89, 10: 201, 14: 88, 17: 198,
-                  **{i: 5 for i in range(51, 56)},
-                  111: 2, 112: 2750, 117: 1, 119: 402, 120: 1, 123: 4, 124: 500}
-        for i, value in fields.items():
-            row[i] = str(value).encode()
-        with patch.object(quests, "rows", return_value=[row]):
-            definitions = quests.definitions()
-        p = patch.object(quests, "DEFINITIONS", definitions)
+        # Use the committed quest data; isolate travel from later auto quests.
+        p = patch.object(quests, "DEFINITIONS", {5: quests.definitions()[5]})
         p.start()
         self.addCleanup(p.stop)
 

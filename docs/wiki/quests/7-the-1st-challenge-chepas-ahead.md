@@ -94,7 +94,11 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+Enabled in the Python quest-test server after completion bit 6. Kill one of each
+officer in Training Ground, then return to Frei in Training Camp. The player
+chooses item 400 or 408; these are not class-dependent rewards. Item 906 and XP
+are granted alongside the selected ring. The server uses the raw reward amount;
+`shown` records historical UI evidence. See [[testing]] for checks and limits.
 
 ## Sources
 

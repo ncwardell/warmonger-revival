@@ -18,6 +18,7 @@ import struct
 import sys
 import time
 import sessions
+import gamedata
 
 from proto import build, split
 
@@ -149,6 +150,7 @@ def reset():
     for i, (unit_id, name, level, hp, dx, dz) in enumerate(MONSTERS):
         u = Unit(MONSTER_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, MONSTER_TEAM)
         UNITS[u.uid] = u
+
     for i, (unit_id, name, level, hp, dx, dz) in enumerate(NPCS if QUEST_TEST else NPCS[:1]):
         u = Unit(NPC_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, NPC_TEAM)
         UNITS[u.uid] = u
@@ -170,6 +172,22 @@ def reset():
         u = Unit(NPC_UID_BASE + 2, 198, "Frei", 10, 1000,
                  360.8, 3466.1, NPC_TEAM, map_id=88)
         UNITS[u.uid] = u
+
+        # Only the new officers use wiki stats/spawns so far. The older test
+        # layout above is still being migrated; do not imply full wiki parity.
+        for i, unit_id in enumerate((710, 711), len(MONSTERS)):
+            page = gamedata.entity("monsters", unit_id)
+            spawn, = page["spawns"]
+            if spawn["count"] != 1 or spawn["field"] not in SITES:
+                raise ValueError(f"unsupported officer spawn: {unit_id}")
+            x, z = float(spawn["x"]), float(spawn["z"])
+            if not math.isfinite(x) or not math.isfinite(z):
+                raise ValueError(f"invalid officer coordinates: {unit_id}")
+            u = Unit(MONSTER_UID_BASE + i, unit_id, page["title"],
+                     gamedata.integer(page["level"], 1, 255),
+                     gamedata.integer(page["hp"], 1, 0x7FFFFFFF),
+                     x, z, MONSTER_TEAM, map_id=spawn["field"])
+            UNITS[u.uid] = u
 
 
 def visible(u, session=None):
@@ -541,7 +559,8 @@ if __name__ == "__main__":
     assert struct.unpack_from("<h", stats[2], 0x50)[0] == PLAYER_REVIVE_SECONDS
     assert [(op, n) for op, n, _ in burst[:2]] == [(0x803, 0x1C0), (0x804, 0xBC)]
     assert struct.unpack_from("<hh", burst[1][2], 0x44) == (ATTACK_SPEED, MELEE_RANGE)
-    assert len(burst) == 2 * (len(MONSTERS) + (3 if QUEST_TEST else 1))
+    # Quest mode adds three NPCs and the two wiki-defined officers.
+    assert len(burst) == 2 * (len(MONSTERS) + (5 if QUEST_TEST else 1))
     assert all(len(p) == 0x38 for _, _, p in [(0, 0, spawn_compact(u)) for u in UNITS.values()])
     slime = UNITS[MONSTER_UID_BASE]
     first = burst[0][2]

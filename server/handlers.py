@@ -232,7 +232,8 @@ def tick():
             old_level = session.level
             # Resume zero-receiver quests left ready by the earlier handler,
             # and finish newly earned automatic quests without a client turn-in.
-            out = quests.refresh_level() + quests.finish_automatic() + loot.tick(now)
+            out = (quests.refresh_level() + quests.finish_automatic()
+                   + quests.start_automatic() + loot.tick(now))
             if out:
                 out += quests.collect_progress()
                 persistence.save_progress(session)

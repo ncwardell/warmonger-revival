@@ -15,7 +15,7 @@ Every page starts from the original client's own data (names, stats, prices, que
 | [[wiki/items/index\|Items]] | 1192 | 832 | 0 | 360 |
 | [[wiki/skills/index\|Skills]] | 675 | 395 | 0 | 280 |
 | [[wiki/buffs/index\|Buffs]] | 842 | 663 | 0 | 179 |
-| [[wiki/monsters/index\|Monsters]] | 331 | 0 | 0 | 331 |
+| [[wiki/monsters/index\|Monsters]] | 331 | 0 | 2 | 329 |
 | [[wiki/npcs/index\|NPCs]] | 100 | 28 | 0 | 72 |
 | [[wiki/quests/index\|Quests]] | 291 | 132 | 0 | 159 |
 | [[wiki/shops/index\|Shops]] | 173 | 14 | 0 | 159 |
@@ -27,7 +27,7 @@ Every page starts from the original client's own data (names, stats, prices, que
 | [[wiki/nodes/index\|Nodes]] | 123 | 19 | 0 | 104 |
 | [[wiki/recipes/index\|Recipes]] | 465 | 0 | 0 | 465 |
 | [[wiki/upgrades/index\|Upgrades]] | 102 | 0 | 0 | 102 |
-| **total** | 4647 | 2229 | 0 | 2418 |
+| **total** | 4647 | 2229 | 2 | 2416 |
 
 **complete** = every field the server needs has a value (from the client data or added by hand); **partial** = fields are still missing but someone has added to the page; **stub** = fields are missing and the page holds only what the client data gives.
 

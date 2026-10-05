@@ -302,17 +302,12 @@ class QuestTests(GameTestCase):
         self.assertEqual(persistence.read_progress(s.account, s.record)["experience"], 37)
 
     def test_floyd_handoff_is_accepted_then_completed_at_shaia(self):
-        # Synthetic no-objective handoff; the installed-table test below also
-        # checks the real quest. Replay the repeatedly rejected live accept.
-        row = [b"0"] * 141
-        fields = {0: 4, 3: 3, 5: 4, 7: handlers.SPAWN_MAP,
-                  10: 239, 17: 201, **{i: 5 for i in range(51, 56)}}
-        for index, value in fields.items():
-            row[index] = str(value).encode()
-        with patch.object(quests, "rows", return_value=[row]):
-            definitions = quests.definitions()
-        self.assertIn(4, definitions)
-        quests.DEFINITIONS.update(definitions)
+        # Replay the rejected live accept, placing the wiki's handoff NPCs in
+        # this test's map. Other tests compare the real nation map IDs.
+        handoff = quests.definitions()[4]
+        handoff.update(maps=(handlers.SPAWN_MAP,) * 3,
+                       receiver_maps=(handlers.SPAWN_MAP,) * 3)
+        quests.DEFINITIONS[4] = handoff
         s, _, _ = self.player(b"Handoff")
         shaia = next(u for u in world.UNITS.values() if u.unit_id == 201)
         shaia.x = s.player["x"] + 100
@@ -340,7 +335,7 @@ class QuestTests(GameTestCase):
 
 
 class ClientDataQuestTests(GameTestCase):
-    @unittest.skipUnless(all(q in quests.DEFINITIONS for q in (1, 2, 3)), "requires the user's Quest.cdb")
+    @unittest.skipUnless(quests.LEVELS, "requires the user's Level_Table.cdb")
     def test_first_four_quests_using_installed_client_tables(self):
         s, _, _ = self.player(b"DataQuest")
         s.player["map"] = 89

@@ -1,10 +1,11 @@
-"""Small tutorial quest experiment, using the player's own Quest.cdb.
+"""Small tutorial quest experiment, using the committed game wiki.
 
 Packet evidence: contract/quests.yaml (0x48e..0x492, FUN_00599ab2).
-Only rows 1..5 and their talk/kill/collect objectives and NPC handoffs are enabled. Unknown
+Only quests 1..7 and their talk/kill/collect objectives and NPC handoffs are enabled. Unknown
 quests or objective/reward types are rejected, never silently completed.
 """
 import copy
+import gamedata
 import math
 import struct
 
@@ -28,26 +29,67 @@ def rows(name):
 
 
 def definitions():
+    """Compile the supported wiki pages to fixed-size protocol records.
+
+    Reward `amount` is authoritative; `shown` is historical UI evidence only.
+    Fixed and player-selected items are supported, class-dependent picks are not.
+    """
     result = {}
-    for row in rows("Quest.cdb"):
-        qid = int(row[0])
-        if qid not in (1, 2, 3, 4, 5):
-            continue
-        objectives = [tuple(int(v) for v in row[i:i + 5]) for i in range(56, 111, 11)]
-        rewards = [tuple(int(v) for v in row[i:i + 4]) for i in range(111, 141, 6)]
-        if any(o[0] not in (0, 1, 4) for o in objectives) or any(r[0] not in (0, 1, 2, 4) for r in rewards):
-            continue
-        result[qid] = {"id": qid, "bit": int(row[5]), "prerequisite": int(row[3]),
-                       "exclusion": int(row[4]), "maps": tuple(map(int, row[7:10])),
-                       "receiver_maps": tuple(map(int, row[14:17])),
-                       "giver": int(row[10]), "receiver": int(row[17]),
-                       # Row 13 -> definition +0x11 (loader 0x43e7f0).
-                       # No receiver NPC/gadget means the client cannot offer a
-                       # turn-in marker (0x59925d..0x5992ab). Treat this flag as
-                       # automatic completion for the supported tutorial slice.
-                       "automatic": bool(int(row[13])) and not int(row[17]) and not int(row[18]),
-                       "stages": tuple(map(int, row[51:56])), "objectives": objectives,
-                       "rewards": rewards}
+    number = gamedata.integer
+    for qid in range(1, 8):
+        page = gamedata.entity("quests", qid)
+        if page.get("type") != "quest" or page.get("prerequisites"):
+            raise ValueError(f"quest {qid}: unsupported definition/prerequisites")
+        objectives = [(0,) * 5] * 5
+        occupied = set()
+        for o in page["objectives"]:
+            index = number(o["n"], 1, 5) - 1
+            kind = o["type"]
+            if index in occupied or kind not in (0, 1, 4):
+                raise ValueError(f"quest {qid}: unsupported/duplicate objective")
+            occupied.add(index)
+            target = number(o.get("npc", o.get("unit", 0)), 0, 65535)
+            item = number(o.get("item", 0), 0, 65535)
+            count = number(o.get("count", 0), 1 if kind == 1 else 0, 32767)
+            if kind:
+                gamedata.entity("npcs" if kind == 4 else "monsters", target)
+            if item:
+                gamedata.entity("items", item)
+            objectives[index] = (kind, target, count, number(o.get("rate", 0), 0, 100), item)
+        rewards = []
+        for r in page["rewards"]:
+            kind = r["type"]
+            if kind == 1 and r.get("pick") in ("fixed", "choose"):
+                item = number(r["item"], 1, 65535)
+                gamedata.entity("items", item)
+                rewards.append((1, 11 if r["pick"] == "choose" else 0,
+                                item, number(r["count"], 1, 65535)))
+            elif kind in (2, 4):
+                rewards.append((kind, number(r["amount"], 0, 0xFFFFFFFF), 0, 0))
+            else:
+                raise ValueError(f"quest {qid}: unsupported reward {r}")
+        giver, receiver = page["giver"], page["turn_in"]
+        for endpoint in (giver, receiver):
+            if set(endpoint) == {"npc"}:
+                gamedata.entity("npcs", number(endpoint["npc"], 1, 65535))
+            elif endpoint != {"auto": True}:
+                raise ValueError(f"quest {qid}: unsupported NPC endpoint")
+        maps = tuple(number(m, 0, 65535) for m in page.get("offer_maps", [0] * 3))
+        receiving = tuple(number(m, 0, 65535) for m in page.get("turn_in_maps", maps))
+        stages = tuple(number(n, 1, 5) for n in page["stages"])
+        if len(maps) != 3 or len(receiving) != 3 or len(stages) != 5:
+            raise ValueError(f"quest {qid}: expected three nation maps and five stages")
+        prerequisite = number(page.get("requires_bit", 0), 0, 319)
+        if giver.get("auto") and not prerequisite:
+            raise ValueError(f"quest {qid}: automatic assignment needs an explicit prerequisite")
+        result[qid] = {"id": qid, "bit": number(page["bit"], 1, 319),
+                       "prerequisite": prerequisite,
+                       "exclusion": number(page.get("excludes_bit", 0), 0, 319),
+                       "maps": maps, "receiver_maps": receiving,
+                       "giver": giver.get("npc", 0), "receiver": receiver.get("npc", 0),
+                       "auto_accept": giver.get("auto", False),
+                       "automatic": page.get("automatic", False) and receiver.get("auto", False),
+                       "stages": stages, "objectives": objectives, "rewards": rewards}
     return result
 
 
@@ -115,6 +157,38 @@ def ready(q, record):
     record[2] = 2 if all(not o[0] or record[8 + i] for i, o in enumerate(q["objectives"])) else 0
 
 
+def eligible(q):
+    s = sessions.current()
+    flags = s.quest_flags
+    return not (flags & (1 << q["bit"])
+                or (q["prerequisite"] and not flags & (1 << q["prerequisite"]))
+                or (q["exclusion"] and flags & (1 << q["exclusion"]))
+                or any(struct.unpack_from("<H", r)[0] == q["id"] for r in s.quest_slots))
+
+
+def assign(q):
+    s = sessions.current()
+    if not allowed(q) or not eligible(q):
+        return b""
+    slot = next((i for i, r in enumerate(s.quest_slots) if not any(r)), None)
+    if slot is None:
+        return b""
+    record = bytearray(24)
+    struct.pack_into("<H", record, 0, q["id"])
+    ready(q, record)
+    s.quest_slots[slot] = bytes(record)
+    return update(slot) + collect_progress()
+
+
+def start_automatic():
+    """Recover giver-less chain quests, including reconnects/full-log retries.
+
+    Assignment never counts as a conversation; a validated 0x492 is still needed.
+    Only explicitly enabled wiki definitions with a prerequisite can be assigned.
+    """
+    return b"".join(assign(q) for q in DEFINITIONS.values() if q.get("auto_accept"))
+
+
 def accept_or_abandon(packet):
     s = sessions.current()
     notice, action, slot, qid = struct.unpack_from("<HhHH", packet, 0x10)
@@ -126,21 +200,9 @@ def accept_or_abandon(packet):
             s.quest_slots[slot] = bytes(24)
             return update(slot)
         return None
-    if action != 1 or not allowed(q) or not near_npc(q["giver"]):
+    if action != 1 or q.get("auto_accept") or not near_npc(q["giver"]):
         return None
-    flags = s.quest_flags
-    if (flags & (1 << q["bit"]) or (q["prerequisite"] and not flags & (1 << q["prerequisite"]))
-            or (q["exclusion"] and flags & (1 << q["exclusion"]))
-            or any(struct.unpack_from("<H", r)[0] == qid for r in s.quest_slots)):
-        return None
-    slot = next((i for i, r in enumerate(s.quest_slots) if not any(r)), None)
-    if slot is None:
-        return None
-    record = bytearray(24)
-    struct.pack_into("<H", record, 0, qid)
-    ready(q, record)
-    s.quest_slots[slot] = bytes(record)
-    return update(slot) + collect_progress()
+    return assign(q) or None
 
 
 def objective_report(packet):
@@ -210,18 +272,21 @@ def turn_in(packet):
     s = sessions.current()
     qid, slot, choice = struct.unpack_from("<HHh", packet, 0x10)
     q = DEFINITIONS.get(qid)
-    if (not q or not allowed(q, receiving=True) or slot >= 15 or choice != 0
+    if (not q or not allowed(q, receiving=True) or slot >= 15
             or not q["receiver"] or not near_npc(q["receiver"])):
         return None
     before = collect_progress()
-    return before + (finish(slot, q) or b"") or None
+    return before + (finish(slot, q, choice) or b"") or None
 
 
-def finish(slot, q):
+def finish(slot, q, choice=0):
     """One reward transaction shared by explicit and automatic completion."""
     s = sessions.current()
     record = s.quest_slots[slot]
     if struct.unpack_from("<H", record)[0] != q["id"] or record[2] != 2 or s.quest_flags & (1 << q["bit"]):
+        return None
+    choices = [r for r in q["rewards"] if r[0:2] == (1, 11)]
+    if (choices and not 0 <= choice < len(choices)) or (not choices and choice != 0):
         return None
     # Test the complete inventory transaction before changing live state.
     original = s.inventory
@@ -244,9 +309,14 @@ def finish(slot, q):
                 if remaining:
                     return None
         exp, gold = 0, 0
+        selected = 0
         for kind, a, b, c in q["rewards"]:
             if kind == 1:
-                if a:  # selectable/class-dependent rewards are outside this slice
+                if a == 11:
+                    selected += 1
+                    if selected - 1 != choice:
+                        continue
+                elif a:  # class-dependent rewards remain outside this slice
                     return None
                 changed, left = loot.add_to_bag(b, c)
                 if left:
@@ -267,7 +337,7 @@ def finish(slot, q):
         success = True
         return (b"".join(loot.slot_update(i, reason=0) for i in sorted(touched))
                 + loot.gold_update() + build(0x422, struct.pack("<BBHI", s.level, int(s.level > old_level), 0, s.experience), extra=s.uid)
-                + update(slot, notify=1))
+                + update(slot, notify=1) + start_automatic())
     finally:
         if not success:
             s.inventory = original

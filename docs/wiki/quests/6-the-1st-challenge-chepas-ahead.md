@@ -4,7 +4,7 @@ type: "quest"
 id: 6
 status: "complete"
 missing: []
-sources: ["client: Quest.cdb id 6", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "client: QuestTalk.cdb id 899"]
+sources: ["client: Quest.cdb id 6", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "client: QuestTalk.cdb id 899", "design: requires_bit 5 and offer_maps 88/92/96 enable the prototype Frei follow-up; see [[testing]]"]
 name_key: "Quest_Title_634"
 kind: 0
 kind_name: "Main"
@@ -12,6 +12,10 @@ giver: {"auto": true}
 turn_in: {"auto": true}
 bit: 6
 automatic: true
+manual: ["requires_bit", "offer_maps"]
+requires_bit: 5
+offer_maps: [88, 92, 96]
+server_policy_source: "design: enable the client quest-6 variant after quest 5 in Training Camp; see docs/testing.md, Chepa continuation"
 prev: [5]
 next: [7]
 stages: [5, 5, 5, 5, 5]
@@ -68,7 +72,12 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+The Python prototype automatically assigns this supported variant after completion
+bit 5, in Training Camp. A server-validated conversation with Frei is required
+before setting bit 6 and unlocking quest 7 at Shaia. Assignment is restored on
+reconnect and deferred if the quest log is full. This is an explicit prototype
+policy using the chain edge in [[wiki/quests/5-united-problem-solvers]], not a
+recovered original-server rule.
 
 ## Sources
 
@@ -76,7 +85,19 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Client inspection at `0x599395..0x5993ab` shows the type-4 marker map check uses
+objective parameter b (zero for this row), not the three tracker map IDs.
+`FUN_00597b0e` sends the matching talk report without a map check. This supports
+testing Frei's conversation in Camp, but tracker navigation and live UI still
+need verification. See `contract/quests.yaml` for loader offsets.
+
+The client row names Frei but puts the objective in Training Ground; Frei is
+placed in Training Camp. The videos also show the alternate quest 45, which
+shares completion bit 6, starts with an Innocence Fragment prerequisite, and
+asks for Shaia. The prototype follows quest 6's actual NPC target at Frei's
+location. Its marker/dialogue behavior needs a real-client check; quest 45 and
+the fragment chain are not implemented. No claim of an exact historical flow
+is made by these server policy fields.
 
 <!-- credit:start -->
 ---

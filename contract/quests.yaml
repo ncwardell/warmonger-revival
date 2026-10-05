@@ -422,6 +422,10 @@ flows:
       - "S->C 0x415 {+0x14 object id, +0x16 new state} broadcast; and, if a quest objective of type 5 references it, the 0x492/0x491 exchange"
 
 server_rules:
+  - name: prototype Frei follow-up and talk marker map check
+    client_expects: "The loader at 0x43e97f..0x43ea1e stores objective type/a/b/c/d/talk at definition +0x120 (stride 0x18) and the three tracker map ids separately at +0xf6 (stride 6). For type 4, the marker routine at 0x59938e..0x5993ab checks objective b (+0x128), allowing zero, before matching the NPC template. It does not use the three tracker map ids in that check. FUN_00597b0e sends a matching active talk report without a map check."
+    data_table: "Quest.cdb row 6: automatic giver/receiver, target Frei 198, objective b=0, tracker maps 89/93/97, no prerequisite bit, completion bit 6. Quest 45 shares bit 6 but requires item 2592 and targets Shaia."
+    suggested_default: "The Python test slice uses quest 6 after bit 5 in Training Camp (88/92/96), requiring a validated nearby Frei talk report. This prerequisite and assignment location are design policy, recorded on wiki quest 6. The separate tracker map mismatch can still affect navigation; no client table is patched. The alternate quest 45 fragment route is not enabled. Live UI confirmation remains pending."
   - name: starter handoff from Floyd to Shaia
     client_expects: "Quest 4 (title key suffix 692) is offered by NPC 239 Floyd after completion bit 3, and received by NPC 201 Shaia. All objective and reward types are zero. Accept into a slot with state 2, then complete only on the validated Shaia turn-in; do not auto-complete merely because it has no objective counters."
     data_table: "Quest.cdb row 4: giver field 10 = 239; receiver field 17 = 201; completion bit 4; automatic field 13 = 0."

@@ -66,8 +66,8 @@ checked with `tools/navmesh.py`. Without this option, the server still uses map
 117 at (1427, 429). Old quest-test saves retain their quests/XP and enter the
 proper map on their next login.
 
-The server loads rows 1 through 5 from your own `setting/Quest.cdb`. These are
-protocol quest IDs; title suffixes 630/631/632/692 are different identifiers. The first
+The server loads quests 1 through 7 from their committed `docs/wiki/quests/`
+pages. These are protocol quest IDs; title suffixes 630/631/632/692 are different identifiers. The first
 quest is a talk objective with Shaia; the next quests collect slime, snake and bee
 items, with Floyd receiving those turn-ins. Quest 4 is a handoff from Floyd back
 to Shaia: Floyd offers it, and accepting it marks it ready to turn in at Shaia.
@@ -88,9 +88,22 @@ It has no separate objective counters or rewards. Check:
 8. Reconnect in Camp, both before and after turning in the letter. The map and
    progress should survive. The southwest portal (destination gate 1203) returns
    to Training Ground. Abandoning the letter quest still permits the return trip.
+9. After the letter, quest 6 is assigned automatically in Camp. Speak to Frei
+   again; close and reopen her dialogue if needed. This is a talk objective,
+   not a reward turn-in. It should leave the log and unlock quest 7. Record the
+   visible tracker/marker and a server observation if no talk report is sent.
+10. Return to Training Ground, accept **The 1st Challenge: Chepas ahead** from
+    Shaia, and defeat one Chepa Warrior Officer (710) and one Chepa Archer
+    Officer (711). They are northwest at (344, 3750) and (354, 3750), respectively.
+    Reconnect after the first kill and check that it remains counted.
+11. Return to Frei in Camp and select **one** ring: item 400 or 408. Verify that
+    only the selected ring is granted, alongside ten escape scrolls (906) and
+    10,010 raw XP. Reconnect and verify the reward remains; another turn-in must
+    not grant it again. A full bag should leave the quest ready to turn in.
 
-This batch ends at the letter delivery. Quest 6's automatic assignment and quest
-7's class-dependent rewards remain unsupported. Only this free two-way portal
+This batch ends at quest 7. Its rings are player-selected rewards, not
+class-dependent rewards. The alternate quest 45 / Piece:Guardian route and
+the later dungeon quests remain unsupported. Only this free two-way portal
 route is enabled; other towns, teleporter menus, dungeons and wars are not enabled.
 The quest-4 completion requirement and 25-unit portal proximity radius are test
 server policies. Movement remains client-reported; this is not an anti-cheat
@@ -98,8 +111,9 @@ implementation. Try the quest tracker, but manually walk if auto-travel stalls:
 the full client journey has not yet been tested against this server.
 
 Packet layouts and table-field evidence: `contract/quests.yaml`, handlers
-`FUN_00599ab2`, `FUN_0047529d` and `FUN_004752b3`; rewards/thresholds are read from
-the local Quest and Level_Table tables. The initial zero-receiver quest completes automatically after a validated talk
+`FUN_00599ab2`, `FUN_0047529d` and `FUN_004752b3`; rewards come from the wiki's
+client-derived quest pages and thresholds still come from the local Level_Table.
+The initial zero-receiver quest completes automatically after a validated talk
 report. The client skips ready markers when both receiver fields are zero
 (`0x59925d`-`0x5992ab`); the automatic rule is an inference from the table and live
 behavior, documented in `contract/quests.yaml`. Item consumption, a 15-unit
@@ -112,9 +126,8 @@ on entry or during the live tick without changing earned XP.
 Level-based combat-stat scaling is still separate work: max HP/MP remain the
 test defaults (1,000/500), and player damage and defense do not grow with level.
 Monster kills currently grant loot and quest progress, but no XP directly.
-Quest 5 continues to NPC 198 on a different map (88 for nation 1); that travel,
-later quests, dialogue services, selectable rewards and other objective types are
-not implemented. The client may still offer later quests from its own tables;
+Quests after 7, dialogue services, class-dependent rewards and other objective
+types are not implemented. The client may still offer later quests from its own tables;
 their presence does not mean the server supports them. No client data or dialogue
 text is copied into the repository.
 
@@ -234,3 +247,52 @@ passed the local navmesh check; unit placements have at least 2 units of clearan
 Live loading, portal activation and quest-tracker navigation remain to be checked
 in the real game. No original server combat stats or kill-XP formula were recovered
 by this work.
+
+### Chepa continuation and wiki data (2026-10-05)
+
+The server now reads quests 1-7 from wiki front matter. Existing quests 1-5
+and quest 7 match the owned `Quest.cdb` rows for maps, NPCs, stages, objectives
+and rewards. Quest 6 is an explicit exception: its talk target is Frei (198),
+but its client maps name Training Ground (89/93/97), and it has no prerequisite.
+The test server assigns it after completion bit 5 in Training Camp (88/92/96),
+then requires a nearby, validated talk report before setting bit 6. Reconnects
+and a previously full quest log retry assignment without duplicating it.
+
+This uses the client quest-6 variant as a **prototype route**. The
+[[gameplay/video-character-creation-and-tutorial|character-creation video notes]]
+instead identify quest 45, which shares bit 6, requires item 2592 (Piece:Guardian),
+and sends the player from Frei to Shaia. That fragment route is not enabled.
+Client inspection resolves part of the map concern: the talk marker's map
+check at `0x599395..0x5993ab` uses objective parameter b, which is **zero** in
+row 6, rather than its three tracker map IDs. The loader at
+`0x43e97f..0x43ea1e` keeps these fields separate; `FUN_00597b0e` sends the active
+talk report without a map check. The mismatched tracker map may still affect
+navigation. The marker, dialogue and tracker still need a live check; the
+synthetic journey and code inspection do not establish visual correctness.
+
+Quest 7 requires actual server-confirmed kills of officers 710 and 711, then a
+turn-in at Frei. `0x48f +0x14` is a signed 16-bit selected-reward index in
+`contract/quests.yaml`; the server accepts 0 or 1 for the two ring entries.
+Invalid choices are rejected. Item consumption and all rewards are one bag
+transaction; insufficient space leaves XP, flags and inventory unchanged.
+The ring chooser still needs confirmation in the real client.
+
+The wiki's raw reward `amount` remains authoritative. Its `shown` values record
+the historical UI (often divided by 1.1 for main quests); the available notes
+disagree about what was actually granted. This change preserves the previous
+raw XP/gold policy and does not rewrite earned XP.
+
+Both officers read HP, level and spawn positions from their wiki pages. Each
+uses **400 HP and level 5 as design values**. Their placements have 13.42 and
+8.49 units of navmesh clearance. The older monster layout, combat formulas and
+respawn timing remain prototype rules. Restart after editing wiki data or
+adding world units; those changes are not applied by the code hot reloader.
+
+Verification: all **41 tests passed** with local client data in quest-test mode.
+Without client data, **39 passed and two table-comparison tests were skipped**.
+The four standalone world/AI/skills/loot tests passed both without data in the
+default map and with local data in quest-test mode. The journey test covers
+assignment after reconnect, a full quest log, distance/map/death restrictions,
+forged kill reports, reconnecting after one officer, both reward choices,
+inventory rollback, duplicate rewards and isolation from another player.
+Live client checks for this continuation remain pending.

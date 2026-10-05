@@ -30,7 +30,7 @@ Pages: [[gameplay/README|Gameplay]].
 
 One page per game entity — every item, monster, NPC, quest, skill, buff, map, zone, dungeon, shop, recipe, upgrade, box and gacha pool — pre-populated from the client and filled in one entity at a time. It is **the current state of the game and the single source of truth for the server**.
 
-- **Holds every value the server uses**, whatever its origin:
+- **The intended home for every value the server uses**, whatever its origin (migration status below):
   - *client* — read from the client's own data by the generator (`wiki/gamewiki/`);
   - *evidence* — taken from a gameplay page, citing it (a guide, sheet, video timestamp);
   - *design* — a value we chose because no source has it (marked as such, so it's clear what is a stand-in).
@@ -42,7 +42,9 @@ Pages: the Wiki section.
 
 ## server/ — logic only
 
-The replacement server reads all game numbers from the wiki at startup and holds none of its own. Changing a monster's HP, a drop rate or a quest reward means editing that entity's wiki page; the server picks it up on reload. CI keeps the two from drifting: the server's tests run against wiki values, every id the server uses must exist in the wiki, and game constants in server code fail the build.
+The replacement server is moving its game data into the wiki. It currently reads quests **1-7** and the two **Chepa officers (710/711)** from their committed pages through `server/gamedata.py`. These quest definitions and officer HP, level and spawns no longer require extracted client tables. Restart the server after editing wiki data; wiki files are not watched for hot reload.
+
+Level thresholds, skills and loot still use local client tables, and older world placements and combat formulas still contain prototype constants. CI tests the supported wiki quest journey, including selected rewards and reconnects; the loader rejects missing references and unsupported definitions for this slice. A project-wide check for hard-coded game values is not implemented yet. Filling out a wiki page outside the supported slice does not enable that system automatically.
 
 ## contract/ and spec/ — the protocol
 

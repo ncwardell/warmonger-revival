@@ -8,7 +8,7 @@ title: "Monsters"
 
 Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest officers, dungeon bosses, war minions. The client has their names, models and kill groups; their combat numbers, rewards and spawns were server data and are filled in by hand.
 
-331 pages: 0 complete, 0 partial, 331 stub. Back to the [[wiki/index|game wiki]].
+331 pages: 0 complete, 2 partial, 329 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -173,8 +173,8 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 707 | [[wiki/monsters/707-chepa-archer\|Chepa Archer]] | stub | 12 |
 |  | 708 | [[wiki/monsters/708-elite-chepa-warrior\|Elite Chepa Warrior]] | stub | 12 |
 |  | 709 | [[wiki/monsters/709-elite-chepa-archer\|Elite Chepa Archer]] | stub | 12 |
-|  | 710 | [[wiki/monsters/710-chepa-warrior-officer\|Chepa Warrior Officer]] | stub | 12 |
-|  | 711 | [[wiki/monsters/711-chepa-archer-officer\|Chepa Archer Officer]] | stub | 12 |
+|  | 710 | [[wiki/monsters/710-chepa-warrior-officer\|Chepa Warrior Officer]] | partial | 9 |
+|  | 711 | [[wiki/monsters/711-chepa-archer-officer\|Chepa Archer Officer]] | partial | 9 |
 |  | 713 | [[wiki/monsters/713-black-skeleton-warrior\|Black Skeleton Warrior]] | stub | 12 |
 |  | 714 | [[wiki/monsters/714-black-skeleton-archer\|Black Skeleton Archer]] | stub | 12 |
 |  | 715 | [[wiki/monsters/715-fragile-black-ghost\|Fragile Black Ghost]] | stub | 11 |

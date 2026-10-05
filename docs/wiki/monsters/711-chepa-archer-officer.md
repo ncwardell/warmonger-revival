@@ -2,9 +2,13 @@
 title: "Chepa Archer Officer"
 type: "monster"
 id: 711
-status: "stub"
-missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
-sources: ["client: UnitDB.cdb id 711", "client: Quest.cdb kill objectives (quests 7, 757, 762, 1023)"]
+status: "partial"
+missing: ["attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops"]
+hp: 400
+level: 5
+spawns: [{"field": 89, "x": 354.0, "z": 3750.0, "count": 1}]
+server_policy_source: "design: prototype HP, level and exact spawn; north-west Training Ground is supported by video-tutorial-walkthrough step 18; point checked on the owned-client navmesh"
+sources: ["client: UnitDB.cdb id 711", "client: Quest.cdb kill objectives (quests 7, 757, 762, 1023)", "design: 400 HP, level 5 and exact spawn chosen for the quest-test server; see [[testing]]", "video: [[gameplay/video-tutorial-walkthrough]] step 18, north-west Training Ground clearing; exact point checked on owned-client navmesh"]
 name_key: "UnitName_711"
 category: 1
 class_mask: 1
@@ -105,7 +109,13 @@ Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The Python quest-test server loads `hp`, `level`, and `spawns` from this page:
+400 HP, level 5, one officer at (354, 3750) in Training Ground (89).
+These are test values, not recovered original server values. The coordinate is
+walkable with 8.49 units of mesh-edge clearance. Combat and respawn timing still
+use the shared prototype rules; see [[testing]].
+The generated client-data section above has not been rebuilt with these manual
+runtime fields; the front matter and this note contain the current test values.
 
 ## Behaviour
 

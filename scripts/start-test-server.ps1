@@ -9,7 +9,7 @@ $previousQuestMode = $env:WARMONGER_QUEST_TEST
 try {
     $env:WARMONGER_QUEST_TEST = if ($QuestTest) { '1' } else { '0' }
     if ($QuestTest) {
-        Write-Host 'Quest experiment: Training Ground, quests 1-5, and the portal to Frei in Training Camp.'
+        Write-Host 'Quest experiment: quests 1-7, the Training Camp portal, and two Chepa officers.'
     }
     & python -u -B (Join-Path $repoRoot 'server\stub.py') $BindAddress
     if ($LASTEXITCODE -ne 0) { throw "Server exited with code $LASTEXITCODE" }
