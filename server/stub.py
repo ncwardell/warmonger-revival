@@ -12,7 +12,7 @@ import sessions
 from proto import deobfuscate, split
 
 TICK_SECONDS = 0.2
-WATCHED = (handlers.skills, handlers.loot, handlers.units, handlers.ai, handlers)
+WATCHED = (handlers.skills, handlers.loot, handlers.units, handlers.ai, handlers.quests, handlers)
 _mtimes = {m.__name__: pathlib.Path(m.__file__).stat().st_mtime_ns for m in WATCHED}
 
 
@@ -91,7 +91,10 @@ def handler(name, table, ticks=False):
             handlers.log(f"[{name}] connection failed: {e!r}")
         finally:
             if session is not None:
-                current().disconnect(session)
+                try:
+                    current().disconnect(session)
+                except Exception as e:
+                    handlers.log(f"[{name}] disconnect/save failed: {e!r}")
             writer.close()
             try:
                 await writer.wait_closed()

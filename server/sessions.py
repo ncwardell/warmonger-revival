@@ -86,9 +86,9 @@ def broadcast(source, data, include_self=False):
 
 
 def issue_ticket(token):
-    # Empty tokens and the launcher's default keep using old characters.json.
-    # Other tokens get stable ASCII account names without reflecting token data.
-    account = "player" if token in (b"", b"player") else "test-" + hashlib.sha256(token).hexdigest()[:24]
+    # Empty -nosg logins keep using the old characters.json. A token's hash
+    # gives a stable, ASCII account name without reflecting arbitrary token data.
+    account = "player" if not token else "test-" + hashlib.sha256(token).hexdigest()[:24]
     now = time.monotonic()
     for ticket, (_, expiry) in list(TICKETS.items()):
         if expiry < now:

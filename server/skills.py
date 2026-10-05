@@ -81,11 +81,12 @@ def apply_to_world(world: bytearray, class_id: int, level: int, weapon=None) -> 
     The equipped weapon itself is not here; it is in the slot record (+0x40).
     Level does not gate weapon skills, so it is unused.
     """
-    weapon = weapon or default_weapon(class_id)
+    weapon = default_weapon(class_id) if weapon is None else weapon
     spares = [c for c in CLASS_WEAPONS.get(class_id, ()) if c != weapon]
     bag = state()["bag"]
-    if not any(bag):
+    if not state().get("initialized", False):
         bag[:len(spares)] = spares
+        state()["initialized"] = True
     counts = state().setdefault("count", [0] * BAG_SLOTS)
     for slot, code in enumerate(bag):
         world[0xAC + slot * ITEM_SIZE:0xAC + (slot + 1) * ITEM_SIZE] = item(code, counts[slot] or 1)
@@ -114,12 +115,10 @@ def equip(uid, slot, code):
 
 def after_enter_world(uid: int, class_id: int, level: int, weapon=None) -> bytes:
     """Packets to send right after 0x2000 (+ 0x41f): re-equip the weapon so the
-    skill bar fills. `weapon` is the item code at slot record +0x40 (0 or None =
-    the class default). A sub weapon in state()["equip"][1] gets its own 0x427.
+    skill bar fills. `weapon` is the item code at slot record +0x40 (None uses
+    the class default; 0 keeps it unequipped). A sub weapon in state()["equip"][1] gets its own 0x427.
     """
-    weapon = weapon or default_weapon(class_id)
-    if not weapon:
-        return b""
+    weapon = default_weapon(class_id) if weapon is None else weapon
     out = equip(uid, 0, weapon)
     if state()["equip"][1]:
         out += equip(uid, 1, state()["equip"][1])

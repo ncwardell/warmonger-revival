@@ -199,7 +199,7 @@ class MultiplayerTests(StateFixture, unittest.TestCase):
         self.assertEqual(HEADER.unpack_from(reply)[2], 0x2001)
         self.assertFalse(b.player["in_world"])
 
-    def test_default_launcher_account_keeps_existing_characters(self):
+    def test_legacy_empty_token_keeps_existing_characters(self):
         original = sessions.connect(lambda data: None)
         login = handlers.dispatch("LOGIN_REPLIES", token_login(b""))
         handlers.dispatch("GAME_REPLIES", game_login(login), original)
@@ -207,7 +207,7 @@ class MultiplayerTests(StateFixture, unittest.TestCase):
         character_id = struct.unpack_from("<Q", created, 0x20)[0]
         handlers.disconnect(original)
         returning = sessions.connect(lambda data: None)
-        login = handlers.dispatch("LOGIN_REPLIES", token_login(b"player"))
+        login = handlers.dispatch("LOGIN_REPLIES", token_login(b""))
         listing = handlers.dispatch("GAME_REPLIES", game_login(login), returning)
         self.assertEqual(returning.account, "player")
         self.assertEqual(struct.unpack_from("<Q", listing, 0x10)[0], character_id)

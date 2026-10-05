@@ -12,6 +12,7 @@ Monster state survives hot reloads of this module. PLAYER is fallback state
 for standalone experiments and self-tests.
 """
 import random
+import os
 import struct
 import sys
 import time
@@ -34,6 +35,10 @@ clock = time.monotonic  # replaced by the self-test
 # Tutorial zone tutorial_map_01 (map 117, ZoneDB 1344..1503 x 352..479). Spawns are
 # offsets from CENTRE so the whole group moves when a walkable point is found.
 CENTRE = globals().get("CENTRE", (1424.0, 416.0))
+QUEST_TEST = os.environ.get("WARMONGER_QUEST_TEST") == "1"
+# Experimental quest context on the known walkable tutorial terrain; not a
+# recovered original spawn for map 89. See docs/testing.md.
+MAP_ID, SCENE_ID = (89 if QUEST_TEST else 117), 87
 
 # Teams: the client's friend/foe test (FUN_00486179, target = +0x655 team byte)
 # treats team 0 as friendly to everyone, 1..3 as nations, and 4+ as hostile to
@@ -65,6 +70,8 @@ MONSTERS = [
 NPCS = [
     (201, "Shaia", 10, 1000, 6.0, 3.0),
 ]
+if QUEST_TEST:
+    NPCS.append((239, "Floyd", 10, 1000, 9.0, 3.0))
 
 MONSTER_UID_BASE = 0x400  # monsters/NPCs are uid 0x3F7..0x2B05
 NPC_UID_BASE = 0x3F8
@@ -279,7 +286,7 @@ def spawn_player(session):
     out[0x10:0x38] = record[8:0x30]
     struct.pack_into("<ffH", out, 0x38, p["x"], p["z"], struct.unpack_from("<H", record, 0x36)[0])
     out[0x44:0x46] = record[0x7C:0x7E]
-    out[0x46], out[0x49], out[0x4A] = p["heading"], max(record[0x34], 1), p["team"]
+    out[0x46], out[0x49], out[0x4A] = p["heading"], session.level, p["team"]
     out[0x54:0x5C] = record[0x38:0x40]
     with sessions.use(session):
         out[0x60:0xBC] = player_stats()[16:]
@@ -354,7 +361,11 @@ def deaths(killed):
         log(f"killed {u}; respawn in {RESPAWN_SECONDS:.0f} s")
     out = b"".join(hp_update(u) for u in killed) if CONFIRM_DEATH else b""
     if loot is not None:
-        out += b"".join(loot.on_kill(u) for u in killed)
+        for u in killed:
+            out += loot.on_kill(u)
+            if sessions.current() is not None:
+                import quests
+                out += quests.collect_progress(u.unit_id)
     return out
 
 

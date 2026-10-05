@@ -250,7 +250,7 @@ def tick_world(now, players):
             continue
         walk(u, dt)
         eligible = [s for s in players if s.player["alive"] and s.player["hp"] > 0
-                    and (s.player["map"], s.player["scene"]) == (117, 87)
+                    and (s.player["map"], s.player["scene"]) == (world.MAP_ID, world.SCENE_ID)
                     and dist(*u.home, s.player["x"], s.player["z"]) <= LEASH_RANGE]
         target = next((s for s in eligible if s.uid == getattr(u, "target_uid", None)), None)
         if target is None:
@@ -265,7 +265,7 @@ def tick_world(now, players):
     out += world.due_respawns()
     if out:
         for session in players:
-            if (session.player["map"], session.player["scene"]) == (117, 87):
+            if (session.player["map"], session.player["scene"]) == (world.MAP_ID, world.SCENE_ID):
                 session.send(out)
 
 

@@ -422,6 +422,10 @@ flows:
       - "S->C 0x415 {+0x14 object id, +0x16 new state} broadcast; and, if a quest objective of type 5 references it, the 0x492/0x491 exchange"
 
 server_rules:
+  - name: starter handoff from Floyd to Shaia
+    client_expects: "Quest 4 (title key suffix 692) is offered by NPC 239 Floyd after completion bit 3, and received by NPC 201 Shaia. All objective and reward types are zero. Accept into a slot with state 2, then complete only on the validated Shaia turn-in; do not auto-complete merely because it has no objective counters."
+    data_table: "Quest.cdb row 4: giver field 10 = 239; receiver field 17 = 201; completion bit 4; automatic field 13 = 0."
+    suggested_default: "Support quest 4 after the first three quests. Live 2026-10-05: repeated C->S 0x48e body 0000010000000400 was silently rejected by the previous rows-1-through-3 allowlist, leaving the offer marker on Floyd while the dialogue directed the player to Shaia. Quest 5 crosses to another map and remains outside the prototype slice."
   - name: quest ids, bits and availability
     client_expects: "Quest id in packets = Quest.tsv id column (record+0x00), not the Quest_Title_NNN number. The completion bit is c6@04 (several rows share a bit, e.g. 23-25 are a pick-one-of-three set); prerequisite bit c4@08, exclusion bit c5@0c. The client offers quests by itself; the server only has to keep the flags truthful and must re-check the same rules on accept."
     data_table: "Quest.tsv (291 rows; bits up to 129 of 320)"
@@ -442,6 +446,10 @@ server_rules:
     client_expects: "Client shows rewards from Quest.tsv but grants nothing itself. Reward types: 1 = item {a = class/choice flag, b = item, c = count}, 2 = exp, 4 = gold, 5 = fame?, 6 = negative value (cost?), 8 = {item, count}, 10 = ?. 'Choose Reward' entries are selected by 0x48f +0x14 (index among the selectable ones)."
     data_table: "Quest.tsv rew1..rew5"
     suggested_default: "Grant type 2 via the exp/level opcode, 4 via gold update, 1/8 via 0x427 into free bag slots; ignore unknown types."
+  - name: automatic completion with no receiver
+    client_expects: "The ready-state marker path FUN_005990ce at 0x59925d..0x5992ab tries receiver NPC (definition +0x2c), then gadget (+0x30); when both are zero it skips the marker. The only direct call found to the 0x48f sender FUN_00597a70 is the NPC-dialogue path at 0x56e5f9. Quest.cdb field 13 loads into definition byte +0x11 at 0x43e7f0."
+    data_table: "Quest.cdb row 1: field 13 is 1; receiver NPC and gadget are zero. Live 2026-10-05: accept 0x48e, valid Shaia talk report 0x492, then no 0x48f; keeping state 2 left the user seeing the old talk objective."
+    suggested_default: "For the supported tutorial slice, interpret nonzero field 13 with both receivers zero as automatic completion. After validated objectives become ready, grant rewards, set the completion bit and send 0x491 notify=1 with an empty slot. Resume an already-saved ready state once; do not replace receiver 0 with the giver. This server policy is inferred from the data and live failure, not recovered official server code."
   - name: quest board / notice quests
     client_expects: "NoticeQuest rows map board entries to quest ids; Daily Quest Point (G+0x2e68) +1 per completed daily quest, rewards per NoticeQuestReward (need 5/20/40/65/95/137 -> 20/20/20/20/2500/5000 Yellow Jewels); tooltip says points reset on the 1st of each month; daily/weekly/monthly quests (kinds 9/10/11) are tracked in the G+0x2e6c mask and reset daily 00:00 UTC+1 / Monday / 1st."
     data_table: "NoticeQuest.tsv, NoticeQuestReward.tsv, Quest kind column"

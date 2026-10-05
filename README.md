@@ -18,7 +18,9 @@ Working against the real client:
 
 Implemented for testing: separate player sessions, mutual player spawning, movement and combat relay, a shared monster world, private loot, and despawning on leave. Synthetic two-client socket tests pass; see `docs/spec/world.md` for the current client verification status.
 
-Not yet: quests, NPC dialogue, shops, party/guild/chat, matches and fort war, real stats/damage formulas, and durable inventory/progress saves. See [Contributing](CONTRIBUTING.md) and the issue tracker.
+New for testing: durable inventory, equipment, gold, quick-bar and quest saves, plus an optional first-four-quests experiment. See [solo testing](docs/testing.md) for the steps and current limits.
+
+Not yet: the remaining quests and NPC services, shops, party/guild/chat, matches and fort war, and real stats/damage formulas. See [Contributing](CONTRIBUTING.md) and the issue tracker.
 
 ## How it works
 
@@ -63,7 +65,7 @@ In another PowerShell window, launch the game:
 .\scripts\play-windows.ps1
 ```
 
-The launcher backs up the local server configuration, points it at localhost, and starts the client with `-ologin=player`. Pass `-GameDir` to use a different writable copy. The default `player` identity uses the existing `server/characters.json`.
+The launcher backs up the local server configuration, points it at localhost, and starts the client with `-ologin=player`. Pass `-GameDir` to use a different writable copy. The default `player` is a named test identity. Empty-token legacy logins continue to use `server/characters.json`; named identities use `server/accounts/`.
 
 For two-player testing, use different test identities:
 
@@ -72,7 +74,7 @@ For two-player testing, use different test identities:
 .\scripts\play-windows.ps1 -Account bob
 ```
 
-These names are development tokens, not passwords; each gets separate character slots under the gitignored `server/accounts/`. On another computer, pass `-ServerAddress <server-LAN-IP>` and run the server bound to that address. Some client builds may permit only one instance per computer. Character creation is saved, but inventory, gold gained, and other progress currently last only for that game connection. Returning to character selection preserves each character's inventory during that connection.
+These names are development tokens, not passwords; each gets separate character slots under the gitignored `server/accounts/`. On another computer, pass `-ServerAddress <server-LAN-IP>` and run the server bound to that address. Some client builds may permit only one instance per computer. Character creation and progress are saved per character. Inventory, equipment, gold, quick slots, quest state and experience/level survive reconnects and server restarts; position and current HP/MP reset. Progress saves are under the gitignored `server/progress/`. See [the solo test checklist](docs/testing.md) for save, quest and weapon tests.
 
 Server state can be isolated with `WARMONGER_STATE=<directory>`; game data can be located separately with `WARMONGER_DATA=<directory>`.
 

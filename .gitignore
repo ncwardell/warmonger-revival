@@ -17,6 +17,7 @@ out/
 server/characters.json
 server/characters.json.tmp
 server/accounts/
+server/progress/
 *.local.*
 __pycache__/
 public/

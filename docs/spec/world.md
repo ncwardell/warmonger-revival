@@ -436,10 +436,11 @@ health or increase their attack rate. These are prototype server rules, not reco
 official rules; see `server/sessions.py`, `handlers.py`, `world.py` and `ai.py`.
 
 Use distinct `-ologin=<name>` development identities for simultaneous clients. Character
-creation is saved per identity; inventory and earned gold survive character selection on
-the same connection but reset on disconnect. Loot currently belongs to the killing
-player. Authentication, durable progress, party sharing, PvP, quests and NPC dialogue
-remain open work. The prototype currently enters the tutorial only.
+creation and progress are saved per character. Inventory, earned gold, equipment and
+quick slots survive reconnects; quest state and experience/level are saved too. Loot
+currently belongs to the killing player. Authentication, party sharing, PvP and most
+quests/NPC services remain open work. See [[testing]] for the optional first-four-quests
+experiment and its map workaround. The normal spawn remains the tutorial.
 
 ### Windows client evidence (2026-10-05)
 

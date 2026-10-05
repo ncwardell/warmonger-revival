@@ -13,7 +13,7 @@ jobs:
         run: |
           python3 -c "import handlers"
           for m in world ai skills loot; do echo "== $m"; python3 $m.py; done
-          python3 -m unittest -v test_multiplayer
+          python3 -m unittest discover -v -p 'test_*.py'
       - name: Tools import
         run: |
           python3 -c "import ast,sys; [ast.parse(open(f).read()) for f in sys.argv[1:]]" tools/*.py

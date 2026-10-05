@@ -8,21 +8,24 @@ import struct
 import time
 
 import sessions
+import persistence
 from proto import build, split
 import skills
 import loot
 import world as units
 import ai
+import quests
 
 # State lives in sessions.py; shared units and AI clocks survive these reloads.
-for module in (skills, loot, units, ai):
+for module in (skills, loot, units, ai, quests):
     importlib.reload(module)
 
 NATION, TEAM = 1, 0
 VILLAGE = (87, 2688.8, 382.9)
 TUTORIAL = (117, 1427.0, 429.0)
-SPAWN_MAP, SPAWN_X, SPAWN_Z = TUTORIAL
-SPAWN_SCENE = 87
+SPAWN_MAP = units.MAP_ID
+_, SPAWN_X, SPAWN_Z = TUTORIAL
+SPAWN_SCENE = units.SCENE_ID
 HP = MAX_HP = 1000
 MP = MAX_MP = 500
 SPEED = 450
@@ -62,7 +65,7 @@ def character_list(_packet=None):
     session = sessions.current()
     packet = bytearray(0xB8C)
     for slot, record in sessions.load_characters(session.account).items():
-        record = bytearray(record)
+        record = bytearray(persistence.character_view(session.account, record))
         record[0x34] = max(record[0x34], 1)
         packet[0x10 + slot * SLOT_SIZE:0x10 + (slot + 1) * SLOT_SIZE] = record
     struct.pack_into("<I", packet, 0xB50, session.uid)
@@ -113,23 +116,26 @@ def enter_world(packet):
         return character_list()
     session.record = record
     session.reset_player()
-    session.inventory, session.loot = session.characters.get(
-        char_id, (sessions.new_inventory(), {"gold": struct.unpack_from("<I", record, 0x80)[0], "next_uid": 0x3000}))
+    persistence.restore_progress(session)
+    session.level = quests.level_for_experience(session.experience, session.level)
+    session.record = persistence.character_view(session.account, record)
     session.drops.clear()
     p = session.player
     p.update(x=SPAWN_X, z=SPAWN_Z, spawn=(SPAWN_X, SPAWN_Z), map=SPAWN_MAP,
              scene=SPAWN_SCENE, team=TEAM, hp=HP, mp=MP, max_hp=MAX_HP, max_mp=MAX_MP, speed=SPEED)
     class_id = struct.unpack_from("<H", record, 0x36)[0]
-    level = max(record[0x34], 1)
-    weapon = session.inventory["equip"][0] or skills.weapon_of(record)
+    level = session.level
+    weapon = session.inventory["equip"][0] if session.inventory["initialized"] else skills.weapon_of(record)
     packet = bytearray(0x704)
     struct.pack_into("<Qhhff", packet, 0x10, char_id, SPAWN_SCENE, SPAWN_MAP, SPAWN_X, SPAWN_Z)
     packet[0x24], packet[0x25] = TEAM, 0xFF
     struct.pack_into("<I", packet, 0x6F8, int(time.time()))
     skills.apply_to_world(packet, class_id, level, weapon=weapon)
+    quests.apply_to_world(packet)
     out = build(0x2000, bytes(packet[16:]), extra=session.uid)
     out += skills.after_enter_world(session.uid, class_id, level, weapon=weapon)
     out += units.join((SPAWN_X, SPAWN_Z))
+    out += build(0x422, struct.pack("<BBHI", session.level, 0, 0, session.experience), extra=session.uid)
     out += loot.gold_update()
     p["in_world"] = True
     for other in sessions.CONNECTED.values():
@@ -164,11 +170,12 @@ def move(packet):
 
 def leave_world(session):
     if session.player["in_world"]:
-        sessions.broadcast(session, units.remove(session.uid))
-        char_id = struct.unpack_from("<Q", session.record)[0]
-        session.characters[char_id] = (session.inventory, session.loot)
-        session.player["in_world"] = False
-        session.drops.clear()
+        try:
+            persistence.save_progress(session)
+        finally:
+            sessions.broadcast(session, units.remove(session.uid))
+            session.player["in_world"] = False
+            session.drops.clear()
 
 
 def leave_game(packet):
@@ -216,22 +223,30 @@ def tick():
     ai.tick_world(now, active)
     for session in active:
         with sessions.use(session):
-            out = loot.tick(now)
+            old_level = session.level
+            # Resume zero-receiver quests left ready by the earlier handler,
+            # and finish newly earned automatic quests without a client turn-in.
+            out = quests.refresh_level() + quests.finish_automatic() + loot.tick(now)
             if out:
+                out += quests.collect_progress()
+                persistence.save_progress(session)
                 session.send(out)
+                if session.level != old_level:
+                    sessions.broadcast(session, units.spawn_player(session))
 
 
 LOGIN_REPLIES = {0x4200: login_ok, 0x4207: login_ok}
 GAME_REPLIES = {
     0x4200: game_login, 0x407: create_character, 0x406: enter_world,
     0x409: leave_game, 0x416: move,
-    **skills.REPLIES, **units.REPLIES, **loot.REPLIES,
+    **skills.REPLIES, **units.REPLIES, **loot.REPLIES, **quests.REPLIES,
     0x4CA: unknown_unit, 0x40F: cast, 0x410: cast,
 }
 MIN_SIZE = {0x4207: 0x9C, 0x4200: 0x60, 0x407: 0x260, 0x406: 0x20,
             0x409: 0x14, 0x416: 0x20, 0x417: 0x1C, 0x411: 0x64,
             0x412: 0x88, 0x40F: 0x14, 0x410: 0x38, 0x4CA: 0x18,
-            0x42A: 0x18, 0x494: 0x28, 0x451: 0x18}
+            0x42A: 0x18, 0x494: 0x28, 0x451: 0x18,
+            0x48E: 0x18, 0x48F: 0x18, 0x492: 0x1C}
 
 
 def dispatch(table, packet, session=None):
@@ -257,6 +272,12 @@ def dispatch(table, packet, session=None):
         if session is not None and opcode == 0x42A:
             out = (out or b"") + units.player_stats()
             sessions.broadcast(session, units.spawn_player(session))
+        if session is not None and session.player["in_world"]:
+            if opcode in (0x42A, 0x451):
+                out = (out or b"") + quests.collect_progress()
+            persistence.save_progress(session)
+            if opcode == 0x48F and out:
+                sessions.broadcast(session, units.spawn_player(session))
         return out
 
 

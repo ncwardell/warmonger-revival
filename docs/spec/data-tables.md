@@ -33,7 +33,7 @@ Rows = data rows (not counting comment/header lines). Key = lookup column.
 
 | table | rows | key | purpose | loader | references |
 |---|---|---|---|---|---|
-| Level_Table | 31 | level | **Player exp curve** (exp@04: 700 → 42,350,740 at 30), fame-rank thresholds (fame_threshold@0c, 10 used), linear per-level values hp?/mp?/atk?/def? (130+30/lv, 70+20/lv, ...) | FUN_005ce0df (CItemLevelDB, DAT_00853c90) | 0x422 exp/level; HUD exp bar (0x534659); ranking FAME→FAMERANK (FUN_005cde32); FameRank |
+| Level_Table | 31 | level | **Player exp curve** (exp@04: 700 → 42,350,740 at 30; row L is the upper total-XP bound for level L), fame-rank thresholds (fame_threshold@0c, 10 used), linear per-level values hp?/mp?/atk?/def? (130+30/lv, 70+20/lv, ...) | FUN_005ce0df (CItemLevelDB, DAT_00853c90) | 0x422 exp/level; XP display uses rows L-1 and L (0x57d223..0x57d28e); ranking FAME→FAMERANK (FUN_005cde32); FameRank |
 | Level_Table_Guild | 10 | level | Legion level exp curve + per-level values | FUN_005ce2db (CLevelGuildDB) | guild opcodes 0x457.. |
 | Item_Base | 1192 | id | **Items**: kind (ItemKind.tsv), buy/sell currency + price (currency 2 = gold, = 0x428 field), fame price, bind, required class, 10 stat options {type,value} (ItemOption.tsv; type 200 → WeaponBase), period | FUN_00446fca | 0x424/0x427 item records (+0 u16 code), shops, Npc_Carry, RandomBox, Quest rewards, Item_Make, WeaponBase |
 | ItemOption | 47 | code | Stat/option code names (Attack, Ability Power, Armor, Health, crit, life steal, %-variants 101+, 212 CDR, 273 drop chance) — derived from StringAll | – | Item_Base opt*, Skill_Buff eff*, SetBounsItem, Item_Jewel |
