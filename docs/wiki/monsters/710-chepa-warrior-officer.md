@@ -1,0 +1,124 @@
+---
+title: "Chepa Warrior Officer"
+type: "monster"
+id: 710
+status: "stub"
+missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
+sources: ["client: UnitDB.cdb id 710", "client: Quest.cdb kill objectives (quests 7, 757, 762, 1023)"]
+name_key: "UnitName_710"
+category: 1
+class_mask: 1
+kill_group: 10016
+model: 30
+model_name: "MOB_Chepa01_0_1_0_00_00"
+model_path: "character/npc/monster/mob_chepa/mob_chepa01.mo"
+scale: 2
+radius: 1
+sounds: [4070000, 4070000, 4070013, 4070013, 4070013, 4070016]
+quest_targets:
+  - {"quest": 7, "need": 1}
+  - {"quest": 757, "need": 1, "group": 10016}
+  - {"quest": 762, "need": 1, "group": 10016}
+  - {"quest": 1023, "need": 1, "group": 10016}
+quest_drops:
+  - {"quest": 762, "item": 2588, "rate": 50, "need": 1}
+spawn_fields: [89, 93, 97, 123]
+---
+<!-- generated:start -->
+<!-- generated-keys: title=0ac83a type=9bbc46 id=86e55a sources=d40e24 name_key=52beb4 category=356a19 class_mask=356a19 kill_group=d5483a model=22d200 model_name=67408a model_path=207e1f scale=da4b92 radius=356a19 sounds=14185a quest_targets=ea3b97 quest_drops=e2f35d spawn_fields=31c28e -->
+|  |  |
+|---|---|
+| **Unit id** | `710` |
+| **Category** | monster (`category@8a` = 1) |
+| **Class mask** | 1 (monster) |
+| **Kill group** | `10016` with [[wiki/monsters/675-slayer-komodo\|Slayer Komodo]], [[wiki/monsters/711-chepa-archer-officer\|Chepa Archer Officer]] |
+| **Model** | ObjectList `30` MOB_Chepa01_0_1_0_00_00 (`character/npc/monster/mob_chepa/mob_chepa01.mo`) |
+| **Scale** | 2 (second scale / radius 1) |
+
+*No image: the client has no 2-D monster art (only the 3-D model).*
+
+### Server stats
+
+None of these is in the client; they were server data. Fill them in the front matter with a source (`drops: [{"item": id, "rate": %, "count": [min, max]}]`, `spawns: [{"field": id, "x": .., "z": .., "count": n, "respawn_s": s}]`).
+
+| field | value |
+|---|---|
+| hp | **missing** |
+| level | **missing** |
+| attack | **missing** |
+| armor | **missing** |
+| magic_resist | **missing** |
+| move_speed | **missing** |
+| attack_speed | **missing** |
+| attack_range | **missing** |
+| kill_exp | **missing** |
+| kill_gold | **missing** |
+| drops | **missing** |
+| spawns | **missing** |
+
+### Quests
+
+- [[wiki/quests/7-the-1st-challenge-chepas-ahead|The 1st Challenge: Chepas ahead]]: kill 1 in [[wiki/fields/89-training-ground|Training Ground]], [[wiki/fields/93-training-ground|Training Ground]], [[wiki/fields/97-training-ground|Training Ground]]
+- [[wiki/quests/757-group-border-area-hard-mode|Group - Border Area Hard Mode]]: kill 1 in [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior|(Lv 4) Swamps of Snake Warrior]] — via kill group `10016` (*inferred* from UnitDB `i32@80`)
+- [[wiki/quests/762-killed-boss-of-border-area-no-2|killed boss of Border area No.2]]: collect 1 × [[wiki/items/2588-the-slayer-komodo-s-pipe|The Slayer Komodo's Pipe]] (drops at 50% while the quest is active) in [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior|(Lv 4) Swamps of Snake Warrior]] — via kill group `10016` (*inferred* from UnitDB `i32@80`)
+- [[wiki/quests/1023-swamps-of-the-snake-warrior-boss-hunting|Swamps of the Snake Warrior : Boss Hunting]]: kill 1 in [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior|(Lv 4) Swamps of Snake Warrior]] — via kill group `10016` (*inferred* from UnitDB `i32@80`)
+
+### Where it appears
+
+Fields the client ties it to (quest objective maps, dungeon boss tables). Positions and counts are not in the client: add them as `spawns`.
+
+- [[wiki/fields/89-training-ground|Training Ground]] — quest map of [[wiki/quests/7-the-1st-challenge-chepas-ahead|The 1st Challenge: Chepas ahead]]
+- [[wiki/fields/93-training-ground|Training Ground]] — quest map of [[wiki/quests/7-the-1st-challenge-chepas-ahead|The 1st Challenge: Chepas ahead]]
+- [[wiki/fields/97-training-ground|Training Ground]] — quest map of [[wiki/quests/7-the-1st-challenge-chepas-ahead|The 1st Challenge: Chepas ahead]]
+- [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior|(Lv 4) Swamps of Snake Warrior]] — quest map of [[wiki/quests/757-group-border-area-hard-mode|Group - Border Area Hard Mode]], [[wiki/quests/762-killed-boss-of-border-area-no-2|killed boss of Border area No.2]], [[wiki/quests/1023-swamps-of-the-snake-warrior-boss-hunting|Swamps of the Snake Warrior : Boss Hunting]]
+
+### Sounds
+
+UnitDB's seven `{a, id}` pairs (+0xcc..+0x100). docs/spec/monsters.md reads the ids as skills, but they are `sound.csv` ids (*client*); `a` is unknown.
+
+| slot | a | sound id | file |
+|---|---|---|---|
+| 1 | 0 | 4070000 | `Unit/UE4070000.wav` |
+| 2 | 0 | 4070000 | `Unit/UE4070000.wav` |
+| 3 | 0 | 4070013 | `Unit/UE4070013.wav` |
+| 4 | 0 | 4070013 | `Unit/UE4070013.wav` |
+| 5 | 0 | 4070013 | `Unit/UE4070013.wav` |
+| 6 | 0 | 4070016 | `Unit/UE4070016.wav` |
+
+### Seen in
+
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial (ZonderCoRe, June 2018)]] § Training Camp (field 92) and back at [12:35](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=755s), [13:10](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=790s), [13:45](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=825s), [14:55](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=895s): 15. 12:35 Back at Shaia (Training Ground): quest 6 completes. Quest 7 (same title, offer dialogue 685: the Chepa leaders are in the north) asks the player to k…
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough (Bravely Forward 2)]] § Steps at [21:50](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1310s), [22:15](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1335s): 18. Chepa Warrior Officer (710) and Chepa Archer Officer (711) in the north-west clearing of the Training Ground, among normal Chepas 21:50–22:15. Each is a si…
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough (Bravely Forward 2)]] § Monsters and damage: Chepa Warrior Officer / Archer Officer · 710 / 711 · Training Ground, north-west clearing · one each for Q7
+
+### Other client fields
+
+Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
+
+| column | value |
+|---|---|
+| u8@91 | 15 |
+| f32@c0 | 4.5 |
+| f32@10c | 0.5 |
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

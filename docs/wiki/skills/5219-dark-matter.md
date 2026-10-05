@@ -1,0 +1,88 @@
+---
+title: "Dark Matter"
+type: "skill"
+id: 5219
+status: "complete"
+missing: []
+sources: ["client: Skill_Base.cdb id 5219", "client: StringAll_Eng SkillComment_5179 (tooltip value tags)"]
+name_key: "Skill_5179"
+desc_key: "SkillComment_5179"
+kind: 1
+kind_name: "active"
+target: {"type": 1, "type_name": "unit", "relation": ["enemy"], "unit_classes": ["monster", "player"], "max_targets": 5}
+range: 7
+area: {"shape": 1, "shape_name": "circle", "radius": 3.0, "width_or_angle": 3.0, "indicator": "stick256x512.png"}
+cost: {"type": 5, "type_name": "MP", "amount": 165}
+cooldown: {"ms": 25000, "group": 0}
+delivery: {"type": 1, "field_tick": 0.0}
+effect_kind: 2
+effects:
+  - {"slot": 1, "type": 131, "value": 5, "rate": 100}
+  - {"slot": 2, "type": 314, "value": 10213, "rate": 100}
+damage_or_effect: {"kind": "damage (magic?)", "stats": [{"code": 131, "value": 5}], "buffs": [{"buff": 10213, "rate": 100}]}
+tooltip_formula:
+  - {"tag": "EF_STATIC", "value": 200}
+  - {"tag": "EF_R_MDAM", "value": 70}
+visual: 351
+icon: {"file": "Skill_Einsel_01.png", "index": 35}
+used_by: []
+---
+<!-- generated:start -->
+<!-- generated-keys: title=b3792a type=86a754 id=afc22e sources=f095b8 name_key=ec827e desc_key=fd149a kind=356a19 kind_name=9bc378 target=04e8ed range=902ba3 area=fd20c7 cost=966b26 cooldown=fec9d6 delivery=93a212 effect_kind=da4b92 effects=99eecc damage_or_effect=46468a tooltip_formula=bf0019 visual=002647 icon=c23d4b used_by=97d170 -->
+|  |  |
+|---|---|
+|  | ![Dark Matter](../assets/skills/5219.png) |
+| **Skill id** | `5219` |
+| **Kind** | active (1) |
+| **Target** | unit; enemy; units: monster, player; up to 5 |
+| **Range** | 7 (world units) |
+| **Area** | circle, radius 3, width/angle 3 (indicator `stick256x512.png`) |
+| **Cost** | 165 MP |
+| **Cooldown** | 25 s |
+| **Delivery** | projectile / SFX |
+| **Effect kind** | damage (magic?) (2) |
+| **Visual** | skillVisual 351 `체파술사_멈춰` |
+| **Icon** | `ui/icons/Skill_Einsel_01.png` cell 35 |
+
+### Tooltip
+
+> [Active] Calls down a dark matter explosion that deals `{EF_STATIC 200}``{EF_R_MDAM 70}` Damage.
+
+Tooltip formula: **200 + 70% Ability Power** (the client fills these in from the caster's stats).
+
+### Effect slots
+
+Raw `Skill_Base` effect slots; the client never applies them, the server does. Meanings are *inferred* from the data (see the module notes in `wiki/gamewiki/skills.py`).
+
+| slot | type | meaning | value | rate |
+|---|---|---|---|---|
+| 1 | 131 | stat? Health(%) | 5 | 100 |
+| 2 | 314 | applies buff (variant 314) | [[wiki/buffs/10213-dark-matter-stunned-for-3-seconds\|Dark Matter : Stunned for 3 seconds]] | 100 |
+
+**Reading:** damage (magic?); applies [[wiki/buffs/10213-dark-matter-stunned-for-3-seconds|Dark Matter : Stunned for 3 seconds]] (100%).
+
+### Mentioned in
+
+- [[gameplay/classes-and-legions|Classes, nations and legions]] § Weapons (line 96): 0420 · Magical Devil Wand (10020) · R cooldown 70 → 60 s, AP 70 → 100 (the client still has Dark Matter at 70 s)
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

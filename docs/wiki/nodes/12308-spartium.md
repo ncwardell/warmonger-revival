@@ -1,0 +1,51 @@
+---
+title: "Spartium"
+type: "node"
+id: 12308
+status: "stub"
+missing: ["respawn_s"]
+sources: ["client: Trigger.cdb id 12308"]
+kind: "gather"
+field: 123
+x: 1716.99
+z: 1823.16
+shape: 5
+name_key: "UnitName_1013"
+model: 3016
+scale: 1.5
+item: 828
+respawn_s: null
+---
+<!-- generated:start -->
+<!-- generated-keys: title=f7e5ed type=09842e id=ac34a5 sources=a36f06 kind=3d390e field=40bd00 x=f27d95 z=b9355e shape=ac3478 name_key=ef7654 model=6e36e2 scale=aa8f28 item=0da8cb respawn_s=2be88c -->
+|  |  |
+|---|---|
+| **Trigger id** | `12308` |
+| **Kind** | gathering node |
+| **Field** | [[wiki/fields/123-lv-4-swamps-of-snake-warrior\|(Lv 4) Swamps of Snake Warrior]] at (1716.99, 1823.16) |
+| **Gives** | [[wiki/items/828-spartium\|Spartium]] |
+| **Model** | ObjectList `3016`, scale 1.5 |
+
+Gathering nodes are client data only for their place and material. How long a node takes to come back (`respawn_s`), how many items it gives and how long gathering takes were server rules; add them with a source when known.
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

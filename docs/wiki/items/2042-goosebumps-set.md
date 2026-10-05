@@ -1,0 +1,81 @@
+---
+title: "Goosebumps Set"
+type: "item"
+id: 2042
+status: "complete"
+missing: []
+sources: ["client: Item_Base.cdb id 2042"]
+name_key: "ItemName_2040"
+kind: 32
+kind_name: "Costume"
+classes: ["Guardian"]
+bind: "on_pickup"
+price: {"currency": 0, "currency_name": "currency 0", "buy": 0}
+period: 2160
+stats:
+  - {"code": 212, "stat": "Cooldown Reduction(%)", "value": 5, "scale": "flat"}
+  - {"code": 273, "stat": "Drop Chance(%)", "value": 5, "scale": "flat"}
+options:
+  - {"code": 208, "value": 75}
+  - {"code": 208, "value": 6}
+  - {"code": 208, "value": 76}
+  - {"code": 209, "value": 23}
+  - {"code": 209, "value": 0}
+icon: {"file": "Costume_01.dds", "index": 36}
+obtained_from:
+  - {"how": "premium_shop", "entry": 19}
+---
+<!-- generated:start -->
+<!-- generated-keys: title=cc0579 type=d36ca9 id=74b580 sources=52c1cb name_key=b364d8 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=1d2b05 options=f9ce0f icon=2e3d37 obtained_from=7baad2 -->
+|  |  |
+|---|---|
+|  | ![Goosebumps Set](../assets/items/2042.png) |
+| **Item id** | `2042` |
+| **Kind** | Costume (32) |
+| **Classes** | Guardian |
+| **Bind** | on pickup |
+| **Period** | 2160 (unit unknown; costume duration) |
+| **Icon** | `ui/icons/Costume_01.dds` cell 36 |
+
+### Stats
+
+| stat | value | applies | code |
+|---|---|---|---|
+| Cooldown Reduction(%) | Cooldown Reduction +5% | flat | 212 |
+| Drop Chance(%) | Drop Chance +5% | flat | 273 |
+
+### Other options
+
+| code | value | meaning |
+|---|---|---|
+| 208 | 75 | costume/dye value? |
+| 208 | 6 | costume/dye value? |
+| 208 | 76 | costume/dye value? |
+| 209 | 23 | costume value? |
+| 209 | 0 | costume value? |
+
+### Where to get it
+
+- Premium shop entry 19: 2,000 (currency code 2, discount 0%)
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

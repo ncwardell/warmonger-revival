@@ -119,7 +119,7 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
-    enabled: true
+    enabled: false  # one social-preview image per page: 4,700 game-wiki pages took >20 min; the site default og-image.png is used instead
   - source: "@quartz-community/cname"
     enabled: true
   - source: "@quartz-community/canvas-page"

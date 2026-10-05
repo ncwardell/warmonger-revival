@@ -1,0 +1,60 @@
+---
+title: "Extracted Borage recipe"
+type: "recipe"
+id: 627
+status: "stub"
+missing: ["npc"]
+sources: ["client: Item_Make.cdb id 627", "docs: [[gameplay/items-and-crafting]] §3 and [[gameplay/consumables]] (Item_Make c22 = output count, c23 = gold cost)"]
+result: {"item": 873, "count": 1}
+materials:
+  - {"item": 826, "count": 5}
+gold: 3000
+success_rate: 100
+category: 1
+filter_mask: 4096
+level: 20
+---
+<!-- generated:start -->
+<!-- generated-keys: title=7d6211 type=61613a id=47d5c9 sources=598e4b result=1a05eb materials=d8f4a5 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6124cb level=91032a -->
+|  |  |
+|---|---|
+|  | ![](../assets/items/873.png) |
+| **Recipe id** | `627` (`Item_Make`) |
+| **Makes** | [[wiki/items/873-extracted-borage\|Extracted Borage]] × 1 |
+| **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
+| **Success** | 100 % |
+| **Level (c24, *guess*)** | 20 |
+| **Category / filter** | 1 / `0x1000` |
+| **Crafted at** | unknown (not in the client; add `npc:`) |
+
+### Materials
+
+|  | item | count | x |
+|---|---|---|---|
+| ![](../assets/items/826.png) | [[wiki/items/826-borage\|Borage]] | 5 |  |
+
+Other recipes for the same item: [[wiki/recipes/2427-extracted-borage-recipe|recipe 2427]]
+
+NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

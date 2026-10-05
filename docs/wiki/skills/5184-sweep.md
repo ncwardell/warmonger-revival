@@ -1,0 +1,84 @@
+---
+title: "Sweep"
+type: "skill"
+id: 5184
+status: "complete"
+missing: []
+sources: ["client: Skill_Base.cdb id 5184", "client: StringAll_Eng SkillComment_5184 (tooltip value tags)"]
+name_key: "Skill_5184"
+desc_key: "SkillComment_5184"
+kind: 1
+kind_name: "active"
+target: {"type": 2, "type_name": "ground", "relation": ["enemy"], "unit_classes": ["monster", "player"], "max_targets": 7}
+range: 7
+area: {"shape": 3, "shape_name": "cone?", "radius": 5.0, "width_or_angle": 180.0, "indicator": "Buche180_02.png"}
+cost: {"type": 5, "type_name": "MP", "amount": 90}
+cooldown: {"ms": 10000, "group": 0}
+effect_kind: 2
+effects:
+  - {"slot": 1, "type": 330, "value": 75, "rate": 100}
+  - {"slot": 2, "type": 102, "value": 80, "rate": 0}
+  - {"slot": 3, "type": 43, "value": 50, "rate": 0}
+damage_or_effect: {"kind": "damage (magic?)", "base": 75, "ability_pct": 80, "stats": [{"code": 43, "value": 50}]}
+tooltip_formula:
+  - {"tag": "EF_STATIC", "value": 75}
+  - {"tag": "EF_R_MDAM", "value": 80}
+visual: 321
+icon: {"file": "Policy.png", "index": 39}
+used_by: []
+---
+<!-- generated:start -->
+<!-- generated-keys: title=c366ec type=86a754 id=7faa30 sources=1bf86e name_key=6a26cf desc_key=152c9b kind=356a19 kind_name=9bc378 target=7056fd range=902ba3 area=0f29a2 cost=da6e22 cooldown=4aa5a5 effect_kind=da4b92 effects=00fcbd damage_or_effect=b947ef tooltip_formula=84be26 visual=5f6955 icon=f2ac4f used_by=97d170 -->
+|  |  |
+|---|---|
+|  | ![Sweep](../assets/skills/5184.png) |
+| **Skill id** | `5184` |
+| **Kind** | active (1) |
+| **Target** | ground; enemy; units: monster, player; up to 7 |
+| **Range** | 7 (world units) |
+| **Area** | cone?, radius 5, width/angle 180 (indicator `Buche180_02.png`) |
+| **Cost** | 90 MP |
+| **Cooldown** | 10 s |
+| **Effect kind** | damage (magic?) (2) |
+| **Visual** | skillVisual 321 `Skeleton_King_변신스킬_04_휩쓸기` |
+| **Icon** | `ui/icons/Policy.png` cell 39 |
+
+### Tooltip
+
+> [Active] Deals `{EF_STATIC 75}``{EF_R_MDAM 80}` Damage. Heal yourself with 50% of the Damage dealt.
+
+Tooltip formula: **75 + 80% Ability Power** (the client fills these in from the caster's stats).
+
+### Effect slots
+
+Raw `Skill_Base` effect slots; the client never applies them, the server does. Meanings are *inferred* from the data (see the module notes in `wiki/gamewiki/skills.py`).
+
+| slot | type | meaning | value | rate |
+|---|---|---|---|---|
+| 1 | 330 | base amount (tooltip `EF_STATIC`) | 75 | 100 |
+| 2 | 102 | % of Ability Power (tooltip `EF_R_MDAM`) | 80 | 0 |
+| 3 | 43 | stat? Spell Vamp(%) | 50 | 0 |
+
+**Reading:** amount **75 + 80% Ability Power**; damage (magic?).
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

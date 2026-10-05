@@ -1,0 +1,123 @@
+---
+title: "Great Summoner Spectre"
+type: "monster"
+id: 743
+status: "stub"
+missing: ["hp", "level", "attack", "armor", "magic_resist", "move_speed", "attack_speed", "attack_range", "kill_exp", "kill_gold", "drops", "spawns"]
+sources: ["client: UnitDB.cdb id 743", "client: HeroData.cdb id 10 (hero transform of the same name)", "docs: [[gameplay/dungeon-drops]] (boss of field 124)", "docs: [[gameplay/maps-and-dungeons]] (boss of field 124)", "client: DungeonAdmission.cdb (rewards advertised by the dungeon, no rates)"]
+name_key: "UnitName_743"
+category: 6
+class_mask: 1
+model: 78
+model_name: "MOB_GhostKing_01_0_0_0_00_00"
+model_path: "character/npc/monster/npc_evil/mob_ghostking_01.mo"
+scale: 1.7
+radius: 1
+projectile: 865
+sounds: [4070059, 4070059, 4070058, 4070058, 4070058, 4070060]
+hero: 10
+boss_of: [124]
+dungeon_rewards:
+  - {"field": 124, "items": [612, 693, 694, 1934, 2705, 2755]}
+spawn_fields: [124]
+---
+<!-- generated:start -->
+<!-- generated-keys: title=d638eb type=9bbc46 id=f032e5 sources=7ce7df name_key=176ef0 category=c1dfd9 class_mask=356a19 model=eb4ac3 model_name=25777e model_path=8c1900 scale=58e6d3 radius=356a19 projectile=81d51c sounds=823e44 hero=b1d578 boss_of=181a14 dungeon_rewards=3e13ad spawn_fields=181a14 -->
+|  |  |
+|---|---|
+|  | ![Great Summoner Spectre](../assets/monsters/743.png) |
+| **Unit id** | `743` |
+| **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
+| **Class mask** | 1 (monster) |
+| **Model** | ObjectList `78` MOB_GhostKing_01_0_0_0_00_00 (`character/npc/monster/npc_evil/mob_ghostking_01.mo`) |
+| **Scale** | 1.7 (second scale / radius 1) |
+| **Projectile?** | `u32@bc` = 865 (archers carry one; meaning *inferred*) |
+| **Hero transform** | Great Summoner Spectre |
+| **Boss of** | [[wiki/dungeons/124-lv-6-ghost-fortress\|(Lv 6) Ghost Fortress]] |
+
+### Server stats
+
+None of these is in the client; they were server data. Fill them in the front matter with a source (`drops: [{"item": id, "rate": %, "count": [min, max]}]`, `spawns: [{"field": id, "x": .., "z": .., "count": n, "respawn_s": s}]`).
+
+| field | value |
+|---|---|
+| hp | **missing** |
+| level | **missing** |
+| attack | **missing** |
+| armor | **missing** |
+| magic_resist | **missing** |
+| move_speed | **missing** |
+| attack_speed | **missing** |
+| attack_range | **missing** |
+| kill_exp | **missing** |
+| kill_gold | **missing** |
+| drops | **missing** |
+| spawns | **missing** |
+
+### Where it appears
+
+Fields the client ties it to (quest objective maps, dungeon boss tables). Positions and counts are not in the client: add them as `spawns`.
+
+- [[wiki/dungeons/124-lv-6-ghost-fortress|(Lv 6) Ghost Fortress]] — boss ([[gameplay/dungeon-drops]], [[gameplay/maps-and-dungeons]])
+
+### Dungeon rewards (advertised)
+
+What the dungeon's entry window shows (`DungeonAdmission`). It is a list of possible rewards of the whole dungeon, not this boss's drop table, and has no rates.
+
+- [[wiki/dungeons/124-lv-6-ghost-fortress|(Lv 6) Ghost Fortress]]: [[wiki/items/612-red-passion-piece-d|Red Passion Piece (D)]], [[wiki/items/693-gem-stone-blue|Gem Stone : Blue]], [[wiki/items/694-gem-stone-yellow|Gem Stone : Yellow]], [[wiki/items/1934-essence-of-earth|Essence of Earth]], [[wiki/items/2705-bone-of-spector|Bone of Spector]], [[wiki/items/2755-the-wizard-spector-s-sealed-weapon|The Wizard Spector's Sealed Weapon]]
+
+### Other units with this name
+
+[[wiki/monsters/676-great-summoner-spectre|Great Summoner Spectre (676)]], [[wiki/monsters/1218-great-summoner-spectre|Great Summoner Spectre (1218)]]
+
+### Sounds
+
+UnitDB's seven `{a, id}` pairs (+0xcc..+0x100). docs/spec/monsters.md reads the ids as skills, but they are `sound.csv` ids (*client*); `a` is unknown.
+
+| slot | a | sound id | file |
+|---|---|---|---|
+| 1 | 0 | 4070059 | `Unit/UE4070059.wav` |
+| 2 | 0 | 4070059 | `Unit/UE4070059.wav` |
+| 3 | 925 | 4070058 | `Unit/UE4070058.wav` |
+| 4 | 925 | 4070058 | `Unit/UE4070058.wav` |
+| 5 | 0 | 4070058 | `Unit/UE4070058.wav` |
+| 6 | 0 | 4070060 | `Unit/UE4070060.wav` |
+
+### Seen in
+
+- [[gameplay/maps-and-dungeons|Maps and dungeons]] § 2. Border-area (normal/hard) dungeons: 6 · Ghost Fortress (*Fortress of Ghost*) · 124 · Great Summoner Spectre (676/743/1218) · T2 · Moonstone ×4, Lavender ×3, Peppermint ×5
+- [[gameplay/crush-mechanics|Crush Online mechanics from the forum]] § 9. Dungeons, bosses, farming *(name match)*: 5 · Fortress of Ghost · Great Summoner Spectre · Moonstone, Lavender, Peppermint
+- [[gameplay/crush-mechanics|Crush Online mechanics from the forum]] § 12. Crush vs Warmonger: differences that matter for the server *(name match)*: [t402]: https://web.archive.org/web/20161026230614/http://www.crush-game.com/forum/threads/war-chief-garon-great-summoner-spectre-quests.402/
+
+### Other client fields
+
+Undecoded UnitDB columns with a value (`meaning@offset`, docs/spec/monsters.md).
+
+| column | value |
+|---|---|
+| u8@91 | 15 |
+| f32@c0 | 8 |
+| u8@90 | 1 |
+| f32@10c | 0.5 |
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

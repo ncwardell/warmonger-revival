@@ -1,0 +1,86 @@
+---
+title: "Soul Infestation"
+type: "skill"
+id: 10037
+status: "stub"
+missing: ["cost"]
+sources: ["client: Skill_Base.cdb id 10037"]
+name_key: "Skill_10037"
+desc_key: "SkillComment_10037"
+kind: 5
+kind_name: "kind 5"
+target: {"type": 1, "type_name": "unit", "relation": ["enemy"], "unit_classes": ["monster", "player"], "max_targets": 5}
+range: 3
+area: {"shape": 1, "shape_name": "circle", "radius": 5.0, "width_or_angle": 0.0}
+cost: null
+cooldown: {"ms": 1000, "group": 0}
+effect_kind: 2
+effects:
+  - {"slot": 1, "type": 330, "value": 10, "rate": 100}
+  - {"slot": 2, "type": 102, "value": 65, "rate": 0}
+  - {"slot": 3, "type": 101, "value": 80, "rate": 0}
+damage_or_effect: {"kind": "damage (magic?)", "base": 10, "ability_pct": 65, "attack_pct": 80}
+weapon_type: 6
+visual: 204
+icon: null
+used_by: []
+---
+<!-- generated:start -->
+<!-- generated-keys: title=665431 type=86a754 id=79c499 sources=41323d name_key=f227e6 desc_key=0deb13 kind=ac3478 kind_name=65782b target=04e8ed range=77de68 area=500aa4 cost=2be88c cooldown=4a6a0b effect_kind=da4b92 effects=fe7ed0 damage_or_effect=faf1ab weapon_type=c1dfd9 visual=1cc641 icon=2be88c used_by=97d170 -->
+|  |  |
+|---|---|
+| **Skill id** | `10037` |
+| **Kind** | kind 5 (5) |
+| **Target** | unit; enemy; units: monster, player; up to 5 |
+| **Range** | 3 (world units) |
+| **Area** | circle, radius 5, width/angle 0 |
+| **Cooldown** | 1 s |
+| **Effect kind** | damage (magic?) (2) |
+| **Needs weapon type** | 6 |
+| **Visual** | skillVisual 204 `PCD_Hammer_02_Q_추타 피격` |
+
+### Tooltip
+
+> -
+
+### Effect slots
+
+Raw `Skill_Base` effect slots; the client never applies them, the server does. Meanings are *inferred* from the data (see the module notes in `wiki/gamewiki/skills.py`).
+
+| slot | type | meaning | value | rate |
+|---|---|---|---|---|
+| 1 | 330 | base amount (tooltip `EF_STATIC`) | 10 | 100 |
+| 2 | 102 | % of Ability Power (tooltip `EF_R_MDAM`) | 65 | 0 |
+| 3 | 101 | % of Attack (tooltip `EF_R_DAM`) | 80 | 0 |
+
+**Reading:** amount **10 + 80% Attack + 65% Ability Power**; damage (magic?).
+
+### Mentioned in
+
+- [[gameplay/classes-and-legions|Classes, nations and legions]] § Weapons (line 106): 0124 · Magical Demolition Hammer · Q Soul Infestation: basic attacks deal 10 + 60% AP + 75% AD magic damage (bonus AD 100% → 75%, AP 30% → 60%), hits several...
+- [[gameplay/crush-mechanics|Crush Online mechanics from the forum]] § 5. Notable items and skills (line 92): Soul Infestation (Guardian hammer) · turns autoattacks into AoE magic damage while active; 14 s cooldown · player [t774], [t391]
+- [[gameplay/crush-mechanics|Crush Online mechanics from the forum]] § 12. Crush vs Warmonger: differences that matter for the server (line 230): Soul Infestation cooldown · 14 s · 19 s · WM
+- [[gameplay/video-character-creation-and-tutorial|Video notes: character creation and tutorial (ZonderCoRe, June 2018)]] § 1. Character creation (line 44): Soul Infestation · 19 s · 135 · Basic attacks deal +10 (+0) damage and hit several enemies
+- [[gameplay/video-tutorial-walkthrough|Video notes: tutorial walkthrough (Bravely Forward 2)]] § Steps (line 27, at 1:38, 3:20, 3:15): 1. Character creation 1:38–3:20. The nation is chosen first (Arslan). Then the class: Guardian, Saint, Punisher, each with a weapon picked from the class's l...
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

@@ -1,0 +1,72 @@
+---
+title: "Return"
+type: "skill"
+id: 35
+status: "stub"
+missing: ["damage_or_effect", "cooldown", "cost"]
+sources: ["client: Skill_Base.cdb id 35"]
+name_key: "Skill_30"
+desc_key: "SkillComment_30"
+kind: 1
+kind_name: "active"
+target: {"type": 3, "type_name": "self", "relation": ["self"], "unit_classes": ["monster", "player"], "max_targets": 1}
+range: 1
+cost: null
+cooldown: null
+cast_ms: 5000
+effect_kind: 0
+effects: []
+damage_or_effect: {}
+visual: 243
+icon: {"file": "Skill_Miriam_01.png", "index": 8}
+used_by:
+  - {"item_use": 909}
+  - {"item_use": 912}
+---
+<!-- generated:start -->
+<!-- generated-keys: title=f9617f type=86a754 id=972a67 sources=780855 name_key=dd5ba4 desc_key=7b07f7 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=2be88c cooldown=2be88c cast_ms=f8237d effect_kind=b6589f effects=97d170 damage_or_effect=bf21a9 visual=4af7f9 icon=a11afc used_by=d0d319 -->
+|  |  |
+|---|---|
+|  | ![Return](../assets/skills/35.png) |
+| **Skill id** | `35` |
+| **Kind** | active (1) |
+| **Target** | self; self; units: monster, player; up to 1 |
+| **Range** | 1 (world units) |
+| **Cast time** | 5 s |
+| **Visual** | skillVisual 243 `귀환` |
+| **Icon** | `ui/icons/Skill_Miriam_01.png` cell 8 |
+
+### Tooltip
+
+> [Active] Gain 30 Attack and 100 Movement Speed for 3 seconds.
+
+### Used by
+
+- Cast when [[wiki/items/909-scroll-gaia|Scroll : Gaia]] is used (Item_Base option 210)
+- Cast when [[wiki/items/912-scroll-gaia|Scroll : Gaia]] is used (Item_Base option 210)
+
+### Mentioned in
+
+- [[gameplay/video-early-quests|Video notes: first session, levels 1+ (charmanmugen)]] § 1. Map order (line 22, at 36:05): 36:05 · Training Camp · return
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

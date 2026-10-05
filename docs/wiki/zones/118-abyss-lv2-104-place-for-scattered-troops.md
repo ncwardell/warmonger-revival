@@ -1,0 +1,57 @@
+---
+title: "Abyss LV2 104 (Place for Scattered troops)"
+type: "zone"
+id: 118
+status: "complete"
+missing: []
+sources: ["client: ZoneDB.cdb id 118", "client: ZoneDB name 어비스_LV2_104 (abyss zones are named after their field)"]
+name_kr: "어비스_LV2_104"
+terrain: "Abyss_Lv02"
+bounds: {"x0": 800, "z0": 2336, "x1": 991, "z1": 2527}
+size: [192, 192]
+segments: ["ZP03_09"]
+fields: [104]
+minimap: "map/minimap/minimap_z118_00.dds"
+---
+<!-- generated:start -->
+<!-- generated-keys: title=86109d type=c899cd id=12f0de sources=6398d4 name_kr=b969e5 terrain=b8c94a bounds=7afa00 size=be57ee segments=cf1cca fields=a45ef1 minimap=a15f42 -->
+|  |  |
+|---|---|
+|  | ![minimap of Abyss LV2 104 (Place for Scattered troops)](../assets/zones/118.png) |
+| **Zone id** | `118` |
+| **ZoneDB name** | 어비스_LV2_104 (English gloss: Abyss LV2 104 (Place for Scattered troops)) |
+| **Terrain name** | `Abyss_Lv02` |
+| **Rectangle** | x 800–991, z 2336–2527 (192 × 192 units) |
+| **Fields** | [[wiki/fields/104-place-for-scattered-troops\|Place for Scattered troops]] |
+| **Minimap** | `map/minimap/minimap_z118_00.dds` |
+| **Lighting** | `Setting/weather/Abyss_Lv02.dat` |
+
+### Segments
+
+Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle touches. Navmesh format and the walkability check: [[spec/navmesh|Navmesh]].
+
+| segment | navmesh (.nav) | terrain (.zp) |
+|---|---|---|
+| ZP03_09 | yes | yes |
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

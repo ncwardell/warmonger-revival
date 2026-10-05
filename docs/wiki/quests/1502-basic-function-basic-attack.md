@@ -1,0 +1,73 @@
+---
+title: "Basic function - Basic attack"
+type: "quest"
+id: 1502
+status: "stub"
+missing: ["turn_in"]
+sources: ["client: Quest.cdb id 1502", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)"]
+name_key: "Quest_Title_Help_666"
+kind: 12
+kind_name: "Advice"
+giver: {"auto": true}
+turn_in: null
+bit: 70
+prev: []
+next: []
+stages: [5, 5, 5, 5, 5]
+objectives:
+  - {"n": 1, "type": 10001, "what": "client_attack", "text_key": "Quest_QuickText_Help_666_1"}
+rewards: []
+help: {"image": "ui/HelpImage/Help_09.png", "text_key": "Quest_Title_Help_String_666"}
+---
+<!-- generated:start -->
+<!-- generated-keys: title=82b92f type=eb5b2b id=104469 sources=bf709c name_key=4465ee kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=b7103c prev=97d170 next=97d170 stages=30caa7 objectives=1ae9c1 rewards=97d170 help=5ef0de -->
+|  |  |
+|---|---|
+|  | ![Basic function - Basic attack](../assets/quests/1502.png) |
+| **Quest id** | `1502` |
+| **Kind** | Advice (kind 12) |
+| **Giver** | automatic |
+| **Turn in** | **unknown** |
+| **Completion bit** | 70 |
+
+### Chain
+
+- **After:** nothing (no prerequisite bit)
+- **Next:** nothing: no quest requires this quest's bit (chain end)
+- **Shares completion bit 70 with:** [[wiki/quests/700-basic-combat-lesson-1|Basic Combat Lesson 1]] (completing one closes the others)
+
+### Objectives
+
+1. client event: attack / skill used — tracker: “Basic attack”
+
+### Rewards
+
+None in the client.
+
+### Tip window
+
+> When you right-click on an enemy NPC, it approaches the NPC and makes a basic attack
+
+Image `ui/HelpImage/Help_09.png`.
+<!-- generated:end -->
+
+## Notes
+
+<!-- hand-written: add what you know, with a source -->
+
+## Behaviour
+
+<!-- hand-written: add what you know, with a source -->
+
+## Sources
+
+<!-- hand-written: add what you know, with a source -->
+
+## Open questions
+
+<!-- hand-written: add what you know, with a source -->
+
+<!-- credit:start -->
+---
+*Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*
+<!-- credit:end -->

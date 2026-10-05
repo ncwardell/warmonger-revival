@@ -24,6 +24,9 @@ Not yet: the remaining quests and NPC services, shops, party/guild/chat, matches
 
 ## How it works
 
+The short version: `docs/gameplay/` is sourced evidence of what the original game was; `docs/wiki/` is the game's canonical data (one page per item, monster, NPC, quest, skill, map, shop…) and the server's only source of numbers; `server/` holds logic; `contract/` is the protocol. Details: [How the project fits together](https://ncwardell.github.io/warmonger-revival/how-it-fits).
+
+
 - `server/` — a small Python 3 asyncio server. `stub.py` owns the sockets (login 8815, game 8813, web 8080); `handlers.py` maps opcodes to reply functions and is **reloaded on save**, so you can change replies while a client stays connected. `world.py`, `ai.py`, `skills.py` and `loot.py` hold game systems.
 - `tools/` — `sof.py` (the client's encrypted config, incl. `point` to aim it at a server), `jpk.py` (the game's archives: renamed MPQ), `navmesh.py` (walkability checks).
 - `docs/` — the wiki (Obsidian-style Markdown, published to GitHub Pages): gameplay facts with sources in `docs/gameplay/`, and in `docs/spec/` what has been reverse engineered: packet layouts per opcode, world loading, combat, skills, monsters, matches, archive and navmesh formats.
