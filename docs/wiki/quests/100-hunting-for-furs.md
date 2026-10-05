@@ -85,7 +85,7 @@ Speaker: [[wiki/npcs/315-lewellyn|Lewellyn]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Lewellyn (315, Scroll Merchant, Training Camp) wants 5 White Chepa Fur (2554, from Chepa Warrior 727) and 5 Black Chepa Fur (2553, from Chepa Archer 728); both drop at 100% in the round clearings of the northern Training Ground ([[gameplay/video-tutorial-walkthrough]] steps 12–13). The tracker spells the first "Whiter Chepa Fur". Panel: 7,400 exp, 5,000 gold, then Spell Necklace (397) or Necklace of Life (405) ([17:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=1020s), [8:50](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=530s)). Turned in at [22:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=1320s), [19:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1170s) and [15:50](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=950s). Her dialogue mentions shoes although the reward is a necklace ([[gameplay/video-early-quests]] step 8). Lesson 706 (Expand your Inventory) starts at the turn-in. *video*
 
 ## Behaviour
 
@@ -93,7 +93,10 @@ Speaker: [[wiki/npcs/315-lewellyn|Lewellyn]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

@@ -2,9 +2,10 @@
 title: "Expand your Inventory"
 type: "quest"
 id: 706
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 706", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-tutorial-walkthrough]] steps 3-5 (lesson exp shown = table value)"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 706", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "video: [[gameplay/video-tutorial-walkthrough]] steps 3-5 (lesson exp shown = table value)", "video: [[gameplay/video-tutorial-walkthrough]] step 14, [[gameplay/video-character-creation-and-tutorial]] §3 step 17 (objective = expand the inventory once; completes on expansion)"]
+manual: ["objectives"]
 name_key: "Quest_Title_670"
 kind: 2
 kind_name: "Guide"
@@ -15,7 +16,8 @@ automatic: true
 prev: []
 next: []
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 17, "what": "expand_inventory", "a": 1, "b": 5, "text_key": "Quest_QuickText_670_1"}
 objectives_client:
   - {"n": 1, "type": 17, "what": null, "a": 1, "b": 5, "text_key": "Quest_QuickText_670_1"}
 rewards:
@@ -65,7 +67,7 @@ Image `ui/HelpImage/Help_12.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts at the quest 100 turn-in: press I and expand the inventory once; 700 exp ([19:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1170s)). Expanding asked "Gold : 5000", used up the gold from quest 100, and completed the lesson ([16:20](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=980s)–[16:35](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=995s)). *video*
 
 ## Behaviour
 
@@ -73,11 +75,11 @@ Image `ui/HelpImage/Help_12.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+What parameters a = 1 and b = 5 of objective type 17 mean is not known; the video only shows that one expansion completes it.
 
 <!-- credit:start -->
 ---

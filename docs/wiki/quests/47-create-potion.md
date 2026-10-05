@@ -94,7 +94,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Craft 100 Potion of Health [Quest] (2598) at Owen. Recipe 749 makes it from quest-only, bind-on-pickup copies of the inputs (2593–2597); it works like Potion of Health [A] ([[gameplay/consumables]]). *client*
 
 ## Behaviour
 
@@ -102,7 +102,9 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/consumables]]
 
 ## Open questions
 

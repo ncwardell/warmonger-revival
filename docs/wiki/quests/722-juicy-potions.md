@@ -58,7 +58,7 @@ rewards:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Follows lesson 701: use a Health Potion [D] (key D) and a Mana Potion [D] (key F); pays 500 exp and 10 of each potion (883, 884) ([5:40](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=340s), [3:40](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=220s); the potions arrived at [4:15](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=255s)). *video*
 
 ## Behaviour
 
@@ -66,7 +66,7 @@ rewards:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 

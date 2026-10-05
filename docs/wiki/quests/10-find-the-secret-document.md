@@ -90,7 +90,7 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From the Scout (dialogue 641): kill the Skeleton Warrior Officer (704) for the Secret document (2565, 100%) and take it to Frei ([26:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=1580s)). The officer had 2,000 HP and no regeneration ([35:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2120s)). Turned in at [36:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=2180s), [29:50](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1790s) and [20:00](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1200s). Rewards: one Oracle Set costume chosen by class (2021/2022/2023) and a choice of Spell Bracelet (399) or Bracelet of Life (407); no exp. At the turn-in the player also receives Scroll: Gaia (912) and the Urgent Letter (2567), the items that start quest 11 ([[gameplay/video-tutorial-walkthrough]] step 27). *video*
 
 ## Behaviour
 
@@ -98,7 +98,9 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
 
 ## Open questions
 

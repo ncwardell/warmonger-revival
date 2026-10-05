@@ -90,19 +90,23 @@ Image `ui/HelpImage/Help_02.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Already active when a new character first enters the Training Ground; there is no tutorial map in the 2018 builds ([[gameplay/video-early-quests]] §1 note, [[gameplay/video-character-creation-and-tutorial]] §3 step 1). The offer dialogue (684, the character's own lines) opens by itself with a reward panel showing 500 exp ([2:33](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=153s), [3:20](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=200s)). A tip window then says to right-click Shaia ([3:40](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=220s)). Talking to Shaia completes it and starts quest 2 and lesson 700 at once ([3:00](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=180s), [[gameplay/video-tutorial-walkthrough]] step 3). *video*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+The new character spawns about 14 units south of Shaia: about (435.5, 3648) in the Arslan copy ([[gameplay/video-tutorial-walkthrough]] §2), local (174.3, 68.3) in the Erion copy ([[gameplay/video-character-creation-and-tutorial]] §4). Quest 1's 500 exp plus lesson 700's 200 exp give exactly the 700 exp needed for level 2 ([4:55](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=295s), [3:25](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=205s)). *video + client*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-character-creation-and-tutorial]]
+- [[gameplay/video-tutorial-walkthrough]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The table grants 550 exp; every video shows 500. Levelling in the June 2018 video adds up with the shown value ([[gameplay/video-character-creation-and-tutorial]] §3 step 3, §6), so the original server may have granted the shown amount. *video vs client*
 
 <!-- credit:start -->
 ---

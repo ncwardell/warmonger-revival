@@ -77,7 +77,7 @@ Speaker: [[wiki/npcs/201-shaia|Shaia]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+No objectives and no reward: Floyd sends the player back to Shaia ([12:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=760s), [9:46](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=586s)). Talking to Shaia (dialogue 713, the character complaining about errand jobs) completes it and leads into quest 5 ([6:05](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=365s)). *video*
 
 ## Behaviour
 
@@ -85,7 +85,7 @@ Speaker: [[wiki/npcs/201-shaia|Shaia]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 

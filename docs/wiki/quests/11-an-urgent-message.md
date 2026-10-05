@@ -81,7 +81,7 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From Frei: use Scroll: Gaia (912), then the nexus, to reach the Fortress ([36:45](https://www.youtube.com/watch?v=s04CSN16w1s&t=2205s)). Using the scroll completes it and starts quest 12 and lesson 719. The scroll's landing field differed by nation: Eternal River – Upper Region (14) for Arslan ([32:25](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1945s), [37:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=2260s)) and Cracked Earth (63) for Erion ([21:20](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1280s)); both times the player stood beside a nexus. *video*
 
 ## Behaviour
 
@@ -89,11 +89,14 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Where the scroll lands for Armia was not seen, and whether the landing field is fixed per nation is not known ([[gameplay/video-tutorial-walkthrough]] step 30, [[gameplay/video-character-creation-and-tutorial]] §3 step 23).
 
 <!-- credit:start -->
 ---

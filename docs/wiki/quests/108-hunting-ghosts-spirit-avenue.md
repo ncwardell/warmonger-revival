@@ -74,7 +74,7 @@ Speaker: [[wiki/npcs/214-owen|Owen]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From Owen (214) at [66:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=3960s): 10 Ghost and 10 Elite Ghost (groups 10007/10008) in The avenue of spirit. Panel: 500,000 exp + 50/50 Passion Fragments. Not finished in the video ([[gameplay/video-early-quests]] step 25). Fragile Ghosts had 1,500 HP and the elites 2,000 ([81:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=4900s), [83:15](https://www.youtube.com/watch?v=s04CSN16w1s&t=4995s)). *video*
 
 ## Behaviour
 
@@ -82,7 +82,9 @@ Speaker: [[wiki/npcs/214-owen|Owen]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

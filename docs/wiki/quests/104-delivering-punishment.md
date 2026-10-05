@@ -88,7 +88,7 @@ Speaker: [[wiki/npcs/217-haley|Haley]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Haley (217, Teleporter): the Lizards are cutting off supplies; kill 10 Lizard (group 10005) and 10 Elite Lizard (10006) in Place for Scattered troops (fields 103/105/107) ([42:10](https://www.youtube.com/watch?v=s04CSN16w1s&t=2530s)). Turned in at [56:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=3395s). Panel: 170,000 exp, 20,000 gold, 40/40 Passion Fragments ([[gameplay/video-early-quests]] step 18). A Fragile Lizard Swordsman had 600 HP ([53:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=3220s)). *video*
 
 ## Behaviour
 
@@ -96,7 +96,9 @@ Speaker: [[wiki/npcs/217-haley|Haley]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

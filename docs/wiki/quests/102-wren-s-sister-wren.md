@@ -91,7 +91,7 @@ Speaker: [[wiki/npcs/204-wren|Wren]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Wren (238) asks the player to carry the Hawker letter (2563, the quest's start item) to her twin Wren (204) in the Fortress; tracker "Meet Wren in the fort" ([37:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=2220s), [30:50](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1850s), [20:20](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1220s)). Done at about 40:05 in the first-session video. Panel: 56,000 exp, 20 Blue and 20 Red Passion Fragments [D], 10 Crystal: Blue ([[gameplay/video-early-quests]] step 14). *video*
 
 ## Behaviour
 
@@ -99,7 +99,9 @@ Speaker: [[wiki/npcs/204-wren|Wren]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

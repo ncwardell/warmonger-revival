@@ -2,7 +2,7 @@
 title: "Support the Abyss expedition"
 type: "quest"
 id: 82
-status: "stub"
+status: "partial"
 missing: ["next"]
 sources: ["client: Quest.cdb id 82", "video: [[gameplay/video-early-quests]] §4 (kind 0 quest exp shown = table ÷ 1.1)", "client: QuestTalk.cdb id 659", "client: QuestTalk.cdb id 737"]
 name_key: "Quest_Title_16"
@@ -105,7 +105,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Guardian copy. Kill 10 Tow, 10 Elite Tow and the Tow's Chief (826) in The land of Greed (108), then talk to Freya. The Punisher copy (81) was taken from the Scout Leader at [52:25](https://www.youtube.com/watch?v=s04CSN16w1s&t=3145s) and finished at [89:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=5375s): 200,000 exp shown, then a choice of Magical judge Dagger (15007) or Magical Frost Bow (15004) ([[gameplay/video-early-quests]] step 21). The Guardian copy (82) offered the three Guardian weapons ([[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). The Tow Chief had 5,000 HP (+100 regeneration) ([70:00](https://www.youtube.com/watch?v=s04CSN16w1s&t=4200s)). *video*
 
 ## Behaviour
 
@@ -113,11 +113,15 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-character-creation-and-tutorial]]
+- [[gameplay/warmonger-forum]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+In Crush Online the same Abyss Tow quest (10 Tow, 10 Elite Tow, 1 boss, 5–10 minutes) paid 5 Shining Stones and 10 D reinforcement stones; the Warmonger client pays 220,000 exp and a class weapon, which is kept ([[gameplay/warmonger-forum]] §3). *forum vs client*
 
 <!-- credit:start -->
 ---

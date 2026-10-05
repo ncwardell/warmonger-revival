@@ -2,7 +2,7 @@
 title: "[Monthly] Monster area wars"
 type: "quest"
 id: 983
-status: "stub"
+status: "partial"
 missing: ["objectives"]
 sources: ["client: Quest.cdb id 983", "client: NoticeQuest.cdb id 13"]
 name_key: "Quest_Title_960"
@@ -76,7 +76,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From WM 1107 the daily, weekly and monthly Monster Area Wars quests also count War of Warmonger ([[gameplay/patch-history]]). *patch notes*
 
 ## Behaviour
 
@@ -84,7 +84,9 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/patch-history]]
 
 ## Open questions
 

@@ -2,7 +2,7 @@
 title: "Battle Arena"
 type: "quest"
 id: 839
-status: "stub"
+status: "partial"
 missing: ["giver", "objectives"]
 sources: ["client: Quest.cdb id 839", "client: QuestTalk.cdb id 771"]
 name_key: "Quest_Title_839"
@@ -87,7 +87,7 @@ Speaker: [[wiki/npcs/240-candice|Candice]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The Battle Arena is field 140; its NPC is unit 240 in the Fortress, which was disabled in October 2016 ([[gameplay/arena-ranking-rewards]]). *client + guide*
 
 ## Behaviour
 
@@ -95,11 +95,14 @@ Speaker: [[wiki/npcs/240-candice|Candice]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/arena-ranking-rewards]]
+- [[gameplay/skull-artifact-set]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+A 2016 screenshot shows a "[Monthly] Battle Arena" quest (win 20 arena matches, 6/20) ([[gameplay/skull-artifact-set]]); the client has only these two daily-group rows for the arena.
 
 <!-- credit:start -->
 ---

@@ -2,9 +2,10 @@
 title: "No2. Lords of the Land"
 type: "quest"
 id: 763
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 763", "video: [[gameplay/video-early-quests]] §4 (kind 0 quest exp shown = table ÷ 1.1)", "client: QuestTalk.cdb id 769", "client: QuestTalk.cdb id 912"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 763", "video: [[gameplay/video-early-quests]] §4 (kind 0 quest exp shown = table ÷ 1.1)", "client: QuestTalk.cdb id 769", "client: QuestTalk.cdb id 912", "guide: [[gameplay/lords-of-the-land]] §4 (objective type 15 = conquer 3 NPC lands, then talk to Kelsey 210)"]
+manual: ["objectives"]
 name_key: "Quest_Title_763"
 kind: 0
 kind_name: "Main"
@@ -17,7 +18,9 @@ automatic: true
 prev: [117]
 next: [764]
 stages: [1, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 15, "what": "conquer_npc_land", "count": 3, "c": 3, "text_key": "Quest_QuickText_763_1"}
+  - {"n": 2, "type": 4, "what": "talk", "npc": 210, "talk": 912, "text_key": "Quest_QuickText_693_1_"}
 objectives_client:
   - {"n": 1, "type": 15, "what": null, "c": 3, "text_key": "Quest_QuickText_763_1"}
   - {"n": 2, "type": 4, "what": "talk", "npc": 210, "talk": 912, "text_key": "Quest_QuickText_693_1_"}
@@ -88,15 +91,19 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Kelsey (210, Legion Manager, Fortress) asks the player to conquer 3 NPC lands and then talk to her; reward 1,500,000 exp + Impact of Gaia Box (1025) ([[gameplay/lords-of-the-land]] §4). *client + guide*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+The quest is completed by claiming the Lords of the Land box whose stack count equals the number of conquests, starting from zero stacks (here the 3rd box). Gaining more stacks than the quest needs overwrites the progress and the player must start again ([[gameplay/lords-of-the-land]] §1, §4). Stacks: +1 for winning a war against the NPC side or defending a land, none for taking an enemy land, −1 for losing or leaving a war ([[gameplay/server-rules]], [[gameplay/pvp-and-matches]]). The strategy guide advises putting this quest line off ([[gameplay/pvp-and-matches]]). *guide*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/lords-of-the-land]]
+- [[gameplay/server-rules]]
+- [[gameplay/pvp-and-matches]]
 
 ## Open questions
 

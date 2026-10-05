@@ -92,7 +92,7 @@ Speaker: Scout
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From the Scout at [26:30](https://www.youtube.com/watch?v=s04CSN16w1s&t=1590s): kill the Skeleton Warrior Leader (704) and the Skeleton Archer Leader (705), which stand in the south of Corpse incineration guarded by elites, then report to Frei ([36:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=2195s), [28:00](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1680s)–[30:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1830s)). Panel: 10,000 exp, 20 Blue and 20 Red Passion Fragments [D] (601/611), Crystal: Blue ×10 ([[gameplay/video-early-quests]] step 12, [[gameplay/video-tutorial-walkthrough]] step 27). A Crush Online forum screenshot of this quest shows the leaders' spawn area on the minimap ([[gameplay/sources]], "Hunting Skeletons" row). *video*
 
 ## Behaviour
 
@@ -100,7 +100,11 @@ Speaker: Scout
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/sources]]
 
 ## Open questions
 

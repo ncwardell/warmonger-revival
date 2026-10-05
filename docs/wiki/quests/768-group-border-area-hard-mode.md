@@ -2,7 +2,7 @@
 title: "Group - Border Area Hard Mode"
 type: "quest"
 id: 768
-status: "stub"
+status: "partial"
 missing: ["rewards"]
 sources: ["client: Quest.cdb id 768", "video: [[gameplay/video-early-quests]] §4 (kind 0 quest exp shown = table ÷ 1.1)", "client: QuestTalk.cdb id 860", "client: QuestTalk.cdb id 861"]
 name_key: "Quest_Title_768_"
@@ -99,7 +99,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+A guide screenshot names the chain "Group – Border Area Hard Mode": go to a dungeon, kill its boss, talk to Freya ([[gameplay/progression-and-economy]] §1, *image*).
 
 ## Behaviour
 
@@ -107,7 +107,9 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
 
 ## Open questions
 

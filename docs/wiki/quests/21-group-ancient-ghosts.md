@@ -84,7 +84,7 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+From Freya at [65:20](https://www.youtube.com/watch?v=s04CSN16w1s&t=3920s): get 3 essence of Darkness from Ancient Ghosts (827, 70%) in The avenue of spirit (113). Panel: 900,000 exp + Dimensional energy, then 100 potions [C] of either kind. Still open at the end of the video ([[gameplay/video-early-quests]] step 24). *video*
 
 ## Behaviour
 
@@ -92,7 +92,9 @@ Speaker: [[wiki/npcs/200-freya|Freya]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

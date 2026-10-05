@@ -2,9 +2,10 @@
 title: "Join & Create Legion"
 type: "quest"
 id: 752
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 752", "client: QuestTalk.cdb id 741", "client: QuestTalk.cdb id 742"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 752", "client: QuestTalk.cdb id 741", "client: QuestTalk.cdb id 742", "image: [[gameplay/classes-and-legions]] (\"Join & Create Legion\" quest, return to Kesley); video: [[gameplay/video-early-quests]] step 20 (objective type 21 = join or create a legion, *inferred* from title and tracker)"]
+manual: ["objectives"]
 name_key: "Quest_Title_743"
 kind: 1
 kind_name: "Sub"
@@ -18,7 +19,9 @@ next: [753, 754]
 prerequisites:
   - {"type": 7, "what": "legion?", "a": -1}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 21, "what": "join_or_create_legion", "text_key": "Quest_QuickText_743_1"}
+  - {"n": 2, "type": 0, "what": "report", "text_key": "Quest_QuickText_650_3"}
 objectives_client:
   - {"n": 1, "type": 21, "what": null, "text_key": "Quest_QuickText_743_1"}
   - {"n": 2, "type": 0, "what": "report", "text_key": "Quest_QuickText_650_3"}
@@ -92,7 +95,7 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Offered by Kesley (210) in the Fortress at [47:10](https://www.youtube.com/watch?v=s04CSN16w1s&t=2830s); reward Medal: Bronze (1000). The first-session player never finished it; "Join the Legion" (753) appeared at [75:40](https://www.youtube.com/watch?v=s04CSN16w1s&t=4540s) ([[gameplay/video-early-quests]] step 20). A guide screenshot shows the quest with its last step, return to Kesley ([[gameplay/classes-and-legions]]). The June 2018 player was offered it in the Fortress too ([[gameplay/video-character-creation-and-tutorial]] §3 After the tutorial). *video + image*
 
 ## Behaviour
 
@@ -100,7 +103,11 @@ Speaker: [[wiki/npcs/210-kesley|Kesley]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/classes-and-legions]]
+- [[gameplay/video-character-creation-and-tutorial]]
 
 ## Open questions
 

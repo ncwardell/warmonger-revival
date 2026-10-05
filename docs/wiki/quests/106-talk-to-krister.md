@@ -88,7 +88,7 @@ Speaker: [[wiki/npcs/219-krister|Krister]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Krister (219, Stock Administrator, Castle) explains legion stocks; the first-session player talked to him at [58:50](https://www.youtube.com/watch?v=s04CSN16w1s&t=3530s) but did not take this quest ([[gameplay/video-early-quests]] step 23). *video*
 
 ## Behaviour
 
@@ -96,7 +96,9 @@ Speaker: [[wiki/npcs/219-krister|Krister]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

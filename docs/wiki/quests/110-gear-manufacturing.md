@@ -2,9 +2,10 @@
 title: "Gear manufacturing"
 type: "quest"
 id: 110
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 110", "video: [[gameplay/video-early-quests]] §4 (kind 1 quest exp shown = table ÷ 1.2)", "client: QuestTalk.cdb id 807", "client: QuestTalk.cdb id 808"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 110", "video: [[gameplay/video-early-quests]] §4 (kind 1 quest exp shown = table ÷ 1.2)", "client: QuestTalk.cdb id 807", "client: QuestTalk.cdb id 808", "video: [[gameplay/video-early-quests]] step 19 (objective 1 = craft one piece of gear at Odin; type 26 a=2 read as the gear category, *inferred*)"]
+manual: ["objectives"]
 name_key: "Quest_Title_110"
 kind: 1
 kind_name: "Sub"
@@ -17,7 +18,9 @@ requires_bit: 13
 prev: [14]
 next: []
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 26, "what": "craft_gear", "a": 2, "b": 1, "maps": [120, 120, 120], "text_key": "Quest_QuickText_110_1"}
+  - {"n": 2, "type": 0, "what": "report", "maps": [120, 120, 120], "text_key": "Quest_QuickText_F_ODIN"}
 objectives_client:
   - {"n": 1, "type": 26, "what": null, "a": 2, "b": 1, "maps": [120, 120, 120], "text_key": "Quest_QuickText_110_1"}
   - {"n": 2, "type": 0, "what": "report", "maps": [120, 120, 120], "text_key": "Quest_QuickText_F_ODIN"}
@@ -90,7 +93,7 @@ Speaker: [[wiki/npcs/213-odin|Odin]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Odin (213, Fortress) asks for one crafted piece of gear ([42:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=2555s)); done at [46:25](https://www.youtube.com/watch?v=s04CSN16w1s&t=2785s). Odin's Create menu charged 0 gold for Life gear and 15,000 for Honor/Rise gear ([[gameplay/video-early-quests]] §3). Panel: 10,000 exp + 30,000 gold ([[gameplay/video-early-quests]] step 19). *video*
 
 ## Behaviour
 
@@ -98,11 +101,13 @@ Speaker: [[wiki/npcs/213-odin|Odin]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+The table lists a choice of Attack or Ability Power rune (7002/7012), but the reward panel showed no rune choice ([[gameplay/video-early-quests]] step 19). Objective type 26 is "craft gear" here and "craft consumables" in the Doping quests (961, 981); parameter a = 2 is read as the category, which is an inference.
 
 <!-- credit:start -->
 ---

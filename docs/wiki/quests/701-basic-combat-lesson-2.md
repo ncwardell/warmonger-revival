@@ -61,7 +61,7 @@ Image `ui/HelpImage/Help_10.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Follows lesson 700: use one of your abilities; the tip shows the Q W E R keys; 300 exp ([4:55](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=295s), [3:25](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=205s)). *video*
 
 ## Behaviour
 
@@ -69,7 +69,7 @@ Image `ui/HelpImage/Help_10.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
 
 ## Open questions
 

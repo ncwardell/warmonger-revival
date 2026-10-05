@@ -2,14 +2,15 @@
 title: "Kill monster of The avenue of spirit"
 type: "quest"
 id: 750
-status: "stub"
-missing: ["giver"]
-sources: ["client: Quest.cdb id 750", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 891"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 750", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 891", "video: [[gameplay/video-early-quests]] step 17 (Athan 207 offered the ghost version after 749; 750 and 1102 share the rewards shown)"]
+manual: ["giver"]
 name_key: "Quest_Title_663"
 kind: 3
 kind_name: "Free"
 level: {"min": 20, "max": 25}
-giver: null
+giver: {"npc": 207}
 turn_in: {"npc": 207}
 turn_in_maps: [120, 120, 120]
 bit: 0
@@ -75,7 +76,7 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Right after 749 was handed in, Athan (207) offered the ghost version: 70,000 exp + 70,000 gold + 60/60 Passion Fragments + Crystal: Yellow ([2:22:30](https://www.youtube.com/watch?v=s04CSN16w1s&t=8550s), [[gameplay/video-early-quests]] step 17). One of the three repeatable Abyss quests at Athan from the WM 0329 patch ([[gameplay/patch-history]]). *video*
 
 ## Behaviour
 
@@ -83,11 +84,14 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+750 and 1102 share these rewards, so the video does not tell which row Athan offered ([[gameplay/video-early-quests]] step 17). The level range of 750 (20–25) fits the level-22 player.
 
 <!-- credit:start -->
 ---

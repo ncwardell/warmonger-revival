@@ -2,9 +2,10 @@
 title: "[Weekly] Doping"
 type: "quest"
 id: 961
-status: "stub"
-missing: ["objectives", "rewards"]
-sources: ["client: Quest.cdb id 961", "client: NoticeQuest.cdb id 6"]
+status: "partial"
+missing: ["rewards"]
+sources: ["client: Quest.cdb id 961", "client: NoticeQuest.cdb id 6", "image: [[gameplay/progression-and-economy]] §2 (Doping = craft consumables; the monthly row's 200 matches b, so b = count); count 20 = client b"]
+manual: ["objectives"]
 name_key: "Quest_Title_954"
 kind: 10
 kind_name: "Weekly"
@@ -18,7 +19,8 @@ next: []
 prerequisites:
   - {"type": 4, "what": "level", "min": 28}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 26, "what": "craft_consumable", "count": 20, "a": 1, "text_key": "Quest_QuickText_954_1"}
 objectives_client:
   - {"n": 1, "type": 26, "what": null, "a": 1, "b": 20, "text_key": "Quest_QuickText_954_1"}
 rewards: null
@@ -76,7 +78,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Weekly Doping: craft consumables ([[gameplay/progression-and-economy]] §2, *image*). *image*
 
 ## Behaviour
 
@@ -84,11 +86,14 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
+- [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Reward types 10 and 5 are not decoded. The guides say max-level daily/weekly/monthly quests pay yellow jewels ([[gameplay/progression-and-economy]] §2), and WM 0726 gave daily quests more jewels and fame ([[gameplay/patch-history]]); type 10 = jewels and type 5 = fame would fit, but that is a guess.
 
 <!-- credit:start -->
 ---

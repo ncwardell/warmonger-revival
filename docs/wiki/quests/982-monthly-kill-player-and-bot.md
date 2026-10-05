@@ -2,9 +2,10 @@
 title: "[Monthly] Kill Player and Bot"
 type: "quest"
 id: 982
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 982", "client: NoticeQuest.cdb id 12"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 982", "client: NoticeQuest.cdb id 12", "image: [[gameplay/pvp-and-matches]], [[gameplay/skull-artifact-set]] (monthly Kill Player = 240 kills, tracker 80/240)"]
+manual: ["objectives"]
 name_key: "Quest_Title_959"
 kind: 11
 kind_name: "Monthly"
@@ -18,7 +19,8 @@ next: []
 prerequisites:
   - {"type": 4, "what": "level", "min": 30}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 2, "what": "kill_player", "count": 240, "a": 5, "c": 1, "text_key": "Quest_QuickText_959_1"}
 objectives_client:
   - {"n": 1, "type": 2, "what": null, "a": 5, "b": 240, "c": 1, "text_key": "Quest_QuickText_959_1"}
 rewards:
@@ -73,7 +75,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Monthly Kill Player: 240 kills; one screenshot's tracker reads 80/240 ([[gameplay/pvp-and-matches]], [[gameplay/skull-artifact-set]], *image*). From WM 0124 bot kills count ([[gameplay/events-and-schedules]] §1). *image*
 
 ## Behaviour
 
@@ -81,7 +83,11 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/pvp-and-matches]]
+- [[gameplay/skull-artifact-set]]
+- [[gameplay/events-and-schedules]]
 
 ## Open questions
 

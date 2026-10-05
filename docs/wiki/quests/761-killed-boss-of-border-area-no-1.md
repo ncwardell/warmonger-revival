@@ -92,7 +92,7 @@ Speaker: [[wiki/npcs/237-farrell|Farrell]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The guide screenshot of the quest window lists "killed boss of Border area No.3", a later quest of this series ([[gameplay/progression-and-economy]] §1, *image*).
 
 ## Behaviour
 
@@ -100,7 +100,9 @@ Speaker: [[wiki/npcs/237-farrell|Farrell]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
 
 ## Open questions
 

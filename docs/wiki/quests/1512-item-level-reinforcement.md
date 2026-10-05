@@ -2,7 +2,7 @@
 title: "Item - Level (+) reinforcement"
 type: "quest"
 id: 1512
-status: "stub"
+status: "partial"
 missing: ["turn_in", "objectives"]
 sources: ["client: Quest.cdb id 1512", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)"]
 name_key: "Quest_Title_Help_661"
@@ -62,7 +62,7 @@ Image `ui/HelpImage/Help_22.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Appeared in the first-session video alongside the Weapon and Gear Level (+) reinforcement lessons (713, 720) ([[gameplay/video-early-quests]] step 19). *video*
 
 ## Behaviour
 
@@ -70,7 +70,9 @@ Image `ui/HelpImage/Help_22.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

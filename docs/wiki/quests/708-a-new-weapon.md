@@ -60,7 +60,7 @@ Image `ui/HelpImage/Help_18.png`.
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Equip a secondary weapon; appeared at [89:45](https://www.youtube.com/watch?v=s04CSN16w1s&t=5385s) in the first-session video ([[gameplay/video-early-quests]] step 26). *video*
 
 ## Behaviour
 
@@ -68,7 +68,9 @@ Image `ui/HelpImage/Help_18.png`.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

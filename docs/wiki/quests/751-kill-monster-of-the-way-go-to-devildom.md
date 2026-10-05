@@ -2,14 +2,15 @@
 title: "Kill monster of The way go to devildom"
 type: "quest"
 id: 751
-status: "stub"
-missing: ["giver"]
-sources: ["client: Quest.cdb id 751", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 893"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 751", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 893", "notes: [[gameplay/patch-history]] 0329 (three repeatable Abyss quests at Athan; matching them to 749-751, which Athan turns in, is *inferred*)"]
+manual: ["giver"]
 name_key: "Quest_Title_664"
 kind: 3
 kind_name: "Free"
 level: {"min": 25, "max": 29}
-giver: null
+giver: {"npc": 207}
 turn_in: {"npc": 207}
 turn_in_maps: [120, 120, 120]
 bit: 0
@@ -75,7 +76,7 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+The WM 0329 patch added three repeatable Abyss quests at Athan ([[gameplay/patch-history]]); with 749 and 750 (seen in video) this is the third, for The way go to devildom. Not seen in a video. *patch notes + inferred*
 
 ## Behaviour
 
@@ -83,7 +84,9 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/patch-history]]
 
 ## Open questions
 

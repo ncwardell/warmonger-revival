@@ -74,7 +74,7 @@ Speaker: [[wiki/npcs/238-wren|Wren]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts at the quest 5 turn-in together with the Faded Passion fragment (1900) it needs: talk to Wren (238), sell her a fragment, buy a Return Scroll ([16:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=995s), [12:50](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=770s)). No reward. The fragment sold for 315 gold ([14:20](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=860s)) and Wren's shop sold the Return Scroll for 79 gold ([[gameplay/video-tutorial-walkthrough]] §3, [[gameplay/video-early-quests]] §6). The June 2018 player finished it at [16:40](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=1000s); the walkthrough player never bought the scroll, so it stayed open ([[gameplay/video-tutorial-walkthrough]] step 11). *video*
 
 ## Behaviour
 
@@ -82,7 +82,10 @@ Speaker: [[wiki/npcs/238-wren|Wren]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
+- [[gameplay/video-early-quests]]
 
 ## Open questions
 

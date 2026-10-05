@@ -2,9 +2,10 @@
 title: "[Daily] Kill Player and Bot"
 type: "quest"
 id: 951
-status: "stub"
-missing: ["objectives"]
-sources: ["client: Quest.cdb id 951", "client: NoticeQuest.cdb id 2"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 951", "client: NoticeQuest.cdb id 2", "image: [[gameplay/pvp-and-matches]] (daily Kill Player = 10 enemy players in Gaia; matches objective type 2, b = 10)"]
+manual: ["objectives"]
 name_key: "Quest_Title_951"
 kind: 9
 kind_name: "Daily"
@@ -18,7 +19,8 @@ next: []
 prerequisites:
   - {"type": 4, "what": "level", "min": 28}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 2, "what": "kill_player", "count": 10, "a": 5, "c": 1, "text_key": "Quest_QuickText_951_1"}
 objectives_client:
   - {"n": 1, "type": 2, "what": null, "a": 5, "b": 10, "c": 1, "text_key": "Quest_QuickText_951_1"}
 rewards:
@@ -73,7 +75,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Daily Kill Player: kill 10 enemy players in Gaia fields ([[gameplay/pvp-and-matches]], *image*). From WM 0124 bots killed in War of Warmonger also count ([[gameplay/events-and-schedules]] §1), and the quest gives "a little" exp and gold ([[gameplay/patch-history]]). *image + patch notes*
 
 ## Behaviour
 
@@ -81,7 +83,11 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/pvp-and-matches]]
+- [[gameplay/events-and-schedules]]
+- [[gameplay/patch-history]]
 
 ## Open questions
 

@@ -2,14 +2,15 @@
 title: "Kill monster of The land of Greed"
 type: "quest"
 id: 749
-status: "stub"
-missing: ["giver"]
-sources: ["client: Quest.cdb id 749", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 889"]
+status: "complete"
+missing: []
+sources: ["client: Quest.cdb id 749", "video: [[gameplay/video-early-quests]] §4 (kind 3 quest exp shown = table value)", "client: QuestTalk.cdb id 889", "video: [[gameplay/video-early-quests]] step 17 (accepted from Athan 207 in the Fortress)"]
+manual: ["giver"]
 name_key: "Quest_Title_662"
 kind: 3
 kind_name: "Free"
 level: {"min": 15, "max": 20}
-giver: null
+giver: {"npc": 207}
 turn_in: {"npc": 207}
 turn_in_maps: [120, 120, 120]
 bit: 0
@@ -81,7 +82,7 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Accepted from Athan (207) in the Fortress at [41:50](https://www.youtube.com/watch?v=s04CSN16w1s&t=2510s): kill 50 Tow and 50 Elite Tow in The land of Greed, then return to Athan. Turned in at [2:22:25](https://www.youtube.com/watch?v=s04CSN16w1s&t=8545s). Panel: 50,000 exp + 50,000 gold + 50/50 Passion Fragments + Crystal: Blue ×20; the exp is shown unchanged for this kind ([[gameplay/video-early-quests]] step 17 and §4). The three repeatable Abyss quests at Athan were added in the WM 0329 patch ([[gameplay/patch-history]]). *video*
 
 ## Behaviour
 
@@ -89,11 +90,15 @@ Speaker: [[wiki/npcs/207-athan|Athan]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-early-quests]]
+- [[gameplay/patch-history]]
+- [[gameplay/warmonger-forum]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Quest 1101 has the same kills and rewards ([[gameplay/warmonger-forum]] §3); the video does not show which of the two rows Athan offered.
 
 <!-- credit:start -->
 ---

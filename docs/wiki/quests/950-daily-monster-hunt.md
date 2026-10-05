@@ -69,7 +69,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Daily Monster Hunt: kill 50 monsters for 100,000 exp and 1 bronze medal; daily quests reset every day at 00:00 ([[gameplay/progression-and-economy]] §2, [[gameplay/server-rules]], *image*). The client row agrees (100,000 exp + Medal: Bronze 1000). From WM 0726 the daily-quest panel opens on its own above level 27 ([[gameplay/patch-history]]); this row's minimum level is 27. In Crush Online Season 2 players could take up to 3 daily, 4 weekly and 5 monthly quests ([[gameplay/crush-patch-notes]]). *image + client*
 
 ## Behaviour
 
@@ -77,11 +77,16 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
+- [[gameplay/server-rules]]
+- [[gameplay/patch-history]]
+- [[gameplay/crush-patch-notes]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+A 2018 patch says Abyss kills stopped counting for "the daily kill quest" ([[gameplay/patch-history]], Dungeons and world); whether that means this quest is not stated.
 
 <!-- credit:start -->
 ---

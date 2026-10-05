@@ -2,9 +2,10 @@
 title: "[Monthly] Doping"
 type: "quest"
 id: 981
-status: "stub"
-missing: ["objectives", "rewards"]
-sources: ["client: Quest.cdb id 981", "client: NoticeQuest.cdb id 11"]
+status: "partial"
+missing: ["rewards"]
+sources: ["client: Quest.cdb id 981", "client: NoticeQuest.cdb id 11", "image: [[gameplay/progression-and-economy]] §2 (monthly Doping = make 200 A-S scrolls/tomes/flasks/elixirs)"]
+manual: ["objectives"]
 name_key: "Quest_Title_958"
 kind: 11
 kind_name: "Monthly"
@@ -18,7 +19,8 @@ next: []
 prerequisites:
   - {"type": 4, "what": "level", "min": 29}
 stages: [5, 5, 5, 5, 5]
-objectives: null
+objectives:
+  - {"n": 1, "type": 26, "what": "craft_consumable", "count": 200, "a": 1, "text_key": "Quest_QuickText_958_1"}
 objectives_client:
   - {"n": 1, "type": 26, "what": null, "a": 1, "b": 200, "text_key": "Quest_QuickText_958_1"}
 rewards: null
@@ -80,7 +82,7 @@ board:
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Monthly Doping: make 200 A–S grade scrolls, tomes, flasks or elixirs ([[gameplay/progression-and-economy]] §2, strategy guide *image*). Alchemy recipes are on [[gameplay/consumables]]. *image*
 
 ## Behaviour
 
@@ -88,11 +90,15 @@ board:
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/progression-and-economy]]
+- [[gameplay/consumables]]
+- [[gameplay/patch-history]]
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+Reward types 10 and 5 are not decoded. The guides say max-level daily/weekly/monthly quests pay yellow jewels ([[gameplay/progression-and-economy]] §2), and WM 0726 gave daily quests more jewels and fame ([[gameplay/patch-history]]); type 10 = jewels and type 5 = fame would fit, but that is a guess.
 
 <!-- credit:start -->
 ---

@@ -68,7 +68,7 @@ Speaker: [[wiki/npcs/198-frei|Frei]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Starts at the quest 5 turn-in: Frei names the first challenge, hunting the Chepa leaders, and the objective is to go and ask Shaia ([16:35](https://www.youtube.com/watch?v=s04CSN16w1s&t=995s), [8:30](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=510s)). Talking to Shaia completes it and starts quest 7 ([17:45](https://www.youtube.com/watch?v=s04CSN16w1s&t=1065s), [12:35](https://www.youtube.com/watch?v=-DMnhYzYiC0&t=755s)). In the walkthrough video the same step came as quest 45 from Frei, after quest 100 ([[gameplay/video-tutorial-walkthrough]] step 16). *video*
 
 ## Behaviour
 
@@ -81,7 +81,9 @@ recovered original-server rule.
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/video-tutorial-walkthrough]]
 
 ## Open questions
 

@@ -81,7 +81,7 @@ Speaker: [[wiki/npcs/2001-corpse-bride|Corpse Bride]]
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+Crush Online's Halloween quest (27 Oct 2016): the NPC Corpse Bride in the nation's castle sends players to hunt Jack O'Lantern in PvE, for a reward box with the skill stone "Creep Jack"; players said the stone had only 120 spell charges ([[gameplay/crush-patch-notes]], *staff / player*). The client still has the unit (2000), the box (1056) and Jack's Pumpkin (2549). *client*
 
 ## Behaviour
 
@@ -89,7 +89,9 @@ Speaker: [[wiki/npcs/2001-corpse-bride|Corpse Bride]]
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+Gameplay pages this page draws on:
+
+- [[gameplay/crush-patch-notes]]
 
 ## Open questions
 
