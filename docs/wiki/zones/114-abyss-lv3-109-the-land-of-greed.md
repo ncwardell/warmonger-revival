@@ -4,7 +4,7 @@ type: "zone"
 id: 114
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 114", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 114", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client + image: [[gameplay/abyss-map]] Fields and layout, How the image was read"]
 name_kr: "어비스_LV3_109"
 terrain: "Abyss_Lv03"
 bounds: {"x0": 544, "z0": 2592, "x1": 735, "z1": 2783}
@@ -37,7 +37,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss tile of field 109. Each Abyss field fills one 256-unit segment on a grid from x = 256, z = 2048; the tier is the `LV<n>` in the zone name. On the stitched player map the minimap is north-up (+x right, +z up) and shows about 175 units around the rectangle's centre, at about 1.53 px per unit ([[gameplay/abyss-map|Abyss map]]). *client + image*
 
 ## Behaviour
 

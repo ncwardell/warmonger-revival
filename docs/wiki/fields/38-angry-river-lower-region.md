@@ -2,9 +2,9 @@
 title: "Angry River - Lower Region"
 type: "field"
 id: 38
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 38", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 38"]
+sources: ["client: SceneList.cdb id 38", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 38", "image: [[gameplay/lords-of-the-land]] §6 (defended fort near this land, Crush 2016 map)"]
 name_key: "FieldName_38"
 kind: "land"
 scene_type: 2
@@ -81,7 +81,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The October 2016 Crush map marks a defended fort (yellow circle, "+1" land buff) near this land ([[gameplay/lords-of-the-land|Lords of the Land]] §6). *image*
 
 ## Behaviour
 

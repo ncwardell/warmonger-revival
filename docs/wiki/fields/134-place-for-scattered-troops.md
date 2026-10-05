@@ -2,9 +2,9 @@
 title: "Place for Scattered troops"
 type: "field"
 id: 134
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters", "connections"]
-sources: ["client: SceneList.cdb id 134"]
+sources: ["client: SceneList.cdb id 134", "client + video: [[gameplay/video-dungeon-run]] §6 (world-map list value 21 = Event_Dungeon target 134, 80-minute window: Place for Scattered troops)", "guide: [[gameplay/maps-and-dungeons]] §2-§3 (seen on End of Earth; drops; entry 5 / 20)"]
 name_key: "FieldName_103"
 kind: "dungeon"
 scene_type: 3
@@ -58,7 +58,9 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/134-place-for-scattered-
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The event dungeon "Place for Scattered troops": the world map's Event Dungeon list shows it with the number 21, which matches `Event_Dungeon` target 134 (80-minute window) ([[gameplay/video-dungeon-run|dungeon-run video notes]] §6). *client + video*
+- Seen on End of Earth; drops Orange Passion T1, Yellow and Blue crystals, T2 Red/Blue and T1 Blue Passion ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3). Entry 5 normal / 20 hard in the 2018 table (later 5 + 3 bronze Time Energy); client `DungeonAdmission` 5 / 15 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2; [[gameplay/video-dungeon-run|dungeon-run video notes]]). *guide + client*
+- WM 0412 opened Scattered Troops and Avenue of Spirit to both nations ([[gameplay/patch-history|Patch history]]). *notes*
 
 ## Behaviour
 
@@ -70,7 +72,7 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/134-place-for-scattered-
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Monsters and layout unknown.
 
 <!-- credit:start -->
 ---

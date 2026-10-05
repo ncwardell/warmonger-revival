@@ -2,9 +2,9 @@
 title: "Battle arena"
 type: "zone"
 id: 5
-status: "stub"
+status: "partial"
 missing: ["fields"]
-sources: ["client: ZoneDB.cdb id 5"]
+sources: ["client: ZoneDB.cdb id 5", "client: [[gameplay/arena-ranking-rewards]] (Battle Arena zones: ZoneDB 5 Battle_Arena_01 and ZoneDB 148 new_arena)"]
 name_kr: "배틀아레나"
 terrain: "Battle_Arena_01"
 bounds: {"x0": 800, "z0": 320, "x1": 991, "z1": 447}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The client lists this zone, with ZoneDB 148 `new_arena`, as a Battle Arena zone ([[gameplay/arena-ranking-rewards|Arena ranking rewards]]). No gate or trigger of field 140 lies inside it. *client*
 
 ## Behaviour
 
@@ -54,7 +54,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Whether this was an older Battle Arena map for field 140 (so `fields` should list 140), or unused, is not known.
 
 <!-- credit:start -->
 ---

@@ -4,7 +4,7 @@ type: "field"
 id: 96
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 96", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 96", "client: Quest.cdb (quests and objectives in field 96)", "doc: gameplay/npc-locations § 4. Training Camp (fields 88 / 92 / 96)"]
+sources: ["client: SceneList.cdb id 96", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 96", "client: Quest.cdb (quests and objectives in field 96)", "doc: gameplay/npc-locations § 4. Training Camp (fields 88 / 92 / 96)", "video: [[gameplay/video-tutorial-walkthrough]] §3 Teleports used and §2 NPC positions, video", "client + video: [[gameplay/npc-locations]] §2 and §4 (gates, segment origins, Village gate without a portal in 2018)"]
 name_key: "FieldName_96"
 kind: "town"
 scene_type: 1
@@ -110,7 +110,12 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Armia copy of the Training Camp. Gates: 1194, 1207, 1208 and 1505 (Corpse incineration 101) ([[gameplay/npc-locations|NPC locations]] §4). *client*
+- No video was recorded here; NPC positions follow from the Erion copy by adding 256 in x ([[gameplay/npc-locations|NPC locations]] §2, derived).
+- Portals as players used them: the south-west "Training Ground" portal, the south "Corpse incineration" portal beside the Guard (215), and the north-east "Castle" portal. Returning from Corpse incineration puts the player next to the Guard ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §3 Teleports used). *video*
+- The Guard's idle bubble warns that the Abyss is a labyrinth and a PK area ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 21). *video*
+- The Village gate (1201 in the Arslan copy) showed no portal icon in 2018 ([video](https://www.youtube.com/watch?v=E-87WgbO_vo&t=845s), [[gameplay/npc-locations|NPC locations]] §2). *video*
+- Scroll: Return used in the Training Ground brought the player back here ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §5, *inferred*).
 
 ## Behaviour
 
@@ -118,7 +123,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations|NPC locations]], [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/video-character-creation-and-tutorial|character-creation video]].
 
 ## Open questions
 

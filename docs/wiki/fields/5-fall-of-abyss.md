@@ -2,9 +2,9 @@
 title: "Fall of Abyss"
 type: "field"
 id: 5
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 5", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 5"]
+sources: ["client: SceneList.cdb id 5", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 5", "guess: [[gameplay/maps-and-dungeons]] §1; image: [[gameplay/lords-of-the-land]] §6 (Oct 2016 ownership snapshot)"]
 name_key: "FieldName_5"
 kind: "land"
 scene_type: 2
@@ -85,7 +85,8 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- A Gaia land despite its name; not part of the Abyss farming area ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1, *guess*).
+- On the October 2016 Crush world map (Erion's view) this land was in the brown NPC-held block on the west ([[gameplay/lords-of-the-land|Lords of the Land]] §6). *image*
 
 ## Behaviour
 

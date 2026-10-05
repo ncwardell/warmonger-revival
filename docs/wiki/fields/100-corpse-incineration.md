@@ -2,9 +2,9 @@
 title: "Corpse incineration"
 type: "field"
 id: 100
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 100", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 100", "client: Quest.cdb (quests and objectives in field 100)", "client: Trigger.cdb field 100"]
+sources: ["client: SceneList.cdb id 100", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 100", "client: Quest.cdb (quests and objectives in field 100)", "client: Trigger.cdb field 100", "client + image: [[gameplay/abyss-map]] Portal table (BR portal ≈ (718, 2104) to 104 TR, image-measured ±5 units)", "video: [[gameplay/npc-locations]] §2 and §7 (player talking to the Scout within about 6 units of Trigger 10001)", "video: [[gameplay/video-character-creation-and-tutorial]] §3 step 14 (Erion camp portal leads here)"]
 name_key: "FieldName_100"
 kind: "field"
 scene_type: 5
@@ -19,6 +19,7 @@ gates:
   - {"gate": 1501, "x": 567.98, "z": 2100.77, "to_gate": 1501, "to_field": 92, "label": "FieldName_100"}
 connections:
   - {"to": 92, "gate": 1501, "to_gate": 1501}
+  - {"to": 104, "gate": null, "to_gate": null, "at": [718, 2104], "to_at": [962, 2499], "source": "image"}
 npcs: []
 monsters: [700, 701, 702, 703, 704, 705, 10003, 10004]
 spawn_points: []
@@ -107,7 +108,11 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 1, Erion entrance: entered from Training Camp 92 (gate 1504); the exit 1501 sits bottom-left at (567.98, 2100.77) ([[gameplay/abyss-map|Abyss map]]; [[gameplay/video-character-creation-and-tutorial|character-creation video]] §3 step 14). *client + video*
+- Bottom-right portal at about (718, 2104) leads to Place for Scattered troops 104 (top-right, about (962, 2499)); no gate id is known for it ([[gameplay/abyss-map|Abyss map]]). Erion route down: 100 → 104 → 111 → 113 → 114. *image*
+- The Scout here is Trigger 10001; a video player talking to him stood within about 6 units of it ([[gameplay/npc-locations|NPC locations]] §2, [video](https://www.youtube.com/watch?v=E-87WgbO_vo&t=1215s)). *video*
+- Same monsters as the Arslan copy (skeletons 700-705) per the quest objectives. *client*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -115,7 +120,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]], [[gameplay/npc-locations|NPC locations]], [[gameplay/video-character-creation-and-tutorial|character-creation video]].
 
 ## Open questions
 

@@ -4,7 +4,7 @@ type: "zone"
 id: 139
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 139", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 139", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: [[gameplay/video-fort-war]] §2 (not visited in the series)"]
 name_kr: "신장실"
 terrain: "Core_02"
 bounds: {"x0": 512, "z0": 3840, "x1": 767, "z1": 4095}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Room of the Fortress Keeper (field 131); no video in the gameplay notes reaches it ([[gameplay/video-fort-war|fort-war video notes]] §2). *client*
 
 ## Behaviour
 

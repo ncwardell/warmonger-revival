@@ -2,9 +2,9 @@
 title: "Mist Lake"
 type: "field"
 id: 31
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 31", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 31"]
+sources: ["client: SceneList.cdb id 31", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 31", "video: [[gameplay/video-early-quests]] §1 and §5 (war at 107:35; staff changing monster stats, unreliable)"]
 name_key: "FieldName_31"
 kind: "land"
 scene_type: 2
@@ -84,7 +84,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- War map in April 2018 ([[gameplay/video-early-quests|first-session video]] §1). Monsters killed there: Tough Elite Black Skeleton Warrior / Archer and a Troll, but staff were changing monster stats live at the time, so treat them as unreliable ([[gameplay/video-early-quests|first-session video]] §5). *video*
 
 ## Behaviour
 

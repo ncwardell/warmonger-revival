@@ -2,9 +2,9 @@
 title: "Echo of Earth"
 type: "field"
 id: 26
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 26", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 26"]
+sources: ["client: SceneList.cdb id 26", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 26", "video: [[gameplay/video-tutorial-walkthrough]] §3 UI (world map at 6:00)"]
 name_key: "FieldName_26"
 kind: "land"
 scene_type: 2
@@ -84,7 +84,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- At war on the world map in June 2018: defend Erion, attack Arslan, 39:31 remaining ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §3, [6:00](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=360s)). *video*
 
 ## Behaviour
 

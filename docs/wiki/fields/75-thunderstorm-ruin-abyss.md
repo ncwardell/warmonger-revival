@@ -2,9 +2,9 @@
 title: "Thunderstorm Ruin - Abyss"
 type: "field"
 id: 75
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 75", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 75"]
+sources: ["client: SceneList.cdb id 75", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 75", "guess: [[gameplay/maps-and-dungeons]] §1"]
 name_key: "FieldName_75"
 kind: "land"
 scene_type: 2
@@ -83,7 +83,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- A Gaia land despite its name; not part of the Abyss farming area ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1, *guess*).
 
 ## Behaviour
 

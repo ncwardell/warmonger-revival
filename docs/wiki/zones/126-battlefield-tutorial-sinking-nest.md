@@ -4,7 +4,7 @@ type: "zone"
 id: 126
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 126", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "doc: gameplay/video-dungeon-run §1 (Nas Village Entrance geometry = ZoneDB 126; guess)"]
+sources: ["client: ZoneDB.cdb id 126", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "doc: gameplay/video-dungeon-run §1 (Nas Village Entrance geometry = ZoneDB 126; guess)", "video: [[gameplay/video-dungeon-run]] §1-§2 (minimap shape; 192-unit square centred on the 192×128 rect)"]
 name_kr: "전장 튜토리얼"
 terrain: "Battlefield_Tutorial_01"
 bounds: {"x0": 1312, "z0": 2848, "x1": 1503, "z1": 2975}
@@ -43,7 +43,8 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Geometry of the event dungeon Nas Village Entrance (field 133): this is the only minimap with a diagonal chain of six round chambers, the shape on the in-game minimap ([[gameplay/video-dungeon-run|dungeon-run video notes]] §1). *client + video*
+- The minimap covers a 192 × 192 square centred on the 192 × 128 rectangle: x = 1312 + u·192, z = 3008 − v·192; the portal icon lands within 2 units of gate 1200 ([[gameplay/video-dungeon-run|dungeon-run video notes]] §1). *video + client*
 
 ## Behaviour
 

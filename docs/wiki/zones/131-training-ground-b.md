@@ -4,7 +4,7 @@ type: "zone"
 id: 131
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 131", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 131", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client + video: [[gameplay/npc-locations]] §2 (segment origins of the three Training Ground copies)"]
 name_kr: "훈련장_B"
 terrain: "B_training"
 bounds: {"x0": 544, "z0": 3616, "x1": 735, "z1": 3807}
@@ -43,7 +43,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Training Ground of field 93, segment origin (512, 3584); the three copies have identical meshes ([[gameplay/npc-locations|NPC locations]] §2). The June 2018 Erion video measured this minimap at 1.1228 units per pixel ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §4). *client + video*
 
 ## Behaviour
 

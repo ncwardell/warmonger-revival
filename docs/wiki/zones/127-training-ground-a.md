@@ -4,7 +4,7 @@ type: "zone"
 id: 127
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 127", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 127", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client + video: [[gameplay/npc-locations]] §2 (segment origins of the three Training Ground copies)"]
 name_kr: "훈련장_A"
 terrain: "A_training"
 bounds: {"x0": 288, "z0": 3616, "x1": 479, "z1": 3807}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Training Ground of field 89, segment origin (256, 3584); the three copies have identical meshes ([[gameplay/npc-locations|NPC locations]] §2). *client + video*
 
 ## Behaviour
 

@@ -2,9 +2,9 @@
 title: "Corpse incineration"
 type: "field"
 id: 101
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 101", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 101", "client: Quest.cdb (quests and objectives in field 101)", "client: Trigger.cdb field 101"]
+sources: ["client: SceneList.cdb id 101", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 101", "client: Quest.cdb (quests and objectives in field 101)", "client: Trigger.cdb field 101", "client + image: [[gameplay/abyss-map]] Portal table (BL portal ≈ (823, 2103) to 106 TL, image-measured ±5 units)"]
 name_key: "FieldName_101"
 kind: "field"
 scene_type: 5
@@ -19,6 +19,7 @@ gates:
   - {"gate": 1502, "x": 973.31, "z": 2254.92, "to_gate": 1502, "to_field": 96, "label": "FieldName_101"}
 connections:
   - {"to": 96, "gate": 1502, "to_gate": 1502}
+  - {"to": 106, "gate": null, "to_gate": null, "at": [823, 2103], "to_at": [1330, 2494], "source": "image"}
 npcs: []
 monsters: [700, 701, 702, 703, 704, 705, 10003, 10004]
 spawn_points: []
@@ -107,7 +108,9 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 1, Armia entrance: entered from Training Camp 96 (gate 1505); the exit 1502 sits top-right at (973.31, 2254.92) ([[gameplay/abyss-map|Abyss map]]). *client*
+- Bottom-left portal at about (823, 2103) leads to field 106 (top-left, about (1330, 2494)); no gate id is known for it. Armia route down: 101 → 106 → 109 → 113 → 114 ([[gameplay/abyss-map|Abyss map]]). *image*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -115,7 +118,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

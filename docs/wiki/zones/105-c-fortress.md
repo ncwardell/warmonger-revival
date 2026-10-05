@@ -4,7 +4,7 @@ type: "zone"
 id: 105
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 105", "doc: gameplay/npc-locations §2 (Fortress = ZoneDB 103-105, one per nation)"]
+sources: ["client: ZoneDB.cdb id 105", "doc: gameplay/npc-locations §2 (Fortress = ZoneDB 103-105, one per nation)", "client + video: [[gameplay/npc-locations]] §2-§3 (three Fortress copies, segment origins, one shared layout)"]
 name_kr: "C_요새"
 terrain: "C_Town_01"
 bounds: {"x0": 2304, "z0": 1536, "x1": 2559, "z1": 1791}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One of the three Fortress copies (field 120), segment origin (2304, 1536). All three share one layout, so the Fortress NPC positions in [[gameplay/npc-locations|NPC locations]] §3 carry over by adding the origin difference; the Village maps use the same navmesh ([[gameplay/npc-locations|NPC locations]] §2). *client + video*
 
 ## Behaviour
 

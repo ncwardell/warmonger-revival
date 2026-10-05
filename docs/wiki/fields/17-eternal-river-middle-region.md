@@ -2,9 +2,9 @@
 title: "Eternal River - Middle Region"
 type: "field"
 id: 17
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 17", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 17"]
+sources: ["client: SceneList.cdb id 17", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 17", "image: [[gameplay/lords-of-the-land]] §6 (Oct 2016 ownership snapshot)"]
 name_key: "FieldName_17"
 kind: "land"
 scene_type: 2
@@ -80,7 +80,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- On the October 2016 Crush world map (Erion's view) this land was in the brown NPC-held block on the west ([[gameplay/lords-of-the-land|Lords of the Land]] §6). *image*
 
 ## Behaviour
 

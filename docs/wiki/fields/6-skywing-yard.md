@@ -2,9 +2,9 @@
 title: "Skywing Yard"
 type: "field"
 id: 6
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 6", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 6"]
+sources: ["client: SceneList.cdb id 6", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 6", "guide: [[gameplay/maps-and-dungeons]] §3 (event dungeons seen here)"]
 name_key: "FieldName_6"
 kind: "land"
 scene_type: 2
@@ -83,7 +83,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Event dungeons The Avenue of Spirit and Nas Village were seen opening on this land ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3). *guide*
 
 ## Behaviour
 

@@ -2,9 +2,9 @@
 title: "Beginner's Training Ground"
 type: "field"
 id: 117
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters", "connections"]
-sources: ["client: SceneList.cdb id 117", "doc: spec/navmesh (tutorial spawn in ZoneDB 2 tutorial_map_01)"]
+sources: ["client: SceneList.cdb id 117", "doc: spec/navmesh (tutorial spawn in ZoneDB 2 tutorial_map_01)", "video: [[gameplay/video-tutorial-walkthrough]] §1, [[gameplay/video-early-quests]] intro, [[gameplay/video-character-creation-and-tutorial]] §6: never visited in 2018", "client: [[gameplay/npc-locations]] §6 (no table places anything; safe spawn point (1427, 429); candidate units 220-223)"]
 name_key: "FieldName_117"
 kind: "dungeon"
 scene_type: 3
@@ -68,7 +68,8 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Never visited in the 2018 videos: the March and June 2018 builds start new characters in the nation's Training Ground ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1; [[gameplay/video-early-quests|first-session video]]; [[gameplay/video-character-creation-and-tutorial|character-creation video]] §6). *video*
+- No client table places anything here. Candidate units are the Training Assistants 220/222/223 and the Training Officer 221; a safe spawn point on the navmesh is (1427, 429) ([[gameplay/npc-locations|NPC locations]] §6). *client*
 
 ## Behaviour
 
@@ -80,7 +81,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Crush Online (2016) videos show a tutorial chapter that may be this map ([[gameplay/videos]], [[gameplay/sources]] gap 6); monsters and exits are still unknown.
 
 <!-- credit:start -->
 ---

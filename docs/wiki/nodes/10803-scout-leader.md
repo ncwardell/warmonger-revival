@@ -4,7 +4,7 @@ type: "node"
 id: 10803
 status: "complete"
 missing: []
-sources: ["client: Trigger.cdb id 10803", "client: Quest.cdb objective type 5 / c12@1c / c19@30 (gadget 3)"]
+sources: ["client: Trigger.cdb id 10803", "client: Quest.cdb objective type 5 / c12@1c / c19@30 (gadget 3)", "video: [[gameplay/video-early-quests]] §3 (Scout Leader measured at (452.4, 2758.8), within 6 units)"]
 kind: "quest_npc"
 field: 108
 x: 448.84
@@ -44,7 +44,7 @@ Same gadget in the other nations' copies: [[wiki/nodes/10904-scout-leader|Scout 
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Video check: the April 2018 session measured the Scout Leader in The land of Greed at (452.4, 2758.8), within 6 units of this row, which also confirms the ZoneDB 113 minimap mapping ([[gameplay/video-early-quests|first-session video]] §3, [52:15](https://www.youtube.com/watch?v=s04CSN16w1s&t=3135s)). *video*
 
 ## Behaviour
 

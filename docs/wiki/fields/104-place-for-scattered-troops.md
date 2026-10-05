@@ -2,9 +2,9 @@
 title: "Place for Scattered troops"
 type: "field"
 id: 104
-status: "stub"
-missing: ["spawn_points", "monsters", "npcs", "connections"]
-sources: ["client: SceneList.cdb id 104", "client: ZoneDB name 어비스_LV2_104 (abyss zones are named after their field)"]
+status: "partial"
+missing: ["spawn_points", "monsters", "npcs"]
+sources: ["client: SceneList.cdb id 104", "client: ZoneDB name 어비스_LV2_104 (abyss zones are named after their field)", "image: [[gameplay/abyss-map]] Portal table (TR ≈ (962, 2499) to 100, BL ≈ (828, 2361) to 111), image-measured ±5 units"]
 name_key: "FieldName_104"
 kind: "field"
 scene_type: 5
@@ -13,7 +13,9 @@ group: 12
 neighbours: [100]
 zones: [118]
 segments: ["ZP03_09"]
-connections: []
+connections:
+  - {"to": 100, "gate": null, "to_gate": null, "at": [962, 2499], "to_at": [718, 2104], "source": "image"}
+  - {"to": 111, "gate": null, "to_gate": null, "at": [828, 2361], "to_at": [1215, 2623], "source": "image"}
 npcs: []
 monsters: []
 spawn_points: []
@@ -68,7 +70,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 2 on the Erion route (100 → 104 → 111 → 113 → 114). Top-right portal (about 962, 2499) links to Corpse incineration 100; bottom-left portal (about 828, 2361) links to The land of Greed 111. Neither has a gate id in the client table ([[gameplay/abyss-map|Abyss map]]). *image*
 
 ## Behaviour
 
@@ -80,7 +82,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Gate ids for both portals are missing from `Teleport_List` ([[gameplay/abyss-map|Abyss map]]: the real ids were probably server data).
 
 <!-- credit:start -->
 ---

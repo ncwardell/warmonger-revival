@@ -2,9 +2,9 @@
 title: "Floor of Twilight"
 type: "field"
 id: 43
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 43", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 43"]
+sources: ["client: SceneList.cdb id 43", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 43", "image: [[gameplay/maps-and-dungeons]] §1 (grey band, spring 2018)"]
 name_key: "FieldName_43"
 kind: "land"
 scene_type: 2
@@ -84,7 +84,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Part of the grey (monster-held) band between Arslan (west) and Erion (east) on the spring 2018 world map ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *image*
 
 ## Behaviour
 

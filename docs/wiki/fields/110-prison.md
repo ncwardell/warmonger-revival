@@ -2,9 +2,9 @@
 title: "Prison"
 type: "field"
 id: 110
-status: "stub"
-missing: ["spawn_points", "monsters", "npcs", "connections"]
-sources: ["client: SceneList.cdb id 110", "client: ZoneDB name 어비스_LV3_110 (abyss zones are named after their field)"]
+status: "partial"
+missing: ["spawn_points", "monsters", "connections"]
+sources: ["client: SceneList.cdb id 110", "client: ZoneDB name 어비스_LV3_110 (abyss zones are named after their field)", "image + guess: [[gameplay/abyss-map]] Routes (not in the image, no gate touches it)", "client: [[gameplay/npc-locations]] §8 (ladi 320 placed in Prison, field 110, by Quest.tsv)", "player: [[gameplay/crush-mechanics]] (Crush anti-cheat sent players to Prison for 3-5 min)"]
 name_key: "FieldName_110"
 kind: "field"
 scene_type: 5
@@ -13,7 +13,7 @@ group: 12
 zones: [115]
 segments: ["ZP03_10"]
 connections: []
-npcs: []
+npcs: [320]
 monsters: []
 spawn_points: []
 ---
@@ -64,7 +64,9 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- No gate in the client table touches this field and the stitched Abyss image does not show it ([[gameplay/abyss-map|Abyss map]]). The server notes say to keep it closed until a source turns up ([[gameplay/server-rules|Server rules]]). *client + guess*
+- Quests place ladi (320) here ([[gameplay/npc-locations|NPC locations]] §8). *client*
+- In Crush Online the anti-cheat sent suspected speed-hackers (and some laggy honest players) to **Prison** for about 3-5 minutes ([[gameplay/crush-mechanics|Crush mechanics]]). *player*
 
 ## Behaviour
 
@@ -76,7 +78,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- How players entered (probably only by the server, e.g. the anti-cheat), and whether it had monsters.
 
 <!-- credit:start -->
 ---

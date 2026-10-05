@@ -2,9 +2,9 @@
 title: "Place for Scattered troops"
 type: "field"
 id: 103
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 103", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 103", "client: Quest.cdb (quests and objectives in field 103)"]
+sources: ["client: SceneList.cdb id 103", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 103", "client: Quest.cdb (quests and objectives in field 103)", "client + image: [[gameplay/abyss-map]] Portal table and Routes (unlabelled portals image-measured ±5 units)", "video: [[gameplay/video-early-quests]] §1 (Fortress → 103 at 51:25) and §2 quest 104 (Lizards in 103/105/107), video"]
 name_key: "FieldName_103"
 kind: "field"
 scene_type: 5
@@ -19,6 +19,7 @@ gates:
   - {"gate": 1122, "x": 566.51, "z": 2496.4, "to_gate": 1109, "to_field": 108, "label": "FieldName_103"}
 connections:
   - {"to": 108, "gate": 1122, "to_gate": 1109}
+  - {"to": 111, "gate": null, "to_gate": null, "at": [569, 2361], "to_at": [1080, 2757], "source": "image"}
 npcs: []
 monsters: [650, 651, 652, 653, 10006, 10005]
 spawn_points: []
@@ -89,7 +90,10 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 2 hub; the fortress teleporter's free "Abyss" option probably lands here for Arslan players (`Teleport_List` 1901-1903, *guess*, [[gameplay/abyss-map|Abyss map]]). In the June 2018 video the Arslan player arrived in 103 from the Fortress ([[gameplay/video-early-quests|first-session video]] §1). *client + video*
+- Portals: top-left 1122 → 108 (gate 1109); bottom-left (about 569, 2361) → 111; top-right (about 695, 2491) has no line and a red dot, perhaps the fortress arrival (*guess*) ([[gameplay/abyss-map|Abyss map]]). Route: Fortress → 103 → 108 or 111 → 113 → 114. *client + image*
+- Quest 104 "Delivering Punishment" (Haley) sends players here for 10 Lizard (group 10005) and 10 Elite Lizard (group 10006); the video kills Fragile (Elite) Lizard Swordsmen and Lancers. Gem Stone: Blue dropped here ([[gameplay/video-early-quests|first-session video]] §2 item 18, §5, §6). *video + client*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -97,7 +101,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]], [[gameplay/video-early-quests|first-session video]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

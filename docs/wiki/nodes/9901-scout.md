@@ -4,7 +4,7 @@ type: "node"
 id: 9901
 status: "complete"
 missing: []
-sources: ["client: Trigger.cdb id 9901", "client: Quest.cdb objective type 5 / c12@1c / c19@30 (gadget 1)"]
+sources: ["client: Trigger.cdb id 9901", "client: Quest.cdb objective type 5 / c12@1c / c19@30 (gadget 1)", "video: [[gameplay/video-tutorial-walkthrough]] §1 step 23 and §2 (Scout found in field 99; quest 9 completes, 10 and 107 start)"]
 kind: "quest_npc"
 field: 99
 x: 465.27
@@ -44,7 +44,7 @@ Same gadget in the other nations' copies: [[wiki/nodes/10001-scout|Scout (10001)
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Arslan tutorial video finds the Scout here: talking to him completes quest 9 (objective type 5) and starts quest 10 "Find the Secret Document" and side quest 107 "Hunting Skeletons" ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 23, [26:30](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=1590s)). The video page uses this trigger's position for him ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §2). *video + client*
 
 ## Behaviour
 

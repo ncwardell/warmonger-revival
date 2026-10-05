@@ -2,9 +2,9 @@
 title: "Death's Rest"
 type: "field"
 id: 135
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters", "connections"]
-sources: ["client: SceneList.cdb id 135"]
+sources: ["client: SceneList.cdb id 135", "client + video: [[gameplay/video-dungeon-run]] §6 (world-map list value 24 = Event_Dungeon target 135, 80-minute window: The avenue of spirit)", "guide: [[gameplay/maps-and-dungeons]] §2-§3 (seen on Skywing Yard; drops; entry 5 / 20)"]
 name_key: "FieldName_112"
 kind: "dungeon"
 scene_type: 3
@@ -59,7 +59,8 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/135-death-s-rest|Death's
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The event dungeon "The avenue of spirit": the world map's Event Dungeon list shows it with the number 24, which matches `Event_Dungeon` target 135 (80-minute window) ([[gameplay/video-dungeon-run|dungeon-run video notes]] §6). *client + video*
+- Seen on Skywing Yard; drops Orange Passion T1, Yellow and Red crystals, T2 Red/Blue Passion ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3). Entry 5 normal / 20 hard in the 2018 table; client `DungeonAdmission` 5 / 15 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2; [[gameplay/video-dungeon-run|dungeon-run video notes]]). *guide + client*
 
 ## Behaviour
 
@@ -71,7 +72,7 @@ Entry cost, rewards, boss and schedule: [[wiki/dungeons/135-death-s-rest|Death's
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- FieldNames calls this field "Death's Rest"; the match to The avenue of spirit rests on the world-map list numbers ([[gameplay/video-dungeon-run|dungeon-run video notes]] §6). Monsters and layout unknown.
 
 <!-- credit:start -->
 ---

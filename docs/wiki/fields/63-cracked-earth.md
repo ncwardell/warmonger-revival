@@ -2,9 +2,9 @@
 title: "Cracked Earth"
 type: "field"
 id: 63
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 63", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 63"]
+sources: ["client: SceneList.cdb id 63", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 63", "video: [[gameplay/video-character-creation-and-tutorial]] §3 step 23 (Erion Scroll: Gaia arrival beside a Nexus that moves the player to the Fortress), video"]
 name_key: "FieldName_63"
 kind: "land"
 scene_type: 2
@@ -24,6 +24,7 @@ connections:
   - {"to": 60, "gate": 702, "to_gate": 730}
   - {"to": 64, "gate": 741, "to_gate": 731}
   - {"to": 72, "gate": 820, "to_gate": 732}
+  - {"to": 120, "gate": null, "to_gate": null, "via": "nexus", "source": "video"}
 npcs: []
 monsters: []
 spawn_points: []
@@ -85,7 +86,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The Erion player of the June 2018 relaunch landed here with the first Scroll: Gaia, standing beside a Nexus; clicking it opened the world map with a Fortress / Owner Legion panel and moved the player to the Fortress ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §3 step 23). *video*
 
 ## Behaviour
 

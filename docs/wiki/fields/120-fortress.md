@@ -4,7 +4,7 @@ type: "field"
 id: 120
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 120", "doc: gameplay/npc-locations §2 (Fortress = ZoneDB 103-105, one per nation)", "client: Teleport_List.cdb field 120", "client: Quest.cdb (quests and objectives in field 120)", "doc: gameplay/npc-locations § 3. Fortress (field 120)"]
+sources: ["client: SceneList.cdb id 120", "doc: gameplay/npc-locations §2 (Fortress = ZoneDB 103-105, one per nation)", "client: Teleport_List.cdb field 120", "client: Quest.cdb (quests and objectives in field 120)", "doc: gameplay/npc-locations § 3. Fortress (field 120)", "guide: [[gameplay/arena-ranking-rewards]] 'Battle Arena NPC stands on the top/middle of a Fortress' (Crush Online 2016) + client unit 240 (Arena NPC)", "video: [[gameplay/video-tutorial-walkthrough]] §1 step 31 (Nexus arrival beside Haley), video", "video: [[gameplay/video-early-quests]] §1 (Haley destinations and prices), video", "image: [[gameplay/maps-and-dungeons]] §1 and §5 (teleporter prices, fortress portal, fort counts), image", "video: [[gameplay/video-fort-war]] §1 (return to own legion's fort after a siege), video"]
 name_key: "FieldName_120"
 kind: "town"
 scene_type: 1
@@ -23,7 +23,7 @@ connections:
   - {"to": 103, "gate": 1901, "to_gate": 0}
   - {"to": 105, "gate": 1902, "to_gate": 0}
   - {"to": 107, "gate": 1903, "to_gate": 0}
-npcs: [99, 200, 204, 205, 207, 208, 210, 212, 213, 214, 217, 237, 242, 323, 324, 206, 211, 218, 300, 303, 311, 322, 304]
+npcs: [99, 200, 204, 205, 207, 208, 210, 212, 213, 214, 217, 237, 242, 323, 324, 206, 211, 218, 300, 303, 311, 322, 304, 240]
 monsters: []
 spawn_points: []
 ---
@@ -121,7 +121,13 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- One field id serves every fort; the three copies sit at segment origins (1792, 1536), (2048, 1536) and (2304, 1536) and share one layout ([[gameplay/npc-locations|NPC locations]] §2). In spring 2018 Arslan held 4 forts and Erion 4 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *client + image*
+- The minimap title carries the owning legion's name, e.g. "Scourge Fortress" or "UG Fortress" ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §3 step 23; [[gameplay/video-fort-war|fort-war video notes]] §1; [[gameplay/video-early-quests|first-session video]] §1). *video*
+- Arrival: clicking a Nexus in Gaia lands the player beside Haley (217) in the arrival plaza ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 31). After a siege the player is returned to their own legion's fort ([[gameplay/video-fort-war|fort-war video notes]] §1). *video*
+- Haley (Teleporter) offers Castle 10,000 gold, Fortress 6,000 gold, Gaia and Abyss free ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1, image); a June 2018 video shows Fortress at 4,000 ("TOP Fortress (4000)") ([[gameplay/video-early-quests|first-session video]] §1). From WM 0110 a Haley teleport costs 20 yellow jewels ([[gameplay/events-and-schedules|Events and schedules]] §9). The Abyss option presumably lands in 103 / 105 / 107 by nation (`Teleport_List` 1901-1903, *guess*, [[gameplay/abyss-map|Abyss map]]).
+- The Fortress Portal (unit 311, bottom-right) sends players to a dungeon matched to their level ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). The "Mysterious World" tabs (Death's Rest (Passion) 132, Sinking Nest 133) open from the fortress gate ([[gameplay/patch-history|Patch history]], WM 0110). *guide*
+- Hadrian (211, top-left) takes donations to the fort and handles "Fort Information" and "Civil war application" ([[gameplay/classes-and-legions|Classes and legions]] §4; [[gameplay/video-early-quests|first-session video]] §3). The weekly Civil War (Sunday 20:00) is fought inside the fort; members must be inside at 20:00 ([[gameplay/classes-and-legions|Classes and legions]] §4). *guide + video*
+- In Crush Online the Battle Arena NPC (Candice, 240) stood on the top/middle of a Fortress ([[gameplay/arena-ranking-rewards|Arena ranking rewards]]; [[gameplay/sources]]). *guide*
 
 ## Behaviour
 
@@ -129,11 +135,11 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations|NPC locations]], [[gameplay/maps-and-dungeons|Maps and dungeons]], [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/video-early-quests|first-session video]], [[gameplay/video-fort-war|fort-war video notes]], [[gameplay/classes-and-legions|Classes and legions]], [[gameplay/arena-ranking-rewards|Arena ranking rewards]].
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Fortress teleport price: 6,000 gold in the spring-2018 guide image versus 4,000 in the June 2018 video; possibly a fort-tax or patch difference ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1, [[gameplay/video-early-quests|first-session video]] §1).
 
 <!-- credit:start -->
 ---

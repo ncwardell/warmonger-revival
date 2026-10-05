@@ -2,9 +2,9 @@
 title: "Thornsbush peak"
 type: "field"
 id: 9
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 9", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 9"]
+sources: ["client: SceneList.cdb id 9", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 9", "guide: [[gameplay/maps-and-dungeons]] §3 (event dungeon seen here)"]
 name_key: "FieldName_9"
 kind: "land"
 scene_type: 2
@@ -81,7 +81,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- The event dungeon Siren Lake was seen opening on this land ([[gameplay/maps-and-dungeons|Maps and dungeons]] §3). *guide*
 
 ## Behaviour
 

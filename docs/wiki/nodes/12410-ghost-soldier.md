@@ -4,7 +4,7 @@ type: "node"
 id: 12410
 status: "complete"
 missing: []
-sources: ["client: Trigger.cdb id 12410", "client: Quest.cdb objective type 5 / c12@1c / c19@30 (gadget 10)"]
+sources: ["client: Trigger.cdb id 12410", "client: Quest.cdb objective type 5 / c12@1c / c19@30 (gadget 10)", "video: [[gameplay/video-dungeon-run]] §5 (yellow cross icon at ≈ (1975, 1890))"]
 kind: "quest_npc"
 field: 124
 x: 1976.0
@@ -40,7 +40,7 @@ Speaks in `QuestTalk` rows 848, 850 (the dialogue is on the quest pages).
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Shown as a yellow cross on the 2016 Crush Online minimap of Ghost Fortress at about (1975, 1890), within about 5 units of this row ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5). *video + client*
 
 ## Behaviour
 

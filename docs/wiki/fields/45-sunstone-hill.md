@@ -2,9 +2,9 @@
 title: "Sunstone Hill"
 type: "field"
 id: 45
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters"]
-sources: ["client: SceneList.cdb id 45", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 45"]
+sources: ["client: SceneList.cdb id 45", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 45", "image: [[gameplay/maps-and-dungeons]] §1; [[gameplay/lords-of-the-land]] §6"]
 name_key: "FieldName_45"
 kind: "land"
 scene_type: 2
@@ -84,7 +84,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Part of the grey band between Arslan and Erion in spring 2018 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1), and the October 2016 Crush map marks a defended fort near it ([[gameplay/lords-of-the-land|Lords of the Land]] §6). *image*
 
 ## Behaviour
 

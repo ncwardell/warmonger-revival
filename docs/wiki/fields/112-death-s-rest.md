@@ -2,9 +2,9 @@
 title: "Death's Rest"
 type: "field"
 id: 112
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "monsters", "npcs", "connections"]
-sources: ["client: FieldNames.cdb id 112 (no SceneList row)", "client: ZoneDB name 어비스_LV4_112 (abyss zones are named after their field)"]
+sources: ["client: FieldNames.cdb id 112 (no SceneList row)", "client: ZoneDB name 어비스_LV4_112 (abyss zones are named after their field)", "image + guess: [[gameplay/abyss-map]] Routes (not in the image, no gate touches it)"]
 name_key: "FieldName_112"
 kind: null
 zones: [122]
@@ -60,7 +60,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 4 by its ZoneDB name. Not in the stitched Abyss image, and no gate in the client table touches it ([[gameplay/abyss-map|Abyss map]]); the server notes say to keep it closed until a source turns up ([[gameplay/server-rules|Server rules]]). *client + guess*
 
 ## Behaviour
 
@@ -72,7 +72,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- Way in and contents unknown; forum threads make-abyss-great-again.338 and stay-afk-in-abyss.686 are the leads ([[gameplay/sources]] gap 11).
 
 <!-- credit:start -->
 ---

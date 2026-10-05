@@ -4,7 +4,7 @@ type: "zone"
 id: 39
 status: "complete"
 missing: []
-sources: ["client: ZoneDB.cdb id 39", "client: Teleport_List / Trigger positions inside ZoneDB rectangles"]
+sources: ["client: ZoneDB.cdb id 39", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "video: [[gameplay/video-fort-war]] §2 (land-war points inside this rectangle, ±5 units)"]
 name_kr: "필드_14"
 terrain: "14"
 bounds: {"x0": 3616, "z0": 544, "x1": 3775, "z1": 703}
@@ -42,7 +42,7 @@ Terrain segments `ZPxx_zz` (x = column, z = row; 256 × 256 units) the rectangle
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- During a June 2018 land war the tower area sat at about (3724, 677), a Giant Bear jungle camp at about (3748, 636) and the defenders' nexus at about (3693, 625) ([[gameplay/video-fort-war|fort-war video notes]] §2). *video*
 
 ## Behaviour
 

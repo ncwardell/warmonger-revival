@@ -2,9 +2,9 @@
 title: "[Lv 1] Skull Temple"
 type: "field"
 id: 121
-status: "stub"
+status: "partial"
 missing: ["spawn_points"]
-sources: ["client: SceneList.cdb id 121", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 121", "client: Quest.cdb (quests and objectives in field 121)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 121"]
+sources: ["client: SceneList.cdb id 121", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 121", "client: Quest.cdb (quests and objectives in field 121)", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 121", "image: [[gameplay/maps-and-dungeons]] §2 (minimap layout from the dungeons guide screenshots)", "notes: [[gameplay/patch-history]] (WM 0615 unlock level 20; WM 0402/0404 open time and respawn)"]
 name_key: "FieldName_121"
 kind: "dungeon"
 scene_type: 3
@@ -112,15 +112,17 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Minimap layout (Skull Temple): an S-shaped chain of chambers from the entry (bottom) to the marker (top-left); mineral nodes only ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). Legend: framed box = entry portal, yellow four-arrow marker = probably the boss / exit, green leaves = herb nodes, blue diamonds = mineral nodes, pink stars = probably elite spawns. *image*
+- Unlock level 20 (WM 0615, [[gameplay/patch-history|Patch history]]). *notes*
 
 ## Behaviour
 
-<!-- hand-written: add what you know, with a source -->
+- Solo, monsters do not respawn; with 2+ party members in hard mode they do. Reported respawn: first after 3-5 min then every minute (3 players), or starting at 9-10 min on the dungeon timer ([[gameplay/maps-and-dungeons|Maps and dungeons]] §2). WM 0404: with more than 2 users monsters respawn after 5 min; WM 0402 cut dungeon open time from 20 to 15 min ([[gameplay/patch-history|Patch history]]). *guides + notes*
+- One portal is one instance with at most 5 players; the "Can not enter" option locks it ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/maps-and-dungeons|Maps and dungeons]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

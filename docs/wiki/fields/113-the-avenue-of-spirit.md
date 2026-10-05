@@ -2,9 +2,9 @@
 title: "The avenue of spirit"
 type: "field"
 id: 113
-status: "stub"
+status: "partial"
 missing: ["spawn_points", "npcs"]
-sources: ["client: SceneList.cdb id 113", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 113", "client: Quest.cdb (quests and objectives in field 113)"]
+sources: ["client: SceneList.cdb id 113", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 113", "client: Quest.cdb (quests and objectives in field 113)", "client + image: [[gameplay/abyss-map]] Portal table and Routes", "video: [[gameplay/video-early-quests]] §1 (81:30 visit) and §2 quests 21, 108 (Ancient Ghost 827, Ghost groups 10007/10008), video"]
 name_key: "FieldName_113"
 kind: "field"
 scene_type: 5
@@ -91,7 +91,9 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Abyss level 4; every route meets here, and the bottom-right portal 1139 (664.27, 2890.44) leads to The way go to devildom 114 ([[gameplay/abyss-map|Abyss map]]). Its zone is smaller than the others (160 units). *client + image*
+- Quest 21 "[Group] Ancient Ghosts" asks for 3 Essence of Darkness from Ancient Ghost (827, 70%), and quest 108 for 10 Ghost and 10 Elite Ghost (groups 10007 / 10008); the video fights Fragile (Elite) Red and Black Ghosts here ([[gameplay/video-early-quests|first-session video]] §2 items 24-25, §5). *video + client*
+- Abyss rules from the 2018 patches: lower drop rate, kills do not count for the daily kill quest, 5 s immunity after moving, and later a non-PK area ([[gameplay/patch-history|Patch history]], WM 0329/0404/0511). The ES guide says Abyss monsters stop giving loot at level 30 ([[gameplay/maps-and-dungeons|Maps and dungeons]] §1). *guide*
 
 ## Behaviour
 
@@ -99,7 +101,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/abyss-map|Abyss map]], [[gameplay/video-early-quests|first-session video]], [[gameplay/patch-history|Patch history]].
 
 ## Open questions
 

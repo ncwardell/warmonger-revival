@@ -4,7 +4,7 @@ type: "field"
 id: 92
 status: "complete"
 missing: []
-sources: ["client: SceneList.cdb id 92", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 92", "client: Quest.cdb (quests and objectives in field 92)", "doc: gameplay/npc-locations § 4. Training Camp (fields 88 / 92 / 96)"]
+sources: ["client: SceneList.cdb id 92", "client: Quest.cdb map1..3", "client: Teleport_List / Trigger positions inside ZoneDB rectangles", "client: Teleport_List.cdb field 92", "client: Quest.cdb (quests and objectives in field 92)", "doc: gameplay/npc-locations § 4. Training Camp (fields 88 / 92 / 96)", "video: [[gameplay/video-tutorial-walkthrough]] §3 Teleports used and §2 NPC positions, video", "client + video: [[gameplay/npc-locations]] §2 and §4 (gates, segment origins, Village gate without a portal in 2018)"]
 name_key: "FieldName_92"
 kind: "town"
 scene_type: 1
@@ -110,7 +110,12 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Erion copy of the Training Camp. Gates: 1196, 1204, 1205 and 1504 (Corpse incineration 100) ([[gameplay/npc-locations|NPC locations]] §4). *client*
+- The NPC positions in [[gameplay/npc-locations|NPC locations]] §4 were measured in this copy ([E-87WgbO_vo](https://www.youtube.com/watch?v=E-87WgbO_vo&t=553s)); the camp portal here leads to Corpse incineration 100 ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §3 step 14).
+- Portals as players used them: the south-west "Training Ground" portal, the south "Corpse incineration" portal beside the Guard (215), and the north-east "Castle" portal. Returning from Corpse incineration puts the player next to the Guard ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §3 Teleports used). *video*
+- The Guard's idle bubble warns that the Abyss is a labyrinth and a PK area ([[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]] §1 step 21). *video*
+- The Village gate (1201 in the Arslan copy) showed no portal icon in 2018 ([video](https://www.youtube.com/watch?v=E-87WgbO_vo&t=845s), [[gameplay/npc-locations|NPC locations]] §2). *video*
+- Scroll: Return used in the Training Ground brought the player back here ([[gameplay/video-character-creation-and-tutorial|character-creation video]] §5, *inferred*).
 
 ## Behaviour
 
@@ -118,7 +123,7 @@ Segments covered by this field's zones (256 × 256 units each). Check a point wi
 
 ## Sources
 
-<!-- hand-written: add what you know, with a source -->
+- [[gameplay/npc-locations|NPC locations]], [[gameplay/video-tutorial-walkthrough|tutorial walkthrough video]], [[gameplay/video-character-creation-and-tutorial|character-creation video]].
 
 ## Open questions
 

@@ -2,9 +2,9 @@
 title: "Peppermint"
 type: "node"
 id: 12403
-status: "stub"
+status: "partial"
 missing: ["respawn_s"]
-sources: ["client: Trigger.cdb id 12403"]
+sources: ["client: Trigger.cdb id 12403", "video: [[gameplay/video-dungeon-run]] §5 (Crush 2016 minimap icon matches this row within ≈5 units)"]
 kind: "gather"
 field: 124
 x: 1864.49
@@ -35,7 +35,7 @@ Gathering nodes are client data only for their place and material. How long a no
 
 ## Notes
 
-<!-- hand-written: add what you know, with a source -->
+- Its minimap icon in a 2016 Crush Online video of Ghost Fortress sits at (1861, 1950), within about 5 units of this row, so the 2016 node layout equals the final client's `Trigger` table ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5). *video + client*
 
 ## Behaviour
 
@@ -47,7 +47,7 @@ Gathering nodes are client data only for their place and material. How long a no
 
 ## Open questions
 
-<!-- hand-written: add what you know, with a source -->
+- How long a node takes to come back inside one instance (`respawn_s`) and how many items it gives are not shown in any source; the video only shows that a fresh instance has the node again ([[gameplay/video-dungeon-run|dungeon-run video notes]] §5).
 
 <!-- credit:start -->
 ---
