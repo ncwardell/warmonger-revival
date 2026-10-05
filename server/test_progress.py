@@ -347,7 +347,11 @@ class ClientDataQuestTests(GameTestCase):
         world.UNITS[world.NPC_UID_BASE + 1] = world.Unit(
             world.NPC_UID_BASE + 1, 239, "Floyd", 10, 1000,
             s.player["x"] + 9, s.player["z"] + 3, world.NPC_TEAM)
+        for unit in world.UNITS.values():
+            unit.map_id, unit.scene = s.player["map"], s.player["scene"]
         for qid in (1, 2, 3, 4):
+            giver = next(u for u in world.UNITS.values() if u.unit_id == quests.DEFINITIONS[qid]["giver"])
+            s.player["x"], s.player["z"] = giver.x, giver.z
             self.assertTrue(QuestTests.accept(self, s, qid))
             definition = quests.DEFINITIONS[qid]
             if qid == 4:
@@ -369,6 +373,8 @@ class ClientDataQuestTests(GameTestCase):
                 self.assertTrue(s.quest_flags & (1 << definition["bit"]))
             else:
                 self.assertEqual(s.quest_slots[0][2], 2, qid)
+                receiver = next(u for u in world.UNITS.values() if u.unit_id == definition["receiver"])
+                s.player["x"], s.player["z"] = receiver.x, receiver.z
                 self.assertTrue(QuestTests.turn_in(self, s, qid))
             self.assertFalse(any(s.quest_slots[0]))
         self.assertEqual(s.quest_flags & 30, 30)

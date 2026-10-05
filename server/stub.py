@@ -12,7 +12,7 @@ import sessions
 from proto import deobfuscate, split
 
 TICK_SECONDS = 0.2
-WATCHED = (handlers.skills, handlers.loot, handlers.units, handlers.ai, handlers.quests, handlers)
+WATCHED = (handlers.skills, handlers.loot, handlers.units, handlers.ai, handlers.quests, handlers.travel, handlers)
 _mtimes = {m.__name__: pathlib.Path(m.__file__).stat().st_mtime_ns for m in WATCHED}
 
 

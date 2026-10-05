@@ -1,7 +1,7 @@
 """Small tutorial quest experiment, using the player's own Quest.cdb.
 
 Packet evidence: contract/quests.yaml (0x48e..0x492, FUN_00599ab2).
-Only rows 1..4 and their talk/kill/collect objectives and NPC handoff are enabled. Unknown
+Only rows 1..5 and their talk/kill/collect objectives and NPC handoffs are enabled. Unknown
 quests or objective/reward types are rejected, never silently completed.
 """
 import copy
@@ -31,7 +31,7 @@ def definitions():
     result = {}
     for row in rows("Quest.cdb"):
         qid = int(row[0])
-        if qid not in (1, 2, 3, 4):
+        if qid not in (1, 2, 3, 4, 5):
             continue
         objectives = [tuple(int(v) for v in row[i:i + 5]) for i in range(56, 111, 11)]
         rewards = [tuple(int(v) for v in row[i:i + 4]) for i in range(111, 141, 6)]
@@ -39,6 +39,7 @@ def definitions():
             continue
         result[qid] = {"id": qid, "bit": int(row[5]), "prerequisite": int(row[3]),
                        "exclusion": int(row[4]), "maps": tuple(map(int, row[7:10])),
+                       "receiver_maps": tuple(map(int, row[14:17])),
                        "giver": int(row[10]), "receiver": int(row[17]),
                        # Row 13 -> definition +0x11 (loader 0x43e7f0).
                        # No receiver NPC/gadget means the client cannot offer a
@@ -80,13 +81,14 @@ def refresh_level():
 def near_npc(template):
     p = sessions.current().player
     return any(u.unit_id == template and math.hypot(p["x"] - u.x, p["z"] - u.z) <= 15
-               for u in world.UNITS.values() if not world.is_monster(u))
+               for u in world.UNITS.values() if not world.is_monster(u) and world.visible(u))
 
 
-def allowed(q):
+def allowed(q, receiving=False):
     s = sessions.current()
     # Prototype nation is 1; other nations need their own map/scene setup.
-    return s.player["alive"] and q["maps"][0] in (0, s.player["map"])
+    maps = q.get("receiver_maps", q["maps"]) if receiving else q["maps"]
+    return s.player["alive"] and maps[0] in (0, s.player["map"])
 
 
 def apply_to_world(packet):
@@ -117,14 +119,14 @@ def accept_or_abandon(packet):
     s = sessions.current()
     notice, action, slot, qid = struct.unpack_from("<HhHH", packet, 0x10)
     q = DEFINITIONS.get(qid)
-    if not q or notice or not allowed(q):
+    if not q or notice or not s.player["alive"]:
         return None
     if action == 2:
         if slot < 15 and struct.unpack_from("<H", s.quest_slots[slot])[0] == qid:
             s.quest_slots[slot] = bytes(24)
             return update(slot)
         return None
-    if action != 1 or not near_npc(q["giver"]):
+    if action != 1 or not allowed(q) or not near_npc(q["giver"]):
         return None
     flags = s.quest_flags
     if (flags & (1 << q["bit"]) or (q["prerequisite"] and not flags & (1 << q["prerequisite"]))
@@ -208,7 +210,7 @@ def turn_in(packet):
     s = sessions.current()
     qid, slot, choice = struct.unpack_from("<HHh", packet, 0x10)
     q = DEFINITIONS.get(qid)
-    if (not q or not allowed(q) or slot >= 15 or choice != 0
+    if (not q or not allowed(q, receiving=True) or slot >= 15 or choice != 0
             or not q["receiver"] or not near_npc(q["receiver"])):
         return None
     before = collect_progress()

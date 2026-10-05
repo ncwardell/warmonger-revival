@@ -15,16 +15,17 @@ import loot
 import world as units
 import ai
 import quests
+import travel
 
 # State lives in sessions.py; shared units and AI clocks survive these reloads.
-for module in (skills, loot, units, ai, quests):
+for module in (skills, loot, units, ai, quests, travel):
     importlib.reload(module)
 
-NATION, TEAM = 1, 0
+NATION, TEAM = 1, 1
 VILLAGE = (87, 2688.8, 382.9)
 TUTORIAL = (117, 1427.0, 429.0)
 SPAWN_MAP = units.MAP_ID
-_, SPAWN_X, SPAWN_Z = TUTORIAL
+SPAWN_X, SPAWN_Z = units.SPAWN_X, units.SPAWN_Z
 SPAWN_SCENE = units.SCENE_ID
 HP = MAX_HP = 1000
 MP = MAX_MP = 500
@@ -121,13 +122,18 @@ def enter_world(packet):
     session.record = persistence.character_view(session.account, record)
     session.drops.clear()
     p = session.player
-    p.update(x=SPAWN_X, z=SPAWN_Z, spawn=(SPAWN_X, SPAWN_Z), map=SPAWN_MAP,
-             scene=SPAWN_SCENE, team=TEAM, hp=HP, mp=MP, max_hp=MAX_HP, max_mp=MAX_MP, speed=SPEED)
+    # Old version-1 saves have no checkpoint. Quest mode also migrates the
+    # old map-117 test spawn to the proper Training Ground without changing XP.
+    map_id = session.checkpoint_map if units.QUEST_TEST and session.checkpoint_map in (88, 89) else SPAWN_MAP
+    scene, x, z = units.SITES[map_id]
+    session.checkpoint_map = map_id
+    p.update(x=x, z=z, spawn=(x, z), map=map_id,
+             scene=scene, team=TEAM, hp=HP, mp=MP, max_hp=MAX_HP, max_mp=MAX_MP, speed=SPEED)
     class_id = struct.unpack_from("<H", record, 0x36)[0]
     level = session.level
     weapon = session.inventory["equip"][0] if session.inventory["initialized"] else skills.weapon_of(record)
     packet = bytearray(0x704)
-    struct.pack_into("<Qhhff", packet, 0x10, char_id, SPAWN_SCENE, SPAWN_MAP, SPAWN_X, SPAWN_Z)
+    struct.pack_into("<Qhhff", packet, 0x10, char_id, scene, map_id, x, z)
     packet[0x24], packet[0x25] = TEAM, 0xFF
     struct.pack_into("<I", packet, 0x6F8, int(time.time()))
     skills.apply_to_world(packet, class_id, level, weapon=weapon)
@@ -142,7 +148,7 @@ def enter_world(packet):
         if other is not session and sessions.same_scene(session, other):
             out += units.spawn_player(other)
             other.send(units.spawn_player(session))
-    log(f"uid {session.uid} entered map {SPAWN_MAP} at ({SPAWN_X}, {SPAWN_Z})")
+    log(f"uid {session.uid} entered map {map_id} at ({x}, {z})")
     return out
 
 
@@ -239,14 +245,14 @@ LOGIN_REPLIES = {0x4200: login_ok, 0x4207: login_ok}
 GAME_REPLIES = {
     0x4200: game_login, 0x407: create_character, 0x406: enter_world,
     0x409: leave_game, 0x416: move,
-    **skills.REPLIES, **units.REPLIES, **loot.REPLIES, **quests.REPLIES,
+    **skills.REPLIES, **units.REPLIES, **loot.REPLIES, **quests.REPLIES, **travel.REPLIES,
     0x4CA: unknown_unit, 0x40F: cast, 0x410: cast,
 }
 MIN_SIZE = {0x4207: 0x9C, 0x4200: 0x60, 0x407: 0x260, 0x406: 0x20,
             0x409: 0x14, 0x416: 0x20, 0x417: 0x1C, 0x411: 0x64,
             0x412: 0x88, 0x40F: 0x14, 0x410: 0x38, 0x4CA: 0x18,
             0x42A: 0x18, 0x494: 0x28, 0x451: 0x18,
-            0x48E: 0x18, 0x48F: 0x18, 0x492: 0x1C}
+            0x48E: 0x18, 0x48F: 0x18, 0x492: 0x1C, 0x44E: 0x28, 0x445: 0x10}
 
 
 def dispatch(table, packet, session=None):

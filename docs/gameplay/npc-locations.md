@@ -78,6 +78,12 @@ Measured in the Erion copy (field 92) and shifted by −256 in x to the Arslan c
 | Mail box | 218 | Mail | 347.6 | 3464.2 | 91.6, 136.2 | [video](https://www.youtube.com/watch?v=E-87WgbO_vo&t=1125s) | video |
 | Guard | 215 | Quest NPC at the Corpse incineration gate | 385.0 | 3436.4 | 129.0, 108.4 | [video](https://www.youtube.com/watch?v=E-87WgbO_vo&t=1155s) | video |
 
+Implementation check (2026-10-05): Frei's measured point (358.8, 3469.1) is not
+walkable in the owned client's ZP01_13 navmesh. The Python test server uses the
+nearby walkable point (360.8, 3466.1), with 2.06 units of mesh-edge clearance.
+This is a placement adjustment for testing, not a more precise video measurement.
+Shaia and Floyd's estimates below pass the same check. See [[testing]].
+
 Gates (from `Teleport_List`; each portal icon is drawn about 10–15 units further out, at the tip of the arm). *client*
 
 | Gate | x | z | Goes to |

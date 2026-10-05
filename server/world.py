@@ -11,6 +11,7 @@ attacker's HP/MP and sends the packet back. Unit ids come from UnitDB.cdb
 Monster state survives hot reloads of this module. PLAYER is fallback state
 for standalone experiments and self-tests.
 """
+import math
 import random
 import os
 import struct
@@ -36,9 +37,12 @@ clock = time.monotonic  # replaced by the self-test
 # offsets from CENTRE so the whole group moves when a walkable point is found.
 CENTRE = globals().get("CENTRE", (1424.0, 416.0))
 QUEST_TEST = os.environ.get("WARMONGER_QUEST_TEST") == "1"
-# Experimental quest context on the known walkable tutorial terrain; not a
-# recovered original spawn for map 89. See docs/testing.md.
-MAP_ID, SCENE_ID = (89 if QUEST_TEST else 117), 87
+# One stable scene per supported map. Coordinates choose the terrain in this
+# client. NPC estimates and portal arrivals: docs/gameplay/npc-locations.md.
+SITES = {117: (87, 1427.0, 429.0), 89: (89, 419.0, 3661.0),
+         88: (88, 325.8, 3438.9)}
+MAP_ID = 89 if QUEST_TEST else 117
+SCENE_ID, SPAWN_X, SPAWN_Z = SITES[MAP_ID]
 
 # Teams: the client's friend/foe test (FUN_00486179, target = +0x655 team byte)
 # treats team 0 as friendly to everyone, 1..3 as nations, and 4+ as hostile to
@@ -69,9 +73,8 @@ MONSTERS = [
 # 275, Guide_wisp, in the original client data; her ghostlike form is expected.
 NPCS = [
     (201, "Shaia", 10, 1000, 6.0, 3.0),
+    (239, "Floyd", 10, 1000, 9.0, 3.0),
 ]
-if QUEST_TEST:
-    NPCS.append((239, "Floyd", 10, 1000, 9.0, 3.0))
 
 MONSTER_UID_BASE = 0x400  # monsters/NPCs are uid 0x3F7..0x2B05
 NPC_UID_BASE = 0x3F8
@@ -111,8 +114,10 @@ PLAYER_REVIVE_SECONDS = 5
 class Unit:
     """A server-side monster or NPC."""
 
-    def __init__(self, uid, unit_id, name, level, max_hp, x, z, team):
+    def __init__(self, uid, unit_id, name, level, max_hp, x, z, team, map_id=None, scene=None):
         self.uid, self.unit_id, self.name, self.level = uid, unit_id, name, level
+        self.map_id = MAP_ID if map_id is None else map_id
+        self.scene = SITES[self.map_id][0] if scene is None else scene
         self.max_hp = self.hp = max_hp
         self.max_mp = self.mp = 0
         self.home = (x, z)
@@ -144,9 +149,35 @@ def reset():
     for i, (unit_id, name, level, hp, dx, dz) in enumerate(MONSTERS):
         u = Unit(MONSTER_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, MONSTER_TEAM)
         UNITS[u.uid] = u
-    for i, (unit_id, name, level, hp, dx, dz) in enumerate(NPCS):
+    for i, (unit_id, name, level, hp, dx, dz) in enumerate(NPCS if QUEST_TEST else NPCS[:1]):
         u = Unit(NPC_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, NPC_TEAM)
         UNITS[u.uid] = u
+    if QUEST_TEST:
+        # Monster placement is a test layout, checked on the original navmesh;
+        # HP, damage and respawn timing remain prototype choices.
+        points = ((429.3, 3660), (427, 3654), (432, 3654), (408, 3671),
+                  (406, 3664), (424, 3648), (421.7, 3648), (410, 3664))
+        for i, point in enumerate(points):
+            u = UNITS[MONSTER_UID_BASE + i]
+            u.home = point
+            u.x, u.z = point
+        for i, point in enumerate(((423.9, 3664.8), (370.5, 3660.6))):
+            u = UNITS[NPC_UID_BASE + i]
+            u.home = point
+            u.x, u.z = point
+        # The video's Frei estimate (358.8, 3469.1) is off the walkable mesh.
+        # This nearby point has >2 units of clearance; exact placement pending.
+        u = Unit(NPC_UID_BASE + 2, 198, "Frei", 10, 1000,
+                 360.8, 3466.1, NPC_TEAM, map_id=88)
+        UNITS[u.uid] = u
+
+
+def visible(u, session=None):
+    """Unit visibility, combat and NPC interactions use the same map boundary."""
+    session = session or sessions.current()
+    return u is not None and (session is None or
+        (session.player["map"], session.player["scene"]) ==
+        (getattr(u, "map_id", MAP_ID), getattr(u, "scene", SCENE_ID)))
 
 
 def is_monster(u):
@@ -270,7 +301,7 @@ def join(centre):
         INITIALIZED = True
     return player_stats() + b"".join(
         spawn(u) + (hp_update(u) if u.dead_until is not None else refresh(u))
-        for u in UNITS.values())
+        for u in UNITS.values() if visible(u))
 
 
 def spawn_player(session):
@@ -336,8 +367,10 @@ def apply_hits(reply, slots):
     for i in range(slots):
         (uid,) = struct.unpack_from("<H", reply, 0x34 + 4 * i)
         u = UNITS.get(uid)
-        if not is_monster(u) or u.dead_until is not None:
+        if not is_monster(u) or not visible(u) or u.dead_until is not None:
             struct.pack_into("<h", reply, 0x36 + 4 * i, 0)
+            if not visible(u):
+                struct.pack_into("<H", reply, 0x34 + 4 * i, 0)
             continue
         amount, crit = damage(skill_id)
         flags |= crit
@@ -400,11 +433,17 @@ def hit_push(packet):
     (attacker,) = struct.unpack_from("<H", reply, 0x10)
     if attacker != player()["uid"] or not player()["alive"]:
         return due_respawns() or None
+    if not all(math.isfinite(v) for v in struct.unpack_from("<14f", reply, 0x50)):
+        return None
     for i in range(7):
         (uid,) = struct.unpack_from("<H", reply, 0x34 + 4 * i)
         x, z = struct.unpack_from("<f", reply, 0x50 + 4 * i)[0], struct.unpack_from("<f", reply, 0x6C + 4 * i)[0]
-        if uid in UNITS and (x or z):
-            UNITS[uid].x, UNITS[uid].z = x, z
+        u = UNITS.get(uid)
+        if is_monster(u) and visible(u) and u.dead_until is None and (x or z):
+            u.x, u.z = x, z
+        else:
+            struct.pack_into("<f", reply, 0x50 + 4 * i, 0)
+            struct.pack_into("<f", reply, 0x6C + 4 * i, 0)
     killed = apply_hits(reply, 7)
     return build(0x412, bytes(reply[16:]), extra=attacker) + deaths(killed) + due_respawns()
 
@@ -426,7 +465,7 @@ def unknown_unit(packet):
     """
     (uid,) = struct.unpack_from("<I", packet, 0x10)
     u = UNITS.get(uid & 0xFFFF)
-    if u is None:
+    if not visible(u):
         return remove(uid & 0xFFFF, 2) + due_respawns()
     if u.dead_until is not None:
         return spawn(u) + hp_update(u) + due_respawns()  # recreate, then lay it down
@@ -502,7 +541,7 @@ if __name__ == "__main__":
     assert struct.unpack_from("<h", stats[2], 0x50)[0] == PLAYER_REVIVE_SECONDS
     assert [(op, n) for op, n, _ in burst[:2]] == [(0x803, 0x1C0), (0x804, 0xBC)]
     assert struct.unpack_from("<hh", burst[1][2], 0x44) == (ATTACK_SPEED, MELEE_RANGE)
-    assert len(burst) == 2 * (len(MONSTERS) + len(NPCS))
+    assert len(burst) == 2 * (len(MONSTERS) + (3 if QUEST_TEST else 1))
     assert all(len(p) == 0x38 for _, _, p in [(0, 0, spawn_compact(u)) for u in UNITS.values()])
     slime = UNITS[MONSTER_UID_BASE]
     first = burst[0][2]

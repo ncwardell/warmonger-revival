@@ -209,8 +209,6 @@ def tick(now, player):
     if not P["alive"] and P["revive_at"] is not None and now >= P["revive_at"]:
         out += player_revive()
         player["x"], player["z"] = P["spawn"]  # until the client's next 0x416
-    alive = P["alive"] and P["hp"] > 0
-
     for u in list(world.UNITS.values()):
         if not world.is_monster(u):
             continue
@@ -218,7 +216,7 @@ def tick(now, player):
             u.state, u.dest, u.aimed_at = "idle", None, None
             continue
         walk(u, dt)
-        out += think(u, now, player, alive)
+        out += think(u, now, player, P["alive"] and P["hp"] > 0)
 
     out += world.due_respawns()
     player["hp"], player["alive"] = P["hp"], P["alive"]
@@ -240,7 +238,10 @@ def tick_world(now, players):
                 out = player_revive()
             p["x"], p["z"] = p["spawn"]
             sessions.broadcast(session, out, include_self=True)
-    out = b""
+    by_scene = {}
+    def queue(u, data):
+        key = (getattr(u, "map_id", world.MAP_ID), getattr(u, "scene", world.SCENE_ID))
+        by_scene[key] = by_scene.get(key, b"") + data
     for u in list(world.UNITS.values()):
         if not world.is_monster(u):
             continue
@@ -250,7 +251,7 @@ def tick_world(now, players):
             continue
         walk(u, dt)
         eligible = [s for s in players if s.player["alive"] and s.player["hp"] > 0
-                    and (s.player["map"], s.player["scene"]) == (world.MAP_ID, world.SCENE_ID)
+                    and world.visible(u, s)
                     and dist(*u.home, s.player["x"], s.player["z"]) <= LEASH_RANGE]
         target = next((s for s in eligible if s.uid == getattr(u, "target_uid", None)), None)
         if target is None:
@@ -258,15 +259,17 @@ def tick_world(now, players):
         if target is not None:
             u.target_uid = target.uid
             with sessions.use(target):
-                out += think(u, now, target.player, True)
+                queue(u, think(u, now, target.player, True))
         else:
             u.target_uid = None
-            out += think(u, now, {"x": u.home[0], "z": u.home[1]}, False)
-    out += world.due_respawns()
-    if out:
-        for session in players:
-            if (session.player["map"], session.player["scene"]) == (world.MAP_ID, world.SCENE_ID):
-                session.send(out)
+            queue(u, think(u, now, {"x": u.home[0], "z": u.home[1]}, False))
+    packets, _ = world.split(world.due_respawns())
+    for packet in packets:
+        queue(world.UNITS[struct.unpack_from("<H", packet, 6)[0]], packet)
+    for session in players:
+        out = by_scene.get((session.player["map"], session.player["scene"]), b"")
+        if out:
+            session.send(out)
 
 
 # ---------------------------------------------------------------- self-test

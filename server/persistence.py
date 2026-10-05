@@ -30,6 +30,8 @@ def read_progress(account, record):
             and type(data["experience"]) is int and 0 <= data["experience"] <= 0xFFFFFFFF
             and type(data["level"]) is int and 1 <= data["level"] <= 30
             and type(data["quest_flags"]) is int and 0 <= data["quest_flags"] < (1 << 320)
+            and (data.get("checkpoint_map") is None or
+                 (type(data["checkpoint_map"]) is int and data["checkpoint_map"] in (117, 89, 88)))
             and isinstance(data["quest_slots"], list) and len(data["quest_slots"]) == 15
             and all(len(bytes.fromhex(s)) == 24 for s in data["quest_slots"])):
         raise ValueError(f"invalid progress save: {path}")
@@ -44,6 +46,7 @@ def restore_progress(session):
     session.experience = struct.unpack_from("<I", session.record, 0x30)[0]
     session.quest_slots = [bytes(24) for _ in range(15)]
     session.quest_flags = 0
+    session.checkpoint_map = None
     session.saved_progress = ""
     if data is not None:
         session.inventory = {**data["inventory"], "quick": bytes.fromhex(data["inventory"]["quick"])}
@@ -51,19 +54,21 @@ def restore_progress(session):
         session.level, session.experience = data["level"], data["experience"]
         session.quest_slots = [bytes.fromhex(s) for s in data["quest_slots"]]
         session.quest_flags = data["quest_flags"]
+        session.checkpoint_map = data.get("checkpoint_map")
 
 
 def save_progress(session):
     """Checkpoint durable state before acknowledging it to the client.
 
     Same-directory replacement is atomic. Keep the previous valid checkpoint as
-    .bak. Position/HP and uncollected drops intentionally remain transient.
+    .bak. Map checkpoints persist; exact position, HP and drops remain transient.
     """
     if not session.record or not session.inventory.get("initialized"):
         return
     data = {"version": 1, "inventory": {**session.inventory, "quick": session.inventory["quick"].hex()},
             "gold": session.loot["gold"], "level": session.level, "experience": session.experience,
-            "quest_slots": [s.hex() for s in session.quest_slots], "quest_flags": session.quest_flags}
+            "quest_slots": [s.hex() for s in session.quest_slots], "quest_flags": session.quest_flags,
+            "checkpoint_map": session.checkpoint_map}
     encoded = json.dumps(data, sort_keys=True, indent=1)
     if encoded == session.saved_progress:
         return

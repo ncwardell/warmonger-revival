@@ -9,7 +9,7 @@ $previousQuestMode = $env:WARMONGER_QUEST_TEST
 try {
     $env:WARMONGER_QUEST_TEST = if ($QuestTest) { '1' } else { '0' }
     if ($QuestTest) {
-        Write-Host 'Quest experiment: map 89 rules on the existing tutorial terrain. Original locations are not yet restored.'
+        Write-Host 'Quest experiment: Training Ground, quests 1-5, and the portal to Frei in Training Camp.'
     }
     & python -u -B (Join-Path $repoRoot 'server\stub.py') $BindAddress
     if ($LASTEXITCODE -ne 0) { throw "Server exited with code $LASTEXITCODE" }

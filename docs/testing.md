@@ -37,9 +37,11 @@ both creation records and progress. Back up the whole state directory together.
 
 Progress is checkpointed after handled actions and automatic loot collection,
 and before leaving. Quest slots, completion flags, experience and level are saved
-too. Empty bags stay empty; starter items are seeded once. Position, current HP/MP
-and uncollected drops are transient. Reconnecting starts at the configured spawn
-with full HP/MP. These remain prototype server rules.
+too. Empty bags stay empty; starter items are seeded once. The last supported map
+is saved as a checkpoint. Exact position, current HP/MP and uncollected drops are
+transient. Reconnecting starts at that map's safe spawn with full HP/MP. Old saves
+without a map checkpoint use the configured starting map. These remain prototype
+server rules.
 
 Saves use an atomic replacement; `.json.bak` holds the preceding checkpoint.
 Invalid saves are rejected and preserved for inspection. Do not delete a save to
@@ -55,15 +57,16 @@ Exit the client and stop the previous server, then run:
 .\scripts\play-windows.ps1 -Account alice
 ```
 
-This explicitly enables `WARMONGER_QUEST_TEST=1`: the server sends map 89 while
-retaining the known walkable tutorial coordinates (1427, 429). Map 89 enables the
-nation-1 quest definitions; terrain loads by coordinates (see
-[[spec/loading]]). This is a test workaround, not a recovered original starting
-location. Shaia and Floyd are placed nearby for testing; their original positions
-remain unknown. Automatic quest travel may therefore point elsewhere: walk to the
-nearby NPCs manually. Without this option, the server still uses map 117.
+This explicitly enables `WARMONGER_QUEST_TEST=1`: the server uses Training Ground
+(map 89) at a walkable spawn (419, 3661), near the video-derived Shaia position.
+Terrain loads by coordinates (see [[spec/loading]]). Shaia (423.9, 3664.8) and
+Floyd (370.5, 3660.6) use the estimates in [[gameplay/npc-locations]]; the monsters
+use a small test layout on the same terrain. The spawn and every placed unit were
+checked with `tools/navmesh.py`. Without this option, the server still uses map
+117 at (1427, 429). Old quest-test saves retain their quests/XP and enter the
+proper map on their next login.
 
-The server loads rows 1 through 4 from your own `setting/Quest.cdb`. These are
+The server loads rows 1 through 5 from your own `setting/Quest.cdb`. These are
 protocol quest IDs; title suffixes 630/631/632/692 are different identifiers. The first
 quest is a talk objective with Shaia; the next quests collect slime, snake and bee
 items, with Floyd receiving those turn-ins. Quest 4 is a handoff from Floyd back
@@ -75,7 +78,24 @@ It has no separate objective counters or rewards. Check:
 3. Accept the slime objective, collect the required items, then visit Floyd.
 4. Check that turn-in consumes required items and grants the listed reward once.
 5. After the snake/bee quest, accept the next quest from Floyd, then speak to Shaia to finish the handoff. The offer marker on Floyd and the turn-in marker on Shaia are different steps.
-6. Reconnect during a quest and after completion. Progress should survive both.
+6. Accept **United Problem Solvers** from Shaia (quest 5, title suffix 633).
+   Walk to the southeast portal to Training Camp; its arrival anchor in Training
+   Ground is (451.64, 3629.45). The portal trigger sends destination gate **1202**,
+   not map id 88. Crossing loads map 88 at (325.8, 3438.9).
+7. Walk northeast to Frei (unit 198) at (360.8, 3466.1). Turn in the letter and
+   verify 2,750 XP, 500 gold and one item 402, awarded once. The video estimate
+   (358.8, 3469.1) is off-mesh; this adjusted position has 2.06 units of clearance.
+8. Reconnect in Camp, both before and after turning in the letter. The map and
+   progress should survive. The southwest portal (destination gate 1203) returns
+   to Training Ground. Abandoning the letter quest still permits the return trip.
+
+This batch ends at the letter delivery. Quest 6's automatic assignment and quest
+7's class-dependent rewards remain unsupported. Only this free two-way portal
+route is enabled; other towns, teleporter menus, dungeons and wars are not enabled.
+The quest-4 completion requirement and 25-unit portal proximity radius are test
+server policies. Movement remains client-reported; this is not an anti-cheat
+implementation. Try the quest tracker, but manually walk if auto-travel stalls:
+the full client journey has not yet been tested against this server.
 
 Packet layouts and table-field evidence: `contract/quests.yaml`, handlers
 `FUN_00599ab2`, `FUN_0047529d` and `FUN_004752b3`; rewards/thresholds are read from
@@ -83,7 +103,7 @@ the local Quest and Level_Table tables. The initial zero-receiver quest complete
 report. The client skips ready markers when both receiver fields are zero
 (`0x59925d`-`0x5992ab`); the automatic rule is an inference from the table and live
 behavior, documented in `contract/quests.yaml`. Item consumption, a 15-unit
-interaction radius, and the placement workaround are explicit server choices. Level/exp UI
+interaction radius, and the test monster layout are explicit server choices. Level/exp UI
 updates are implemented. XP remains a cumulative total; at level L, the client
 displays progress between Level_Table rows L-1 and L. A level increases upon
 reaching row L, up to level 30. Older saves that are one level behind are repaired
@@ -180,3 +200,37 @@ rows L-1 and L. At 02:58 the running session and save were corrected to level 5,
 keeping 5,720 XP and completion flags 30; expected display is 748/2,689. Boundary,
 multi-level reward and live/save/reconnect regressions pass. Visual confirmation
 of the corrected bar is still pending.
+
+### Training Camp route (2026-10-05)
+
+Evidence: `Quest.cdb` row 5 has giver maps 89/93/97 (fields 7–9), receiver maps
+88/92/96 (fields 14–16), giver 201 and receiver 198. It has no objective counters;
+acceptance makes it ready for the receiver, without granting its rewards.
+`Teleport_List` rows 1202/1203 supply the arrival coordinates. The owned client's
+`deviceTrigger` records in terrain segments ZP01_14 and ZP01_13 have action 1 and
+destination 1202/1203 respectively, matching the sender `FUN_0048796a`.
+
+The [Bravely Forward walkthrough at 11:41](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=701s)
+shows United Problem Solvers active in Training Ground; at
+[12:47](https://www.youtube.com/watch?v=CqCY2ULeVGw&t=767s) it shows the letter
+delivery dialogue and reward panel in Training Camp. These frames verify the
+quest handoff, not the exact intervening travel inputs or packet timing.
+
+Scene changes use `0x44e`, `FUN_00473548`, with distinct stable scene ids (89 and
+88); old viewers receive removal and new viewers receive player spawns. NPC
+queries, hits, displacement and AI/respawn broadcasts are scoped to map and
+scene. `0x445` receives a neutral `0x446` with nation 1 to release the client's
+post-travel wait (`FUN_00474eb1` -> `FUN_00598a5f`). This does not restore historical
+world ownership. The avatar's team is now the prototype account's nation (1),
+matching the route-state packet; NPC team 0 and monster team 4 remain unchanged.
+
+Automated coverage includes portal rejection, old-save compatibility, map
+checkpoints, cross-map combat/AI isolation, three-player visibility, return
+travel, abandoned quests, duplicate rewards and an interrupted warp save.
+The final run passed all 35 tests with local client data; without game data,
+34 passed and the installed-table test was skipped. All four standalone
+world/AI/skills/loot self-tests passed. Every placed unit and both map spawns
+passed the local navmesh check; unit placements have at least 2 units of clearance.
+Live loading, portal activation and quest-tracker navigation remain to be checked
+in the real game. No original server combat stats or kill-XP formula were recovered
+by this work.
