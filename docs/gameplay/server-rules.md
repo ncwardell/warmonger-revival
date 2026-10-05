@@ -167,3 +167,16 @@ Format: rule — value — source — confidence.
 - [ ] Monthly Boss Hunt quest 50 bosses — WM 1107 — **M**
 - [ ] Character MR per level: Punisher +3, Saint +4, Guardian +6 (90/120/150 at Lv 30) — WM 0420 — **M** (check `Level_Table` / class base stats)
 - [ ] Nexus attack range just above 750 — WM 0124 — **M**
+
+## Added from the Crush Online forum (see [[gameplay/crush-mechanics]], [[gameplay/crush-patch-notes]])
+
+Crush Online (2016–17) values are history; where Warmonger differs, use the Warmonger value.
+
+- [ ] Fame ranks from `Level_Table` (thresholds ×3.1 per step) — CO forum 1123 + client — **H**
+- [ ] Lords of the Land: 5 stacks of 120 min (`WinAffect`); gained by destroying the enemy nexus or killing the land boss; lost on fleeing or defeat; reward boxes 1023–1028 — CO 1222 + client — **H**
+- [ ] Holding a tower gives 8 TP per 10 s; destroying a tower gives 50 TP — CO 1123 / 1201 — **M**
+- [ ] Civil War stake is never refunded; the winner takes the fort with its cores and taxes; taxes claimable until Sunday 24:00 — CO 1215 / 1222 — **M**
+- [ ] Character delete: the slot is reusable 24 h later — CO 1108 — **M**
+- [ ] Life Saviour heals 30 % / 50 % of max HP; cooldown per client (15 s; CO had 120 s) — **M**
+- [ ] Dungeon level order per `FieldNames` (Tow Canyon 5, Ghost Fortress 6; CO had them swapped) — **H**
+- [ ] Legion level-up gold per `Level_Table_Guild` — **H**
