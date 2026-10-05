@@ -32,7 +32,7 @@ offer_talk: 679
 <!-- generated-keys: title=15b5f9 type=eb5b2b id=c8306a sources=1e3f9a name_key=471be1 kind=356a19 kind_name=0bac50 giver=8c8154 turn_in=847ad4 offer_maps=46bf0f bit=92cfce requires_bit=0ade7c automatic=5ffe53 prev=e9310b next=97d170 prerequisites=70ddc4 stages=30caa7 objectives=468dd5 rewards=45cdcf offer_talk=eac681 -->
 |  |  |
 |---|---|
-|  | ![Wren's sister Wren?](../assets/npcs/238.png) |
+|  | ![Wren's sister Wren?](wiki/assets/npcs/238.png) |
 | **Quest id** | `102` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/238-wren\|Wren]] |

@@ -64,27 +64,27 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 1 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 3 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 4 | ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 5 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 6 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 7 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 11 | ![](../assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 12 | ![](../assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 13 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 14 | ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 15 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 16 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 17 | ![](../assets/items/431.png) | [[wiki/items/431-bandolier-bracelet\|Bandolier Bracelet]] | 1 |  | Gold | 130 | 1,029 | 819 |
-| 18 | ![](../assets/items/427.png) | [[wiki/items/427-bracelet-of-transcendency\|Bracelet of Transcendency]] | 1 |  | Gold | 130 | 1,029 | 819 |
-| 19 | ![](../assets/items/430.png) | [[wiki/items/430-bandolier-belt\|Bandolier Belt]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 20 | ![](../assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | 1 | 1 | Gold | 100 | 792 | 630 |
-| 21 | ![](../assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
-| 22 | ![](../assets/items/419.png) | [[wiki/items/419-shoes-of-honor\|Shoes of Honor]] | 1 | 2 | Gold | 130 | 1,029 | 819 |
-| 23 | ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 1 |  | Gold | 10 | 79 | 63 |
-| 24 | ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 1 |  | Gold | 10 | 79 | 63 |
+| 1 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 3 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 4 | ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 5 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 6 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 7 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 11 | ![](wiki/assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 12 | ![](wiki/assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 13 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 14 | ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 15 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 16 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 17 | ![](wiki/assets/items/431.png) | [[wiki/items/431-bandolier-bracelet\|Bandolier Bracelet]] | 1 |  | Gold | 130 | 1,029 | 819 |
+| 18 | ![](wiki/assets/items/427.png) | [[wiki/items/427-bracelet-of-transcendency\|Bracelet of Transcendency]] | 1 |  | Gold | 130 | 1,029 | 819 |
+| 19 | ![](wiki/assets/items/430.png) | [[wiki/items/430-bandolier-belt\|Bandolier Belt]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 20 | ![](wiki/assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | 1 | 1 | Gold | 100 | 792 | 630 |
+| 21 | ![](wiki/assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
+| 22 | ![](wiki/assets/items/419.png) | [[wiki/items/419-shoes-of-honor\|Shoes of Honor]] | 1 | 2 | Gold | 130 | 1,029 | 819 |
+| 23 | ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 1 |  | Gold | 10 | 79 | 63 |
+| 24 | ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 1 |  | Gold | 10 | 79 | 63 |
 
 8 entries repeat an item already listed (the client shows every entry).
 

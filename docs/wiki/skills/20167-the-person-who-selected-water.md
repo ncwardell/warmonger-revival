@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=0ba64c type=86a754 id=b6f03e sources=ac1dce name_key=600987 desc_key=756718 kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=f5f45c damage_or_effect=c9e24d icon=e9f376 used_by=641e31 -->
 |  |  |
 |---|---|
-|  | ![The person who selected water](../assets/skills/20167.png) |
+|  | ![The person who selected water](wiki/assets/skills/20167.png) |
 | **Skill id** | `20167` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

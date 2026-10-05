@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=04fd4f type=d36ca9 id=8dfb87 sources=8954c4 name_key=261997 kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=93b750 set=77de68 reinforce=92cfce icon=e32c67 obtained_from=24891c -->
 |  |  |
 |---|---|
-|  | ![Fisher's Armor](../assets/items/3022.png) |
+|  | ![Fisher's Armor](wiki/assets/items/3022.png) |
 | **Item id** | `3022` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

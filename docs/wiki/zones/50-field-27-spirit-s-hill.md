@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z50_00.dds"
 <!-- generated-keys: title=077f79 type=c899cd id=e1822d sources=f00ad8 name_kr=aebada terrain=7c7c75 bounds=438414 size=114466 segments=308920 fields=c75897 minimap=dd4d5f -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 27 (Spirit's Hill)](../assets/zones/50.png) |
+|  | ![minimap of Field 27 (Spirit's Hill)](wiki/assets/zones/50.png) |
 | **Zone id** | `50` |
 | **ZoneDB name** | 필드_27 (English gloss: Field 27 (Spirit's Hill)) |
 | **Terrain name** | `27` |

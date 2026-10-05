@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=11cfe8 type=d36ca9 id=03f8cd sources=70320a name_key=a2d5e4 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=ea56ac set=0ade7c reinforce=92cfce icon=90adcf obtained_from=5bc6ba -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Ring](../assets/items/3068.png) |
+|  | ![Leviathan's Ring](wiki/assets/items/3068.png) |
 | **Item id** | `3068` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

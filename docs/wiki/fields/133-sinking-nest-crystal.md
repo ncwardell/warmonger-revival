@@ -30,8 +30,8 @@ dungeon: 133
 <!-- generated-keys: title=7f851f type=7a94db id=d30f79 sources=93d02e name_key=9c77e6 kind=884439 scene_type=c1dfd9 max_users=310b86 group=761f22 zones=d9b420 segments=5a389d connections=97d170 npcs=97d170 monsters=97d170 spawn_points=97d170 dungeon=d30f79 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 126](../assets/zones/126.png) |
-|  | ![Sinking Nest (Crystal)](../assets/dungeons/133.png) |
+|  | ![minimap of zone 126](wiki/assets/zones/126.png) |
+|  | ![Sinking Nest (Crystal)](wiki/assets/dungeons/133.png) |
 | **Field id** | `133` |
 | **Kind** | event dungeon (SceneList type 6; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |
@@ -45,17 +45,33 @@ dungeon: 133
 
 No `Teleport_List` row: the client places no gate here.
 
+Other connections (hand-entered): to None, gate 1200, kind exit, source video + client (gate row belongs to field 119)
+
 ### NPCs
 
 None known yet.
 
 ### Monsters
 
-None known yet.
+| monster | unit | why it is listed |
+|---|---|---|
+| [[wiki/monsters/688-nas-warrior\|Nas Warrior]] | 688 | hand-entered |
+| [[wiki/monsters/689-nas-archer\|Nas Archer]] | 689 | hand-entered |
+| [[wiki/monsters/690-elite-nas-warrior\|Elite Nas Warrior]] | 690 | hand-entered |
+| [[wiki/monsters/691-elite-nas-archer\|Elite Nas Archer]] | 691 | hand-entered |
+| [[wiki/monsters/1219-superior-nas-warrior\|Superior Nas Warrior]] | 1219 | hand-entered |
+| [[wiki/monsters/1220-superior-nas-archer\|Superior Nas Archer]] | 1220 | hand-entered |
 
 ### Spawn points
 
-Monster spawn positions are not in the client data (`map.jpk` has no spawn files; [[spec/monsters|Monsters]]). Add them to the monster's page (`spawns:` with `field`, `x`, `z`) or here as `spawn_points:` (`unit`, `x`, `z`, `count`, `radius`, `respawn_s`).
+| unit | x | z | count | respawn_s | pack | x_range | z_range | seen |
+|---|---|---|---|---|---|---|---|---|
+|  | 1362 | 2887 |  |  | 1 | [1352, 1372] | [2884, 2890] | 5-7 Nas warriors/archers, back after 90-100 s |
+|  | 1382.5 | 2893.5 |  |  | 2 | [1377, 1388] | [2890, 2897] | 5-7 |
+|  | 1413.5 | 2911.5 |  |  | 3 | [1408, 1419] | [2908, 2915] | 5-7 |
+|  | 1453.5 | 2932 |  |  | 4 | [1449, 1458] | [2929, 2935] | 5-7 |
+|  | 1463.5 | 2940 |  |  | 5 | [1460, 1467] | [2938, 2942] | 5-7 |
+|  | 1480 | 2954.5 |  |  | 6 | [1478, 1482] | [2951, 2958] | 5-7, dead end |
 
 ### Dungeon
 

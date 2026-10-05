@@ -30,7 +30,7 @@ complete_talk: 835
 <!-- generated-keys: title=9e43fd type=eb5b2b id=887309 sources=5891dc name_key=2be012 kind=b6589f kind_name=b3f808 giver=4518d0 turn_in=4518d0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=887309 requires_bit=472b07 prev=6c9878 next=9d849e stages=30caa7 objectives=fd4b93 rewards=a7fbfc offer_talk=8cc981 complete_talk=d449b2 -->
 |  |  |
 |---|---|
-|  | ![Border Area Normal Mode](../assets/npcs/204.png) |
+|  | ![Border Area Normal Mode](wiki/assets/npcs/204.png) |
 | **Quest id** | `26` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/204-wren\|Wren]] |

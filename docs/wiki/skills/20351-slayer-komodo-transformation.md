@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=7f86b9 type=86a754 id=916f6f sources=bd0f93 name_key=10ca70 desc_key=046680 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=4aa5a5 effect_kind=da4b92 effects=3b7ae6 damage_or_effect=1fdf8c visual=e076fa icon=91e8be used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Slayer Komodo Transformation](../assets/skills/20351.png) |
+|  | ![Slayer Komodo Transformation](wiki/assets/skills/20351.png) |
 | **Skill id** | `20351` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

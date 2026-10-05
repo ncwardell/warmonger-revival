@@ -32,7 +32,7 @@ used_by: []
 <!-- generated-keys: title=e89435 type=86a754 id=433a4c sources=c0dd67 name_key=f9a437 desc_key=996df5 kind=356a19 kind_name=9bc378 target=7056fd range=902ba3 area=bade13 cost=15d513 cooldown=dceb3e delivery=93a212 effect_kind=356a19 effects=cbe68d damage_or_effect=5dd149 tooltip_formula=1ae4cb visual=7fdec8 icon=a887cd used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Heaven and Earth](../assets/skills/5183.png) |
+|  | ![Heaven and Earth](wiki/assets/skills/5183.png) |
 | **Skill id** | `5183` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=48c923 type=86a754 id=6f2cdc sources=3af859 name_key=dad1bf desc_key=f87b89 kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=060055 cooldown=5b7687 delivery=93a212 effect_kind=356a19 effects=08ddcc damage_or_effect=5cb3bd tooltip_formula=86cb38 visual=cfa2ed icon=1f5f1b used_by=bbb9ad -->
 |  |  |
 |---|---|
-|  | ![Arrow of Destruction](../assets/skills/10034.png) |
+|  | ![Arrow of Destruction](wiki/assets/skills/10034.png) |
 | **Skill id** | `10034` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

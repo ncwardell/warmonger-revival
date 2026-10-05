@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=79df7b type=6143a1 id=5ad481 sources=ef1604 name_key=58a44e duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=eb1746 icon=320eb2 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Thorns Defence : Your Attack Damage is increased by 5% of your armor.](../assets/buffs/10326.png) |
+|  | ![Thorns Defence : Your Attack Damage is increased by 5% of your armor.](wiki/assets/buffs/10326.png) |
 | **Buff id** | `10326` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

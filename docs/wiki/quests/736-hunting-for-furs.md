@@ -33,7 +33,7 @@ complete_talk: 703
 <!-- generated-keys: title=adde10 type=eb5b2b id=4b14fe sources=691c6e name_key=374c8d kind=77de68 kind_name=01e781 giver=fb5a8b turn_in=fb5a8b offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=887309 excludes_bit=f6e112 owned_field=008451 prev=f36b47 next=97d170 stages=30caa7 objectives=305b00 rewards=2bba11 offer_talk=a08521 complete_talk=8fc1bb -->
 |  |  |
 |---|---|
-|  | ![Hunting for Furs](../assets/npcs/214.png) |
+|  | ![Hunting for Furs](wiki/assets/npcs/214.png) |
 | **Quest id** | `736` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/214-owen\|Owen]] |

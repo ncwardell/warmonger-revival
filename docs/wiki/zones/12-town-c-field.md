@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z12_00.dds"
 <!-- generated-keys: title=1f9ce3 type=c899cd id=7b5200 sources=5771e5 name_kr=75b1e0 terrain=e0a8f0 bounds=c3233b size=fdb6da segments=a78c44 fields=97d170 minimap=ba1e00 -->
 |  |  |
 |---|---|
-|  | ![minimap of Town C Field](../assets/zones/12.png) |
+|  | ![minimap of Town C Field](wiki/assets/zones/12.png) |
 | **Zone id** | `12` |
 | **ZoneDB name** | 마을C_필드 (English gloss: Town C Field) |
 | **Terrain name** | `Town_c_01` |

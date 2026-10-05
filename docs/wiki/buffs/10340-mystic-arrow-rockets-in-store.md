@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=f7e476 type=6143a1 id=11b25b sources=4a89ae name_key=dea928 duration=870e64 is_buff=b6589f stack_type=356a19 group=11b25b effects=5e87a3 icon=a11afc applied_by=fd58ec -->
 |  |  |
 |---|---|
-|  | ![Mystic Arrow : Rockets in store](../assets/buffs/10340.png) |
+|  | ![Mystic Arrow : Rockets in store](wiki/assets/buffs/10340.png) |
 | **Buff id** | `10340` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

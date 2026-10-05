@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=38d513 type=d36ca9 id=45b9f0 sources=df79e4 name_key=49d17c kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=f5196f icon=29017f obtained_from=c4ca5a -->
 |  |  |
 |---|---|
-|  | ![Premium Orange Dye](../assets/items/2402.png) |
+|  | ![Premium Orange Dye](wiki/assets/items/2402.png) |
 | **Item id** | `2402` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

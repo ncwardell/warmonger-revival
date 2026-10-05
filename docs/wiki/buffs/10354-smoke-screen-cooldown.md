@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=e85034 type=6143a1 id=f456ed sources=960d3a name_key=134b13 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=b75792 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Smoke Screen : Cooldown](../assets/buffs/10354.png) |
+|  | ![Smoke Screen : Cooldown](wiki/assets/buffs/10354.png) |
 | **Buff id** | `10354` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

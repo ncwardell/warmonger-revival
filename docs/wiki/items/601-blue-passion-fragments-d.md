@@ -144,7 +144,7 @@ obtained_from:
 <!-- generated-keys: title=500b82 type=d36ca9 id=3bb18d sources=8c434e name_key=a4e597 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=e6cb7f obtained_from=bfbed1 -->
 |  |  |
 |---|---|
-|  | ![Blue Passion Fragments (D)](../assets/items/601.png) |
+|  | ![Blue Passion Fragments (D)](wiki/assets/items/601.png) |
 | **Item id** | `601` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z13_00.dds"
 <!-- generated-keys: title=231420 type=c899cd id=bd307a sources=cdaf60 name_kr=5096dd terrain=42b362 bounds=049aff size=114466 segments=24b770 fields=2895ec minimap=a3ba17 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 74 (Whistle Hill)](../assets/zones/13.png) |
+|  | ![minimap of Field 74 (Whistle Hill)](wiki/assets/zones/13.png) |
 | **Zone id** | `13` |
 | **ZoneDB name** | 필드_74 (English gloss: Field 74 (Whistle Hill)) |
 | **Terrain name** | `74` |

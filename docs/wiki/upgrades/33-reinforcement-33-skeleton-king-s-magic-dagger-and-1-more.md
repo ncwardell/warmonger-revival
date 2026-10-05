@@ -22,7 +22,7 @@ failure_protection_item: 1100
 <!-- generated-keys: title=6de66d type=4389c5 id=b6692e sources=f73ed1 gold=f8237d steps=f0bd84 used_by=935ce0 kind=701a6f -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/35009.png) |
+|  | ![](wiki/assets/items/35009.png) |
 | **Table** | `ItemSancMet` row 33 |
 | **Gold per attempt** | 5,000 |
 | **Success rates** | unknown (server side) |

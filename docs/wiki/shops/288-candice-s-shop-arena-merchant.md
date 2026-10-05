@@ -19,7 +19,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=a91e29 type=ffcf9c id=b70706 sources=99471c npc=d2fb2d stock=aef2bf prices=88861d price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Candice's shop (Arena Merchant)](../assets/npcs/240.png) |
+|  | ![Candice's shop (Arena Merchant)](wiki/assets/npcs/240.png) |
 | **Shop id** | `288` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/240-candice\|Candice]] (Arena Merchant) |
 | **Stock** | 2 entries, 2 distinct items |
@@ -32,8 +32,8 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1035.png) | [[wiki/items/1035-box-of-the-victorious-i\|Box of the Victorious I]] | 1 |  | Arena Medal | 5 | 5 | – |
-| 1 | ![](../assets/items/1045.png) | [[wiki/items/1045-box-of-the-participant-i\|Box of the Participant I]] | 1 |  | Arena Medal | 7 | 7 | – |
+| 0 | ![](wiki/assets/items/1035.png) | [[wiki/items/1035-box-of-the-victorious-i\|Box of the Victorious I]] | 1 |  | Arena Medal | 5 | 5 | – |
+| 1 | ![](wiki/assets/items/1045.png) | [[wiki/items/1045-box-of-the-participant-i\|Box of the Participant I]] | 1 |  | Arena Medal | 7 | 7 | – |
 
 ### How prices are worked out
 

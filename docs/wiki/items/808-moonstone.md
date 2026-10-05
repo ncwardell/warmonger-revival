@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=19b90e type=d36ca9 id=38afd2 sources=737412 name_key=b52f88 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a6a76d cost_pair=f565d5 stats=97d170 icon=a116ec obtained_from=8151b9 -->
 |  |  |
 |---|---|
-|  | ![Moonstone](../assets/items/808.png) |
+|  | ![Moonstone](wiki/assets/items/808.png) |
 | **Item id** | `808` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -43,6 +43,7 @@ obtained_from:
 - Sold in [[wiki/shops/210-shop-210-no-npc|Shop 210 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/224-shop-224-no-npc|Shop 224 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/225-shop-225-no-npc|Shop 225 (no NPC)]] (no NPC found)
+- how gather, field 124 (hand-entered)
 
 ### Used for
 

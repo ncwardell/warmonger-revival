@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=a006dc type=d36ca9 id=99d826 sources=4c0455 name_key=c5343c kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=a63668 obtained_from=a5b65f -->
 |  |  |
 |---|---|
-|  | ![Snake Leather](../assets/items/2551.png) |
+|  | ![Snake Leather](wiki/assets/items/2551.png) |
 | **Item id** | `2551` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

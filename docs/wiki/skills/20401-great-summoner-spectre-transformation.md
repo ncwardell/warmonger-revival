@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=855d2b type=86a754 id=de8879 sources=e11784 name_key=fcd430 desc_key=0d6afd kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=4aa5a5 effect_kind=da4b92 effects=e203e0 damage_or_effect=786074 visual=e076fa icon=878205 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Great Summoner Spectre Transformation](../assets/skills/20401.png) |
+|  | ![Great Summoner Spectre Transformation](wiki/assets/skills/20401.png) |
 | **Skill id** | `20401` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

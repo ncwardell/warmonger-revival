@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=be73c0 type=d36ca9 id=cd8b7a sources=6ffceb name_key=56f61c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=5148be cost_pair=ad07dc stats=97d170 icon=564b9e obtained_from=1ab280 -->
 |  |  |
 |---|---|
-|  | ![Moonstone powder](../assets/items/809.png) |
+|  | ![Moonstone powder](wiki/assets/items/809.png) |
 | **Item id** | `809` |
 | **Kind** | Material (12) |
 | **Classes** | all |

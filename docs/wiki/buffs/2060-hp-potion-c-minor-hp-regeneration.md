@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=3781cd type=6143a1 id=7b6b23 sources=98ddcd name_key=53f36c duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=9397bd icon=093d07 applied_by=b374c4 -->
 |  |  |
 |---|---|
-|  | ![HP Potion (C): Minor HP Regeneration](../assets/buffs/2060.png) |
+|  | ![HP Potion (C): Minor HP Regeneration](wiki/assets/buffs/2060.png) |
 | **Buff id** | `2060` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

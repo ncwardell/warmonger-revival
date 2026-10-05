@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=2280ab type=d36ca9 id=b8b946 sources=b50265 name_key=a03000 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=da4b92 period=7841fb weapon_base=d02560 stats=97d170 options=f4649e skills=7f6b3b reinforce=d435a6 icon=1059c1 obtained_from=f822f6 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Amaterasu](../assets/items/8502.png) |
+|  | ![Crystal : Amaterasu](wiki/assets/items/8502.png) |
 | **Item id** | `8502` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

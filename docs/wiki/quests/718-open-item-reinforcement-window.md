@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_21.png", "text_key": "Quest_HelpText_718"}
 <!-- generated-keys: title=fe951b type=eb5b2b id=395ea6 sources=77fb8c name_key=e254fe kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=2d0c8a automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=10cdbd rewards=487507 help=60e499 -->
 |  |  |
 |---|---|
-|  | ![Open item reinforcement window](../assets/quests/718.png) |
+|  | ![Open item reinforcement window](wiki/assets/quests/718.png) |
 | **Quest id** | `718` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

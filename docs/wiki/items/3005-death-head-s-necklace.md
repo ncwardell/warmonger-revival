@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=80b0ea type=d36ca9 id=d6f3e3 sources=277441 name_key=4b0f10 kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=132124 set=356a19 reinforce=92cfce icon=283e14 obtained_from=4c45e9 -->
 |  |  |
 |---|---|
-|  | ![Death Head's Necklace](../assets/items/3005.png) |
+|  | ![Death Head's Necklace](wiki/assets/items/3005.png) |
 | **Item id** | `3005` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

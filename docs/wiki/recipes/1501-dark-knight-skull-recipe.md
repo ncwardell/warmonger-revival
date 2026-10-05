@@ -18,7 +18,7 @@ filter_mask: 2
 <!-- generated-keys: title=f733af type=61613a id=0e55c1 sources=ba8acd result=42548e materials=4845e4 gold=15f8d1 success_rate=310b86 category=77de68 filter_mask=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/8000.png) |
+|  | ![](wiki/assets/items/8000.png) |
 | **Recipe id** | `1501` (`Item_Make`) |
 | **Makes** | [[wiki/items/8000-dark-knight-skull\|Dark knight Skull]] × 1 |
 | **Gold** | 500,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -30,8 +30,8 @@ filter_mask: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/9000.png) | [[wiki/items/9000-piece-dark-knight-skull\|Piece : Dark knight Skull]] | 100 |  |
-| ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
+| ![](wiki/assets/items/9000.png) | [[wiki/items/9000-piece-dark-knight-skull\|Piece : Dark knight Skull]] | 100 |  |
+| ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

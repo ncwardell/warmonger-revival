@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=19ccd6 type=d36ca9 id=aa1b96 sources=94065a name_key=98883c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=a7eb21 obtained_from=933a94 -->
 |  |  |
 |---|---|
-|  | ![The Devil commander Leviathan's Sealed Weapon](../assets/items/2757.png) |
+|  | ![The Devil commander Leviathan's Sealed Weapon](wiki/assets/items/2757.png) |
 | **Item id** | `2757` |
 | **Kind** | Material (12) |
 | **Classes** | all |

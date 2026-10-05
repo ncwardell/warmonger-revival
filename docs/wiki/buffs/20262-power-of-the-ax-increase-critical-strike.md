@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=90769f type=6143a1 id=55b54e sources=5b527a name_key=696742 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=8e0549 icon=ff62ba applied_by=73a534 -->
 |  |  |
 |---|---|
-|  | ![Power of the ax : Increase Critical Strike(%)](../assets/buffs/20262.png) |
+|  | ![Power of the ax : Increase Critical Strike(%)](wiki/assets/buffs/20262.png) |
 | **Buff id** | `20262` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

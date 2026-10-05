@@ -48,7 +48,7 @@ obtained_from:
 <!-- generated-keys: title=168ff3 type=d36ca9 id=fba7b6 sources=21f4ea name_key=bf7d7a kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=88a052 reinforce=356a19 icon=582d6a obtained_from=dc9486 -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Transcendency](../assets/items/427.png) |
+|  | ![Bracelet of Transcendency](wiki/assets/items/427.png) |
 | **Item id** | `427` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |
@@ -105,6 +105,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 128, tier 1 (hand-entered)
+- how dungeon_drop, field 122, tier 1 (hand-entered)
+- how dungeon_drop, field 126, tier 2 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

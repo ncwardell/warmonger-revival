@@ -23,7 +23,7 @@ help: {"image": "ui/HelpImage/Help_07.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=38645a type=eb5b2b id=e9f98f sources=985139 name_key=88c398 kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=1f1362 prev=97d170 next=97d170 stages=30caa7 objectives=64e1a3 rewards=97d170 help=45649c -->
 |  |  |
 |---|---|
-|  | ![Item - Gear Wear](../assets/quests/1507.png) |
+|  | ![Item - Gear Wear](wiki/assets/quests/1507.png) |
 | **Quest id** | `1507` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

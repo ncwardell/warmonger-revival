@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=ba42af type=86a754 id=111c78 sources=f71e71 name_key=11f79a desc_key=6be483 kind=356a19 kind_name=9bc378 target=7056fd range=fe5dbb area=3d2256 cost=e01d1d cooldown=9ded33 delivery=93a212 effect_kind=da4b92 effects=35d358 damage_or_effect=a05769 tooltip_formula=2440c3 visual=6e21fc icon=8a093a used_by=52bb01 -->
 |  |  |
 |---|---|
-|  | ![Cursed Hand](../assets/skills/5471.png) |
+|  | ![Cursed Hand](wiki/assets/skills/5471.png) |
 | **Skill id** | `5471` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

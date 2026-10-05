@@ -26,7 +26,7 @@ used_by: []
 <!-- generated-keys: title=7ac68a type=86a754 id=88ee1b sources=19dfd6 name_key=a29ffb desc_key=5c6e13 kind=356a19 kind_name=9bc378 target=d99f6c range=77de68 area=c0807e cost=2be88c cooldown=2be88c effect_kind=632667 effects=4058d5 damage_or_effect=e1e6b5 icon=23f487 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Flaming fire](../assets/skills/19969.png) |
+|  | ![Flaming fire](wiki/assets/skills/19969.png) |
 | **Skill id** | `19969` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

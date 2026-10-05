@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=48a95f type=6143a1 id=fd3f92 sources=49daaa name_key=4e4acf duration=718052 is_buff=b6589f stack_type=356a19 group=b6589f effects=7ff3e1 icon=6b1db9 applied_by=c2a63d -->
 |  |  |
 |---|---|
-|  | ![Draw Power: Increases Attack and Movement Speed](../assets/buffs/30017.png) |
+|  | ![Draw Power: Increases Attack and Movement Speed](wiki/assets/buffs/30017.png) |
 | **Buff id** | `30017` |
 | **Duration** | 14 s (70 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

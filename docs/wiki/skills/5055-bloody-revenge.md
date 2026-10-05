@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=e2f921 type=86a754 id=29ddae sources=7d4307 name_key=3e6ed6 desc_key=ff372c kind=356a19 kind_name=9bc378 target=069ef3 range=77de68 cost=e01d1d cooldown=9ded33 effect_kind=356a19 effects=39b29f damage_or_effect=95eee9 tooltip_formula=de4d81 visual=524e05 icon=590769 used_by=bb807c -->
 |  |  |
 |---|---|
-|  | ![Bloody Revenge](../assets/skills/5055.png) |
+|  | ![Bloody Revenge](wiki/assets/skills/5055.png) |
 | **Skill id** | `5055` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

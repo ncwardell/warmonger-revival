@@ -47,7 +47,7 @@ obtained_from:
 <!-- generated-keys: title=c40c0a type=d36ca9 id=7a6986 sources=d8c3b8 name_key=425820 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=2f2ab5 reinforce=356a19 icon=639600 obtained_from=92a51b -->
 |  |  |
 |---|---|
-|  | ![Necklace of Transcendency](../assets/items/425.png) |
+|  | ![Necklace of Transcendency](wiki/assets/items/425.png) |
 | **Item id** | `425` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |
@@ -103,6 +103,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 128, tier 1 (hand-entered)
+- how dungeon_drop, field 122, tier 1 (hand-entered)
+- how dungeon_drop, field 126, tier 2 (hand-entered)
 
 ### Mentioned in
 

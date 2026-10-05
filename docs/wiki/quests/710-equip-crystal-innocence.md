@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_24.png", "text_key": "Quest_HelpText_710_1"}
 <!-- generated-keys: title=1331af type=eb5b2b id=86e55a sources=ca5ef6 name_key=cf9e44 kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=a72b20 automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=e80049 rewards=b1853c help=dd16a2 -->
 |  |  |
 |---|---|
-|  | ![Equip Crystal : Innocence](../assets/quests/710.png) |
+|  | ![Equip Crystal : Innocence](wiki/assets/quests/710.png) |
 | **Quest id** | `710` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

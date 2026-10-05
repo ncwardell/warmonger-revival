@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=a8e07b type=61613a id=de5f4d sources=9056bf result=5aedc6 materials=466de6 gold=7507d4 success_rate=310b86 category=fe5dbb filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/862.png) |
+|  | ![](wiki/assets/items/862.png) |
 | **Recipe id** | `2416` (`Item_Make`) |
 | **Makes** | [[wiki/items/862-worked-moonstone\|Worked Moonstone]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 8 / `0x100` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 5 |  |
+| ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/616-worked-moonstone-recipe|recipe 616]]
 

@@ -31,7 +31,7 @@ complete_talk: 909
 <!-- generated-keys: title=79c38d type=eb5b2b id=b7eb6c sources=2b5675 name_key=a35645 kind=b6589f kind_name=b3f808 giver=58f603 turn_in=58f603 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=008451 requires_bit=114d4e prev=d59264 next=5be15f stages=a80fa1 objectives=432e82 rewards=b1b0e8 offer_talk=bd7c80 complete_talk=ed665f -->
 |  |  |
 |---|---|
-|  | ![War - Winning means](../assets/npcs/208.png) |
+|  | ![War - Winning means](wiki/assets/npcs/208.png) |
 | **Quest id** | `51` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/208-bell-thain\|Bell Thain]] |

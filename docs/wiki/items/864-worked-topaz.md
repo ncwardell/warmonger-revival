@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=650e7a type=d36ca9 id=de1592 sources=3e3e8c name_key=5e9636 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=2ad3f8 cost_pair=1c8ee8 stats=97d170 icon=62509d obtained_from=1b94b0 -->
 |  |  |
 |---|---|
-|  | ![Worked Topaz](../assets/items/864.png) |
+|  | ![Worked Topaz](wiki/assets/items/864.png) |
 | **Item id** | `864` |
 | **Kind** | Material (12) |
 | **Classes** | all |

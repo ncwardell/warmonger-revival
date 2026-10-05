@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=f720a2 type=d36ca9 id=32e9d3 sources=36a2d7 name_key=81f306 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=81b208 cost_pair=a530a9 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=8ab828 cooldown_s=da4b92 cooldown_group=887309 stats=97d170 options=048666 icon=0ef731 obtained_from=df54ed -->
 |  |  |
 |---|---|
-|  | ![Tome of Attack SPD (S)](../assets/items/715.png) |
+|  | ![Tome of Attack SPD (S)](wiki/assets/items/715.png) |
 | **Item id** | `715` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

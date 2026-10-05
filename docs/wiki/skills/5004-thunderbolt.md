@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=6d3029 type=86a754 id=3aca06 sources=c3f9a4 name_key=2b68ef desc_key=a8aa35 kind=356a19 kind_name=9bc378 target=e84f24 range=902ba3 area=b10964 cost=8b4fa7 cooldown=0156ad delivery=93a212 effect_kind=da4b92 effects=8a20a8 damage_or_effect=bf1784 tooltip_formula=c2e772 visual=934385 icon=fc253c used_by=79b415 -->
 |  |  |
 |---|---|
-|  | ![Thunderbolt](../assets/skills/5004.png) |
+|  | ![Thunderbolt](wiki/assets/skills/5004.png) |
 | **Skill id** | `5004` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

@@ -21,7 +21,7 @@ npc: [213]
 <!-- generated-keys: title=71518f type=61613a id=fe5dbb sources=d35fed result=94e91b materials=f2c969 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=96c62c superior=d32a65 level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/404.png) |
+|  | ![](wiki/assets/items/404.png) |
 | **Recipe id** | `8` (`Item_Make`) |
 | **Makes** | [[wiki/items/404-shoes-of-life\|Shoes of Life]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [213]
 | **Superior result** | 5 % → [[wiki/items/480-shoes-of-life\|Shoes of Life]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 0 / `0x1000008` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

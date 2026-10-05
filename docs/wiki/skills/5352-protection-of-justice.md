@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=a823c7 type=86a754 id=806cd5 sources=3b2fb0 name_key=f84232 desc_key=ec6bb6 kind=356a19 kind_name=9bc378 target=0c4810 range=c1dfd9 cost=911ade cooldown=628d31 effect_kind=b6589f effects=0395d8 damage_or_effect=628aad visual=07fd89 icon=e85470 used_by=a2e78e -->
 |  |  |
 |---|---|
-|  | ![Protection of Justice](../assets/skills/5352.png) |
+|  | ![Protection of Justice](wiki/assets/skills/5352.png) |
 | **Skill id** | `5352` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 2 |

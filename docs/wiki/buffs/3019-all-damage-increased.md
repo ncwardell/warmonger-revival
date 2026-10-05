@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=77bc7b type=6143a1 id=3dddca sources=cf9e58 name_key=9032ff duration=69c099 is_buff=b6589f stack_type=356a19 group=b6589f effects=98633c icon=821318 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![All damage increased](../assets/buffs/3019.png) |
+|  | ![All damage increased](wiki/assets/buffs/3019.png) |
 | **Buff id** | `3019` |
 | **Duration** | 20 min (6,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

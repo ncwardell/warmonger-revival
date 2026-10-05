@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=b22690 type=86a754 id=a381cf sources=ff217b name_key=eba05a desc_key=c3ed49 kind=356a19 kind_name=9bc378 target=7056fd range=902ba3 area=6d01a6 cost=deac18 cooldown=a93f07 delivery=4fe5f3 effect_kind=da4b92 effects=942aab damage_or_effect=4d6a41 tooltip_formula=b1a00d visual=b0c689 icon=eb1101 used_by=8362bd -->
 |  |  |
 |---|---|
-|  | ![Lightning Strike](../assets/skills/5304.png) |
+|  | ![Lightning Strike](wiki/assets/skills/5304.png) |
 | **Skill id** | `5304` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

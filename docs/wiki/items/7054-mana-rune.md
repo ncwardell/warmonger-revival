@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=1e6304 type=d36ca9 id=d05f29 sources=fee30e name_key=ecc296 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=da4b92 stats=e57d71 options=533fa4 icon=776cfb obtained_from=b980c3 -->
 |  |  |
 |---|---|
-|  | ![Mana Rune](../assets/items/7054.png) |
+|  | ![Mana Rune](wiki/assets/items/7054.png) |
 | **Item id** | `7054` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

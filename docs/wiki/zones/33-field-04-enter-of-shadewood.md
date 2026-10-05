@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z33_00.dds"
 <!-- generated-keys: title=a4d767 type=c899cd id=b6692e sources=01ac2a name_kr=9b8c8c terrain=ac5cef bounds=e5ec2c size=114466 segments=dbbdf7 fields=8f4e34 minimap=2db780 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 04 (Enter of Shadewood)](../assets/zones/33.png) |
+|  | ![minimap of Field 04 (Enter of Shadewood)](wiki/assets/zones/33.png) |
 | **Zone id** | `33` |
 | **ZoneDB name** | 필드_04 (English gloss: Field 04 (Enter of Shadewood)) |
 | **Terrain name** | `04` |

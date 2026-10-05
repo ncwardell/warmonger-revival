@@ -35,7 +35,7 @@ complete_talk: 905
 <!-- generated-keys: title=a601a3 type=eb5b2b id=827bfc sources=285a47 name_key=5aece9 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=40bd00 requires_bit=05a8ea automatic=5ffe53 prev=10537b next=f38cb9 prerequisites=5baae9 stages=a80fa1 objectives=e907ed rewards=e5dfcb offer_talk=6f2c73 complete_talk=71ef3e -->
 |  |  |
 |---|---|
-|  | ![Create Potion](../assets/npcs/200.png) |
+|  | ![Create Potion](wiki/assets/npcs/200.png) |
 | **Quest id** | `47` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

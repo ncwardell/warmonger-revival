@@ -42,7 +42,7 @@ obtained_from:
 <!-- generated-keys: title=25f56f type=d36ca9 id=82ad38 sources=e25cbe name_key=cd578d kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=010735 reinforce=356a19 icon=ede490 obtained_from=50fd0f -->
 |  |  |
 |---|---|
-|  | ![Barrier Necklace](../assets/items/433.png) |
+|  | ![Barrier Necklace](wiki/assets/items/433.png) |
 | **Item id** | `433` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |
@@ -95,6 +95,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
 
 ### Mentioned in
 

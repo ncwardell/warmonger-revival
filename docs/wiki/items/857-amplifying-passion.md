@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=087288 type=d36ca9 id=c44201 sources=19f3ea name_key=221097 kind=7b5200 kind_name=59f0ad classes=92d079 bind=883bf8 price=cf919f cost_pair=63ce3c stats=97d170 icon=ddb992 obtained_from=fd9732 -->
 |  |  |
 |---|---|
-|  | ![Amplifying Passion](../assets/items/857.png) |
+|  | ![Amplifying Passion](wiki/assets/items/857.png) |
 | **Item id** | `857` |
 | **Kind** | Material (12) |
 | **Classes** | all |

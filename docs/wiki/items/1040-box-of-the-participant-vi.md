@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=7d8014 type=d36ca9 id=ea10e8 sources=0a6164 name_key=571348 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d stats=97d170 icon=8689e0 obtained_from=2a45ca -->
 |  |  |
 |---|---|
-|  | ![Box of the Participant VI](../assets/items/1040.png) |
+|  | ![Box of the Participant VI](wiki/assets/items/1040.png) |
 | **Item id** | `1040` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

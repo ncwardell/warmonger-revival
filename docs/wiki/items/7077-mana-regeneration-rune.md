@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=cbe828 type=d36ca9 id=1f6112 sources=615464 name_key=228ad0 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=ac3478 stats=692d97 options=b7f834 icon=f95120 obtained_from=3edbf3 -->
 |  |  |
 |---|---|
-|  | ![Mana Regeneration Rune](../assets/items/7077.png) |
+|  | ![Mana Regeneration Rune](wiki/assets/items/7077.png) |
 | **Item id** | `7077` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

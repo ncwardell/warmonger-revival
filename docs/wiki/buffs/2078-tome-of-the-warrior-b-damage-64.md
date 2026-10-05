@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=9c64c6 type=6143a1 id=bcc3fe sources=f34e3d name_key=a9b9d1 duration=995f11 is_buff=b6589f stack_type=356a19 group=009cf5 effects=8661e9 icon=082161 applied_by=7f1553 -->
 |  |  |
 |---|---|
-|  | ![Tome of the Warrior (B): Damage +64](../assets/buffs/2078.png) |
+|  | ![Tome of the Warrior (B): Damage +64](wiki/assets/buffs/2078.png) |
 | **Buff id** | `2078` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=86a12d type=6143a1 id=b43e41 sources=c6667a name_key=28fc8d duration=c94200 is_buff=b6589f stack_type=356a19 group=b6589f effects=66a274 icon=0392b4 applied_by=590c68 -->
 |  |  |
 |---|---|
-|  | ![The Other Side : Increased Armor and Magic Resistance](../assets/buffs/10185.png) |
+|  | ![The Other Side : Increased Armor and Magic Resistance](wiki/assets/buffs/10185.png) |
 | **Buff id** | `10185` |
 | **Duration** | 26 min 40 s (8,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=982e1b type=86a754 id=f2c5e8 sources=fd4e39 name_key=96bca3 desc_key=52cac2 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=e4e7cf cooldown=628d31 effect_kind=356a19 effects=19956e damage_or_effect=c27a5d tooltip_formula=4d8780 visual=cf2f32 icon=c0fb59 used_by=aa0fb9 -->
 |  |  |
 |---|---|
-|  | ![Backstab](../assets/skills/10461.png) |
+|  | ![Backstab](wiki/assets/skills/10461.png) |
 | **Skill id** | `10461` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

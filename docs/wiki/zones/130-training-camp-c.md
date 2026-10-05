@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z130_00.dds"
 <!-- generated-keys: title=a3cdb2 type=c899cd id=2a7541 sources=a9ac4f name_kr=2f3332 terrain=0b45a7 bounds=cfe77d size=114466 segments=47124c fields=65ae82 minimap=fe9719 -->
 |  |  |
 |---|---|
-|  | ![minimap of Training Camp C](../assets/zones/130.png) |
+|  | ![minimap of Training Camp C](wiki/assets/zones/130.png) |
 | **Zone id** | `130` |
 | **ZoneDB name** | 캠핑장_C (English gloss: Training Camp C) |
 | **Terrain name** | `C_campingsite` |

@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=78605e type=86a754 id=da7762 sources=681b4d name_key=9d7c13 desc_key=3ac99b kind=77de68 kind_name=78ea43 target=d1cc1b range=c1dfd9 area=e8b0ea cost=7e5cd4 cooldown=367d78 effect_kind=da4b92 effects=3a179d damage_or_effect=0f4bcb tooltip_formula=389900 requirements=8fe77a icon=2eeddb used_by=97263e -->
 |  |  |
 |---|---|
-|  | ![Water column](../assets/skills/20303.png) |
+|  | ![Water column](wiki/assets/skills/20303.png) |
 | **Skill id** | `20303` |
 | **Kind** | kind 3 (3) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

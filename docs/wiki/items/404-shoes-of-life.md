@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=5aa355 type=d36ca9 id=c35a9f sources=2f34b7 name_key=c6bbef kind=c5b76d kind_name=a64daf classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=3c7d94 reinforce=356a19 icon=112072 obtained_from=dff62f -->
 |  |  |
 |---|---|
-|  | ![Shoes of Life](../assets/items/404.png) |
+|  | ![Shoes of Life](wiki/assets/items/404.png) |
 | **Item id** | `404` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |
@@ -102,6 +102,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 128, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
 
 ### Mentioned in
 

@@ -18,10 +18,11 @@ x: null
 z: null
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=0d18fb type=3664ce id=eadc1d sources=43c6d5 name_key=43fa7c category=1b6453 class_mask=1b6453 model=9a79be scale=8114b9 role=2be88c skills=213fd8 map=2be88c x=2be88c z=2be88c -->
+<!-- generated-keys: title=0d18fb type=3664ce id=eadc1d sources=43c6d5 name_key=43fa7c category=1b6453 class_mask=1b6453 model=9a79be scale=8114b9 skills=213fd8 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
 | **Unit id** | `231` |
+| **Role** | War bot |
 | **Category** | NPC (category 4: bots, training assistants) |
 | **Model** | ObjectList `99`, scale 1.2 |
 

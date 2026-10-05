@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=9b338c type=d36ca9 id=62263d sources=305d56 name_key=b9ffbc kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=dee974 set=1b6453 reinforce=92cfce icon=3e9c72 obtained_from=e0f4f0 -->
 |  |  |
 |---|---|
-|  | ![Komodo's Shoes](../assets/items/3034.png) |
+|  | ![Komodo's Shoes](wiki/assets/items/3034.png) |
 | **Item id** | `3034` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

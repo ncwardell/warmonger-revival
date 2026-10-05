@@ -5,6 +5,7 @@ id: 125
 status: "complete"
 missing: []
 sources: ["client: SceneList.cdb id 125", "client: DungeonAdmission.cdb field 125", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 125", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 125
 max_users: 5
 level: 5
@@ -26,15 +27,16 @@ time_limit_s: 900
 unlock_level: 24
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=0f8440 type=3e3f38 id=0ca927 sources=024730 field=0ca927 max_users=ac3478 level=ac3478 entry_cost=11406a event=7cb6ef shown_rewards=3a1a59 c17=1938b7 image=fe7704 dungeon_slots=01fff0 boss=6d768e gear_tier=7b5982 gathering=0cbe10 time_limit_s=2be88c -->
+<!-- generated-keys: title=0f8440 type=3e3f38 id=0ca927 sources=024730 field=0ca927 max_users=ac3478 level=ac3478 entry_cost=11406a event=7cb6ef shown_rewards=3a1a59 c17=1938b7 image=fe7704 dungeon_slots=01fff0 boss=6d768e gear_tier=7b5982 gathering=0cbe10 -->
 |  |  |
 |---|---|
-|  | ![(Lv 5) Tow Canyon](../assets/dungeons/125.png) |
+|  | ![(Lv 5) Tow Canyon](wiki/assets/dungeons/125.png) |
 | **Field** | [[wiki/fields/125-lv-5-tow-canyon\|(Lv 5) Tow Canyon (field 125)]] |
 | **Level** | 5 |
 | **Gear tier dropped** | T2 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/5.png` |
 | **c17 (unknown)** | 2006 |
 

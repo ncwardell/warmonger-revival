@@ -29,7 +29,7 @@ complete_talk: 837
 <!-- generated-keys: title=f9eac7 type=eb5b2b id=3acc03 sources=48ea3d name_key=e1ea16 kind=b6589f kind_name=b3f808 giver=7e080a turn_in=7e080a offer_maps=15f2a7 turn_in_maps=15f2a7 bit=902ba3 requires_bit=8effee prev=d571f1 next=d8e285 stages=30caa7 objectives=011fc0 rewards=97d170 offer_talk=6b2e24 complete_talk=9b41f9 -->
 |  |  |
 |---|---|
-|  | ![Buy time energy](../assets/npcs/207.png) |
+|  | ![Buy time energy](wiki/assets/npcs/207.png) |
 | **Quest id** | `714` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/207-athan\|Athan]] |

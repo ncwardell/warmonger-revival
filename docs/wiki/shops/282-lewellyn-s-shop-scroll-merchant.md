@@ -39,7 +39,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=3c2e1d type=ffcf9c id=267b97 sources=cc7d92 npc=631917 stock=61b65a prices=49a5ca price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Lewellyn's shop (Scroll Merchant)](../assets/npcs/205.png) |
+|  | ![Lewellyn's shop (Scroll Merchant)](wiki/assets/npcs/205.png) |
 | **Shop id** | `282` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/205-lewellyn\|Lewellyn]] (Scroll Merchant), [[wiki/npcs/315-lewellyn\|Lewellyn]] (Scroll Merchant), [[wiki/npcs/316-lewellyn\|Lewellyn]] (Scroll Merchant) |
 | **Stock** | 12 entries, 12 distinct items |
@@ -52,18 +52,18 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/704.png) | [[wiki/items/704-scroll-of-the-warrior-c\|Scroll of the Warrior (C)]] | 1 |  | Gold | 60 | 475 | 378 |
-| 1 | ![](../assets/items/708.png) | [[wiki/items/708-scroll-of-the-magician-c\|Scroll of the Magician (C)]] | 1 |  | Gold | 60 | 475 | 378 |
-| 2 | ![](../assets/items/712.png) | [[wiki/items/712-tome-of-attack-spd-c\|Tome of Attack SPD (C)]] | 1 |  | Gold | 70 | 554 | 441 |
-| 3 | ![](../assets/items/716.png) | [[wiki/items/716-tome-of-cooldown-c\|Tome of Cooldown (C)]] | 1 |  | Gold | 70 | 554 | 441 |
-| 4 | ![](../assets/items/720.png) | [[wiki/items/720-tome-of-patience-c\|Tome of Patience (C)]] | 1 |  | Gold | 60 | 475 | 378 |
-| 5 | ![](../assets/items/724.png) | [[wiki/items/724-tome-of-critical-c\|Tome of Critical (C)]] | 1 |  | Gold | 60 | 475 | 378 |
-| 6 | ![](../assets/items/736.png) | [[wiki/items/736-elixir-of-health-c\|Elixir of Health (C)]] | 1 |  | Gold | 70 | 554 | 441 |
-| 7 | ![](../assets/items/740.png) | [[wiki/items/740-flask-of-mana-c\|Flask of Mana (C)]] | 1 |  | Gold | 70 | 554 | 441 |
-| 8 | ![](../assets/items/744.png) | [[wiki/items/744-elixir-of-vampirism-c\|Elixir of Vampirism (C)]] | 1 |  | Gold | 60 | 475 | 378 |
-| 9 | ![](../assets/items/748.png) | [[wiki/items/748-flask-of-devour-c\|Flask of Devour (C)]] | 1 |  | Gold | 60 | 475 | 378 |
-| 10 | ![](../assets/items/752.png) | [[wiki/items/752-elixir-of-tenacity-c\|Elixir of Tenacity (C)]] | 1 |  | Gold | 50 | 396 | 315 |
-| 11 | ![](../assets/items/756.png) | [[wiki/items/756-flask-of-tenacity-c\|Flask of Tenacity (C)]] | 1 |  | Gold | 50 | 396 | 315 |
+| 0 | ![](wiki/assets/items/704.png) | [[wiki/items/704-scroll-of-the-warrior-c\|Scroll of the Warrior (C)]] | 1 |  | Gold | 60 | 475 | 378 |
+| 1 | ![](wiki/assets/items/708.png) | [[wiki/items/708-scroll-of-the-magician-c\|Scroll of the Magician (C)]] | 1 |  | Gold | 60 | 475 | 378 |
+| 2 | ![](wiki/assets/items/712.png) | [[wiki/items/712-tome-of-attack-spd-c\|Tome of Attack SPD (C)]] | 1 |  | Gold | 70 | 554 | 441 |
+| 3 | ![](wiki/assets/items/716.png) | [[wiki/items/716-tome-of-cooldown-c\|Tome of Cooldown (C)]] | 1 |  | Gold | 70 | 554 | 441 |
+| 4 | ![](wiki/assets/items/720.png) | [[wiki/items/720-tome-of-patience-c\|Tome of Patience (C)]] | 1 |  | Gold | 60 | 475 | 378 |
+| 5 | ![](wiki/assets/items/724.png) | [[wiki/items/724-tome-of-critical-c\|Tome of Critical (C)]] | 1 |  | Gold | 60 | 475 | 378 |
+| 6 | ![](wiki/assets/items/736.png) | [[wiki/items/736-elixir-of-health-c\|Elixir of Health (C)]] | 1 |  | Gold | 70 | 554 | 441 |
+| 7 | ![](wiki/assets/items/740.png) | [[wiki/items/740-flask-of-mana-c\|Flask of Mana (C)]] | 1 |  | Gold | 70 | 554 | 441 |
+| 8 | ![](wiki/assets/items/744.png) | [[wiki/items/744-elixir-of-vampirism-c\|Elixir of Vampirism (C)]] | 1 |  | Gold | 60 | 475 | 378 |
+| 9 | ![](wiki/assets/items/748.png) | [[wiki/items/748-flask-of-devour-c\|Flask of Devour (C)]] | 1 |  | Gold | 60 | 475 | 378 |
+| 10 | ![](wiki/assets/items/752.png) | [[wiki/items/752-elixir-of-tenacity-c\|Elixir of Tenacity (C)]] | 1 |  | Gold | 50 | 396 | 315 |
+| 11 | ![](wiki/assets/items/756.png) | [[wiki/items/756-flask-of-tenacity-c\|Flask of Tenacity (C)]] | 1 |  | Gold | 50 | 396 | 315 |
 
 ### How prices are worked out
 

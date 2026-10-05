@@ -28,7 +28,7 @@ obtained_from: []
 <!-- generated-keys: title=bd777e type=d36ca9 id=d08b10 sources=12fbb9 name_key=50c20f kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=088270 cost_pair=101f43 period=365a69 stats=97d170 options=b37f5d icon=e75611 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Succubus](../assets/items/2013.png) |
+|  | ![Succubus](wiki/assets/items/2013.png) |
 | **Item id** | `2013` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

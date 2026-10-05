@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=126651 type=6143a1 id=e1a864 sources=319394 name_key=c710a4 duration=706fa4 is_buff=b6589f stack_type=356a19 group=b6589f effects=bcc3bc icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Improved Regeneration.](../assets/buffs/137.png) |
+|  | ![Improved Regeneration.](wiki/assets/buffs/137.png) |
 | **Buff id** | `137` |
 | **Duration** | 1 min (300 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

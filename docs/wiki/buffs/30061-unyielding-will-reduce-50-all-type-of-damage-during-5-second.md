@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=2c937c type=6143a1 id=c8949c sources=f034df name_key=59e939 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=165ed3 icon=a431e0 applied_by=08629e -->
 |  |  |
 |---|---|
-|  | ![Unyielding Will : Reduce 50% all type of damage during 5 seconds and get 40 Attack.](../assets/buffs/30061.png) |
+|  | ![Unyielding Will : Reduce 50% all type of damage during 5 seconds and get 40 Attack.](wiki/assets/buffs/30061.png) |
 | **Buff id** | `30061` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

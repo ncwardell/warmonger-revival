@@ -34,7 +34,7 @@ spawn_points:
 <!-- generated-keys: title=052e88 type=7a94db id=2a7541 sources=6ae821 name_key=05bf33 kind=3e3f38 scene_type=77de68 max_users=22d200 group=b6589f zones=76eab3 segments=108ae9 gates=b7d380 connections=c07309 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 138](../assets/zones/138.png) |
+|  | ![minimap of zone 138](wiki/assets/zones/138.png) |
 | **Field id** | `130` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 30 (SceneList, column meaning *guessed*) |
@@ -64,7 +64,12 @@ None known yet.
 
 ### Spawn points
 
-Monster spawn positions are not in the client data (`map.jpk` has no spawn files; [[spec/monsters|Monsters]]). Add them to the monster's page (`spawns:` with `field`, `x`, `z`) or here as `spawn_points:` (`unit`, `x`, `z`, `count`, `radius`, `respawn_s`).
+| unit | x | z | count | kind | note |
+|---|---|---|---|---|---|
+| Entry Core | 364 | 3934 | 1 | structure | Entry Core, ring south-west |
+| Invasion Core | 476 | 4001 | 1 | structure | Invasion Core, ring north-east |
+| Heart of Magic | 421 | 3971 | 1 | structure | Heart of Magic, centre room |
+| Anti-Aircraft Defence Equipment | 471 | 3941 | 1 | structure | Anti-Aircraft Defence Equipment, ring south-east (room ±1) |
 
 ### Navmesh
 

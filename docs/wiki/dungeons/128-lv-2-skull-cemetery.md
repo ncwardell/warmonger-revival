@@ -5,6 +5,7 @@ id: 128
 status: "complete"
 missing: []
 sources: ["client: SceneList.cdb id 128", "client: DungeonAdmission.cdb field 128", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 128", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 128
 max_users: 5
 level: 2
@@ -26,15 +27,16 @@ time_limit_s: 900
 unlock_level: 21
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=006667 type=3e3f38 id=b4182b sources=cb6130 field=b4182b max_users=ac3478 level=da4b92 entry_cost=3354a5 event=7cb6ef shown_rewards=ee6072 c17=ab165c image=d3bc8e dungeon_slots=079694 boss=0c12c5 gear_tier=13930c gathering=83d28e time_limit_s=2be88c -->
+<!-- generated-keys: title=006667 type=3e3f38 id=b4182b sources=cb6130 field=b4182b max_users=ac3478 level=da4b92 entry_cost=3354a5 event=7cb6ef shown_rewards=ee6072 c17=ab165c image=d3bc8e dungeon_slots=079694 boss=0c12c5 gear_tier=13930c gathering=83d28e -->
 |  |  |
 |---|---|
-|  | ![(Lv 2) Skull Cemetery](../assets/dungeons/128.png) |
+|  | ![(Lv 2) Skull Cemetery](wiki/assets/dungeons/128.png) |
 | **Field** | [[wiki/fields/128-lv-2-skull-cemetery\|(Lv 2) Skull Cemetery (field 128)]] |
 | **Level** | 2 |
 | **Gear tier dropped** | T1 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/2.png` |
 | **c17 (unknown)** | 2003 |
 

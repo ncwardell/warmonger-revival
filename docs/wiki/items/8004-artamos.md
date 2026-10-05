@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=d105b8 type=d36ca9 id=f34304 sources=7387e6 name_key=5c6f79 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=da4b92 weapon_base=35e995 stats=97d170 options=82ceb5 skills=927a9a reinforce=d435a6 icon=e5f8ba obtained_from=06c299 -->
 |  |  |
 |---|---|
-|  | ![Artamos](../assets/items/8004.png) |
+|  | ![Artamos](wiki/assets/items/8004.png) |
 | **Item id** | `8004` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

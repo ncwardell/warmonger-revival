@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=ac7a52 type=86a754 id=9d0ad0 sources=5c3e1b name_key=796939 desc_key=8cb5cb kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=d82541 cost=da6e22 cooldown=4aa5a5 effect_kind=da4b92 effects=c4c504 damage_or_effect=a12746 tooltip_formula=e2e031 visual=4afa8f icon=1aeac2 used_by=bcd0e5 -->
 |  |  |
 |---|---|
-|  | ![Wrath of Mother Nature](../assets/skills/5018.png) |
+|  | ![Wrath of Mother Nature](wiki/assets/skills/5018.png) |
 | **Skill id** | `5018` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

@@ -28,7 +28,7 @@ obtained_from:
 <!-- generated-keys: title=ac195a type=d36ca9 id=c9264f sources=a31567 name_key=7a443c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a6a76d cost_pair=f565d5 stats=97d170 icon=55e172 obtained_from=9b5455 -->
 |  |  |
 |---|---|
-|  | ![Topaz](../assets/items/814.png) |
+|  | ![Topaz](wiki/assets/items/814.png) |
 | **Item id** | `814` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -45,6 +45,9 @@ obtained_from:
 - Sold in [[wiki/shops/208-shop-208-no-npc|Shop 208 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/224-shop-224-no-npc|Shop 224 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/225-shop-225-no-npc|Shop 225 (no NPC)]] (no NPC found)
+- how gather, field 128 (hand-entered)
+- how gather, field 122 (hand-entered)
+- how dungeon_drop, field 115 (hand-entered)
 
 ### Used for
 

@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=d8beb2 type=86a754 id=e3a530 sources=d049e2 name_key=87c469 desc_key=b28792 kind=356a19 kind_name=9bc378 target=e84f24 range=fe5dbb area=29932d cost=d57e66 cooldown=f8ee77 delivery=93a212 effect_kind=da4b92 effects=546ce4 damage_or_effect=1d9912 tooltip_formula=67f65b visual=135224 icon=68aaec used_by=df48cb -->
 |  |  |
 |---|---|
-|  | ![Squall](../assets/skills/10008.png) |
+|  | ![Squall](wiki/assets/skills/10008.png) |
 | **Skill id** | `10008` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

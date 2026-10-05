@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=fd4934 type=d36ca9 id=a8ea72 sources=52501b name_key=847b05 kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=56798f icon=6e59f5 obtained_from=313bd3 -->
 |  |  |
 |---|---|
-|  | ![Red Hair Dye](../assets/items/2301.png) |
+|  | ![Red Hair Dye](wiki/assets/items/2301.png) |
 | **Item id** | `2301` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

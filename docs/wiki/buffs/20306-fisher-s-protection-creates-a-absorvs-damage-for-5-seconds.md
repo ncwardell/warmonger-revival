@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=af1f25 type=6143a1 id=e9e67b sources=cb0b70 name_key=33dae8 duration=870e64 is_buff=b6589f stack_type=356a19 group=e9e67b effects=309ea8 icon=50b6e5 applied_by=471852 -->
 |  |  |
 |---|---|
-|  | ![Fisher's Protection : Creates a absorvs damage for 5 seconds](../assets/buffs/20306.png) |
+|  | ![Fisher's Protection : Creates a absorvs damage for 5 seconds](wiki/assets/buffs/20306.png) |
 | **Buff id** | `20306` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

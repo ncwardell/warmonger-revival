@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=5293a5 type=d36ca9 id=5a9295 sources=6d1380 name_key=a717ca kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=a1282b reinforce=da4b92 icon=1dc0bc obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Spell Belt](../assets/items/446.png) |
+|  | ![Spell Belt](wiki/assets/items/446.png) |
 | **Item id** | `446` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

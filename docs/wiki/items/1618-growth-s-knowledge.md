@@ -22,7 +22,7 @@ obtained_from: []
 <!-- generated-keys: title=067b0c type=d36ca9 id=deccc3 sources=a5d610 name_key=d07711 kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=de1cdb icon=a50615 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Growth's Knowledge](../assets/items/1618.png) |
+|  | ![Growth's Knowledge](wiki/assets/items/1618.png) |
 | **Item id** | `1618` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

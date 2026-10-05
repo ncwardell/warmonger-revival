@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=643626 type=d36ca9 id=3c2675 sources=d02a17 name_key=058266 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=d9128d obtained_from=f38252 -->
 |  |  |
 |---|---|
-|  | ![Essence of Light](../assets/items/1935.png) |
+|  | ![Essence of Light](wiki/assets/items/1935.png) |
 | **Item id** | `1935` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -57,6 +57,7 @@ obtained_from:
 - Shown as a reward of dungeon [[wiki/dungeons/125-lv-5-tow-canyon|(Lv 5) Tow Canyon]]
 - Shown as a reward of dungeon [[wiki/dungeons/126-lv-7-demon-hell|(Lv 7) Demon Hell]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 

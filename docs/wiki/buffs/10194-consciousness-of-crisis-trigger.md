@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=b8dfa3 type=6143a1 id=beb77c sources=aa928a name_key=dd1926 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=5c1ec7 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Consciousness of Crisis : Trigger](../assets/buffs/10194.png) |
+|  | ![Consciousness of Crisis : Trigger](wiki/assets/buffs/10194.png) |
 | **Buff id** | `10194` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

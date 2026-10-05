@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=1c62f5 type=d36ca9 id=f359a0 sources=2ec2f6 name_key=be922c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=88ef45 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Parchment : Blue](../assets/items/1918.png) |
+|  | ![Parchment : Blue](wiki/assets/items/1918.png) |
 | **Item id** | `1918` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=5aa355 type=d36ca9 id=6153f0 sources=1b3363 name_key=c6bbef kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=3b0362 reinforce=da4b92 icon=112072 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Shoes of Life](../assets/items/480.png) |
+|  | ![Shoes of Life](wiki/assets/items/480.png) |
 | **Item id** | `480` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |
@@ -74,7 +74,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 8, chance 5 (hand-entered)
+- how craft_superior, recipe 2008, chance 5 (hand-entered)
 
 ### Mentioned in
 

@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=d7f35c type=86a754 id=0351c7 sources=595c7e name_key=1cac1f desc_key=5d0d71 kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=838f95 damage_or_effect=d18df4 icon=e5f8ba used_by=fc671e -->
 |  |  |
 |---|---|
-|  | ![Fatal skill](../assets/skills/20220.png) |
+|  | ![Fatal skill](wiki/assets/skills/20220.png) |
 | **Skill id** | `20220` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

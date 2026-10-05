@@ -70,7 +70,7 @@ observed_prices:
 <!-- generated-keys: title=c5e2ec type=ffcf9c id=3032a4 sources=401c1b npc=46007a stock=4c10be prices=29d3c2 price_rates=c44eae header=702516 observed_prices=183282 -->
 |  |  |
 |---|---|
-|  | ![Athan's shop (Merits Merchant)](../assets/npcs/207.png) |
+|  | ![Athan's shop (Merits Merchant)](wiki/assets/npcs/207.png) |
 | **Shop id** | `283` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/207-athan\|Athan]] (Merits Merchant) |
 | **Stock** | 16 entries, 16 distinct items |
@@ -83,28 +83,28 @@ observed_prices:
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 1 |  | Bronze Medal | 2 | 2 | – |
-| 1 | ![](../assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 1 |  | Bronze Medal | 5 | 5 | – |
-| 2 | ![](../assets/items/856.png) | [[wiki/items/856-brilliant-passion\|Brilliant Passion]] | 1 |  | Silver Medal | 5 | 5 | – |
-| 3 | ![](../assets/items/857.png) | [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 1 |  | Gold Medal | 5 | 5 | – |
-| 4 | ![](../assets/items/1051.png) | [[wiki/items/1051-bronze-medal-reward-box\|(Bronze) Medal Reward Box]] | 1 |  | Bronze Medal | 4 | 4 | – |
-| 5 | ![](../assets/items/1052.png) | [[wiki/items/1052-silver-medal-reward-box\|(Silver) Medal Reward Box]] | 1 |  | Silver Medal | 3 | 3 | – |
-| 6 | ![](../assets/items/1053.png) | [[wiki/items/1053-gold-medal-reward-box\|(Gold) Medal Reward Box]] | 1 |  | Gold Medal | 2 | 2 | – |
-| 7 | ![](../assets/items/1054.png) | [[wiki/items/1054-mithril-medal-reward-box\|(Mithril) Medal Reward Box]] | 1 |  | currency 16 (Mithril medal?) | 1 | 1 | – |
-| 8 | ![](../assets/items/1057.png) | [[wiki/items/1057-random-box-of-dye\|Random box of dye]] | 1 |  | Bronze Medal | 3 | 3 | – |
-| 9 | ![](../assets/items/1058.png) | [[wiki/items/1058-random-box-of-dye\|Random box of dye]] | 1 |  | Bronze Medal | 3 | 3 | – |
-| 10 | ![](../assets/items/1059.png) | [[wiki/items/1059-random-box-of-dye\|Random box of dye]] | 1 |  | Bronze Medal | 3 | 3 | – |
-| 11 | ![](../assets/items/689.png) | [[wiki/items/689-tier-1-time-energy\|Tier 1 : Time energy]] | 1 |  | Bronze Medal | 1 | 1 | – |
-| 12 | ![](../assets/items/690.png) | [[wiki/items/690-tier-2-time-energy\|Tier 2 : Time energy]] | 1 |  | Silver Medal | 1 | 1 | – |
-| 13 | ![](../assets/items/691.png) | [[wiki/items/691-tier-3-time-energy\|Tier 3 : Time energy]] | 1 |  | Gold Medal | 1 | 1 | – |
-| 14 | ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 1 |  | Gold | 10 | 79 | 63 |
-| 15 | ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 1 |  | Gold | 20 | 158 | 126 |
+| 0 | ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 1 |  | Bronze Medal | 2 | 2 | – |
+| 1 | ![](wiki/assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 1 |  | Bronze Medal | 5 | 5 | – |
+| 2 | ![](wiki/assets/items/856.png) | [[wiki/items/856-brilliant-passion\|Brilliant Passion]] | 1 |  | Silver Medal | 5 | 5 | – |
+| 3 | ![](wiki/assets/items/857.png) | [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 1 |  | Gold Medal | 5 | 5 | – |
+| 4 | ![](wiki/assets/items/1051.png) | [[wiki/items/1051-bronze-medal-reward-box\|(Bronze) Medal Reward Box]] | 1 |  | Bronze Medal | 4 | 4 | – |
+| 5 | ![](wiki/assets/items/1052.png) | [[wiki/items/1052-silver-medal-reward-box\|(Silver) Medal Reward Box]] | 1 |  | Silver Medal | 3 | 3 | – |
+| 6 | ![](wiki/assets/items/1053.png) | [[wiki/items/1053-gold-medal-reward-box\|(Gold) Medal Reward Box]] | 1 |  | Gold Medal | 2 | 2 | – |
+| 7 | ![](wiki/assets/items/1054.png) | [[wiki/items/1054-mithril-medal-reward-box\|(Mithril) Medal Reward Box]] | 1 |  | currency 16 (Mithril medal?) | 1 | 1 | – |
+| 8 | ![](wiki/assets/items/1057.png) | [[wiki/items/1057-random-box-of-dye\|Random box of dye]] | 1 |  | Bronze Medal | 3 | 3 | – |
+| 9 | ![](wiki/assets/items/1058.png) | [[wiki/items/1058-random-box-of-dye\|Random box of dye]] | 1 |  | Bronze Medal | 3 | 3 | – |
+| 10 | ![](wiki/assets/items/1059.png) | [[wiki/items/1059-random-box-of-dye\|Random box of dye]] | 1 |  | Bronze Medal | 3 | 3 | – |
+| 11 | ![](wiki/assets/items/689.png) | [[wiki/items/689-tier-1-time-energy\|Tier 1 : Time energy]] | 1 |  | Bronze Medal | 1 | 1 | – |
+| 12 | ![](wiki/assets/items/690.png) | [[wiki/items/690-tier-2-time-energy\|Tier 2 : Time energy]] | 1 |  | Silver Medal | 1 | 1 | – |
+| 13 | ![](wiki/assets/items/691.png) | [[wiki/items/691-tier-3-time-energy\|Tier 3 : Time energy]] | 1 |  | Gold Medal | 1 | 1 | – |
+| 14 | ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 1 |  | Gold | 10 | 79 | 63 |
+| 15 | ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 1 |  | Gold | 20 | 158 | 126 |
 
 Second price (`Item_Base` cost pair @24/@26, charged as listed). The patch notes price Amplifying Passion at "5 silver **or** 3 gold medals" ([[gameplay/reinforce-and-runes|runes]] §5), so this is probably an alternative way to pay, not an extra charge (*guess*): [[wiki/items/857-amplifying-passion|Amplifying Passion]]: 5 Silver Medal; [[wiki/items/700-crystal-blue|Crystal : Blue]]: 10 Fame; [[wiki/items/701-crystal-yellow|Crystal : Yellow]]: 50 Fame
 
 ### Prices seen in play
 
-Source: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)
+Source: [[gameplay/progression-and-economy]] §4 Athan (noob guide image); [[gameplay/reinforce-and-runes]] §5 (WM 0712/0920 notes); [[gameplay/reinforce-and-runes]] §5 (WM 0920 notes); [[gameplay/video-rune-upgrades]] 1:15
 
 | item | shown | formula | match | note |
 |---|---|---|---|---|
@@ -119,6 +119,17 @@ Source: [[gameplay/progression-and-economy]] §4 Athan (noob guide image)
 | [[wiki/items/689-tier-1-time-energy\|Tier 1 : Time energy]] | 1 Bronze Medal | 1 | yes |  |
 | [[wiki/items/690-tier-2-time-energy\|Tier 2 : Time energy]] | 1 Silver Medal | 1 | yes |  |
 | [[wiki/items/691-tier-3-time-energy\|Tier 3 : Time energy]] | 1 Gold Medal | 1 | yes |  |
+| [[wiki/items/856-brilliant-passion\|Brilliant Passion]] | 1 Gold Medal | 5 | no | alternative to 5 silver |
+| [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 5 Silver Medal | 5 | amount only (currency differs) | or 3 gold medals; client: 5 gold medal (currency 12) with a 5 silver cost pair |
+| [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 3 Gold Medal | 5 | no | alternative to 5 silver; client base is 5 |
+| [[wiki/items/1057-random-box-of-dye\|Random box of dye]] | 3 Bronze/Silver Medal | 3 | amount only (currency differs) | guide: three dye boxes at 3 bronze/silver |
+| [[wiki/items/1058-random-box-of-dye\|Random box of dye]] | 3 Bronze/Silver Medal | 3 | amount only (currency differs) | guide: three dye boxes at 3 bronze/silver |
+| [[wiki/items/1059-random-box-of-dye\|Random box of dye]] | 3 Bronze/Silver Medal | 3 | amount only (currency differs) | guide: three dye boxes at 3 bronze/silver |
+| [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 Gold | 79 | no | 100 for 1,000 gold; shop identified by its Passion stock (guess); formula gives 79 |
+| [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 Fame | 79 | no | 'Gem Stone Blue' at the fame shop (Mertris); matches 700's Fame cost pair |
+| [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 50 Fame | 158 | no | 'Gem Stone Yellow' at the fame shop (Mertris); matches 701's Fame cost pair |
+| [[wiki/items/1105-pyrotechnics\|Pyrotechnics]] | 100 yellow coin (fame?) | – | ? | not in Npc_Carry 283 |
+| [[wiki/items/1802-life-saviour\|Life saviour]] | 1,000 yellow coin (fame?) | – | ? | 'Life saviour'; not in Npc_Carry 283; Crush Online sold the Fame Life Saviour for 1,000 fame here |
 
 ### How prices are worked out
 

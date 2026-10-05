@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=1b57ce type=d36ca9 id=8d163d sources=5c8a53 name_key=2956df kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=9b60ea obtained_from=a591b7 -->
 |  |  |
 |---|---|
-|  | ![Worked oil](../assets/items/846.png) |
+|  | ![Worked oil](wiki/assets/items/846.png) |
 | **Item id** | `846` |
 | **Kind** | Material (12) |
 | **Classes** | all |

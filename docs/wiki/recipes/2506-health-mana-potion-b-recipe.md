@@ -20,21 +20,21 @@ npc: [337]
 <!-- generated-keys: title=1050c7 type=61613a id=9eb34b sources=501bc5 result=1095e3 materials=c2537d gold=a4ac91 success_rate=310b86 category=fe5dbb filter_mask=9aa98e level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/895.png) |
+|  | ![](wiki/assets/items/895.png) |
 | **Recipe id** | `2506` (`Item_Make`) |
 | **Makes** | [[wiki/items/895-health-mana-potion-b\|Health Mana Potion (B)]] × 100 |
 | **Gold** | 2,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 8 / `0x200001` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 100 |  |
-| ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 4 |  |
+| ![](wiki/assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 100 |  |
+| ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 4 |  |
 
 Other recipes for the same item: [[wiki/recipes/710-health-mana-potion-b-recipe|recipe 710]]
 

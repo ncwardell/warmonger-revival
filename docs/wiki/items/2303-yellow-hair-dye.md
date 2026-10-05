@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=26f8a0 type=d36ca9 id=13ee96 sources=3eeea1 name_key=1ea467 kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=4f54bb icon=973140 obtained_from=937481 -->
 |  |  |
 |---|---|
-|  | ![Yellow Hair Dye](../assets/items/2303.png) |
+|  | ![Yellow Hair Dye](wiki/assets/items/2303.png) |
 | **Item id** | `2303` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=3dc1e8 type=d36ca9 id=290448 sources=1f8404 name_key=d7540d kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d stats=97d170 icon=dc5443 obtained_from=4e96c4 -->
 |  |  |
 |---|---|
-|  | ![Box of the Victorious II](../assets/items/1034.png) |
+|  | ![Box of the Victorious II](wiki/assets/items/1034.png) |
 | **Item id** | `1034` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

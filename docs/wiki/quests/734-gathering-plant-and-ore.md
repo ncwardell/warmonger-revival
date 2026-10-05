@@ -35,7 +35,7 @@ complete_talk: 707
 <!-- generated-keys: title=ab9ee6 type=eb5b2b id=6229d3 sources=927107 name_key=ad202d kind=356a19 kind_name=0bac50 level=b8f85a giver=91ad7d turn_in=91ad7d offer_maps=15f2a7 turn_in_maps=15f2a7 bit=e1822d requires_bit=f1abd6 owned_field=40bd00 prev=504845 next=97d170 prerequisites=bb0be2 stages=30caa7 objectives=0205db rewards=62c9f8 offer_talk=de9a90 complete_talk=2a8ae2 -->
 |  |  |
 |---|---|
-|  | ![Gathering plant and ore](../assets/npcs/213.png) |
+|  | ![Gathering plant and ore](wiki/assets/npcs/213.png) |
 | **Quest id** | `734` |
 | **Kind** | Sub (kind 1) |
 | **Level** | 24–26 |

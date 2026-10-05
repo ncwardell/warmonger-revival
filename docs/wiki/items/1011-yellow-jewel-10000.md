@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=3c9dcf type=d36ca9 id=dd2dfa sources=111e64 name_key=947498 kind=f1f836 kind_name=3c7b77 classes=92d079 bind=2be88c price=32a324 cost_pair=395e20 stats=97d170 options=08f0ab icon=eb1be5 obtained_from=4028c0 -->
 |  |  |
 |---|---|
-|  | ![Yellow Jewel (10000)](../assets/items/1011.png) |
+|  | ![Yellow Jewel (10000)](wiki/assets/items/1011.png) |
 | **Item id** | `1011` |
 | **Kind** | Sealed Stone (34) |
 | **Classes** | all |

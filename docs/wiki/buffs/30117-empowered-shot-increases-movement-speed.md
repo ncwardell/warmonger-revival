@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=74e9d2 type=6143a1 id=f09421 sources=c8d14f name_key=1a9630 duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=ac6851 applied_by=42a1ee -->
 |  |  |
 |---|---|
-|  | ![Empowered Shot: Increases Movement Speed](../assets/buffs/30117.png) |
+|  | ![Empowered Shot: Increases Movement Speed](wiki/assets/buffs/30117.png) |
 | **Buff id** | `30117` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

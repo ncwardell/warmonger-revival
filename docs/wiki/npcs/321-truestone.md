@@ -23,7 +23,7 @@ z: null
 <!-- generated-keys: title=3f9a8c type=3664ce id=5f6955 sources=569bd2 name_key=8a362e title_key=432eb8 npc_title=18dc60 category=e1822d class_mask=da4b92 model=f67462 scale=2afe7d role=18dc60 talk_key=a0195f portrait=a30bd7 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Truestone](../assets/npcs/321.png) |
+|  | ![Truestone](wiki/assets/npcs/321.png) |
 | **Unit id** | `321` |
 | **Title** | Mystery Craftman |
 | **Category** | NPC (category 50) |

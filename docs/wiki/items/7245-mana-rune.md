@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=1e6304 type=d36ca9 id=d491f2 sources=26f85e name_key=8b9e38 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=a49912 options=533fa4 icon=ecd4df obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Mana Rune](../assets/items/7245.png) |
+|  | ![Mana Rune](wiki/assets/items/7245.png) |
 | **Item id** | `7245` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

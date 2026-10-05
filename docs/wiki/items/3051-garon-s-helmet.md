@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=848c88 type=d36ca9 id=0f35e7 sources=43e6b1 name_key=9216d6 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=170c32 set=c1dfd9 reinforce=92cfce icon=540a82 obtained_from=39a362 -->
 |  |  |
 |---|---|
-|  | ![Garon's Helmet](../assets/items/3051.png) |
+|  | ![Garon's Helmet](wiki/assets/items/3051.png) |
 | **Item id** | `3051` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

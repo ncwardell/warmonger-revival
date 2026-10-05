@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=e6c26c type=d36ca9 id=81057e sources=4b8065 name_key=b9b878 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=902ba3 stats=e5cf18 options=30ea72 icon=40e70b obtained_from=fe16aa -->
 |  |  |
 |---|---|
-|  | ![Movement(%) Rune](../assets/items/7169.png) |
+|  | ![Movement(%) Rune](wiki/assets/items/7169.png) |
 | **Item id** | `7169` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

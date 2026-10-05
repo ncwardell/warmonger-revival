@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=d5dfd3 type=d36ca9 id=5fa6f2 sources=1c9620 name_key=7df306 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=47406f obtained_from=474feb -->
 |  |  |
 |---|---|
-|  | ![Whiter Chepa Fur](../assets/items/2554.png) |
+|  | ![Whiter Chepa Fur](wiki/assets/items/2554.png) |
 | **Item id** | `2554` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=2cd269 type=d36ca9 id=f56b03 sources=57338e name_key=af1505 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 stats=97d170 options=b82237 icon=06d0d9 obtained_from=9547ae -->
 |  |  |
 |---|---|
-|  | ![Halloween Set](../assets/items/2043.png) |
+|  | ![Halloween Set](wiki/assets/items/2043.png) |
 | **Item id** | `2043` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |
@@ -47,6 +47,7 @@ obtained_from:
 ### Where to get it
 
 - Premium shop entry 51: 5,000 (currency code 2, discount 0%)
+- how costume_shop_crush, price 10000, currency jewels (hand-entered)
 <!-- generated:end -->
 
 ## Notes

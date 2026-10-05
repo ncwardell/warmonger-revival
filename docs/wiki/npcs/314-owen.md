@@ -25,7 +25,7 @@ z: null
 <!-- generated-keys: title=2a0552 type=3664ce id=6e21fc sources=501142 name_key=47bcc5 title_key=9f8371 npc_title=1bd231 category=e1822d class_mask=da4b92 model=dd500e scale=aa8f28 functions=21a907 role=1bd231 talk_key=12d6a8 portrait=7348e7 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Owen](../assets/npcs/314.png) |
+|  | ![Owen](wiki/assets/npcs/314.png) |
 | **Unit id** | `314` |
 | **Title** | Member of Red Union |
 | **Category** | NPC (category 50) |

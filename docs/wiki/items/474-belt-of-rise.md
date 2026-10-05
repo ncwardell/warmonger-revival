@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=d882e4 type=d36ca9 id=162543 sources=4dee63 name_key=a1452b kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=82dcd6 reinforce=da4b92 icon=e284fd obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Belt of Rise](../assets/items/474.png) |
+|  | ![Belt of Rise](wiki/assets/items/474.png) |
 | **Item id** | `474` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

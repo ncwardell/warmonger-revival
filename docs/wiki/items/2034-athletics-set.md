@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=5d5476 type=d36ca9 id=3d8ae2 sources=4d467d name_key=7e19ad kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=be01ab options=50aabd icon=3a5069 obtained_from=575a6c -->
 |  |  |
 |---|---|
-|  | ![Athletics Set](../assets/items/2034.png) |
+|  | ![Athletics Set](wiki/assets/items/2034.png) |
 | **Item id** | `2034` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

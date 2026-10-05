@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=67d2a6 type=86a754 id=fc6d7e sources=0c2cb1 name_key=65638b desc_key=f60a71 kind=356a19 kind_name=9bc378 target=cacd0a range=3028f5 cost=2be88c cooldown=752bf3 effect_kind=da4b92 effects=ac0355 damage_or_effect=bf21a9 visual=89a1c1 icon=d4b33d used_by=72c4c6 -->
 |  |  |
 |---|---|
-|  | ![Flare](../assets/skills/5213.png) |
+|  | ![Flare](wiki/assets/skills/5213.png) |
 | **Skill id** | `5213` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

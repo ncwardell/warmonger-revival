@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=827184 type=6143a1 id=b1da01 sources=e13fcf name_key=ac61ed duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=1bc8e5 applied_by=010af1 -->
 |  |  |
 |---|---|
-|  | ![Stomp ground : Silenced for 2 seconds](../assets/buffs/10200.png) |
+|  | ![Stomp ground : Silenced for 2 seconds](wiki/assets/buffs/10200.png) |
 | **Buff id** | `10200` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

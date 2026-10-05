@@ -36,7 +36,7 @@ complete_talk: 665
 <!-- generated-keys: title=edb162 type=eb5b2b id=12c6fc sources=925377 name_key=d96804 kind=b6589f kind_name=b3f808 level=b3be7d giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=12c6fc requires_bit=fa35e1 prev=017b8e next=204dd2 prerequisites=f47092 stages=0f733e objectives=6ecf90 rewards=8e225c offer_talk=88547b complete_talk=af7166 -->
 |  |  |
 |---|---|
-|  | ![Repel the Black Skeleton Invasion](../assets/npcs/200.png) |
+|  | ![Repel the Black Skeleton Invasion](wiki/assets/npcs/200.png) |
 | **Quest id** | `22` |
 | **Kind** | Main (kind 0) |
 | **Level** | 23–30 |

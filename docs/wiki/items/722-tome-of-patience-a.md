@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=b63fb4 type=d36ca9 id=278e89 sources=749423 name_key=778eae kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=52cf26 cost_pair=4eedc6 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=4a1b77 cooldown_s=da4b92 cooldown_group=887309 stats=97d170 options=3299ec icon=77c9cc obtained_from=f9acab -->
 |  |  |
 |---|---|
-|  | ![Tome of Patience (A)](../assets/items/722.png) |
+|  | ![Tome of Patience (A)](wiki/assets/items/722.png) |
 | **Item id** | `722` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

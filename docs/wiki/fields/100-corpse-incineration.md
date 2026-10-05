@@ -30,7 +30,7 @@ triggers:
 <!-- generated-keys: title=c2a1e0 type=7a94db id=310b86 sources=f16ef9 name_key=efd112 kind=7a94db scene_type=ac3478 max_users=310b86 group=7b5200 neighbours=1a82a8 nation=069950 nation_copies=5497e0 zones=e04b44 segments=468d55 gates=461eaf connections=f51a17 npcs=97d170 monsters=2f4123 spawn_points=97d170 triggers=0e63f2 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 110](../assets/zones/110.png) |
+|  | ![minimap of zone 110](wiki/assets/zones/110.png) |
 | **Field id** | `100` |
 | **Kind** | field (SceneList type 5; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |
@@ -48,6 +48,8 @@ triggers:
 | gate | at (x, z) | leads to | arrives at gate | label |
 |---|---|---|---|---|
 | 1501 | 567.98, 2100.77 | [[wiki/fields/92-training-camp\|Training Camp]] | 1501 | FieldName_100 |
+
+Other connections (hand-entered): to 104, gate None, to_gate None, at [718, 2104], to_at [962, 2499], source image
 
 Entered from: [[wiki/fields/92-training-camp|Training Camp]] (gate 1504 → 1504)
 

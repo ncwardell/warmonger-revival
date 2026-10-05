@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=8c59dd type=d36ca9 id=d051bf sources=93c4d2 name_key=caf7cf kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=db21bc reinforce=da4b92 icon=411f91 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Guardian Armor](../assets/items/482.png) |
+|  | ![Guardian Armor](wiki/assets/items/482.png) |
 | **Item id** | `482` |
 | **Kind** | Armor (51) |
 | **Classes** | all |
@@ -76,7 +76,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 14, chance 5 (hand-entered)
+- how craft_superior, recipe 2014, chance 5 (hand-entered)
 
 ### Mentioned in
 

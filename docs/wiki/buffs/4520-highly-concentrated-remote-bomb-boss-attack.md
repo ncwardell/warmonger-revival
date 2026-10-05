@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=db2fec type=6143a1 id=b2d754 sources=5a3341 name_key=7e13ee duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=51436c applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Highly Concentrated Remote Bomb : Boss attack](../assets/buffs/4520.png) |
+|  | ![Highly Concentrated Remote Bomb : Boss attack](wiki/assets/buffs/4520.png) |
 | **Buff id** | `4520` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

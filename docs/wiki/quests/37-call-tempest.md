@@ -31,7 +31,7 @@ complete_talk: 814
 <!-- generated-keys: title=47e91a type=eb5b2b id=cb7a1d sources=8572dd name_key=04faf7 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=922d85 offer_maps=15f2a7 turn_in_maps=18e60d bit=cb7a1d requires_bit=135224 prev=03785d next=429a2a prerequisites=154ad3 stages=30caa7 objectives=10d71d rewards=f79b21 offer_talk=90b930 complete_talk=c9264f -->
 |  |  |
 |---|---|
-|  | ![Call Tempest](../assets/npcs/200.png) |
+|  | ![Call Tempest](wiki/assets/npcs/200.png) |
 | **Quest id** | `37` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

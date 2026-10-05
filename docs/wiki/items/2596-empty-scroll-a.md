@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f5839f type=d36ca9 id=0d832e sources=5999e8 name_key=e0025e kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=7715a9 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Empty Scroll (A)](../assets/items/2596.png) |
+|  | ![Empty Scroll (A)](wiki/assets/items/2596.png) |
 | **Item id** | `2596` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

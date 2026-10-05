@@ -24,7 +24,7 @@ spawn_points: []
 <!-- generated-keys: title=3ff156 type=7a94db id=c28aca sources=0df286 name_key=764d56 kind=c9882f scene_type=1b6453 max_users=b1d578 group=b6589f zones=a5c262 segments=63c97d gates=33ff5e connections=97d170 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 148](../assets/zones/148.png) |
+|  | ![minimap of zone 148](wiki/assets/zones/148.png) |
 | **Field id** | `140` |
 | **Kind** | arena (SceneList type 4; name *inferred*) |
 | **Max users** | 10 (SceneList, column meaning *guessed*) |

@@ -24,7 +24,7 @@ help: {"image": "ui/HelpImage/Help_12.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=f91248 type=eb5b2b id=22551a sources=c2a960 name_key=e5c992 kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=d54ad0 prev=97d170 next=97d170 stages=30caa7 objectives=2be88c objectives_client=52ab3d rewards=97d170 help=86f092 -->
 |  |  |
 |---|---|
-|  | ![Item - Inventory expansion](../assets/quests/1508.png) |
+|  | ![Item - Inventory expansion](wiki/assets/quests/1508.png) |
 | **Quest id** | `1508` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

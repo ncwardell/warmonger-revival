@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=0cb41d type=d36ca9 id=8f98b6 sources=5e0e9b name_key=a46ace kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=25e930 reinforce=da4b92 icon=fa8ae0 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Spirit Shoes](../assets/items/487.png) |
+|  | ![Spirit Shoes](wiki/assets/items/487.png) |
 | **Item id** | `487` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |
@@ -72,7 +72,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 19, chance 5 (hand-entered)
+- how craft_superior, recipe 2019, chance 5 (hand-entered)
 
 ### Mentioned in
 

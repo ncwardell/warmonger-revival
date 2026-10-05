@@ -34,7 +34,7 @@ complete_talk: 668
 <!-- generated-keys: title=229ae6 type=eb5b2b id=fa35e1 sources=b72860 name_key=9aafdf kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=bd307a requires_bit=7b5200 prev=758a13 next=887a73 stages=30caa7 objectives=9db696 rewards=df8824 offer_talk=1c710b complete_talk=34c664 -->
 |  |  |
 |---|---|
-|  | ![Battle preparations](../assets/npcs/200.png) |
+|  | ![Battle preparations](wiki/assets/npcs/200.png) |
 | **Quest id** | `14` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

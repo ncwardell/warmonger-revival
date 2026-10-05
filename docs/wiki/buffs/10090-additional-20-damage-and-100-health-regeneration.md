@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=e5b1df type=6143a1 id=759a10 sources=052e24 name_key=6e85cc duration=e0cd66 is_buff=b6589f stack_type=356a19 group=b6589f effects=f91aaa icon=eb907e applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional 20% damage and 100% Health Regeneration](../assets/buffs/10090.png) |
+|  | ![Additional 20% damage and 100% Health Regeneration](wiki/assets/buffs/10090.png) |
 | **Buff id** | `10090` |
 | **Duration** | 3 min (900 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

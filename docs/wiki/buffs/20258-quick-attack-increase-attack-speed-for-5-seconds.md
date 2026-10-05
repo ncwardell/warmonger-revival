@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=3be5b1 type=6143a1 id=0717f7 sources=7e2ec0 name_key=c4a727 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=939e09 icon=071b0c applied_by=ea436d -->
 |  |  |
 |---|---|
-|  | ![Quick attack : Increase attack speed for 5 seconds](../assets/buffs/20258.png) |
+|  | ![Quick attack : Increase attack speed for 5 seconds](wiki/assets/buffs/20258.png) |
 | **Buff id** | `20258` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

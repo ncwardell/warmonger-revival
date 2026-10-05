@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=6644fe type=d36ca9 id=ce310a sources=4689f1 name_key=35d2fc kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=78410c options=f9ea2e icon=459b9f obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Health Regeneration Rune](../assets/items/7248.png) |
+|  | ![Health Regeneration Rune](wiki/assets/items/7248.png) |
 | **Item id** | `7248` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

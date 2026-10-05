@@ -22,7 +22,7 @@ obtained_from: []
 <!-- generated-keys: title=bc83ec type=d36ca9 id=61f348 sources=380551 name_key=6aabbd kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=257051 icon=a50615 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fragment of Ru](../assets/items/1602.png) |
+|  | ![Fragment of Ru](wiki/assets/items/1602.png) |
 | **Item id** | `1602` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

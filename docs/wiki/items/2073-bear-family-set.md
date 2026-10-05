@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=482a95 type=d36ca9 id=89ae61 sources=c58046 name_key=3b8cd9 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=a0f8d4 options=b8fc94 icon=849199 obtained_from=91df45 -->
 |  |  |
 |---|---|
-|  | ![Bear family Set](../assets/items/2073.png) |
+|  | ![Bear family Set](wiki/assets/items/2073.png) |
 | **Item id** | `2073` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

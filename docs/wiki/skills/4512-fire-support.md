@@ -26,7 +26,7 @@ tp: {"row": 10, "tp_cost": 2000, "cooldown_s": 180, "need_flags": 396, "c7": 2}
 <!-- generated-keys: title=925671 type=86a754 id=38e2ff sources=1840d4 name_key=02ff76 desc_key=433686 kind=356a19 kind_name=9bc378 target=cacd0a range=3028f5 area=950fc9 cost=03969c cooldown=c44d13 effect_kind=356a19 effects=60b01b damage_or_effect=bf21a9 icon=913d4f used_by=97d170 tp=489443 -->
 |  |  |
 |---|---|
-|  | ![Fire Support](../assets/skills/4512.png) |
+|  | ![Fire Support](wiki/assets/skills/4512.png) |
 | **Skill id** | `4512` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

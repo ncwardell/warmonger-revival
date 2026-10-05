@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=8dabc7 type=86a754 id=571985 sources=2e7f89 name_key=fc5117 desc_key=8dfa59 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=a7242f effect_kind=da4b92 effects=cd39a4 damage_or_effect=2d6f47 visual=5dd8b5 icon=e9f376 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Sarasbati Transformation](../assets/skills/20151.png) |
+|  | ![Sarasbati Transformation](wiki/assets/skills/20151.png) |
 | **Skill id** | `20151` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

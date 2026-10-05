@@ -43,7 +43,7 @@ obtained_from:
 <!-- generated-keys: title=ddad67 type=d36ca9 id=020c48 sources=72bd58 name_key=2dad3d kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=d4497b reinforce=356a19 icon=7f6e42 obtained_from=51f590 -->
 |  |  |
 |---|---|
-|  | ![Belt of Mediation](../assets/items/422.png) |
+|  | ![Belt of Mediation](wiki/assets/items/422.png) |
 | **Item id** | `422` |
 | **Kind** | Belt (55) |
 | **Classes** | all |
@@ -96,6 +96,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 127, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

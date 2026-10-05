@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=49d78d type=d36ca9 id=1d57cc sources=8f4e60 name_key=cbcb26 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a650d9 cost_pair=48084b stats=97d170 icon=925a97 obtained_from=b2d61d -->
 |  |  |
 |---|---|
-|  | ![Borage powder](../assets/items/827.png) |
+|  | ![Borage powder](wiki/assets/items/827.png) |
 | **Item id** | `827` |
 | **Kind** | Material (12) |
 | **Classes** | all |

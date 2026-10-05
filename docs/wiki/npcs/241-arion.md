@@ -27,7 +27,7 @@ z: null
 <!-- generated-keys: title=bbfb12 type=3664ce id=9ffd1a sources=8bab7c name_key=a219cf title_key=a704c2 npc_title=84ff91 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=455f92 role=84ff91 shop=9d3237 talk_key=be83b9 portrait=d2d345 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Arion](../assets/npcs/241.png) |
+|  | ![Arion](wiki/assets/npcs/241.png) |
 | **Unit id** | `241` |
 | **Title** | Innocence Smith |
 | **Category** | NPC (category 50) |

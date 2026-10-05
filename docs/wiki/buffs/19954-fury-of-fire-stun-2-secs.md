@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=a51769 type=6143a1 id=7ce2a3 sources=993b6b name_key=19dff4 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=01ddda applied_by=26b979 -->
 |  |  |
 |---|---|
-|  | ![Fury of fire : Stun (2 Secs)](../assets/buffs/19954.png) |
+|  | ![Fury of fire : Stun (2 Secs)](wiki/assets/buffs/19954.png) |
 | **Buff id** | `19954` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

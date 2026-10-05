@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=5e453e type=6143a1 id=75186a sources=b1e619 name_key=18e713 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=8fb5ba icon=c919f8 applied_by=a2f956 -->
 |  |  |
 |---|---|
-|  | ![Wrath Explosion: Reduces Movement Speed](../assets/buffs/10004.png) |
+|  | ![Wrath Explosion: Reduces Movement Speed](wiki/assets/buffs/10004.png) |
 | **Buff id** | `10004` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

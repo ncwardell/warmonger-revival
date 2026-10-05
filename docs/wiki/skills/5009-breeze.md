@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=ad0da9 type=86a754 id=3ebcce sources=0edc34 name_key=416c1c desc_key=50e919 kind=356a19 kind_name=9bc378 target=55b685 range=c1dfd9 area=d82541 cost=e4e7cf cooldown=e3989d effect_kind=b6589f effects=8ce1b3 damage_or_effect=fce8cf visual=3c26df icon=86c28e used_by=8aa568 -->
 |  |  |
 |---|---|
-|  | ![Breeze](../assets/skills/5009.png) |
+|  | ![Breeze](wiki/assets/skills/5009.png) |
 | **Skill id** | `5009` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

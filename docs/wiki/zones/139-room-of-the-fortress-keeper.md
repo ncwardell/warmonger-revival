@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z139_00.dds"
 <!-- generated-keys: title=22c229 type=c899cd id=fa7557 sources=3881af name_kr=15c3aa terrain=311741 bounds=283ae4 size=a1cfbb segments=e7de41 fields=dd4512 minimap=7aa812 -->
 |  |  |
 |---|---|
-|  | ![minimap of Room of the Fortress Keeper](../assets/zones/139.png) |
+|  | ![minimap of Room of the Fortress Keeper](wiki/assets/zones/139.png) |
 | **Zone id** | `139` |
 | **ZoneDB name** | 신장실 (English gloss: Room of the Fortress Keeper) |
 | **Terrain name** | `Core_02` |

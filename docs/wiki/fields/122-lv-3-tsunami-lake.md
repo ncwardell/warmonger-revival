@@ -47,8 +47,8 @@ dungeon: 122
 <!-- generated-keys: title=a1b133 type=7a94db id=05a8ea sources=735be7 name_key=a3dd66 kind=3e3f38 scene_type=77de68 max_users=ac3478 group=b6692e zones=07b8de segments=e56b57 gates=8b343c connections=6fe72f npcs=97d170 monsters=62fe4e spawn_points=97d170 triggers=e049d0 dungeon=05a8ea -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 136](../assets/zones/136.png) |
-|  | ![(Lv 3) Tsunami Lake](../assets/dungeons/122.png) |
+|  | ![minimap of zone 136](wiki/assets/zones/136.png) |
+|  | ![(Lv 3) Tsunami Lake](wiki/assets/dungeons/122.png) |
 | **Field id** | `122` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

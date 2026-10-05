@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=2bdb5f type=6143a1 id=0ac509 sources=e55b2e name_key=af088a duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=aeda53 icon=47be79 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Reinforce Nexus : Increased Damage and Armor](../assets/buffs/3035.png) |
+|  | ![Reinforce Nexus : Increased Damage and Armor](wiki/assets/buffs/3035.png) |
 | **Buff id** | `3035` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=d07f6a type=6143a1 id=04e869 sources=0e256e name_key=7b51c6 duration=dc6a42 is_buff=b6589f stack_type=356a19 group=b6589f effects=aea35f icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Elixir of Strength : 10 Armor and 30 Attack Damage](../assets/buffs/2017.png) |
+|  | ![Elixir of Strength : 10 Armor and 30 Attack Damage](wiki/assets/buffs/2017.png) |
 | **Buff id** | `2017` |
 | **Duration** | 10 min (3,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

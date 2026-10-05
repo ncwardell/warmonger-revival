@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=a162f5 type=6143a1 id=da034b sources=fab87c name_key=75bcaf duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=fa2aca icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Absolute Defence : Gain additional Armor for 10 seconds](../assets/buffs/10094.png) |
+|  | ![Absolute Defence : Gain additional Armor for 10 seconds](wiki/assets/buffs/10094.png) |
 | **Buff id** | `10094` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

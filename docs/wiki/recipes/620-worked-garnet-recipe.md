@@ -19,20 +19,20 @@ npc: [214]
 <!-- generated-keys: title=b4fe0e type=61613a id=cf3240 sources=052f5f result=1e0f55 materials=d0b98c gold=7507d4 success_rate=310b86 category=356a19 filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/866.png) |
+|  | ![](wiki/assets/items/866.png) |
 | **Recipe id** | `620` (`Item_Make`) |
 | **Makes** | [[wiki/items/866-worked-garnet\|Worked Garnet]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 1 / `0x100` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 5 |  |
+| ![](wiki/assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2420-worked-garnet-recipe|recipe 2420]]
 

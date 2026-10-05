@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=252424 type=d36ca9 id=5d4ba4 sources=6fa0d9 name_key=cd7b39 kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=d8718b obtained_from=09a06e -->
 |  |  |
 |---|---|
-|  | ![Piece : Guardian](../assets/items/9001.png) |
+|  | ![Piece : Guardian](wiki/assets/items/9001.png) |
 | **Item id** | `9001` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

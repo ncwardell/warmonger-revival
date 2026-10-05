@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=21da96 type=86a754 id=2a6042 sources=30af41 name_key=79545e desc_key=89ce1c kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=9e049c cooldown=7d0c8c effect_kind=356a19 effects=9f7d8f damage_or_effect=d1ebdc visual=0fdf6a icon=056ae7 used_by=f3e92c -->
 |  |  |
 |---|---|
-|  | ![Hunter's Rage](../assets/skills/20207.png) |
+|  | ![Hunter's Rage](wiki/assets/skills/20207.png) |
 | **Skill id** | `20207` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

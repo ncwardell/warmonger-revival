@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_23.png", "text_key": "Quest_HelpText_741"}
 <!-- generated-keys: title=69a5b7 type=eb5b2b id=f5354c sources=0a353e name_key=421dfb kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=80e28a automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=f58890 rewards=c8c2ac help=b393d0 -->
 |  |  |
 |---|---|
-|  | ![How to obtain SP](../assets/quests/723.png) |
+|  | ![How to obtain SP](wiki/assets/quests/723.png) |
 | **Quest id** | `723` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

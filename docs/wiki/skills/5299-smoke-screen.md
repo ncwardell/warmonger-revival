@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=567d08 type=86a754 id=0a99f4 sources=2f8dd7 name_key=6010ef desc_key=bff724 kind=356a19 kind_name=9bc378 target=cacd0a range=b1d578 area=9876f1 cost=4e8ae0 cooldown=d1c73e delivery=93a212 effect_kind=356a19 effects=cc9830 damage_or_effect=bf21a9 tooltip_formula=26fced visual=b741f2 icon=54955f used_by=81bdea -->
 |  |  |
 |---|---|
-|  | ![Smoke Screen](../assets/skills/5299.png) |
+|  | ![Smoke Screen](wiki/assets/skills/5299.png) |
 | **Skill id** | `5299` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

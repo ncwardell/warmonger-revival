@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=1bc172 type=6143a1 id=146764 sources=ac1196 name_key=334b82 duration=0aac5a is_buff=b6589f stack_type=356a19 group=ab68fc effects=2f7462 icon=52a60d applied_by=3d6605 -->
 |  |  |
 |---|---|
-|  | ![Suppressive Fire : Reduced Attack and Movement Speed for 3 seconds](../assets/buffs/30088.png) |
+|  | ![Suppressive Fire : Reduced Attack and Movement Speed for 3 seconds](wiki/assets/buffs/30088.png) |
 | **Buff id** | `30088` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

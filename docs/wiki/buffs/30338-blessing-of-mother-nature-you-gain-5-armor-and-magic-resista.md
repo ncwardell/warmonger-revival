@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=56de75 type=6143a1 id=20bd4a sources=5e76cc name_key=b85e86 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=ea8bf7 effects=3de74a icon=1aeac2 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![blessing of Mother Nature : You gain 5% Armor and Magic Resistance](../assets/buffs/30338.png) |
+|  | ![blessing of Mother Nature : You gain 5% Armor and Magic Resistance](wiki/assets/buffs/30338.png) |
 | **Buff id** | `30338` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

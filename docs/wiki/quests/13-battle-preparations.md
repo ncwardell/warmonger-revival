@@ -33,7 +33,7 @@ offer_talk: 651
 <!-- generated-keys: title=229ae6 type=eb5b2b id=bd307a sources=a068a7 name_key=9aafdf kind=b6589f kind_name=b3f808 level=29a79b giver=1caac0 turn_in=847ad4 offer_maps=15f2a7 bit=7b5200 automatic=5ffe53 prev=97d170 next=76cdc5 prerequisites=d04db8 stages=0e4f21 objectives=b63128 rewards=e3a779 offer_talk=93f271 -->
 |  |  |
 |---|---|
-|  | ![Battle preparations](../assets/npcs/200.png) |
+|  | ![Battle preparations](wiki/assets/npcs/200.png) |
 | **Quest id** | `13` |
 | **Kind** | Main (kind 0) |
 | **Level** | 10+ |

@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=a39ed8 type=86a754 id=4f4cb1 sources=da839f name_key=69f25d desc_key=43eb4c kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=e4e7cf cooldown=e3989d delivery=93a212 effect_kind=356a19 effects=5382fd damage_or_effect=0c58d7 tooltip_formula=de4d81 visual=bcf814 icon=a498d1 used_by=a205ed -->
 |  |  |
 |---|---|
-|  | ![Rotten Arrow](../assets/skills/10033.png) |
+|  | ![Rotten Arrow](wiki/assets/skills/10033.png) |
 | **Skill id** | `10033` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

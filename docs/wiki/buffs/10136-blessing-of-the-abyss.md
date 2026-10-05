@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=5dd119 type=6143a1 id=4389d0 sources=f328b1 name_key=e43bc9 duration=acd3ed is_buff=356a19 stack_type=356a19 group=b6589f effects=21eac9 icon=5cc9da applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blessing of the Abyss](../assets/buffs/10136.png) |
+|  | ![Blessing of the Abyss](wiki/assets/buffs/10136.png) |
 | **Buff id** | `10136` |
 | **Duration** | 24 s (120 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 1 (is_buff?, guessed column) |

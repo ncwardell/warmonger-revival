@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z57_00.dds"
 <!-- generated-keys: title=13987b type=c899cd id=9109c8 sources=1a7eee name_kr=06543d terrain=e299d2 bounds=b3db2f size=114466 segments=128f5b fields=f7a9ff minimap=c07c7e -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 36 (Firepillar Plain)](../assets/zones/57.png) |
+|  | ![minimap of Field 36 (Firepillar Plain)](wiki/assets/zones/57.png) |
 | **Zone id** | `57` |
 | **ZoneDB name** | 필드_36 (English gloss: Field 36 (Firepillar Plain)) |
 | **Terrain name** | `36` |

@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=3228b1 type=61613a id=aa2fca sources=034d70 result=c7493f materials=949c06 gold=7507d4 success_rate=310b86 category=fe5dbb filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/863.png) |
+|  | ![](wiki/assets/items/863.png) |
 | **Recipe id** | `2417` (`Item_Make`) |
 | **Makes** | [[wiki/items/863-worked-blue-bloodstone\|Worked Blue bloodstone]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 8 / `0x100` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 5 |  |
+| ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/617-worked-blue-bloodstone-recipe|recipe 617]]
 

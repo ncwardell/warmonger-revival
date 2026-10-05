@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=380559 type=6143a1 id=bd56a0 sources=9030f7 name_key=851059 duration=6c141f is_buff=b6589f stack_type=356a19 group=9e6a55 effects=c83574 icon=593d40 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Slayer : When player kill enemy, gain attack +3 (Maximum +10). When you die, lose all stacks.](../assets/buffs/10325.png) |
+|  | ![Slayer : When player kill enemy, gain attack +3 (Maximum +10). When you die, lose all stacks.](wiki/assets/buffs/10325.png) |
 | **Buff id** | `10325` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

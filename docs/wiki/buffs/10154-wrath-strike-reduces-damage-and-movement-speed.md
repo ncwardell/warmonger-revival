@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=bddd36 type=6143a1 id=ff97f1 sources=52fe7b name_key=a90189 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=d5792e icon=b4ae95 applied_by=bceebf -->
 |  |  |
 |---|---|
-|  | ![Wrath Strike: Reduces Damage and Movement Speed](../assets/buffs/10154.png) |
+|  | ![Wrath Strike: Reduces Damage and Movement Speed](wiki/assets/buffs/10154.png) |
 | **Buff id** | `10154` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

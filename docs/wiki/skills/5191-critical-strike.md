@@ -28,7 +28,7 @@ used_by: []
 <!-- generated-keys: title=291e77 type=86a754 id=8be703 sources=075994 name_key=812bb3 desc_key=5a6a65 kind=356a19 kind_name=9bc378 target=069ef3 range=1b6453 cost=cf76b6 cooldown=4ae204 effect_kind=f1abd6 effects=b649f2 damage_or_effect=67c861 tooltip_formula=664d4b visual=5547f6 icon=596634 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Critical Strike](../assets/skills/5191.png) |
+|  | ![Critical Strike](wiki/assets/skills/5191.png) |
 | **Skill id** | `5191` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

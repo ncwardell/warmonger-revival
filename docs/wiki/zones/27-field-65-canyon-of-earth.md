@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z27_00.dds"
 <!-- generated-keys: title=92dad8 type=c899cd id=bc33ea sources=889953 name_kr=965130 terrain=47547a bounds=b2ed72 size=114466 segments=e1066a fields=cfd5b8 minimap=1a005a -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 65 (Canyon of Earth)](../assets/zones/27.png) |
+|  | ![minimap of Field 65 (Canyon of Earth)](wiki/assets/zones/27.png) |
 | **Zone id** | `27` |
 | **ZoneDB name** | 필드_65 (English gloss: Field 65 (Canyon of Earth)) |
 | **Terrain name** | `65` |

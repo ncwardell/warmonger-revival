@@ -38,7 +38,7 @@ observed:
 <!-- generated-keys: title=45db83 type=86a754 id=1409f5 sources=53fce8 name_key=eec96e desc_key=8bef0b kind=356a19 kind_name=9bc378 target=d1cc1b range=ac3478 area=e8b0ea cost=f9e152 cooldown=c9c532 effect_kind=356a19 effects=1fd037 damage_or_effect=ca2dd2 tooltip_formula=1aeae1 requirements=9fd74a visual=d051bf icon=8527d3 used_by=cdbebe observed=8a6610 -->
 |  |  |
 |---|---|
-|  | ![Vision explosion](../assets/skills/5492.png) |
+|  | ![Vision explosion](wiki/assets/skills/5492.png) |
 | **Skill id** | `5492` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

@@ -32,13 +32,14 @@ rewards:
 complete_talk: 891
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=cb9850 type=eb5b2b id=404c73 sources=d214ce name_key=37279b kind=77de68 kind_name=01e781 level=8448b1 giver=2be88c turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=c08948 stages=30caa7 objectives=c4f092 rewards=aa57c8 complete_talk=a0308a -->
+<!-- generated-keys: title=cb9850 type=eb5b2b id=404c73 sources=d214ce name_key=37279b kind=77de68 kind_name=01e781 level=8448b1 turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=c08948 stages=30caa7 objectives=c4f092 rewards=aa57c8 complete_talk=a0308a -->
 |  |  |
 |---|---|
+|  | ![Kill monster of The avenue of spirit](wiki/assets/npcs/207.png) |
 | **Quest id** | `750` |
 | **Kind** | Free (kind 3) |
 | **Level** | 20–25 |
-| **Giver** | **unknown** |
+| **Giver** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turn in** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turned in on** | [[wiki/fields/120-fortress\|Fortress]] (120) |
 | **Completion bit** | none (no bit is set: can be taken again) |

@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=b634ee type=d36ca9 id=fbea31 sources=146a3c name_key=305e0f kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=97b234 reinforce=da4b92 icon=a5b1b1 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Armor of Life](../assets/items/478.png) |
+|  | ![Armor of Life](wiki/assets/items/478.png) |
 | **Item id** | `478` |
 | **Kind** | Armor (51) |
 | **Classes** | all |
@@ -74,7 +74,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 6, chance 5 (hand-entered)
+- how craft_superior, recipe 2006, chance 5 (hand-entered)
 
 ### Mentioned in
 

@@ -37,7 +37,7 @@ complete_talk: 859
 <!-- generated-keys: title=e203c4 type=eb5b2b id=d04d50 sources=9eaf7f name_key=d930dd kind=b6589f kind_name=b3f808 level=a3b082 classes=51f98f giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=54ceb9 requires_bit=0a57cb prev=b891b8 next=d09211 prerequisites=f5f036 stages=30caa7 objectives=808850 rewards=1e57ab offer_talk=fe39d9 complete_talk=812cd8 -->
 |  |  |
 |---|---|
-|  | ![Group - Border Area Hard Mode](../assets/npcs/200.png) |
+|  | ![Group - Border Area Hard Mode](wiki/assets/npcs/200.png) |
 | **Quest id** | `772` |
 | **Kind** | Main (kind 0) |
 | **Level** | 24+ |

@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=253605 type=3664ce id=914127 sources=40a8bb name_key=10348e title_key=d752cf npc_title=e49f92 category=e1822d class_mask=da4b92 model=dd500e scale=aa8f28 functions=cc5591 role=e49f92 talk_key=d48d90 portrait=7348e7 quests=757f04 quest_fields=6c3da9 map=775bc5 x=5ae5fb z=af5569 positions=45c2a9 -->
 |  |  |
 |---|---|
-|  | ![Casta](../assets/npcs/324.png) |
+|  | ![Casta](wiki/assets/npcs/324.png) |
 | **Unit id** | `324` |
 | **Title** | Rune Manager |
 | **Category** | NPC (category 50) |

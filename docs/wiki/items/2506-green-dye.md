@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=836160 type=d36ca9 id=9eb34b sources=79ff6a name_key=e016fa kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=0f1b94 icon=2c870f obtained_from=f1c63a -->
 |  |  |
 |---|---|
-|  | ![Green Dye](../assets/items/2506.png) |
+|  | ![Green Dye](wiki/assets/items/2506.png) |
 | **Item id** | `2506` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

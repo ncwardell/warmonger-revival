@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=79cd7e type=86a754 id=941aed sources=ecf2e8 name_key=c954f1 desc_key=18e890 kind=356a19 kind_name=9bc378 target=5c059d range=da4b92 cost=e01d1d cooldown=9ded33 effect_kind=356a19 effects=d05d7a damage_or_effect=2cc6e4 tooltip_formula=7fd566 visual=6d93f2 icon=78290d used_by=bacb60 -->
 |  |  |
 |---|---|
-|  | ![Poisonous Blade](../assets/skills/5287.png) |
+|  | ![Poisonous Blade](wiki/assets/skills/5287.png) |
 | **Skill id** | `5287` |
 | **Kind** | active (1) |
 | **Target** | self; -; units: monster, player; up to 1 |

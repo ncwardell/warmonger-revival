@@ -19,20 +19,20 @@ npc: [237]
 <!-- generated-keys: title=47d677 type=61613a id=459b50 sources=51c7da result=042820 materials=64d823 gold=d8cd7d success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/624.png) |
+|  | ![](wiki/assets/items/624.png) |
 | **Recipe id** | `829` (`Item_Make`) |
 | **Makes** | [[wiki/items/624-orange-passion-piece-c\|Orange Passion Piece (C)]] × 20 |
 | **Gold** | 200,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 2 / `0x2` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/237-farrell\|Farrell]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/625.png) | [[wiki/items/625-orange-passion-fragments-b\|Orange Passion Fragments (B)]] | 5 |  |
+| ![](wiki/assets/items/625.png) | [[wiki/items/625-orange-passion-fragments-b\|Orange Passion Fragments (B)]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/813-orange-passion-piece-c-recipe|recipe 813]]
 

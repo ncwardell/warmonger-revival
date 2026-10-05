@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=f2db2f type=6143a1 id=d46d4d sources=fc602c name_key=fb412f duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=19c5dc icon=99ddd1 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Flash Bang : Increased damage](../assets/buffs/10172.png) |
+|  | ![Flash Bang : Increased damage](wiki/assets/buffs/10172.png) |
 | **Buff id** | `10172` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

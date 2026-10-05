@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=66742f type=6143a1 id=d27542 sources=0fd40b name_key=16f756 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=4c901c applied_by=b810df -->
 |  |  |
 |---|---|
-|  | ![Angry Charge](../assets/buffs/10152.png) |
+|  | ![Angry Charge](wiki/assets/buffs/10152.png) |
 | **Buff id** | `10152` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

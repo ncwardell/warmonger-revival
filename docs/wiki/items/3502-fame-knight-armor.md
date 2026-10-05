@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=db296f type=d36ca9 id=60fddb sources=625130 name_key=60d982 kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=1ae44d set=902ba3 reinforce=92cfce icon=14a29f obtained_from=131533 -->
 |  |  |
 |---|---|
-|  | ![Fame knight Armor](../assets/items/3502.png) |
+|  | ![Fame knight Armor](wiki/assets/items/3502.png) |
 | **Item id** | `3502` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

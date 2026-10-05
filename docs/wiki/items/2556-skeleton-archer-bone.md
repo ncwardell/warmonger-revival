@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=16fa37 type=d36ca9 id=cdc4a8 sources=3a98df name_key=a9fb36 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=da1630 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Skeleton Archer bone](../assets/items/2556.png) |
+|  | ![Skeleton Archer bone](wiki/assets/items/2556.png) |
 | **Item id** | `2556` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

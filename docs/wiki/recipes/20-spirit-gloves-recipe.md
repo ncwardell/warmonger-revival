@@ -21,7 +21,7 @@ npc: [213]
 <!-- generated-keys: title=988bda type=61613a id=91032a sources=5beff5 result=6ea436 materials=3d0bd9 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=ac6be1 superior=0a6554 level=356a19 raw=4dcd90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/416.png) |
+|  | ![](wiki/assets/items/416.png) |
 | **Recipe id** | `20` (`Item_Make`) |
 | **Makes** | [[wiki/items/416-spirit-gloves\|Spirit Gloves]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [213]
 | **Superior result** | 5 % → [[wiki/items/488-spirit-gloves\|Spirit Gloves]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 0 / `0x1000004` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 12 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 12 |  |
 
 Unknown columns: `c28` = 180 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

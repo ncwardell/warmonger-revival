@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z32_00.dds"
 <!-- generated-keys: title=718b8e type=c899cd id=cb4e52 sources=ce208f name_kr=f149fd terrain=3a3364 bounds=9a64d1 size=114466 segments=a25a66 fields=f1e31d minimap=e06853 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 03 (Shade Wood)](../assets/zones/32.png) |
+|  | ![minimap of Field 03 (Shade Wood)](wiki/assets/zones/32.png) |
 | **Zone id** | `32` |
 | **ZoneDB name** | 필드_03 (English gloss: Field 03 (Shade Wood)) |
 | **Terrain name** | `03` |

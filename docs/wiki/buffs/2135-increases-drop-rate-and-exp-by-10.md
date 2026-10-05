@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=672f41 type=6143a1 id=ff075d sources=fd2289 name_key=59cc02 duration=dc6a42 is_buff=b6589f stack_type=356a19 group=ff075d effects=9a2f92 icon=7b133d applied_by=003da7 -->
 |  |  |
 |---|---|
-|  | ![Increases drop rate and EXP by 10%.](../assets/buffs/2135.png) |
+|  | ![Increases drop rate and EXP by 10%.](wiki/assets/buffs/2135.png) |
 | **Buff id** | `2135` |
 | **Duration** | 10 min (3,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

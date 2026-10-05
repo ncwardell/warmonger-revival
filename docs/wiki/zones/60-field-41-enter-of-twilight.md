@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z60_00.dds"
 <!-- generated-keys: title=59aaa2 type=c899cd id=e6c3dd sources=8ea3c7 name_kr=bbb360 terrain=a003e3 bounds=209554 size=114466 segments=7a0989 fields=8f80dd minimap=37adab -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 41 (Enter of Twilight)](../assets/zones/60.png) |
+|  | ![minimap of Field 41 (Enter of Twilight)](wiki/assets/zones/60.png) |
 | **Zone id** | `60` |
 | **ZoneDB name** | 필드_41 (English gloss: Field 41 (Enter of Twilight)) |
 | **Terrain name** | `41` |

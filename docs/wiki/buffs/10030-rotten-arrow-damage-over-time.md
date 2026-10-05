@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=1ed262 type=6143a1 id=c52651 sources=4ba825 name_key=8f8cdc duration=3d2da5 is_buff=b6589f stack_type=356a19 group=c52651 effects=d146d8 icon=a498d1 applied_by=6be667 -->
 |  |  |
 |---|---|
-|  | ![Rotten Arrow: Damage over time](../assets/buffs/10030.png) |
+|  | ![Rotten Arrow: Damage over time](wiki/assets/buffs/10030.png) |
 | **Buff id** | `10030` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

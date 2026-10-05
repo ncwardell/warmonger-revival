@@ -21,22 +21,22 @@ npc: [323]
 <!-- generated-keys: title=362538 type=61613a id=0ec37e sources=e7f1c4 result=330d65 materials=dfde7c gold=8a12a3 success_rate=310b86 category=1b6453 filter_mask=da4b92 level=ac3478 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7162.png) |
+|  | ![](wiki/assets/items/7162.png) |
 | **Recipe id** | `1817` (`Item_Make`) |
 | **Makes** | [[wiki/items/7162-movement-rune\|Movement(%) Rune]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 5 |
 | **Category / filter** | 4 / `0x2` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/323-alan\|Alan]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
-| ![](../assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 5 |  |
+| ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/814.png) | [[wiki/items/814-topaz\|Topaz]] | 5 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3001.png) | [[wiki/items/3001-death-head-s-helmet\|Death Head's Helmet]] | 1 |  |
-| 1 | ![](../assets/items/3002.png) | [[wiki/items/3002-death-head-s-armor\|Death Head's Armor]] | 1 |  |
-| 2 | ![](../assets/items/3003.png) | [[wiki/items/3003-death-head-s-gloves\|Death Head's Gloves]] | 1 |  |
-| 3 | ![](../assets/items/3004.png) | [[wiki/items/3004-death-head-s-shoes\|Death Head's Shoes]] | 1 |  |
-| 4 | ![](../assets/items/3005.png) | [[wiki/items/3005-death-head-s-necklace\|Death Head's Necklace]] | 1 |  |
-| 5 | ![](../assets/items/3006.png) | [[wiki/items/3006-death-head-s-belt\|Death Head's Belt]] | 1 |  |
-| 6 | ![](../assets/items/3006.png) | [[wiki/items/3006-death-head-s-belt\|Death Head's Belt]] | 1 |  |
-| 7 | ![](../assets/items/3007.png) | [[wiki/items/3007-death-head-s-bracelet\|Death Head's Bracelet]] | 1 |  |
-| 8 | ![](../assets/items/3007.png) | [[wiki/items/3007-death-head-s-bracelet\|Death Head's Bracelet]] | 1 |  |
-| 9 | ![](../assets/items/3008.png) | [[wiki/items/3008-death-head-s-ring\|Death Head's Ring]] | 1 |  |
+| 0 | ![](wiki/assets/items/3001.png) | [[wiki/items/3001-death-head-s-helmet\|Death Head's Helmet]] | 1 |  |
+| 1 | ![](wiki/assets/items/3002.png) | [[wiki/items/3002-death-head-s-armor\|Death Head's Armor]] | 1 |  |
+| 2 | ![](wiki/assets/items/3003.png) | [[wiki/items/3003-death-head-s-gloves\|Death Head's Gloves]] | 1 |  |
+| 3 | ![](wiki/assets/items/3004.png) | [[wiki/items/3004-death-head-s-shoes\|Death Head's Shoes]] | 1 |  |
+| 4 | ![](wiki/assets/items/3005.png) | [[wiki/items/3005-death-head-s-necklace\|Death Head's Necklace]] | 1 |  |
+| 5 | ![](wiki/assets/items/3006.png) | [[wiki/items/3006-death-head-s-belt\|Death Head's Belt]] | 1 |  |
+| 6 | ![](wiki/assets/items/3006.png) | [[wiki/items/3006-death-head-s-belt\|Death Head's Belt]] | 1 |  |
+| 7 | ![](wiki/assets/items/3007.png) | [[wiki/items/3007-death-head-s-bracelet\|Death Head's Bracelet]] | 1 |  |
+| 8 | ![](wiki/assets/items/3007.png) | [[wiki/items/3007-death-head-s-bracelet\|Death Head's Bracelet]] | 1 |  |
+| 9 | ![](wiki/assets/items/3008.png) | [[wiki/items/3008-death-head-s-ring\|Death Head's Ring]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

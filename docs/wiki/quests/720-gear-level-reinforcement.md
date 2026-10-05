@@ -26,7 +26,7 @@ help: {"image": "ui/HelpImage/Help_22.png", "text_key": "Quest_HelpText_713"}
 <!-- generated-keys: title=aab4f2 type=eb5b2b id=aeaa8a sources=d3d614 name_key=a9f300 kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=8ee51c automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=2be88c objectives_client=ad8207 rewards=c8c2ac help=cdc815 -->
 |  |  |
 |---|---|
-|  | ![Gear Level (+) reinforcement](../assets/quests/720.png) |
+|  | ![Gear Level (+) reinforcement](wiki/assets/quests/720.png) |
 | **Quest id** | `720` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

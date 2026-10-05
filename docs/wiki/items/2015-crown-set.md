@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=ddd97f type=d36ca9 id=9cdda6 sources=21f52f name_key=976bfe kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=028149 cost_pair=623e9c period=365a69 stats=eca94b options=304eec icon=f106e3 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Crown Set](../assets/items/2015.png) |
+|  | ![Crown Set](wiki/assets/items/2015.png) |
 | **Item id** | `2015` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

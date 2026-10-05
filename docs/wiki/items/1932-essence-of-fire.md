@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=cbeea6 type=d36ca9 id=cb5e83 sources=4329ce name_key=249069 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=821318 obtained_from=50d44c -->
 |  |  |
 |---|---|
-|  | ![Essence of Fire](../assets/items/1932.png) |
+|  | ![Essence of Fire](wiki/assets/items/1932.png) |
 | **Item id** | `1932` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -57,6 +57,7 @@ obtained_from:
 - Shown as a reward of dungeon [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior|(Lv 4) Swamps of Snake Warrior]]
 - Shown as a reward of dungeon [[wiki/dungeons/129-lv-8-thorn-s-hell|(Lv 8) Thorn's Hell]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 

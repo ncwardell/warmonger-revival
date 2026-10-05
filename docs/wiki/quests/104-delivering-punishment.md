@@ -33,7 +33,7 @@ complete_talk: 674
 <!-- generated-keys: title=1e472e type=eb5b2b id=78a8ef sources=0663cf name_key=96a609 kind=356a19 kind_name=0bac50 giver=05a31e turn_in=05a31e offer_maps=15f2a7 turn_in_maps=15f2a7 bit=0286dd requires_bit=bd307a prev=76cdc5 next=97d170 stages=30caa7 objectives=3eeab1 rewards=6ddc71 offer_talk=dca7d0 complete_talk=ee4988 -->
 |  |  |
 |---|---|
-|  | ![Delivering Punishment](../assets/npcs/217.png) |
+|  | ![Delivering Punishment](wiki/assets/npcs/217.png) |
 | **Quest id** | `104` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/217-haley\|Haley]] |

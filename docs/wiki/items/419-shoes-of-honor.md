@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=48182a type=d36ca9 id=1f0037 sources=0eb174 name_key=9da94e kind=c5b76d kind_name=a64daf classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=dee974 reinforce=356a19 icon=dbd5a1 obtained_from=985213 -->
 |  |  |
 |---|---|
-|  | ![Shoes of Honor](../assets/items/419.png) |
+|  | ![Shoes of Honor](wiki/assets/items/419.png) |
 | **Item id** | `419` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |
@@ -101,6 +101,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 128, tier 1 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

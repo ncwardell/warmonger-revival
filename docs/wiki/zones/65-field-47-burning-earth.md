@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z65_00.dds"
 <!-- generated-keys: title=02ddfa type=c899cd id=2a4593 sources=4b436f name_kr=517f17 terrain=762d25 bounds=a587d1 size=114466 segments=5e2a45 fields=80af3c minimap=4dff08 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 47 (Burning Earth)](../assets/zones/65.png) |
+|  | ![minimap of Field 47 (Burning Earth)](wiki/assets/zones/65.png) |
 | **Zone id** | `65` |
 | **ZoneDB name** | 필드_47 (English gloss: Field 47 (Burning Earth)) |
 | **Terrain name** | `47` |

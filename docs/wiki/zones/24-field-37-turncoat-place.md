@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z24_00.dds"
 <!-- generated-keys: title=db4c34 type=c899cd id=4d134b sources=5fc68f name_kr=c77d7d terrain=277bd1 bounds=ab3457 size=114466 segments=c22969 fields=1aa8c1 minimap=45950a -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 37 (Turncoat Place)](../assets/zones/24.png) |
+|  | ![minimap of Field 37 (Turncoat Place)](wiki/assets/zones/24.png) |
 | **Zone id** | `24` |
 | **ZoneDB name** | 필드_37 (English gloss: Field 37 (Turncoat Place)) |
 | **Terrain name** | `37` |

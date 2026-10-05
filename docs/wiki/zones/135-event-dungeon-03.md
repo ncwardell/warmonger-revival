@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z135_00.dds"
 <!-- generated-keys: title=3a3a0e type=c899cd id=40f7c0 sources=72c961 name_kr=591e05 terrain=791ea8 bounds=08bfa6 size=6f2826 segments=e9ef36 fields=97d170 minimap=e51e6e -->
 |  |  |
 |---|---|
-|  | ![minimap of Event dungeon-03](../assets/zones/135.png) |
+|  | ![minimap of Event dungeon-03](wiki/assets/zones/135.png) |
 | **Zone id** | `135` |
 | **ZoneDB name** | 이벤트던전-03 (English gloss: Event dungeon-03) |
 | **Terrain name** | `FieldDungeon_02` |

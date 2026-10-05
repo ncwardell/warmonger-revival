@@ -42,7 +42,7 @@ obtained_from:
 <!-- generated-keys: title=a50bd0 type=d36ca9 id=62866a sources=07b2a6 name_key=cd99bc kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=10d4a4 reinforce=356a19 icon=3849bb obtained_from=e90e41 -->
 |  |  |
 |---|---|
-|  | ![Belt of Transcendency](../assets/items/426.png) |
+|  | ![Belt of Transcendency](wiki/assets/items/426.png) |
 | **Item id** | `426` |
 | **Kind** | Belt (55) |
 | **Classes** | all |
@@ -95,6 +95,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 126, tier 2 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

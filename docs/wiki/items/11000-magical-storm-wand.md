@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=108ba1 type=d36ca9 id=bc9771 sources=7f485b name_key=def08e kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=dbc0f0 stats=1fb006 options=b0ace5 skills=ddb6f2 reinforce=7b5200 icon=51cb55 obtained_from=501dc8 -->
 |  |  |
 |---|---|
-|  | ![Magical Storm Wand](../assets/items/11000.png) |
+|  | ![Magical Storm Wand](wiki/assets/items/11000.png) |
 | **Item id** | `11000` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

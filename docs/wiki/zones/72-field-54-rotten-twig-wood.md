@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z72_00.dds"
 <!-- generated-keys: title=ec9bb6 type=c899cd id=c09763 sources=ee1217 name_kr=75b3bb terrain=78603d bounds=923ac5 size=114466 segments=61df0f fields=ab43c2 minimap=7686a1 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 54 (Rotten Twig Wood)](../assets/zones/72.png) |
+|  | ![minimap of Field 54 (Rotten Twig Wood)](wiki/assets/zones/72.png) |
 | **Zone id** | `72` |
 | **ZoneDB name** | 필드_54 (English gloss: Field 54 (Rotten Twig Wood)) |
 | **Terrain name** | `54` |

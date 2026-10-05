@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=196426 type=6143a1 id=322d31 sources=01be54 name_key=47e277 duration=0aac5a is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=a887cd applied_by=29d9eb -->
 |  |  |
 |---|---|
-|  | ![Heaven and Earth : Stunned](../assets/buffs/10217.png) |
+|  | ![Heaven and Earth : Stunned](wiki/assets/buffs/10217.png) |
 | **Buff id** | `10217` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -19,20 +19,20 @@ npc: [237]
 <!-- generated-keys: title=c3b65f type=61613a id=f890d7 sources=aded7f result=e21dba materials=11da94 gold=c2d4c5 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/616.png) |
+|  | ![](wiki/assets/items/616.png) |
 | **Recipe id** | `805` (`Item_Make`) |
 | **Makes** | [[wiki/items/616-red-passion-piece-b\|Red Passion Piece (B)]] × 30 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 2 / `0x2` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/237-farrell\|Farrell]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/615.png) | [[wiki/items/615-red-passion-fragments-b\|Red Passion Fragments (B)]] | 200 |  |
+| ![](wiki/assets/items/615.png) | [[wiki/items/615-red-passion-fragments-b\|Red Passion Fragments (B)]] | 200 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

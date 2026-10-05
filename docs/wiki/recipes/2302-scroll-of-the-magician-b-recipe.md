@@ -21,22 +21,22 @@ npc: [337]
 <!-- generated-keys: title=38f545 type=61613a id=40bf25 sources=4bac0c result=008eca materials=03f740 gold=15aa0c success_rate=310b86 category=fe5dbb filter_mask=2604f8 level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/709.png) |
+|  | ![](wiki/assets/items/709.png) |
 | **Recipe id** | `2302` (`Item_Make`) |
 | **Makes** | [[wiki/items/709-scroll-of-the-magician-b\|Scroll of the Magician (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 24 |
 | **Category / filter** | 8 / `0x200002` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/805.png) | [[wiki/items/805-bloodstone-powder\|Bloodstone powder]] | 20 |  |
-| ![](../assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
-| ![](../assets/items/841.png) | [[wiki/items/841-clown-mushroom\|Clown mushroom]] | 1 |  |
+| ![](wiki/assets/items/805.png) | [[wiki/items/805-bloodstone-powder\|Bloodstone powder]] | 20 |  |
+| ![](wiki/assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
+| ![](wiki/assets/items/841.png) | [[wiki/items/841-clown-mushroom\|Clown mushroom]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/504-scroll-of-the-magician-b-recipe|recipe 504]]
 

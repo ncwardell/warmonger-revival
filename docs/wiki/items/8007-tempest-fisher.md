@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=c1779d type=d36ca9 id=e60228 sources=357d0e name_key=3c63b4 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a weapon_base=d54ad0 stats=97d170 options=5d7a1d skills=56f33f reinforce=472b07 icon=ebd420 obtained_from=36c228 -->
 |  |  |
 |---|---|
-|  | ![Tempest Fisher](../assets/items/8007.png) |
+|  | ![Tempest Fisher](wiki/assets/items/8007.png) |
 | **Item id** | `8007` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

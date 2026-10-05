@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=de88fe type=d36ca9 id=b54681 sources=45b8ba name_key=670414 kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 options=191e83 icon=503286 obtained_from=b2486c -->
 |  |  |
 |---|---|
-|  | ![Powerful Nexus Remote Bomb](../assets/items/1415.png) |
+|  | ![Powerful Nexus Remote Bomb](wiki/assets/items/1415.png) |
 | **Item id** | `1415` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

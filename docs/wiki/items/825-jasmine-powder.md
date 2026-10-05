@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=e57a9b type=d36ca9 id=5375ef sources=5c8e29 name_key=d9edb2 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a213ed cost_pair=32167a stats=97d170 icon=56111e obtained_from=90d372 -->
 |  |  |
 |---|---|
-|  | ![Jasmine powder](../assets/items/825.png) |
+|  | ![Jasmine powder](wiki/assets/items/825.png) |
 | **Item id** | `825` |
 | **Kind** | Material (12) |
 | **Classes** | all |

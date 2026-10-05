@@ -35,7 +35,7 @@ used_by:
 <!-- generated-keys: title=b5cb60 type=86a754 id=cf487f sources=6221f7 name_key=6a6924 desc_key=2655b3 kind=356a19 kind_name=9bc378 target=e84f24 range=fe5dbb area=6d01a6 cost=e4e7cf cooldown=e3989d delivery=6a22dc effect_kind=da4b92 effects=8eb2d8 damage_or_effect=5aaec0 tooltip_formula=e4dbdd requirements=adeac3 visual=4dc778 icon=c2f732 used_by=8dc4f7 -->
 |  |  |
 |---|---|
-|  | ![Flame pillar](../assets/skills/20106.png) |
+|  | ![Flame pillar](wiki/assets/skills/20106.png) |
 | **Skill id** | `20106` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

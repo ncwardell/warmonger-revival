@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=f839ce type=6143a1 id=b06344 sources=a95466 name_key=aaf4ca duration=2a0b1e is_buff=b6589f stack_type=356a19 group=ab68fc effects=289dcd icon=31f51a applied_by=7c04aa -->
 |  |  |
 |---|---|
-|  | ![Spell Feather : Reduced Movement Speed](../assets/buffs/30016.png) |
+|  | ![Spell Feather : Reduced Movement Speed](wiki/assets/buffs/30016.png) |
 | **Buff id** | `30016` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

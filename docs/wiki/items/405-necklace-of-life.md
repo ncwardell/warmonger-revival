@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=3f8b96 type=d36ca9 id=7ee51d sources=3cb7f8 name_key=65b8c0 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=9671d1 reinforce=356a19 icon=01e276 obtained_from=7b73c4 -->
 |  |  |
 |---|---|
-|  | ![Necklace of Life](../assets/items/405.png) |
+|  | ![Necklace of Life](wiki/assets/items/405.png) |
 | **Item id** | `405` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |
@@ -101,6 +101,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 128, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 
 ### Mentioned in
 

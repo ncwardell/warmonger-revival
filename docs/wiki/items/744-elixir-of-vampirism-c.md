@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=d4eb0b type=d36ca9 id=193b34 sources=bbfe8f name_key=7fdc15 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8726f1 cost_pair=93e5d8 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=924235 cooldown_s=da4b92 cooldown_group=bc33ea stats=97d170 options=eb5cfa icon=eac09a obtained_from=206fe6 -->
 |  |  |
 |---|---|
-|  | ![Elixir of Vampirism (C)](../assets/items/744.png) |
+|  | ![Elixir of Vampirism (C)](wiki/assets/items/744.png) |
 | **Item id** | `744` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

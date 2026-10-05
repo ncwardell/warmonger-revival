@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=7121e4 type=86a754 id=c92291 sources=7c7dee name_key=2bfa7c desc_key=6f38e2 kind=356a19 kind_name=9bc378 target=069ef3 range=77de68 cost=911ade cooldown=628d31 effect_kind=da4b92 effects=f223e4 damage_or_effect=22189a tooltip_formula=1c26c6 visual=e2154f icon=c391b2 used_by=68101b -->
 |  |  |
 |---|---|
-|  | ![Severe Blow](../assets/skills/10040.png) |
+|  | ![Severe Blow](wiki/assets/skills/10040.png) |
 | **Skill id** | `10040` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

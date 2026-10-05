@@ -21,22 +21,22 @@ npc: [214]
 <!-- generated-keys: title=f1572e type=61613a id=ce09b1 sources=95f12f result=67688e materials=80046c gold=73ee49 success_rate=310b86 category=356a19 filter_mask=5d5e34 level=22d200 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/719.png) |
+|  | ![](wiki/assets/items/719.png) |
 | **Recipe id** | `512` (`Item_Make`) |
 | **Makes** | [[wiki/items/719-tome-of-cooldown-s\|Tome of Cooldown (S)]] × 10 |
 | **Gold** | 1,200 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 30 |
 | **Category / filter** | 1 / `0x800004` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/821.png) | [[wiki/items/821-peppermint-powder\|Peppermint powder]] | 40 |  |
-| ![](../assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  |
-| ![](../assets/items/849.png) | [[wiki/items/849-burning-water\|Burning water]] | 3 |  |
+| ![](wiki/assets/items/821.png) | [[wiki/items/821-peppermint-powder\|Peppermint powder]] | 40 |  |
+| ![](wiki/assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  |
+| ![](wiki/assets/items/849.png) | [[wiki/items/849-burning-water\|Burning water]] | 3 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

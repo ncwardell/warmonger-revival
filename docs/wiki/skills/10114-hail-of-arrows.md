@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=7f0aab type=86a754 id=3e5c70 sources=e1913d name_key=fa3886 desc_key=f4968a kind=356a19 kind_name=9bc378 target=e84f24 range=b1d578 cost=e4e7cf cooldown=e3989d delivery=93a212 effect_kind=356a19 effects=e7f0ac damage_or_effect=5a8cd6 tooltip_formula=86cb38 visual=3028f5 icon=21b456 used_by=c1dc78 -->
 |  |  |
 |---|---|
-|  | ![Hail of Arrows](../assets/skills/10114.png) |
+|  | ![Hail of Arrows](wiki/assets/skills/10114.png) |
 | **Skill id** | `10114` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

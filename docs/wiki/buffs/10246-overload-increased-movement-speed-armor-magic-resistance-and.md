@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=9dd6fc type=6143a1 id=96de60 sources=454a93 name_key=3dc6e3 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=e134a0 icon=0392b4 applied_by=813e25 -->
 |  |  |
 |---|---|
-|  | ![Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.](../assets/buffs/10246.png) |
+|  | ![Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.](wiki/assets/buffs/10246.png) |
 | **Buff id** | `10246` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

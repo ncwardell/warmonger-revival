@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=a2a819 type=d36ca9 id=01eebb sources=162653 name_key=59253f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=9d09bf obtained_from=cef853 -->
 |  |  |
 |---|---|
-|  | ![Orange Passion Fragments (C)](../assets/items/623.png) |
+|  | ![Orange Passion Fragments (C)](wiki/assets/items/623.png) |
 | **Item id** | `623` |
 | **Kind** | Material (12) |
 | **Classes** | all |

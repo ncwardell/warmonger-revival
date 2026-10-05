@@ -27,7 +27,7 @@ offer_talk: 815
 <!-- generated-keys: title=a4656b type=eb5b2b id=5b384c sources=f54b75 name_key=0c314b kind=b6589f kind_name=b3f808 giver=922d85 turn_in=847ad4 offer_maps=18e60d bit=5b384c requires_bit=cb7a1d automatic=5ffe53 prev=1aa8c1 next=44b878 stages=30caa7 objectives=706b09 rewards=f79b21 offer_talk=d528ed -->
 |  |  |
 |---|---|
-|  | ![Innocence's recovery operation](../assets/npcs/327.png) |
+|  | ![Innocence's recovery operation](wiki/assets/npcs/327.png) |
 | **Quest id** | `38` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/327-aenes\|Aenes]] |

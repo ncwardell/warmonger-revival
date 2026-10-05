@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=e1c17c type=d36ca9 id=28dbd2 sources=62b317 name_key=5e8478 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=26f84f cost_pair=f1ecef period=365a69 stats=e8b379 options=a1ba0d icon=e75611 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Haple Set](../assets/items/2080.png) |
+|  | ![Haple Set](wiki/assets/items/2080.png) |
 | **Item id** | `2080` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

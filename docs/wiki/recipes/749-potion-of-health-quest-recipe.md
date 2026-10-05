@@ -21,21 +21,21 @@ npc: [214]
 <!-- generated-keys: title=e1dbf9 type=61613a id=01055f sources=d21e98 result=89c301 materials=314ae1 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6eb8df level=356a19 raw=bd5938 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2598.png) |
+|  | ![](wiki/assets/items/2598.png) |
 | **Recipe id** | `749` (`Item_Make`) |
 | **Makes** | [[wiki/items/2598-potion-of-health-quest\|Potion of Health (Quest)]] × 100 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 1 / `0x400001` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2593.png) | [[wiki/items/2593-empty-flask-a\|Empty Flask (A)]] | 100 |  |
-| ![](../assets/items/2594.png) | [[wiki/items/2594-crystal-red\|Crystal : Red]] | 2 |  |
+| ![](wiki/assets/items/2593.png) | [[wiki/items/2593-empty-flask-a\|Empty Flask (A)]] | 100 |  |
+| ![](wiki/assets/items/2594.png) | [[wiki/items/2594-crystal-red\|Crystal : Red]] | 2 |  |
 
 Unknown columns: `c27` = 47 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

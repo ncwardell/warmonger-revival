@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=11841f type=86a754 id=6fd491 sources=4fb202 name_key=cb28e2 desc_key=0afdc6 kind=356a19 kind_name=9bc378 target=b42027 range=fe5dbb area=c8f1f4 cost=88d6b6 cooldown=7745e9 movement=5f1488 effect_kind=da4b92 effects=4b2c51 damage_or_effect=71a538 tooltip_formula=7fd566 visual=1c76c4 icon=4cd48d used_by=a0178b -->
 |  |  |
 |---|---|
-|  | ![Aim of water](../assets/skills/20152.png) |
+|  | ![Aim of water](wiki/assets/skills/20152.png) |
 | **Skill id** | `20152` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 3 |

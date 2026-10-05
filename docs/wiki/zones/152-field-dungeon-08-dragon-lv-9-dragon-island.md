@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z152_00.dds"
 <!-- generated-keys: title=5f9323 type=c899cd id=ac2646 sources=73325d name_kr=e33195 terrain=a7c471 bounds=35dc4b size=6f2826 segments=ad649d fields=0688b1 minimap=c42c29 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field dungeon 08(dragon) ((Lv 9) Dragon Island)](../assets/zones/152.png) |
+|  | ![minimap of Field dungeon 08(dragon) ((Lv 9) Dragon Island)](wiki/assets/zones/152.png) |
 | **Zone id** | `152` |
 | **ZoneDB name** | 필드던전_08(드래곤) (English gloss: Field dungeon 08(dragon) ([Lv 9] Dragon Island)) |
 | **Terrain name** | `FieldDungeon_05` |

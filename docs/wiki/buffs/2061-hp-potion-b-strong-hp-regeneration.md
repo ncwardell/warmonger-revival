@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=3b2970 type=6143a1 id=c2a093 sources=8fae64 name_key=e4825f duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=92d605 icon=052664 applied_by=e212dc -->
 |  |  |
 |---|---|
-|  | ![HP Potion (B): Strong HP Regeneration](../assets/buffs/2061.png) |
+|  | ![HP Potion (B): Strong HP Regeneration](wiki/assets/buffs/2061.png) |
 | **Buff id** | `2061` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

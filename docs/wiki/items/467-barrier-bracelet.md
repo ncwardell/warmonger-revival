@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=add77b type=d36ca9 id=ec2b67 sources=db86c0 name_key=3a13e9 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=894a6b reinforce=da4b92 icon=ce216b obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Barrier Bracelet](../assets/items/467.png) |
+|  | ![Barrier Bracelet](wiki/assets/items/467.png) |
 | **Item id** | `467` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

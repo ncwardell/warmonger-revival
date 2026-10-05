@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=fb8934 type=d36ca9 id=b64358 sources=fca3ef name_key=6c754c kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=fee4a2 set=c1dfd9 reinforce=92cfce icon=1566be obtained_from=85c054 -->
 |  |  |
 |---|---|
-|  | ![Garon's Shoes](../assets/items/3054.png) |
+|  | ![Garon's Shoes](wiki/assets/items/3054.png) |
 | **Item id** | `3054` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

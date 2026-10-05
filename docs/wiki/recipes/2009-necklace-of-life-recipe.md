@@ -21,7 +21,7 @@ npc: [335]
 <!-- generated-keys: title=17363f type=61613a id=7263d6 sources=082140 result=3db1ba materials=f2c969 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=208649 superior=179c0b level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/405.png) |
+|  | ![](wiki/assets/items/405.png) |
 | **Recipe id** | `2009` (`Item_Make`) |
 | **Makes** | [[wiki/items/405-necklace-of-life\|Necklace of Life]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [335]
 | **Superior result** | 5 % → [[wiki/items/449-necklace-of-life\|Necklace of Life]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 6 / `0x1000010` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/335-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

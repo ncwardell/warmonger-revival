@@ -26,7 +26,7 @@ used_by: []
 <!-- generated-keys: title=a9c523 type=86a754 id=87ee54 sources=4d83db name_key=504e38 desc_key=e7c717 kind=356a19 kind_name=9bc378 target=e77383 range=1b6453 area=950fc9 cost=2be88c cooldown=2be88c effect_kind=632667 effects=9223b3 damage_or_effect=9e6559 visual=3341b1 icon=14510d used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Recovery shot](../assets/skills/4511.png) |
+|  | ![Recovery shot](wiki/assets/skills/4511.png) |
 | **Skill id** | `4511` |
 | **Kind** | active (1) |
 | **Target** | self; self, ally; units: monster, player; up to 7 |

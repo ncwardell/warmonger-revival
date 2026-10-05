@@ -26,7 +26,7 @@ used_by: []
 <!-- generated-keys: title=1ba7e6 type=86a754 id=b2e9e9 sources=656696 name_key=a977e0 desc_key=ba51ca kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=68d2b6 cooldown=a7242f effect_kind=da4b92 effects=46ffaf damage_or_effect=e21297 visual=25293f icon=6f1b64 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dark Knight Skull Transformation](../assets/skills/20049.png) |
+|  | ![Dark Knight Skull Transformation](wiki/assets/skills/20049.png) |
 | **Skill id** | `20049` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

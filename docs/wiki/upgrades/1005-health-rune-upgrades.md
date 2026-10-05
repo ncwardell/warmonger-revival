@@ -27,7 +27,7 @@ gold_rule: {"per_level_after_upgrade": 1000}
 <!-- generated-keys: title=b3f0df type=4389c5 id=0477d7 sources=e390fa group=ac3478 rune=b1e381 levels=60f824 kind=6a6d0e -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7042.png) |
+|  | ![](wiki/assets/items/7042.png) |
 | **Rune line** | `JewelSocketMake` group 5 |
 | **Starts at** | [[wiki/items/7042-health-rune\|Health Rune]] |
 | **Success rates** | unknown (server side; patch notes give only trends) |
@@ -38,16 +38,16 @@ Each row upgrades the rune to the next item (C->S `0x4a8`). The +9 row has no ne
 
 | level |  | rune | becomes | materials | row |
 |---|---|---|---|---|---|
-| +0 | ![](../assets/items/7042.png) | [[wiki/items/7042-health-rune\|Health Rune]] | [[wiki/items/7043-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 41 |
-| +1 | ![](../assets/items/7043.png) | [[wiki/items/7043-health-rune\|Health Rune]] | [[wiki/items/7044-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 42 |
-| +2 | ![](../assets/items/7044.png) | [[wiki/items/7044-health-rune\|Health Rune]] | [[wiki/items/7045-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 43 |
-| +3 | ![](../assets/items/7045.png) | [[wiki/items/7045-health-rune\|Health Rune]] | [[wiki/items/7046-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 44 |
-| +4 | ![](../assets/items/7046.png) | [[wiki/items/7046-health-rune\|Health Rune]] | [[wiki/items/7047-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 45 |
-| +5 | ![](../assets/items/7047.png) | [[wiki/items/7047-health-rune\|Health Rune]] | [[wiki/items/7048-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 46 |
-| +6 | ![](../assets/items/7048.png) | [[wiki/items/7048-health-rune\|Health Rune]] | [[wiki/items/7049-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 47 |
-| +7 | ![](../assets/items/7049.png) | [[wiki/items/7049-health-rune\|Health Rune]] | [[wiki/items/7050-health-rune\|Health Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 48 |
-| +8 | ![](../assets/items/7050.png) | [[wiki/items/7050-health-rune\|Health Rune]] | [[wiki/items/7051-health-rune\|Health Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 49 |
-| +9 | ![](../assets/items/7051.png) | [[wiki/items/7051-health-rune\|Health Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 50 |
+| +0 | ![](wiki/assets/items/7042.png) | [[wiki/items/7042-health-rune\|Health Rune]] | [[wiki/items/7043-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 10, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 10 | 41 |
+| +1 | ![](wiki/assets/items/7043.png) | [[wiki/items/7043-health-rune\|Health Rune]] | [[wiki/items/7044-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 15, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 15 | 42 |
+| +2 | ![](wiki/assets/items/7044.png) | [[wiki/items/7044-health-rune\|Health Rune]] | [[wiki/items/7045-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 20, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 20 | 43 |
+| +3 | ![](wiki/assets/items/7045.png) | [[wiki/items/7045-health-rune\|Health Rune]] | [[wiki/items/7046-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 30, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 30 | 44 |
+| +4 | ![](wiki/assets/items/7046.png) | [[wiki/items/7046-health-rune\|Health Rune]] | [[wiki/items/7047-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 60, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 40, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 45 |
+| +5 | ![](wiki/assets/items/7047.png) | [[wiki/items/7047-health-rune\|Health Rune]] | [[wiki/items/7048-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 80, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 50, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 46 |
+| +6 | ![](wiki/assets/items/7048.png) | [[wiki/items/7048-health-rune\|Health Rune]] | [[wiki/items/7049-health-rune\|Health Rune]] | [[wiki/items/700-crystal-blue\|Crystal : Blue]] × 100, [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 60, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 47 |
+| +7 | ![](wiki/assets/items/7049.png) | [[wiki/items/7049-health-rune\|Health Rune]] | [[wiki/items/7050-health-rune\|Health Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 10, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 10, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 48 |
+| +8 | ![](wiki/assets/items/7050.png) | [[wiki/items/7050-health-rune\|Health Rune]] | [[wiki/items/7051-health-rune\|Health Rune]] | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 20, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 15, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 49 |
+| +9 | ![](wiki/assets/items/7051.png) | [[wiki/items/7051-health-rune\|Health Rune]] | – (max) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] × 30, [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] × 20, [[wiki/items/854-shining-passion\|Shining Passion]] × 1 | 50 |
 
 ### Rules from the patch notes
 

@@ -64,36 +64,36 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 1 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 3 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 4 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 5 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 6 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 7 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 8 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 9 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 10 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 11 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 12 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 13 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 14 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 15 | ![](../assets/items/2755.png) | [[wiki/items/2755-the-wizard-spector-s-sealed-weapon\|The Wizard Spector's Sealed Weapon]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 16 | ![](../assets/items/2755.png) | [[wiki/items/2755-the-wizard-spector-s-sealed-weapon\|The Wizard Spector's Sealed Weapon]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 17 | ![](../assets/items/2755.png) | [[wiki/items/2755-the-wizard-spector-s-sealed-weapon\|The Wizard Spector's Sealed Weapon]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 18 | ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 19 | ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 20 | ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 21 | ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 22 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
-| 23 | ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 24 | ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 25 | ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 26 | ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 27 | ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 28 | ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 29 | ![](../assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 0 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 1 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 3 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 4 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 5 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 6 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 7 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 8 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 9 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 10 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 11 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 12 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 13 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 14 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 15 | ![](wiki/assets/items/2755.png) | [[wiki/items/2755-the-wizard-spector-s-sealed-weapon\|The Wizard Spector's Sealed Weapon]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 16 | ![](wiki/assets/items/2755.png) | [[wiki/items/2755-the-wizard-spector-s-sealed-weapon\|The Wizard Spector's Sealed Weapon]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 17 | ![](wiki/assets/items/2755.png) | [[wiki/items/2755-the-wizard-spector-s-sealed-weapon\|The Wizard Spector's Sealed Weapon]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 18 | ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 19 | ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 20 | ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 21 | ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 22 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  | Gold | 20 | 158 | 126 |
+| 23 | ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 24 | ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 25 | ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 26 | ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 27 | ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 28 | ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 29 | ![](wiki/assets/items/2705.png) | [[wiki/items/2705-bone-of-spector\|Bone of Spector]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
 
 26 entries repeat an item already listed (the client shows every entry).
 

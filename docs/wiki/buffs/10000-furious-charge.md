@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=9f5ab2 type=6143a1 id=8a12a3 sources=5da829 name_key=084e07 duration=76674f is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=b75792 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Furious Charge](../assets/buffs/10000.png) |
+|  | ![Furious Charge](wiki/assets/buffs/10000.png) |
 | **Buff id** | `10000` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

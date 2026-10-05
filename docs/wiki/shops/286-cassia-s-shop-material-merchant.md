@@ -33,7 +33,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=771f9c type=ffcf9c id=7edab1 sources=31058d npc=d093fd stock=c58af5 prices=3ccdac price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Cassia's shop (Material Merchant)](../assets/npcs/212.png) |
+|  | ![Cassia's shop (Material Merchant)](wiki/assets/npcs/212.png) |
 | **Shop id** | `286` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/212-cassia\|Cassia]] (Material Merchant) |
 | **Stock** | 9 entries, 9 distinct items |
@@ -46,15 +46,15 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/830.png) | [[wiki/items/830-empty-scroll-c\|Empty Scroll (C)]] | 1 |  | Gold | 50 | 396 | 315 |
-| 1 | ![](../assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  | Gold | 60 | 475 | 378 |
-| 2 | ![](../assets/items/832.png) | [[wiki/items/832-empty-scroll-a\|Empty Scroll (A)]] | 1 |  | Gold | 80 | 633 | 504 |
-| 3 | ![](../assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  | Gold | 100 | 792 | 630 |
-| 4 | ![](../assets/items/834.png) | [[wiki/items/834-empty-flask-c\|Empty Flask (C)]] | 1 |  | Gold | 80 | 633 | 504 |
-| 5 | ![](../assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  | Gold | 100 | 792 | 630 |
-| 6 | ![](../assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 7 | ![](../assets/items/837.png) | [[wiki/items/837-empty-flask-s\|Empty Flask (S)]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 8 | ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 1 |  | Gold | 100 | 792 | 630 |
+| 0 | ![](wiki/assets/items/830.png) | [[wiki/items/830-empty-scroll-c\|Empty Scroll (C)]] | 1 |  | Gold | 50 | 396 | 315 |
+| 1 | ![](wiki/assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  | Gold | 60 | 475 | 378 |
+| 2 | ![](wiki/assets/items/832.png) | [[wiki/items/832-empty-scroll-a\|Empty Scroll (A)]] | 1 |  | Gold | 80 | 633 | 504 |
+| 3 | ![](wiki/assets/items/833.png) | [[wiki/items/833-empty-scroll-s\|Empty Scroll (S)]] | 1 |  | Gold | 100 | 792 | 630 |
+| 4 | ![](wiki/assets/items/834.png) | [[wiki/items/834-empty-flask-c\|Empty Flask (C)]] | 1 |  | Gold | 80 | 633 | 504 |
+| 5 | ![](wiki/assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  | Gold | 100 | 792 | 630 |
+| 6 | ![](wiki/assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 7 | ![](wiki/assets/items/837.png) | [[wiki/items/837-empty-flask-s\|Empty Flask (S)]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 8 | ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 1 |  | Gold | 100 | 792 | 630 |
 
 ### How prices are worked out
 

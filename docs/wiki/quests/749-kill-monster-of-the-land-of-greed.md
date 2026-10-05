@@ -32,13 +32,14 @@ rewards:
 complete_talk: 889
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=98a457 type=eb5b2b id=01055f sources=a21e73 name_key=7f6128 kind=77de68 kind_name=01e781 level=fe8783 giver=2be88c turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=a89597 stages=30caa7 objectives=174367 rewards=e04a61 complete_talk=4d7adc -->
+<!-- generated-keys: title=98a457 type=eb5b2b id=01055f sources=a21e73 name_key=7f6128 kind=77de68 kind_name=01e781 level=fe8783 turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=a89597 stages=30caa7 objectives=174367 rewards=e04a61 complete_talk=4d7adc -->
 |  |  |
 |---|---|
+|  | ![Kill monster of The land of Greed](wiki/assets/npcs/207.png) |
 | **Quest id** | `749` |
 | **Kind** | Free (kind 3) |
 | **Level** | 15–20 |
-| **Giver** | **unknown** |
+| **Giver** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turn in** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turned in on** | [[wiki/fields/120-fortress\|Fortress]] (120) |
 | **Completion bit** | none (no bit is set: can be taken again) |

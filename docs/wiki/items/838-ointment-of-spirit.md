@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=e83c5f type=d36ca9 id=2dc292 sources=a6958e name_key=7c8a88 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=eef645 obtained_from=df31f0 -->
 |  |  |
 |---|---|
-|  | ![Ointment of Spirit](../assets/items/838.png) |
+|  | ![Ointment of Spirit](wiki/assets/items/838.png) |
 | **Item id** | `838` |
 | **Kind** | Material (12) |
 | **Classes** | all |

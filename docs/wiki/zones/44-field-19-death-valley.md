@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z44_00.dds"
 <!-- generated-keys: title=3b4ea6 type=c899cd id=98fbc4 sources=16a603 name_kr=616d54 terrain=faafd0 bounds=ee897f size=114466 segments=4e87a8 fields=49534d minimap=336630 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 19 (Death Valley)](../assets/zones/44.png) |
+|  | ![minimap of Field 19 (Death Valley)](wiki/assets/zones/44.png) |
 | **Zone id** | `44` |
 | **ZoneDB name** | 필드_19 (English gloss: Field 19 (Death Valley)) |
 | **Terrain name** | `19` |

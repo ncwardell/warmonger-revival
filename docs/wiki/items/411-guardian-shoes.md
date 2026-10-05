@@ -49,7 +49,7 @@ obtained_from:
 <!-- generated-keys: title=1c643f type=d36ca9 id=83fdc3 sources=bf8a8a name_key=71bbe7 kind=c5b76d kind_name=a64daf classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=748fbd reinforce=356a19 icon=e15aaa obtained_from=e1ac08 -->
 |  |  |
 |---|---|
-|  | ![Guardian Shoes](../assets/items/411.png) |
+|  | ![Guardian Shoes](wiki/assets/items/411.png) |
 | **Item id** | `411` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |
@@ -107,6 +107,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 127, tier 1 (hand-entered)
+- how dungeon_drop, field 125, tier 2 (hand-entered)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 
 ### Mentioned in
 

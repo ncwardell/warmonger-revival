@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z42_00.dds"
 <!-- generated-keys: title=755910 type=c899cd id=92cfce sources=0139b8 name_kr=81bc7f terrain=d7545a bounds=8686a4 size=114466 segments=55a079 fields=79d296 minimap=03df0b -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 17 (Eternal River - Middle Region)](../assets/zones/42.png) |
+|  | ![minimap of Field 17 (Eternal River - Middle Region)](wiki/assets/zones/42.png) |
 | **Zone id** | `42` |
 | **ZoneDB name** | 필드_17 (English gloss: Field 17 (Eternal River - Middle Region)) |
 | **Terrain name** | `17` |

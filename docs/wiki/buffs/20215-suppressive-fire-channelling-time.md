@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=71d1fb type=6143a1 id=f5f2eb sources=a4b0a0 name_key=3488d1 duration=76674f is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=9d4f51 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Suppressive Fire : Channelling time](../assets/buffs/20215.png) |
+|  | ![Suppressive Fire : Channelling time](wiki/assets/buffs/20215.png) |
 | **Buff id** | `20215` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

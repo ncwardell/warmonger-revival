@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=3d4b74 type=d36ca9 id=3b69df sources=796e03 name_key=9aa4aa kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=ff6083 reinforce=da4b92 icon=02a24b obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Spirit Earring](../assets/items/485.png) |
+|  | ![Spirit Earring](wiki/assets/items/485.png) |
 | **Item id** | `485` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |
@@ -76,7 +76,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 17, chance 5 (hand-entered)
+- how craft_superior, recipe 2017, chance 5 (hand-entered)
 
 ### Mentioned in
 

@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=c55ca4 type=86a754 id=2c384a sources=7d6119 name_key=e91e7f desc_key=171e7c kind=356a19 kind_name=9bc378 target=31fde0 range=356a19 cost=fe884b cooldown=5e50e2 effect_kind=da4b92 effects=14f5d1 damage_or_effect=481276 tooltip_formula=090a3f visual=5f1cd7 icon=f51da1 used_by=30eb08 -->
 |  |  |
 |---|---|
-|  | ![Aura of Demise](../assets/skills/10038.png) |
+|  | ![Aura of Demise](wiki/assets/skills/10038.png) |
 | **Skill id** | `10038` |
 | **Kind** | active (1) |
 | **Target** | self; self, ally; units: monster, player; up to 12 |

@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=862151 type=d36ca9 id=b19dc1 sources=15df19 name_key=56d34a kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8726f1 cost_pair=93e5d8 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=c18430 cooldown_s=da4b92 cooldown_group=887309 stats=97d170 options=ec8d7d icon=beca6f obtained_from=206fe6 -->
 |  |  |
 |---|---|
-|  | ![Tome of Critical (C)](../assets/items/724.png) |
+|  | ![Tome of Critical (C)](wiki/assets/items/724.png) |
 | **Item id** | `724` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

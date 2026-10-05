@@ -43,7 +43,7 @@ obtained_from:
 <!-- generated-keys: title=4faa7d type=d36ca9 id=2aed8c sources=1d629c name_key=4156d3 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=c18af3 reinforce=356a19 icon=4002e0 obtained_from=6611f9 -->
 |  |  |
 |---|---|
-|  | ![Ring of Transcendency](../assets/items/428.png) |
+|  | ![Ring of Transcendency](wiki/assets/items/428.png) |
 | **Item id** | `428` |
 | **Kind** | Ring (57) |
 | **Classes** | all |
@@ -96,6 +96,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 122, tier 1 (hand-entered)
+- how dungeon_drop, field 126, tier 2 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

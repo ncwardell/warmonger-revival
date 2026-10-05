@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=f8a5f3 type=d36ca9 id=842066 sources=23b46c name_key=8c7768 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=6ac83f obtained_from=4af2db -->
 |  |  |
 |---|---|
-|  | ![Refined oil](../assets/items/850.png) |
+|  | ![Refined oil](wiki/assets/items/850.png) |
 | **Item id** | `850` |
 | **Kind** | Material (12) |
 | **Classes** | all |

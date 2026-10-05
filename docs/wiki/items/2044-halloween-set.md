@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=2cd269 type=d36ca9 id=b69b41 sources=32f4d9 name_key=af1505 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 stats=97d170 options=0a9b51 icon=0eca67 obtained_from=24a39a -->
 |  |  |
 |---|---|
-|  | ![Halloween Set](../assets/items/2044.png) |
+|  | ![Halloween Set](wiki/assets/items/2044.png) |
 | **Item id** | `2044` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |
@@ -47,6 +47,7 @@ obtained_from:
 ### Where to get it
 
 - Premium shop entry 52: 5,000 (currency code 2, discount 0%)
+- how costume_shop_crush, price 10000, currency jewels (hand-entered)
 <!-- generated:end -->
 
 ## Notes

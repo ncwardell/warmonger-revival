@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=7c038e type=d36ca9 id=fff39a sources=21806e name_key=2958f3 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=60ca2b set=c1dfd9 reinforce=92cfce icon=8fb81c obtained_from=5533cc -->
 |  |  |
 |---|---|
-|  | ![Garon's Bracelet](../assets/items/3057.png) |
+|  | ![Garon's Bracelet](wiki/assets/items/3057.png) |
 | **Item id** | `3057` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

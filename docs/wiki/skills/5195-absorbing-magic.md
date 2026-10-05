@@ -24,7 +24,7 @@ used_by: []
 <!-- generated-keys: title=2db2d3 type=86a754 id=89d1c9 sources=624b72 name_key=b2f640 desc_key=95fb81 kind=da4b92 kind_name=3844d5 target=6d698f range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=e6d3d8 damage_or_effect=850712 icon=26a405 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Absorbing Magic](../assets/skills/5195.png) |
+|  | ![Absorbing Magic](wiki/assets/skills/5195.png) |
 | **Skill id** | `5195` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 1 |

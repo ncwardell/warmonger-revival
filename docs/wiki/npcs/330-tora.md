@@ -26,7 +26,7 @@ z: null
 <!-- generated-keys: title=1d41a3 type=3664ce id=a609bb sources=04e5ad name_key=548dcb title_key=0d9177 npc_title=b0845f category=e1822d class_mask=da4b92 model=4dc778 scale=aa8f28 functions=7dac55 role=b0845f shop=d8502b talk_key=2634be portrait=399d90 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Tora](../assets/npcs/330.png) |
+|  | ![Tora](wiki/assets/npcs/330.png) |
 | **Unit id** | `330` |
 | **Title** | Merchant |
 | **Category** | NPC (category 50) |

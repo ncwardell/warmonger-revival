@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=7621d0 type=d36ca9 id=988020 sources=64e58e name_key=4cd6a6 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=fe2ef4 stats=db11c4 options=b34f01 skills=d8f97c reinforce=cb4e52 icon=ed2972 obtained_from=3cf15e -->
 |  |  |
 |---|---|
-|  | ![Skeleton King's Magic Hammer](../assets/items/20004.png) |
+|  | ![Skeleton King's Magic Hammer](wiki/assets/items/20004.png) |
 | **Item id** | `20004` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

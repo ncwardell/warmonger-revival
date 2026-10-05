@@ -19,20 +19,20 @@ npc: [237]
 <!-- generated-keys: title=2406a0 type=61613a id=fbbf19 sources=7dada5 result=286e89 materials=a30c9c gold=a6a084 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/601.png) |
+|  | ![](wiki/assets/items/601.png) |
 | **Recipe id** | `821` (`Item_Make`) |
 | **Makes** | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] × 100 |
 | **Gold** | 2,500 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 2 / `0x2` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/237-farrell\|Farrell]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 60 |  |
+| ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 60 |  |
 
 Other recipes for the same item: [[wiki/recipes/2109-blue-passion-fragments-d-recipe|recipe 2109]]
 

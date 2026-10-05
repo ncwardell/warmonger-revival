@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=57e8af type=6143a1 id=a441a4 sources=1ba6f3 name_key=3a5bc0 duration=ecf4ec is_buff=b6589f stack_type=356a19 group=b6589f effects=304c6d icon=23f487 applied_by=dcf8e8 -->
 |  |  |
 |---|---|
-|  | ![Flaming fire : 120 Seconds](../assets/buffs/19962.png) |
+|  | ![Flaming fire : 120 Seconds](wiki/assets/buffs/19962.png) |
 | **Buff id** | `19962` |
 | **Duration** | 2 min (600 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

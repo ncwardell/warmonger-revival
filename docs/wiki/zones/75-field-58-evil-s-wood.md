@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z75_00.dds"
 <!-- generated-keys: title=46cfa2 type=c899cd id=450dde sources=4d63fd name_kr=96bfb5 terrain=7e0efc bounds=74546b size=114466 segments=eac6aa fields=5719a7 minimap=fb6b6f -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 58 (Evil's Wood)](../assets/zones/75.png) |
+|  | ![minimap of Field 58 (Evil's Wood)](wiki/assets/zones/75.png) |
 | **Zone id** | `75` |
 | **ZoneDB name** | 필드_58 (English gloss: Field 58 (Evil's Wood)) |
 | **Terrain name** | `58` |

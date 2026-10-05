@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=bf2f1c type=6143a1 id=6aeba0 sources=a5da80 name_key=6b7e22 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=b61237 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Awakening : Additional damage](../assets/buffs/10188.png) |
+|  | ![Awakening : Additional damage](wiki/assets/buffs/10188.png) |
 | **Buff id** | `10188` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

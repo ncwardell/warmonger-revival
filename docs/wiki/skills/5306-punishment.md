@@ -35,7 +35,7 @@ used_by:
 <!-- generated-keys: title=5ad6d5 type=86a754 id=8de8d2 sources=28266d name_key=4277e4 desc_key=f5eb88 kind=356a19 kind_name=9bc378 target=7056fd range=902ba3 area=e8b0ea cost=ff5a60 cooldown=ad2ac8 delivery=9e15a4 effect_kind=da4b92 effects=9b462c damage_or_effect=48bd84 tooltip_formula=bb1008 requirements=7b99b7 visual=86cf29 icon=62f758 used_by=e4be73 -->
 |  |  |
 |---|---|
-|  | ![Punishment](../assets/skills/5306.png) |
+|  | ![Punishment](wiki/assets/skills/5306.png) |
 | **Skill id** | `5306` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

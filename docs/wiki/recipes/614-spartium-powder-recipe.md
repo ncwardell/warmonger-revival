@@ -19,20 +19,20 @@ npc: [214]
 <!-- generated-keys: title=0a864f type=61613a id=1bdf1a sources=d8d042 result=933b19 materials=429446 gold=e1822d success_rate=310b86 category=356a19 filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/829.png) |
+|  | ![](wiki/assets/items/829.png) |
 | **Recipe id** | `614` (`Item_Make`) |
 | **Makes** | [[wiki/items/829-spartium-powder\|Spartium powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 1 / `0x2000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/828.png) | [[wiki/items/828-spartium\|Spartium]] | 1 |  |
+| ![](wiki/assets/items/828.png) | [[wiki/items/828-spartium\|Spartium]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2414-spartium-powder-recipe|recipe 2414]]
 

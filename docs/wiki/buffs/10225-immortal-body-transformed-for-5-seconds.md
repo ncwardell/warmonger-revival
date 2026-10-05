@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=55ccea type=6143a1 id=597e7c sources=cd0e44 name_key=160228 duration=870e64 is_buff=b6589f stack_type=356a19 group=fe5dbb effects=afac3f icon=a71171 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Immortal Body : Transformed for 5 seconds](../assets/buffs/10225.png) |
+|  | ![Immortal Body : Transformed for 5 seconds](wiki/assets/buffs/10225.png) |
 | **Buff id** | `10225` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

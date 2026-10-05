@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=a0d7fc type=d36ca9 id=7196c8 sources=fe93b1 name_key=78838c kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=ca1243 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Hawker letter](../assets/items/2563.png) |
+|  | ![Hawker letter](wiki/assets/items/2563.png) |
 | **Item id** | `2563` |
 | **Kind** | Quest (17) |
 | **Classes** | all |
@@ -36,7 +36,7 @@ obtained_from:
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how quest_given, quest 102, npc 238 (hand-entered)
 
 ### Mentioned in
 

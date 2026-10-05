@@ -21,22 +21,22 @@ npc: [214]
 <!-- generated-keys: title=cb53c6 type=61613a id=acf10f sources=fb794a result=d5f5d5 materials=40136b gold=28cc22 success_rate=310b86 category=356a19 filter_mask=4ea7d3 level=f6e112 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/758.png) |
+|  | ![](wiki/assets/items/758.png) |
 | **Recipe id** | `541` (`Item_Make`) |
 | **Makes** | [[wiki/items/758-flask-of-tenacity-a\|Flask of Tenacity (A)]] × 10 |
 | **Gold** | 900 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 25 |
 | **Category / filter** | 1 / `0x400010` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/829.png) | [[wiki/items/829-spartium-powder\|Spartium powder]] | 30 |  |
-| ![](../assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
-| ![](../assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 2 |  |
+| ![](wiki/assets/items/829.png) | [[wiki/items/829-spartium-powder\|Spartium powder]] | 30 |  |
+| ![](wiki/assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 1 |  |
+| ![](wiki/assets/items/850.png) | [[wiki/items/850-refined-oil\|Refined oil]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

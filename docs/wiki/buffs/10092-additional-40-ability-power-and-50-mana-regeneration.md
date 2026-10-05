@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=a1a7e9 type=6143a1 id=449d7b sources=a7807e name_key=b3553b duration=df3554 is_buff=b6589f stack_type=356a19 group=b6589f effects=d9cfac icon=5db82a applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional 40 Ability Power and 50% Mana Regeneration](../assets/buffs/10092.png) |
+|  | ![Additional 40 Ability Power and 50% Mana Regeneration](wiki/assets/buffs/10092.png) |
 | **Buff id** | `10092` |
 | **Duration** | 1 min 30 s (450 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

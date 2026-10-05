@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=259d86 type=d36ca9 id=5e5ad0 sources=10b330 name_key=a2a240 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=ab108e reinforce=da4b92 icon=9dfbbc obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Courage](../assets/items/471.png) |
+|  | ![Bracelet of Courage](wiki/assets/items/471.png) |
 | **Item id** | `471` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

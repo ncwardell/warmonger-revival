@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=cfa33d type=86a754 id=b98a97 sources=151635 name_key=a34286 desc_key=7205b4 kind=356a19 kind_name=9bc378 target=5aa7bd range=902ba3 cost=8b4fa7 cooldown=0156ad movement=5f1488 effect_kind=356a19 effects=59d53e damage_or_effect=d87dca tooltip_formula=4d8780 visual=58f074 icon=bfcc89 used_by=bc1e8c -->
 |  |  |
 |---|---|
-|  | ![Merciless Chaser](../assets/skills/10032.png) |
+|  | ![Merciless Chaser](wiki/assets/skills/10032.png) |
 | **Skill id** | `10032` |
 | **Kind** | active (1) |
 | **Target** | ground; -; units: monster, player; up to 1 |

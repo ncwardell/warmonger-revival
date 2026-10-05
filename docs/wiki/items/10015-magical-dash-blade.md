@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=8f814a type=d36ca9 id=848f94 sources=8fba17 name_key=0f9cf4 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=1574bd stats=0447a2 options=270e23 skills=e0b65e reinforce=17ba07 icon=3eda32 obtained_from=b411e3 -->
 |  |  |
 |---|---|
-|  | ![Magical Dash Blade](../assets/items/10015.png) |
+|  | ![Magical Dash Blade](wiki/assets/items/10015.png) |
 | **Item id** | `10015` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

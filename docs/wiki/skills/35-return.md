@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=f9617f type=86a754 id=972a67 sources=780855 name_key=dd5ba4 desc_key=7b07f7 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=2be88c cooldown=2be88c cast_ms=f8237d effect_kind=b6589f effects=97d170 damage_or_effect=bf21a9 visual=4af7f9 icon=a11afc used_by=d0d319 -->
 |  |  |
 |---|---|
-|  | ![Return](../assets/skills/35.png) |
+|  | ![Return](wiki/assets/skills/35.png) |
 | **Skill id** | `35` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

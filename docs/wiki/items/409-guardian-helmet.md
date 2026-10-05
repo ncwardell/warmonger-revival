@@ -48,7 +48,7 @@ obtained_from:
 <!-- generated-keys: title=03b69b type=d36ca9 id=3352d0 sources=3e4e41 name_key=c0157e kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=51114c reinforce=356a19 icon=8a212e obtained_from=f06fea -->
 |  |  |
 |---|---|
-|  | ![Guardian Helmet](../assets/items/409.png) |
+|  | ![Guardian Helmet](wiki/assets/items/409.png) |
 | **Item id** | `409` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |
@@ -106,6 +106,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 122, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
 
 ### Mentioned in
 

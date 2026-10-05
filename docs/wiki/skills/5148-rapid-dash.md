@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=1679a3 type=86a754 id=1e5922 sources=77cf05 name_key=882cd6 desc_key=aa9af5 kind=356a19 kind_name=9bc378 target=cacd0a range=ac3478 cost=911ade cooldown=628d31 movement=5f1488 effect_kind=da4b92 effects=377868 damage_or_effect=467a00 tooltip_formula=47a1d3 visual=371786 icon=4bb647 used_by=bb82e8 -->
 |  |  |
 |---|---|
-|  | ![Rapid Dash](../assets/skills/5148.png) |
+|  | ![Rapid Dash](wiki/assets/skills/5148.png) |
 | **Skill id** | `5148` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

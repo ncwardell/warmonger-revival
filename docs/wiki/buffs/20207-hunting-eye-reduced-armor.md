@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=cbbc74 type=6143a1 id=2a6042 sources=69585a name_key=4b6ae9 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=a97a10 icon=2fe3b0 applied_by=4d871d -->
 |  |  |
 |---|---|
-|  | ![Hunting Eye: Reduced armor](../assets/buffs/20207.png) |
+|  | ![Hunting Eye: Reduced armor](wiki/assets/buffs/20207.png) |
 | **Buff id** | `20207` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

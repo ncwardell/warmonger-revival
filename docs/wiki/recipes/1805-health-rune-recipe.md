@@ -20,20 +20,20 @@ npc: [323]
 <!-- generated-keys: title=01c7fa type=61613a id=d00b7f sources=ed647e result=1dab53 materials=d495fd gold=f8237d success_rate=310b86 category=1b6453 filter_mask=356a19 raw=fc6d8f -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7042.png) |
+|  | ![](wiki/assets/items/7042.png) |
 | **Recipe id** | `1805` (`Item_Make`) |
 | **Makes** | [[wiki/items/7042-health-rune\|Health Rune]] × 1 |
 | **Gold** | 5,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Category / filter** | 4 / `0x1` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/323-alan\|Alan]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
-| ![](../assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 2 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/802.png) | [[wiki/items/802-garnet\|Garnet]] | 2 |  |
 
 Unknown columns: `c28` = 200 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

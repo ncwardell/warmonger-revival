@@ -17,11 +17,13 @@ x: null
 z: null
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=6bb989 type=3664ce id=61188f sources=e6b493 name_key=8c4200 category=e1822d class_mask=da4b92 model=2fcc82 scale=aa8f28 role=2be88c map=2be88c x=2be88c z=2be88c -->
+<!-- generated-keys: title=6bb989 type=3664ce id=61188f sources=e6b493 name_key=8c4200 category=e1822d class_mask=da4b92 model=2fcc82 scale=aa8f28 x=2be88c z=2be88c -->
 |  |  |
 |---|---|
 | **Unit id** | `197` |
+| **Role** | Castle guard |
 | **Category** | NPC (category 50) |
+| **Stands in** | [[wiki/fields/90-castle\|Castle]] (position unknown) |
 | **Model** | ObjectList `191`, scale 1.5 |
 
 ### Other units with this name

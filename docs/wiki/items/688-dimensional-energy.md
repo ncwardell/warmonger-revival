@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=cfbaef type=d36ca9 id=8ff059 sources=5f747b name_key=bb0f83 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=12ecfe cost_pair=ed494c stats=97d170 icon=e70f55 obtained_from=02f6a5 -->
 |  |  |
 |---|---|
-|  | ![Dimensional energy](../assets/items/688.png) |
+|  | ![Dimensional energy](wiki/assets/items/688.png) |
 | **Item id** | `688` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -81,6 +81,7 @@ obtained_from:
 - Reward of quest [[wiki/quests/784-swamps-of-the-snake-warrior|Swamps of the Snake Warrior]] × 4
 - Reward of quest [[wiki/quests/960-weekly-monster-hunt|(Weekly) Monster Hunt]] × 10
 - Reward of quest [[wiki/quests/980-monthly-boss-hunt|(Monthly) Boss Hunt]] × 20
+- how weekly_quest, quest Monster Hunt, count 10 (hand-entered)
 
 ### Used for
 

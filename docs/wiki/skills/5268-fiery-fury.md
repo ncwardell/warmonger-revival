@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=a04d5d type=86a754 id=8b637c sources=1f58d6 name_key=16c9be desc_key=5a59c4 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=58a4ca cooldown=133145 effect_kind=356a19 effects=50c41c damage_or_effect=1bdbec tooltip_formula=0fc93d visual=113077 icon=01ddda used_by=58f2bc -->
 |  |  |
 |---|---|
-|  | ![Fiery Fury](../assets/skills/5268.png) |
+|  | ![Fiery Fury](wiki/assets/skills/5268.png) |
 | **Skill id** | `5268` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

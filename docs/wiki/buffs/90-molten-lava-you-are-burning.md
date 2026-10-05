@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=71c6b7 type=6143a1 id=2d0c8a sources=9180bf name_key=31a2a1 duration=870e64 is_buff=b6589f stack_type=356a19 group=2d0c8a effects=217a12 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Molten Lava: You are burning](../assets/buffs/90.png) |
+|  | ![Molten Lava: You are burning](wiki/assets/buffs/90.png) |
 | **Buff id** | `90` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

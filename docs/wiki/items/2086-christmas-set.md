@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=a5f2eb type=d36ca9 id=aa23f7 sources=6c6d90 name_key=64cd49 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 stats=97d170 options=11406b icon=0dcee7 obtained_from=080b80 -->
 |  |  |
 |---|---|
-|  | ![Christmas Set](../assets/items/2086.png) |
+|  | ![Christmas Set](wiki/assets/items/2086.png) |
 | **Item id** | `2086` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |
@@ -47,6 +47,7 @@ obtained_from:
 ### Where to get it
 
 - Premium shop entry 55: 5,000 (currency code 2, discount 0%)
+- how costume_shop_crush, price 5000, currency jewels (hand-entered)
 
 ### Mentioned in
 

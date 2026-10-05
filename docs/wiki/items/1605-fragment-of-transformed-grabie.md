@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=637df4 type=d36ca9 id=2fdd02 sources=4e64c3 name_key=2d7ddc kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=9c0c12 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fragment of Transformed Grabie](../assets/items/1605.png) |
+|  | ![Fragment of Transformed Grabie](wiki/assets/items/1605.png) |
 | **Item id** | `1605` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

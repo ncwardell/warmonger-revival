@@ -32,7 +32,7 @@ complete_talk: 663
 <!-- generated-keys: title=05c749 type=eb5b2b id=472b07 sources=6c4727 name_key=eaebb5 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=472b07 requires_bit=1574bd prev=79d296 next=c63cb5 stages=30caa7 objectives=4bbbc4 rewards=f2f877 offer_talk=091d03 complete_talk=b66cd9 -->
 |  |  |
 |---|---|
-|  | ![(Group) Ancient Ghosts](../assets/npcs/200.png) |
+|  | ![(Group) Ancient Ghosts](wiki/assets/npcs/200.png) |
 | **Quest id** | `21` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

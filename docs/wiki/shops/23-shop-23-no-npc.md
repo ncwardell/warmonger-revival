@@ -52,27 +52,27 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 2 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 3 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 4 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 5 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 6 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 7 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 8 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 9 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 10 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 11 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 12 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 14 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 16 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 17 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 18 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 19 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 20 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 21 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 22 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 23 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
-| 24 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 2 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 3 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 4 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 5 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 6 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 7 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 8 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 9 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 10 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 11 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 12 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 14 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 16 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 17 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 18 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 19 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 20 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 21 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 22 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 23 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
+| 24 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  | Gold | 0 | 0 | 0 |
 
 20 entries repeat an item already listed (the client shows every entry).
 

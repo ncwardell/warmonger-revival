@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=738ac0 type=61613a id=065c7e sources=143c0f result=7a0a1d materials=3c2369 gold=7507d4 success_rate=310b86 category=fe5dbb filter_mask=6124cb level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/869.png) |
+|  | ![](wiki/assets/items/869.png) |
 | **Recipe id** | `2423` (`Item_Make`) |
 | **Makes** | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 8 / `0x1000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/818.png) | [[wiki/items/818-lavender\|Lavender]] | 5 |  |
+| ![](wiki/assets/items/818.png) | [[wiki/items/818-lavender\|Lavender]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/623-extracted-lavender-recipe|recipe 623]]
 

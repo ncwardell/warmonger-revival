@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=f5c414 type=d36ca9 id=301377 sources=63f7fb name_key=3316ca kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=8a0da0 cost_pair=0babca stats=97d170 icon=327099 obtained_from=c70cba -->
 |  |  |
 |---|---|
-|  | ![Amplifying core stone](../assets/items/860.png) |
+|  | ![Amplifying core stone](wiki/assets/items/860.png) |
 | **Item id** | `860` |
 | **Kind** | Material (12) |
 | **Classes** | all |

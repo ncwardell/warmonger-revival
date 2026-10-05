@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=2da28a type=d36ca9 id=71ef3e sources=d33b54 name_key=87e073 kind=5b384c kind_name=81ea2f classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a flags=356a19 no_sell=7cb6ef stats=97d170 icon=c0e73b obtained_from=96a92c -->
 |  |  |
 |---|---|
-|  | ![Blessing of Shaia](../assets/items/905.png) |
+|  | ![Blessing of Shaia](wiki/assets/items/905.png) |
 | **Item id** | `905` |
 | **Kind** | Premium Item (38) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=d9669d type=6143a1 id=66efd9 sources=60fea2 name_key=53aebb duration=dc6a42 is_buff=b6589f stack_type=356a19 group=b6589f effects=cb6374 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Elixir of Agility : 3% Critical Strike Rating and 5% Movement Speed.](../assets/buffs/2018.png) |
+|  | ![Elixir of Agility : 3% Critical Strike Rating and 5% Movement Speed.](wiki/assets/buffs/2018.png) |
 | **Buff id** | `2018` |
 | **Duration** | 10 min (3,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

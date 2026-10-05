@@ -130,8 +130,13 @@ plugins:
     enabled: true
   - source: "@quartz-community/tag-page"
     enabled: true
+  # Sidebar file tree. The game wiki has thousands of entity pages (docs/wiki/<type>/<id>-*.md),
+  # too many to list, so the tree shows every folder and page except those: each wiki folder
+  # still links to its section index (a table of every entry), and Search (Ctrl+K) finds any page.
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      filterFn: "(node) => node.isFolder || !/^wiki\\/[^/]+\\/[0-9]/.test(node.slug || '')"
     layout:
       position: left
       priority: 50

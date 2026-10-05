@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=60ea71 type=3664ce id=1cc641 sources=11b11a name_key=7d155d title_key=ee2258 npc_title=b0845f category=e1822d class_mask=da4b92 model=af3e13 scale=aa8f28 functions=7dac55 role=b0845f shop=d8502b talk_key=2634be portrait=399d90 quests=3079bf quest_fields=6c3da9 map=775bc5 x=ad06d3 z=ce86c4 positions=29049f -->
 |  |  |
 |---|---|
-|  | ![Wren](../assets/npcs/204.png) |
+|  | ![Wren](wiki/assets/npcs/204.png) |
 | **Unit id** | `204` |
 | **Title** | Merchant |
 | **Category** | NPC (category 50) |

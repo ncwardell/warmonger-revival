@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=4eb99f type=6143a1 id=f9214d sources=2a4be8 name_key=146907 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=8e0549 icon=e5f8ba applied_by=421ddd -->
 |  |  |
 |---|---|
-|  | ![Fatal skill: Increased Critical Strike(%)](../assets/buffs/20212.png) |
+|  | ![Fatal skill: Increased Critical Strike(%)](wiki/assets/buffs/20212.png) |
 | **Buff id** | `20212` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

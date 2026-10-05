@@ -34,7 +34,7 @@ complete_talk: 649
 <!-- generated-keys: title=79494b type=eb5b2b id=dbc0f0 sources=db56b9 name_key=5b8fde kind=356a19 kind_name=0bac50 giver=5e775e turn_in=5e775e offer_maps=46bf0f turn_in_maps=46bf0f bit=761f22 requires_bit=9a79be prev=bd703d next=97d170 stages=30caa7 objectives=bff8c2 rewards=e45275 offer_talk=f7b41d complete_talk=491173 -->
 |  |  |
 |---|---|
-|  | ![All sorts of Fragile bones](../assets/npcs/335.png) |
+|  | ![All sorts of Fragile bones](wiki/assets/npcs/335.png) |
 | **Quest id** | `101` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/335-odin\|Odin]] |

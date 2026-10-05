@@ -20,21 +20,21 @@ npc: [337]
 <!-- generated-keys: title=957da9 type=61613a id=b14e67 sources=2a3358 result=1f5e65 materials=4e58a6 gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2304.png) |
+|  | ![](wiki/assets/items/2304.png) |
 | **Recipe id** | `2615` (`Item_Make`) |
 | **Makes** | [[wiki/items/2304-blue-hair-dye\|Blue Hair Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 8 / `0x20` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/873.png) | [[wiki/items/873-extracted-borage\|Extracted Borage]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/873.png) | [[wiki/items/873-extracted-borage\|Extracted Borage]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/765-blue-hair-dye-recipe|recipe 765]]
 

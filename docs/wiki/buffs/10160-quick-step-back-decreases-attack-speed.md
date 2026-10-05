@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=35c11f type=6143a1 id=8f0edd sources=86625f name_key=71491e duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=b534c0 applied_by=4ab04c -->
 |  |  |
 |---|---|
-|  | ![Quick Step Back: Decreases Attack Speed](../assets/buffs/10160.png) |
+|  | ![Quick Step Back: Decreases Attack Speed](wiki/assets/buffs/10160.png) |
 | **Buff id** | `10160` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

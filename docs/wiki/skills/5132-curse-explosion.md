@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=8a0810 type=86a754 id=5a8824 sources=4033e7 name_key=064659 desc_key=ff2bed kind=356a19 kind_name=9bc378 target=7056fd range=902ba3 area=bade13 cost=d55bc7 cooldown=cf1f8c delivery=93a212 effect_kind=da4b92 effects=4a087b damage_or_effect=7b305f tooltip_formula=6fe718 visual=ef7de0 icon=f19f25 used_by=101f1c -->
 |  |  |
 |---|---|
-|  | ![Curse Explosion](../assets/skills/5132.png) |
+|  | ![Curse Explosion](wiki/assets/skills/5132.png) |
 | **Skill id** | `5132` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

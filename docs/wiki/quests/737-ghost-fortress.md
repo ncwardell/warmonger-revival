@@ -30,7 +30,7 @@ offer_talk: 751
 <!-- generated-keys: title=13d702 type=eb5b2b id=4cae59 sources=b75040 name_key=7cf8f4 kind=77de68 kind_name=01e781 giver=37f9c0 turn_in=847ad4 offer_maps=15f2a7 bit=b6589f requires_bit=40bd00 excludes_bit=7719a1 owned_field=f38cfe automatic=5ffe53 prev=80af3c next=97d170 stages=30caa7 objectives=b3f6a3 rewards=cc625e offer_talk=758a25 -->
 |  |  |
 |---|---|
-|  | ![Ghost Fortress](../assets/npcs/205.png) |
+|  | ![Ghost Fortress](wiki/assets/npcs/205.png) |
 | **Quest id** | `737` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/205-lewellyn\|Lewellyn]] |

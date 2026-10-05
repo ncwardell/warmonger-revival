@@ -29,7 +29,7 @@ positions:
 <!-- generated-keys: title=880a95 type=3664ce id=e26973 sources=ec416b name_key=31ebfa title_key=102bb5 npc_title=ec0628 category=e1822d class_mask=da4b92 model=5d23e9 scale=aa8f28 functions=f8c937 role=ec0628 talk_key=75a565 portrait=399d90 map=775bc5 x=f31179 z=fec083 positions=c1f934 -->
 |  |  |
 |---|---|
-|  | ![Kaysa](../assets/npcs/300.png) |
+|  | ![Kaysa](wiki/assets/npcs/300.png) |
 | **Unit id** | `300` |
 | **Title** | Warehouse Manager |
 | **Category** | NPC (category 50) |

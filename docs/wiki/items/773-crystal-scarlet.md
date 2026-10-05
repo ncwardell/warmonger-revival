@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=b1e8a1 type=d36ca9 id=190c4a sources=f8cb03 name_key=b5eaf4 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=36a426 cost_pair=f057c8 stats=97d170 icon=08ad38 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Scarlet](../assets/items/773.png) |
+|  | ![Crystal : Scarlet](wiki/assets/items/773.png) |
 | **Item id** | `773` |
 | **Kind** | Material (12) |
 | **Classes** | all |

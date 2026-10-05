@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=0e6d5b type=6143a1 id=898d94 sources=537cf0 name_key=e1d0d5 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=9835a6 applied_by=4597eb -->
 |  |  |
 |---|---|
-|  | ![Breath : Reduced Movement for 4 seconds](../assets/buffs/10186.png) |
+|  | ![Breath : Reduced Movement for 4 seconds](wiki/assets/buffs/10186.png) |
 | **Buff id** | `10186` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=116610 type=6143a1 id=a6edb9 sources=92c051 name_key=cb17ad duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=940f69 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Water: Increased HP](../assets/buffs/3024.png) |
+|  | ![Water: Increased HP](wiki/assets/buffs/3024.png) |
 | **Buff id** | `3024` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

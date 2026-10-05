@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=1bdf0f type=d36ca9 id=8ada66 sources=d8950c name_key=d87c13 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=07db8a icon=3c346a obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Novice Gloves](../assets/items/353.png) |
+|  | ![Novice Gloves](wiki/assets/items/353.png) |
 | **Item id** | `353` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

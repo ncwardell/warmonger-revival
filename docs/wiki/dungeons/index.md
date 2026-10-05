@@ -13,19 +13,19 @@ Every dungeon the client knows: the nine border-area dungeons and Dragon Island 
 | | id | name | status | missing |
 |---|---|---|---|---|
 |  | 115 | [[wiki/dungeons/115-hill-of-gollam\|Hill of Gollam]] | partial | 2 |
-| ![](../assets/dungeons/121.png) | 121 | [[wiki/dungeons/121-lv-1-skull-temple\|(Lv 1) Skull Temple]] | complete | 0 |
-| ![](../assets/dungeons/122.png) | 122 | [[wiki/dungeons/122-lv-3-tsunami-lake\|(Lv 3) Tsunami Lake]] | complete | 0 |
-| ![](../assets/dungeons/123.png) | 123 | [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior\|(Lv 4) Swamps of Snake Warrior]] | complete | 0 |
-| ![](../assets/dungeons/124.png) | 124 | [[wiki/dungeons/124-lv-6-ghost-fortress\|(Lv 6) Ghost Fortress]] | complete | 0 |
-| ![](../assets/dungeons/125.png) | 125 | [[wiki/dungeons/125-lv-5-tow-canyon\|(Lv 5) Tow Canyon]] | complete | 0 |
-| ![](../assets/dungeons/126.png) | 126 | [[wiki/dungeons/126-lv-7-demon-hell\|(Lv 7) Demon Hell]] | complete | 0 |
-| ![](../assets/dungeons/127.png) | 127 | [[wiki/dungeons/127-lv-1-chepa-village\|(Lv 1) Chepa Village]] | complete | 0 |
-| ![](../assets/dungeons/128.png) | 128 | [[wiki/dungeons/128-lv-2-skull-cemetery\|(Lv 2) Skull Cemetery]] | complete | 0 |
-| ![](../assets/dungeons/129.png) | 129 | [[wiki/dungeons/129-lv-8-thorn-s-hell\|(Lv 8) Thorn's Hell]] | complete | 0 |
-| ![](../assets/dungeons/132.png) | 132 | [[wiki/dungeons/132-death-s-rest-passion\|Death's Rest (Passion)]] | partial | 1 |
-| ![](../assets/dungeons/133.png) | 133 | [[wiki/dungeons/133-sinking-nest-crystal\|Sinking Nest (Crystal)]] | partial | 1 |
+| ![](wiki/assets/dungeons/121.png) | 121 | [[wiki/dungeons/121-lv-1-skull-temple\|(Lv 1) Skull Temple]] | complete | 0 |
+| ![](wiki/assets/dungeons/122.png) | 122 | [[wiki/dungeons/122-lv-3-tsunami-lake\|(Lv 3) Tsunami Lake]] | complete | 0 |
+| ![](wiki/assets/dungeons/123.png) | 123 | [[wiki/dungeons/123-lv-4-swamps-of-snake-warrior\|(Lv 4) Swamps of Snake Warrior]] | complete | 0 |
+| ![](wiki/assets/dungeons/124.png) | 124 | [[wiki/dungeons/124-lv-6-ghost-fortress\|(Lv 6) Ghost Fortress]] | complete | 0 |
+| ![](wiki/assets/dungeons/125.png) | 125 | [[wiki/dungeons/125-lv-5-tow-canyon\|(Lv 5) Tow Canyon]] | complete | 0 |
+| ![](wiki/assets/dungeons/126.png) | 126 | [[wiki/dungeons/126-lv-7-demon-hell\|(Lv 7) Demon Hell]] | complete | 0 |
+| ![](wiki/assets/dungeons/127.png) | 127 | [[wiki/dungeons/127-lv-1-chepa-village\|(Lv 1) Chepa Village]] | complete | 0 |
+| ![](wiki/assets/dungeons/128.png) | 128 | [[wiki/dungeons/128-lv-2-skull-cemetery\|(Lv 2) Skull Cemetery]] | complete | 0 |
+| ![](wiki/assets/dungeons/129.png) | 129 | [[wiki/dungeons/129-lv-8-thorn-s-hell\|(Lv 8) Thorn's Hell]] | complete | 0 |
+| ![](wiki/assets/dungeons/132.png) | 132 | [[wiki/dungeons/132-death-s-rest-passion\|Death's Rest (Passion)]] | partial | 1 |
+| ![](wiki/assets/dungeons/133.png) | 133 | [[wiki/dungeons/133-sinking-nest-crystal\|Sinking Nest (Crystal)]] | partial | 1 |
 |  | 134 | [[wiki/dungeons/134-place-for-scattered-troops\|Place for Scattered troops]] | partial | 2 |
 |  | 135 | [[wiki/dungeons/135-death-s-rest\|Death's Rest]] | partial | 2 |
-| ![](../assets/dungeons/142.png) | 142 | [[wiki/dungeons/142-lv-9-dragon-island\|(Lv 9) Dragon Island]] | partial | 2 |
+| ![](wiki/assets/dungeons/142.png) | 142 | [[wiki/dungeons/142-lv-9-dragon-island\|(Lv 9) Dragon Island]] | partial | 2 |
 
 *Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*

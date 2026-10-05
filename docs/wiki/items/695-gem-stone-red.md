@@ -38,7 +38,7 @@ obtained_from:
 <!-- generated-keys: title=dd2a05 type=d36ca9 id=00a691 sources=52d2a5 name_key=eec077 kind=667be5 kind_name=8e0d16 classes=92d079 bind=2be88c price=3965d0 cost_pair=a4823c stats=97d170 icon=dd654d obtained_from=0e6005 -->
 |  |  |
 |---|---|
-|  | ![Gem Stone : Red](../assets/items/695.png) |
+|  | ![Gem Stone : Red](wiki/assets/items/695.png) |
 | **Item id** | `695` |
 | **Kind** | Jewel (58) |
 | **Classes** | all |

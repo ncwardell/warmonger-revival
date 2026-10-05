@@ -42,7 +42,7 @@ obtained_from:
 <!-- generated-keys: title=623426 type=d36ca9 id=1c76c4 sources=1789b5 name_key=63e5f0 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=3dba2f reinforce=356a19 icon=46fa1a obtained_from=e67239 -->
 |  |  |
 |---|---|
-|  | ![Necklace of Mediation](../assets/items/421.png) |
+|  | ![Necklace of Mediation](wiki/assets/items/421.png) |
 | **Item id** | `421` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |
@@ -94,6 +94,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 127, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

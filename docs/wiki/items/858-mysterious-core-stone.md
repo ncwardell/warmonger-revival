@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=e1281b type=d36ca9 id=fe39d9 sources=ea63e3 name_key=22f80a kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=9d46a2 obtained_from=c70cba -->
 |  |  |
 |---|---|
-|  | ![Mysterious core stone](../assets/items/858.png) |
+|  | ![Mysterious core stone](wiki/assets/items/858.png) |
 | **Item id** | `858` |
 | **Kind** | Material (12) |
 | **Classes** | all |

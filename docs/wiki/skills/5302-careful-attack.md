@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=ac4ac9 type=86a754 id=496e12 sources=1a6d46 name_key=6030b4 desc_key=964346 kind=356a19 kind_name=9bc378 target=069ef3 range=91032a cost=ff5a60 cooldown=ad2ac8 delivery=93a212 effect_kind=da4b92 effects=f4b2a9 damage_or_effect=8eadc3 tooltip_formula=a0e324 visual=295df4 icon=14a444 used_by=5924e5 -->
 |  |  |
 |---|---|
-|  | ![Careful Attack](../assets/skills/5302.png) |
+|  | ![Careful Attack](wiki/assets/skills/5302.png) |
 | **Skill id** | `5302` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

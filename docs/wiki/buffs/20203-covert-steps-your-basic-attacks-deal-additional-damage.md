@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=9cd0f7 type=6143a1 id=87f06e sources=4f09fb name_key=74941e duration=870e64 is_buff=b6589f stack_type=da4b92 group=b6589f effects=1461e1 icon=10f839 applied_by=7ff4e5 -->
 |  |  |
 |---|---|
-|  | ![Covert Steps: Your basic Attacks deal additional damage](../assets/buffs/20203.png) |
+|  | ![Covert Steps: Your basic Attacks deal additional damage](wiki/assets/buffs/20203.png) |
 | **Buff id** | `20203` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

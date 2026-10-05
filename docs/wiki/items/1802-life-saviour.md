@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=4a5a4d type=d36ca9 id=c030c7 sources=353851 name_key=7f3d68 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=e4be37 cost_pair=46d2fe fame_required=e3cbba flags=902ba3 no_sell=5ffe53 use_skill=451e74 cooldown_s=775bc5 cooldown_group=f1abd6 stats=97d170 options=d86cc4 icon=8e0e9f obtained_from=bc8783 -->
 |  |  |
 |---|---|
-|  | ![Life saviour](../assets/items/1802.png) |
+|  | ![Life saviour](wiki/assets/items/1802.png) |
 | **Item id** | `1802` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=e612bd type=6143a1 id=6cd82b sources=9777c7 name_key=a5b12c duration=870e64 is_buff=b6589f stack_type=356a19 group=e3cbba effects=0b8164 icon=54955f applied_by=c1a8e5 -->
 |  |  |
 |---|---|
-|  | ![Smoke Screen : Reduced Movement and Attack Speed](../assets/buffs/10353.png) |
+|  | ![Smoke Screen : Reduced Movement and Attack Speed](wiki/assets/buffs/10353.png) |
 | **Buff id** | `10353` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

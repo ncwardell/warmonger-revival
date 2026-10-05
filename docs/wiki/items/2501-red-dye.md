@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=4053b1 type=d36ca9 id=8cbb39 sources=740122 name_key=6b0966 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=56798f icon=13495c obtained_from=0f48b8 -->
 |  |  |
 |---|---|
-|  | ![Red Dye](../assets/items/2501.png) |
+|  | ![Red Dye](wiki/assets/items/2501.png) |
 | **Item id** | `2501` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

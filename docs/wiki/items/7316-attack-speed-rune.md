@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=55340f type=d36ca9 id=ac70d7 sources=575e0a name_key=a2d92b kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=56aa83 options=109d7f icon=320fe6 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Attack Speed(%) Rune](../assets/items/7316.png) |
+|  | ![Attack Speed(%) Rune](wiki/assets/items/7316.png) |
 | **Item id** | `7316` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

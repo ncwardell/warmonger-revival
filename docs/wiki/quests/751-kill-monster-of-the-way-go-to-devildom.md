@@ -32,13 +32,14 @@ rewards:
 complete_talk: 893
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=da9596 type=eb5b2b id=758a25 sources=217702 name_key=e9a54b kind=77de68 kind_name=01e781 level=23bb23 giver=2be88c turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=66acc7 stages=30caa7 objectives=6fe6bb rewards=62046f complete_talk=20b550 -->
+<!-- generated-keys: title=da9596 type=eb5b2b id=758a25 sources=217702 name_key=e9a54b kind=77de68 kind_name=01e781 level=23bb23 turn_in=7e080a turn_in_maps=15f2a7 bit=b6589f prev=97d170 next=97d170 prerequisites=66acc7 stages=30caa7 objectives=6fe6bb rewards=62046f complete_talk=20b550 -->
 |  |  |
 |---|---|
+|  | ![Kill monster of The way go to devildom](wiki/assets/npcs/207.png) |
 | **Quest id** | `751` |
 | **Kind** | Free (kind 3) |
 | **Level** | 25–29 |
-| **Giver** | **unknown** |
+| **Giver** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turn in** | [[wiki/npcs/207-athan\|Athan]] |
 | **Turned in on** | [[wiki/fields/120-fortress\|Fortress]] (120) |
 | **Completion bit** | none (no bit is set: can be taken again) |

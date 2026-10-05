@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3034.png) | [[wiki/items/3034-komodo-s-shoes\|Komodo's Shoes]] | 1 |  |
-| 1 | ![](../assets/items/3035.png) | [[wiki/items/3035-komodo-s-necklace\|Komodo's Necklace]] | 1 |  |
-| 2 | ![](../assets/items/3036.png) | [[wiki/items/3036-komodo-s-belt\|Komodo's Belt]] | 1 |  |
-| 3 | ![](../assets/items/3037.png) | [[wiki/items/3037-komodo-s-bracelet\|Komodo's Bracelet]] | 1 |  |
-| 4 | ![](../assets/items/3038.png) | [[wiki/items/3038-komodo-s-ring\|Komodo's Ring]] | 1 |  |
-| 5 | ![](../assets/items/3031.png) | [[wiki/items/3031-komodo-s-helmet\|Komodo's Helmet]] | 1 |  |
-| 6 | ![](../assets/items/3031.png) | [[wiki/items/3031-komodo-s-helmet\|Komodo's Helmet]] | 1 |  |
-| 7 | ![](../assets/items/3032.png) | [[wiki/items/3032-komodo-s-armor\|Komodo's Armor]] | 1 |  |
-| 8 | ![](../assets/items/3032.png) | [[wiki/items/3032-komodo-s-armor\|Komodo's Armor]] | 1 |  |
-| 9 | ![](../assets/items/3033.png) | [[wiki/items/3033-komodo-s-gloves\|Komodo's Gloves]] | 1 |  |
+| 0 | ![](wiki/assets/items/3034.png) | [[wiki/items/3034-komodo-s-shoes\|Komodo's Shoes]] | 1 |  |
+| 1 | ![](wiki/assets/items/3035.png) | [[wiki/items/3035-komodo-s-necklace\|Komodo's Necklace]] | 1 |  |
+| 2 | ![](wiki/assets/items/3036.png) | [[wiki/items/3036-komodo-s-belt\|Komodo's Belt]] | 1 |  |
+| 3 | ![](wiki/assets/items/3037.png) | [[wiki/items/3037-komodo-s-bracelet\|Komodo's Bracelet]] | 1 |  |
+| 4 | ![](wiki/assets/items/3038.png) | [[wiki/items/3038-komodo-s-ring\|Komodo's Ring]] | 1 |  |
+| 5 | ![](wiki/assets/items/3031.png) | [[wiki/items/3031-komodo-s-helmet\|Komodo's Helmet]] | 1 |  |
+| 6 | ![](wiki/assets/items/3031.png) | [[wiki/items/3031-komodo-s-helmet\|Komodo's Helmet]] | 1 |  |
+| 7 | ![](wiki/assets/items/3032.png) | [[wiki/items/3032-komodo-s-armor\|Komodo's Armor]] | 1 |  |
+| 8 | ![](wiki/assets/items/3032.png) | [[wiki/items/3032-komodo-s-armor\|Komodo's Armor]] | 1 |  |
+| 9 | ![](wiki/assets/items/3033.png) | [[wiki/items/3033-komodo-s-gloves\|Komodo's Gloves]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

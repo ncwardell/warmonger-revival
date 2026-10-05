@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=ae6c54 type=d36ca9 id=40bf25 sources=c892d9 name_key=d3549e kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=c16e6d icon=2385d0 obtained_from=bf2698 -->
 |  |  |
 |---|---|
-|  | ![Orange Hair Dye](../assets/items/2302.png) |
+|  | ![Orange Hair Dye](wiki/assets/items/2302.png) |
 | **Item id** | `2302` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

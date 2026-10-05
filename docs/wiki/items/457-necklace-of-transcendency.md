@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=c40c0a type=d36ca9 id=d36550 sources=33ef64 name_key=425820 kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=931aa5 reinforce=da4b92 icon=639600 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Necklace of Transcendency](../assets/items/457.png) |
+|  | ![Necklace of Transcendency](wiki/assets/items/457.png) |
 | **Item id** | `457` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

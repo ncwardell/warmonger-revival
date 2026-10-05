@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=915252 type=d36ca9 id=fd93ac sources=e7670d name_key=d01593 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=8c6ae2 cost_pair=982f5a period=365a69 stats=8415ce options=27e721 icon=84e8d3 obtained_from=80052a -->
 |  |  |
 |---|---|
-|  | ![Oracle Set](../assets/items/2021.png) |
+|  | ![Oracle Set](wiki/assets/items/2021.png) |
 | **Item id** | `2021` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

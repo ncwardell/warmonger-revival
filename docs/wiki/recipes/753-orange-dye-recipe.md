@@ -20,21 +20,21 @@ npc: [214]
 <!-- generated-keys: title=6f5841 type=61613a id=c32a67 sources=ceda61 result=f6fe86 materials=88ba52 gold=e3cbba success_rate=310b86 category=356a19 filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2502.png) |
+|  | ![](wiki/assets/items/2502.png) |
 | **Recipe id** | `753` (`Item_Make`) |
 | **Makes** | [[wiki/items/2502-orange-dye\|Orange Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 1 / `0x20` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/871.png) | [[wiki/items/871-extracted-rosemary\|Extracted Rosemary]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/871.png) | [[wiki/items/871-extracted-rosemary\|Extracted Rosemary]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2603-orange-dye-recipe|recipe 2603]]
 

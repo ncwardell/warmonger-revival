@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=88ccea type=86a754 id=ca4fbd sources=758678 name_key=35b12d desc_key=3a834f kind=356a19 kind_name=9bc378 target=d1cc1b range=ac3478 area=6d01a6 cost=58a4ca cooldown=133145 effect_kind=356a19 effects=bc3aa2 damage_or_effect=f09f80 tooltip_formula=9e931b visual=dbc0f0 icon=47a729 used_by=777c27 -->
 |  |  |
 |---|---|
-|  | ![Whirlwind](../assets/skills/5002.png) |
+|  | ![Whirlwind](wiki/assets/skills/5002.png) |
 | **Skill id** | `5002` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

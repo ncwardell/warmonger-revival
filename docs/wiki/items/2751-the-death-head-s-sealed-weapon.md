@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=863ded type=d36ca9 id=ae52cb sources=df9be3 name_key=08cb11 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=78754b obtained_from=85eba4 -->
 |  |  |
 |---|---|
-|  | ![The Death Head's Sealed Weapon](../assets/items/2751.png) |
+|  | ![The Death Head's Sealed Weapon](wiki/assets/items/2751.png) |
 | **Item id** | `2751` |
 | **Kind** | Material (12) |
 | **Classes** | all |

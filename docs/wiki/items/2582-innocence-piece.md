@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=7ff135 type=d36ca9 id=541e1c sources=8d2002 name_key=b27df9 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=a5744c obtained_from=58566c -->
 |  |  |
 |---|---|
-|  | ![Innocence Piece](../assets/items/2582.png) |
+|  | ![Innocence Piece](wiki/assets/items/2582.png) |
 | **Item id** | `2582` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=dbbd9e type=6143a1 id=cc96cf sources=a2841b name_key=5c858f duration=3d2da5 is_buff=b6589f stack_type=356a19 group=b6589f effects=6e7a6d icon=7c2320 applied_by=0d069e -->
 |  |  |
 |---|---|
-|  | ![Rapid Reload : Gain improved Attack and Movement Speed](../assets/buffs/10085.png) |
+|  | ![Rapid Reload : Gain improved Attack and Movement Speed](wiki/assets/buffs/10085.png) |
 | **Buff id** | `10085` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

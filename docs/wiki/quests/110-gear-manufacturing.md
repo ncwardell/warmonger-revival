@@ -33,10 +33,10 @@ offer_talk: 807
 complete_talk: 808
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=a84d52 type=eb5b2b id=5e796e sources=0eb369 name_key=5a3101 kind=356a19 kind_name=0bac50 giver=91ad7d turn_in=91ad7d offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6692e requires_bit=bd307a prev=76cdc5 next=97d170 stages=30caa7 objectives=2be88c objectives_client=bee846 rewards=237d96 offer_talk=425ac6 complete_talk=38afd2 -->
+<!-- generated-keys: title=a84d52 type=eb5b2b id=5e796e sources=0eb369 name_key=5a3101 kind=356a19 kind_name=0bac50 giver=91ad7d turn_in=91ad7d offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6692e requires_bit=bd307a prev=76cdc5 next=97d170 stages=30caa7 objectives_client=bee846 rewards=237d96 offer_talk=425ac6 complete_talk=38afd2 -->
 |  |  |
 |---|---|
-|  | ![Gear manufacturing](../assets/npcs/213.png) |
+|  | ![Gear manufacturing](wiki/assets/npcs/213.png) |
 | **Quest id** | `110` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/213-odin\|Odin]] |
@@ -51,9 +51,6 @@ complete_talk: 808
 - **Next:** nothing: no quest requires this quest's bit (chain end)
 
 ### Objectives
-
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
 
 1. Type 26 — craft gear (category a)?; values a=2, b=1 — tracker: “Manufacture Gear you need”
 2. Report (tracker line; done by turning the quest in) — tracker: “Go to Odin”

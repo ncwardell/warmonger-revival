@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=4f3dc6 type=61613a id=412a33 sources=3b496c result=5c07f0 materials=258147 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/813.png) |
+|  | ![](wiki/assets/items/813.png) |
 | **Recipe id** | `2406` (`Item_Make`) |
 | **Makes** | [[wiki/items/813-red-bloodstone-powder\|Red bloodstone powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 8 / `0x200` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  |
+| ![](wiki/assets/items/812.png) | [[wiki/items/812-red-bloodstone\|Red bloodstone]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/606-red-bloodstone-powder-recipe|recipe 606]]
 

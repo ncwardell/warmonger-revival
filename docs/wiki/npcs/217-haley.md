@@ -27,13 +27,17 @@ positions:
   - {"field": 120, "x": 1927.6, "z": 1616.4, "source": "gameplay/npc-locations §3", "confidence": "video + image"}
   - {"field": 120, "x": 2183.6, "z": 1616.4, "source": "derived: gameplay/npc-locations §3 + copy origin (gameplay/npc-locations §2)", "confidence": "derived"}
   - {"field": 120, "x": 2439.6, "z": 1616.4, "source": "derived: gameplay/npc-locations §3 + copy origin (gameplay/npc-locations §2)", "confidence": "derived"}
-teleport_to: [{"name": "Castle", "fields": [90, 94, 98], "cost_gold": 10000}, {"name": "Fortress", "fields": [120], "cost_gold": 4000}, {"name": "Gaia", "cost_gold": 0}, {"name": "Abyss", "fields": [103, 105, 107], "gates": [1901, 1902, 1903], "cost_gold": 0}]
+teleport_to:
+  - {"name": "Castle", "fields": [90, 94, 98], "cost_gold": 10000}
+  - {"name": "Fortress", "fields": [120], "cost_gold": 4000}
+  - {"name": "Gaia", "cost_gold": 0}
+  - {"name": "Abyss", "fields": [103, 105, 107], "gates": [1901, 1902, 1903], "cost_gold": 0}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=7a24d5 type=3664ce id=49e3d0 sources=fa23dc name_key=18c717 title_key=b900c8 npc_title=aa4174 category=e1822d class_mask=da4b92 model=b6692e scale=aa8f28 functions=b85d7e role=aa4174 talk_key=9b525c portrait=a9b793 quests=360a3c quest_fields=6c3da9 map=775bc5 x=f7f372 z=d916ec positions=621db8 teleport_to=2be88c -->
+<!-- generated-keys: title=7a24d5 type=3664ce id=49e3d0 sources=fa23dc name_key=18c717 title_key=b900c8 npc_title=aa4174 category=e1822d class_mask=da4b92 model=b6692e scale=aa8f28 functions=b85d7e role=aa4174 talk_key=9b525c portrait=a9b793 quests=360a3c quest_fields=6c3da9 map=775bc5 x=f7f372 z=d916ec positions=621db8 -->
 |  |  |
 |---|---|
-|  | ![Haley](../assets/npcs/217.png) |
+|  | ![Haley](wiki/assets/npcs/217.png) |
 | **Unit id** | `217` |
 | **Title** | Teleporter |
 | **Category** | NPC (category 50) |

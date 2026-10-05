@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=e40fba type=6143a1 id=232bb1 sources=55f563 name_key=b1ab56 duration=76674f is_buff=b6589f stack_type=356a19 group=e3cbba effects=115285 icon=f7179c applied_by=37688f -->
 |  |  |
 |---|---|
-|  | ![Puddle : Reduced Movement Speed](../assets/buffs/20155.png) |
+|  | ![Puddle : Reduced Movement Speed](wiki/assets/buffs/20155.png) |
 | **Buff id** | `20155` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

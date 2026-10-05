@@ -45,7 +45,7 @@ obtained_from:
 <!-- generated-keys: title=2e1e0b type=d36ca9 id=6c4c04 sources=d0a9ba name_key=8944b3 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=80adb2 reinforce=356a19 icon=b7bbb0 obtained_from=e6ab3a -->
 |  |  |
 |---|---|
-|  | ![Barrier Ring](../assets/items/436.png) |
+|  | ![Barrier Ring](wiki/assets/items/436.png) |
 | **Item id** | `436` |
 | **Kind** | Ring (57) |
 | **Classes** | all |
@@ -100,6 +100,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

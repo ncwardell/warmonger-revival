@@ -28,7 +28,7 @@ obtained_from: []
 <!-- generated-keys: title=bd777e type=d36ca9 id=23a053 sources=48affe name_key=c396d4 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=088270 cost_pair=101f43 period=365a69 stats=97d170 options=c8223e icon=1059a8 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Succubus](../assets/items/2005.png) |
+|  | ![Succubus](wiki/assets/items/2005.png) |
 | **Item id** | `2005` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

@@ -19,20 +19,20 @@ npc: [214]
 <!-- generated-keys: title=7d6211 type=61613a id=47d5c9 sources=598e4b result=1a05eb materials=d8f4a5 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6124cb level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/873.png) |
+|  | ![](wiki/assets/items/873.png) |
 | **Recipe id** | `627` (`Item_Make`) |
 | **Makes** | [[wiki/items/873-extracted-borage\|Extracted Borage]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 1 / `0x1000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/826.png) | [[wiki/items/826-borage\|Borage]] | 5 |  |
+| ![](wiki/assets/items/826.png) | [[wiki/items/826-borage\|Borage]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2427-extracted-borage-recipe|recipe 2427]]
 

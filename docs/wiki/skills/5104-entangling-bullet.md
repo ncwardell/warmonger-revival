@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=fd1912 type=86a754 id=73f14e sources=f797b3 name_key=0a48c5 desc_key=8be188 kind=356a19 kind_name=9bc378 target=aa5d92 range=b1d578 area=728214 cost=58a4ca cooldown=133145 delivery=93a212 effect_kind=da4b92 effects=2cf530 damage_or_effect=49ef31 tooltip_formula=d6042a visual=851cd0 icon=d9b35f used_by=bea1b1 -->
 |  |  |
 |---|---|
-|  | ![Entangling Bullet](../assets/skills/5104.png) |
+|  | ![Entangling Bullet](wiki/assets/skills/5104.png) |
 | **Skill id** | `5104` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 1 |

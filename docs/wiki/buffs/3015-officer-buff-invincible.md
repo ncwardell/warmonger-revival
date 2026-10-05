@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=00f5be type=6143a1 id=c09008 sources=242745 name_key=fb2b3e duration=6c749d is_buff=b6589f stack_type=356a19 group=17ba07 effects=97d170 icon=2c9f3b applied_by=da6a0e -->
 |  |  |
 |---|---|
-|  | ![Officer Buff: Invincible](../assets/buffs/3015.png) |
+|  | ![Officer Buff: Invincible](wiki/assets/buffs/3015.png) |
 | **Buff id** | `3015` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

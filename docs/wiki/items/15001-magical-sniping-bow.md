@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=877c51 type=d36ca9 id=d7446d sources=cee470 name_key=a852f5 kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=d435a6 stats=db11c4 options=e613b5 skills=112590 reinforce=17ba07 icon=26095f obtained_from=d44c1a -->
 |  |  |
 |---|---|
-|  | ![Magical Sniping Bow](../assets/items/15001.png) |
+|  | ![Magical Sniping Bow](wiki/assets/items/15001.png) |
 | **Item id** | `15001` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

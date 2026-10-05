@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=b0deb2 type=86a754 id=c14f19 sources=b3f214 name_key=3c4802 desc_key=e25d4e kind=356a19 kind_name=9bc378 target=7056fd range=fe5dbb area=3d2256 cost=e01d1d cooldown=9ded33 delivery=93a212 effect_kind=da4b92 effects=35d358 damage_or_effect=a05769 tooltip_formula=2440c3 visual=6e21fc icon=8a093a used_by=9dcb23 -->
 |  |  |
 |---|---|
-|  | ![Hand of Curse](../assets/skills/5177.png) |
+|  | ![Hand of Curse](wiki/assets/skills/5177.png) |
 | **Skill id** | `5177` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

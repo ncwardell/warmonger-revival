@@ -21,7 +21,7 @@ npc: [237]
 <!-- generated-keys: title=60bca0 type=61613a id=5a4b36 sources=4ff61b result=57e61d materials=c06eb2 gold=8a12a3 success_rate=310b86 category=da4b92 filter_mask=24f4fd superior=cd96e1 level=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/20021.png) |
+|  | ![](wiki/assets/items/20021.png) |
 | **Recipe id** | `916` (`Item_Make`) |
 | **Makes** | [[wiki/items/20021-magical-protect-cannon\|Magical Protect Cannon]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,14 +29,14 @@ npc: [237]
 | **Superior result** | 5 % → [[wiki/items/21021-magical-protect-cannon\|Magical Protect Cannon]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 2 / `0x1000041` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/237-farrell\|Farrell]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
 
 Other recipes for the same item: [[wiki/recipes/2206-magical-protect-cannon-recipe|recipe 2206]]
 

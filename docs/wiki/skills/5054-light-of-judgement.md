@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=1a20ac type=86a754 id=9382da sources=80a72c name_key=0451be desc_key=bad4d7 kind=356a19 kind_name=9bc378 target=e84f24 range=b1d578 area=6d01a6 cost=ff5a60 cooldown=ad2ac8 delivery=15a656 effect_kind=da4b92 effects=3e6e54 damage_or_effect=b0e8a0 tooltip_formula=42e57b visual=04f124 icon=1431e5 used_by=a81eca -->
 |  |  |
 |---|---|
-|  | ![Light of Judgement](../assets/skills/5054.png) |
+|  | ![Light of Judgement](wiki/assets/skills/5054.png) |
 | **Skill id** | `5054` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

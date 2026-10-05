@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=b06f70 type=d36ca9 id=d89edd sources=a69a12 name_key=651677 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=566f1e obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Burning water](../assets/items/2597.png) |
+|  | ![Burning water](wiki/assets/items/2597.png) |
 | **Item id** | `2597` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

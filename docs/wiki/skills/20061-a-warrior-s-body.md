@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=4912df type=86a754 id=0b6d34 sources=1438c2 name_key=533d78 desc_key=dca9dc kind=ac3478 kind_name=65782b target=04e8ed range=77de68 area=6d01a6 cost=2be88c cooldown=4a6a0b effect_kind=356a19 effects=3c3f56 damage_or_effect=cedee2 visual=076e5a icon=1a93f3 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![A Warrior's Body](../assets/skills/20061.png) |
+|  | ![A Warrior's Body](wiki/assets/skills/20061.png) |
 | **Skill id** | `20061` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; enemy; units: monster, player; up to 5 |

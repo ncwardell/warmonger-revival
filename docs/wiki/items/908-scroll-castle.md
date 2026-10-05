@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=a774b0 type=d36ca9 id=2262b2 sources=d6b397 name_key=30e405 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=e2776e cost_pair=7c4154 flags=356a19 no_sell=7cb6ef use_skill=cb4e52 cooldown_s=ac3478 cooldown_group=0716d9 stats=97d170 options=1e4fe5 icon=f98fc2 obtained_from=7238d8 -->
 |  |  |
 |---|---|
-|  | ![Scroll : Castle](../assets/items/908.png) |
+|  | ![Scroll : Castle](wiki/assets/items/908.png) |
 | **Item id** | `908` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

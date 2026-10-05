@@ -33,7 +33,7 @@ spawn_points: []
 <!-- generated-keys: title=a8f177 type=7a94db id=a17554 sources=ecacf1 name_key=43dc7e kind=8e3535 scene_type=da4b92 max_users=22d200 group=77de68 scene_c4=356a19 scene_c10=356a19 neighbours=f4e308 zones=0bda79 segments=fb777a worldmap_rect=991ecd gates=38ad42 connections=67c207 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 80](../assets/zones/80.png) |
+|  | ![minimap of zone 80](wiki/assets/zones/80.png) |
 | **Field id** | `63` |
 | **Kind** | land (SceneList type 2; name *inferred*) |
 | **Max users** | 30 (SceneList, column meaning *guessed*) |
@@ -54,6 +54,8 @@ A land of Gaia. Who owns it (Arslan, Erion, Armia or monsters) changes in play a
 | 702 | 862.81, 1359.98 | [[wiki/fields/60-volcano-heart\|Volcano Heart]] | 730 | FieldName_63 |
 | 741 | 941.13, 1370.6 | [[wiki/fields/64-thunderstorm-canyon\|Thunderstorm Canyon]] | 731 | FieldName_63 |
 | 820 | 904.15, 1462.26 | [[wiki/fields/72-refuge\|Refuge]] | 732 | FieldName_63 |
+
+Other connections (hand-entered): to 120, gate None, to_gate None, via nexus, source video
 
 Entered from: [[wiki/fields/60-volcano-heart|Volcano Heart]] (gate 730 → 702), [[wiki/fields/64-thunderstorm-canyon|Thunderstorm Canyon]] (gate 731 → 741), [[wiki/fields/72-refuge|Refuge]] (gate 732 → 820)
 

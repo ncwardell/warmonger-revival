@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=fc9cba type=6143a1 id=6f7911 sources=6e3020 name_key=4adbf8 duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=34f6eb icon=e1b084 applied_by=0c0275 -->
 |  |  |
 |---|---|
-|  | ![Water of deceleration : Reduced Moovement Speed (3 Secs)](../assets/buffs/20302.png) |
+|  | ![Water of deceleration : Reduced Moovement Speed (3 Secs)](wiki/assets/buffs/20302.png) |
 | **Buff id** | `20302` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=48182a type=d36ca9 id=014a1a sources=f7dc94 name_key=9da94e kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=b88a7b reinforce=da4b92 icon=dbd5a1 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Shoes of Honor](../assets/items/491.png) |
+|  | ![Shoes of Honor](wiki/assets/items/491.png) |
 | **Item id** | `491` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |
@@ -72,7 +72,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 23, chance 5 (hand-entered)
+- how craft_superior, recipe 2023, chance 5 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

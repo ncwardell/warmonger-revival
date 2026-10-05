@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z9_00.dds"
 <!-- generated-keys: title=61fd85 type=c899cd id=0ade7c sources=6cfccb name_kr=61fd85 terrain=7a3ae7 bounds=499518 size=a1cfbb segments=d15b0b fields=97d170 minimap=bb382b -->
 |  |  |
 |---|---|
-|  | ![minimap of Create](../assets/zones/9.png) |
+|  | ![minimap of Create](wiki/assets/zones/9.png) |
 | **Zone id** | `9` |
 | **ZoneDB name** | Create (English gloss: Create) |
 | **Terrain name** | `Creat` |

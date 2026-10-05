@@ -5,6 +5,7 @@ id: 121
 status: "complete"
 missing: []
 sources: ["client: SceneList.cdb id 121", "client: DungeonAdmission.cdb field 121", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 121", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 121
 max_users: 5
 level: 1
@@ -27,15 +28,16 @@ time_limit_s: 900
 unlock_level: 20
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=5cdb46 type=3e3f38 id=8bd795 sources=e3dda6 field=8bd795 max_users=ac3478 level=356a19 entry_cost=3510f5 event=7cb6ef shown_rewards=e8b4f2 c17=2e8c02 image=d7b848 dungeon_slots=068b5b boss=69effa gear_tier=13930c gathering=42ca89 time_limit_s=2be88c -->
+<!-- generated-keys: title=5cdb46 type=3e3f38 id=8bd795 sources=e3dda6 field=8bd795 max_users=ac3478 level=356a19 entry_cost=3510f5 event=7cb6ef shown_rewards=e8b4f2 c17=2e8c02 image=d7b848 dungeon_slots=068b5b boss=69effa gear_tier=13930c gathering=42ca89 -->
 |  |  |
 |---|---|
-|  | ![(Lv 1) Skull Temple](../assets/dungeons/121.png) |
+|  | ![(Lv 1) Skull Temple](wiki/assets/dungeons/121.png) |
 | **Field** | [[wiki/fields/121-lv-1-skull-temple\|(Lv 1) Skull Temple (field 121)]] |
 | **Level** | 1 |
 | **Gear tier dropped** | T1 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/1.png` |
 | **c17 (unknown)** | 2002 |
 

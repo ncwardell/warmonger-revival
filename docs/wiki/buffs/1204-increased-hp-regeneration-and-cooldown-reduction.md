@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=67ce9e type=6143a1 id=78ae9f sources=5a9305 name_key=d12aa1 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=d2a534 icon=70512b applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Increased HP Regeneration and Cooldown Reduction.](../assets/buffs/1204.png) |
+|  | ![Increased HP Regeneration and Cooldown Reduction.](wiki/assets/buffs/1204.png) |
 | **Buff id** | `1204` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

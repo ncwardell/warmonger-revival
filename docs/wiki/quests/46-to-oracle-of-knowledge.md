@@ -29,7 +29,7 @@ complete_talk: 904
 <!-- generated-keys: title=698f1d type=eb5b2b id=fe2ef4 sources=e29f36 name_key=3f6b2f kind=b6589f kind_name=b3f808 giver=ad0cc6 turn_in=1caac0 turn_in_maps=15f2a7 bit=05a8ea requires_bit=31bd9b prev=6ee44d next=80af3c stages=30caa7 objectives=310428 rewards=c30271 offer_talk=5375ef complete_talk=6f2c73 -->
 |  |  |
 |---|---|
-|  | ![To Oracle of knowledge](../assets/npcs/325.png) |
+|  | ![To Oracle of knowledge](wiki/assets/npcs/325.png) |
 | **Quest id** | `46` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/325-joel\|Joel]] |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=15c953 type=6143a1 id=03dd8d sources=462654 name_key=0fcc7a duration=5d0a7b is_buff=b6589f stack_type=356a19 group=b6589f effects=9c3f21 icon=744c36 applied_by=dd0567 -->
 |  |  |
 |---|---|
-|  | ![Mystic Arrow : Increased Attack Speed](../assets/buffs/10443.png) |
+|  | ![Mystic Arrow : Increased Attack Speed](wiki/assets/buffs/10443.png) |
 | **Buff id** | `10443` |
 | **Duration** | 6 s (30 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f3166c type=d36ca9 id=83ee3b sources=a475b7 name_key=763e5d kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=b13d0f obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Parchment : Scarlet](../assets/items/1915.png) |
+|  | ![Parchment : Scarlet](wiki/assets/items/1915.png) |
 | **Item id** | `1915` |
 | **Kind** | Material (12) |
 | **Classes** | all |

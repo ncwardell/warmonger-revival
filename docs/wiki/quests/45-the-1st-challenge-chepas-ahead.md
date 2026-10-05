@@ -28,7 +28,7 @@ offer_talk: 899
 <!-- generated-keys: title=2ab84f type=eb5b2b id=fb6443 sources=ca57d7 name_key=6b6dd8 kind=b6589f kind_name=b3f808 giver=f8f324 turn_in=847ad4 offer_maps=46bf0f bit=c1dfd9 automatic=5ffe53 prev=97d170 next=bd703d prerequisites=061998 stages=30caa7 objectives=3037ce rewards=dc0944 offer_talk=49ca49 -->
 |  |  |
 |---|---|
-|  | ![The 1st Challenge: Chepas ahead](../assets/npcs/198.png) |
+|  | ![The 1st Challenge: Chepas ahead](wiki/assets/npcs/198.png) |
 | **Quest id** | `45` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/198-frei\|Frei]] |

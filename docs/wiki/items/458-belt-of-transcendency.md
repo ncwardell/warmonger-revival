@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=a50bd0 type=d36ca9 id=06be19 sources=0ddbbb name_key=cd99bc kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=32701a reinforce=da4b92 icon=3849bb obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Belt of Transcendency](../assets/items/458.png) |
+|  | ![Belt of Transcendency](wiki/assets/items/458.png) |
 | **Item id** | `458` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

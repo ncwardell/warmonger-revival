@@ -43,7 +43,7 @@ obtained_from:
 <!-- generated-keys: title=30ded9 type=d36ca9 id=75988f sources=1c739c name_key=35f780 kind=80e28a kind_name=7b4b74 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=84b784 reinforce=356a19 icon=4aaf5d obtained_from=f03cf3 -->
 |  |  |
 |---|---|
-|  | ![Bandolier Necklace](../assets/items/429.png) |
+|  | ![Bandolier Necklace](wiki/assets/items/429.png) |
 | **Item id** | `429` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |
@@ -96,6 +96,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 121, tier 1 (hand-entered)
+- how dungeon_drop, field 125, tier 2 (hand-entered)
 
 ### Mentioned in
 

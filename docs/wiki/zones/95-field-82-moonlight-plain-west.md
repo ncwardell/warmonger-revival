@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z95_00.dds"
 <!-- generated-keys: title=ea32e4 type=c899cd id=8e63fd sources=8f47ae name_kr=a8bc25 terrain=452b69 bounds=12e8b9 size=114466 segments=3f4db3 fields=272913 minimap=64d032 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 82 (Moonlight Plain - West)](../assets/zones/95.png) |
+|  | ![minimap of Field 82 (Moonlight Plain - West)](wiki/assets/zones/95.png) |
 | **Zone id** | `95` |
 | **ZoneDB name** | 필드_82 (English gloss: Field 82 (Moonlight Plain - West)) |
 | **Terrain name** | `82` |

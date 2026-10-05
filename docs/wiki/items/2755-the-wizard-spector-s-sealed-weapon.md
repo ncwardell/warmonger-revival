@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=36187f type=d36ca9 id=b38540 sources=fcf691 name_key=20c21c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=d80c5d obtained_from=7f2878 -->
 |  |  |
 |---|---|
-|  | ![The Wizard Spector's Sealed Weapon](../assets/items/2755.png) |
+|  | ![The Wizard Spector's Sealed Weapon](wiki/assets/items/2755.png) |
 | **Item id** | `2755` |
 | **Kind** | Material (12) |
 | **Classes** | all |

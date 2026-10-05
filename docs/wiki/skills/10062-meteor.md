@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=28626e type=86a754 id=18123d sources=6f16d9 name_key=e1f0cb desc_key=d12328 kind=356a19 kind_name=9bc378 target=e84f24 range=b1d578 area=e8b0ea cost=8c2feb cooldown=15bf08 delivery=6a22dc effect_kind=356a19 effects=d6c42e damage_or_effect=ee321a tooltip_formula=d98b57 visual=c28aca icon=be26ec used_by=d1b07b -->
 |  |  |
 |---|---|
-|  | ![Meteor](../assets/skills/10062.png) |
+|  | ![Meteor](wiki/assets/skills/10062.png) |
 | **Skill id** | `10062` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

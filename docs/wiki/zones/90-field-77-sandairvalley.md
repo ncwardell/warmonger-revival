@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z90_00.dds"
 <!-- generated-keys: title=612308 type=c899cd id=2d0c8a sources=f8ce20 name_kr=e9424d terrain=f4c9c9 bounds=dc29c1 size=114466 segments=16d4d9 fields=4c5ce1 minimap=883c81 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 77 (SandairValley)](../assets/zones/90.png) |
+|  | ![minimap of Field 77 (SandairValley)](wiki/assets/zones/90.png) |
 | **Zone id** | `90` |
 | **ZoneDB name** | 필드_77 (English gloss: Field 77 (SandairValley)) |
 | **Terrain name** | `77` |

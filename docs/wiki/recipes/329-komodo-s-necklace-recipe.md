@@ -20,21 +20,21 @@ npc: [213]
 <!-- generated-keys: title=24e8b6 type=61613a id=8d396f sources=d60772 result=517e6c materials=54fac4 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=dca2ad level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3035.png) |
+|  | ![](wiki/assets/items/3035.png) |
 | **Recipe id** | `329` (`Item_Make`) |
 | **Makes** | [[wiki/items/3035-komodo-s-necklace\|Komodo's Necklace]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 60 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 0 / `0x2000010` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2704.png) | [[wiki/items/2704-horn-of-komodo\|Horn of Komodo]] | 1 |  |
-| ![](../assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 1 |  |
+| ![](wiki/assets/items/2704.png) | [[wiki/items/2704-horn-of-komodo\|Horn of Komodo]] | 1 |  |
+| ![](wiki/assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

@@ -31,7 +31,7 @@ spawn_points: []
 <!-- generated-keys: title=fe9680 type=7a94db id=fa35e1 sources=6ba324 name_key=0a4289 kind=8e3535 scene_type=da4b92 max_users=22d200 group=902ba3 neighbours=7f5c57 zones=44b878 segments=ed90f2 worldmap_rect=4280cc gates=bbc753 connections=4010b6 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 39](../assets/zones/39.png) |
+|  | ![minimap of zone 39](wiki/assets/zones/39.png) |
 | **Field id** | `14` |
 | **Kind** | land (SceneList type 2; name *inferred*) |
 | **Max users** | 30 (SceneList, column meaning *guessed*) |
@@ -52,6 +52,8 @@ A land of Gaia. Who owns it (Arslan, Erion, Armia or monsters) changes in play a
 | 231 | 3648.37, 559.81 | [[wiki/fields/13-punish-peak\|Punish Peak]] | 241 | FieldName_14 |
 | 290 | 3759.9, 571.1 | [[wiki/fields/19-death-valley\|Death Valley]] | 242 | FieldName_14 |
 | 941 | 3760.31, 673.16 | [[wiki/fields/84-eternal-lake\|Eternal Lake]] | 240 | FieldName_14 |
+
+Other connections (hand-entered): to 120, gate None, to_gate None, via nexus, source video
 
 Entered from: [[wiki/fields/13-punish-peak|Punish Peak]] (gate 241 → 231), [[wiki/fields/19-death-valley|Death Valley]] (gate 242 → 290), [[wiki/fields/84-eternal-lake|Eternal Lake]] (gate 240 → 941)
 

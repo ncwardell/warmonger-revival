@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=7cc4ba type=6143a1 id=3e5c70 sources=0b941a name_key=fb6258 duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=34f6eb icon=21b456 applied_by=56e28f -->
 |  |  |
 |---|---|
-|  | ![Hail of Arrows : Reduced Movement Speed](../assets/buffs/10114.png) |
+|  | ![Hail of Arrows : Reduced Movement Speed](wiki/assets/buffs/10114.png) |
 | **Buff id** | `10114` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

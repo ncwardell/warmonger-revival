@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=1b44f4 type=6143a1 id=833491 sources=d70496 name_key=bb041f duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=95bad7 icon=1bf876 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Reduces the Attack Speed of attackers by 30%. You gain 10% Movement Speed.](../assets/buffs/1206.png) |
+|  | ![Reduces the Attack Speed of attackers by 30%. You gain 10% Movement Speed.](wiki/assets/buffs/1206.png) |
 | **Buff id** | `1206` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

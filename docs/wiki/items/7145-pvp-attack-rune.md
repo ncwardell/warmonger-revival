@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=e67265 type=d36ca9 id=4a1604 sources=56df14 name_key=d066a2 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=77de68 stats=773ce0 options=0522b7 icon=576133 obtained_from=59431f -->
 |  |  |
 |---|---|
-|  | ![PvP Attack Rune](../assets/items/7145.png) |
+|  | ![PvP Attack Rune](wiki/assets/items/7145.png) |
 | **Item id** | `7145` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

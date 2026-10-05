@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=324662 type=6143a1 id=978d5e sources=1b48f6 name_key=5aa07d duration=bdf5bf is_buff=b6589f stack_type=356a19 group=b6589f effects=fa3493 icon=bf4234 applied_by=dc07be -->
 |  |  |
 |---|---|
-|  | ![The thrill of power : Critical Damage Increase](../assets/buffs/30425.png) |
+|  | ![The thrill of power : Critical Damage Increase](wiki/assets/buffs/30425.png) |
 | **Buff id** | `30425` |
 | **Duration** | 7 s (35 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

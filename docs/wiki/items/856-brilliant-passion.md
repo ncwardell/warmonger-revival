@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=4a6a6b type=d36ca9 id=efe76d sources=e9096c name_key=70036e kind=7b5200 kind_name=59f0ad classes=92d079 bind=883bf8 price=3f2ca4 cost_pair=886e46 stats=97d170 icon=1f54c5 obtained_from=fd9732 -->
 |  |  |
 |---|---|
-|  | ![Brilliant Passion](../assets/items/856.png) |
+|  | ![Brilliant Passion](wiki/assets/items/856.png) |
 | **Item id** | `856` |
 | **Kind** | Material (12) |
 | **Classes** | all |

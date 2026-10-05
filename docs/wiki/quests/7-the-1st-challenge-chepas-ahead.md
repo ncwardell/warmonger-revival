@@ -33,7 +33,7 @@ complete_talk: 638
 <!-- generated-keys: title=2ab84f type=eb5b2b id=902ba3 sources=7b89f6 name_key=6b6dd8 kind=b6589f kind_name=b3f808 giver=444e6c turn_in=f8f324 offer_maps=6e2020 turn_in_maps=46bf0f bit=9a79be requires_bit=c1dfd9 prev=2eaa92 next=c4824e stages=30caa7 objectives=35f8b6 rewards=867c0c offer_talk=27cfac complete_talk=afc3bf -->
 |  |  |
 |---|---|
-|  | ![The 1st Challenge: Chepas ahead](../assets/npcs/201.png) |
+|  | ![The 1st Challenge: Chepas ahead](wiki/assets/npcs/201.png) |
 | **Quest id** | `7` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/201-shaia\|Shaia]] |

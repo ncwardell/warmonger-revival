@@ -28,7 +28,7 @@ spawn_fields: [125]
 <!-- generated-keys: title=722f70 type=9bbc46 id=e0cc7b sources=974827 name_key=b56545 category=c1dfd9 class_mask=356a19 kill_group=8492e1 model=812ed4 model_name=0a9fa7 model_path=d78802 scale=aa8f28 radius=356a19 sounds=720726 hero=17ba07 boss_of=896837 dungeon_rewards=097645 quest_targets=85df61 spawn_fields=896837 -->
 |  |  |
 |---|---|
-|  | ![War Chief Garon](../assets/monsters/677.png) |
+|  | ![War Chief Garon](wiki/assets/monsters/677.png) |
 | **Unit id** | `677` |
 | **Category** | boss (inferred: every dungeon boss and quest bosses such as Tow Chief) (`category@8a` = 6) |
 | **Class mask** | 1 (monster) |

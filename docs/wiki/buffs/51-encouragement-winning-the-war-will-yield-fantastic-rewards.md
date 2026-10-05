@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=a60e85 type=6143a1 id=b7eb6c sources=926a57 name_key=eacb30 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=36df2d applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Encouragement : Winning the war will yield fantastic rewards!](../assets/buffs/51.png) |
+|  | ![Encouragement : Winning the war will yield fantastic rewards!](wiki/assets/buffs/51.png) |
 | **Buff id** | `51` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

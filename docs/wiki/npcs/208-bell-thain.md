@@ -31,7 +31,7 @@ positions:
 <!-- generated-keys: title=c06b8b type=3664ce id=baab34 sources=06edb1 name_key=5bfd4f title_key=75b8d8 npc_title=43ef83 category=e1822d class_mask=da4b92 model=f1f836 scale=aa8f28 functions=da9a7c role=43ef83 talk_key=fb5861 portrait=6aa998 quests=95ab0e quest_fields=6c3da9 map=775bc5 x=658c52 z=212b7c positions=d2b96d -->
 |  |  |
 |---|---|
-|  | ![Bell Thain](../assets/npcs/208.png) |
+|  | ![Bell Thain](wiki/assets/npcs/208.png) |
 | **Unit id** | `208` |
 | **Title** | Training Officer |
 | **Category** | NPC (category 50) |

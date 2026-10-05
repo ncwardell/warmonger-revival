@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=a241ca type=86a754 id=dd5415 sources=86f22a name_key=3398e8 desc_key=70778f kind=356a19 kind_name=9bc378 target=aa5d92 range=0ade7c area=38ed23 cost=4921ef cooldown=db479b delivery=93a212 effect_kind=356a19 effects=73cf54 damage_or_effect=bbbb47 tooltip_formula=d94767 visual=1d513c icon=fa0505 used_by=4d41e3 -->
 |  |  |
 |---|---|
-|  | ![Shadow Hurl](../assets/skills/10026.png) |
+|  | ![Shadow Hurl](wiki/assets/skills/10026.png) |
 | **Skill id** | `10026` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 1 |

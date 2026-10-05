@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z88_00.dds"
 <!-- generated-keys: title=daa3f3 type=c899cd id=b37f6d sources=a6b8e8 name_kr=e27f6a terrain=b1aa3a bounds=a39379 size=114466 segments=056879 fields=9af767 minimap=1a07e6 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 73 (Left Ground)](../assets/zones/88.png) |
+|  | ![minimap of Field 73 (Left Ground)](wiki/assets/zones/88.png) |
 | **Zone id** | `88` |
 | **ZoneDB name** | 필드_73 (English gloss: Field 73 (Left Ground)) |
 | **Terrain name** | `73` |

@@ -21,22 +21,22 @@ npc: [337]
 <!-- generated-keys: title=01ab7b type=61613a id=13ee96 sources=cb4f04 result=f6377b materials=f16dad gold=15aa0c success_rate=310b86 category=fe5dbb filter_mask=4e63ab level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/713.png) |
+|  | ![](wiki/assets/items/713.png) |
 | **Recipe id** | `2303` (`Item_Make`) |
 | **Makes** | [[wiki/items/713-tome-of-attack-spd-b\|Tome of Attack SPD (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 24 |
 | **Category / filter** | 8 / `0x200004` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/819.png) | [[wiki/items/819-lavender-powder\|Lavender powder]] | 20 |  |
-| ![](../assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
-| ![](../assets/items/842.png) | [[wiki/items/842-burned-sulphur\|Burned sulphur]] | 1 |  |
+| ![](wiki/assets/items/819.png) | [[wiki/items/819-lavender-powder\|Lavender powder]] | 20 |  |
+| ![](wiki/assets/items/831.png) | [[wiki/items/831-empty-scroll-b\|Empty Scroll (B)]] | 1 |  |
+| ![](wiki/assets/items/842.png) | [[wiki/items/842-burned-sulphur\|Burned sulphur]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/507-tome-of-attack-spd-b-recipe|recipe 507]]
 

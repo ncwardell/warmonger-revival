@@ -37,7 +37,7 @@ used_by:
 <!-- generated-keys: title=0bc1de type=86a754 id=b52f3d sources=8da047 name_key=b3fce3 desc_key=bd716e kind=356a19 kind_name=9bc378 target=e84f24 range=9e6a55 area=44a509 cost=7e5cd4 cooldown=38a66e delivery=93a212 effect_kind=356a19 effects=71ffbf damage_or_effect=113f0e tooltip_formula=8b4625 requirements=f16d2b visual=1407c2 icon=14a444 used_by=c3a0dc -->
 |  |  |
 |---|---|
-|  | ![Wild Launch](../assets/skills/5137.png) |
+|  | ![Wild Launch](wiki/assets/skills/5137.png) |
 | **Skill id** | `5137` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

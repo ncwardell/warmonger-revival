@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=56d4d8 type=61613a id=8621c9 sources=948442 result=5764f0 materials=fd58c6 gold=7507d4 success_rate=310b86 category=fe5dbb filter_mask=dd7c1a level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/867.png) |
+|  | ![](wiki/assets/items/867.png) |
 | **Recipe id** | `2421` (`Item_Make`) |
 | **Makes** | [[wiki/items/867-worked-diamond\|Worked Diamond]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 8 / `0x100` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 5 |  |
+| ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/621-worked-diamond-recipe|recipe 621]]
 

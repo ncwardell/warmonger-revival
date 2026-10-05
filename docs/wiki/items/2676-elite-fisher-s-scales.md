@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=81cbf2 type=d36ca9 id=326453 sources=f766b7 name_key=dc8d2c kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=e6685f obtained_from=7102f1 -->
 |  |  |
 |---|---|
-|  | ![Elite Fisher's Scales](../assets/items/2676.png) |
+|  | ![Elite Fisher's Scales](wiki/assets/items/2676.png) |
 | **Item id** | `2676` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

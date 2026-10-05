@@ -27,15 +27,16 @@ used_by:
   - {"weapon_base": 69, "slot": 3, "items": [8000, 8500]}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=ee81e2 type=86a754 id=352bc7 sources=d2a9eb name_key=1ed34f desc_key=cbf080 kind=da4b92 kind_name=3844d5 target=17c4ad range=b6589f area=344636 cost=2be88c cooldown=2be88c effect_kind=b6589f effects=e969da damage_or_effect=35efea visual=efbc08 icon=30f6b2 used_by=bd3a9e -->
+<!-- generated-keys: title=ee81e2 type=86a754 id=352bc7 sources=d2a9eb name_key=1ed34f desc_key=cbf080 kind=da4b92 kind_name=3844d5 target=17c4ad range=b6589f area=344636 cost=2be88c effect_kind=b6589f effects=e969da damage_or_effect=35efea visual=efbc08 icon=30f6b2 used_by=bd3a9e -->
 |  |  |
 |---|---|
-|  | ![Dark Knight Skull Passive](../assets/skills/20000.png) |
+|  | ![Dark Knight Skull Passive](wiki/assets/skills/20000.png) |
 | **Skill id** | `20000` |
 | **Kind** | passive (2) |
 | **Target** | self; -; units: -; up to 1 |
 | **Range** | 0 (world units) |
 | **Area** | circle, radius 3, width/angle 3 |
+| **Cooldown** | 300 s |
 | **Visual** | skillVisual 352 `화염 구슬 이펙트` |
 | **Icon** | `ui/icons/Policy.png` cell 37 |
 

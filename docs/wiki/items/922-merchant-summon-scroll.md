@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=e70054 type=d36ca9 id=4707f9 sources=7f6009 name_key=15a8b8 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=ac3478 no_sell=7cb6ef summon_unit=ef2afd stats=97d170 options=97bb52 icon=feddec obtained_from=7a773a -->
 |  |  |
 |---|---|
-|  | ![Merchant Summon Scroll](../assets/items/922.png) |
+|  | ![Merchant Summon Scroll](wiki/assets/items/922.png) |
 | **Item id** | `922` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

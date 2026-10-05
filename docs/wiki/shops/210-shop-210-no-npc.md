@@ -65,36 +65,36 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
-| 1 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
-| 2 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
-| 3 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
-| 4 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
-| 5 | ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  | Gold | 20 | 158 | 126 |
-| 6 | ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  | Gold | 30 | 237 | 189 |
-| 7 | ![](../assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 2 |  | Gold | 40 | 316 | 252 |
-| 8 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 2 |  | Gold | 30 | 237 | 189 |
-| 9 | ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  | Gold | 20 | 158 | 126 |
-| 10 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
-| 11 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
-| 12 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
-| 13 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
-| 14 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
-| 15 | ![](../assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 3 |  | Gold | 40 | 316 | 252 |
-| 16 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 3 |  | Gold | 30 | 237 | 189 |
-| 17 | ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 3 |  | Gold | 20 | 158 | 126 |
-| 18 | ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 3 |  | Gold | 30 | 237 | 189 |
-| 19 | ![](../assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 3 |  | Gold | 40 | 316 | 252 |
-| 20 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 3 |  | Gold | 30 | 237 | 189 |
-| 21 | ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 3 |  | Gold | 20 | 158 | 126 |
-| 22 | ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  | Gold | 30 | 237 | 189 |
-| 23 | ![](../assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 2 |  | Gold | 40 | 316 | 252 |
-| 24 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 2 |  | Gold | 30 | 237 | 189 |
-| 25 | ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  | Gold | 20 | 158 | 126 |
-| 26 | ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  | Gold | 30 | 237 | 189 |
-| 27 | ![](../assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 3 |  | Gold | 40 | 316 | 252 |
-| 28 | ![](../assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 3 |  | Gold | 30 | 237 | 189 |
-| 29 | ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 3 |  | Gold | 20 | 158 | 126 |
+| 0 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
+| 1 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
+| 2 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
+| 3 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
+| 4 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 2 |  | Gold | 50 | 396 | 315 |
+| 5 | ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  | Gold | 20 | 158 | 126 |
+| 6 | ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  | Gold | 30 | 237 | 189 |
+| 7 | ![](wiki/assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 2 |  | Gold | 40 | 316 | 252 |
+| 8 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 2 |  | Gold | 30 | 237 | 189 |
+| 9 | ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  | Gold | 20 | 158 | 126 |
+| 10 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
+| 11 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
+| 12 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
+| 13 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
+| 14 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 3 |  | Gold | 50 | 396 | 315 |
+| 15 | ![](wiki/assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 3 |  | Gold | 40 | 316 | 252 |
+| 16 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 3 |  | Gold | 30 | 237 | 189 |
+| 17 | ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 3 |  | Gold | 20 | 158 | 126 |
+| 18 | ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 3 |  | Gold | 30 | 237 | 189 |
+| 19 | ![](wiki/assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 3 |  | Gold | 40 | 316 | 252 |
+| 20 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 3 |  | Gold | 30 | 237 | 189 |
+| 21 | ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 3 |  | Gold | 20 | 158 | 126 |
+| 22 | ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  | Gold | 30 | 237 | 189 |
+| 23 | ![](wiki/assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 2 |  | Gold | 40 | 316 | 252 |
+| 24 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 2 |  | Gold | 30 | 237 | 189 |
+| 25 | ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  | Gold | 20 | 158 | 126 |
+| 26 | ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 2 |  | Gold | 30 | 237 | 189 |
+| 27 | ![](wiki/assets/items/806.png) | [[wiki/items/806-emerald\|Emerald]] | 3 |  | Gold | 40 | 316 | 252 |
+| 28 | ![](wiki/assets/items/816.png) | [[wiki/items/816-onyx\|Onyx]] | 3 |  | Gold | 30 | 237 | 189 |
+| 29 | ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 3 |  | Gold | 20 | 158 | 126 |
 
 25 entries repeat an item already listed (the client shows every entry).
 

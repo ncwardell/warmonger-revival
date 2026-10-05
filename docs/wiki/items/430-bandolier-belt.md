@@ -44,7 +44,7 @@ obtained_from:
 <!-- generated-keys: title=c599bf type=d36ca9 id=f8c024 sources=10e076 name_key=b3f63b kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=f18b5e reinforce=356a19 icon=bd3edc obtained_from=5d1e0d -->
 |  |  |
 |---|---|
-|  | ![Bandolier Belt](../assets/items/430.png) |
+|  | ![Bandolier Belt](wiki/assets/items/430.png) |
 | **Item id** | `430` |
 | **Kind** | Belt (55) |
 | **Classes** | all |
@@ -98,6 +98,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 121, tier 1 (hand-entered)
+- how dungeon_drop, field 125, tier 2 (hand-entered)
 
 ### Mentioned in
 

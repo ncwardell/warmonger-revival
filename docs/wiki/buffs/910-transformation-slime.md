@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=5ca377 type=6143a1 id=c70dfb sources=3bc802 name_key=cbc839 duration=995f11 is_buff=b6589f stack_type=356a19 group=e9a20a effects=67f83c icon=d402c6 applied_by=0a3da3 -->
 |  |  |
 |---|---|
-|  | ![Transformation : Slime](../assets/buffs/910.png) |
+|  | ![Transformation : Slime](wiki/assets/buffs/910.png) |
 | **Buff id** | `910` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

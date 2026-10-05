@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=183d62 type=d36ca9 id=1ccace sources=9ce09a name_key=f188a2 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 icon=6fb1f3 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Medal : Arena](../assets/items/1007.png) |
+|  | ![Medal : Arena](wiki/assets/items/1007.png) |
 | **Item id** | `1007` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -35,7 +35,7 @@ obtained_from:
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how arena_weekly_reward, count 10, rank 51-100 (hand-entered)
 
 ### Mentioned in
 

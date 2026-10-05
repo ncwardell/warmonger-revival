@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=5d5476 type=d36ca9 id=197683 sources=29c25e name_key=7e19ad kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=be01ab options=7bdd41 icon=ad999f obtained_from=490ef2 -->
 |  |  |
 |---|---|
-|  | ![Athletics Set](../assets/items/2035.png) |
+|  | ![Athletics Set](wiki/assets/items/2035.png) |
 | **Item id** | `2035` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

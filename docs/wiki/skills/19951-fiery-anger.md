@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=c0a935 type=86a754 id=8e44b5 sources=e13b5f name_key=da8308 desc_key=605acd kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=060055 cooldown=5b7687 effect_kind=356a19 effects=2fddf3 damage_or_effect=228e3d tooltip_formula=c66bd8 requirements=e74255 visual=6e9b99 icon=574aef used_by=5089dc -->
 |  |  |
 |---|---|
-|  | ![Fiery Anger](../assets/skills/19951.png) |
+|  | ![Fiery Anger](wiki/assets/skills/19951.png) |
 | **Skill id** | `19951` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=1b80c5 type=86a754 id=6b35a9 sources=a2c625 name_key=fe26f1 desc_key=5a6ed4 kind=356a19 kind_name=9bc378 target=8b0de6 range=fe5dbb cost=58a4ca cooldown=133145 effect_kind=b6692e effects=7a470e damage_or_effect=885781 tooltip_formula=705953 visual=135deb icon=3e4948 used_by=2ca8b9 -->
 |  |  |
 |---|---|
-|  | ![Mental Restoration](../assets/skills/5020.png) |
+|  | ![Mental Restoration](wiki/assets/skills/5020.png) |
 | **Skill id** | `5020` |
 | **Kind** | active (1) |
 | **Target** | unit; ally; units: monster, player; up to 1 |

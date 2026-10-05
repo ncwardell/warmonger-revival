@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=d7452b type=d36ca9 id=ba801e sources=8fbac1 name_key=81fd17 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=234394 obtained_from=9d2dab -->
 |  |  |
 |---|---|
-|  | ![Essence of Earth](../assets/items/1934.png) |
+|  | ![Essence of Earth](wiki/assets/items/1934.png) |
 | **Item id** | `1934` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -53,6 +53,7 @@ obtained_from:
 - Sold in [[wiki/shops/401-shop-401-no-npc|Shop 401 (no NPC)]] (no NPC found)
 - Shown as a reward of dungeon [[wiki/dungeons/124-lv-6-ghost-fortress|(Lv 6) Ghost Fortress]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 

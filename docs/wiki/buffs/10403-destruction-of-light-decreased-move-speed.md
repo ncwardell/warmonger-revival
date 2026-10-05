@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=56119b type=6143a1 id=d5e37f sources=53014e name_key=a2372a duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=dd90a4 applied_by=af2718 -->
 |  |  |
 |---|---|
-|  | ![Destruction of light : Decreased Move Speed](../assets/buffs/10403.png) |
+|  | ![Destruction of light : Decreased Move Speed](wiki/assets/buffs/10403.png) |
 | **Buff id** | `10403` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

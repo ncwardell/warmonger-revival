@@ -26,7 +26,7 @@ tp: {"row": 9, "tp_cost": 2500, "cooldown_s": 180, "need_flags": 396, "c7": 1}
 <!-- generated-keys: title=29fa99 type=86a754 id=244abb sources=91a361 name_key=145372 desc_key=a9b08e kind=356a19 kind_name=9bc378 target=cacd0a range=3028f5 area=950fc9 cost=a7b37a cooldown=c44d13 effect_kind=356a19 effects=eb8dad damage_or_effect=bf21a9 icon=14510d used_by=97d170 tp=e24286 -->
 |  |  |
 |---|---|
-|  | ![Recovery Shot](../assets/skills/4510.png) |
+|  | ![Recovery Shot](wiki/assets/skills/4510.png) |
 | **Skill id** | `4510` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

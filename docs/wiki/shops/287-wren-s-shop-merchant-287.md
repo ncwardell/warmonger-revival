@@ -33,7 +33,7 @@ observed_prices:
 <!-- generated-keys: title=76b355 type=ffcf9c id=f0a4ac sources=91990c npc=3e4a5c stock=f963fb prices=8d1d70 price_rates=c44eae header=702516 observed_prices=d0398d -->
 |  |  |
 |---|---|
-|  | ![Wren's shop (Merchant) 287](../assets/npcs/238.png) |
+|  | ![Wren's shop (Merchant) 287](wiki/assets/npcs/238.png) |
 | **Shop id** | `287` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/238-wren\|Wren]] (Merchant) |
 | **Stock** | 4 entries, 4 distinct items |
@@ -46,20 +46,26 @@ observed_prices:
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 1 | ![](../assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 2 | ![](../assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
-| 3 | ![](../assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
+| 0 | ![](wiki/assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 1 | ![](wiki/assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 2 | ![](wiki/assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
+| 3 | ![](wiki/assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
 
 ### Prices seen in play
 
-Source: [[gameplay/video-tutorial-walkthrough]] 14:20; [[gameplay/video-character-creation-and-tutorial]] 8:40
+Source: [[gameplay/video-early-quests]] §6 16:54; [[gameplay/video-tutorial-walkthrough]] 14:20; [[gameplay/video-character-creation-and-tutorial]] 8:40
 
 | item | shown | formula | match | note |
 |---|---|---|---|---|
 | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 79 Gold | 79 | yes |  |
 | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 79 Gold | 79 | yes |  |
 | [[wiki/items/906-scroll-return\|Scroll : Return]] | 79 Gold | 633 | no | shown as 'Scroll : Return' at 79, but item 906 has base 80 (formula: 633); the shop may have listed 911 or another 10-gold scroll |
+| [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 79 Gold | 79 | yes |  |
+| [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 79 Gold | 79 | yes |  |
+| [[wiki/items/906-scroll-return\|Scroll : Return]] | 79 Gold | 633 | no | shown as 'Scroll: Return' at 79, so the base must be 10, not 906's 80 |
+| [[wiki/items/760-scroll-of-transform-golem\|Scroll of Transform : (Golem)]] | 7,920 Gold | – | ? | not in Npc_Carry 287 |
+| [[wiki/items/761-scroll-of-transform-demon\|Scroll of Transform : (Demon)]] | 7,920 Gold | – | ? | not in Npc_Carry 287 |
+| [[wiki/items/762-scroll-of-transform-slime\|Scroll of Transform : (Slime)]] | 7,920 Gold | – | ? | not in Npc_Carry 287 |
 
 ### How prices are worked out
 

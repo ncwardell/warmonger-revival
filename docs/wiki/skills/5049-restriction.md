@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=a3e44e type=86a754 id=669125 sources=07f7df name_key=372e3b desc_key=afcacd kind=ac3478 kind_name=65782b target=18d7a2 range=77de68 cost=2be88c cooldown=2be88c effect_kind=da4b92 effects=91ee16 damage_or_effect=88e1d0 weapon_type=da4b92 visual=717b2f icon=b7a24b used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Restriction](../assets/skills/5049.png) |
+|  | ![Restriction](wiki/assets/skills/5049.png) |
 | **Skill id** | `5049` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; self, enemy; units: monster, player; up to 1 |

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=af45d4 type=6143a1 id=082fd2 sources=c6b7f2 name_key=bb97f9 duration=cdb31a is_buff=b6589f stack_type=356a19 group=b6589f effects=582a66 icon=9835a6 applied_by=c3d17b -->
 |  |  |
 |---|---|
-|  | ![Lightning protection : You gain 30% Attack speed and Movement speed, Damage](../assets/buffs/10434.png) |
+|  | ![Lightning protection : You gain 30% Attack speed and Movement speed, Damage](wiki/assets/buffs/10434.png) |
 | **Buff id** | `10434` |
 | **Duration** | 13 s (65 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

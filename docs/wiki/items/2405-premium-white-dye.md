@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=afc515 type=d36ca9 id=cbda9f sources=159ccf name_key=9cf1ac kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=00f44d cost_pair=c5bac5 stats=97d170 options=97010d icon=b46c98 obtained_from=6cb263 -->
 |  |  |
 |---|---|
-|  | ![Premium White Dye](../assets/items/2405.png) |
+|  | ![Premium White Dye](wiki/assets/items/2405.png) |
 | **Item id** | `2405` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

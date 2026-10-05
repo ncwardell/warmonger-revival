@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=007156 type=d36ca9 id=7a9556 sources=152559 name_key=8adb94 kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=0ca990 reinforce=356a19 icon=8ad561 obtained_from=2d14dc -->
 |  |  |
 |---|---|
-|  | ![Gloves of Honor](../assets/items/420.png) |
+|  | ![Gloves of Honor](wiki/assets/items/420.png) |
 | **Item id** | `420` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |
@@ -103,6 +103,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 122, tier 1 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=848314 type=d36ca9 id=fbbf19 sources=dabddc name_key=ce4302 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=5148be cost_pair=ad07dc stats=97d170 icon=041430 obtained_from=ab137f -->
 |  |  |
 |---|---|
-|  | ![Peppermint powder](../assets/items/821.png) |
+|  | ![Peppermint powder](wiki/assets/items/821.png) |
 | **Item id** | `821` |
 | **Kind** | Material (12) |
 | **Classes** | all |

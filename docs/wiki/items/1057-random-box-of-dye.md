@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=f300bc type=d36ca9 id=958791 sources=4fa570 name_key=54c87c kind=0286dd kind_name=b98f11 classes=92d079 bind=2be88c price=91d472 cost_pair=9f4cde flags=1b6453 no_sell=7cb6ef stats=97d170 icon=8689e0 obtained_from=506632 -->
 |  |  |
 |---|---|
-|  | ![Random box of dye](../assets/items/1057.png) |
+|  | ![Random box of dye](wiki/assets/items/1057.png) |
 | **Item id** | `1057` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=3ac1c7 type=d36ca9 id=775ea0 sources=82677b name_key=6885ce kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=902ba3 no_sell=5ffe53 use_skill=11c5ea cooldown_s=775bc5 cooldown_group=f1abd6 stats=97d170 options=0f51d7 icon=0afb33 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Life saviour (Premium)](../assets/items/1801.png) |
+|  | ![Life saviour (Premium)](wiki/assets/items/1801.png) |
 | **Item id** | `1801` |
 | **Kind** | Normal (11) |
 | **Classes** | all |
@@ -62,7 +62,7 @@ obtained_from:
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how auction_house_bundle, count 25, price 1000, currency jewels (hand-entered)
 <!-- generated:end -->
 
 ## Notes

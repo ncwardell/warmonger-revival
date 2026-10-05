@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=1c643f type=d36ca9 id=9ee0df sources=f591b0 name_key=71bbe7 kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=b359dc reinforce=da4b92 icon=e15aaa obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Guardian Shoes](../assets/items/483.png) |
+|  | ![Guardian Shoes](wiki/assets/items/483.png) |
 | **Item id** | `483` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |
@@ -72,7 +72,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 15, chance 5 (hand-entered)
+- how craft_superior, recipe 2015, chance 5 (hand-entered)
 
 ### Mentioned in
 

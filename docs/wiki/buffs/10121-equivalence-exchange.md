@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=2aabd5 type=6143a1 id=e19539 sources=9a82f7 name_key=37e391 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=e37e25 icon=b42233 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Equivalence Exchange](../assets/buffs/10121.png) |
+|  | ![Equivalence Exchange](wiki/assets/buffs/10121.png) |
 | **Buff id** | `10121` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

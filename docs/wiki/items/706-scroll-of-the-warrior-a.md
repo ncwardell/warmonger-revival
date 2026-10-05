@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=1b0219 type=d36ca9 id=de9a90 sources=ddc884 name_key=13dfd2 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=52cf26 cost_pair=4eedc6 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=b05317 cooldown_s=da4b92 cooldown_group=f6e112 stats=97d170 options=c6e46f icon=552941 obtained_from=2166cc -->
 |  |  |
 |---|---|
-|  | ![Scroll of the Warrior (A)](../assets/items/706.png) |
+|  | ![Scroll of the Warrior (A)](wiki/assets/items/706.png) |
 | **Item id** | `706` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

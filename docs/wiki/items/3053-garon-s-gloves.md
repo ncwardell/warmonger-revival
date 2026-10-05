@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=ca447c type=d36ca9 id=d60d68 sources=8082e1 name_key=4ef0cf kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=846971 set=c1dfd9 reinforce=92cfce icon=250750 obtained_from=2b6d4f -->
 |  |  |
 |---|---|
-|  | ![Garon's Gloves](../assets/items/3053.png) |
+|  | ![Garon's Gloves](wiki/assets/items/3053.png) |
 | **Item id** | `3053` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

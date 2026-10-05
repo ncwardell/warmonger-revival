@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=10844b type=d36ca9 id=2a6b90 sources=395ea5 name_key=073520 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=0328b3 obtained_from=be9617 -->
 |  |  |
 |---|---|
-|  | ![essence of Darkness](../assets/items/1930.png) |
+|  | ![essence of Darkness](wiki/assets/items/1930.png) |
 | **Item id** | `1930` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -57,6 +57,7 @@ obtained_from:
 - Shown as a reward of dungeon [[wiki/dungeons/121-lv-1-skull-temple|(Lv 1) Skull Temple]]
 - Shown as a reward of dungeon [[wiki/dungeons/128-lv-2-skull-cemetery|(Lv 2) Skull Cemetery]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 

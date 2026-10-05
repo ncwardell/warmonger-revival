@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z115_00.dds"
 <!-- generated-keys: title=2fc736 type=c899cd id=efa6e4 sources=62ba9d name_kr=7d0c7a terrain=9d7327 bounds=018daa size=be57ee segments=9fb9ce fields=e04b44 minimap=024e87 -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV3 110 (Prison)](../assets/zones/115.png) |
+|  | ![minimap of Abyss LV3 110 (Prison)](wiki/assets/zones/115.png) |
 | **Zone id** | `115` |
 | **ZoneDB name** | 어비스_LV3_110 (English gloss: Abyss LV3 110 (Prison)) |
 | **Terrain name** | `Abyss_Lv03` |

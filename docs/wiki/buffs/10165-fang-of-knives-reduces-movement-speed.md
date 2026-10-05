@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=9711cc type=6143a1 id=cf425e sources=bb3057 name_key=1e30e8 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=5f1bf5 applied_by=54f265 -->
 |  |  |
 |---|---|
-|  | ![Fang of Knives: Reduces Movement Speed](../assets/buffs/10165.png) |
+|  | ![Fang of Knives: Reduces Movement Speed](wiki/assets/buffs/10165.png) |
 | **Buff id** | `10165` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

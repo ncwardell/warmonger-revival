@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z46_00.dds"
 <!-- generated-keys: title=d69550 type=c899cd id=fe2ef4 sources=7f6e08 name_kr=596d50 terrain=bb48c0 bounds=bc7713 size=114466 segments=c094f9 fields=6c9878 minimap=c18292 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 21 (Vortex Plain)](../assets/zones/46.png) |
+|  | ![minimap of Field 21 (Vortex Plain)](wiki/assets/zones/46.png) |
 | **Zone id** | `46` |
 | **ZoneDB name** | 필드_21 (English gloss: Field 21 (Vortex Plain)) |
 | **Terrain name** | `21` |

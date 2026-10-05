@@ -20,21 +20,21 @@ npc: [337]
 <!-- generated-keys: title=f4cc7e type=61613a id=e9f2da sources=a67d1c result=de8a22 materials=adedbe gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=cb4e52 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/2506.png) |
+|  | ![](wiki/assets/items/2506.png) |
 | **Recipe id** | `2607` (`Item_Make`) |
 | **Makes** | [[wiki/items/2506-green-dye\|Green Dye]] × 5 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 8 / `0x20` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/869.png) | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] | 1 |  |
-| ![](../assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
+| ![](wiki/assets/items/869.png) | [[wiki/items/869-extracted-lavender\|Extracted Lavender]] | 1 |  |
+| ![](wiki/assets/items/846.png) | [[wiki/items/846-worked-oil\|Worked oil]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/757-green-dye-recipe|recipe 757]]
 

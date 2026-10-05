@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=ec8610 type=24f03d id=972a67 sources=d98392 contents=0d9697 value_4c=e3cbba opened_by_guess=028493 kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1035.png) |
+|  | ![](wiki/assets/items/1035.png) |
 | **RandomBox id** | `35` |
 | **Opened by** | [[wiki/items/1035-box-of-the-victorious-i\|Box of the Victorious I]] (*guess*, not confirmed) |
 | **Value @4c** | 1,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 20 |  |
-| 1 | ![](../assets/items/882.png) | [[wiki/items/882-potion-of-brisk-c\|Potion of Brisk (C)]] | 1 |  |
-| 2 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  |
-| 3 | ![](../assets/items/882.png) | [[wiki/items/882-potion-of-brisk-c\|Potion of Brisk (C)]] | 1 |  |
-| 4 | ![](../assets/items/882.png) | [[wiki/items/882-potion-of-brisk-c\|Potion of Brisk (C)]] | 1 |  |
-| 5 | ![](../assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
-| 6 | ![](../assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
-| 7 | ![](../assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
-| 8 | ![](../assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
-| 9 | ![](../assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
+| 0 | ![](wiki/assets/items/1011.png) | [[wiki/items/1011-yellow-jewel-10000\|Yellow Jewel (10000)]] | 20 |  |
+| 1 | ![](wiki/assets/items/882.png) | [[wiki/items/882-potion-of-brisk-c\|Potion of Brisk (C)]] | 1 |  |
+| 2 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 |  |
+| 3 | ![](wiki/assets/items/882.png) | [[wiki/items/882-potion-of-brisk-c\|Potion of Brisk (C)]] | 1 |  |
+| 4 | ![](wiki/assets/items/882.png) | [[wiki/items/882-potion-of-brisk-c\|Potion of Brisk (C)]] | 1 |  |
+| 5 | ![](wiki/assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
+| 6 | ![](wiki/assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
+| 7 | ![](wiki/assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
+| 8 | ![](wiki/assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
+| 9 | ![](wiki/assets/items/1034.png) | [[wiki/items/1034-box-of-the-victorious-ii\|Box of the Victorious II]] | 1 |  |
 
 ### Why this box item
 

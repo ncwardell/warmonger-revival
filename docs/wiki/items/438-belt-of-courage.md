@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=0fd1ff type=d36ca9 id=06cb3f sources=944c43 name_key=eaafed kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=5ca6ae reinforce=356a19 icon=fd1576 obtained_from=717ac9 -->
 |  |  |
 |---|---|
-|  | ![Belt of Courage](../assets/items/438.png) |
+|  | ![Belt of Courage](wiki/assets/items/438.png) |
 | **Item id** | `438` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

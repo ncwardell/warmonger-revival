@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=e9ef03 type=d36ca9 id=81d51c sources=8ef357 name_key=4fc9a5 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=15ffcd cost_pair=0a5b72 stats=97d170 icon=cfe9cb obtained_from=36c35d -->
 |  |  |
 |---|---|
-|  | ![Worked Onyx](../assets/items/865.png) |
+|  | ![Worked Onyx](wiki/assets/items/865.png) |
 | **Item id** | `865` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -31,7 +31,7 @@ positions:
 <!-- generated-keys: title=de3bbd type=3664ce id=cb4dd5 sources=b826f2 name_key=11f507 title_key=20ef62 npc_title=43af3a category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=f6eab2 role=43af3a talk_key=c52c82 portrait=d2d345 quests=62380e quest_fields=6c3da9 map=775bc5 x=6d20a2 z=37b117 positions=827710 -->
 |  |  |
 |---|---|
-|  | ![Alan](../assets/npcs/323.png) |
+|  | ![Alan](wiki/assets/npcs/323.png) |
 | **Unit id** | `323` |
 | **Title** | Rune Maker |
 | **Category** | NPC (category 50) |

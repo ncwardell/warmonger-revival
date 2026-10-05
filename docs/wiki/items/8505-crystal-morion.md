@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=7fa250 type=d36ca9 id=3578d2 sources=83d47d name_key=690599 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 period=7841fb weapon_base=1f1362 stats=97d170 options=3ade5a skills=b09239 reinforce=12c6fc icon=208e98 obtained_from=90ce3f -->
 |  |  |
 |---|---|
-|  | ![Crystal : Morion](../assets/items/8505.png) |
+|  | ![Crystal : Morion](wiki/assets/items/8505.png) |
 | **Item id** | `8505` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

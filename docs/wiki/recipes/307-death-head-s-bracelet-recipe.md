@@ -20,21 +20,21 @@ npc: [213]
 <!-- generated-keys: title=4dc98e type=61613a id=ae5ffa sources=a511ce result=950a6e materials=40f776 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=6ae6eb level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3007.png) |
+|  | ![](wiki/assets/items/3007.png) |
 | **Recipe id** | `307` (`Item_Make`) |
 | **Makes** | [[wiki/items/3007-death-head-s-bracelet\|Death Head's Bracelet]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 60 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 0 / `0x2000040` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
-| ![](../assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
+| ![](wiki/assets/items/2701.png) | [[wiki/items/2701-deathhead-horn\|DeathHead Horn]] | 1 |  |
+| ![](wiki/assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

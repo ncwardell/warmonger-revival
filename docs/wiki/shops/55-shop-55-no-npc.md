@@ -61,25 +61,25 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 1 | ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 3 | ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 4 | ![](../assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 5 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 6 | ![](../assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 10 | ![](../assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 11 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 15 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 16 | ![](../assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 17 | ![](../assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
-| 18 | ![](../assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
-| 19 | ![](../assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | 1 | 1 | Gold | 130 | 1,029 | 819 |
-| 20 | ![](../assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
-| 21 | ![](../assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | 1 | 1 | Gold | 130 | 1,029 | 819 |
-| 22 | ![](../assets/items/416.png) | [[wiki/items/416-spirit-gloves\|Spirit Gloves]] | 1 | 1 | Gold | 120 | 950 | 756 |
-| 23 | ![](../assets/items/433.png) | [[wiki/items/433-barrier-necklace\|Barrier Necklace]] | 1 | 1 | Gold | 100 | 792 | 630 |
-| 24 | ![](../assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
+| 0 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 1 | ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 3 | ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 4 | ![](wiki/assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 5 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 6 | ![](wiki/assets/items/1902.png) | [[wiki/items/1902-faded-passion-pattern\|Faded Passion Pattern]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 10 | ![](wiki/assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 11 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 15 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 16 | ![](wiki/assets/items/603.png) | [[wiki/items/603-blue-passion-fragments-c\|Blue Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 17 | ![](wiki/assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
+| 18 | ![](wiki/assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
+| 19 | ![](wiki/assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | 1 | 1 | Gold | 130 | 1,029 | 819 |
+| 20 | ![](wiki/assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
+| 21 | ![](wiki/assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | 1 | 1 | Gold | 130 | 1,029 | 819 |
+| 22 | ![](wiki/assets/items/416.png) | [[wiki/items/416-spirit-gloves\|Spirit Gloves]] | 1 | 1 | Gold | 120 | 950 | 756 |
+| 23 | ![](wiki/assets/items/433.png) | [[wiki/items/433-barrier-necklace\|Barrier Necklace]] | 1 | 1 | Gold | 100 | 792 | 630 |
+| 24 | ![](wiki/assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
 
 7 entries repeat an item already listed (the client shows every entry).
 

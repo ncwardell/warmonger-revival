@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=3aef0e type=d36ca9 id=0b93ca sources=aacccc name_key=1ba601 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6a7382 cost_pair=faafd6 stats=97d170 icon=859c36 obtained_from=d0b10a -->
 |  |  |
 |---|---|
-|  | ![Worked Emerald](../assets/items/868.png) |
+|  | ![Worked Emerald](wiki/assets/items/868.png) |
 | **Item id** | `868` |
 | **Kind** | Material (12) |
 | **Classes** | all |

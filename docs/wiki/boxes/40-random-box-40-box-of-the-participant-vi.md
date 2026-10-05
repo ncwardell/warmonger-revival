@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=53ad84 type=24f03d id=af3e13 sources=8204ae contents=002d1c value_4c=f8682d opened_by_guess=ea10e8 kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1040.png) |
+|  | ![](wiki/assets/items/1040.png) |
 | **RandomBox id** | `40` |
 | **Opened by** | [[wiki/items/1040-box-of-the-participant-vi\|Box of the Participant VI]] (*guess*, not confirmed) |
 | **Value @4c** | 300,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -37,10 +37,10 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 | slot |  | item | count | p |
 |---|---|---|---|---|
 | 0 |  | item 955 (not in `Item_Base`) | 1 | 5 |
-| 1 | ![](../assets/items/880.png) | [[wiki/items/880-potion-of-brisk-a\|Potion of Brisk (A)]] | 3 |  |
-| 2 | ![](../assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 | 5 |
-| 3 | ![](../assets/items/880.png) | [[wiki/items/880-potion-of-brisk-a\|Potion of Brisk (A)]] | 3 |  |
-| 4 | ![](../assets/items/880.png) | [[wiki/items/880-potion-of-brisk-a\|Potion of Brisk (A)]] | 3 |  |
+| 1 | ![](wiki/assets/items/880.png) | [[wiki/items/880-potion-of-brisk-a\|Potion of Brisk (A)]] | 3 |  |
+| 2 | ![](wiki/assets/items/1010.png) | [[wiki/items/1010-yellow-jewel-5000\|Yellow Jewel (5000)]] | 1 | 5 |
+| 3 | ![](wiki/assets/items/880.png) | [[wiki/items/880-potion-of-brisk-a\|Potion of Brisk (A)]] | 3 |  |
+| 4 | ![](wiki/assets/items/880.png) | [[wiki/items/880-potion-of-brisk-a\|Potion of Brisk (A)]] | 3 |  |
 | 5 |  | item 955 (not in `Item_Base`) | 1 |  |
 | 6 |  | item 955 (not in `Item_Base`) | 1 |  |
 | 7 |  | item 955 (not in `Item_Base`) | 1 |  |

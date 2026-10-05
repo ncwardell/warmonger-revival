@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/10000.png) | [[wiki/items/10000-magical-storm-wand\|Magical Storm Wand]] | 0 |  |
-| 1 | ![](../assets/items/15000.png) | [[wiki/items/15000-magical-shadow-bow\|Magical Shadow Bow]] | 0 |  |
-| 2 | ![](../assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | 0 |  |
-| 3 | ![](../assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | 0 |  |
-| 4 | ![](../assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | 0 |  |
-| 5 | ![](../assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | 0 |  |
-| 6 | ![](../assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | 0 |  |
-| 7 | ![](../assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | 0 |  |
-| 8 | ![](../assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | 0 |  |
-| 9 | ![](../assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | 0 |  |
+| 0 | ![](wiki/assets/items/10000.png) | [[wiki/items/10000-magical-storm-wand\|Magical Storm Wand]] | 0 |  |
+| 1 | ![](wiki/assets/items/15000.png) | [[wiki/items/15000-magical-shadow-bow\|Magical Shadow Bow]] | 0 |  |
+| 2 | ![](wiki/assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | 0 |  |
+| 3 | ![](wiki/assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | 0 |  |
+| 4 | ![](wiki/assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | 0 |  |
+| 5 | ![](wiki/assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | 0 |  |
+| 6 | ![](wiki/assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | 0 |  |
+| 7 | ![](wiki/assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | 0 |  |
+| 8 | ![](wiki/assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | 0 |  |
+| 9 | ![](wiki/assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | 0 |  |
 <!-- generated:end -->
 
 ## Notes

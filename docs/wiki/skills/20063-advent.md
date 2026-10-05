@@ -35,7 +35,7 @@ used_by:
 <!-- generated-keys: title=04a6fb type=86a754 id=838e48 sources=a94ce5 name_key=1324b2 desc_key=ce87ae kind=356a19 kind_name=9bc378 target=6850f9 range=0ade7c area=344636 cost=e65f66 cooldown=e3989d cast_ms=f83a38 movement=5f1488 delivery=dfe77c effect_kind=356a19 effects=454b68 damage_or_effect=850a38 tooltip_formula=4d3643 visual=914127 icon=43a46d used_by=33a6b0 -->
 |  |  |
 |---|---|
-|  | ![Advent](../assets/skills/20063.png) |
+|  | ![Advent](wiki/assets/skills/20063.png) |
 | **Skill id** | `20063` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 6 |

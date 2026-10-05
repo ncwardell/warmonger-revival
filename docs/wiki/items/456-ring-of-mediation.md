@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=c4e5f0 type=d36ca9 id=51eac6 sources=038ac9 name_key=7972c5 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=bf72b2 reinforce=da4b92 icon=c31246 obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Ring of Mediation](../assets/items/456.png) |
+|  | ![Ring of Mediation](wiki/assets/items/456.png) |
 | **Item id** | `456` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

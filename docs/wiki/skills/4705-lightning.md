@@ -26,7 +26,7 @@ tp: {"row": 53, "tp_cost": 0, "cooldown_s": 0, "need_flags": 396, "c7": 0}
 <!-- generated-keys: title=5cd14f type=86a754 id=2593eb sources=2f16cb name_key=61ef12 desc_key=2da273 kind=356a19 kind_name=9bc378 target=cacd0a range=3028f5 area=950fc9 cost=15f43a cooldown=2be88c effect_kind=356a19 effects=076914 damage_or_effect=bf21a9 icon=ae8ff0 used_by=97d170 tp=4c817a -->
 |  |  |
 |---|---|
-|  | ![Lightning](../assets/skills/4705.png) |
+|  | ![Lightning](wiki/assets/skills/4705.png) |
 | **Skill id** | `4705` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

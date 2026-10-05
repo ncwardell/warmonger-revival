@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=12d4a7 type=86a754 id=8ad6f5 sources=70427f name_key=ad99a8 desc_key=bc1c90 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=e4e7cf cooldown=e3989d effect_kind=356a19 effects=d56f5f damage_or_effect=493c6d tooltip_formula=4d8780 visual=2a79f1 icon=a12d2b used_by=b2669c -->
 |  |  |
 |---|---|
-|  | ![Secret Movement](../assets/skills/10043.png) |
+|  | ![Secret Movement](wiki/assets/skills/10043.png) |
 | **Skill id** | `10043` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

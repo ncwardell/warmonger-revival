@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z66_00.dds"
 <!-- generated-keys: title=590828 type=c899cd id=59129a sources=b2e5ef name_kr=83a106 terrain=bcf924 bounds=286f02 size=114466 segments=241cc3 fields=b8da6a minimap=6a759d -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 48 (Ashes Ruin)](../assets/zones/66.png) |
+|  | ![minimap of Field 48 (Ashes Ruin)](wiki/assets/zones/66.png) |
 | **Zone id** | `66` |
 | **ZoneDB name** | 필드_48 (English gloss: Field 48 (Ashes Ruin)) |
 | **Terrain name** | `48` |

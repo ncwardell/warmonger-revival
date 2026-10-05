@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=8bbee7 type=86a754 id=2804f9 sources=322274 name_key=c04af2 desc_key=015677 kind=356a19 kind_name=9bc378 target=d99f6c range=1b6453 cost=e4e7cf cooldown=e3989d effect_kind=da4b92 effects=aed4ca damage_or_effect=776b0b tooltip_formula=a8a2ef requirements=adeac3 visual=1f0037 icon=7bf15f used_by=c23978 -->
 |  |  |
 |---|---|
-|  | ![Shield of the Sun](../assets/skills/20108.png) |
+|  | ![Shield of the Sun](wiki/assets/skills/20108.png) |
 | **Skill id** | `20108` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

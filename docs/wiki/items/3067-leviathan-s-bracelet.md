@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=8f69c3 type=d36ca9 id=7d7a2c sources=28a929 name_key=0fe2c4 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=e3c6fa set=0ade7c reinforce=92cfce icon=9c820d obtained_from=31a8fc -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Bracelet](../assets/items/3067.png) |
+|  | ![Leviathan's Bracelet](wiki/assets/items/3067.png) |
 | **Item id** | `3067` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

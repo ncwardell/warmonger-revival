@@ -65,31 +65,31 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
-| 1 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
-| 3 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 4 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 5 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 6 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 7 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 8 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 9 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 10 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 11 | ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 12 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 13 | ![](../assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 14 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 15 | ![](../assets/items/401.png) | [[wiki/items/401-helmet-of-life\|Helmet of Life]] | 1 |  | Gold | 100 | 792 | 630 |
-| 16 | ![](../assets/items/402.png) | [[wiki/items/402-armor-of-life\|Armor of Life]] | 1 |  | Gold | 150 | 1,188 | 945 |
-| 17 | ![](../assets/items/423.png) | [[wiki/items/423-bracelet-of-mediation\|Bracelet of Mediation]] | 1 |  | Gold | 130 | 1,029 | 819 |
-| 18 | ![](../assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | 1 |  | Gold | 120 | 950 | 756 |
-| 19 | ![](../assets/items/411.png) | [[wiki/items/411-guardian-shoes\|Guardian Shoes]] | 1 |  | Gold | 130 | 1,029 | 819 |
-| 20 | ![](../assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | 1 |  | Gold | 120 | 950 | 756 |
-| 21 | ![](../assets/items/411.png) | [[wiki/items/411-guardian-shoes\|Guardian Shoes]] | 1 |  | Gold | 130 | 1,029 | 819 |
-| 22 | ![](../assets/items/412.png) | [[wiki/items/412-guardian-gloves\|Guardian Gloves]] | 1 |  | Gold | 120 | 950 | 756 |
-| 23 | ![](../assets/items/423.png) | [[wiki/items/423-bracelet-of-mediation\|Bracelet of Mediation]] | 1 |  | Gold | 130 | 1,029 | 819 |
-| 24 | ![](../assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | 1 |  | Gold | 120 | 950 | 756 |
+| 0 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
+| 1 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/1900.png) | [[wiki/items/1900-faded-passion-fragments\|Faded Passion fragments]] | 1 |  | Gold | 50 | 396 | 315 |
+| 3 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 4 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 5 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 6 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 7 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 8 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 9 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 10 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 11 | ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 12 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 13 | ![](wiki/assets/items/601.png) | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 14 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 15 | ![](wiki/assets/items/401.png) | [[wiki/items/401-helmet-of-life\|Helmet of Life]] | 1 |  | Gold | 100 | 792 | 630 |
+| 16 | ![](wiki/assets/items/402.png) | [[wiki/items/402-armor-of-life\|Armor of Life]] | 1 |  | Gold | 150 | 1,188 | 945 |
+| 17 | ![](wiki/assets/items/423.png) | [[wiki/items/423-bracelet-of-mediation\|Bracelet of Mediation]] | 1 |  | Gold | 130 | 1,029 | 819 |
+| 18 | ![](wiki/assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | 1 |  | Gold | 120 | 950 | 756 |
+| 19 | ![](wiki/assets/items/411.png) | [[wiki/items/411-guardian-shoes\|Guardian Shoes]] | 1 |  | Gold | 130 | 1,029 | 819 |
+| 20 | ![](wiki/assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | 1 |  | Gold | 120 | 950 | 756 |
+| 21 | ![](wiki/assets/items/411.png) | [[wiki/items/411-guardian-shoes\|Guardian Shoes]] | 1 |  | Gold | 130 | 1,029 | 819 |
+| 22 | ![](wiki/assets/items/412.png) | [[wiki/items/412-guardian-gloves\|Guardian Gloves]] | 1 |  | Gold | 120 | 950 | 756 |
+| 23 | ![](wiki/assets/items/423.png) | [[wiki/items/423-bracelet-of-mediation\|Bracelet of Mediation]] | 1 |  | Gold | 130 | 1,029 | 819 |
+| 24 | ![](wiki/assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | 1 |  | Gold | 120 | 950 | 756 |
 
 15 entries repeat an item already listed (the client shows every entry).
 

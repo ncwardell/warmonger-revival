@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=6eb3e7 type=6143a1 id=827ac8 sources=728901 name_key=fa8442 duration=995f11 is_buff=b6589f stack_type=356a19 group=e9a20a effects=01df82 icon=caccaf applied_by=ba7305 -->
 |  |  |
 |---|---|
-|  | ![Transformation : Devil](../assets/buffs/1152.png) |
+|  | ![Transformation : Devil](wiki/assets/buffs/1152.png) |
 | **Buff id** | `1152` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

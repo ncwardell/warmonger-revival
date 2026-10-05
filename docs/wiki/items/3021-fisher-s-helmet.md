@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=7d8c43 type=d36ca9 id=857b78 sources=ef2057 name_key=e3da30 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=f150fe set=77de68 reinforce=92cfce icon=0933c7 obtained_from=52878e -->
 |  |  |
 |---|---|
-|  | ![Fisher's Helmet](../assets/items/3021.png) |
+|  | ![Fisher's Helmet](wiki/assets/items/3021.png) |
 | **Item id** | `3021` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

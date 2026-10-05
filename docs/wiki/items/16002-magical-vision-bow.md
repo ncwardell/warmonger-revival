@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=0eeb7f type=d36ca9 id=d549b1 sources=e59907 name_key=582085 kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=f38cfe stats=c43914 options=58036a skills=65630f reinforce=7b5200 icon=007e55 obtained_from=501dc8 -->
 |  |  |
 |---|---|
-|  | ![Magical Vision Bow](../assets/items/16002.png) |
+|  | ![Magical Vision Bow](wiki/assets/items/16002.png) |
 | **Item id** | `16002` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=49e5d7 type=d36ca9 id=1442dd sources=34c7ee name_key=c93119 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=b6589f stats=5f515f options=9b3b47 icon=3b69b1 obtained_from=e1674b -->
 |  |  |
 |---|---|
-|  | ![Armor Penetration Rune](../assets/items/7082.png) |
+|  | ![Armor Penetration Rune](wiki/assets/items/7082.png) |
 | **Item id** | `7082` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

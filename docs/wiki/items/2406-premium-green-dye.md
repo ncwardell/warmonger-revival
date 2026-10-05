@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=e1aeca type=d36ca9 id=412a33 sources=2a1a4d name_key=a8819e kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=d939c5 icon=2c870f obtained_from=0ae713 -->
 |  |  |
 |---|---|
-|  | ![Premium Green Dye](../assets/items/2406.png) |
+|  | ![Premium Green Dye](wiki/assets/items/2406.png) |
 | **Item id** | `2406` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z86_00.dds"
 <!-- generated-keys: title=b04077 type=c899cd id=3c26df sources=20a7e8 name_kr=fe753f terrain=7273ca bounds=5bed1c size=114466 segments=ed9c0b fields=c845c2 minimap=9b62b2 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 71 (Thunderstorm door)](../assets/zones/86.png) |
+|  | ![minimap of Field 71 (Thunderstorm door)](wiki/assets/zones/86.png) |
 | **Zone id** | `86` |
 | **ZoneDB name** | 필드_71 (English gloss: Field 71 (Thunderstorm door)) |
 | **Terrain name** | `71` |

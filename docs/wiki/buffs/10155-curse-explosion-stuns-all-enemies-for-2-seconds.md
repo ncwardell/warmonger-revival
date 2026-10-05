@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=3c8787 type=6143a1 id=93d77c sources=9fe801 name_key=3e2936 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=f19f25 applied_by=9ebd70 -->
 |  |  |
 |---|---|
-|  | ![Curse Explosion : Stuns all enemies for 2 seconds](../assets/buffs/10155.png) |
+|  | ![Curse Explosion : Stuns all enemies for 2 seconds](wiki/assets/buffs/10155.png) |
 | **Buff id** | `10155` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

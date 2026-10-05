@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=e1c17c type=d36ca9 id=a4ac91 sources=0c80c1 name_key=5e8478 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=936627 cost_pair=ebf7c2 period=365a69 stats=e8b379 options=62cff0 icon=86f522 obtained_from=6094a9 -->
 |  |  |
 |---|---|
-|  | ![Haple Set](../assets/items/2000.png) |
+|  | ![Haple Set](wiki/assets/items/2000.png) |
 | **Item id** | `2000` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

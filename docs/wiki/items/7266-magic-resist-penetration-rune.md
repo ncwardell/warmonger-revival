@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=641d2f type=d36ca9 id=70ff8a sources=14c051 name_key=dd63d6 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=61d871 options=054ccf icon=ada33b obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Magic resist Penetration Rune](../assets/items/7266.png) |
+|  | ![Magic resist Penetration Rune](wiki/assets/items/7266.png) |
 | **Item id** | `7266` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

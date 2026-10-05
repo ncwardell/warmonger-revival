@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=afc112 type=6143a1 id=73ee49 sources=74c8cd name_key=8cd261 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=7d8f82 icon=70512b applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Awards SP +5](../assets/buffs/1200.png) |
+|  | ![Awards SP +5](wiki/assets/buffs/1200.png) |
 | **Buff id** | `1200` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=f14a6b type=6143a1 id=7a8687 sources=971ab0 name_key=69917a duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=093abb icon=3f3eba applied_by=f91f20 -->
 |  |  |
 |---|---|
-|  | ![Running Wild : Increased Attack Speed](../assets/buffs/30051.png) |
+|  | ![Running Wild : Increased Attack Speed](wiki/assets/buffs/30051.png) |
 | **Buff id** | `30051` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

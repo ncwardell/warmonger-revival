@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=204861 type=6143a1 id=da0dfa sources=604c84 name_key=889889 duration=6c749d is_buff=b6589f stack_type=77de68 group=da0dfa effects=816ad5 icon=b1d574 applied_by=54c1c9 -->
 |  |  |
 |---|---|
-|  | ![Final Strike: Creates a shield that absorbs Damage for 10 seconds.](../assets/buffs/10163.png) |
+|  | ![Final Strike: Creates a shield that absorbs Damage for 10 seconds.](wiki/assets/buffs/10163.png) |
 | **Buff id** | `10163` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

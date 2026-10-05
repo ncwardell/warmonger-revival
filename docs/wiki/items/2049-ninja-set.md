@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=84f93b type=d36ca9 id=d1c382 sources=821a9d name_key=2fbb41 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=f73156 options=8410a5 icon=d413ac obtained_from=554bc0 -->
 |  |  |
 |---|---|
-|  | ![Ninja Set](../assets/items/2049.png) |
+|  | ![Ninja Set](wiki/assets/items/2049.png) |
 | **Item id** | `2049` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

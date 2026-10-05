@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=01229b type=d36ca9 id=5d983f sources=b58f4c name_key=7dc239 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a period=7841fb weapon_base=450dde stats=97d170 options=b3771e skills=19e066 reinforce=472b07 icon=1e4bc4 obtained_from=a28a37 -->
 |  |  |
 |---|---|
-|  | ![Crystal : King Deathhead](../assets/items/8506.png) |
+|  | ![Crystal : King Deathhead](wiki/assets/items/8506.png) |
 | **Item id** | `8506` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

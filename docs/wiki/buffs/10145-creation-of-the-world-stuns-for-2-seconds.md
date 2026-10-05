@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=c47464 type=6143a1 id=38ae07 sources=987049 name_key=448367 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=0392b4 applied_by=37d5cd -->
 |  |  |
 |---|---|
-|  | ![Creation of the World: Stuns for 2 seconds](../assets/buffs/10145.png) |
+|  | ![Creation of the World: Stuns for 2 seconds](wiki/assets/buffs/10145.png) |
 | **Buff id** | `10145` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

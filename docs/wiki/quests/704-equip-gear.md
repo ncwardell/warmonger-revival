@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_07.png", "text_key": "Quest_HelpText_704"}
 <!-- generated-keys: title=49e160 type=eb5b2b id=a093a3 sources=fac383 name_key=6e733a kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=1f1362 automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=0510ab rewards=9562cb help=39f754 -->
 |  |  |
 |---|---|
-|  | ![Equip Gear](../assets/quests/704.png) |
+|  | ![Equip Gear](wiki/assets/quests/704.png) |
 | **Quest id** | `704` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

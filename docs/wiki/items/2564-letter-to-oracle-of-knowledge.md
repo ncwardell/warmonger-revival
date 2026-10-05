@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=d91842 type=d36ca9 id=5f27b3 sources=17ead2 name_key=dcef13 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=ca1243 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Letter to Oracle of Knowledge](../assets/items/2564.png) |
+|  | ![Letter to Oracle of Knowledge](wiki/assets/items/2564.png) |
 | **Item id** | `2564` |
 | **Kind** | Quest (17) |
 | **Classes** | all |
@@ -36,7 +36,7 @@ obtained_from:
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how quest_given, quest 20, npc 199 (hand-entered)
 
 ### Mentioned in
 

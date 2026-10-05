@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=be196f type=6143a1 id=29644a sources=a2557d name_key=c78f82 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=62f758 applied_by=7a5830 -->
 |  |  |
 |---|---|
-|  | ![Might of the Thunder God : Stunned for 2 seconds](../assets/buffs/30007.png) |
+|  | ![Might of the Thunder God : Stunned for 2 seconds](wiki/assets/buffs/30007.png) |
 | **Buff id** | `30007` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

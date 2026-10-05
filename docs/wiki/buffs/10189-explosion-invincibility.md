@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=d8c79a type=6143a1 id=2019d8 sources=420e83 name_key=1c66d4 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=b6589f effects=642b6e icon=9835a6 applied_by=3d3f17 -->
 |  |  |
 |---|---|
-|  | ![Explosion : Invincibility](../assets/buffs/10189.png) |
+|  | ![Explosion : Invincibility](wiki/assets/buffs/10189.png) |
 | **Buff id** | `10189` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -33,7 +33,7 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 <!-- generated-keys: title=e07b39 type=ffcf9c id=371786 sources=7badf6 npc=01f605 stock=e29029 prices=94d9ef price_rates=c44eae header=702516 -->
 |  |  |
 |---|---|
-|  | ![Wren's shop (Merchant) 291](../assets/npcs/319.png) |
+|  | ![Wren's shop (Merchant) 291](wiki/assets/npcs/319.png) |
 | **Shop id** | `291` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/319-wren\|Wren]] (Merchant) |
 | **Stock** | 9 entries, 9 distinct items |
@@ -46,15 +46,15 @@ header: {"c2": 0, "c3": 1, "c4": 0}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 1 | ![](../assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 2 | ![](../assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
-| 3 | ![](../assets/items/909.png) | [[wiki/items/909-scroll-gaia\|Scroll : Gaia]] | 1 |  | Gold | 80 | 633 | 504 |
-| 4 | ![](../assets/items/908.png) | [[wiki/items/908-scroll-castle\|Scroll : Castle]] | 1 |  | Gold | 2,500 | 19,800 | 15,750 |
-| 5 | ![](../assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
-| 6 | ![](../assets/items/946.png) | [[wiki/items/946-auto-decomposition-hammer-c\|Auto decomposition hammer (C)]] | 1 |  | Gold | 36,000 | 285,120 | 226,800 |
-| 7 | ![](../assets/items/947.png) | [[wiki/items/947-auto-decomposition-hammer-b\|Auto decomposition hammer (B)]] | 1 |  | Gold | 170,000 | 1,346,400 | 1,071,000 |
-| 8 | ![](../assets/items/949.png) | [[wiki/items/949-auto-decomposition-hammer-a\|Auto decomposition hammer (A)]] | 1 |  | Gold | 500,000 | 3,960,000 | 3,150,000 |
+| 0 | ![](wiki/assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 1 | ![](wiki/assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 2 | ![](wiki/assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
+| 3 | ![](wiki/assets/items/909.png) | [[wiki/items/909-scroll-gaia\|Scroll : Gaia]] | 1 |  | Gold | 80 | 633 | 504 |
+| 4 | ![](wiki/assets/items/908.png) | [[wiki/items/908-scroll-castle\|Scroll : Castle]] | 1 |  | Gold | 2,500 | 19,800 | 15,750 |
+| 5 | ![](wiki/assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
+| 6 | ![](wiki/assets/items/946.png) | [[wiki/items/946-auto-decomposition-hammer-c\|Auto decomposition hammer (C)]] | 1 |  | Gold | 36,000 | 285,120 | 226,800 |
+| 7 | ![](wiki/assets/items/947.png) | [[wiki/items/947-auto-decomposition-hammer-b\|Auto decomposition hammer (B)]] | 1 |  | Gold | 170,000 | 1,346,400 | 1,071,000 |
+| 8 | ![](wiki/assets/items/949.png) | [[wiki/items/949-auto-decomposition-hammer-a\|Auto decomposition hammer (A)]] | 1 |  | Gold | 500,000 | 3,960,000 | 3,150,000 |
 
 ### How prices are worked out
 

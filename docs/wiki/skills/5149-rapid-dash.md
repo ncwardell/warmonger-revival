@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=1679a3 type=86a754 id=3b92a2 sources=b9781d name_key=0e22fc desc_key=6bc7a8 kind=ac3478 kind_name=65782b target=069ef3 range=902ba3 cost=2be88c cooldown=2be88c effect_kind=356a19 effects=dae3d8 damage_or_effect=dfe0c3 weapon_type=0ade7c visual=85f100 icon=4bb647 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Rapid Dash](../assets/skills/5149.png) |
+|  | ![Rapid Dash](wiki/assets/skills/5149.png) |
 | **Skill id** | `5149` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

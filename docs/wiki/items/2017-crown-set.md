@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=ddd97f type=d36ca9 id=04e869 sources=8db585 name_key=976bfe kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=028149 cost_pair=623e9c period=365a69 stats=eca94b options=7d5c1f icon=35bcba obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Crown Set](../assets/items/2017.png) |
+|  | ![Crown Set](wiki/assets/items/2017.png) |
 | **Item id** | `2017` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

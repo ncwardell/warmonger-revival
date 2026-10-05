@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=fc9661 type=86a754 id=ac3d01 sources=e96721 name_key=1a6c6c desc_key=d2d1d1 kind=356a19 kind_name=9bc378 target=069ef3 range=fe5dbb cost=8b4fa7 cooldown=0156ad delivery=93a212 effect_kind=356a19 effects=ac96c5 damage_or_effect=a1193a tooltip_formula=de4d81 visual=4c15dc icon=5a5175 used_by=7b28f9 -->
 |  |  |
 |---|---|
-|  | ![Sharp Edges](../assets/skills/10112.png) |
+|  | ![Sharp Edges](wiki/assets/skills/10112.png) |
 | **Skill id** | `10112` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

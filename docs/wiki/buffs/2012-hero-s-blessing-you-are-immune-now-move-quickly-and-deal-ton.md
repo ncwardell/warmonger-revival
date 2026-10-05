@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=28f390 type=6143a1 id=084b3a sources=bea874 name_key=74425d duration=6c141f is_buff=b6589f stack_type=356a19 group=17ba07 effects=64da86 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Hero's blessing : You are immune now, move quickly and deal tons of damage.](../assets/buffs/2012.png) |
+|  | ![Hero's blessing : You are immune now, move quickly and deal tons of damage.](wiki/assets/buffs/2012.png) |
 | **Buff id** | `2012` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

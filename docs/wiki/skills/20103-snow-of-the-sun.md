@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=9a5cf6 type=86a754 id=55fcbe sources=3b01a6 name_key=e43ebc desc_key=e8ac06 kind=356a19 kind_name=9bc378 target=cacd0a range=3028f5 cost=9b32a5 cooldown=6963fe effect_kind=da4b92 effects=bf2189 damage_or_effect=bf21a9 requirements=3a72c4 visual=4396c2 icon=20ae02 used_by=1877bd -->
 |  |  |
 |---|---|
-|  | ![Snow of the Sun](../assets/skills/20103.png) |
+|  | ![Snow of the Sun](wiki/assets/skills/20103.png) |
 | **Skill id** | `20103` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

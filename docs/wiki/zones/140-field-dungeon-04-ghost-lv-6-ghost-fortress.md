@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z140_00.dds"
 <!-- generated-keys: title=977167 type=c899cd id=c28aca sources=eab58c name_kr=2c1676 terrain=1be77b bounds=2c27d7 size=6f2826 segments=8cb1a9 fields=181a14 minimap=66562e -->
 |  |  |
 |---|---|
-|  | ![minimap of Field dungeon 04(ghost) ((Lv 6) Ghost Fortress)](../assets/zones/140.png) |
+|  | ![minimap of Field dungeon 04(ghost) ((Lv 6) Ghost Fortress)](wiki/assets/zones/140.png) |
 | **Zone id** | `140` |
 | **ZoneDB name** | 필드던전_04(유령) (English gloss: Field dungeon 04(ghost) ([Lv 6] Ghost Fortress)) |
 | **Terrain name** | `FieldDungeon_04` |

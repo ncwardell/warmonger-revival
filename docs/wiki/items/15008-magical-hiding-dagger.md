@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=11df59 type=d36ca9 id=12be95 sources=9fc3d2 name_key=21c3d4 kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=22d200 stats=db11c4 options=fa2c49 skills=51c23c reinforce=17ba07 icon=a6173d obtained_from=04a02a -->
 |  |  |
 |---|---|
-|  | ![Magical hiding Dagger](../assets/items/15008.png) |
+|  | ![Magical hiding Dagger](wiki/assets/items/15008.png) |
 | **Item id** | `15008` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=5d5476 type=d36ca9 id=ffba58 sources=9529af name_key=7e19ad kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=be01ab options=21b6db icon=20e8e1 obtained_from=17c1ae -->
 |  |  |
 |---|---|
-|  | ![Athletics Set](../assets/items/2033.png) |
+|  | ![Athletics Set](wiki/assets/items/2033.png) |
 | **Item id** | `2033` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

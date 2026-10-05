@@ -97,7 +97,7 @@ obtained_from:
 <!-- generated-keys: title=e93edc type=d36ca9 id=259e58 sources=b71cf1 name_key=38ff8e kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=eac6e9 obtained_from=1685fd -->
 |  |  |
 |---|---|
-|  | ![Faded Passion fragments](../assets/items/1900.png) |
+|  | ![Faded Passion fragments](wiki/assets/items/1900.png) |
 | **Item id** | `1900` |
 | **Kind** | Normal (1) |
 | **Classes** | all |
@@ -185,6 +185,7 @@ obtained_from:
 - Sold in [[wiki/shops/232-shop-232-no-npc|Shop 232 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/233-shop-233-no-npc|Shop 233 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/234-shop-234-no-npc|Shop 234 (no NPC)]] (no NPC found)
+- how dungeon_drop, field 133, count [1, 20] (hand-entered)
 
 ### Mentioned in
 

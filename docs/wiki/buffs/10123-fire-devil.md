@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=547e53 type=6143a1 id=d9039b sources=5a7924 name_key=051d1e duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=2fea1a icon=b8b0e7 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fire Devil](../assets/buffs/10123.png) |
+|  | ![Fire Devil](wiki/assets/buffs/10123.png) |
 | **Buff id** | `10123` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

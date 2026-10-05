@@ -58,28 +58,28 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 1 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
-| 3 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 4 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 5 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
-| 6 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 7 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 8 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
-| 9 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 10 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 11 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
-| 12 | ![](../assets/items/858.png) | [[wiki/items/858-mysterious-core-stone\|Mysterious core stone]] | 1 |  | Gold | 100 | 792 | 630 |
-| 13 | ![](../assets/items/859.png) | [[wiki/items/859-brilliant-core-stone\|Brilliant core stone]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 14 | ![](../assets/items/860.png) | [[wiki/items/860-amplifying-core-stone\|Amplifying core stone]] | 1 |  | Gold | 300 | 2,376 | 1,890 |
-| 18 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 19 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 20 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 21 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 22 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 23 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 24 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 0 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 1 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
+| 3 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 4 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 5 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
+| 6 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 7 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 8 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
+| 9 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 10 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 11 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 3 |  | Gold | 20 | 158 | 126 |
+| 12 | ![](wiki/assets/items/858.png) | [[wiki/items/858-mysterious-core-stone\|Mysterious core stone]] | 1 |  | Gold | 100 | 792 | 630 |
+| 13 | ![](wiki/assets/items/859.png) | [[wiki/items/859-brilliant-core-stone\|Brilliant core stone]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 14 | ![](wiki/assets/items/860.png) | [[wiki/items/860-amplifying-core-stone\|Amplifying core stone]] | 1 |  | Gold | 300 | 2,376 | 1,890 |
+| 18 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 19 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 20 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 21 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 22 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 23 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 24 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 2 |  | Gold | 20 | 158 | 126 |
 
 16 entries repeat an item already listed (the client shows every entry).
 

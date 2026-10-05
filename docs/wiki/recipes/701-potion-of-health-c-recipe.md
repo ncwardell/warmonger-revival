@@ -20,21 +20,21 @@ npc: [214]
 <!-- generated-keys: title=76839f type=61613a id=917098 sources=5a0a6d result=b2edb8 materials=96df78 gold=e3cbba success_rate=310b86 category=356a19 filter_mask=06f592 level=ac3478 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/885.png) |
+|  | ![](wiki/assets/items/885.png) |
 | **Recipe id** | `701` (`Item_Make`) |
 | **Makes** | [[wiki/items/885-potion-of-health-c\|Potion of Health (C)]] × 100 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 5 |
 | **Category / filter** | 1 / `0x100001` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/834.png) | [[wiki/items/834-empty-flask-c\|Empty Flask (C)]] | 100 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 2 |  |
+| ![](wiki/assets/items/834.png) | [[wiki/items/834-empty-flask-c\|Empty Flask (C)]] | 100 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 2 |  |
 
 Other recipes for the same item: [[wiki/recipes/2501-potion-of-health-c-recipe|recipe 2501]]
 

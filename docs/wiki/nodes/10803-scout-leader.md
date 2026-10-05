@@ -20,7 +20,7 @@ quests: {"gives": [80, 81, 82], "receives": [17]}
 <!-- generated-keys: title=a6d26e type=09842e id=205c8a sources=f0fbaf kind=7ae9cd field=17503a x=e6957f z=3818ff gadget=77de68 shape=1b6453 name_key=9e666d model=f67462 scale=2afe7d quests=94f788 -->
 |  |  |
 |---|---|
-|  | ![Scout Leader](../assets/nodes/10803.png) |
+|  | ![Scout Leader](wiki/assets/nodes/10803.png) |
 | **Trigger id** | `10803` |
 | **Kind** | talkable quest gadget |
 | **Field** | [[wiki/fields/108-the-land-of-greed\|The land of Greed]] at (448.84, 2753.87) |

@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=5293a5 type=d36ca9 id=10309c sources=e78ee2 name_key=a717ca kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=f820eb cost_pair=7af57d stats=f66d39 reinforce=356a19 icon=1dc0bc obtained_from=43b8c7 -->
 |  |  |
 |---|---|
-|  | ![Spell Belt](../assets/items/398.png) |
+|  | ![Spell Belt](wiki/assets/items/398.png) |
 | **Item id** | `398` |
 | **Kind** | Belt (55) |
 | **Classes** | all |
@@ -102,6 +102,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
+- how dungeon_drop, field 126, tier 2 (hand-entered)
 
 ### Mentioned in
 

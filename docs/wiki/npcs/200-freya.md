@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=29ae4f type=3664ce id=9f9af0 sources=9af3c4 name_key=750efc title_key=21d171 npc_title=955057 category=e1822d class_mask=da4b92 model=c5b76d scale=aa8f28 functions=40bee7 role=955057 shop=6b0f4d talk_key=7b5881 portrait=263ce3 quests=b3aacc quest_fields=6c3da9 map=775bc5 x=cb5ff3 z=a915dd positions=5abb25 -->
 |  |  |
 |---|---|
-|  | ![Freya](../assets/npcs/200.png) |
+|  | ![Freya](wiki/assets/npcs/200.png) |
 | **Unit id** | `200` |
 | **Title** | Oracle of Knowledge |
 | **Category** | NPC (category 50) |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=f5e277 type=d36ca9 id=dda9dd sources=bbd17e name_key=10e52f kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=e132b1 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Innocence looking for shape](../assets/items/2584.png) |
+|  | ![Innocence looking for shape](wiki/assets/items/2584.png) |
 | **Item id** | `2584` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

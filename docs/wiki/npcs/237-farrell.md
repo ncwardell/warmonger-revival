@@ -25,15 +25,15 @@ x: 1995.0
 z: 1700.0
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=1ce8ba type=3664ce id=3c3316 sources=c37b02 name_key=e2d294 title_key=5076ed npc_title=5088e1 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=ba093c role=5088e1 talk_key=971ba2 portrait=d2d345 quests=b30468 quest_fields=6c3da9 map=775bc5 x=2be88c z=2be88c -->
+<!-- generated-keys: title=1ce8ba type=3664ce id=3c3316 sources=c37b02 name_key=e2d294 title_key=5076ed npc_title=5088e1 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=ba093c role=5088e1 talk_key=971ba2 portrait=d2d345 quests=b30468 quest_fields=6c3da9 map=775bc5 -->
 |  |  |
 |---|---|
-|  | ![Farrell](../assets/npcs/237.png) |
+|  | ![Farrell](wiki/assets/npcs/237.png) |
 | **Unit id** | `237` |
 | **Title** | Blacksmith |
 | **Category** | NPC (category 50) |
 | **Menu** | Create (`19`) |
-| **Stands in** | [[wiki/fields/120-fortress\|Fortress]] (position unknown) |
+| **Stands in** | [[wiki/fields/120-fortress\|Fortress]] at (1995.0, 1700.0) |
 | **Model** | ObjectList `238`, scale 1.5 |
 | **Portrait** | `ui/NPCProfile/Quest_Reinforce.dds` |
 

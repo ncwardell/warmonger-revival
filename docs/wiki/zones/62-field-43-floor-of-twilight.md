@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z62_00.dds"
 <!-- generated-keys: title=c57a93 type=c899cd id=511a41 sources=64a637 name_kr=b4d04f terrain=c7ea14 bounds=843452 size=114466 segments=cc2f64 fields=6ee44d minimap=e4587f -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 43 (Floor of Twilight)](../assets/zones/62.png) |
+|  | ![minimap of Field 43 (Floor of Twilight)](wiki/assets/zones/62.png) |
 | **Zone id** | `62` |
 | **ZoneDB name** | 필드_43 (English gloss: Field 43 (Floor of Twilight)) |
 | **Terrain name** | `43` |

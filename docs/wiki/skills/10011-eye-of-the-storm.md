@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=5ed432 type=86a754 id=31559f sources=1524fb name_key=7ec951 desc_key=228470 kind=356a19 kind_name=9bc378 target=c18e1a range=b6589f cost=ff5a60 cooldown=ad2ac8 effect_kind=b6589f effects=2d8f6f damage_or_effect=bf21a9 visual=b37f6d icon=fae5ad used_by=d4d1b0 -->
 |  |  |
 |---|---|
-|  | ![Eye of the Storm](../assets/skills/10011.png) |
+|  | ![Eye of the Storm](wiki/assets/skills/10011.png) |
 | **Skill id** | `10011` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 1 |

@@ -34,16 +34,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/3023.png) | [[wiki/items/3023-fisher-s-gloves\|Fisher's Gloves]] | 1 |  |
-| 1 | ![](../assets/items/3024.png) | [[wiki/items/3024-fisher-s-shoes\|Fisher's Shoes]] | 1 |  |
-| 2 | ![](../assets/items/3025.png) | [[wiki/items/3025-fisher-s-necklace\|Fisher's Necklace]] | 1 |  |
-| 3 | ![](../assets/items/3026.png) | [[wiki/items/3026-fisher-s-belt\|Fisher's Belt]] | 1 |  |
-| 4 | ![](../assets/items/3027.png) | [[wiki/items/3027-fisher-s-bracelet\|Fisher's Bracelet]] | 1 |  |
-| 5 | ![](../assets/items/3028.png) | [[wiki/items/3028-fisher-s-ring\|Fisher's Ring]] | 1 |  |
-| 6 | ![](../assets/items/3028.png) | [[wiki/items/3028-fisher-s-ring\|Fisher's Ring]] | 1 |  |
-| 7 | ![](../assets/items/3021.png) | [[wiki/items/3021-fisher-s-helmet\|Fisher's Helmet]] | 1 |  |
-| 8 | ![](../assets/items/3021.png) | [[wiki/items/3021-fisher-s-helmet\|Fisher's Helmet]] | 1 |  |
-| 9 | ![](../assets/items/3022.png) | [[wiki/items/3022-fisher-s-armor\|Fisher's Armor]] | 1 |  |
+| 0 | ![](wiki/assets/items/3023.png) | [[wiki/items/3023-fisher-s-gloves\|Fisher's Gloves]] | 1 |  |
+| 1 | ![](wiki/assets/items/3024.png) | [[wiki/items/3024-fisher-s-shoes\|Fisher's Shoes]] | 1 |  |
+| 2 | ![](wiki/assets/items/3025.png) | [[wiki/items/3025-fisher-s-necklace\|Fisher's Necklace]] | 1 |  |
+| 3 | ![](wiki/assets/items/3026.png) | [[wiki/items/3026-fisher-s-belt\|Fisher's Belt]] | 1 |  |
+| 4 | ![](wiki/assets/items/3027.png) | [[wiki/items/3027-fisher-s-bracelet\|Fisher's Bracelet]] | 1 |  |
+| 5 | ![](wiki/assets/items/3028.png) | [[wiki/items/3028-fisher-s-ring\|Fisher's Ring]] | 1 |  |
+| 6 | ![](wiki/assets/items/3028.png) | [[wiki/items/3028-fisher-s-ring\|Fisher's Ring]] | 1 |  |
+| 7 | ![](wiki/assets/items/3021.png) | [[wiki/items/3021-fisher-s-helmet\|Fisher's Helmet]] | 1 |  |
+| 8 | ![](wiki/assets/items/3021.png) | [[wiki/items/3021-fisher-s-helmet\|Fisher's Helmet]] | 1 |  |
+| 9 | ![](wiki/assets/items/3022.png) | [[wiki/items/3022-fisher-s-armor\|Fisher's Armor]] | 1 |  |
 <!-- generated:end -->
 
 ## Notes

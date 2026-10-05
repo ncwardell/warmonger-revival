@@ -8,7 +8,7 @@ title: "Fields (maps)"
 
 Every field (map) in the client's `SceneList` / `FieldNames` tables: the Gaia lands, the towns and home areas of each nation, the abyss fields, the dungeons and the arena. Each page lists the gates in and out, the NPCs, monsters and gathering nodes, the terrain zones and navmesh segments. See also [[wiki/zones/index|Zones]] and [[wiki/dungeons/index|Dungeons]].
 
-138 pages: 8 complete, 70 partial, 60 stub. Back to the [[wiki/index|game wiki]].
+138 pages: 9 complete, 69 partial, 60 stub. Back to the [[wiki/index|game wiki]].
 
 | | id | name | status | missing |
 |---|---|---|---|---|
@@ -100,7 +100,7 @@ Every field (map) in the client's `SceneList` / `FieldNames` tables: the Gaia la
 |  | 86 | [[wiki/fields/86-moonlight-temple\|Moonlight Temple]] | stub | 2 |
 |  | 87 | [[wiki/fields/87-village\|Village]] | partial | 2 |
 |  | 88 | [[wiki/fields/88-training-camp\|Training Camp]] | complete | 0 |
-|  | 89 | [[wiki/fields/89-training-ground\|Training Ground]] | partial | 1 |
+|  | 89 | [[wiki/fields/89-training-ground\|Training Ground]] | complete | 0 |
 |  | 90 | [[wiki/fields/90-castle\|Castle]] | complete | 0 |
 |  | 91 | [[wiki/fields/91-village\|Village]] | partial | 2 |
 |  | 92 | [[wiki/fields/92-training-camp\|Training Camp]] | complete | 0 |

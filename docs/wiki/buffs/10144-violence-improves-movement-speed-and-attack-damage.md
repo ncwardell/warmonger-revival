@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=ad5a25 type=6143a1 id=f480e8 sources=dd3189 name_key=0fa3f7 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=ce8463 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Violence: Improves Movement Speed and Attack Damage](../assets/buffs/10144.png) |
+|  | ![Violence: Improves Movement Speed and Attack Damage](wiki/assets/buffs/10144.png) |
 | **Buff id** | `10144` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

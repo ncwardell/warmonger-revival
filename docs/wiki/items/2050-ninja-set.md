@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=84f93b type=d36ca9 id=cb58c3 sources=ecf03a name_key=2fbb41 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=f73156 options=a07de0 icon=a42ab5 obtained_from=49e222 -->
 |  |  |
 |---|---|
-|  | ![Ninja Set](../assets/items/2050.png) |
+|  | ![Ninja Set](wiki/assets/items/2050.png) |
 | **Item id** | `2050` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

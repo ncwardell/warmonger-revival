@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=026ccb type=6143a1 id=2a3f79 sources=b5e508 name_key=a72dce duration=0aac5a is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=70aa6a applied_by=56f337 -->
 |  |  |
 |---|---|
-|  | ![Final Strikes: Silences for 2 seconds.](../assets/buffs/10166.png) |
+|  | ![Final Strikes: Silences for 2 seconds.](wiki/assets/buffs/10166.png) |
 | **Buff id** | `10166` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

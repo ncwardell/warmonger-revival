@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=a66ac6 type=d36ca9 id=eaef52 sources=b1f3db name_key=bf3f9e kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=78953d cost_pair=4dda47 rarity=356a19 stats=76251a reinforce=da4b92 icon=c03e6f obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Gloves of Life](../assets/items/479.png) |
+|  | ![Gloves of Life](wiki/assets/items/479.png) |
 | **Item id** | `479` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |
@@ -74,7 +74,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 7, chance 5 (hand-entered)
+- how craft_superior, recipe 2007, chance 5 (hand-entered)
 
 ### Mentioned in
 

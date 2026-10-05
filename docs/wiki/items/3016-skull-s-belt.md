@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=898497 type=d36ca9 id=6e36e2 sources=16ae37 name_key=f159b9 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=b65ec2 set=da4b92 reinforce=92cfce icon=190bd7 obtained_from=55960d -->
 |  |  |
 |---|---|
-|  | ![Skull's Belt](../assets/items/3016.png) |
+|  | ![Skull's Belt](wiki/assets/items/3016.png) |
 | **Item id** | `3016` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

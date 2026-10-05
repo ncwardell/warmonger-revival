@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=ce3f49 type=86a754 id=375c11 sources=b2e652 name_key=9fd77a desc_key=a35547 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=e65f66 cooldown=628d31 effect_kind=b6589f effects=e0f30a damage_or_effect=7deaa1 tooltip_formula=c66bd8 visual=c28097 icon=b3dd37 used_by=447906 -->
 |  |  |
 |---|---|
-|  | ![Magical Protection](../assets/skills/20054.png) |
+|  | ![Magical Protection](wiki/assets/skills/20054.png) |
 | **Skill id** | `20054` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

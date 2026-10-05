@@ -21,7 +21,7 @@ npc: [336]
 <!-- generated-keys: title=7ff24e type=61613a id=c73329 sources=d3a759 result=f3d887 materials=c06eb2 gold=8a12a3 success_rate=310b86 category=902ba3 filter_mask=619013 superior=f69b74 level=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/15004.png) |
+|  | ![](wiki/assets/items/15004.png) |
 | **Recipe id** | `2202` (`Item_Make`) |
 | **Makes** | [[wiki/items/15004-magical-frost-bow\|Magical Frost Bow]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,14 +29,14 @@ npc: [336]
 | **Superior result** | 5 % → [[wiki/items/16004-magical-frost-bow\|Magical Frost Bow]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 7 / `0x1000021` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/336-paraman\|Paraman]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
 
 Other recipes for the same item: [[wiki/recipes/907-magical-frost-bow-recipe|recipe 907]]
 

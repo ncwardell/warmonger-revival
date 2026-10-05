@@ -59,7 +59,7 @@ obtained_from:
 <!-- generated-keys: title=9c292c type=d36ca9 id=ae694b sources=309866 name_key=387108 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=d141f6 obtained_from=b1dc15 -->
 |  |  |
 |---|---|
-|  | ![Red Passion Fragments (C)](../assets/items/613.png) |
+|  | ![Red Passion Fragments (C)](wiki/assets/items/613.png) |
 | **Item id** | `613` |
 | **Kind** | Material (12) |
 | **Classes** | all |

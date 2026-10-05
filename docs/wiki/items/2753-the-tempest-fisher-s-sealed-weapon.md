@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=9a279a type=d36ca9 id=266197 sources=75e96f name_key=ee2f32 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=d048da obtained_from=d5ef61 -->
 |  |  |
 |---|---|
-|  | ![The Tempest Fisher's Sealed Weapon](../assets/items/2753.png) |
+|  | ![The Tempest Fisher's Sealed Weapon](wiki/assets/items/2753.png) |
 | **Item id** | `2753` |
 | **Kind** | Material (12) |
 | **Classes** | all |

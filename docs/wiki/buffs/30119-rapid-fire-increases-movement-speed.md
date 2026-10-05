@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=44d186 type=6143a1 id=4729be sources=0d5aa7 name_key=fcb5bd duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=a420c4 icon=60dd2b applied_by=7675fa -->
 |  |  |
 |---|---|
-|  | ![Rapid Fire: Increases Movement Speed](../assets/buffs/30119.png) |
+|  | ![Rapid Fire: Increases Movement Speed](wiki/assets/buffs/30119.png) |
 | **Buff id** | `30119` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

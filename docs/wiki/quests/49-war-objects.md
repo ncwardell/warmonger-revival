@@ -30,7 +30,7 @@ offer_talk: 908
 <!-- generated-keys: title=6d96a9 type=eb5b2b id=2e01e1 sources=f25251 name_key=5594f6 kind=b6589f kind_name=b3f808 giver=58f603 turn_in=847ad4 offer_maps=15f2a7 bit=0ca927 requires_bit=f38cfe automatic=5ffe53 prev=b8da6a next=d59264 stages=30caa7 objectives=2be88c objectives_client=a7e18d rewards=b7dcb1 offer_talk=2262b2 -->
 |  |  |
 |---|---|
-|  | ![War - Objects](../assets/npcs/208.png) |
+|  | ![War - Objects](wiki/assets/npcs/208.png) |
 | **Quest id** | `49` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/208-bell-thain\|Bell Thain]] |

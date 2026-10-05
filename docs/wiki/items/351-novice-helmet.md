@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=64773d type=d36ca9 id=002647 sources=9b1b5f name_key=4d9006 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=636210 icon=9497cc obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Novice Helmet](../assets/items/351.png) |
+|  | ![Novice Helmet](wiki/assets/items/351.png) |
 | **Item id** | `351` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

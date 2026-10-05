@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=3e9edc type=d36ca9 id=586f05 sources=61c7b3 name_key=74ff48 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=1b6453 stats=85ea5d options=1a760e icon=8bcc7a obtained_from=55b552 -->
 |  |  |
 |---|---|
-|  | ![Critical Strike Deal Rune](../assets/items/7196.png) |
+|  | ![Critical Strike Deal Rune](wiki/assets/items/7196.png) |
 | **Item id** | `7196` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

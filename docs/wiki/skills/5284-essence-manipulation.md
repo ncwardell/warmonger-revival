@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=142858 type=86a754 id=3e9503 sources=2a6be6 name_key=dd96ad desc_key=5d8a73 kind=356a19 kind_name=9bc378 target=da0809 range=0ade7c area=728214 cost=4921ef cooldown=db479b delivery=93a212 effect_kind=da4b92 effects=f817a3 damage_or_effect=1db56e tooltip_formula=811585 visual=5e06d2 icon=dd1ff3 used_by=0c648e -->
 |  |  |
 |---|---|
-|  | ![Essence Manipulation](../assets/skills/5284.png) |
+|  | ![Essence Manipulation](wiki/assets/skills/5284.png) |
 | **Skill id** | `5284` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 2 |

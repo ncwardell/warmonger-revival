@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=6c73ed type=d36ca9 id=913155 sources=77f98d name_key=93a8b2 kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=ed09a2 obtained_from=09a06e -->
 |  |  |
 |---|---|
-|  | ![Piece : King Deathhead](../assets/items/9006.png) |
+|  | ![Piece : King Deathhead](wiki/assets/items/9006.png) |
 | **Item id** | `9006` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

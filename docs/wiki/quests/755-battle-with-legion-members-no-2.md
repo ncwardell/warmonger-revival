@@ -32,7 +32,7 @@ complete_talk: 748
 <!-- generated-keys: title=371ed0 type=eb5b2b id=52342f sources=92b25f name_key=2fb26b kind=356a19 kind_name=0bac50 giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=934385 requires_bit=c8306a prev=10598e next=97d170 prerequisites=a1b25b stages=30caa7 objectives=2be88c objectives_client=10ab8c rewards=756548 offer_talk=5c1dc0 complete_talk=6d40f9 -->
 |  |  |
 |---|---|
-|  | ![Battle with Legion members No. 2](../assets/npcs/210.png) |
+|  | ![Battle with Legion members No. 2](wiki/assets/npcs/210.png) |
 | **Quest id** | `755` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

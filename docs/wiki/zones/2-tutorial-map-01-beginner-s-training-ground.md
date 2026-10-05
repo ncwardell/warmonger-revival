@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z2_00.dds"
 <!-- generated-keys: title=af0209 type=c899cd id=da4b92 sources=67adc5 name_kr=c16487 terrain=a5580a bounds=c2c1ee size=fd526b segments=0fbb4f fields=23ae40 minimap=60c543 -->
 |  |  |
 |---|---|
-|  | ![minimap of Tutorial map 01 (Beginner's Training Ground)](../assets/zones/2.png) |
+|  | ![minimap of Tutorial map 01 (Beginner's Training Ground)](wiki/assets/zones/2.png) |
 | **Zone id** | `2` |
 | **ZoneDB name** | 튜토리얼맵_01 (English gloss: Tutorial map 01 (Beginner's Training Ground)) |
 | **Terrain name** | `tutorial_map_01` |

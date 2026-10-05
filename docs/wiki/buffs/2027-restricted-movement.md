@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=8a7d9e type=6143a1 id=64e0cf sources=19b07e name_key=7c4393 duration=0aac5a is_buff=b6589f stack_type=356a19 group=b6589f effects=a1bf0d icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Restricted Movement](../assets/buffs/2027.png) |
+|  | ![Restricted Movement](wiki/assets/buffs/2027.png) |
 | **Buff id** | `2027` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

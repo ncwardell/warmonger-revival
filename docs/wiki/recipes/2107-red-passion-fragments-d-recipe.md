@@ -19,20 +19,20 @@ npc: [336]
 <!-- generated-keys: title=61942d type=61613a id=fe8ed5 sources=7517d9 result=3b5fe0 materials=4f9fca gold=a6a084 success_rate=310b86 category=902ba3 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/611.png) |
+|  | ![](wiki/assets/items/611.png) |
 | **Recipe id** | `2107` (`Item_Make`) |
 | **Makes** | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] × 100 |
 | **Gold** | 2,500 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 7 / `0x2` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/336-paraman\|Paraman]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 66 |  |
+| ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 66 |  |
 
 Other recipes for the same item: [[wiki/recipes/816-red-passion-fragments-d-recipe|recipe 816]]
 

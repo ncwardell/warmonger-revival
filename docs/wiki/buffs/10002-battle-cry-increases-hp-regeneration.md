@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=7bce23 type=6143a1 id=6918d3 sources=b0b8b1 name_key=e70407 duration=fba78d is_buff=b6589f stack_type=356a19 group=6918d3 effects=6914b3 icon=2a2087 applied_by=6a6730 -->
 |  |  |
 |---|---|
-|  | ![Battle Cry: Increases HP Regeneration](../assets/buffs/10002.png) |
+|  | ![Battle Cry: Increases HP Regeneration](wiki/assets/buffs/10002.png) |
 | **Buff id** | `10002` |
 | **Duration** | 16 s (80 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

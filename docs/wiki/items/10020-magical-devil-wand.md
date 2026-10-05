@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=3ab850 type=d36ca9 id=122673 sources=2550cc name_key=d98e14 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=472b07 stats=977f84 options=1c20f7 skills=f7035a reinforce=17ba07 icon=c2c93b obtained_from=24b569 -->
 |  |  |
 |---|---|
-|  | ![Magical Devil Wand](../assets/items/10020.png) |
+|  | ![Magical Devil Wand](wiki/assets/items/10020.png) |
 | **Item id** | `10020` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

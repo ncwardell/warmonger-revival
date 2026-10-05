@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=2616b2 type=6143a1 id=272852 sources=cdcee5 name_key=b3842d duration=0aac5a is_buff=b6589f stack_type=356a19 group=b6589f effects=a54f9e icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Nexus HP Regeneration](../assets/buffs/2048.png) |
+|  | ![Nexus HP Regeneration](wiki/assets/buffs/2048.png) |
 | **Buff id** | `2048` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

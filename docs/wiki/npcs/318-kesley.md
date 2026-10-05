@@ -24,14 +24,15 @@ x: 480.8
 z: 4146.2
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=f6e385 type=3664ce id=154a31 sources=ee9c99 name_key=ca5d69 title_key=7696fa npc_title=63326e category=e1822d class_mask=da4b92 model=0b7f5a scale=58e6d3 functions=13674d role=63326e talk_key=9314f1 portrait=69c286 map=2be88c x=2be88c z=2be88c -->
+<!-- generated-keys: title=f6e385 type=3664ce id=154a31 sources=ee9c99 name_key=ca5d69 title_key=7696fa npc_title=63326e category=e1822d class_mask=da4b92 model=0b7f5a scale=58e6d3 functions=13674d role=63326e talk_key=9314f1 portrait=69c286 -->
 |  |  |
 |---|---|
-|  | ![Kesley](../assets/npcs/318.png) |
+|  | ![Kesley](wiki/assets/npcs/318.png) |
 | **Unit id** | `318` |
 | **Title** | Legion Administrator |
 | **Category** | NPC (category 50) |
 | **Menu** | Legion Create (`6`), Warehouse (`28`) |
+| **Stands in** | [[wiki/fields/90-castle\|Castle]] at (480.8, 4146.2) |
 | **Model** | ObjectList `235`, scale 1.7 |
 | **Portrait** | `ui/NPCProfile/NPC_Guild.dds` |
 

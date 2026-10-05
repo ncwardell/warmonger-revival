@@ -29,7 +29,7 @@ offer_talk: 643
 <!-- generated-keys: title=1e6f8b type=eb5b2b id=17ba07 sources=d4e81f name_key=a386ad kind=b6589f kind_name=b3f808 giver=f8f324 turn_in=847ad4 offer_maps=46bf0f bit=b1d578 requires_bit=0ade7c automatic=5ffe53 prev=e9310b next=707bff prerequisites=303313 stages=a80fa1 objectives=413905 rewards=97d170 offer_talk=dcd7d0 -->
 |  |  |
 |---|---|
-|  | ![An urgent message](../assets/npcs/198.png) |
+|  | ![An urgent message](wiki/assets/npcs/198.png) |
 | **Quest id** | `11` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/198-frei\|Frei]] |

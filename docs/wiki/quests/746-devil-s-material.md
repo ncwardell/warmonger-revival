@@ -33,7 +33,7 @@ complete_talk: 828
 <!-- generated-keys: title=bccae0 type=eb5b2b id=9b3aa2 sources=18a992 name_key=d1a442 kind=77de68 kind_name=01e781 giver=91ad7d turn_in=91ad7d offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=632667 excludes_bit=cb4e52 owned_field=8b7471 prev=5c3c3a next=97d170 stages=30caa7 objectives=0a6419 rewards=8cb638 offer_talk=1d57cc complete_talk=0da8cb -->
 |  |  |
 |---|---|
-|  | ![Devil's material](../assets/npcs/213.png) |
+|  | ![Devil's material](wiki/assets/npcs/213.png) |
 | **Quest id** | `746` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/213-odin\|Odin]] |

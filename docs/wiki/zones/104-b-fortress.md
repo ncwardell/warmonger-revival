@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z104_00.dds"
 <!-- generated-keys: title=4ebecd type=c899cd id=78a8ef sources=507b0a name_kr=8b82cb terrain=ddf7e2 bounds=850ab9 size=a1cfbb segments=dff210 fields=6c3da9 minimap=3b9ad4 -->
 |  |  |
 |---|---|
-|  | ![minimap of B Fortress](../assets/zones/104.png) |
+|  | ![minimap of B Fortress](wiki/assets/zones/104.png) |
 | **Zone id** | `104` |
 | **ZoneDB name** | B_요새 (English gloss: B Fortress) |
 | **Terrain name** | `B_Town_01` |

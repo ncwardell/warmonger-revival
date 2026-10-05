@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=eb328d type=6143a1 id=e8e44b sources=228ed4 name_key=f85e85 duration=995f11 is_buff=b6589f stack_type=356a19 group=27b0e6 effects=6b7072 icon=9eb0f9 applied_by=02aa4f -->
 |  |  |
 |---|---|
-|  | ![Elixir of Tenacity (C) : Tenacity +10, Life Steal with each attack +3](../assets/buffs/2125.png) |
+|  | ![Elixir of Tenacity (C) : Tenacity +10, Life Steal with each attack +3](wiki/assets/buffs/2125.png) |
 | **Buff id** | `2125` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

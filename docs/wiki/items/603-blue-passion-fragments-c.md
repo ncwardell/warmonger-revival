@@ -59,7 +59,7 @@ obtained_from:
 <!-- generated-keys: title=c91690 type=d36ca9 id=8d255e sources=3999b0 name_key=89621d kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=c733ec obtained_from=dd9354 -->
 |  |  |
 |---|---|
-|  | ![Blue Passion Fragments (C)](../assets/items/603.png) |
+|  | ![Blue Passion Fragments (C)](wiki/assets/items/603.png) |
 | **Item id** | `603` |
 | **Kind** | Material (12) |
 | **Classes** | all |

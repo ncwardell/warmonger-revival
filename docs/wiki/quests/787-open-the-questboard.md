@@ -29,7 +29,7 @@ help: {"image": "ui/HelpImage/Help_8.png", "text_key": "Quest_HelpText_787"}
 <!-- generated-keys: title=98b4de type=eb5b2b id=e00988 sources=e07288 name_key=b71482 kind=da4b92 kind_name=875cc6 level=8c32e3 giver=1caac0 turn_in=847ad4 offer_maps=15f2a7 bit=8b7471 automatic=5ffe53 prev=97d170 next=97d170 prerequisites=eb6b9f stages=30caa7 objectives=4c4ad6 rewards=97d170 offer_talk=5a4b36 help=8a17b6 -->
 |  |  |
 |---|---|
-|  | ![Open The QuestBoard](../assets/quests/787.png) |
+|  | ![Open The QuestBoard](wiki/assets/quests/787.png) |
 | **Quest id** | `787` |
 | **Kind** | Guide (kind 2) |
 | **Level** | 27+ |

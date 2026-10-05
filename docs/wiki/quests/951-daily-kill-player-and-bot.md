@@ -31,7 +31,7 @@ board:
   - {"row": 2, "tab": 2}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=5e0890 type=eb5b2b id=69fa65 sources=df6b7b name_key=730f24 kind=0ade7c kind_name=b6566f level=84a59c giver=e2bffb turn_in=847ad4 periodic=e8ab7f automatic=5ffe53 prev=97d170 next=97d170 prerequisites=c3110a stages=30caa7 objectives=2be88c objectives_client=d4c61b rewards=d06c9a help=c5042f board=266e71 -->
+<!-- generated-keys: title=5e0890 type=eb5b2b id=69fa65 sources=df6b7b name_key=730f24 kind=0ade7c kind_name=b6566f level=84a59c giver=e2bffb turn_in=847ad4 periodic=e8ab7f automatic=5ffe53 prev=97d170 next=97d170 prerequisites=c3110a stages=30caa7 objectives_client=d4c61b rewards=d06c9a help=c5042f board=266e71 -->
 |  |  |
 |---|---|
 | **Quest id** | `951` |
@@ -56,10 +56,7 @@ board:
 
 ### Objectives
 
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
-
-1. Type 2 — kill enemy players?; values a=5, b=10, c=1 — tracker: “Destroy the enemy player and Bot from the Gaia field”
+1. Type 2 — kill enemy players?; values a=5, c=1 — tracker: “Destroy the enemy player and Bot from the Gaia field (0/10)”
 
 ### Rewards
 

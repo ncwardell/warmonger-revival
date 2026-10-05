@@ -12,93 +12,93 @@ Every buff and debuff in the client's `Skill_Buff` table: what skills, items, wa
 
 | | id | name | status | missing |
 |---|---|---|---|---|
-| ![](../assets/buffs/1.png) | 1 | [[wiki/buffs/1-increases-exp-gained-by-15\|Increases EXP gained by 15%.]] | complete | 0 |
-| ![](../assets/buffs/3.png) | 3 | [[wiki/buffs/3-increases-drop-rate-by-200\|Increases Drop Rate by 200%.]] | complete | 0 |
-| ![](../assets/buffs/4.png) | 4 | [[wiki/buffs/4-increases-exp-gained-by-20\|Increases EXP gained by 20%.]] | complete | 0 |
-| ![](../assets/buffs/11.png) | 11 | [[wiki/buffs/11-blessing-of-shaia-points-increase-when-in-town-or-unconnecte\|Blessing of Shaia Points increase when in town or unconnected state.]] | partial | 1 |
-| ![](../assets/buffs/12.png) | 12 | [[wiki/buffs/12-blessing-of-shaia-movement-speed-increases-in-non-combat-sta\|Blessing of Shaia Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 20%]] | complete | 0 |
-| ![](../assets/buffs/13.png) | 13 | [[wiki/buffs/13-blessing-of-shaia-movement-speed-increases-in-non-combat-sta\|Blessing of Shaia Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 30%]] | complete | 0 |
-| ![](../assets/buffs/14.png) | 14 | [[wiki/buffs/14-blessing-of-shaia-donation-10-movement-speed-increases-in-no\|Blessing of Shaia (Donation +10%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 30%]] | complete | 0 |
-| ![](../assets/buffs/15.png) | 15 | [[wiki/buffs/15-blessing-of-shaia-donation-20-movement-speed-increases-in-no\|Blessing of Shaia (Donation +20%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 40%]] | complete | 0 |
-| ![](../assets/buffs/16.png) | 16 | [[wiki/buffs/16-blessing-of-shaia-donation-30-movement-speed-increases-in-no\|Blessing of Shaia (Donation +30%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 50%]] | complete | 0 |
-| ![](../assets/buffs/17.png) | 17 | [[wiki/buffs/17-blessing-of-shaia-donation-10-movement-speed-increases-in-no\|Blessing of Shaia (Donation +10%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 40%]] | complete | 0 |
-| ![](../assets/buffs/18.png) | 18 | [[wiki/buffs/18-blessing-of-shaia-donation-20-movement-speed-increases-in-no\|Blessing of Shaia (Donation +20%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 50%]] | complete | 0 |
-| ![](../assets/buffs/19.png) | 19 | [[wiki/buffs/19-blessing-of-shaia-donation-30-movement-speed-increases-in-no\|Blessing of Shaia (Donation +30%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 60%]] | complete | 0 |
-| ![](../assets/buffs/20.png) | 20 | [[wiki/buffs/20-welcome-back-adventurer-take-this-as-a-token-of-appreciation\|Welcome back adventurer, take this as a token of appreciation.]] | stub | 1 |
-| ![](../assets/buffs/28.png) | 28 | [[wiki/buffs/28\|Buff 28]] | complete | 0 |
-| ![](../assets/buffs/29.png) | 29 | [[wiki/buffs/29-increases-movement-speed-by-200\|Increases Movement Speed by 200.]] | complete | 0 |
-| ![](../assets/buffs/41.png) | 41 | [[wiki/buffs/41\|Buff 41]] | complete | 0 |
-| ![](../assets/buffs/42.png) | 42 | [[wiki/buffs/42\|Buff 42]] | complete | 0 |
-| ![](../assets/buffs/43.png) | 43 | [[wiki/buffs/43\|Buff 43]] | complete | 0 |
-| ![](../assets/buffs/44.png) | 44 | [[wiki/buffs/44\|Buff 44]] | complete | 0 |
-| ![](../assets/buffs/45.png) | 45 | [[wiki/buffs/45\|Buff 45]] | complete | 0 |
-| ![](../assets/buffs/46.png) | 46 | [[wiki/buffs/46\|Buff 46]] | complete | 0 |
-| ![](../assets/buffs/50.png) | 50 | [[wiki/buffs/50-great-barrier-protects-an-area-from-attacks-for-a-certain-am\|Great Barrier : Protects an area from Attacks for a certain amount of time]] | stub | 1 |
-| ![](../assets/buffs/51.png) | 51 | [[wiki/buffs/51-encouragement-winning-the-war-will-yield-fantastic-rewards\|Encouragement : Winning the war will yield fantastic rewards!]] | stub | 1 |
-| ![](../assets/buffs/60.png) | 60 | [[wiki/buffs/60-into-battle-increased-health-damage-and-ability-power\|Into Battle: Increased Health, damage and Ability Power]] | complete | 0 |
-| ![](../assets/buffs/61.png) | 61 | [[wiki/buffs/61-into-battle-increased-health-damage-and-ability-power\|Into Battle: Increased Health, damage and Ability Power]] | complete | 0 |
-| ![](../assets/buffs/62.png) | 62 | [[wiki/buffs/62-into-battle-increased-health-damage-and-ability-power\|Into Battle: Increased Health, damage and Ability Power]] | complete | 0 |
-| ![](../assets/buffs/80.png) | 80 | [[wiki/buffs/80\|Buff 80]] | stub | 1 |
-| ![](../assets/buffs/90.png) | 90 | [[wiki/buffs/90-molten-lava-you-are-burning\|Molten Lava: You are burning]] | complete | 0 |
-| ![](../assets/buffs/91.png) | 91 | [[wiki/buffs/91\|Buff 91]] | complete | 0 |
-| ![](../assets/buffs/95.png) | 95 | [[wiki/buffs/95\|Buff 95]] | stub | 1 |
-| ![](../assets/buffs/96.png) | 96 | [[wiki/buffs/96\|Buff 96]] | stub | 1 |
-| ![](../assets/buffs/97.png) | 97 | [[wiki/buffs/97\|Buff 97]] | stub | 1 |
-| ![](../assets/buffs/100.png) | 100 | [[wiki/buffs/100-deals-an-additional-10-attack-damage\|Deals an additional 10% Attack Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/1.png) | 1 | [[wiki/buffs/1-increases-exp-gained-by-15\|Increases EXP gained by 15%.]] | complete | 0 |
+| ![](wiki/assets/buffs/3.png) | 3 | [[wiki/buffs/3-increases-drop-rate-by-200\|Increases Drop Rate by 200%.]] | complete | 0 |
+| ![](wiki/assets/buffs/4.png) | 4 | [[wiki/buffs/4-increases-exp-gained-by-20\|Increases EXP gained by 20%.]] | complete | 0 |
+| ![](wiki/assets/buffs/11.png) | 11 | [[wiki/buffs/11-blessing-of-shaia-points-increase-when-in-town-or-unconnecte\|Blessing of Shaia Points increase when in town or unconnected state.]] | partial | 1 |
+| ![](wiki/assets/buffs/12.png) | 12 | [[wiki/buffs/12-blessing-of-shaia-movement-speed-increases-in-non-combat-sta\|Blessing of Shaia Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 20%]] | complete | 0 |
+| ![](wiki/assets/buffs/13.png) | 13 | [[wiki/buffs/13-blessing-of-shaia-movement-speed-increases-in-non-combat-sta\|Blessing of Shaia Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 30%]] | complete | 0 |
+| ![](wiki/assets/buffs/14.png) | 14 | [[wiki/buffs/14-blessing-of-shaia-donation-10-movement-speed-increases-in-no\|Blessing of Shaia (Donation +10%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 30%]] | complete | 0 |
+| ![](wiki/assets/buffs/15.png) | 15 | [[wiki/buffs/15-blessing-of-shaia-donation-20-movement-speed-increases-in-no\|Blessing of Shaia (Donation +20%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 40%]] | complete | 0 |
+| ![](wiki/assets/buffs/16.png) | 16 | [[wiki/buffs/16-blessing-of-shaia-donation-30-movement-speed-increases-in-no\|Blessing of Shaia (Donation +30%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 100% Hunting : Drop rate and EXP increased by 50%]] | complete | 0 |
+| ![](wiki/assets/buffs/17.png) | 17 | [[wiki/buffs/17-blessing-of-shaia-donation-10-movement-speed-increases-in-no\|Blessing of Shaia (Donation +10%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 40%]] | complete | 0 |
+| ![](wiki/assets/buffs/18.png) | 18 | [[wiki/buffs/18-blessing-of-shaia-donation-20-movement-speed-increases-in-no\|Blessing of Shaia (Donation +20%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 50%]] | complete | 0 |
+| ![](wiki/assets/buffs/19.png) | 19 | [[wiki/buffs/19-blessing-of-shaia-donation-30-movement-speed-increases-in-no\|Blessing of Shaia (Donation +30%) Movement speed increases in non-combat state, increases mana. Points are wasted during combat or hunting and additional effects are gained. War : medal acquisition and fame acquisition increased by 130% Hunting : Drop rate and EXP increased by 60%]] | complete | 0 |
+| ![](wiki/assets/buffs/20.png) | 20 | [[wiki/buffs/20-welcome-back-adventurer-take-this-as-a-token-of-appreciation\|Welcome back adventurer, take this as a token of appreciation.]] | stub | 1 |
+| ![](wiki/assets/buffs/28.png) | 28 | [[wiki/buffs/28\|Buff 28]] | complete | 0 |
+| ![](wiki/assets/buffs/29.png) | 29 | [[wiki/buffs/29-increases-movement-speed-by-200\|Increases Movement Speed by 200.]] | complete | 0 |
+| ![](wiki/assets/buffs/41.png) | 41 | [[wiki/buffs/41\|Buff 41]] | complete | 0 |
+| ![](wiki/assets/buffs/42.png) | 42 | [[wiki/buffs/42\|Buff 42]] | complete | 0 |
+| ![](wiki/assets/buffs/43.png) | 43 | [[wiki/buffs/43\|Buff 43]] | complete | 0 |
+| ![](wiki/assets/buffs/44.png) | 44 | [[wiki/buffs/44\|Buff 44]] | complete | 0 |
+| ![](wiki/assets/buffs/45.png) | 45 | [[wiki/buffs/45\|Buff 45]] | complete | 0 |
+| ![](wiki/assets/buffs/46.png) | 46 | [[wiki/buffs/46\|Buff 46]] | complete | 0 |
+| ![](wiki/assets/buffs/50.png) | 50 | [[wiki/buffs/50-great-barrier-protects-an-area-from-attacks-for-a-certain-am\|Great Barrier : Protects an area from Attacks for a certain amount of time]] | stub | 1 |
+| ![](wiki/assets/buffs/51.png) | 51 | [[wiki/buffs/51-encouragement-winning-the-war-will-yield-fantastic-rewards\|Encouragement : Winning the war will yield fantastic rewards!]] | stub | 1 |
+| ![](wiki/assets/buffs/60.png) | 60 | [[wiki/buffs/60-into-battle-increased-health-damage-and-ability-power\|Into Battle: Increased Health, damage and Ability Power]] | complete | 0 |
+| ![](wiki/assets/buffs/61.png) | 61 | [[wiki/buffs/61-into-battle-increased-health-damage-and-ability-power\|Into Battle: Increased Health, damage and Ability Power]] | complete | 0 |
+| ![](wiki/assets/buffs/62.png) | 62 | [[wiki/buffs/62-into-battle-increased-health-damage-and-ability-power\|Into Battle: Increased Health, damage and Ability Power]] | complete | 0 |
+| ![](wiki/assets/buffs/80.png) | 80 | [[wiki/buffs/80\|Buff 80]] | stub | 1 |
+| ![](wiki/assets/buffs/90.png) | 90 | [[wiki/buffs/90-molten-lava-you-are-burning\|Molten Lava: You are burning]] | complete | 0 |
+| ![](wiki/assets/buffs/91.png) | 91 | [[wiki/buffs/91\|Buff 91]] | complete | 0 |
+| ![](wiki/assets/buffs/95.png) | 95 | [[wiki/buffs/95\|Buff 95]] | stub | 1 |
+| ![](wiki/assets/buffs/96.png) | 96 | [[wiki/buffs/96\|Buff 96]] | stub | 1 |
+| ![](wiki/assets/buffs/97.png) | 97 | [[wiki/buffs/97\|Buff 97]] | stub | 1 |
+| ![](wiki/assets/buffs/100.png) | 100 | [[wiki/buffs/100-deals-an-additional-10-attack-damage\|Deals an additional 10% Attack Damage.]] | complete | 0 |
 |  | 101 | [[wiki/buffs/101-impossible-to-attack\|Impossible to Attack]] | stub | 1 |
 |  | 102 | [[wiki/buffs/102-invincible-castle\|Invincible Castle]] | stub | 1 |
 |  | 103 | [[wiki/buffs/103-invincible-gate\|Invincible Gate]] | stub | 1 |
 |  | 104 | [[wiki/buffs/104\|Buff 104]] | stub | 1 |
 |  | 121 | [[wiki/buffs/121-improved-resurrection\|Improved Resurrection]] | complete | 0 |
-| ![](../assets/buffs/122.png) | 122 | [[wiki/buffs/122-hero-s-blessing-gain-100-movement-speed-for-10-seconds\|Hero's blessing : Gain 100 Movement Speed for 10 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/122.png) | 122 | [[wiki/buffs/122-hero-s-blessing-gain-100-movement-speed-for-10-seconds\|Hero's blessing : Gain 100 Movement Speed for 10 seconds.]] | complete | 0 |
 |  | 131 | [[wiki/buffs/131-triggering-debuff\|Triggering debuff]] | complete | 0 |
-| ![](../assets/buffs/132.png) | 132 | [[wiki/buffs/132-strengthen-your-fortress-increases-their-overall-damage\|Strengthen your Fortress: Increases their overall Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/132.png) | 132 | [[wiki/buffs/132-strengthen-your-fortress-increases-their-overall-damage\|Strengthen your Fortress: Increases their overall Damage.]] | complete | 0 |
 |  | 133 | [[wiki/buffs/133-repairs-your-fortress\|Repairs your fortress.]] | stub | 1 |
 |  | 134 | [[wiki/buffs/134-repairs-your-fortress\|Repairs your fortress.]] | stub | 1 |
 |  | 135 | [[wiki/buffs/135-the-gate-temporarily-reflects-damage\|The gate temporarily reflects damage.]] | complete | 0 |
-| ![](../assets/buffs/136.png) | 136 | [[wiki/buffs/136-waiting-for-reinforcements\|Waiting for reinforcements.]] | complete | 0 |
-| ![](../assets/buffs/137.png) | 137 | [[wiki/buffs/137-improved-regeneration\|Improved Regeneration.]] | complete | 0 |
-| ![](../assets/buffs/138.png) | 138 | [[wiki/buffs/138\|Buff 138]] | stub | 1 |
-| ![](../assets/buffs/139.png) | 139 | [[wiki/buffs/139\|Buff 139]] | complete | 0 |
+| ![](wiki/assets/buffs/136.png) | 136 | [[wiki/buffs/136-waiting-for-reinforcements\|Waiting for reinforcements.]] | complete | 0 |
+| ![](wiki/assets/buffs/137.png) | 137 | [[wiki/buffs/137-improved-regeneration\|Improved Regeneration.]] | complete | 0 |
+| ![](wiki/assets/buffs/138.png) | 138 | [[wiki/buffs/138\|Buff 138]] | stub | 1 |
+| ![](wiki/assets/buffs/139.png) | 139 | [[wiki/buffs/139\|Buff 139]] | complete | 0 |
 |  | 140 | [[wiki/buffs/140\|Buff 140]] | complete | 0 |
-| ![](../assets/buffs/149.png) | 149 | [[wiki/buffs/149-towers-take-50-less-damage\|Towers take 50% less Damage.]] | complete | 0 |
-| ![](../assets/buffs/150.png) | 150 | [[wiki/buffs/150\|Buff 150]] | complete | 0 |
-| ![](../assets/buffs/151.png) | 151 | [[wiki/buffs/151-40-cooldown-reduction-hp-and-mana-regeneration\|40% Cooldown reduction, HP and Mana Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/149.png) | 149 | [[wiki/buffs/149-towers-take-50-less-damage\|Towers take 50% less Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/150.png) | 150 | [[wiki/buffs/150\|Buff 150]] | complete | 0 |
+| ![](wiki/assets/buffs/151.png) | 151 | [[wiki/buffs/151-40-cooldown-reduction-hp-and-mana-regeneration\|40% Cooldown reduction, HP and Mana Regeneration]] | complete | 0 |
 |  | 444 | [[wiki/buffs/444-death-timer\|Death Timer]] | complete | 0 |
 |  | 445 | [[wiki/buffs/445-death-timer\|Death Timer]] | complete | 0 |
-| ![](../assets/buffs/511.png) | 511 | [[wiki/buffs/511\|Buff 511]] | complete | 0 |
-| ![](../assets/buffs/512.png) | 512 | [[wiki/buffs/512\|Buff 512]] | complete | 0 |
-| ![](../assets/buffs/513.png) | 513 | [[wiki/buffs/513\|Buff 513]] | complete | 0 |
-| ![](../assets/buffs/514.png) | 514 | [[wiki/buffs/514\|Buff 514]] | stub | 1 |
-| ![](../assets/buffs/515.png) | 515 | [[wiki/buffs/515\|Buff 515]] | stub | 1 |
-| ![](../assets/buffs/516.png) | 516 | [[wiki/buffs/516\|Buff 516]] | stub | 1 |
-| ![](../assets/buffs/517.png) | 517 | [[wiki/buffs/517\|Buff 517]] | complete | 0 |
+| ![](wiki/assets/buffs/511.png) | 511 | [[wiki/buffs/511\|Buff 511]] | complete | 0 |
+| ![](wiki/assets/buffs/512.png) | 512 | [[wiki/buffs/512\|Buff 512]] | complete | 0 |
+| ![](wiki/assets/buffs/513.png) | 513 | [[wiki/buffs/513\|Buff 513]] | complete | 0 |
+| ![](wiki/assets/buffs/514.png) | 514 | [[wiki/buffs/514\|Buff 514]] | stub | 1 |
+| ![](wiki/assets/buffs/515.png) | 515 | [[wiki/buffs/515\|Buff 515]] | stub | 1 |
+| ![](wiki/assets/buffs/516.png) | 516 | [[wiki/buffs/516\|Buff 516]] | stub | 1 |
+| ![](wiki/assets/buffs/517.png) | 517 | [[wiki/buffs/517\|Buff 517]] | complete | 0 |
 |  | 880 | [[wiki/buffs/880\|Buff 880]] | complete | 0 |
 |  | 881 | [[wiki/buffs/881\|Buff 881]] | complete | 0 |
-| ![](../assets/buffs/900.png) | 900 | [[wiki/buffs/900-test-buff-1\|Test Buff 1]] | complete | 0 |
-| ![](../assets/buffs/901.png) | 901 | [[wiki/buffs/901-test-buff-2\|Test Buff 2]] | complete | 0 |
-| ![](../assets/buffs/902.png) | 902 | [[wiki/buffs/902-test-buff-2\|Test Buff 2]] | stub | 1 |
-| ![](../assets/buffs/904.png) | 904 | [[wiki/buffs/904-test-buff-2\|Test Buff 2]] | complete | 0 |
-| ![](../assets/buffs/910.png) | 910 | [[wiki/buffs/910-transformation-slime\|Transformation : Slime]] | complete | 0 |
-| ![](../assets/buffs/911.png) | 911 | [[wiki/buffs/911-test-buff-1\|Test Buff 1]] | complete | 0 |
-| ![](../assets/buffs/912.png) | 912 | [[wiki/buffs/912-test-buff-1\|Test Buff 1]] | stub | 1 |
-| ![](../assets/buffs/913.png) | 913 | [[wiki/buffs/913-test-buff-1\|Test Buff 1]] | stub | 1 |
-| ![](../assets/buffs/950.png) | 950 | [[wiki/buffs/950-mystery-potion-movement-speed-increases-in-non-combat-state\|Mystery Potion Movement speed increases in non-combat state, increases mana.]] | complete | 0 |
-| ![](../assets/buffs/951.png) | 951 | [[wiki/buffs/951-blessing-of-shaia-shia-blesses-the-newbie-movement-speed-and\|Blessing of Shaia Shia blesses the newbie. Movement speed and mana increase.]] | complete | 0 |
-| ![](../assets/buffs/952.png) | 952 | [[wiki/buffs/952-invincible-buff-when-moving-abyss\|Invincible buff when moving Abyss]] | partial | 1 |
-| ![](../assets/buffs/1150.png) | 1150 | [[wiki/buffs/1150-transformation-golem\|Transformation : Golem]] | complete | 0 |
-| ![](../assets/buffs/1152.png) | 1152 | [[wiki/buffs/1152-transformation-devil\|Transformation : Devil]] | complete | 0 |
-| ![](../assets/buffs/1153.png) | 1153 | [[wiki/buffs/1153-wrath-of-the-knights\|Wrath of the Knights]] | complete | 0 |
-| ![](../assets/buffs/1154.png) | 1154 | [[wiki/buffs/1154\|Buff 1154]] | complete | 0 |
-| ![](../assets/buffs/1155.png) | 1155 | [[wiki/buffs/1155-transformation-jack-o-lantern\|Transformation : Jack O' Lantern]] | complete | 0 |
-| ![](../assets/buffs/1156.png) | 1156 | [[wiki/buffs/1156\|Buff 1156]] | complete | 0 |
-| ![](../assets/buffs/1200.png) | 1200 | [[wiki/buffs/1200-awards-sp-5\|Awards SP +5]] | complete | 0 |
-| ![](../assets/buffs/1201.png) | 1201 | [[wiki/buffs/1201-additional-30-mana-regeneration\|Additional 30% Mana Regeneration]] | complete | 0 |
-| ![](../assets/buffs/1202.png) | 1202 | [[wiki/buffs/1202-10-reduced-area-damage\|10% reduced Area Damage]] | complete | 0 |
-| ![](../assets/buffs/1203.png) | 1203 | [[wiki/buffs/1203-additional-5-armor\|Additional+5% Armor]] | complete | 0 |
-| ![](../assets/buffs/1204.png) | 1204 | [[wiki/buffs/1204-increased-hp-regeneration-and-cooldown-reduction\|Increased HP Regeneration and Cooldown Reduction.]] | complete | 0 |
+| ![](wiki/assets/buffs/900.png) | 900 | [[wiki/buffs/900-test-buff-1\|Test Buff 1]] | complete | 0 |
+| ![](wiki/assets/buffs/901.png) | 901 | [[wiki/buffs/901-test-buff-2\|Test Buff 2]] | complete | 0 |
+| ![](wiki/assets/buffs/902.png) | 902 | [[wiki/buffs/902-test-buff-2\|Test Buff 2]] | stub | 1 |
+| ![](wiki/assets/buffs/904.png) | 904 | [[wiki/buffs/904-test-buff-2\|Test Buff 2]] | complete | 0 |
+| ![](wiki/assets/buffs/910.png) | 910 | [[wiki/buffs/910-transformation-slime\|Transformation : Slime]] | complete | 0 |
+| ![](wiki/assets/buffs/911.png) | 911 | [[wiki/buffs/911-test-buff-1\|Test Buff 1]] | complete | 0 |
+| ![](wiki/assets/buffs/912.png) | 912 | [[wiki/buffs/912-test-buff-1\|Test Buff 1]] | stub | 1 |
+| ![](wiki/assets/buffs/913.png) | 913 | [[wiki/buffs/913-test-buff-1\|Test Buff 1]] | stub | 1 |
+| ![](wiki/assets/buffs/950.png) | 950 | [[wiki/buffs/950-mystery-potion-movement-speed-increases-in-non-combat-state\|Mystery Potion Movement speed increases in non-combat state, increases mana.]] | complete | 0 |
+| ![](wiki/assets/buffs/951.png) | 951 | [[wiki/buffs/951-blessing-of-shaia-shia-blesses-the-newbie-movement-speed-and\|Blessing of Shaia Shia blesses the newbie. Movement speed and mana increase.]] | complete | 0 |
+| ![](wiki/assets/buffs/952.png) | 952 | [[wiki/buffs/952-invincible-buff-when-moving-abyss\|Invincible buff when moving Abyss]] | partial | 1 |
+| ![](wiki/assets/buffs/1150.png) | 1150 | [[wiki/buffs/1150-transformation-golem\|Transformation : Golem]] | complete | 0 |
+| ![](wiki/assets/buffs/1152.png) | 1152 | [[wiki/buffs/1152-transformation-devil\|Transformation : Devil]] | complete | 0 |
+| ![](wiki/assets/buffs/1153.png) | 1153 | [[wiki/buffs/1153-wrath-of-the-knights\|Wrath of the Knights]] | complete | 0 |
+| ![](wiki/assets/buffs/1154.png) | 1154 | [[wiki/buffs/1154\|Buff 1154]] | complete | 0 |
+| ![](wiki/assets/buffs/1155.png) | 1155 | [[wiki/buffs/1155-transformation-jack-o-lantern\|Transformation : Jack O' Lantern]] | complete | 0 |
+| ![](wiki/assets/buffs/1156.png) | 1156 | [[wiki/buffs/1156\|Buff 1156]] | complete | 0 |
+| ![](wiki/assets/buffs/1200.png) | 1200 | [[wiki/buffs/1200-awards-sp-5\|Awards SP +5]] | complete | 0 |
+| ![](wiki/assets/buffs/1201.png) | 1201 | [[wiki/buffs/1201-additional-30-mana-regeneration\|Additional 30% Mana Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/1202.png) | 1202 | [[wiki/buffs/1202-10-reduced-area-damage\|10% reduced Area Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/1203.png) | 1203 | [[wiki/buffs/1203-additional-5-armor\|Additional+5% Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/1204.png) | 1204 | [[wiki/buffs/1204-increased-hp-regeneration-and-cooldown-reduction\|Increased HP Regeneration and Cooldown Reduction.]] | complete | 0 |
 |  | 1205 | [[wiki/buffs/1205\|Buff 1205]] | complete | 0 |
-| ![](../assets/buffs/1206.png) | 1206 | [[wiki/buffs/1206-reduces-the-attack-speed-of-attackers-by-30-you-gain-10-move\|Reduces the Attack Speed of attackers by 30%. You gain 10% Movement Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/1206.png) | 1206 | [[wiki/buffs/1206-reduces-the-attack-speed-of-attackers-by-30-you-gain-10-move\|Reduces the Attack Speed of attackers by 30%. You gain 10% Movement Speed.]] | complete | 0 |
 |  | 1207 | [[wiki/buffs/1207\|Buff 1207]] | complete | 0 |
 |  | 1208 | [[wiki/buffs/1208\|Buff 1208]] | complete | 0 |
 |  | 1209 | [[wiki/buffs/1209\|Buff 1209]] | complete | 0 |
@@ -113,746 +113,746 @@ Every buff and debuff in the client's `Skill_Buff` table: what skills, items, wa
 |  | 1218 | [[wiki/buffs/1218\|Buff 1218]] | complete | 0 |
 |  | 1219 | [[wiki/buffs/1219\|Buff 1219]] | complete | 0 |
 |  | 1220 | [[wiki/buffs/1220\|Buff 1220]] | complete | 0 |
-| ![](../assets/buffs/1221.png) | 1221 | [[wiki/buffs/1221-additional-150-movement-speed\|Additional 150 Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/1221.png) | 1221 | [[wiki/buffs/1221-additional-150-movement-speed\|Additional 150 Movement Speed]] | complete | 0 |
 |  | 1222 | [[wiki/buffs/1222\|Buff 1222]] | complete | 0 |
 |  | 1223 | [[wiki/buffs/1223\|Buff 1223]] | complete | 0 |
 |  | 1224 | [[wiki/buffs/1224\|Buff 1224]] | complete | 0 |
-| ![](../assets/buffs/2010.png) | 2010 | [[wiki/buffs/2010\|Buff 2010]] | complete | 0 |
-| ![](../assets/buffs/2011.png) | 2011 | [[wiki/buffs/2011\|Buff 2011]] | stub | 1 |
-| ![](../assets/buffs/2012.png) | 2012 | [[wiki/buffs/2012-hero-s-blessing-you-are-immune-now-move-quickly-and-deal-ton\|Hero's blessing : You are immune now, move quickly and deal tons of damage.]] | complete | 0 |
-| ![](../assets/buffs/2013.png) | 2013 | [[wiki/buffs/2013-stone-guard-debuff-reduces-defensive-stats\|Stone Guard debuff : Reduces defensive stats.]] | complete | 0 |
-| ![](../assets/buffs/2014.png) | 2014 | [[wiki/buffs/2014-stone-guard-attack-reduced-movement-speed\|Stone Guard Attack : Reduced Movement Speed.]] | complete | 0 |
-| ![](../assets/buffs/2015.png) | 2015 | [[wiki/buffs/2015-amplified-damage-reduced-attack-and-movement-speed\|Amplified damage : Reduced Attack and Movement Speed.]] | complete | 0 |
-| ![](../assets/buffs/2017.png) | 2017 | [[wiki/buffs/2017-elixir-of-strength-10-armor-and-30-attack-damage\|Elixir of Strength : 10 Armor and 30 Attack Damage]] | complete | 0 |
-| ![](../assets/buffs/2018.png) | 2018 | [[wiki/buffs/2018-elixir-of-agility-3-critical-strike-rating-and-5-movement-sp\|Elixir of Agility : 3% Critical Strike Rating and 5% Movement Speed.]] | complete | 0 |
-| ![](../assets/buffs/2019.png) | 2019 | [[wiki/buffs/2019-elixir-of-intellect-25-magic-damage-and-5-cooldown-reduction\|Elixir of Intellect : 25 Magic Damage and 5% Cooldown Reduction]] | complete | 0 |
-| ![](../assets/buffs/2027.png) | 2027 | [[wiki/buffs/2027-restricted-movement\|Restricted Movement]] | complete | 0 |
-| ![](../assets/buffs/2048.png) | 2048 | [[wiki/buffs/2048-nexus-hp-regeneration\|Nexus HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2049.png) | 2049 | [[wiki/buffs/2049-nexus-hp-regeneration\|Nexus HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2050.png) | 2050 | [[wiki/buffs/2050-hp-potion-d-weak-hp-regeneration\|HP Potion (D): Weak HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2051.png) | 2051 | [[wiki/buffs/2051-mana-potion-d-weak-mana-regeneration\|Mana Potion (D) : Weak Mana Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2053.png) | 2053 | [[wiki/buffs/2053-minor-strength-gain-armor-penetration-magic-penetration-heal\|Minor Strength : Gain Armor Penetration, Magic Penetration, Health, Mana Regeneration and a Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/2010.png) | 2010 | [[wiki/buffs/2010\|Buff 2010]] | complete | 0 |
+| ![](wiki/assets/buffs/2011.png) | 2011 | [[wiki/buffs/2011\|Buff 2011]] | stub | 1 |
+| ![](wiki/assets/buffs/2012.png) | 2012 | [[wiki/buffs/2012-hero-s-blessing-you-are-immune-now-move-quickly-and-deal-ton\|Hero's blessing : You are immune now, move quickly and deal tons of damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/2013.png) | 2013 | [[wiki/buffs/2013-stone-guard-debuff-reduces-defensive-stats\|Stone Guard debuff : Reduces defensive stats.]] | complete | 0 |
+| ![](wiki/assets/buffs/2014.png) | 2014 | [[wiki/buffs/2014-stone-guard-attack-reduced-movement-speed\|Stone Guard Attack : Reduced Movement Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/2015.png) | 2015 | [[wiki/buffs/2015-amplified-damage-reduced-attack-and-movement-speed\|Amplified damage : Reduced Attack and Movement Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/2017.png) | 2017 | [[wiki/buffs/2017-elixir-of-strength-10-armor-and-30-attack-damage\|Elixir of Strength : 10 Armor and 30 Attack Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/2018.png) | 2018 | [[wiki/buffs/2018-elixir-of-agility-3-critical-strike-rating-and-5-movement-sp\|Elixir of Agility : 3% Critical Strike Rating and 5% Movement Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/2019.png) | 2019 | [[wiki/buffs/2019-elixir-of-intellect-25-magic-damage-and-5-cooldown-reduction\|Elixir of Intellect : 25 Magic Damage and 5% Cooldown Reduction]] | complete | 0 |
+| ![](wiki/assets/buffs/2027.png) | 2027 | [[wiki/buffs/2027-restricted-movement\|Restricted Movement]] | complete | 0 |
+| ![](wiki/assets/buffs/2048.png) | 2048 | [[wiki/buffs/2048-nexus-hp-regeneration\|Nexus HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2049.png) | 2049 | [[wiki/buffs/2049-nexus-hp-regeneration\|Nexus HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2050.png) | 2050 | [[wiki/buffs/2050-hp-potion-d-weak-hp-regeneration\|HP Potion (D): Weak HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2051.png) | 2051 | [[wiki/buffs/2051-mana-potion-d-weak-mana-regeneration\|Mana Potion (D) : Weak Mana Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2053.png) | 2053 | [[wiki/buffs/2053-minor-strength-gain-armor-penetration-magic-penetration-heal\|Minor Strength : Gain Armor Penetration, Magic Penetration, Health, Mana Regeneration and a Movement Speed]] | complete | 0 |
 |  | 2054 | [[wiki/buffs/2054-minor-strength-additional-effect\|Minor Strength : Additional effect]] | complete | 0 |
-| ![](../assets/buffs/2055.png) | 2055 | [[wiki/buffs/2055-minor-strength-gain-armor-penetration-magic-penetration-hp-m\|Minor Strength: Gain Armor Penetration, Magic Penetration, HP, Mana Regeneration, Movement Speed and additional SP.]] | complete | 0 |
+| ![](wiki/assets/buffs/2055.png) | 2055 | [[wiki/buffs/2055-minor-strength-gain-armor-penetration-magic-penetration-hp-m\|Minor Strength: Gain Armor Penetration, Magic Penetration, HP, Mana Regeneration, Movement Speed and additional SP.]] | complete | 0 |
 |  | 2056 | [[wiki/buffs/2056-major-strength-additional-effect\|Major Strength : Additional effect]] | complete | 0 |
-| ![](../assets/buffs/2057.png) | 2057 | [[wiki/buffs/2057-reduced-movement-and-attack-speed\|Reduced Movement and Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/2058.png) | 2058 | [[wiki/buffs/2058-no-movement-possible-for-3-seconds-immune-to-all-forms-of-da\|No Movement possible for 3 seconds. Immune to all forms of damage.]] | stub | 1 |
-| ![](../assets/buffs/2059.png) | 2059 | [[wiki/buffs/2059-militia-when-you-reach-the-nexus-you-gain-a-huge-boost-in-mo\|Militia: When you reach the Nexus you gain a huge boost in Movement Speed.]] | complete | 0 |
-| ![](../assets/buffs/2060.png) | 2060 | [[wiki/buffs/2060-hp-potion-c-minor-hp-regeneration\|HP Potion (C): Minor HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2061.png) | 2061 | [[wiki/buffs/2061-hp-potion-b-strong-hp-regeneration\|HP Potion (B): Strong HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2062.png) | 2062 | [[wiki/buffs/2062-hp-potion-a-major-hp-regeneration\|HP Potion (A): Major HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2063.png) | 2063 | [[wiki/buffs/2063-hp-potion-s-supreme-hp-regeneration\|HP Potion (S): Supreme HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2064.png) | 2064 | [[wiki/buffs/2064-mana-potion-c-minor-mana-regeneration\|Mana Potion (C) : Minor Mana Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2065.png) | 2065 | [[wiki/buffs/2065-mana-potion-b-strong-mana-regeneration\|Mana Potion (B) : Strong Mana regeneration]] | complete | 0 |
-| ![](../assets/buffs/2066.png) | 2066 | [[wiki/buffs/2066-mana-potion-a-major-mana-regeneration\|Mana Potion (A) : Major Mana regeneration]] | complete | 0 |
-| ![](../assets/buffs/2067.png) | 2067 | [[wiki/buffs/2067-mana-potion-s-supreme-mana-regeneration\|Mana Potion (S) : Supreme Mana regeneration]] | complete | 0 |
-| ![](../assets/buffs/2068.png) | 2068 | [[wiki/buffs/2068-omni-potion-d-weak-omni-regeneration\|Omni Potion (D) : Weak Omni Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2069.png) | 2069 | [[wiki/buffs/2069-omni-potion-c-minor-omni-regeneration\|Omni Potion (C) : Minor Omni Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2070.png) | 2070 | [[wiki/buffs/2070-omni-potion-b-strong-omni-regeneration\|Omni Potion (B) : Strong Omni Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2071.png) | 2071 | [[wiki/buffs/2071-omni-potion-a-major-omni-regeneration\|Omni Potion (A) : Major Omni Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2072.png) | 2072 | [[wiki/buffs/2072-omni-potion-s-supreme-omni-regeneration\|Omni Potion (S) : Supreme Omni Regeneration]] | complete | 0 |
-| ![](../assets/buffs/2077.png) | 2077 | [[wiki/buffs/2077-tome-of-the-warrior-c-damage-32\|Tome of the Warrior (C) : Damage +32]] | complete | 0 |
-| ![](../assets/buffs/2078.png) | 2078 | [[wiki/buffs/2078-tome-of-the-warrior-b-damage-64\|Tome of the Warrior (B): Damage +64]] | complete | 0 |
-| ![](../assets/buffs/2079.png) | 2079 | [[wiki/buffs/2079-tome-of-the-warrior-a-damage-96\|Tome of the Warrior(A) : Damage +96]] | complete | 0 |
-| ![](../assets/buffs/2080.png) | 2080 | [[wiki/buffs/2080-tome-of-the-warrior-s-damage-160\|Tome of the Warrior (S) : Damage +160]] | complete | 0 |
-| ![](../assets/buffs/2081.png) | 2081 | [[wiki/buffs/2081-tome-of-the-magician-c-ability-power-24\|Tome of the Magician (C) : Ability Power +24]] | complete | 0 |
-| ![](../assets/buffs/2082.png) | 2082 | [[wiki/buffs/2082-tome-of-the-magician-b-ability-power-48\|Tome of the Magician (B) : Ability Power +48]] | complete | 0 |
-| ![](../assets/buffs/2083.png) | 2083 | [[wiki/buffs/2083-tome-of-the-magician-a-ability-power-72\|Tome of the Magician (A) : Ability Power +72]] | complete | 0 |
-| ![](../assets/buffs/2084.png) | 2084 | [[wiki/buffs/2084-tome-of-the-magician-s-ability-power-120\|Tome of the Magician (S) : Ability Power +120]] | complete | 0 |
-| ![](../assets/buffs/2085.png) | 2085 | [[wiki/buffs/2085-scroll-of-attack-speed-c-attack-speed-10\|Scroll of Attack Speed (C) : Attack Speed +10]] | complete | 0 |
-| ![](../assets/buffs/2086.png) | 2086 | [[wiki/buffs/2086-scroll-of-attack-speed-b-attack-speed-20\|Scroll of Attack Speed (B) : Attack Speed +20]] | complete | 0 |
-| ![](../assets/buffs/2087.png) | 2087 | [[wiki/buffs/2087-scroll-of-attack-speed-a-attack-speed-30\|Scroll of Attack Speed (A) : Attack Speed +30]] | complete | 0 |
-| ![](../assets/buffs/2088.png) | 2088 | [[wiki/buffs/2088-scroll-of-attack-speed-s-attack-speed-40\|Scroll of Attack Speed (S) : Attack Speed +40]] | complete | 0 |
-| ![](../assets/buffs/2089.png) | 2089 | [[wiki/buffs/2089-scroll-of-cooldown-reduction-c-3-cooldown-reduction\|Scroll of Cooldown Reduction (C) : 3% Cooldown Reduction]] | complete | 0 |
-| ![](../assets/buffs/2090.png) | 2090 | [[wiki/buffs/2090-scroll-of-cooldown-reduction-b-6-cooldown-reduction\|Scroll of Cooldown Reduction (B) : 6% Cooldown Reduction]] | complete | 0 |
-| ![](../assets/buffs/2091.png) | 2091 | [[wiki/buffs/2091-scroll-of-cooldown-reduction-a-9-cooldown-reduction\|Scroll of Cooldown Reduction (A) : 9% Cooldown Reduction]] | complete | 0 |
-| ![](../assets/buffs/2092.png) | 2092 | [[wiki/buffs/2092-scroll-of-cooldown-reduction-s-12-cooldown-reduction\|Scroll of Cooldown Reduction (S) : 12% Cooldown Reduction]] | complete | 0 |
-| ![](../assets/buffs/2093.png) | 2093 | [[wiki/buffs/2093-scroll-of-reduced-area-damage-c-minor-protection-from-area-d\|Scroll of Reduced Area Damage (C) : Minor protection from Area Damage.]] | complete | 0 |
-| ![](../assets/buffs/2094.png) | 2094 | [[wiki/buffs/2094-scroll-of-reduced-area-damage-b-strong-protection-from-area\|Scroll of Reduced Area Damage (B) : Strong protection from Area Damage.]] | complete | 0 |
-| ![](../assets/buffs/2095.png) | 2095 | [[wiki/buffs/2095-scroll-of-reduced-area-damage-a-major-protection-from-area-d\|Scroll of Reduced Area Damage (A) : Major protection from Area Damage.]] | complete | 0 |
-| ![](../assets/buffs/2096.png) | 2096 | [[wiki/buffs/2096-scroll-of-reduced-area-damage-s-supreme-protection-from-area\|Scroll of Reduced Area Damage (S) : Supreme protection from Area Damage.]] | complete | 0 |
-| ![](../assets/buffs/2097.png) | 2097 | [[wiki/buffs/2097-scroll-of-critical-strikes-c-critical-strike-5\|Scroll of Critical Strikes (C) : Critical Strike +5%]] | complete | 0 |
-| ![](../assets/buffs/2098.png) | 2098 | [[wiki/buffs/2098-scroll-of-critical-strikes-b-critical-strike-10\|Scroll of Critical Strikes (B) : Critical Strike +10%]] | complete | 0 |
-| ![](../assets/buffs/2099.png) | 2099 | [[wiki/buffs/2099-scroll-of-critical-strikes-a-critical-strike-15\|Scroll of Critical Strikes (A) : Critical Strike +15%]] | complete | 0 |
-| ![](../assets/buffs/2100.png) | 2100 | [[wiki/buffs/2100-scroll-of-critical-strikes-s-critical-strike-20\|Scroll of Critical Strikes (S) : Critical Strike +20%]] | complete | 0 |
-| ![](../assets/buffs/2101.png) | 2101 | [[wiki/buffs/2101-tome-of-armor-penetration-c-armor-penetration-2\|Tome of Armor Penetration (C) : Armor Penetration +2]] | complete | 0 |
-| ![](../assets/buffs/2102.png) | 2102 | [[wiki/buffs/2102-tome-of-armor-penetration-b-armor-penetration-4\|Tome of Armor Penetration (B) : Armor Penetration +4]] | complete | 0 |
-| ![](../assets/buffs/2103.png) | 2103 | [[wiki/buffs/2103-tome-of-armor-penetration-a-armor-penetration-6\|Tome of Armor Penetration (A) : Armor Penetration +6]] | complete | 0 |
-| ![](../assets/buffs/2104.png) | 2104 | [[wiki/buffs/2104-tome-of-armor-penetration-s-armor-penetration-8\|Tome of Armor Penetration (S) : Armor Penetration +8]] | complete | 0 |
-| ![](../assets/buffs/2105.png) | 2105 | [[wiki/buffs/2105-tome-of-magic-penetration-c-magic-penetration-2\|Tome of Magic Penetration (C) : Magic Penetration +2]] | complete | 0 |
-| ![](../assets/buffs/2106.png) | 2106 | [[wiki/buffs/2106-tome-of-magic-penetration-b-magic-penetration-4\|Tome of Magic Penetration (B) : Magic Penetration +4]] | complete | 0 |
-| ![](../assets/buffs/2107.png) | 2107 | [[wiki/buffs/2107-tome-of-magic-penetration-a-magic-penetration-6\|Tome of Magic Penetration (A) : Magic Penetration +6]] | complete | 0 |
-| ![](../assets/buffs/2108.png) | 2108 | [[wiki/buffs/2108-tome-of-magic-penetration-s-magic-penetration-8\|Tome of Magic Penetration (S) : Magic Penetration +8]] | complete | 0 |
-| ![](../assets/buffs/2109.png) | 2109 | [[wiki/buffs/2109-elixir-of-health-c-health-regeneration-2-maximum-health-100\|Elixir of Health (C) : Health Regeneration +2, Maximum Health +100]] | complete | 0 |
-| ![](../assets/buffs/2110.png) | 2110 | [[wiki/buffs/2110-elixir-of-health-b-health-regeneration-4-maximum-health-200\|Elixir of Health (B) : Health Regeneration +4, Maximum Health +200]] | complete | 0 |
-| ![](../assets/buffs/2111.png) | 2111 | [[wiki/buffs/2111-elixir-of-health-a-health-regeneration-6-maximum-health-300\|Elixir of Health (A) : Health Regeneration +6, Maximum Health +300]] | complete | 0 |
-| ![](../assets/buffs/2112.png) | 2112 | [[wiki/buffs/2112-elixir-of-health-s-health-regeneration-8-maximum-health-400\|Elixir of Health (S) : Health Regeneration +8, Maximum Health 400]] | complete | 0 |
-| ![](../assets/buffs/2113.png) | 2113 | [[wiki/buffs/2113-flask-of-mana-c-mana-regeneration-2-maximum-mana-50\|Flask of Mana (C) : Mana Regeneration +2, Maximum Mana +50]] | complete | 0 |
-| ![](../assets/buffs/2114.png) | 2114 | [[wiki/buffs/2114-flask-of-mana-b-mana-regeneration-4-maximum-mana-100\|Flask of Mana (B) : Mana Regeneration +4, Maximum Mana +100]] | complete | 0 |
-| ![](../assets/buffs/2115.png) | 2115 | [[wiki/buffs/2115-flask-of-mana-a-mana-regeneration-6-maximum-mana-150\|Flask of Mana (A) : Mana Regeneration +6, Maximum Mana +150]] | complete | 0 |
-| ![](../assets/buffs/2116.png) | 2116 | [[wiki/buffs/2116-flask-of-mana-s-mana-regeneration-8-maximum-mana-200\|Flask of Mana (S) : Mana Regeneration +8, Maximum Mana +200]] | complete | 0 |
-| ![](../assets/buffs/2117.png) | 2117 | [[wiki/buffs/2117-elixir-of-vampirism-c-3-life-steal-with-each-attack-maximum\|Elixir of Vampirism (C): 3 Life Steal with each attack. Maximum Health +100]] | complete | 0 |
-| ![](../assets/buffs/2118.png) | 2118 | [[wiki/buffs/2118-elixir-of-vampirism-b-6-life-steal-with-each-attack-maximum\|Elixir of Vampirism (B) : 6 Life Steal with each attack. Maximum Health +200]] | complete | 0 |
-| ![](../assets/buffs/2119.png) | 2119 | [[wiki/buffs/2119-elixir-of-vampirism-a-9-life-steal-with-each-attack-maximum\|Elixir of Vampirism (A) : 9 Life Steal with each attack. Maximum Health +300]] | complete | 0 |
-| ![](../assets/buffs/2120.png) | 2120 | [[wiki/buffs/2120-elixir-of-vampirism-s-12-life-steal-with-each-attack-maximum\|Elixir of Vampirism (S) : 12 Life Steal with each attack. Maximum Health +400]] | complete | 0 |
-| ![](../assets/buffs/2121.png) | 2121 | [[wiki/buffs/2121-flask-of-devour-c-2-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (C) : 2 Mana Steal with each attack. Maximum Mana +50]] | complete | 0 |
-| ![](../assets/buffs/2122.png) | 2122 | [[wiki/buffs/2122-flask-of-devour-b-4-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (B) : 4 Mana Steal with each attack. Maximum Mana +100]] | complete | 0 |
-| ![](../assets/buffs/2123.png) | 2123 | [[wiki/buffs/2123-flask-of-devour-a-6-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (A) : 6 Mana Steal with each attack. Maximum Mana +150]] | complete | 0 |
-| ![](../assets/buffs/2124.png) | 2124 | [[wiki/buffs/2124-flask-of-devour-s-8-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (S) : 8 Mana Steal with each attack. Maximum Mana +200]] | complete | 0 |
-| ![](../assets/buffs/2125.png) | 2125 | [[wiki/buffs/2125-elixir-of-tenacity-c-tenacity-10-life-steal-with-each-attack\|Elixir of Tenacity (C) : Tenacity +10, Life Steal with each attack +3]] | complete | 0 |
-| ![](../assets/buffs/2126.png) | 2126 | [[wiki/buffs/2126-elixir-of-tenacity-b-tenacity-20-life-steal-with-each-attack\|Elixir of Tenacity (B) : Tenacity +20, Life Steal with each attack +6]] | complete | 0 |
-| ![](../assets/buffs/2127.png) | 2127 | [[wiki/buffs/2127-elixir-of-tenacity-a-tenacity-30-life-steal-with-each-attack\|Elixir of Tenacity (A) : Tenacity +30, Life Steal with each attack +9]] | complete | 0 |
-| ![](../assets/buffs/2128.png) | 2128 | [[wiki/buffs/2128-elixir-of-tenacity-s-tenacity-40-life-steal-with-each-attack\|Elixir of Tenacity (S) : Tenacity +40, Life Steal with each attack +12]] | complete | 0 |
-| ![](../assets/buffs/2129.png) | 2129 | [[wiki/buffs/2129-flask-of-tenacity-a-tenacity-10-mana-steal-with-each-attack\|Flask of Tenacity (A) : Tenacity +10, Mana Steal with each attack +2]] | complete | 0 |
-| ![](../assets/buffs/2130.png) | 2130 | [[wiki/buffs/2130-flask-of-tenacity-b-tenacity-20-mana-steal-with-each-attack\|Flask of Tenacity (B) : Tenacity +20, Mana Steal with each attack +4]] | complete | 0 |
-| ![](../assets/buffs/2131.png) | 2131 | [[wiki/buffs/2131-flask-of-tenacity-a-tenacity-30-mana-steal-with-each-attack\|Flask of Tenacity (A) : Tenacity +30, Mana Steal with each attack +6]] | complete | 0 |
-| ![](../assets/buffs/2132.png) | 2132 | [[wiki/buffs/2132-flask-of-tenacity-s-tenacity-40-mana-steal-with-each-attack\|Flask of Tenacity (S) : Tenacity +40, Mana Steal with each attack +8]] | complete | 0 |
-| ![](../assets/buffs/2133.png) | 2133 | [[wiki/buffs/2133\|Buff 2133]] | stub | 1 |
-| ![](../assets/buffs/2134.png) | 2134 | [[wiki/buffs/2134-drop-chance-potion-increase-item-drop-chance-by-40\|Drop Chance Potion: Increase Item Drop Chance by 40%.]] | complete | 0 |
-| ![](../assets/buffs/2135.png) | 2135 | [[wiki/buffs/2135-increases-drop-rate-and-exp-by-10\|Increases drop rate and EXP by 10%.]] | complete | 0 |
-| ![](../assets/buffs/2136.png) | 2136 | [[wiki/buffs/2136-increases-drop-rate-and-exp-by-20\|Increases drop rate and EXP by 20%.]] | complete | 0 |
-| ![](../assets/buffs/2137.png) | 2137 | [[wiki/buffs/2137-increases-drop-rate-and-exp-by-30\|Increases drop rate and EXP by 30%.]] | complete | 0 |
-| ![](../assets/buffs/3010.png) | 3010 | [[wiki/buffs/3010\|Buff 3010]] | complete | 0 |
-| ![](../assets/buffs/3011.png) | 3011 | [[wiki/buffs/3011-officer-buff-reflects-damage-back-to-the-attacker\|Officer Buff: Reflects damage back to the attacker]] | complete | 0 |
-| ![](../assets/buffs/3012.png) | 3012 | [[wiki/buffs/3012-officer-buff-increases-damage\|Officer Buff: Increases Damage]] | complete | 0 |
-| ![](../assets/buffs/3013.png) | 3013 | [[wiki/buffs/3013-officer-buff-increases-magic-resistance\|Officer Buff: Increases Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/3014.png) | 3014 | [[wiki/buffs/3014-officer-buff-increases-armor\|Officer Buff: Increases Armor]] | complete | 0 |
-| ![](../assets/buffs/3015.png) | 3015 | [[wiki/buffs/3015-officer-buff-invincible\|Officer Buff: Invincible]] | stub | 1 |
+| ![](wiki/assets/buffs/2057.png) | 2057 | [[wiki/buffs/2057-reduced-movement-and-attack-speed\|Reduced Movement and Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/2058.png) | 2058 | [[wiki/buffs/2058-no-movement-possible-for-3-seconds-immune-to-all-forms-of-da\|No Movement possible for 3 seconds. Immune to all forms of damage.]] | stub | 1 |
+| ![](wiki/assets/buffs/2059.png) | 2059 | [[wiki/buffs/2059-militia-when-you-reach-the-nexus-you-gain-a-huge-boost-in-mo\|Militia: When you reach the Nexus you gain a huge boost in Movement Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/2060.png) | 2060 | [[wiki/buffs/2060-hp-potion-c-minor-hp-regeneration\|HP Potion (C): Minor HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2061.png) | 2061 | [[wiki/buffs/2061-hp-potion-b-strong-hp-regeneration\|HP Potion (B): Strong HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2062.png) | 2062 | [[wiki/buffs/2062-hp-potion-a-major-hp-regeneration\|HP Potion (A): Major HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2063.png) | 2063 | [[wiki/buffs/2063-hp-potion-s-supreme-hp-regeneration\|HP Potion (S): Supreme HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2064.png) | 2064 | [[wiki/buffs/2064-mana-potion-c-minor-mana-regeneration\|Mana Potion (C) : Minor Mana Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2065.png) | 2065 | [[wiki/buffs/2065-mana-potion-b-strong-mana-regeneration\|Mana Potion (B) : Strong Mana regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2066.png) | 2066 | [[wiki/buffs/2066-mana-potion-a-major-mana-regeneration\|Mana Potion (A) : Major Mana regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2067.png) | 2067 | [[wiki/buffs/2067-mana-potion-s-supreme-mana-regeneration\|Mana Potion (S) : Supreme Mana regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2068.png) | 2068 | [[wiki/buffs/2068-omni-potion-d-weak-omni-regeneration\|Omni Potion (D) : Weak Omni Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2069.png) | 2069 | [[wiki/buffs/2069-omni-potion-c-minor-omni-regeneration\|Omni Potion (C) : Minor Omni Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2070.png) | 2070 | [[wiki/buffs/2070-omni-potion-b-strong-omni-regeneration\|Omni Potion (B) : Strong Omni Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2071.png) | 2071 | [[wiki/buffs/2071-omni-potion-a-major-omni-regeneration\|Omni Potion (A) : Major Omni Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2072.png) | 2072 | [[wiki/buffs/2072-omni-potion-s-supreme-omni-regeneration\|Omni Potion (S) : Supreme Omni Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/2077.png) | 2077 | [[wiki/buffs/2077-tome-of-the-warrior-c-damage-32\|Tome of the Warrior (C) : Damage +32]] | complete | 0 |
+| ![](wiki/assets/buffs/2078.png) | 2078 | [[wiki/buffs/2078-tome-of-the-warrior-b-damage-64\|Tome of the Warrior (B): Damage +64]] | complete | 0 |
+| ![](wiki/assets/buffs/2079.png) | 2079 | [[wiki/buffs/2079-tome-of-the-warrior-a-damage-96\|Tome of the Warrior(A) : Damage +96]] | complete | 0 |
+| ![](wiki/assets/buffs/2080.png) | 2080 | [[wiki/buffs/2080-tome-of-the-warrior-s-damage-160\|Tome of the Warrior (S) : Damage +160]] | complete | 0 |
+| ![](wiki/assets/buffs/2081.png) | 2081 | [[wiki/buffs/2081-tome-of-the-magician-c-ability-power-24\|Tome of the Magician (C) : Ability Power +24]] | complete | 0 |
+| ![](wiki/assets/buffs/2082.png) | 2082 | [[wiki/buffs/2082-tome-of-the-magician-b-ability-power-48\|Tome of the Magician (B) : Ability Power +48]] | complete | 0 |
+| ![](wiki/assets/buffs/2083.png) | 2083 | [[wiki/buffs/2083-tome-of-the-magician-a-ability-power-72\|Tome of the Magician (A) : Ability Power +72]] | complete | 0 |
+| ![](wiki/assets/buffs/2084.png) | 2084 | [[wiki/buffs/2084-tome-of-the-magician-s-ability-power-120\|Tome of the Magician (S) : Ability Power +120]] | complete | 0 |
+| ![](wiki/assets/buffs/2085.png) | 2085 | [[wiki/buffs/2085-scroll-of-attack-speed-c-attack-speed-10\|Scroll of Attack Speed (C) : Attack Speed +10]] | complete | 0 |
+| ![](wiki/assets/buffs/2086.png) | 2086 | [[wiki/buffs/2086-scroll-of-attack-speed-b-attack-speed-20\|Scroll of Attack Speed (B) : Attack Speed +20]] | complete | 0 |
+| ![](wiki/assets/buffs/2087.png) | 2087 | [[wiki/buffs/2087-scroll-of-attack-speed-a-attack-speed-30\|Scroll of Attack Speed (A) : Attack Speed +30]] | complete | 0 |
+| ![](wiki/assets/buffs/2088.png) | 2088 | [[wiki/buffs/2088-scroll-of-attack-speed-s-attack-speed-40\|Scroll of Attack Speed (S) : Attack Speed +40]] | complete | 0 |
+| ![](wiki/assets/buffs/2089.png) | 2089 | [[wiki/buffs/2089-scroll-of-cooldown-reduction-c-3-cooldown-reduction\|Scroll of Cooldown Reduction (C) : 3% Cooldown Reduction]] | complete | 0 |
+| ![](wiki/assets/buffs/2090.png) | 2090 | [[wiki/buffs/2090-scroll-of-cooldown-reduction-b-6-cooldown-reduction\|Scroll of Cooldown Reduction (B) : 6% Cooldown Reduction]] | complete | 0 |
+| ![](wiki/assets/buffs/2091.png) | 2091 | [[wiki/buffs/2091-scroll-of-cooldown-reduction-a-9-cooldown-reduction\|Scroll of Cooldown Reduction (A) : 9% Cooldown Reduction]] | complete | 0 |
+| ![](wiki/assets/buffs/2092.png) | 2092 | [[wiki/buffs/2092-scroll-of-cooldown-reduction-s-12-cooldown-reduction\|Scroll of Cooldown Reduction (S) : 12% Cooldown Reduction]] | complete | 0 |
+| ![](wiki/assets/buffs/2093.png) | 2093 | [[wiki/buffs/2093-scroll-of-reduced-area-damage-c-minor-protection-from-area-d\|Scroll of Reduced Area Damage (C) : Minor protection from Area Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/2094.png) | 2094 | [[wiki/buffs/2094-scroll-of-reduced-area-damage-b-strong-protection-from-area\|Scroll of Reduced Area Damage (B) : Strong protection from Area Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/2095.png) | 2095 | [[wiki/buffs/2095-scroll-of-reduced-area-damage-a-major-protection-from-area-d\|Scroll of Reduced Area Damage (A) : Major protection from Area Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/2096.png) | 2096 | [[wiki/buffs/2096-scroll-of-reduced-area-damage-s-supreme-protection-from-area\|Scroll of Reduced Area Damage (S) : Supreme protection from Area Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/2097.png) | 2097 | [[wiki/buffs/2097-scroll-of-critical-strikes-c-critical-strike-5\|Scroll of Critical Strikes (C) : Critical Strike +5%]] | complete | 0 |
+| ![](wiki/assets/buffs/2098.png) | 2098 | [[wiki/buffs/2098-scroll-of-critical-strikes-b-critical-strike-10\|Scroll of Critical Strikes (B) : Critical Strike +10%]] | complete | 0 |
+| ![](wiki/assets/buffs/2099.png) | 2099 | [[wiki/buffs/2099-scroll-of-critical-strikes-a-critical-strike-15\|Scroll of Critical Strikes (A) : Critical Strike +15%]] | complete | 0 |
+| ![](wiki/assets/buffs/2100.png) | 2100 | [[wiki/buffs/2100-scroll-of-critical-strikes-s-critical-strike-20\|Scroll of Critical Strikes (S) : Critical Strike +20%]] | complete | 0 |
+| ![](wiki/assets/buffs/2101.png) | 2101 | [[wiki/buffs/2101-tome-of-armor-penetration-c-armor-penetration-2\|Tome of Armor Penetration (C) : Armor Penetration +2]] | complete | 0 |
+| ![](wiki/assets/buffs/2102.png) | 2102 | [[wiki/buffs/2102-tome-of-armor-penetration-b-armor-penetration-4\|Tome of Armor Penetration (B) : Armor Penetration +4]] | complete | 0 |
+| ![](wiki/assets/buffs/2103.png) | 2103 | [[wiki/buffs/2103-tome-of-armor-penetration-a-armor-penetration-6\|Tome of Armor Penetration (A) : Armor Penetration +6]] | complete | 0 |
+| ![](wiki/assets/buffs/2104.png) | 2104 | [[wiki/buffs/2104-tome-of-armor-penetration-s-armor-penetration-8\|Tome of Armor Penetration (S) : Armor Penetration +8]] | complete | 0 |
+| ![](wiki/assets/buffs/2105.png) | 2105 | [[wiki/buffs/2105-tome-of-magic-penetration-c-magic-penetration-2\|Tome of Magic Penetration (C) : Magic Penetration +2]] | complete | 0 |
+| ![](wiki/assets/buffs/2106.png) | 2106 | [[wiki/buffs/2106-tome-of-magic-penetration-b-magic-penetration-4\|Tome of Magic Penetration (B) : Magic Penetration +4]] | complete | 0 |
+| ![](wiki/assets/buffs/2107.png) | 2107 | [[wiki/buffs/2107-tome-of-magic-penetration-a-magic-penetration-6\|Tome of Magic Penetration (A) : Magic Penetration +6]] | complete | 0 |
+| ![](wiki/assets/buffs/2108.png) | 2108 | [[wiki/buffs/2108-tome-of-magic-penetration-s-magic-penetration-8\|Tome of Magic Penetration (S) : Magic Penetration +8]] | complete | 0 |
+| ![](wiki/assets/buffs/2109.png) | 2109 | [[wiki/buffs/2109-elixir-of-health-c-health-regeneration-2-maximum-health-100\|Elixir of Health (C) : Health Regeneration +2, Maximum Health +100]] | complete | 0 |
+| ![](wiki/assets/buffs/2110.png) | 2110 | [[wiki/buffs/2110-elixir-of-health-b-health-regeneration-4-maximum-health-200\|Elixir of Health (B) : Health Regeneration +4, Maximum Health +200]] | complete | 0 |
+| ![](wiki/assets/buffs/2111.png) | 2111 | [[wiki/buffs/2111-elixir-of-health-a-health-regeneration-6-maximum-health-300\|Elixir of Health (A) : Health Regeneration +6, Maximum Health +300]] | complete | 0 |
+| ![](wiki/assets/buffs/2112.png) | 2112 | [[wiki/buffs/2112-elixir-of-health-s-health-regeneration-8-maximum-health-400\|Elixir of Health (S) : Health Regeneration +8, Maximum Health 400]] | complete | 0 |
+| ![](wiki/assets/buffs/2113.png) | 2113 | [[wiki/buffs/2113-flask-of-mana-c-mana-regeneration-2-maximum-mana-50\|Flask of Mana (C) : Mana Regeneration +2, Maximum Mana +50]] | complete | 0 |
+| ![](wiki/assets/buffs/2114.png) | 2114 | [[wiki/buffs/2114-flask-of-mana-b-mana-regeneration-4-maximum-mana-100\|Flask of Mana (B) : Mana Regeneration +4, Maximum Mana +100]] | complete | 0 |
+| ![](wiki/assets/buffs/2115.png) | 2115 | [[wiki/buffs/2115-flask-of-mana-a-mana-regeneration-6-maximum-mana-150\|Flask of Mana (A) : Mana Regeneration +6, Maximum Mana +150]] | complete | 0 |
+| ![](wiki/assets/buffs/2116.png) | 2116 | [[wiki/buffs/2116-flask-of-mana-s-mana-regeneration-8-maximum-mana-200\|Flask of Mana (S) : Mana Regeneration +8, Maximum Mana +200]] | complete | 0 |
+| ![](wiki/assets/buffs/2117.png) | 2117 | [[wiki/buffs/2117-elixir-of-vampirism-c-3-life-steal-with-each-attack-maximum\|Elixir of Vampirism (C): 3 Life Steal with each attack. Maximum Health +100]] | complete | 0 |
+| ![](wiki/assets/buffs/2118.png) | 2118 | [[wiki/buffs/2118-elixir-of-vampirism-b-6-life-steal-with-each-attack-maximum\|Elixir of Vampirism (B) : 6 Life Steal with each attack. Maximum Health +200]] | complete | 0 |
+| ![](wiki/assets/buffs/2119.png) | 2119 | [[wiki/buffs/2119-elixir-of-vampirism-a-9-life-steal-with-each-attack-maximum\|Elixir of Vampirism (A) : 9 Life Steal with each attack. Maximum Health +300]] | complete | 0 |
+| ![](wiki/assets/buffs/2120.png) | 2120 | [[wiki/buffs/2120-elixir-of-vampirism-s-12-life-steal-with-each-attack-maximum\|Elixir of Vampirism (S) : 12 Life Steal with each attack. Maximum Health +400]] | complete | 0 |
+| ![](wiki/assets/buffs/2121.png) | 2121 | [[wiki/buffs/2121-flask-of-devour-c-2-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (C) : 2 Mana Steal with each attack. Maximum Mana +50]] | complete | 0 |
+| ![](wiki/assets/buffs/2122.png) | 2122 | [[wiki/buffs/2122-flask-of-devour-b-4-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (B) : 4 Mana Steal with each attack. Maximum Mana +100]] | complete | 0 |
+| ![](wiki/assets/buffs/2123.png) | 2123 | [[wiki/buffs/2123-flask-of-devour-a-6-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (A) : 6 Mana Steal with each attack. Maximum Mana +150]] | complete | 0 |
+| ![](wiki/assets/buffs/2124.png) | 2124 | [[wiki/buffs/2124-flask-of-devour-s-8-mana-steal-with-each-attack-maximum-mana\|Flask of Devour (S) : 8 Mana Steal with each attack. Maximum Mana +200]] | complete | 0 |
+| ![](wiki/assets/buffs/2125.png) | 2125 | [[wiki/buffs/2125-elixir-of-tenacity-c-tenacity-10-life-steal-with-each-attack\|Elixir of Tenacity (C) : Tenacity +10, Life Steal with each attack +3]] | complete | 0 |
+| ![](wiki/assets/buffs/2126.png) | 2126 | [[wiki/buffs/2126-elixir-of-tenacity-b-tenacity-20-life-steal-with-each-attack\|Elixir of Tenacity (B) : Tenacity +20, Life Steal with each attack +6]] | complete | 0 |
+| ![](wiki/assets/buffs/2127.png) | 2127 | [[wiki/buffs/2127-elixir-of-tenacity-a-tenacity-30-life-steal-with-each-attack\|Elixir of Tenacity (A) : Tenacity +30, Life Steal with each attack +9]] | complete | 0 |
+| ![](wiki/assets/buffs/2128.png) | 2128 | [[wiki/buffs/2128-elixir-of-tenacity-s-tenacity-40-life-steal-with-each-attack\|Elixir of Tenacity (S) : Tenacity +40, Life Steal with each attack +12]] | complete | 0 |
+| ![](wiki/assets/buffs/2129.png) | 2129 | [[wiki/buffs/2129-flask-of-tenacity-a-tenacity-10-mana-steal-with-each-attack\|Flask of Tenacity (A) : Tenacity +10, Mana Steal with each attack +2]] | complete | 0 |
+| ![](wiki/assets/buffs/2130.png) | 2130 | [[wiki/buffs/2130-flask-of-tenacity-b-tenacity-20-mana-steal-with-each-attack\|Flask of Tenacity (B) : Tenacity +20, Mana Steal with each attack +4]] | complete | 0 |
+| ![](wiki/assets/buffs/2131.png) | 2131 | [[wiki/buffs/2131-flask-of-tenacity-a-tenacity-30-mana-steal-with-each-attack\|Flask of Tenacity (A) : Tenacity +30, Mana Steal with each attack +6]] | complete | 0 |
+| ![](wiki/assets/buffs/2132.png) | 2132 | [[wiki/buffs/2132-flask-of-tenacity-s-tenacity-40-mana-steal-with-each-attack\|Flask of Tenacity (S) : Tenacity +40, Mana Steal with each attack +8]] | complete | 0 |
+| ![](wiki/assets/buffs/2133.png) | 2133 | [[wiki/buffs/2133\|Buff 2133]] | stub | 1 |
+| ![](wiki/assets/buffs/2134.png) | 2134 | [[wiki/buffs/2134-drop-chance-potion-increase-item-drop-chance-by-40\|Drop Chance Potion: Increase Item Drop Chance by 40%.]] | complete | 0 |
+| ![](wiki/assets/buffs/2135.png) | 2135 | [[wiki/buffs/2135-increases-drop-rate-and-exp-by-10\|Increases drop rate and EXP by 10%.]] | complete | 0 |
+| ![](wiki/assets/buffs/2136.png) | 2136 | [[wiki/buffs/2136-increases-drop-rate-and-exp-by-20\|Increases drop rate and EXP by 20%.]] | complete | 0 |
+| ![](wiki/assets/buffs/2137.png) | 2137 | [[wiki/buffs/2137-increases-drop-rate-and-exp-by-30\|Increases drop rate and EXP by 30%.]] | complete | 0 |
+| ![](wiki/assets/buffs/3010.png) | 3010 | [[wiki/buffs/3010\|Buff 3010]] | complete | 0 |
+| ![](wiki/assets/buffs/3011.png) | 3011 | [[wiki/buffs/3011-officer-buff-reflects-damage-back-to-the-attacker\|Officer Buff: Reflects damage back to the attacker]] | complete | 0 |
+| ![](wiki/assets/buffs/3012.png) | 3012 | [[wiki/buffs/3012-officer-buff-increases-damage\|Officer Buff: Increases Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/3013.png) | 3013 | [[wiki/buffs/3013-officer-buff-increases-magic-resistance\|Officer Buff: Increases Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/3014.png) | 3014 | [[wiki/buffs/3014-officer-buff-increases-armor\|Officer Buff: Increases Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/3015.png) | 3015 | [[wiki/buffs/3015-officer-buff-invincible\|Officer Buff: Invincible]] | stub | 1 |
 |  | 3017 | [[wiki/buffs/3017\|Buff 3017]] | stub | 1 |
 |  | 3018 | [[wiki/buffs/3018\|Buff 3018]] | stub | 1 |
-| ![](../assets/buffs/3019.png) | 3019 | [[wiki/buffs/3019-all-damage-increased\|All damage increased]] | complete | 0 |
-| ![](../assets/buffs/3020.png) | 3020 | [[wiki/buffs/3020-all-damage-reduced\|All damage reduced]] | complete | 0 |
-| ![](../assets/buffs/3021.png) | 3021 | [[wiki/buffs/3021-fire-increases-damage\|Fire: Increases Damage]] | complete | 0 |
-| ![](../assets/buffs/3022.png) | 3022 | [[wiki/buffs/3022-wind-increases-magic-resistance\|Wind: Increases Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/3023.png) | 3023 | [[wiki/buffs/3023-ground-increased-armor\|Ground : Increased Armor]] | complete | 0 |
-| ![](../assets/buffs/3024.png) | 3024 | [[wiki/buffs/3024-water-increased-hp\|Water: Increased HP]] | complete | 0 |
-| ![](../assets/buffs/3025.png) | 3025 | [[wiki/buffs/3025-magic-heart-stun\|Magic Heart : Stun]] | complete | 0 |
-| ![](../assets/buffs/3029.png) | 3029 | [[wiki/buffs/3029-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : Resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | partial | 1 |
-| ![](../assets/buffs/3030.png) | 3030 | [[wiki/buffs/3030-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
-| ![](../assets/buffs/3031.png) | 3031 | [[wiki/buffs/3031-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
-| ![](../assets/buffs/3032.png) | 3032 | [[wiki/buffs/3032-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
-| ![](../assets/buffs/3033.png) | 3033 | [[wiki/buffs/3033-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
-| ![](../assets/buffs/3034.png) | 3034 | [[wiki/buffs/3034-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
-| ![](../assets/buffs/3035.png) | 3035 | [[wiki/buffs/3035-reinforce-nexus-increased-damage-and-armor\|Reinforce Nexus : Increased Damage and Armor]] | complete | 0 |
-| ![](../assets/buffs/3036.png) | 3036 | [[wiki/buffs/3036-for-honor-increase-20-health-mana-damage-spell-power-armor-m\|For Honor : Increase 20% Health,Mana,Damage,Spell power,Armor, M.R]] | complete | 0 |
-| ![](../assets/buffs/3037.png) | 3037 | [[wiki/buffs/3037\|Buff 3037]] | complete | 0 |
-| ![](../assets/buffs/3101.png) | 3101 | [[wiki/buffs/3101\|Buff 3101]] | stub | 1 |
-| ![](../assets/buffs/3102.png) | 3102 | [[wiki/buffs/3102\|Buff 3102]] | stub | 1 |
-| ![](../assets/buffs/3103.png) | 3103 | [[wiki/buffs/3103\|Buff 3103]] | stub | 1 |
-| ![](../assets/buffs/3104.png) | 3104 | [[wiki/buffs/3104\|Buff 3104]] | stub | 1 |
-| ![](../assets/buffs/3111.png) | 3111 | [[wiki/buffs/3111-wasteland-ogre-health-mana-10\|Wasteland Ogre : Health, Mana +10%]] | complete | 0 |
-| ![](../assets/buffs/3112.png) | 3112 | [[wiki/buffs/3112-lava-ogre-attack-damage-ability-power-10\|Lava Ogre : Attack damage, Ability Power +10%]] | complete | 0 |
-| ![](../assets/buffs/3113.png) | 3113 | [[wiki/buffs/3113-sulphur-ogre-armor-magic-resistance-10\|Sulphur Ogre : Armor, Magic Resistance +10%]] | complete | 0 |
-| ![](../assets/buffs/3114.png) | 3114 | [[wiki/buffs/3114-ice-ogre-movement-speed-50-tenacity-25-cooldown-reduction-10\|Ice Ogre : Movement Speed +50, Tenacity +25, Cooldown Reduction +10%]] | complete | 0 |
-| ![](../assets/buffs/3115.png) | 3115 | [[wiki/buffs/3115-wasteland-giant-ogre-health-mana-20\|Wasteland Giant Ogre : Health, Mana +20%]] | complete | 0 |
-| ![](../assets/buffs/3116.png) | 3116 | [[wiki/buffs/3116-lava-giant-ogre-attack-damage-ability-power-20\|Lava Giant Ogre : Attack damage, Ability Power +20%]] | complete | 0 |
-| ![](../assets/buffs/3117.png) | 3117 | [[wiki/buffs/3117-sulphur-giant-ogre-armor-magic-resistance-20\|Sulphur Giant Ogre : Armor, Magic Resistance +20%]] | complete | 0 |
-| ![](../assets/buffs/3118.png) | 3118 | [[wiki/buffs/3118-ice-giant-ogre-movement-speed-100-tenacity-50-cooldown-reduc\|Ice Giant Ogre : Movement Speed +100, Tenacity +50, Cooldown Reduction +20%]] | complete | 0 |
-| ![](../assets/buffs/4500.png) | 4500 | [[wiki/buffs/4500\|Buff 4500]] | complete | 0 |
-| ![](../assets/buffs/4501.png) | 4501 | [[wiki/buffs/4501\|Buff 4501]] | complete | 0 |
-| ![](../assets/buffs/4502.png) | 4502 | [[wiki/buffs/4502-remote-bomb-attacks-the-nexus-after-destroying-all-of-the-en\|Remote Bomb: Attacks the Nexus after destroying all of the enemy's attacking Towers.]] | stub | 1 |
-| ![](../assets/buffs/4504.png) | 4504 | [[wiki/buffs/4504-nexus-remote-bomb-nexus-attack\|Nexus Remote Bomb : Nexus attack]] | stub | 1 |
-| ![](../assets/buffs/4507.png) | 4507 | [[wiki/buffs/4507-strengthen-tower\|Strengthen Tower]] | complete | 0 |
-| ![](../assets/buffs/4509.png) | 4509 | [[wiki/buffs/4509\|Buff 4509]] | stub | 1 |
-| ![](../assets/buffs/4510.png) | 4510 | [[wiki/buffs/4510\|Buff 4510]] | stub | 1 |
-| ![](../assets/buffs/4511.png) | 4511 | [[wiki/buffs/4511\|Buff 4511]] | stub | 1 |
-| ![](../assets/buffs/4512.png) | 4512 | [[wiki/buffs/4512\|Buff 4512]] | complete | 0 |
-| ![](../assets/buffs/4513.png) | 4513 | [[wiki/buffs/4513\|Buff 4513]] | complete | 0 |
-| ![](../assets/buffs/4514.png) | 4514 | [[wiki/buffs/4514-blind-reduced-movement-speed\|Blind : Reduced Movement Speed.]] | complete | 0 |
-| ![](../assets/buffs/4515.png) | 4515 | [[wiki/buffs/4515\|Buff 4515]] | stub | 1 |
-| ![](../assets/buffs/4516.png) | 4516 | [[wiki/buffs/4516\|Buff 4516]] | stub | 1 |
-| ![](../assets/buffs/4517.png) | 4517 | [[wiki/buffs/4517\|Buff 4517]] | stub | 1 |
-| ![](../assets/buffs/4518.png) | 4518 | [[wiki/buffs/4518\|Buff 4518]] | stub | 1 |
-| ![](../assets/buffs/4519.png) | 4519 | [[wiki/buffs/4519\|Buff 4519]] | stub | 1 |
-| ![](../assets/buffs/4520.png) | 4520 | [[wiki/buffs/4520-highly-concentrated-remote-bomb-boss-attack\|Highly Concentrated Remote Bomb : Boss attack]] | stub | 1 |
-| ![](../assets/buffs/4521.png) | 4521 | [[wiki/buffs/4521\|Buff 4521]] | stub | 1 |
-| ![](../assets/buffs/4522.png) | 4522 | [[wiki/buffs/4522\|Buff 4522]] | stub | 1 |
-| ![](../assets/buffs/4523.png) | 4523 | [[wiki/buffs/4523\|Buff 4523]] | stub | 1 |
-| ![](../assets/buffs/4524.png) | 4524 | [[wiki/buffs/4524\|Buff 4524]] | stub | 1 |
-| ![](../assets/buffs/4701.png) | 4701 | [[wiki/buffs/4701\|Buff 4701]] | stub | 1 |
-| ![](../assets/buffs/4702.png) | 4702 | [[wiki/buffs/4702\|Buff 4702]] | complete | 0 |
-| ![](../assets/buffs/4703.png) | 4703 | [[wiki/buffs/4703\|Buff 4703]] | stub | 1 |
-| ![](../assets/buffs/4704.png) | 4704 | [[wiki/buffs/4704\|Buff 4704]] | complete | 0 |
-| ![](../assets/buffs/4705.png) | 4705 | [[wiki/buffs/4705\|Buff 4705]] | stub | 1 |
-| ![](../assets/buffs/4706.png) | 4706 | [[wiki/buffs/4706\|Buff 4706]] | complete | 0 |
-| ![](../assets/buffs/4707.png) | 4707 | [[wiki/buffs/4707\|Buff 4707]] | stub | 1 |
-| ![](../assets/buffs/4708.png) | 4708 | [[wiki/buffs/4708\|Buff 4708]] | complete | 0 |
-| ![](../assets/buffs/10000.png) | 10000 | [[wiki/buffs/10000-furious-charge\|Furious Charge]] | stub | 1 |
-| ![](../assets/buffs/10001.png) | 10001 | [[wiki/buffs/10001-improved-hp-regeneration\|Improved HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10002.png) | 10002 | [[wiki/buffs/10002-battle-cry-increases-hp-regeneration\|Battle Cry: Increases HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10003.png) | 10003 | [[wiki/buffs/10003-whirlwind-reduces-damage-and-movement-speed\|Whirlwind: Reduces Damage and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10004.png) | 10004 | [[wiki/buffs/10004-wrath-explosion-reduces-movement-speed\|Wrath Explosion: Reduces Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10006.png) | 10006 | [[wiki/buffs/10006-transfers-5-points-of-mana-into-ability-power\|Transfers 5% points of Mana into Ability Power]] | complete | 0 |
-| ![](../assets/buffs/10007.png) | 10007 | [[wiki/buffs/10007-might-of-the-thunder-god-stunned-for-2-seconds\|Might of the Thunder God : Stunned for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10008.png) | 10008 | [[wiki/buffs/10008-additional-10-magic-resistance\|Additional 10% Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10009.png) | 10009 | [[wiki/buffs/10009-additional-2-movement-speed\|Additional 2% Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10010.png) | 10010 | [[wiki/buffs/10010-blessed-wind-creates-a-shield-that-absorbs-damage-for-10-sec\|Blessed Wind: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10011.png) | 10011 | [[wiki/buffs/10011-breeze-increased-hp-and-mana-regeneration\|Breeze: Increased HP and Mana Regeneration]] | stub | 1 |
-| ![](../assets/buffs/10012.png) | 10012 | [[wiki/buffs/10012-breeze-increased-ability-power-and-movement-speed\|Breeze : Increased Ability Power and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10013.png) | 10013 | [[wiki/buffs/10013-eye-of-the-storm-increased-movement-speed-and-defence\|Eye of the Storm : Increased Movement Speed and defence]] | complete | 0 |
-| ![](../assets/buffs/10014.png) | 10014 | [[wiki/buffs/10014-eye-of-the-storm-reduced-movement-and-attack-speed\|Eye of the Storm : Reduced Movement and Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/10015.png) | 10015 | [[wiki/buffs/10015-summoning-the-eye-of-the-storm\|Summoning the Eye of the Storm]] | stub | 1 |
-| ![](../assets/buffs/10016.png) | 10016 | [[wiki/buffs/10016-spell-feather-reduced-movement-speed\|Spell Feather : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10017.png) | 10017 | [[wiki/buffs/10017-draw-power-increases-attack-and-movement-speed\|Draw Power: Increases Attack and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10018.png) | 10018 | [[wiki/buffs/10018-crystal-burst-increases-armor-and-magic-resistance\|Crystal Burst: Increases Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10019.png) | 10019 | [[wiki/buffs/10019-crystal-burst-reduced-armor-and-magic-resistance\|Crystal Burst : Reduced Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10020.png) | 10020 | [[wiki/buffs/10020-wave-of-crystals-reduced-movement-speed\|Wave of Crystals : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10021.png) | 10021 | [[wiki/buffs/10021-wings-of-westerly-increased-ability-power-armor-and-magic-re\|Wings of Westerly : Increased Ability Power, Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10022.png) | 10022 | [[wiki/buffs/10022-you-prepare-your-next-attack\|You prepare your next Attack]] | complete | 0 |
-| ![](../assets/buffs/10023.png) | 10023 | [[wiki/buffs/10023-shadow-walk-creates-a-shield-that-absorbs-damage-for-10-seco\|Shadow Walk: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
-| ![](../assets/buffs/10024.png) | 10024 | [[wiki/buffs/10024-the-dark-art-creates-a-shield-that-absorbs-damage-for-10-sec\|The Dark Art: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
-| ![](../assets/buffs/10025.png) | 10025 | [[wiki/buffs/10025-the-dark-art-increased-life-steal\|The Dark Art : Increased Life Steal]] | complete | 0 |
-| ![](../assets/buffs/10027.png) | 10027 | [[wiki/buffs/10027-deadly-poisonous-swamp-reduced-armor-and-magic-resistance\|Deadly Poisonous Swamp : Reduced Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10028.png) | 10028 | [[wiki/buffs/10028-shadow-walk-silenced-for-2-seconds\|Shadow Walk : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10029.png) | 10029 | [[wiki/buffs/10029-merciless-chase-your-next-basic-attack-deals-additional-dama\|Merciless Chase : Your next basic attack deals additional damage]] | complete | 0 |
-| ![](../assets/buffs/10030.png) | 10030 | [[wiki/buffs/10030-rotten-arrow-damage-over-time\|Rotten Arrow: Damage over time]] | complete | 0 |
-| ![](../assets/buffs/10031.png) | 10031 | [[wiki/buffs/10031-death-from-above-in-panic\|Death from Above : In Panic]] | stub | 1 |
+| ![](wiki/assets/buffs/3019.png) | 3019 | [[wiki/buffs/3019-all-damage-increased\|All damage increased]] | complete | 0 |
+| ![](wiki/assets/buffs/3020.png) | 3020 | [[wiki/buffs/3020-all-damage-reduced\|All damage reduced]] | complete | 0 |
+| ![](wiki/assets/buffs/3021.png) | 3021 | [[wiki/buffs/3021-fire-increases-damage\|Fire: Increases Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/3022.png) | 3022 | [[wiki/buffs/3022-wind-increases-magic-resistance\|Wind: Increases Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/3023.png) | 3023 | [[wiki/buffs/3023-ground-increased-armor\|Ground : Increased Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/3024.png) | 3024 | [[wiki/buffs/3024-water-increased-hp\|Water: Increased HP]] | complete | 0 |
+| ![](wiki/assets/buffs/3025.png) | 3025 | [[wiki/buffs/3025-magic-heart-stun\|Magic Heart : Stun]] | complete | 0 |
+| ![](wiki/assets/buffs/3029.png) | 3029 | [[wiki/buffs/3029-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : Resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | partial | 1 |
+| ![](wiki/assets/buffs/3030.png) | 3030 | [[wiki/buffs/3030-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
+| ![](wiki/assets/buffs/3031.png) | 3031 | [[wiki/buffs/3031-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
+| ![](wiki/assets/buffs/3032.png) | 3032 | [[wiki/buffs/3032-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
+| ![](wiki/assets/buffs/3033.png) | 3033 | [[wiki/buffs/3033-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
+| ![](wiki/assets/buffs/3034.png) | 3034 | [[wiki/buffs/3034-lords-of-the-land-gain-the-blessing-of-gaia-when-the-attacke\|Lords of the Land : Gain the blessing of Gaia when the attacker gets the medal. 1st Buff : Attack damage and Ability Power + 10 2nd Buff : the resurrection waiting time - 5% 3rd Buff : Armor, Magic Resistance +4% 4th Buff : Attack damage , Ability Power + 4% 5th Buff : doubles benefits of the whole buff. When you runaway of defeat from battle field, this buff will be reset.]] | complete | 0 |
+| ![](wiki/assets/buffs/3035.png) | 3035 | [[wiki/buffs/3035-reinforce-nexus-increased-damage-and-armor\|Reinforce Nexus : Increased Damage and Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/3036.png) | 3036 | [[wiki/buffs/3036-for-honor-increase-20-health-mana-damage-spell-power-armor-m\|For Honor : Increase 20% Health,Mana,Damage,Spell power,Armor, M.R]] | complete | 0 |
+| ![](wiki/assets/buffs/3037.png) | 3037 | [[wiki/buffs/3037\|Buff 3037]] | complete | 0 |
+| ![](wiki/assets/buffs/3101.png) | 3101 | [[wiki/buffs/3101\|Buff 3101]] | stub | 1 |
+| ![](wiki/assets/buffs/3102.png) | 3102 | [[wiki/buffs/3102\|Buff 3102]] | stub | 1 |
+| ![](wiki/assets/buffs/3103.png) | 3103 | [[wiki/buffs/3103\|Buff 3103]] | stub | 1 |
+| ![](wiki/assets/buffs/3104.png) | 3104 | [[wiki/buffs/3104\|Buff 3104]] | stub | 1 |
+| ![](wiki/assets/buffs/3111.png) | 3111 | [[wiki/buffs/3111-wasteland-ogre-health-mana-10\|Wasteland Ogre : Health, Mana +10%]] | complete | 0 |
+| ![](wiki/assets/buffs/3112.png) | 3112 | [[wiki/buffs/3112-lava-ogre-attack-damage-ability-power-10\|Lava Ogre : Attack damage, Ability Power +10%]] | complete | 0 |
+| ![](wiki/assets/buffs/3113.png) | 3113 | [[wiki/buffs/3113-sulphur-ogre-armor-magic-resistance-10\|Sulphur Ogre : Armor, Magic Resistance +10%]] | complete | 0 |
+| ![](wiki/assets/buffs/3114.png) | 3114 | [[wiki/buffs/3114-ice-ogre-movement-speed-50-tenacity-25-cooldown-reduction-10\|Ice Ogre : Movement Speed +50, Tenacity +25, Cooldown Reduction +10%]] | complete | 0 |
+| ![](wiki/assets/buffs/3115.png) | 3115 | [[wiki/buffs/3115-wasteland-giant-ogre-health-mana-20\|Wasteland Giant Ogre : Health, Mana +20%]] | complete | 0 |
+| ![](wiki/assets/buffs/3116.png) | 3116 | [[wiki/buffs/3116-lava-giant-ogre-attack-damage-ability-power-20\|Lava Giant Ogre : Attack damage, Ability Power +20%]] | complete | 0 |
+| ![](wiki/assets/buffs/3117.png) | 3117 | [[wiki/buffs/3117-sulphur-giant-ogre-armor-magic-resistance-20\|Sulphur Giant Ogre : Armor, Magic Resistance +20%]] | complete | 0 |
+| ![](wiki/assets/buffs/3118.png) | 3118 | [[wiki/buffs/3118-ice-giant-ogre-movement-speed-100-tenacity-50-cooldown-reduc\|Ice Giant Ogre : Movement Speed +100, Tenacity +50, Cooldown Reduction +20%]] | complete | 0 |
+| ![](wiki/assets/buffs/4500.png) | 4500 | [[wiki/buffs/4500\|Buff 4500]] | complete | 0 |
+| ![](wiki/assets/buffs/4501.png) | 4501 | [[wiki/buffs/4501\|Buff 4501]] | complete | 0 |
+| ![](wiki/assets/buffs/4502.png) | 4502 | [[wiki/buffs/4502-remote-bomb-attacks-the-nexus-after-destroying-all-of-the-en\|Remote Bomb: Attacks the Nexus after destroying all of the enemy's attacking Towers.]] | stub | 1 |
+| ![](wiki/assets/buffs/4504.png) | 4504 | [[wiki/buffs/4504-nexus-remote-bomb-nexus-attack\|Nexus Remote Bomb : Nexus attack]] | stub | 1 |
+| ![](wiki/assets/buffs/4507.png) | 4507 | [[wiki/buffs/4507-strengthen-tower\|Strengthen Tower]] | complete | 0 |
+| ![](wiki/assets/buffs/4509.png) | 4509 | [[wiki/buffs/4509\|Buff 4509]] | stub | 1 |
+| ![](wiki/assets/buffs/4510.png) | 4510 | [[wiki/buffs/4510\|Buff 4510]] | stub | 1 |
+| ![](wiki/assets/buffs/4511.png) | 4511 | [[wiki/buffs/4511\|Buff 4511]] | stub | 1 |
+| ![](wiki/assets/buffs/4512.png) | 4512 | [[wiki/buffs/4512\|Buff 4512]] | complete | 0 |
+| ![](wiki/assets/buffs/4513.png) | 4513 | [[wiki/buffs/4513\|Buff 4513]] | complete | 0 |
+| ![](wiki/assets/buffs/4514.png) | 4514 | [[wiki/buffs/4514-blind-reduced-movement-speed\|Blind : Reduced Movement Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/4515.png) | 4515 | [[wiki/buffs/4515\|Buff 4515]] | stub | 1 |
+| ![](wiki/assets/buffs/4516.png) | 4516 | [[wiki/buffs/4516\|Buff 4516]] | stub | 1 |
+| ![](wiki/assets/buffs/4517.png) | 4517 | [[wiki/buffs/4517\|Buff 4517]] | stub | 1 |
+| ![](wiki/assets/buffs/4518.png) | 4518 | [[wiki/buffs/4518\|Buff 4518]] | stub | 1 |
+| ![](wiki/assets/buffs/4519.png) | 4519 | [[wiki/buffs/4519\|Buff 4519]] | stub | 1 |
+| ![](wiki/assets/buffs/4520.png) | 4520 | [[wiki/buffs/4520-highly-concentrated-remote-bomb-boss-attack\|Highly Concentrated Remote Bomb : Boss attack]] | stub | 1 |
+| ![](wiki/assets/buffs/4521.png) | 4521 | [[wiki/buffs/4521\|Buff 4521]] | stub | 1 |
+| ![](wiki/assets/buffs/4522.png) | 4522 | [[wiki/buffs/4522\|Buff 4522]] | stub | 1 |
+| ![](wiki/assets/buffs/4523.png) | 4523 | [[wiki/buffs/4523\|Buff 4523]] | stub | 1 |
+| ![](wiki/assets/buffs/4524.png) | 4524 | [[wiki/buffs/4524\|Buff 4524]] | stub | 1 |
+| ![](wiki/assets/buffs/4701.png) | 4701 | [[wiki/buffs/4701\|Buff 4701]] | stub | 1 |
+| ![](wiki/assets/buffs/4702.png) | 4702 | [[wiki/buffs/4702\|Buff 4702]] | complete | 0 |
+| ![](wiki/assets/buffs/4703.png) | 4703 | [[wiki/buffs/4703\|Buff 4703]] | stub | 1 |
+| ![](wiki/assets/buffs/4704.png) | 4704 | [[wiki/buffs/4704\|Buff 4704]] | complete | 0 |
+| ![](wiki/assets/buffs/4705.png) | 4705 | [[wiki/buffs/4705\|Buff 4705]] | stub | 1 |
+| ![](wiki/assets/buffs/4706.png) | 4706 | [[wiki/buffs/4706\|Buff 4706]] | complete | 0 |
+| ![](wiki/assets/buffs/4707.png) | 4707 | [[wiki/buffs/4707\|Buff 4707]] | stub | 1 |
+| ![](wiki/assets/buffs/4708.png) | 4708 | [[wiki/buffs/4708\|Buff 4708]] | complete | 0 |
+| ![](wiki/assets/buffs/10000.png) | 10000 | [[wiki/buffs/10000-furious-charge\|Furious Charge]] | stub | 1 |
+| ![](wiki/assets/buffs/10001.png) | 10001 | [[wiki/buffs/10001-improved-hp-regeneration\|Improved HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10002.png) | 10002 | [[wiki/buffs/10002-battle-cry-increases-hp-regeneration\|Battle Cry: Increases HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10003.png) | 10003 | [[wiki/buffs/10003-whirlwind-reduces-damage-and-movement-speed\|Whirlwind: Reduces Damage and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10004.png) | 10004 | [[wiki/buffs/10004-wrath-explosion-reduces-movement-speed\|Wrath Explosion: Reduces Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10006.png) | 10006 | [[wiki/buffs/10006-transfers-5-points-of-mana-into-ability-power\|Transfers 5% points of Mana into Ability Power]] | complete | 0 |
+| ![](wiki/assets/buffs/10007.png) | 10007 | [[wiki/buffs/10007-might-of-the-thunder-god-stunned-for-2-seconds\|Might of the Thunder God : Stunned for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10008.png) | 10008 | [[wiki/buffs/10008-additional-10-magic-resistance\|Additional 10% Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10009.png) | 10009 | [[wiki/buffs/10009-additional-2-movement-speed\|Additional 2% Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10010.png) | 10010 | [[wiki/buffs/10010-blessed-wind-creates-a-shield-that-absorbs-damage-for-10-sec\|Blessed Wind: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10011.png) | 10011 | [[wiki/buffs/10011-breeze-increased-hp-and-mana-regeneration\|Breeze: Increased HP and Mana Regeneration]] | stub | 1 |
+| ![](wiki/assets/buffs/10012.png) | 10012 | [[wiki/buffs/10012-breeze-increased-ability-power-and-movement-speed\|Breeze : Increased Ability Power and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10013.png) | 10013 | [[wiki/buffs/10013-eye-of-the-storm-increased-movement-speed-and-defence\|Eye of the Storm : Increased Movement Speed and defence]] | complete | 0 |
+| ![](wiki/assets/buffs/10014.png) | 10014 | [[wiki/buffs/10014-eye-of-the-storm-reduced-movement-and-attack-speed\|Eye of the Storm : Reduced Movement and Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10015.png) | 10015 | [[wiki/buffs/10015-summoning-the-eye-of-the-storm\|Summoning the Eye of the Storm]] | stub | 1 |
+| ![](wiki/assets/buffs/10016.png) | 10016 | [[wiki/buffs/10016-spell-feather-reduced-movement-speed\|Spell Feather : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10017.png) | 10017 | [[wiki/buffs/10017-draw-power-increases-attack-and-movement-speed\|Draw Power: Increases Attack and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10018.png) | 10018 | [[wiki/buffs/10018-crystal-burst-increases-armor-and-magic-resistance\|Crystal Burst: Increases Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10019.png) | 10019 | [[wiki/buffs/10019-crystal-burst-reduced-armor-and-magic-resistance\|Crystal Burst : Reduced Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10020.png) | 10020 | [[wiki/buffs/10020-wave-of-crystals-reduced-movement-speed\|Wave of Crystals : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10021.png) | 10021 | [[wiki/buffs/10021-wings-of-westerly-increased-ability-power-armor-and-magic-re\|Wings of Westerly : Increased Ability Power, Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10022.png) | 10022 | [[wiki/buffs/10022-you-prepare-your-next-attack\|You prepare your next Attack]] | complete | 0 |
+| ![](wiki/assets/buffs/10023.png) | 10023 | [[wiki/buffs/10023-shadow-walk-creates-a-shield-that-absorbs-damage-for-10-seco\|Shadow Walk: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/10024.png) | 10024 | [[wiki/buffs/10024-the-dark-art-creates-a-shield-that-absorbs-damage-for-10-sec\|The Dark Art: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/10025.png) | 10025 | [[wiki/buffs/10025-the-dark-art-increased-life-steal\|The Dark Art : Increased Life Steal]] | complete | 0 |
+| ![](wiki/assets/buffs/10027.png) | 10027 | [[wiki/buffs/10027-deadly-poisonous-swamp-reduced-armor-and-magic-resistance\|Deadly Poisonous Swamp : Reduced Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10028.png) | 10028 | [[wiki/buffs/10028-shadow-walk-silenced-for-2-seconds\|Shadow Walk : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10029.png) | 10029 | [[wiki/buffs/10029-merciless-chase-your-next-basic-attack-deals-additional-dama\|Merciless Chase : Your next basic attack deals additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10030.png) | 10030 | [[wiki/buffs/10030-rotten-arrow-damage-over-time\|Rotten Arrow: Damage over time]] | complete | 0 |
+| ![](wiki/assets/buffs/10031.png) | 10031 | [[wiki/buffs/10031-death-from-above-in-panic\|Death from Above : In Panic]] | stub | 1 |
 |  | 10033 | [[wiki/buffs/10033-death-from-above-the-arrows-are-still-coming-down\|Death from Above : The arrows are still coming down]] | stub | 1 |
-| ![](../assets/buffs/10034.png) | 10034 | [[wiki/buffs/10034-soul-infestation-your-basic-attacks-deal-additional-damage\|Soul Infestation : Your basic Attacks deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/10035.png) | 10035 | [[wiki/buffs/10035-aura-of-demise-damages-enemies-around-you\|Aura of Demise : Damages enemies around you]] | complete | 0 |
-| ![](../assets/buffs/10036.png) | 10036 | [[wiki/buffs/10036-shadow-walk-silences-for-2-seconds\|Shadow Walk: Silences for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10037.png) | 10037 | [[wiki/buffs/10037-dark-transformation-gain-40-health-regeneration\|Dark Transformation : Gain 40% Health Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10038.png) | 10038 | [[wiki/buffs/10038-dark-transformation-gain-100-movement-speed\|Dark Transformation : Gain 100 Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10039.png) | 10039 | [[wiki/buffs/10039-secret-movement-increases-movement-speed\|Secret Movement: Increases Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10040.png) | 10040 | [[wiki/buffs/10040-secret-movement-your-next-basic-attack-will-deal-additional\|Secret Movement : Your next basic attack will deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/10041.png) | 10041 | [[wiki/buffs/10041-unused\|(Unused)]] | complete | 0 |
-| ![](../assets/buffs/10042.png) | 10042 | [[wiki/buffs/10042-mark-of-death-reduced-armor\|Mark of Death : Reduced Armor]] | complete | 0 |
-| ![](../assets/buffs/10043.png) | 10043 | [[wiki/buffs/10043-restriction-your-next-basic-attack-deals-additional-damage\|Restriction : Your next basic attack deals additional damage]] | complete | 0 |
-| ![](../assets/buffs/10044.png) | 10044 | [[wiki/buffs/10044-restriction-rooted-in-place-for-3-seconds\|Restriction : Rooted in place for 3 seconds]] | stub | 1 |
-| ![](../assets/buffs/10045.png) | 10045 | [[wiki/buffs/10045-punishing-charge-you-are-able-to-use-punishing-stomp-now\|Punishing Charge : You are able to use Punishing Stomp now]] | stub | 1 |
-| ![](../assets/buffs/10046.png) | 10046 | [[wiki/buffs/10046-punishing-stomp-silenced-for-2-seconds\|Punishing Stomp : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10047.png) | 10047 | [[wiki/buffs/10047-blessing-of-order-creates-a-shield-that-absorbs-damage-for-1\|Blessing of Order: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10048.png) | 10048 | [[wiki/buffs/10048-blessing-of-order-explosion\|Blessing of Order : Explosion]] | complete | 0 |
-| ![](../assets/buffs/10049.png) | 10049 | [[wiki/buffs/10049-blessing-of-order-you-gain-10-armor-and-magic-resistance\|Blessing of Order : You gain 10% Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10050.png) | 10050 | [[wiki/buffs/10050-judgement-stunned-for-2-seconds\|Judgement : Stunned for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10051.png) | 10051 | [[wiki/buffs/10051-running-wild-increased-attack-speed\|Running Wild : Increased Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/10052.png) | 10052 | [[wiki/buffs/10052-wild-threat-damage-over-time\|Wild Threat : Damage over time]] | complete | 0 |
-| ![](../assets/buffs/10053.png) | 10053 | [[wiki/buffs/10053-charging-chariot-additional-100-movement-speed-for-5-seconds\|Charging Chariot : Additional 100 Movement Speed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/10054.png) | 10054 | [[wiki/buffs/10054-fury-additional-30-armor-penetration-150-attack-speed-and-4\|Fury : Additional 30 Armor Penetration, 150 Attack Speed and 4 Health Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10055.png) | 10055 | [[wiki/buffs/10055-crippling-blow-decreased-movement-speed\|Crippling Blow : Decreased Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10056.png) | 10056 | [[wiki/buffs/10056-meteor-stunned-for-2-seconds\|Meteor : Stunned for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10057.png) | 10057 | [[wiki/buffs/10057-reduces-your-damage-by-10\|Reduces your damage by 10%]] | complete | 0 |
-| ![](../assets/buffs/10058.png) | 10058 | [[wiki/buffs/10058-crushing-blow-silenced-for-2-seconds\|Crushing Blow : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10059.png) | 10059 | [[wiki/buffs/10059-head-butt-pushback\|Head Butt : Pushback]] | stub | 1 |
-| ![](../assets/buffs/10060.png) | 10060 | [[wiki/buffs/10060-howl-of-victory-increased-hp-regeneration\|Howl of Victory: Increased HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10061.png) | 10061 | [[wiki/buffs/10061-unyielding-will-reduce-50-all-type-of-damage-during-5-second\|Unyielding Will : Reduce 50% all type of damage during 5 seconds and get 40 Attack.]] | complete | 0 |
-| ![](../assets/buffs/10084.png) | 10084 | [[wiki/buffs/10084-double-time-decrease-movement-speed-by-30\|Double Time : Decrease Movement Speed by 30%]] | complete | 0 |
-| ![](../assets/buffs/10085.png) | 10085 | [[wiki/buffs/10085-rapid-reload-gain-improved-attack-and-movement-speed\|Rapid Reload : Gain improved Attack and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10086.png) | 10086 | [[wiki/buffs/10086-gain-20-ability-power\|Gain 20 Ability Power]] | complete | 0 |
-| ![](../assets/buffs/10087.png) | 10087 | [[wiki/buffs/10087-entangling-shot-rooted-for-2-seconds\|Entangling Shot : Rooted for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10088.png) | 10088 | [[wiki/buffs/10088-suppressive-fire-reduced-attack-and-movement-speed-for-3-sec\|Suppressive Fire : Reduced Attack and Movement Speed for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10034.png) | 10034 | [[wiki/buffs/10034-soul-infestation-your-basic-attacks-deal-additional-damage\|Soul Infestation : Your basic Attacks deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10035.png) | 10035 | [[wiki/buffs/10035-aura-of-demise-damages-enemies-around-you\|Aura of Demise : Damages enemies around you]] | complete | 0 |
+| ![](wiki/assets/buffs/10036.png) | 10036 | [[wiki/buffs/10036-shadow-walk-silences-for-2-seconds\|Shadow Walk: Silences for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10037.png) | 10037 | [[wiki/buffs/10037-dark-transformation-gain-40-health-regeneration\|Dark Transformation : Gain 40% Health Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10038.png) | 10038 | [[wiki/buffs/10038-dark-transformation-gain-100-movement-speed\|Dark Transformation : Gain 100 Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10039.png) | 10039 | [[wiki/buffs/10039-secret-movement-increases-movement-speed\|Secret Movement: Increases Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10040.png) | 10040 | [[wiki/buffs/10040-secret-movement-your-next-basic-attack-will-deal-additional\|Secret Movement : Your next basic attack will deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10041.png) | 10041 | [[wiki/buffs/10041-unused\|(Unused)]] | complete | 0 |
+| ![](wiki/assets/buffs/10042.png) | 10042 | [[wiki/buffs/10042-mark-of-death-reduced-armor\|Mark of Death : Reduced Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/10043.png) | 10043 | [[wiki/buffs/10043-restriction-your-next-basic-attack-deals-additional-damage\|Restriction : Your next basic attack deals additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10044.png) | 10044 | [[wiki/buffs/10044-restriction-rooted-in-place-for-3-seconds\|Restriction : Rooted in place for 3 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10045.png) | 10045 | [[wiki/buffs/10045-punishing-charge-you-are-able-to-use-punishing-stomp-now\|Punishing Charge : You are able to use Punishing Stomp now]] | stub | 1 |
+| ![](wiki/assets/buffs/10046.png) | 10046 | [[wiki/buffs/10046-punishing-stomp-silenced-for-2-seconds\|Punishing Stomp : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10047.png) | 10047 | [[wiki/buffs/10047-blessing-of-order-creates-a-shield-that-absorbs-damage-for-1\|Blessing of Order: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10048.png) | 10048 | [[wiki/buffs/10048-blessing-of-order-explosion\|Blessing of Order : Explosion]] | complete | 0 |
+| ![](wiki/assets/buffs/10049.png) | 10049 | [[wiki/buffs/10049-blessing-of-order-you-gain-10-armor-and-magic-resistance\|Blessing of Order : You gain 10% Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10050.png) | 10050 | [[wiki/buffs/10050-judgement-stunned-for-2-seconds\|Judgement : Stunned for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10051.png) | 10051 | [[wiki/buffs/10051-running-wild-increased-attack-speed\|Running Wild : Increased Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10052.png) | 10052 | [[wiki/buffs/10052-wild-threat-damage-over-time\|Wild Threat : Damage over time]] | complete | 0 |
+| ![](wiki/assets/buffs/10053.png) | 10053 | [[wiki/buffs/10053-charging-chariot-additional-100-movement-speed-for-5-seconds\|Charging Chariot : Additional 100 Movement Speed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10054.png) | 10054 | [[wiki/buffs/10054-fury-additional-30-armor-penetration-150-attack-speed-and-4\|Fury : Additional 30 Armor Penetration, 150 Attack Speed and 4 Health Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10055.png) | 10055 | [[wiki/buffs/10055-crippling-blow-decreased-movement-speed\|Crippling Blow : Decreased Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10056.png) | 10056 | [[wiki/buffs/10056-meteor-stunned-for-2-seconds\|Meteor : Stunned for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10057.png) | 10057 | [[wiki/buffs/10057-reduces-your-damage-by-10\|Reduces your damage by 10%]] | complete | 0 |
+| ![](wiki/assets/buffs/10058.png) | 10058 | [[wiki/buffs/10058-crushing-blow-silenced-for-2-seconds\|Crushing Blow : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10059.png) | 10059 | [[wiki/buffs/10059-head-butt-pushback\|Head Butt : Pushback]] | stub | 1 |
+| ![](wiki/assets/buffs/10060.png) | 10060 | [[wiki/buffs/10060-howl-of-victory-increased-hp-regeneration\|Howl of Victory: Increased HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10061.png) | 10061 | [[wiki/buffs/10061-unyielding-will-reduce-50-all-type-of-damage-during-5-second\|Unyielding Will : Reduce 50% all type of damage during 5 seconds and get 40 Attack.]] | complete | 0 |
+| ![](wiki/assets/buffs/10084.png) | 10084 | [[wiki/buffs/10084-double-time-decrease-movement-speed-by-30\|Double Time : Decrease Movement Speed by 30%]] | complete | 0 |
+| ![](wiki/assets/buffs/10085.png) | 10085 | [[wiki/buffs/10085-rapid-reload-gain-improved-attack-and-movement-speed\|Rapid Reload : Gain improved Attack and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10086.png) | 10086 | [[wiki/buffs/10086-gain-20-ability-power\|Gain 20 Ability Power]] | complete | 0 |
+| ![](wiki/assets/buffs/10087.png) | 10087 | [[wiki/buffs/10087-entangling-shot-rooted-for-2-seconds\|Entangling Shot : Rooted for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10088.png) | 10088 | [[wiki/buffs/10088-suppressive-fire-reduced-attack-and-movement-speed-for-3-sec\|Suppressive Fire : Reduced Attack and Movement Speed for 3 seconds]] | complete | 0 |
 |  | 10089 | [[wiki/buffs/10089-suppressive-fire-channelling-time\|Suppressive Fire : Channelling time]] | stub | 1 |
-| ![](../assets/buffs/10090.png) | 10090 | [[wiki/buffs/10090-additional-20-damage-and-100-health-regeneration\|Additional 20% damage and 100% Health Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10091.png) | 10091 | [[wiki/buffs/10091-additional-50-attack-damage-and-70-attack-speed\|Additional 50 Attack damage and 70 Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/10092.png) | 10092 | [[wiki/buffs/10092-additional-40-ability-power-and-50-mana-regeneration\|Additional 40 Ability Power and 50% Mana Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10093.png) | 10093 | [[wiki/buffs/10093-strong-resistance-reduced-attack-speed-for-3-seconds\|Strong Resistance : Reduced Attack Speed for 3 seconds]] | complete | 0 |
-| ![](../assets/buffs/10094.png) | 10094 | [[wiki/buffs/10094-absolute-defence-gain-additional-armor-for-10-seconds\|Absolute Defence : Gain additional Armor for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10095.png) | 10095 | [[wiki/buffs/10095-absolute-attack-gain-additional-damage-for-10-seconds\|Absolute Attack : Gain additional damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10096.png) | 10096 | [[wiki/buffs/10096-psychic-defence-gain-additional-magic-resistance-for-10-seco\|Psychic Defence : Gain additional Magic Resistance for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10097.png) | 10097 | [[wiki/buffs/10097-psychic-fierce-attack-gain-additional-magic-damage-for-10-se\|Psychic fierce Attack :Gain additional Magic damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10098.png) | 10098 | [[wiki/buffs/10098-nimble-pursuit-your-next-basic-attack-deals-additional-damag\|Nimble Pursuit : Your next basic attack deals additional damage based on your targets current HP.]] | complete | 0 |
-| ![](../assets/buffs/10099.png) | 10099 | [[wiki/buffs/10099-firm-hand-you-deal-additional-damage-based-on-your-current-a\|Firm Hand : You deal additional damage based on your current Armor]] | complete | 0 |
-| ![](../assets/buffs/10100.png) | 10100 | [[wiki/buffs/10100-gain-5-attack-speed-and-2-life-steal\|Gain 5% Attack Speed and 2% Life Steal]] | complete | 0 |
-| ![](../assets/buffs/10110.png) | 10110 | [[wiki/buffs/10110\|Buff 10110]] | complete | 0 |
-| ![](../assets/buffs/10111.png) | 10111 | [[wiki/buffs/10111-sharp-edges-bleeds-for-3-seconds\|Sharp Edges : Bleeds for 3 seconds]] | complete | 0 |
-| ![](../assets/buffs/10112.png) | 10112 | [[wiki/buffs/10112-gain-5-armor-and-life-steal\|Gain 5% Armor and Life Steal]] | complete | 0 |
-| ![](../assets/buffs/10113.png) | 10113 | [[wiki/buffs/10113-disturbance-of-the-force-increased-attack-and-movement-speed\|Disturbance of the Force : Increased Attack and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10114.png) | 10114 | [[wiki/buffs/10114-hail-of-arrows-reduced-movement-speed\|Hail of Arrows : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10115.png) | 10115 | [[wiki/buffs/10115-wrath\|Wrath]] | complete | 0 |
-| ![](../assets/buffs/10117.png) | 10117 | [[wiki/buffs/10117-empowered-shot-increases-movement-speed\|Empowered Shot: Increases Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10118.png) | 10118 | [[wiki/buffs/10118-rapid-fire-creates-a-shield-that-absorbs-damage-for-10-secon\|Rapid Fire: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10119.png) | 10119 | [[wiki/buffs/10119-rapid-fire-increases-movement-speed\|Rapid Fire: Increases Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10120.png) | 10120 | [[wiki/buffs/10120-wrath-of-the-frost-queen\|Wrath of the Frost Queen]] | complete | 0 |
-| ![](../assets/buffs/10121.png) | 10121 | [[wiki/buffs/10121-equivalence-exchange\|Equivalence Exchange]] | complete | 0 |
-| ![](../assets/buffs/10122.png) | 10122 | [[wiki/buffs/10122-tome-of-exchange\|tome of Exchange]] | complete | 0 |
-| ![](../assets/buffs/10123.png) | 10123 | [[wiki/buffs/10123-fire-devil\|Fire Devil]] | complete | 0 |
-| ![](../assets/buffs/10124.png) | 10124 | [[wiki/buffs/10124-thorns\|Thorns]] | complete | 0 |
-| ![](../assets/buffs/10125.png) | 10125 | [[wiki/buffs/10125-resistance\|Resistance]] | complete | 0 |
-| ![](../assets/buffs/10126.png) | 10126 | [[wiki/buffs/10126-resistance\|Resistance]] | complete | 0 |
-| ![](../assets/buffs/10127.png) | 10127 | [[wiki/buffs/10127-strong-resistance\|Strong Resistance]] | complete | 0 |
-| ![](../assets/buffs/10128.png) | 10128 | [[wiki/buffs/10128-strong-resistance\|Strong Resistance]] | complete | 0 |
-| ![](../assets/buffs/10129.png) | 10129 | [[wiki/buffs/10129-relentless\|Relentless]] | complete | 0 |
-| ![](../assets/buffs/10130.png) | 10130 | [[wiki/buffs/10130-relentless\|Relentless]] | complete | 0 |
-| ![](../assets/buffs/10131.png) | 10131 | [[wiki/buffs/10131-mother-nature-s-power\|Mother Nature's Power]] | complete | 0 |
-| ![](../assets/buffs/10132.png) | 10132 | [[wiki/buffs/10132-non-aggression\|Non-Aggression]] | complete | 0 |
-| ![](../assets/buffs/10133.png) | 10133 | [[wiki/buffs/10133-fate-s-call\|Fate's Call]] | complete | 0 |
-| ![](../assets/buffs/10134.png) | 10134 | [[wiki/buffs/10134-dark-energy\|Dark Energy]] | stub | 1 |
-| ![](../assets/buffs/10135.png) | 10135 | [[wiki/buffs/10135-npc-skill-fire\|NPC Skill_Fire]] | complete | 0 |
-| ![](../assets/buffs/10136.png) | 10136 | [[wiki/buffs/10136-blessing-of-the-abyss\|Blessing of the Abyss]] | complete | 0 |
-| ![](../assets/buffs/10137.png) | 10137 | [[wiki/buffs/10137-fame-item-sacred-barrier\|Fame item: Sacred Barrier]] | stub | 1 |
-| ![](../assets/buffs/10138.png) | 10138 | [[wiki/buffs/10138-fame-item-march\|Fame item: March]] | complete | 0 |
-| ![](../assets/buffs/10139.png) | 10139 | [[wiki/buffs/10139-fame-item-dark-shadow\|Fame item: Dark shadow]] | stub | 1 |
-| ![](../assets/buffs/10140.png) | 10140 | [[wiki/buffs/10140-quick-reload-your-next-basic-attacks-deal-area-damage\|Quick Reload : Your next basic Attacks deal area damage]] | complete | 0 |
-| ![](../assets/buffs/10141.png) | 10141 | [[wiki/buffs/10141-wild-threat-in-panic\|Wild Threat : In Panic]] | stub | 1 |
-| ![](../assets/buffs/10142.png) | 10142 | [[wiki/buffs/10142-shadow-walk-your-next-attack-deals-bonus-damage\|Shadow Walk : Your next Attack deals bonus damage]] | complete | 0 |
-| ![](../assets/buffs/10143.png) | 10143 | [[wiki/buffs/10143-violence-trigger\|Violence : Trigger]] | complete | 0 |
-| ![](../assets/buffs/10144.png) | 10144 | [[wiki/buffs/10144-violence-improves-movement-speed-and-attack-damage\|Violence: Improves Movement Speed and Attack Damage]] | complete | 0 |
-| ![](../assets/buffs/10145.png) | 10145 | [[wiki/buffs/10145-creation-of-the-world-stuns-for-2-seconds\|Creation of the World: Stuns for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10146.png) | 10146 | [[wiki/buffs/10146-reduces-movement-speed-for-2-seconds\|Reduces Movement Speed for 2 seconds.]] | complete | 0 |
-| ![](../assets/buffs/10147.png) | 10147 | [[wiki/buffs/10147-tsunami-reduces-movement-speed-and-silences-for-2-seconds\|Tsunami: Reduces Movement Speed and silences for 2 seconds.]] | stub | 1 |
-| ![](../assets/buffs/10148.png) | 10148 | [[wiki/buffs/10148-earthquake-stuns-for-4-seconds\|Earthquake: Stuns for 4 seconds]] | stub | 1 |
-| ![](../assets/buffs/10149.png) | 10149 | [[wiki/buffs/10149-divine-reduced-movement-speed-for-4-seconds\|Divine : Reduced Movement Speed for 4 seconds]] | complete | 0 |
-| ![](../assets/buffs/10150.png) | 10150 | [[wiki/buffs/10150-quickness-trigger\|Quickness : Trigger]] | complete | 0 |
-| ![](../assets/buffs/10151.png) | 10151 | [[wiki/buffs/10151-quickness-improved-movement-speed-and-attack-damage\|Quickness : Improved Movement Speed and Attack damage]] | complete | 0 |
-| ![](../assets/buffs/10152.png) | 10152 | [[wiki/buffs/10152-angry-charge\|Angry Charge]] | stub | 1 |
-| ![](../assets/buffs/10153.png) | 10153 | [[wiki/buffs/10153-sound-of-grudge-gain-30-armor-penetration-movement-speed-and\|Sound of Grudge : Gain 30 Armor Penetration, Movement Speed and 4 Health Regeneration.]] | complete | 0 |
-| ![](../assets/buffs/10154.png) | 10154 | [[wiki/buffs/10154-wrath-strike-reduces-damage-and-movement-speed\|Wrath Strike: Reduces Damage and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10155.png) | 10155 | [[wiki/buffs/10155-curse-explosion-stuns-all-enemies-for-2-seconds\|Curse Explosion : Stuns all enemies for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10156.png) | 10156 | [[wiki/buffs/10156-increased-armor-penetration\|Increased Armor Penetration]] | complete | 0 |
-| ![](../assets/buffs/10158.png) | 10158 | [[wiki/buffs/10158-smoke-screen-reduces-movement-and-attack-speed\|Smoke Screen: Reduces Movement and Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/10159.png) | 10159 | [[wiki/buffs/10159-smoke-screen-cooldown\|Smoke Screen : Cooldown]] | stub | 1 |
-| ![](../assets/buffs/10160.png) | 10160 | [[wiki/buffs/10160-quick-step-back-decreases-attack-speed\|Quick Step Back: Decreases Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/10161.png) | 10161 | [[wiki/buffs/10161-indiscriminate-launch-rockets-available-in-the-store\|Indiscriminate Launch: Rockets available in the Store]] | complete | 0 |
-| ![](../assets/buffs/10162.png) | 10162 | [[wiki/buffs/10162-indiscriminate-launch-third-hit\|Indiscriminate Launch : Third hit]] | complete | 0 |
-| ![](../assets/buffs/10163.png) | 10163 | [[wiki/buffs/10163-final-strike-creates-a-shield-that-absorbs-damage-for-10-sec\|Final Strike: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
-| ![](../assets/buffs/10164.png) | 10164 | [[wiki/buffs/10164-poisonous-blade-increases-attack-damage\|Poisonous Blade: Increases Attack Damage]] | complete | 0 |
-| ![](../assets/buffs/10165.png) | 10165 | [[wiki/buffs/10165-fang-of-knives-reduces-movement-speed\|Fang of Knives: Reduces Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10166.png) | 10166 | [[wiki/buffs/10166-final-strikes-silences-for-2-seconds\|Final Strikes: Silences for 2 seconds.]] | stub | 1 |
-| ![](../assets/buffs/10167.png) | 10167 | [[wiki/buffs/10167-final-strikes-possible-to-perform-the-final-strike-now\|Final Strikes : Possible to perform the Final Strike now]] | complete | 0 |
-| ![](../assets/buffs/10168.png) | 10168 | [[wiki/buffs/10168-assassination-silenced\|Assassination : Silenced]] | stub | 1 |
-| ![](../assets/buffs/10169.png) | 10169 | [[wiki/buffs/10169-assassination-active\|Assassination : Active]] | complete | 0 |
-| ![](../assets/buffs/10170.png) | 10170 | [[wiki/buffs/10170-energetic-bullet-your-next-basic-attack-deals-additional-dam\|Energetic Bullet : Your next basic attack deals additional damage]] | complete | 0 |
-| ![](../assets/buffs/10171.png) | 10171 | [[wiki/buffs/10171-flash-bang-reduced-movement-speed\|Flash Bang : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10172.png) | 10172 | [[wiki/buffs/10172-flash-bang-increased-damage\|Flash Bang : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/10173.png) | 10173 | [[wiki/buffs/10173-rapid-dash-increased-damage\|Rapid Dash : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/10174.png) | 10174 | [[wiki/buffs/10174-rapid-dash-increased-attack-speed\|Rapid Dash : Increased Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/10175.png) | 10175 | [[wiki/buffs/10175-energetic-claw-restricted\|Energetic Claw : Restricted]] | stub | 1 |
-| ![](../assets/buffs/10176.png) | 10176 | [[wiki/buffs/10176-energetic-claw-reduced-armor-and-magic-resistance\|Energetic Claw : Reduced Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10177.png) | 10177 | [[wiki/buffs/10177-cut-stunned-for-2-seconds\|Cut : Stunned for 2 seconds.]] | stub | 1 |
-| ![](../assets/buffs/10178.png) | 10178 | [[wiki/buffs/10178-spraying-poison-damage-over-time-for-6-seconds\|Spraying Poison : Damage over time for 6 seconds]] | complete | 0 |
-| ![](../assets/buffs/10179.png) | 10179 | [[wiki/buffs/10179-spraying-poison-silenced-for-2-seconds\|Spraying Poison : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10180.png) | 10180 | [[wiki/buffs/10180-brandishing-in-panic-for-2-seconds\|Brandishing : In panic for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10181.png) | 10181 | [[wiki/buffs/10181-competitive-spirit-trigger\|Competitive Spirit : Trigger]] | complete | 0 |
-| ![](../assets/buffs/10182.png) | 10182 | [[wiki/buffs/10182-competitive-spirit-increased-damage\|Competitive Spirit : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/10183.png) | 10183 | [[wiki/buffs/10183-explosion-summons\|Explosion : Summons]] | complete | 0 |
-| ![](../assets/buffs/10184.png) | 10184 | [[wiki/buffs/10184-explosion-dead-time-buff\|Explosion : Dead Time Buff]] | complete | 0 |
-| ![](../assets/buffs/10185.png) | 10185 | [[wiki/buffs/10185-the-other-side-increased-armor-and-magic-resistance\|The Other Side : Increased Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10186.png) | 10186 | [[wiki/buffs/10186-breath-reduced-movement-for-4-seconds\|Breath : Reduced Movement for 4 seconds]] | complete | 0 |
-| ![](../assets/buffs/10187.png) | 10187 | [[wiki/buffs/10187-awakening-trigger\|Awakening : Trigger]] | complete | 0 |
-| ![](../assets/buffs/10188.png) | 10188 | [[wiki/buffs/10188-awakening-additional-damage\|Awakening : Additional damage]] | complete | 0 |
-| ![](../assets/buffs/10189.png) | 10189 | [[wiki/buffs/10189-explosion-invincibility\|Explosion : Invincibility]] | complete | 0 |
-| ![](../assets/buffs/10190.png) | 10190 | [[wiki/buffs/10190-generating-zone\|Generating Zone]] | complete | 0 |
-| ![](../assets/buffs/10191.png) | 10191 | [[wiki/buffs/10191-summoning-zone\|Summoning Zone]] | complete | 0 |
-| ![](../assets/buffs/10192.png) | 10192 | [[wiki/buffs/10192-in-panic-for-2-seconds\|In Panic for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10193.png) | 10193 | [[wiki/buffs/10193-hole-reduced-movement-speed-for-3-seconds\|Hole : Reduced Movement Speed for 3 seconds]] | complete | 0 |
-| ![](../assets/buffs/10194.png) | 10194 | [[wiki/buffs/10194-consciousness-of-crisis-trigger\|Consciousness of Crisis : Trigger]] | complete | 0 |
-| ![](../assets/buffs/10195.png) | 10195 | [[wiki/buffs/10195-consciousness-of-crisis-reinforcing-damage\|Consciousness of Crisis : Reinforcing Damage]] | complete | 0 |
-| ![](../assets/buffs/10197.png) | 10197 | [[wiki/buffs/10197-generating-hole-summoning-npc\|Generating Hole ? Summoning - NPC]] | complete | 0 |
-| ![](../assets/buffs/10198.png) | 10198 | [[wiki/buffs/10198-split-reduced-movement-speed-for-3-seconds\|Split : Reduced Movement Speed for 3 seconds]] | stub | 1 |
-| ![](../assets/buffs/10199.png) | 10199 | [[wiki/buffs/10199-control-summon-elite-tow-sorcerer\|Control : Summon Elite Tow Sorcerer]] | complete | 0 |
-| ![](../assets/buffs/10200.png) | 10200 | [[wiki/buffs/10200-stomp-ground-silenced-for-2-seconds\|Stomp ground : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10201.png) | 10201 | [[wiki/buffs/10201-spin-stunned-for-3-seconds\|Spin : Stunned for 3 seconds]] | complete | 0 |
-| ![](../assets/buffs/10202.png) | 10202 | [[wiki/buffs/10202\|Buff 10202]] | complete | 0 |
-| ![](../assets/buffs/10203.png) | 10203 | [[wiki/buffs/10203\|Buff 10203]] | complete | 0 |
-| ![](../assets/buffs/10204.png) | 10204 | [[wiki/buffs/10204\|Buff 10204]] | complete | 0 |
-| ![](../assets/buffs/10205.png) | 10205 | [[wiki/buffs/10205-curse-explosion-reduced-movement-speed\|Curse Explosion : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10206.png) | 10206 | [[wiki/buffs/10206\|Buff 10206]] | complete | 0 |
-| ![](../assets/buffs/10207.png) | 10207 | [[wiki/buffs/10207\|Buff 10207]] | complete | 0 |
-| ![](../assets/buffs/10208.png) | 10208 | [[wiki/buffs/10208\|Buff 10208]] | complete | 0 |
-| ![](../assets/buffs/10209.png) | 10209 | [[wiki/buffs/10209\|Buff 10209]] | complete | 0 |
-| ![](../assets/buffs/10210.png) | 10210 | [[wiki/buffs/10210\|Buff 10210]] | complete | 0 |
-| ![](../assets/buffs/10211.png) | 10211 | [[wiki/buffs/10211\|Buff 10211]] | stub | 1 |
-| ![](../assets/buffs/10212.png) | 10212 | [[wiki/buffs/10212-wave-of-mutilation-reduced-movement-speed-for-3-seconds\|Wave of Mutilation : Reduced Movement Speed for 3 seconds]] | complete | 0 |
-| ![](../assets/buffs/10213.png) | 10213 | [[wiki/buffs/10213-dark-matter-stunned-for-3-seconds\|Dark Matter : Stunned for 3 seconds]] | stub | 1 |
-| ![](../assets/buffs/10214.png) | 10214 | [[wiki/buffs/10214-petrification-stunned-for-2-seconds\|Petrification : Stunned for 2 seconds]] | complete | 0 |
-| ![](../assets/buffs/10215.png) | 10215 | [[wiki/buffs/10215-petrification-silenced-for-2-seconds\|Petrification: Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10217.png) | 10217 | [[wiki/buffs/10217-heaven-and-earth-stunned\|Heaven and Earth : Stunned]] | stub | 1 |
-| ![](../assets/buffs/10218.png) | 10218 | [[wiki/buffs/10218-scream-of-the-dead-creates-a-absorvs-damage-for-8-seconds\|Scream of the Dead : Creates a absorvs damage for 8 seconds]] | complete | 0 |
-| ![](../assets/buffs/10219.png) | 10219 | [[wiki/buffs/10219-scream-of-the-dead-reduced-armor-and-magic-resistance\|Scream of the Dead : Reduced Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10220.png) | 10220 | [[wiki/buffs/10220-summoning-tomb-of-the-dead\|Summoning Tomb of the Dead]] | stub | 1 |
-| ![](../assets/buffs/10221.png) | 10221 | [[wiki/buffs/10221-tomb-of-the-dead-reduced-movement-speed\|Tomb of the Dead : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10222.png) | 10222 | [[wiki/buffs/10222-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/10223.png) | 10223 | [[wiki/buffs/10223-aura-of-death-kills-and-assists-heal-you\|Aura of Death : Kills and assists heal you]] | complete | 0 |
-| ![](../assets/buffs/10224.png) | 10224 | [[wiki/buffs/10224-immortal-body-recovering-for-300-seconds\|Immortal Body : Recovering for 300 seconds]] | complete | 0 |
-| ![](../assets/buffs/10225.png) | 10225 | [[wiki/buffs/10225-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/10226.png) | 10226 | [[wiki/buffs/10226-immortal-body-40-reduced-health\|Immortal Body : 40% reduced Health]] | complete | 0 |
-| ![](../assets/buffs/10227.png) | 10227 | [[wiki/buffs/10227-immortal-body-revival\|Immortal Body : Revival]] | complete | 0 |
-| ![](../assets/buffs/10228.png) | 10228 | [[wiki/buffs/10228\|Buff 10228]] | stub | 1 |
-| ![](../assets/buffs/10229.png) | 10229 | [[wiki/buffs/10229\|Buff 10229]] | stub | 1 |
-| ![](../assets/buffs/10230.png) | 10230 | [[wiki/buffs/10230-magical-protection-creates-a-absorvs-damage-for-8-seconds\|Magical Protection : Creates a absorvs damage for 8 seconds]] | complete | 0 |
-| ![](../assets/buffs/10231.png) | 10231 | [[wiki/buffs/10231-magical-protection-increased-armor-and-magic-resistance\|Magical Protection: Increased Armor and Magic Resistance.]] | complete | 0 |
-| ![](../assets/buffs/10232.png) | 10232 | [[wiki/buffs/10232-magical-zone-increased-movement-and-attack-speed\|Magical Zone : Increased Movement and Attack Speed.]] | complete | 0 |
-| ![](../assets/buffs/10233.png) | 10233 | [[wiki/buffs/10233-magical-zone-improved-health-and-mana-regeneration\|Magical Zone : Improved Health and Mana Regeneration.]] | complete | 0 |
-| ![](../assets/buffs/10234.png) | 10234 | [[wiki/buffs/10234-magical-zone-time-until-it-fades\|Magical Zone : Time until it fades.]] | stub | 1 |
-| ![](../assets/buffs/10235.png) | 10235 | [[wiki/buffs/10235-overload-increased-movement-speed-armor-magic-resistance-and\|Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.]] | complete | 0 |
-| ![](../assets/buffs/10236.png) | 10236 | [[wiki/buffs/10236-absorb-magic-reduced-incoming-damage\|Absorb Magic : Reduced incoming damage.]] | complete | 0 |
-| ![](../assets/buffs/10237.png) | 10237 | [[wiki/buffs/10237-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
-| ![](../assets/buffs/10238.png) | 10238 | [[wiki/buffs/10238-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10239.png) | 10239 | [[wiki/buffs/10239-a-warrior-s-body-deal-additional-damage\|A Warrior's Body. Deal additional damage.]] | complete | 0 |
-| ![](../assets/buffs/10240.png) | 10240 | [[wiki/buffs/10240-maximized-efficiency-increased-damage\|Maximized Efficiency: Increased Damage.]] | complete | 0 |
-| ![](../assets/buffs/10241.png) | 10241 | [[wiki/buffs/10241-empowered-manadrain-silenced-for-2-seconds\|Empowered Manadrain : Silenced for 2 seconds.]] | stub | 1 |
-| ![](../assets/buffs/10242.png) | 10242 | [[wiki/buffs/10242-advent-silenced-for-2-seconds\|Advent : Silenced for 2 seconds.]] | stub | 1 |
-| ![](../assets/buffs/10243.png) | 10243 | [[wiki/buffs/10243-magical-zone-increased-movement-and-attack-speed\|Magical Zone : Increased Movement and Attack Speed.]] | stub | 1 |
-| ![](../assets/buffs/10244.png) | 10244 | [[wiki/buffs/10244-magical-zone-improved-health-and-mana-regeneration\|Magical Zone : Improved Health and Mana Regeneration.]] | complete | 0 |
-| ![](../assets/buffs/10245.png) | 10245 | [[wiki/buffs/10245-magical-zone-time-until-it-fades\|Magical Zone : Time until it fades.]] | complete | 0 |
-| ![](../assets/buffs/10246.png) | 10246 | [[wiki/buffs/10246-overload-increased-movement-speed-armor-magic-resistance-and\|Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.]] | complete | 0 |
-| ![](../assets/buffs/10247.png) | 10247 | [[wiki/buffs/10247-magical-protection-creates-a-absorvs-damage-for-8-seconds\|Magical Protection : Creates a absorvs damage for 8 seconds]] | complete | 0 |
-| ![](../assets/buffs/10248.png) | 10248 | [[wiki/buffs/10248-magical-protection-increased-armor-and-magic-resistance\|Magical Protection : Increased Armor and Magic Resistance.]] | complete | 0 |
-| ![](../assets/buffs/10249.png) | 10249 | [[wiki/buffs/10249-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
-| ![](../assets/buffs/10250.png) | 10250 | [[wiki/buffs/10250-ambition-of-the-warrior-reduces-armor-and-magic-resistance-b\|Ambition of the Warrior : Reduces Armor and Magic Resistance by 30%.]] | complete | 0 |
-| ![](../assets/buffs/10251.png) | 10251 | [[wiki/buffs/10251\|Buff 10251]] | stub | 1 |
-| ![](../assets/buffs/10252.png) | 10252 | [[wiki/buffs/10252\|Buff 10252]] | complete | 0 |
-| ![](../assets/buffs/10253.png) | 10253 | [[wiki/buffs/10253\|Buff 10253]] | complete | 0 |
-| ![](../assets/buffs/10254.png) | 10254 | [[wiki/buffs/10254\|Buff 10254]] | stub | 1 |
-| ![](../assets/buffs/10255.png) | 10255 | [[wiki/buffs/10255\|Buff 10255]] | complete | 0 |
-| ![](../assets/buffs/10256.png) | 10256 | [[wiki/buffs/10256\|Buff 10256]] | complete | 0 |
-| ![](../assets/buffs/10257.png) | 10257 | [[wiki/buffs/10257\|Buff 10257]] | complete | 0 |
-| ![](../assets/buffs/10258.png) | 10258 | [[wiki/buffs/10258\|Buff 10258]] | stub | 1 |
-| ![](../assets/buffs/10259.png) | 10259 | [[wiki/buffs/10259\|Buff 10259]] | complete | 0 |
-| ![](../assets/buffs/10260.png) | 10260 | [[wiki/buffs/10260\|Buff 10260]] | complete | 0 |
-| ![](../assets/buffs/10261.png) | 10261 | [[wiki/buffs/10261\|Buff 10261]] | complete | 0 |
-| ![](../assets/buffs/10262.png) | 10262 | [[wiki/buffs/10262\|Buff 10262]] | complete | 0 |
-| ![](../assets/buffs/10263.png) | 10263 | [[wiki/buffs/10263\|Buff 10263]] | complete | 0 |
-| ![](../assets/buffs/10264.png) | 10264 | [[wiki/buffs/10264\|Buff 10264]] | complete | 0 |
-| ![](../assets/buffs/10265.png) | 10265 | [[wiki/buffs/10265-the-other-side-increased-armor-and-magic-resistance\|The Other Side : Increased Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10266.png) | 10266 | [[wiki/buffs/10266\|Buff 10266]] | complete | 0 |
-| ![](../assets/buffs/10267.png) | 10267 | [[wiki/buffs/10267\|Buff 10267]] | stub | 1 |
-| ![](../assets/buffs/10268.png) | 10268 | [[wiki/buffs/10268\|Buff 10268]] | stub | 1 |
-| ![](../assets/buffs/10269.png) | 10269 | [[wiki/buffs/10269\|Buff 10269]] | complete | 0 |
+| ![](wiki/assets/buffs/10090.png) | 10090 | [[wiki/buffs/10090-additional-20-damage-and-100-health-regeneration\|Additional 20% damage and 100% Health Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10091.png) | 10091 | [[wiki/buffs/10091-additional-50-attack-damage-and-70-attack-speed\|Additional 50 Attack damage and 70 Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10092.png) | 10092 | [[wiki/buffs/10092-additional-40-ability-power-and-50-mana-regeneration\|Additional 40 Ability Power and 50% Mana Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10093.png) | 10093 | [[wiki/buffs/10093-strong-resistance-reduced-attack-speed-for-3-seconds\|Strong Resistance : Reduced Attack Speed for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10094.png) | 10094 | [[wiki/buffs/10094-absolute-defence-gain-additional-armor-for-10-seconds\|Absolute Defence : Gain additional Armor for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10095.png) | 10095 | [[wiki/buffs/10095-absolute-attack-gain-additional-damage-for-10-seconds\|Absolute Attack : Gain additional damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10096.png) | 10096 | [[wiki/buffs/10096-psychic-defence-gain-additional-magic-resistance-for-10-seco\|Psychic Defence : Gain additional Magic Resistance for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10097.png) | 10097 | [[wiki/buffs/10097-psychic-fierce-attack-gain-additional-magic-damage-for-10-se\|Psychic fierce Attack :Gain additional Magic damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10098.png) | 10098 | [[wiki/buffs/10098-nimble-pursuit-your-next-basic-attack-deals-additional-damag\|Nimble Pursuit : Your next basic attack deals additional damage based on your targets current HP.]] | complete | 0 |
+| ![](wiki/assets/buffs/10099.png) | 10099 | [[wiki/buffs/10099-firm-hand-you-deal-additional-damage-based-on-your-current-a\|Firm Hand : You deal additional damage based on your current Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/10100.png) | 10100 | [[wiki/buffs/10100-gain-5-attack-speed-and-2-life-steal\|Gain 5% Attack Speed and 2% Life Steal]] | complete | 0 |
+| ![](wiki/assets/buffs/10110.png) | 10110 | [[wiki/buffs/10110\|Buff 10110]] | complete | 0 |
+| ![](wiki/assets/buffs/10111.png) | 10111 | [[wiki/buffs/10111-sharp-edges-bleeds-for-3-seconds\|Sharp Edges : Bleeds for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10112.png) | 10112 | [[wiki/buffs/10112-gain-5-armor-and-life-steal\|Gain 5% Armor and Life Steal]] | complete | 0 |
+| ![](wiki/assets/buffs/10113.png) | 10113 | [[wiki/buffs/10113-disturbance-of-the-force-increased-attack-and-movement-speed\|Disturbance of the Force : Increased Attack and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10114.png) | 10114 | [[wiki/buffs/10114-hail-of-arrows-reduced-movement-speed\|Hail of Arrows : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10115.png) | 10115 | [[wiki/buffs/10115-wrath\|Wrath]] | complete | 0 |
+| ![](wiki/assets/buffs/10117.png) | 10117 | [[wiki/buffs/10117-empowered-shot-increases-movement-speed\|Empowered Shot: Increases Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10118.png) | 10118 | [[wiki/buffs/10118-rapid-fire-creates-a-shield-that-absorbs-damage-for-10-secon\|Rapid Fire: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10119.png) | 10119 | [[wiki/buffs/10119-rapid-fire-increases-movement-speed\|Rapid Fire: Increases Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10120.png) | 10120 | [[wiki/buffs/10120-wrath-of-the-frost-queen\|Wrath of the Frost Queen]] | complete | 0 |
+| ![](wiki/assets/buffs/10121.png) | 10121 | [[wiki/buffs/10121-equivalence-exchange\|Equivalence Exchange]] | complete | 0 |
+| ![](wiki/assets/buffs/10122.png) | 10122 | [[wiki/buffs/10122-tome-of-exchange\|tome of Exchange]] | complete | 0 |
+| ![](wiki/assets/buffs/10123.png) | 10123 | [[wiki/buffs/10123-fire-devil\|Fire Devil]] | complete | 0 |
+| ![](wiki/assets/buffs/10124.png) | 10124 | [[wiki/buffs/10124-thorns\|Thorns]] | complete | 0 |
+| ![](wiki/assets/buffs/10125.png) | 10125 | [[wiki/buffs/10125-resistance\|Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10126.png) | 10126 | [[wiki/buffs/10126-resistance\|Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10127.png) | 10127 | [[wiki/buffs/10127-strong-resistance\|Strong Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10128.png) | 10128 | [[wiki/buffs/10128-strong-resistance\|Strong Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10129.png) | 10129 | [[wiki/buffs/10129-relentless\|Relentless]] | complete | 0 |
+| ![](wiki/assets/buffs/10130.png) | 10130 | [[wiki/buffs/10130-relentless\|Relentless]] | complete | 0 |
+| ![](wiki/assets/buffs/10131.png) | 10131 | [[wiki/buffs/10131-mother-nature-s-power\|Mother Nature's Power]] | complete | 0 |
+| ![](wiki/assets/buffs/10132.png) | 10132 | [[wiki/buffs/10132-non-aggression\|Non-Aggression]] | complete | 0 |
+| ![](wiki/assets/buffs/10133.png) | 10133 | [[wiki/buffs/10133-fate-s-call\|Fate's Call]] | complete | 0 |
+| ![](wiki/assets/buffs/10134.png) | 10134 | [[wiki/buffs/10134-dark-energy\|Dark Energy]] | stub | 1 |
+| ![](wiki/assets/buffs/10135.png) | 10135 | [[wiki/buffs/10135-npc-skill-fire\|NPC Skill_Fire]] | complete | 0 |
+| ![](wiki/assets/buffs/10136.png) | 10136 | [[wiki/buffs/10136-blessing-of-the-abyss\|Blessing of the Abyss]] | complete | 0 |
+| ![](wiki/assets/buffs/10137.png) | 10137 | [[wiki/buffs/10137-fame-item-sacred-barrier\|Fame item: Sacred Barrier]] | stub | 1 |
+| ![](wiki/assets/buffs/10138.png) | 10138 | [[wiki/buffs/10138-fame-item-march\|Fame item: March]] | complete | 0 |
+| ![](wiki/assets/buffs/10139.png) | 10139 | [[wiki/buffs/10139-fame-item-dark-shadow\|Fame item: Dark shadow]] | stub | 1 |
+| ![](wiki/assets/buffs/10140.png) | 10140 | [[wiki/buffs/10140-quick-reload-your-next-basic-attacks-deal-area-damage\|Quick Reload : Your next basic Attacks deal area damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10141.png) | 10141 | [[wiki/buffs/10141-wild-threat-in-panic\|Wild Threat : In Panic]] | stub | 1 |
+| ![](wiki/assets/buffs/10142.png) | 10142 | [[wiki/buffs/10142-shadow-walk-your-next-attack-deals-bonus-damage\|Shadow Walk : Your next Attack deals bonus damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10143.png) | 10143 | [[wiki/buffs/10143-violence-trigger\|Violence : Trigger]] | complete | 0 |
+| ![](wiki/assets/buffs/10144.png) | 10144 | [[wiki/buffs/10144-violence-improves-movement-speed-and-attack-damage\|Violence: Improves Movement Speed and Attack Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10145.png) | 10145 | [[wiki/buffs/10145-creation-of-the-world-stuns-for-2-seconds\|Creation of the World: Stuns for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10146.png) | 10146 | [[wiki/buffs/10146-reduces-movement-speed-for-2-seconds\|Reduces Movement Speed for 2 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/10147.png) | 10147 | [[wiki/buffs/10147-tsunami-reduces-movement-speed-and-silences-for-2-seconds\|Tsunami: Reduces Movement Speed and silences for 2 seconds.]] | stub | 1 |
+| ![](wiki/assets/buffs/10148.png) | 10148 | [[wiki/buffs/10148-earthquake-stuns-for-4-seconds\|Earthquake: Stuns for 4 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10149.png) | 10149 | [[wiki/buffs/10149-divine-reduced-movement-speed-for-4-seconds\|Divine : Reduced Movement Speed for 4 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10150.png) | 10150 | [[wiki/buffs/10150-quickness-trigger\|Quickness : Trigger]] | complete | 0 |
+| ![](wiki/assets/buffs/10151.png) | 10151 | [[wiki/buffs/10151-quickness-improved-movement-speed-and-attack-damage\|Quickness : Improved Movement Speed and Attack damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10152.png) | 10152 | [[wiki/buffs/10152-angry-charge\|Angry Charge]] | stub | 1 |
+| ![](wiki/assets/buffs/10153.png) | 10153 | [[wiki/buffs/10153-sound-of-grudge-gain-30-armor-penetration-movement-speed-and\|Sound of Grudge : Gain 30 Armor Penetration, Movement Speed and 4 Health Regeneration.]] | complete | 0 |
+| ![](wiki/assets/buffs/10154.png) | 10154 | [[wiki/buffs/10154-wrath-strike-reduces-damage-and-movement-speed\|Wrath Strike: Reduces Damage and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10155.png) | 10155 | [[wiki/buffs/10155-curse-explosion-stuns-all-enemies-for-2-seconds\|Curse Explosion : Stuns all enemies for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10156.png) | 10156 | [[wiki/buffs/10156-increased-armor-penetration\|Increased Armor Penetration]] | complete | 0 |
+| ![](wiki/assets/buffs/10158.png) | 10158 | [[wiki/buffs/10158-smoke-screen-reduces-movement-and-attack-speed\|Smoke Screen: Reduces Movement and Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10159.png) | 10159 | [[wiki/buffs/10159-smoke-screen-cooldown\|Smoke Screen : Cooldown]] | stub | 1 |
+| ![](wiki/assets/buffs/10160.png) | 10160 | [[wiki/buffs/10160-quick-step-back-decreases-attack-speed\|Quick Step Back: Decreases Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10161.png) | 10161 | [[wiki/buffs/10161-indiscriminate-launch-rockets-available-in-the-store\|Indiscriminate Launch: Rockets available in the Store]] | complete | 0 |
+| ![](wiki/assets/buffs/10162.png) | 10162 | [[wiki/buffs/10162-indiscriminate-launch-third-hit\|Indiscriminate Launch : Third hit]] | complete | 0 |
+| ![](wiki/assets/buffs/10163.png) | 10163 | [[wiki/buffs/10163-final-strike-creates-a-shield-that-absorbs-damage-for-10-sec\|Final Strike: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/10164.png) | 10164 | [[wiki/buffs/10164-poisonous-blade-increases-attack-damage\|Poisonous Blade: Increases Attack Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10165.png) | 10165 | [[wiki/buffs/10165-fang-of-knives-reduces-movement-speed\|Fang of Knives: Reduces Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10166.png) | 10166 | [[wiki/buffs/10166-final-strikes-silences-for-2-seconds\|Final Strikes: Silences for 2 seconds.]] | stub | 1 |
+| ![](wiki/assets/buffs/10167.png) | 10167 | [[wiki/buffs/10167-final-strikes-possible-to-perform-the-final-strike-now\|Final Strikes : Possible to perform the Final Strike now]] | complete | 0 |
+| ![](wiki/assets/buffs/10168.png) | 10168 | [[wiki/buffs/10168-assassination-silenced\|Assassination : Silenced]] | stub | 1 |
+| ![](wiki/assets/buffs/10169.png) | 10169 | [[wiki/buffs/10169-assassination-active\|Assassination : Active]] | complete | 0 |
+| ![](wiki/assets/buffs/10170.png) | 10170 | [[wiki/buffs/10170-energetic-bullet-your-next-basic-attack-deals-additional-dam\|Energetic Bullet : Your next basic attack deals additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10171.png) | 10171 | [[wiki/buffs/10171-flash-bang-reduced-movement-speed\|Flash Bang : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10172.png) | 10172 | [[wiki/buffs/10172-flash-bang-increased-damage\|Flash Bang : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10173.png) | 10173 | [[wiki/buffs/10173-rapid-dash-increased-damage\|Rapid Dash : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10174.png) | 10174 | [[wiki/buffs/10174-rapid-dash-increased-attack-speed\|Rapid Dash : Increased Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10175.png) | 10175 | [[wiki/buffs/10175-energetic-claw-restricted\|Energetic Claw : Restricted]] | stub | 1 |
+| ![](wiki/assets/buffs/10176.png) | 10176 | [[wiki/buffs/10176-energetic-claw-reduced-armor-and-magic-resistance\|Energetic Claw : Reduced Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10177.png) | 10177 | [[wiki/buffs/10177-cut-stunned-for-2-seconds\|Cut : Stunned for 2 seconds.]] | stub | 1 |
+| ![](wiki/assets/buffs/10178.png) | 10178 | [[wiki/buffs/10178-spraying-poison-damage-over-time-for-6-seconds\|Spraying Poison : Damage over time for 6 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10179.png) | 10179 | [[wiki/buffs/10179-spraying-poison-silenced-for-2-seconds\|Spraying Poison : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10180.png) | 10180 | [[wiki/buffs/10180-brandishing-in-panic-for-2-seconds\|Brandishing : In panic for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10181.png) | 10181 | [[wiki/buffs/10181-competitive-spirit-trigger\|Competitive Spirit : Trigger]] | complete | 0 |
+| ![](wiki/assets/buffs/10182.png) | 10182 | [[wiki/buffs/10182-competitive-spirit-increased-damage\|Competitive Spirit : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10183.png) | 10183 | [[wiki/buffs/10183-explosion-summons\|Explosion : Summons]] | complete | 0 |
+| ![](wiki/assets/buffs/10184.png) | 10184 | [[wiki/buffs/10184-explosion-dead-time-buff\|Explosion : Dead Time Buff]] | complete | 0 |
+| ![](wiki/assets/buffs/10185.png) | 10185 | [[wiki/buffs/10185-the-other-side-increased-armor-and-magic-resistance\|The Other Side : Increased Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10186.png) | 10186 | [[wiki/buffs/10186-breath-reduced-movement-for-4-seconds\|Breath : Reduced Movement for 4 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10187.png) | 10187 | [[wiki/buffs/10187-awakening-trigger\|Awakening : Trigger]] | complete | 0 |
+| ![](wiki/assets/buffs/10188.png) | 10188 | [[wiki/buffs/10188-awakening-additional-damage\|Awakening : Additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10189.png) | 10189 | [[wiki/buffs/10189-explosion-invincibility\|Explosion : Invincibility]] | complete | 0 |
+| ![](wiki/assets/buffs/10190.png) | 10190 | [[wiki/buffs/10190-generating-zone\|Generating Zone]] | complete | 0 |
+| ![](wiki/assets/buffs/10191.png) | 10191 | [[wiki/buffs/10191-summoning-zone\|Summoning Zone]] | complete | 0 |
+| ![](wiki/assets/buffs/10192.png) | 10192 | [[wiki/buffs/10192-in-panic-for-2-seconds\|In Panic for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10193.png) | 10193 | [[wiki/buffs/10193-hole-reduced-movement-speed-for-3-seconds\|Hole : Reduced Movement Speed for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10194.png) | 10194 | [[wiki/buffs/10194-consciousness-of-crisis-trigger\|Consciousness of Crisis : Trigger]] | complete | 0 |
+| ![](wiki/assets/buffs/10195.png) | 10195 | [[wiki/buffs/10195-consciousness-of-crisis-reinforcing-damage\|Consciousness of Crisis : Reinforcing Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10197.png) | 10197 | [[wiki/buffs/10197-generating-hole-summoning-npc\|Generating Hole ? Summoning - NPC]] | complete | 0 |
+| ![](wiki/assets/buffs/10198.png) | 10198 | [[wiki/buffs/10198-split-reduced-movement-speed-for-3-seconds\|Split : Reduced Movement Speed for 3 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10199.png) | 10199 | [[wiki/buffs/10199-control-summon-elite-tow-sorcerer\|Control : Summon Elite Tow Sorcerer]] | complete | 0 |
+| ![](wiki/assets/buffs/10200.png) | 10200 | [[wiki/buffs/10200-stomp-ground-silenced-for-2-seconds\|Stomp ground : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10201.png) | 10201 | [[wiki/buffs/10201-spin-stunned-for-3-seconds\|Spin : Stunned for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10202.png) | 10202 | [[wiki/buffs/10202\|Buff 10202]] | complete | 0 |
+| ![](wiki/assets/buffs/10203.png) | 10203 | [[wiki/buffs/10203\|Buff 10203]] | complete | 0 |
+| ![](wiki/assets/buffs/10204.png) | 10204 | [[wiki/buffs/10204\|Buff 10204]] | complete | 0 |
+| ![](wiki/assets/buffs/10205.png) | 10205 | [[wiki/buffs/10205-curse-explosion-reduced-movement-speed\|Curse Explosion : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10206.png) | 10206 | [[wiki/buffs/10206\|Buff 10206]] | complete | 0 |
+| ![](wiki/assets/buffs/10207.png) | 10207 | [[wiki/buffs/10207\|Buff 10207]] | complete | 0 |
+| ![](wiki/assets/buffs/10208.png) | 10208 | [[wiki/buffs/10208\|Buff 10208]] | complete | 0 |
+| ![](wiki/assets/buffs/10209.png) | 10209 | [[wiki/buffs/10209\|Buff 10209]] | complete | 0 |
+| ![](wiki/assets/buffs/10210.png) | 10210 | [[wiki/buffs/10210\|Buff 10210]] | complete | 0 |
+| ![](wiki/assets/buffs/10211.png) | 10211 | [[wiki/buffs/10211\|Buff 10211]] | stub | 1 |
+| ![](wiki/assets/buffs/10212.png) | 10212 | [[wiki/buffs/10212-wave-of-mutilation-reduced-movement-speed-for-3-seconds\|Wave of Mutilation : Reduced Movement Speed for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10213.png) | 10213 | [[wiki/buffs/10213-dark-matter-stunned-for-3-seconds\|Dark Matter : Stunned for 3 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10214.png) | 10214 | [[wiki/buffs/10214-petrification-stunned-for-2-seconds\|Petrification : Stunned for 2 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10215.png) | 10215 | [[wiki/buffs/10215-petrification-silenced-for-2-seconds\|Petrification: Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10217.png) | 10217 | [[wiki/buffs/10217-heaven-and-earth-stunned\|Heaven and Earth : Stunned]] | stub | 1 |
+| ![](wiki/assets/buffs/10218.png) | 10218 | [[wiki/buffs/10218-scream-of-the-dead-creates-a-absorvs-damage-for-8-seconds\|Scream of the Dead : Creates a absorvs damage for 8 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10219.png) | 10219 | [[wiki/buffs/10219-scream-of-the-dead-reduced-armor-and-magic-resistance\|Scream of the Dead : Reduced Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10220.png) | 10220 | [[wiki/buffs/10220-summoning-tomb-of-the-dead\|Summoning Tomb of the Dead]] | stub | 1 |
+| ![](wiki/assets/buffs/10221.png) | 10221 | [[wiki/buffs/10221-tomb-of-the-dead-reduced-movement-speed\|Tomb of the Dead : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10222.png) | 10222 | [[wiki/buffs/10222-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10223.png) | 10223 | [[wiki/buffs/10223-aura-of-death-kills-and-assists-heal-you\|Aura of Death : Kills and assists heal you]] | complete | 0 |
+| ![](wiki/assets/buffs/10224.png) | 10224 | [[wiki/buffs/10224-immortal-body-recovering-for-300-seconds\|Immortal Body : Recovering for 300 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10225.png) | 10225 | [[wiki/buffs/10225-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10226.png) | 10226 | [[wiki/buffs/10226-immortal-body-40-reduced-health\|Immortal Body : 40% reduced Health]] | complete | 0 |
+| ![](wiki/assets/buffs/10227.png) | 10227 | [[wiki/buffs/10227-immortal-body-revival\|Immortal Body : Revival]] | complete | 0 |
+| ![](wiki/assets/buffs/10228.png) | 10228 | [[wiki/buffs/10228\|Buff 10228]] | stub | 1 |
+| ![](wiki/assets/buffs/10229.png) | 10229 | [[wiki/buffs/10229\|Buff 10229]] | stub | 1 |
+| ![](wiki/assets/buffs/10230.png) | 10230 | [[wiki/buffs/10230-magical-protection-creates-a-absorvs-damage-for-8-seconds\|Magical Protection : Creates a absorvs damage for 8 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10231.png) | 10231 | [[wiki/buffs/10231-magical-protection-increased-armor-and-magic-resistance\|Magical Protection: Increased Armor and Magic Resistance.]] | complete | 0 |
+| ![](wiki/assets/buffs/10232.png) | 10232 | [[wiki/buffs/10232-magical-zone-increased-movement-and-attack-speed\|Magical Zone : Increased Movement and Attack Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/10233.png) | 10233 | [[wiki/buffs/10233-magical-zone-improved-health-and-mana-regeneration\|Magical Zone : Improved Health and Mana Regeneration.]] | complete | 0 |
+| ![](wiki/assets/buffs/10234.png) | 10234 | [[wiki/buffs/10234-magical-zone-time-until-it-fades\|Magical Zone : Time until it fades.]] | stub | 1 |
+| ![](wiki/assets/buffs/10235.png) | 10235 | [[wiki/buffs/10235-overload-increased-movement-speed-armor-magic-resistance-and\|Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.]] | complete | 0 |
+| ![](wiki/assets/buffs/10236.png) | 10236 | [[wiki/buffs/10236-absorb-magic-reduced-incoming-damage\|Absorb Magic : Reduced incoming damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/10237.png) | 10237 | [[wiki/buffs/10237-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
+| ![](wiki/assets/buffs/10238.png) | 10238 | [[wiki/buffs/10238-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10239.png) | 10239 | [[wiki/buffs/10239-a-warrior-s-body-deal-additional-damage\|A Warrior's Body. Deal additional damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/10240.png) | 10240 | [[wiki/buffs/10240-maximized-efficiency-increased-damage\|Maximized Efficiency: Increased Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/10241.png) | 10241 | [[wiki/buffs/10241-empowered-manadrain-silenced-for-2-seconds\|Empowered Manadrain : Silenced for 2 seconds.]] | stub | 1 |
+| ![](wiki/assets/buffs/10242.png) | 10242 | [[wiki/buffs/10242-advent-silenced-for-2-seconds\|Advent : Silenced for 2 seconds.]] | stub | 1 |
+| ![](wiki/assets/buffs/10243.png) | 10243 | [[wiki/buffs/10243-magical-zone-increased-movement-and-attack-speed\|Magical Zone : Increased Movement and Attack Speed.]] | stub | 1 |
+| ![](wiki/assets/buffs/10244.png) | 10244 | [[wiki/buffs/10244-magical-zone-improved-health-and-mana-regeneration\|Magical Zone : Improved Health and Mana Regeneration.]] | complete | 0 |
+| ![](wiki/assets/buffs/10245.png) | 10245 | [[wiki/buffs/10245-magical-zone-time-until-it-fades\|Magical Zone : Time until it fades.]] | complete | 0 |
+| ![](wiki/assets/buffs/10246.png) | 10246 | [[wiki/buffs/10246-overload-increased-movement-speed-armor-magic-resistance-and\|Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.]] | complete | 0 |
+| ![](wiki/assets/buffs/10247.png) | 10247 | [[wiki/buffs/10247-magical-protection-creates-a-absorvs-damage-for-8-seconds\|Magical Protection : Creates a absorvs damage for 8 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10248.png) | 10248 | [[wiki/buffs/10248-magical-protection-increased-armor-and-magic-resistance\|Magical Protection : Increased Armor and Magic Resistance.]] | complete | 0 |
+| ![](wiki/assets/buffs/10249.png) | 10249 | [[wiki/buffs/10249-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
+| ![](wiki/assets/buffs/10250.png) | 10250 | [[wiki/buffs/10250-ambition-of-the-warrior-reduces-armor-and-magic-resistance-b\|Ambition of the Warrior : Reduces Armor and Magic Resistance by 30%.]] | complete | 0 |
+| ![](wiki/assets/buffs/10251.png) | 10251 | [[wiki/buffs/10251\|Buff 10251]] | stub | 1 |
+| ![](wiki/assets/buffs/10252.png) | 10252 | [[wiki/buffs/10252\|Buff 10252]] | complete | 0 |
+| ![](wiki/assets/buffs/10253.png) | 10253 | [[wiki/buffs/10253\|Buff 10253]] | complete | 0 |
+| ![](wiki/assets/buffs/10254.png) | 10254 | [[wiki/buffs/10254\|Buff 10254]] | stub | 1 |
+| ![](wiki/assets/buffs/10255.png) | 10255 | [[wiki/buffs/10255\|Buff 10255]] | complete | 0 |
+| ![](wiki/assets/buffs/10256.png) | 10256 | [[wiki/buffs/10256\|Buff 10256]] | complete | 0 |
+| ![](wiki/assets/buffs/10257.png) | 10257 | [[wiki/buffs/10257\|Buff 10257]] | complete | 0 |
+| ![](wiki/assets/buffs/10258.png) | 10258 | [[wiki/buffs/10258\|Buff 10258]] | stub | 1 |
+| ![](wiki/assets/buffs/10259.png) | 10259 | [[wiki/buffs/10259\|Buff 10259]] | complete | 0 |
+| ![](wiki/assets/buffs/10260.png) | 10260 | [[wiki/buffs/10260\|Buff 10260]] | complete | 0 |
+| ![](wiki/assets/buffs/10261.png) | 10261 | [[wiki/buffs/10261\|Buff 10261]] | complete | 0 |
+| ![](wiki/assets/buffs/10262.png) | 10262 | [[wiki/buffs/10262\|Buff 10262]] | complete | 0 |
+| ![](wiki/assets/buffs/10263.png) | 10263 | [[wiki/buffs/10263\|Buff 10263]] | complete | 0 |
+| ![](wiki/assets/buffs/10264.png) | 10264 | [[wiki/buffs/10264\|Buff 10264]] | complete | 0 |
+| ![](wiki/assets/buffs/10265.png) | 10265 | [[wiki/buffs/10265-the-other-side-increased-armor-and-magic-resistance\|The Other Side : Increased Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10266.png) | 10266 | [[wiki/buffs/10266\|Buff 10266]] | complete | 0 |
+| ![](wiki/assets/buffs/10267.png) | 10267 | [[wiki/buffs/10267\|Buff 10267]] | stub | 1 |
+| ![](wiki/assets/buffs/10268.png) | 10268 | [[wiki/buffs/10268\|Buff 10268]] | stub | 1 |
+| ![](wiki/assets/buffs/10269.png) | 10269 | [[wiki/buffs/10269\|Buff 10269]] | complete | 0 |
 |  | 10270 | [[wiki/buffs/10270\|Buff 10270]] | complete | 0 |
 |  | 10271 | [[wiki/buffs/10271\|Buff 10271]] | complete | 0 |
-| ![](../assets/buffs/10272.png) | 10272 | [[wiki/buffs/10272\|Buff 10272]] | stub | 1 |
-| ![](../assets/buffs/10273.png) | 10273 | [[wiki/buffs/10273\|Buff 10273]] | complete | 0 |
-| ![](../assets/buffs/10274.png) | 10274 | [[wiki/buffs/10274\|Buff 10274]] | stub | 1 |
-| ![](../assets/buffs/10275.png) | 10275 | [[wiki/buffs/10275\|Buff 10275]] | stub | 1 |
-| ![](../assets/buffs/10276.png) | 10276 | [[wiki/buffs/10276\|Buff 10276]] | stub | 1 |
-| ![](../assets/buffs/10277.png) | 10277 | [[wiki/buffs/10277\|Buff 10277]] | stub | 1 |
-| ![](../assets/buffs/10278.png) | 10278 | [[wiki/buffs/10278\|Buff 10278]] | stub | 1 |
-| ![](../assets/buffs/10279.png) | 10279 | [[wiki/buffs/10279\|Buff 10279]] | complete | 0 |
-| ![](../assets/buffs/10280.png) | 10280 | [[wiki/buffs/10280-blind-reduced-movement-speed\|Blind : Reduced Movement Speed.]] | complete | 0 |
-| ![](../assets/buffs/10281.png) | 10281 | [[wiki/buffs/10281\|Buff 10281]] | stub | 1 |
-| ![](../assets/buffs/10282.png) | 10282 | [[wiki/buffs/10282-strengthen-tower\|Strengthen Tower]] | complete | 0 |
-| ![](../assets/buffs/10283.png) | 10283 | [[wiki/buffs/10283-concussive-shells\|Concussive Shells]] | stub | 1 |
-| ![](../assets/buffs/10285.png) | 10285 | [[wiki/buffs/10285-i-ll-be-back-resurrects-dead-allies-immediately\|I'll be back! : Resurrects dead allies immediately.]] | complete | 0 |
-| ![](../assets/buffs/10291.png) | 10291 | [[wiki/buffs/10291\|Buff 10291]] | complete | 0 |
-| ![](../assets/buffs/10292.png) | 10292 | [[wiki/buffs/10292\|Buff 10292]] | complete | 0 |
-| ![](../assets/buffs/10293.png) | 10293 | [[wiki/buffs/10293\|Buff 10293]] | complete | 0 |
+| ![](wiki/assets/buffs/10272.png) | 10272 | [[wiki/buffs/10272\|Buff 10272]] | stub | 1 |
+| ![](wiki/assets/buffs/10273.png) | 10273 | [[wiki/buffs/10273\|Buff 10273]] | complete | 0 |
+| ![](wiki/assets/buffs/10274.png) | 10274 | [[wiki/buffs/10274\|Buff 10274]] | stub | 1 |
+| ![](wiki/assets/buffs/10275.png) | 10275 | [[wiki/buffs/10275\|Buff 10275]] | stub | 1 |
+| ![](wiki/assets/buffs/10276.png) | 10276 | [[wiki/buffs/10276\|Buff 10276]] | stub | 1 |
+| ![](wiki/assets/buffs/10277.png) | 10277 | [[wiki/buffs/10277\|Buff 10277]] | stub | 1 |
+| ![](wiki/assets/buffs/10278.png) | 10278 | [[wiki/buffs/10278\|Buff 10278]] | stub | 1 |
+| ![](wiki/assets/buffs/10279.png) | 10279 | [[wiki/buffs/10279\|Buff 10279]] | complete | 0 |
+| ![](wiki/assets/buffs/10280.png) | 10280 | [[wiki/buffs/10280-blind-reduced-movement-speed\|Blind : Reduced Movement Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/10281.png) | 10281 | [[wiki/buffs/10281\|Buff 10281]] | stub | 1 |
+| ![](wiki/assets/buffs/10282.png) | 10282 | [[wiki/buffs/10282-strengthen-tower\|Strengthen Tower]] | complete | 0 |
+| ![](wiki/assets/buffs/10283.png) | 10283 | [[wiki/buffs/10283-concussive-shells\|Concussive Shells]] | stub | 1 |
+| ![](wiki/assets/buffs/10285.png) | 10285 | [[wiki/buffs/10285-i-ll-be-back-resurrects-dead-allies-immediately\|I'll be back! : Resurrects dead allies immediately.]] | complete | 0 |
+| ![](wiki/assets/buffs/10291.png) | 10291 | [[wiki/buffs/10291\|Buff 10291]] | complete | 0 |
+| ![](wiki/assets/buffs/10292.png) | 10292 | [[wiki/buffs/10292\|Buff 10292]] | complete | 0 |
+| ![](wiki/assets/buffs/10293.png) | 10293 | [[wiki/buffs/10293\|Buff 10293]] | complete | 0 |
 |  | 10300 | [[wiki/buffs/10300\|Buff 10300]] | stub | 1 |
-| ![](../assets/buffs/10322.png) | 10322 | [[wiki/buffs/10322-incredible-health-health-will-be-increased-by-20-of-your-man\|Incredible Health : Health will be increased by 20% of your Mana.]] | complete | 0 |
-| ![](../assets/buffs/10323.png) | 10323 | [[wiki/buffs/10323-predator-when-you-kill-an-enemy-player-you-gain-2-ability-po\|Predator : When you kill an enemy player, you gain 2 Ability Power (Maximum +10). When you die all stacks are lost.]] | complete | 0 |
-| ![](../assets/buffs/10324.png) | 10324 | [[wiki/buffs/10324-greed-of-blood-when-you-kill-an-enemy-player-you-are-healed\|Greed of blood : When you kill an enemy player, you are healed for 5% of your current health.]] | complete | 0 |
-| ![](../assets/buffs/10325.png) | 10325 | [[wiki/buffs/10325-slayer-when-player-kill-enemy-gain-attack-3-maximum-10-when\|Slayer : When player kill enemy, gain attack +3 (Maximum +10). When you die, lose all stacks.]] | complete | 0 |
-| ![](../assets/buffs/10326.png) | 10326 | [[wiki/buffs/10326-thorns-defence-your-attack-damage-is-increased-by-5-of-your\|Thorns Defence : Your Attack Damage is increased by 5% of your armor.]] | complete | 0 |
-| ![](../assets/buffs/10327.png) | 10327 | [[wiki/buffs/10327-meditation-when-you-don-t-get-any-damage-for-5-seconds-you-h\|Meditation : When you don't get any damage for 5 seconds, you heal for 4% of your maximum health every 5 seconds.]] | complete | 0 |
-| ![](../assets/buffs/10328.png) | 10328 | [[wiki/buffs/10328\|Buff 10328]] | stub | 1 |
-| ![](../assets/buffs/10329.png) | 10329 | [[wiki/buffs/10329-anger-of-fire-movement-70-4secs\|Anger of fire : Movement +70 (4Secs)]] | complete | 0 |
-| ![](../assets/buffs/10330.png) | 10330 | [[wiki/buffs/10330-anger-of-fire-creates-a-absorvs-damage-for-10-seconds\|Anger of fire : Creates a absorvs damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10331.png) | 10331 | [[wiki/buffs/10331\|Buff 10331]] | complete | 0 |
-| ![](../assets/buffs/10332.png) | 10332 | [[wiki/buffs/10332-fury-of-fire-strun-2-secs\|Fury of fire : Strun (2 Secs)]] | stub | 1 |
-| ![](../assets/buffs/10333.png) | 10333 | [[wiki/buffs/10333\|Buff 10333]] | stub | 1 |
-| ![](../assets/buffs/10334.png) | 10334 | [[wiki/buffs/10334-flame-area-movement-25-3-secs\|Flame area : Movement -25% (3 Secs)]] | complete | 0 |
-| ![](../assets/buffs/10335.png) | 10335 | [[wiki/buffs/10335\|Buff 10335]] | complete | 0 |
-| ![](../assets/buffs/10336.png) | 10336 | [[wiki/buffs/10336-blessing-of-mother-nature-absorbs-damage\|blessing of Mother Nature : Absorbs damage]] | complete | 0 |
-| ![](../assets/buffs/10337.png) | 10337 | [[wiki/buffs/10337-blessing-of-mother-nature-explosion\|blessing of Mother Nature : Explosion]] | complete | 0 |
-| ![](../assets/buffs/10338.png) | 10338 | [[wiki/buffs/10338-blessing-of-mother-nature-you-gain-5-armor-and-magic-resista\|blessing of Mother Nature : You gain 5% Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/10339.png) | 10339 | [[wiki/buffs/10339\|Buff 10339]] | stub | 1 |
-| ![](../assets/buffs/10340.png) | 10340 | [[wiki/buffs/10340-mystic-arrow-rockets-in-store\|Mystic Arrow : Rockets in store]] | complete | 0 |
-| ![](../assets/buffs/10341.png) | 10341 | [[wiki/buffs/10341-poisonous-blade-next-attack-stunned\|Poisonous Blade : Next Attack Stunned]] | complete | 0 |
-| ![](../assets/buffs/10342.png) | 10342 | [[wiki/buffs/10342-poisonous-blade-stunned-for-2-seconds\|Poisonous Blade : Stunned for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10343.png) | 10343 | [[wiki/buffs/10343-assassination-active\|Assassination : Active]] | complete | 0 |
-| ![](../assets/buffs/10344.png) | 10344 | [[wiki/buffs/10344-assassination-silenced\|Assassination : Silenced]] | stub | 1 |
-| ![](../assets/buffs/10345.png) | 10345 | [[wiki/buffs/10345-fang-of-knives-reduced-movement-speed\|Fang of Knives : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/10346.png) | 10346 | [[wiki/buffs/10346-final-strikes-creates-a-absorvs-damage-for-10-seconds\|Final Strikes : Creates a absorvs damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/10347.png) | 10347 | [[wiki/buffs/10347-final-strikes-possible-to-perform-the-final-strike-now\|Final Strikes : Possible to perform the Final Strike now]] | complete | 0 |
-| ![](../assets/buffs/10348.png) | 10348 | [[wiki/buffs/10348-final-strikes-silenced-for-2-second\|Final Strikes : Silenced for 2 second.]] | stub | 1 |
-| ![](../assets/buffs/10349.png) | 10349 | [[wiki/buffs/10349-crushing-blow-silenced\|Crushing Blow : Silenced]] | stub | 1 |
-| ![](../assets/buffs/10350.png) | 10350 | [[wiki/buffs/10350\|Buff 10350]] | stub | 1 |
-| ![](../assets/buffs/10351.png) | 10351 | [[wiki/buffs/10351-howl-of-victory-increased-health-regeneration\|Howl of Victory : Increased Health Regeneration]] | complete | 0 |
-| ![](../assets/buffs/10352.png) | 10352 | [[wiki/buffs/10352-unyielding-will-reduce-50-all-type-of-damage-during-5-secs-a\|Unyielding Will : Reduce 50% all type of damage during 5 secs and get 40 Attack.]] | complete | 0 |
-| ![](../assets/buffs/10353.png) | 10353 | [[wiki/buffs/10353-smoke-screen-reduced-movement-and-attack-speed\|Smoke Screen : Reduced Movement and Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/10354.png) | 10354 | [[wiki/buffs/10354-smoke-screen-cooldown\|Smoke Screen : Cooldown]] | stub | 1 |
-| ![](../assets/buffs/10355.png) | 10355 | [[wiki/buffs/10355-quick-step-back-decreased-move-speed\|Quick step back : Decreased Move Speed]] | complete | 0 |
-| ![](../assets/buffs/10356.png) | 10356 | [[wiki/buffs/10356-careful-attack-stunned-for-3-seconds\|Careful Attack : Stunned for 3 seconds]] | stub | 1 |
-| ![](../assets/buffs/10357.png) | 10357 | [[wiki/buffs/10357-lightning-strike-silence-2-secs\|Lightning Strike : Silence (2 Secs)]] | stub | 1 |
-| ![](../assets/buffs/10358.png) | 10358 | [[wiki/buffs/10358-ball-of-lighting-stun-2-secs\|Ball of Lighting : Stun (2 Secs)]] | stub | 1 |
-| ![](../assets/buffs/10359.png) | 10359 | [[wiki/buffs/10359-punishment-second-skill-available\|Punishment : Second skill available]] | complete | 0 |
-| ![](../assets/buffs/10360.png) | 10360 | [[wiki/buffs/10360-punishment-third-skill-available\|Punishment : Third skill available]] | complete | 0 |
-| ![](../assets/buffs/10401.png) | 10401 | [[wiki/buffs/10401-justice-protection-creates-a-absorvs-damage-for-4-seconds\|Justice Protection : Creates a absorvs damage for 4 seconds]] | complete | 0 |
-| ![](../assets/buffs/10402.png) | 10402 | [[wiki/buffs/10402-holy-shield-creates-a-absorvs-damage-for-7-seconds\|Holy Shield : Creates a absorvs damage for 7 seconds]] | complete | 0 |
-| ![](../assets/buffs/10403.png) | 10403 | [[wiki/buffs/10403-destruction-of-light-decreased-move-speed\|Destruction of light : Decreased Move Speed]] | complete | 0 |
-| ![](../assets/buffs/10411.png) | 10411 | [[wiki/buffs/10411\|Buff 10411]] | complete | 0 |
-| ![](../assets/buffs/10412.png) | 10412 | [[wiki/buffs/10412\|Buff 10412]] | complete | 0 |
-| ![](../assets/buffs/10413.png) | 10413 | [[wiki/buffs/10413\|Buff 10413]] | stub | 1 |
-| ![](../assets/buffs/10414.png) | 10414 | [[wiki/buffs/10414\|Buff 10414]] | complete | 0 |
-| ![](../assets/buffs/10415.png) | 10415 | [[wiki/buffs/10415\|Buff 10415]] | stub | 1 |
-| ![](../assets/buffs/10416.png) | 10416 | [[wiki/buffs/10416\|Buff 10416]] | complete | 0 |
-| ![](../assets/buffs/10417.png) | 10417 | [[wiki/buffs/10417\|Buff 10417]] | stub | 1 |
-| ![](../assets/buffs/10421.png) | 10421 | [[wiki/buffs/10421-backstab-increase-movement-speed\|Backstab : Increase movement speed]] | complete | 0 |
-| ![](../assets/buffs/10422.png) | 10422 | [[wiki/buffs/10422-backstab-your-basic-attacks-deal-additional-damage\|Backstab : Your basic Attacks deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/10423.png) | 10423 | [[wiki/buffs/10423-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | complete | 0 |
-| ![](../assets/buffs/10424.png) | 10424 | [[wiki/buffs/10424-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | stub | 1 |
-| ![](../assets/buffs/10425.png) | 10425 | [[wiki/buffs/10425-the-thrill-of-power-critical-damage-increase\|The thrill of power : Critical Damage Increase]] | complete | 0 |
-| ![](../assets/buffs/10426.png) | 10426 | [[wiki/buffs/10426-backstab-reduced-movement-speed\|Backstab : Reduced movement speed]] | complete | 0 |
-| ![](../assets/buffs/10427.png) | 10427 | [[wiki/buffs/10427-immovable-bondage-rooted-in-place-for-2-seconds\|Immovable bondage : Rooted in place for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/10431.png) | 10431 | [[wiki/buffs/10431-lightning-chain-rooted-in-place-for-3-seconds\|Lightning Chain : Rooted in place for 3 seconds]] | stub | 1 |
-| ![](../assets/buffs/10432.png) | 10432 | [[wiki/buffs/10432-lightning-spray-reduced-armor-and-magic-resistance-movement\|Lightning spray : Reduced Armor and Magic Resistance, Movement speed]] | complete | 0 |
-| ![](../assets/buffs/10433.png) | 10433 | [[wiki/buffs/10433-lightning-protection\|Lightning protection]] | complete | 0 |
-| ![](../assets/buffs/10434.png) | 10434 | [[wiki/buffs/10434-lightning-protection-you-gain-30-attack-speed-and-movement-s\|Lightning protection : You gain 30% Attack speed and Movement speed, Damage]] | complete | 0 |
-| ![](../assets/buffs/10441.png) | 10441 | [[wiki/buffs/10441\|Buff 10441]] | complete | 0 |
-| ![](../assets/buffs/10442.png) | 10442 | [[wiki/buffs/10442-vision-explosion-stack\|Vision explosion : Stack]] | complete | 0 |
-| ![](../assets/buffs/10443.png) | 10443 | [[wiki/buffs/10443-mystic-arrow-increased-attack-speed\|Mystic Arrow : Increased Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/19950.png) | 19950 | [[wiki/buffs/19950-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/19951.png) | 19951 | [[wiki/buffs/19951-anger-of-fire-movement-70-4secs\|Anger of fire : Movement +70 (4Secs)]] | complete | 0 |
-| ![](../assets/buffs/19952.png) | 19952 | [[wiki/buffs/19952-anger-of-fire-creates-a-absorvs-damage-for-10-seconds\|Anger of fire : Creates a absorvs damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/19953.png) | 19953 | [[wiki/buffs/19953\|Buff 19953]] | complete | 0 |
-| ![](../assets/buffs/19954.png) | 19954 | [[wiki/buffs/19954-fury-of-fire-stun-2-secs\|Fury of fire : Stun (2 Secs)]] | stub | 1 |
-| ![](../assets/buffs/19955.png) | 19955 | [[wiki/buffs/19955\|Buff 19955]] | stub | 1 |
-| ![](../assets/buffs/19956.png) | 19956 | [[wiki/buffs/19956-flame-area-movement-25-3-secs\|Flame area : Movement -25% (3 Secs)]] | complete | 0 |
-| ![](../assets/buffs/19957.png) | 19957 | [[wiki/buffs/19957\|Buff 19957]] | complete | 0 |
-| ![](../assets/buffs/19958.png) | 19958 | [[wiki/buffs/19958-two-flame-decreased-attack-speed-and-movement-speed\|Two Flame : Decreased Attack Speed and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/19959.png) | 19959 | [[wiki/buffs/19959-two-flame-damage-over-time-for-6-seconds\|Two Flame : Damage over time for 6 seconds]] | complete | 0 |
-| ![](../assets/buffs/19960.png) | 19960 | [[wiki/buffs/19960-flame-absorb-shield-creates-a-absorvs-damage-for-4-seconds\|Flame Absorb shield : Creates a absorvs damage for 4 seconds]] | complete | 0 |
-| ![](../assets/buffs/19961.png) | 19961 | [[wiki/buffs/19961-flame-absorb-shield-you-gain-30-armor-and-magic-resistance\|Flame Absorb shield : You gain 30% Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/19962.png) | 19962 | [[wiki/buffs/19962-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/19963.png) | 19963 | [[wiki/buffs/19963-flaming-fire\|Flaming fire]] | complete | 0 |
-| ![](../assets/buffs/19964.png) | 19964 | [[wiki/buffs/19964-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
-| ![](../assets/buffs/19965.png) | 19965 | [[wiki/buffs/19965-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/19966.png) | 19966 | [[wiki/buffs/19966-flaming-fire\|Flaming fire]] | complete | 0 |
-| ![](../assets/buffs/19967.png) | 19967 | [[wiki/buffs/19967-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
-| ![](../assets/buffs/19968.png) | 19968 | [[wiki/buffs/19968-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/19969.png) | 19969 | [[wiki/buffs/19969-flaming-fire\|Flaming fire]] | complete | 0 |
-| ![](../assets/buffs/19970.png) | 19970 | [[wiki/buffs/19970-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
-| ![](../assets/buffs/19971.png) | 19971 | [[wiki/buffs/19971-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/19972.png) | 19972 | [[wiki/buffs/19972-flaming-fire\|Flaming fire]] | complete | 0 |
-| ![](../assets/buffs/19973.png) | 19973 | [[wiki/buffs/19973-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
-| ![](../assets/buffs/19974.png) | 19974 | [[wiki/buffs/19974-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/19975.png) | 19975 | [[wiki/buffs/19975-flaming-fire\|Flaming fire]] | complete | 0 |
-| ![](../assets/buffs/19976.png) | 19976 | [[wiki/buffs/19976-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
-| ![](../assets/buffs/19977.png) | 19977 | [[wiki/buffs/19977-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/19978.png) | 19978 | [[wiki/buffs/19978-flaming-fire\|Flaming fire]] | complete | 0 |
-| ![](../assets/buffs/19979.png) | 19979 | [[wiki/buffs/19979-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
-| ![](../assets/buffs/19999.png) | 19999 | [[wiki/buffs/19999-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20000.png) | 20000 | [[wiki/buffs/20000-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20001.png) | 20001 | [[wiki/buffs/20001\|Buff 20001]] | complete | 0 |
-| ![](../assets/buffs/20002.png) | 20002 | [[wiki/buffs/20002-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20003.png) | 20003 | [[wiki/buffs/20003-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20004.png) | 20004 | [[wiki/buffs/20004\|Buff 20004]] | stub | 1 |
-| ![](../assets/buffs/20005.png) | 20005 | [[wiki/buffs/20005-heaven-and-earth-stunned\|Heaven and Earth : Stunned]] | stub | 1 |
-| ![](../assets/buffs/20006.png) | 20006 | [[wiki/buffs/20006-scream-of-the-dead-creates-a-absorvs-damage-for-8-seconds\|Scream of the Dead : Creates a absorvs damage for 8 seconds]] | complete | 0 |
-| ![](../assets/buffs/20007.png) | 20007 | [[wiki/buffs/20007-scream-of-the-dead-reduced-armor-and-magic-resistance\|Scream of the Dead : Reduced Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/20008.png) | 20008 | [[wiki/buffs/20008-summoning-tomb-of-the-dead\|Summoning Tomb of the Dead]] | stub | 1 |
-| ![](../assets/buffs/20009.png) | 20009 | [[wiki/buffs/20009-tomb-of-the-dead-reduced-movement-speed\|Tomb of the Dead : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/20010.png) | 20010 | [[wiki/buffs/20010-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/20011.png) | 20011 | [[wiki/buffs/20011-aura-of-death-kills-and-assists-heal-you\|Aura of Death : Kills and assists heal you]] | complete | 0 |
-| ![](../assets/buffs/20012.png) | 20012 | [[wiki/buffs/20012-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/20013.png) | 20013 | [[wiki/buffs/20013-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/20014.png) | 20014 | [[wiki/buffs/20014-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/20015.png) | 20015 | [[wiki/buffs/20015-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/20016.png) | 20016 | [[wiki/buffs/20016-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
-| ![](../assets/buffs/20020.png) | 20020 | [[wiki/buffs/20020-immortal-body-recovering-for-300-seconds\|Immortal Body : Recovering for 300 seconds]] | complete | 0 |
-| ![](../assets/buffs/20021.png) | 20021 | [[wiki/buffs/20021-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20022.png) | 20022 | [[wiki/buffs/20022-immortal-body-40-reduced-health\|Immortal Body : 40% reduced Health]] | complete | 0 |
-| ![](../assets/buffs/20023.png) | 20023 | [[wiki/buffs/20023-immortal-body-revival\|Immortal Body : Revival]] | complete | 0 |
-| ![](../assets/buffs/20024.png) | 20024 | [[wiki/buffs/20024\|Buff 20024]] | stub | 1 |
-| ![](../assets/buffs/20049.png) | 20049 | [[wiki/buffs/20049\|Buff 20049]] | complete | 0 |
-| ![](../assets/buffs/20050.png) | 20050 | [[wiki/buffs/20050\|Buff 20050]] | complete | 0 |
-| ![](../assets/buffs/20051.png) | 20051 | [[wiki/buffs/20051\|Buff 20051]] | complete | 0 |
-| ![](../assets/buffs/20052.png) | 20052 | [[wiki/buffs/20052\|Buff 20052]] | complete | 0 |
-| ![](../assets/buffs/20053.png) | 20053 | [[wiki/buffs/20053\|Buff 20053]] | complete | 0 |
-| ![](../assets/buffs/20054.png) | 20054 | [[wiki/buffs/20054-magical-protection-creates-a-absorvs-damage-for-8-seconds\|Magical Protection : Creates a absorvs damage for 8 seconds]] | complete | 0 |
-| ![](../assets/buffs/20055.png) | 20055 | [[wiki/buffs/20055-magical-protection-increased-armor-and-magic-resistance\|Magical Protection: Increased Armor and Magic Resistance.]] | complete | 0 |
-| ![](../assets/buffs/20056.png) | 20056 | [[wiki/buffs/20056-magical-zone-increased-movement-and-attack-speed\|Magical Zone : Increased Movement and Attack Speed.]] | complete | 0 |
-| ![](../assets/buffs/20057.png) | 20057 | [[wiki/buffs/20057-magical-zone-improved-health-and-mana-regeneration\|Magical Zone : Improved Health and Mana Regeneration.]] | complete | 0 |
-| ![](../assets/buffs/20058.png) | 20058 | [[wiki/buffs/20058-magical-zone-time-until-it-fades\|Magical Zone : Time until it fades.]] | stub | 1 |
-| ![](../assets/buffs/20059.png) | 20059 | [[wiki/buffs/20059-overload-increased-movement-speed-armor-magic-resistance-and\|Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.]] | complete | 0 |
-| ![](../assets/buffs/20060.png) | 20060 | [[wiki/buffs/20060-absorb-magic-reduced-incoming-damage\|Absorb Magic : Reduced incoming damage.]] | complete | 0 |
-| ![](../assets/buffs/20061.png) | 20061 | [[wiki/buffs/20061-a-warrior-s-body-deal-additional-damage\|A Warrior's Body. Deal additional damage.]] | complete | 0 |
-| ![](../assets/buffs/20062.png) | 20062 | [[wiki/buffs/20062-maximized-efficiency-increased-damage\|Maximized Efficiency: Increased Damage.]] | complete | 0 |
-| ![](../assets/buffs/20063.png) | 20063 | [[wiki/buffs/20063-advent-silenced-for-2-seconds\|Advent : Silenced for 2 seconds.]] | stub | 1 |
-| ![](../assets/buffs/20064.png) | 20064 | [[wiki/buffs/20064-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
-| ![](../assets/buffs/20065.png) | 20065 | [[wiki/buffs/20065-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/20066.png) | 20066 | [[wiki/buffs/20066-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
-| ![](../assets/buffs/20067.png) | 20067 | [[wiki/buffs/20067-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/20068.png) | 20068 | [[wiki/buffs/20068-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
-| ![](../assets/buffs/20069.png) | 20069 | [[wiki/buffs/20069-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/20070.png) | 20070 | [[wiki/buffs/20070-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
-| ![](../assets/buffs/20071.png) | 20071 | [[wiki/buffs/20071-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/20072.png) | 20072 | [[wiki/buffs/20072-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
-| ![](../assets/buffs/20073.png) | 20073 | [[wiki/buffs/20073-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/20099.png) | 20099 | [[wiki/buffs/20099\|Buff 20099]] | complete | 0 |
-| ![](../assets/buffs/20101.png) | 20101 | [[wiki/buffs/20101-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20102.png) | 20102 | [[wiki/buffs/20102\|Buff 20102]] | complete | 0 |
-| ![](../assets/buffs/20103.png) | 20103 | [[wiki/buffs/20103-a-warm-flame-creates-a-absorvs-damage-for-5-seconds\|A warm flame : Creates a absorvs damage for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20104.png) | 20104 | [[wiki/buffs/20104-shield-of-the-sun-creates-a-absorvs-damage-for-5-seconds\|Shield of the Sun : Creates a absorvs damage for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20105.png) | 20105 | [[wiki/buffs/20105-shield-of-the-sun-movement-speed\|Shield of the Sun : Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/20106.png) | 20106 | [[wiki/buffs/20106-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
-| ![](../assets/buffs/20107.png) | 20107 | [[wiki/buffs/20107-kra-sun\|Kra Sun]] | complete | 0 |
-| ![](../assets/buffs/20108.png) | 20108 | [[wiki/buffs/20108-tura-sun\|Tura Sun]] | complete | 0 |
-| ![](../assets/buffs/20109.png) | 20109 | [[wiki/buffs/20109\|Buff 20109]] | stub | 1 |
-| ![](../assets/buffs/20110.png) | 20110 | [[wiki/buffs/20110-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
-| ![](../assets/buffs/20111.png) | 20111 | [[wiki/buffs/20111-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
-| ![](../assets/buffs/20112.png) | 20112 | [[wiki/buffs/20112-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
-| ![](../assets/buffs/20113.png) | 20113 | [[wiki/buffs/20113-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
-| ![](../assets/buffs/20114.png) | 20114 | [[wiki/buffs/20114-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
-| ![](../assets/buffs/20149.png) | 20149 | [[wiki/buffs/20149-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20151.png) | 20151 | [[wiki/buffs/20151-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20152.png) | 20152 | [[wiki/buffs/20152-aim-of-water-silenced\|Aim of water : Silenced]] | stub | 1 |
-| ![](../assets/buffs/20153.png) | 20153 | [[wiki/buffs/20153-water-shield-creates-a-absorvs-damage-for-10-seconds\|Water shield : Creates a absorvs damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/20154.png) | 20154 | [[wiki/buffs/20154\|Buff 20154]] | stub | 1 |
-| ![](../assets/buffs/20155.png) | 20155 | [[wiki/buffs/20155-puddle-reduced-movement-speed\|Puddle : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/20156.png) | 20156 | [[wiki/buffs/20156-blow-of-water-your-basic-attacks-deal-additional-damage\|Blow of water : Your basic Attacks deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/20157.png) | 20157 | [[wiki/buffs/20157-goddess-reduced-damage-by-20\|Goddess : Reduced damage by 20%]] | complete | 0 |
-| ![](../assets/buffs/20158.png) | 20158 | [[wiki/buffs/20158-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
-| ![](../assets/buffs/20159.png) | 20159 | [[wiki/buffs/20159\|Buff 20159]] | stub | 1 |
-| ![](../assets/buffs/20160.png) | 20160 | [[wiki/buffs/20160\|Buff 20160]] | stub | 1 |
-| ![](../assets/buffs/20161.png) | 20161 | [[wiki/buffs/20161-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
-| ![](../assets/buffs/20162.png) | 20162 | [[wiki/buffs/20162-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
-| ![](../assets/buffs/20163.png) | 20163 | [[wiki/buffs/20163-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
-| ![](../assets/buffs/20164.png) | 20164 | [[wiki/buffs/20164-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
-| ![](../assets/buffs/20165.png) | 20165 | [[wiki/buffs/20165-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
-| ![](../assets/buffs/20199.png) | 20199 | [[wiki/buffs/20199-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20201.png) | 20201 | [[wiki/buffs/20201-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20202.png) | 20202 | [[wiki/buffs/20202-covert-steps-increase-movement-speed\|Covert Steps: Increase movement speed]] | complete | 0 |
-| ![](../assets/buffs/20203.png) | 20203 | [[wiki/buffs/20203-covert-steps-your-basic-attacks-deal-additional-damage\|Covert Steps: Your basic Attacks deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/20204.png) | 20204 | [[wiki/buffs/20204-hungry-arrows-increased-life-steal\|Hungry arrows: increased Life Steal]] | complete | 0 |
-| ![](../assets/buffs/20205.png) | 20205 | [[wiki/buffs/20205-hungry-arrows-increased-life-steal\|Hungry arrows: increased Life Steal]] | complete | 0 |
-| ![](../assets/buffs/20206.png) | 20206 | [[wiki/buffs/20206-hunting-eye-reduced-armor\|Hunting Eye: Reduced armor]] | complete | 0 |
-| ![](../assets/buffs/20207.png) | 20207 | [[wiki/buffs/20207-hunting-eye-reduced-armor\|Hunting Eye: Reduced armor]] | complete | 0 |
-| ![](../assets/buffs/20208.png) | 20208 | [[wiki/buffs/20208-hunter-s-rage-attack-speed-and-critical-damage-increase\|Hunter's Rage: Attack Speed and Critical Damage Increase]] | complete | 0 |
-| ![](../assets/buffs/20209.png) | 20209 | [[wiki/buffs/20209-capture-weakness-reduced-movement-speed\|Capture Weakness: Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/20210.png) | 20210 | [[wiki/buffs/20210-invisible-prison\|Invisible prison]] | complete | 0 |
-| ![](../assets/buffs/20211.png) | 20211 | [[wiki/buffs/20211-invisible-prison\|Invisible prison]] | stub | 1 |
-| ![](../assets/buffs/20212.png) | 20212 | [[wiki/buffs/20212-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20213.png) | 20213 | [[wiki/buffs/20213-improved-hand-increases-attack-speed\|Improved Hand: Increases attack speed]] | complete | 0 |
-| ![](../assets/buffs/20214.png) | 20214 | [[wiki/buffs/20214-improved-hand-increases-attack-speed\|Improved Hand: Increases attack speed]] | complete | 0 |
-| ![](../assets/buffs/20215.png) | 20215 | [[wiki/buffs/20215-suppressive-fire-channelling-time\|Suppressive Fire : Channelling time]] | stub | 1 |
-| ![](../assets/buffs/20216.png) | 20216 | [[wiki/buffs/20216\|Buff 20216]] | complete | 0 |
-| ![](../assets/buffs/20217.png) | 20217 | [[wiki/buffs/20217\|Buff 20217]] | complete | 0 |
-| ![](../assets/buffs/20218.png) | 20218 | [[wiki/buffs/20218\|Buff 20218]] | complete | 0 |
-| ![](../assets/buffs/20219.png) | 20219 | [[wiki/buffs/20219\|Buff 20219]] | complete | 0 |
-| ![](../assets/buffs/20220.png) | 20220 | [[wiki/buffs/20220\|Buff 20220]] | complete | 0 |
-| ![](../assets/buffs/20221.png) | 20221 | [[wiki/buffs/20221-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20222.png) | 20222 | [[wiki/buffs/20222-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20223.png) | 20223 | [[wiki/buffs/20223-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20224.png) | 20224 | [[wiki/buffs/20224-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20225.png) | 20225 | [[wiki/buffs/20225-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20249.png) | 20249 | [[wiki/buffs/20249-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20251.png) | 20251 | [[wiki/buffs/20251-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20252.png) | 20252 | [[wiki/buffs/20252-roar-increase-movement-speed-and-attack-speed\|Roar : Increase Movement speed and Attack speed]] | complete | 0 |
-| ![](../assets/buffs/20253.png) | 20253 | [[wiki/buffs/20253-cut-silenced-for-2-seconds\|Cut : silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/20254.png) | 20254 | [[wiki/buffs/20254-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20255.png) | 20255 | [[wiki/buffs/20255\|Buff 20255]] | complete | 0 |
-| ![](../assets/buffs/20256.png) | 20256 | [[wiki/buffs/20256\|Buff 20256]] | complete | 0 |
-| ![](../assets/buffs/20257.png) | 20257 | [[wiki/buffs/20257-quick-attack-increase-attack-speed-when-reaching-5-stack\|Quick attack : Increase attack speed when reaching 5 stack]] | complete | 0 |
-| ![](../assets/buffs/20258.png) | 20258 | [[wiki/buffs/20258-quick-attack-increase-attack-speed-for-5-seconds\|Quick attack : Increase attack speed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20259.png) | 20259 | [[wiki/buffs/20259-immortality-your-health-does-not-fall-below-a-certain-level\|Immortality : Your health does not fall below a certain level, and you will be immortal for 5 seconds.]] | complete | 0 |
-| ![](../assets/buffs/20260.png) | 20260 | [[wiki/buffs/20260-bloody-anger-increases-damage\|Bloody anger : Increases Damage]] | complete | 0 |
-| ![](../assets/buffs/20261.png) | 20261 | [[wiki/buffs/20261-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20262.png) | 20262 | [[wiki/buffs/20262-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20263.png) | 20263 | [[wiki/buffs/20263-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20264.png) | 20264 | [[wiki/buffs/20264-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20265.png) | 20265 | [[wiki/buffs/20265-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
-| ![](../assets/buffs/20299.png) | 20299 | [[wiki/buffs/20299-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20301.png) | 20301 | [[wiki/buffs/20301-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20302.png) | 20302 | [[wiki/buffs/20302-water-of-deceleration-reduced-moovement-speed-3-secs\|Water of deceleration : Reduced Moovement Speed (3 Secs)]] | complete | 0 |
-| ![](../assets/buffs/20303.png) | 20303 | [[wiki/buffs/20303\|Buff 20303]] | complete | 0 |
-| ![](../assets/buffs/20304.png) | 20304 | [[wiki/buffs/20304\|Buff 20304]] | complete | 0 |
-| ![](../assets/buffs/20305.png) | 20305 | [[wiki/buffs/20305-tsunami-silenced-for-2-seconds\|Tsunami : silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/20306.png) | 20306 | [[wiki/buffs/20306-fisher-s-protection-creates-a-absorvs-damage-for-5-seconds\|Fisher's Protection : Creates a absorvs damage for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20307.png) | 20307 | [[wiki/buffs/20307-earthquake-stun-2-secs\|Earthquake : Stun (2 Secs)]] | stub | 1 |
-| ![](../assets/buffs/20308.png) | 20308 | [[wiki/buffs/20308-fisher-s-cries-creates-a-absorvs-damage-for-5-seconds\|Fisher's cries : Creates a absorvs damage for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/20309.png) | 20309 | [[wiki/buffs/20309-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
-| ![](../assets/buffs/20310.png) | 20310 | [[wiki/buffs/20310\|Buff 20310]] | stub | 1 |
-| ![](../assets/buffs/20311.png) | 20311 | [[wiki/buffs/20311-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
-| ![](../assets/buffs/20312.png) | 20312 | [[wiki/buffs/20312-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
-| ![](../assets/buffs/20313.png) | 20313 | [[wiki/buffs/20313-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
-| ![](../assets/buffs/20314.png) | 20314 | [[wiki/buffs/20314-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
-| ![](../assets/buffs/20315.png) | 20315 | [[wiki/buffs/20315-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
-| ![](../assets/buffs/20349.png) | 20349 | [[wiki/buffs/20349-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
-| ![](../assets/buffs/20351.png) | 20351 | [[wiki/buffs/20351\|Buff 20351]] | complete | 0 |
-| ![](../assets/buffs/20401.png) | 20401 | [[wiki/buffs/20401\|Buff 20401]] | complete | 0 |
-| ![](../assets/buffs/20451.png) | 20451 | [[wiki/buffs/20451\|Buff 20451]] | complete | 0 |
-| ![](../assets/buffs/20501.png) | 20501 | [[wiki/buffs/20501\|Buff 20501]] | complete | 0 |
-| ![](../assets/buffs/20551.png) | 20551 | [[wiki/buffs/20551\|Buff 20551]] | complete | 0 |
-| ![](../assets/buffs/20601.png) | 20601 | [[wiki/buffs/20601\|Buff 20601]] | complete | 0 |
-| ![](../assets/buffs/30001.png) | 30001 | [[wiki/buffs/30001\|Buff 30001]] | complete | 0 |
-| ![](../assets/buffs/30002.png) | 30002 | [[wiki/buffs/30002-battle-cry-increases-hp-regeneration\|Battle Cry: Increases HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/30003.png) | 30003 | [[wiki/buffs/30003-whirlwind-reduces-damage-and-movement-speed\|Whirlwind: Reduces Damage and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30004.png) | 30004 | [[wiki/buffs/30004-wrath-explosion-reduces-movement-speed\|Wrath Explosion: Reduces Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30007.png) | 30007 | [[wiki/buffs/30007-might-of-the-thunder-god-stunned-for-2-seconds\|Might of the Thunder God : Stunned for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30010.png) | 30010 | [[wiki/buffs/30010-blessed-wind-creates-a-shield-that-absorbs-damage-for-10-sec\|Blessed Wind: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/30011.png) | 30011 | [[wiki/buffs/30011-breeze-increased-hp-and-mana-regeneration\|Breeze: Increased HP and Mana Regeneration]] | stub | 1 |
-| ![](../assets/buffs/30012.png) | 30012 | [[wiki/buffs/30012-breeze-increased-ability-power-and-movement-speed\|Breeze : Increased Ability Power and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30013.png) | 30013 | [[wiki/buffs/30013-eye-of-the-storm-increased-movement-speed-and-defence\|Eye of the Storm : Increased Movement Speed and defence]] | complete | 0 |
-| ![](../assets/buffs/30014.png) | 30014 | [[wiki/buffs/30014-eye-of-the-storm-reduced-movement-and-attack-speed\|Eye of the Storm : Reduced Movement and Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/30015.png) | 30015 | [[wiki/buffs/30015-summoning-the-eye-of-the-storm\|Summoning the Eye of the Storm]] | stub | 1 |
-| ![](../assets/buffs/30016.png) | 30016 | [[wiki/buffs/30016-spell-feather-reduced-movement-speed\|Spell Feather : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30017.png) | 30017 | [[wiki/buffs/30017-draw-power-increases-attack-and-movement-speed\|Draw Power: Increases Attack and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30018.png) | 30018 | [[wiki/buffs/30018-crystal-burst-increases-armor-and-magic-resistance\|Crystal Burst: Increases Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/30019.png) | 30019 | [[wiki/buffs/30019-crystal-burst-reduced-armor-and-magic-resistance\|Crystal Burst : Reduced Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/30020.png) | 30020 | [[wiki/buffs/30020-wave-of-crystals-reduced-movement-speed\|Wave of Crystals : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30021.png) | 30021 | [[wiki/buffs/30021-wings-of-westerly-increased-ability-power-armor-and-magic-re\|Wings of Westerly : Increased Ability Power, Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/30022.png) | 30022 | [[wiki/buffs/30022-you-prepare-your-next-attack\|You prepare your next Attack]] | complete | 0 |
-| ![](../assets/buffs/30023.png) | 30023 | [[wiki/buffs/30023-shadow-walk-creates-a-shield-that-absorbs-damage-for-10-seco\|Shadow Walk: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
-| ![](../assets/buffs/30024.png) | 30024 | [[wiki/buffs/30024-the-dark-art-creates-a-shield-that-absorbs-damage-for-10-sec\|The Dark Art: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
-| ![](../assets/buffs/30025.png) | 30025 | [[wiki/buffs/30025-the-dark-art-increased-life-steal\|The Dark Art : Increased Life Steal]] | complete | 0 |
-| ![](../assets/buffs/30027.png) | 30027 | [[wiki/buffs/30027-deadly-poisonous-swamp-reduced-armor-and-magic-resistance\|Deadly Poisonous Swamp : Reduced Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/30028.png) | 30028 | [[wiki/buffs/30028-shadow-walk-silenced-for-2-seconds\|Shadow Walk : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30029.png) | 30029 | [[wiki/buffs/30029-merciless-chase-your-next-basic-attack-deals-additional-dama\|Merciless Chase : Your next basic attack deals additional damage]] | complete | 0 |
-| ![](../assets/buffs/30030.png) | 30030 | [[wiki/buffs/30030-rotten-arrow-damage-over-time\|Rotten Arrow: Damage over time]] | complete | 0 |
-| ![](../assets/buffs/30031.png) | 30031 | [[wiki/buffs/30031-death-from-above-in-panic\|Death from Above : In Panic]] | stub | 1 |
+| ![](wiki/assets/buffs/10322.png) | 10322 | [[wiki/buffs/10322-incredible-health-health-will-be-increased-by-20-of-your-man\|Incredible Health : Health will be increased by 20% of your Mana.]] | complete | 0 |
+| ![](wiki/assets/buffs/10323.png) | 10323 | [[wiki/buffs/10323-predator-when-you-kill-an-enemy-player-you-gain-2-ability-po\|Predator : When you kill an enemy player, you gain 2 Ability Power (Maximum +10). When you die all stacks are lost.]] | complete | 0 |
+| ![](wiki/assets/buffs/10324.png) | 10324 | [[wiki/buffs/10324-greed-of-blood-when-you-kill-an-enemy-player-you-are-healed\|Greed of blood : When you kill an enemy player, you are healed for 5% of your current health.]] | complete | 0 |
+| ![](wiki/assets/buffs/10325.png) | 10325 | [[wiki/buffs/10325-slayer-when-player-kill-enemy-gain-attack-3-maximum-10-when\|Slayer : When player kill enemy, gain attack +3 (Maximum +10). When you die, lose all stacks.]] | complete | 0 |
+| ![](wiki/assets/buffs/10326.png) | 10326 | [[wiki/buffs/10326-thorns-defence-your-attack-damage-is-increased-by-5-of-your\|Thorns Defence : Your Attack Damage is increased by 5% of your armor.]] | complete | 0 |
+| ![](wiki/assets/buffs/10327.png) | 10327 | [[wiki/buffs/10327-meditation-when-you-don-t-get-any-damage-for-5-seconds-you-h\|Meditation : When you don't get any damage for 5 seconds, you heal for 4% of your maximum health every 5 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/10328.png) | 10328 | [[wiki/buffs/10328\|Buff 10328]] | stub | 1 |
+| ![](wiki/assets/buffs/10329.png) | 10329 | [[wiki/buffs/10329-anger-of-fire-movement-70-4secs\|Anger of fire : Movement +70 (4Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/10330.png) | 10330 | [[wiki/buffs/10330-anger-of-fire-creates-a-absorvs-damage-for-10-seconds\|Anger of fire : Creates a absorvs damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10331.png) | 10331 | [[wiki/buffs/10331\|Buff 10331]] | complete | 0 |
+| ![](wiki/assets/buffs/10332.png) | 10332 | [[wiki/buffs/10332-fury-of-fire-strun-2-secs\|Fury of fire : Strun (2 Secs)]] | stub | 1 |
+| ![](wiki/assets/buffs/10333.png) | 10333 | [[wiki/buffs/10333\|Buff 10333]] | stub | 1 |
+| ![](wiki/assets/buffs/10334.png) | 10334 | [[wiki/buffs/10334-flame-area-movement-25-3-secs\|Flame area : Movement -25% (3 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/10335.png) | 10335 | [[wiki/buffs/10335\|Buff 10335]] | complete | 0 |
+| ![](wiki/assets/buffs/10336.png) | 10336 | [[wiki/buffs/10336-blessing-of-mother-nature-absorbs-damage\|blessing of Mother Nature : Absorbs damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10337.png) | 10337 | [[wiki/buffs/10337-blessing-of-mother-nature-explosion\|blessing of Mother Nature : Explosion]] | complete | 0 |
+| ![](wiki/assets/buffs/10338.png) | 10338 | [[wiki/buffs/10338-blessing-of-mother-nature-you-gain-5-armor-and-magic-resista\|blessing of Mother Nature : You gain 5% Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/10339.png) | 10339 | [[wiki/buffs/10339\|Buff 10339]] | stub | 1 |
+| ![](wiki/assets/buffs/10340.png) | 10340 | [[wiki/buffs/10340-mystic-arrow-rockets-in-store\|Mystic Arrow : Rockets in store]] | complete | 0 |
+| ![](wiki/assets/buffs/10341.png) | 10341 | [[wiki/buffs/10341-poisonous-blade-next-attack-stunned\|Poisonous Blade : Next Attack Stunned]] | complete | 0 |
+| ![](wiki/assets/buffs/10342.png) | 10342 | [[wiki/buffs/10342-poisonous-blade-stunned-for-2-seconds\|Poisonous Blade : Stunned for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10343.png) | 10343 | [[wiki/buffs/10343-assassination-active\|Assassination : Active]] | complete | 0 |
+| ![](wiki/assets/buffs/10344.png) | 10344 | [[wiki/buffs/10344-assassination-silenced\|Assassination : Silenced]] | stub | 1 |
+| ![](wiki/assets/buffs/10345.png) | 10345 | [[wiki/buffs/10345-fang-of-knives-reduced-movement-speed\|Fang of Knives : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10346.png) | 10346 | [[wiki/buffs/10346-final-strikes-creates-a-absorvs-damage-for-10-seconds\|Final Strikes : Creates a absorvs damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10347.png) | 10347 | [[wiki/buffs/10347-final-strikes-possible-to-perform-the-final-strike-now\|Final Strikes : Possible to perform the Final Strike now]] | complete | 0 |
+| ![](wiki/assets/buffs/10348.png) | 10348 | [[wiki/buffs/10348-final-strikes-silenced-for-2-second\|Final Strikes : Silenced for 2 second.]] | stub | 1 |
+| ![](wiki/assets/buffs/10349.png) | 10349 | [[wiki/buffs/10349-crushing-blow-silenced\|Crushing Blow : Silenced]] | stub | 1 |
+| ![](wiki/assets/buffs/10350.png) | 10350 | [[wiki/buffs/10350\|Buff 10350]] | stub | 1 |
+| ![](wiki/assets/buffs/10351.png) | 10351 | [[wiki/buffs/10351-howl-of-victory-increased-health-regeneration\|Howl of Victory : Increased Health Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/10352.png) | 10352 | [[wiki/buffs/10352-unyielding-will-reduce-50-all-type-of-damage-during-5-secs-a\|Unyielding Will : Reduce 50% all type of damage during 5 secs and get 40 Attack.]] | complete | 0 |
+| ![](wiki/assets/buffs/10353.png) | 10353 | [[wiki/buffs/10353-smoke-screen-reduced-movement-and-attack-speed\|Smoke Screen : Reduced Movement and Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10354.png) | 10354 | [[wiki/buffs/10354-smoke-screen-cooldown\|Smoke Screen : Cooldown]] | stub | 1 |
+| ![](wiki/assets/buffs/10355.png) | 10355 | [[wiki/buffs/10355-quick-step-back-decreased-move-speed\|Quick step back : Decreased Move Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10356.png) | 10356 | [[wiki/buffs/10356-careful-attack-stunned-for-3-seconds\|Careful Attack : Stunned for 3 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10357.png) | 10357 | [[wiki/buffs/10357-lightning-strike-silence-2-secs\|Lightning Strike : Silence (2 Secs)]] | stub | 1 |
+| ![](wiki/assets/buffs/10358.png) | 10358 | [[wiki/buffs/10358-ball-of-lighting-stun-2-secs\|Ball of Lighting : Stun (2 Secs)]] | stub | 1 |
+| ![](wiki/assets/buffs/10359.png) | 10359 | [[wiki/buffs/10359-punishment-second-skill-available\|Punishment : Second skill available]] | complete | 0 |
+| ![](wiki/assets/buffs/10360.png) | 10360 | [[wiki/buffs/10360-punishment-third-skill-available\|Punishment : Third skill available]] | complete | 0 |
+| ![](wiki/assets/buffs/10401.png) | 10401 | [[wiki/buffs/10401-justice-protection-creates-a-absorvs-damage-for-4-seconds\|Justice Protection : Creates a absorvs damage for 4 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10402.png) | 10402 | [[wiki/buffs/10402-holy-shield-creates-a-absorvs-damage-for-7-seconds\|Holy Shield : Creates a absorvs damage for 7 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/10403.png) | 10403 | [[wiki/buffs/10403-destruction-of-light-decreased-move-speed\|Destruction of light : Decreased Move Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10411.png) | 10411 | [[wiki/buffs/10411\|Buff 10411]] | complete | 0 |
+| ![](wiki/assets/buffs/10412.png) | 10412 | [[wiki/buffs/10412\|Buff 10412]] | complete | 0 |
+| ![](wiki/assets/buffs/10413.png) | 10413 | [[wiki/buffs/10413\|Buff 10413]] | stub | 1 |
+| ![](wiki/assets/buffs/10414.png) | 10414 | [[wiki/buffs/10414\|Buff 10414]] | complete | 0 |
+| ![](wiki/assets/buffs/10415.png) | 10415 | [[wiki/buffs/10415\|Buff 10415]] | stub | 1 |
+| ![](wiki/assets/buffs/10416.png) | 10416 | [[wiki/buffs/10416\|Buff 10416]] | complete | 0 |
+| ![](wiki/assets/buffs/10417.png) | 10417 | [[wiki/buffs/10417\|Buff 10417]] | stub | 1 |
+| ![](wiki/assets/buffs/10421.png) | 10421 | [[wiki/buffs/10421-backstab-increase-movement-speed\|Backstab : Increase movement speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10422.png) | 10422 | [[wiki/buffs/10422-backstab-your-basic-attacks-deal-additional-damage\|Backstab : Your basic Attacks deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10423.png) | 10423 | [[wiki/buffs/10423-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/10424.png) | 10424 | [[wiki/buffs/10424-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | stub | 1 |
+| ![](wiki/assets/buffs/10425.png) | 10425 | [[wiki/buffs/10425-the-thrill-of-power-critical-damage-increase\|The thrill of power : Critical Damage Increase]] | complete | 0 |
+| ![](wiki/assets/buffs/10426.png) | 10426 | [[wiki/buffs/10426-backstab-reduced-movement-speed\|Backstab : Reduced movement speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10427.png) | 10427 | [[wiki/buffs/10427-immovable-bondage-rooted-in-place-for-2-seconds\|Immovable bondage : Rooted in place for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10431.png) | 10431 | [[wiki/buffs/10431-lightning-chain-rooted-in-place-for-3-seconds\|Lightning Chain : Rooted in place for 3 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/10432.png) | 10432 | [[wiki/buffs/10432-lightning-spray-reduced-armor-and-magic-resistance-movement\|Lightning spray : Reduced Armor and Magic Resistance, Movement speed]] | complete | 0 |
+| ![](wiki/assets/buffs/10433.png) | 10433 | [[wiki/buffs/10433-lightning-protection\|Lightning protection]] | complete | 0 |
+| ![](wiki/assets/buffs/10434.png) | 10434 | [[wiki/buffs/10434-lightning-protection-you-gain-30-attack-speed-and-movement-s\|Lightning protection : You gain 30% Attack speed and Movement speed, Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/10441.png) | 10441 | [[wiki/buffs/10441\|Buff 10441]] | complete | 0 |
+| ![](wiki/assets/buffs/10442.png) | 10442 | [[wiki/buffs/10442-vision-explosion-stack\|Vision explosion : Stack]] | complete | 0 |
+| ![](wiki/assets/buffs/10443.png) | 10443 | [[wiki/buffs/10443-mystic-arrow-increased-attack-speed\|Mystic Arrow : Increased Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/19950.png) | 19950 | [[wiki/buffs/19950-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19951.png) | 19951 | [[wiki/buffs/19951-anger-of-fire-movement-70-4secs\|Anger of fire : Movement +70 (4Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19952.png) | 19952 | [[wiki/buffs/19952-anger-of-fire-creates-a-absorvs-damage-for-10-seconds\|Anger of fire : Creates a absorvs damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19953.png) | 19953 | [[wiki/buffs/19953\|Buff 19953]] | complete | 0 |
+| ![](wiki/assets/buffs/19954.png) | 19954 | [[wiki/buffs/19954-fury-of-fire-stun-2-secs\|Fury of fire : Stun (2 Secs)]] | stub | 1 |
+| ![](wiki/assets/buffs/19955.png) | 19955 | [[wiki/buffs/19955\|Buff 19955]] | stub | 1 |
+| ![](wiki/assets/buffs/19956.png) | 19956 | [[wiki/buffs/19956-flame-area-movement-25-3-secs\|Flame area : Movement -25% (3 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19957.png) | 19957 | [[wiki/buffs/19957\|Buff 19957]] | complete | 0 |
+| ![](wiki/assets/buffs/19958.png) | 19958 | [[wiki/buffs/19958-two-flame-decreased-attack-speed-and-movement-speed\|Two Flame : Decreased Attack Speed and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/19959.png) | 19959 | [[wiki/buffs/19959-two-flame-damage-over-time-for-6-seconds\|Two Flame : Damage over time for 6 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19960.png) | 19960 | [[wiki/buffs/19960-flame-absorb-shield-creates-a-absorvs-damage-for-4-seconds\|Flame Absorb shield : Creates a absorvs damage for 4 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19961.png) | 19961 | [[wiki/buffs/19961-flame-absorb-shield-you-gain-30-armor-and-magic-resistance\|Flame Absorb shield : You gain 30% Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/19962.png) | 19962 | [[wiki/buffs/19962-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19963.png) | 19963 | [[wiki/buffs/19963-flaming-fire\|Flaming fire]] | complete | 0 |
+| ![](wiki/assets/buffs/19964.png) | 19964 | [[wiki/buffs/19964-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19965.png) | 19965 | [[wiki/buffs/19965-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19966.png) | 19966 | [[wiki/buffs/19966-flaming-fire\|Flaming fire]] | complete | 0 |
+| ![](wiki/assets/buffs/19967.png) | 19967 | [[wiki/buffs/19967-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19968.png) | 19968 | [[wiki/buffs/19968-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19969.png) | 19969 | [[wiki/buffs/19969-flaming-fire\|Flaming fire]] | complete | 0 |
+| ![](wiki/assets/buffs/19970.png) | 19970 | [[wiki/buffs/19970-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19971.png) | 19971 | [[wiki/buffs/19971-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19972.png) | 19972 | [[wiki/buffs/19972-flaming-fire\|Flaming fire]] | complete | 0 |
+| ![](wiki/assets/buffs/19973.png) | 19973 | [[wiki/buffs/19973-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19974.png) | 19974 | [[wiki/buffs/19974-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19975.png) | 19975 | [[wiki/buffs/19975-flaming-fire\|Flaming fire]] | complete | 0 |
+| ![](wiki/assets/buffs/19976.png) | 19976 | [[wiki/buffs/19976-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19977.png) | 19977 | [[wiki/buffs/19977-flaming-fire-120-seconds\|Flaming fire : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/19978.png) | 19978 | [[wiki/buffs/19978-flaming-fire\|Flaming fire]] | complete | 0 |
+| ![](wiki/assets/buffs/19979.png) | 19979 | [[wiki/buffs/19979-flaming-fire-health-regeneration-10-secs\|Flaming fire : Health Regeneration (10 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/19999.png) | 19999 | [[wiki/buffs/19999-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20000.png) | 20000 | [[wiki/buffs/20000-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20001.png) | 20001 | [[wiki/buffs/20001\|Buff 20001]] | complete | 0 |
+| ![](wiki/assets/buffs/20002.png) | 20002 | [[wiki/buffs/20002-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20003.png) | 20003 | [[wiki/buffs/20003-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20004.png) | 20004 | [[wiki/buffs/20004\|Buff 20004]] | stub | 1 |
+| ![](wiki/assets/buffs/20005.png) | 20005 | [[wiki/buffs/20005-heaven-and-earth-stunned\|Heaven and Earth : Stunned]] | stub | 1 |
+| ![](wiki/assets/buffs/20006.png) | 20006 | [[wiki/buffs/20006-scream-of-the-dead-creates-a-absorvs-damage-for-8-seconds\|Scream of the Dead : Creates a absorvs damage for 8 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20007.png) | 20007 | [[wiki/buffs/20007-scream-of-the-dead-reduced-armor-and-magic-resistance\|Scream of the Dead : Reduced Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/20008.png) | 20008 | [[wiki/buffs/20008-summoning-tomb-of-the-dead\|Summoning Tomb of the Dead]] | stub | 1 |
+| ![](wiki/assets/buffs/20009.png) | 20009 | [[wiki/buffs/20009-tomb-of-the-dead-reduced-movement-speed\|Tomb of the Dead : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20010.png) | 20010 | [[wiki/buffs/20010-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20011.png) | 20011 | [[wiki/buffs/20011-aura-of-death-kills-and-assists-heal-you\|Aura of Death : Kills and assists heal you]] | complete | 0 |
+| ![](wiki/assets/buffs/20012.png) | 20012 | [[wiki/buffs/20012-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20013.png) | 20013 | [[wiki/buffs/20013-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20014.png) | 20014 | [[wiki/buffs/20014-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20015.png) | 20015 | [[wiki/buffs/20015-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20016.png) | 20016 | [[wiki/buffs/20016-group-of-guardians-increased-damage\|Group of Guardians : Increased damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20020.png) | 20020 | [[wiki/buffs/20020-immortal-body-recovering-for-300-seconds\|Immortal Body : Recovering for 300 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20021.png) | 20021 | [[wiki/buffs/20021-immortal-body-transformed-for-5-seconds\|Immortal Body : Transformed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20022.png) | 20022 | [[wiki/buffs/20022-immortal-body-40-reduced-health\|Immortal Body : 40% reduced Health]] | complete | 0 |
+| ![](wiki/assets/buffs/20023.png) | 20023 | [[wiki/buffs/20023-immortal-body-revival\|Immortal Body : Revival]] | complete | 0 |
+| ![](wiki/assets/buffs/20024.png) | 20024 | [[wiki/buffs/20024\|Buff 20024]] | stub | 1 |
+| ![](wiki/assets/buffs/20049.png) | 20049 | [[wiki/buffs/20049\|Buff 20049]] | complete | 0 |
+| ![](wiki/assets/buffs/20050.png) | 20050 | [[wiki/buffs/20050\|Buff 20050]] | complete | 0 |
+| ![](wiki/assets/buffs/20051.png) | 20051 | [[wiki/buffs/20051\|Buff 20051]] | complete | 0 |
+| ![](wiki/assets/buffs/20052.png) | 20052 | [[wiki/buffs/20052\|Buff 20052]] | complete | 0 |
+| ![](wiki/assets/buffs/20053.png) | 20053 | [[wiki/buffs/20053\|Buff 20053]] | complete | 0 |
+| ![](wiki/assets/buffs/20054.png) | 20054 | [[wiki/buffs/20054-magical-protection-creates-a-absorvs-damage-for-8-seconds\|Magical Protection : Creates a absorvs damage for 8 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20055.png) | 20055 | [[wiki/buffs/20055-magical-protection-increased-armor-and-magic-resistance\|Magical Protection: Increased Armor and Magic Resistance.]] | complete | 0 |
+| ![](wiki/assets/buffs/20056.png) | 20056 | [[wiki/buffs/20056-magical-zone-increased-movement-and-attack-speed\|Magical Zone : Increased Movement and Attack Speed.]] | complete | 0 |
+| ![](wiki/assets/buffs/20057.png) | 20057 | [[wiki/buffs/20057-magical-zone-improved-health-and-mana-regeneration\|Magical Zone : Improved Health and Mana Regeneration.]] | complete | 0 |
+| ![](wiki/assets/buffs/20058.png) | 20058 | [[wiki/buffs/20058-magical-zone-time-until-it-fades\|Magical Zone : Time until it fades.]] | stub | 1 |
+| ![](wiki/assets/buffs/20059.png) | 20059 | [[wiki/buffs/20059-overload-increased-movement-speed-armor-magic-resistance-and\|Overload : Increased Movement Speed, Armor, Magic Resistance and immune to abilities.]] | complete | 0 |
+| ![](wiki/assets/buffs/20060.png) | 20060 | [[wiki/buffs/20060-absorb-magic-reduced-incoming-damage\|Absorb Magic : Reduced incoming damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/20061.png) | 20061 | [[wiki/buffs/20061-a-warrior-s-body-deal-additional-damage\|A Warrior's Body. Deal additional damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/20062.png) | 20062 | [[wiki/buffs/20062-maximized-efficiency-increased-damage\|Maximized Efficiency: Increased Damage.]] | complete | 0 |
+| ![](wiki/assets/buffs/20063.png) | 20063 | [[wiki/buffs/20063-advent-silenced-for-2-seconds\|Advent : Silenced for 2 seconds.]] | stub | 1 |
+| ![](wiki/assets/buffs/20064.png) | 20064 | [[wiki/buffs/20064-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
+| ![](wiki/assets/buffs/20065.png) | 20065 | [[wiki/buffs/20065-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/20066.png) | 20066 | [[wiki/buffs/20066-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
+| ![](wiki/assets/buffs/20067.png) | 20067 | [[wiki/buffs/20067-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/20068.png) | 20068 | [[wiki/buffs/20068-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
+| ![](wiki/assets/buffs/20069.png) | 20069 | [[wiki/buffs/20069-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/20070.png) | 20070 | [[wiki/buffs/20070-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
+| ![](wiki/assets/buffs/20071.png) | 20071 | [[wiki/buffs/20071-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/20072.png) | 20072 | [[wiki/buffs/20072-ambition-of-the-warrior\|Ambition of the Warrior]] | complete | 0 |
+| ![](wiki/assets/buffs/20073.png) | 20073 | [[wiki/buffs/20073-ambition-of-the-warrior-reduces-armor-and-magic-resistance\|Ambition of the Warrior : Reduces Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/20099.png) | 20099 | [[wiki/buffs/20099\|Buff 20099]] | complete | 0 |
+| ![](wiki/assets/buffs/20101.png) | 20101 | [[wiki/buffs/20101-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20102.png) | 20102 | [[wiki/buffs/20102\|Buff 20102]] | complete | 0 |
+| ![](wiki/assets/buffs/20103.png) | 20103 | [[wiki/buffs/20103-a-warm-flame-creates-a-absorvs-damage-for-5-seconds\|A warm flame : Creates a absorvs damage for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20104.png) | 20104 | [[wiki/buffs/20104-shield-of-the-sun-creates-a-absorvs-damage-for-5-seconds\|Shield of the Sun : Creates a absorvs damage for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20105.png) | 20105 | [[wiki/buffs/20105-shield-of-the-sun-movement-speed\|Shield of the Sun : Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20106.png) | 20106 | [[wiki/buffs/20106-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20107.png) | 20107 | [[wiki/buffs/20107-kra-sun\|Kra Sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20108.png) | 20108 | [[wiki/buffs/20108-tura-sun\|Tura Sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20109.png) | 20109 | [[wiki/buffs/20109\|Buff 20109]] | stub | 1 |
+| ![](wiki/assets/buffs/20110.png) | 20110 | [[wiki/buffs/20110-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20111.png) | 20111 | [[wiki/buffs/20111-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20112.png) | 20112 | [[wiki/buffs/20112-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20113.png) | 20113 | [[wiki/buffs/20113-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20114.png) | 20114 | [[wiki/buffs/20114-the-nucleus-of-the-sun\|The nucleus of the sun]] | complete | 0 |
+| ![](wiki/assets/buffs/20149.png) | 20149 | [[wiki/buffs/20149-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20151.png) | 20151 | [[wiki/buffs/20151-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20152.png) | 20152 | [[wiki/buffs/20152-aim-of-water-silenced\|Aim of water : Silenced]] | stub | 1 |
+| ![](wiki/assets/buffs/20153.png) | 20153 | [[wiki/buffs/20153-water-shield-creates-a-absorvs-damage-for-10-seconds\|Water shield : Creates a absorvs damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20154.png) | 20154 | [[wiki/buffs/20154\|Buff 20154]] | stub | 1 |
+| ![](wiki/assets/buffs/20155.png) | 20155 | [[wiki/buffs/20155-puddle-reduced-movement-speed\|Puddle : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20156.png) | 20156 | [[wiki/buffs/20156-blow-of-water-your-basic-attacks-deal-additional-damage\|Blow of water : Your basic Attacks deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20157.png) | 20157 | [[wiki/buffs/20157-goddess-reduced-damage-by-20\|Goddess : Reduced damage by 20%]] | complete | 0 |
+| ![](wiki/assets/buffs/20158.png) | 20158 | [[wiki/buffs/20158-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
+| ![](wiki/assets/buffs/20159.png) | 20159 | [[wiki/buffs/20159\|Buff 20159]] | stub | 1 |
+| ![](wiki/assets/buffs/20160.png) | 20160 | [[wiki/buffs/20160\|Buff 20160]] | stub | 1 |
+| ![](wiki/assets/buffs/20161.png) | 20161 | [[wiki/buffs/20161-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
+| ![](wiki/assets/buffs/20162.png) | 20162 | [[wiki/buffs/20162-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
+| ![](wiki/assets/buffs/20163.png) | 20163 | [[wiki/buffs/20163-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
+| ![](wiki/assets/buffs/20164.png) | 20164 | [[wiki/buffs/20164-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
+| ![](wiki/assets/buffs/20165.png) | 20165 | [[wiki/buffs/20165-the-person-who-selected-water\|The person who selected water]] | complete | 0 |
+| ![](wiki/assets/buffs/20199.png) | 20199 | [[wiki/buffs/20199-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20201.png) | 20201 | [[wiki/buffs/20201-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20202.png) | 20202 | [[wiki/buffs/20202-covert-steps-increase-movement-speed\|Covert Steps: Increase movement speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20203.png) | 20203 | [[wiki/buffs/20203-covert-steps-your-basic-attacks-deal-additional-damage\|Covert Steps: Your basic Attacks deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20204.png) | 20204 | [[wiki/buffs/20204-hungry-arrows-increased-life-steal\|Hungry arrows: increased Life Steal]] | complete | 0 |
+| ![](wiki/assets/buffs/20205.png) | 20205 | [[wiki/buffs/20205-hungry-arrows-increased-life-steal\|Hungry arrows: increased Life Steal]] | complete | 0 |
+| ![](wiki/assets/buffs/20206.png) | 20206 | [[wiki/buffs/20206-hunting-eye-reduced-armor\|Hunting Eye: Reduced armor]] | complete | 0 |
+| ![](wiki/assets/buffs/20207.png) | 20207 | [[wiki/buffs/20207-hunting-eye-reduced-armor\|Hunting Eye: Reduced armor]] | complete | 0 |
+| ![](wiki/assets/buffs/20208.png) | 20208 | [[wiki/buffs/20208-hunter-s-rage-attack-speed-and-critical-damage-increase\|Hunter's Rage: Attack Speed and Critical Damage Increase]] | complete | 0 |
+| ![](wiki/assets/buffs/20209.png) | 20209 | [[wiki/buffs/20209-capture-weakness-reduced-movement-speed\|Capture Weakness: Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20210.png) | 20210 | [[wiki/buffs/20210-invisible-prison\|Invisible prison]] | complete | 0 |
+| ![](wiki/assets/buffs/20211.png) | 20211 | [[wiki/buffs/20211-invisible-prison\|Invisible prison]] | stub | 1 |
+| ![](wiki/assets/buffs/20212.png) | 20212 | [[wiki/buffs/20212-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20213.png) | 20213 | [[wiki/buffs/20213-improved-hand-increases-attack-speed\|Improved Hand: Increases attack speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20214.png) | 20214 | [[wiki/buffs/20214-improved-hand-increases-attack-speed\|Improved Hand: Increases attack speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20215.png) | 20215 | [[wiki/buffs/20215-suppressive-fire-channelling-time\|Suppressive Fire : Channelling time]] | stub | 1 |
+| ![](wiki/assets/buffs/20216.png) | 20216 | [[wiki/buffs/20216\|Buff 20216]] | complete | 0 |
+| ![](wiki/assets/buffs/20217.png) | 20217 | [[wiki/buffs/20217\|Buff 20217]] | complete | 0 |
+| ![](wiki/assets/buffs/20218.png) | 20218 | [[wiki/buffs/20218\|Buff 20218]] | complete | 0 |
+| ![](wiki/assets/buffs/20219.png) | 20219 | [[wiki/buffs/20219\|Buff 20219]] | complete | 0 |
+| ![](wiki/assets/buffs/20220.png) | 20220 | [[wiki/buffs/20220\|Buff 20220]] | complete | 0 |
+| ![](wiki/assets/buffs/20221.png) | 20221 | [[wiki/buffs/20221-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20222.png) | 20222 | [[wiki/buffs/20222-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20223.png) | 20223 | [[wiki/buffs/20223-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20224.png) | 20224 | [[wiki/buffs/20224-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20225.png) | 20225 | [[wiki/buffs/20225-fatal-skill-increased-critical-strike\|Fatal skill: Increased Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20249.png) | 20249 | [[wiki/buffs/20249-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20251.png) | 20251 | [[wiki/buffs/20251-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20252.png) | 20252 | [[wiki/buffs/20252-roar-increase-movement-speed-and-attack-speed\|Roar : Increase Movement speed and Attack speed]] | complete | 0 |
+| ![](wiki/assets/buffs/20253.png) | 20253 | [[wiki/buffs/20253-cut-silenced-for-2-seconds\|Cut : silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/20254.png) | 20254 | [[wiki/buffs/20254-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20255.png) | 20255 | [[wiki/buffs/20255\|Buff 20255]] | complete | 0 |
+| ![](wiki/assets/buffs/20256.png) | 20256 | [[wiki/buffs/20256\|Buff 20256]] | complete | 0 |
+| ![](wiki/assets/buffs/20257.png) | 20257 | [[wiki/buffs/20257-quick-attack-increase-attack-speed-when-reaching-5-stack\|Quick attack : Increase attack speed when reaching 5 stack]] | complete | 0 |
+| ![](wiki/assets/buffs/20258.png) | 20258 | [[wiki/buffs/20258-quick-attack-increase-attack-speed-for-5-seconds\|Quick attack : Increase attack speed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20259.png) | 20259 | [[wiki/buffs/20259-immortality-your-health-does-not-fall-below-a-certain-level\|Immortality : Your health does not fall below a certain level, and you will be immortal for 5 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/20260.png) | 20260 | [[wiki/buffs/20260-bloody-anger-increases-damage\|Bloody anger : Increases Damage]] | complete | 0 |
+| ![](wiki/assets/buffs/20261.png) | 20261 | [[wiki/buffs/20261-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20262.png) | 20262 | [[wiki/buffs/20262-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20263.png) | 20263 | [[wiki/buffs/20263-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20264.png) | 20264 | [[wiki/buffs/20264-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20265.png) | 20265 | [[wiki/buffs/20265-power-of-the-ax-increase-critical-strike\|Power of the ax : Increase Critical Strike(%)]] | complete | 0 |
+| ![](wiki/assets/buffs/20299.png) | 20299 | [[wiki/buffs/20299-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20301.png) | 20301 | [[wiki/buffs/20301-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20302.png) | 20302 | [[wiki/buffs/20302-water-of-deceleration-reduced-moovement-speed-3-secs\|Water of deceleration : Reduced Moovement Speed (3 Secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/20303.png) | 20303 | [[wiki/buffs/20303\|Buff 20303]] | complete | 0 |
+| ![](wiki/assets/buffs/20304.png) | 20304 | [[wiki/buffs/20304\|Buff 20304]] | complete | 0 |
+| ![](wiki/assets/buffs/20305.png) | 20305 | [[wiki/buffs/20305-tsunami-silenced-for-2-seconds\|Tsunami : silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/20306.png) | 20306 | [[wiki/buffs/20306-fisher-s-protection-creates-a-absorvs-damage-for-5-seconds\|Fisher's Protection : Creates a absorvs damage for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20307.png) | 20307 | [[wiki/buffs/20307-earthquake-stun-2-secs\|Earthquake : Stun (2 Secs)]] | stub | 1 |
+| ![](wiki/assets/buffs/20308.png) | 20308 | [[wiki/buffs/20308-fisher-s-cries-creates-a-absorvs-damage-for-5-seconds\|Fisher's cries : Creates a absorvs damage for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20309.png) | 20309 | [[wiki/buffs/20309-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
+| ![](wiki/assets/buffs/20310.png) | 20310 | [[wiki/buffs/20310\|Buff 20310]] | stub | 1 |
+| ![](wiki/assets/buffs/20311.png) | 20311 | [[wiki/buffs/20311-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
+| ![](wiki/assets/buffs/20312.png) | 20312 | [[wiki/buffs/20312-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
+| ![](wiki/assets/buffs/20313.png) | 20313 | [[wiki/buffs/20313-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
+| ![](wiki/assets/buffs/20314.png) | 20314 | [[wiki/buffs/20314-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
+| ![](wiki/assets/buffs/20315.png) | 20315 | [[wiki/buffs/20315-fisher-s-essence-increases-magic-penetration\|Fisher's essence : Increases Magic Penetration]] | complete | 0 |
+| ![](wiki/assets/buffs/20349.png) | 20349 | [[wiki/buffs/20349-transformation-120-seconds\|Transformation : 120 Seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/20351.png) | 20351 | [[wiki/buffs/20351\|Buff 20351]] | complete | 0 |
+| ![](wiki/assets/buffs/20401.png) | 20401 | [[wiki/buffs/20401\|Buff 20401]] | complete | 0 |
+| ![](wiki/assets/buffs/20451.png) | 20451 | [[wiki/buffs/20451\|Buff 20451]] | complete | 0 |
+| ![](wiki/assets/buffs/20501.png) | 20501 | [[wiki/buffs/20501\|Buff 20501]] | complete | 0 |
+| ![](wiki/assets/buffs/20551.png) | 20551 | [[wiki/buffs/20551\|Buff 20551]] | complete | 0 |
+| ![](wiki/assets/buffs/20601.png) | 20601 | [[wiki/buffs/20601\|Buff 20601]] | complete | 0 |
+| ![](wiki/assets/buffs/30001.png) | 30001 | [[wiki/buffs/30001\|Buff 30001]] | complete | 0 |
+| ![](wiki/assets/buffs/30002.png) | 30002 | [[wiki/buffs/30002-battle-cry-increases-hp-regeneration\|Battle Cry: Increases HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/30003.png) | 30003 | [[wiki/buffs/30003-whirlwind-reduces-damage-and-movement-speed\|Whirlwind: Reduces Damage and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30004.png) | 30004 | [[wiki/buffs/30004-wrath-explosion-reduces-movement-speed\|Wrath Explosion: Reduces Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30007.png) | 30007 | [[wiki/buffs/30007-might-of-the-thunder-god-stunned-for-2-seconds\|Might of the Thunder God : Stunned for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30010.png) | 30010 | [[wiki/buffs/30010-blessed-wind-creates-a-shield-that-absorbs-damage-for-10-sec\|Blessed Wind: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30011.png) | 30011 | [[wiki/buffs/30011-breeze-increased-hp-and-mana-regeneration\|Breeze: Increased HP and Mana Regeneration]] | stub | 1 |
+| ![](wiki/assets/buffs/30012.png) | 30012 | [[wiki/buffs/30012-breeze-increased-ability-power-and-movement-speed\|Breeze : Increased Ability Power and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30013.png) | 30013 | [[wiki/buffs/30013-eye-of-the-storm-increased-movement-speed-and-defence\|Eye of the Storm : Increased Movement Speed and defence]] | complete | 0 |
+| ![](wiki/assets/buffs/30014.png) | 30014 | [[wiki/buffs/30014-eye-of-the-storm-reduced-movement-and-attack-speed\|Eye of the Storm : Reduced Movement and Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30015.png) | 30015 | [[wiki/buffs/30015-summoning-the-eye-of-the-storm\|Summoning the Eye of the Storm]] | stub | 1 |
+| ![](wiki/assets/buffs/30016.png) | 30016 | [[wiki/buffs/30016-spell-feather-reduced-movement-speed\|Spell Feather : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30017.png) | 30017 | [[wiki/buffs/30017-draw-power-increases-attack-and-movement-speed\|Draw Power: Increases Attack and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30018.png) | 30018 | [[wiki/buffs/30018-crystal-burst-increases-armor-and-magic-resistance\|Crystal Burst: Increases Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/30019.png) | 30019 | [[wiki/buffs/30019-crystal-burst-reduced-armor-and-magic-resistance\|Crystal Burst : Reduced Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/30020.png) | 30020 | [[wiki/buffs/30020-wave-of-crystals-reduced-movement-speed\|Wave of Crystals : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30021.png) | 30021 | [[wiki/buffs/30021-wings-of-westerly-increased-ability-power-armor-and-magic-re\|Wings of Westerly : Increased Ability Power, Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/30022.png) | 30022 | [[wiki/buffs/30022-you-prepare-your-next-attack\|You prepare your next Attack]] | complete | 0 |
+| ![](wiki/assets/buffs/30023.png) | 30023 | [[wiki/buffs/30023-shadow-walk-creates-a-shield-that-absorbs-damage-for-10-seco\|Shadow Walk: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/30024.png) | 30024 | [[wiki/buffs/30024-the-dark-art-creates-a-shield-that-absorbs-damage-for-10-sec\|The Dark Art: Creates a shield that absorbs Damage for 10 seconds.]] | complete | 0 |
+| ![](wiki/assets/buffs/30025.png) | 30025 | [[wiki/buffs/30025-the-dark-art-increased-life-steal\|The Dark Art : Increased Life Steal]] | complete | 0 |
+| ![](wiki/assets/buffs/30027.png) | 30027 | [[wiki/buffs/30027-deadly-poisonous-swamp-reduced-armor-and-magic-resistance\|Deadly Poisonous Swamp : Reduced Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/30028.png) | 30028 | [[wiki/buffs/30028-shadow-walk-silenced-for-2-seconds\|Shadow Walk : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30029.png) | 30029 | [[wiki/buffs/30029-merciless-chase-your-next-basic-attack-deals-additional-dama\|Merciless Chase : Your next basic attack deals additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30030.png) | 30030 | [[wiki/buffs/30030-rotten-arrow-damage-over-time\|Rotten Arrow: Damage over time]] | complete | 0 |
+| ![](wiki/assets/buffs/30031.png) | 30031 | [[wiki/buffs/30031-death-from-above-in-panic\|Death from Above : In Panic]] | stub | 1 |
 |  | 30033 | [[wiki/buffs/30033-death-from-above-the-arrows-are-still-coming-down\|Death from Above : The arrows are still coming down]] | stub | 1 |
-| ![](../assets/buffs/30034.png) | 30034 | [[wiki/buffs/30034-soul-infestation-your-basic-attacks-deal-additional-damage\|Soul Infestation : Your basic Attacks deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/30035.png) | 30035 | [[wiki/buffs/30035-aura-of-demise-damages-enemies-around-you\|Aura of Demise : Damages enemies around you]] | complete | 0 |
-| ![](../assets/buffs/30036.png) | 30036 | [[wiki/buffs/30036-shadow-walk-silences-for-2-seconds\|Shadow Walk: Silences for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30037.png) | 30037 | [[wiki/buffs/30037-dark-transformation-gain-40-health-regeneration\|Dark Transformation : Gain 40% Health Regeneration]] | complete | 0 |
-| ![](../assets/buffs/30038.png) | 30038 | [[wiki/buffs/30038-dark-transformation-gain-100-movement-speed\|Dark Transformation : Gain 100 Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30039.png) | 30039 | [[wiki/buffs/30039-secret-movement-increases-movement-speed\|Secret Movement: Increases Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30040.png) | 30040 | [[wiki/buffs/30040-secret-movement-your-next-basic-attack-will-deal-additional\|Secret Movement : Your next basic attack will deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/30042.png) | 30042 | [[wiki/buffs/30042-mark-of-death-reduced-armor\|Mark of Death : Reduced Armor]] | complete | 0 |
-| ![](../assets/buffs/30043.png) | 30043 | [[wiki/buffs/30043-restriction-your-next-basic-attack-deals-additional-damage\|Restriction : Your next basic attack deals additional damage]] | complete | 0 |
-| ![](../assets/buffs/30044.png) | 30044 | [[wiki/buffs/30044-restriction-rooted-in-place-for-3-seconds\|Restriction : Rooted in place for 3 seconds]] | stub | 1 |
-| ![](../assets/buffs/30045.png) | 30045 | [[wiki/buffs/30045-punishing-charge-you-are-able-to-use-punishing-stomp-now\|Punishing Charge : You are able to use Punishing Stomp now]] | stub | 1 |
-| ![](../assets/buffs/30046.png) | 30046 | [[wiki/buffs/30046-punishing-stomp-silenced-for-2-seconds\|Punishing Stomp : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30047.png) | 30047 | [[wiki/buffs/30047-blessing-of-order-creates-a-shield-that-absorbs-damage-for-1\|Blessing of Order: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/30048.png) | 30048 | [[wiki/buffs/30048-blessing-of-order-explosion\|Blessing of Order : Explosion]] | complete | 0 |
-| ![](../assets/buffs/30049.png) | 30049 | [[wiki/buffs/30049-blessing-of-order-you-gain-10-armor-and-magic-resistance\|Blessing of Order : You gain 10% Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/30050.png) | 30050 | [[wiki/buffs/30050-judgement-stunned-for-2-seconds\|Judgement : Stunned for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30051.png) | 30051 | [[wiki/buffs/30051-running-wild-increased-attack-speed\|Running Wild : Increased Attack Speed]] | complete | 0 |
-| ![](../assets/buffs/30052.png) | 30052 | [[wiki/buffs/30052-wild-threat-damage-over-time\|Wild Threat : Damage over time]] | complete | 0 |
-| ![](../assets/buffs/30053.png) | 30053 | [[wiki/buffs/30053-charging-chariot-additional-100-movement-speed-for-5-seconds\|Charging Chariot : Additional 100 Movement Speed for 5 seconds]] | complete | 0 |
-| ![](../assets/buffs/30054.png) | 30054 | [[wiki/buffs/30054-fury-additional-30-armor-penetration-150-attack-speed-and-4\|Fury : Additional 30 Armor Penetration, 150 Attack Speed and 4 Health Regeneration]] | complete | 0 |
-| ![](../assets/buffs/30055.png) | 30055 | [[wiki/buffs/30055-crippling-blow-decreased-movement-speed\|Crippling Blow : Decreased Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30056.png) | 30056 | [[wiki/buffs/30056-meteor-stunned-for-2-seconds\|Meteor : Stunned for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30058.png) | 30058 | [[wiki/buffs/30058-crushing-blow-silenced-for-2-seconds\|Crushing Blow : Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30059.png) | 30059 | [[wiki/buffs/30059-head-butt-pushback\|Head Butt : Pushback]] | stub | 1 |
-| ![](../assets/buffs/30060.png) | 30060 | [[wiki/buffs/30060-howl-of-victory-increased-hp-regeneration\|Howl of Victory: Increased HP Regeneration]] | complete | 0 |
-| ![](../assets/buffs/30061.png) | 30061 | [[wiki/buffs/30061-unyielding-will-reduce-50-all-type-of-damage-during-5-second\|Unyielding Will : Reduce 50% all type of damage during 5 seconds and get 40 Attack.]] | complete | 0 |
-| ![](../assets/buffs/30084.png) | 30084 | [[wiki/buffs/30084-double-time-decrease-movement-speed-by-30\|Double Time : Decrease Movement Speed by 30%]] | complete | 0 |
-| ![](../assets/buffs/30085.png) | 30085 | [[wiki/buffs/30085-rapid-reload-gain-improved-attack-and-movement-speed\|Rapid Reload : Gain improved Attack and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30087.png) | 30087 | [[wiki/buffs/30087-entangling-shot-rooted-for-2-seconds\|Entangling Shot : Rooted for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30088.png) | 30088 | [[wiki/buffs/30088-suppressive-fire-reduced-attack-and-movement-speed-for-3-sec\|Suppressive Fire : Reduced Attack and Movement Speed for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30034.png) | 30034 | [[wiki/buffs/30034-soul-infestation-your-basic-attacks-deal-additional-damage\|Soul Infestation : Your basic Attacks deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30035.png) | 30035 | [[wiki/buffs/30035-aura-of-demise-damages-enemies-around-you\|Aura of Demise : Damages enemies around you]] | complete | 0 |
+| ![](wiki/assets/buffs/30036.png) | 30036 | [[wiki/buffs/30036-shadow-walk-silences-for-2-seconds\|Shadow Walk: Silences for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30037.png) | 30037 | [[wiki/buffs/30037-dark-transformation-gain-40-health-regeneration\|Dark Transformation : Gain 40% Health Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/30038.png) | 30038 | [[wiki/buffs/30038-dark-transformation-gain-100-movement-speed\|Dark Transformation : Gain 100 Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30039.png) | 30039 | [[wiki/buffs/30039-secret-movement-increases-movement-speed\|Secret Movement: Increases Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30040.png) | 30040 | [[wiki/buffs/30040-secret-movement-your-next-basic-attack-will-deal-additional\|Secret Movement : Your next basic attack will deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30042.png) | 30042 | [[wiki/buffs/30042-mark-of-death-reduced-armor\|Mark of Death : Reduced Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/30043.png) | 30043 | [[wiki/buffs/30043-restriction-your-next-basic-attack-deals-additional-damage\|Restriction : Your next basic attack deals additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30044.png) | 30044 | [[wiki/buffs/30044-restriction-rooted-in-place-for-3-seconds\|Restriction : Rooted in place for 3 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30045.png) | 30045 | [[wiki/buffs/30045-punishing-charge-you-are-able-to-use-punishing-stomp-now\|Punishing Charge : You are able to use Punishing Stomp now]] | stub | 1 |
+| ![](wiki/assets/buffs/30046.png) | 30046 | [[wiki/buffs/30046-punishing-stomp-silenced-for-2-seconds\|Punishing Stomp : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30047.png) | 30047 | [[wiki/buffs/30047-blessing-of-order-creates-a-shield-that-absorbs-damage-for-1\|Blessing of Order: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30048.png) | 30048 | [[wiki/buffs/30048-blessing-of-order-explosion\|Blessing of Order : Explosion]] | complete | 0 |
+| ![](wiki/assets/buffs/30049.png) | 30049 | [[wiki/buffs/30049-blessing-of-order-you-gain-10-armor-and-magic-resistance\|Blessing of Order : You gain 10% Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/30050.png) | 30050 | [[wiki/buffs/30050-judgement-stunned-for-2-seconds\|Judgement : Stunned for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30051.png) | 30051 | [[wiki/buffs/30051-running-wild-increased-attack-speed\|Running Wild : Increased Attack Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30052.png) | 30052 | [[wiki/buffs/30052-wild-threat-damage-over-time\|Wild Threat : Damage over time]] | complete | 0 |
+| ![](wiki/assets/buffs/30053.png) | 30053 | [[wiki/buffs/30053-charging-chariot-additional-100-movement-speed-for-5-seconds\|Charging Chariot : Additional 100 Movement Speed for 5 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30054.png) | 30054 | [[wiki/buffs/30054-fury-additional-30-armor-penetration-150-attack-speed-and-4\|Fury : Additional 30 Armor Penetration, 150 Attack Speed and 4 Health Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/30055.png) | 30055 | [[wiki/buffs/30055-crippling-blow-decreased-movement-speed\|Crippling Blow : Decreased Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30056.png) | 30056 | [[wiki/buffs/30056-meteor-stunned-for-2-seconds\|Meteor : Stunned for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30058.png) | 30058 | [[wiki/buffs/30058-crushing-blow-silenced-for-2-seconds\|Crushing Blow : Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30059.png) | 30059 | [[wiki/buffs/30059-head-butt-pushback\|Head Butt : Pushback]] | stub | 1 |
+| ![](wiki/assets/buffs/30060.png) | 30060 | [[wiki/buffs/30060-howl-of-victory-increased-hp-regeneration\|Howl of Victory: Increased HP Regeneration]] | complete | 0 |
+| ![](wiki/assets/buffs/30061.png) | 30061 | [[wiki/buffs/30061-unyielding-will-reduce-50-all-type-of-damage-during-5-second\|Unyielding Will : Reduce 50% all type of damage during 5 seconds and get 40 Attack.]] | complete | 0 |
+| ![](wiki/assets/buffs/30084.png) | 30084 | [[wiki/buffs/30084-double-time-decrease-movement-speed-by-30\|Double Time : Decrease Movement Speed by 30%]] | complete | 0 |
+| ![](wiki/assets/buffs/30085.png) | 30085 | [[wiki/buffs/30085-rapid-reload-gain-improved-attack-and-movement-speed\|Rapid Reload : Gain improved Attack and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30087.png) | 30087 | [[wiki/buffs/30087-entangling-shot-rooted-for-2-seconds\|Entangling Shot : Rooted for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30088.png) | 30088 | [[wiki/buffs/30088-suppressive-fire-reduced-attack-and-movement-speed-for-3-sec\|Suppressive Fire : Reduced Attack and Movement Speed for 3 seconds]] | complete | 0 |
 |  | 30089 | [[wiki/buffs/30089-suppressive-fire-channelling-time\|Suppressive Fire : Channelling time]] | stub | 1 |
-| ![](../assets/buffs/30098.png) | 30098 | [[wiki/buffs/30098-nimble-pursuit-your-next-basic-attack-deals-additional-damag\|Nimble Pursuit : Your next basic attack deals additional damage based on your targets current HP.]] | complete | 0 |
-| ![](../assets/buffs/30099.png) | 30099 | [[wiki/buffs/30099-firm-hand-you-deal-additional-damage-based-on-your-current-a\|Firm Hand : You deal additional damage based on your current Armor]] | complete | 0 |
-| ![](../assets/buffs/30111.png) | 30111 | [[wiki/buffs/30111-sharp-edges-bleeds-for-3-seconds\|Sharp Edges : Bleeds for 3 seconds]] | complete | 0 |
-| ![](../assets/buffs/30113.png) | 30113 | [[wiki/buffs/30113-disturbance-of-the-force-increased-attack-and-movement-speed\|Disturbance of the Force : Increased Attack and Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30114.png) | 30114 | [[wiki/buffs/30114-hail-of-arrows-reduced-movement-speed\|Hail of Arrows : Reduced Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30115.png) | 30115 | [[wiki/buffs/30115-wrath\|Wrath]] | complete | 0 |
-| ![](../assets/buffs/30117.png) | 30117 | [[wiki/buffs/30117-empowered-shot-increases-movement-speed\|Empowered Shot: Increases Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30118.png) | 30118 | [[wiki/buffs/30118-rapid-fire-creates-a-shield-that-absorbs-damage-for-10-secon\|Rapid Fire: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
-| ![](../assets/buffs/30119.png) | 30119 | [[wiki/buffs/30119-rapid-fire-increases-movement-speed\|Rapid Fire: Increases Movement Speed]] | complete | 0 |
-| ![](../assets/buffs/30140.png) | 30140 | [[wiki/buffs/30140-quick-reload-your-next-basic-attacks-deal-area-damage\|Quick Reload : Your next basic Attacks deal area damage]] | complete | 0 |
-| ![](../assets/buffs/30141.png) | 30141 | [[wiki/buffs/30141-wild-threat-in-panic\|Wild Threat : In Panic]] | stub | 1 |
-| ![](../assets/buffs/30142.png) | 30142 | [[wiki/buffs/30142-shadow-walk-your-next-attack-deals-bonus-damage\|Shadow Walk : Your next Attack deals bonus damage]] | complete | 0 |
-| ![](../assets/buffs/30212.png) | 30212 | [[wiki/buffs/30212-wave-of-mutilation-reduced-movement-speed-for-3-seconds\|Wave of Mutilation : Reduced Movement Speed for 3 seconds]] | complete | 0 |
-| ![](../assets/buffs/30213.png) | 30213 | [[wiki/buffs/30213-dark-matter-stunned-for-3-seconds\|Dark Matter : Stunned for 3 seconds]] | stub | 1 |
-| ![](../assets/buffs/30214.png) | 30214 | [[wiki/buffs/30214-petrification-stunned-for-2-seconds\|Petrification : Stunned for 2 seconds]] | complete | 0 |
-| ![](../assets/buffs/30215.png) | 30215 | [[wiki/buffs/30215-petrification-silenced-for-2-seconds\|Petrification: Silenced for 2 seconds]] | stub | 1 |
-| ![](../assets/buffs/30229.png) | 30229 | [[wiki/buffs/30229\|Buff 30229]] | stub | 1 |
-| ![](../assets/buffs/30336.png) | 30336 | [[wiki/buffs/30336-blessing-of-mother-nature-absorbs-damage\|blessing of Mother Nature : Absorbs damage]] | complete | 0 |
-| ![](../assets/buffs/30337.png) | 30337 | [[wiki/buffs/30337-blessing-of-mother-nature-explosion\|blessing of Mother Nature : Explosion]] | complete | 0 |
-| ![](../assets/buffs/30338.png) | 30338 | [[wiki/buffs/30338-blessing-of-mother-nature-you-gain-5-armor-and-magic-resista\|blessing of Mother Nature : You gain 5% Armor and Magic Resistance]] | complete | 0 |
-| ![](../assets/buffs/30339.png) | 30339 | [[wiki/buffs/30339\|Buff 30339]] | stub | 1 |
-| ![](../assets/buffs/30401.png) | 30401 | [[wiki/buffs/30401-justice-protection-creates-a-absorvs-damage-for-4-seconds\|Justice Protection : Creates a absorvs damage for 4 seconds]] | complete | 0 |
-| ![](../assets/buffs/30402.png) | 30402 | [[wiki/buffs/30402-holy-shield-creates-a-absorvs-damage-for-7-seconds\|Holy Shield : Creates a absorvs damage for 7 seconds]] | complete | 0 |
-| ![](../assets/buffs/30403.png) | 30403 | [[wiki/buffs/30403-destruction-of-light-decreased-move-speed\|Destruction of light : Decreased Move Speed]] | complete | 0 |
-| ![](../assets/buffs/30421.png) | 30421 | [[wiki/buffs/30421-backstab-increase-movement-speed\|Backstab : Increase movement speed]] | complete | 0 |
-| ![](../assets/buffs/30422.png) | 30422 | [[wiki/buffs/30422-backstab-your-basic-attacks-deal-additional-damage\|Backstab : Your basic Attacks deal additional damage]] | complete | 0 |
-| ![](../assets/buffs/30423.png) | 30423 | [[wiki/buffs/30423-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | complete | 0 |
-| ![](../assets/buffs/30424.png) | 30424 | [[wiki/buffs/30424-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | stub | 1 |
-| ![](../assets/buffs/30425.png) | 30425 | [[wiki/buffs/30425-the-thrill-of-power-critical-damage-increase\|The thrill of power : Critical Damage Increase]] | complete | 0 |
-| ![](../assets/buffs/30426.png) | 30426 | [[wiki/buffs/30426-backstab-reduced-movement-speed\|Backstab : Reduced movement speed]] | complete | 0 |
-| ![](../assets/buffs/30427.png) | 30427 | [[wiki/buffs/30427-immovable-bondage-rooted-in-place-for-2-seconds\|Immovable bondage : Rooted in place for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30098.png) | 30098 | [[wiki/buffs/30098-nimble-pursuit-your-next-basic-attack-deals-additional-damag\|Nimble Pursuit : Your next basic attack deals additional damage based on your targets current HP.]] | complete | 0 |
+| ![](wiki/assets/buffs/30099.png) | 30099 | [[wiki/buffs/30099-firm-hand-you-deal-additional-damage-based-on-your-current-a\|Firm Hand : You deal additional damage based on your current Armor]] | complete | 0 |
+| ![](wiki/assets/buffs/30111.png) | 30111 | [[wiki/buffs/30111-sharp-edges-bleeds-for-3-seconds\|Sharp Edges : Bleeds for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30113.png) | 30113 | [[wiki/buffs/30113-disturbance-of-the-force-increased-attack-and-movement-speed\|Disturbance of the Force : Increased Attack and Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30114.png) | 30114 | [[wiki/buffs/30114-hail-of-arrows-reduced-movement-speed\|Hail of Arrows : Reduced Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30115.png) | 30115 | [[wiki/buffs/30115-wrath\|Wrath]] | complete | 0 |
+| ![](wiki/assets/buffs/30117.png) | 30117 | [[wiki/buffs/30117-empowered-shot-increases-movement-speed\|Empowered Shot: Increases Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30118.png) | 30118 | [[wiki/buffs/30118-rapid-fire-creates-a-shield-that-absorbs-damage-for-10-secon\|Rapid Fire: Creates a shield that absorbs Damage for 10 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30119.png) | 30119 | [[wiki/buffs/30119-rapid-fire-increases-movement-speed\|Rapid Fire: Increases Movement Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30140.png) | 30140 | [[wiki/buffs/30140-quick-reload-your-next-basic-attacks-deal-area-damage\|Quick Reload : Your next basic Attacks deal area damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30141.png) | 30141 | [[wiki/buffs/30141-wild-threat-in-panic\|Wild Threat : In Panic]] | stub | 1 |
+| ![](wiki/assets/buffs/30142.png) | 30142 | [[wiki/buffs/30142-shadow-walk-your-next-attack-deals-bonus-damage\|Shadow Walk : Your next Attack deals bonus damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30212.png) | 30212 | [[wiki/buffs/30212-wave-of-mutilation-reduced-movement-speed-for-3-seconds\|Wave of Mutilation : Reduced Movement Speed for 3 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30213.png) | 30213 | [[wiki/buffs/30213-dark-matter-stunned-for-3-seconds\|Dark Matter : Stunned for 3 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30214.png) | 30214 | [[wiki/buffs/30214-petrification-stunned-for-2-seconds\|Petrification : Stunned for 2 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30215.png) | 30215 | [[wiki/buffs/30215-petrification-silenced-for-2-seconds\|Petrification: Silenced for 2 seconds]] | stub | 1 |
+| ![](wiki/assets/buffs/30229.png) | 30229 | [[wiki/buffs/30229\|Buff 30229]] | stub | 1 |
+| ![](wiki/assets/buffs/30336.png) | 30336 | [[wiki/buffs/30336-blessing-of-mother-nature-absorbs-damage\|blessing of Mother Nature : Absorbs damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30337.png) | 30337 | [[wiki/buffs/30337-blessing-of-mother-nature-explosion\|blessing of Mother Nature : Explosion]] | complete | 0 |
+| ![](wiki/assets/buffs/30338.png) | 30338 | [[wiki/buffs/30338-blessing-of-mother-nature-you-gain-5-armor-and-magic-resista\|blessing of Mother Nature : You gain 5% Armor and Magic Resistance]] | complete | 0 |
+| ![](wiki/assets/buffs/30339.png) | 30339 | [[wiki/buffs/30339\|Buff 30339]] | stub | 1 |
+| ![](wiki/assets/buffs/30401.png) | 30401 | [[wiki/buffs/30401-justice-protection-creates-a-absorvs-damage-for-4-seconds\|Justice Protection : Creates a absorvs damage for 4 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30402.png) | 30402 | [[wiki/buffs/30402-holy-shield-creates-a-absorvs-damage-for-7-seconds\|Holy Shield : Creates a absorvs damage for 7 seconds]] | complete | 0 |
+| ![](wiki/assets/buffs/30403.png) | 30403 | [[wiki/buffs/30403-destruction-of-light-decreased-move-speed\|Destruction of light : Decreased Move Speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30421.png) | 30421 | [[wiki/buffs/30421-backstab-increase-movement-speed\|Backstab : Increase movement speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30422.png) | 30422 | [[wiki/buffs/30422-backstab-your-basic-attacks-deal-additional-damage\|Backstab : Your basic Attacks deal additional damage]] | complete | 0 |
+| ![](wiki/assets/buffs/30423.png) | 30423 | [[wiki/buffs/30423-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | complete | 0 |
+| ![](wiki/assets/buffs/30424.png) | 30424 | [[wiki/buffs/30424-deceive-hiding-3-secs\|Deceive : Hiding (3 secs)]] | stub | 1 |
+| ![](wiki/assets/buffs/30425.png) | 30425 | [[wiki/buffs/30425-the-thrill-of-power-critical-damage-increase\|The thrill of power : Critical Damage Increase]] | complete | 0 |
+| ![](wiki/assets/buffs/30426.png) | 30426 | [[wiki/buffs/30426-backstab-reduced-movement-speed\|Backstab : Reduced movement speed]] | complete | 0 |
+| ![](wiki/assets/buffs/30427.png) | 30427 | [[wiki/buffs/30427-immovable-bondage-rooted-in-place-for-2-seconds\|Immovable bondage : Rooted in place for 2 seconds]] | stub | 1 |
 
 *Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*

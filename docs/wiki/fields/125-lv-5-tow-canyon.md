@@ -44,8 +44,8 @@ dungeon: 125
 <!-- generated-keys: title=0f8440 type=7a94db id=0ca927 sources=536ae8 name_key=9a5a32 kind=3e3f38 scene_type=77de68 max_users=ac3478 group=cb7a1d zones=48e5d9 segments=db31ca gates=442a94 connections=1f804d npcs=97d170 monsters=27d92e spawn_points=97d170 triggers=598977 dungeon=0ca927 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 141](../assets/zones/141.png) |
-|  | ![(Lv 5) Tow Canyon](../assets/dungeons/125.png) |
+|  | ![minimap of zone 141](wiki/assets/zones/141.png) |
+|  | ![(Lv 5) Tow Canyon](wiki/assets/dungeons/125.png) |
 | **Field id** | `125` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

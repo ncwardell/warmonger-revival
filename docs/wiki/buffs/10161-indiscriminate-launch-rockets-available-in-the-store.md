@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=cb1ba9 type=6143a1 id=18584a sources=a80142 name_key=18dd47 duration=6c749d is_buff=b6589f stack_type=356a19 group=18584a effects=c4647b icon=14a444 applied_by=2ad82b -->
 |  |  |
 |---|---|
-|  | ![Indiscriminate Launch: Rockets available in the Store](../assets/buffs/10161.png) |
+|  | ![Indiscriminate Launch: Rockets available in the Store](wiki/assets/buffs/10161.png) |
 | **Buff id** | `10161` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

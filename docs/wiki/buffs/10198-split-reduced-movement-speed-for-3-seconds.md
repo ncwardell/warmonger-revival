@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=ffc4df type=6143a1 id=a0df7f sources=c108af name_key=65693f duration=3d2da5 is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=0392b4 applied_by=7df8a1 -->
 |  |  |
 |---|---|
-|  | ![Split : Reduced Movement Speed for 3 seconds](../assets/buffs/10198.png) |
+|  | ![Split : Reduced Movement Speed for 3 seconds](wiki/assets/buffs/10198.png) |
 | **Buff id** | `10198` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

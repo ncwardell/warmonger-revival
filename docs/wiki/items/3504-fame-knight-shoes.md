@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=40edf4 type=d36ca9 id=821289 sources=bdbdcb name_key=10fe0c kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=dee974 set=902ba3 reinforce=92cfce icon=5fb5bd obtained_from=a2cc6b -->
 |  |  |
 |---|---|
-|  | ![Fame knight Shoes](../assets/items/3504.png) |
+|  | ![Fame knight Shoes](wiki/assets/items/3504.png) |
 | **Item id** | `3504` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

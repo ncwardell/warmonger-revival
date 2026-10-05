@@ -31,7 +31,7 @@ complete_talk: 875
 <!-- generated-keys: title=d94cd6 type=eb5b2b id=40bc26 sources=2b34f7 name_key=31cc72 kind=356a19 kind_name=0bac50 giver=4518d0 turn_in=4518d0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=e62d7f requires_bit=be461a prev=49296a next=97d170 stages=260252 objectives=7c8f00 rewards=a50786 offer_talk=7d9f2b complete_talk=c08d99 -->
 |  |  |
 |---|---|
-|  | ![Mushrooms in the Komodo area](../assets/npcs/204.png) |
+|  | ![Mushrooms in the Komodo area](wiki/assets/npcs/204.png) |
 | **Quest id** | `786` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/204-wren\|Wren]] |

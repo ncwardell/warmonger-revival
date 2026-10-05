@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=17fece type=6143a1 id=d08b10 sources=1a12c0 name_key=5203cc duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=3d429a icon=f877b6 applied_by=fbe306 -->
 |  |  |
 |---|---|
-|  | ![Stone Guard debuff : Reduces defensive stats.](../assets/buffs/2013.png) |
+|  | ![Stone Guard debuff : Reduces defensive stats.](wiki/assets/buffs/2013.png) |
 | **Buff id** | `2013` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

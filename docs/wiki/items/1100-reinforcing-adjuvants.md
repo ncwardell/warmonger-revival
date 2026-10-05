@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=3dfe36 type=d36ca9 id=b12452 sources=4ae86d name_key=fce75e kind=91032a kind_name=3f9439 classes=92d079 bind=883bf8 price=2eac5a cost_pair=81c599 stats=97d170 icon=ce14b3 obtained_from=360972 -->
 |  |  |
 |---|---|
-|  | ![Reinforcing adjuvants](../assets/items/1100.png) |
+|  | ![Reinforcing adjuvants](wiki/assets/items/1100.png) |
 | **Item id** | `1100` |
 | **Kind** | Reinforcement adjuvants (20) |
 | **Classes** | all |

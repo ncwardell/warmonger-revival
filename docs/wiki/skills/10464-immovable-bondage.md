@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=bd2e90 type=86a754 id=d6256a sources=caced2 name_key=49a0a4 desc_key=162468 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=deac18 cooldown=a93f07 effect_kind=356a19 effects=abf8f7 damage_or_effect=ba8c71 tooltip_formula=de4d81 visual=e3e097 icon=b6460f used_by=885c99 -->
 |  |  |
 |---|---|
-|  | ![Immovable bondage](../assets/skills/10464.png) |
+|  | ![Immovable bondage](wiki/assets/skills/10464.png) |
 | **Skill id** | `10464` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

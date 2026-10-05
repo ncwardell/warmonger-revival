@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z49_00.dds"
 <!-- generated-keys: title=3bff48 type=c899cd id=2e01e1 sources=db9cb7 name_kr=d8e863 terrain=0d8308 bounds=0764d3 size=114466 segments=e76530 fields=624df8 minimap=214e4b -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 24 (Silent Garden)](../assets/zones/49.png) |
+|  | ![minimap of Field 24 (Silent Garden)](wiki/assets/zones/49.png) |
 | **Zone id** | `49` |
 | **ZoneDB name** | 필드_24 (English gloss: Field 24 (Silent Garden)) |
 | **Terrain name** | `24` |

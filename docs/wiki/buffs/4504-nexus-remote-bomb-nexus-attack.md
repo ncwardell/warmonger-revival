@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=fb3998 type=6143a1 id=1fa14e sources=5d1755 name_key=ac9ed5 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=51436c applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Nexus Remote Bomb : Nexus attack](../assets/buffs/4504.png) |
+|  | ![Nexus Remote Bomb : Nexus attack](wiki/assets/buffs/4504.png) |
 | **Buff id** | `4504` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

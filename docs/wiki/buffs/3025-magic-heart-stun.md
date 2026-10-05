@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=cb3506 type=6143a1 id=eb24ed sources=7ba7a0 name_key=032715 duration=e0cd66 is_buff=b6589f stack_type=356a19 group=b6589f effects=70cd03 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Magic Heart : Stun](../assets/buffs/3025.png) |
+|  | ![Magic Heart : Stun](wiki/assets/buffs/3025.png) |
 | **Buff id** | `3025` |
 | **Duration** | 3 min (900 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

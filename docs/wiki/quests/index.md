@@ -12,7 +12,7 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 
 | | id | name | status | missing |
 |---|---|---|---|---|
-| ![](../assets/quests/1.png) | 1 | [[wiki/quests/1-on-to-a-promising-start\|On to a promising start]] | complete | 0 |
+| ![](wiki/assets/quests/1.png) | 1 | [[wiki/quests/1-on-to-a-promising-start\|On to a promising start]] | complete | 0 |
 |  | 2 | [[wiki/quests/2-the-slime-is-mine\|The Slime is mine]] | complete | 0 |
 |  | 3 | [[wiki/quests/3-the-task-at-hand\|The task at hand]] | complete | 0 |
 |  | 4 | [[wiki/quests/4-go-to-shaia\|Go to Shaia]] | complete | 0 |
@@ -93,27 +93,27 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 697 | [[wiki/quests/697-create-rune\|Create Rune]] | complete | 0 |
 |  | 698 | [[wiki/quests/698-rune-equipment\|Rune Equipment.]] | complete | 0 |
 |  | 699 | [[wiki/quests/699-rune-reinforcement\|Rune Reinforcement]] | complete | 0 |
-| ![](../assets/quests/700.png) | 700 | [[wiki/quests/700-basic-combat-lesson-1\|Basic Combat Lesson 1]] | complete | 0 |
-| ![](../assets/quests/701.png) | 701 | [[wiki/quests/701-basic-combat-lesson-2\|Basic Combat Lesson 2]] | complete | 0 |
+| ![](wiki/assets/quests/700.png) | 700 | [[wiki/quests/700-basic-combat-lesson-1\|Basic Combat Lesson 1]] | complete | 0 |
+| ![](wiki/assets/quests/701.png) | 701 | [[wiki/quests/701-basic-combat-lesson-2\|Basic Combat Lesson 2]] | complete | 0 |
 |  | 702 | [[wiki/quests/702-how-to-use-tp-skill\|How to use TP Skill]] | stub | 1 |
 |  | 703 | [[wiki/quests/703-equip-innocence-s\|Equip Innocence's]] | complete | 0 |
-| ![](../assets/quests/704.png) | 704 | [[wiki/quests/704-equip-gear\|Equip Gear]] | complete | 0 |
+| ![](wiki/assets/quests/704.png) | 704 | [[wiki/quests/704-equip-gear\|Equip Gear]] | complete | 0 |
 |  | 705 | [[wiki/quests/705-legion-how-to-use-add-on\|Legion - How to use add-on]] | stub | 1 |
-| ![](../assets/quests/706.png) | 706 | [[wiki/quests/706-expand-your-inventory\|Expand your Inventory]] | complete | 0 |
+| ![](wiki/assets/quests/706.png) | 706 | [[wiki/quests/706-expand-your-inventory\|Expand your Inventory]] | complete | 0 |
 |  | 707 | [[wiki/quests/707-how-to-use-innocence-s\|How to use Innocence's]] | stub | 1 |
-| ![](../assets/quests/708.png) | 708 | [[wiki/quests/708-a-new-weapon\|A new weapon]] | complete | 0 |
+| ![](wiki/assets/quests/708.png) | 708 | [[wiki/quests/708-a-new-weapon\|A new weapon]] | complete | 0 |
 |  | 709 | [[wiki/quests/709-two-sets-of-weapons\|Two sets of weapons]] | complete | 0 |
-| ![](../assets/quests/710.png) | 710 | [[wiki/quests/710-equip-crystal-innocence\|Equip Crystal : Innocence]] | complete | 0 |
-| ![](../assets/quests/711.png) | 711 | [[wiki/quests/711-how-to-use-crystal-innocence\|How to use Crystal : Innocence]] | stub | 1 |
-| ![](../assets/quests/712.png) | 712 | [[wiki/quests/712-take-a-look-at-the-world-map\|Take a look at the World Map.]] | complete | 0 |
-| ![](../assets/quests/713.png) | 713 | [[wiki/quests/713-weapon-level-reinforcement\|Weapon Level (+) reinforcement]] | partial | 1 |
+| ![](wiki/assets/quests/710.png) | 710 | [[wiki/quests/710-equip-crystal-innocence\|Equip Crystal : Innocence]] | complete | 0 |
+| ![](wiki/assets/quests/711.png) | 711 | [[wiki/quests/711-how-to-use-crystal-innocence\|How to use Crystal : Innocence]] | stub | 1 |
+| ![](wiki/assets/quests/712.png) | 712 | [[wiki/quests/712-take-a-look-at-the-world-map\|Take a look at the World Map.]] | complete | 0 |
+| ![](wiki/assets/quests/713.png) | 713 | [[wiki/quests/713-weapon-level-reinforcement\|Weapon Level (+) reinforcement]] | partial | 1 |
 |  | 714 | [[wiki/quests/714-buy-time-energy\|Buy time energy]] | complete | 0 |
-| ![](../assets/quests/718.png) | 718 | [[wiki/quests/718-open-item-reinforcement-window\|Open item reinforcement window]] | complete | 0 |
-| ![](../assets/quests/719.png) | 719 | [[wiki/quests/719-go-to-the-fortress\|Go to the Fortress]] | complete | 0 |
-| ![](../assets/quests/720.png) | 720 | [[wiki/quests/720-gear-level-reinforcement\|Gear Level (+) reinforcement]] | partial | 1 |
+| ![](wiki/assets/quests/718.png) | 718 | [[wiki/quests/718-open-item-reinforcement-window\|Open item reinforcement window]] | complete | 0 |
+| ![](wiki/assets/quests/719.png) | 719 | [[wiki/quests/719-go-to-the-fortress\|Go to the Fortress]] | complete | 0 |
+| ![](wiki/assets/quests/720.png) | 720 | [[wiki/quests/720-gear-level-reinforcement\|Gear Level (+) reinforcement]] | partial | 1 |
 |  | 721 | [[wiki/quests/721-battle-preparations\|Battle preparations]] | complete | 0 |
 |  | 722 | [[wiki/quests/722-juicy-potions\|Juicy Potions]] | complete | 0 |
-| ![](../assets/quests/723.png) | 723 | [[wiki/quests/723-how-to-obtain-sp\|How to obtain SP]] | complete | 0 |
+| ![](wiki/assets/quests/723.png) | 723 | [[wiki/quests/723-how-to-obtain-sp\|How to obtain SP]] | complete | 0 |
 |  | 724 | [[wiki/quests/724-find-lost-item\|Find lost item]] | complete | 0 |
 |  | 725 | [[wiki/quests/725-collecting-material\|Collecting material]] | complete | 0 |
 |  | 726 | [[wiki/quests/726-gathering-plant-and-ore\|Gathering plant and ore]] | complete | 0 |
@@ -177,7 +177,7 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 784 | [[wiki/quests/784-swamps-of-the-snake-warrior\|Swamps of the Snake Warrior]] | complete | 0 |
 |  | 785 | [[wiki/quests/785-the-strange-flowers-in-the-lake\|The strange flowers in the lake]] | complete | 0 |
 |  | 786 | [[wiki/quests/786-mushrooms-in-the-komodo-area\|Mushrooms in the Komodo area]] | complete | 0 |
-| ![](../assets/quests/787.png) | 787 | [[wiki/quests/787-open-the-questboard\|Open The QuestBoard]] | complete | 0 |
+| ![](wiki/assets/quests/787.png) | 787 | [[wiki/quests/787-open-the-questboard\|Open The QuestBoard]] | complete | 0 |
 |  | 800 | [[wiki/quests/800-rank-d-crafting\|Rank(D) Crafting]] | partial | 3 |
 |  | 801 | [[wiki/quests/801-rank-d-crafting\|Rank(D) Crafting]] | partial | 2 |
 |  | 802 | [[wiki/quests/802-rank-d-crafting\|Rank(D) Crafting]] | partial | 2 |
@@ -271,19 +271,19 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 1351 | [[wiki/quests/1351-veteran-rank-monster-invasion-area\|(Veteran Rank) Monster Invasion Area]] | partial | 2 |
 |  | 1352 | [[wiki/quests/1352-veteran-rank-monster-area\|(Veteran Rank) Monster area]] | partial | 2 |
 |  | 1353 | [[wiki/quests/1353-veteran-rank-enemy-territory\|(Veteran Rank) Enemy territory]] | partial | 2 |
-| ![](../assets/quests/1501.png) | 1501 | [[wiki/quests/1501-basic-function-move-character\|Basic function - Move character]] | partial | 1 |
-| ![](../assets/quests/1502.png) | 1502 | [[wiki/quests/1502-basic-function-basic-attack\|Basic function - Basic attack]] | partial | 1 |
-| ![](../assets/quests/1503.png) | 1503 | [[wiki/quests/1503-basic-function-skill-use\|Basic function - Skill Use]] | partial | 1 |
+| ![](wiki/assets/quests/1501.png) | 1501 | [[wiki/quests/1501-basic-function-move-character\|Basic function - Move character]] | partial | 1 |
+| ![](wiki/assets/quests/1502.png) | 1502 | [[wiki/quests/1502-basic-function-basic-attack\|Basic function - Basic attack]] | partial | 1 |
+| ![](wiki/assets/quests/1503.png) | 1503 | [[wiki/quests/1503-basic-function-skill-use\|Basic function - Skill Use]] | partial | 1 |
 |  | 1504 | [[wiki/quests/1504-basic-function-quickslot-use\|Basic function - QuickSlot Use]] | partial | 1 |
-| ![](../assets/quests/1505.png) | 1505 | [[wiki/quests/1505-basic-function-go-to-the-fortress\|Basic function - Go to the Fortress]] | stub | 1 |
-| ![](../assets/quests/1506.png) | 1506 | [[wiki/quests/1506-basic-function-world-map\|Basic function - World Map]] | stub | 1 |
-| ![](../assets/quests/1507.png) | 1507 | [[wiki/quests/1507-item-gear-wear\|Item - Gear Wear]] | partial | 1 |
-| ![](../assets/quests/1508.png) | 1508 | [[wiki/quests/1508-item-inventory-expansion\|Item - Inventory expansion]] | stub | 2 |
-| ![](../assets/quests/1509.png) | 1509 | [[wiki/quests/1509-item-weapon-wear\|Item - Weapon Wear]] | stub | 1 |
+| ![](wiki/assets/quests/1505.png) | 1505 | [[wiki/quests/1505-basic-function-go-to-the-fortress\|Basic function - Go to the Fortress]] | stub | 1 |
+| ![](wiki/assets/quests/1506.png) | 1506 | [[wiki/quests/1506-basic-function-world-map\|Basic function - World Map]] | stub | 1 |
+| ![](wiki/assets/quests/1507.png) | 1507 | [[wiki/quests/1507-item-gear-wear\|Item - Gear Wear]] | partial | 1 |
+| ![](wiki/assets/quests/1508.png) | 1508 | [[wiki/quests/1508-item-inventory-expansion\|Item - Inventory expansion]] | stub | 2 |
+| ![](wiki/assets/quests/1509.png) | 1509 | [[wiki/quests/1509-item-weapon-wear\|Item - Weapon Wear]] | stub | 1 |
 |  | 1510 | [[wiki/quests/1510-item-change-weapon\|Item - Change weapon]] | stub | 1 |
-| ![](../assets/quests/1511.png) | 1511 | [[wiki/quests/1511-item-open-item-reinforce-window\|Item - Open item reinforce window]] | stub | 1 |
-| ![](../assets/quests/1512.png) | 1512 | [[wiki/quests/1512-item-level-reinforcement\|Item - Level (+) reinforcement]] | partial | 2 |
-| ![](../assets/quests/1513.png) | 1513 | [[wiki/quests/1513-item-decompose-way-outomatic-condition\|Item - Decompose Way&Outomatic condition]] | stub | 1 |
+| ![](wiki/assets/quests/1511.png) | 1511 | [[wiki/quests/1511-item-open-item-reinforce-window\|Item - Open item reinforce window]] | stub | 1 |
+| ![](wiki/assets/quests/1512.png) | 1512 | [[wiki/quests/1512-item-level-reinforcement\|Item - Level (+) reinforcement]] | partial | 2 |
+| ![](wiki/assets/quests/1513.png) | 1513 | [[wiki/quests/1513-item-decompose-way-outomatic-condition\|Item - Decompose Way&Outomatic condition]] | stub | 1 |
 |  | 1514 | [[wiki/quests/1514-item-tier-reinforce\|Item - Tier reinforce]] | stub | 2 |
 |  | 1515 | [[wiki/quests/1515-item-create-rune\|Item - Create Rune]] | stub | 2 |
 |  | 1516 | [[wiki/quests/1516-item-equip-or-release-rune\|Item - Equip or release Rune]] | stub | 1 |
@@ -301,7 +301,7 @@ Every quest in the client's `Quest.cdb`: the story chain, side quests, lessons (
 |  | 1528 | [[wiki/quests/1528-legion-buy-or-sell-ether\|legion - Buy or sell ether]] | stub | 2 |
 |  | 1529 | [[wiki/quests/1529-legion-core-equip\|Legion Core Equip]] | complete | 0 |
 |  | 1530 | [[wiki/quests/1530-legion-create-core\|legion - Create Core]] | stub | 1 |
-| ![](../assets/quests/1531.png) | 1531 | [[wiki/quests/1531-item-how-to-use-crystal-innocence\|Item - How to use Crystal : Innocence]] | stub | 1 |
-| ![](../assets/quests/1532.png) | 1532 | [[wiki/quests/1532-item-how-to-use-crystal-innocence\|Item - How to use Crystal : Innocence]] | stub | 2 |
+| ![](wiki/assets/quests/1531.png) | 1531 | [[wiki/quests/1531-item-how-to-use-crystal-innocence\|Item - How to use Crystal : Innocence]] | stub | 1 |
+| ![](wiki/assets/quests/1532.png) | 1532 | [[wiki/quests/1532-item-how-to-use-crystal-innocence\|Item - How to use Crystal : Innocence]] | stub | 2 |
 
 *Game content © GAMESinFLAMES / Joyimpact; reproduced for preservation and reference.*

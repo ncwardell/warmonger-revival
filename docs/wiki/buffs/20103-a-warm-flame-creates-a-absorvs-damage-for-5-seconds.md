@@ -24,7 +24,7 @@ applied_by:
 <!-- generated-keys: title=bb98f1 type=6143a1 id=55fcbe sources=c95d8c name_key=bbaeec duration=870e64 is_buff=b6589f stack_type=356a19 group=55fcbe effects=8ef2dd icon=660fb1 applied_by=07c96d -->
 |  |  |
 |---|---|
-|  | ![A warm flame : Creates a absorvs damage for 5 seconds](../assets/buffs/20103.png) |
+|  | ![A warm flame : Creates a absorvs damage for 5 seconds](wiki/assets/buffs/20103.png) |
 | **Buff id** | `20103` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

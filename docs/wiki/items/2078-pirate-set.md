@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=33859c type=d36ca9 id=bcc3fe sources=5ed9f4 name_key=81a75d kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=8e0891 options=0d0d96 icon=53dd24 obtained_from=065ed8 -->
 |  |  |
 |---|---|
-|  | ![Pirate Set](../assets/items/2078.png) |
+|  | ![Pirate Set](wiki/assets/items/2078.png) |
 | **Item id** | `2078` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

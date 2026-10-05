@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=dadb68 type=6143a1 id=77de68 sources=bace1b name_key=6638cd duration=78474f is_buff=356a19 stack_type=356a19 group=b6589f effects=0984d9 icon=0392b4 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Increases Drop Rate by 200%.](../assets/buffs/3.png) |
+|  | ![Increases Drop Rate by 200%.](wiki/assets/buffs/3.png) |
 | **Buff id** | `3` |
 | **Duration** | 12 min 40 s (3,800 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 1 (is_buff?, guessed column) |

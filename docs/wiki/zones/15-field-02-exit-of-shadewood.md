@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z15_00.dds"
 <!-- generated-keys: title=dbeb12 type=c899cd id=f1abd6 sources=7ff1de name_kr=866e8a terrain=2d7bee bounds=7291d2 size=114466 segments=a92acc fields=249983 minimap=3d3e10 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 02 (Exit of Shadewood)](../assets/zones/15.png) |
+|  | ![minimap of Field 02 (Exit of Shadewood)](wiki/assets/zones/15.png) |
 | **Zone id** | `15` |
 | **ZoneDB name** | 필드_02 (English gloss: Field 02 (Exit of Shadewood)) |
 | **Terrain name** | `02` |

@@ -30,7 +30,7 @@ used_by: []
 <!-- generated-keys: title=e607a4 type=86a754 id=89d60d sources=a54e36 name_key=0fa0c8 desc_key=d7bd4e kind=356a19 kind_name=9bc378 target=069ef3 range=fe5dbb cost=da6e22 cooldown=4aa5a5 movement=5f1488 effect_kind=356a19 effects=14fb0f damage_or_effect=f8f6f9 tooltip_formula=74c011 visual=154a31 icon=64fa61 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Overcharge](../assets/skills/5181.png) |
+|  | ![Overcharge](wiki/assets/skills/5181.png) |
 | **Skill id** | `5181` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

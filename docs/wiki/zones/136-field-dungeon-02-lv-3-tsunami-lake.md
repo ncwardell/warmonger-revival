@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z136_00.dds"
 <!-- generated-keys: title=94d578 type=c899cd id=9e071a sources=a56842 name_kr=3dc286 terrain=791ea8 bounds=93101d size=6f2826 segments=e56b57 fields=d4ee27 minimap=83b0a1 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field dungeon 02 ((Lv 3) Tsunami Lake)](../assets/zones/136.png) |
+|  | ![minimap of Field dungeon 02 ((Lv 3) Tsunami Lake)](wiki/assets/zones/136.png) |
 | **Zone id** | `136` |
 | **ZoneDB name** | 필드던전_02 (English gloss: Field dungeon 02 ([Lv 3] Tsunami Lake)) |
 | **Terrain name** | `FieldDungeon_02` |

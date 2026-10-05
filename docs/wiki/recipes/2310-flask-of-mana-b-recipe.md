@@ -21,22 +21,22 @@ npc: [337]
 <!-- generated-keys: title=101d17 type=61613a id=14e890 sources=5667d7 result=1d94eb materials=183ad6 gold=15aa0c success_rate=310b86 category=fe5dbb filter_mask=6c13bc level=4d134b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/741.png) |
+|  | ![](wiki/assets/items/741.png) |
 | **Recipe id** | `2310` (`Item_Make`) |
 | **Makes** | [[wiki/items/741-flask-of-mana-b\|Flask of Mana (B)]] × 10 |
 | **Gold** | 600 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 24 |
 | **Category / filter** | 8 / `0x200010` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/821.png) | [[wiki/items/821-peppermint-powder\|Peppermint powder]] | 20 |  |
-| ![](../assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
-| ![](../assets/items/844.png) | [[wiki/items/844-dried-flower\|Dried flower]] | 1 |  |
+| ![](wiki/assets/items/821.png) | [[wiki/items/821-peppermint-powder\|Peppermint powder]] | 20 |  |
+| ![](wiki/assets/items/835.png) | [[wiki/items/835-empty-flask-b\|Empty Flask (B)]] | 1 |  |
+| ![](wiki/assets/items/844.png) | [[wiki/items/844-dried-flower\|Dried flower]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/528-flask-of-mana-b-recipe|recipe 528]]
 

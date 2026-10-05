@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z69_00.dds"
 <!-- generated-keys: title=436bbe type=c899cd id=a72b20 sources=c1188c name_kr=871889 terrain=c99848 bounds=d92414 size=114466 segments=c6981f fields=c6af6d minimap=68063d -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 51 (Sunup Campsite)](../assets/zones/69.png) |
+|  | ![minimap of Field 51 (Sunup Campsite)](wiki/assets/zones/69.png) |
 | **Zone id** | `69` |
 | **ZoneDB name** | 필드_51 (English gloss: Field 51 (Sunup Campsite)) |
 | **Terrain name** | `51` |

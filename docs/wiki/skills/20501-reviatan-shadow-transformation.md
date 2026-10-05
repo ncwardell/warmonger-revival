@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=e3ae77 type=86a754 id=10387f sources=db3142 name_key=3e6d58 desc_key=d42120 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=4aa5a5 effect_kind=da4b92 effects=652f85 damage_or_effect=6b1179 visual=e076fa icon=e5f8ba used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Reviatan Shadow Transformation](../assets/skills/20501.png) |
+|  | ![Reviatan Shadow Transformation](wiki/assets/skills/20501.png) |
 | **Skill id** | `20501` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

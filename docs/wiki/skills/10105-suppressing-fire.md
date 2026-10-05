@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=a5ade2 type=86a754 id=d496a3 sources=d0db46 name_key=ffe7cc desc_key=8cfde9 kind=356a19 kind_name=9bc378 target=cacd0a range=7b5200 area=6d01a6 cost=d55bc7 cooldown=cf1f8c delivery=15a656 effect_kind=da4b92 effects=bf1d25 damage_or_effect=bf21a9 tooltip_formula=5b3301 visual=5b7d26 icon=52a60d used_by=350451 -->
 |  |  |
 |---|---|
-|  | ![Suppressing Fire](../assets/skills/10105.png) |
+|  | ![Suppressing Fire](wiki/assets/skills/10105.png) |
 | **Skill id** | `10105` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

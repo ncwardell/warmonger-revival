@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=2375b1 type=6143a1 id=6f4c97 sources=e71df2 name_key=88fdb2 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=732c70 icon=494d30 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blind : Reduced Movement Speed.](../assets/buffs/10280.png) |
+|  | ![Blind : Reduced Movement Speed.](wiki/assets/buffs/10280.png) |
 | **Buff id** | `10280` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

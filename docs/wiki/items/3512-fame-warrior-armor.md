@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=693df1 type=d36ca9 id=952e87 sources=c36829 name_key=578b64 kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=74ac90 set=fe5dbb reinforce=92cfce icon=24adcb obtained_from=8373b7 -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Armor](../assets/items/3512.png) |
+|  | ![Fame warrior Armor](wiki/assets/items/3512.png) |
 | **Item id** | `3512` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

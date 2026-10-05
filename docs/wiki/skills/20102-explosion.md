@@ -35,7 +35,7 @@ used_by:
 <!-- generated-keys: title=472ab8 type=86a754 id=d8f4d2 sources=9217d2 name_key=a47854 desc_key=4a0256 kind=356a19 kind_name=9bc378 target=e84f24 range=fe5dbb area=644dff cost=7e5cd4 cooldown=367d78 delivery=6a22dc effect_kind=da4b92 effects=df90f3 damage_or_effect=25c130 tooltip_formula=df5a8b requirements=3a72c4 visual=5715aa icon=8f7203 used_by=fa168e -->
 |  |  |
 |---|---|
-|  | ![Explosion](../assets/skills/20102.png) |
+|  | ![Explosion](wiki/assets/skills/20102.png) |
 | **Skill id** | `20102` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

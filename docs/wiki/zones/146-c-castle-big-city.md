@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z146_00.dds"
 <!-- generated-keys: title=2f0335 type=c899cd id=3fcfb9 sources=b96125 name_kr=1fe403 terrain=763455 bounds=b5d749 size=a1cfbb segments=237e6c fields=c595b3 minimap=06f45a -->
 |  |  |
 |---|---|
-|  | ![minimap of C Castle (big city)](../assets/zones/146.png) |
+|  | ![minimap of C Castle (big city)](wiki/assets/zones/146.png) |
 | **Zone id** | `146` |
 | **ZoneDB name** | C대도시 (English gloss: C Castle (big city)) |
 | **Terrain name** | `C_big city` |

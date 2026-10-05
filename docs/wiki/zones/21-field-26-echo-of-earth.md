@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z21_00.dds"
 <!-- generated-keys: title=4fd7e7 type=c899cd id=472b07 sources=0b3282 name_kr=ac7634 terrain=bc8f49 bounds=73aa53 size=114466 segments=49e07e fields=f36b47 minimap=8a57f0 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 26 (Echo of Earth)](../assets/zones/21.png) |
+|  | ![minimap of Field 26 (Echo of Earth)](wiki/assets/zones/21.png) |
 | **Zone id** | `21` |
 | **ZoneDB name** | 필드_26 (English gloss: Field 26 (Echo of Earth)) |
 | **Terrain name** | `26` |

@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=d714bc type=d36ca9 id=ee16ee sources=b41b6b name_key=db6919 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=c28f67 reinforce=da4b92 icon=2fcf58 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Spirit Gloves](../assets/items/488.png) |
+|  | ![Spirit Gloves](wiki/assets/items/488.png) |
 | **Item id** | `488` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |
@@ -76,7 +76,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 20, chance 5 (hand-entered)
+- how craft_superior, recipe 2020, chance 5 (hand-entered)
 
 ### Mentioned in
 

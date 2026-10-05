@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=2b3f75 type=86a754 id=68077b sources=ea0a17 name_key=90c0db desc_key=7edfed kind=356a19 kind_name=9bc378 target=644925 range=c1dfd9 cost=e01d1d cooldown=0fb417 effect_kind=b6589f effects=61e228 damage_or_effect=e58f3b tooltip_formula=015e59 visual=8d6f91 icon=1aeac2 used_by=6d692e -->
 |  |  |
 |---|---|
-|  | ![Mother Nature's Blessing](../assets/skills/5277.png) |
+|  | ![Mother Nature's Blessing](wiki/assets/skills/5277.png) |
 | **Skill id** | `5277` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 1 |

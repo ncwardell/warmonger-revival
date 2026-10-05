@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=4209a6 type=86a754 id=b66ddc sources=d6bf33 name_key=8e284f desc_key=6dbedb kind=356a19 kind_name=9bc378 target=644925 range=fe5dbb cost=f9e152 cooldown=5d3cc6 effect_kind=da4b92 effects=9a7fe0 damage_or_effect=9cdfda tooltip_formula=3c6081 visual=e62d7f icon=1fd7a3 used_by=71768e -->
 |  |  |
 |---|---|
-|  | ![Blessed Wind](../assets/skills/10010.png) |
+|  | ![Blessed Wind](wiki/assets/skills/10010.png) |
 | **Skill id** | `10010` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 1 |

@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=2cbe2e type=86a754 id=3bd335 sources=0429d3 name_key=ec4d52 desc_key=cf254a kind=356a19 kind_name=9bc378 target=644925 range=fe5dbb cost=e4e7cf cooldown=e3989d effect_kind=632667 effects=15298d damage_or_effect=d394c6 tooltip_formula=388a94 visual=56e43a icon=aaa141 used_by=cd3d50 -->
 |  |  |
 |---|---|
-|  | ![Blessing of Light](../assets/skills/10279.png) |
+|  | ![Blessing of Light](wiki/assets/skills/10279.png) |
 | **Skill id** | `10279` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 1 |

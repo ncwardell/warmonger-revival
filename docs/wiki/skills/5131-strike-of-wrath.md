@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=37826a type=86a754 id=5155d2 sources=f4c197 name_key=4685c3 desc_key=e242a0 kind=356a19 kind_name=9bc378 target=d1cc1b range=ac3478 area=6d01a6 cost=911ade cooldown=628d31 effect_kind=356a19 effects=3c1b28 damage_or_effect=c3e9f6 tooltip_formula=4709a0 visual=293508 icon=b4ae95 used_by=0a5e22 -->
 |  |  |
 |---|---|
-|  | ![Strike of Wrath](../assets/skills/5131.png) |
+|  | ![Strike of Wrath](wiki/assets/skills/5131.png) |
 | **Skill id** | `5131` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

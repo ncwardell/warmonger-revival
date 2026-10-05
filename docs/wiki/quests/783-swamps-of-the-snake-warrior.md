@@ -29,7 +29,7 @@ offer_talk: 877
 <!-- generated-keys: title=cc1830 type=eb5b2b id=43095d sources=53ee05 name_key=16edee kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=847ad4 offer_maps=15f2a7 bit=135224 requires_bit=be461a automatic=5ffe53 prev=49296a next=e29c34 stages=17e0b1 objectives=68a119 rewards=a843e5 offer_talk=d24b13 -->
 |  |  |
 |---|---|
-|  | ![Swamps of the Snake Warrior](../assets/npcs/200.png) |
+|  | ![Swamps of the Snake Warrior](wiki/assets/npcs/200.png) |
 | **Quest id** | `783` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

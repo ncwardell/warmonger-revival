@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=7807d5 type=6143a1 id=36ba38 sources=1cad76 name_key=68fff5 duration=5d0a7b is_buff=b6589f stack_type=356a19 group=b6589f effects=c3a13d icon=01c963 applied_by=f8d652 -->
 |  |  |
 |---|---|
-|  | ![Soul Infestation : Your basic Attacks deal additional damage](../assets/buffs/30034.png) |
+|  | ![Soul Infestation : Your basic Attacks deal additional damage](wiki/assets/buffs/30034.png) |
 | **Buff id** | `30034` |
 | **Duration** | 6 s (30 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

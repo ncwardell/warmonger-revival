@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=600a6e type=6143a1 id=b795e2 sources=4ff9f6 name_key=534ed2 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=626419 icon=f0762b applied_by=cd39b4 -->
 |  |  |
 |---|---|
-|  | ![Sound of Grudge : Gain 30 Armor Penetration, Movement Speed and 4 Health Regeneration.](../assets/buffs/10153.png) |
+|  | ![Sound of Grudge : Gain 30 Armor Penetration, Movement Speed and 4 Health Regeneration.](wiki/assets/buffs/10153.png) |
 | **Buff id** | `10153` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

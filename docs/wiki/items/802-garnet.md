@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=fe092e type=d36ca9 id=acb033 sources=2f2e1a name_key=26a9ca kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=2a4eed obtained_from=9b5455 -->
 |  |  |
 |---|---|
-|  | ![Garnet](../assets/items/802.png) |
+|  | ![Garnet](wiki/assets/items/802.png) |
 | **Item id** | `802` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -44,6 +44,8 @@ obtained_from:
 - Sold in [[wiki/shops/208-shop-208-no-npc|Shop 208 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/224-shop-224-no-npc|Shop 224 (no NPC)]] (no NPC found)
 - Sold in [[wiki/shops/225-shop-225-no-npc|Shop 225 (no NPC)]] (no NPC found)
+- how gather, field 121 (hand-entered)
+- how dungeon_drop, field 115 (hand-entered)
 
 ### Used for
 

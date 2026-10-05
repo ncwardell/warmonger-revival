@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z149_00.dds"
 <!-- generated-keys: title=8998c0 type=c899cd id=39dfc9 sources=47cd32 name_kr=4e172c terrain=390beb bounds=831505 size=be57ee segments=2555d9 fields=cf6862 minimap=365b2b -->
 |  |  |
 |---|---|
-|  | ![minimap of Training Ground (border area) ((Lv 1) Chepa Village)](../assets/zones/149.png) |
+|  | ![minimap of Training Ground (border area) ((Lv 1) Chepa Village)](wiki/assets/zones/149.png) |
 | **Zone id** | `149` |
 | **ZoneDB name** | 훈련장_(경계지역) (English gloss: Training Ground (border area) ([Lv 1] Chepa Village)) |
 | **Terrain name** | `A_training` |

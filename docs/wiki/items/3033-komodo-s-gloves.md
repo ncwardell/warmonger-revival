@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=1bf6a5 type=d36ca9 id=24104d sources=37ccc0 name_key=bc014c kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=4f4d9e set=1b6453 reinforce=92cfce icon=53e40c obtained_from=5891f0 -->
 |  |  |
 |---|---|
-|  | ![Komodo's Gloves](../assets/items/3033.png) |
+|  | ![Komodo's Gloves](wiki/assets/items/3033.png) |
 | **Item id** | `3033` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

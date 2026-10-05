@@ -5,6 +5,7 @@ id: 122
 status: "complete"
 missing: []
 sources: ["client: SceneList.cdb id 122", "client: DungeonAdmission.cdb field 122", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 122", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 122
 max_users: 5
 level: 3
@@ -26,15 +27,16 @@ time_limit_s: 900
 unlock_level: 22
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=a1b133 type=3e3f38 id=05a8ea sources=462a80 field=05a8ea max_users=ac3478 level=77de68 entry_cost=6dc8ea event=7cb6ef shown_rewards=8750e7 c17=667e62 image=2f6ead dungeon_slots=d63727 boss=a4d2f8 gear_tier=13930c gathering=83d28e time_limit_s=2be88c -->
+<!-- generated-keys: title=a1b133 type=3e3f38 id=05a8ea sources=462a80 field=05a8ea max_users=ac3478 level=77de68 entry_cost=6dc8ea event=7cb6ef shown_rewards=8750e7 c17=667e62 image=2f6ead dungeon_slots=d63727 boss=a4d2f8 gear_tier=13930c gathering=83d28e -->
 |  |  |
 |---|---|
-|  | ![(Lv 3) Tsunami Lake](../assets/dungeons/122.png) |
+|  | ![(Lv 3) Tsunami Lake](wiki/assets/dungeons/122.png) |
 | **Field** | [[wiki/fields/122-lv-3-tsunami-lake\|(Lv 3) Tsunami Lake (field 122)]] |
 | **Level** | 3 |
 | **Gear tier dropped** | T1 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/3.png` |
 | **c17 (unknown)** | 2004 |
 

@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=1de249 type=86a754 id=46e870 sources=df8aa2 name_key=c22ea4 desc_key=ed65ca kind=77de68 kind_name=78ea43 target=d99f6c range=356a19 area=394af4 cost=7e5cd4 cooldown=367d78 effect_kind=356a19 effects=e905a1 damage_or_effect=30bd04 requirements=aa72e6 visual=6c4c04 icon=6834b3 used_by=c10c58 -->
 |  |  |
 |---|---|
-|  | ![Hungry arrows](../assets/skills/20204.png) |
+|  | ![Hungry arrows](wiki/assets/skills/20204.png) |
 | **Skill id** | `20204` |
 | **Kind** | kind 3 (3) |
 | **Target** | self; self; units: monster, player; up to 1 |

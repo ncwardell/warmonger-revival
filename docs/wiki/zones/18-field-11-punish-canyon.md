@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z18_00.dds"
 <!-- generated-keys: title=c7c5b3 type=c899cd id=9e6a55 sources=904d11 name_kr=e61d82 terrain=f696c1 bounds=0503f4 size=114466 segments=b846d9 fields=3ad009 minimap=2d369c -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 11 (Punish Canyon)](../assets/zones/18.png) |
+|  | ![minimap of Field 11 (Punish Canyon)](wiki/assets/zones/18.png) |
 | **Zone id** | `18` |
 | **ZoneDB name** | 필드_11 (English gloss: Field 11 (Punish Canyon)) |
 | **Terrain name** | `11` |

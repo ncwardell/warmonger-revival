@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=66742f type=86a754 id=1a7cb6 sources=d48d25 name_key=d87882 desc_key=e54e3d kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=deac18 cooldown=a93f07 movement=5f1488 effect_kind=356a19 effects=bd0c4f damage_or_effect=082907 tooltip_formula=74c011 visual=d5f0d9 icon=4c901c used_by=3711bb -->
 |  |  |
 |---|---|
-|  | ![Angry Charge](../assets/skills/5129.png) |
+|  | ![Angry Charge](wiki/assets/skills/5129.png) |
 | **Skill id** | `5129` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

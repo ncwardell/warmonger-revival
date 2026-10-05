@@ -23,7 +23,7 @@ z: null
 <!-- generated-keys: title=9afb66 type=3664ce id=4af7f9 sources=799fb1 name_key=ce3546 title_key=a704c2 npc_title=84ff91 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 role=84ff91 talk_key=d8e758 portrait=d2d345 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Arkin](../assets/npcs/243.png) |
+|  | ![Arkin](wiki/assets/npcs/243.png) |
 | **Unit id** | `243` |
 | **Title** | Innocence Smith |
 | **Category** | NPC (category 50) |

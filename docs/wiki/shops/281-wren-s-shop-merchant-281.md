@@ -57,7 +57,7 @@ observed_prices:
 <!-- generated-keys: title=c2e85d type=ffcf9c id=d8502b sources=1bc495 npc=337b87 stock=d2e0c7 prices=b56340 price_rates=c44eae header=702516 observed_prices=bea614 -->
 |  |  |
 |---|---|
-|  | ![Wren's shop (Merchant) 281](../assets/npcs/204.png) |
+|  | ![Wren's shop (Merchant) 281](wiki/assets/npcs/204.png) |
 | **Shop id** | `281` (`Npc_Carry` shop_id = `UnitDB` u16@a2) |
 | **Run by** | [[wiki/npcs/203\|NPC 203]], [[wiki/npcs/204-wren\|Wren]] (Merchant), [[wiki/npcs/330-tora\|Tora]] (Merchant) |
 | **Stock** | 14 entries, 14 distinct items |
@@ -70,24 +70,24 @@ observed_prices:
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 1 | ![](../assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
-| 2 | ![](../assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
-| 3 | ![](../assets/items/909.png) | [[wiki/items/909-scroll-gaia\|Scroll : Gaia]] | 1 |  | Gold | 80 | 633 | 504 |
-| 4 | ![](../assets/items/908.png) | [[wiki/items/908-scroll-castle\|Scroll : Castle]] | 1 |  | Gold | 2,500 | 19,800 | 15,750 |
-| 5 | ![](../assets/items/688.png) | [[wiki/items/688-dimensional-energy\|Dimensional energy]] | 1 |  | Gold (+10%) | 5,000 | 5,500 | 4,050 |
-| 6 | ![](../assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
-| 7 | ![](../assets/items/946.png) | [[wiki/items/946-auto-decomposition-hammer-c\|Auto decomposition hammer (C)]] | 1 |  | Gold | 36,000 | 285,120 | 226,800 |
-| 8 | ![](../assets/items/947.png) | [[wiki/items/947-auto-decomposition-hammer-b\|Auto decomposition hammer (B)]] | 1 |  | Gold | 170,000 | 1,346,400 | 1,071,000 |
-| 9 | ![](../assets/items/949.png) | [[wiki/items/949-auto-decomposition-hammer-a\|Auto decomposition hammer (A)]] | 1 |  | Gold | 500,000 | 3,960,000 | 3,150,000 |
-| 10 | ![](../assets/items/1105.png) | [[wiki/items/1105-pyrotechnics\|Pyrotechnics]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 11 | ![](../assets/items/2909.png) | [[wiki/items/2909-flare\|Flare]] | 1 |  | Gold (+10%) | 10,000 | 11,000 | 8,100 |
-| 12 | ![](../assets/items/2910.png) | [[wiki/items/2910-ward\|Ward]] | 1 |  | Gold (+10%) | 10,000 | 11,000 | 8,100 |
-| 13 | ![](../assets/items/2911.png) | [[wiki/items/2911-pinkward\|Pinkward]] | 1 |  | Gold (+10%) | 10,000 | 11,000 | 8,100 |
+| 0 | ![](wiki/assets/items/883.png) | [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 1 | ![](wiki/assets/items/884.png) | [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 1 |  | Gold | 10 | 79 | 63 |
+| 2 | ![](wiki/assets/items/906.png) | [[wiki/items/906-scroll-return\|Scroll : Return]] | 1 |  | Gold | 80 | 633 | 504 |
+| 3 | ![](wiki/assets/items/909.png) | [[wiki/items/909-scroll-gaia\|Scroll : Gaia]] | 1 |  | Gold | 80 | 633 | 504 |
+| 4 | ![](wiki/assets/items/908.png) | [[wiki/items/908-scroll-castle\|Scroll : Castle]] | 1 |  | Gold | 2,500 | 19,800 | 15,750 |
+| 5 | ![](wiki/assets/items/688.png) | [[wiki/items/688-dimensional-energy\|Dimensional energy]] | 1 |  | Gold (+10%) | 5,000 | 5,500 | 4,050 |
+| 6 | ![](wiki/assets/items/945.png) | [[wiki/items/945-auto-decomposition-hammer-d\|Auto decomposition hammer (D)]] | 1 |  | Gold | 20,000 | 158,400 | 126,000 |
+| 7 | ![](wiki/assets/items/946.png) | [[wiki/items/946-auto-decomposition-hammer-c\|Auto decomposition hammer (C)]] | 1 |  | Gold | 36,000 | 285,120 | 226,800 |
+| 8 | ![](wiki/assets/items/947.png) | [[wiki/items/947-auto-decomposition-hammer-b\|Auto decomposition hammer (B)]] | 1 |  | Gold | 170,000 | 1,346,400 | 1,071,000 |
+| 9 | ![](wiki/assets/items/949.png) | [[wiki/items/949-auto-decomposition-hammer-a\|Auto decomposition hammer (A)]] | 1 |  | Gold | 500,000 | 3,960,000 | 3,150,000 |
+| 10 | ![](wiki/assets/items/1105.png) | [[wiki/items/1105-pyrotechnics\|Pyrotechnics]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 11 | ![](wiki/assets/items/2909.png) | [[wiki/items/2909-flare\|Flare]] | 1 |  | Gold (+10%) | 10,000 | 11,000 | 8,100 |
+| 12 | ![](wiki/assets/items/2910.png) | [[wiki/items/2910-ward\|Ward]] | 1 |  | Gold (+10%) | 10,000 | 11,000 | 8,100 |
+| 13 | ![](wiki/assets/items/2911.png) | [[wiki/items/2911-pinkward\|Pinkward]] | 1 |  | Gold (+10%) | 10,000 | 11,000 | 8,100 |
 
 ### Prices seen in play
 
-Source: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)
+Source: [[gameplay/patch-history]] WM 0328 (patch notes); [[gameplay/progression-and-economy]] §4 (Crush stats guide, 2016); [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018)
 
 | item | shown | formula | match | note |
 |---|---|---|---|---|
@@ -100,6 +100,10 @@ Source: [[gameplay/progression-and-economy]] §4 (guide screenshots, spring 2018
 | [[wiki/items/947-auto-decomposition-hammer-b\|Auto decomposition hammer (B)]] | 1,346,400 Gold | 1,346,400 | yes |  |
 | [[wiki/items/949-auto-decomposition-hammer-a\|Auto decomposition hammer (A)]] | 3,960,000 Gold | 3,960,000 | yes |  |
 | [[wiki/items/1105-pyrotechnics\|Pyrotechnics]] | 3,960 Gold | 3,960 | yes |  |
+| [[wiki/items/883-potion-of-health-d\|Potion of Health (D)]] | 96 Gold | 79 | no | Crush Online price (x9.6 base) |
+| [[wiki/items/884-potion-of-mana-d\|Potion of Mana (D)]] | 96 Gold | 79 | no | Crush Online price (x9.6 base) |
+| [[wiki/items/908-scroll-castle\|Scroll : Castle]] | 24,000 Gold | 19,800 | no | Crush Online price (x9.6 base) |
+| [[wiki/items/688-dimensional-energy\|Dimensional energy]] | 2,000 Gold | 5,500 | no | price cut announced 28 Mar 2018; guides later show 5,500 |
 
 ### How prices are worked out
 

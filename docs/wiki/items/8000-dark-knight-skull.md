@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=ea3093 type=d36ca9 id=2de49a sources=9fe689 name_key=f2409e kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a weapon_base=a72b20 stats=97d170 options=d6b105 skills=f2ce3f reinforce=472b07 icon=a71171 obtained_from=5a077d -->
 |  |  |
 |---|---|
-|  | ![Dark knight Skull](../assets/items/8000.png) |
+|  | ![Dark knight Skull](wiki/assets/items/8000.png) |
 | **Item id** | `8000` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

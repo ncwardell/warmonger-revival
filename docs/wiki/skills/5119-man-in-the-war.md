@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=045ceb type=86a754 id=df66df sources=65a4ab name_key=ee99be desc_key=884fef kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=9e049c cooldown=7d0c8c effect_kind=b6589f effects=b5742b damage_or_effect=113038 tooltip_formula=c66bd8 visual=98fcc3 icon=60dd2b used_by=47c2a3 -->
 |  |  |
 |---|---|
-|  | ![Man in the war](../assets/skills/5119.png) |
+|  | ![Man in the war](wiki/assets/skills/5119.png) |
 | **Skill id** | `5119` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

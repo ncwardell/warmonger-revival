@@ -135,13 +135,13 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 669 | [[wiki/monsters/669-chepa-archer\|Chepa Archer]] | stub | 12 |
 |  | 670 | [[wiki/monsters/670-elite-chepa-warrior\|Elite Chepa Warrior]] | stub | 12 |
 |  | 671 | [[wiki/monsters/671-elite-chepa-archer\|Elite Chepa Archer]] | stub | 12 |
-| ![](../assets/monsters/672.png) | 672 | [[wiki/monsters/672-king-deathhead\|King Deathhead]] | partial | 12 |
-| ![](../assets/monsters/673.png) | 673 | [[wiki/monsters/673-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
-| ![](../assets/monsters/674.png) | 674 | [[wiki/monsters/674-tempest-fisher\|Tempest Fisher]] | partial | 12 |
-| ![](../assets/monsters/675.png) | 675 | [[wiki/monsters/675-slayer-komodo\|Slayer Komodo]] | partial | 12 |
-| ![](../assets/monsters/676.png) | 676 | [[wiki/monsters/676-great-summoner-spectre\|Great Summoner Spectre]] | partial | 12 |
-| ![](../assets/monsters/677.png) | 677 | [[wiki/monsters/677-war-chief-garon\|War Chief Garon]] | partial | 12 |
-| ![](../assets/monsters/678.png) | 678 | [[wiki/monsters/678-reviatan-shadow\|Reviatan Shadow]] | partial | 12 |
+| ![](wiki/assets/monsters/672.png) | 672 | [[wiki/monsters/672-king-deathhead\|King Deathhead]] | partial | 12 |
+| ![](wiki/assets/monsters/673.png) | 673 | [[wiki/monsters/673-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
+| ![](wiki/assets/monsters/674.png) | 674 | [[wiki/monsters/674-tempest-fisher\|Tempest Fisher]] | partial | 12 |
+| ![](wiki/assets/monsters/675.png) | 675 | [[wiki/monsters/675-slayer-komodo\|Slayer Komodo]] | partial | 12 |
+| ![](wiki/assets/monsters/676.png) | 676 | [[wiki/monsters/676-great-summoner-spectre\|Great Summoner Spectre]] | partial | 12 |
+| ![](wiki/assets/monsters/677.png) | 677 | [[wiki/monsters/677-war-chief-garon\|War Chief Garon]] | partial | 12 |
+| ![](wiki/assets/monsters/678.png) | 678 | [[wiki/monsters/678-reviatan-shadow\|Reviatan Shadow]] | partial | 12 |
 |  | 679 | [[wiki/monsters/679-demon-hunter\|Demon Hunter]] | stub | 12 |
 |  | 680 | [[wiki/monsters/680-devil-miner\|Devil Miner]] | stub | 12 |
 |  | 681 | [[wiki/monsters/681-elite-demon-hunter\|Elite Demon Hunter]] | stub | 12 |
@@ -193,17 +193,17 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 730 | [[wiki/monsters/730-tough-elite-fisher\|Tough Elite Fisher]] | stub | 12 |
 |  | 731 | [[wiki/monsters/731-bee\|Bee]] | partial | 12 |
 |  | 732 | [[wiki/monsters/732-cobra\|Cobra]] | partial | 12 |
-| ![](../assets/monsters/733.png) | 733 | [[wiki/monsters/733-tempest-fisher\|Tempest Fisher]] | partial | 12 |
+| ![](wiki/assets/monsters/733.png) | 733 | [[wiki/monsters/733-tempest-fisher\|Tempest Fisher]] | partial | 12 |
 |  | 734 | [[wiki/monsters/734-tough-lizard-swordsman\|Tough Lizard Swordsman]] | stub | 12 |
 |  | 735 | [[wiki/monsters/735-tough-lizard-lancer\|Tough Lizard Lancer]] | stub | 12 |
-| ![](../assets/monsters/736.png) | 736 | [[wiki/monsters/736-slayer-komodo\|Slayer Komodo]] | partial | 12 |
+| ![](wiki/assets/monsters/736.png) | 736 | [[wiki/monsters/736-slayer-komodo\|Slayer Komodo]] | partial | 12 |
 |  | 737 | [[wiki/monsters/737-tough-elite-lizard-swordsman\|Tough Elite Lizard Swordsman]] | stub | 12 |
 |  | 738 | [[wiki/monsters/738-tough-elite-lizard-lancer\|Tough Elite Lizard Lancer]] | stub | 12 |
 |  | 739 | [[wiki/monsters/739-commander-reviatan\|Commander Reviatan]] | partial | 12 |
-| ![](../assets/monsters/740.png) | 740 | [[wiki/monsters/740-reviatan-shadow\|Reviatan Shadow]] | partial | 12 |
+| ![](wiki/assets/monsters/740.png) | 740 | [[wiki/monsters/740-reviatan-shadow\|Reviatan Shadow]] | partial | 12 |
 |  | 741 | [[wiki/monsters/741-tough-demon-hunter\|Tough Demon Hunter]] | stub | 12 |
 |  | 742 | [[wiki/monsters/742-tough-elite-demon-hunter\|Tough Elite Demon Hunter]] | stub | 12 |
-| ![](../assets/monsters/743.png) | 743 | [[wiki/monsters/743-great-summoner-spectre\|Great Summoner Spectre]] | partial | 12 |
+| ![](wiki/assets/monsters/743.png) | 743 | [[wiki/monsters/743-great-summoner-spectre\|Great Summoner Spectre]] | partial | 12 |
 |  | 744 | [[wiki/monsters/744-summoned-ghost\|Summoned Ghost]] | stub | 12 |
 |  | 750 | [[wiki/monsters/750\|Monster 750]] | stub | 12 |
 |  | 799 | [[wiki/monsters/799-divine-guard\|Divine Guard]] | partial | 12 |
@@ -216,7 +216,7 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 806 | [[wiki/monsters/806-tough-black-skeleton-archer\|Tough Black Skeleton Archer]] | stub | 12 |
 |  | 807 | [[wiki/monsters/807-tough-elite-black-skeleton-warrior\|Tough Elite Black Skeleton Warrior]] | partial | 12 |
 |  | 808 | [[wiki/monsters/808-tough-elite-black-skeleton-archer\|Tough Elite Black Skeleton Archer]] | stub | 12 |
-| ![](../assets/monsters/809.png) | 809 | [[wiki/monsters/809-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
+| ![](wiki/assets/monsters/809.png) | 809 | [[wiki/monsters/809-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
 |  | 810 | [[wiki/monsters/810-tough-chepa-warrior\|Tough Chepa Warrior]] | stub | 12 |
 |  | 811 | [[wiki/monsters/811-tough-chepa-archer\|Tough Chepa Archer]] | stub | 12 |
 |  | 812 | [[wiki/monsters/812-tough-elite-chepa-warrior\|Tough Elite Chepa Warrior]] | stub | 12 |
@@ -229,7 +229,7 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 819 | [[wiki/monsters/819-tough-tow-sorcerer\|Tough Tow Sorcerer]] | stub | 12 |
 |  | 820 | [[wiki/monsters/820-tough-elite-tow-warrior\|Tough Elite Tow Warrior]] | stub | 12 |
 |  | 821 | [[wiki/monsters/821-tough-elite-tow-sorcerer\|Tough Elite Tow Sorcerer]] | stub | 12 |
-| ![](../assets/monsters/822.png) | 822 | [[wiki/monsters/822-war-chief-garon\|War Chief Garon]] | partial | 12 |
+| ![](wiki/assets/monsters/822.png) | 822 | [[wiki/monsters/822-war-chief-garon\|War Chief Garon]] | partial | 12 |
 |  | 823 | [[wiki/monsters/823\|Monster 823]] | stub | 12 |
 |  | 824 | [[wiki/monsters/824\|Monster 824]] | stub | 12 |
 |  | 825 | [[wiki/monsters/825-crusader-cherubim\|Crusader Cherubim]] | partial | 12 |
@@ -256,7 +256,7 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 846 | [[wiki/monsters/846-ogre\|Ogre]] | stub | 12 |
 |  | 847 | [[wiki/monsters/847-ghoul\|Ghoul]] | stub | 12 |
 |  | 848 | [[wiki/monsters/848-vane\|Vane]] | stub | 12 |
-| ![](../assets/monsters/849.png) | 849 | [[wiki/monsters/849-akasha\|Akasha]] | partial | 12 |
+| ![](wiki/assets/monsters/849.png) | 849 | [[wiki/monsters/849-akasha\|Akasha]] | partial | 12 |
 |  | 851 | [[wiki/monsters/851-skeleton-warrior-officer\|Skeleton Warrior Officer]] | stub | 12 |
 |  | 852 | [[wiki/monsters/852-skeleton-archer-officer\|Skeleton Archer Officer]] | stub | 12 |
 |  | 853 | [[wiki/monsters/853-fisher-officer\|Fisher Officer]] | stub | 12 |
@@ -276,7 +276,7 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 867 | [[wiki/monsters/867-lizard-knight-officer\|Lizard Knight Officer]] | stub | 12 |
 |  | 868 | [[wiki/monsters/868-tough-devil-miner\|Tough Devil Miner]] | stub | 12 |
 |  | 869 | [[wiki/monsters/869-tough-elite-devil-miner\|Tough Elite Devil Miner]] | stub | 12 |
-| ![](../assets/monsters/870.png) | 870 | [[wiki/monsters/870-chepa-sorcerer\|Chepa Sorcerer]] | partial | 12 |
+| ![](wiki/assets/monsters/870.png) | 870 | [[wiki/monsters/870-chepa-sorcerer\|Chepa Sorcerer]] | partial | 12 |
 |  | 900 | [[wiki/monsters/900-minion\|Minion]] | stub | 12 |
 |  | 901 | [[wiki/monsters/901-minion\|Minion]] | stub | 12 |
 |  | 902 | [[wiki/monsters/902-minion\|Minion]] | stub | 12 |
@@ -289,7 +289,7 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 909 | [[wiki/monsters/909-minion\|Minion]] | stub | 12 |
 |  | 910 | [[wiki/monsters/910-minion\|Minion]] | stub | 12 |
 |  | 911 | [[wiki/monsters/911-minion\|Minion]] | stub | 12 |
-| ![](../assets/monsters/950.png) | 950 | [[wiki/monsters/950-chepa-sorcerer\|Chepa Sorcerer]] | partial | 12 |
+| ![](wiki/assets/monsters/950.png) | 950 | [[wiki/monsters/950-chepa-sorcerer\|Chepa Sorcerer]] | partial | 12 |
 |  | 953 | [[wiki/monsters/953-devil-miner\|Devil Miner]] | stub | 12 |
 |  | 956 | [[wiki/monsters/956-fisher-warrior\|Fisher Warrior]] | stub | 12 |
 |  | 959 | [[wiki/monsters/959-lizard-warrior\|Lizard Warrior]] | stub | 12 |
@@ -318,29 +318,29 @@ Every hostile unit in the client's `UnitDB` table: field monsters, elites, quest
 |  | 1202 | [[wiki/monsters/1202-necro-archer\|Necro Archer]] | stub | 12 |
 |  | 1203 | [[wiki/monsters/1203-devourer-warrior\|Devourer Warrior]] | stub | 12 |
 |  | 1204 | [[wiki/monsters/1204-devourer-archer\|Devourer Archer]] | stub | 12 |
-| ![](../assets/monsters/1205.png) | 1205 | [[wiki/monsters/1205-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
+| ![](wiki/assets/monsters/1205.png) | 1205 | [[wiki/monsters/1205-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
 |  | 1206 | [[wiki/monsters/1206-elite-naga\|Elite Naga]] | stub | 12 |
 |  | 1207 | [[wiki/monsters/1207-naga-lancer\|Naga Lancer]] | stub | 12 |
 |  | 1208 | [[wiki/monsters/1208-naga-sorcerer\|Naga Sorcerer]] | stub | 12 |
-| ![](../assets/monsters/1209.png) | 1209 | [[wiki/monsters/1209-tempest-fisher\|Tempest Fisher]] | partial | 12 |
+| ![](wiki/assets/monsters/1209.png) | 1209 | [[wiki/monsters/1209-tempest-fisher\|Tempest Fisher]] | partial | 12 |
 |  | 1210 | [[wiki/monsters/1210-konion-knight\|Konion Knight]] | stub | 12 |
 |  | 1211 | [[wiki/monsters/1211-konion-swordman\|Konion Swordman]] | stub | 12 |
 |  | 1212 | [[wiki/monsters/1212-konion-lancer\|Konion Lancer]] | stub | 12 |
-| ![](../assets/monsters/1213.png) | 1213 | [[wiki/monsters/1213-slayer-komodo\|Slayer Komodo]] | partial | 12 |
+| ![](wiki/assets/monsters/1213.png) | 1213 | [[wiki/monsters/1213-slayer-komodo\|Slayer Komodo]] | partial | 12 |
 |  | 1214 | [[wiki/monsters/1214-superior-black-ghost\|Superior Black Ghost]] | stub | 12 |
 |  | 1215 | [[wiki/monsters/1215-superior-red-ghost\|Superior Red Ghost]] | stub | 12 |
 |  | 1216 | [[wiki/monsters/1216-superior-zombie\|Superior Zombie]] | stub | 12 |
 |  | 1217 | [[wiki/monsters/1217-superior-ghoul\|Superior Ghoul]] | stub | 12 |
-| ![](../assets/monsters/1218.png) | 1218 | [[wiki/monsters/1218-great-summoner-spectre\|Great Summoner Spectre]] | partial | 12 |
+| ![](wiki/assets/monsters/1218.png) | 1218 | [[wiki/monsters/1218-great-summoner-spectre\|Great Summoner Spectre]] | partial | 12 |
 |  | 1219 | [[wiki/monsters/1219-superior-nas-warrior\|Superior Nas Warrior]] | partial | 12 |
 |  | 1220 | [[wiki/monsters/1220-superior-nas-archer\|Superior Nas Archer]] | partial | 12 |
 |  | 1221 | [[wiki/monsters/1221-pogun-warrior\|PoGun Warrior]] | stub | 12 |
 |  | 1222 | [[wiki/monsters/1222-pogun-sorcerer\|PoGun Sorcerer]] | stub | 12 |
-| ![](../assets/monsters/1223.png) | 1223 | [[wiki/monsters/1223-war-chief-garon\|War Chief Garon]] | partial | 12 |
-| ![](../assets/monsters/1501.png) | 1501 | [[wiki/monsters/1501-king-deathhead\|King Deathhead]] | partial | 12 |
+| ![](wiki/assets/monsters/1223.png) | 1223 | [[wiki/monsters/1223-war-chief-garon\|War Chief Garon]] | partial | 12 |
+| ![](wiki/assets/monsters/1501.png) | 1501 | [[wiki/monsters/1501-king-deathhead\|King Deathhead]] | partial | 12 |
 |  | 1502 | [[wiki/monsters/1502-ice-phyton\|Ice Phyton]] | stub | 12 |
 |  | 1503 | [[wiki/monsters/1503-swamp-phyton\|Swamp Phyton]] | stub | 12 |
-| ![](../assets/monsters/1504.png) | 1504 | [[wiki/monsters/1504-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
+| ![](wiki/assets/monsters/1504.png) | 1504 | [[wiki/monsters/1504-dark-knight-skull\|Dark Knight Skull]] | partial | 12 |
 |  | 1505 | [[wiki/monsters/1505-lava-phyton\|Lava Phyton]] | stub | 12 |
 |  | 2000 | [[wiki/monsters/2000-jack-o-lantern\|Jack O' Lantern]] | stub | 12 |
 

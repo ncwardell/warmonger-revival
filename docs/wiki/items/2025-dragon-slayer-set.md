@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=b1c73b type=d36ca9 id=004be8 sources=1ffa23 name_key=f490c2 kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=e78b95 options=858724 icon=4b0740 obtained_from=c4af9f -->
 |  |  |
 |---|---|
-|  | ![Dragon Slayer Set](../assets/items/2025.png) |
+|  | ![Dragon Slayer Set](wiki/assets/items/2025.png) |
 | **Item id** | `2025` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

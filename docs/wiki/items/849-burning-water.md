@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=b06f70 type=d36ca9 id=967d1c sources=6a2ea9 name_key=651677 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=566f1e obtained_from=d4b805 -->
 |  |  |
 |---|---|
-|  | ![Burning water](../assets/items/849.png) |
+|  | ![Burning water](wiki/assets/items/849.png) |
 | **Item id** | `849` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=23c179 type=d36ca9 id=99d746 sources=35cfff name_key=ffe3c3 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=81ec2f obtained_from=55c585 -->
 |  |  |
 |---|---|
-|  | ![Halloween Rewar Box](../assets/items/1056.png) |
+|  | ![Halloween Rewar Box](wiki/assets/items/1056.png) |
 | **Item id** | `1056` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

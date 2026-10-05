@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=b4d426 type=6143a1 id=382388 sources=4dc49c name_key=21ed86 duration=6c749d is_buff=b6589f stack_type=77de68 group=fe762c effects=816ad5 icon=fdf9b8 applied_by=4df90e -->
 |  |  |
 |---|---|
-|  | ![The Dark Art: Creates a shield that absorbs Damage for 10 seconds.](../assets/buffs/30024.png) |
+|  | ![The Dark Art: Creates a shield that absorbs Damage for 10 seconds.](wiki/assets/buffs/30024.png) |
 | **Buff id** | `30024` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

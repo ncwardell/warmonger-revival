@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z31_00.dds"
 <!-- generated-keys: title=1fd5f9 type=c899cd id=632667 sources=a68397 name_kr=f54f9c terrain=5e6896 bounds=a5a0f9 size=114466 segments=0a2f9d fields=44b878 minimap=0b214e -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 39 (Sunstone gateway)](../assets/zones/31.png) |
+|  | ![minimap of Field 39 (Sunstone gateway)](wiki/assets/zones/31.png) |
 | **Zone id** | `31` |
 | **ZoneDB name** | 필드_39 (English gloss: Field 39 (Sunstone gateway)) |
 | **Terrain name** | `39` |

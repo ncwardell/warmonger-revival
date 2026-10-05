@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=27ef28 type=86a754 id=c97f04 sources=09fcd4 name_key=5ceff6 desc_key=1acd09 kind=356a19 kind_name=9bc378 target=7056fd range=9e6a55 area=711599 cost=ff5a60 cooldown=ad2ac8 delivery=93a212 effect_kind=356a19 effects=016bb8 damage_or_effect=2fc373 tooltip_formula=b0ad8c visual=a2092f icon=b8e91e used_by=63a6cf -->
 |  |  |
 |---|---|
-|  | ![Prudent blow](../assets/skills/20213.png) |
+|  | ![Prudent blow](wiki/assets/skills/20213.png) |
 | **Skill id** | `20213` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

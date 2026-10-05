@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=b25409 type=6143a1 id=aa5cb8 sources=ccd52d name_key=eb03e6 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=67ccf4 applied_by=52173a -->
 |  |  |
 |---|---|
-|  | ![Shadow Walk : Silenced for 2 seconds](../assets/buffs/30028.png) |
+|  | ![Shadow Walk : Silenced for 2 seconds](wiki/assets/buffs/30028.png) |
 | **Buff id** | `30028` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

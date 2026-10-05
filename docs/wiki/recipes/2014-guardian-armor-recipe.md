@@ -21,7 +21,7 @@ npc: [335]
 <!-- generated-keys: title=4ab887 type=61613a id=39e214 sources=697730 result=efa1b0 materials=6c1e5f gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=4d3e51 superior=5d66db level=356a19 raw=aa6768 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/410.png) |
+|  | ![](wiki/assets/items/410.png) |
 | **Recipe id** | `2014` (`Item_Make`) |
 | **Makes** | [[wiki/items/410-guardian-armor\|Guardian Armor]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [335]
 | **Superior result** | 5 % → [[wiki/items/482-guardian-armor\|Guardian Armor]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 6 / `0x1000002` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/335-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 15 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 15 |  |
 
 Unknown columns: `c28` = 225 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

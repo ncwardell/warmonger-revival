@@ -23,7 +23,7 @@ help: {"image": "ui/HelpImage/Help_17.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=eccc6f type=eb5b2b id=9492df sources=211f27 name_key=4237df kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=4cd66d prev=97d170 next=97d170 stages=30caa7 objectives=44b4dd rewards=97d170 help=1c11f3 -->
 |  |  |
 |---|---|
-|  | ![Basic function - Go to the Fortress](../assets/quests/1505.png) |
+|  | ![Basic function - Go to the Fortress](wiki/assets/quests/1505.png) |
 | **Quest id** | `1505` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

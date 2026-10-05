@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=2023a8 type=86a754 id=d9dc46 sources=9b5403 name_key=eb75a8 desc_key=a8c0a2 kind=356a19 kind_name=9bc378 target=069ef3 range=77de68 cost=9e049c cooldown=7d0c8c effect_kind=356a19 effects=fffdf7 damage_or_effect=88be50 tooltip_formula=63d69c visual=5e796e icon=5572b0 used_by=41f863 -->
 |  |  |
 |---|---|
-|  | ![Feast of Blood](../assets/skills/10058.png) |
+|  | ![Feast of Blood](wiki/assets/skills/10058.png) |
 | **Skill id** | `10058` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

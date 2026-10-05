@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=6b2147 type=d36ca9 id=db7297 sources=12f97d name_key=7f6cc6 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=a9983e cost_pair=9550b6 flags=356a19 no_sell=7cb6ef use_skill=290a52 cooldown_s=2d0c8a cooldown_group=902ba3 stats=97d170 options=ff03e0 icon=c0e73b obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Teleport](../assets/items/2903.png) |
+|  | ![Teleport](wiki/assets/items/2903.png) |
 | **Item id** | `2903` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

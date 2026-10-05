@@ -32,7 +32,7 @@ complete_talk: 797
 <!-- generated-keys: title=13d702 type=eb5b2b id=b6692e sources=1a919d name_key=2882e2 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=7719a1 requires_bit=40bd00 prev=80af3c next=7f63fd stages=642aaf objectives=685cd1 rewards=84dd37 offer_talk=732c0a complete_talk=176908 -->
 |  |  |
 |---|---|
-|  | ![Ghost Fortress](../assets/npcs/200.png) |
+|  | ![Ghost Fortress](wiki/assets/npcs/200.png) |
 | **Quest id** | `33` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

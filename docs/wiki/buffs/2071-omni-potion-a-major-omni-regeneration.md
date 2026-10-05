@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=4c6576 type=6143a1 id=739adc sources=67a4c3 name_key=97b8fd duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=6459a5 icon=16e1b9 applied_by=9e7ef0 -->
 |  |  |
 |---|---|
-|  | ![Omni Potion (A) : Major Omni Regeneration](../assets/buffs/2071.png) |
+|  | ![Omni Potion (A) : Major Omni Regeneration](wiki/assets/buffs/2071.png) |
 | **Buff id** | `2071` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

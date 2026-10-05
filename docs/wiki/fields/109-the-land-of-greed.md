@@ -33,7 +33,7 @@ triggers:
 <!-- generated-keys: title=4cdb69 type=7a94db id=a1422e sources=c67f22 name_key=dc9240 kind=7a94db scene_type=ac3478 max_users=310b86 group=7b5200 nation=069950 nation_copies=a918d5 zones=6c4502 segments=8c2f3b gates=cc4947 connections=e341c9 npcs=97d170 monsters=63b507 spawn_points=97d170 triggers=fae5dc -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 114](../assets/zones/114.png) |
+|  | ![minimap of zone 114](wiki/assets/zones/114.png) |
 | **Field id** | `109` |
 | **Kind** | field (SceneList type 5; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |
@@ -53,6 +53,8 @@ triggers:
 | 1114 | 701.93, 2624.07 | [[wiki/fields/106-the-avenue-of-spirit\|The avenue of spirit]] | 1126 | FieldName_109 |
 | 1125 | 567.67, 2620.55 | [[wiki/fields/105-place-for-scattered-troops\|Place for Scattered troops]] | 1131 | FieldName_109 |
 | 1135 | 711.35, 2760.44 | [[wiki/fields/113-the-avenue-of-spirit\|The avenue of spirit]] | 1138 | FieldName_109 |
+
+Other connections (hand-entered): to 102, gate None, to_gate None, at [574, 2758], to_at [451, 2365], source image
 
 Entered from: [[wiki/fields/105-place-for-scattered-troops|Place for Scattered troops]] (gate 1131 → 1125), [[wiki/fields/113-the-avenue-of-spirit|The avenue of spirit]] (gate 1138 → 1135)
 

@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=b4a5b1 type=d36ca9 id=106baf sources=5c6297 name_key=a32a45 kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=dee974 set=0ade7c reinforce=92cfce icon=5cef58 obtained_from=990e8d -->
 |  |  |
 |---|---|
-|  | ![Leviathan's Shoes](../assets/items/3064.png) |
+|  | ![Leviathan's Shoes](wiki/assets/items/3064.png) |
 | **Item id** | `3064` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

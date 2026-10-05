@@ -20,21 +20,21 @@ npc: [213]
 <!-- generated-keys: title=96d9b1 type=61613a id=914127 sources=48fbae result=a5c862 materials=732491 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=e42ab3 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3028.png) |
+|  | ![](wiki/assets/items/3028.png) |
 | **Recipe id** | `324` (`Item_Make`) |
 | **Makes** | [[wiki/items/3028-fisher-s-ring\|Fisher's Ring]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 60 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 0 / `0x2000080` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2703.png) | [[wiki/items/2703-fin-of-fisher\|Fin of Fisher]] | 1 |  |
-| ![](../assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 1 |  |
+| ![](wiki/assets/items/2703.png) | [[wiki/items/2703-fin-of-fisher\|Fin of Fisher]] | 1 |  |
+| ![](wiki/assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

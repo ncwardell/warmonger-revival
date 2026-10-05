@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=d9acaf type=d36ca9 id=7f5091 sources=0e578a name_key=1cf29f kind=fc074d kind_name=7ff135 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=97d170 icon=e5be46 obtained_from=09a06e -->
 |  |  |
 |---|---|
-|  | ![Piece : Dark knight Skull](../assets/items/9000.png) |
+|  | ![Piece : Dark knight Skull](wiki/assets/items/9000.png) |
 | **Item id** | `9000` |
 | **Kind** | Innocence Piece (36) |
 | **Classes** | all |

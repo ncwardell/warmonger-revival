@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=c1f9ab type=86a754 id=ec6de4 sources=794617 name_key=8e1822 desc_key=c5c20a kind=356a19 kind_name=9bc378 target=138a60 range=9e6a55 area=9876f1 cost=ff5a60 cooldown=ad2ac8 delivery=93a212 effect_kind=356a19 effects=4b3c3a damage_or_effect=8be76c tooltip_formula=269a08 visual=3464dc icon=e8b47d used_by=57dda9 -->
 |  |  |
 |---|---|
-|  | ![Explosive Mortar](../assets/skills/5111.png) |
+|  | ![Explosive Mortar](wiki/assets/skills/5111.png) |
 | **Skill id** | `5111` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 12 |

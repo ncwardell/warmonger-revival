@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z96_00.dds"
 <!-- generated-keys: title=118ac4 type=c899cd id=6fb84a sources=e8b746 name_kr=e35f81 terrain=178cff bounds=15bbf2 size=114466 segments=4906b6 fields=e6a935 minimap=c051a2 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 83 (Moonlight Plain - East)](../assets/zones/96.png) |
+|  | ![minimap of Field 83 (Moonlight Plain - East)](wiki/assets/zones/96.png) |
 | **Zone id** | `96` |
 | **ZoneDB name** | 필드_83 (English gloss: Field 83 (Moonlight Plain - East)) |
 | **Terrain name** | `83` |

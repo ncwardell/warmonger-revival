@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=965704 type=61613a id=b9c157 sources=ec1c89 result=1f4ca2 materials=052157 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/821.png) |
+|  | ![](wiki/assets/items/821.png) |
 | **Recipe id** | `2410` (`Item_Make`) |
 | **Makes** | [[wiki/items/821-peppermint-powder\|Peppermint powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 8 / `0x2000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/820.png) | [[wiki/items/820-peppermint\|Peppermint]] | 1 |  |
+| ![](wiki/assets/items/820.png) | [[wiki/items/820-peppermint\|Peppermint]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/610-peppermint-powder-recipe|recipe 610]]
 

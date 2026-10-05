@@ -19,20 +19,20 @@ npc: [214]
 <!-- generated-keys: title=cfa7c7 type=61613a id=63843e sources=94452b result=4d6bff materials=b1cac3 gold=e1822d success_rate=310b86 category=356a19 filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/823.png) |
+|  | ![](wiki/assets/items/823.png) |
 | **Recipe id** | `611` (`Item_Make`) |
 | **Makes** | [[wiki/items/823-rosemary-powder\|Rosemary powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 1 / `0x2000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/822.png) | [[wiki/items/822-rosemary\|Rosemary]] | 1 |  |
+| ![](wiki/assets/items/822.png) | [[wiki/items/822-rosemary\|Rosemary]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2411-rosemary-powder-recipe|recipe 2411]]
 

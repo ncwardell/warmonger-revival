@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=07072a type=d36ca9 id=9dc3c6 sources=855a95 name_key=ddaf6c kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a weapon_base=450dde stats=97d170 options=2fff8d skills=19e066 reinforce=472b07 icon=ff62ba obtained_from=668553 -->
 |  |  |
 |---|---|
-|  | ![King Deathhead](../assets/items/8006.png) |
+|  | ![King Deathhead](wiki/assets/items/8006.png) |
 | **Item id** | `8006` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |

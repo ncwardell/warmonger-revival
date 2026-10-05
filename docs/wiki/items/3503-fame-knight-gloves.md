@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=b62b62 type=d36ca9 id=9e4e2c sources=404eb9 name_key=bdbdda kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=4f4d9e set=902ba3 reinforce=92cfce icon=2ab1fd obtained_from=130ae4 -->
 |  |  |
 |---|---|
-|  | ![Fame knight Gloves](../assets/items/3503.png) |
+|  | ![Fame knight Gloves](wiki/assets/items/3503.png) |
 | **Item id** | `3503` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |

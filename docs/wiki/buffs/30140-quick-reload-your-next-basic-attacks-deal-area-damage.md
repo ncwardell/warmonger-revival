@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=c31d97 type=6143a1 id=c6fa3b sources=786f55 name_key=ada59b duration=3d2da5 is_buff=b6589f stack_type=356a19 group=b6589f effects=a62d67 icon=7c2320 applied_by=444611 -->
 |  |  |
 |---|---|
-|  | ![Quick Reload : Your next basic Attacks deal area damage](../assets/buffs/30140.png) |
+|  | ![Quick Reload : Your next basic Attacks deal area damage](wiki/assets/buffs/30140.png) |
 | **Buff id** | `30140` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=075ecc type=6143a1 id=fa02ea sources=0de501 name_key=86a4a8 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=c23d4b applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Dark Matter : Stunned for 3 seconds](../assets/buffs/30213.png) |
+|  | ![Dark Matter : Stunned for 3 seconds](wiki/assets/buffs/30213.png) |
 | **Buff id** | `30213` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

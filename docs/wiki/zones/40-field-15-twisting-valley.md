@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z40_00.dds"
 <!-- generated-keys: title=e40ddf type=c899cd id=af3e13 sources=d3f223 name_kr=608e18 terrain=61dd2e bounds=1b18a4 size=114466 segments=debec8 fields=017b8e minimap=509ba8 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 15 (Twisting Valley)](../assets/zones/40.png) |
+|  | ![minimap of Field 15 (Twisting Valley)](wiki/assets/zones/40.png) |
 | **Zone id** | `40` |
 | **ZoneDB name** | 필드_15 (English gloss: Field 15 (Twisting Valley)) |
 | **Terrain name** | `15` |

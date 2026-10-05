@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z147_00.dds"
 <!-- generated-keys: title=c57fb2 type=c899cd id=b3c073 sources=ab5f08 name_kr=65c1b9 terrain=bc8f49 bounds=7a24c2 size=114466 segments=63c97d fields=97d170 minimap=114e8f -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 26 test](../assets/zones/147.png) |
+|  | ![minimap of Field 26 test](wiki/assets/zones/147.png) |
 | **Zone id** | `147` |
 | **ZoneDB name** | 필드26_테스트 (English gloss: Field 26 test) |
 | **Terrain name** | `26` |

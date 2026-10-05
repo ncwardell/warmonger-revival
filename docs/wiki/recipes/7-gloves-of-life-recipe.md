@@ -21,7 +21,7 @@ npc: [213]
 <!-- generated-keys: title=283e64 type=61613a id=902ba3 sources=ec6759 result=4091b9 materials=f2c969 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=ac6be1 superior=bbf527 level=356a19 raw=d75d65 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/403.png) |
+|  | ![](wiki/assets/items/403.png) |
 | **Recipe id** | `7` (`Item_Make`) |
 | **Makes** | [[wiki/items/403-gloves-of-life\|Gloves of Life]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [213]
 | **Superior result** | 5 % → [[wiki/items/479-gloves-of-life\|Gloves of Life]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 0 / `0x1000004` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
 
 Unknown columns: `c28` = 150 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

@@ -23,15 +23,15 @@ connections:
   - {"to": 103, "gate": 1901, "to_gate": 0}
   - {"to": 105, "gate": 1902, "to_gate": 0}
   - {"to": 107, "gate": 1903, "to_gate": 0}
-npcs: [99, 200, 204, 205, 207, 208, 210, 212, 213, 214, 217, 237, 242, 323, 324, 206, 211, 218, 300, 303, 311, 322, 304, 240]
+npcs: [99, 200, 204, 205, 207, 208, 210, 212, 213, 214, 217, 237, 242, 323, 324, 206, 211, 218, 300, 303, 311, 322, 240, 304]
 monsters: []
 spawn_points: []
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=3ec720 type=7a94db id=775bc5 sources=600668 name_key=a40dd1 kind=da9544 scene_type=356a19 max_users=310b86 group=fa35e1 zones=3e5d13 segments=b94d6e gates=496ae8 connections=e35a24 npcs=53cd3c monsters=97d170 spawn_points=97d170 -->
+<!-- generated-keys: title=3ec720 type=7a94db id=775bc5 sources=600668 name_key=a40dd1 kind=da9544 scene_type=356a19 max_users=310b86 group=fa35e1 zones=3e5d13 segments=b94d6e gates=496ae8 connections=e35a24 npcs=12d39f monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 103](../assets/zones/103.png) |
+|  | ![minimap of zone 103](wiki/assets/zones/103.png) |
 | **Field id** | `120` |
 | **Kind** | town (SceneList type 1; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |
@@ -67,7 +67,7 @@ Positions come from the NPC's own page (`x`, `z`). The client does not place tow
 | [[wiki/npcs/213-odin\|Odin]] | 213 | 1991.9, 1703.6 | quests [[wiki/quests/110-gear-manufacturing\|110]], [[wiki/quests/726-gathering-plant-and-ore\|726]], [[wiki/quests/728-gathering-plant-and-ore\|728]], [[wiki/quests/730-gathering-plant-and-ore\|730]], [[wiki/quests/734-gathering-plant-and-ore\|734]] …; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/214-owen\|Owen]] | 214 | 1998.9, 1709 | quests [[wiki/quests/14-battle-preparations\|14]], [[wiki/quests/47-create-potion\|47]], [[wiki/quests/48-doping-create\|48]], [[wiki/quests/108-hunting-ghosts-spirit-avenue\|108]], [[wiki/quests/725-collecting-material\|725]] …; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/217-haley\|Haley]] | 217 | 1927.6, 1616.4 | quests [[wiki/quests/104-delivering-punishment\|104]]; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
-| [[wiki/npcs/237-farrell\|Farrell]] | 237 |  | quests [[wiki/quests/16-farrell-s-request\|16]], [[wiki/quests/111-weapon-manufacturing\|111]], [[wiki/quests/112-weapon-manufacturing\|112]], [[wiki/quests/113-weapon-manufacturing\|113]], [[wiki/quests/114-weapon-tier-reinforce\|114]] …; NPC page (`map` / `positions`) |
+| [[wiki/npcs/237-farrell\|Farrell]] | 237 | 1995, 1700 | quests [[wiki/quests/16-farrell-s-request\|16]], [[wiki/quests/111-weapon-manufacturing\|111]], [[wiki/quests/112-weapon-manufacturing\|112]], [[wiki/quests/113-weapon-manufacturing\|113]], [[wiki/quests/114-weapon-tier-reinforce\|114]] …; NPC page (`map` / `positions`) |
 | [[wiki/npcs/242-raon\|Raon]] | 242 |  | quests [[wiki/quests/705-legion-how-to-use-add-on\|705]], [[wiki/quests/774-highly-concentrated-bomb-create\|774]], [[wiki/quests/775-highly-concentrated-bomb-create\|775]], [[wiki/quests/776-highly-concentrated-bomb-create\|776]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/323-alan\|Alan]] | 323 | 1939, 1704.9 | quests [[wiki/quests/121-create-rune\|121]], [[wiki/quests/697-create-rune\|697]]; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/324-casta\|Casta]] | 324 | 1942.8, 1704.1 | quests [[wiki/quests/122-rune-equipment\|122]], [[wiki/quests/123-rune-reinforcement\|123]], [[wiki/quests/698-rune-equipment\|698]], [[wiki/quests/699-rune-reinforcement\|699]], [[wiki/quests/1516-item-equip-or-release-rune\|1516]]; [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
@@ -78,7 +78,8 @@ Positions come from the NPC's own page (`x`, `z`). The client does not place tow
 | [[wiki/npcs/303-cathy\|Cathy]] | 303 | 1924.8, 1666.7 | [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/311-fortress-portal\|Fortress Portal]] | 311 | 1981, 1561 | [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/322-paraman\|Paraman]] | 322 | 1959.5, 1699.5 | [[gameplay/npc-locations#3. Fortress (field 120)\|NPC locations § 3. Fortress (field 120)]]; NPC page (`map` / `positions`) |
-| [[wiki/npcs/304-fergus\|Fergus]] | 304 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/240-candice\|Candice]] | 240 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/304-fergus\|Fergus]] | 304 | 1892, 1708 | NPC page (`map` / `positions`) |
 
 ### Monsters
 

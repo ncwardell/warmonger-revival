@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=9b419a type=d36ca9 id=a08521 sources=dde576 name_key=d6c6b7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=4577af cost_pair=cb6a8f stats=97d170 icon=e3f693 obtained_from=0ca5ba -->
 |  |  |
 |---|---|
-|  | ![Crystal : Red](../assets/items/702.png) |
+|  | ![Crystal : Red](wiki/assets/items/702.png) |
 | **Item id** | `702` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -48,6 +48,8 @@ obtained_from:
 - Reward of quest [[wiki/quests/751-kill-monster-of-the-way-go-to-devildom|Kill monster of The way go to devildom]] × 5
 - Reward of quest [[wiki/quests/1103-the-way-go-to-devildom-kill-monster|The Way go to devildom : Kill monster]] × 5
 - Shown as a reward of dungeon [[wiki/dungeons/133-sinking-nest-crystal|Sinking Nest (Crystal)]]
+- how fort_guardian_drop, count 25 (hand-entered)
+- how dungeon_drop, field 133, count [1, 6] (hand-entered)
 
 ### Used for
 

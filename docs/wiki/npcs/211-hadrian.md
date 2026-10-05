@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=0c76e4 type=3664ce id=1b4a36 sources=4062e0 name_key=10e07a title_key=b5edf8 npc_title=334169 category=e1822d class_mask=da4b92 model=fb6443 scale=aa8f28 functions=dddd43 role=334169 talk_key=697300 portrait=755aef map=775bc5 x=8b12a4 z=926a77 positions=7296f3 -->
 |  |  |
 |---|---|
-|  | ![Hadrian](../assets/npcs/211.png) |
+|  | ![Hadrian](wiki/assets/npcs/211.png) |
 | **Unit id** | `211` |
 | **Title** | Fortress Administrator |
 | **Category** | NPC (category 50) |

@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=16ceae type=d36ca9 id=a385d9 sources=817829 name_key=037a3d kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=57e12c set=da4b92 reinforce=92cfce icon=d55add obtained_from=8fbb3f -->
 |  |  |
 |---|---|
-|  | ![Skull's Armor](../assets/items/3012.png) |
+|  | ![Skull's Armor](wiki/assets/items/3012.png) |
 | **Item id** | `3012` |
 | **Kind** | Armor (51) |
 | **Classes** | all |

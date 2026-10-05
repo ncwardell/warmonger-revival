@@ -5,6 +5,7 @@ id: 123
 status: "complete"
 missing: []
 sources: ["client: SceneList.cdb id 123", "client: DungeonAdmission.cdb field 123", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 123", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 123
 max_users: 5
 level: 4
@@ -26,15 +27,16 @@ time_limit_s: 900
 unlock_level: 23
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=e5603a type=3e3f38 id=40bd00 sources=c58ebc field=40bd00 max_users=ac3478 level=1b6453 entry_cost=00381f event=7cb6ef shown_rewards=65b1ed c17=23a053 image=936313 dungeon_slots=679f34 boss=9798c5 gear_tier=13930c gathering=f3c467 time_limit_s=2be88c -->
+<!-- generated-keys: title=e5603a type=3e3f38 id=40bd00 sources=c58ebc field=40bd00 max_users=ac3478 level=1b6453 entry_cost=00381f event=7cb6ef shown_rewards=65b1ed c17=23a053 image=936313 dungeon_slots=679f34 boss=9798c5 gear_tier=13930c gathering=f3c467 -->
 |  |  |
 |---|---|
-|  | ![(Lv 4) Swamps of Snake Warrior](../assets/dungeons/123.png) |
+|  | ![(Lv 4) Swamps of Snake Warrior](wiki/assets/dungeons/123.png) |
 | **Field** | [[wiki/fields/123-lv-4-swamps-of-snake-warrior\|(Lv 4) Swamps of Snake Warrior (field 123)]] |
 | **Level** | 4 |
 | **Gear tier dropped** | T1 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/4.png` |
 | **c17 (unknown)** | 2005 |
 

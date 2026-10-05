@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=324252 type=86a754 id=1d464a sources=6ab015 name_key=394f4f desc_key=22928e kind=356a19 kind_name=9bc378 target=cacd0a range=fe5dbb area=950fc9 cost=e65f66 cooldown=a93f07 delivery=8af2f4 effect_kind=b6589f effects=ef8161 damage_or_effect=bf21a9 visual=8d396f icon=d93629 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Magical Zone](../assets/skills/5192.png) |
+|  | ![Magical Zone](wiki/assets/skills/5192.png) |
 | **Skill id** | `5192` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

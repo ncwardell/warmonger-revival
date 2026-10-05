@@ -23,7 +23,7 @@ help: {"image": "ui/HelpImage/Help_24.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=86708b type=eb5b2b id=a7d304 sources=7a6d13 name_key=d0332d kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=a72b20 prev=97d170 next=97d170 stages=30caa7 objectives=aa6b10 rewards=97d170 help=99a155 -->
 |  |  |
 |---|---|
-|  | ![Item - How to use Crystal : Innocence](../assets/quests/1531.png) |
+|  | ![Item - How to use Crystal : Innocence](wiki/assets/quests/1531.png) |
 | **Quest id** | `1531` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

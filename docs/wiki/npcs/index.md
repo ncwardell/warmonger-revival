@@ -14,8 +14,8 @@ Every non-hostile unit in the client's `UnitDB`: town NPCs, shopkeepers, quest g
 |---|---|---|---|---|
 |  | 81 | [[wiki/npcs/81-transmission-equipment\|Transmission equipment]] | partial | 4 |
 |  | 83 | [[wiki/npcs/83\|NPC 83]] | stub | 4 |
-| ![](../assets/npcs/139.png) | 139 | [[wiki/npcs/139-auction-house-manager\|Auction House Manager]] | stub | 3 |
-| ![](../assets/npcs/140.png) | 140 | [[wiki/npcs/140-blacksmith\|Blacksmith]] | stub | 3 |
+| ![](wiki/assets/npcs/139.png) | 139 | [[wiki/npcs/139-auction-house-manager\|Auction House Manager]] | stub | 3 |
+| ![](wiki/assets/npcs/140.png) | 140 | [[wiki/npcs/140-blacksmith\|Blacksmith]] | stub | 3 |
 |  | 186 | [[wiki/npcs/186-fortress-guard\|Fortress Guard]] | partial | 3 |
 |  | 187 | [[wiki/npcs/187-fortress-guard\|Fortress Guard]] | partial | 3 |
 |  | 188 | [[wiki/npcs/188-fortress-guard\|Fortress Guard]] | partial | 3 |
@@ -28,33 +28,33 @@ Every non-hostile unit in the client's `UnitDB`: town NPCs, shopkeepers, quest g
 |  | 195 | [[wiki/npcs/195-imperial-guard\|Imperial Guard]] | partial | 2 |
 |  | 196 | [[wiki/npcs/196-imperial-guard\|Imperial Guard]] | partial | 2 |
 |  | 197 | [[wiki/npcs/197-imperial-guard\|Imperial Guard]] | partial | 2 |
-| ![](../assets/npcs/198.png) | 198 | [[wiki/npcs/198-frei\|Frei]] | complete | 0 |
-| ![](../assets/npcs/199.png) | 199 | [[wiki/npcs/199-patrick\|Patrick]] | complete | 0 |
-| ![](../assets/npcs/200.png) | 200 | [[wiki/npcs/200-freya\|Freya]] | complete | 0 |
-| ![](../assets/npcs/201.png) | 201 | [[wiki/npcs/201-shaia\|Shaia]] | complete | 0 |
+| ![](wiki/assets/npcs/198.png) | 198 | [[wiki/npcs/198-frei\|Frei]] | complete | 0 |
+| ![](wiki/assets/npcs/199.png) | 199 | [[wiki/npcs/199-patrick\|Patrick]] | complete | 0 |
+| ![](wiki/assets/npcs/200.png) | 200 | [[wiki/npcs/200-freya\|Freya]] | complete | 0 |
+| ![](wiki/assets/npcs/201.png) | 201 | [[wiki/npcs/201-shaia\|Shaia]] | complete | 0 |
 |  | 202 | [[wiki/npcs/202-shaia\|Shaia]] | stub | 4 |
 |  | 203 | [[wiki/npcs/203\|NPC 203]] | stub | 3 |
-| ![](../assets/npcs/204.png) | 204 | [[wiki/npcs/204-wren\|Wren]] | complete | 0 |
-| ![](../assets/npcs/205.png) | 205 | [[wiki/npcs/205-lewellyn\|Lewellyn]] | complete | 0 |
-| ![](../assets/npcs/206.png) | 206 | [[wiki/npcs/206-ashley\|Ashley]] | complete | 0 |
-| ![](../assets/npcs/207.png) | 207 | [[wiki/npcs/207-athan\|Athan]] | complete | 0 |
-| ![](../assets/npcs/208.png) | 208 | [[wiki/npcs/208-bell-thain\|Bell Thain]] | complete | 0 |
+| ![](wiki/assets/npcs/204.png) | 204 | [[wiki/npcs/204-wren\|Wren]] | complete | 0 |
+| ![](wiki/assets/npcs/205.png) | 205 | [[wiki/npcs/205-lewellyn\|Lewellyn]] | complete | 0 |
+| ![](wiki/assets/npcs/206.png) | 206 | [[wiki/npcs/206-ashley\|Ashley]] | complete | 0 |
+| ![](wiki/assets/npcs/207.png) | 207 | [[wiki/npcs/207-athan\|Athan]] | complete | 0 |
+| ![](wiki/assets/npcs/208.png) | 208 | [[wiki/npcs/208-bell-thain\|Bell Thain]] | complete | 0 |
 |  | 209 | [[wiki/npcs/209-reinforcing-craftsman-npc\|Reinforcing Craftsman NPC]] | stub | 4 |
-| ![](../assets/npcs/210.png) | 210 | [[wiki/npcs/210-kesley\|Kesley]] | complete | 0 |
-| ![](../assets/npcs/211.png) | 211 | [[wiki/npcs/211-hadrian\|Hadrian]] | complete | 0 |
-| ![](../assets/npcs/212.png) | 212 | [[wiki/npcs/212-cassia\|Cassia]] | complete | 0 |
-| ![](../assets/npcs/213.png) | 213 | [[wiki/npcs/213-odin\|Odin]] | complete | 0 |
-| ![](../assets/npcs/214.png) | 214 | [[wiki/npcs/214-owen\|Owen]] | complete | 0 |
+| ![](wiki/assets/npcs/210.png) | 210 | [[wiki/npcs/210-kesley\|Kesley]] | complete | 0 |
+| ![](wiki/assets/npcs/211.png) | 211 | [[wiki/npcs/211-hadrian\|Hadrian]] | complete | 0 |
+| ![](wiki/assets/npcs/212.png) | 212 | [[wiki/npcs/212-cassia\|Cassia]] | complete | 0 |
+| ![](wiki/assets/npcs/213.png) | 213 | [[wiki/npcs/213-odin\|Odin]] | complete | 0 |
+| ![](wiki/assets/npcs/214.png) | 214 | [[wiki/npcs/214-owen\|Owen]] | complete | 0 |
 |  | 215 | [[wiki/npcs/215-guard\|Guard]] | complete | 0 |
-| ![](../assets/npcs/216.png) | 216 | [[wiki/npcs/216-lars\|Lars]] | partial | 4 |
-| ![](../assets/npcs/217.png) | 217 | [[wiki/npcs/217-haley\|Haley]] | complete | 0 |
+| ![](wiki/assets/npcs/216.png) | 216 | [[wiki/npcs/216-lars\|Lars]] | partial | 4 |
+| ![](wiki/assets/npcs/217.png) | 217 | [[wiki/npcs/217-haley\|Haley]] | complete | 0 |
 |  | 218 | [[wiki/npcs/218-mail-box\|Mail box]] | complete | 0 |
-| ![](../assets/npcs/219.png) | 219 | [[wiki/npcs/219-krister\|Krister]] | complete | 0 |
+| ![](wiki/assets/npcs/219.png) | 219 | [[wiki/npcs/219-krister\|Krister]] | complete | 0 |
 |  | 220 | [[wiki/npcs/220-training-assistant\|Training Assistant]] | partial | 4 |
 |  | 221 | [[wiki/npcs/221-training-officer\|Training Officer]] | partial | 4 |
 |  | 222 | [[wiki/npcs/222-training-assistant\|Training Assistant]] | partial | 4 |
 |  | 223 | [[wiki/npcs/223-training-assistant\|Training Assistant]] | partial | 4 |
-| ![](../assets/npcs/224.png) | 224 | [[wiki/npcs/224-bernice\|Bernice]] | complete | 0 |
+| ![](wiki/assets/npcs/224.png) | 224 | [[wiki/npcs/224-bernice\|Bernice]] | complete | 0 |
 |  | 225 | [[wiki/npcs/225-bot-saint\|Bot : Saint]] | partial | 3 |
 |  | 226 | [[wiki/npcs/226-bot-punisher\|Bot : Punisher]] | partial | 3 |
 |  | 227 | [[wiki/npcs/227-bot-guardian\|Bot : Guardian]] | partial | 3 |
@@ -67,41 +67,41 @@ Every non-hostile unit in the client's `UnitDB`: town NPCs, shopkeepers, quest g
 |  | 234 | [[wiki/npcs/234-bot-guardian\|Bot : Guardian]] | partial | 3 |
 |  | 235 | [[wiki/npcs/235-bot-punisher\|Bot : Punisher]] | partial | 3 |
 |  | 236 | [[wiki/npcs/236-bot-saint\|Bot : Saint]] | partial | 3 |
-| ![](../assets/npcs/237.png) | 237 | [[wiki/npcs/237-farrell\|Farrell]] | complete | 0 |
-| ![](../assets/npcs/238.png) | 238 | [[wiki/npcs/238-wren\|Wren]] | complete | 0 |
-| ![](../assets/npcs/239.png) | 239 | [[wiki/npcs/239-floyd\|Floyd]] | complete | 0 |
-| ![](../assets/npcs/240.png) | 240 | [[wiki/npcs/240-candice\|Candice]] | partial | 2 |
-| ![](../assets/npcs/241.png) | 241 | [[wiki/npcs/241-arion\|Arion]] | partial | 3 |
-| ![](../assets/npcs/242.png) | 242 | [[wiki/npcs/242-raon\|Raon]] | partial | 2 |
-| ![](../assets/npcs/243.png) | 243 | [[wiki/npcs/243-arkin\|Arkin]] | stub | 3 |
-| ![](../assets/npcs/300.png) | 300 | [[wiki/npcs/300-kaysa\|Kaysa]] | complete | 0 |
+| ![](wiki/assets/npcs/237.png) | 237 | [[wiki/npcs/237-farrell\|Farrell]] | complete | 0 |
+| ![](wiki/assets/npcs/238.png) | 238 | [[wiki/npcs/238-wren\|Wren]] | complete | 0 |
+| ![](wiki/assets/npcs/239.png) | 239 | [[wiki/npcs/239-floyd\|Floyd]] | complete | 0 |
+| ![](wiki/assets/npcs/240.png) | 240 | [[wiki/npcs/240-candice\|Candice]] | partial | 2 |
+| ![](wiki/assets/npcs/241.png) | 241 | [[wiki/npcs/241-arion\|Arion]] | partial | 3 |
+| ![](wiki/assets/npcs/242.png) | 242 | [[wiki/npcs/242-raon\|Raon]] | partial | 2 |
+| ![](wiki/assets/npcs/243.png) | 243 | [[wiki/npcs/243-arkin\|Arkin]] | stub | 3 |
+| ![](wiki/assets/npcs/300.png) | 300 | [[wiki/npcs/300-kaysa\|Kaysa]] | complete | 0 |
 |  | 301 | [[wiki/npcs/301-abyss-portal\|Abyss Portal]] | stub | 4 |
-| ![](../assets/npcs/303.png) | 303 | [[wiki/npcs/303-cathy\|Cathy]] | complete | 0 |
-| ![](../assets/npcs/304.png) | 304 | [[wiki/npcs/304-fergus\|Fergus]] | complete | 0 |
+| ![](wiki/assets/npcs/303.png) | 303 | [[wiki/npcs/303-cathy\|Cathy]] | complete | 0 |
+| ![](wiki/assets/npcs/304.png) | 304 | [[wiki/npcs/304-fergus\|Fergus]] | complete | 0 |
 |  | 310 | [[wiki/npcs/310\|NPC 310]] | stub | 4 |
 |  | 311 | [[wiki/npcs/311-fortress-portal\|Fortress Portal]] | complete | 0 |
 |  | 312 | [[wiki/npcs/312-plida\|Plida]] | stub | 3 |
-| ![](../assets/npcs/313.png) | 313 | [[wiki/npcs/313-odin\|Odin]] | stub | 3 |
-| ![](../assets/npcs/314.png) | 314 | [[wiki/npcs/314-owen\|Owen]] | stub | 3 |
-| ![](../assets/npcs/315.png) | 315 | [[wiki/npcs/315-lewellyn\|Lewellyn]] | complete | 0 |
-| ![](../assets/npcs/316.png) | 316 | [[wiki/npcs/316-lewellyn\|Lewellyn]] | partial | 3 |
-| ![](../assets/npcs/317.png) | 317 | [[wiki/npcs/317-farrell\|Farrell]] | partial | 3 |
-| ![](../assets/npcs/318.png) | 318 | [[wiki/npcs/318-kesley\|Kesley]] | complete | 0 |
-| ![](../assets/npcs/319.png) | 319 | [[wiki/npcs/319-wren\|Wren]] | stub | 3 |
+| ![](wiki/assets/npcs/313.png) | 313 | [[wiki/npcs/313-odin\|Odin]] | stub | 3 |
+| ![](wiki/assets/npcs/314.png) | 314 | [[wiki/npcs/314-owen\|Owen]] | stub | 3 |
+| ![](wiki/assets/npcs/315.png) | 315 | [[wiki/npcs/315-lewellyn\|Lewellyn]] | complete | 0 |
+| ![](wiki/assets/npcs/316.png) | 316 | [[wiki/npcs/316-lewellyn\|Lewellyn]] | partial | 3 |
+| ![](wiki/assets/npcs/317.png) | 317 | [[wiki/npcs/317-farrell\|Farrell]] | partial | 3 |
+| ![](wiki/assets/npcs/318.png) | 318 | [[wiki/npcs/318-kesley\|Kesley]] | complete | 0 |
+| ![](wiki/assets/npcs/319.png) | 319 | [[wiki/npcs/319-wren\|Wren]] | stub | 3 |
 |  | 320 | [[wiki/npcs/320-ladi\|ladi]] | partial | 2 |
-| ![](../assets/npcs/321.png) | 321 | [[wiki/npcs/321-truestone\|Truestone]] | stub | 3 |
-| ![](../assets/npcs/322.png) | 322 | [[wiki/npcs/322-paraman\|Paraman]] | complete | 0 |
-| ![](../assets/npcs/323.png) | 323 | [[wiki/npcs/323-alan\|Alan]] | complete | 0 |
-| ![](../assets/npcs/324.png) | 324 | [[wiki/npcs/324-casta\|Casta]] | complete | 0 |
-| ![](../assets/npcs/325.png) | 325 | [[wiki/npcs/325-joel\|Joel]] | stub | 3 |
+| ![](wiki/assets/npcs/321.png) | 321 | [[wiki/npcs/321-truestone\|Truestone]] | stub | 3 |
+| ![](wiki/assets/npcs/322.png) | 322 | [[wiki/npcs/322-paraman\|Paraman]] | complete | 0 |
+| ![](wiki/assets/npcs/323.png) | 323 | [[wiki/npcs/323-alan\|Alan]] | complete | 0 |
+| ![](wiki/assets/npcs/324.png) | 324 | [[wiki/npcs/324-casta\|Casta]] | complete | 0 |
+| ![](wiki/assets/npcs/325.png) | 325 | [[wiki/npcs/325-joel\|Joel]] | stub | 3 |
 |  | 326 | [[wiki/npcs/326-kael\|Kael]] | stub | 4 |
-| ![](../assets/npcs/327.png) | 327 | [[wiki/npcs/327-aenes\|Aenes]] | partial | 2 |
-| ![](../assets/npcs/328.png) | 328 | [[wiki/npcs/328-aenes\|Aenes]] | stub | 3 |
-| ![](../assets/npcs/330.png) | 330 | [[wiki/npcs/330-tora\|Tora]] | stub | 3 |
-| ![](../assets/npcs/334.png) | 334 | [[wiki/npcs/334-floyd\|Floyd]] | stub | 3 |
-| ![](../assets/npcs/335.png) | 335 | [[wiki/npcs/335-odin\|Odin]] | complete | 0 |
-| ![](../assets/npcs/336.png) | 336 | [[wiki/npcs/336-paraman\|Paraman]] | stub | 3 |
-| ![](../assets/npcs/337.png) | 337 | [[wiki/npcs/337-owen\|Owen]] | complete | 0 |
+| ![](wiki/assets/npcs/327.png) | 327 | [[wiki/npcs/327-aenes\|Aenes]] | partial | 2 |
+| ![](wiki/assets/npcs/328.png) | 328 | [[wiki/npcs/328-aenes\|Aenes]] | stub | 3 |
+| ![](wiki/assets/npcs/330.png) | 330 | [[wiki/npcs/330-tora\|Tora]] | stub | 3 |
+| ![](wiki/assets/npcs/334.png) | 334 | [[wiki/npcs/334-floyd\|Floyd]] | stub | 3 |
+| ![](wiki/assets/npcs/335.png) | 335 | [[wiki/npcs/335-odin\|Odin]] | complete | 0 |
+| ![](wiki/assets/npcs/336.png) | 336 | [[wiki/npcs/336-paraman\|Paraman]] | stub | 3 |
+| ![](wiki/assets/npcs/337.png) | 337 | [[wiki/npcs/337-owen\|Owen]] | complete | 0 |
 |  | 607 | [[wiki/npcs/607-punisher-bot-t\|Punisher Bot-t]] | stub | 4 |
 |  | 608 | [[wiki/npcs/608-saint-bot-t\|Saint Bot-t]] | stub | 4 |
 |  | 1029 | [[wiki/npcs/1029\|NPC 1029]] | stub | 4 |

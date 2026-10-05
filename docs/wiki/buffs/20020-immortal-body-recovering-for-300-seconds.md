@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=9db209 type=6143a1 id=ef5cf4 sources=97ce4c name_key=89abf9 duration=995f11 is_buff=b6589f stack_type=356a19 group=b6589f effects=60497a icon=30f6b2 applied_by=db6241 -->
 |  |  |
 |---|---|
-|  | ![Immortal Body : Recovering for 300 seconds](../assets/buffs/20020.png) |
+|  | ![Immortal Body : Recovering for 300 seconds](wiki/assets/buffs/20020.png) |
 | **Buff id** | `20020` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

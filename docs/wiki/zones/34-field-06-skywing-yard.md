@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z34_00.dds"
 <!-- generated-keys: title=2093bc type=c899cd id=f1f836 sources=d2c4c0 name_kr=b58747 terrain=3d582b bounds=60e536 size=114466 segments=918b6b fields=4a0a63 minimap=0d5392 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 06 (Skywing Yard)](../assets/zones/34.png) |
+|  | ![minimap of Field 06 (Skywing Yard)](wiki/assets/zones/34.png) |
 | **Zone id** | `34` |
 | **ZoneDB name** | 필드_06 (English gloss: Field 06 (Skywing Yard)) |
 | **Terrain name** | `06` |

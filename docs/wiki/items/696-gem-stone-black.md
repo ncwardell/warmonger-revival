@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=ab2e7f type=d36ca9 id=4c87e5 sources=0ce1a0 name_key=6eaff8 kind=667be5 kind_name=8e0d16 classes=92d079 bind=2be88c price=5536f7 cost_pair=ebaa22 stats=97d170 icon=e5d2bd obtained_from=6a07d4 -->
 |  |  |
 |---|---|
-|  | ![Gem stone : Black](../assets/items/696.png) |
+|  | ![Gem stone : Black](wiki/assets/items/696.png) |
 | **Item id** | `696` |
 | **Kind** | Jewel (58) |
 | **Classes** | all |

@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=b06753 type=6143a1 id=fa5b7e sources=25950a name_key=ca0081 duration=6c141f is_buff=b6589f stack_type=356a19 group=17ba07 effects=97d170 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Test Buff 1](../assets/buffs/913.png) |
+|  | ![Test Buff 1](wiki/assets/buffs/913.png) |
 | **Buff id** | `913` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

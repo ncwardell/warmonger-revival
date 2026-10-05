@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=eda016 type=6143a1 id=c66e17 sources=4e2bf7 name_key=aebaac duration=6c749d is_buff=b6589f stack_type=356a19 group=703386 effects=71fb0a icon=fdf9b8 applied_by=5f3d01 -->
 |  |  |
 |---|---|
-|  | ![The Dark Art : Increased Life Steal](../assets/buffs/30025.png) |
+|  | ![The Dark Art : Increased Life Steal](wiki/assets/buffs/30025.png) |
 | **Buff id** | `30025` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

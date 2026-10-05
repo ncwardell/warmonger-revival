@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=099a7a type=d36ca9 id=cf06ed sources=b16e42 name_key=6dd8e5 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=d19555 reinforce=da4b92 icon=34555f obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Ring of Courage](../assets/items/472.png) |
+|  | ![Ring of Courage](wiki/assets/items/472.png) |
 | **Item id** | `472` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

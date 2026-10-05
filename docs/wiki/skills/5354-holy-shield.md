@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=8834af type=86a754 id=611991 sources=1a8bb5 name_key=05110d desc_key=db35db kind=356a19 kind_name=9bc378 target=55b685 range=356a19 area=6d01a6 cost=15d513 cooldown=dceb3e effect_kind=b6589f effects=0212d3 damage_or_effect=8e4342 visual=f8b5f6 icon=7da0f2 used_by=cee5c9 -->
 |  |  |
 |---|---|
-|  | ![Holy Shield](../assets/skills/5354.png) |
+|  | ![Holy Shield](wiki/assets/skills/5354.png) |
 | **Skill id** | `5354` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

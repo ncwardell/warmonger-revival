@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=29e775 type=d36ca9 id=eab06f sources=5e7d22 name_key=13a2a2 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=d98d6c cost_pair=9a5091 stats=97d170 icon=6d9f4c obtained_from=564dd3 -->
 |  |  |
 |---|---|
-|  | ![Extracted Borage](../assets/items/873.png) |
+|  | ![Extracted Borage](wiki/assets/items/873.png) |
 | **Item id** | `873` |
 | **Kind** | Material (12) |
 | **Classes** | all |

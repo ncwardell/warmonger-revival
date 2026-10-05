@@ -31,7 +31,7 @@ obtained_from: []
 <!-- generated-keys: title=c4a1e5 type=d36ca9 id=9deb86 sources=197ae2 name_key=16b9c3 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8726f1 cost_pair=93e5d8 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=1e2b6f cooldown_s=da4b92 cooldown_group=f6e112 stats=97d170 options=51a907 icon=7d60f6 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Scroll of Magic PNT (C)](../assets/items/732.png) |
+|  | ![Scroll of Magic PNT (C)](wiki/assets/items/732.png) |
 | **Item id** | `732` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

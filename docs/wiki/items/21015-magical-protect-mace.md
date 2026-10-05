@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=b43622 type=d36ca9 id=511a19 sources=992723 name_key=9113e0 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=097ccd stats=1e02c6 options=fd0b21 skills=1a217d reinforce=7b5200 icon=0819a6 obtained_from=501dc8 -->
 |  |  |
 |---|---|
-|  | ![Magical Protect Mace](../assets/items/21015.png) |
+|  | ![Magical Protect Mace](wiki/assets/items/21015.png) |
 | **Item id** | `21015` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

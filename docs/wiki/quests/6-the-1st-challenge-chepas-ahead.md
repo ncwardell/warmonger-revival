@@ -5,6 +5,7 @@ id: 6
 status: "complete"
 missing: []
 sources: ["client: Quest.cdb id 6", "video: [[gameplay/video-tutorial-walkthrough]] (lessons and giver-less chain quests start on their own)", "client: QuestTalk.cdb id 899", "design: requires_bit 5 and offer_maps 88/92/96 enable the prototype Frei follow-up; see [[testing]]"]
+manual: ["requires_bit", "offer_maps"]
 name_key: "Quest_Title_634"
 kind: 0
 kind_name: "Main"
@@ -12,16 +13,15 @@ giver: {"auto": true}
 turn_in: {"auto": true}
 bit: 6
 automatic: true
-manual: ["requires_bit", "offer_maps"]
-requires_bit: 5
-offer_maps: [88, 92, 96]
-server_policy_source: "design: enable the client quest-6 variant after quest 5 in Training Camp; see docs/testing.md, Chepa continuation"
 prev: [5]
 next: [7]
 stages: [5, 5, 5, 5, 5]
 objectives:
   - {"n": 1, "type": 4, "what": "talk", "npc": 198, "talk": 899, "maps": [89, 93, 97], "text_key": "Quest_QuickText_CB_FREI"}
 rewards: []
+requires_bit: 5
+offer_maps: [88, 92, 96]
+server_policy_source: "design: enable the client quest-6 variant after quest 5 in Training Camp; see docs/testing.md, Chepa continuation"
 ---
 <!-- generated:start -->
 <!-- generated-keys: title=2ab84f type=eb5b2b id=c1dfd9 sources=764b65 name_key=6b6dd8 kind=b6589f kind_name=b3f808 giver=847ad4 turn_in=847ad4 bit=c1dfd9 automatic=5ffe53 prev=10ae24 next=bd703d stages=30caa7 objectives=70463b rewards=97d170 -->
@@ -31,7 +31,9 @@ rewards: []
 | **Kind** | Main (kind 0) |
 | **Giver** | automatic |
 | **Turn in** | automatic |
+| **Offered on** | Arslan: [[wiki/fields/88-training-camp\|Training Camp]] (88) · Erion: [[wiki/fields/92-training-camp\|Training Camp]] (92) · Armia: [[wiki/fields/96-training-camp\|Training Camp]] (96) |
 | **Completion bit** | 6 |
+| **Requires bit** | 5 |
 | **Automatic flag** | set (c14@11) |
 
 ### Chain

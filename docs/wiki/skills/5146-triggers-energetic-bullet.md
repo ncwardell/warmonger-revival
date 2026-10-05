@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=25d5a7 type=86a754 id=0e1964 sources=c57298 name_key=2cae70 desc_key=c9ad31 kind=ac3478 kind_name=65782b target=069ef3 range=902ba3 cost=2be88c cooldown=367d78 effect_kind=356a19 effects=9aabee damage_or_effect=7877c2 weapon_type=0ade7c visual=6b0f4d icon=721c7c used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Triggers Energetic Bullet](../assets/skills/5146.png) |
+|  | ![Triggers Energetic Bullet](wiki/assets/skills/5146.png) |
 | **Skill id** | `5146` |
 | **Kind** | kind 5 (5) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

@@ -24,7 +24,7 @@ kind: "random_box"
 <!-- generated-keys: title=ff83c4 type=24f03d id=64e095 sources=ef1090 contents=a69216 value_4c=409e95 opened_by_guess=17cc4e kind=364c90 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1053.png) |
+|  | ![](wiki/assets/items/1053.png) |
 | **RandomBox id** | `48` |
 | **Opened by** | [[wiki/items/1053-gold-medal-reward-box\|(Gold) Medal Reward Box]] (*guess*, not confirmed) |
 | **Value @4c** | 100,000 (unknown; decoder guesses gold. The Lord of the Land reward box cost 300,000 gold to open, later 200,000 — [[gameplay/server-rules\|server rules]], WM 0426 / 0920 — so this may be the gold cost of opening: *guess*) |
@@ -36,16 +36,16 @@ One of these is given when the box is used (contract `use_item`; *guess*: one ro
 
 | slot |  | item | count | p |
 |---|---|---|---|---|
-| 0 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 60,000 |  |
-| 1 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 60,000 |  |
-| 2 | ![](../assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 140,000 |  |
-| 3 | ![](../assets/items/999.png) | [[wiki/items/999-medal-mithril\|Medal : Mithril]] | 1 |  |
-| 4 | ![](../assets/items/1054.png) | [[wiki/items/1054-mithril-medal-reward-box\|(Mithril) Medal Reward Box]] | 1 |  |
-| 5 | ![](../assets/items/1054.png) | [[wiki/items/1054-mithril-medal-reward-box\|(Mithril) Medal Reward Box]] | 1 |  |
-| 6 | ![](../assets/items/7082.png) | [[wiki/items/7082-armor-penetration-rune\|Armor Penetration Rune]] | 1 |  |
-| 7 | ![](../assets/items/7092.png) | [[wiki/items/7092-magic-resist-penetration-rune\|Magic resist Penetration Rune]] | 1 |  |
-| 8 | ![](../assets/items/7122.png) | [[wiki/items/7122-life-steal-rune\|Life Steal Rune]] | 1 |  |
-| 9 | ![](../assets/items/7132.png) | [[wiki/items/7132-spell-vamp-rune\|Spell Vamp Rune]] | 1 |  |
+| 0 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 60,000 |  |
+| 1 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 60,000 |  |
+| 2 | ![](wiki/assets/items/1021.png) | [[wiki/items/1021-gold\|Gold]] | 140,000 |  |
+| 3 | ![](wiki/assets/items/999.png) | [[wiki/items/999-medal-mithril\|Medal : Mithril]] | 1 |  |
+| 4 | ![](wiki/assets/items/1054.png) | [[wiki/items/1054-mithril-medal-reward-box\|(Mithril) Medal Reward Box]] | 1 |  |
+| 5 | ![](wiki/assets/items/1054.png) | [[wiki/items/1054-mithril-medal-reward-box\|(Mithril) Medal Reward Box]] | 1 |  |
+| 6 | ![](wiki/assets/items/7082.png) | [[wiki/items/7082-armor-penetration-rune\|Armor Penetration Rune]] | 1 |  |
+| 7 | ![](wiki/assets/items/7092.png) | [[wiki/items/7092-magic-resist-penetration-rune\|Magic resist Penetration Rune]] | 1 |  |
+| 8 | ![](wiki/assets/items/7122.png) | [[wiki/items/7122-life-steal-rune\|Life Steal Rune]] | 1 |  |
+| 9 | ![](wiki/assets/items/7132.png) | [[wiki/items/7132-spell-vamp-rune\|Spell Vamp Rune]] | 1 |  |
 
 ### Why this box item
 

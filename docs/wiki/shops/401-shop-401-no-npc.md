@@ -73,31 +73,31 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 25 |  | Gold | 10 | 79 | 63 |
-| 1 | ![](../assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 25 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 2 |  | Bronze Medal | 2 | 2 | – |
-| 3 | ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 4 |  | Bronze Medal | 2 | 2 | – |
-| 4 | ![](../assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 1 |  | Bronze Medal | 5 | 5 | – |
-| 5 | ![](../assets/items/857.png) | [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 1 |  | Gold Medal | 5 | 5 | – |
-| 6 | ![](../assets/items/856.png) | [[wiki/items/856-brilliant-passion\|Brilliant Passion]] | 1 |  | Silver Medal | 5 | 5 | – |
-| 7 | ![](../assets/items/856.png) | [[wiki/items/856-brilliant-passion\|Brilliant Passion]] | 2 |  | Silver Medal | 5 | 5 | – |
-| 8 | ![](../assets/items/1012.png) | [[wiki/items/1012-shaia-stone\|Shaia Stone]] | 1 |  | Gold | 0 | 0 | 0 |
-| 9 | ![](../assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 25 |  | Gold | 40 | 316 | 252 |
-| 10 | ![](../assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 3 |  | Bronze Medal | 5 | 5 | – |
-| 11 | ![](../assets/items/905.png) | [[wiki/items/905-blessing-of-shaia\|Blessing of Shaia]] | 1 |  | Gold | 10 | 79 | 63 |
-| 12 | ![](../assets/items/764.png) | [[wiki/items/764-drop-chance-potion\|Drop Chance Potion]] | 1 |  | Gold | 10 | 79 | 63 |
-| 13 | ![](../assets/items/1100.png) | [[wiki/items/1100-reinforcing-adjuvants\|Reinforcing adjuvants]] | 1 |  | currency 16 (Mithril medal?) | 1 | 1 | – |
-| 14 | ![](../assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 25 |  | Gold | 80 | 633 | 504 |
-| 15 | ![](../assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 16 | ![](../assets/items/1931.png) | [[wiki/items/1931-essence-of-wind\|Essence of Wind]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 17 | ![](../assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 18 | ![](../assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 19 | ![](../assets/items/1934.png) | [[wiki/items/1934-essence-of-earth\|Essence of Earth]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 20 | ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 21 | ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 22 | ![](../assets/items/857.png) | [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 2 |  | Gold Medal | 5 | 5 | – |
-| 23 | ![](../assets/items/1012.png) | [[wiki/items/1012-shaia-stone\|Shaia Stone]] | 1 |  | Gold | 0 | 0 | 0 |
-| 24 | ![](../assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 25 |  | Gold | 80 | 633 | 504 |
+| 0 | ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 25 |  | Gold | 10 | 79 | 63 |
+| 1 | ![](wiki/assets/items/701.png) | [[wiki/items/701-crystal-yellow\|Crystal : Yellow]] | 25 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 2 |  | Bronze Medal | 2 | 2 | – |
+| 3 | ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 4 |  | Bronze Medal | 2 | 2 | – |
+| 4 | ![](wiki/assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 1 |  | Bronze Medal | 5 | 5 | – |
+| 5 | ![](wiki/assets/items/857.png) | [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 1 |  | Gold Medal | 5 | 5 | – |
+| 6 | ![](wiki/assets/items/856.png) | [[wiki/items/856-brilliant-passion\|Brilliant Passion]] | 1 |  | Silver Medal | 5 | 5 | – |
+| 7 | ![](wiki/assets/items/856.png) | [[wiki/items/856-brilliant-passion\|Brilliant Passion]] | 2 |  | Silver Medal | 5 | 5 | – |
+| 8 | ![](wiki/assets/items/1012.png) | [[wiki/items/1012-shaia-stone\|Shaia Stone]] | 1 |  | Gold | 0 | 0 | 0 |
+| 9 | ![](wiki/assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 25 |  | Gold | 40 | 316 | 252 |
+| 10 | ![](wiki/assets/items/855.png) | [[wiki/items/855-mysterious-passion\|Mysterious Passion]] | 3 |  | Bronze Medal | 5 | 5 | – |
+| 11 | ![](wiki/assets/items/905.png) | [[wiki/items/905-blessing-of-shaia\|Blessing of Shaia]] | 1 |  | Gold | 10 | 79 | 63 |
+| 12 | ![](wiki/assets/items/764.png) | [[wiki/items/764-drop-chance-potion\|Drop Chance Potion]] | 1 |  | Gold | 10 | 79 | 63 |
+| 13 | ![](wiki/assets/items/1100.png) | [[wiki/items/1100-reinforcing-adjuvants\|Reinforcing adjuvants]] | 1 |  | currency 16 (Mithril medal?) | 1 | 1 | – |
+| 14 | ![](wiki/assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 25 |  | Gold | 80 | 633 | 504 |
+| 15 | ![](wiki/assets/items/1930.png) | [[wiki/items/1930-essence-of-darkness\|essence of Darkness]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 16 | ![](wiki/assets/items/1931.png) | [[wiki/items/1931-essence-of-wind\|Essence of Wind]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 17 | ![](wiki/assets/items/1932.png) | [[wiki/items/1932-essence-of-fire\|Essence of Fire]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 18 | ![](wiki/assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 19 | ![](wiki/assets/items/1934.png) | [[wiki/items/1934-essence-of-earth\|Essence of Earth]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 20 | ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 21 | ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 22 | ![](wiki/assets/items/857.png) | [[wiki/items/857-amplifying-passion\|Amplifying Passion]] | 2 |  | Gold Medal | 5 | 5 | – |
+| 23 | ![](wiki/assets/items/1012.png) | [[wiki/items/1012-shaia-stone\|Shaia Stone]] | 1 |  | Gold | 0 | 0 | 0 |
+| 24 | ![](wiki/assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 25 |  | Gold | 80 | 633 | 504 |
 
 7 entries repeat an item already listed (the client shows every entry).
 

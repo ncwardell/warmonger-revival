@@ -26,7 +26,7 @@ tp: {"row": 14, "tp_cost": 10000, "cooldown_s": 180, "need_flags": 2, "c7": 1}
 <!-- generated-keys: title=31d608 type=86a754 id=2238a0 sources=d702ea name_key=c71dc3 desc_key=c0d564 kind=356a19 kind_name=9bc378 target=35e077 range=3028f5 area=febbd1 cost=593709 cooldown=c44d13 effect_kind=b6589f effects=f8e924 damage_or_effect=bf21a9 icon=51436c used_by=97d170 tp=4534ca -->
 |  |  |
 |---|---|
-|  | ![Highly Concentrated Bomb](../assets/skills/4519.png) |
+|  | ![Highly Concentrated Bomb](wiki/assets/skills/4519.png) |
 | **Skill id** | `4519` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: player, structure; up to 1 |

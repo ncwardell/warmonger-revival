@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z92_00.dds"
 <!-- generated-keys: title=1d2d09 type=c899cd id=8ee51c sources=e14691 name_kr=9e2c24 terrain=f57630 bounds=1528c4 size=114466 segments=af805c fields=614ccd minimap=45e471 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 79 (Moon Lake)](../assets/zones/92.png) |
+|  | ![minimap of Field 79 (Moon Lake)](wiki/assets/zones/92.png) |
 | **Zone id** | `92` |
 | **ZoneDB name** | 필드_79 (English gloss: Field 79 (Moon Lake)) |
 | **Terrain name** | `79` |

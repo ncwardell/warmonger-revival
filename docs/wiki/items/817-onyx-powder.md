@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=d268d7 type=d36ca9 id=2e946d sources=2f9d09 name_key=31813c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=5148be cost_pair=ad07dc stats=97d170 icon=e48976 obtained_from=e3cea2 -->
 |  |  |
 |---|---|
-|  | ![Onyx powder](../assets/items/817.png) |
+|  | ![Onyx powder](wiki/assets/items/817.png) |
 | **Item id** | `817` |
 | **Kind** | Material (12) |
 | **Classes** | all |

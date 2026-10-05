@@ -30,7 +30,7 @@ offer_talk: 763
 <!-- generated-keys: title=be0e6f type=eb5b2b id=f032e5 sources=580456 name_key=0a25b6 kind=77de68 kind_name=01e781 giver=91ad7d turn_in=847ad4 offer_maps=15f2a7 bit=b6589f requires_bit=22d200 excludes_bit=632667 owned_field=0ca927 automatic=5ffe53 prev=91a33c next=97d170 stages=30caa7 objectives=e246a6 rewards=4b5c7d offer_talk=e1de5f -->
 |  |  |
 |---|---|
-|  | ![Demon Hell](../assets/npcs/213.png) |
+|  | ![Demon Hell](wiki/assets/npcs/213.png) |
 | **Quest id** | `743` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/213-odin\|Odin]] |

@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=ddd97f type=d36ca9 id=ab39c5 sources=68920b name_key=976bfe kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=028149 cost_pair=623e9c period=365a69 stats=eca94b options=70f9e6 icon=632154 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Crown Set](../assets/items/2016.png) |
+|  | ![Crown Set](wiki/assets/items/2016.png) |
 | **Item id** | `2016` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

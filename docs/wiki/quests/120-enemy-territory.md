@@ -28,7 +28,7 @@ offer_talk: 788
 <!-- generated-keys: title=75a6d8 type=eb5b2b id=775bc5 sources=b01983 name_key=70502c kind=356a19 kind_name=0bac50 giver=65eab4 turn_in=847ad4 offer_maps=15f2a7 bit=12f0de requires_bit=a93349 automatic=5ffe53 prev=f7cf3c next=97d170 stages=30caa7 objectives=2be88c objectives_client=1d7830 rewards=202a6f offer_talk=0fe36d -->
 |  |  |
 |---|---|
-|  | ![Enemy territory](../assets/npcs/237.png) |
+|  | ![Enemy territory](wiki/assets/npcs/237.png) |
 | **Quest id** | `120` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/237-farrell\|Farrell]] |

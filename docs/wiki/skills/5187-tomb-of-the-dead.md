@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=25fe5b type=86a754 id=80b638 sources=d87b3d name_key=c078b7 desc_key=9693ae kind=356a19 kind_name=9bc378 target=d1cc1b range=ac3478 area=ec7019 cost=2be88c cooldown=a7242f effect_kind=da4b92 effects=8d72ae damage_or_effect=a8f1e1 visual=cb4dd5 icon=5cb950 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Tomb of the Dead](../assets/skills/5187.png) |
+|  | ![Tomb of the Dead](wiki/assets/skills/5187.png) |
 | **Skill id** | `5187` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

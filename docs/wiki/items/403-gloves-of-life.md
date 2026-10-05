@@ -47,7 +47,7 @@ obtained_from:
 <!-- generated-keys: title=a66ac6 type=d36ca9 id=8980dc sources=5422f1 name_key=bf3f9e kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=f4f99a reinforce=356a19 icon=c03e6f obtained_from=da954b -->
 |  |  |
 |---|---|
-|  | ![Gloves of Life](../assets/items/403.png) |
+|  | ![Gloves of Life](wiki/assets/items/403.png) |
 | **Item id** | `403` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |
@@ -103,6 +103,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 128, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 
 ### Mentioned in
 

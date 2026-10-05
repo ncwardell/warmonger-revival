@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=dcbe39 type=d36ca9 id=1762fc sources=1e0f71 name_key=03c838 kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=5d6403 set=c1dfd9 reinforce=92cfce icon=010ba7 obtained_from=6b2bd1 -->
 |  |  |
 |---|---|
-|  | ![Garon's Orb](../assets/items/3055.png) |
+|  | ![Garon's Orb](wiki/assets/items/3055.png) |
 | **Item id** | `3055` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

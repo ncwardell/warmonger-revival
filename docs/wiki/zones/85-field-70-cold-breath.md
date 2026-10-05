@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z85_00.dds"
 <!-- generated-keys: title=b8ee2d type=c899cd id=135224 sources=d0c2b4 name_kr=bdfb16 terrain=b948da bounds=0785a6 size=114466 segments=98cf56 fields=36f14e minimap=5bbe81 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 70 (Cold Breath)](../assets/zones/85.png) |
+|  | ![minimap of Field 70 (Cold Breath)](wiki/assets/zones/85.png) |
 | **Zone id** | `85` |
 | **ZoneDB name** | 필드_70 (English gloss: Field 70 (Cold Breath)) |
 | **Terrain name** | `70` |

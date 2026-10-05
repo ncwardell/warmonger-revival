@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=5f1057 type=6143a1 id=893dbd sources=4f9a87 name_key=aabc4e duration=0aac5a is_buff=b6589f stack_type=356a19 group=b6589f effects=4768c9 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Ambition of the Warrior : Reduces Armor and Magic Resistance by 30%.](../assets/buffs/10250.png) |
+|  | ![Ambition of the Warrior : Reduces Armor and Magic Resistance by 30%.](wiki/assets/buffs/10250.png) |
 | **Buff id** | `10250` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

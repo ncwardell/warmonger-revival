@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=50dc1b type=86a754 id=38891c sources=bb7179 name_key=007c60 desc_key=384d09 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=e65f66 cooldown=752bf3 effect_kind=b6589f effects=15be46 damage_or_effect=0c0a29 visual=e973a6 icon=5c9a70 used_by=27e6ea -->
 |  |  |
 |---|---|
-|  | ![Bloody anger](../assets/skills/20254.png) |
+|  | ![Bloody anger](wiki/assets/skills/20254.png) |
 | **Skill id** | `20254` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

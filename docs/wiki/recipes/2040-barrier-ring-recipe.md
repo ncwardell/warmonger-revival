@@ -21,7 +21,7 @@ npc: [335]
 <!-- generated-keys: title=b4ab0b type=61613a id=e4e36b sources=1a5ae7 result=701615 materials=1925b2 gold=8a12a3 success_rate=310b86 category=c1dfd9 filter_mask=16666f superior=39e62b level=356a19 raw=2b2a6b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/436.png) |
+|  | ![](wiki/assets/items/436.png) |
 | **Recipe id** | `2040` (`Item_Make`) |
 | **Makes** | [[wiki/items/436-barrier-ring\|Barrier Ring]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [335]
 | **Superior result** | 5 % → [[wiki/items/468-barrier-ring\|Barrier Ring]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 6 / `0x1000080` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/335-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 11 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 11 |  |
 
 Unknown columns: `c28` = 165 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

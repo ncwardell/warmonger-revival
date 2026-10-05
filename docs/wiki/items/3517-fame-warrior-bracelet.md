@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=d2cb79 type=d36ca9 id=1651fb sources=e7c22f name_key=8bfff9 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=3d30f5 set=fe5dbb reinforce=92cfce icon=36aac5 obtained_from=bf61bd -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Bracelet](../assets/items/3517.png) |
+|  | ![Fame warrior Bracelet](wiki/assets/items/3517.png) |
 | **Item id** | `3517` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

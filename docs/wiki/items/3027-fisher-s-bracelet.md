@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=fa2db9 type=d36ca9 id=4ae405 sources=f96a2f name_key=83b1e3 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=61a339 set=77de68 reinforce=92cfce icon=162c97 obtained_from=1a58fa -->
 |  |  |
 |---|---|
-|  | ![Fisher's Bracelet](../assets/items/3027.png) |
+|  | ![Fisher's Bracelet](wiki/assets/items/3027.png) |
 | **Item id** | `3027` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

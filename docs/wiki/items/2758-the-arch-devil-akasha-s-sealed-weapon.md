@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=1c4bf1 type=d36ca9 id=6be799 sources=13a0b3 name_key=7b590c kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=361f1d obtained_from=4660e5 -->
 |  |  |
 |---|---|
-|  | ![The Arch devil Akasha's Sealed Weapon](../assets/items/2758.png) |
+|  | ![The Arch devil Akasha's Sealed Weapon](wiki/assets/items/2758.png) |
 | **Item id** | `2758` |
 | **Kind** | Material (12) |
 | **Classes** | all |

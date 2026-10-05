@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=bf33d8 type=d36ca9 id=1da2bd sources=d72b60 name_key=fb0dc6 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=543613 set=356a19 reinforce=92cfce icon=164efb obtained_from=c3a127 -->
 |  |  |
 |---|---|
-|  | ![Death Head's Belt](../assets/items/3006.png) |
+|  | ![Death Head's Belt](wiki/assets/items/3006.png) |
 | **Item id** | `3006` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

@@ -32,7 +32,7 @@ used_by: []
 <!-- generated-keys: title=fdc0e3 type=86a754 id=9bb397 sources=3c6b0b name_key=448a04 desc_key=8f692f kind=356a19 kind_name=9bc378 target=6ca14a range=ac3478 area=e8b0ea cost=ff5a60 cooldown=ad2ac8 effect_kind=da4b92 effects=2279ea damage_or_effect=149e73 tooltip_formula=8510b3 visual=be4d97 icon=70aa6a used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Final Strike : Silence](../assets/skills/5292.png) |
+|  | ![Final Strike : Silence](wiki/assets/skills/5292.png) |
 | **Skill id** | `5292` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 7 |

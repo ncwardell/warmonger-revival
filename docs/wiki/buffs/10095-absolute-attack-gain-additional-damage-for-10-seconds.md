@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=93aba8 type=6143a1 id=c384af sources=11a9f1 name_key=39423d duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=7f88be icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Absolute Attack : Gain additional damage for 10 seconds](../assets/buffs/10095.png) |
+|  | ![Absolute Attack : Gain additional damage for 10 seconds](wiki/assets/buffs/10095.png) |
 | **Buff id** | `10095` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

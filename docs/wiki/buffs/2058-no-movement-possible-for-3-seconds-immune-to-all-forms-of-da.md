@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=378d5d type=6143a1 id=07bc68 sources=26f57f name_key=d71e66 duration=faac5c is_buff=b6589f stack_type=356a19 group=da4b92 effects=97d170 icon=f877b6 applied_by=33518c -->
 |  |  |
 |---|---|
-|  | ![No Movement possible for 3 seconds. Immune to all forms of damage.](../assets/buffs/2058.png) |
+|  | ![No Movement possible for 3 seconds. Immune to all forms of damage.](wiki/assets/buffs/2058.png) |
 | **Buff id** | `2058` |
 | **Duration** | 30 s (150 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

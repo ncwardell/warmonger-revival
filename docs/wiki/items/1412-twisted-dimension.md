@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=24a6b0 type=d36ca9 id=e918c0 sources=66db79 name_key=a7af9b kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=1734f9 icon=937a60 obtained_from=502b22 -->
 |  |  |
 |---|---|
-|  | ![Twisted Dimension](../assets/items/1412.png) |
+|  | ![Twisted Dimension](wiki/assets/items/1412.png) |
 | **Item id** | `1412` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

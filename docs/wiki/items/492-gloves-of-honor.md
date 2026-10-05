@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=007156 type=d36ca9 id=77d67a sources=f86ca1 name_key=8adb94 kind=a93349 kind_name=f6564c classes=92d079 bind=883bf8 price=ec494a cost_pair=bf2342 rarity=356a19 stats=7db2fe reinforce=da4b92 icon=8ad561 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Gloves of Honor](../assets/items/492.png) |
+|  | ![Gloves of Honor](wiki/assets/items/492.png) |
 | **Item id** | `492` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |
@@ -76,7 +76,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 24, chance 5 (hand-entered)
+- how craft_superior, recipe 2024, chance 5 (hand-entered)
 <!-- generated:end -->
 
 ## Notes

@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=ba31ee type=6143a1 id=93727b sources=aa3f3c name_key=7f24e7 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=be26ec applied_by=2359ee -->
 |  |  |
 |---|---|
-|  | ![Meteor : Stunned for 2 seconds](../assets/buffs/10056.png) |
+|  | ![Meteor : Stunned for 2 seconds](wiki/assets/buffs/10056.png) |
 | **Buff id** | `10056` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

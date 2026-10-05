@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=cf7b6f type=d36ca9 id=055550 sources=95565e name_key=8b731b kind=98fbc4 kind_name=b94918 classes=92d079 bind=883bf8 price=ad75b5 cost_pair=cc1d90 stats=97d170 icon=bca757 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![B Rank Quest](../assets/items/1301.png) |
+|  | ![B Rank Quest](wiki/assets/items/1301.png) |
 | **Item id** | `1301` |
 | **Kind** | Quest precept (44) |
 | **Classes** | all |
@@ -36,7 +36,7 @@ obtained_from:
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how shop_crush_2016, npc 200, price 18600, currency gold (hand-entered)
 
 ### Mentioned in
 

@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=e01132 type=86a754 id=b83f45 sources=369d86 name_key=e78166 desc_key=4cc229 kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=9b32a5 cooldown=6963fe movement=5f1488 effect_kind=356a19 effects=02b965 damage_or_effect=8c7701 tooltip_formula=3f9719 visual=ecb793 icon=aa3f54 used_by=bb5978 -->
 |  |  |
 |---|---|
-|  | ![Charging Chariot](../assets/skills/10060.png) |
+|  | ![Charging Chariot](wiki/assets/skills/10060.png) |
 | **Skill id** | `10060` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z41_00.dds"
 <!-- generated-keys: title=cd74cf type=c899cd id=761f22 sources=47ced2 name_kr=529929 terrain=0b45d0 bounds=05f6e5 size=114466 segments=fe3195 fields=504845 minimap=820c60 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 16 (Refuge of old dragon)](../assets/zones/41.png) |
+|  | ![minimap of Field 16 (Refuge of old dragon)](wiki/assets/zones/41.png) |
 | **Zone id** | `41` |
 | **ZoneDB name** | 필드_16 (English gloss: Field 16 (Refuge of old dragon)) |
 | **Terrain name** | `16` |

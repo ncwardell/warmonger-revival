@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=0fd374 type=6143a1 id=1d25ca sources=05e570 name_key=e24359 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=ad21dc icon=4a83a1 applied_by=4aa562 -->
 |  |  |
 |---|---|
-|  | ![Officer Buff: Reflects damage back to the attacker](../assets/buffs/3011.png) |
+|  | ![Officer Buff: Reflects damage back to the attacker](wiki/assets/buffs/3011.png) |
 | **Buff id** | `3011` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

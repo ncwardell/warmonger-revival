@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=16e36f type=d36ca9 id=723cbf sources=cc4e2f name_key=be4ef4 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=4eb88e obtained_from=ac58da -->
 |  |  |
 |---|---|
-|  | ![Skeleton bone](../assets/items/2655.png) |
+|  | ![Skeleton bone](wiki/assets/items/2655.png) |
 | **Item id** | `2655` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

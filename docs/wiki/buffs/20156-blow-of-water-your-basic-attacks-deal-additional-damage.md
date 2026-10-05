@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=d7c4f9 type=6143a1 id=c5d9e5 sources=7769da name_key=8f4d94 duration=5d0a7b is_buff=b6589f stack_type=356a19 group=b6589f effects=6dbc6d icon=e4f418 applied_by=a0fcd7 -->
 |  |  |
 |---|---|
-|  | ![Blow of water : Your basic Attacks deal additional damage](../assets/buffs/20156.png) |
+|  | ![Blow of water : Your basic Attacks deal additional damage](wiki/assets/buffs/20156.png) |
 | **Buff id** | `20156` |
 | **Duration** | 6 s (30 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -25,7 +25,7 @@ spawn_fields: [126]
 <!-- generated-keys: title=245e76 type=9bbc46 id=2e0ab5 sources=63ba5a name_key=4276b2 category=356a19 class_mask=356a19 model=450dde model_name=764cd3 model_path=e1bf24 scale=2afe7d radius=356a19 projectile=43d6ee sounds=bfd9b2 hero=7b5200 boss_of=d9b420 dungeon_rewards=c61337 spawn_fields=d9b420 -->
 |  |  |
 |---|---|
-|  | ![Reviatan Shadow](../assets/monsters/740.png) |
+|  | ![Reviatan Shadow](wiki/assets/monsters/740.png) |
 | **Unit id** | `740` |
 | **Category** | monster (`category@8a` = 1) |
 | **Class mask** | 1 (monster) |

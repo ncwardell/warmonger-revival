@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=451159 type=d36ca9 id=a6a084 sources=ac38bc name_key=501c28 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=dc071a icon=9b7169 obtained_from=75fa11 -->
 |  |  |
 |---|---|
-|  | ![Pink Dye](../assets/items/2500.png) |
+|  | ![Pink Dye](wiki/assets/items/2500.png) |
 | **Item id** | `2500` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

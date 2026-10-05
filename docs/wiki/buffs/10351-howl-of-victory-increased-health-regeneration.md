@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=a905c9 type=6143a1 id=3809f8 sources=a09f10 name_key=906b8a duration=8c4b49 is_buff=b6589f stack_type=356a19 group=b6589f effects=6914b3 icon=384e30 applied_by=da911b -->
 |  |  |
 |---|---|
-|  | ![Howl of Victory : Increased Health Regeneration](../assets/buffs/10351.png) |
+|  | ![Howl of Victory : Increased Health Regeneration](wiki/assets/buffs/10351.png) |
 | **Buff id** | `10351` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

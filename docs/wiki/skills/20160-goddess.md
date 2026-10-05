@@ -25,7 +25,7 @@ used_by:
 <!-- generated-keys: title=b39afc type=86a754 id=f5a46d sources=65ef59 name_key=cc6936 desc_key=62902a kind=da4b92 kind_name=3844d5 target=2771a9 range=b6589f cost=2be88c cooldown=2be88c effect_kind=b6589f effects=195432 damage_or_effect=e743dc icon=cd5c85 used_by=6efe88 -->
 |  |  |
 |---|---|
-|  | ![Goddess](../assets/skills/20160.png) |
+|  | ![Goddess](wiki/assets/skills/20160.png) |
 | **Skill id** | `20160` |
 | **Kind** | passive (2) |
 | **Target** | none; -; units: -; up to 0 |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=d5f236 type=6143a1 id=010077 sources=e84cd3 name_key=d9128d duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=115285 icon=0392b4 applied_by=5f7f78 -->
 |  |  |
 |---|---|
-|  | ![Spin : Stunned for 3 seconds](../assets/buffs/10201.png) |
+|  | ![Spin : Stunned for 3 seconds](wiki/assets/buffs/10201.png) |
 | **Buff id** | `10201` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

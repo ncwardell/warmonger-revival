@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=9f2cce type=d36ca9 id=8b92eb sources=16cffc name_key=d6f07b kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=80fa96 cost_pair=e76c7b stats=97d170 icon=13e016 obtained_from=1fc6e4 -->
 |  |  |
 |---|---|
-|  | ![Dark Red Faded Passion Pattern](../assets/items/1908.png) |
+|  | ![Dark Red Faded Passion Pattern](wiki/assets/items/1908.png) |
 | **Item id** | `1908` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

@@ -23,7 +23,7 @@ help: {"image": "ui/HelpImage/Help_23.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=7908b4 type=eb5b2b id=5e540d sources=0354a2 name_key=24571f kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=bc33ea prev=97d170 next=97d170 stages=30caa7 objectives=ed2124 rewards=97d170 help=de54b5 -->
 |  |  |
 |---|---|
-|  | ![Item - Decompose Way&Outomatic condition](../assets/quests/1513.png) |
+|  | ![Item - Decompose Way&Outomatic condition](wiki/assets/quests/1513.png) |
 | **Quest id** | `1513` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

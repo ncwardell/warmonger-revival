@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z141_00.dds"
 <!-- generated-keys: title=554339 type=c899cd id=c9ca44 sources=043b64 name_kr=a3ed14 terrain=a7c471 bounds=9fcb49 size=6f2826 segments=db31ca fields=896837 minimap=bf3ab3 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field dungeon 05(orc) ((Lv 5) Tow Canyon)](../assets/zones/141.png) |
+|  | ![minimap of Field dungeon 05(orc) ((Lv 5) Tow Canyon)](wiki/assets/zones/141.png) |
 | **Zone id** | `141` |
 | **ZoneDB name** | 필드던전_05(오크) (English gloss: Field dungeon 05(orc) ([Lv 5] Tow Canyon)) |
 | **Terrain name** | `FieldDungeon_05` |

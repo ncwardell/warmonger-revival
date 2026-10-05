@@ -28,7 +28,7 @@ observed:
 <!-- generated-keys: title=ce9b19 type=86a754 id=dca5e1 sources=b4bef2 name_key=4b02e9 desc_key=6c8ee0 kind=356a19 kind_name=9bc378 target=35e077 range=356a19 area=394af4 cost=03969c cooldown=d97414 effect_kind=b6589f effects=951aab damage_or_effect=71ac22 icon=30da17 used_by=97d170 tp=4d1a2d observed=95b3c1 -->
 |  |  |
 |---|---|
-|  | ![Fortified](../assets/skills/4507.png) |
+|  | ![Fortified](wiki/assets/skills/4507.png) |
 | **Skill id** | `4507` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: player, structure; up to 1 |

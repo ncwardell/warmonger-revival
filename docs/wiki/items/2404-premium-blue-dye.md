@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=a62439 type=d36ca9 id=3a5c91 sources=e4bbc0 name_key=d92852 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=00f44d cost_pair=c5bac5 stats=97d170 options=100d19 icon=d58798 obtained_from=7d903a -->
 |  |  |
 |---|---|
-|  | ![Premium Blue Dye](../assets/items/2404.png) |
+|  | ![Premium Blue Dye](wiki/assets/items/2404.png) |
 | **Item id** | `2404` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

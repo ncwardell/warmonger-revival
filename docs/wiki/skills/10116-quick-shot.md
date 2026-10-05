@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=c10402 type=86a754 id=ebd0b4 sources=e0ea93 name_key=deb632 desc_key=d5fc89 kind=356a19 kind_name=9bc378 target=069ef3 range=fe5dbb cost=e01d1d cooldown=9ded33 delivery=93a212 effect_kind=356a19 effects=974a50 damage_or_effect=17b953 tooltip_formula=f070eb visual=ee44c6 icon=a792ac used_by=92af4e -->
 |  |  |
 |---|---|
-|  | ![Quick Shot](../assets/skills/10116.png) |
+|  | ![Quick Shot](wiki/assets/skills/10116.png) |
 | **Skill id** | `10116` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

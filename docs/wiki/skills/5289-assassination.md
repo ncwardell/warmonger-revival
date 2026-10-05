@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=073578 type=86a754 id=c9ca1d sources=c63e98 name_key=c94ba5 desc_key=7a4971 kind=356a19 kind_name=9bc378 target=53cfaf range=902ba3 cost=4e8ae0 cooldown=d1c73e movement=953fcf effect_kind=356a19 effects=64e0da damage_or_effect=65e64a visual=4a0e88 icon=d212e9 used_by=e338f9 -->
 |  |  |
 |---|---|
-|  | ![Assassination](../assets/skills/5289.png) |
+|  | ![Assassination](wiki/assets/skills/5289.png) |
 | **Skill id** | `5289` |
 | **Kind** | active (1) |
 | **Target** | unit; ally, enemy; units: monster, player; up to 2 |

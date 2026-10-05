@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z114_00.dds"
 <!-- generated-keys: title=6c7f23 type=c899cd id=ecb793 sources=093943 name_kr=ee45c7 terrain=9d7327 bounds=0d1b8f size=be57ee segments=8c2f3b fields=4d9714 minimap=ca2c06 -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV3 109 (The land of Greed)](../assets/zones/114.png) |
+|  | ![minimap of Abyss LV3 109 (The land of Greed)](wiki/assets/zones/114.png) |
 | **Zone id** | `114` |
 | **ZoneDB name** | 어비스_LV3_109 (English gloss: Abyss LV3 109 (The land of Greed)) |
 | **Terrain name** | `Abyss_Lv03` |

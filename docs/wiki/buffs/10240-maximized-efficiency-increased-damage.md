@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=f499bc type=6143a1 id=d95668 sources=ac231c name_key=cd8992 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=67a7d3 icon=875e75 applied_by=2f1aae -->
 |  |  |
 |---|---|
-|  | ![Maximized Efficiency: Increased Damage.](../assets/buffs/10240.png) |
+|  | ![Maximized Efficiency: Increased Damage.](wiki/assets/buffs/10240.png) |
 | **Buff id** | `10240` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

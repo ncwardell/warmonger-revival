@@ -34,7 +34,7 @@ complete_talk: 693
 <!-- generated-keys: title=b3542e type=eb5b2b id=a1422e sources=35e174 name_key=436506 kind=356a19 kind_name=0bac50 level=84a59c giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=9e6a55 requires_bit=1574bd prev=79d296 next=97d170 prerequisites=c3110a stages=30caa7 objectives=2be88c objectives_client=eccde8 rewards=330f70 offer_talk=6d3eeb complete_talk=d69b92 -->
 |  |  |
 |---|---|
-|  | ![For the honor](../assets/npcs/200.png) |
+|  | ![For the honor](wiki/assets/npcs/200.png) |
 | **Quest id** | `109` |
 | **Kind** | Sub (kind 1) |
 | **Level** | 28+ |

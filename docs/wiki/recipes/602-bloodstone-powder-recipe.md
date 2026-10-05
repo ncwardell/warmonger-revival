@@ -19,20 +19,20 @@ npc: [214]
 <!-- generated-keys: title=a84f50 type=61613a id=73fb97 sources=f04406 result=f93d63 materials=8ef31c gold=e1822d success_rate=310b86 category=356a19 filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/805.png) |
+|  | ![](wiki/assets/items/805.png) |
 | **Recipe id** | `602` (`Item_Make`) |
 | **Makes** | [[wiki/items/805-bloodstone-powder\|Bloodstone powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 1 / `0x200` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 1 |  |
+| ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2402-bloodstone-powder-recipe|recipe 2402]]
 

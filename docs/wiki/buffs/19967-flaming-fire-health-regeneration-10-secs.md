@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=6380e3 type=6143a1 id=94e5af sources=fa0651 name_key=5ce20c duration=c6f45c is_buff=b6589f stack_type=356a19 group=b6589f effects=61daf9 icon=23f487 applied_by=6909ed -->
 |  |  |
 |---|---|
-|  | ![Flaming fire : Health Regeneration (10 Secs)](../assets/buffs/19967.png) |
+|  | ![Flaming fire : Health Regeneration (10 Secs)](wiki/assets/buffs/19967.png) |
 | **Buff id** | `19967` |
 | **Duration** | 12 s (60 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

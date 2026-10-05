@@ -29,7 +29,7 @@ positions:
 <!-- generated-keys: title=c90755 type=3664ce id=2952ae sources=bfa491 name_key=d1abdc title_key=21d171 npc_title=955057 category=e1822d class_mask=da4b92 model=c5b76d scale=aa8f28 functions=40bee7 role=955057 talk_key=7b5881 portrait=263ce3 map=2d0c8a x=c9ad32 z=0d8961 positions=6c262d -->
 |  |  |
 |---|---|
-|  | ![Patrick](../assets/npcs/199.png) |
+|  | ![Patrick](wiki/assets/npcs/199.png) |
 | **Unit id** | `199` |
 | **Title** | Oracle of Knowledge |
 | **Category** | NPC (category 50) |

@@ -21,7 +21,7 @@ npc: [213]
 <!-- generated-keys: title=0496ea type=61613a id=cb4e52 sources=54e695 result=d530f2 materials=1925b2 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=16666f superior=5b3487 level=356a19 raw=2b2a6b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/428.png) |
+|  | ![](wiki/assets/items/428.png) |
 | **Recipe id** | `32` (`Item_Make`) |
 | **Makes** | [[wiki/items/428-ring-of-transcendency\|Ring of Transcendency]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [213]
 | **Superior result** | 5 % → [[wiki/items/460-ring-of-transcendency\|Ring of Transcendency]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 0 / `0x1000080` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 11 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 11 |  |
 
 Unknown columns: `c28` = 165 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

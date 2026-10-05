@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=8934f2 type=6143a1 id=35efd2 sources=6948ab name_key=cda967 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=348ded applied_by=436041 -->
 |  |  |
 |---|---|
-|  | ![Empowered Manadrain : Silenced for 2 seconds.](../assets/buffs/10241.png) |
+|  | ![Empowered Manadrain : Silenced for 2 seconds.](wiki/assets/buffs/10241.png) |
 | **Buff id** | `10241` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

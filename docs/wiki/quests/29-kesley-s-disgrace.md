@@ -30,7 +30,7 @@ complete_talk: 676
 <!-- generated-keys: title=64c742 type=eb5b2b id=7719a1 sources=39294f name_key=c2d13e kind=b6589f kind_name=b3f808 giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=a93349 requires_bit=98fbc4 prev=355b7f next=d998ae stages=30caa7 objectives=2be88c objectives_client=4bf360 rewards=f79b21 offer_talk=c5f248 complete_talk=c6cf93 -->
 |  |  |
 |---|---|
-|  | ![Kesley's Disgrace](../assets/npcs/210.png) |
+|  | ![Kesley's Disgrace](wiki/assets/npcs/210.png) |
 | **Quest id** | `29` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=9aaabe type=d36ca9 id=ca060c sources=ab8aec name_key=7a8835 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=2ae737 cost_pair=be4ef7 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=2d7cf6 cooldown_s=da4b92 cooldown_group=887309 stats=97d170 options=e62895 icon=7809ef obtained_from=b4f2b3 -->
 |  |  |
 |---|---|
-|  | ![Tome of Cooldown (Quest)](../assets/items/2599.png) |
+|  | ![Tome of Cooldown (Quest)](wiki/assets/items/2599.png) |
 | **Item id** | `2599` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

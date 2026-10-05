@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=4180d8 type=6143a1 id=7c7b65 sources=950346 name_key=1027af duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=86c28e applied_by=d46371 -->
 |  |  |
 |---|---|
-|  | ![Breeze: Increased HP and Mana Regeneration](../assets/buffs/30011.png) |
+|  | ![Breeze: Increased HP and Mana Regeneration](wiki/assets/buffs/30011.png) |
 | **Buff id** | `30011` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

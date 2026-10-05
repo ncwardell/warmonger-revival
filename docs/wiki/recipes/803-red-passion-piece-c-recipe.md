@@ -19,20 +19,20 @@ npc: [237]
 <!-- generated-keys: title=641875 type=61613a id=9d0008 sources=d1a585 result=a50857 materials=c9e991 gold=8a12a3 success_rate=310b86 category=da4b92 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/614.png) |
+|  | ![](wiki/assets/items/614.png) |
 | **Recipe id** | `803` (`Item_Make`) |
 | **Makes** | [[wiki/items/614-red-passion-piece-c\|Red Passion Piece (C)]] × 50 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 2 / `0x2` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/237-farrell\|Farrell]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 200 |  |
+| ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 200 |  |
 
 Other recipes for the same item: [[wiki/recipes/819-red-passion-piece-c-recipe|recipe 819]]
 

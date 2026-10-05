@@ -89,7 +89,7 @@ The context (Ctx) offers:
   ctx.title(type, id)         name or "<Label> <id>"
   ctx.path(type, id)          "wiki/<type>/<id>-<slug>" (no extension)
   ctx.link(type, id, text=None)   "[[wiki/<type>/<id>-<slug>|Name]]"
-  ctx.image(type, id)         "../assets/<type>/<id>.png" relative to a page, or None
+  ctx.image(type, id)         "wiki/assets/<type>/<id>.png" (path from docs/), or None
   ctx.unit_type(unit_id)      "npcs" | "monsters" | "objects" | "classes" (UnitDB split)
   ctx.pages(type)             {id: front matter dict} of that type
   ctx.mentions(name)          gameplay pages whose text mentions a name
@@ -624,7 +624,8 @@ class Ctx:
 
     def image(self, type_, id_):
         if (ASSETS / type_ / ("%d.png" % int(id_))).exists():
-            return "../assets/%s/%d.png" % (type_, int(id_))
+            # Path from the docs/ root: Quartz and Obsidian both resolve it; "../assets" breaks in Quartz.
+            return "wiki/assets/%s/%d.png" % (type_, int(id_))
         return None
 
     def unit_type(self, unit_id):

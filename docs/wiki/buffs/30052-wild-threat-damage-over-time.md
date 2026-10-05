@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=a04526 type=6143a1 id=5bfe6a sources=d1b423 name_key=214a46 duration=870e64 is_buff=b6589f stack_type=356a19 group=c1bcfc effects=d146d8 icon=a6e82f applied_by=04f589 -->
 |  |  |
 |---|---|
-|  | ![Wild Threat : Damage over time](../assets/buffs/30052.png) |
+|  | ![Wild Threat : Damage over time](wiki/assets/buffs/30052.png) |
 | **Buff id** | `30052` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

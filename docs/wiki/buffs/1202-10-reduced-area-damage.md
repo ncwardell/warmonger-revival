@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=86a16a type=6143a1 id=b17f47 sources=1aa119 name_key=c71ff3 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=71e67d icon=ec44a0 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![10% reduced Area Damage](../assets/buffs/1202.png) |
+|  | ![10% reduced Area Damage](wiki/assets/buffs/1202.png) |
 | **Buff id** | `1202` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

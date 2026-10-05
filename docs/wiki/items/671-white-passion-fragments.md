@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=650a5b type=d36ca9 id=97e01b sources=169e53 name_key=1fbaf9 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=97d170 icon=81d0e5 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![White Passion Fragments](../assets/items/671.png) |
+|  | ![White Passion Fragments](wiki/assets/items/671.png) |
 | **Item id** | `671` |
 | **Kind** | Material (12) |
 | **Classes** | all |

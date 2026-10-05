@@ -20,7 +20,7 @@ level: 11
 <!-- generated-keys: title=787db4 type=61613a id=aebb26 sources=05fa78 result=7a80bb materials=c2579f gold=a5f4fd success_rate=310b86 category=ac3478 filter_mask=da4b92 level=17ba07 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/1411.png) |
+|  | ![](wiki/assets/items/1411.png) |
 | **Recipe id** | `1910` (`Item_Make`) |
 | **Makes** | [[wiki/items/1411-magic-no-entrance\|Magic : No entrance]] × 1 |
 | **Gold** | 30,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -33,9 +33,9 @@ level: 11
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/859.png) | [[wiki/items/859-brilliant-core-stone\|Brilliant core stone]] | 3 |  |
-| ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 50 |  |
-| ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  |
+| ![](wiki/assets/items/859.png) | [[wiki/items/859-brilliant-core-stone\|Brilliant core stone]] | 3 |  |
+| ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 50 |  |
+| ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 50 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

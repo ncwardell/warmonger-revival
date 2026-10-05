@@ -32,7 +32,7 @@ complete_talk: 648
 <!-- generated-keys: title=adde10 type=eb5b2b id=310b86 sources=ad6e68 name_key=2b0f6b kind=356a19 kind_name=0bac50 giver=a5beda turn_in=a5beda offer_maps=46bf0f turn_in_maps=46bf0f bit=af3e13 prev=97d170 next=97d170 stages=30caa7 objectives=1a6263 rewards=f925fb offer_talk=4c8596 complete_talk=4de62d -->
 |  |  |
 |---|---|
-|  | ![Hunting for Furs](../assets/npcs/315.png) |
+|  | ![Hunting for Furs](wiki/assets/npcs/315.png) |
 | **Quest id** | `100` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/315-lewellyn\|Lewellyn]] |

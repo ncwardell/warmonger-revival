@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=caa06d type=d36ca9 id=6cc71d sources=10b7f9 name_key=211dc5 kind=b7eb6c kind_name=e687cb classes=92d079 bind=883bf8 price=05563f cost_pair=ce9832 rarity=356a19 stats=d7a711 reinforce=da4b92 icon=5f078d obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Spirit Robe](../assets/items/486.png) |
+|  | ![Spirit Robe](wiki/assets/items/486.png) |
 | **Item id** | `486` |
 | **Kind** | Armor (51) |
 | **Classes** | all |
@@ -76,7 +76,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 18, chance 5 (hand-entered)
+- how craft_superior, recipe 2018, chance 5 (hand-entered)
 
 ### Mentioned in
 

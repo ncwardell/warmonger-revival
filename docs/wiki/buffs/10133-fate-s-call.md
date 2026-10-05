@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=081501 type=6143a1 id=0fc7cb sources=5c36ed name_key=4bec00 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=b242bb icon=d790ef applied_by=b250b6 -->
 |  |  |
 |---|---|
-|  | ![Fate's Call](../assets/buffs/10133.png) |
+|  | ![Fate's Call](wiki/assets/buffs/10133.png) |
 | **Buff id** | `10133` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

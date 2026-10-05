@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=d489ce type=d36ca9 id=d12a26 sources=0ad4da name_key=f132ab kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=2d60be obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Black Skeleton Warrior bone](../assets/items/2559.png) |
+|  | ![Black Skeleton Warrior bone](wiki/assets/items/2559.png) |
 | **Item id** | `2559` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

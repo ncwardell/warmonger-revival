@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=02d83b type=6143a1 id=74d828 sources=2413e1 name_key=763832 duration=870e64 is_buff=b6589f stack_type=356a19 group=b6589f effects=4768c9 icon=6665b9 applied_by=4fb437 -->
 |  |  |
 |---|---|
-|  | ![Scream of the Dead : Reduced Armor and Magic Resistance](../assets/buffs/20007.png) |
+|  | ![Scream of the Dead : Reduced Armor and Magic Resistance](wiki/assets/buffs/20007.png) |
 | **Buff id** | `20007` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=b21c1e type=d36ca9 id=f36faa sources=5cbdd6 name_key=af9fdf kind=c5b76d kind_name=a64daf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=dee974 set=356a19 reinforce=92cfce icon=f91168 obtained_from=494319 -->
 |  |  |
 |---|---|
-|  | ![Death Head's Shoes](../assets/items/3004.png) |
+|  | ![Death Head's Shoes](wiki/assets/items/3004.png) |
 | **Item id** | `3004` |
 | **Kind** | Shoes (53) |
 | **Classes** | all |

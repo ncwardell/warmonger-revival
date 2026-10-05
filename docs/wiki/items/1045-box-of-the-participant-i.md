@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=ae7061 type=d36ca9 id=ef9cb1 sources=c409ac name_key=66943e kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=c4cf47 cost_pair=ce08cc stats=97d170 icon=8689e0 obtained_from=f98089 -->
 |  |  |
 |---|---|
-|  | ![Box of the Participant I](../assets/items/1045.png) |
+|  | ![Box of the Participant I](wiki/assets/items/1045.png) |
 | **Item id** | `1045` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

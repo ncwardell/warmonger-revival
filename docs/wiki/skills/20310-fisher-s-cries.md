@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=8372a5 type=86a754 id=79b42e sources=22df42 name_key=6cd115 desc_key=d2a3ad kind=356a19 kind_name=9bc378 target=55b685 range=356a19 area=d82541 cost=2be88c cooldown=dceb3e effect_kind=95e815 effects=fd29fa damage_or_effect=546439 tooltip_formula=2c35bf visual=9d4650 icon=f9031f used_by=90e00c -->
 |  |  |
 |---|---|
-|  | ![Fisher's cries](../assets/skills/20310.png) |
+|  | ![Fisher's cries](wiki/assets/skills/20310.png) |
 | **Skill id** | `20310` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

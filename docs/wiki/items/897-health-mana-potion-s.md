@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=d20e38 type=d36ca9 id=0bab1d sources=d3a490 name_key=c492b5 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=9b500e cost_pair=5f6432 flags=356a19 no_sell=7cb6ef use_buff=7e1fa8 cooldown_s=f1abd6 cooldown_group=77de68 stats=97d170 options=01cc4c icon=7beea6 obtained_from=48c802 -->
 |  |  |
 |---|---|
-|  | ![Health Mana Potion (S)](../assets/items/897.png) |
+|  | ![Health Mana Potion (S)](wiki/assets/items/897.png) |
 | **Item id** | `897` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

@@ -25,7 +25,7 @@ z: null
 <!-- generated-keys: title=aa5e60 type=3664ce id=97b31c sources=0ea9a4 name_key=239d7b title_key=27670d npc_title=8543b1 category=e1822d class_mask=da4b92 model=f67462 scale=2afe7d functions=8b6f7e role=8543b1 talk_key=8dc755 portrait=a30bd7 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Odin](../assets/npcs/313.png) |
+|  | ![Odin](wiki/assets/npcs/313.png) |
 | **Unit id** | `313` |
 | **Title** | Member of Blue Union |
 | **Category** | NPC (category 50) |

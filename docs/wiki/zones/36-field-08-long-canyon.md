@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z36_00.dds"
 <!-- generated-keys: title=584743 type=c899cd id=fc074d sources=bf5b9f name_kr=ea113d terrain=8b684f bounds=658924 size=114466 segments=feb24e fields=1fb085 minimap=cef202 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 08 (Long Canyon)](../assets/zones/36.png) |
+|  | ![minimap of Field 08 (Long Canyon)](wiki/assets/zones/36.png) |
 | **Zone id** | `36` |
 | **ZoneDB name** | 필드_08 (English gloss: Field 08 (Long Canyon)) |
 | **Terrain name** | `08` |

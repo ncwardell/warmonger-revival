@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=5a49a1 type=6143a1 id=e15470 sources=b1bb3d name_key=274494 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=717937 icon=1a85f3 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional 2% Movement Speed](../assets/buffs/10009.png) |
+|  | ![Additional 2% Movement Speed](wiki/assets/buffs/10009.png) |
 | **Buff id** | `10009` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

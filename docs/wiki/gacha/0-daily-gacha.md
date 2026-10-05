@@ -118,99 +118,99 @@ kind: "gacha_pool"
 
 |  | item | kind | c3 |
 |---|---|---|---|
-| ![](../assets/items/421.png) | [[wiki/items/421-necklace-of-mediation\|Necklace of Mediation]] | Necklace (54) | 0 |
-| ![](../assets/items/422.png) | [[wiki/items/422-belt-of-mediation\|Belt of Mediation]] | Belt (55) | 0 |
-| ![](../assets/items/423.png) | [[wiki/items/423-bracelet-of-mediation\|Bracelet of Mediation]] | Bracelet (56) | 0 |
-| ![](../assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | Ring (57) | 0 |
-| ![](../assets/items/425.png) | [[wiki/items/425-necklace-of-transcendency\|Necklace of Transcendency]] | Necklace (54) | 0 |
-| ![](../assets/items/426.png) | [[wiki/items/426-belt-of-transcendency\|Belt of Transcendency]] | Belt (55) | 0 |
-| ![](../assets/items/427.png) | [[wiki/items/427-bracelet-of-transcendency\|Bracelet of Transcendency]] | Bracelet (56) | 0 |
-| ![](../assets/items/428.png) | [[wiki/items/428-ring-of-transcendency\|Ring of Transcendency]] | Ring (57) | 0 |
-| ![](../assets/items/429.png) | [[wiki/items/429-bandolier-necklace\|Bandolier Necklace]] | Necklace (54) | 0 |
-| ![](../assets/items/430.png) | [[wiki/items/430-bandolier-belt\|Bandolier Belt]] | Belt (55) | 0 |
-| ![](../assets/items/431.png) | [[wiki/items/431-bandolier-bracelet\|Bandolier Bracelet]] | Bracelet (56) | 0 |
-| ![](../assets/items/432.png) | [[wiki/items/432-bandolier-ring\|Bandolier Ring]] | Ring (57) | 0 |
-| ![](../assets/items/433.png) | [[wiki/items/433-barrier-necklace\|Barrier Necklace]] | Necklace (54) | 0 |
-| ![](../assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | Belt (55) | 0 |
-| ![](../assets/items/435.png) | [[wiki/items/435-barrier-bracelet\|Barrier Bracelet]] | Bracelet (56) | 0 |
-| ![](../assets/items/436.png) | [[wiki/items/436-barrier-ring\|Barrier Ring]] | Ring (57) | 0 |
-| ![](../assets/items/437.png) | [[wiki/items/437-necklace-of-courage\|Necklace of Courage]] | Necklace (54) | 0 |
-| ![](../assets/items/438.png) | [[wiki/items/438-belt-of-courage\|Belt of Courage]] | Belt (55) | 0 |
-| ![](../assets/items/439.png) | [[wiki/items/439-bracelet-of-courage\|Bracelet of Courage]] | Bracelet (56) | 0 |
-| ![](../assets/items/440.png) | [[wiki/items/440-ring-of-courage\|Ring of Courage]] | Ring (57) | 0 |
-| ![](../assets/items/441.png) | [[wiki/items/441-necklace-of-rise\|Necklace of Rise]] | Necklace (54) | 0 |
-| ![](../assets/items/442.png) | [[wiki/items/442-belt-of-rise\|Belt of Rise]] | Belt (55) | 0 |
-| ![](../assets/items/443.png) | [[wiki/items/443-bracelet-of-rise\|Bracelet of Rise]] | Bracelet (56) | 0 |
-| ![](../assets/items/444.png) | [[wiki/items/444-ring-of-rise\|Ring of Rise]] | Ring (57) | 0 |
-| ![](../assets/items/1013.png) | [[wiki/items/1013-yellow-jewel-100\|Yellow Jewel (100)]] | Package Item (33) | 0 |
-| ![](../assets/items/10011.png) | [[wiki/items/10011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 1 |
-| ![](../assets/items/10017.png) | [[wiki/items/10017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 1 |
-| ![](../assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 1 |
-| ![](../assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 1 |
-| ![](../assets/items/15004.png) | [[wiki/items/15004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 1 |
-| ![](../assets/items/15007.png) | [[wiki/items/15007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 1 |
-| ![](../assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 1 |
-| ![](../assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 1 |
-| ![](../assets/items/1014.png) | [[wiki/items/1014-yellow-jewel-200\|Yellow Jewel (200)]] | Package Item (33) | 0 |
-| ![](../assets/items/9000.png) | [[wiki/items/9000-piece-dark-knight-skull\|Piece : Dark knight Skull]] | Innocence Piece (36) | 2 |
-| ![](../assets/items/9001.png) | [[wiki/items/9001-piece-guardian\|Piece : Guardian]] | Innocence Piece (36) | 2 |
-| ![](../assets/items/9006.png) | [[wiki/items/9006-piece-king-deathhead\|Piece : King Deathhead]] | Innocence Piece (36) | 2 |
-| ![](../assets/items/9007.png) | [[wiki/items/9007-piece-tempest-fisher\|Piece : Tempest Fisher]] | Innocence Piece (36) | 2 |
-| ![](../assets/items/1015.png) | [[wiki/items/1015-yellow-jewel-1000\|Yellow Jewel (1000)]] | Package Item (33) | 0 |
+| ![](wiki/assets/items/421.png) | [[wiki/items/421-necklace-of-mediation\|Necklace of Mediation]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/422.png) | [[wiki/items/422-belt-of-mediation\|Belt of Mediation]] | Belt (55) | 0 |
+| ![](wiki/assets/items/423.png) | [[wiki/items/423-bracelet-of-mediation\|Bracelet of Mediation]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/424.png) | [[wiki/items/424-ring-of-mediation\|Ring of Mediation]] | Ring (57) | 0 |
+| ![](wiki/assets/items/425.png) | [[wiki/items/425-necklace-of-transcendency\|Necklace of Transcendency]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/426.png) | [[wiki/items/426-belt-of-transcendency\|Belt of Transcendency]] | Belt (55) | 0 |
+| ![](wiki/assets/items/427.png) | [[wiki/items/427-bracelet-of-transcendency\|Bracelet of Transcendency]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/428.png) | [[wiki/items/428-ring-of-transcendency\|Ring of Transcendency]] | Ring (57) | 0 |
+| ![](wiki/assets/items/429.png) | [[wiki/items/429-bandolier-necklace\|Bandolier Necklace]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/430.png) | [[wiki/items/430-bandolier-belt\|Bandolier Belt]] | Belt (55) | 0 |
+| ![](wiki/assets/items/431.png) | [[wiki/items/431-bandolier-bracelet\|Bandolier Bracelet]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/432.png) | [[wiki/items/432-bandolier-ring\|Bandolier Ring]] | Ring (57) | 0 |
+| ![](wiki/assets/items/433.png) | [[wiki/items/433-barrier-necklace\|Barrier Necklace]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/434.png) | [[wiki/items/434-barrier-belt\|Barrier Belt]] | Belt (55) | 0 |
+| ![](wiki/assets/items/435.png) | [[wiki/items/435-barrier-bracelet\|Barrier Bracelet]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/436.png) | [[wiki/items/436-barrier-ring\|Barrier Ring]] | Ring (57) | 0 |
+| ![](wiki/assets/items/437.png) | [[wiki/items/437-necklace-of-courage\|Necklace of Courage]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/438.png) | [[wiki/items/438-belt-of-courage\|Belt of Courage]] | Belt (55) | 0 |
+| ![](wiki/assets/items/439.png) | [[wiki/items/439-bracelet-of-courage\|Bracelet of Courage]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/440.png) | [[wiki/items/440-ring-of-courage\|Ring of Courage]] | Ring (57) | 0 |
+| ![](wiki/assets/items/441.png) | [[wiki/items/441-necklace-of-rise\|Necklace of Rise]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/442.png) | [[wiki/items/442-belt-of-rise\|Belt of Rise]] | Belt (55) | 0 |
+| ![](wiki/assets/items/443.png) | [[wiki/items/443-bracelet-of-rise\|Bracelet of Rise]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/444.png) | [[wiki/items/444-ring-of-rise\|Ring of Rise]] | Ring (57) | 0 |
+| ![](wiki/assets/items/1013.png) | [[wiki/items/1013-yellow-jewel-100\|Yellow Jewel (100)]] | Package Item (33) | 0 |
+| ![](wiki/assets/items/10011.png) | [[wiki/items/10011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/10017.png) | [[wiki/items/10017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/15004.png) | [[wiki/items/15004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/15007.png) | [[wiki/items/15007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/1014.png) | [[wiki/items/1014-yellow-jewel-200\|Yellow Jewel (200)]] | Package Item (33) | 0 |
+| ![](wiki/assets/items/9000.png) | [[wiki/items/9000-piece-dark-knight-skull\|Piece : Dark knight Skull]] | Innocence Piece (36) | 2 |
+| ![](wiki/assets/items/9001.png) | [[wiki/items/9001-piece-guardian\|Piece : Guardian]] | Innocence Piece (36) | 2 |
+| ![](wiki/assets/items/9006.png) | [[wiki/items/9006-piece-king-deathhead\|Piece : King Deathhead]] | Innocence Piece (36) | 2 |
+| ![](wiki/assets/items/9007.png) | [[wiki/items/9007-piece-tempest-fisher\|Piece : Tempest Fisher]] | Innocence Piece (36) | 2 |
+| ![](wiki/assets/items/1015.png) | [[wiki/items/1015-yellow-jewel-1000\|Yellow Jewel (1000)]] | Package Item (33) | 0 |
 
 #### Grade 2 (24)
 
 |  | item | kind | c3 |
 |---|---|---|---|
-| ![](../assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | Necklace (54) | 0 |
-| ![](../assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | Belt (55) | 0 |
-| ![](../assets/items/399.png) | [[wiki/items/399-spell-bracelet\|Spell Bracelet]] | Bracelet (56) | 0 |
-| ![](../assets/items/400.png) | [[wiki/items/400-spell-ring\|Spell Ring]] | Ring (57) | 0 |
-| ![](../assets/items/401.png) | [[wiki/items/401-helmet-of-life\|Helmet of Life]] | Helmet (50) | 0 |
-| ![](../assets/items/402.png) | [[wiki/items/402-armor-of-life\|Armor of Life]] | Armor (51) | 0 |
-| ![](../assets/items/403.png) | [[wiki/items/403-gloves-of-life\|Gloves of Life]] | Gloves (52) | 0 |
-| ![](../assets/items/404.png) | [[wiki/items/404-shoes-of-life\|Shoes of Life]] | Shoes (53) | 0 |
-| ![](../assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | Necklace (54) | 0 |
-| ![](../assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | Belt (55) | 0 |
-| ![](../assets/items/407.png) | [[wiki/items/407-bracelet-of-life\|Bracelet of Life]] | Bracelet (56) | 0 |
-| ![](../assets/items/408.png) | [[wiki/items/408-ring-of-life\|Ring of Life]] | Ring (57) | 0 |
-| ![](../assets/items/409.png) | [[wiki/items/409-guardian-helmet\|Guardian Helmet]] | Helmet (50) | 0 |
-| ![](../assets/items/410.png) | [[wiki/items/410-guardian-armor\|Guardian Armor]] | Armor (51) | 0 |
-| ![](../assets/items/411.png) | [[wiki/items/411-guardian-shoes\|Guardian Shoes]] | Shoes (53) | 0 |
-| ![](../assets/items/412.png) | [[wiki/items/412-guardian-gloves\|Guardian Gloves]] | Gloves (52) | 0 |
-| ![](../assets/items/413.png) | [[wiki/items/413-spirit-earring\|Spirit Earring]] | Helmet (50) | 0 |
-| ![](../assets/items/414.png) | [[wiki/items/414-spirit-robe\|Spirit Robe]] | Armor (51) | 0 |
-| ![](../assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | Shoes (53) | 0 |
-| ![](../assets/items/416.png) | [[wiki/items/416-spirit-gloves\|Spirit Gloves]] | Gloves (52) | 0 |
-| ![](../assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | Helmet (50) | 0 |
-| ![](../assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | Armor (51) | 0 |
-| ![](../assets/items/419.png) | [[wiki/items/419-shoes-of-honor\|Shoes of Honor]] | Shoes (53) | 0 |
-| ![](../assets/items/420.png) | [[wiki/items/420-gloves-of-honor\|Gloves of Honor]] | Gloves (52) | 0 |
+| ![](wiki/assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | Belt (55) | 0 |
+| ![](wiki/assets/items/399.png) | [[wiki/items/399-spell-bracelet\|Spell Bracelet]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/400.png) | [[wiki/items/400-spell-ring\|Spell Ring]] | Ring (57) | 0 |
+| ![](wiki/assets/items/401.png) | [[wiki/items/401-helmet-of-life\|Helmet of Life]] | Helmet (50) | 0 |
+| ![](wiki/assets/items/402.png) | [[wiki/items/402-armor-of-life\|Armor of Life]] | Armor (51) | 0 |
+| ![](wiki/assets/items/403.png) | [[wiki/items/403-gloves-of-life\|Gloves of Life]] | Gloves (52) | 0 |
+| ![](wiki/assets/items/404.png) | [[wiki/items/404-shoes-of-life\|Shoes of Life]] | Shoes (53) | 0 |
+| ![](wiki/assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | Necklace (54) | 0 |
+| ![](wiki/assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | Belt (55) | 0 |
+| ![](wiki/assets/items/407.png) | [[wiki/items/407-bracelet-of-life\|Bracelet of Life]] | Bracelet (56) | 0 |
+| ![](wiki/assets/items/408.png) | [[wiki/items/408-ring-of-life\|Ring of Life]] | Ring (57) | 0 |
+| ![](wiki/assets/items/409.png) | [[wiki/items/409-guardian-helmet\|Guardian Helmet]] | Helmet (50) | 0 |
+| ![](wiki/assets/items/410.png) | [[wiki/items/410-guardian-armor\|Guardian Armor]] | Armor (51) | 0 |
+| ![](wiki/assets/items/411.png) | [[wiki/items/411-guardian-shoes\|Guardian Shoes]] | Shoes (53) | 0 |
+| ![](wiki/assets/items/412.png) | [[wiki/items/412-guardian-gloves\|Guardian Gloves]] | Gloves (52) | 0 |
+| ![](wiki/assets/items/413.png) | [[wiki/items/413-spirit-earring\|Spirit Earring]] | Helmet (50) | 0 |
+| ![](wiki/assets/items/414.png) | [[wiki/items/414-spirit-robe\|Spirit Robe]] | Armor (51) | 0 |
+| ![](wiki/assets/items/415.png) | [[wiki/items/415-spirit-shoes\|Spirit Shoes]] | Shoes (53) | 0 |
+| ![](wiki/assets/items/416.png) | [[wiki/items/416-spirit-gloves\|Spirit Gloves]] | Gloves (52) | 0 |
+| ![](wiki/assets/items/417.png) | [[wiki/items/417-helmet-of-honor\|Helmet of Honor]] | Helmet (50) | 0 |
+| ![](wiki/assets/items/418.png) | [[wiki/items/418-armor-of-honor\|Armor of Honor]] | Armor (51) | 0 |
+| ![](wiki/assets/items/419.png) | [[wiki/items/419-shoes-of-honor\|Shoes of Honor]] | Shoes (53) | 0 |
+| ![](wiki/assets/items/420.png) | [[wiki/items/420-gloves-of-honor\|Gloves of Honor]] | Gloves (52) | 0 |
 
 #### Grade 3 (20)
 
 |  | item | kind | c3 |
 |---|---|---|---|
-| ![](../assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | Necklace (54) | 1 |
-| ![](../assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | Belt (55) | 1 |
-| ![](../assets/items/399.png) | [[wiki/items/399-spell-bracelet\|Spell Bracelet]] | Bracelet (56) | 1 |
-| ![](../assets/items/400.png) | [[wiki/items/400-spell-ring\|Spell Ring]] | Ring (57) | 1 |
-| ![](../assets/items/401.png) | [[wiki/items/401-helmet-of-life\|Helmet of Life]] | Helmet (50) | 1 |
-| ![](../assets/items/402.png) | [[wiki/items/402-armor-of-life\|Armor of Life]] | Armor (51) | 1 |
-| ![](../assets/items/403.png) | [[wiki/items/403-gloves-of-life\|Gloves of Life]] | Gloves (52) | 1 |
-| ![](../assets/items/404.png) | [[wiki/items/404-shoes-of-life\|Shoes of Life]] | Shoes (53) | 1 |
-| ![](../assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | Necklace (54) | 1 |
-| ![](../assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | Belt (55) | 1 |
-| ![](../assets/items/407.png) | [[wiki/items/407-bracelet-of-life\|Bracelet of Life]] | Bracelet (56) | 1 |
-| ![](../assets/items/408.png) | [[wiki/items/408-ring-of-life\|Ring of Life]] | Ring (57) | 1 |
-| ![](../assets/items/10011.png) | [[wiki/items/10011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 2 |
-| ![](../assets/items/10017.png) | [[wiki/items/10017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 2 |
-| ![](../assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/15004.png) | [[wiki/items/15004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 2 |
-| ![](../assets/items/15007.png) | [[wiki/items/15007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 2 |
-| ![](../assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 2 |
-| ![](../assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | Necklace (54) | 1 |
+| ![](wiki/assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | Belt (55) | 1 |
+| ![](wiki/assets/items/399.png) | [[wiki/items/399-spell-bracelet\|Spell Bracelet]] | Bracelet (56) | 1 |
+| ![](wiki/assets/items/400.png) | [[wiki/items/400-spell-ring\|Spell Ring]] | Ring (57) | 1 |
+| ![](wiki/assets/items/401.png) | [[wiki/items/401-helmet-of-life\|Helmet of Life]] | Helmet (50) | 1 |
+| ![](wiki/assets/items/402.png) | [[wiki/items/402-armor-of-life\|Armor of Life]] | Armor (51) | 1 |
+| ![](wiki/assets/items/403.png) | [[wiki/items/403-gloves-of-life\|Gloves of Life]] | Gloves (52) | 1 |
+| ![](wiki/assets/items/404.png) | [[wiki/items/404-shoes-of-life\|Shoes of Life]] | Shoes (53) | 1 |
+| ![](wiki/assets/items/405.png) | [[wiki/items/405-necklace-of-life\|Necklace of Life]] | Necklace (54) | 1 |
+| ![](wiki/assets/items/406.png) | [[wiki/items/406-belt-of-life\|Belt of Life]] | Belt (55) | 1 |
+| ![](wiki/assets/items/407.png) | [[wiki/items/407-bracelet-of-life\|Bracelet of Life]] | Bracelet (56) | 1 |
+| ![](wiki/assets/items/408.png) | [[wiki/items/408-ring-of-life\|Ring of Life]] | Ring (57) | 1 |
+| ![](wiki/assets/items/10011.png) | [[wiki/items/10011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/10017.png) | [[wiki/items/10017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/15004.png) | [[wiki/items/15004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/15007.png) | [[wiki/items/15007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 2 |
 
 ### Odds
 

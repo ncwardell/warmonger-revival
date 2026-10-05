@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=09def0 type=86a754 id=a50a84 sources=a5fab6 name_key=5fd707 desc_key=40cfc6 kind=356a19 kind_name=9bc378 target=d1cc1b range=ac3478 area=e8b0ea cost=911ade cooldown=628d31 effect_kind=356a19 effects=b688b8 damage_or_effect=29c970 tooltip_formula=321def visual=267b97 icon=5f1bf5 used_by=9dfb0b -->
 |  |  |
 |---|---|
-|  | ![Fang of Knives](../assets/skills/5141.png) |
+|  | ![Fang of Knives](wiki/assets/skills/5141.png) |
 | **Skill id** | `5141` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

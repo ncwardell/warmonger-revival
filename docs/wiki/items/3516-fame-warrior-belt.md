@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=7e89ff type=d36ca9 id=fecb6b sources=76f3bb name_key=26bae7 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=f82d47 set=fe5dbb reinforce=92cfce icon=c8660f obtained_from=3b2b00 -->
 |  |  |
 |---|---|
-|  | ![Fame warrior Belt](../assets/items/3516.png) |
+|  | ![Fame warrior Belt](wiki/assets/items/3516.png) |
 | **Item id** | `3516` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

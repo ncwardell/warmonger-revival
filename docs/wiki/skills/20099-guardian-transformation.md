@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=fc4784 type=86a754 id=d5aa4f sources=b66cb9 name_key=9d1f40 desc_key=53e04d kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=68d2b6 cooldown=a7242f effect_kind=da4b92 effects=1adc0c damage_or_effect=4574be visual=25293f icon=af683f used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Guardian Transformation](../assets/skills/20099.png) |
+|  | ![Guardian Transformation](wiki/assets/skills/20099.png) |
 | **Skill id** | `20099` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

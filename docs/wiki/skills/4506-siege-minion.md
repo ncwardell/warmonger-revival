@@ -26,10 +26,10 @@ observed:
   - {"tp": 1000, "cooldown_s": 100, "effect": "Summons a weak tanking minion; field war only", "source": "gameplay/pvp-and-matches line 34"}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=f5b5ca type=86a754 id=40951c sources=5b7fa0 name_key=718a6a desc_key=c8b4e8 kind=356a19 kind_name=9bc378 target=ae67d6 range=356a19 area=394af4 cost=f53c41 cooldown=c18e3b effect_kind=b6589f effects=51e4dc damage_or_effect=bf21a9 icon=35d1e3 used_by=97d170 tp=15871a observed=680686 -->
+<!-- generated-keys: title=f5b5ca type=86a754 id=40951c sources=5b7fa0 name_key=718a6a desc_key=c8b4e8 kind=356a19 kind_name=9bc378 target=ae67d6 range=356a19 area=394af4 cost=f53c41 cooldown=c18e3b effect_kind=b6589f effects=51e4dc icon=35d1e3 used_by=97d170 tp=15871a observed=680686 -->
 |  |  |
 |---|---|
-|  | ![Siege Minion](../assets/skills/4506.png) |
+|  | ![Siege Minion](wiki/assets/skills/4506.png) |
 | **Skill id** | `4506` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: -; up to 1 |

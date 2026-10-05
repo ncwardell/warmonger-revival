@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=b88ab7 type=d36ca9 id=d4ab61 sources=68a896 name_key=0fc211 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=303ba1 icon=0abff1 obtained_from=41568c -->
 |  |  |
 |---|---|
-|  | ![Premium Purple Dye](../assets/items/2409.png) |
+|  | ![Premium Purple Dye](wiki/assets/items/2409.png) |
 | **Item id** | `2409` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=93afc2 type=d36ca9 id=7fa7f8 sources=7643ed name_key=b9abd1 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=243555 options=0ca6e9 icon=5b0ae7 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Critical Strike (%) Rune](../assets/items/7332.png) |
+|  | ![Critical Strike (%) Rune](wiki/assets/items/7332.png) |
 | **Item id** | `7332` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

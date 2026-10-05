@@ -42,8 +42,8 @@ dungeon: 142
 <!-- generated-keys: title=b263a8 type=7a94db id=2a2b47 sources=97a244 name_key=6226f0 kind=3e3f38 scene_type=77de68 max_users=ac3478 group=ac3478 zones=dd2ee1 segments=ad649d gates=027113 connections=58e82b npcs=97d170 monsters=97d170 spawn_points=97d170 triggers=8a5de7 dungeon=2a2b47 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 152](../assets/zones/152.png) |
-|  | ![(Lv 9) Dragon Island](../assets/dungeons/142.png) |
+|  | ![minimap of zone 152](wiki/assets/zones/152.png) |
+|  | ![(Lv 9) Dragon Island](wiki/assets/dungeons/142.png) |
 | **Field id** | `142` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

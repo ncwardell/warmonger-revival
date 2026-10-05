@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=d00b39 type=d36ca9 id=bcd6b0 sources=e999b3 name_key=651fbd kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=499be0 obtained_from=fbe995 -->
 |  |  |
 |---|---|
-|  | ![Crystal Ball](../assets/items/2566.png) |
+|  | ![Crystal Ball](wiki/assets/items/2566.png) |
 | **Item id** | `2566` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

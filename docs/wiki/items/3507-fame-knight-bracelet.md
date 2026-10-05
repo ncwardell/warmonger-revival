@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=608526 type=d36ca9 id=bc1e42 sources=07c896 name_key=c98796 kind=54ceb9 kind_name=c2576a classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=dc4e27 set=902ba3 reinforce=92cfce icon=fbc35f obtained_from=e23223 -->
 |  |  |
 |---|---|
-|  | ![Fame knight Bracelet](../assets/items/3507.png) |
+|  | ![Fame knight Bracelet](wiki/assets/items/3507.png) |
 | **Item id** | `3507` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=4a23f7 type=d36ca9 id=eb24ed sources=653130 name_key=b2b5e7 kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=b85049 set=77de68 reinforce=92cfce icon=d2aaeb obtained_from=0b5c57 -->
 |  |  |
 |---|---|
-|  | ![Fisher's Necklace](../assets/items/3025.png) |
+|  | ![Fisher's Necklace](wiki/assets/items/3025.png) |
 | **Item id** | `3025` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

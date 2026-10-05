@@ -34,7 +34,7 @@ complete_talk: 895
 <!-- generated-keys: title=3b8f4c type=eb5b2b id=794bb3 sources=f82f13 name_key=2ee889 kind=356a19 kind_name=0bac50 giver=c6e5ee turn_in=c6e5ee offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b4c96d requires_bit=b888b2 prev=982951 next=97d170 prerequisites=7dc7fa stages=642aaf objectives=2be88c objectives_client=f5d4e5 rewards=492ee4 offer_talk=1ecaeb complete_talk=f1c6fe -->
 |  |  |
 |---|---|
-|  | ![Legion - How to use add-on](../assets/npcs/242.png) |
+|  | ![Legion - How to use add-on](wiki/assets/npcs/242.png) |
 | **Quest id** | `705` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/242-raon\|Raon]] |

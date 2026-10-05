@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=9c8e66 type=d36ca9 id=651d9a sources=2a5330 name_key=090524 kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=fc074d stats=c45f77 options=3fc022 skills=97d170 reinforce=17ba07 icon=92de80 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![M-Polearm-05](../assets/items/15014.png) |
+|  | ![M-Polearm-05](wiki/assets/items/15014.png) |
 | **Item id** | `15014` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

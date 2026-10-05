@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=387daa type=6143a1 id=924235 sources=2e5573 name_key=edc4dc duration=995f11 is_buff=b6589f stack_type=356a19 group=27b0e6 effects=26b546 icon=eac09a applied_by=a16ef9 -->
 |  |  |
 |---|---|
-|  | ![Elixir of Vampirism (C): 3 Life Steal with each attack. Maximum Health +100](../assets/buffs/2117.png) |
+|  | ![Elixir of Vampirism (C): 3 Life Steal with each attack. Maximum Health +100](wiki/assets/buffs/2117.png) |
 | **Buff id** | `2117` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

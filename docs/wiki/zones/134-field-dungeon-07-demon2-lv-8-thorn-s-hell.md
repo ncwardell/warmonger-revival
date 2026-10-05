@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z134_00.dds"
 <!-- generated-keys: title=cc4f5a type=c899cd id=95e815 sources=ebae24 name_kr=266558 terrain=3de06a bounds=d6923d size=6f2826 segments=7277be fields=0ae2ea minimap=2d4378 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field dungeon 07(demon2) ((Lv 8) Thorn's Hell)](../assets/zones/134.png) |
+|  | ![minimap of Field dungeon 07(demon2) ((Lv 8) Thorn's Hell)](wiki/assets/zones/134.png) |
 | **Zone id** | `134` |
 | **ZoneDB name** | 필드던전_07(데몬2) (English gloss: Field dungeon 07(demon2) ([Lv 8] Thorn's Hell)) |
 | **Terrain name** | `129` |

@@ -5,6 +5,7 @@ id: 129
 status: "complete"
 missing: []
 sources: ["client: SceneList.cdb id 129", "client: DungeonAdmission.cdb field 129", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 129", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 129
 max_users: 5
 level: 8
@@ -26,15 +27,16 @@ time_limit_s: 900
 unlock_level: 27
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=0bf214 type=3e3f38 id=8b7471 sources=f70cd9 field=8b7471 max_users=ac3478 level=fe5dbb entry_cost=3f4f04 event=7cb6ef shown_rewards=342901 c17=7263d6 image=6fb519 dungeon_slots=9a35e1 boss=f97f7d gear_tier=7b5982 gathering=0cbe10 time_limit_s=2be88c -->
+<!-- generated-keys: title=0bf214 type=3e3f38 id=8b7471 sources=f70cd9 field=8b7471 max_users=ac3478 level=fe5dbb entry_cost=3f4f04 event=7cb6ef shown_rewards=342901 c17=7263d6 image=6fb519 dungeon_slots=9a35e1 boss=f97f7d gear_tier=7b5982 gathering=0cbe10 -->
 |  |  |
 |---|---|
-|  | ![(Lv 8) Thorn's Hell](../assets/dungeons/129.png) |
+|  | ![(Lv 8) Thorn's Hell](wiki/assets/dungeons/129.png) |
 | **Field** | [[wiki/fields/129-lv-8-thorn-s-hell\|(Lv 8) Thorn's Hell (field 129)]] |
 | **Level** | 8 |
 | **Gear tier dropped** | T2 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/8.png` |
 | **c17 (unknown)** | 2009 |
 

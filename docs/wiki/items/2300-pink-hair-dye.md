@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=4ee382 type=d36ca9 id=8c93ce sources=094972 name_key=248ced kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=dc071a icon=0bf0f3 obtained_from=279401 -->
 |  |  |
 |---|---|
-|  | ![Pink Hair Dye](../assets/items/2300.png) |
+|  | ![Pink Hair Dye](wiki/assets/items/2300.png) |
 | **Item id** | `2300` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

@@ -42,7 +42,7 @@ obtained_from:
 <!-- generated-keys: title=add77b type=d36ca9 id=784ef0 sources=dff717 name_key=3a13e9 kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=9836ea reinforce=356a19 icon=ce216b obtained_from=2aa768 -->
 |  |  |
 |---|---|
-|  | ![Barrier Bracelet](../assets/items/435.png) |
+|  | ![Barrier Bracelet](wiki/assets/items/435.png) |
 | **Item id** | `435` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |
@@ -94,6 +94,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 1 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 
 ### Mentioned in
 

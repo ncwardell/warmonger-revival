@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=c08893 type=6143a1 id=39b7a7 sources=13f3ff name_key=ec6f76 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=8fd074 icon=baee3b applied_by=590243 -->
 |  |  |
 |---|---|
-|  | ![Crystal Burst: Increases Armor and Magic Resistance](../assets/buffs/10018.png) |
+|  | ![Crystal Burst: Increases Armor and Magic Resistance](wiki/assets/buffs/10018.png) |
 | **Buff id** | `10018` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

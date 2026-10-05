@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=928dc7 type=d36ca9 id=15a9d1 sources=1da1db name_key=5873b7 kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=7579cc obtained_from=986f87 -->
 |  |  |
 |---|---|
-|  | ![Black Chepa Fur](../assets/items/2553.png) |
+|  | ![Black Chepa Fur](wiki/assets/items/2553.png) |
 | **Item id** | `2553` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

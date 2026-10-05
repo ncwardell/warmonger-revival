@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=b0ad12 type=d36ca9 id=ac3e7b sources=e90d38 name_key=fe3c2d kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=29acd3 reinforce=356a19 icon=993a60 obtained_from=e85ec2 -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Rise](../assets/items/443.png) |
+|  | ![Bracelet of Rise](wiki/assets/items/443.png) |
 | **Item id** | `443` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |

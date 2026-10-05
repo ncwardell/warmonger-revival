@@ -48,7 +48,7 @@ obtained_from:
 <!-- generated-keys: title=27f5f4 type=d36ca9 id=e6de89 sources=50ace3 name_key=631cb1 kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=9671d1 reinforce=356a19 icon=9fd4c9 obtained_from=cc1eed -->
 |  |  |
 |---|---|
-|  | ![Bracelet of Life](../assets/items/407.png) |
+|  | ![Bracelet of Life](wiki/assets/items/407.png) |
 | **Item id** | `407` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |
@@ -105,6 +105,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 121, tier 1 (hand-entered)
+- how dungeon_drop, field 122, tier 1 (hand-entered)
+- how dungeon_drop, field 125, tier 2 (hand-entered)
 
 ### Mentioned in
 

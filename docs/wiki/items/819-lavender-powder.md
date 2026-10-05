@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=ccdc4d type=d36ca9 id=6ef2c7 sources=3015ba name_key=07199d kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=5148be cost_pair=ad07dc stats=97d170 icon=e5afe8 obtained_from=08733d -->
 |  |  |
 |---|---|
-|  | ![Lavender powder](../assets/items/819.png) |
+|  | ![Lavender powder](wiki/assets/items/819.png) |
 | **Item id** | `819` |
 | **Kind** | Material (12) |
 | **Classes** | all |

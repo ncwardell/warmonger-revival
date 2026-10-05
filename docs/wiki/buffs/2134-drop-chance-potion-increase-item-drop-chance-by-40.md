@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=5ee340 type=6143a1 id=9e1f50 sources=fad400 name_key=388a0a duration=23bd3e is_buff=b6589f stack_type=356a19 group=3d8ae2 effects=c1dcef icon=37da9a applied_by=042886 -->
 |  |  |
 |---|---|
-|  | ![Drop Chance Potion: Increase Item Drop Chance by 40%.](../assets/buffs/2134.png) |
+|  | ![Drop Chance Potion: Increase Item Drop Chance by 40%.](wiki/assets/buffs/2134.png) |
 | **Buff id** | `2134` |
 | **Duration** | 60 min (18,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

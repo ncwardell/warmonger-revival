@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=85480a type=d36ca9 id=153106 sources=083980 name_key=ddbf7e kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=00f44d cost_pair=c5bac5 stats=97d170 options=c1fca7 icon=d58798 obtained_from=8d4e8d -->
 |  |  |
 |---|---|
-|  | ![Blue Dye](../assets/items/2504.png) |
+|  | ![Blue Dye](wiki/assets/items/2504.png) |
 | **Item id** | `2504` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

@@ -30,7 +30,7 @@ offer_talk: 639
 <!-- generated-keys: title=ae7acb type=eb5b2b id=0ade7c sources=6f7e86 name_key=df0b89 kind=b6589f kind_name=b3f808 giver=f8f324 turn_in=847ad4 offer_maps=46bf0f bit=fe5dbb requires_bit=9a79be automatic=5ffe53 prev=bd703d next=e9310b stages=a80fa1 objectives=498e98 rewards=474386 offer_talk=40e0ce -->
 |  |  |
 |---|---|
-|  | ![Find the missing Scout](../assets/npcs/198.png) |
+|  | ![Find the missing Scout](wiki/assets/npcs/198.png) |
 | **Quest id** | `9` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/198-frei\|Frei]] |

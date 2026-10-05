@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=6130fb type=d36ca9 id=b20297 sources=0f4704 name_key=c30af1 kind=8effee kind_name=ddf027 classes=92d079 bind=2be88c price=f820eb cost_pair=7af57d stats=9671d1 reinforce=356a19 icon=c34017 obtained_from=d4c819 -->
 |  |  |
 |---|---|
-|  | ![Belt of Life](../assets/items/406.png) |
+|  | ![Belt of Life](wiki/assets/items/406.png) |
 | **Item id** | `406` |
 | **Kind** | Belt (55) |
 | **Classes** | all |
@@ -101,6 +101,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 128, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 
 ### Mentioned in
 

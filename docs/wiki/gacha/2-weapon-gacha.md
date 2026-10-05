@@ -97,75 +97,75 @@ kind: "gacha_pool"
 
 |  | item | kind | c3 |
 |---|---|---|---|
-| ![](../assets/items/10004.png) | [[wiki/items/10004-tempest-s-magical-wand\|Tempest's magical wand]] | Weapon (31) | 2 |
-| ![](../assets/items/10005.png) | [[wiki/items/10005-magical-blade-shield-flame\|Magical Blade Shield : Flame]] | Weapon (31) | 2 |
-| ![](../assets/items/10014.png) | [[wiki/items/10014-skeleton-king-s-magic-gun\|Skeleton king's Magic Gun]] | Weapon (31) | 2 |
-| ![](../assets/items/15009.png) | [[wiki/items/15009-skeleton-king-s-magic-dagger\|Skeleton King's Magic Dagger]] | Weapon (31) | 2 |
-| ![](../assets/items/20014.png) | [[wiki/items/20014-skeleton-king-s-magic-cannon\|Skeleton King's Magic Cannon]] | Weapon (31) | 2 |
-| ![](../assets/items/20004.png) | [[wiki/items/20004-skeleton-king-s-magic-hammer\|Skeleton King's Magic Hammer]] | Weapon (31) | 2 |
-| ![](../assets/items/11000.png) | [[wiki/items/11000-magical-storm-wand\|Magical Storm Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/11001.png) | [[wiki/items/11001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/11002.png) | [[wiki/items/11002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/11003.png) | [[wiki/items/11003-magical-cystal-wand\|Magical Cystal Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/11011.png) | [[wiki/items/11011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 2 |
-| ![](../assets/items/11015.png) | [[wiki/items/11015-magical-dash-blade\|Magical Dash Blade]] | Weapon (31) | 2 |
-| ![](../assets/items/11017.png) | [[wiki/items/11017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 2 |
-| ![](../assets/items/11020.png) | [[wiki/items/11020-magical-devil-wand\|Magical Devil Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/16000.png) | [[wiki/items/16000-magical-shadow-bow\|Magical Shadow Bow]] | Weapon (31) | 2 |
-| ![](../assets/items/16001.png) | [[wiki/items/16001-magical-sniping-bow\|Magical Sniping Bow]] | Weapon (31) | 2 |
-| ![](../assets/items/16002.png) | [[wiki/items/16002-magical-vision-bow\|Magical Vision Bow]] | Weapon (31) | 2 |
-| ![](../assets/items/16004.png) | [[wiki/items/16004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 2 |
-| ![](../assets/items/16006.png) | [[wiki/items/16006-magical-blood-dagger\|Magical Blood Dagger]] | Weapon (31) | 2 |
-| ![](../assets/items/16007.png) | [[wiki/items/16007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 2 |
-| ![](../assets/items/16008.png) | [[wiki/items/16008-magical-hiding-dagger\|Magical hiding Dagger]] | Weapon (31) | 2 |
-| ![](../assets/items/21001.png) | [[wiki/items/21001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 2 |
-| ![](../assets/items/21002.png) | [[wiki/items/21002-magical-dash-hammer\|Magical Dash Hammer]] | Weapon (31) | 2 |
-| ![](../assets/items/21003.png) | [[wiki/items/21003-magical-crush-hammer\|Magical Crush Hammer]] | Weapon (31) | 2 |
-| ![](../assets/items/21011.png) | [[wiki/items/21011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 2 |
-| ![](../assets/items/21015.png) | [[wiki/items/21015-magical-protect-mace\|Magical Protect Mace]] | Weapon (31) | 2 |
-| ![](../assets/items/21020.png) | [[wiki/items/21020-magical-protect-hammer\|Magical Protect Hammer]] | Weapon (31) | 2 |
-| ![](../assets/items/21021.png) | [[wiki/items/21021-magical-protect-cannon\|Magical Protect Cannon]] | Weapon (31) | 2 |
-| ![](../assets/items/30002.png) | [[wiki/items/30002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 2 |
-| ![](../assets/items/35002.png) | [[wiki/items/35002-magical-vision-bow\|Magical Vision Bow]] | Weapon (31) | 2 |
-| ![](../assets/items/35009.png) | [[wiki/items/35009-skeleton-king-s-magic-dagger\|Skeleton King's Magic Dagger]] | Weapon (31) | 2 |
-| ![](../assets/items/40014.png) | [[wiki/items/40014-skeleton-king-s-magic-cannon\|Skeleton King's Magic Cannon]] | Weapon (31) | 2 |
-| ![](../assets/items/15005.png) | [[wiki/items/15005-skeleton-king-s-vision-bow\|Skeleton king's Vision Bow]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/10004.png) | [[wiki/items/10004-tempest-s-magical-wand\|Tempest's magical wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/10005.png) | [[wiki/items/10005-magical-blade-shield-flame\|Magical Blade Shield : Flame]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/10014.png) | [[wiki/items/10014-skeleton-king-s-magic-gun\|Skeleton king's Magic Gun]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/15009.png) | [[wiki/items/15009-skeleton-king-s-magic-dagger\|Skeleton King's Magic Dagger]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/20014.png) | [[wiki/items/20014-skeleton-king-s-magic-cannon\|Skeleton King's Magic Cannon]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/20004.png) | [[wiki/items/20004-skeleton-king-s-magic-hammer\|Skeleton King's Magic Hammer]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11000.png) | [[wiki/items/11000-magical-storm-wand\|Magical Storm Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11001.png) | [[wiki/items/11001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11002.png) | [[wiki/items/11002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11003.png) | [[wiki/items/11003-magical-cystal-wand\|Magical Cystal Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11011.png) | [[wiki/items/11011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11015.png) | [[wiki/items/11015-magical-dash-blade\|Magical Dash Blade]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11017.png) | [[wiki/items/11017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/11020.png) | [[wiki/items/11020-magical-devil-wand\|Magical Devil Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/16000.png) | [[wiki/items/16000-magical-shadow-bow\|Magical Shadow Bow]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/16001.png) | [[wiki/items/16001-magical-sniping-bow\|Magical Sniping Bow]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/16002.png) | [[wiki/items/16002-magical-vision-bow\|Magical Vision Bow]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/16004.png) | [[wiki/items/16004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/16006.png) | [[wiki/items/16006-magical-blood-dagger\|Magical Blood Dagger]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/16007.png) | [[wiki/items/16007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/16008.png) | [[wiki/items/16008-magical-hiding-dagger\|Magical hiding Dagger]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/21001.png) | [[wiki/items/21001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/21002.png) | [[wiki/items/21002-magical-dash-hammer\|Magical Dash Hammer]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/21003.png) | [[wiki/items/21003-magical-crush-hammer\|Magical Crush Hammer]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/21011.png) | [[wiki/items/21011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/21015.png) | [[wiki/items/21015-magical-protect-mace\|Magical Protect Mace]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/21020.png) | [[wiki/items/21020-magical-protect-hammer\|Magical Protect Hammer]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/21021.png) | [[wiki/items/21021-magical-protect-cannon\|Magical Protect Cannon]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/30002.png) | [[wiki/items/30002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/35002.png) | [[wiki/items/35002-magical-vision-bow\|Magical Vision Bow]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/35009.png) | [[wiki/items/35009-skeleton-king-s-magic-dagger\|Skeleton King's Magic Dagger]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/40014.png) | [[wiki/items/40014-skeleton-king-s-magic-cannon\|Skeleton King's Magic Cannon]] | Weapon (31) | 2 |
+| ![](wiki/assets/items/15005.png) | [[wiki/items/15005-skeleton-king-s-vision-bow\|Skeleton king's Vision Bow]] | Weapon (31) | 2 |
 
 #### Grade 2 (15)
 
 |  | item | kind | c3 |
 |---|---|---|---|
-| ![](../assets/items/10003.png) | [[wiki/items/10003-magical-cystal-wand\|Magical Cystal Wand]] | Weapon (31) | 1 |
-| ![](../assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | Weapon (31) | 1 |
-| ![](../assets/items/10020.png) | [[wiki/items/10020-magical-devil-wand\|Magical Devil Wand]] | Weapon (31) | 1 |
-| ![](../assets/items/15000.png) | [[wiki/items/15000-magical-shadow-bow\|Magical Shadow Bow]] | Weapon (31) | 1 |
-| ![](../assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | Weapon (31) | 1 |
-| ![](../assets/items/15002.png) | [[wiki/items/15002-magical-vision-bow\|Magical Vision Bow]] | Weapon (31) | 1 |
-| ![](../assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | Weapon (31) | 1 |
-| ![](../assets/items/15008.png) | [[wiki/items/15008-magical-hiding-dagger\|Magical hiding Dagger]] | Weapon (31) | 1 |
-| ![](../assets/items/20020.png) | [[wiki/items/20020-magical-protect-hammer\|Magical Protect Hammer]] | Weapon (31) | 1 |
-| ![](../assets/items/20021.png) | [[wiki/items/20021-magical-protect-cannon\|Magical Protect Cannon]] | Weapon (31) | 1 |
-| ![](../assets/items/20002.png) | [[wiki/items/20002-magical-dash-hammer\|Magical Dash Hammer]] | Weapon (31) | 1 |
-| ![](../assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | Weapon (31) | 1 |
-| ![](../assets/items/20015.png) | [[wiki/items/20015-magical-protect-mace\|Magical Protect Mace]] | Weapon (31) | 1 |
-| ![](../assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 1 |
-| ![](../assets/items/643.png) | [[wiki/items/643-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 1 |
+| ![](wiki/assets/items/10003.png) | [[wiki/items/10003-magical-cystal-wand\|Magical Cystal Wand]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/10015.png) | [[wiki/items/10015-magical-dash-blade\|Magical Dash Blade]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/10020.png) | [[wiki/items/10020-magical-devil-wand\|Magical Devil Wand]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/15000.png) | [[wiki/items/15000-magical-shadow-bow\|Magical Shadow Bow]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/15001.png) | [[wiki/items/15001-magical-sniping-bow\|Magical Sniping Bow]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/15002.png) | [[wiki/items/15002-magical-vision-bow\|Magical Vision Bow]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/15006.png) | [[wiki/items/15006-magical-blood-dagger\|Magical Blood Dagger]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/15008.png) | [[wiki/items/15008-magical-hiding-dagger\|Magical hiding Dagger]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/20020.png) | [[wiki/items/20020-magical-protect-hammer\|Magical Protect Hammer]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/20021.png) | [[wiki/items/20021-magical-protect-cannon\|Magical Protect Cannon]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/20002.png) | [[wiki/items/20002-magical-dash-hammer\|Magical Dash Hammer]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/20003.png) | [[wiki/items/20003-magical-crush-hammer\|Magical Crush Hammer]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/20015.png) | [[wiki/items/20015-magical-protect-mace\|Magical Protect Mace]] | Weapon (31) | 1 |
+| ![](wiki/assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 1 |
+| ![](wiki/assets/items/643.png) | [[wiki/items/643-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 1 |
 
 #### Grade 3 (11)
 
 |  | item | kind | c3 |
 |---|---|---|---|
-| ![](../assets/items/10011.png) | [[wiki/items/10011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 0 |
-| ![](../assets/items/10017.png) | [[wiki/items/10017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 0 |
-| ![](../assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 0 |
-| ![](../assets/items/10000.png) | [[wiki/items/10000-magical-storm-wand\|Magical Storm Wand]] | Weapon (31) | 0 |
-| ![](../assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 0 |
-| ![](../assets/items/15004.png) | [[wiki/items/15004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 0 |
-| ![](../assets/items/15007.png) | [[wiki/items/15007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 0 |
-| ![](../assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 0 |
-| ![](../assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 0 |
-| ![](../assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 2 |
-| ![](../assets/items/643.png) | [[wiki/items/643-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 2 |
+| ![](wiki/assets/items/10011.png) | [[wiki/items/10011-magical-adapted-dual-gun\|Magical adapted Dual Gun]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/10017.png) | [[wiki/items/10017-magical-wrath-blade\|Magical Wrath Blade]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/10002.png) | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/10000.png) | [[wiki/items/10000-magical-storm-wand\|Magical Storm Wand]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/10001.png) | [[wiki/items/10001-magical-thunder-wand\|Magical Thunder Wand]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/15004.png) | [[wiki/items/15004-magical-frost-bow\|Magical Frost Bow]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/15007.png) | [[wiki/items/15007-magical-judge-dagger\|Magical judge Dagger]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/20001.png) | [[wiki/items/20001-magical-demolition-hammer\|Magical Demolition Hammer]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/20011.png) | [[wiki/items/20011-magical-blast-cannon\|Magical Blast Cannon]] | Weapon (31) | 0 |
+| ![](wiki/assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 2 |
+| ![](wiki/assets/items/643.png) | [[wiki/items/643-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | Grede Reinforcing Stone (48) | 2 |
 
 ### Odds
 

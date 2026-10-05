@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=2deca9 type=d36ca9 id=626346 sources=0e8f1a name_key=42b268 kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=bc59ad icon=47be79 obtained_from=9ff58a -->
 |  |  |
 |---|---|
-|  | ![Reinforce Nexus](../assets/items/1409.png) |
+|  | ![Reinforce Nexus](wiki/assets/items/1409.png) |
 | **Item id** | `1409` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

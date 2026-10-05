@@ -20,21 +20,21 @@ npc: [214]
 <!-- generated-keys: title=b6c9bf type=61613a id=8fc1bb sources=195659 result=5281bd materials=0ce575 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6eb8df level=f6e112 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/887.png) |
+|  | ![](wiki/assets/items/887.png) |
 | **Recipe id** | `703` (`Item_Make`) |
 | **Makes** | [[wiki/items/887-potion-of-health-a\|Potion of Health (A)]] × 100 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 25 |
 | **Category / filter** | 1 / `0x400001` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 100 |  |
-| ![](../assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 2 |  |
+| ![](wiki/assets/items/836.png) | [[wiki/items/836-empty-flask-a\|Empty Flask (A)]] | 100 |  |
+| ![](wiki/assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

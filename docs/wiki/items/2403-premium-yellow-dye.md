@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=f7d9e3 type=d36ca9 id=df7ab4 sources=ffbfeb name_key=c0daf6 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=c869cf icon=166312 obtained_from=71cc92 -->
 |  |  |
 |---|---|
-|  | ![Premium Yellow Dye](../assets/items/2403.png) |
+|  | ![Premium Yellow Dye](wiki/assets/items/2403.png) |
 | **Item id** | `2403` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=fee13c type=d36ca9 id=76635f sources=51afea name_key=25f37d kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=c59f65 obtained_from=ab2c70 -->
 |  |  |
 |---|---|
-|  | ![Essence of Water](../assets/items/1933.png) |
+|  | ![Essence of Water](wiki/assets/items/1933.png) |
 | **Item id** | `1933` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -53,6 +53,7 @@ obtained_from:
 - Sold in [[wiki/shops/401-shop-401-no-npc|Shop 401 (no NPC)]] (no NPC found)
 - Shown as a reward of dungeon [[wiki/dungeons/122-lv-3-tsunami-lake|(Lv 3) Tsunami Lake]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 

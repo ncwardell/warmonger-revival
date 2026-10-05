@@ -33,7 +33,7 @@ complete_talk: 672
 <!-- generated-keys: title=71241a type=eb5b2b id=9deb86 sources=037f51 name_key=c3a427 kind=77de68 kind_name=01e781 giver=7abdb8 turn_in=7abdb8 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=12c6fc excludes_bit=f1abd6 owned_field=05a8ea prev=5c6c1d next=97d170 stages=30caa7 objectives=e9f33a rewards=91396b offer_talk=97e01b complete_talk=540d3e -->
 |  |  |
 |---|---|
-|  | ![Fisher's scales](../assets/npcs/210.png) |
+|  | ![Fisher's scales](wiki/assets/npcs/210.png) |
 | **Quest id** | `732` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |

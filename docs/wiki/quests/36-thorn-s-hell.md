@@ -36,7 +36,7 @@ complete_talk: 803
 <!-- generated-keys: title=2cf110 type=eb5b2b id=fc074d sources=e6f44e name_key=8503e7 kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=1caac0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=cb4e52 requires_bit=632667 prev=5c3c3a next=7aed3f prerequisites=170645 stages=642aaf objectives=69e839 rewards=cacc81 offer_talk=acb033 complete_talk=9d0008 -->
 |  |  |
 |---|---|
-|  | ![Thorn's Hell](../assets/npcs/200.png) |
+|  | ![Thorn's Hell](wiki/assets/npcs/200.png) |
 | **Quest id** | `36` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

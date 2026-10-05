@@ -48,7 +48,7 @@ obtained_from:
 <!-- generated-keys: title=d7c1d5 type=d36ca9 id=63b4f9 sources=953a68 name_key=07e6e5 kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=6c87dd reinforce=356a19 icon=649bf6 obtained_from=6c4cd6 -->
 |  |  |
 |---|---|
-|  | ![Helmet of Life](../assets/items/401.png) |
+|  | ![Helmet of Life](wiki/assets/items/401.png) |
 | **Item id** | `401` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |
@@ -105,6 +105,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 127, tier 1 (hand-entered)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
+- how dungeon_drop, field 126, tier 2 (hand-entered)
 
 ### Mentioned in
 

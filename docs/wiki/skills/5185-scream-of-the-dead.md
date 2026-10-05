@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=a18e83 type=86a754 id=5a9f9b sources=1dffd4 name_key=516a99 desc_key=7657d9 kind=356a19 kind_name=9bc378 target=9dc90e range=c1dfd9 area=d82541 cost=911ade cooldown=628d31 effect_kind=b6589f effects=7ce8b8 damage_or_effect=c41ea2 tooltip_formula=1f41f5 visual=81110d icon=6665b9 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Scream of the Dead](../assets/skills/5185.png) |
+|  | ![Scream of the Dead](wiki/assets/skills/5185.png) |
 | **Skill id** | `5185` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 10 |

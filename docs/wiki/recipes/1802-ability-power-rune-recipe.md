@@ -20,20 +20,20 @@ npc: [323]
 <!-- generated-keys: title=5400b7 type=61613a id=c030c7 sources=4f13bd result=dc22d7 materials=62d062 gold=f8237d success_rate=310b86 category=1b6453 filter_mask=356a19 raw=fc6d8f -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7012.png) |
+|  | ![](wiki/assets/items/7012.png) |
 | **Recipe id** | `1802` (`Item_Make`) |
 | **Makes** | [[wiki/items/7012-ability-power-rune\|Ability Power Rune]] × 1 |
 | **Gold** | 5,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Category / filter** | 4 / `0x1` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/323-alan\|Alan]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
-| ![](../assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 10 |  |
+| ![](wiki/assets/items/804.png) | [[wiki/items/804-blue-bloodstone\|Blue bloodstone]] | 2 |  |
 
 Unknown columns: `c28` = 200 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

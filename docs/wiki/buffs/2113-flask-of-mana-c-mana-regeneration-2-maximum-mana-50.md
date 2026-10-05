@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=3563d0 type=6143a1 id=88b726 sources=0cf3f5 name_key=f36b3e duration=995f11 is_buff=b6589f stack_type=356a19 group=88b726 effects=2f668f icon=40f6b8 applied_by=7a20df -->
 |  |  |
 |---|---|
-|  | ![Flask of Mana (C) : Mana Regeneration +2, Maximum Mana +50](../assets/buffs/2113.png) |
+|  | ![Flask of Mana (C) : Mana Regeneration +2, Maximum Mana +50](wiki/assets/buffs/2113.png) |
 | **Buff id** | `2113` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -47,7 +47,7 @@ obtained_from:
 <!-- generated-keys: title=caa06d type=d36ca9 id=4396c2 sources=57f401 name_key=211dc5 kind=b7eb6c kind_name=e687cb classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=2cc669 reinforce=356a19 icon=5f078d obtained_from=ede7b5 -->
 |  |  |
 |---|---|
-|  | ![Spirit Robe](../assets/items/414.png) |
+|  | ![Spirit Robe](wiki/assets/items/414.png) |
 | **Item id** | `414` |
 | **Kind** | Armor (51) |
 | **Classes** | all |
@@ -103,6 +103,9 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 121, tier 1 (hand-entered)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
+- how dungeon_drop, field 126, tier 2 (hand-entered)
 
 ### Mentioned in
 

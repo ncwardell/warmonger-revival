@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=a5c0c0 type=86a754 id=c1f002 sources=ec0a1b name_key=3703d8 desc_key=74d8db kind=356a19 kind_name=9bc378 target=644925 range=fe5dbb cost=911ade cooldown=628d31 effect_kind=b6589f effects=1a023b damage_or_effect=64f1a5 tooltip_formula=173d91 visual=f04b1d icon=50b6e5 used_by=90ba45 -->
 |  |  |
 |---|---|
-|  | ![Fisher's Protection](../assets/skills/20307.png) |
+|  | ![Fisher's Protection](wiki/assets/skills/20307.png) |
 | **Skill id** | `20307` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 1 |

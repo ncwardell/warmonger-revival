@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=2907ab type=6143a1 id=df72db sources=ee3261 name_key=81530b duration=5a72dd is_buff=b6589f stack_type=356a19 group=b6589f effects=28271d icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Summoning Zone](../assets/buffs/10191.png) |
+|  | ![Summoning Zone](wiki/assets/buffs/10191.png) |
 | **Buff id** | `10191` |
 | **Duration** | 15 s (75 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

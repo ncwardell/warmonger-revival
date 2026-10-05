@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z30_00.dds"
 <!-- generated-keys: title=c7e830 type=c899cd id=22d200 sources=04c332 name_kr=371e99 terrain=1b73d9 bounds=6619e7 size=2da34d segments=b40a87 fields=f6cf0f minimap=b8f6dd -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 76 (Thunderstorm Ruin - Abaddon)](../assets/zones/30.png) |
+|  | ![minimap of Field 76 (Thunderstorm Ruin - Abaddon)](wiki/assets/zones/30.png) |
 | **Zone id** | `30` |
 | **ZoneDB name** | 필드_76 (English gloss: Field 76 (Thunderstorm Ruin - Abaddon)) |
 | **Terrain name** | `76` |

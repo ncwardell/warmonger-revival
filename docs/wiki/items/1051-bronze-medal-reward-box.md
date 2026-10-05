@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=a30f8d type=d36ca9 id=929f96 sources=4df571 name_key=2d7725 kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=a79eaa cost_pair=6589fc flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=7e611b obtained_from=506632 -->
 |  |  |
 |---|---|
-|  | ![(Bronze) Medal Reward Box](../assets/items/1051.png) |
+|  | ![(Bronze) Medal Reward Box](wiki/assets/items/1051.png) |
 | **Item id** | `1051` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

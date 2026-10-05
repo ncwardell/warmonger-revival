@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=a0a238 type=d36ca9 id=318c2d sources=936dfe name_key=bad6e2 kind=cb4e52 kind_name=767a7c classes=30141f bind=883bf8 price=29cce8 period=e651d1 stats=c2a322 options=9fd1e0 icon=ebfdb2 obtained_from=c0133c -->
 |  |  |
 |---|---|
-|  | ![Maid Set](../assets/items/2037.png) |
+|  | ![Maid Set](wiki/assets/items/2037.png) |
 | **Item id** | `2037` |
 | **Kind** | Costume (32) |
 | **Classes** | Saint |

@@ -60,31 +60,31 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 1 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 3 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 4 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 5 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 6 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 7 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 8 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 9 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 10 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 11 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 12 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 13 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 14 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 15 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 16 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 17 | ![](../assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 18 | ![](../assets/items/1931.png) | [[wiki/items/1931-essence-of-wind\|Essence of Wind]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 19 | ![](../assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | 1 |  | Gold | 100 | 792 | 630 |
-| 20 | ![](../assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | 1 |  | Gold | 100 | 792 | 630 |
-| 21 | ![](../assets/items/1934.png) | [[wiki/items/1934-essence-of-earth\|Essence of Earth]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 22 | ![](../assets/items/1931.png) | [[wiki/items/1931-essence-of-wind\|Essence of Wind]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
-| 23 | ![](../assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | 1 |  | Gold | 100 | 792 | 630 |
-| 24 | ![](../assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 0 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 1 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 3 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 4 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 5 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 6 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 7 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 8 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 9 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 10 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 11 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 12 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 13 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 14 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 15 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 16 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 17 | ![](wiki/assets/items/606.png) | [[wiki/items/606-blue-passion-piece-b\|Blue Passion Piece (B)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 18 | ![](wiki/assets/items/1931.png) | [[wiki/items/1931-essence-of-wind\|Essence of Wind]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 19 | ![](wiki/assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | 1 |  | Gold | 100 | 792 | 630 |
+| 20 | ![](wiki/assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | 1 |  | Gold | 100 | 792 | 630 |
+| 21 | ![](wiki/assets/items/1934.png) | [[wiki/items/1934-essence-of-earth\|Essence of Earth]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 22 | ![](wiki/assets/items/1931.png) | [[wiki/items/1931-essence-of-wind\|Essence of Wind]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
+| 23 | ![](wiki/assets/items/641.png) | [[wiki/items/641-rainbow-reinforcing-stone-weapon\|Rainbow Reinforcing Stone (Weapon)]] | 1 |  | Gold | 100 | 792 | 630 |
+| 24 | ![](wiki/assets/items/1933.png) | [[wiki/items/1933-essence-of-water\|Essence of Water]] | 1 |  | Gold | 500 | 3,960 | 3,150 |
 
 20 entries repeat an item already listed (the client shows every entry).
 

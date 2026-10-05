@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=727c11 type=d36ca9 id=326ebc sources=db28b9 name_key=6cce88 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=1a18f8 obtained_from=97b86d -->
 |  |  |
 |---|---|
-|  | ![Horn of Komodo](../assets/items/2704.png) |
+|  | ![Horn of Komodo](wiki/assets/items/2704.png) |
 | **Item id** | `2704` |
 | **Kind** | Material (12) |
 | **Classes** | all |

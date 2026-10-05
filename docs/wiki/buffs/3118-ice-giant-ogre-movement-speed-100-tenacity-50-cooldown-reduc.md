@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=a9a663 type=6143a1 id=3d4603 sources=b61688 name_key=9df296 duration=995f11 is_buff=b6589f stack_type=356a19 group=b6589f effects=45d1f9 icon=5db82a applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Ice Giant Ogre : Movement Speed +100, Tenacity +50, Cooldown Reduction +20%](../assets/buffs/3118.png) |
+|  | ![Ice Giant Ogre : Movement Speed +100, Tenacity +50, Cooldown Reduction +20%](wiki/assets/buffs/3118.png) |
 | **Buff id** | `3118` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

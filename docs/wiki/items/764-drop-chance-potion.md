@@ -28,7 +28,7 @@ obtained_from:
 <!-- generated-keys: title=22eb9d type=d36ca9 id=b55860 sources=35b1b7 name_key=d10ff4 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a use_buff=9e1f50 cooldown_s=da4b92 stats=97d170 options=e93995 icon=37da9a obtained_from=47e0d7 -->
 |  |  |
 |---|---|
-|  | ![Drop Chance Potion](../assets/items/764.png) |
+|  | ![Drop Chance Potion](wiki/assets/items/764.png) |
 | **Item id** | `764` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

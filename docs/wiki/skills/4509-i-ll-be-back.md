@@ -26,7 +26,7 @@ tp: {"row": 8, "tp_cost": 1500, "cooldown_s": 120, "need_flags": 0, "c7": 1}
 <!-- generated-keys: title=211a26 type=86a754 id=27e5a2 sources=ed5ef6 name_key=7983b4 desc_key=5880d1 kind=356a19 kind_name=9bc378 target=d97d2d range=3028f5 area=febbd1 cost=4e6c0e cooldown=d97414 effect_kind=b6589f effects=e2b3fa damage_or_effect=b57969 icon=78d8c9 used_by=97d170 tp=354a45 -->
 |  |  |
 |---|---|
-|  | ![I'll be back!](../assets/skills/4509.png) |
+|  | ![I'll be back!](wiki/assets/skills/4509.png) |
 | **Skill id** | `4509` |
 | **Kind** | active (1) |
 | **Target** | self; self, ally; units: player, structure; up to 1 |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=ce49dc type=6143a1 id=ee3ac8 sources=049133 name_key=f09af6 duration=870e64 is_buff=b6589f stack_type=356a19 group=1b6453 effects=b3b8cb icon=a12d2b applied_by=9756fe -->
 |  |  |
 |---|---|
-|  | ![Secret Movement: Increases Movement Speed](../assets/buffs/30039.png) |
+|  | ![Secret Movement: Increases Movement Speed](wiki/assets/buffs/30039.png) |
 | **Buff id** | `30039` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -33,7 +33,7 @@ complete_talk: 695
 <!-- generated-keys: title=0909e2 type=eb5b2b id=90f98c sources=913d4e name_key=876cd5 kind=77de68 kind_name=01e781 giver=4518d0 turn_in=4518d0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=b6589f requires_bit=f6e112 excludes_bit=fa35e1 owned_field=8bd795 prev=71a868 next=97d170 stages=30caa7 objectives=214329 rewards=b49a38 offer_talk=d2e19c complete_talk=00a691 -->
 |  |  |
 |---|---|
-|  | ![The necessary materials](../assets/npcs/204.png) |
+|  | ![The necessary materials](wiki/assets/npcs/204.png) |
 | **Quest id** | `727` |
 | **Kind** | Free (kind 3) |
 | **Giver** | [[wiki/npcs/204-wren\|Wren]] |

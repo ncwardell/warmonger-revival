@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=a62c86 type=d36ca9 id=91b39c sources=f1a591 name_key=65c15c kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=da4b92 stats=e1964a options=c1a4c7 icon=bf3eb0 obtained_from=afc4e3 -->
 |  |  |
 |---|---|
-|  | ![Cooldown Reduction Rune](../assets/items/7184.png) |
+|  | ![Cooldown Reduction Rune](wiki/assets/items/7184.png) |
 | **Item id** | `7184` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

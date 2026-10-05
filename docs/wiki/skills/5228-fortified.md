@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=ce9b19 type=86a754 id=fad948 sources=a996f9 name_key=e0164b desc_key=d8dd55 kind=356a19 kind_name=9bc378 target=5eb991 range=3028f5 area=febbd1 cost=6750b6 cooldown=6963fe effect_kind=b6589f effects=aa964f damage_or_effect=4b9f15 icon=30da17 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fortified](../assets/skills/5228.png) |
+|  | ![Fortified](wiki/assets/skills/5228.png) |
 | **Skill id** | `5228` |
 | **Kind** | active (1) |
 | **Target** | self; self, ally; units: player, structure; up to 3 |

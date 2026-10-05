@@ -34,7 +34,7 @@ obtained_from:
 <!-- generated-keys: title=30ded9 type=d36ca9 id=668f37 sources=70bd86 name_key=35f780 kind=80e28a kind_name=7b4b74 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=0c38aa reinforce=da4b92 icon=4aaf5d obtained_from=7a497e -->
 |  |  |
 |---|---|
-|  | ![Bandolier Necklace](../assets/items/461.png) |
+|  | ![Bandolier Necklace](wiki/assets/items/461.png) |
 | **Item id** | `461` |
 | **Kind** | Necklace (54) |
 | **Classes** | all |

@@ -21,7 +21,7 @@ obtained_from: []
 <!-- generated-keys: title=252424 type=d36ca9 id=1749e0 sources=79cff0 name_key=e1506d kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=d8718b obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Piece : Guardian](../assets/items/2592.png) |
+|  | ![Piece : Guardian](wiki/assets/items/2592.png) |
 | **Item id** | `2592` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

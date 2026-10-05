@@ -32,7 +32,7 @@ used_by: []
 <!-- generated-keys: title=78605e type=86a754 id=4698db sources=a4ec7e name_key=7dcbc3 desc_key=258752 kind=356a19 kind_name=9bc378 target=d1cc1b range=c1dfd9 area=e8b0ea cost=7e5cd4 cooldown=367d78 effect_kind=da4b92 effects=9bb3a3 damage_or_effect=cdfdd5 tooltip_formula=389900 visual=5a9295 icon=2eeddb used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Water column](../assets/skills/20304.png) |
+|  | ![Water column](wiki/assets/skills/20304.png) |
 | **Skill id** | `20304` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

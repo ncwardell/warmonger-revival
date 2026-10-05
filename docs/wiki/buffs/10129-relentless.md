@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=aba502 type=6143a1 id=d6d5ad sources=138318 name_key=98a76f duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=7974dc icon=4f180c applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Relentless](../assets/buffs/10129.png) |
+|  | ![Relentless](wiki/assets/buffs/10129.png) |
 | **Buff id** | `10129` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

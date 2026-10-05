@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=8d4a0e type=86a754 id=ac826c sources=22bb98 name_key=1957d5 desc_key=a86ea2 kind=356a19 kind_name=9bc378 target=7056fd range=902ba3 area=bade13 cost=9e049c cooldown=7d0c8c delivery=93a212 effect_kind=da4b92 effects=bd8c29 damage_or_effect=a62c96 tooltip_formula=2dadfc visual=c8306a icon=c919f8 used_by=02d332 -->
 |  |  |
 |---|---|
-|  | ![Explosion of Fury](../assets/skills/5003.png) |
+|  | ![Explosion of Fury](wiki/assets/skills/5003.png) |
 | **Skill id** | `5003` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 7 |

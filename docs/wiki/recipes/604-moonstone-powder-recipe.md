@@ -19,20 +19,20 @@ npc: [214]
 <!-- generated-keys: title=a9eff3 type=61613a id=f8d0f8 sources=595cd4 result=3cdd8a materials=b438e9 gold=e1822d success_rate=310b86 category=356a19 filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/809.png) |
+|  | ![](wiki/assets/items/809.png) |
 | **Recipe id** | `604` (`Item_Make`) |
 | **Makes** | [[wiki/items/809-moonstone-powder\|Moonstone powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 1 / `0x200` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 1 |  |
+| ![](wiki/assets/items/808.png) | [[wiki/items/808-moonstone\|Moonstone]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/2404-moonstone-powder-recipe|recipe 2404]]
 

@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=cf5397 type=86a754 id=711464 sources=c6009c name_key=53bded desc_key=33332a kind=356a19 kind_name=9bc378 target=cacd0a range=b1d578 area=6d01a6 cost=ff5a60 cooldown=ad2ac8 delivery=15a656 effect_kind=356a19 effects=edaf80 damage_or_effect=bf21a9 tooltip_formula=aed2ab visual=87d538 icon=50dbdf used_by=e4c991 -->
 |  |  |
 |---|---|
-|  | ![Death from Above](../assets/skills/10035.png) |
+|  | ![Death from Above](wiki/assets/skills/10035.png) |
 | **Skill id** | `10035` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

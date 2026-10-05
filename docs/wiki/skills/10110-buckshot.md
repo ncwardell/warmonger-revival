@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=79454d type=86a754 id=089e94 sources=e787d6 name_key=c06fde desc_key=6c5f6a kind=356a19 kind_name=9bc378 target=138a60 range=b1d578 cost=e4e7cf cooldown=e3989d delivery=93a212 effect_kind=356a19 effects=e933c6 damage_or_effect=f00589 tooltip_formula=de4d81 visual=b4ef7d icon=54219d used_by=66c67e -->
 |  |  |
 |---|---|
-|  | ![Buckshot](../assets/skills/10110.png) |
+|  | ![Buckshot](wiki/assets/skills/10110.png) |
 | **Skill id** | `10110` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 12 |

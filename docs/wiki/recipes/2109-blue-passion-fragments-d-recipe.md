@@ -19,20 +19,20 @@ npc: [336]
 <!-- generated-keys: title=2406a0 type=61613a id=27b0e6 sources=69b058 result=286e89 materials=6997f8 gold=a6a084 success_rate=310b86 category=902ba3 filter_mask=da4b92 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/601.png) |
+|  | ![](wiki/assets/items/601.png) |
 | **Recipe id** | `2109` (`Item_Make`) |
 | **Makes** | [[wiki/items/601-blue-passion-fragments-d\|Blue Passion Fragments (D)]] × 100 |
 | **Gold** | 2,500 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 7 / `0x2` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/336-paraman\|Paraman]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 66 |  |
+| ![](wiki/assets/items/602.png) | [[wiki/items/602-blue-passion-piece-d\|Blue Passion Piece (D)]] | 66 |  |
 
 Other recipes for the same item: [[wiki/recipes/821-blue-passion-fragments-d-recipe|recipe 821]]
 

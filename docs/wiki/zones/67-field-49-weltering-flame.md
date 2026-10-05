@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z67_00.dds"
 <!-- generated-keys: title=58d1d3 type=c899cd id=4d89d2 sources=049fda name_kr=719f17 terrain=fd0c87 bounds=6a2044 size=114466 segments=417e8a fields=3915bb minimap=8c9243 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 49 (Weltering Flame)](../assets/zones/67.png) |
+|  | ![minimap of Field 49 (Weltering Flame)](wiki/assets/zones/67.png) |
 | **Zone id** | `67` |
 | **ZoneDB name** | 필드_49 (English gloss: Field 49 (Weltering Flame)) |
 | **Terrain name** | `49` |

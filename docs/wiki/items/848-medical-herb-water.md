@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=2c78f3 type=d36ca9 id=0e3808 sources=7c3586 name_key=5be2f4 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=2db731 obtained_from=0b6d33 -->
 |  |  |
 |---|---|
-|  | ![Medical herb water](../assets/items/848.png) |
+|  | ![Medical herb water](wiki/assets/items/848.png) |
 | **Item id** | `848` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=8f381a type=d36ca9 id=249199 sources=b95495 name_key=f33ee9 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=4663ba cost_pair=3341c8 stats=97d170 options=c16e6d icon=29017f obtained_from=55a0df -->
 |  |  |
 |---|---|
-|  | ![Orange Dye](../assets/items/2502.png) |
+|  | ![Orange Dye](wiki/assets/items/2502.png) |
 | **Item id** | `2502` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=048775 type=6143a1 id=281a7b sources=721e7d name_key=2a6f03 duration=76674f is_buff=b6589f stack_type=356a19 group=902ba3 effects=97d170 icon=a6e82f applied_by=68b9c1 -->
 |  |  |
 |---|---|
-|  | ![Wild Threat : In Panic](../assets/buffs/30141.png) |
+|  | ![Wild Threat : In Panic](wiki/assets/buffs/30141.png) |
 | **Buff id** | `30141` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

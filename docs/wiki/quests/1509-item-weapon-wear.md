@@ -23,7 +23,7 @@ help: {"image": "ui/HelpImage/Help_18.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=bc0634 type=eb5b2b id=ea2cc4 sources=470f64 name_key=d01242 kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=eb4ac3 prev=97d170 next=97d170 stages=30caa7 objectives=cdb62c rewards=97d170 help=582abb -->
 |  |  |
 |---|---|
-|  | ![Item - Weapon Wear](../assets/quests/1509.png) |
+|  | ![Item - Weapon Wear](wiki/assets/quests/1509.png) |
 | **Quest id** | `1509` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

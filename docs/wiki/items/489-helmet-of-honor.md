@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=eff2d4 type=d36ca9 id=343ae8 sources=189502 name_key=e966a6 kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=e0f635 cost_pair=9ce603 rarity=356a19 stats=a0beb3 reinforce=da4b92 icon=a06501 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Helmet of Honor](../assets/items/489.png) |
+|  | ![Helmet of Honor](wiki/assets/items/489.png) |
 | **Item id** | `489` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |
@@ -76,7 +76,8 @@ ItemSancMet row 2 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how craft_superior, recipe 21, chance 5 (hand-entered)
+- how craft_superior, recipe 2021, chance 5 (hand-entered)
 
 ### Mentioned in
 

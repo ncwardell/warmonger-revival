@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=33c7d7 type=6143a1 id=6d4b7b sources=ca5cb4 name_key=a9f754 duration=0aac5a is_buff=b6589f stack_type=356a19 group=ac3478 effects=97d170 icon=1bc8e5 applied_by=a7a4e4 -->
 |  |  |
 |---|---|
-|  | ![Lightning Chain : Rooted in place for 3 seconds](../assets/buffs/10431.png) |
+|  | ![Lightning Chain : Rooted in place for 3 seconds](wiki/assets/buffs/10431.png) |
 | **Buff id** | `10431` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z144_00.dds"
 <!-- generated-keys: title=4c1767 type=c899cd id=732082 sources=227b46 name_kr=7b3e93 terrain=0ec3da bounds=2d69ac size=a1cfbb segments=ee0f85 fields=1aa4a6 minimap=f120ce -->
 |  |  |
 |---|---|
-|  | ![minimap of A Castle (big city)](../assets/zones/144.png) |
+|  | ![minimap of A Castle (big city)](wiki/assets/zones/144.png) |
 | **Zone id** | `144` |
 | **ZoneDB name** | A대도시 (English gloss: A Castle (big city)) |
 | **Terrain name** | `A_big city` |

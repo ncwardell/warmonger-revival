@@ -47,7 +47,7 @@ obtained_from:
 <!-- generated-keys: title=eff2d4 type=d36ca9 id=4dc778 sources=bda9c7 name_key=e966a6 kind=e1822d kind_name=c90f98 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=9a84fa reinforce=356a19 icon=a06501 obtained_from=1299b0 -->
 |  |  |
 |---|---|
-|  | ![Helmet of Honor](../assets/items/417.png) |
+|  | ![Helmet of Honor](wiki/assets/items/417.png) |
 | **Item id** | `417` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |
@@ -104,6 +104,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
+- how dungeon_drop, field 124, tier 2 (hand-entered)
 
 ### Mentioned in
 

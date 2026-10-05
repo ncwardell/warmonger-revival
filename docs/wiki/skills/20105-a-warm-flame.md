@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=49ce1e type=86a754 id=ed6429 sources=f7636a name_key=79217e desc_key=383b48 kind=356a19 kind_name=9bc378 target=55b685 range=1b6453 area=950fc9 cost=cb4f2a cooldown=bc9744 effect_kind=da4b92 effects=bdc644 damage_or_effect=351a15 tooltip_formula=f662a9 requirements=3a72c4 visual=279e90 icon=660fb1 used_by=850273 -->
 |  |  |
 |---|---|
-|  | ![A warm flame](../assets/skills/20105.png) |
+|  | ![A warm flame](wiki/assets/skills/20105.png) |
 | **Skill id** | `20105` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

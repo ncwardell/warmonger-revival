@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z59_00.dds"
 <!-- generated-keys: title=2a29ff type=c899cd id=5a5b0f sources=c4c9f6 name_kr=6ce85a terrain=a5e9a2 bounds=d80918 size=114466 segments=3c8749 fields=7b279c minimap=88a9a3 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 40 (Angry River - Upper Region)](../assets/zones/59.png) |
+|  | ![minimap of Field 40 (Angry River - Upper Region)](wiki/assets/zones/59.png) |
 | **Zone id** | `59` |
 | **ZoneDB name** | 필드_40 (English gloss: Field 40 (Angry River - Upper Region)) |
 | **Terrain name** | `40` |

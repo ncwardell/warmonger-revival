@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=75101d type=6143a1 id=4049da sources=599419 name_key=569f5a duration=bdf5bf is_buff=b6589f stack_type=356a19 group=b6589f effects=050d59 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Militia: When you reach the Nexus you gain a huge boost in Movement Speed.](../assets/buffs/2059.png) |
+|  | ![Militia: When you reach the Nexus you gain a huge boost in Movement Speed.](wiki/assets/buffs/2059.png) |
 | **Buff id** | `2059` |
 | **Duration** | 7 s (35 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

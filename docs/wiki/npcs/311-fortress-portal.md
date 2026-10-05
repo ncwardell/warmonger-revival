@@ -21,10 +21,11 @@ positions:
   - {"field": 120, "x": 1981.0, "z": 1561.0, "source": "gameplay/npc-locations §3", "confidence": "image + guide"}
   - {"field": 120, "x": 2237.0, "z": 1561.0, "source": "derived: gameplay/npc-locations §3 + copy origin (gameplay/npc-locations §2)", "confidence": "derived"}
   - {"field": 120, "x": 2493.0, "z": 1561.0, "source": "derived: gameplay/npc-locations §3 + copy origin (gameplay/npc-locations §2)", "confidence": "derived"}
-teleport_to: [{"name": "Dungeon matched to the player's level"}]
+teleport_to:
+  - {"name": "Dungeon matched to the player's level"}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=fb0229 type=3664ce id=cd6d91 sources=3f455d name_key=6cc383 category=e1822d class_mask=da4b92 model=269f4f scale=bdc140 functions=b85d7e role=6b2147 map=775bc5 x=9154fe z=09f217 positions=5aa78b teleport_to=2be88c -->
+<!-- generated-keys: title=fb0229 type=3664ce id=cd6d91 sources=3f455d name_key=6cc383 category=e1822d class_mask=da4b92 model=269f4f scale=bdc140 functions=b85d7e role=6b2147 map=775bc5 x=9154fe z=09f217 positions=5aa78b -->
 |  |  |
 |---|---|
 | **Unit id** | `311` |

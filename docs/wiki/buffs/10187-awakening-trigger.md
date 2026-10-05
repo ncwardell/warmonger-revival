@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=5eb970 type=6143a1 id=b04b89 sources=c72b3e name_key=df4afb duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=dcd4b8 icon=1bc8e5 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Awakening : Trigger](../assets/buffs/10187.png) |
+|  | ![Awakening : Trigger](wiki/assets/buffs/10187.png) |
 | **Buff id** | `10187` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

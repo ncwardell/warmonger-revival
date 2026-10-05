@@ -31,7 +31,7 @@ board:
   - {"row": 6, "tab": 2}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=07b29d type=eb5b2b id=1f37ad sources=18252b name_key=53ddba kind=b1d578 kind_name=f3fde7 level=84a59c giver=aeb1e0 turn_in=847ad4 periodic=f596a6 automatic=5ffe53 prev=97d170 next=97d170 prerequisites=c3110a stages=30caa7 objectives=2be88c objectives_client=cf51d4 rewards=2be88c rewards_client=aa3b46 help=106933 board=25fbff -->
+<!-- generated-keys: title=07b29d type=eb5b2b id=1f37ad sources=18252b name_key=53ddba kind=b1d578 kind_name=f3fde7 level=84a59c giver=aeb1e0 turn_in=847ad4 periodic=f596a6 automatic=5ffe53 prev=97d170 next=97d170 prerequisites=c3110a stages=30caa7 objectives_client=cf51d4 rewards=2be88c rewards_client=aa3b46 help=106933 board=25fbff -->
 |  |  |
 |---|---|
 | **Quest id** | `961` |
@@ -56,10 +56,7 @@ board:
 
 ### Objectives
 
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
-
-1. Type 26 — craft gear (category a)?; values a=1, b=20 — tracker: “Make [A~S] Grade Scroll, Tome, Flask, Elixir”
+1. Type 26 — craft gear (category a)?; values a=1 — tracker: “Make [A~S] Grade Scroll, Tome, Flask, Elixir (0/20)”
 
 ### Rewards
 

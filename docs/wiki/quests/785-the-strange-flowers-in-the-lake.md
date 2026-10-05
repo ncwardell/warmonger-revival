@@ -31,7 +31,7 @@ complete_talk: 873
 <!-- generated-keys: title=d0b721 type=eb5b2b id=298f93 sources=1e0225 name_key=d4df09 kind=356a19 kind_name=0bac50 giver=4518d0 turn_in=4518d0 offer_maps=15f2a7 turn_in_maps=15f2a7 bit=3c26df requires_bit=fc074d prev=d8e285 next=97d170 stages=260252 objectives=f9d131 rewards=eb5d23 offer_talk=389b4f complete_talk=eab06f -->
 |  |  |
 |---|---|
-|  | ![The strange flowers in the lake](../assets/npcs/204.png) |
+|  | ![The strange flowers in the lake](wiki/assets/npcs/204.png) |
 | **Quest id** | `785` |
 | **Kind** | Sub (kind 1) |
 | **Giver** | [[wiki/npcs/204-wren\|Wren]] |

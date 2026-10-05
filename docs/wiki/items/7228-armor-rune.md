@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=3a5337 type=d36ca9 id=9fca1e sources=c4dcb7 name_key=0f3583 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=147db8 options=1d3c27 icon=9cf637 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Armor Rune](../assets/items/7228.png) |
+|  | ![Armor Rune](wiki/assets/items/7228.png) |
 | **Item id** | `7228` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

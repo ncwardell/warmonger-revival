@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=db02bb type=86a754 id=b6599c sources=b53aeb name_key=063434 desc_key=7084d3 kind=356a19 kind_name=9bc378 target=cacd0a range=fe5dbb area=6d01a6 cost=911ade cooldown=628d31 effect_kind=b6589f effects=7185a2 damage_or_effect=bf21a9 visual=8949eb icon=da8658 used_by=6214c7 -->
 |  |  |
 |---|---|
-|  | ![Invisible prison](../assets/skills/20209.png) |
+|  | ![Invisible prison](wiki/assets/skills/20209.png) |
 | **Skill id** | `20209` |
 | **Kind** | active (1) |
 | **Target** | ground; self; units: monster, player; up to 1 |

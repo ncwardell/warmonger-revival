@@ -60,25 +60,25 @@ header: {"c2": 1, "c3": 1, "c4": 4}
 
 | slot |  | item | count | p1 | currency | base | buy | sell |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 1 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 2 | ![](../assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
-| 3 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 4 | ![](../assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
-| 5 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 6 | ![](../assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
-| 7 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 10 | ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
-| 11 | ![](../assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 15 | ![](../assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
-| 17 | ![](../assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
-| 18 | ![](../assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
-| 19 | ![](../assets/items/413.png) | [[wiki/items/413-spirit-earring\|Spirit Earring]] | 1 | 1 | Gold | 100 | 792 | 630 |
-| 20 | ![](../assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
-| 21 | ![](../assets/items/413.png) | [[wiki/items/413-spirit-earring\|Spirit Earring]] | 1 | 1 | Gold | 100 | 792 | 630 |
-| 22 | ![](../assets/items/414.png) | [[wiki/items/414-spirit-robe\|Spirit Robe]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
-| 23 | ![](../assets/items/425.png) | [[wiki/items/425-necklace-of-transcendency\|Necklace of Transcendency]] | 1 | 1 | Gold | 100 | 792 | 630 |
-| 24 | ![](../assets/items/426.png) | [[wiki/items/426-belt-of-transcendency\|Belt of Transcendency]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
+| 0 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 1 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 2 | ![](wiki/assets/items/1901.png) | [[wiki/items/1901-faded-passion-piece\|Faded Passion Piece]] | 1 |  | Gold | 100 | 792 | 630 |
+| 3 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 4 | ![](wiki/assets/items/693.png) | [[wiki/items/693-gem-stone-blue\|Gem Stone : Blue]] | 1 |  | Gold | 0 | 0 | 0 |
+| 5 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 6 | ![](wiki/assets/items/612.png) | [[wiki/items/612-red-passion-piece-d\|Red Passion Piece (D)]] | 2 |  | Gold | 20 | 158 | 126 |
+| 7 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 10 | ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 1 |  | Gold | 20 | 158 | 126 |
+| 11 | ![](wiki/assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 15 | ![](wiki/assets/items/694.png) | [[wiki/items/694-gem-stone-yellow\|Gem Stone : Yellow]] | 1 |  | Gold | 200 | 1,584 | 1,260 |
+| 17 | ![](wiki/assets/items/397.png) | [[wiki/items/397-spell-necklace\|Spell Necklace]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
+| 18 | ![](wiki/assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
+| 19 | ![](wiki/assets/items/413.png) | [[wiki/items/413-spirit-earring\|Spirit Earring]] | 1 | 1 | Gold | 100 | 792 | 630 |
+| 20 | ![](wiki/assets/items/398.png) | [[wiki/items/398-spell-belt\|Spell Belt]] | 1 | 1 | Gold | 200 | 1,584 | 1,260 |
+| 21 | ![](wiki/assets/items/413.png) | [[wiki/items/413-spirit-earring\|Spirit Earring]] | 1 | 1 | Gold | 100 | 792 | 630 |
+| 22 | ![](wiki/assets/items/414.png) | [[wiki/items/414-spirit-robe\|Spirit Robe]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
+| 23 | ![](wiki/assets/items/425.png) | [[wiki/items/425-necklace-of-transcendency\|Necklace of Transcendency]] | 1 | 1 | Gold | 100 | 792 | 630 |
+| 24 | ![](wiki/assets/items/426.png) | [[wiki/items/426-belt-of-transcendency\|Belt of Transcendency]] | 1 | 1 | Gold | 150 | 1,188 | 945 |
 
 8 entries repeat an item already listed (the client shows every entry).
 

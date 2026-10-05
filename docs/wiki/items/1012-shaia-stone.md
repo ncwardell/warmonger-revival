@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=c1baf7 type=d36ca9 id=899a19 sources=4c4c90 name_key=8f9954 kind=827bfc kind_name=2bb0e6 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=10d35c obtained_from=82c7e7 -->
 |  |  |
 |---|---|
-|  | ![Shaia Stone](../assets/items/1012.png) |
+|  | ![Shaia Stone](wiki/assets/items/1012.png) |
 | **Item id** | `1012` |
 | **Kind** | Exp Box (47) |
 | **Classes** | all |

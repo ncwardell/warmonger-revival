@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=d8794f type=6143a1 id=54e28f sources=1c7ea7 name_key=15a273 duration=76674f is_buff=b6589f stack_type=356a19 group=b6589f effects=b7cd16 icon=d93629 applied_by=064730 -->
 |  |  |
 |---|---|
-|  | ![Magical Zone : Improved Health and Mana Regeneration.](../assets/buffs/10233.png) |
+|  | ![Magical Zone : Improved Health and Mana Regeneration.](wiki/assets/buffs/10233.png) |
 | **Buff id** | `10233` |
 | **Duration** | 1 s (5 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

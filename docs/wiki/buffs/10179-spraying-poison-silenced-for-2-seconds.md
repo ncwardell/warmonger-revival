@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=0dd25b type=6143a1 id=9db610 sources=7d74c4 name_key=725812 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=9835a6 applied_by=3889cf -->
 |  |  |
 |---|---|
-|  | ![Spraying Poison : Silenced for 2 seconds](../assets/buffs/10179.png) |
+|  | ![Spraying Poison : Silenced for 2 seconds](wiki/assets/buffs/10179.png) |
 | **Buff id** | `10179` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

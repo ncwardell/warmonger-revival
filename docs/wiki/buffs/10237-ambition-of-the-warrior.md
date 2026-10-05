@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=88f974 type=6143a1 id=a91c89 sources=b3c19b name_key=ebf6a8 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=bf6f69 icon=13db30 applied_by=a485bc -->
 |  |  |
 |---|---|
-|  | ![Ambition of the Warrior](../assets/buffs/10237.png) |
+|  | ![Ambition of the Warrior](wiki/assets/buffs/10237.png) |
 | **Buff id** | `10237` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

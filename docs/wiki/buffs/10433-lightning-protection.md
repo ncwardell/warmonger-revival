@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=393f9f type=6143a1 id=9acc93 sources=e06728 name_key=63b398 duration=cdb31a is_buff=b6589f stack_type=356a19 group=b6589f effects=1def9e icon=9835a6 applied_by=b79ae2 -->
 |  |  |
 |---|---|
-|  | ![Lightning protection](../assets/buffs/10433.png) |
+|  | ![Lightning protection](wiki/assets/buffs/10433.png) |
 | **Buff id** | `10433` |
 | **Duration** | 13 s (65 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

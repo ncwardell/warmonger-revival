@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=58fcd9 type=d36ca9 id=ea5fc6 sources=505914 name_key=f4e93a kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=100833 obtained_from=97b86d -->
 |  |  |
 |---|---|
-|  | ![The Slayer Komodo's Sealed Weapon](../assets/items/2754.png) |
+|  | ![The Slayer Komodo's Sealed Weapon](wiki/assets/items/2754.png) |
 | **Item id** | `2754` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=9c916e type=d36ca9 id=55258e sources=f15c07 name_key=b52b22 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rune_level=0ade7c stats=a73ba3 options=2ddee2 icon=ee08d2 obtained_from=b4ab1b -->
 |  |  |
 |---|---|
-|  | ![Magic Resist Rune](../assets/items/7041.png) |
+|  | ![Magic Resist Rune](wiki/assets/items/7041.png) |
 | **Item id** | `7041` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

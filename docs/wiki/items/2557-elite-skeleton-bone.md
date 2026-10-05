@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=7a1bd5 type=d36ca9 id=0e5661 sources=9124f1 name_key=1d61eb kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=80fa96 cost_pair=e76c7b stats=97d170 icon=b39509 obtained_from=191cc1 -->
 |  |  |
 |---|---|
-|  | ![Elite Skeleton bone](../assets/items/2557.png) |
+|  | ![Elite Skeleton bone](wiki/assets/items/2557.png) |
 | **Item id** | `2557` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=48a2ac type=6143a1 id=e1822d sources=5aaab1 name_key=df979f duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=71a18d applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Great Barrier : Protects an area from Attacks for a certain amount of time](../assets/buffs/50.png) |
+|  | ![Great Barrier : Protects an area from Attacks for a certain amount of time](wiki/assets/buffs/50.png) |
 | **Buff id** | `50` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

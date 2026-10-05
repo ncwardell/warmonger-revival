@@ -21,7 +21,7 @@ npc: [336]
 <!-- generated-keys: title=81f9e9 type=61613a id=ab6ad8 sources=6cad5a result=321b4b materials=c06eb2 gold=8a12a3 success_rate=310b86 category=902ba3 filter_mask=b0800a superior=f8157a level=356a19 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/10002.png) |
+|  | ![](wiki/assets/items/10002.png) |
 | **Recipe id** | `2208` (`Item_Make`) |
 | **Makes** | [[wiki/items/10002-magical-life-wand\|Magical Life Wand]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,14 +29,14 @@ npc: [336]
 | **Superior result** | 5 % → [[wiki/items/11002-magical-life-wand\|Magical Life Wand]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 7 / `0x1000011` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/336-paraman\|Paraman]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 50 |  |
 
 Other recipes for the same item: [[wiki/recipes/920-magical-life-wand-recipe|recipe 920]]
 

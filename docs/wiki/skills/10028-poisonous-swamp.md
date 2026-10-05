@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=3e271c type=86a754 id=4b48d1 sources=1672e9 name_key=ed838c desc_key=0c0378 kind=356a19 kind_name=9bc378 target=e84f24 range=ac3478 area=e8b0ea cost=911ade cooldown=628d31 delivery=8af2f4 effect_kind=da4b92 effects=89deef damage_or_effect=c4cdbf tooltip_formula=4df6d2 visual=7d7116 icon=90d3d6 used_by=4c72fa -->
 |  |  |
 |---|---|
-|  | ![Poisonous Swamp](../assets/skills/10028.png) |
+|  | ![Poisonous Swamp](wiki/assets/skills/10028.png) |
 | **Skill id** | `10028` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 5 |

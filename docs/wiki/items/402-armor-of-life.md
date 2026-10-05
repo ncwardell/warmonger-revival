@@ -47,7 +47,7 @@ obtained_from:
 <!-- generated-keys: title=b634ee type=d36ca9 id=5e6367 sources=7103b3 name_key=305e0f kind=b7eb6c kind_name=e687cb classes=92d079 bind=2be88c price=6d19d1 cost_pair=ca8a4e stats=ec86ed reinforce=356a19 icon=a5b1b1 obtained_from=6e93d2 -->
 |  |  |
 |---|---|
-|  | ![Armor of Life](../assets/items/402.png) |
+|  | ![Armor of Life](wiki/assets/items/402.png) |
 | **Item id** | `402` |
 | **Kind** | Armor (51) |
 | **Classes** | all |
@@ -104,6 +104,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 127, tier 1 (hand-entered)
+- how dungeon_drop, field 123, tier 1 (hand-entered)
 
 ### Mentioned in
 

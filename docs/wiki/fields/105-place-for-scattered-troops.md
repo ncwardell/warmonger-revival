@@ -28,7 +28,7 @@ spawn_points: []
 <!-- generated-keys: title=48ad72 type=7a94db id=e114c4 sources=06a77e name_key=7ba97c kind=7a94db scene_type=ac3478 max_users=310b86 group=7b5200 neighbours=023272 nation=069950 nation_copies=364b00 zones=2a6184 segments=1c4a8d gates=ede5fb connections=3e7fc6 npcs=97d170 monsters=6ff0c3 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 119](../assets/zones/119.png) |
+|  | ![minimap of zone 119](wiki/assets/zones/119.png) |
 | **Field id** | `105` |
 | **Kind** | field (SceneList type 5; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |
@@ -46,6 +46,8 @@ spawn_points: []
 | gate | at (x, z) | leads to | arrives at gate | label |
 |---|---|---|---|---|
 | 1131 | 1084.75, 2361.27 | [[wiki/fields/109-the-land-of-greed\|The land of Greed]] | 1125 | FieldName_105 |
+
+Other connections (hand-entered): to 108, gate None, to_gate None, at [1217, 2365], to_at [318, 2755], source image
 
 Entered from: [[wiki/fields/109-the-land-of-greed|The land of Greed]] (gate 1125 → 1131), [[wiki/fields/120-fortress|Fortress]] (gate 1902 → ?)
 

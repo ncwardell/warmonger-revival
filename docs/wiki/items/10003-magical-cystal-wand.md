@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=ec3547 type=d36ca9 id=b27b41 sources=413701 name_key=31d264 kind=632667 kind_name=631b4f classes=30141f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=1b6453 stats=977f84 options=c7b329 skills=fc6990 reinforce=17ba07 icon=1460a6 obtained_from=126a0b -->
 |  |  |
 |---|---|
-|  | ![Magical Cystal Wand](../assets/items/10003.png) |
+|  | ![Magical Cystal Wand](wiki/assets/items/10003.png) |
 | **Item id** | `10003` |
 | **Kind** | Weapon (31) |
 | **Classes** | Saint |

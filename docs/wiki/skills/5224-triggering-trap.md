@@ -26,7 +26,7 @@ used_by: []
 <!-- generated-keys: title=95c691 type=86a754 id=68ecbf sources=663e41 name_key=7a3a61 desc_key=dcbc9f kind=356a19 kind_name=9bc378 target=b7c52c range=da4b92 area=0c52f0 cost=2be88c cooldown=4a6a0b effect_kind=f1abd6 effects=68d1ef damage_or_effect=1ad5e8 visual=2a5ac5 icon=c4012e used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Triggering Trap](../assets/skills/5224.png) |
+|  | ![Triggering Trap](wiki/assets/skills/5224.png) |
 | **Skill id** | `5224` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: player; up to 5 |

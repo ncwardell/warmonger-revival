@@ -35,7 +35,7 @@ obtained_from:
 <!-- generated-keys: title=616526 type=d36ca9 id=e3cbba sources=2aae2f name_key=ea36f7 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=82c3b7 cost_pair=a87fd8 stats=97d170 icon=88596b obtained_from=56ffea -->
 |  |  |
 |---|---|
-|  | ![Medal : Bronze](../assets/items/1000.png) |
+|  | ![Medal : Bronze](wiki/assets/items/1000.png) |
 | **Item id** | `1000` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -59,6 +59,9 @@ obtained_from:
 - Reward of quest [[wiki/quests/842-enemy-territory|Enemy territory]] × 5
 - Reward of quest [[wiki/quests/843-battle-arena|Battle Arena]] × 4
 - Reward of quest [[wiki/quests/950-daily-monster-hunt|(Daily) Monster Hunt]] × 1
+- how daily_quest, quest Monster Hunt, count 1 (hand-entered)
+- how precept_quest, rank D, count [1, 5] (hand-entered)
+- how dungeon_drop, field 133, count [1, 1] (hand-entered)
 
 ### Mentioned in
 

@@ -23,7 +23,7 @@ obtained_from: []
 <!-- generated-keys: title=36ebaa type=d36ca9 id=e6cfa8 sources=441f7d name_key=cf6a8d kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a stats=97d170 options=1b3471 icon=4041be obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Battlefield summoned](../assets/items/1503.png) |
+|  | ![Battlefield summoned](wiki/assets/items/1503.png) |
 | **Item id** | `1503` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

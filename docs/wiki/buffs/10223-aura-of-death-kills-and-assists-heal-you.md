@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=164627 type=6143a1 id=3cae1f sources=9ee878 name_key=324a94 duration=6c141f is_buff=b6589f stack_type=356a19 group=1574bd effects=3c70a8 icon=4e653c applied_by=21c45d -->
 |  |  |
 |---|---|
-|  | ![Aura of Death : Kills and assists heal you](../assets/buffs/10223.png) |
+|  | ![Aura of Death : Kills and assists heal you](wiki/assets/buffs/10223.png) |
 | **Buff id** | `10223` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

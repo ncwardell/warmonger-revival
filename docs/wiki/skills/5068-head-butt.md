@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=0c3928 type=86a754 id=daca07 sources=8eecb4 name_key=6e7b2e desc_key=780129 kind=356a19 kind_name=9bc378 target=069ef3 range=fe5dbb cost=da6e22 cooldown=4aa5a5 movement=5f1488 effect_kind=356a19 effects=b98ea2 damage_or_effect=af0b27 tooltip_formula=8dec14 visual=35e995 icon=dd02d3 used_by=a09922 -->
 |  |  |
 |---|---|
-|  | ![Head Butt](../assets/skills/5068.png) |
+|  | ![Head Butt](wiki/assets/skills/5068.png) |
 | **Skill id** | `5068` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

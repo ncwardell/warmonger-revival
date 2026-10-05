@@ -29,7 +29,7 @@ used_by: []
 <!-- generated-keys: title=2e9cde type=86a754 id=2ec9cc sources=cb78f8 name_key=232379 desc_key=152018 kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=2be88c cooldown=2be88c effect_kind=356a19 effects=47070b damage_or_effect=8feb3c weapon_type=b1d578 visual=ca3799 icon=197b6c used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Triggers Nimble Pursuit.](../assets/skills/5108.png) |
+|  | ![Triggers Nimble Pursuit.](wiki/assets/skills/5108.png) |
 | **Skill id** | `5108` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

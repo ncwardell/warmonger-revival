@@ -26,7 +26,7 @@ obtained_from:
 <!-- generated-keys: title=e57084 type=d36ca9 id=3f171a sources=58089e name_key=4abd37 kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=c26dd6 icon=9b7169 obtained_from=cd6e02 -->
 |  |  |
 |---|---|
-|  | ![Premium Pink Dye](../assets/items/2400.png) |
+|  | ![Premium Pink Dye](wiki/assets/items/2400.png) |
 | **Item id** | `2400` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

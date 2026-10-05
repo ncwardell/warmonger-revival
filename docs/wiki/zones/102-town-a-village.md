@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z102_00.dds"
 <!-- generated-keys: title=98545f type=c899cd id=c8306a sources=cec165 name_kr=891edc terrain=c4ee09 bounds=2cd65a size=5640eb segments=030709 fields=73d585 minimap=eb36b6 -->
 |  |  |
 |---|---|
-|  | ![minimap of Town A (Village)](../assets/zones/102.png) |
+|  | ![minimap of Town A (Village)](wiki/assets/zones/102.png) |
 | **Zone id** | `102` |
 | **ZoneDB name** | 마을A (English gloss: Town A (Village)) |
 | **Terrain name** | `A_Town_01` |

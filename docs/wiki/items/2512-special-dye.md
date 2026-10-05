@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=e3e9a0 type=d36ca9 id=1f3324 sources=0a969c name_key=5ca83b kind=fa35e1 kind_name=5d34ea classes=92d079 bind=883bf8 price=f820eb cost_pair=7af57d stats=97d170 options=47ce22 icon=b46c98 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Special Dye](../assets/items/2512.png) |
+|  | ![Special Dye](wiki/assets/items/2512.png) |
 | **Item id** | `2512` |
 | **Kind** | Dye (14) |
 | **Classes** | all |

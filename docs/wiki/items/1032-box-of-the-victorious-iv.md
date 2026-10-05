@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=cbbbd6 type=d36ca9 id=842205 sources=6b556a name_key=32d69e kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d stats=97d170 icon=dc5443 obtained_from=315c1c -->
 |  |  |
 |---|---|
-|  | ![Box of the Victorious IV](../assets/items/1032.png) |
+|  | ![Box of the Victorious IV](wiki/assets/items/1032.png) |
 | **Item id** | `1032` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

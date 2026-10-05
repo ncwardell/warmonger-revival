@@ -34,8 +34,8 @@ dungeon: 128
 <!-- generated-keys: title=006667 type=7a94db id=b4182b sources=43461d name_key=bd8481 kind=3e3f38 scene_type=77de68 max_users=ac3478 group=f1f836 zones=267f86 segments=b756e9 gates=d091a4 connections=16e011 npcs=97d170 monsters=27b30a spawn_points=97d170 triggers=726a40 dungeon=b4182b -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 150](../assets/zones/150.png) |
-|  | ![(Lv 2) Skull Cemetery](../assets/dungeons/128.png) |
+|  | ![minimap of zone 150](wiki/assets/zones/150.png) |
+|  | ![(Lv 2) Skull Cemetery](wiki/assets/dungeons/128.png) |
 | **Field id** | `128` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

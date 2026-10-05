@@ -43,8 +43,8 @@ dungeon: 123
 <!-- generated-keys: title=e5603a type=7a94db id=40bd00 sources=e76e5b name_key=b1037d kind=3e3f38 scene_type=77de68 max_users=ac3478 group=972a67 zones=65d3cb segments=ad9609 gates=7c17cd connections=6c6c57 npcs=97d170 monsters=da9811 spawn_points=97d170 triggers=95810a dungeon=40bd00 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 137](../assets/zones/137.png) |
-|  | ![(Lv 4) Swamps of Snake Warrior](../assets/dungeons/123.png) |
+|  | ![minimap of zone 137](wiki/assets/zones/137.png) |
+|  | ![(Lv 4) Swamps of Snake Warrior](wiki/assets/dungeons/123.png) |
 | **Field id** | `123` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 5 (SceneList, column meaning *guessed*) |

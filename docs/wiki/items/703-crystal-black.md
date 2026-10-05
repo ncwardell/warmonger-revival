@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=4ec238 type=d36ca9 id=8fc1bb sources=a24deb name_key=db9ed1 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=c4f310 cost_pair=809c9f stats=97d170 icon=1a2f64 obtained_from=397bbc -->
 |  |  |
 |---|---|
-|  | ![Crystal : Black](../assets/items/703.png) |
+|  | ![Crystal : Black](wiki/assets/items/703.png) |
 | **Item id** | `703` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -38,6 +38,8 @@ obtained_from:
 ### Where to get it
 
 - Sold in [[wiki/shops/401-shop-401-no-npc|Shop 401 (no NPC)]] (no NPC found)
+- how fort_guardian_drop, count 25 (hand-entered)
+- how dungeon_drop, field 133, count [1, 6] (hand-entered)
 
 ### Used for
 

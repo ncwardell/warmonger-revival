@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=4d9b72 type=d36ca9 id=00d47e sources=f3cda9 name_key=47724f kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=e19323 obtained_from=094e70 -->
 |  |  |
 |---|---|
-|  | ![Essence of Wind](../assets/items/1931.png) |
+|  | ![Essence of Wind](wiki/assets/items/1931.png) |
 | **Item id** | `1931` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -53,6 +53,7 @@ obtained_from:
 - Sold in [[wiki/shops/401-shop-401-no-npc|Shop 401 (no NPC)]] (no NPC found)
 - Shown as a reward of dungeon [[wiki/dungeons/127-lv-1-chepa-village|(Lv 1) Chepa Village]]
 - Shown as a reward of dungeon [[wiki/dungeons/142-lv-9-dragon-island|(Lv 9) Dragon Island]]
+- how fort_guardian_drop, count 1 (hand-entered)
 
 ### Used for
 

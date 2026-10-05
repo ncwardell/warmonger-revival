@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=e308ef type=86a754 id=72a63f sources=43d69e name_key=8119ca desc_key=bb3288 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=4e8ae0 cooldown=d1c73e effect_kind=356a19 effects=658f06 damage_or_effect=8c916b visual=c9f13c icon=c4dc58 used_by=55b055 -->
 |  |  |
 |---|---|
-|  | ![Potential Power](../assets/skills/5113.png) |
+|  | ![Potential Power](wiki/assets/skills/5113.png) |
 | **Skill id** | `5113` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=7c78e1 type=86a754 id=a98094 sources=2bcd09 name_key=572890 desc_key=026692 kind=356a19 kind_name=9bc378 target=55b685 range=356a19 area=344636 cost=e4e7cf cooldown=e3989d effect_kind=632667 effects=23a4e2 damage_or_effect=5f90fb visual=5a73b7 icon=c8aa0b used_by=2a1f60 -->
 |  |  |
 |---|---|
-|  | ![Divine Recovery](../assets/skills/5351.png) |
+|  | ![Divine Recovery](wiki/assets/skills/5351.png) |
 | **Skill id** | `5351` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

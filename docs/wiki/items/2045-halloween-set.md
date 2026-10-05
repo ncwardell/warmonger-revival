@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=2cd269 type=d36ca9 id=44bc68 sources=4a55ab name_key=af1505 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 stats=97d170 options=931a09 icon=a69ddb obtained_from=022cc0 -->
 |  |  |
 |---|---|
-|  | ![Halloween Set](../assets/items/2045.png) |
+|  | ![Halloween Set](wiki/assets/items/2045.png) |
 | **Item id** | `2045` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |
@@ -47,6 +47,7 @@ obtained_from:
 ### Where to get it
 
 - Premium shop entry 53: 5,000 (currency code 2, discount 0%)
+- how costume_shop_crush, price 10000, currency jewels (hand-entered)
 <!-- generated:end -->
 
 ## Notes

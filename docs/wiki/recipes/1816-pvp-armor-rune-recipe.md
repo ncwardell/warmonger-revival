@@ -21,22 +21,22 @@ npc: [323]
 <!-- generated-keys: title=26bd91 type=61613a id=628c93 sources=07c430 result=10c2ed materials=4d9dbd gold=c2d4c5 success_rate=310b86 category=1b6453 filter_mask=1b6453 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/7152.png) |
+|  | ![](wiki/assets/items/7152.png) |
 | **Recipe id** | `1816` (`Item_Make`) |
 | **Makes** | [[wiki/items/7152-pvp-armor-rune\|PvP Armor Rune]] × 1 |
 | **Gold** | 50,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 4 / `0x4` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/323-alan\|Alan]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 10 |  |
-| ![](../assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 10 |  |
-| ![](../assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
+| ![](wiki/assets/items/703.png) | [[wiki/items/703-crystal-black\|Crystal : Black]] | 10 |  |
+| ![](wiki/assets/items/702.png) | [[wiki/items/702-crystal-red\|Crystal : Red]] | 10 |  |
+| ![](wiki/assets/items/854.png) | [[wiki/items/854-shining-passion\|Shining Passion]] | 3 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

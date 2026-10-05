@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=95b4ef type=d36ca9 id=2a3c90 sources=71eadc name_key=c8fb6e kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=9c1d48 cost_pair=d8bcac stats=97d170 options=6e57ad icon=27f99a obtained_from=210d09 -->
 |  |  |
 |---|---|
-|  | ![Brown Hair Dye](../assets/items/2307.png) |
+|  | ![Brown Hair Dye](wiki/assets/items/2307.png) |
 | **Item id** | `2307` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

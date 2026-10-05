@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=5bd8d3 type=d36ca9 id=924785 sources=3ba446 name_key=f72309 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=991492 obtained_from=0059e7 -->
 |  |  |
 |---|---|
-|  | ![Drop of Chepa Sorcerer](../assets/items/2709.png) |
+|  | ![Drop of Chepa Sorcerer](wiki/assets/items/2709.png) |
 | **Item id** | `2709` |
 | **Kind** | Material (12) |
 | **Classes** | all |

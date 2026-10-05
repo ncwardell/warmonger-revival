@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=df0f2d type=86a754 id=0a3025 sources=3ec40c name_key=0a8f64 desc_key=93b750 kind=356a19 kind_name=9bc378 target=6bbbc3 range=ac3478 cost=e3dc9b cooldown=e7a8df movement=5f1488 effect_kind=b6589f effects=ebbf8c damage_or_effect=9f1371 visual=a1422e icon=3f3eba used_by=698d86 -->
 |  |  |
 |---|---|
-|  | ![Running Wild](../assets/skills/10057.png) |
+|  | ![Running Wild](wiki/assets/skills/10057.png) |
 | **Skill id** | `10057` |
 | **Kind** | active (1) |
 | **Target** | ground; self, ally; units: monster, player; up to 1 |

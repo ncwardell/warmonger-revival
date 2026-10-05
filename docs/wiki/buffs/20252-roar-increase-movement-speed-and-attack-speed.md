@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=7cdd9c type=6143a1 id=b3189c sources=82f8d7 name_key=717490 duration=3d2da5 is_buff=b6589f stack_type=356a19 group=e3cbba effects=0b8164 icon=3f59d9 applied_by=3f34c1 -->
 |  |  |
 |---|---|
-|  | ![Roar : Increase Movement speed and Attack speed](../assets/buffs/20252.png) |
+|  | ![Roar : Increase Movement speed and Attack speed](wiki/assets/buffs/20252.png) |
 | **Buff id** | `20252` |
 | **Duration** | 4 s (20 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

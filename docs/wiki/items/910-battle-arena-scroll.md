@@ -30,7 +30,7 @@ obtained_from: []
 <!-- generated-keys: title=62fb31 type=d36ca9 id=c70dfb sources=dbbf5c name_key=f5313e kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a flags=356a19 no_sell=7cb6ef use_skill=fc074d cooldown_s=77de68 cooldown_group=0716d9 stats=97d170 options=f944fc icon=ff5df4 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Battle Arena Scroll](../assets/items/910.png) |
+|  | ![Battle Arena Scroll](wiki/assets/items/910.png) |
 | **Item id** | `910` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

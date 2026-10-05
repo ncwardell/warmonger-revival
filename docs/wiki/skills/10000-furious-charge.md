@@ -31,7 +31,7 @@ used_by:
 <!-- generated-keys: title=9f5ab2 type=86a754 id=8a12a3 sources=32726f name_key=f90b82 desc_key=49cf68 kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=f67772 cooldown=c9c532 movement=5f1488 effect_kind=356a19 effects=d03d6c damage_or_effect=db0edd tooltip_formula=e37e0c visual=9a79be icon=b75792 used_by=2bae00 -->
 |  |  |
 |---|---|
-|  | ![Furious Charge](../assets/skills/10000.png) |
+|  | ![Furious Charge](wiki/assets/skills/10000.png) |
 | **Skill id** | `10000` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

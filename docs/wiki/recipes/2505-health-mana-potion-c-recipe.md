@@ -20,21 +20,21 @@ npc: [337]
 <!-- generated-keys: title=d418c5 type=61613a id=57b99b sources=bd54bf result=ae9eb7 materials=9a6dfa gold=e3cbba success_rate=310b86 category=fe5dbb filter_mask=06f592 level=ac3478 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/894.png) |
+|  | ![](wiki/assets/items/894.png) |
 | **Recipe id** | `2505` (`Item_Make`) |
 | **Makes** | [[wiki/items/894-health-mana-potion-c\|Health Mana Potion (C)]] × 100 |
 | **Gold** | 1,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 5 |
 | **Category / filter** | 8 / `0x100001` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/834.png) | [[wiki/items/834-empty-flask-c\|Empty Flask (C)]] | 100 |  |
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 4 |  |
+| ![](wiki/assets/items/834.png) | [[wiki/items/834-empty-flask-c\|Empty Flask (C)]] | 100 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 4 |  |
 
 Other recipes for the same item: [[wiki/recipes/709-health-mana-potion-c-recipe|recipe 709]]
 

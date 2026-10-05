@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=78a8c0 type=d36ca9 id=f890d7 sources=480e56 name_key=febf7b kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a213ed cost_pair=32167a stats=97d170 icon=dc6755 obtained_from=148061 -->
 |  |  |
 |---|---|
-|  | ![Bloodstone powder](../assets/items/805.png) |
+|  | ![Bloodstone powder](wiki/assets/items/805.png) |
 | **Item id** | `805` |
 | **Kind** | Material (12) |
 | **Classes** | all |

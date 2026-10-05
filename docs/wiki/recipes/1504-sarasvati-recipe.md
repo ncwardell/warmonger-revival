@@ -18,7 +18,7 @@ filter_mask: 2
 <!-- generated-keys: title=39d6aa type=61613a id=cf9e83 sources=6d7909 result=d068f4 materials=ac9b0f gold=15f8d1 success_rate=310b86 category=77de68 filter_mask=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/8003.png) |
+|  | ![](wiki/assets/items/8003.png) |
 | **Recipe id** | `1504` (`Item_Make`) |
 | **Makes** | [[wiki/items/8003-sarasvati\|Sarasvati]] × 1 |
 | **Gold** | 500,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -30,8 +30,8 @@ filter_mask: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/9003.png) | [[wiki/items/9003-piece-sarasvati\|Piece : Sarasvati]] | 100 |  |
-| ![](../assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 200 |  |
+| ![](wiki/assets/items/9003.png) | [[wiki/items/9003-piece-sarasvati\|Piece : Sarasvati]] | 100 |  |
+| ![](wiki/assets/items/613.png) | [[wiki/items/613-red-passion-fragments-c\|Red Passion Fragments (C)]] | 200 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

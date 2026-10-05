@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=d323b0 type=6143a1 id=b05317 sources=096ba9 name_key=6d912d duration=995f11 is_buff=b6589f stack_type=356a19 group=009cf5 effects=5aa96a icon=552941 applied_by=1ea8fd -->
 |  |  |
 |---|---|
-|  | ![Tome of the Warrior(A) : Damage +96](../assets/buffs/2079.png) |
+|  | ![Tome of the Warrior(A) : Damage +96](wiki/assets/buffs/2079.png) |
 | **Buff id** | `2079` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

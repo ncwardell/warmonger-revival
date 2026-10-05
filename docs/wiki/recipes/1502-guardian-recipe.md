@@ -18,7 +18,7 @@ filter_mask: 2
 <!-- generated-keys: title=e4523a type=61613a id=104469 sources=440e44 result=9ea172 materials=e20eb2 gold=15f8d1 success_rate=310b86 category=77de68 filter_mask=da4b92 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/8001.png) |
+|  | ![](wiki/assets/items/8001.png) |
 | **Recipe id** | `1502` (`Item_Make`) |
 | **Makes** | [[wiki/items/8001-guardian\|Guardian]] × 1 |
 | **Gold** | 500,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -30,8 +30,8 @@ filter_mask: 2
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/9001.png) | [[wiki/items/9001-piece-guardian\|Piece : Guardian]] | 100 |  |
-| ![](../assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
+| ![](wiki/assets/items/9001.png) | [[wiki/items/9001-piece-guardian\|Piece : Guardian]] | 100 |  |
+| ![](wiki/assets/items/611.png) | [[wiki/items/611-red-passion-fragments-d\|Red Passion Fragments (D)]] | 200 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

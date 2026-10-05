@@ -30,10 +30,10 @@ rewards:
 offer_talk: 714
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=bb813a type=eb5b2b id=d0e2db sources=411b14 name_key=951d1f kind=b6589f kind_name=b3f808 giver=7abdb8 turn_in=847ad4 offer_maps=15f2a7 bit=b7eb6c requires_bit=a93349 automatic=5ffe53 prev=f7cf3c next=6c698d stages=a80fa1 objectives=2be88c objectives_client=a25197 rewards=fd89ae offer_talk=3acc03 -->
+<!-- generated-keys: title=bb813a type=eb5b2b id=d0e2db sources=411b14 name_key=951d1f kind=b6589f kind_name=b3f808 giver=7abdb8 turn_in=847ad4 offer_maps=15f2a7 bit=b7eb6c requires_bit=a93349 automatic=5ffe53 prev=f7cf3c next=6c698d stages=a80fa1 objectives_client=a25197 rewards=fd89ae offer_talk=3acc03 -->
 |  |  |
 |---|---|
-|  | ![Lords of the Land](../assets/npcs/210.png) |
+|  | ![Lords of the Land](wiki/assets/npcs/210.png) |
 | **Quest id** | `117` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/210-kesley\|Kesley]] |
@@ -50,10 +50,7 @@ offer_talk: 714
 
 ### Objectives
 
-> [!warning] Not all objective types are decoded
-> The rows below are the client's (`objectives_client`). Write the server-ready list into `objectives:` once the unclear ones are understood.
-
-1. Type 15 — monster-area war / occupation?; values a=3, c=2 — tracker: “Occupy neutral monster zone”
+1. Type 15 — monster-area war / occupation?; values a=3, c=2 — tracker: “Occupy neutral monster zone (0/2)”
 2. Talk to [[wiki/npcs/210-kesley|Kesley]] (dialogue 912) — tracker: “Return to Kesley”
 
 Stages (`flag1..5` = [1, 5, 5, 5, 5]): objectives unlock in steps; with the first unfinished objective *i*, objectives 1..flag*i* are active (contract/quests.yaml).

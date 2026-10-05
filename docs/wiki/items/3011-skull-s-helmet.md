@@ -37,7 +37,7 @@ obtained_from:
 <!-- generated-keys: title=8d1355 type=d36ca9 id=1d25ca sources=629e10 name_key=0e3c2f kind=e1822d kind_name=c90f98 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=8dba95 set=da4b92 reinforce=92cfce icon=b14936 obtained_from=378c9e -->
 |  |  |
 |---|---|
-|  | ![Skull's Helmet](../assets/items/3011.png) |
+|  | ![Skull's Helmet](wiki/assets/items/3011.png) |
 | **Item id** | `3011` |
 | **Kind** | Helmet (50) |
 | **Classes** | all |

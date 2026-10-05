@@ -17,10 +17,11 @@ x: null
 z: null
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=533635 type=3664ce id=acf1ff sources=42417a name_key=2070ff category=e1822d class_mask=da4b92 model=2fcc82 scale=aa8f28 role=2be88c map=2be88c x=2be88c z=2be88c -->
+<!-- generated-keys: title=533635 type=3664ce id=acf1ff sources=42417a name_key=2070ff category=e1822d class_mask=da4b92 model=2fcc82 scale=aa8f28 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
 | **Unit id** | `188` |
+| **Role** | Fort guard |
 | **Category** | NPC (category 50) |
 | **Model** | ObjectList `191`, scale 1.5 |
 

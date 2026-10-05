@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=c52709 type=6143a1 id=38740b sources=91447f name_key=6d0885 duration=69c099 is_buff=b6589f stack_type=356a19 group=b6589f effects=24205b icon=b8b0e7 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![All damage reduced](../assets/buffs/3020.png) |
+|  | ![All damage reduced](wiki/assets/buffs/3020.png) |
 | **Buff id** | `3020` |
 | **Duration** | 20 min (6,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

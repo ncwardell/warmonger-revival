@@ -35,7 +35,7 @@ used_by:
 <!-- generated-keys: title=c57537 type=86a754 id=f85931 sources=48cb19 name_key=1ed5a9 desc_key=a0e6c7 kind=356a19 kind_name=9bc378 target=aa5d92 range=b1d578 area=2a66b8 cost=8b4fa7 cooldown=752bf3 delivery=93a212 effect_kind=356a19 effects=4bd619 damage_or_effect=194b1b tooltip_formula=9636b4 visual=2978e0 icon=744c36 used_by=8115b7 -->
 |  |  |
 |---|---|
-|  | ![Mystic Arrow](../assets/skills/5491.png) |
+|  | ![Mystic Arrow](wiki/assets/skills/5491.png) |
 | **Skill id** | `5491` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 1 |

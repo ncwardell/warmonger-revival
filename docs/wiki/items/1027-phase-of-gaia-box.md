@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=bd0a84 type=d36ca9 id=e194ee sources=c72453 name_key=18de6a kind=0286dd kind_name=b98f11 classes=92d079 bind=883bf8 price=be4b29 cost_pair=a0483d flags=c1dfd9 no_sell=5ffe53 stats=97d170 icon=b115b0 obtained_from=5e5f79 -->
 |  |  |
 |---|---|
-|  | ![Phase of Gaia Box](../assets/items/1027.png) |
+|  | ![Phase of Gaia Box](wiki/assets/items/1027.png) |
 | **Item id** | `1027` |
 | **Kind** | Random Box (43) |
 | **Classes** | all |

@@ -26,10 +26,10 @@ observed:
   - {"tp": 2000, "cooldown_s": 180, "effect": "Attacks the nexus", "source": "gameplay/pvp-and-matches line 33"}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=ec6ddd type=86a754 id=1fa14e sources=94fbc8 name_key=183326 desc_key=b4b7da kind=356a19 kind_name=9bc378 target=35e077 range=3028f5 area=febbd1 cost=03969c cooldown=c44d13 effect_kind=b6589f effects=33bf48 damage_or_effect=bf21a9 icon=51436c used_by=97d170 tp=780c5b observed=8f8f7a -->
+<!-- generated-keys: title=ec6ddd type=86a754 id=1fa14e sources=94fbc8 name_key=183326 desc_key=b4b7da kind=356a19 kind_name=9bc378 target=35e077 range=3028f5 area=febbd1 cost=03969c cooldown=c44d13 effect_kind=b6589f effects=33bf48 icon=51436c used_by=97d170 tp=780c5b observed=8f8f7a -->
 |  |  |
 |---|---|
-|  | ![Nexus Remote Bomb](../assets/skills/4504.png) |
+|  | ![Nexus Remote Bomb](wiki/assets/skills/4504.png) |
 | **Skill id** | `4504` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: player, structure; up to 1 |

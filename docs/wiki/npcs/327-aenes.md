@@ -27,7 +27,7 @@ z: null
 <!-- generated-keys: title=80b189 type=3664ce id=076e5a sources=4350cb name_key=829565 title_key=97b127 npc_title=c75e8c category=e1822d class_mask=da4b92 model=348763 scale=aa8f28 functions=62c1e4 role=c75e8c talk_key=e79dbd portrait=32d74b quests=91841c quest_fields=18e60d map=2d0c8a x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Aenes](../assets/npcs/327.png) |
+|  | ![Aenes](wiki/assets/npcs/327.png) |
 | **Unit id** | `327` |
 | **Title** | The Oracle of Protection |
 | **Category** | NPC (category 50) |

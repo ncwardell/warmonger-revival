@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=6bf6b5 type=d36ca9 id=d2e6b6 sources=3b0139 name_key=018d34 kind=632667 kind_name=631b4f classes=51f98f bind=883bf8 price=6961f8 cost_pair=5b5722 weapon_base=0a57cb stats=db11c4 options=384aa5 skills=2e2ec0 reinforce=17ba07 icon=65a2ea obtained_from=69594f -->
 |  |  |
 |---|---|
-|  | ![Magical Blood Dagger](../assets/items/15006.png) |
+|  | ![Magical Blood Dagger](wiki/assets/items/15006.png) |
 | **Item id** | `15006` |
 | **Kind** | Weapon (31) |
 | **Classes** | Punisher |

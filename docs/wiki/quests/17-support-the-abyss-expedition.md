@@ -30,7 +30,7 @@ complete_talk: 658
 <!-- generated-keys: title=59867a type=eb5b2b id=0716d9 sources=26865a name_key=58198d kind=b6589f kind_name=b3f808 giver=1caac0 turn_in=ab1fa2 offer_maps=15f2a7 turn_in_maps=20d88d bit=1574bd requires_bit=bd307a prev=76cdc5 next=bb20ec stages=a80fa1 objectives=58646c rewards=693b24 offer_talk=f90a34 complete_talk=f597ae -->
 |  |  |
 |---|---|
-|  | ![Support the Abyss expedition](../assets/npcs/200.png) |
+|  | ![Support the Abyss expedition](wiki/assets/npcs/200.png) |
 | **Quest id** | `17` |
 | **Kind** | Main (kind 0) |
 | **Giver** | [[wiki/npcs/200-freya\|Freya]] |

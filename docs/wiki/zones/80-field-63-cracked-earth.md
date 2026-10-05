@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z80_00.dds"
 <!-- generated-keys: title=1c77ae type=c899cd id=b888b2 sources=6abd93 name_kr=353ae2 terrain=7b9033 bounds=fc86a9 size=114466 segments=fb777a fields=c04d62 minimap=2ee570 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 63 (Cracked Earth)](../assets/zones/80.png) |
+|  | ![minimap of Field 63 (Cracked Earth)](wiki/assets/zones/80.png) |
 | **Zone id** | `80` |
 | **ZoneDB name** | 필드_63 (English gloss: Field 63 (Cracked Earth)) |
 | **Terrain name** | `63` |

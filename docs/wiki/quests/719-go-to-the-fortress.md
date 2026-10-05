@@ -25,7 +25,7 @@ help: {"image": "ui/HelpImage/Help_17.png", "text_key": "Quest_HelpText_719"}
 <!-- generated-keys: title=fafc0c type=eb5b2b id=839501 sources=52b14b name_key=afa9c6 kind=da4b92 kind_name=875cc6 giver=847ad4 turn_in=847ad4 bit=4cd66d automatic=5ffe53 prev=97d170 next=97d170 stages=30caa7 objectives=e6535e rewards=18b6af help=baa2b9 -->
 |  |  |
 |---|---|
-|  | ![Go to the Fortress](../assets/quests/719.png) |
+|  | ![Go to the Fortress](wiki/assets/quests/719.png) |
 | **Quest id** | `719` |
 | **Kind** | Guide (kind 2) |
 | **Giver** | automatic |

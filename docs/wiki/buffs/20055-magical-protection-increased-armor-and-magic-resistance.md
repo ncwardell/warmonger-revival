@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=5b5f73 type=6143a1 id=4dc724 sources=04adac name_key=ce1ff8 duration=870e64 is_buff=b6589f stack_type=356a19 group=beb563 effects=afd00b icon=b3dd37 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Magical Protection: Increased Armor and Magic Resistance.](../assets/buffs/20055.png) |
+|  | ![Magical Protection: Increased Armor and Magic Resistance.](wiki/assets/buffs/20055.png) |
 | **Buff id** | `20055` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

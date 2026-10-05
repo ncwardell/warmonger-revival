@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=75557b type=86a754 id=0519a3 sources=02907f name_key=8085c6 desc_key=5a2160 kind=356a19 kind_name=9bc378 target=069ef3 range=902ba3 cost=4e8ae0 cooldown=d1c73e delivery=93a212 effect_kind=356a19 effects=7bbbe3 damage_or_effect=4163a5 tooltip_formula=0fc93d visual=cae91e icon=3b602b used_by=aae6a5 -->
 |  |  |
 |---|---|
-|  | ![Ankle Aim](../assets/skills/5102.png) |
+|  | ![Ankle Aim](wiki/assets/skills/5102.png) |
 | **Skill id** | `5102` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

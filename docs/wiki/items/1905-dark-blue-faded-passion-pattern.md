@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=927092 type=d36ca9 id=6d3211 sources=8106f3 name_key=f017bf kind=356a19 kind_name=6f63d6 classes=92d079 bind=2be88c price=c4f310 cost_pair=809c9f stats=97d170 icon=f0bf28 obtained_from=1fc6e4 -->
 |  |  |
 |---|---|
-|  | ![Dark blue Faded Passion Pattern](../assets/items/1905.png) |
+|  | ![Dark blue Faded Passion Pattern](wiki/assets/items/1905.png) |
 | **Item id** | `1905` |
 | **Kind** | Normal (1) |
 | **Classes** | all |

@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=211fa8 type=6143a1 id=a49558 sources=83e541 name_key=95cacd duration=df3554 is_buff=b6589f stack_type=356a19 group=b6589f effects=f3734f icon=4a83a1 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional 50 Attack damage and 70 Attack Speed](../assets/buffs/10091.png) |
+|  | ![Additional 50 Attack damage and 70 Attack Speed](wiki/assets/buffs/10091.png) |
 | **Buff id** | `10091` |
 | **Duration** | 1 min 30 s (450 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

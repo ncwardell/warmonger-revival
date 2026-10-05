@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=087e2d type=86a754 id=abe6a4 sources=13b7c1 name_key=1e1107 desc_key=7abe33 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=58a4ca cooldown=133145 effect_kind=356a19 effects=5065a9 damage_or_effect=4f893d tooltip_formula=0fc93d visual=c35a9f icon=01ddda used_by=1f5802 -->
 |  |  |
 |---|---|
-|  | ![Fury of fire](../assets/skills/19953.png) |
+|  | ![Fury of fire](wiki/assets/skills/19953.png) |
 | **Skill id** | `19953` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

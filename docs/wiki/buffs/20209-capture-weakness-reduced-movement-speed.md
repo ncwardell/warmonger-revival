@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=003551 type=6143a1 id=b6599c sources=af1db5 name_key=2fc18b duration=0aac5a is_buff=b6589f stack_type=356a19 group=e3cbba effects=34f6eb icon=48d69c applied_by=083392 -->
 |  |  |
 |---|---|
-|  | ![Capture Weakness: Reduced Movement Speed](../assets/buffs/20209.png) |
+|  | ![Capture Weakness: Reduced Movement Speed](wiki/assets/buffs/20209.png) |
 | **Buff id** | `20209` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=a6e2da type=6143a1 id=a283c7 sources=9a0f64 name_key=69fc29 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=749ca9 applied_by=820dc8 -->
 |  |  |
 |---|---|
-|  | ![Tsunami : silenced for 2 seconds](../assets/buffs/20305.png) |
+|  | ![Tsunami : silenced for 2 seconds](wiki/assets/buffs/20305.png) |
 | **Buff id** | `20305` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

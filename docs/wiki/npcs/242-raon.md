@@ -27,7 +27,7 @@ z: null
 <!-- generated-keys: title=3e2ea1 type=3664ce id=851cd0 sources=eaadd9 name_key=657097 title_key=c0d1ad npc_title=d546db category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=da3edc role=d546db talk_key=717906 portrait=d2d345 quests=202d37 quest_fields=6c3da9 map=775bc5 x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Raon](../assets/npcs/242.png) |
+|  | ![Raon](wiki/assets/npcs/242.png) |
 | **Unit id** | `242` |
 | **Title** | Legion Core Smith |
 | **Category** | NPC (category 50) |

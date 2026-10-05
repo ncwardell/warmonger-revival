@@ -24,10 +24,10 @@ used_by: []
 tp: {"row": 17, "tp_cost": 2500, "cooldown_s": 240, "need_flags": 388, "c7": 1}
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=6452b6 type=86a754 id=bfbb1e sources=ab9b53 name_key=18792e desc_key=6337cd kind=356a19 kind_name=9bc378 target=35e077 range=3028f5 area=febbd1 cost=a7b37a cooldown=11dbc8 effect_kind=b6589f effects=bfb8d8 damage_or_effect=bf21a9 icon=b5c79c used_by=97d170 tp=826528 -->
+<!-- generated-keys: title=6452b6 type=86a754 id=bfbb1e sources=ab9b53 name_key=18792e desc_key=6337cd kind=356a19 kind_name=9bc378 target=35e077 range=3028f5 area=febbd1 cost=a7b37a cooldown=11dbc8 effect_kind=b6589f effects=bfb8d8 icon=b5c79c used_by=97d170 tp=826528 -->
 |  |  |
 |---|---|
-|  | ![Powerful Remote Bomb](../assets/skills/4525.png) |
+|  | ![Powerful Remote Bomb](wiki/assets/skills/4525.png) |
 | **Skill id** | `4525` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: player, structure; up to 1 |

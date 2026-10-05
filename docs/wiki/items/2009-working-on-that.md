@@ -28,7 +28,7 @@ obtained_from: []
 <!-- generated-keys: title=e42e4f type=d36ca9 id=7263d6 sources=b75079 name_key=7b298a kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=088270 cost_pair=101f43 period=365a69 stats=97d170 options=b0771c icon=8705bb obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Working on that!](../assets/items/2009.png) |
+|  | ![Working on that!](wiki/assets/items/2009.png) |
 | **Item id** | `2009` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

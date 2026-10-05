@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=ac9c82 type=d36ca9 id=02c8be sources=0e5a8a name_key=f3bd10 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=2ae737 cost_pair=be4ef7 flags=356a19 no_sell=7cb6ef period=7841fb use_buff=e928dc cooldown_s=da4b92 cooldown_group=0a57cb stats=97d170 options=be823b icon=ab8647 obtained_from=a7202b -->
 |  |  |
 |---|---|
-|  | ![Flask of Mana (A)](../assets/items/742.png) |
+|  | ![Flask of Mana (A)](wiki/assets/items/742.png) |
 | **Item id** | `742` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

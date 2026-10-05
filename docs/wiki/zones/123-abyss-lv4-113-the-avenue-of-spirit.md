@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z123_00.dds"
 <!-- generated-keys: title=b6b3b2 type=c899cd id=40bd00 sources=1332e9 name_kr=84d4c6 terrain=116060 bounds=6cc4c5 size=114466 segments=b2863e fields=85c8ae minimap=a981a5 -->
 |  |  |
 |---|---|
-|  | ![minimap of Abyss LV4 113 (The avenue of spirit)](../assets/zones/123.png) |
+|  | ![minimap of Abyss LV4 113 (The avenue of spirit)](wiki/assets/zones/123.png) |
 | **Zone id** | `123` |
 | **ZoneDB name** | 어비스_LV4_113 (English gloss: Abyss LV4 113 (The avenue of spirit)) |
 | **Terrain name** | `113` |

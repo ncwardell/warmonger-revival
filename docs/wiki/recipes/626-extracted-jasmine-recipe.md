@@ -19,20 +19,20 @@ npc: [214]
 <!-- generated-keys: title=89aaa9 type=61613a id=9a84e1 sources=f780ff result=b4fc4a materials=f60eb9 gold=7507d4 success_rate=310b86 category=356a19 filter_mask=6124cb level=91032a -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/872.png) |
+|  | ![](wiki/assets/items/872.png) |
 | **Recipe id** | `626` (`Item_Make`) |
 | **Makes** | [[wiki/items/872-extracted-jasmine\|Extracted Jasmine]] × 1 |
 | **Gold** | 3,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 20 |
 | **Category / filter** | 1 / `0x1000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/824.png) | [[wiki/items/824-jasmine\|Jasmine]] | 5 |  |
+| ![](wiki/assets/items/824.png) | [[wiki/items/824-jasmine\|Jasmine]] | 5 |  |
 
 Other recipes for the same item: [[wiki/recipes/2426-extracted-jasmine-recipe|recipe 2426]]
 

@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=3dd622 type=d36ca9 id=07127c sources=b9debb name_key=554d6a kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 flags=ac3478 no_sell=7cb6ef summon_unit=438143 stats=97d170 options=09e967 icon=d877ce obtained_from=077d39 -->
 |  |  |
 |---|---|
-|  | ![Mail box Summon Scroll](../assets/items/923.png) |
+|  | ![Mail box Summon Scroll](wiki/assets/items/923.png) |
 | **Item id** | `923` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

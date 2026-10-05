@@ -27,7 +27,7 @@ obtained_from:
 <!-- generated-keys: title=38244f type=d36ca9 id=7cb3f4 sources=bbaa77 name_key=c49f60 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=883bf8 price=6961f8 cost_pair=5b5722 flags=356a19 no_sell=7cb6ef use_skill=ec2603 stats=97d170 options=b60626 icon=130210 obtained_from=c7bab4 -->
 |  |  |
 |---|---|
-|  | ![Pyrotechnics](../assets/items/1105.png) |
+|  | ![Pyrotechnics](wiki/assets/items/1105.png) |
 | **Item id** | `1105` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=0e8a39 type=6143a1 id=8cbfd8 sources=f9120a name_key=0c9635 duration=870e64 is_buff=b6589f stack_type=356a19 group=8cbfd8 effects=5558ea icon=7bf15f applied_by=6261d6 -->
 |  |  |
 |---|---|
-|  | ![Shield of the Sun : Creates a absorvs damage for 5 seconds](../assets/buffs/20104.png) |
+|  | ![Shield of the Sun : Creates a absorvs damage for 5 seconds](wiki/assets/buffs/20104.png) |
 | **Buff id** | `20104` |
 | **Duration** | 5 s (25 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

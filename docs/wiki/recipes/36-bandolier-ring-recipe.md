@@ -21,7 +21,7 @@ npc: [213]
 <!-- generated-keys: title=6ba3f7 type=61613a id=fc074d sources=dcd968 result=b0f827 materials=1925b2 gold=8a12a3 success_rate=310b86 category=b6589f filter_mask=16666f superior=d85dbb level=356a19 raw=2b2a6b -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/432.png) |
+|  | ![](wiki/assets/items/432.png) |
 | **Recipe id** | `36` (`Item_Make`) |
 | **Makes** | [[wiki/items/432-bandolier-ring\|Bandolier Ring]] × 1 |
 | **Gold** | 10,000 (before the fort's price rate; one screenshot shows × 1.5) |
@@ -29,13 +29,13 @@ npc: [213]
 | **Superior result** | 5 % → [[wiki/items/464-bandolier-ring\|Bandolier Ring]] (*guess*: c19@40 / @44) |
 | **Level (c24, *guess*)** | 1 |
 | **Category / filter** | 0 / `0x1000080` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 11 |  |
+| ![](wiki/assets/items/700.png) | [[wiki/items/700-crystal-blue\|Crystal : Blue]] | 11 |  |
 
 Unknown columns: `c28` = 165 (`c28` is the decoder's `gold@28`, which is not the gold cost).
 

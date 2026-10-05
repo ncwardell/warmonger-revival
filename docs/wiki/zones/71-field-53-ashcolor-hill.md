@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z71_00.dds"
 <!-- generated-keys: title=05284d type=c899cd id=d02560 sources=16329b name_kr=eeba51 terrain=0678fb bounds=e2c956 size=114466 segments=69ba53 fields=ef9592 minimap=e02b47 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 53 (Ashcolor Hill)](../assets/zones/71.png) |
+|  | ![minimap of Field 53 (Ashcolor Hill)](wiki/assets/zones/71.png) |
 | **Zone id** | `71` |
 | **ZoneDB name** | 필드_53 (English gloss: Field 53 (Ashcolor Hill)) |
 | **Terrain name** | `53` |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=c23a7e type=6143a1 id=a385d9 sources=58216d name_key=f04588 duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=8ef1f2 icon=f1f3b7 applied_by=679058 -->
 |  |  |
 |---|---|
-|  | ![Officer Buff: Increases Damage](../assets/buffs/3012.png) |
+|  | ![Officer Buff: Increases Damage](wiki/assets/buffs/3012.png) |
 | **Buff id** | `3012` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

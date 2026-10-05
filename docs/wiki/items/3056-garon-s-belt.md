@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=128535 type=d36ca9 id=b0be91 sources=9c7280 name_key=9f4d44 kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=5edd24 set=c1dfd9 reinforce=92cfce icon=2e1bf3 obtained_from=0141cf -->
 |  |  |
 |---|---|
-|  | ![Garon's Belt](../assets/items/3056.png) |
+|  | ![Garon's Belt](wiki/assets/items/3056.png) |
 | **Item id** | `3056` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

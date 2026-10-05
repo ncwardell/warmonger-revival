@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z87_00.dds"
 <!-- generated-keys: title=4eefe0 type=c899cd id=e62d7f sources=8a2fc7 name_kr=a86d6f terrain=87c605 bounds=f78f9a size=114466 segments=05a19d fields=75527e minimap=8b7cc2 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 72 (Refuge)](../assets/zones/87.png) |
+|  | ![minimap of Field 72 (Refuge)](wiki/assets/zones/87.png) |
 | **Zone id** | `87` |
 | **ZoneDB name** | 필드_72 (English gloss: Field 72 (Refuge)) |
 | **Terrain name** | `72` |

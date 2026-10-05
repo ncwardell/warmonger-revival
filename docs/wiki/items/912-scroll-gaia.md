@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=78d91b type=d36ca9 id=3f989f sources=91dcdd name_key=e6fb63 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=8c6ae2 cost_pair=982f5a flags=356a19 no_sell=7cb6ef use_skill=972a67 cooldown_s=ac3478 cooldown_group=0716d9 stats=97d170 options=15b1a4 icon=e2dc46 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Scroll : Gaia](../assets/items/912.png) |
+|  | ![Scroll : Gaia](wiki/assets/items/912.png) |
 | **Item id** | `912` |
 | **Kind** | Normal (11) |
 | **Classes** | all |
@@ -56,7 +56,7 @@ obtained_from:
 
 ### Where to get it
 
-Nothing in the client data. Monster drops are server data: add them to the monster's page (`drops:`) or to this page's `obtained_from:`.
+- how quest_given, quest 11, npc 198 (hand-entered)
 
 ### Mentioned in
 

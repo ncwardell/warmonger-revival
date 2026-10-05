@@ -49,7 +49,7 @@ obtained_from:
 <!-- generated-keys: title=13db69 type=d36ca9 id=6e9b99 sources=b2a531 name_key=b8a4fe kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=14e736 reinforce=356a19 icon=acb972 obtained_from=90650d -->
 |  |  |
 |---|---|
-|  | ![Guardian Gloves](../assets/items/412.png) |
+|  | ![Guardian Gloves](wiki/assets/items/412.png) |
 | **Item id** | `412` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |
@@ -108,6 +108,8 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 127, tier 1 (hand-entered)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 
 ### Mentioned in
 

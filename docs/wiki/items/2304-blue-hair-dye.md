@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=7a2961 type=d36ca9 id=37481c sources=5ab42c name_key=450542 kind=472b07 kind_name=e979a5 classes=92d079 bind=883bf8 price=00f44d cost_pair=c5bac5 stats=97d170 options=c1fca7 icon=5dce4b obtained_from=0f7af2 -->
 |  |  |
 |---|---|
-|  | ![Blue Hair Dye](../assets/items/2304.png) |
+|  | ![Blue Hair Dye](wiki/assets/items/2304.png) |
 | **Item id** | `2304` |
 | **Kind** | Hair dye (21) |
 | **Classes** | all |

@@ -32,7 +32,7 @@ positions:
 <!-- generated-keys: title=f6e385 type=3664ce id=135deb sources=7e2e39 name_key=ca5d69 title_key=7696fa npc_title=63326e category=e1822d class_mask=da4b92 model=0b7f5a scale=58e6d3 functions=13674d role=63326e talk_key=9314f1 portrait=69c286 quests=019ece quest_fields=6c3da9 map=775bc5 x=cfe290 z=97fb8c positions=e8b540 -->
 |  |  |
 |---|---|
-|  | ![Kesley](../assets/npcs/210.png) |
+|  | ![Kesley](wiki/assets/npcs/210.png) |
 | **Unit id** | `210` |
 | **Title** | Legion Administrator |
 | **Category** | NPC (category 50) |

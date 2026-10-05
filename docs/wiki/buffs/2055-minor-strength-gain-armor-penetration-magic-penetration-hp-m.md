@@ -21,7 +21,7 @@ applied_by: []
 <!-- generated-keys: title=daa1f0 type=6143a1 id=cbf0e2 sources=b42a5b name_key=5e73b5 duration=faac5c is_buff=b6589f stack_type=356a19 group=b6589f effects=57edac icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Minor Strength: Gain Armor Penetration, Magic Penetration, HP, Mana Regeneration, Movement Speed and additional SP.](../assets/buffs/2055.png) |
+|  | ![Minor Strength: Gain Armor Penetration, Magic Penetration, HP, Mana Regeneration, Movement Speed and additional SP.](wiki/assets/buffs/2055.png) |
 | **Buff id** | `2055` |
 | **Duration** | 30 s (150 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

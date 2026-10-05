@@ -27,7 +27,7 @@ obtained_from: []
 <!-- generated-keys: title=848b0a type=d36ca9 id=f16135 sources=d4b31d name_key=5f6ef7 kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 cooldown_s=e6c3dd cooldown_group=91032a stats=fa8e23 options=6126b4 icon=18087d obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Fragment of Innus](../assets/items/1601.png) |
+|  | ![Fragment of Innus](wiki/assets/items/1601.png) |
 | **Item id** | `1601` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

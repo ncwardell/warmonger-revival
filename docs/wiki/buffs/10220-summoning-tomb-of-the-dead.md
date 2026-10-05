@@ -18,7 +18,7 @@ applied_by: []
 <!-- generated-keys: title=cff38e type=6143a1 id=ab3acd sources=0a6816 name_key=4f78db duration=8c4b49 is_buff=b6589f stack_type=356a19 group=b6589f effects=97d170 icon=5cb950 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Summoning Tomb of the Dead](../assets/buffs/10220.png) |
+|  | ![Summoning Tomb of the Dead](wiki/assets/buffs/10220.png) |
 | **Buff id** | `10220` |
 | **Duration** | 8 s (40 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

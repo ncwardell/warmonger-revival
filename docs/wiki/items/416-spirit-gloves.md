@@ -47,7 +47,7 @@ obtained_from:
 <!-- generated-keys: title=d714bc type=d36ca9 id=279e90 sources=df77b2 name_key=db6919 kind=a93349 kind_name=f6564c classes=92d079 bind=2be88c price=401276 cost_pair=7638f4 stats=120f17 reinforce=356a19 icon=2fcf58 obtained_from=187810 -->
 |  |  |
 |---|---|
-|  | ![Spirit Gloves](../assets/items/416.png) |
+|  | ![Spirit Gloves](wiki/assets/items/416.png) |
 | **Item id** | `416` |
 | **Kind** | Gloves (52) |
 | **Classes** | all |
@@ -105,6 +105,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 2 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 129, tier 2 (hand-entered)
 
 ### Mentioned in
 

@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=352be6 type=d36ca9 id=36ea58 sources=6305a3 name_key=7b6b07 kind=9109c8 kind_name=8ad6b7 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=76f01f set=1b6453 reinforce=92cfce icon=22ac35 obtained_from=6c1d55 -->
 |  |  |
 |---|---|
-|  | ![Komodo's Ring](../assets/items/3038.png) |
+|  | ![Komodo's Ring](wiki/assets/items/3038.png) |
 | **Item id** | `3038` |
 | **Kind** | Ring (57) |
 | **Classes** | all |

@@ -28,7 +28,7 @@ used_by:
 <!-- generated-keys: title=7ca66a type=86a754 id=c001f7 sources=f863ed name_key=65f911 desc_key=1b617f kind=da4b92 kind_name=3844d5 target=d1cc1b range=77de68 area=344636 cost=2be88c cooldown=2be88c effect_kind=da4b92 effects=bd4dec damage_or_effect=1044ac visual=efbc08 icon=13db30 used_by=c98cf7 -->
 |  |  |
 |---|---|
-|  | ![Guardian Passive](../assets/skills/20050.png) |
+|  | ![Guardian Passive](wiki/assets/skills/20050.png) |
 | **Skill id** | `20050` |
 | **Kind** | passive (2) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

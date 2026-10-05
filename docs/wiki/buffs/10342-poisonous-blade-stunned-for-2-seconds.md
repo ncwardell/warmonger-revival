@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=f24a0f type=6143a1 id=882936 sources=847a20 name_key=953a00 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=78290d applied_by=da51c4 -->
 |  |  |
 |---|---|
-|  | ![Poisonous Blade : Stunned for 2 seconds](../assets/buffs/10342.png) |
+|  | ![Poisonous Blade : Stunned for 2 seconds](wiki/assets/buffs/10342.png) |
 | **Buff id** | `10342` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

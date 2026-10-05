@@ -67,6 +67,10 @@ Currency 2 = gold, 13 = jewels (yellow then purple, contract `jewels`). `cost3` 
 ### Seen in play
 
 - bag step 5: 5,000 Gold ([[gameplay/video-character-creation-and-tutorial]] 16:20 (lesson 706 'Expand your Inventory': 'Gold : 5000'))
+- warehouse step 3: 40 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player))
+- warehouse step 6: 500 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8)
+- warehouse step 7: 750 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8)
+- warehouse step 8: 1,000 Jewels ([[gameplay/crush-patch-notes]] 2016-10-11 (Crush Online, player); [[gameplay/warmonger-forum]] §8)
 
 ### Seen in
 

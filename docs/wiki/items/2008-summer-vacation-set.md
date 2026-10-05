@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=9256ec type=d36ca9 id=527dc6 sources=8f3bc6 name_key=29bf3a kind=cb4e52 kind_name=767a7c classes=51f98f bind=883bf8 price=29cce8 period=e651d1 stats=77b656 options=99762e icon=b05004 obtained_from=18561c -->
 |  |  |
 |---|---|
-|  | ![Summer Vacation Set](../assets/items/2008.png) |
+|  | ![Summer Vacation Set](wiki/assets/items/2008.png) |
 | **Item id** | `2008` |
 | **Kind** | Costume (32) |
 | **Classes** | Punisher |

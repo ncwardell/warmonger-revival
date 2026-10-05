@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=915252 type=d36ca9 id=4a6798 sources=6aef8f name_key=d01593 kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=297499 cost_pair=2306ff period=365a69 stats=8415ce options=27e721 icon=f688a5 obtained_from=1408e1 -->
 |  |  |
 |---|---|
-|  | ![Oracle Set](../assets/items/2084.png) |
+|  | ![Oracle Set](wiki/assets/items/2084.png) |
 | **Item id** | `2084` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

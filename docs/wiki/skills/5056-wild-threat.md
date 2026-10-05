@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=02f32f type=86a754 id=fe9e18 sources=ef8400 name_key=ee2fa4 desc_key=15589c kind=356a19 kind_name=9bc378 target=d1cc1b range=77de68 area=27cf35 cost=060055 cooldown=5b7687 effect_kind=da4b92 effects=2fc8f8 damage_or_effect=1126de tooltip_formula=af13a8 visual=17503a icon=a6e82f used_by=12a41f -->
 |  |  |
 |---|---|
-|  | ![Wild Threat](../assets/skills/5056.png) |
+|  | ![Wild Threat](wiki/assets/skills/5056.png) |
 | **Skill id** | `5056` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

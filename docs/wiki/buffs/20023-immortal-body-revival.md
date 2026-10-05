@@ -22,7 +22,7 @@ applied_by:
 <!-- generated-keys: title=d89a8e type=6143a1 id=ae50cc sources=7edf60 name_key=5fc336 duration=6c141f is_buff=b6589f stack_type=356a19 group=0716d9 effects=c59844 icon=30f6b2 applied_by=5468b2 -->
 |  |  |
 |---|---|
-|  | ![Immortal Body : Revival](../assets/buffs/20023.png) |
+|  | ![Immortal Body : Revival](wiki/assets/buffs/20023.png) |
 | **Buff id** | `20023` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

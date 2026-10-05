@@ -33,7 +33,7 @@ used_by:
 <!-- generated-keys: title=79944f type=86a754 id=3d4a44 sources=609193 name_key=37aa93 desc_key=4c2f49 kind=356a19 kind_name=9bc378 target=aa5d92 range=b1d578 area=2a66b8 cost=e4e7cf cooldown=e3989d delivery=93a212 effect_kind=da4b92 effects=26b59e damage_or_effect=491d71 tooltip_formula=ac573a visual=bc6230 icon=ade420 used_by=b2eef2 -->
 |  |  |
 |---|---|
-|  | ![Ball of Lighting](../assets/skills/5305.png) |
+|  | ![Ball of Lighting](wiki/assets/skills/5305.png) |
 | **Skill id** | `5305` |
 | **Kind** | active (1) |
 | **Target** | ground; enemy; units: monster, player; up to 1 |

@@ -36,7 +36,7 @@ obtained_from:
 <!-- generated-keys: title=37df12 type=d36ca9 id=e2ae69 sources=1e99a3 name_key=5905bd kind=8effee kind_name=ddf027 classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=356a19 stats=7e57aa set=ac3478 reinforce=92cfce icon=b36591 obtained_from=ed1f82 -->
 |  |  |
 |---|---|
-|  | ![Spector's Belt](../assets/items/3046.png) |
+|  | ![Spector's Belt](wiki/assets/items/3046.png) |
 | **Item id** | `3046` |
 | **Kind** | Belt (55) |
 | **Classes** | all |

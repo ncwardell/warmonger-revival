@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=a5422f type=86a754 id=9e6431 sources=c8eac6 name_key=27ac20 desc_key=8d13d1 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=7b288b cooldown=e61764 effect_kind=356a19 effects=f2c594 damage_or_effect=ad4948 tooltip_formula=e37e0c visual=e99321 icon=6547b0 used_by=a34ce8 -->
 |  |  |
 |---|---|
-|  | ![Crippling Blow](../assets/skills/10059.png) |
+|  | ![Crippling Blow](wiki/assets/skills/10059.png) |
 | **Skill id** | `10059` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

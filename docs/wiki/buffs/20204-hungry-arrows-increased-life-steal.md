@@ -23,7 +23,7 @@ applied_by:
 <!-- generated-keys: title=2fd365 type=6143a1 id=46e870 sources=462a85 name_key=82dc9a duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=d1eaac icon=6834b3 applied_by=d7fd0d -->
 |  |  |
 |---|---|
-|  | ![Hungry arrows: increased Life Steal](../assets/buffs/20204.png) |
+|  | ![Hungry arrows: increased Life Steal](wiki/assets/buffs/20204.png) |
 | **Buff id** | `20204` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

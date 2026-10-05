@@ -32,7 +32,7 @@ obtained_from:
 <!-- generated-keys: title=f7f3e0 type=d36ca9 id=812cd8 sources=b7c960 name_key=3f2be5 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=f820eb cost_pair=7af57d stats=97d170 icon=9bbeca obtained_from=c70cba -->
 |  |  |
 |---|---|
-|  | ![Brilliant core stone](../assets/items/859.png) |
+|  | ![Brilliant core stone](wiki/assets/items/859.png) |
 | **Item id** | `859` |
 | **Kind** | Material (12) |
 | **Classes** | all |

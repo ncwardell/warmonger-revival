@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=94b5f0 type=d36ca9 id=9d0008 sources=0e081e name_key=315949 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=a213ed cost_pair=32167a stats=97d170 icon=861632 obtained_from=a807a3 -->
 |  |  |
 |---|---|
-|  | ![Garnet powder](../assets/items/803.png) |
+|  | ![Garnet powder](wiki/assets/items/803.png) |
 | **Item id** | `803` |
 | **Kind** | Material (12) |
 | **Classes** | all |

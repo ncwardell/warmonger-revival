@@ -30,7 +30,7 @@ spawn_points: []
 <!-- generated-keys: title=79cc2d type=7a94db id=59129a sources=f1e946 name_key=24c014 kind=8e3535 scene_type=da4b92 max_users=22d200 group=da4b92 neighbours=eddb79 zones=e90c00 segments=5cd95b worldmap_rect=e89342 gates=2b8e31 connections=0166c2 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 28](../assets/zones/28.png) |
+|  | ![minimap of zone 28](wiki/assets/zones/28.png) |
 | **Field id** | `66` |
 | **Kind** | land (SceneList type 2; name *inferred*) |
 | **Max users** | 30 (SceneList, column meaning *guessed*) |

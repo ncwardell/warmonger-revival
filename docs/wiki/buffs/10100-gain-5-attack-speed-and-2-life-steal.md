@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=668b96 type=6143a1 id=6dc48a sources=6e0cde name_key=15ee0e duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=147ca9 icon=f7f3c7 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Gain 5% Attack Speed and 2% Life Steal](../assets/buffs/10100.png) |
+|  | ![Gain 5% Attack Speed and 2% Life Steal](wiki/assets/buffs/10100.png) |
 | **Buff id** | `10100` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -46,7 +46,7 @@ obtained_from:
 <!-- generated-keys: title=89d360 type=d36ca9 id=9ed4f2 sources=e56715 name_key=b93aff kind=54ceb9 kind_name=c2576a classes=92d079 bind=2be88c price=05bfea cost_pair=c1b652 stats=f66d39 reinforce=356a19 icon=14817e obtained_from=9ef647 -->
 |  |  |
 |---|---|
-|  | ![Spell Bracelet](../assets/items/399.png) |
+|  | ![Spell Bracelet](wiki/assets/items/399.png) |
 | **Item id** | `399` |
 | **Kind** | Bracelet (56) |
 | **Classes** | all |
@@ -103,6 +103,7 @@ ItemSancMet row 1 (inferred from Item_Base +0x92), 1,000 gold per attempt. Succe
 - Hero gacha pool 00, grade 3 (Gacha_00.cdb; odds are server side)
 - Hero gacha pool 01, grade 3 (Gacha_01.cdb; odds are server side)
 - Hero gacha pool 04, grade 3 (Gacha_04.cdb; odds are server side)
+- how dungeon_drop, field 125, tier 2 (hand-entered)
 
 ### Mentioned in
 

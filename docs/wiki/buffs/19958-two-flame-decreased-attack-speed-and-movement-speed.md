@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=cc1f0b type=6143a1 id=446a03 sources=a61d78 name_key=b3322f duration=0aac5a is_buff=b6589f stack_type=356a19 group=b6589f effects=763be2 icon=593306 applied_by=1014c7 -->
 |  |  |
 |---|---|
-|  | ![Two Flame : Decreased Attack Speed and Movement Speed](../assets/buffs/19958.png) |
+|  | ![Two Flame : Decreased Attack Speed and Movement Speed](wiki/assets/buffs/19958.png) |
 | **Buff id** | `19958` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

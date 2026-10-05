@@ -20,7 +20,7 @@ spawn_points: []
 <!-- generated-keys: title=b26388 type=7a94db id=a2e33d sources=07eae8 name_key=fd6c9e kind=2be88c zones=d9b420 segments=5a389d gates=bb4b13 connections=97d170 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 126](../assets/zones/126.png) |
+|  | ![minimap of zone 126](wiki/assets/zones/126.png) |
 | **Field id** | `119` |
 | **Zones** | [[wiki/zones/126-battlefield-tutorial-sinking-nest\|Battlefield tutorial (Sinking Nest)]] |
 | **Terrain segments** | `ZP05_11` |

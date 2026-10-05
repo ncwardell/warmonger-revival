@@ -25,7 +25,7 @@ obtained_from:
 <!-- generated-keys: title=319de8 type=d36ca9 id=706a95 sources=a54dbd name_key=8be038 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=2063c4 obtained_from=c4cb54 -->
 |  |  |
 |---|---|
-|  | ![Wild herb](../assets/items/839.png) |
+|  | ![Wild herb](wiki/assets/items/839.png) |
 | **Item id** | `839` |
 | **Kind** | Material (12) |
 | **Classes** | all |

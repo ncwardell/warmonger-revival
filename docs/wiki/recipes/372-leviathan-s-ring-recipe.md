@@ -20,21 +20,21 @@ npc: [213]
 <!-- generated-keys: title=437642 type=61613a id=6d93f2 sources=72978e result=0e99c7 materials=7ee920 gold=409e95 success_rate=e6c3dd category=b6589f filter_mask=e42ab3 level=b1d578 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/3068.png) |
+|  | ![](wiki/assets/items/3068.png) |
 | **Recipe id** | `372` (`Item_Make`) |
 | **Makes** | [[wiki/items/3068-leviathan-s-ring\|Leviathan's Ring]] × 1 |
 | **Gold** | 100,000 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 60 % |
 | **Level (c24, *guess*)** | 10 |
 | **Category / filter** | 0 / `0x2000080` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/213-odin\|Odin]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/2707.png) | [[wiki/items/2707-horn-of-leviathan\|Horn of Leviathan]] | 1 |  |
-| ![](../assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  |
+| ![](wiki/assets/items/2707.png) | [[wiki/items/2707-horn-of-leviathan\|Horn of Leviathan]] | 1 |  |
+| ![](wiki/assets/items/1935.png) | [[wiki/items/1935-essence-of-light\|Essence of Light]] | 1 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 <!-- generated:end -->

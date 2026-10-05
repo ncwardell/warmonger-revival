@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=79a30a type=d36ca9 id=c1d2fb sources=cfc235 name_key=cd02be kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=1dc6ee cost_pair=bbc775 stats=97d170 icon=d8a39e obtained_from=04bcca -->
 |  |  |
 |---|---|
-|  | ![Soft leather](../assets/items/840.png) |
+|  | ![Soft leather](wiki/assets/items/840.png) |
 | **Item id** | `840` |
 | **Kind** | Material (12) |
 | **Classes** | all |

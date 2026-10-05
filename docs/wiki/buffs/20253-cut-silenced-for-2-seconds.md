@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=c618e2 type=6143a1 id=c26323 sources=287d03 name_key=08bb6d duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=c58c09 applied_by=3d3097 -->
 |  |  |
 |---|---|
-|  | ![Cut : silenced for 2 seconds](../assets/buffs/20253.png) |
+|  | ![Cut : silenced for 2 seconds](wiki/assets/buffs/20253.png) |
 | **Buff id** | `20253` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

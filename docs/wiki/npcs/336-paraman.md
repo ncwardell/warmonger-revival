@@ -26,7 +26,7 @@ z: null
 <!-- generated-keys: title=5ecbb7 type=3664ce id=9c882d sources=97b5b5 name_key=4f4ec9 title_key=3f8014 npc_title=c07401 category=e1822d class_mask=da4b92 model=5b7d26 scale=aa8f28 functions=7d0bc3 role=c07401 shop=902ba3 talk_key=e99c35 portrait=d2d345 map=2be88c x=2be88c z=2be88c -->
 |  |  |
 |---|---|
-|  | ![Paraman](../assets/npcs/336.png) |
+|  | ![Paraman](wiki/assets/npcs/336.png) |
 | **Unit id** | `336` |
 | **Title** | Legendary Blacksmith |
 | **Category** | NPC (category 50) |

@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z138_00.dds"
 <!-- generated-keys: title=052e88 type=c899cd id=56ad4d sources=74706c name_kr=817e08 terrain=97585a bounds=482a8d size=a1cfbb segments=108ae9 fields=e6de85 minimap=422526 -->
 |  |  |
 |---|---|
-|  | ![minimap of Room of Core](../assets/zones/138.png) |
+|  | ![minimap of Room of Core](wiki/assets/zones/138.png) |
 | **Zone id** | `138` |
 | **ZoneDB name** | 코어실 (English gloss: Room of Core) |
 | **Terrain name** | `Core_01` |

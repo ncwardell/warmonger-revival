@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=e96c40 type=6143a1 id=a8c97e sources=7a99f7 name_key=deafc5 duration=995f11 is_buff=b6589f stack_type=356a19 group=009cf5 effects=4b598f icon=a68b30 applied_by=68d641 -->
 |  |  |
 |---|---|
-|  | ![Tome of Armor Penetration (S) : Armor Penetration +8](../assets/buffs/2104.png) |
+|  | ![Tome of Armor Penetration (S) : Armor Penetration +8](wiki/assets/buffs/2104.png) |
 | **Buff id** | `2104` |
 | **Duration** | 5 min (1,500 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

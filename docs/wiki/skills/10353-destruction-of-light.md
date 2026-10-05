@@ -34,7 +34,7 @@ used_by:
 <!-- generated-keys: title=371ca8 type=86a754 id=6cd82b sources=fd9751 name_key=87523a desc_key=af20b6 kind=356a19 kind_name=9bc378 target=d1cc1b range=1b6453 area=6d01a6 cost=da6e22 cooldown=4aa5a5 effect_kind=da4b92 effects=d56f1c damage_or_effect=5bf726 tooltip_formula=c14a32 visual=6f946e icon=dd90a4 used_by=619ff5 -->
 |  |  |
 |---|---|
-|  | ![Destruction of light](../assets/skills/10353.png) |
+|  | ![Destruction of light](wiki/assets/skills/10353.png) |
 | **Skill id** | `10353` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

@@ -26,7 +26,7 @@ used_by:
 <!-- generated-keys: title=d9423c type=86a754 id=f49495 sources=8afa1e name_key=2947e6 desc_key=8994f5 kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=ff5a60 cooldown=ad2ac8 effect_kind=356a19 effects=df68f8 damage_or_effect=3299ef visual=264c3f icon=bf4234 used_by=09d31c -->
 |  |  |
 |---|---|
-|  | ![Thrill of Power](../assets/skills/10465.png) |
+|  | ![Thrill of Power](wiki/assets/skills/10465.png) |
 | **Skill id** | `10465` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

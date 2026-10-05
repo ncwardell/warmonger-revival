@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=6e46b0 type=6143a1 id=56fb44 sources=b18b6a name_key=d47253 duration=0aac5a is_buff=b6589f stack_type=356a19 group=ac3478 effects=97d170 icon=b7a24b applied_by=5eda9f -->
 |  |  |
 |---|---|
-|  | ![Restriction : Rooted in place for 3 seconds](../assets/buffs/10044.png) |
+|  | ![Restriction : Rooted in place for 3 seconds](wiki/assets/buffs/10044.png) |
 | **Buff id** | `10044` |
 | **Duration** | 3 s (15 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

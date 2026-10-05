@@ -22,7 +22,7 @@ obtained_from: []
 <!-- generated-keys: title=00cccd type=d36ca9 id=2121f1 sources=cf6267 name_key=19062d kind=cb7a1d kind_name=c29b8b classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=718df7 icon=5981f7 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Secret of the Fortress](../assets/items/1606.png) |
+|  | ![Secret of the Fortress](wiki/assets/items/1606.png) |
 | **Item id** | `1606` |
 | **Kind** | Holy Things (37) |
 | **Classes** | all |

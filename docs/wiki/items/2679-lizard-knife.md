@@ -22,7 +22,7 @@ obtained_from:
 <!-- generated-keys: title=a7868f type=d36ca9 id=4585c0 sources=983fde name_key=5f175b kind=0716d9 kind_name=a42e2b classes=92d079 bind=883bf8 price=32a324 cost_pair=395e20 stats=97d170 icon=dd3683 obtained_from=56b601 -->
 |  |  |
 |---|---|
-|  | ![Lizard knife](../assets/items/2679.png) |
+|  | ![Lizard knife](wiki/assets/items/2679.png) |
 | **Item id** | `2679` |
 | **Kind** | Quest (17) |
 | **Classes** | all |

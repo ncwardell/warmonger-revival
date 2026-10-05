@@ -31,7 +31,7 @@ obtained_from:
 <!-- generated-keys: title=36f709 type=d36ca9 id=6e0b0b sources=23372c name_key=147816 kind=632667 kind_name=631b4f classes=2160c0 bind=883bf8 price=6961f8 cost_pair=5b5722 rarity=356a19 weapon_base=fd9375 stats=c43914 options=953211 skills=737268 reinforce=7b5200 icon=8539c7 obtained_from=501dc8 -->
 |  |  |
 |---|---|
-|  | ![Magical Protect Cannon](../assets/items/21021.png) |
+|  | ![Magical Protect Cannon](wiki/assets/items/21021.png) |
 | **Item id** | `21021` |
 | **Kind** | Weapon (31) |
 | **Classes** | Guardian |

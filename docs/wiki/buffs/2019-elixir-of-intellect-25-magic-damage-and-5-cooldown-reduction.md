@@ -20,7 +20,7 @@ applied_by: []
 <!-- generated-keys: title=ad4e3f type=6143a1 id=0c422b sources=ad7ff4 name_key=a6cbde duration=dc6a42 is_buff=b6589f stack_type=356a19 group=b6589f effects=668803 icon=f877b6 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Elixir of Intellect : 25 Magic Damage and 5% Cooldown Reduction](../assets/buffs/2019.png) |
+|  | ![Elixir of Intellect : 25 Magic Damage and 5% Cooldown Reduction](wiki/assets/buffs/2019.png) |
 | **Buff id** | `2019` |
 | **Duration** | 10 min (3,000 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

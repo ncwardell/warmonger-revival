@@ -29,7 +29,7 @@ used_by:
 <!-- generated-keys: title=8e8360 type=86a754 id=b42a6d sources=c6ae35 name_key=da383f desc_key=1fe400 kind=356a19 kind_name=9bc378 target=5c059d range=da4b92 cost=e01d1d cooldown=9ded33 effect_kind=da4b92 effects=89518c damage_or_effect=84a00d requirements=adeac3 visual=93ac19 icon=7dc0ee used_by=f6dd6f -->
 |  |  |
 |---|---|
-|  | ![The source of the sun](../assets/skills/20107.png) |
+|  | ![The source of the sun](wiki/assets/skills/20107.png) |
 | **Skill id** | `20107` |
 | **Kind** | active (1) |
 | **Target** | self; -; units: monster, player; up to 1 |

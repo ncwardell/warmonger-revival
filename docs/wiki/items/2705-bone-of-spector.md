@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=04dc86 type=d36ca9 id=45ba3e sources=f35175 name_key=a44718 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=6961f8 cost_pair=5b5722 stats=97d170 icon=d2b23e obtained_from=7f2878 -->
 |  |  |
 |---|---|
-|  | ![Bone of Spector](../assets/items/2705.png) |
+|  | ![Bone of Spector](wiki/assets/items/2705.png) |
 | **Item id** | `2705` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=ff7bb1 type=61613a id=323621 sources=15cc16 result=13bb17 materials=39876f gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=b48f6f level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/825.png) |
+|  | ![](wiki/assets/items/825.png) |
 | **Recipe id** | `2412` (`Item_Make`) |
 | **Makes** | [[wiki/items/825-jasmine-powder\|Jasmine powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 8 / `0x2000` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/824.png) | [[wiki/items/824-jasmine\|Jasmine]] | 1 |  |
+| ![](wiki/assets/items/824.png) | [[wiki/items/824-jasmine\|Jasmine]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/612-jasmine-powder-recipe|recipe 612]]
 

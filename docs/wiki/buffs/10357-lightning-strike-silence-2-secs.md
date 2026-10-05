@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=9ff1f7 type=6143a1 id=81b386 sources=210646 name_key=49e59d duration=2a0b1e is_buff=b6589f stack_type=356a19 group=c1dfd9 effects=97d170 icon=eb1101 applied_by=879ca9 -->
 |  |  |
 |---|---|
-|  | ![Lightning Strike : Silence (2 Secs)](../assets/buffs/10357.png) |
+|  | ![Lightning Strike : Silence (2 Secs)](wiki/assets/buffs/10357.png) |
 | **Buff id** | `10357` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=3613fd type=6143a1 id=22fa56 sources=e84f7e name_key=13c828 duration=2a0b1e is_buff=b6589f stack_type=356a19 group=b602b3 effects=9c60d6 icon=1aeac2 applied_by=01d8d9 -->
 |  |  |
 |---|---|
-|  | ![blessing of Mother Nature : Explosion](../assets/buffs/30337.png) |
+|  | ![blessing of Mother Nature : Explosion](wiki/assets/buffs/30337.png) |
 | **Buff id** | `30337` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

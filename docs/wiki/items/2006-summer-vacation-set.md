@@ -29,7 +29,7 @@ obtained_from:
 <!-- generated-keys: title=9256ec type=d36ca9 id=1938b7 sources=0c057e name_key=29bf3a kind=cb4e52 kind_name=767a7c classes=2160c0 bind=883bf8 price=29cce8 period=e651d1 stats=77b656 options=df8ede icon=2ea163 obtained_from=575408 -->
 |  |  |
 |---|---|
-|  | ![Summer Vacation Set](../assets/items/2006.png) |
+|  | ![Summer Vacation Set](wiki/assets/items/2006.png) |
 | **Item id** | `2006` |
 | **Kind** | Costume (32) |
 | **Classes** | Guardian |

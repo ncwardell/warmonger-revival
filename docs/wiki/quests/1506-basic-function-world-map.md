@@ -23,7 +23,7 @@ help: {"image": "ui/HelpImage/Help_16.png", "text_key": "Quest_Title_Help_String
 <!-- generated-keys: title=979456 type=eb5b2b id=9e0a91 sources=2e5cc5 name_key=b8eb27 kind=7b5200 kind_name=ec7dd4 giver=847ad4 turn_in=2be88c bit=76546f prev=97d170 next=97d170 stages=30caa7 objectives=b9f4ad rewards=97d170 help=810fd4 -->
 |  |  |
 |---|---|
-|  | ![Basic function - World Map](../assets/quests/1506.png) |
+|  | ![Basic function - World Map](wiki/assets/quests/1506.png) |
 | **Quest id** | `1506` |
 | **Kind** | Advice (kind 12) |
 | **Giver** | automatic |

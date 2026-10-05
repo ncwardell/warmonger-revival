@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=01eb14 type=6143a1 id=573136 sources=70bb55 name_key=7d26f5 duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=90575f icon=c02769 applied_by=fc0fd0 -->
 |  |  |
 |---|---|
-|  | ![Mana Potion (C) : Minor Mana Regeneration](../assets/buffs/2064.png) |
+|  | ![Mana Potion (C) : Minor Mana Regeneration](wiki/assets/buffs/2064.png) |
 | **Buff id** | `2064` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

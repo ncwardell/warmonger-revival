@@ -31,7 +31,7 @@ positions:
 <!-- generated-keys: title=e66368 type=3664ce id=e2154f sources=ea0eb8 name_key=2ddde4 title_key=91ed68 npc_title=7d4d37 category=e1822d class_mask=da4b92 model=af3e13 scale=aa8f28 functions=7dac55 role=7d4d37 shop=7edab1 talk_key=78ded7 portrait=399d90 quests=24cbc3 map=775bc5 x=b0441f z=cf8cd8 positions=a340d5 -->
 |  |  |
 |---|---|
-|  | ![Cassia](../assets/npcs/212.png) |
+|  | ![Cassia](wiki/assets/npcs/212.png) |
 | **Unit id** | `212` |
 | **Title** | Material Merchant |
 | **Category** | NPC (category 50) |

@@ -20,7 +20,7 @@ applied_by:
 <!-- generated-keys: title=799cbf type=6143a1 id=33b82c sources=d3aac0 name_key=ec185b duration=6c2ae7 is_buff=b6589f stack_type=356a19 group=b6589f effects=52b377 icon=7bc914 applied_by=741af8 -->
 |  |  |
 |---|---|
-|  | ![Mana Potion (D) : Weak Mana Regeneration](../assets/buffs/2051.png) |
+|  | ![Mana Potion (D) : Weak Mana Regeneration](wiki/assets/buffs/2051.png) |
 | **Buff id** | `2051` |
 | **Duration** | 17 s (85 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

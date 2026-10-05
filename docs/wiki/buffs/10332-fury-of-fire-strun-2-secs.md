@@ -19,7 +19,7 @@ applied_by:
 <!-- generated-keys: title=f24b4b type=6143a1 id=1de056 sources=fce9b1 name_key=9d6b9e duration=2a0b1e is_buff=b6589f stack_type=356a19 group=0ade7c effects=97d170 icon=01ddda applied_by=c99887 -->
 |  |  |
 |---|---|
-|  | ![Fury of fire : Strun (2 Secs)](../assets/buffs/10332.png) |
+|  | ![Fury of fire : Strun (2 Secs)](wiki/assets/buffs/10332.png) |
 | **Buff id** | `10332` |
 | **Duration** | 2 s (10 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

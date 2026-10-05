@@ -5,6 +5,7 @@ id: 127
 status: "complete"
 missing: []
 sources: ["client: SceneList.cdb id 127", "client: DungeonAdmission.cdb field 127", "client: Dungeon.cdb", "doc: gameplay/maps-and-dungeons § 2. Border-area (normal/hard) dungeons (boss)", "client: Trigger.cdb field 127", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0402 \"dungeon open time 20 → 15 min\" (also [[gameplay/events-and-schedules]] §9); read as the instance timer because the Crush Online timer counted down from 20:00 ([[gameplay/video-dungeon-run]] §5) — patch notes, interpretation inferred", "notes: [[gameplay/patch-history]] § Dungeons and world, WM 0615 unlock level per border area — patch notes"]
+manual: ["time_limit_s"]
 field: 127
 max_users: 5
 level: 1
@@ -28,15 +29,16 @@ time_limit_s: 900
 unlock_level: 0
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=a46136 type=3e3f38 id=008451 sources=e5a418 field=008451 max_users=ac3478 level=356a19 entry_cost=6d13a2 event=7cb6ef shown_rewards=82c08d c17=9195f8 image=c57209 dungeon_slots=969ce3 boss=00cb4f gear_tier=13930c gathering=3a8b4c time_limit_s=2be88c -->
+<!-- generated-keys: title=a46136 type=3e3f38 id=008451 sources=e5a418 field=008451 max_users=ac3478 level=356a19 entry_cost=6d13a2 event=7cb6ef shown_rewards=82c08d c17=9195f8 image=c57209 dungeon_slots=969ce3 boss=00cb4f gear_tier=13930c gathering=3a8b4c -->
 |  |  |
 |---|---|
-|  | ![(Lv 1) Chepa Village](../assets/dungeons/127.png) |
+|  | ![(Lv 1) Chepa Village](wiki/assets/dungeons/127.png) |
 | **Field** | [[wiki/fields/127-lv-1-chepa-village\|(Lv 1) Chepa Village (field 127)]] |
 | **Level** | 1 |
 | **Gear tier dropped** | T1 (guides) |
 | **Max players** | 5 (SceneList; guides: max 5 per portal) |
 | **Event dungeon** | no |
+| **Time limit** | 15 min |
 | **Banner** | `UI/FieldImages/0.png` |
 | **c17 (unknown)** | 2001 |
 

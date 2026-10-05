@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=bbfc43 type=d36ca9 id=917098 sources=31f549 name_key=132c94 kind=7b5200 kind_name=59f0ad classes=92d079 bind=2be88c price=80fa96 cost_pair=5bf52d stats=97d170 icon=9b9905 obtained_from=4d5966 -->
 |  |  |
 |---|---|
-|  | ![Crystal : Yellow](../assets/items/701.png) |
+|  | ![Crystal : Yellow](wiki/assets/items/701.png) |
 | **Item id** | `701` |
 | **Kind** | Material (12) |
 | **Classes** | all |
@@ -56,6 +56,8 @@ obtained_from:
 - In random box table row 23 (RandomBox.cdb; odds are server side)
 - In random box table row 24 (RandomBox.cdb; odds are server side)
 - In random box table row 25 (RandomBox.cdb; odds are server side)
+- how fort_guardian_drop, count 25 (hand-entered)
+- how dungeon_drop, field 133, count [1, 6] (hand-entered)
 
 ### Used for
 

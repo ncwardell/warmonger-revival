@@ -30,7 +30,7 @@ used_by:
 <!-- generated-keys: title=53e6e2 type=86a754 id=ad1e57 sources=6c25dd name_key=c8e7fd desc_key=77b7d9 kind=356a19 kind_name=9bc378 target=644925 range=fe5dbb cost=911ade cooldown=628d31 effect_kind=632667 effects=7a470e damage_or_effect=1c4cc1 tooltip_formula=705953 visual=acfdd1 icon=aaa141 used_by=26374f -->
 |  |  |
 |---|---|
-|  | ![Reviving Breath](../assets/skills/5019.png) |
+|  | ![Reviving Breath](wiki/assets/skills/5019.png) |
 | **Skill id** | `5019` |
 | **Kind** | active (1) |
 | **Target** | unit; self, ally; units: monster, player; up to 1 |

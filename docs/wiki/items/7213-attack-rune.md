@@ -24,7 +24,7 @@ obtained_from: []
 <!-- generated-keys: title=839df9 type=d36ca9 id=0be503 sources=ffec50 name_key=8310a4 kind=972a67 kind_name=a3317b classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a stats=b96aaa options=88c977 icon=068539 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Attack Rune](../assets/items/7213.png) |
+|  | ![Attack Rune](wiki/assets/items/7213.png) |
 | **Item id** | `7213` |
 | **Kind** | Rune (35) |
 | **Classes** | all |

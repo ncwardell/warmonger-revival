@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=481724 type=86a754 id=007e0d sources=b3c371 name_key=0c45c8 desc_key=63e91a kind=356a19 kind_name=9bc378 target=d99f6c range=356a19 cost=b1d441 cooldown=a7242f effect_kind=da4b92 effects=53ced5 damage_or_effect=2d120b visual=6d0e10 icon=ab7449 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Amaterasu Transformation](../assets/skills/20101.png) |
+|  | ![Amaterasu Transformation](wiki/assets/skills/20101.png) |
 | **Skill id** | `20101` |
 | **Kind** | active (1) |
 | **Target** | self; self; units: monster, player; up to 1 |

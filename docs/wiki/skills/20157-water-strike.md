@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=d37e41 type=86a754 id=1484ff sources=a9ee29 name_key=a8d6da desc_key=f90f8a kind=356a19 kind_name=9bc378 target=069ef3 range=77de68 cost=4921ef cooldown=db479b delivery=93a212 effect_kind=da4b92 effects=328e6c damage_or_effect=ca9af7 tooltip_formula=d90a2a visual=62866a icon=e71b04 used_by=889fc9 -->
 |  |  |
 |---|---|
-|  | ![Water strike](../assets/skills/20157.png) |
+|  | ![Water strike](wiki/assets/skills/20157.png) |
 | **Skill id** | `20157` |
 | **Kind** | active (1) |
 | **Target** | unit; enemy; units: monster, player; up to 1 |

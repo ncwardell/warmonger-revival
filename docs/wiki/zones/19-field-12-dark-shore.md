@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z19_00.dds"
 <!-- generated-keys: title=33669b type=c899cd id=b3f0c7 sources=7aa616 name_kr=a29880 terrain=b7eb99 bounds=a7d497 size=114466 segments=f22d3e fields=707bff minimap=212c26 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 12 (Dark Shore)](../assets/zones/19.png) |
+|  | ![minimap of Field 12 (Dark Shore)](wiki/assets/zones/19.png) |
 | **Zone id** | `19` |
 | **ZoneDB name** | 필드_12 (English gloss: Field 12 (Dark Shore)) |
 | **Terrain name** | `12` |

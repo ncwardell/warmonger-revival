@@ -33,7 +33,7 @@ obtained_from:
 <!-- generated-keys: title=78d91b type=d36ca9 id=ed665f sources=9dd63e name_key=e6fb63 kind=17ba07 kind_name=6f63d6 classes=92d079 bind=2be88c price=c4f310 cost_pair=809c9f flags=356a19 no_sell=7cb6ef use_skill=972a67 cooldown_s=ac3478 cooldown_group=0716d9 stats=97d170 options=15b1a4 icon=e2dc46 obtained_from=7238d8 -->
 |  |  |
 |---|---|
-|  | ![Scroll : Gaia](../assets/items/909.png) |
+|  | ![Scroll : Gaia](wiki/assets/items/909.png) |
 | **Item id** | `909` |
 | **Kind** | Normal (11) |
 | **Classes** | all |

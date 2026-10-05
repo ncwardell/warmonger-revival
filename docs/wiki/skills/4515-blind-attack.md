@@ -25,7 +25,7 @@ used_by: []
 <!-- generated-keys: title=fb42b2 type=86a754 id=53e0c2 sources=c4f1b7 name_key=0d9210 desc_key=7c5faa kind=356a19 kind_name=9bc378 target=e0ddef range=c1dfd9 area=d82541 cost=2be88c cooldown=2be88c effect_kind=b6589f effects=8a4205 damage_or_effect=24970a icon=494d30 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Blind Attack](../assets/skills/4515.png) |
+|  | ![Blind Attack](wiki/assets/skills/4515.png) |
 | **Skill id** | `4515` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: player; up to 15 |

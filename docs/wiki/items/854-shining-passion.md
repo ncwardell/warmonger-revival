@@ -24,7 +24,7 @@ obtained_from:
 <!-- generated-keys: title=841ddc type=d36ca9 id=cbc34d sources=0e02ff name_key=25f0a0 kind=7b5200 kind_name=59f0ad classes=92d079 bind=883bf8 price=71fccc cost_pair=bd5d66 stats=97d170 icon=1a85f3 obtained_from=416bda -->
 |  |  |
 |---|---|
-|  | ![Shining Passion](../assets/items/854.png) |
+|  | ![Shining Passion](wiki/assets/items/854.png) |
 | **Item id** | `854` |
 | **Kind** | Material (12) |
 | **Classes** | all |

@@ -21,15 +21,15 @@ gates:
 connections:
   - {"to": 88, "gate": 1199, "to_gate": 1198, "paired": true}
   - {"to": 88, "gate": 1199, "to_gate": 0}
-npcs: [219, 242, 327, 2001, 199, 224, 208]
+npcs: [219, 242, 327, 2001, 189, 190, 191, 192, 193, 194, 195, 196, 197, 199, 224, 318, 208]
 monsters: []
 spawn_points: []
 ---
 <!-- generated:start -->
-<!-- generated-keys: title=b1fd66 type=7a94db id=2d0c8a sources=4fafc5 name_key=8f3ae6 kind=da9544 scene_type=356a19 max_users=310b86 group=bd307a nation=a20b0f nation_copies=95169d zones=610dd1 segments=ee0f85 worldmap_rect=e9d9e1 gates=5ed218 connections=fd2af1 npcs=540523 monsters=97d170 spawn_points=97d170 -->
+<!-- generated-keys: title=b1fd66 type=7a94db id=2d0c8a sources=4fafc5 name_key=8f3ae6 kind=da9544 scene_type=356a19 max_users=310b86 group=bd307a nation=a20b0f nation_copies=95169d zones=610dd1 segments=ee0f85 worldmap_rect=e9d9e1 gates=5ed218 connections=fd2af1 npcs=14278f monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 144](../assets/zones/144.png) |
+|  | ![minimap of zone 144](wiki/assets/zones/144.png) |
 | **Field id** | `90` |
 | **Kind** | town (SceneList type 1; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |
@@ -62,8 +62,19 @@ Positions come from the NPC's own page (`x`, `z`). The client does not place tow
 | [[wiki/npcs/242-raon\|Raon]] | 242 |  | quests [[wiki/quests/1530-legion-create-core\|1530]] |
 | [[wiki/npcs/327-aenes\|Aenes]] | 327 |  | quests [[wiki/quests/38-innocence-s-recovery-operation\|38]], [[wiki/quests/44-innocence-report\|44]]; NPC page (`map` / `positions`) |
 | [[wiki/npcs/2001-corpse-bride\|Corpse Bride]] | 2001 |  | quests [[wiki/quests/901-trick-or-treat\|901]]; NPC page (`map` / `positions`) |
+| [[wiki/npcs/189-imperial-guard\|Imperial Guard]] | 189 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/190-imperial-guard\|Imperial Guard]] | 190 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/191-imperial-guard\|Imperial Guard]] | 191 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/192-imperial-guard\|Imperial Guard]] | 192 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/193-imperial-guard\|Imperial Guard]] | 193 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/194-imperial-guard\|Imperial Guard]] | 194 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/195-imperial-guard\|Imperial Guard]] | 195 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/196-imperial-guard\|Imperial Guard]] | 196 |  | NPC page (`map` / `positions`) |
+| [[wiki/npcs/197-imperial-guard\|Imperial Guard]] | 197 |  | NPC page (`map` / `positions`) |
 | [[wiki/npcs/199-patrick\|Patrick]] | 199 | 486.1, 4292.5 | NPC page (`map` / `positions`) |
 | [[wiki/npcs/224-bernice\|Bernice]] | 224 | 493.8, 4285.8 | NPC page (`map` / `positions`) |
+| [[wiki/npcs/318-kesley\|Kesley]] | 318 | 480.8, 4146.2 | NPC page (`map` / `positions`) |
+| [[wiki/npcs/208-bell-thain\|Bell Thain]] | 208 |  | hand-entered |
 
 ### Monsters
 

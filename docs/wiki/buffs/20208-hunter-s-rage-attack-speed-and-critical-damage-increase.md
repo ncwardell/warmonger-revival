@@ -21,7 +21,7 @@ applied_by:
 <!-- generated-keys: title=9c7699 type=6143a1 id=b4863e sources=d788cc name_key=b0768d duration=6c749d is_buff=b6589f stack_type=356a19 group=b6589f effects=f9abee icon=056ae7 applied_by=6fac98 -->
 |  |  |
 |---|---|
-|  | ![Hunter's Rage: Attack Speed and Critical Damage Increase](../assets/buffs/20208.png) |
+|  | ![Hunter's Rage: Attack Speed and Critical Damage Increase](wiki/assets/buffs/20208.png) |
 | **Buff id** | `20208` |
 | **Duration** | 10 s (50 ticks of 200 ms; unit from [[gameplay/consumables]]) |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

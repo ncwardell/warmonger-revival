@@ -27,7 +27,7 @@ used_by: []
 <!-- generated-keys: title=412779 type=86a754 id=f9214d sources=a15266 name_key=fee00d desc_key=425979 kind=356a19 kind_name=9bc378 target=ad4b90 range=902ba3 area=1bac4b cost=2e28a4 cooldown=2be88c effect_kind=356a19 effects=d7877d damage_or_effect=92dfc9 icon=e79476 used_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Improved Hand](../assets/skills/20212.png) |
+|  | ![Improved Hand](wiki/assets/skills/20212.png) |
 | **Skill id** | `20212` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 1 |

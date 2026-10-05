@@ -23,7 +23,7 @@ obtained_from:
 <!-- generated-keys: title=18099f type=d36ca9 id=8d93c9 sources=100af0 name_key=090fee kind=e6c3dd kind_name=346307 classes=92d079 bind=2be88c price=936627 cost_pair=ebf7c2 stats=ba4ecf icon=258f0a obtained_from=830ec6 -->
 |  |  |
 |---|---|
-|  | ![Amplification Ether](../assets/items/1410.png) |
+|  | ![Amplification Ether](wiki/assets/items/1410.png) |
 | **Item id** | `1410` |
 | **Kind** | Legion Core (60) |
 | **Classes** | all |

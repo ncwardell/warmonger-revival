@@ -19,20 +19,20 @@ npc: [337]
 <!-- generated-keys: title=9873d8 type=61613a id=cbda9f sources=af5b4e result=ac8368 materials=431cf1 gold=e1822d success_rate=310b86 category=fe5dbb filter_mask=ce09b1 level=f1abd6 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/811.png) |
+|  | ![](wiki/assets/items/811.png) |
 | **Recipe id** | `2405` (`Item_Make`) |
 | **Makes** | [[wiki/items/811-diamond-powder\|Diamond powder]] × 10 |
 | **Gold** | 50 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 15 |
 | **Category / filter** | 8 / `0x200` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/337-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  |
+| ![](wiki/assets/items/810.png) | [[wiki/items/810-diamond\|Diamond]] | 1 |  |
 
 Other recipes for the same item: [[wiki/recipes/605-diamond-powder-recipe|recipe 605]]
 

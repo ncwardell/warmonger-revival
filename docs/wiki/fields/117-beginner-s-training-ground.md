@@ -21,7 +21,7 @@ spawn_points: []
 <!-- generated-keys: title=59109e type=7a94db id=d0e2db sources=491986 name_key=263464 kind=3e3f38 scene_type=77de68 max_users=310b86 group=b6589f zones=249983 segments=0fbb4f connections=97d170 npcs=97d170 monsters=97d170 spawn_points=97d170 -->
 |  |  |
 |---|---|
-|  | ![minimap of zone 2](../assets/zones/2.png) |
+|  | ![minimap of zone 2](wiki/assets/zones/2.png) |
 | **Field id** | `117` |
 | **Kind** | dungeon (SceneList type 3; name *inferred*) |
 | **Max users** | 100 (SceneList, column meaning *guessed*) |

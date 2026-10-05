@@ -19,7 +19,7 @@ applied_by: []
 <!-- generated-keys: title=c0f9fc type=6143a1 id=22a366 sources=b7cde4 name_key=06c691 duration=6c141f is_buff=b6589f stack_type=356a19 group=b6589f effects=6985ba icon=fcbb44 applied_by=97d170 -->
 |  |  |
 |---|---|
-|  | ![Additional 150 Movement Speed](../assets/buffs/1221.png) |
+|  | ![Additional 150 Movement Speed](wiki/assets/buffs/1221.png) |
 | **Buff id** | `1221` |
 | **Duration** | permanent |
 | **Buff / debuff** | flag 0 (is_buff?, guessed column) |

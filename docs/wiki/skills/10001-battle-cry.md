@@ -27,7 +27,7 @@ used_by:
 <!-- generated-keys: title=e7637a type=86a754 id=6c447a sources=7859e3 name_key=740f25 desc_key=ef5506 kind=356a19 kind_name=9bc378 target=55b685 range=ac3478 area=e9876d cost=e4e7cf cooldown=e3989d effect_kind=632667 effects=d95758 damage_or_effect=fb19b7 visual=310b86 icon=2a2087 used_by=9dd206 -->
 |  |  |
 |---|---|
-|  | ![Battle Cry](../assets/skills/10001.png) |
+|  | ![Battle Cry](wiki/assets/skills/10001.png) |
 | **Skill id** | `10001` |
 | **Kind** | active (1) |
 | **Target** | self; self, party; units: monster, player; up to 5 |

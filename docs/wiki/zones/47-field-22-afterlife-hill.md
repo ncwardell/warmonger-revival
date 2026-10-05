@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z47_00.dds"
 <!-- generated-keys: title=304111 type=c899cd id=827bfc sources=86ec84 name_kr=46a327 terrain=633e3b bounds=a991ac size=114466 segments=b93c6c fields=5c6c1d minimap=82a131 -->
 |  |  |
 |---|---|
-|  | ![minimap of Field 22 (Afterlife Hill)](../assets/zones/47.png) |
+|  | ![minimap of Field 22 (Afterlife Hill)](wiki/assets/zones/47.png) |
 | **Zone id** | `47` |
 | **ZoneDB name** | 필드_22 (English gloss: Field 22 (Afterlife Hill)) |
 | **Terrain name** | `22` |

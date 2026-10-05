@@ -21,22 +21,22 @@ npc: [214]
 <!-- generated-keys: title=31e193 type=61613a id=07a85b sources=166077 result=5a229e materials=b37f58 gold=28cc22 success_rate=310b86 category=356a19 filter_mask=e91fa6 level=f6e112 -->
 |  |  |
 |---|---|
-|  | ![](../assets/items/714.png) |
+|  | ![](wiki/assets/items/714.png) |
 | **Recipe id** | `508` (`Item_Make`) |
 | **Makes** | [[wiki/items/714-tome-of-attack-spd-a\|Tome of Attack SPD (A)]] × 10 |
 | **Gold** | 900 (before the fort's price rate; one screenshot shows × 1.5) |
 | **Success** | 100 % |
 | **Level (c24, *guess*)** | 25 |
 | **Category / filter** | 1 / `0x400004` |
-| **Crafted at** | unknown (not in the client; add `npc:`) |
+| **Crafted at** | [[wiki/npcs/214-owen\|Owen]] |
 
 ### Materials
 
 |  | item | count | x |
 |---|---|---|---|
-| ![](../assets/items/819.png) | [[wiki/items/819-lavender-powder\|Lavender powder]] | 30 |  |
-| ![](../assets/items/832.png) | [[wiki/items/832-empty-scroll-a\|Empty Scroll (A)]] | 1 |  |
-| ![](../assets/items/842.png) | [[wiki/items/842-burned-sulphur\|Burned sulphur]] | 2 |  |
+| ![](wiki/assets/items/819.png) | [[wiki/items/819-lavender-powder\|Lavender powder]] | 30 |  |
+| ![](wiki/assets/items/832.png) | [[wiki/items/832-empty-scroll-a\|Empty Scroll (A)]] | 1 |  |
+| ![](wiki/assets/items/842.png) | [[wiki/items/842-burned-sulphur\|Burned sulphur]] | 2 |  |
 
 NPCs named as crafters in the guides: Farrell (weapons, passion conversion), Odin (gear), Alan (runes), Owen (alchemy), Paraman (superior weapons) — [[gameplay/items-and-crafting|Items and crafting]] §3.
 

@@ -32,7 +32,7 @@ used_by:
 <!-- generated-keys: title=8e474c type=86a754 id=06dd5b sources=7311c1 name_key=0a93d0 desc_key=ec8f92 kind=356a19 kind_name=9bc378 target=d1cc1b range=77de68 area=344636 cost=f67772 cooldown=c9c532 effect_kind=da4b92 effects=ad72e3 damage_or_effect=1782fc tooltip_formula=e4dbdd visual=c09763 icon=372eb2 used_by=c35a53 -->
 |  |  |
 |---|---|
-|  | ![Crushing Blow](../assets/skills/5067.png) |
+|  | ![Crushing Blow](wiki/assets/skills/5067.png) |
 | **Skill id** | `5067` |
 | **Kind** | active (1) |
 | **Target** | self; enemy; units: monster, player; up to 5 |

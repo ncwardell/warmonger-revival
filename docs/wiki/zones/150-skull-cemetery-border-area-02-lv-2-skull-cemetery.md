@@ -17,7 +17,7 @@ minimap: "map/minimap/minimap_z150_00.dds"
 <!-- generated-keys: title=57ece1 type=c899cd id=13682a sources=714186 name_kr=c90c06 terrain=128ca7 bounds=537652 size=be57ee segments=b756e9 fields=c9e1d0 minimap=499284 -->
 |  |  |
 |---|---|
-|  | ![minimap of Skull cemetery(border area 02) ((Lv 2) Skull Cemetery)](../assets/zones/150.png) |
+|  | ![minimap of Skull cemetery(border area 02) ((Lv 2) Skull Cemetery)](wiki/assets/zones/150.png) |
 | **Zone id** | `150` |
 | **ZoneDB name** | 해골묘지(경계지역_02) (English gloss: Skull cemetery(border area 02) ([Lv 2] Skull Cemetery)) |
 | **Terrain name** | `secuity_area_02` |

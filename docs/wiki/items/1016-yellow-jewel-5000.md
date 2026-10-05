@@ -25,7 +25,7 @@ obtained_from: []
 <!-- generated-keys: title=bd1c82 type=d36ca9 id=49ae64 sources=63cc27 name_key=f22787 kind=b6692e kind_name=08aeca classes=92d079 bind=883bf8 price=936627 cost_pair=ebf7c2 flags=c1dfd9 no_sell=5ffe53 stats=97d170 options=94d642 icon=eb1be5 obtained_from=97d170 -->
 |  |  |
 |---|---|
-|  | ![Yellow Jewel (5000)](../assets/items/1016.png) |
+|  | ![Yellow Jewel (5000)](wiki/assets/items/1016.png) |
 | **Item id** | `1016` |
 | **Kind** | Package Item (33) |
 | **Classes** | all |

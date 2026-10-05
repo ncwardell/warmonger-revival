@@ -30,7 +30,7 @@ obtained_from:
 <!-- generated-keys: title=3e70ae type=d36ca9 id=a0900f sources=0dd989 name_key=fe2457 kind=9e6a55 kind_name=83b4bf classes=92d079 bind=883bf8 price=8c6ae2 cost_pair=982f5a rarity=da4b92 weapon_base=d02560 stats=97d170 options=8af2d2 skills=7f6b3b reinforce=d435a6 icon=ab7449 obtained_from=5c59e3 -->
 |  |  |
 |---|---|
-|  | ![Amaterasu](../assets/items/8002.png) |
+|  | ![Amaterasu](wiki/assets/items/8002.png) |
 | **Item id** | `8002` |
 | **Kind** | Innocence (18) |
 | **Classes** | all |
