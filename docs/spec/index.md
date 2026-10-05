@@ -1,3 +1,7 @@
+---
+title: "Protocol overview"
+---
+
 # Protocol overview
 
 Reverse engineered from the client. Every packet, in both directions, starts with a 16-byte little-endian header:

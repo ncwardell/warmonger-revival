@@ -1,3 +1,7 @@
+---
+title: "Group 00 — opcodes 0x405 .. 0x445"
+---
+
 # Group 00 — opcodes 0x405 .. 0x445
 
 Conventions: offsets from packet start (payload at +0x10). "entity id" = the u16 at header +6

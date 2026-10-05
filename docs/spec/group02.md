@@ -1,3 +1,7 @@
+---
+title: "Group 02 — opcodes 0x47e..0x4b4"
+---
+
 # Group 02 — opcodes 0x47e..0x4b4
 
 Conventions: offsets are from packet start (payload at +0x10). In every C->S packet in this group the

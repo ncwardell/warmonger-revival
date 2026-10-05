@@ -30,6 +30,7 @@ jobs:
           rm -rf content && cp -r ../repo/docs content
           cp ../repo/wiki/quartz.config.yaml quartz.config.yaml
           npx quartz plugin install
+          python3 ../repo/wiki/add_titles.py content  # pages without front matter get their heading as title
           npx quartz build
           rm -f public/CNAME
       - uses: actions/upload-pages-artifact@v3

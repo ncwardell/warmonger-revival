@@ -1,3 +1,7 @@
+---
+title: "Enter-world loading: what ends it, and what causes the endless 'looping' load screen"
+---
+
 # Enter-world loading: what ends it, and what causes the endless "looping" load screen
 
 Client: Client.exe (32-bit MSVC). Addresses are VAs. `acct` = `*DAT_00847ac8`.

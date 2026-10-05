@@ -1,3 +1,7 @@
+---
+title: "Monsters: UnitDB format, tutorial monsters, spawn/combat/respawn packets"
+---
+
 # Monsters: UnitDB format, tutorial monsters, spawn/combat/respawn packets
 
 Builds on world.md (spawn packets) and combat.md (hits). Offsets are from packet start (payload at

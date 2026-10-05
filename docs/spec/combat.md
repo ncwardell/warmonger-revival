@@ -1,3 +1,7 @@
+---
+title: "Combat — attacks, skills, damage, death, respawn, buffs, cooldowns"
+---
+
 # Combat — attacks, skills, damage, death, respawn, buffs, cooldowns
 
 Conventions as in group00..03: offsets from packet start (payload at +0x10), `extra` = header u16 at +6.

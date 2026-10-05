@@ -1,3 +1,7 @@
+---
+title: "Local-player movement: click/hold-to-move, the 10 Hz sim, and the 'stop and hop'"
+---
+
 # Local-player movement: click/hold-to-move, the 10 Hz sim, and the "stop and hop"
 
 Client: Client.exe, VAs. This file covers the **own unit** (`DAT_0084a758`). Remote units are in

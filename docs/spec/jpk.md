@@ -1,3 +1,7 @@
+---
+title: "`.jpk` archives (Data/*.jpk): format and extraction"
+---
+
 # `.jpk` archives (Data/*.jpk): format and extraction
 
 Client: Client.exe (32-bit MSVC, image base 0x400000). Addresses are VAs. Tool:

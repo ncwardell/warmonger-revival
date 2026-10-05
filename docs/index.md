@@ -1,3 +1,7 @@
+---
+title: "Warmonger Revival Wiki"
+---
+
 # Warmonger Revival Wiki
 
 Everything we know about **Warmonger** (formerly **Crush Online**), the MOBA-style PvP MMO whose servers closed on 1 April 2019, collected so its server can be rebuilt. Every fact links to where it came from.

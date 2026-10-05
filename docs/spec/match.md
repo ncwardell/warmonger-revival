@@ -1,3 +1,7 @@
+---
+title: "Match / battlefield lifecycle (queue → match → result → back to world)"
+---
+
 # Match / battlefield lifecycle (queue → match → result → back to world)
 
 Client: Client.exe (32-bit MSVC). Addresses are VAs. `acct` = `*DAT_00847ac8`. `self` = own unit

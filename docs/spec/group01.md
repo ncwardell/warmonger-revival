@@ -1,3 +1,7 @@
+---
+title: "Group 01: opcodes 0x446 to 0x47c"
+---
+
 # Group 01: opcodes 0x446 to 0x47c
 
 Conventions: offsets are from the start of the packet (payload starts at +0x10). "uid" is the u16 in-world unit/object id. The local player's uid is the header `extra` (+6) of 0x2000 (enter world), stored at `DAT_00847ac8+0xec` and in unit+0x35e. Every C->S packet in this group carries the sender's uid in header +6. Several S->C handlers look up the target unit with `FUN_0044d3b9(header+6)` and drop the packet if that unit does not exist.

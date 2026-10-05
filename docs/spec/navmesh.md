@@ -1,3 +1,7 @@
+---
+title: "Navmesh (map/navi/ZPxx_zz_00.nav) and the tutorial spawn"
+---
+
 # Navmesh (map/navi/ZPxx_zz_00.nav) and the tutorial spawn
 
 Tool: `~/Vaults/Overview/Worklab/WarmongerRevamp/tools/navmesh.py` (stdlib only):

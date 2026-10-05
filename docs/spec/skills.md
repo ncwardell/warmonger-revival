@@ -1,3 +1,7 @@
+---
+title: "Skills — where the skill bar comes from"
+---
+
 # Skills — where the skill bar comes from
 
 Short answer: **skills are the equipped weapon's.** There is no skill-list packet and no

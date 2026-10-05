@@ -1,3 +1,7 @@
+---
+title: "How to write wiki pages"
+---
+
 # How to write wiki pages
 
 - **One topic per page**, named plainly (`death-valley.md`, `saint.md`). Link pages with `[[file-name]]` or `[[file-name|shown text]]`; links resolve by file name, as in Obsidian.

@@ -1,3 +1,7 @@
+---
+title: "Populating the world: spawning units, movement, the player's initial state"
+---
+
 # Populating the world: spawning units, movement, the player's initial state
 
 Client: Client.exe (32-bit MSVC). Addresses are VAs. Offsets are from packet start (payload at
