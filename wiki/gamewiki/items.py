@@ -51,6 +51,62 @@ SPECIAL_TEXT = {200: "WeaponBase row", 201: "Innocence value?", 202: "rune grade
                 327: "unit summoned on use", 339: "opens UI 8", 340: "teleport target?"}
 
 
+# Class name (``classes`` values) -> class page id (= UnitDB unit id, Create_Char).
+CLASS_UNITS = {"Saint": 1, "Punisher": 4, "Guardian": 5, "Valkyrie": 7}
+
+# Item category index pages: docs/wiki/items/<slug>.md, written by index.py
+# from the item pages' front matter. Weapons are split by ``classes``, the rest
+# by ItemKind ``kind``; kinds not listed go to "other-items".
+#   (slug, title, kinds, what the page holds)
+CATEGORIES = [
+    ("weapons-saint", "Saint weapons", [31], "Weapons (kind 31) only the Saint can equip: flying blades, dual guns and wands."),
+    ("weapons-punisher", "Punisher weapons", [31], "Weapons (kind 31) only the Punisher can equip: daggers and bows."),
+    ("weapons-guardian", "Guardian weapons", [31], "Weapons (kind 31) only the Guardian can equip: maces (hammers) and cannons."),
+    ("armor-helmet", "Helmets", [50], "Helmets (kind 50). Every class can wear every armour piece."),
+    ("armor-body", "Body armour", [51], "Body armour (kind 51). Every class can wear every armour piece."),
+    ("armor-gloves", "Gloves", [52], "Gloves (kind 52). Every class can wear every armour piece."),
+    ("armor-shoes", "Shoes", [53], "Shoes (kind 53). Every class can wear every armour piece."),
+    ("accessories", "Accessories", [54, 55, 56, 57], "Necklaces, belts, bracelets and rings (kinds 54–57), wearable by every class."),
+    ("runes", "Runes and gem stones", [35, 58], "Runes socketed into gear (kind 35) and gem stones (kind 58)."),
+    ("costume-items", "Costume items", [32], "Wearable costumes (kind 32), one item per class. Grouped by set in the costumes section."),
+    ("hero-items", "Innocence (hero) items", [18, 36], "Innocence items that unlock a hero form (kind 18) and the Innocence pieces they are crafted from (kind 36)."),
+    ("consumables", "Consumables", [11, 14, 19, 21, 22, 38, 42, 45, 46, 47],
+     "Potions, scrolls, tomes, elixirs, flasks, dyes, transform scrolls, hammers and other items used up from the bag."),
+    ("materials", "Materials", [1, 12, 13, 20, 48, 49], "Crafting and reinforcement materials: passion fragments, pieces and patterns, reinforcing stones and adjuvants."),
+    ("quest-items", "Quest items", [16, 17, 44], "Quest drops and quest scrolls (kinds 16, 17, 44)."),
+    ("boxes-and-packages", "Boxes and packages", [28, 29, 30, 33, 34, 43], "Random boxes, packages and jewel bundles."),
+    ("other-items", "Other items", [], "Everything else: fort and legion items (holy things, legion cores, fort establishing), the pseudo-items used for gold, fame and exp rewards, and test rows."),
+]
+CATEGORY_TITLES = {c[0]: c[1] for c in CATEGORIES}
+
+
+def category(fm):
+    """Category slug of an item page's front matter (see CATEGORIES)."""
+    kind = fm.get("kind")
+    if kind == 31:
+        cls = fm.get("classes")
+        if isinstance(cls, list) and len(cls) == 1 and "weapons-" + str(cls[0]).lower() in CATEGORY_TITLES:
+            return "weapons-" + str(cls[0]).lower()
+        return "other-items"
+    for slug, _t, kinds, _d in CATEGORIES:
+        if kind in kinds and not slug.startswith("weapons-"):
+            return slug
+    return "other-items"
+
+
+def category_link(fm):
+    slug = category(fm)
+    return "[[wiki/items/%s|%s]]" % (slug, CATEGORY_TITLES[slug])
+
+
+def class_links(ctx, classes):
+    """'all' or class names -> links to the class pages."""
+    if classes == "all":
+        return "all"
+    return ", ".join(ctx.link("classes", CLASS_UNITS[c], c) if c in CLASS_UNITS else str(c)
+                     for c in classes or []) or "none"
+
+
 def name(ctx, id_):
     row = ctx.table("Item_Base").get(id_)
     return (ctx.s(row.get("name_key")) if row else None) or ctx.s("ItemName_%d" % id_)
@@ -303,8 +359,16 @@ def body(ctx, page):
         info.append(("", "![%s](%s)" % (common.link_text(page.title), img)))
     info.append(("Item id", "`%d`" % id_))
     info.append(("Kind", "%s (%d)" % (fm.get("kind_name") or "?", fm.get("kind", 0))))
-    cls = fm.get("classes")
-    info.append(("Classes", "all" if cls == "all" else ", ".join(cls or []) or "none"))
+    info.append(("Category", category_link(fm)))
+    info.append(("Classes", class_links(ctx, fm.get("classes"))))
+    hero = [o.get("value") for o in fm.get("options") or [] if isinstance(o, dict) and o.get("code") == 201]
+    if hero and fm.get("kind") == 18:
+        info.append(("Hero form", ctx.link("heroes", hero[0])))
+    if fm.get("kind") == 32:
+        from . import costumes
+        cid = costumes.set_of(ctx, id_)
+        if cid is not None:
+            info.append(("Costume set", ctx.link("costumes", cid)))
     if fm.get("bind"):
         info.append(("Bind", fm["bind"].replace("_", " ")))
     price = fm.get("price") or {}
@@ -317,7 +381,13 @@ def body(ctx, page):
     if fm.get("rarity"):
         info.append(("Rarity (guessed column)", fm["rarity"]))
     if fm.get("period"):
-        info.append(("Period", "%s (unit unknown; costume duration)" % fm["period"]))
+        if fm.get("kind") == 32:
+            info.append(("Period", "%s min of wearing time (costume duration, WM 0406; "
+                         "[[gameplay/events-and-schedules|Events]] §9)" % fmt_num(fm["period"])))
+        elif fm.get("kind") == 18:
+            info.append(("Period", "%s = the crystal's durability (−5 per second transformed, WM 1107)" % fmt_num(fm["period"])))
+        else:
+            info.append(("Period", "%s (unit unknown)" % fm["period"]))
     if fm.get("no_sell"):
         info.append(("Sell", "cannot be sold (flags bit 1)"))
     if fm.get("set"):

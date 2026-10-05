@@ -566,7 +566,7 @@ class Ctx:
         if type_ not in self._modules:
             try:
                 import importlib
-                self._modules[type_] = importlib.import_module("wiki.gamewiki." + type_)
+                self._modules[type_] = importlib.import_module("wiki.gamewiki." + type_.replace("-", "_"))
             except ImportError:
                 self._modules[type_] = None
         return self._modules[type_]
@@ -709,7 +709,7 @@ def render_body(page, block, old_body):
     return body
 
 
-TYPE_KEYS = {"boxes": "box", "gacha": "gacha"}
+TYPE_KEYS = {"boxes": "box", "gacha": "gacha", "classes": "class", "heroes": "hero", "masteries": "mastery"}
 
 
 def type_key(folder):
@@ -759,7 +759,7 @@ def prepare(ctx, page, mod):
     ctx.notes.extend(notes)
 
 
-WIKILINK_RE = re.compile(r"\[\[wiki/([a-z_]+)/(\d+)(?:-[^\]|\\]*)?(\\?\|)?([^\]]*)\]\]")
+WIKILINK_RE = re.compile(r"\[\[wiki/([a-z_-]+)/(\d+)(?:-[^\]|\\]*)?(\\?\|)?([^\]]*)\]\]")
 
 
 def unlink_missing(ctx, text):

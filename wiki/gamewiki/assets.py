@@ -33,8 +33,8 @@ column suffixes):
   skills    Skill_Base  icon_file@c9       icon_idx@cd     slot types 1, 6
   buffs     Skill_Buff  icon_file@54       icon_idx@58     slot type 3
   masteries Mastery     icon_file@20       icon_idx@24     slot type 4
-  also      CommonIcon (GUI_* keys -> Policy/CommonIcon atlases), FortMastery,
-            GuildMastery, Policy, PolicyActive, AddonData, LabData, Item_Jewel
+            (+ FortMastery, GuildMastery; saved under the masteries page ids)
+  also      CommonIcon (GUI_* keys -> Policy/CommonIcon atlases), Policy, PolicyActive, AddonData, LabData, Item_Jewel
             use the same (file, index) pair; not extracted here (no wiki type
             yet). Add a SOURCES entry when a type needs them.
 
@@ -167,6 +167,15 @@ def _heroes(ctx):
             yield r.int("id"), p, None, PORTRAIT_MAX
 
 
+def _masteries(ctx):
+    """Mastery / FortMastery / GuildMastery icons under the masteries page ids
+    (class unit x 100 + id, 1000 + fort id, 2000 + legion id; masteries.py)."""
+    from . import masteries
+    for pid, f, idx in masteries.icons(ctx):
+        if f != "0":
+            yield pid, "ui/icons/" + f.replace("\\", "/"), idx, None
+
+
 def _classes(ctx):
     for r in ctx.table("Create_Char"):
         faces = (r.get("portraits_F") or "").split(",")
@@ -250,7 +259,7 @@ SOURCES = {
     "items": _icons("Item_Base", "icon_file", "icon_idx"),
     "skills": _icons("Skill_Base", "icon_file", "icon_idx"),
     "buffs": _icons("Skill_Buff", "icon_file", "icon_idx"),
-    "masteries": _icons("Mastery", "icon_file", "icon_idx"),
+    "masteries": _masteries,
     "npcs": _chain(lambda ctx: _unit_portraits(ctx, "npcs"), lambda ctx: _talk_portraits(ctx, "npcs")),
     "nodes": lambda ctx: _talk_portraits(ctx, "nodes"),
     "heroes": _heroes,
