@@ -42,9 +42,9 @@ Pages: the Wiki section.
 
 ## server/ — logic only
 
-The replacement server is moving its game data into the wiki. It currently reads quests **1-7** and the two **Chepa officers (710/711)** from their committed pages through `server/gamedata.py`. These quest definitions and officer HP, level and spawns no longer require extracted client tables. Restart the server after editing wiki data; wiki files are not watched for hot reload.
+The replacement server is moving its game data into the wiki. Through `server/gamedata.py` it reads every quest it can verify (1-7 plus seven later ones), the two **Chepa officers (710/711)**, the enabled maps and their gates (`server/maps.py`), town NPC positions, and shop stock and price rates (`server/shops.py`). None of these require extracted client tables. Restart the server after editing wiki data; wiki files are not watched for hot reload.
 
-Level thresholds, skills and loot still use local client tables, and older world placements and combat formulas still contain prototype constants. CI tests the supported wiki quest journey, including selected rewards and reconnects; the loader rejects missing references and unsupported definitions for this slice. A project-wide check for hard-coded game values is not implemented yet. Filling out a wiki page outside the supported slice does not enable that system automatically.
+Level thresholds, skills and loot still use local client tables, and older world placements and combat formulas still contain prototype constants. CI tests the supported wiki quest journey, including selected rewards and reconnects; the quest loader skips unsupported definitions with a recorded reason and fails startup if quests 1-7 cannot load. A project-wide check for hard-coded game values is not implemented yet. Filling out a wiki page outside the supported slice does not enable that system automatically.
 
 ## contract/ and spec/ — the protocol
 

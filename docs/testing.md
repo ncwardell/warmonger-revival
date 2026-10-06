@@ -101,12 +101,11 @@ It has no separate objective counters or rewards. Check:
     10,010 raw XP. Reconnect and verify the reward remains; another turn-in must
     not grant it again. A full bag should leave the quest ready to turn in.
 
-This batch ends at quest 7. Its rings are player-selected rewards, not
-class-dependent rewards. The alternate quest 45 / Piece:Guardian route and
-the later dungeon quests remain unsupported. Only this free two-way portal
-route is enabled; other towns, teleporter menus, dungeons and wars are not enabled.
-The quest-4 completion requirement and 25-unit portal proximity radius are test
-server policies. Movement remains client-reported; this is not an anti-cheat
+This tutorial batch ends at quest 7. Its rings are player-selected rewards.
+The alternate quest 45 / Piece:Guardian route and the dungeon quests remain
+unsupported. Section 3 covers the other towns, portals, shops and the later
+quests now enabled. The quest-4 completion requirement and 25-unit portal
+proximity radius are test server policies. Movement remains client-reported; this is not an anti-cheat
 implementation. Try the quest tracker, but manually walk if auto-travel stalls:
 the full client journey has not yet been tested against this server.
 
@@ -126,12 +125,69 @@ on entry or during the live tick without changing earned XP.
 Level-based combat-stat scaling is still separate work: max HP/MP remain the
 test defaults (1,000/500), and player damage and defense do not grow with level.
 Monster kills currently grant loot and quest progress, but no XP directly.
-Quests after 7, dialogue services, class-dependent rewards and other objective
-types are not implemented. The client may still offer later quests from its own tables;
-their presence does not mean the server supports them. No client data or dialogue
+Only the quests listed in section 3 run beyond quest 7; dialogue services and
+other objective types are not implemented. The client may still offer other quests
+from its own tables; their presence does not mean the server supports them. No client data or dialogue
 text is copied into the repository.
 
-## 3. Class and weapon checks
+## 3. Towns, portals, shops and later quests (experimental)
+
+Quest-test mode (`-QuestTest`) now reads these from the committed wiki at startup.
+Restart the server after editing wiki pages.
+
+**Maps.** Every Arslan or shared town, field and open-world land on the wiki is
+enabled (`server/maps.py`): 95 maps. Each uses its field id as its scene. A map's
+reconnect spawn is its lowest client gate arrival, except Training Ground and Camp,
+whose spawns were checked on the navmesh. Dungeons, arenas, event maps and the other
+nations' home maps stay closed. The gate-arrival spawns are a server policy and have
+not been checked on the navmesh.
+
+**Portals.** A map portal sends the id of the gate in the *destination* field
+(`Teleport_List`), as the 89 -> 88 portal does. Every gate pair on the field pages is
+now routed the same way: the player must stand within 25 units of a gate in the
+current field linked to the destination's field, and arrives at the destination
+gate. Try Training Camp -> Corpse incineration (gate 1503 side, arriving at gate
+1500) and back, then the Castle gate (1198). An unknown gate id is logged as
+`portal: no route to gate N from map M`; please record it, because it shows what the
+client really sends. Haley's teleport menu, dungeon entry and world-map warps are
+not enabled. The menu packet (0x44c) is medium-confidence and the arrival points are
+unknown.
+
+**Town NPCs.** The 33 NPCs with a wiki position on an enabled map are placed there,
+including the Training Camp merchants and the Fortress and Castle NPCs. Positions are
+video or image measurements (about ±3 units). Some are guesses, as their wiki pages
+say, and none of the new ones were checked on the navmesh.
+
+**Shops** (`server/shops.py`). On entering the world the server sends price rates
+720 % / 700 % (0x452). Those rates reproduce the 79-gold potions seen in 2018 videos.
+Buying (0x430), selling (0x431) and the buyback list (0x4b7/0x4b9) work at NPCs with
+the Shop menu, within 15 units. Each request is checked against the shop's stock on
+its wiki page, and the client's own price formula is charged. Check:
+
+1. In Training Camp, open Wren (238). Potion of Health [D] should show 79 gold.
+   Buy three and check that gold drops by 237 and the bag gains them.
+2. Sell two back. Gold should rise by 126.
+3. Toggle Buyback and buy the two back for 158.
+4. Try a purchase you cannot afford (Auto decomposition hammer [D], 158,400) and one with a full bag.
+   Neither may change gold or the bag.
+
+Only plain gold-priced stock is sold. Medal, fame and Dimensional Energy items, and
+stock rows with grade bytes, are refused without a message. The buyback list is not
+saved across reconnects. Crafting (Odin, Owen) and Freya's precepts are not shops.
+
+**Later quests.** The loader now compiles every wiki quest page and enables those it
+can fully verify: report, talk, kill and collect objectives; exp, gold, fixed,
+chosen and class-specific item rewards; NPC givers and receivers that are placed; and
+level ranges and class limits. Today that adds quests 12, 13, 21, 100, 106, 697 and
+699 to 1-7. For example, at level 10 accept quest 13 from Freya in the Fortress, then
+talk to Cassia: it completes with 30,000 gold and its items. Quests that need gadget,
+board or item givers, client-only objectives (buy, use, equip, war goals),
+periodic or legion rules are skipped. `quests.SKIPPED` names the reason for each. The
+level and class meanings of prerequisite rows 4 and 1 come from the wiki generator.
+The contract describes these rows less specifically; a wrong reading would only
+refuse an offer, never grant one.
+
+## 4. Class and weapon checks
 
 Test each weapon's model, four skill icons, basic attack, each skill's animation
 and effect, swapping away/back, and reconnecting with it equipped. Record healing,

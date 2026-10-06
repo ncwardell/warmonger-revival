@@ -20,7 +20,9 @@ Implemented for testing: separate player sessions, mutual player spawning, movem
 
 New for testing: durable inventory, equipment, gold, quick-bar and quest saves, plus an optional quests 1-7 experiment: travel to Frei in Training Camp, return for the Chepa officers, and choose a ring reward. The Frei follow-up uses a documented prototype route where the client and video evidence disagree. See [solo testing](docs/testing.md) for the steps and current limits.
 
-Not yet: the remaining quests and NPC services, shops, party/guild/chat, matches and fort war, and real stats/damage formulas. See [Contributing](CONTRIBUTING.md) and the issue tracker.
+Also in quest-test mode, read from the wiki: 95 maps with portals between them, 33 placed town NPCs, gold shops with buy/sell/buyback, and later quests the server can verify (12, 13, 21, 100, 106, 697, 699). See [solo testing](docs/testing.md) section 3.
+
+Not yet: the remaining quests and NPC services (teleporters, crafting, warehouse), medal/fame shops, party/guild/chat, matches and fort war, and real stats/damage formulas. See [Contributing](CONTRIBUTING.md) and the issue tracker.
 
 ## How it works
 
