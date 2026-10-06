@@ -16,7 +16,8 @@ import travel
 import world
 from proto import build
 from test_multiplayer import ops
-from test_progress import GameTestCase
+from test_progress import GameTestCase, QuestTests
+import loot
 
 
 class WikiDefinitionTests(unittest.TestCase):
@@ -24,7 +25,8 @@ class WikiDefinitionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory, patch.object(
                 quests.paths, "SETTING", pathlib.Path(directory)):
             definitions = quests.definitions()
-        self.assertEqual(set(definitions), set(range(1, 8)))
+        self.assertLessEqual(set(range(1, 8)), set(definitions))
+        self.assertTrue(set(definitions).isdisjoint(quests.SKIPPED))
         self.assertEqual(definitions[7]["bit"], 99)
         self.assertEqual([r[2] for r in definitions[7]["rewards"] if r[:2] == (1, 11)], [400, 408])
         self.assertEqual(definitions[6]["prerequisite"], 5)
@@ -51,17 +53,97 @@ class WikiDefinitionTests(unittest.TestCase):
             self.assertEqual(q["rewards"], [r for r in expected if r[0]])
 
     def test_wiki_errors_fail_instead_of_disabling_quests_silently(self):
-        read = gamedata.entity
-        def changed(kind, qid):
-            page = copy.deepcopy(read(kind, qid))
-            if kind == "quests" and qid == 7:
-                page["rewards"][1]["pick"] = "class"
-            return page
-        with patch.object(gamedata, "entity", side_effect=changed), self.assertRaisesRegex(ValueError, "unsupported reward"):
+        read = gamedata.pages
+        def changed(kind):
+            pages = read(kind)
+            if kind == "quests":
+                pages = copy.deepcopy(pages)
+                pages[7]["rewards"][1]["type"] = 99
+            return pages
+        with patch.object(gamedata, "pages", side_effect=changed), self.assertRaisesRegex(ValueError, "quest 7: reward"):
             quests.definitions()
-        with tempfile.TemporaryDirectory() as directory, patch.object(gamedata, "WIKI", pathlib.Path(directory)):
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(gamedata, "WIKI", pathlib.Path(directory)), patch.dict(gamedata._PAGES, clear=True):
             with self.assertRaisesRegex(ValueError, "expected one wiki/quests"):
                 quests.definitions()
+
+    def test_unsupported_quests_are_skipped_with_a_reason(self):
+        definitions = quests.definitions()
+        self.assertIn(10, quests.SKIPPED)  # given by the Scout gadget, not an NPC
+        self.assertNotIn(10, definitions)
+        for reason in quests.SKIPPED.values():
+            self.assertTrue(reason)
+
+
+class FortressQuestTests(GameTestCase):
+    """Quests beyond the tutorial, using wiki NPCs placed in the Fortress (120)."""
+
+    def setUp(self):
+        for module, values in ((world, {"QUEST_TEST": True, "MAP_ID": 89, "SCENE_ID": 89,
+                                       "SPAWN_X": 419.0, "SPAWN_Z": 3661.0}),
+                               (handlers, {"SPAWN_MAP": 89, "SPAWN_SCENE": 89,
+                                           "SPAWN_X": 419.0, "SPAWN_Z": 3661.0})):
+            for name, value in values.items():
+                p = patch.object(module, name, value)
+                p.start()
+                self.addCleanup(p.stop)
+        super().setUp()
+
+    def at(self, s, unit_id):
+        unit = next(u for u in world.UNITS.values() if u.unit_id == unit_id)
+        s.player.update(map=unit.map_id, scene=unit.scene, x=unit.x, z=unit.z)
+
+    def talk(self, s, qid, npc):
+        report = build(0x492, struct.pack("<HHHhi", 0, qid, npc, 0, 4), extra=s.uid)
+        return handlers.dispatch("GAME_REPLIES", report, s)
+
+    def test_level_gate_then_talk_completes_with_rewards(self):
+        s, _, _ = self.player(b"Fortress")
+        self.at(s, 200)  # Freya gives quest 13 ("level 10+")
+        self.assertIsNone(QuestTests.accept(self, s, 13))
+        s.level = 10
+        self.assertTrue(QuestTests.accept(self, s, 13))
+        self.assertIsNone(self.talk(s, 13, 212))  # Cassia is not in reach yet
+        self.at(s, 212)
+        gold = s.loot["gold"]
+        self.assertTrue(self.talk(s, 13, 212))
+        self.assertTrue(s.quest_flags & (1 << 12))
+        self.assertEqual(s.loot["gold"], gold + 30000)
+        with sessions.use(s):
+            self.assertEqual(loot.held(834), 100)
+        self.assertIsNone(QuestTests.accept(self, s, 13))  # done once
+
+    def test_class_limits_and_class_rewards(self):
+        page = copy.deepcopy(gamedata.pages("quests")[13])
+        page["classes"] = ["Punisher", "Guardian"]
+        page["rewards"].append({"type": 1, "item": 601, "count": 1, "pick": "class", "class": "Saint"})
+        page["rewards"].append({"type": 1, "item": 402, "count": 1, "pick": "class", "class": "Punisher"})
+        q = quests.compile_quest(13, page)
+        self.assertEqual(q["classes"], {4, 5})
+        s, _, _ = self.player(b"Saint")  # class 1
+        s.level = 10
+        self.at(s, 200)
+        with patch.dict(quests.DEFINITIONS, {13: q}):
+            self.assertIsNone(QuestTests.accept(self, s, 13))
+            q["classes"] = None
+            self.assertTrue(QuestTests.accept(self, s, 13))
+            self.at(s, 212)
+            with sessions.use(s):
+                held = loot.held(601)
+            self.assertTrue(self.talk(s, 13, 212))
+            with sessions.use(s):
+                self.assertEqual(loot.held(601), held + 16)  # 15 fixed + the Saint's own
+                self.assertEqual(loot.held(402), 0)  # the Punisher's reward is withheld
+        page["rewards"][-1]["class"] = "Valkyrie"
+        with self.assertRaises(quests.Unsupported):
+            quests.compile_quest(13, page)
+
+    def test_client_only_objectives_are_never_completed(self):
+        self.assertIn("objectives_client", quests.SKIPPED[691])
+        s, _, _ = self.player(b"Client")
+        s.quest_flags |= 1 << 22
+        with sessions.use(s):
+            self.assertFalse(quests.start_automatic())
 
 
 class ChepaQuestTests(GameTestCase):

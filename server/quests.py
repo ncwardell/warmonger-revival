@@ -1,8 +1,10 @@
-"""Small tutorial quest experiment, using the committed game wiki.
+"""Quest experiment, using the committed game wiki.
 
 Packet evidence: contract/quests.yaml (0x48e..0x492, FUN_00599ab2).
-Only quests 1..7 and their talk/kill/collect objectives and NPC handoffs are enabled. Unknown
-quests or objective/reward types are rejected, never silently completed.
+Every wiki quest whose objectives (report, talk, kill, collect), rewards (exp,
+gold, fixed/chosen/class items), NPC endpoints, level range and class limit are
+supported is enabled; quests 1..7 must be. Others are skipped (SKIPPED gives the
+reason) and their packets rejected, never silently completed.
 """
 import copy
 import gamedata
@@ -10,6 +12,7 @@ import math
 import struct
 
 import loot
+import maps
 import paths
 import sessions
 import world
@@ -28,68 +31,118 @@ def rows(name):
     return [tokens[2 + i * width:2 + (i + 1) * width] for i in range(count)]
 
 
-def definitions():
-    """Compile the supported wiki pages to fixed-size protocol records.
+REQUIRED = range(1, 8)  # the tested tutorial chain must always load
+CLASSES = {"Saint": 1, "Punisher": 4, "Guardian": 5}  # Create_Char class ids
+CLASS_REWARD = 0x100  # reward pick code: 0x100 | class id
+LEVEL, CLASS = 4, 1  # prerequisite rows the generator reads as level range / class mask
+
+
+class Unsupported(ValueError):
+    pass
+
+
+def compile_quest(qid, page):
+    """One wiki quest page -> the fixed-size protocol record this server runs.
 
     Reward `amount` is authoritative; `shown` is historical UI evidence only.
-    Fixed and player-selected items are supported, class-dependent picks are not.
     """
-    result = {}
     number = gamedata.integer
-    for qid in range(1, 8):
-        page = gamedata.entity("quests", qid)
-        if page.get("type") != "quest" or page.get("prerequisites"):
-            raise ValueError(f"quest {qid}: unsupported definition/prerequisites")
-        objectives = [(0,) * 5] * 5
-        occupied = set()
-        for o in page["objectives"]:
-            index = number(o["n"], 1, 5) - 1
-            kind = o["type"]
-            if index in occupied or kind not in (0, 1, 4):
-                raise ValueError(f"quest {qid}: unsupported/duplicate objective")
-            occupied.add(index)
-            target = number(o.get("npc", o.get("unit", 0)), 0, 65535)
-            item = number(o.get("item", 0), 0, 65535)
-            count = number(o.get("count", 0), 1 if kind == 1 else 0, 32767)
-            if kind:
-                gamedata.entity("npcs" if kind == 4 else "monsters", target)
-            if item:
-                gamedata.entity("items", item)
-            objectives[index] = (kind, target, count, number(o.get("rate", 0), 0, 100), item)
-        rewards = []
-        for r in page["rewards"]:
-            kind = r["type"]
-            if kind == 1 and r.get("pick") in ("fixed", "choose"):
-                item = number(r["item"], 1, 65535)
-                gamedata.entity("items", item)
-                rewards.append((1, 11 if r["pick"] == "choose" else 0,
-                                item, number(r["count"], 1, 65535)))
-            elif kind in (2, 4):
-                rewards.append((kind, number(r["amount"], 0, 0xFFFFFFFF), 0, 0))
-            else:
-                raise ValueError(f"quest {qid}: unsupported reward {r}")
-        giver, receiver = page["giver"], page["turn_in"]
-        for endpoint in (giver, receiver):
-            if set(endpoint) == {"npc"}:
-                gamedata.entity("npcs", number(endpoint["npc"], 1, 65535))
-            elif endpoint != {"auto": True}:
-                raise ValueError(f"quest {qid}: unsupported NPC endpoint")
-        maps = tuple(number(m, 0, 65535) for m in page.get("offer_maps", [0] * 3))
-        receiving = tuple(number(m, 0, 65535) for m in page.get("turn_in_maps", maps))
-        stages = tuple(number(n, 1, 5) for n in page["stages"])
-        if len(maps) != 3 or len(receiving) != 3 or len(stages) != 5:
-            raise ValueError(f"quest {qid}: expected three nation maps and five stages")
-        prerequisite = number(page.get("requires_bit", 0), 0, 319)
-        if giver.get("auto") and not prerequisite:
-            raise ValueError(f"quest {qid}: automatic assignment needs an explicit prerequisite")
-        result[qid] = {"id": qid, "bit": number(page["bit"], 1, 319),
-                       "prerequisite": prerequisite,
-                       "exclusion": number(page.get("excludes_bit", 0), 0, 319),
-                       "maps": maps, "receiver_maps": receiving,
-                       "giver": giver.get("npc", 0), "receiver": receiver.get("npc", 0),
-                       "auto_accept": giver.get("auto", False),
-                       "automatic": page.get("automatic", False) and receiver.get("auto", False),
-                       "stages": stages, "objectives": objectives, "rewards": rewards}
+    if page.get("type") != "quest" or "bit" not in page or "stages" not in page:
+        raise Unsupported("no completion bit or stages")
+    # objectives_client / rewards_client hold rows only the client tracks; the
+    # server cannot verify them, so it never completes those quests.
+    for key in ("unused", "periodic", "board", "owned_field", "objectives_client", "rewards_client"):
+        if page.get(key):
+            raise Unsupported(key)
+    for pre in page.get("prerequisites") or []:
+        if pre.get("type") not in (LEVEL, CLASS) or (pre["type"] == LEVEL and "min" not in pre and "max" not in pre):
+            raise Unsupported(f"prerequisite {pre}")
+    objectives = [(0,) * 5] * 5
+    occupied = set()
+    for o in page.get("objectives") or []:
+        index = number(o["n"], 1, 5) - 1
+        kind = o["type"]
+        if kind not in (0, 1, 4):
+            raise Unsupported(f"objective type {kind}")
+        if index in occupied:
+            raise ValueError(f"quest {qid}: duplicate objective")
+        occupied.add(index)
+        target = number(o.get("npc", o.get("unit", 0)), 0, 65535)
+        item = number(o.get("item", 0), 0, 65535)
+        count = number(o.get("count", 0), 1 if kind == 1 else 0, 32767)
+        if kind and target not in gamedata.pages("npcs" if kind == 4 else "monsters"):
+            raise Unsupported(f"objective target {target} has no wiki page")
+        if item:
+            gamedata.entity("items", item)
+        objectives[index] = (kind, target, count, number(o.get("rate", 0), 0, 100), item)
+    rewards = []
+    for r in page.get("rewards") or []:
+        kind, pick = r["type"], r.get("pick")
+        if kind == 1 and pick in ("fixed", "choose", "class"):
+            item = number(r["item"], 1, 65535)
+            gamedata.entity("items", item)
+            code = {"fixed": 0, "choose": 11}.get(pick)
+            if pick == "class":
+                if r.get("class") not in CLASSES:
+                    raise Unsupported(f"reward class {r.get('class')}")
+                code = CLASS_REWARD | CLASSES[r["class"]]
+            rewards.append((1, code, item, number(r["count"], 1, 65535)))
+        elif kind in (2, 4):
+            rewards.append((kind, number(r["amount"], 0, 0xFFFFFFFF), 0, 0))
+        else:
+            raise Unsupported(f"reward {r}")
+    giver, receiver = page["giver"], page["turn_in"]
+    placed = {unit for unit, *_ in maps.NPCS}
+    for endpoint in (giver, receiver):
+        if set(endpoint) == {"npc"}:
+            gamedata.entity("npcs", number(endpoint["npc"], 1, 65535))
+            if endpoint["npc"] not in placed:
+                raise Unsupported(f"NPC {endpoint['npc']} has no wiki position on an enabled map")
+        elif endpoint != {"auto": True}:
+            raise Unsupported(f"NPC endpoint {endpoint}")
+    maps_ = tuple(number(m, 0, 65535) for m in page.get("offer_maps", [0] * 3))
+    receiving = tuple(number(m, 0, 65535) for m in page.get("turn_in_maps", maps_))
+    stages = tuple(number(n, 1, 5) for n in page["stages"])
+    if len(maps_) != 3 or len(receiving) != 3 or len(stages) != 5:
+        raise ValueError(f"quest {qid}: expected three nation maps and five stages")
+    prerequisite = number(page.get("requires_bit", 0), 0, 319)
+    if giver.get("auto") and not prerequisite:
+        raise Unsupported("automatic assignment needs an explicit prerequisite")
+    if page.get("automatic") and not any(o[0] for o in objectives):
+        raise Unsupported("automatic completion without a server-verified objective")
+    level = page.get("level") or {}
+    classes = page.get("classes")
+    if classes is not None and any(c not in CLASSES for c in classes):
+        raise Unsupported(f"classes {classes}")
+    return {"id": qid, "bit": number(page["bit"], 1, 319),
+            "prerequisite": prerequisite,
+            "exclusion": number(page.get("excludes_bit", 0), 0, 319),
+            "maps": maps_, "receiver_maps": receiving,
+            "giver": giver.get("npc", 0), "receiver": receiver.get("npc", 0),
+            "auto_accept": giver.get("auto", False),
+            "automatic": page.get("automatic", False) and receiver.get("auto", False),
+            "level": (number(level.get("min", 1), 1, 255), number(level.get("max", 255), 1, 255)),
+            "classes": None if classes is None else frozenset(CLASSES[c] for c in classes),
+            "stages": stages, "objectives": objectives, "rewards": rewards}
+
+
+SKIPPED = {}
+
+
+def definitions():
+    """Compile every supported wiki quest; record why the others are skipped."""
+    result = {}
+    SKIPPED.clear()
+    for qid, page in sorted(gamedata.pages("quests").items()):
+        try:
+            result[qid] = compile_quest(qid, page)
+        except (ValueError, KeyError, TypeError) as e:
+            if qid in REQUIRED:
+                raise ValueError(f"quest {qid}: {e}") from e
+            SKIPPED[qid] = str(e)
+    for qid in REQUIRED:
+        if qid not in result:
+            raise ValueError(f"expected one wiki/quests page for id {qid}")
     return result
 
 
@@ -157,10 +210,19 @@ def ready(q, record):
     record[2] = 2 if all(not o[0] or record[8 + i] for i, o in enumerate(q["objectives"])) else 0
 
 
+def class_id():
+    record = sessions.current().record
+    return struct.unpack_from("<H", record, 0x36)[0] if len(record) >= 0x38 else 0
+
+
 def eligible(q):
     s = sessions.current()
     flags = s.quest_flags
+    low, high = q.get("level", (1, 255))
+    classes = q.get("classes")
     return not (flags & (1 << q["bit"])
+                or not low <= s.level <= high
+                or (classes is not None and class_id() not in classes)
                 or (q["prerequisite"] and not flags & (1 << q["prerequisite"]))
                 or (q["exclusion"] and flags & (1 << q["exclusion"]))
                 or any(struct.unpack_from("<H", r)[0] == q["id"] for r in s.quest_slots))
@@ -316,7 +378,10 @@ def finish(slot, q, choice=0):
                     selected += 1
                     if selected - 1 != choice:
                         continue
-                elif a:  # class-dependent rewards remain outside this slice
+                elif a & CLASS_REWARD:
+                    if a & 0xFF != class_id():
+                        continue
+                elif a:
                     return None
                 changed, left = loot.add_to_bag(b, c)
                 if left:
