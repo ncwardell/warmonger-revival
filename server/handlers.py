@@ -124,7 +124,7 @@ def enter_world(packet):
     p = session.player
     # Old version-1 saves have no checkpoint. Quest mode also migrates the
     # old map-117 test spawn to the proper Training Ground without changing XP.
-    map_id = session.checkpoint_map if units.QUEST_TEST and session.checkpoint_map in (88, 89) else SPAWN_MAP
+    map_id = session.checkpoint_map if units.QUEST_TEST and session.checkpoint_map in units.SITES and session.checkpoint_map != 117 else SPAWN_MAP
     scene, x, z = units.SITES[map_id]
     session.checkpoint_map = map_id
     p.update(x=x, z=z, spawn=(x, z), map=map_id,

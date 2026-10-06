@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 import ai
 import handlers
+import maps
 import persistence
 import quests
 import sessions
@@ -39,7 +40,7 @@ class TravelTests(test_progress.GameTestCase):
 
     def depart(self, s, destination=1202):
         s.quest_flags |= 1 << 4
-        _, anchor, _, _ = travel.PORTALS[destination]
+        (anchor, *_), *_ = maps.route(destination, s.player["map"])
         s.player["x"], s.player["z"] = anchor
         return handlers.dispatch("GAME_REPLIES", self.portal(s, destination), s)
 
@@ -107,7 +108,9 @@ class TravelTests(test_progress.GameTestCase):
         self.assertEqual([(op, struct.unpack_from("<H", p, 6)[0]) for op, p in ops(inbox_c[-1])], [(0x806, a.uid)])
         self.assertEqual(ops(inbox_b[-1])[0][0], 0x803)
         spawned = [struct.unpack_from("<H", p, 6)[0] for op, p in ops(burst) if op == 0x803]
-        self.assertEqual(set(spawned), {b.uid, world.NPC_UID_BASE + 2})
+        camp = {u.uid for u in world.UNITS.values() if u.map_id == 88}
+        self.assertIn(world.NPC_UID_BASE + 2, camp)  # Frei, with the camp's other wiki NPCs
+        self.assertEqual(set(spawned), {b.uid} | camp)
         self.assertFalse(a.drops)
         inbox_b.clear(); inbox_c.clear()
         handlers.dispatch("GAME_REPLIES", movement(a.uid, 330, 3440), a)
@@ -187,6 +190,41 @@ class TravelTests(test_progress.GameTestCase):
         self.assertEqual(a.checkpoint_map, 89)
         self.assertIn(123, a.drops)
         self.assertFalse(inbox_b)
+
+    def test_wiki_maps_npcs_and_gate_pairs(self):
+        self.assertEqual(world.SITES[89], (89, 419.0, 3661.0))
+        self.assertEqual(world.SITES[88], (88, 325.8, 3438.9))
+        self.assertTrue(all(scene == field for field, (scene, _, _) in world.SITES.items() if field != 117))
+        frei = world.UNITS[world.NPC_UID_BASE + 2]
+        self.assertEqual((frei.unit_id, frei.map_id, frei.x, frei.z), (198, 88, 360.8, 3466.1))
+        self.assertEqual({u.unit_id for u in world.UNITS.values() if u.map_id == 89 and not world.is_monster(u)},
+                         {201, 239})
+        # Every enabled route has a way back from the field it arrives in.
+        routes = [gate for gate, row in maps.GATES.items()
+                  if row[3] in world.SITES and maps.route(gate, row[3])]
+        self.assertGreater(len(routes), 100)
+        for gate in routes:
+            target, _, _, back = maps.GATES[gate]
+            self.assertTrue(any(maps.route(g, target) for g, row in maps.GATES.items()
+                                if row[0] == back), gate)
+        self.assertIsNone(maps.route(1204, 87))  # Erion's Training Camp is not enabled
+        self.assertIsNone(maps.route(9999, 88))
+
+    def test_corpse_incineration_round_trip_and_reconnect(self):
+        s, _, _ = self.player(b"Corpse")
+        char_id = struct.unpack_from("<Q", s.record)[0]
+        self.depart(s)
+        burst = self.depart(s, 1500)  # Camp gate 1503 -> field 99 gate 1500
+        warp = ops(burst)[0][1]
+        self.assertEqual(struct.unpack_from("<HHff", warp, 0x10), (99, 99, *[
+            struct.unpack("<f", struct.pack("<f", v))[0] for v in (306.03, 2254.17)]))
+        self.assertEqual((s.player["map"], s.checkpoint_map), (99, 99))
+        handlers.disconnect(s)
+        s, _, burst = self.reconnect(b"Corpse", char_id)
+        self.assertEqual(struct.unpack_from("<hh", ops(burst)[0][1], 0x18), (99, 99))
+        self.assertEqual((s.player["x"], s.player["z"]), world.SITES[99][1:])
+        self.assertTrue(self.depart(s, 1503))
+        self.assertEqual(s.player["map"], 88)
 
     def test_old_saves_and_route_state(self):
         s, _, _ = self.player(b"OldSave")

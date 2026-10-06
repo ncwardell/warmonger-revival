@@ -24,6 +24,31 @@ def entity(kind, entity_id):
     return data
 
 
+_PAGES = {}
+
+
+def pages(kind):
+    """Every entity page of one wiki section, id -> front matter (cached)."""
+    if kind not in _PAGES:
+        found = {}
+        for path in sorted((WIKI / kind).glob("*.md")):
+            if path.name == "index.md":
+                continue
+            data, _ = parse_front_matter(path.read_text(encoding="utf-8"))
+            if type(data.get("id")) is not int or data["id"] in found:
+                raise ValueError(f"invalid or duplicate wiki id: {path}")
+            found[data["id"]] = data
+        _PAGES[kind] = found
+    return _PAGES[kind]
+
+
+def number(value):
+    """A finite world coordinate."""
+    if type(value) not in (int, float) or value != value or abs(value) > 1e6:
+        raise ValueError(f"expected a finite coordinate, got {value!r}")
+    return float(value)
+
+
 def integer(value, low, high):
     if type(value) is not int or not low <= value <= high:
         raise ValueError(f"expected integer in {low}..{high}, got {value!r}")

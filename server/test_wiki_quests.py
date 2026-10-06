@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 import gamedata
 import handlers
+import maps
 import persistence
 import quests
 import sessions
@@ -93,7 +94,7 @@ class ChepaQuestTests(GameTestCase):
         return handlers.dispatch("GAME_REPLIES", build(0x48F, struct.pack("<HHhH", qid, slot, choice, 0), extra=s.uid), s)
 
     def depart(self, s, destination):
-        _, anchor, _, _ = travel.PORTALS[destination]
+        (anchor, *_), *_ = maps.route(destination, s.player["map"])
         s.player["x"], s.player["z"] = anchor
         return handlers.dispatch("GAME_REPLIES", build(0x44E, struct.pack("<IIIIII", 0, destination, 0, 0, 0, 0), extra=s.uid), s)
 

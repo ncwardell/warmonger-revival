@@ -4,7 +4,8 @@ type: "npc"
 id: 198
 status: "complete"
 missing: []
-sources: ["client: UnitDB.cdb id 198", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "gameplay/npc-locations §4", "gameplay/video-tutorial-walkthrough §2"]
+sources: ["client: UnitDB.cdb id 198", "client: Quest.cdb start_npc@18 / c18@2c / objective type 4", "gameplay/npc-locations §4", "gameplay/video-tutorial-walkthrough §2", "design: server position (360.8, 3466.1) nudged from the off-mesh video estimate (358.8, 3469.1) to a point with 2.06 units of navmesh clearance; see [[testing]]"]
+manual: ["x", "z"]
 name_key: "TitleName_24"
 title_key: "UnitName_200"
 npc_title: "Oracle of Knowledge"
@@ -20,8 +21,8 @@ portrait: "ui/NPCProfile/Oracle_of_Knowledge.dds"
 quests: {"gives": [9, 11, 45], "receives": [5, 7, 10, 107], "talk_objective": [6]}
 quest_fields: [88, 92, 96]
 map: 88
-x: 358.8
-z: 3469.1
+x: 360.8
+z: 3466.1
 positions:
   - {"field": 88, "x": 358.8, "z": 3469.1, "source": "gameplay/npc-locations §4", "confidence": "video"}
   - {"field": 88, "x": 362.6, "z": 3467.6, "source": "gameplay/video-tutorial-walkthrough §2", "confidence": "video", "seen": ["12:40"]}

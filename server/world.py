@@ -19,6 +19,7 @@ import sys
 import time
 import sessions
 import gamedata
+import maps
 
 from proto import build, split
 
@@ -38,10 +39,10 @@ clock = time.monotonic  # replaced by the self-test
 # offsets from CENTRE so the whole group moves when a walkable point is found.
 CENTRE = globals().get("CENTRE", (1424.0, 416.0))
 QUEST_TEST = os.environ.get("WARMONGER_QUEST_TEST") == "1"
-# One stable scene per supported map. Coordinates choose the terrain in this
-# client. NPC estimates and portal arrivals: docs/gameplay/npc-locations.md.
-SITES = {117: (87, 1427.0, 429.0), 89: (89, 419.0, 3661.0),
-         88: (88, 325.8, 3438.9)}
+# One stable scene per supported map: (sceneidx, safe x, z). Coordinates choose
+# the terrain in this client. Quest mode reads its maps from the wiki (maps.py);
+# the default tutorial island keeps its legacy scene 87. Use is gated by QUEST_TEST.
+SITES = {**maps.SITES, 117: (87, 1427.0, 429.0)}
 MAP_ID = 89 if QUEST_TEST else 117
 SCENE_ID, SPAWN_X, SPAWN_Z = SITES[MAP_ID]
 
@@ -79,6 +80,9 @@ NPCS = [
 
 MONSTER_UID_BASE = 0x400  # monsters/NPCs are uid 0x3F7..0x2B05
 NPC_UID_BASE = 0x3F8
+TOWN_NPC_UID_BASE = 0x1000  # other wiki-placed NPCs (quest mode)
+# Shaia, Floyd and Frei keep NPC_UID_BASE + 0..2 so older test layouts hold.
+FIXED_NPCS = (201, 239, 198)
 
 # Damage: base x (0.75..1.25), 10 % crits for double. Skill hits hit harder.
 BASIC_DAMAGE = 30
@@ -151,7 +155,7 @@ def reset():
         u = Unit(MONSTER_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, MONSTER_TEAM)
         UNITS[u.uid] = u
 
-    for i, (unit_id, name, level, hp, dx, dz) in enumerate(NPCS if QUEST_TEST else NPCS[:1]):
+    for i, (unit_id, name, level, hp, dx, dz) in enumerate(() if QUEST_TEST else NPCS[:1]):
         u = Unit(NPC_UID_BASE + i, unit_id, name, level, hp, cx + dx, cz + dz, NPC_TEAM)
         UNITS[u.uid] = u
     if QUEST_TEST:
@@ -163,15 +167,18 @@ def reset():
             u = UNITS[MONSTER_UID_BASE + i]
             u.home = point
             u.x, u.z = point
-        for i, point in enumerate(((423.9, 3664.8), (370.5, 3660.6))):
-            u = UNITS[NPC_UID_BASE + i]
-            u.home = point
-            u.x, u.z = point
-        # The video's Frei estimate (358.8, 3469.1) is off the walkable mesh.
-        # This nearby point has >2 units of clearance; exact placement pending.
-        u = Unit(NPC_UID_BASE + 2, 198, "Frei", 10, 1000,
-                 360.8, 3466.1, NPC_TEAM, map_id=88)
-        UNITS[u.uid] = u
+        # NPC positions come from their wiki pages (video/image measurements;
+        # Frei's is a navmesh-adjusted design value). Level/HP are display only.
+        extra = TOWN_NPC_UID_BASE
+        for unit_id, name, map_id, x, z in maps.NPCS:
+            if unit_id in FIXED_NPCS:
+                uid = NPC_UID_BASE + FIXED_NPCS.index(unit_id)
+            else:
+                uid, extra = extra, extra + 1
+            u = Unit(uid, unit_id, name, 10, 1000, x, z, NPC_TEAM, map_id=map_id)
+            UNITS[uid] = u
+        if any(NPC_UID_BASE + i not in UNITS for i in range(len(FIXED_NPCS))):
+            raise ValueError("Shaia, Floyd and Frei need wiki positions on enabled maps")
 
         # Only the new officers use wiki stats/spawns so far. The older test
         # layout above is still being migrated; do not imply full wiki parity.

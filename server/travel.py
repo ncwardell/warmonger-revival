@@ -1,23 +1,25 @@
-"""Training Ground <-> Camp portal experiment; nation 1, quest-test mode only.
+"""Map portals between the wiki's enabled fields; quest-test mode only.
 
 Wire layout: contract/world.yaml, FUN_0048796a / FUN_00473548. The portal
-destination is a Teleport_List gate id, not a map id: deviceTrigger records in
-ZP01_14 send 1202, and ZP01_13 sends 1203. See docs/testing.md for limits.
+destination is a Teleport_List gate id in the target field, not a map id:
+deviceTrigger records in ZP01_14 send 1202, and ZP01_13 sends 1203. Every
+gate pair on the field pages follows that rule (maps.route). NPC teleporters,
+dungeon entry and world-map warps are not enabled. See docs/testing.md.
 """
 import math
 import struct
 
+import maps
 import persistence
 import sessions
 import world
 from proto import build
 
-# Destination gate -> (source map, source arrival anchor, target map, arrival).
-# The source trigger is further out than its arrival anchor. A 25-unit radius
-# accommodates it; this tolerance and the quest-4 gate are prototype policies.
-PORTALS = {1202: (89, (451.64, 3629.45), 88, (325.8, 3438.9)),
-           1203: (88, (325.8, 3438.9), 89, (451.64, 3629.45))}
+# A trigger sits further out than its gate's arrival point; a 25-unit radius
+# accommodates it. The radius and per-gate quest requirements are test policies.
 PORTAL_RADIUS = 25.0
+# destination gate -> completion bit required (leave Training Ground after quest 4)
+REQUIRES_BIT = {1202: 4}
 
 
 def warp(packet):
@@ -33,15 +35,18 @@ def warp(packet):
         *struct.unpack_from("<IIi", packet, 0x14),
         struct.unpack_from("<H", packet, 0x20)[0],
         struct.unpack_from("<H", packet, 0x24)[0])
-    route = PORTALS.get(destination)
+    route = maps.route(destination, p["map"]) if p["map"] in world.SITES else None
+    bit = REQUIRES_BIT.get(destination)
     if (not world.QUEST_TEST or not p["alive"] or not route
             or npc or dungeon or cost or party or worldmap
-            or not s.quest_flags & (1 << 4)):
+            or (bit and not s.quest_flags & (1 << bit))):
+        if world.QUEST_TEST and not route:
+            world.log(f"portal: no route to gate {destination} from map {p['map']}")
         return None
-    source, anchor, target, arrival = route
-    if ((p["map"], p["scene"]) != (source, world.SITES[source][0])
+    sources, target, *arrival = route
+    if (p["scene"] != world.SITES[p["map"]][0]
             or not math.isfinite(p["x"]) or not math.isfinite(p["z"])
-            or math.hypot(p["x"] - anchor[0], p["z"] - anchor[1]) > PORTAL_RADIUS):
+            or min(math.hypot(p["x"] - x, p["z"] - z) for x, z in sources) > PORTAL_RADIUS):
         return None
     old_player = p.copy()
     old_checkpoint = s.checkpoint_map

@@ -31,7 +31,7 @@ def read_progress(account, record):
             and type(data["level"]) is int and 1 <= data["level"] <= 30
             and type(data["quest_flags"]) is int and 0 <= data["quest_flags"] < (1 << 320)
             and (data.get("checkpoint_map") is None or
-                 (type(data["checkpoint_map"]) is int and data["checkpoint_map"] in (117, 89, 88)))
+                 (type(data["checkpoint_map"]) is int and 0 <= data["checkpoint_map"] <= 0xFFFF))
             and isinstance(data["quest_slots"], list) and len(data["quest_slots"]) == 15
             and all(len(bytes.fromhex(s)) == 24 for s in data["quest_slots"])):
         raise ValueError(f"invalid progress save: {path}")
