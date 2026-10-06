@@ -16,9 +16,10 @@ import world as units
 import ai
 import quests
 import travel
+import shops
 
 # State lives in sessions.py; shared units and AI clocks survive these reloads.
-for module in (skills, loot, units, ai, quests, travel):
+for module in (skills, loot, units, ai, quests, travel, shops):
     importlib.reload(module)
 
 NATION, TEAM = 1, 1
@@ -140,7 +141,7 @@ def enter_world(packet):
     quests.apply_to_world(packet)
     out = build(0x2000, bytes(packet[16:]), extra=session.uid)
     out += skills.after_enter_world(session.uid, class_id, level, weapon=weapon)
-    out += units.join((SPAWN_X, SPAWN_Z))
+    out += units.join((SPAWN_X, SPAWN_Z)) + shops.rates()
     out += build(0x422, struct.pack("<BBHI", session.level, 0, 0, session.experience), extra=session.uid)
     out += loot.gold_update()
     p["in_world"] = True
@@ -246,14 +247,15 @@ LOGIN_REPLIES = {0x4200: login_ok, 0x4207: login_ok}
 GAME_REPLIES = {
     0x4200: game_login, 0x407: create_character, 0x406: enter_world,
     0x409: leave_game, 0x416: move,
-    **skills.REPLIES, **units.REPLIES, **loot.REPLIES, **quests.REPLIES, **travel.REPLIES,
+    **skills.REPLIES, **units.REPLIES, **loot.REPLIES, **quests.REPLIES, **travel.REPLIES, **shops.REPLIES,
     0x4CA: unknown_unit, 0x40F: cast, 0x410: cast,
 }
 MIN_SIZE = {0x4207: 0x9C, 0x4200: 0x60, 0x407: 0x260, 0x406: 0x20,
             0x409: 0x14, 0x416: 0x20, 0x417: 0x1C, 0x411: 0x64,
             0x412: 0x88, 0x40F: 0x14, 0x410: 0x38, 0x4CA: 0x18,
             0x42A: 0x18, 0x494: 0x28, 0x451: 0x18,
-            0x48E: 0x18, 0x48F: 0x18, 0x492: 0x1C, 0x44E: 0x28, 0x445: 0x10}
+            0x48E: 0x18, 0x48F: 0x18, 0x492: 0x1C, 0x44E: 0x28, 0x445: 0x10,
+            0x430: 0x1C, 0x431: 0x1C, 0x4B7: 0x18, 0x4B9: 0x28}
 
 
 def dispatch(table, packet, session=None):

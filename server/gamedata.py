@@ -35,7 +35,9 @@ def pages(kind):
             if path.name == "index.md":
                 continue
             data, _ = parse_front_matter(path.read_text(encoding="utf-8"))
-            if type(data.get("id")) is not int or data["id"] in found:
+            if "id" not in data:
+                continue  # a hand-written category page, not an entity
+            if type(data["id"]) is not int or data["id"] in found:
                 raise ValueError(f"invalid or duplicate wiki id: {path}")
             found[data["id"]] = data
         _PAGES[kind] = found
